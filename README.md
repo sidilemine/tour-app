@@ -16,7 +16,7 @@ Local build outputs (ignored by Git):
 | `artifacts/walking-tour-offline.apk` | Self-contained release variant with embedded JavaScript and all three clips; no Metro needed |
 | `artifacts/walking-tour-m1a-development.apk` | Earlier vertical-slice checkpoint; prefer the final development build |
 
-The APKs target ARM64 Android, minimum API 24, target/compile API 36. No phone has been detected/authorized during implementation, so installation, launch and compatibility with Sidi's actual handset are pending. Both final APKs use the same package ID (`uk.sidi.walkingtourlab`) and development signing certificate. Installing one replaces the other without needing to uninstall; never clear app data during recovery testing.
+The APKs target ARM64 Android, minimum API 24, target/compile API 36. USB installation and development-app launch are verified on Sidi's Pixel 6 (Android 17/API 37, ARM64). Walking, audio/location lifecycle and progress-recovery acceptance remain pending; see the result record. Both final APKs use the same package ID (`uk.sidi.walkingtourlab`) and development signing certificate. Installing one replaces the other without needing to uninstall; never clear app data during recovery testing.
 
 ```sh
 sh tools/android-env.sh adb devices -l
@@ -75,7 +75,7 @@ npm run build:android
 
 `build:android` regenerates native projects from committed Expo config, builds both ARM64 variants and verifies their signatures. Native `/android` and `/ios` directories are generated/ignored. Keep customizations in committed scripts/config/owned modules before regenerating. The only native library patch is the version-guarded [audio adapter patch](tools/patch-expo-audio.cjs), applied by `npm ci`'s postinstall and the build script. Rebuild after native changes; JavaScript-only changes use Metro. Rebuild the self-contained APK after any application change.
 
-No backend, paid TTS, AI provider, map key, full Xcode or store membership is needed for M1. The remaining setup blocker is the physical Android phone: connect a data cable, enable USB debugging and accept this Mac on the handset. The engineer can run installation/build commands; Sidi supplies phone/OS prompts and walking observations.
+No backend, paid TTS, AI provider, map key, full Xcode or store membership is needed for M1. Sidi's Pixel 6 is authorized over USB and the app has launched. There is no remaining local installation blocker. For later connections, use a data cable, enable USB debugging and accept this Mac on the handset. The engineer can run installation/build commands; Sidi supplies phone/OS prompts and walking observations.
 
 ## Verification and diagnostics
 

@@ -14,7 +14,7 @@ Acceptance: documents agree with the owner's revisions, link to each other, dist
 
 **Status: implemented; awaiting physical test.** Outcome: establish whether one installed development build can play a clip, stay locked through several minutes of actual silence, and automatically start the next clip on real arrival. This gate precedes map polish and the six-stop player's implementation.
 
-Implementation/build evidence: [M1 result record](docs/test-results/M1.md). For the first attempt use the short [first-walk checklist](docs/FIRST-WALK.md); all criteria below remain required. No phone was connected during implementation, so installation/launch/walking results are pending.
+Implementation/build evidence: [M1 result record](docs/test-results/M1.md). For the first attempt use the short [first-walk checklist](docs/FIRST-WALK.md); all criteria below remain required. The development build is installed and has launched on Sidi's Pixel 6 (Android 17/API 37); walking and lifecycle acceptance remain pending.
 
 ### Delivery stages
 

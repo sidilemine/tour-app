@@ -75,7 +75,7 @@ export default function App() {
   const current = state.playback.index === null ? 'Silence' : fixture?.stops[state.playback.index].title;
   return <ScrollView style={styles.screen} contentContainerStyle={styles.content} keyboardShouldPersistTaps="handled">
     <Text style={styles.eyebrow}>WALKING TOUR LAB · M1</Text>
-    <Text style={styles.heading}>A walk. A pause.\nThe next arrival.</Text>
+    <Text style={styles.heading}>{'A walk. A pause.\nThe next arrival.'}</Text>
     <Text style={styles.description}>A device experiment, with real silence between local clips. Physical acceptance is still pending.</Text>
     {fatal ? <View style={styles.warning}><Text selectable>{fatal}</Text></View> : null}
     <View style={styles.card}>
@@ -116,7 +116,7 @@ export default function App() {
     {fixture ? <View style={styles.card}><Text style={styles.section}>Manual playback</Text><Text style={styles.description}>Play a clip deliberately, even while automatic speech is held.</Text>{fixture.stops.map((stop, index) => <View key={stop.id} style={styles.stop}><Text style={styles.stopTitle}>{stop.title} · {state.stops[index]}</Text><View style={styles.row}><View style={styles.flex}><Button label={`Play ${['A', 'B', 'C'][index]}`} disabled={busy} onPress={() => void run(() => session.dispatch({ type: 'manual', index, at: Date.now() }))} /></View><View style={styles.flex}><Button secondary label="Skip" disabled={busy} onPress={() => void run(() => session.dispatch({ type: 'skip', index, at: Date.now() }))} /></View></View></View>)}</View> : null}
     <View style={styles.card}>
       <Text style={styles.section}>Why it spoke — or stayed quiet</Text>
-      <Text selectable style={styles.mono}>{service}\n{state.location.reason}\n{state.location.fix ? `Last fix ${new Date(state.location.fix.timestamp).toLocaleTimeString()} · ±${state.location.fix.accuracy.toFixed(0)} m` : 'No usable fix'}\n{state.location.distance !== undefined ? `To eligible stop: ${state.location.distance.toFixed(0)} m\nCross-track: ${state.location.crossTrack?.toFixed(0)} m\nAlong-route: ${state.location.along?.toFixed(0)} m\nArrival agreement: ${state.location.count} fixes` : ''}</Text>
+      <Text selectable style={styles.mono}>{service}{'\n'}{state.location.reason}{'\n'}{state.location.fix ? `Last fix ${new Date(state.location.fix.timestamp).toLocaleTimeString()} · ±${state.location.fix.accuracy.toFixed(0)} m` : 'No usable fix'}{'\n'}{state.location.distance !== undefined ? `To eligible stop: ${state.location.distance.toFixed(0)} m\nCross-track: ${state.location.crossTrack?.toFixed(0)} m\nAlong-route: ${state.location.along?.toFixed(0)} m\nArrival agreement: ${state.location.count} fixes` : ''}</Text>
       <Button secondary label="Export private diagnostics" disabled={busy} onPress={() => void run(session.exportDiagnostics)} />
       <Button secondary label="Delete diagnostic log" disabled={state.active} onPress={() => Alert.alert('Delete local diagnostics?', 'Export first if you need this walk for debugging. Progress is kept.', [{ text: 'Cancel' }, { text: 'Delete', style: 'destructive', onPress: session.clearDiagnostics }])} />
       {recent.slice(0, 8).map((event, i) => <Text key={i} style={styles.log}>{new Date(event.at).toLocaleTimeString()} · {event.reason}</Text>)}
