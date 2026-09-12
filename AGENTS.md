@@ -38,3 +38,7 @@ Keep credentials, signing material and private traces out of committed files and
 4. Update behavior/architecture/setup documentation and milestone status. Mark “implemented; awaiting physical test” when appropriate; do not mark a milestone passed solely because automation passed.
 5. Review staged files for secrets, private data and unrelated changes. Commit a coherent completed change using the configured identity. Do not amend unrelated commits, rewrite history, create a remote, push or publish without authorization.
 6. Report the outcome concisely: changes, automated verification, physical results still needed, significant risks/decisions and only the owner's necessary actions. If blocked, identify the actual blocker, evidence and smallest next step; finish unaffected work first.
+
+## Current local workflow
+
+M1 uses npm and a project-local Android toolchain. Run `npm run typecheck`, `npm run lint`, `npm test`, Expo compatibility checks and `npm run build:android` as relevant. `tools/android-env.sh` scopes native tool paths; do not edit shell profiles or install emulator images for the physical-phone workflow. `npm start` starts the development client through that wrapper. Native audio customizations are version-guarded in `tools/patch-expo-audio.cjs`; `npm ci` and the build apply them. Update/review the patch when upgrading the SDK. Preserve the early-build staging approach and full physical gate in ROADMAP. Raw device logs/APKs/toolchains remain ignored; the first-walk guide and sanitized result record are under `docs/`.

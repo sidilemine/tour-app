@@ -12,6 +12,7 @@ node_modules/
 expo-env.d.ts
 .metro-cache/
 .cache/
+.toolchain/
 *.tsbuildinfo
 coverage/
 dist/

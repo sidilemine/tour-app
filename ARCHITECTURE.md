@@ -1,12 +1,12 @@
 # Architecture
 
-Status: foundation decisions, 12 September 2026. No implementation exists. [PRODUCT.md](PRODUCT.md) defines the experience; [ROADMAP.md](ROADMAP.md) defines the evidence required before advancing. The owner's revisions override the original brief's mixed state machine, numerical claim-confidence examples, lifecycle milestone ordering and early backend/knowledge-base recommendations.
+Status: M1 implemented, 12 September 2026; physical acceptance pending. [PRODUCT.md](PRODUCT.md) defines the experience; [ROADMAP.md](ROADMAP.md) defines the evidence required before advancing. The owner's revisions override the original brief's mixed state machine, numerical claim-confidence examples, lifecycle milestone ordering and early backend/knowledge-base recommendations.
 
 ## Decisions and boundaries
 
 | Decision | Current choice and reason | Revisit when |
 | --- | --- | --- |
-| ADR-001: mobile stack | React Native, Expo, TypeScript; installed Android development build first. Exact stable SDK/dependency versions are selected and locked at M1. | The combined lifecycle experiment finds a concrete native limitation. |
+| ADR-001: mobile stack | React Native, Expo, TypeScript; installed Android development build first. Expo 57.0.22 / React Native 0.86.3 / TypeScript 6.0.3 are locked for M1. | The combined lifecycle experiment finds a concrete native limitation. |
 | ADR-002: native projects | Expo Continuous Native Generation; commit config/plugins and owned native modules, ignore generated native folders. | A required change cannot be represented reproducibly. |
 | ADR-003: app structure | One app and npm lockfile. Expo Router for screens when useful; plain typed reducers/services for behavior. No mandatory state library or monorepo framework. | Demonstrated complexity warrants one. |
 | ADR-004: playback ownership | A tour-session coordinator owns policies; platform adapters own audio/location; screens observe state and issue commands. | Device evidence requires a bounded native session service. |
@@ -18,7 +18,7 @@ Status: foundation decisions, 12 September 2026. No implementation exists. [PROD
 
 SQLite is supported by Expo and persists across app restarts; the proposed transactional/checkpoint policy below is our design, not something the library supplies automatically. See [Expo SQLite](https://docs.expo.dev/versions/latest/sdk/sqlite/).
 
-Proposed directories, to create only as needed during implementation:
+Original directory guide, with actual M1 layout documented in README. Screens currently live in App.tsx; platform adapters are in src/session rather than additional speculative layers:
 
 ```text
 app/                     screens and navigation
@@ -101,7 +101,7 @@ State transitions return effects; adapters execute effects and report what actua
 3. Play only one clip at a time. If the next eligible arrival occurs during an unfinished clip, retain one pending candidate, finish the current clip and revalidate the candidate with a fresh fix. If the visitor has left, keep it available manually; do not replay a stale queue.
 4. Only native completion or explicit user skip changes a stop to completed/skipped. Physical passage, loading failure and interruption do not. Explicit replay does not reset completed progress. Starting from a chosen stop records the sequence change without pretending earlier content was heard.
 5. Initially pause on calls/focus loss and output disconnection; require explicit resume. Distinguish user/system reasons where the adapter exposes them. An unexplained native pause is treated conservatively as held, not silently auto-resumed. Verify that the library can enforce this policy.
-6. In the early walking tour, directions get planned windows between stories. Do not build a competing navigation-audio engine. If a stored direction becomes overdue during narration, preserve the story and surface the direction visually; allow manual playback/skip. Never start any speech through a user pause.
+6. In the walking player, an actionable walking direction may briefly pause narration, play its prepared cue, then resume the story at the saved offset. Recheck manual hold before the cue and before resuming: a pause during either phase cancels automatic continuation. Prefer planned windows, but do not rely solely on a visual direction when narration runs long. This policy is recorded for M2; M1 does not implement a navigation engine.
 
 ## Route-aware location engine
 
@@ -161,3 +161,17 @@ Authoring order: interpret brief → candidates/evidence → verified visitor po
 | iOS parity | Real iPhone service, permission, interruption and recovery results | M6 / engineer + physical tests |
 
 Current official documentation was consulted on 12 September 2026. Links using `latest` can change. At M1, record the chosen SDK and dependency versions and verify the corresponding versioned APIs; this foundation does not establish device compatibility by documentation alone.
+
+## M1 implementation record
+
+The first native development APK was built as soon as the controls, configurable fixture, reducer, SQLite and diagnostics connected end to end. M1b added replay/crash tests, repeated-walk reset, explicit remote-control events and the self-contained APK. See [test results](docs/test-results/M1.md). Physical operation is unverified; M1 has not passed.
+
+The current adapter keeps a single native player and media service through completed clips and real silence, replacing its media source for each clip. A narrow, version-guarded postinstall patch to expo-audio 57.0.5 disables its native focus-gain auto-resume, enables pause on output disconnection, routes notification/headset play/pause through explicit coordinator events and tags media generations to reject delayed status from the previous source. The patch fails on an unexpected library version or source anchor. This is an Android adapter customization, not a replacement native architecture. Its compile result is verified; actual media-control/focus behavior remains in the phone matrix.
+
+A synchronous SQL transaction saves each processed transition before effects. Native audio status arrives at a requested one-second interval while playing; the five-second recovery acceptance target still needs phone measurement. An epoch gate cancels asynchronous play/seek preparation if a later pause/end arrives. End attempts to stop location even after a storage error. Cold reopening always requires explicit tracking start/resume. Interrupted effects are not automatically replayed.
+
+The fixture loader accepts three ordered standing positions on a recorded/imported path, retaining separate approach/viewpoint/access and optional landmark fields. It does not generate routing or certify physical orientation. Friary Park is an area suggestion only. Changed content needs a distinct version; prior fixture progress is archived locally. New walk resets current progress after confirmation, without deleting prior diagnostic events.
+
+Diagnostics are local and bounded to 10,000 events. Exports are scoped to the current fixture and contain event timestamps, requested/observed audio state, raw fixes when opted in, reasons, snapshots and build/source identity. `tools/replay.ts` reproduces the transitions using the production reducer; raw exports must stay private until deliberately sanitized.
+
+Navigation cues are deliberately absent from M1. The corrected M2 walking policy is to pause a story for an actionable cue and resume it only if no manual pause intervened. No visual-only fallback is treated as sufficient.

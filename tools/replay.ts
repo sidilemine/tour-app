@@ -1,0 +1,11 @@
+import { readFileSync } from 'node:fs';
+import { parseFixture } from '../src/domain/fixture';
+import { replay, Transition } from '../src/domain/replay';
+const file = process.argv[2];
+if (!file) throw Error('Usage: npm run replay -- diagnostics/walking-diagnostics.json');
+const data = JSON.parse(readFileSync(file, 'utf8'));
+const fixture = parseFixture(JSON.stringify(data.fixture));
+const transitions = data.events.filter((entry: {kind:string}) => entry.kind === 'transition') as Transition[];
+if (!transitions.length) throw Error('No transition events found. Start a walk with diagnostics enabled.');
+const result = replay(fixture, transitions);
+console.log(JSON.stringify({ transitions: result.transitions, segments: result.segments, result: 'All stored transitions reproduced' }, null, 2));

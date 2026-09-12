@@ -1,6 +1,6 @@
 # Roadmap
 
-Status: 12 September 2026. Only M0 is complete. This roadmap supersedes the original brief's ordering: lifecycle reliability comes first, and the supervised AI experiment runs alongside early curation. Each implementation assignment ends in appropriate tests/debugging, updated documents and a coherent local commit.
+Status: 12 September 2026. M0 is complete; M1 is implemented and awaiting physical acceptance. This roadmap supersedes the original brief's ordering: lifecycle reliability comes first, and the supervised AI experiment runs alongside early curation. Each implementation assignment ends in appropriate tests/debugging, updated documents and a coherent local commit.
 
 “Implemented; awaiting physical test” is a valid intermediate status, not a passed milestone. Only actual result records can establish device behavior or enjoyable content. Do not treat the whole roadmap as authorization to implement all future work.
 
@@ -12,7 +12,15 @@ Acceptance: documents agree with the owner's revisions, link to each other, dist
 
 ## Milestone 1 — Android audio and location lifecycle spike
 
-**Status: next, not started.** Outcome: establish whether one installed development build can play a clip, stay locked through several minutes of actual silence, and automatically start the next clip on real arrival. This gate precedes map polish and the six-stop player's implementation.
+**Status: implemented; awaiting physical test.** Outcome: establish whether one installed development build can play a clip, stay locked through several minutes of actual silence, and automatically start the next clip on real arrival. This gate precedes map polish and the six-stop player's implementation.
+
+Implementation/build evidence: [M1 result record](docs/test-results/M1.md). For the first attempt use the short [first-walk checklist](docs/FIRST-WALK.md); all criteria below remain required. No phone was connected during implementation, so installation/launch/walking results are pending.
+
+### Delivery stages
+
+1. **M1a — first installable vertical slice:** configurable three-stop fixture, live background fixes, owned local audio, Start/Pause/Resume/manual/End controls, basic SQLite progress and diagnostic export. Build and attempt installation as soon as these connect end to end. Deliver a short first-walk checklist.
+2. **M1b — complete independent work:** harden arbitration/recovery, replay and SQLite failure tests, prepare the self-contained APK, retain the full physical matrix below and document all pending evidence.
+3. **Physical acceptance:** keep M1 at “implemented; awaiting physical test” when independent implementation is done. An initial successful walk does not satisfy the full criteria.
 
 ### Bounded implementation
 
@@ -21,7 +29,7 @@ Acceptance: documents agree with the owner's revisions, link to each other, dist
 - Register background location and configure audio/lock-screen services. Start them while visible, confirm actual readiness, then allow the locked walk. No live TTS, LLM, backend, silent-loop audio or artificial location injection in the physical pass.
 - Build the minimal pure route matcher (known path, usable-fix persistence, next-stop gating, hysteresis and duplicate suppression), separate state domains, scheduler/holds and SQLite checkpoints. Avoid implementing the whole future matcher.
 - Provide Start, Pause/Resume, End tour, automatic narration on/off, manual stop play/skip and local diagnostic export. Capture actual audio results as well as requested actions. Manual pause during silence must be possible from the app; keep remote controls usable where supported and verify behavior.
-- Produce the installed development build **and** a self-contained locally sideloaded release-variant test APK for offline cold-start/recovery verification. [README.md](README.md#walking-without-the-mac) explains the difference. The second build supplements the development-build test; it does not replace it.
+- Produce the installed development build **and** a self-contained locally sideloaded release-variant test APK for offline cold-start/recovery verification. [README.md](README.md#install-and-take-the-first-walk) explains the difference. The second build supplements the development-build test; it does not replace it.
 
 ### Automated acceptance
 
@@ -39,8 +47,8 @@ The engineer prepares the builds, fixture, diagnostics and result template. Sidi
 2. **Prepare while connected.** Install the development build, load its JavaScript, import/cache every test asset in durable local storage and verify they open. Grant permissions and start an explicit diagnostic walk. Wait for fresh usable fixes and service readiness. Start clip A.
 3. **Remove development support.** Disable Fast Refresh, unplug USB, stop Metro on the Mac, turn off Wi-Fi/mobile data on the phone while leaving location enabled, and lock the screen. The app must already be loaded; do not reload the development client during this run.
 4. **Exercise the critical gap.** Hear A finish. Keep the screen locked, walk for **at least three minutes of genuine silence** (target 3–5), then enter B's verified standing area and wait up to 30 seconds. B must begin audibly once without unlocking or pressing Play. Do not use a silent track or merely mute a continuously playing clip. Repeat B → C with another silent interval of at least three minutes. Record actual gap and arrival/play timestamps.
-5. **Repeat baseline.** Obtain three consecutive successful walks (six silent-gap arrivals in total) under recorded baseline conditions. No wrong, duplicate or out-of-order clips; no unlock required for arrival. The 30-second arrival window is an initial usability criterion for this controlled route, not a universal GPS promise. A late/missed trigger is a failed test even if manual fallback works.
-6. **Test holds and contention separately.** Pause in-app mid-clip, then pause from lock-screen/headset controls where available. Walk into the next stop and wait at least 60 seconds: silence must continue until explicit Resume. Also pause during a silent gap. Test early arrival while a deliberately longer preceding clip is unfinished; it must finish without overlap, and the pending clip may start only if still appropriate. Pass the pending stop and verify no stale backlog plays.
+5. **Repeat baseline.** Use End then New walk/reset between independent attempts. Obtain three consecutive successful walks (six silent-gap arrivals in total) under recorded baseline conditions. No wrong, duplicate or out-of-order clips; no unlock required for arrival. The 30-second arrival window is an initial usability criterion for this controlled route, not a universal GPS promise. A late/missed trigger is a failed test even if manual fallback works.
+6. **Test holds and contention separately.** Pause in-app mid-clip, then pause from lock-screen/headset controls where available. Walk into the next stop and wait at least 60 seconds: silence must continue until explicit Resume. Also pause during a silent gap. Test early arrival while a preceding clip is longer than the approach (a separate checked fixture with B near A lets the existing 11-second clip exercise this without long TTS); it must finish without overlap, and the pending clip may start only if still appropriate. Pass the pending stop and verify no stale backlog plays.
 7. **Test interruptions and degradation.** Use a call or competing audio app, disconnect headphones/Bluetooth, deny/revoke location, turn location off/on and leave/rejoin the known route. Interrupted audio stays paused until explicit resume; denied/poor location leaves manual playback usable. Inspect power-saving behavior in a separately labeled run; do not silently change battery settings to claim a default-settings pass.
 8. **Test reopening.** First verify persisted progress after terminating/reopening the development build, reconnecting to Metro if required and recording that dependency. Then install the self-contained build, verify a cold launch with Metro stopped/data off, repeat the locked silent-gap test, and test termination/reopen offline. Use Android Settings → Apps → this app → Force stop, then reopen from its icon. Check saved offset (target no more than five seconds of lost narration position), completed/skipped stops and manual hold. Test swipe-away separately because it is not equivalent to force-stop on every device. Never uninstall, clear storage or reinstall between a checkpoint and its recovery assertion.
 9. **Collect evidence.** Export local logs, reconnect for native logs if necessary, record end battery, and review failures with service/task, fix, trigger, playback and checkpoint timestamps. A debugger/USB-only pass or missing logs through the silent interval is inconclusive. Keep raw traces private; commit a sanitized result summary and approved replay fixture.

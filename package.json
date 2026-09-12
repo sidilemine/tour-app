@@ -1,0 +1,45 @@
+{
+  "name": "walking-tour-spike",
+  "description": "Android walking-tour lifecycle experiment",
+  "license": "UNLICENSED",
+  "version": "0.1.0",
+  "main": "index.ts",
+  "dependencies": {
+    "expo": "~57.0.22",
+    "expo-asset": "~57.0.17",
+    "expo-audio": "57.0.5",
+    "expo-battery": "~57.0.3",
+    "expo-build-properties": "~57.0.17",
+    "expo-dev-client": "~57.0.19",
+    "expo-device": "~57.0.2",
+    "expo-document-picker": "~57.0.2",
+    "expo-file-system": "~57.0.7",
+    "expo-location": "~57.0.17",
+    "expo-sharing": "~57.0.19",
+    "expo-sqlite": "~57.0.3",
+    "expo-status-bar": "~57.0.1",
+    "expo-task-manager": "~57.0.17",
+    "react": "19.2.3",
+    "react-native": "0.86.3",
+    "zod": "^4.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.4",
+    "@types/react": "~19.2.2",
+    "eslint": "^9.39.5",
+    "eslint-config-expo": "^57.0.2",
+    "tsx": "^4.23.13",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "sh tools/android-env.sh npx expo start --dev-client --localhost",
+    "android": "sh tools/android-env.sh npx expo run:android --device",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "postinstall": "node tools/patch-expo-audio.cjs",
+    "build:android": "sh tools/build-android.sh",
+    "replay": "node --import tsx tools/replay.ts"
+  },
+  "private": true
+}

@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "Walking Tour Lab",
+    "slug": "walking-tour-lab",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "icon": "./assets/icon.png",
+    "android": {
+      "package": "uk.sidi.walkingtourlab",
+      "versionCode": 1,
+      "permissions": ["POST_NOTIFICATIONS"],
+      "blockedPermissions": ["android.permission.RECORD_AUDIO"]
+    },
+    "plugins": [
+      ["expo-location", {"isAndroidBackgroundLocationEnabled": true, "isAndroidForegroundServiceEnabled": true}],
+      ["expo-audio", {"enableBackgroundPlayback": true, "enableBackgroundRecording": false, "recordAudioAndroid": false, "microphonePermission": false}],
+      "expo-sqlite",
+      ["expo-build-properties", {"android": {"buildArchs": ["arm64-v8a"]}}]
+    ]
+  }
+}

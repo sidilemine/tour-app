@@ -1,97 +1,83 @@
-# Self-guided audio tours
+# Walking Tour Lab
 
-A walking tour player for Sidi's Android phone, with iOS to follow. Tours are prepared ahead of time and played from local packages; ordinary walks need no live LLM, TTS or server.
+An Android device experiment for a self-guided walking audio player, built with React Native, Expo and TypeScript. M1 is **implemented; awaiting physical test**. This is a three-stop lifecycle lab, not the six-stop product or an offline map/navigation engine.
 
-## Repository status
+The original [brief](ai_self_guided_tour_project_brief.md) is unchanged. [PRODUCT.md](PRODUCT.md), [ARCHITECTURE.md](ARCHITECTURE.md), [AGENTS.md](AGENTS.md) and [ROADMAP.md](ROADMAP.md) are the maintained project contract. The owner's latest instructions override conflicting brief recommendations.
 
-Foundation only, established 12 September 2026. There is no app scaffold, package manifest, installed project dependencies or runnable application yet. The next assignment is **M1: combined background audio and location on a physical Android phone**, as specified in [ROADMAP.md](ROADMAP.md#milestone-1--android-audio-and-location-lifecycle-spike).
+## Install and take the first walk
 
-The original [project brief](ai_self_guided_tour_project_brief.md) is preserved unchanged. The product owner's agreed revisions, recorded in these documents, supersede conflicting examples and ordering in that brief.
+Start with [docs/FIRST-WALK.md](docs/FIRST-WALK.md). The full physical acceptance matrix remains in [ROADMAP.md](ROADMAP.md#physical-phone-procedure-for-m1); an initial successful walk does not complete M1. Recorded verification is in [docs/test-results/M1.md](docs/test-results/M1.md).
+
+Local build outputs (ignored by Git):
 
 | File | Purpose |
 | --- | --- |
-| [PRODUCT.md](PRODUCT.md) | Experience, behavior and scope |
-| [ARCHITECTURE.md](ARCHITECTURE.md) | Boundaries, decisions, data and risks |
-| [AGENTS.md](AGENTS.md) | Permanent engineering operating instructions |
-| [ROADMAP.md](ROADMAP.md) | Milestones, acceptance criteria and device procedure |
+| `artifacts/walking-tour-development.apk` | Installed Expo development client; load JavaScript from Metro before the walk |
+| `artifacts/walking-tour-offline.apk` | Self-contained release variant with embedded JavaScript and all three clips; no Metro needed |
+| `artifacts/walking-tour-m1a-development.apk` | Earlier vertical-slice checkpoint; prefer the final development build |
 
-## Environment inspected
-
-Observed on this Mac on 12 September 2026; recheck before implementation.
-
-| Item | Observation |
-| --- | --- |
-| Host | Apple Silicon (`arm64`), macOS 15.2, Zsh |
-| Node / npm | Node 24.13.0, npm 11.6.2; native arm64 support present |
-| Git | Apple Git 2.39.2; author identity already configured |
-| Apple command-line tools | Present at `/Library/Developer/CommandLineTools` |
-| Android build tools | Android Studio, SDK, `adb` and `sdkmanager` not found in PATH or inspected standard application/SDK locations |
-| Java | `/usr/bin/java` is a launcher; no usable JDK found by `java_home`; standard JVM directory empty |
-| Phone | No Android USB device observed; model, Android version and permissions unverified |
-| Storage | About 15 GiB available on the project volume at inspection time |
-
-The missing setup that blocks **local M1 device execution** is a working JDK and Android SDK/toolchain, plus a connected, USB-authorized Android phone for installation and physical tests. This does not block implementing the scaffold or running JavaScript tests. Storage headroom must be checked when installing the toolchain; it is an observed constraint, not a proven failure. Do not delete the owner's files to make space.
-
-## Recommended Android workflow
-
-Use **Expo CLI locally, with an installed development build and a USB-connected physical phone**. This supports repeated native debugging without an Expo account or remote build service. Expo Go is not the acceptance environment: we need our own native configuration for background services. Expo documents local compilation and `expo-dev-client` in its [local build guide](https://docs.expo.dev/guides/local-app-development/).
-
-EAS cloud builds reduce Mac toolchain setup, but require account access and sending project inputs to Expo. They are an optional fallback if local setup proves impractical; no cloud build, remote repository, upload or publication is authorized by this foundation task. A local build is the recommended working path, and no store membership is needed for it. See Expo's [build workflow comparison](https://docs.expo.dev/develop/development-builds/introduction/).
-
-### One-time local setup, when M1 starts
-
-1. Install the Apple Silicon edition of Android Studio and a macOS arm64 JDK 17. Expo's current [Android setup instructions](https://docs.expo.dev/workflow/android-studio-emulator/) recommend JDK 17 and Android SDK Platform 36. Reconcile these with the stable Expo SDK selected for M1; record the actual versions, including Gradle/NDK requirements from the generated project.
-2. Through Android Studio's SDK Manager, install the required SDK platform, build tools, platform tools and command-line tools. Let the generated native build identify any required NDK/CMake versions. Use the real phone; an emulator and its system images are optional.
-3. Set the shell's Java and SDK paths to the installed locations. For the standard SDK location and a registered JDK 17:
-
-   ```sh
-   export JAVA_HOME="$(/usr/libexec/java_home -v 17)"
-   export ANDROID_HOME="$HOME/Library/Android/sdk"
-   export PATH="$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"
-   java -version
-   adb version
-   ```
-
-   Persist these exports in the appropriate local Zsh configuration once verified; do not commit machine-specific paths. Do not replace an existing shell configuration.
-4. On the phone, enable Developer options and USB debugging, connect a data-capable cable and accept this Mac's debugging authorization. `adb devices -l` must show `device`, not `unauthorized`. These physical authorization steps require Sidi. Android's [hardware-device guide](https://developer.android.com/studio/run/device) describes pairing and connection troubleshooting.
-
-Native installers or license prompts may need owner interaction; the engineer should perform all available routine setup and diagnosis. Full Xcode, iOS signing, a map-provider account, backend credentials and AI/TTS accounts are not prerequisites for M1. Use owned test recordings.
-
-### Scaffold and build commands — future M1, not runnable yet
-
-The implementation agent will choose and pin a stable Expo SDK with its compatible React Native and TypeScript versions, create a single app at the repository root, and retain these documents. Generate the template in a temporary directory and selectively integrate it; do not overwrite the nonempty repository or its Git history. Use npm and commit `package-lock.json`; no monorepo tooling is needed.
-
-After scaffolding, install SDK-compatible modules:
+The APKs target ARM64 Android, minimum API 24, target/compile API 36. No phone has been detected/authorized during implementation, so installation, launch and compatibility with Sidi's actual handset are pending. Both final APKs use the same package ID (`uk.sidi.walkingtourlab`) and development signing certificate. Installing one replaces the other without needing to uninstall; never clear app data during recovery testing.
 
 ```sh
-npx expo install expo-dev-client expo-location expo-task-manager expo-audio expo-sqlite expo-file-system expo-asset
-npx expo run:android --device
+sh tools/android-env.sh adb devices -l
+sh tools/android-env.sh adb install -r artifacts/walking-tour-development.apk
+sh tools/android-env.sh adb reverse tcp:8081 tcp:8081
+npm start
 ```
 
-For subsequent JavaScript-only changes:
+Press `a` in Metro to open the app. `npm start` uses the project toolchain and localhost; USB forwarding avoids a LAN dependency while preparing the build. Keep connected until **Start** has copied all clips to durable local files. For a development-build walk: disable Fast Refresh, unplug, stop Metro, turn off phone Wi-Fi/data while keeping Location enabled, and lock. A loaded development session does not prove offline cold launch.
+
+For the self-contained build:
+
+```sh
+sh tools/android-env.sh adb install -r artifacts/walking-tour-offline.apk
+```
+
+Open **Walking Tour Lab** from the phone's app list. Check cold launch with Metro stopped and data/Wi-Fi off. Expo's [local compilation guide](https://docs.expo.dev/guides/local-app-development/) documents development and release variants; this project performs no EAS build, remote upload, store signing or publication.
+
+## Configure a walking fixture
+
+Use **Configure / load fixture** in the app:
+
+- **Record a path:** keep the preparation screen open, capture A, walk a known path for roughly four minutes, capture B, then another roughly four minutes to C. The recorder retains intermediate geometry. Check access and standing areas yourself; GPS capture is not physical verification. Stop moving before tapping.
+- **Import or paste JSON:** validate and load a three-stop fixture, then export a copy if desired. The [synthetic example](fixtures/synthetic-three-stop.json) documents the format and is only for desk/replay tests, never a real walk.
+
+Standings, optional landmark coordinates, approach, viewpoint and access remain separate fields. Changed content under an existing ID/version is rejected: increment its version. A new fixture gets separate progress; previously loaded fixture progress is archived locally. Export logs before changing fixtures; an export includes events for the current fixture only.
+
+**Friary Park, North Finchley** is the proposed nearby test area; [Barnet Council](https://www.barnet.gov.uk/directories/parks/friary-park) lists it at Friary Road, N12. No geographically invented route or claim of field verification is bundled. The recorder allows Sidi to choose actual paths and standing positions there or elsewhere.
+
+Start, Pause, Resume, manual clip play, Skip, End, automatic playback on/off and New walk/reset are available. Start after recovery restores tracking but keeps the saved hold; use Resume deliberately. End stops tracking. Manual Play intentionally plays one selection without clearing an automatic hold. Diagnostics explain eligible stop, GPS age/accuracy, route distance, dwell, pauses and audio requests/status.
+
+## Development setup on this Mac
+
+Inspected and installed locally on 12 September 2026:
+
+| Component | Version/location |
+| --- | --- |
+| Host | macOS 15.2, Apple Silicon; Node 24.13.0, npm 11.6.2, Git 2.39.2 already present |
+| Expo / React Native / React | 57.0.22 / 0.86.3 / 19.2.3, locked by `package-lock.json` |
+| TypeScript | 6.0.3 |
+| JDK | Temurin 17.0.20.1+1, ARM64, `.toolchain/jdk` |
+| Android tools | `.toolchain/android-sdk`; command-line tools 22.0, platform-tools 37.0.1 |
+| Native build | SDK/build tools 36/36.0.0; NDK 27.1.12297006; CMake 3.22.1; Gradle wrapper 9.3.1 |
+
+Only the physical-build components were installed: no Android Studio, emulator or system images. The JDK/command-line downloads were checked against publisher SHA-256 values. Shell profiles and other projects were not changed. ADB creates its normal local authentication directory. Disk space was rechecked throughout and did not block builds; no owner files were deleted. About 15 GiB was available initially; available space varies during builds.
+
+On a fresh checkout on an Apple Silicon Mac:
 
 ```sh
 npm ci
-npx expo start --dev-client
+sh tools/setup-android.sh
+npm run build:android
 ```
 
-Use USB port forwarding if needed for Metro:
+`setup-android.sh` downloads pinned tools into ignored project-local directories and accepts the ordinary SDK package licenses. [Android's tool downloads](https://developer.android.com/studio) provide the command-line-only option. `tools/android-env.sh` scopes JDK/SDK/Gradle paths to a single command rather than editing shell configuration.
 
-```sh
-adb reverse tcp:8081 tcp:8081
-```
+`build:android` regenerates native projects from committed Expo config, builds both ARM64 variants and verifies their signatures. Native `/android` and `/ios` directories are generated/ignored. Keep customizations in committed scripts/config/owned modules before regenerating. The only native library patch is the version-guarded [audio adapter patch](tools/patch-expo-audio.cjs), applied by `npm ci`'s postinstall and the build script. Rebuild after native changes; JavaScript-only changes use Metro. Rebuild the self-contained APK after any application change.
 
-Native dependency/config-plugin changes require regeneration and a new build. With all native customizations captured in committed config/plugins and the working tree checked, use `npx expo prebuild --clean --platform android`, then rebuild. `--clean` deletes generated native directories; never use it to discard unpreserved work. This repository adopts [Continuous Native Generation](https://docs.expo.dev/workflow/continuous-native-generation/) and ignores generated `/android/` and `/ios/` directories.
+No backend, paid TTS, AI provider, map key, full Xcode or store membership is needed for M1. The remaining setup blocker is the physical Android phone: connect a data cable, enable USB debugging and accept this Mac on the handset. The engineer can run installation/build commands; Sidi supplies phone/OS prompts and walking observations.
 
-### Walking without the Mac
-
-A normal development client gets JavaScript from Metro. For the M1 development-build walk, load the bundle and copy **every test asset to durable local storage** while connected, confirm readiness, disable Fast Refresh, unplug, and stop Metro before testing. The running session must perform the silence-to-arrival transition without the Mac. An already loaded development session does not establish offline cold-start support.
-
-M1 must also produce a locally installed, self-contained release-variant test APK with embedded JavaScript and assets, using `npx expo run:android --device --variant release`. Verify its generated signing configuration and use a local development key for sideloading if needed; this is not store signing or distribution. Keep the key and APK out of Git. Verify cold launch with Metro stopped and phone data/Wi-Fi off before calling it self-contained. Use consistent local signing when replacing the development build so installation does not erase progress; test recovery within each build, without uninstalling.
-
-## Verification and debugging
-
-M1 will add these actual npm scripts; none exist at foundation stage:
+## Verification and diagnostics
 
 ```sh
 npm run typecheck
@@ -99,17 +85,28 @@ npm run lint
 npm test
 npx expo install --check
 npx expo-doctor
+npm run replay -- diagnostics/walking-diagnostics.json
 ```
 
-Tests will exercise deterministic location/event replays, playback policy and durable recovery. They cannot establish real Android background behavior. [ROADMAP.md](ROADMAP.md#physical-phone-procedure-for-m1) contains the required physical test and pass/fail record.
+Tests use deterministic timestamps, real Node SQLite files, failed transactions and a killed subprocess. They do not simulate proof of Android service survival, audible sound, lock-screen controls or real walking GPS. APK inspection verifies embedded assets and configuration, not successful device execution.
 
-The diagnostic screen must export structured, locally recorded events after an unplugged walk. Reconnect the phone for supplemental native diagnostics:
+Use **Export private diagnostics** after the walk. Up to 10,000 locally stored events include build/source identity, state before/after, reasons and (when explicitly enabled) precise fixes. New walk resets progress but retains logs. The replay runner checks recorded state/effect results and reports discontinuities as separate segments. A source/policy revision may deliberately change replay outcomes; preserve the original export for diagnosis.
 
 ```sh
 mkdir -p diagnostics
-adb logcat -d -v threadtime > diagnostics/android-logcat.txt
+sh tools/android-env.sh adb logcat -d -v threadtime > diagnostics/android-logcat.txt
 ```
 
-Logcat can include unrelated device information. Keep raw exports private and ignored; inspect before sharing. Commit only deliberately sanitized replay fixtures and a result summary. Record build identifier, device/OS, settings, steps, expected/actual result and relevant event timestamps. No precise location upload or telemetry service is needed.
+Raw exports stay ignored/private. Logcat may include unrelated device information. Review and sanitize before sharing or committing a fixture. Synthetic fixtures are labeled accordingly. No precise location telemetry or automatic upload exists.
 
-At foundation stage, verification consists of file/link consistency, ignore-rule checks, unchanged-brief verification and Git review. No app, native build or physical-phone behavior has been tested.
+## Code layout
+
+- `App.tsx`: controls, fixture recorder/import and diagnostics UI.
+- `src/domain/`: fixture validation, geometry and deterministic state transitions.
+- `src/session/`: live Expo location/audio adapters, task registration and serialized coordination.
+- `src/storage/`: shared SQL transaction policy used by Expo SQLite and Node tests.
+- `tests/`, `fixtures/`: automated cases and synthetic input data.
+- `tools/`: scoped build/setup, guarded audio patch, source identity and replay tools.
+- `assets/audio/`: three short local clips; [provenance/transcripts](assets/audio/README.md).
+
+The Expo blank template's license is retained in [TEMPLATE-LICENSE](TEMPLATE-LICENSE). The project is private and no distribution license has been granted.

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "synthetic-linear",
+  "version": 1,
+  "title": "Synthetic replay only — not a real walking route",
+  "verification": {
+    "status": "unverified",
+    "note": "Synthetic coordinates for automated tests; never use for physical walking."
+  },
+  "route": [
+    {
+      "latitude": 0,
+      "longitude": 0
+    },
+    {
+      "latitude": 0.00045,
+      "longitude": 0
+    },
+    {
+      "latitude": 0.0009,
+      "longitude": 0
+    },
+    {
+      "latitude": 0.00135,
+      "longitude": 0
+    },
+    {
+      "latitude": 0.0018,
+      "longitude": 0
+    },
+    {
+      "latitude": 0.00225,
+      "longitude": 0
+    },
+    {
+      "latitude": 0.0027,
+      "longitude": 0
+    },
+    {
+      "latitude": 0.00315,
+      "longitude": 0
+    },
+    {
+      "latitude": 0.0036,
+      "longitude": 0
+    },
+    {
+      "latitude": 0.00405,
+      "longitude": 0
+    },
+    {
+      "latitude": 0.0045,
+      "longitude": 0
+    },
+    {
+      "latitude": 0.0049499999999999995,
+      "longitude": 0
+    },
+    {
+      "latitude": 0.0054,
+      "longitude": 0
+    },
+    {
+      "latitude": 0.00585,
+      "longitude": 0
+    },
+    {
+      "latitude": 0.0063,
+      "longitude": 0
+    },
+    {
+      "latitude": 0.00675,
+      "longitude": 0
+    },
+    {
+      "latitude": 0.0072,
+      "longitude": 0
+    },
+    {
+      "latitude": 0.00765,
+      "longitude": 0
+    },
+    {
+      "latitude": 0.0081,
+      "longitude": 0
+    },
+    {
+      "latitude": 0.00855,
+      "longitude": 0
+    },
+    {
+      "latitude": 0.009,
+      "longitude": 0
+    }
+  ],
+  "stops": [
+    {
+      "id": "a",
+      "title": "A",
+      "standing": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "routeIndex": 0,
+      "approach": "Synthetic",
+      "viewpoint": "Unverified",
+      "access": "Not a physical route"
+    },
+    {
+      "id": "b",
+      "title": "B",
+      "standing": {
+        "latitude": 0.0045,
+        "longitude": 0
+      },
+      "routeIndex": 10,
+      "approach": "Synthetic",
+      "viewpoint": "Unverified",
+      "access": "Not a physical route"
+    },
+    {
+      "id": "c",
+      "title": "C",
+      "standing": {
+        "latitude": 0.009,
+        "longitude": 0
+      },
+      "routeIndex": 20,
+      "approach": "Synthetic",
+      "viewpoint": "Unverified",
+      "access": "Not a physical route"
+    }
+  ]
+}
