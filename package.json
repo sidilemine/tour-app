@@ -41,5 +41,14 @@
     "build:android": "sh tools/build-android.sh",
     "replay": "node --import tsx tools/replay.ts"
   },
-  "private": true
+  "private": true,
+  "expo": {
+    "autolinking": {
+      "android": {
+        "buildFromSource": [
+          "expo-audio"
+        ]
+      }
+    }
+  }
 }

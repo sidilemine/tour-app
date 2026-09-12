@@ -12,6 +12,7 @@ import { eligible, Event, initialState, recovered, reduce, State } from '../doma
 import { Store } from '../storage/store';
 import { PlayGate } from './playGate';
 import buildInfo from '../buildInfo.json';
+import { nativeAudioGeneration } from './nativeAudio';
 const build = { ...buildInfo, variant: __DEV__ ? 'development' : 'offline-release' };
 
 export const LOCATION_TASK = 'walking-tour-location-v1';
@@ -107,11 +108,12 @@ export function dispatch(event: Event): Promise<void> {
         const p = existing ?? createAudioPlayer({ uri: files[effect.index] }, { updateInterval: 1000 });
         if (existing) { p.pause(); p.replace({ uri: files[effect.index] }); }
         player = p;
-        const generation = (p.currentStatus as AudioStatus & { tourGeneration?: number }).tourGeneration;
+        const generation = nativeAudioGeneration(p.currentStatus);
         statusListener = p.addListener('playbackStatusUpdate', (status: AudioStatus) => {
           if (player !== p || (status as AudioStatus & { tourGeneration?: number }).tourGeneration !== generation) return;
           const control = (status as AudioStatus & { tourCommand?: string }).tourCommand;
           if (control) {
+            record('remote-command', { command: control });
             void dispatch({ type: control === 'play' ? 'resume' : 'pause', at: Date.now() }).catch(() => {});
             return;
           }

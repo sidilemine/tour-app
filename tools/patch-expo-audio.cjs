@@ -45,3 +45,5 @@ patch('AudioPlayer.kt', '  init {\n    installPlayerListeners()', '  init {\n   
 patch('AudioPlayer.kt', '  var preservesPitch = true', '  var tourGeneration: Int = 0\n  var preservesPitch = true');
 patch('AudioPlayer.kt', '  fun setMediaSource(source: MediaSource) {\n    previousPlaybackState', '  fun setMediaSource(source: MediaSource) {\n    tourGeneration++\n    previousPlaybackState');
 patch('AudioPlayer.kt', '      "id" to id,', '      "tourGeneration" to tourGeneration,\n      "id" to id,');
+
+patch('AudioPlayer.kt', '      "tourGeneration" to tourGeneration,', '      "tourAdapterVersion" to 1,\n      "tourGeneration" to tourGeneration,');

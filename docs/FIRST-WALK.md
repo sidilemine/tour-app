@@ -13,7 +13,7 @@ sh tools/android-env.sh adb reverse tcp:8081 tcp:8081
 npm start
 ```
 
-Press `a` in Metro's terminal to open the development client. If needed, choose the development server from the client's launcher. Keep Metro connected until Start has prepared all local clips. There is no need for an Expo account.
+Press `a` in Metro's terminal to open the development client. If needed, choose the development server from the client's launcher. Keep Metro connected until Start has prepared all local clips. There is no need for an Expo account. Before leaving the Mac to record a real path, prepare the clips: the engineer can load the clearly labeled synthetic fixture and use Manual Play A without starting tracking. This copies all three clips into durable app storage. Verify playback and pause, then replace that synthetic fixture with the recorded/checked path before starting a physical tour. Never press the path-checked Start confirmation for the synthetic fixture.
 
 The self-contained APK uses embedded JavaScript and audio:
 
