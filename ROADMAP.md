@@ -59,6 +59,8 @@ M1 passes only when automated checks and the physical procedure meet their crite
 
 If the combined scenario fails, isolate service lifetime, permissions, task delivery, audio focus and player ownership. Fix within the adapter boundary and retest. If a substantial native replacement is required, present the smallest tested alternative and tradeoffs for owner review. Keep M1 open or explicitly blocked with evidence; do not silently redefine success as screen-on playback. M2/E1 content desk research can still proceed independently of device debugging.
 
+The first reported field attempt on 13 September failed with native crashes at Start. The missing persisted-job permission is corrected; the failure and device retests are recorded in [M1 results](docs/test-results/M1.md). The full physical gate remains open.
+
 ## Milestone 2 — curated six-stop offline walk
 
 **Status: planned; player work follows M1.** The first content planning and E1 can start alongside M1.

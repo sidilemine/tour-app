@@ -9,7 +9,7 @@
     "android": {
       "package": "uk.sidi.walkingtourlab",
       "versionCode": 1,
-      "permissions": ["POST_NOTIFICATIONS"],
+      "permissions": ["POST_NOTIFICATIONS", "RECEIVE_BOOT_COMPLETED"],
       "blockedPermissions": ["android.permission.RECORD_AUDIO"]
     },
     "plugins": [

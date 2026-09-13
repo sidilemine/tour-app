@@ -42,6 +42,7 @@ Record which variant is being tested. In the self-contained build, skip develope
 
 - Record phone model/Android version, build variant, battery level and battery-saver settings. Test with ordinary settings, no debugger and no USB charging during the walk.
 - Enable private diagnostics. Tap **Start tracking + first clip**. Grant precise foreground location, then background “Allow all the time” when Android opens Settings. Return to the app. If Start reports denied permission, correct it and press Start again. Manual audio remains available without location permission.
+- Before leaving, check **Why it spoke — or stayed quiet** shows “Receiving background-capable fixes” and that the last-fix time advances. “Registered; waiting for fixes” alone is not ready. If no fixes arrive, keep the diagnostics and report the failure rather than repeating a whole walk.
 - Hear A; check that fixes are arriving, then disable Fast Refresh in the developer menu, unplug, stop Metro and turn Wi-Fi/mobile data off while leaving Location enabled. Lock the phone.
 - Let A finish. Walk **at least 3 minutes of genuine silence** to B. B should play once, within 30 seconds of arrival, without unlocking. Repeat B → C. No silent-loop audio is used.
 - On a separate run, press **Pause** during silence or narration, arrive at the next stop and wait 60 seconds: it must stay silent until **Resume**. **Manual Play** deliberately plays one selection while preserving the automatic hold.
@@ -50,3 +51,5 @@ Record which variant is being tested. In the self-contained build, skip develope
 An initial successful walk is not M1 completion. Record early arrival, interruption/output changes, permission loss, repeated walks, and offline termination/reopen using the full matrix. After reopening: Start restores tracking but preserves the saved hold; Resume is deliberate. Force-stop is expected to end operation until reopened.
 
 If a clip does not play, stop safely and inspect **Why it spoke — or stayed quiet**: GPS accuracy/age, cross-track distance, distance to the eligible stop, dwell agreement, hold/automatic state, and requested versus actual playback. Keep the export even when the test fails.
+
+After a failed attempt, keep the exported fixture and diagnostics. **New walk / reset progress** resets playback progress only; it keeps the loaded route and previous diagnostics. Use it after End when you want a fresh A → B → C attempt. Reopening alone deliberately restores progress rather than starting A again.

@@ -17,3 +17,15 @@ test('replay identifies a changed policy result instead of trusting logged after
   const entries=capture();entries[4].after={...entries[4].after,hold:'incorrect'};
   assert.throws(()=>replay(fixture,entries),/divergence/);
 });
+test('first stale location after reopening replays without an undefined saved fix',()=>{
+  const event: Event = {type:'fix',at:210000,fix:{...fixture.stops[1].standing,accuracy:5,timestamp:190000}};
+  const before=capture()[1].after;
+  const result=reduce(before,event,fixture);
+  assert.equal(result.reason,'stale-fix');
+  assert.ok(Object.hasOwn(result.state.location,'fix'));
+  assert.equal(result.state.location.fix,undefined);
+  const entry: Transition={kind:'transition',event,before,after:result.state,effects:result.effects,reason:result.reason};
+  assert.equal(replay(fixture,JSON.parse(JSON.stringify([entry]))).transitions,1);
+  const corrupted=JSON.parse(JSON.stringify([entry]));corrupted[0].after.location.count=999;
+  assert.throws(()=>replay(fixture,corrupted),/divergence/);
+});

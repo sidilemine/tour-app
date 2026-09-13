@@ -11,4 +11,4 @@ cp android/app/build/outputs/apk/debug/app-debug.apk artifacts/walking-tour-deve
 cp android/app/build/outputs/apk/release/app-release.apk artifacts/walking-tour-offline.apk
 sh tools/android-env.sh apksigner verify artifacts/walking-tour-development.apk
 sh tools/android-env.sh apksigner verify artifacts/walking-tour-offline.apk
-python3 tools/verify-audio-apk.py artifacts/walking-tour-development.apk artifacts/walking-tour-offline.apk
+python3 tools/verify-android-apk.py artifacts/walking-tour-development.apk artifacts/walking-tour-offline.apk

@@ -125,6 +125,8 @@ Log whether services survive the silent gap, background fixes arrive, the coordi
 
 If Expo cannot meet this behavior, isolate whether the failure is task delivery, service lifetime, audio focus, remote controls or player ownership. Try a bounded adapter/configuration fix and document evidence. A major switch to a different native architecture requires an owner decision with a concrete comparison. Do not move on to a polished player while this gate is unresolved.
 
+Expo TaskManager's location delivery schedules persisted Android jobs. The app explicitly declares `RECEIVE_BOOT_COMPLETED`, required by [JobInfo.Builder.setPersisted](https://developer.android.com/reference/android/app/job/JobInfo.Builder#setPersisted(boolean)); omitting it caused the first physical Start attempts to crash natively. The build checks this permission in the final APK, along with the audio/location foreground-service permissions. The player's explicit recovery hold is unchanged; this is not automatic tour resumption.
+
 An OS kill or force-stop may end all services. Reopening and recovery are required; automatic resurrection or uninterrupted operation after force-close is not. iOS lifecycle behavior requires its own physical-device milestone.
 
 ## Persistence and diagnostics
