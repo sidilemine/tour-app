@@ -5,7 +5,6 @@ import * as Location from 'expo-location';
 import * as SQLite from 'expo-sqlite';
 import * as Battery from 'expo-battery';
 import * as Device from 'expo-device';
-import * as Sharing from 'expo-sharing';
 import { AppState, PermissionsAndroid, Platform } from 'react-native';
 import { Fixture, parseFixture } from '../domain/fixture';
 import { eligible, Event, initialState, recovered, reduce, State } from '../domain/engine';
@@ -200,11 +199,9 @@ export async function locationError(error: unknown) {
   init();
   if (fixture) await dispatch({ type: 'unavailable', at: Date.now(), reason: `location-task-error:${String(error)}` });
 }
-export async function exportDiagnostics() {
+export async function diagnosticSnapshot() {
   init(); await queue;
-  const path = `${FileSystem.documentDirectory}walking-diagnostics.json`;
-  await FileSystem.writeAsStringAsync(path, JSON.stringify({ schemaVersion: 1, exportedAt: new Date().toISOString(), fixture, state, build: { ...build, model: Device.modelName, os: Device.osVersion }, events: store.events().filter(event => event.fixtureKey === fixtureKey(fixture)) }, null, 2));
-  await Sharing.shareAsync(path, { mimeType: 'application/json', dialogTitle: 'Private location diagnostics — choose where to save' });
+  return { schemaVersion: 1, exportedAt: new Date().toISOString(), fixture, state, build: { ...build, model: Device.modelName, os: Device.osVersion }, events: store.events().filter(event => event.fixtureKey === fixtureKey(fixture)) };
 }
 export function clearDiagnostics() { init(); store.clearLogs(); record('logs-cleared'); }
 export function nextTitle() { const i = eligible(state); return i >= 0 ? fixture?.stops[i].title : 'No unplayed stops'; }

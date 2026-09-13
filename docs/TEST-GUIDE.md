@@ -1,6 +1,6 @@
 # Offline phone test guide
 
-Generated from `src/testing/guide.json`; edit that source and run `npm run docs:guide`. Revision 1.
+Generated from `src/testing/guide.json`; edit that source and run `npm run docs:guide`. Revision 2.
 
 Read this before starting. Opening the guide never starts, pauses or ends a tour. Stop safely before using the screen. Your results are observations awaiting review; this guide does not certify M1.
 
@@ -11,7 +11,7 @@ Read this before starting. Opening the guide never starts, pauses or ends a tour
 3. Enable Record private diagnostics before Start. At a safe stop verify fresh fixes and Receiving background-capable fixes. A registered service alone is not proof of readiness.
 4. Record network, output/headphones, precise/background permission, battery start/end, saver and app battery policy. The app captures build, phone, route identity and attempt times; these conditions still need your observations.
 5. For locked baselines, read the procedure first and close the guide before locking. Do not unlock to tick steps during a silent interval. Aim for four minutes after each clip ends before approaching the next stop.
-6. After the attempt: End, save observed pass/fail/inconclusive with notes, then export both Test results and Private diagnostics. Keep filenames together. Diagnostics include precise location; choose local storage and share deliberately.
+6. After the attempt: End, save observed pass/fail/inconclusive with notes, then export both Test results and Private diagnostics. Each export opens Save or share JSON with a unique date-and-time filename you can edit. Choose Save to folder, then a local Walking Tour Tests subfolder under Documents or Downloads, Use this folder and Allow. Save success is confirmed after verification. Share instead is optional; Android may block selecting Downloads itself, so choose a subfolder.
 7. Never uninstall, clear storage or reinstall within a recovery check. Engineer-prepared cases remain available to read but require the stated preparation. No short-approach route is invented or pre-verified.
 
 ## 1. Pause during silence

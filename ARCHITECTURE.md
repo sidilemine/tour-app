@@ -25,6 +25,7 @@ App.tsx                  player and fixture controls
 src/domain/              fixture types, geometry and deterministic playback policy
 src/session/             Expo audio/location adapters, serialized events and recovery
 src/storage/             shared transactional SQLite store
+src/export/              JSON snapshots, naming and platform save/share adapters
 src/testing/             bundled offline guide, independent journal and guide screen
 fixtures/                synthetic or approved sanitized tours/traces
 assets/                  small owned test media
@@ -195,3 +196,12 @@ The [Finchley draft](content/finchley/manifest.json) deliberately fails readines
 A React Native modal presents the guide without taking ownership of the active session. Opening, closing, beginning or saving a test never issues playback or location commands. The journal uses a separate `walking-tests.db` and the shared synchronous transactional Store: selected case, active notes/conditions and append-only completed attempts recover independently of the tour. It records source/variant, device, route identity, guide revision and start/end context; observations are not automatic acceptance decisions. It prevents overlapping attempts and an observed pass spanning a changed build/route. Corrupt data and write failures are surfaced without deleting saved records. Retention stops at 500 completed attempts pending deliberate archival; nothing is silently discarded.
 
 The explicit test-results export is separate from precise diagnostics. Match the two using attempt times, route identity and walk timestamps. Drafts and previous failures remain available. All guide instructions work offline, while development-build, short-approach and unscheduled-kill tests still require engineer preparation. This change does not add a fabricated short route or expand navigation.
+
+
+## Named local exports — M1 follow-up
+
+The shared export dialog serializes an immutable JSON snapshot before opening a picker. Each new export gets a type prefix, UTC timestamp and short random suffix; a monotonic process timestamp handles repeated/backwards clock readings. The user can edit a bounded filename; path separators/traversal are rejected and a `.json` suffix is normalized. Results, diagnostics and fixtures retain their existing payload schemas. Exports never issue session commands.
+
+On Android, the existing [Expo legacy FileSystem StorageAccessFramework](https://docs.expo.dev/versions/v57.0.0/sdk/filesystem-legacy/) requests only a user-selected folder grant, creates a new JSON document, writes it and reads it back before showing success. The provider resolves duplicate names; we never open an existing document for overwrite. Cancel creates nothing; write/readback failure attempts cleanup of only the newly created incomplete document and retains the serialized draft for retry. Failed cleanup may leave an incomplete file, and the UI does not report success. The last selected folder is remembered only during the process. No broad storage permission or new dependency is added.
+
+[Android's document-tree restrictions](https://developer.android.com/training/data-storage/shared/documents-files) prohibit choosing Downloads itself on Android 11+, so the embedded instructions use a Documents/Downloads subfolder. Cloud providers can also appear in Android's picker: instructions explicitly identify local phone storage for offline saving. Optional Share uses a private export-specific directory and the edited filename; chooser dismissal does not imply delivery or local saving. Private share snapshots remain in app storage, while deliberately saved documents remain in the chosen folder. Device-specific picker, naming and readback evidence is recorded in [M1 export results](docs/test-results/M1-exports.md); unit tests alone do not prove it.

@@ -41,9 +41,11 @@ Open **Walking Tour Lab** from the phone's app list. Check cold launch with Metr
 
 Open **Offline test guide / saved results** near the top of Walking Tour Lab. Read the setup/export instructions, choose a case and use **Begin attempt — save a record** before testing. Return to the player for Start/Pause/Resume/End. Conditions and observations save as you type and survive closing or terminating the app. After the test, End in the player, save an observed pass/fail/inconclusive result and export **test results JSON** plus **private diagnostics**. Save both locally together; the first records your observations, the second records player/location behavior.
 
+**Saving JSON:** each Export button opens **Save or share JSON** with a new timestamped filename. Keep it or edit it, then choose **Save to folder**. Select or create a local **Walking Tour Tests** subfolder under Documents or Downloads, tap **Use this folder**, then **Allow**. Wait for **Saved and verified**. Android may block Downloads itself; use a subfolder. Repeated custom names create separate documents (the provider may add a number). **Share instead** remains available, but closing its chooser is not confirmation of a save. Cancelled/failed exports leave original records intact.
+
 All 18 procedures are embedded and readable offline. Cases needing the development build, a checked short-approach fixture or an engineer-controlled process kill are labelled; they are not silently substituted with easier tests. The guide never starts a tour or automatically certifies acceptance. Older observations remain tied to their original build/route. No historical pass is pre-ticked.
 
-The [full guide text](docs/TEST-GUIDE.md) is generated from the same content as the phone. The [working checklist](docs/PHONE-CHECKS.md) and [M1 result record](docs/test-results/M1.md) remain the human-reviewed status. New guide delivery evidence is recorded in [M1 guide results](docs/test-results/M1-guide.md).
+The [full guide text](docs/TEST-GUIDE.md) is generated from the same content as the phone. The [working checklist](docs/PHONE-CHECKS.md) and [M1 result record](docs/test-results/M1.md) remain the human-reviewed status. New guide delivery evidence is recorded in [M1 guide results](docs/test-results/M1-guide.md); the direct-save follow-up is in [M1 export results](docs/test-results/M1-exports.md).
 
 ## Configure a walking fixture
 
@@ -130,6 +132,7 @@ node --import tsx tools/render-listening-samples.ts
 - `src/domain/`: fixture validation, geometry and deterministic state transitions.
 - `src/session/`: live Expo location/audio adapters, task registration and serialized coordination.
 - `src/storage/`: shared SQL transaction policy used by Expo SQLite and Node tests.
+- `src/export/`: named JSON snapshots, editable export dialog and scoped Android folder saving.
 - `src/testing/`: embedded guide and durable test journal, independent of tour progress.
 - `tests/`, `fixtures/`: automated cases and synthetic input data.
 - `tools/`: scoped build/setup, guarded audio patch, source identity, replay and local content preflight/listening tools.

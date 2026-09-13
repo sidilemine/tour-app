@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Alert, KeyboardAvoidingView, Modal, Platform, Pressable, ScrollView, StatusBar, StyleSheet, Text, TextInput, View } from 'react-native';
 import { availability, guide, JournalState, Outcome } from './journal';
-import { currentContext, exportTestResults, getJournal } from './nativeJournal';
+import { currentContext, testResultsSnapshot, getJournal } from './nativeJournal';
+import { makeExport, ExportDraft } from '../export/jsonExport';
+import { ExportDialog } from '../export/ExportDialog';
 function Button({ title, onPress, disabled = false }: { title: string; onPress: () => void; disabled?: boolean }) {
   return <Pressable accessibilityRole="button" accessibilityState={{ disabled }} onPress={onPress} disabled={disabled} style={[s.button, disabled && s.disabled]}><Text style={s.buttonText}>{title}</Text></Pressable>;
 }
@@ -12,7 +14,7 @@ export function TestGuide({ onClose }: { onClose: () => void }) {
     catch (e) { return { data: null, error: `Saved guide data could not be read. It has not been deleted. ${String(e)}` }; }
   });
   const [data, setData] = useState<JournalState | null>(initial.data), [error, setError] = useState(initial.error);
-  const [exporting, setExporting] = useState(false);
+  const [exportDraft, setExportDraft] = useState<ExportDraft | null>(null);
   const [showSetup, setShowSetup] = useState(false);
   const update = (fn: () => JournalState) => { try { setData(fn()); setError(''); } catch (e) { setError(String(e)); } };
   const item = guide.cases.find(c => c.id === data?.selectedCase), active = data?.active;
@@ -22,6 +24,7 @@ export function TestGuide({ onClose }: { onClose: () => void }) {
     { text: 'Cancel', style: 'cancel' }, { text: 'Save result', onPress: () => update(() => getJournal().finish(outcome, Date.now(), currentContext())) },
   ]);
   return <Modal visible animationType="slide" onRequestClose={onClose}>
+    {exportDraft && <ExportDialog draft={exportDraft} onClose={() => setExportDraft(null)} />}
     <KeyboardAvoidingView style={s.screen} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
       <View style={s.header}><Text style={s.heading}>Offline test guide</Text><Button title="Back to player" onPress={onClose} /></View>
       <ScrollView key={data?.selectedCase ?? 'case-list'} contentContainerStyle={s.content} keyboardShouldPersistTaps="handled">
@@ -68,8 +71,8 @@ export function TestGuide({ onClose }: { onClose: () => void }) {
               return <View key={c.id} style={s.card}><Button title={c.title} onPress={() => update(() => getJournal().select(c.id))} /><Text style={s.small}>{c.preparation === 'engineer' ? 'Needs engineer preparation' : 'Independent'} · {c.build === 'either' ? 'Either build' : c.build} · {count} saved attempt{count === 1 ? '' : 's'}{active?.caseId === c.id ? ' · IN PROGRESS' : ''}</Text></View>;
             })}
           </>}
-          <Button title={exporting ? 'Exporting…' : 'Export test results JSON'} disabled={exporting} onPress={() => {
-            setExporting(true); void exportTestResults().catch(e => setError(String(e))).finally(() => setExporting(false));
+          <Button title="Export test results JSON" onPress={() => {
+            try { setExportDraft(makeExport('walking-test-results', testResultsSnapshot())); } catch (e) { setError(String(e)); }
           }} />
           <Text style={s.description}>Save locally with the matching Private diagnostics export from the player. Nothing is uploaded automatically. Build {context.sourceId}. Viewing this guide does not control playback.</Text>
         </>}

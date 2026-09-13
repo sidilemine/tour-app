@@ -51,3 +51,5 @@ Keep `RECEIVE_BOOT_COMPLETED` in the Android manifest while Expo TaskManager sch
 
 
 Maintain the offline test guide in `src/testing/guide.json`, then run `npm run docs:guide` and `npm run docs:check`. The generated `docs/TEST-GUIDE.md` must match the APK content. Update the working phone checklist and sanitized result record when physical evidence changes; do not equate saved user observations with acceptance. Keep test notes separate from tour progress, preserve prior attempts, and do not fabricate engineer-prepared routes. Audit summary wording as well as appended logs: distinguish current implementation, historical build evidence, proposed interfaces and actual device results.
+
+Keep all JSON exports on the shared named save/share flow. Treat folder-picker cancellation and failed readback as non-success, preserve original records, and never overwrite earlier user documents. Verify direct local saving and repeated names on the phone when changing this boundary; a Share chooser screenshot is not evidence of a saved file.

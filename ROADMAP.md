@@ -16,7 +16,7 @@ Acceptance: documents agree with the owner's revisions, link to each other, dist
 
 Implementation/build evidence: [M1 result record](docs/test-results/M1.md). For the first attempt use the short [first-walk checklist](docs/FIRST-WALK.md); subsequent open checks are in the [working phone checklist](docs/PHONE-CHECKS.md). All criteria below remain required. Both build variants have been installed and launched on Sidi's Pixel 6 (Android 17/API 37), with the self-contained variant left installed for independent use; stationary media controls and offline force-stop recovery have also been checked, while the full walking/lifecycle gate remains pending.
 
-The M1 follow-up adds a bundled [offline test guide](docs/TEST-GUIDE.md) and persistent attempt notes/results, with independent and engineer-prepared cases distinguished. See [guide delivery evidence](docs/test-results/M1-guide.md). The full criteria below are unchanged.
+The M1 follow-up adds a bundled [offline test guide](docs/TEST-GUIDE.md) and persistent attempt notes/results, with independent and engineer-prepared cases distinguished. See [guide delivery evidence](docs/test-results/M1-guide.md). A further [export follow-up](docs/test-results/M1-exports.md) adds editable unique names and direct local folder saving for all JSON exports. The full criteria below are unchanged.
 
 ### Delivery stages
 

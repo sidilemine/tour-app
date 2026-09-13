@@ -41,7 +41,7 @@ These are initial testable defaults. Change them using observed walking feedback
 
 ## M1 test companion
 
-The lifecycle lab includes an offline test guide with preparation, steps, expected behavior and durable attempt notes. It distinguishes independent tests from engineer-prepared cases. Saving an observed pass/fail/inconclusive result does not control playback or mark M1 accepted; diagnostics and physical observations still need review. Test records stay separate from tour progress and export only on request.
+The lifecycle lab includes an offline test guide with preparation, steps, expected behavior and durable attempt notes. It distinguishes independent tests from engineer-prepared cases. Saving an observed pass/fail/inconclusive result does not control playback or mark M1 accepted; diagnostics and physical observations still need review. Test records stay separate from tour progress and export only on request. Test results, diagnostics and fixture exports offer distinct timestamped default filenames, an editable name and direct saving to a chosen local Android folder. Share is a separate optional action. Cancellation or an unsuccessful save must preserve the original records; repeated exports must not overwrite an earlier result.
 
 ## Scope of the curated prototype
 

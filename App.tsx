@@ -3,11 +3,12 @@ import { Alert, AppState, Pressable, ScrollView, StatusBar, StyleSheet, Switch, 
 import * as Location from 'expo-location';
 import * as DocumentPicker from 'expo-document-picker';
 import * as FileSystem from 'expo-file-system/legacy';
-import * as Sharing from 'expo-sharing';
 import { Coordinate, distance, Fixture } from './src/domain/fixture';
 import { eligible } from './src/domain/engine';
 import * as session from './src/session/session';
 import { TestGuide } from './src/testing/TestGuide';
+import { ExportDialog } from './src/export/ExportDialog';
+import { makeExport, ExportDraft } from './src/export/jsonExport';
 
 type Draft = { route: Coordinate[]; stops: Fixture['stops'] };
 function Button({ label, onPress, disabled = false, secondary = false }: { label: string; onPress: () => void; disabled?: boolean; secondary?: boolean }) {
@@ -17,6 +18,7 @@ export default function App() {
   const { fixture, state, fatal, service, recent } = useSyncExternalStore(session.subscribe, session.getSnapshot);
   const [busy, setBusy] = useState(false), [editing, setEditing] = useState(false);
   const [guideOpen, setGuideOpen] = useState(false);
+  const [exportDraft, setExportDraft] = useState<ExportDraft | null>(null);
   const [json, setJson] = useState(''), [diagnostics, setDiagnostics] = useState(true);
   const [recording, setRecording] = useState(false), [checked, setChecked] = useState(false);
   const [draft, setDraft] = useState<Draft>({ route: [], stops: [] });
@@ -63,11 +65,8 @@ export default function App() {
     const f: Fixture = { schemaVersion: 1, id: `recorded-${Date.now()}`, version: 1, title: 'My three-stop test walk', verification: { status: checked ? 'user_checked' : 'unverified', note: checked ? 'User reports checking this path and standing areas. No independent verification.' : 'Recorded GPS geometry only; physical access/orientation not verified.' }, ...draft };
     await session.loadFixture(JSON.stringify(f)); setJson(JSON.stringify(f, null, 2)); setEditing(false);
   }
-  async function exportFixture() {
-    const file = `${FileSystem.documentDirectory}walking-fixture.json`;
-    await FileSystem.writeAsStringAsync(file, JSON.stringify(fixture, null, 2));
-    await Sharing.shareAsync(file, { mimeType: 'application/json' });
-  }
+  async function exportFixture() { setExportDraft(makeExport('walking-fixture', fixture)); }
+  async function exportDiagnostics() { setExportDraft(makeExport('walking-diagnostics', await session.diagnosticSnapshot())); }
   function requestStart() {
     Alert.alert('Start the physical test', 'Use a path and standing areas you have checked. Background location remains active through silence and pause until End. With diagnostics enabled, precise GPS is stored only on this phone and included in your export.', [
       { text: 'Cancel', style: 'cancel' }, { text: 'Path checked — Start', onPress: () => void run(() => session.start(diagnostics)) },
@@ -80,6 +79,7 @@ export default function App() {
     <Text style={styles.heading}>{'A walk. A pause.\nThe next arrival.'}</Text>
     <Text style={styles.description}>A device experiment, with real silence between local clips. Physical acceptance is still pending.</Text>
     <Button secondary label="Offline test guide / saved results" onPress={() => setGuideOpen(true)} />
+    {exportDraft && <ExportDialog draft={exportDraft} onClose={() => setExportDraft(null)} />}
     {guideOpen && <TestGuide onClose={() => setGuideOpen(false)} />}
     {fatal ? <View style={styles.warning}><Text selectable>{fatal}</Text></View> : null}
     <View style={styles.card}>
@@ -121,7 +121,7 @@ export default function App() {
     <View style={styles.card}>
       <Text style={styles.section}>Why it spoke — or stayed quiet</Text>
       <Text selectable style={styles.mono}>{service}{'\n'}{state.location.reason}{'\n'}{state.location.fix ? `Last fix ${new Date(state.location.fix.timestamp).toLocaleTimeString()} · ±${state.location.fix.accuracy.toFixed(0)} m` : 'No usable fix'}{'\n'}{state.location.distance !== undefined ? `To eligible stop: ${state.location.distance.toFixed(0)} m\nCross-track: ${state.location.crossTrack?.toFixed(0)} m\nAlong-route: ${state.location.along?.toFixed(0)} m\nArrival agreement: ${state.location.count} fixes` : ''}</Text>
-      <Button secondary label="Export private diagnostics" disabled={busy} onPress={() => void run(session.exportDiagnostics)} />
+      <Button secondary label="Export private diagnostics" disabled={busy} onPress={() => void run(exportDiagnostics)} />
       <Button secondary label="Delete diagnostic log" disabled={state.active} onPress={() => Alert.alert('Delete local diagnostics?', 'Export first if you need this walk for debugging. Progress is kept.', [{ text: 'Cancel' }, { text: 'Delete', style: 'destructive', onPress: session.clearDiagnostics }])} />
       {recent.slice(0, 8).map((event, i) => <Text key={i} style={styles.log}>{new Date(event.at).toLocaleTimeString()} · {event.reason}</Text>)}
     </View>
