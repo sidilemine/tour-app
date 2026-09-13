@@ -4,6 +4,8 @@ The first development APK was built before M1 hardening, as requested. Use the f
 
 ## Install and start
 
+For recording a route or reopening the app away from the Mac, use `walking-tour-offline.apk`. Leave this self-contained variant installed between assisted sessions. Its cold launch requires no server. The development-build commands below are for the explicitly prepared M1 development walk; afterwards, restore the self-contained APK and verify reopening before handing the phone back. Both variants remain required by the test matrix.
+
 From this repository, connect the phone by a data USB cable, enable Developer options → USB debugging, and accept this Mac's authorization on the phone. The engineer can run the following commands; only the phone prompts require Sidi.
 
 ```sh
@@ -35,6 +37,8 @@ In **Configure / load fixture**, either import/paste a JSON fixture or record a 
 4. **Use recorded fixture**, then **Export fixture JSON** if you want a copy. Return to A by a route you know before starting the test. JSON also lets you change titles, path points and stop positions without a code rebuild.
 
 ## Short first-walk checklist
+
+Record which variant is being tested. In the self-contained build, skip developer-menu and Metro steps; the same silence/arrival criteria apply. Its results do not replace the required development-build walks.
 
 - Record phone model/Android version, build variant, battery level and battery-saver settings. Test with ordinary settings, no debugger and no USB charging during the walk.
 - Enable private diagnostics. Tap **Start tracking + first clip**. Grant precise foreground location, then background “Allow all the time” when Android opens Settings. Return to the app. If Start reports denied permission, correct it and press Start again. Manual audio remains available without location permission.
