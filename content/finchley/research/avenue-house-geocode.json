@@ -1,0 +1,71 @@
+{
+  "query": "Avenue House, Finchley, London",
+  "retrievedAt": "2026-09-13",
+  "provider": "Nominatim / OpenStreetMap contributors",
+  "url": "https://nominatim.openstreetmap.org/search?q=Avenue+House%2C+Finchley%2C+London&format=jsonv2&limit=3",
+  "results": [
+    {
+      "place_id": 280244751,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 160001214,
+      "lat": "51.5969089",
+      "lon": "-0.1952484",
+      "category": "building",
+      "type": "public",
+      "place_rank": 30,
+      "importance": 0.37397891556421264,
+      "addresstype": "building",
+      "name": "Avenue House",
+      "display_name": "Avenue House, East End Road, Church End, London Borough of Barnet, Greater London, England, N3 3QT, United Kingdom",
+      "boundingbox": [
+        "51.5967343",
+        "51.5970768",
+        "-0.1953601",
+        "-0.1949079"
+      ]
+    },
+    {
+      "place_id": 277560817,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 446598608,
+      "lat": "51.5841735",
+      "lon": "-0.1668183",
+      "category": "building",
+      "type": "house",
+      "place_rank": 30,
+      "importance": 9.307927061870783e-05,
+      "addresstype": "building",
+      "name": "Avenue House",
+      "display_name": "Avenue House, 21, The Bishops Avenue, Hampstead Garden Suburb, London Borough of Barnet, Greater London, England, N2 0AL, United Kingdom",
+      "boundingbox": [
+        "51.5840774",
+        "51.5842861",
+        "-0.1670013",
+        "-0.1666707"
+      ]
+    },
+    {
+      "place_id": 280527223,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 1996317882,
+      "lat": "51.5967356",
+      "lon": "-0.1944596",
+      "category": "amenity",
+      "type": "cafe",
+      "place_rank": 30,
+      "importance": 9.307927061870783e-05,
+      "addresstype": "amenity",
+      "name": "Inky's Caf\u00e9",
+      "display_name": "Inky's Caf\u00e9, 17, East End Road, Church End, London Borough of Barnet, Greater London, England, N3 3QE, United Kingdom",
+      "boundingbox": [
+        "51.5966856",
+        "51.5967856",
+        "-0.1945096",
+        "-0.1944096"
+      ]
+    }
+  ]
+}

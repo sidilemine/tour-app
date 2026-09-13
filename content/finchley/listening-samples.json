@@ -1,0 +1,117 @@
+{
+  "stage": "desk-listening-draft",
+  "variants": [
+    {
+      "id": "design",
+      "samples": [
+        {
+          "id": "school",
+          "paragraphs": [
+            {
+              "kind": "factual",
+              "text": "The original main school building is attributed to Edward Roberts and dated 1860–61 in the heritage assessment.",
+              "claimIds": [
+                "school-roberts"
+              ]
+            },
+            {
+              "kind": "editorial",
+              "text": "Before we discuss its style, ask a simpler question: what sort of institution would you expect behind this exterior? Architecture can make a promise before anyone speaks. The next stage of this draft is to check which details can actually be seen.",
+              "claimIds": []
+            }
+          ]
+        },
+        {
+          "id": "water",
+          "paragraphs": [
+            {
+              "kind": "factual",
+              "text": "The estate’s biography records that Henry Charles Stephens added a water tower with adjacent glasshouses.",
+              "claimIds": [
+                "henry-water"
+              ]
+            },
+            {
+              "kind": "editorial",
+              "text": "This version of the walk follows practical systems as well as appearances. Water had to be managed, even in a place intended for pleasure. We have not yet verified a viewpoint or the machinery, so the story stops short of describing how it worked.",
+              "claimIds": []
+            }
+          ]
+        },
+        {
+          "id": "garden",
+          "paragraphs": [
+            {
+              "kind": "factual",
+              "text": "Marnock’s design approach, as described by the estate, paid close attention to natural forms, light and shade.",
+              "claimIds": [
+                "garden-designed"
+              ]
+            },
+            {
+              "kind": "editorial",
+              "text": "Instead of naming everything, consider the arrangement. Where would you let the eye rest? Where would you leave a gap? This walk would give you a longer silent garden interval to notice those choices for yourself.",
+              "claimIds": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "people",
+      "samples": [
+        {
+          "id": "church",
+          "paragraphs": [
+            {
+              "kind": "factual",
+              "text": "The church listing records fifteenth-century and later fabric, with major restoration in 1872 and additions in 1932.",
+              "claimIds": [
+                "church-layers"
+              ]
+            },
+            {
+              "kind": "editorial",
+              "text": "Each alteration suggests a decision to keep using a place, rather than leave it as an untouched object. We cannot recover an individual life from those dates alone. But they invite a question: what would you preserve, and what would you change for the next generation?",
+              "claimIds": []
+            }
+          ]
+        },
+        {
+          "id": "house",
+          "paragraphs": [
+            {
+              "kind": "factual",
+              "text": "Henry Charles Stephens died in 1918, bequeathing Avenue House to the people, according to the estate’s history.",
+              "claimIds": [
+                "house-public"
+              ]
+            },
+            {
+              "kind": "editorial",
+              "text": "This version of the walk is concerned with who gets to belong. A public place can host many small, ordinary occasions. Which matters more to you: knowing who once owned a place, or imagining how people might use it now?",
+              "claimIds": []
+            }
+          ]
+        },
+        {
+          "id": "spike",
+          "paragraphs": [
+            {
+              "kind": "factual",
+              "text": "John Somerville’s sculpture is called A Conversation with Spike and is dated 2014 by the estate.",
+              "claimIds": [
+                "spike-work"
+              ]
+            },
+            {
+              "kind": "editorial",
+              "text": "Our ending is a conversation rather than a list of achievements. Think of someone whose voice you would like to hear again. What kind of memorial could leave room for that voice, and for your own reply?",
+              "claimIds": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

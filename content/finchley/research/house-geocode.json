@@ -1,0 +1,7 @@
+{
+  "query": "Stephens House and Gardens, Finchley, London",
+  "retrievedAt": "2026-09-13",
+  "provider": "Nominatim / OpenStreetMap contributors",
+  "url": "https://nominatim.openstreetmap.org/search?q=Stephens+House+and+Gardens%2C+Finchley%2C+London&format=jsonv2&limit=3",
+  "results": []
+}

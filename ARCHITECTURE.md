@@ -177,3 +177,11 @@ The fixture loader accepts three ordered standing positions on a recorded/import
 Diagnostics are local and bounded to 10,000 events. Exports are scoped to the current fixture and contain event timestamps, requested/observed audio state, raw fixes when opted in, reasons, snapshots and build/source identity. `tools/replay.ts` reproduces the transitions using the production reducer; raw exports must stay private until deliberately sanitized.
 
 Navigation cues are deliberately absent from M1. The corrected M2 walking policy is to pause a story for an actionable cue and resume it only if no manual pause intervened. No visual-only fallback is treated as sufficient.
+
+## Independent M2 preparation — 13 September 2026
+
+The owner authorized independent development while physical M1 checks are pending. A Node-only [package preflight](tools/content/package.ts) now checks an authored versioned manifest, references, review declarations, planned leg continuity and local asset integrity. Its schema is a provisional curated-package contract, separate from the existing M1 fixture. It reuses only a pure domain distance helper; the mobile session does not import authoring tools. See [scope and limits](docs/content/PACKAGES.md).
+
+Readiness declarations require separate standing/approach/viewpoint/access reviews, source-checked claim evidence, real route provenance, local map/audio/transcript resources and an offline renderer review. This is structural validation of recorded assertions, not proof of truth, access, resource decoding or permission. Mobile staging, atomic import/version pinning and renderer validation remain M2 work after the M1 gate. Map format alternatives in the provisional schema do not assert that an adapter supports each format.
+
+The [Finchley draft](content/finchley/manifest.json) deliberately fails readiness: visitor positions, verified route/directions and real offline assets are missing. Short supervised E1 samples are rendered locally for desk listening only. No runtime dependency, private route upload, backend, paid provider or phone build changed. [Map/routing notes](docs/content/MAPS-AND-ROUTING.md) recommend a bounded MapLibre offline-database experiment; data rights and actual native integration remain unresolved.

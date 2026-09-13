@@ -2,6 +2,8 @@
 
 The first development APK was built before M1 hardening, as requested. Use the final `walking-tour-development.apk` when available; the earlier `walking-tour-m1a-development.apk` is retained only as a diagnostic checkpoint. The full acceptance matrix remains in [ROADMAP.md](../ROADMAP.md#physical-phone-procedure-for-m1).
 
+After your first functional walk, use the [remaining phone checklist](PHONE-CHECKS.md) for the open M1 cases. A successful first walk does not complete the full gate.
+
 ## Install and start
 
 For recording a route or reopening the app away from the Mac, use `walking-tour-offline.apk`. Leave this self-contained variant installed between assisted sessions. Its cold launch requires no server. The development-build commands below are for the explicitly prepared M1 development walk; afterwards, restore the self-contained APK and verify reopening before handing the phone back. Both variants remain required by the test matrix.

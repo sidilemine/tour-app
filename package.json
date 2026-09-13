@@ -39,7 +39,8 @@
     "test": "node --import tsx --test tests/*.test.ts",
     "postinstall": "node tools/patch-expo-audio.cjs",
     "build:android": "sh tools/build-android.sh",
-    "replay": "node --import tsx tools/replay.ts"
+    "replay": "node --import tsx tools/replay.ts",
+    "check:package": "node --import tsx tools/check-package.ts"
   },
   "private": true,
   "expo": {

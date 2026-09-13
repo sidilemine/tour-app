@@ -1,0 +1,621 @@
+{
+  "schemaVersion": 1,
+  "id": "finchley-six-draft",
+  "contentVersion": 1,
+  "title": "Finchley: places made and shared — editorial draft",
+  "mode": "walking",
+  "stage": "draft",
+  "sources": [
+    {
+      "id": "beck",
+      "title": "Harry Beck’s Tube map",
+      "url": "https://tfl.gov.uk/corporate/about-tfl/culture-and-heritage/harry-becks-tube-map",
+      "publisher": "Transport for London",
+      "retrievedAt": "2026-09-13",
+      "rightsNote": "Minimal evidence excerpt for local review; no source images or map artwork copied. Publication rights require review."
+    },
+    {
+      "id": "church",
+      "title": "Parish Church of St Mary, list entry 1287095",
+      "url": "https://historicengland.org.uk/listing/the-list/list-entry/1287095",
+      "publisher": "Historic England",
+      "retrievedAt": "2026-09-13",
+      "rightsNote": "Listing text: Open Government Licence v3.0, Historic England. Maps and contributed photographs have separate rights and are not included."
+    },
+    {
+      "id": "school",
+      "title": "Former Christ’s College School: assessment, A. R. Wittrick (1997)",
+      "url": "https://historicengland.org.uk/research/results/reports/6786/FORMERCHRISTSCOLLEGESCHOOLHENDONLANEFINCHLEYLBBARNET_BriefAssessmentoftheSignificanceofthePrimarySchoolBuilding",
+      "publisher": "English Heritage / Historic England",
+      "retrievedAt": "2026-09-13",
+      "rightsNote": "Minimal evidence excerpt for local review; no source images or map artwork copied. Publication rights require review."
+    },
+    {
+      "id": "house",
+      "title": "Avenue House",
+      "url": "https://www.stephenshouseandgardens.com/about/history/avenue-house",
+      "publisher": "Stephens House & Gardens",
+      "retrievedAt": "2026-09-13",
+      "rightsNote": "Minimal evidence excerpt for local review; no source images or map artwork copied. Publication rights require review."
+    },
+    {
+      "id": "henry",
+      "title": "Henry “Inky” Stephens",
+      "url": "https://www.stephenshouseandgardens.com/about/history/henry-inky-stephens",
+      "publisher": "Stephens House & Gardens",
+      "retrievedAt": "2026-09-13",
+      "rightsNote": "Minimal evidence excerpt for local review; no source images or map artwork copied. Publication rights require review."
+    },
+    {
+      "id": "marnock",
+      "title": "Robert Marnock",
+      "url": "https://www.stephenshouseandgardens.com/about/history/robert-marnock",
+      "publisher": "Stephens House & Gardens",
+      "retrievedAt": "2026-09-13",
+      "rightsNote": "Minimal evidence excerpt for local review; no source images or map artwork copied. Publication rights require review."
+    },
+    {
+      "id": "trees",
+      "title": "The Arboretum",
+      "url": "https://www.stephenshouseandgardens.com/about/history/the-arboretum",
+      "publisher": "Stephens House & Gardens",
+      "retrievedAt": "2026-09-13",
+      "rightsNote": "Minimal evidence excerpt for local review; no source images or map artwork copied. Publication rights require review."
+    },
+    {
+      "id": "spike",
+      "title": "Spike Milligan Statue",
+      "url": "https://www.stephenshouseandgardens.com/visit/spike-milligan-statue",
+      "publisher": "Stephens House & Gardens",
+      "retrievedAt": "2026-09-13",
+      "rightsNote": "Minimal evidence excerpt for local review; no source images or map artwork copied. Publication rights require review."
+    }
+  ],
+  "claims": [
+    {
+      "id": "beck-diagram",
+      "statement": "Beck based his Tube map on circuit diagrams rather than geographical distances.",
+      "status": "source_checked",
+      "uncertainty": "This describes map design; it does not establish a particular station plaque or its access.",
+      "supports": [
+        {
+          "sourceId": "beck",
+          "passage": "Beck based his on the circuit diagrams he drew for his day job",
+          "locator": "Opening text, second paragraph"
+        }
+      ]
+    },
+    {
+      "id": "church-layers",
+      "statement": "The listed church has fifteenth-century and later fabric, with substantial restoration in 1872 and additions in 1932.",
+      "status": "source_checked",
+      "uncertainty": "A dated listing is not a survey of what is currently visible from the pavement.",
+      "supports": [
+        {
+          "sourceId": "church",
+          "passage": "C15 and later. Heavily restored 1872 with further additions 1932.",
+          "locator": "Official list entry, Details"
+        }
+      ]
+    },
+    {
+      "id": "school-roberts",
+      "statement": "The original main school building dates from 1860–61 and is attributed to Edward Roberts.",
+      "status": "source_checked",
+      "uncertainty": "Do not confuse this building with the later primary building discussed in the same report. Current exterior identity and sightline need checking.",
+      "supports": [
+        {
+          "sourceId": "school",
+          "passage": "schoolbuilding of 1860-61 by the architect Edward Roberts",
+          "locator": "PDF page 2, opening assessment"
+        }
+      ]
+    },
+    {
+      "id": "house-public",
+      "statement": "Henry Charles Stephens died in 1918 and bequeathed Avenue House to the people.",
+      "status": "source_checked",
+      "uncertainty": "This historical bequest does not imply unrestricted present-day access.",
+      "supports": [
+        {
+          "sourceId": "house",
+          "passage": "He died in 1918, bequeathing Avenue House to the people.",
+          "locator": "Our history, second paragraph"
+        }
+      ]
+    },
+    {
+      "id": "henry-ink",
+      "statement": "The ink inventor was Dr Henry Stephens, father of Henry Charles.",
+      "status": "source_checked",
+      "uncertainty": "Keep father and son distinct; this is the estate’s historical account.",
+      "supports": [
+        {
+          "sourceId": "henry",
+          "passage": "Dr Henry Stephens (1796–1864) was the inventor in 1832",
+          "locator": "Biography, parentage paragraph"
+        }
+      ]
+    },
+    {
+      "id": "henry-water",
+      "statement": "Henry Charles Stephens added a water tower and adjacent glasshouses.",
+      "status": "source_checked",
+      "uncertainty": "The water-system page was unavailable; do not infer machinery, current operation or an accessible viewpoint.",
+      "supports": [
+        {
+          "sourceId": "henry",
+          "passage": "Stephens added a water tower with adjacent glasshouses",
+          "locator": "Biography, grounds development paragraph"
+        }
+      ]
+    },
+    {
+      "id": "garden-designed",
+      "statement": "Marnock’s approach combined natural forms with carefully managed light and shade.",
+      "status": "source_checked",
+      "uncertainty": "General design account; identifying a surviving feature requires an on-site check.",
+      "supports": [
+        {
+          "sourceId": "marnock",
+          "passage": "natural forms, managing the effect of light and shade",
+          "locator": "Opening section, second paragraph"
+        }
+      ]
+    },
+    {
+      "id": "garden-marnock",
+      "statement": "Robert Marnock designed the garden and grounds.",
+      "status": "source_checked",
+      "uncertainty": "Does not establish the identity, age or condition of any particular tree.",
+      "supports": [
+        {
+          "sourceId": "trees",
+          "passage": "Robert Marnock designed the garden and grounds",
+          "locator": "Paragraph before species list"
+        }
+      ]
+    },
+    {
+      "id": "spike-work",
+      "statement": "The garden sculpture A Conversation with Spike is by John Somerville, dated 2014.",
+      "status": "source_checked",
+      "uncertainty": "Location within the garden, seating availability and access remain unverified.",
+      "supports": [
+        {
+          "sourceId": "spike",
+          "passage": "'A Conversation with Spike' by John Somerville, 2014",
+          "locator": "Caption below title"
+        }
+      ]
+    }
+  ],
+  "stops": [
+    {
+      "id": "station",
+      "title": "A useful distortion",
+      "landmark": {
+        "name": "Finchley Central station",
+        "point": {
+          "latitude": 51.601069,
+          "longitude": -0.1923646
+        }
+      },
+      "standing": {
+        "point": null,
+        "review": {
+          "status": "unverified",
+          "note": "A landmark coordinate is not a visitor position.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "approach": {
+        "instruction": "Find an exterior meeting area outside ticket barriers; do not obstruct entrances.",
+        "review": {
+          "status": "unverified",
+          "note": "Authoring note only; not a walking direction.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "viewpoint": {
+        "description": "No station map or plaque is assumed visible.",
+        "review": {
+          "status": "unverified",
+          "note": "No field observation yet.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "access": {
+        "description": "Check entrance, crossings, step-free approach and permission to linger.",
+        "review": {
+          "status": "unverified",
+          "note": "Needs current operational and physical check.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "clipId": "station"
+    },
+    {
+      "id": "church",
+      "title": "A building with several ages",
+      "landmark": {
+        "name": "St Mary at Finchley",
+        "point": {
+          "latitude": 51.5997181,
+          "longitude": -0.1976645
+        }
+      },
+      "standing": {
+        "point": null,
+        "review": {
+          "status": "unverified",
+          "note": "A landmark coordinate is not a visitor position.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "approach": {
+        "instruction": "Find a public pavement approach and a safe stopping space.",
+        "review": {
+          "status": "unverified",
+          "note": "Authoring note only; not a walking direction.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "viewpoint": {
+        "description": "Identify which exterior elements can actually be seen; do not direct a viewer to interior fabric.",
+        "review": {
+          "status": "unverified",
+          "note": "No field observation yet.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "access": {
+        "description": "Check services, gates, narrow pavement and crossing conditions; no interior entry required.",
+        "review": {
+          "status": "unverified",
+          "note": "Needs current operational and physical check.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "clipId": "church"
+    },
+    {
+      "id": "school",
+      "title": "Designed to make an impression",
+      "landmark": {
+        "name": "Former Christ’s College, Hendon Lane",
+        "point": null
+      },
+      "standing": {
+        "point": null,
+        "review": {
+          "status": "unverified",
+          "note": "A landmark coordinate is not a visitor position.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "approach": {
+        "instruction": "Use only a checked public pavement viewpoint away from school entrances.",
+        "review": {
+          "status": "unverified",
+          "note": "Authoring note only; not a walking direction.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "viewpoint": {
+        "description": "Identify the Roberts building before pointing out any architectural detail.",
+        "review": {
+          "status": "unverified",
+          "note": "No field observation yet.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "access": {
+        "description": "No school entry or photography of pupils; replace this stop if there is no suitable stopping space.",
+        "review": {
+          "status": "unverified",
+          "note": "Needs current operational and physical check.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "clipId": "school"
+    },
+    {
+      "id": "house",
+      "title": "From private house to public place",
+      "landmark": {
+        "name": "Avenue House / Stephens House",
+        "point": {
+          "latitude": 51.5969089,
+          "longitude": -0.1952484
+        }
+      },
+      "standing": {
+        "point": null,
+        "review": {
+          "status": "unverified",
+          "note": "A landmark coordinate is not a visitor position.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "approach": {
+        "instruction": "Confirm the public entrance and a permissible exterior stopping area.",
+        "review": {
+          "status": "unverified",
+          "note": "Authoring note only; not a walking direction.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "viewpoint": {
+        "description": "Check the actual facade and line of sight; no assumed left/right orientation.",
+        "review": {
+          "status": "unverified",
+          "note": "No field observation yet.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "access": {
+        "description": "Recheck current garden hours and events; house access is separate.",
+        "review": {
+          "status": "unverified",
+          "note": "Needs current operational and physical check.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "clipId": "house"
+    },
+    {
+      "id": "garden",
+      "title": "Natural, with considerable effort",
+      "landmark": {
+        "name": "Stephens House gardens",
+        "point": null
+      },
+      "standing": {
+        "point": null,
+        "review": {
+          "status": "unverified",
+          "note": "A landmark coordinate is not a visitor position.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "approach": {
+        "instruction": "Choose an open path junction with room to stop after a field survey.",
+        "review": {
+          "status": "unverified",
+          "note": "Authoring note only; not a walking direction.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "viewpoint": {
+        "description": "Select a broad garden view; no tree species identification is assumed.",
+        "review": {
+          "status": "unverified",
+          "note": "No field observation yet.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "access": {
+        "description": "Verify surface, gradient, steps, gates, seats and temporary closures.",
+        "review": {
+          "status": "unverified",
+          "note": "Needs current operational and physical check.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "clipId": "garden"
+    },
+    {
+      "id": "spike",
+      "title": "A conversation to end with",
+      "landmark": {
+        "name": "A Conversation with Spike sculpture",
+        "point": null
+      },
+      "standing": {
+        "point": null,
+        "review": {
+          "status": "unverified",
+          "note": "A landmark coordinate is not a visitor position.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "approach": {
+        "instruction": "Survey the garden paths to the sculpture; keep the route on permitted paths.",
+        "review": {
+          "status": "unverified",
+          "note": "Authoring note only; not a walking direction.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "viewpoint": {
+        "description": "Confirm sculpture location and which side permits a clear view.",
+        "review": {
+          "status": "unverified",
+          "note": "No field observation yet.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "access": {
+        "description": "Do not assume a seat is available; provide a checked standing alternative.",
+        "review": {
+          "status": "unverified",
+          "note": "Needs current operational and physical check.",
+          "reviewer": null,
+          "checkedAt": null
+        }
+      },
+      "clipId": "spike"
+    }
+  ],
+  "clips": [
+    {
+      "id": "station",
+      "stopId": "station",
+      "audioAssetId": null,
+      "transcriptAssetId": null,
+      "paragraphs": [
+        {
+          "kind": "factual",
+          "text": "Beck’s map borrowed the logic of an electrical diagram. Its job was to make connections understandable, rather than preserve the distance between them.",
+          "claimIds": [
+            "beck-diagram"
+          ]
+        },
+        {
+          "kind": "editorial",
+          "text": "For this walk, keep that distinction in mind. A useful picture can still leave things out. We will ask what each place chooses to show us.",
+          "claimIds": []
+        }
+      ]
+    },
+    {
+      "id": "church",
+      "stopId": "church",
+      "audioAssetId": null,
+      "transcriptAssetId": null,
+      "paragraphs": [
+        {
+          "kind": "factual",
+          "text": "Historic England describes this church as fifteenth-century and later, recording restoration in 1872 and further additions in 1932.",
+          "claimIds": [
+            "church-layers"
+          ]
+        },
+        {
+          "kind": "editorial",
+          "text": "Think of its age as a set of layers, rather than a single birthday. What would you need to see before deciding which layer you were looking at?",
+          "claimIds": []
+        }
+      ]
+    },
+    {
+      "id": "school",
+      "stopId": "school",
+      "audioAssetId": null,
+      "transcriptAssetId": null,
+      "paragraphs": [
+        {
+          "kind": "factual",
+          "text": "The heritage assessment attributes the original main school building to Edward Roberts and dates it to 1860–61.",
+          "claimIds": [
+            "school-roberts"
+          ]
+        },
+        {
+          "kind": "editorial",
+          "text": "A school has to accommodate lessons, but its exterior can also make an impression. Once the right building is identified, consider what that first impression might be.",
+          "claimIds": []
+        }
+      ]
+    },
+    {
+      "id": "house",
+      "stopId": "house",
+      "audioAssetId": null,
+      "transcriptAssetId": null,
+      "paragraphs": [
+        {
+          "kind": "factual",
+          "text": "The estate’s history records that Henry Charles Stephens died in 1918, leaving Avenue House to the people.",
+          "claimIds": [
+            "house-public"
+          ]
+        },
+        {
+          "kind": "editorial",
+          "text": "A private home becoming a public place changes the question at its door: who is this for? Keep that question with you as the walk moves towards the garden.",
+          "claimIds": []
+        }
+      ]
+    },
+    {
+      "id": "garden",
+      "stopId": "garden",
+      "audioAssetId": null,
+      "transcriptAssetId": null,
+      "paragraphs": [
+        {
+          "kind": "factual",
+          "text": "The estate’s account of Robert Marnock describes a designer concerned with natural forms and the management of light and shade.",
+          "claimIds": [
+            "garden-designed"
+          ]
+        },
+        {
+          "kind": "editorial",
+          "text": "Try a quiet interval here. Notice what draws your attention without needing a label. Does a place feel less natural when you know someone planned its effect?",
+          "claimIds": []
+        }
+      ]
+    },
+    {
+      "id": "spike",
+      "stopId": "spike",
+      "audioAssetId": null,
+      "transcriptAssetId": null,
+      "paragraphs": [
+        {
+          "kind": "factual",
+          "text": "The sculpture’s title is A Conversation with Spike. The estate credits John Somerville and dates the work to 2014.",
+          "claimIds": [
+            "spike-work"
+          ]
+        },
+        {
+          "kind": "editorial",
+          "text": "That is an invitation rather than a biography. If a place could keep one conversation going, which voice would you want it to remember?",
+          "claimIds": []
+        }
+      ]
+    }
+  ],
+  "route": {
+    "provider": null,
+    "generatedAt": null,
+    "review": {
+      "status": "unverified",
+      "note": "No routed or field-checked six-stop path. Do not join centroids and call it a route.",
+      "reviewer": null,
+      "checkedAt": null
+    },
+    "geometry": [],
+    "legs": []
+  },
+  "map": {
+    "format": null,
+    "assetIds": [],
+    "attribution": null,
+    "bounds": null,
+    "rendererCheck": {
+      "status": "unverified",
+      "note": "No local map or renderer proof yet.",
+      "reviewer": null,
+      "checkedAt": null
+    }
+  },
+  "assets": []
+}

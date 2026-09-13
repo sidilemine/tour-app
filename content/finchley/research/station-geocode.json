@@ -1,0 +1,50 @@
+{
+  "query": "Finchley Central station, London",
+  "retrievedAt": "2026-09-13",
+  "provider": "Nominatim / OpenStreetMap contributors",
+  "url": "https://nominatim.openstreetmap.org/search?q=Finchley+Central+station%2C+London&format=jsonv2&limit=3",
+  "results": [
+    {
+      "place_id": 281466466,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 688176020,
+      "lat": "51.6010690",
+      "lon": "-0.1923646",
+      "category": "building",
+      "type": "train_station",
+      "place_rank": 30,
+      "importance": 9.307927061870783e-05,
+      "addresstype": "building",
+      "name": "Finchley Central Station",
+      "display_name": "Finchley Central Station, Chaville Way, Church End, London Borough of Barnet, Greater London, England, N3 2BG, United Kingdom",
+      "boundingbox": [
+        "51.6009224",
+        "51.6012057",
+        "-0.1926234",
+        "-0.1920937"
+      ]
+    },
+    {
+      "place_id": 280115437,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 469760126,
+      "lat": "51.6024638",
+      "lon": "-0.1922509",
+      "category": "highway",
+      "type": "bus_stop",
+      "place_rank": 30,
+      "importance": 9.307927061870783e-05,
+      "addresstype": "highway",
+      "name": "Finchley Central Station",
+      "display_name": "Finchley Central Station, Ballards Lane, Church End, London Borough of Barnet, Greater London, England, N3 2BX, United Kingdom",
+      "boundingbox": [
+        "51.6024138",
+        "51.6025138",
+        "-0.1923009",
+        "-0.1922009"
+      ]
+    }
+  ]
+}

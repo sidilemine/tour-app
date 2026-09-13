@@ -1,0 +1,29 @@
+{
+  "query": "St Mary at Finchley, Hendon Lane, London",
+  "retrievedAt": "2026-09-13",
+  "provider": "Nominatim / OpenStreetMap contributors",
+  "url": "https://nominatim.openstreetmap.org/search?q=St+Mary+at+Finchley%2C+Hendon+Lane%2C+London&format=jsonv2&limit=3",
+  "results": [
+    {
+      "place_id": 281308596,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 508499647,
+      "lat": "51.5997181",
+      "lon": "-0.1976645",
+      "category": "amenity",
+      "type": "place_of_worship",
+      "place_rank": 30,
+      "importance": 0.24632300460320036,
+      "addresstype": "amenity",
+      "name": "St Mary at Finchley",
+      "display_name": "St Mary at Finchley, Hendon Lane, Church End, London Borough of Barnet, Greater London, England, N3 1SA, United Kingdom",
+      "boundingbox": [
+        "51.5995920",
+        "51.5998027",
+        "-0.1978782",
+        "-0.1974513"
+      ]
+    }
+  ]
+}

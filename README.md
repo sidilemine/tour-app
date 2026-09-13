@@ -8,7 +8,7 @@ The original [brief](ai_self_guided_tour_project_brief.md) is unchanged. [PRODUC
 
 **Use the self-contained APK for recording paths and using the app away from the Mac.** The engineer should leave this variant installed between assisted test sessions and verify reopening with Metro stopped. The development APK needs Metro again on a cold start; a “Failed to connect to /127.0.0.1:8081” launcher error means its development server is unavailable. Switch variants with `adb install -r`, preserving saved app data; do not uninstall or clear storage. The required development-build walk is a separately prepared M1 test, followed by restoring the self-contained variant.
 
-Start with [docs/FIRST-WALK.md](docs/FIRST-WALK.md). The full physical acceptance matrix remains in [ROADMAP.md](ROADMAP.md#physical-phone-procedure-for-m1); an initial successful walk does not complete M1. Recorded verification is in [docs/test-results/M1.md](docs/test-results/M1.md).
+Start with [docs/FIRST-WALK.md](docs/FIRST-WALK.md). After the first successful walk, use the actionable [remaining phone checklist](docs/PHONE-CHECKS.md). The full physical acceptance matrix remains in [ROADMAP.md](ROADMAP.md#physical-phone-procedure-for-m1); an initial successful walk does not complete M1. Recorded verification is in [docs/test-results/M1.md](docs/test-results/M1.md).
 
 Local build outputs (ignored by Git):
 
@@ -101,6 +101,20 @@ sh tools/android-env.sh adb logcat -d -v threadtime > diagnostics/android-logcat
 
 Raw exports stay ignored/private. Logcat may include unrelated device information. Review and sanitize before sharing or committing a fixture. Synthetic fixtures are labeled accordingly. No precise location telemetry or automatic upload exists.
 
+## Independent content preparation
+
+While M1 awaits physical acceptance, the [Finchley six-stop editorial draft](docs/content/FINCHLEY-DRAFT.md) and [two supervised listening briefs](docs/content/E1-BRIEFS.md) can be reviewed independently. They do not replace the phone fixture or establish a walk-ready route. [Map/routing decision notes](docs/content/MAPS-AND-ROUTING.md) prepare the next native experiment.
+
+```sh
+npm run check:package -- content/finchley/manifest.json
+# Expected to fail until field verification and all real offline assets exist:
+npm run check:package -- content/finchley/manifest.json --ready
+# Mac-only, installed local Daniel voice; no paid TTS:
+node --import tsx tools/render-listening-samples.ts
+```
+
+[Package preflight](docs/content/PACKAGES.md) checks structure, evidence references and asset integrity on the Mac. It is not yet a mobile importer or factual/access verifier. The listening renderer saves six private draft AIFF files under ignored `artifacts/listening-drafts/`. See the [preparation result record](docs/test-results/M2-preparation.md) for automated results and outstanding work.
+
 ## Code layout
 
 - `App.tsx`: controls, fixture recorder/import and diagnostics UI.
@@ -108,7 +122,8 @@ Raw exports stay ignored/private. Logcat may include unrelated device informatio
 - `src/session/`: live Expo location/audio adapters, task registration and serialized coordination.
 - `src/storage/`: shared SQL transaction policy used by Expo SQLite and Node tests.
 - `tests/`, `fixtures/`: automated cases and synthetic input data.
-- `tools/`: scoped build/setup, guarded audio patch, source identity and replay tools.
+- `tools/`: scoped build/setup, guarded audio patch, source identity, replay and local content preflight/listening tools.
+- `content/finchley/`: public-source editorial inputs; separate from the private device route.
 - `assets/audio/`: three short local clips; [provenance/transcripts](assets/audio/README.md).
 
 The Expo blank template's license is retained in [TEMPLATE-LICENSE](TEMPLATE-LICENSE). The project is private and no distribution license has been granted.

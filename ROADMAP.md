@@ -1,6 +1,6 @@
 # Roadmap
 
-Status: 12 September 2026. M0 is complete; M1 is implemented and awaiting physical acceptance. This roadmap supersedes the original brief's ordering: lifecycle reliability comes first, and the supervised AI experiment runs alongside early curation. Each implementation assignment ends in appropriate tests/debugging, updated documents and a coherent local commit.
+Status: 13 September 2026. M0 is complete; M1 is implemented and awaiting physical acceptance. This roadmap supersedes the original brief's ordering: lifecycle reliability comes first, and the supervised AI experiment runs alongside early curation. Each implementation assignment ends in appropriate tests/debugging, updated documents and a coherent local commit.
 
 “Implemented; awaiting physical test” is a valid intermediate status, not a passed milestone. Only actual result records can establish device behavior or enjoyable content. Do not treat the whole roadmap as authorization to implement all future work.
 
@@ -14,7 +14,7 @@ Acceptance: documents agree with the owner's revisions, link to each other, dist
 
 **Status: implemented; awaiting physical test.** Outcome: establish whether one installed development build can play a clip, stay locked through several minutes of actual silence, and automatically start the next clip on real arrival. This gate precedes map polish and the six-stop player's implementation.
 
-Implementation/build evidence: [M1 result record](docs/test-results/M1.md). For the first attempt use the short [first-walk checklist](docs/FIRST-WALK.md); all criteria below remain required. Both build variants have been installed and launched on Sidi's Pixel 6 (Android 17/API 37), with the self-contained variant left installed for independent use; stationary media controls and offline force-stop recovery have also been checked, while the full walking/lifecycle gate remains pending.
+Implementation/build evidence: [M1 result record](docs/test-results/M1.md). For the first attempt use the short [first-walk checklist](docs/FIRST-WALK.md); subsequent open checks are in the [working phone checklist](docs/PHONE-CHECKS.md). All criteria below remain required. Both build variants have been installed and launched on Sidi's Pixel 6 (Android 17/API 37), with the self-contained variant left installed for independent use; stationary media controls and offline force-stop recovery have also been checked, while the full walking/lifecycle gate remains pending.
 
 ### Delivery stages
 
@@ -63,7 +63,7 @@ The first reported field attempt on 13 September failed with native crashes at S
 
 ## Milestone 2 — curated six-stop offline walk
 
-**Status: planned; player work follows M1.** The first content planning and E1 can start alongside M1.
+**Status: preparation in progress; player work follows M1.** Sidi authorized independent progress while away on 13 September. Implemented a local package preflight with failure-path tests and a sourced six-stop editorial draft. Map/provider comparison is documented; mobile import, map rendering and routed/verified walking content remain unimplemented. See [preparation results](docs/test-results/M2-preparation.md). This does not pass or bypass M1.
 
 Deliver a validated versioned package, durable local import, a local map with full renderer assets, verified planned walking legs/directions, six narrated stops, transcripts, source/rights display and clear manual controls. Compare offline map/data and routing options before commitment; present any material cost or lock-in for owner review. Use owned audio initially if voice selection would delay the walk.
 
@@ -77,7 +77,7 @@ Acceptance:
 
 ## Experiment E1 — supervised AI brief comparison
 
-**Status: planned alongside M2 curation; preparation may overlap M1.** This is a parallel learning track, not delegated agent work or an automated factory.
+**Status: desk preparation complete; supervised experiment pending.** [Two contrasting briefs](docs/content/E1-BRIEFS.md), candidate sequences and three short local listening samples per variant are prepared. Real routed plans, physical verification and Sidi’s listening/walking feedback remain outstanding. This is a parallel learning track, not delegated agent work or an automated factory.
 
 Prepare two contrasting briefs for the same area and comparable duration, start/end and access constraints. Suggested contrast: engineering/architecture versus ordinary lives/unusual stories. Let the brief affect candidate selection, route and narrative, rather than forcing identical stops. Preserve a curated baseline for comparison. If E1 finishes before the player, use reviewed route sheets and local recordings to walk/listen without waiting for app features.
 
