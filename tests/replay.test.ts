@@ -29,3 +29,34 @@ test('first stale location after reopening replays without an undefined saved fi
   const corrupted=JSON.parse(JSON.stringify([entry]));corrupted[0].after.location.count=999;
   assert.throws(()=>replay(fixture,corrupted),/divergence/);
 });
+test('phone/Mac rounding in derived metres does not create a replay failure or new segment',()=>{
+  const entries=JSON.parse(JSON.stringify(capture())) as Transition[];
+  for (const entry of entries) {
+    for (const state of [entry.before,entry.after]) {
+      for (const key of ['distance','crossTrack','along'] as const) {
+        if (typeof state.location[key]==='number') state.location[key]!+=1e-12;
+      }
+    }
+  }
+  const result=replay(fixture,entries);
+  assert.equal(result.segments,1);assert.equal(result.state?.playback.index,1);
+});
+test('replay still rejects meaningful geometry differences and any altered input fix',()=>{
+  const geometry=JSON.parse(JSON.stringify(capture())) as Transition[];
+  geometry[2].after.location.distance!+=0.001;
+  assert.throws(()=>replay(fixture,geometry),/divergence/);
+  const fix=JSON.parse(JSON.stringify(capture())) as Transition[];
+  fix[2].after.location.fix!.latitude+=1e-12;
+  assert.throws(()=>replay(fixture,fix),/divergence/);
+});
+test('geometry tolerance never applies to arrival decisions, playback effects or timestamps',()=>{
+  for (const mutate of [
+    (t: Transition)=>{t.after.location.count+=1e-12;},
+    (t: Transition)=>{t.after.location.fix!.timestamp++;},
+    (t: Transition)=>{t.effects=[];},
+    (t: Transition)=>{t.reason='arrival-dwell';},
+  ]) {
+    const entries=JSON.parse(JSON.stringify(capture())) as Transition[];
+    mutate(entries[4]);assert.throws(()=>replay(fixture,entries),/divergence/);
+  }
+});

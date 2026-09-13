@@ -92,7 +92,7 @@ npm run replay -- diagnostics/walking-diagnostics.json
 
 Tests use deterministic timestamps, real Node SQLite files, failed transactions and a killed subprocess. They do not simulate proof of Android service survival, audible sound, lock-screen controls or real walking GPS. APK inspection verifies embedded assets and configuration, not successful device execution.
 
-Use **Export private diagnostics** after the walk. Up to 10,000 locally stored events include build/source identity, state before/after, reasons and (when explicitly enabled) precise fixes. New walk resets progress but retains logs. The replay runner checks recorded state/effect results and reports discontinuities as separate segments. A source/policy revision may deliberately change replay outcomes; preserve the original export for diagnosis.
+Use **Export private diagnostics** after the walk. Up to 10,000 locally stored events include build/source identity, state before/after, reasons and (when explicitly enabled) precise fixes. New walk resets progress but retains logs. The replay runner checks recorded state/effect results and reports discontinuities as separate segments. It allows at most one nanometre of phone/Mac rounding difference in derived distance, cross-track and along-route values; raw fixes, intent, timestamps, arrival decisions and playback effects must match exactly. A source/policy revision may deliberately change replay outcomes; preserve the original export for diagnosis.
 
 ```sh
 mkdir -p diagnostics
