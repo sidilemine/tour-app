@@ -27,6 +27,8 @@ No copied photographs, Tube map artwork, paid TTS or map tiles are included. The
 
 ## Field review sheet
 
+Use the [candidate-specific blank worksheet](FINCHLEY-FIELD-WORKSHEET.md) for the actual observations and per-leg timing.
+
 For each candidate record a date and reviewer, landmark identity, visitor coordinate, approach path, actual facing/viewpoint, crossing/obstruction conditions, surfaces/steps/gradient, hours/gates, permitted access and a fallback. Keep private raw observations in ignored `local-data/`; promote only reviewed public tour information to the manifest.
 
 Then route between **visitor points** using a real pedestrian router, preserve its geometry/maneuvers and provenance, review every leg, and time the walk. Reserve audio windows for directions; an actionable cue can pause narration and resume it only if no manual pause intervenes. This draft does not add a navigation engine to M1.

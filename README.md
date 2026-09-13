@@ -140,3 +140,7 @@ node --import tsx tools/render-listening-samples.ts
 - `assets/audio/`: three short local clips; [provenance/transcripts](assets/audio/README.md).
 
 The Expo blank template's license is retained in [TEMPLATE-LICENSE](TEMPLATE-LICENSE). The project is private and no distribution license has been granted.
+
+## Preparing the next checks and milestone
+
+Use the [batch evidence review tool](docs/TEST-EVIDENCE-REVIEW.md) to deduplicate saved attempts and replay candidate diagnostics locally. It never certifies physical acceptance. The [M2 implementation plan](docs/content/M2-IMPLEMENTATION.md) orders the offline-map proof, verified content, durable import and cue/player work after the M1 gate; the [field worksheet](docs/content/FINCHLEY-FIELD-WORKSHEET.md) prepares actual visitor/leg verification. None of this changes the installed phone build.
