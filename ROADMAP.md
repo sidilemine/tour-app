@@ -65,6 +65,8 @@ The first reported field attempt on 13 September failed with native crashes at S
 
 ## Milestone 2 — curated six-stop offline walk
 
+Arrival preparation: [calibration research](docs/ARRIVAL-CALIBRATION.md) proposes a bounded stationary-capture/provenance experiment and repeated visitor-position verification before per-stop radius tuning. This remains proposed work after the current phone tests; it neither changes the installed M1 defaults nor replaces any acceptance criterion.
+
 **Status: preparation in progress; player work follows M1.** Sidi authorized independent progress while away on 13 September. Implemented a local package preflight with failure-path tests and a sourced six-stop editorial draft. Map/provider comparison is documented; mobile import, map rendering and routed/verified walking content remain unimplemented. See [preparation results](docs/test-results/M2-preparation.md). The [ordered implementation plan](docs/content/M2-IMPLEMENTATION.md) and [visitor/leg worksheet](docs/content/FINCHLEY-FIELD-WORKSHEET.md) now make the next work concrete. A [local evidence intake tool](docs/TEST-EVIDENCE-REVIEW.md) supports batch M1 review. This does not pass or bypass M1.
 
 Deliver a validated versioned package, durable local import, a local map with full renderer assets, verified planned walking legs/directions, six narrated stops, transcripts, source/rights display and clear manual controls. Compare offline map/data and routing options before commitment; present any material cost or lock-in for owner review. Use owned audio initially if voice selection would delay the walk.

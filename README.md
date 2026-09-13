@@ -144,3 +144,5 @@ The Expo blank template's license is retained in [TEMPLATE-LICENSE](TEMPLATE-LIC
 ## Preparing the next checks and milestone
 
 Use the [batch evidence review tool](docs/TEST-EVIDENCE-REVIEW.md) to deduplicate saved attempts and replay candidate diagnostics locally. It never certifies physical acceptance. The [M2 implementation plan](docs/content/M2-IMPLEMENTATION.md) orders the offline-map proof, verified content, durable import and cue/player work after the M1 gate; the [field worksheet](docs/content/FINCHLEY-FIELD-WORKSHEET.md) prepares actual visitor/leg verification. None of this changes the installed phone build.
+
+[Arrival calibration research](docs/ARRIVAL-CALIBRATION.md) compares official location guidance, current capture/trigger code and the two recent walks. It proposes improving stop capture before changing radii; the phone build and current test procedure are unchanged.
