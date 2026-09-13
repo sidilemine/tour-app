@@ -111,6 +111,8 @@ Input fixes contain provider timestamp, received timestamp, coordinate, reported
 
 Arrival requires the next eligible visitor zone, plausible route position, usable recent fixes and persistent agreement. Use hysteresis, cooldown/deduplication, reversal detection and speed/jump checks. Physical heading is a weak hint at walking speed. Radii, dwell and corridor limits are tunable parameters recorded with the replay result, not universal accuracy guarantees.
 
+The current M1 implementation confirms arrival inside a 30 m radius, with at least three usable fixes spanning four seconds, cross-track ≤45 m and reversal rejection. Reported horizontal accuracy must be ≤35 m; retained arrival uses a 40 m exit radius. These are broad lab defaults, not exact-pin or physically verified viewpoint guarantees. [Repeated field observations](docs/test-results/M1-two-more-walks.md) require checking recorded visitor coordinates and approach geometry before tightening zones; no threshold was changed during that review.
+
 M1 starts with a known route and simple next-stop gating; later fixtures cover dense streets and crossings. Include normal travel, GPS jump, noisy parallel street, reversal, long silence/coffee stop, crossing route, stale/batched fixes, signal loss, jumping ahead, implausible bus speed and restart. Manual fallback must work regardless of matcher output.
 
 ## Android lifecycle hypothesis to test first

@@ -8,6 +8,8 @@ Updated 13 September 2026. M1: **implemented; awaiting physical test**. This is 
 
 Your current self-contained app can reopen away from the Mac. Your three-stop route stays saved when you select **New walk / reset progress**. The engineer prepares development builds and collects/replays the private JSON; you supply the real walking, audible observations and phone prompts.
 
+Latest review: [two further completed walks](test-results/M1-two-more-walks.md) each played A/B/C once with more than three minutes between tour clips. The first was music-free and locked according to Sidi; network/end-battery conditions and brief AppState entries remain unresolved. The second used Spotify: B began during unlock, C began screen-off, and Spotify yielding/resuming is user-reported. The controlled baseline and actual pause/interruption tests remain open. Their earlier setup attempts retained already-completed progress: use **End → New walk / reset progress → Start** for a fresh repeat. The guide journal has no new completed attempt records yet; begin/save an attempt there as well as exporting diagnostics.
+
 ## Next convenient walk: pause at arrival
 
 - [ ] Start a new diagnostic walk. Let A finish, then **Pause** during silence. Walk to B, wait at least 60 seconds: no audio. **Resume** should release the hold and permit B when still appropriate.
