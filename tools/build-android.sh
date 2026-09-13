@@ -1,6 +1,7 @@
 #!/bin/sh
 set -eu
 cd "$(dirname "$0")/.."
+node --import tsx tools/guide-docs.ts --check
 node tools/patch-expo-audio.cjs
 node tools/build-info.cjs
 # Only ARM64, physical-device builds. Never installs emulator images.

@@ -1,5 +1,7 @@
 # Remaining phone checks
 
+The app now includes **Offline test guide / saved results**. Choose a case, begin an attempt, return to the player to test, then record observations and export results alongside diagnostics. All instructions are available offline; engineer-prepared cases are labelled. [Full bundled guide](TEST-GUIDE.md).
+
 Updated 13 September 2026. M1: **implemented; awaiting physical test**. This is the working checklist; [ROADMAP](../ROADMAP.md#physical-phone-procedure-for-m1) retains the full criteria and [M1 results](test-results/M1.md) holds evidence. Tick a box only after its observations/logs are recorded, not because the code exists.
 
 Your current self-contained app can reopen away from the Mac. Your three-stop route stays saved when you select **New walk / reset progress**. The engineer prepares development builds and collects/replays the private JSON; you supply the real walking, audible observations and phone prompts.

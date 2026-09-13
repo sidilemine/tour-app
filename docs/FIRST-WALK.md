@@ -1,5 +1,7 @@
 # First Android walk — M1a/M1b
 
+The app now includes **Offline test guide / saved results**. Choose a case, begin an attempt, return to the player to test, then record observations and export results alongside diagnostics. All instructions are available offline; engineer-prepared cases are labelled. [Full bundled guide](TEST-GUIDE.md).
+
 The first development APK was built before M1 hardening, as requested. Use the final `walking-tour-development.apk` when available; the earlier `walking-tour-m1a-development.apk` is retained only as a diagnostic checkpoint. The full acceptance matrix remains in [ROADMAP.md](../ROADMAP.md#physical-phone-procedure-for-m1).
 
 After your first functional walk, use the [remaining phone checklist](PHONE-CHECKS.md) for the open M1 cases. A successful first walk does not complete the full gate.

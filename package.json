@@ -40,7 +40,9 @@
     "postinstall": "node tools/patch-expo-audio.cjs",
     "build:android": "sh tools/build-android.sh",
     "replay": "node --import tsx tools/replay.ts",
-    "check:package": "node --import tsx tools/check-package.ts"
+    "check:package": "node --import tsx tools/check-package.ts",
+    "docs:guide": "node --import tsx tools/guide-docs.ts",
+    "docs:check": "node --import tsx tools/guide-docs.ts --check"
   },
   "private": true,
   "expo": {

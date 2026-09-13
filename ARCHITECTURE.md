@@ -1,6 +1,6 @@
 # Architecture
 
-Status: M1 implemented, 12 September 2026; physical acceptance pending. [PRODUCT.md](PRODUCT.md) defines the experience; [ROADMAP.md](ROADMAP.md) defines the evidence required before advancing. The owner's revisions override the original brief's mixed state machine, numerical claim-confidence examples, lifecycle milestone ordering and early backend/knowledge-base recommendations.
+Status: updated 13 September 2026. M1 implemented; full physical acceptance pending. A functional self-contained walk has passed; see the result record for its limits. [PRODUCT.md](PRODUCT.md) defines the experience; [ROADMAP.md](ROADMAP.md) defines the evidence required before advancing. The owner's revisions override the original brief's mixed state machine, numerical claim-confidence examples, lifecycle milestone ordering and early backend/knowledge-base recommendations.
 
 ## Decisions and boundaries
 
@@ -18,17 +18,18 @@ Status: M1 implemented, 12 September 2026; physical acceptance pending. [PRODUCT
 
 SQLite is supported by Expo and persists across app restarts; the proposed transactional/checkpoint policy below is our design, not something the library supplies automatically. See [Expo SQLite](https://docs.expo.dev/versions/latest/sdk/sqlite/).
 
-Original directory guide, with actual M1 layout documented in README. Screens currently live in App.tsx; platform adapters are in src/session rather than additional speculative layers:
+Current layout (future adapters are added only when used):
 
 ```text
-app/                     screens and navigation
-src/domain/              tour types, route matcher, reducers, scheduler policy
-src/platform/            Expo location/audio/files/SQLite adapters
-src/session/             serialized events, effect coordination, recovery
-src/content/             package validation and local loading
+App.tsx                  player and fixture controls
+src/domain/              fixture types, geometry and deterministic playback policy
+src/session/             Expo audio/location adapters, serialized events and recovery
+src/storage/             shared transactional SQLite store
+src/testing/             bundled offline guide, independent journal and guide screen
 fixtures/                synthetic or approved sanitized tours/traces
 assets/                  small owned test media
-tools/tour-authoring/     later local authoring/compiler utilities
+tools/content/           Node-only package preflight; no mobile importer yet
+content/finchley/         public-source editorial and listening drafts
 docs/test-results/       sanitized build/device result summaries
 diagnostics/             ignored private raw device exports
 ```
@@ -143,7 +144,7 @@ Persist useful structured events locally through the silent gap. Private raw GPS
 
 Each claim stores its text, subject, exact narration sentence/segment references, source IDs, minimal supporting passage(s) with page/section locator, publisher/title/author/date/URL/accessed date, and how each passage supports or conflicts with it. Retain rights/reuse metadata and only the passages needed for verification, not indiscriminate full-page archives.
 
-Use explicit claim statuses: `unreviewed`, `supported`, `disputed`, `rejected`, `needs_refresh`. Record reviewer/method/date and uncertainty notes. “Supported” describes the review outcome against cited evidence, not certainty of truth. Important or contested claims need corroboration or clearly qualified narration. Folklore remains labeled. Do not replace this with a numerical model confidence or source-quality score.
+Use explicit claim statuses. The provisional Node package checker currently implements `needs_review`, `source_checked`, `disputed` and `rejected`; `source_checked` describes review against cited evidence, not certainty of truth. Source retrieval dates and uncertainty are present. Claim-specific reviewer/method/review-date and freshness handling remain required additions before a production content package; the original `supported` / `needs_refresh` terminology was a design proposal, not the current schema. Important or contested claims need corroboration or clearly qualified narration. Folklore remains labeled. Do not replace this with a numerical model confidence or source-quality score.
 
 Prefer heritage bodies, museums, government, academic/primary and reputable specialist sources. Discovery sources can suggest leads; the writer receives reviewed evidence and verified physical context. Check every factual sentence for unsupported, overstated or conflicting content. Missing support returns the draft for revision. Model self-verification alone is not approval in E1.
 
@@ -166,7 +167,7 @@ Current official documentation was consulted on 12 September 2026. Links using `
 
 ## M1 implementation record
 
-The first native development APK was built as soon as the controls, configurable fixture, reducer, SQLite and diagnostics connected end to end. M1b added replay/crash tests, repeated-walk reset, explicit remote-control events and the self-contained APK. See [test results](docs/test-results/M1.md). Physical operation is unverified; M1 has not passed.
+The first native development APK was built as soon as the controls, configurable fixture, reducer, SQLite and diagnostics connected end to end. M1b added replay/crash tests, repeated-walk reset, explicit remote-control events and the self-contained APK. See [test results](docs/test-results/M1.md). A functional self-contained A/B/C walk and stationary recovery have been observed. The strict repeated locked-screen and failure-path matrix remains incomplete; M1 has not passed.
 
 The current adapter keeps a single native player and media service through completed clips and real silence, replacing its media source for each clip. A narrow, version-guarded postinstall patch to expo-audio 57.0.5 disables its native focus-gain auto-resume, enables pause on output disconnection, routes notification/headset play/pause through explicit coordinator events and tags media generations to reject delayed status from the previous source. The patch fails on an unexpected library version or source anchor. This is an Android adapter customization, not a replacement native architecture. The first APKs incorrectly linked Expo's stock precompiled audio module, discovered in device testing on 13 September. Android `buildFromSource` now explicitly selects `expo-audio`; the build inspects native DEX markers and playback checks a native adapter revision before issuing play. See [Expo precompiled modules](https://docs.expo.dev/guides/prebuilt-expo-modules/). Actual media-control/focus behavior must still be measured in the phone matrix.
 
@@ -185,3 +186,12 @@ The owner authorized independent development while physical M1 checks are pendin
 Readiness declarations require separate standing/approach/viewpoint/access reviews, source-checked claim evidence, real route provenance, local map/audio/transcript resources and an offline renderer review. This is structural validation of recorded assertions, not proof of truth, access, resource decoding or permission. Mobile staging, atomic import/version pinning and renderer validation remain M2 work after the M1 gate. Map format alternatives in the provisional schema do not assert that an adapter supports each format.
 
 The [Finchley draft](content/finchley/manifest.json) deliberately fails readiness: visitor positions, verified route/directions and real offline assets are missing. Short supervised E1 samples are rendered locally for desk listening only. No runtime dependency, private route upload, backend, paid provider or phone build changed. [Map/routing notes](docs/content/MAPS-AND-ROUTING.md) recommend a bounded MapLibre offline-database experiment; data rights and actual native integration remain unresolved.
+
+
+## Offline guide and observations — M1 follow-up
+
+`src/testing/guide.json` is embedded in the self-contained APK and included in the JavaScript loaded by the development client. It defines 18 cases, preparations, variants, steps and expected observations. `tools/guide-docs.ts` generates `docs/TEST-GUIDE.md` from that same source; `npm run docs:check` and the Android build reject drift. The existing roadmap remains the acceptance authority.
+
+A React Native modal presents the guide without taking ownership of the active session. Opening, closing, beginning or saving a test never issues playback or location commands. The journal uses a separate `walking-tests.db` and the shared synchronous transactional Store: selected case, active notes/conditions and append-only completed attempts recover independently of the tour. It records source/variant, device, route identity, guide revision and start/end context; observations are not automatic acceptance decisions. It prevents overlapping attempts and an observed pass spanning a changed build/route. Corrupt data and write failures are surfaced without deleting saved records. Retention stops at 500 completed attempts pending deliberate archival; nothing is silently discarded.
+
+The explicit test-results export is separate from precise diagnostics. Match the two using attempt times, route identity and walk timestamps. Drafts and previous failures remain available. All guide instructions work offline, while development-build, short-approach and unscheduled-kill tests still require engineer preparation. This change does not add a fabricated short route or expand navigation.

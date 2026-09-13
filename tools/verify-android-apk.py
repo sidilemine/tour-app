@@ -8,6 +8,13 @@ import zipfile
 for path in sys.argv[1:]:
     with zipfile.ZipFile(path) as apk:
         dex = b''.join(apk.read(name) for name in apk.namelist() if name.endswith('.dex'))
+        if Path(path).name == 'walking-tour-offline.apk':
+            bundle = apk.read('assets/index.android.bundle')
+            for marker in (b'Offline test guide', b'walking-tests.db', b'pause-silence', b'process-kill'):
+                if marker not in bundle:
+                    raise SystemExit(f'{path}: bundled guide marker missing: {marker!r}')
+            if len([name for name in apk.namelist() if name.endswith('.m4a')]) < 3:
+                raise SystemExit(f'{path}: missing embedded test clips')
     missing = [marker for marker in (b'tourAdapterVersion', b'tourGeneration', b'tourCommand') if marker not in dex]
     if missing:
         raise SystemExit(f'{path}: required native audio markers missing: {missing}. Check Android buildFromSource.')

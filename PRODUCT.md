@@ -39,6 +39,10 @@ Location, audio and tour progress can differ at the same instant. A visitor may 
 
 These are initial testable defaults. Change them using observed walking feedback, updating [ARCHITECTURE.md](ARCHITECTURE.md) and tests together.
 
+## M1 test companion
+
+The lifecycle lab includes an offline test guide with preparation, steps, expected behavior and durable attempt notes. It distinguishes independent tests from engineer-prepared cases. Saving an observed pass/fail/inconclusive result does not control playback or mark M1 accepted; diagnostics and physical observations still need review. Test records stay separate from tour progress and export only on request.
+
 ## Scope of the curated prototype
 
 One walk in a location Sidi can test, six publicly reachable stops, a clear start/end, verified walking legs and standing positions. Include natural spoken narration, transcripts, clear manual controls, visible route, local map and directions, sources, asset rights and restart recovery. The actual area, themes, walking duration and voice are chosen with Sidi during early curation, not invented as settled decisions here.

@@ -18,7 +18,7 @@ Local build outputs (ignored by Git):
 | `artifacts/walking-tour-offline.apk` | Self-contained release variant with embedded JavaScript and all three clips; no Metro needed |
 | `artifacts/walking-tour-m1a-development.apk` | Earlier vertical-slice checkpoint; prefer the final development build |
 
-The APKs target ARM64 Android, minimum API 24, target/compile API 36. USB installation and development-app launch are verified on Sidi's Pixel 6 (Android 17/API 37, ARM64). Walking, audio/location lifecycle and progress-recovery acceptance remain pending; see the result record. Both final APKs use the same package ID (`uk.sidi.walkingtourlab`) and development signing certificate. Installing one replaces the other without needing to uninstall; never clear app data during recovery testing.
+The APKs target ARM64 Android, minimum API 24, target/compile API 36. USB installation and development-app launch are verified on Sidi's Pixel 6 (Android 17/API 37, ARM64). A functional self-contained walk and stationary offline recovery have passed; the complete repeated-walk and failure-path acceptance remains pending. See the result record. Both final APKs use the same package ID (`uk.sidi.walkingtourlab`) and development signing certificate. Installing one replaces the other without needing to uninstall; never clear app data during recovery testing.
 
 ```sh
 sh tools/android-env.sh adb devices -l
@@ -36,6 +36,14 @@ sh tools/android-env.sh adb install -r artifacts/walking-tour-offline.apk
 ```
 
 Open **Walking Tour Lab** from the phone's app list. Check cold launch with Metro stopped and data/Wi-Fi off. Expo's [local compilation guide](https://docs.expo.dev/guides/local-app-development/) documents development and release variants; this project performs no EAS build, remote upload, store signing or publication.
+
+## Offline test guide on the phone
+
+Open **Offline test guide / saved results** near the top of Walking Tour Lab. Read the setup/export instructions, choose a case and use **Begin attempt — save a record** before testing. Return to the player for Start/Pause/Resume/End. Conditions and observations save as you type and survive closing or terminating the app. After the test, End in the player, save an observed pass/fail/inconclusive result and export **test results JSON** plus **private diagnostics**. Save both locally together; the first records your observations, the second records player/location behavior.
+
+All 18 procedures are embedded and readable offline. Cases needing the development build, a checked short-approach fixture or an engineer-controlled process kill are labelled; they are not silently substituted with easier tests. The guide never starts a tour or automatically certifies acceptance. Older observations remain tied to their original build/route. No historical pass is pre-ticked.
+
+The [full guide text](docs/TEST-GUIDE.md) is generated from the same content as the phone. The [working checklist](docs/PHONE-CHECKS.md) and [M1 result record](docs/test-results/M1.md) remain the human-reviewed status. New guide delivery evidence is recorded in [M1 guide results](docs/test-results/M1-guide.md).
 
 ## Configure a walking fixture
 
@@ -85,6 +93,7 @@ No backend, paid TTS, AI provider, map key, full Xcode or store membership is ne
 npm run typecheck
 npm run lint
 npm test
+npm run docs:check
 npx expo install --check
 npx expo-doctor
 npm run replay -- diagnostics/walking-diagnostics.json
@@ -121,6 +130,7 @@ node --import tsx tools/render-listening-samples.ts
 - `src/domain/`: fixture validation, geometry and deterministic state transitions.
 - `src/session/`: live Expo location/audio adapters, task registration and serialized coordination.
 - `src/storage/`: shared SQL transaction policy used by Expo SQLite and Node tests.
+- `src/testing/`: embedded guide and durable test journal, independent of tour progress.
 - `tests/`, `fixtures/`: automated cases and synthetic input data.
 - `tools/`: scoped build/setup, guarded audio patch, source identity, replay and local content preflight/listening tools.
 - `content/finchley/`: public-source editorial inputs; separate from the private device route.

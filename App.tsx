@@ -7,6 +7,7 @@ import * as Sharing from 'expo-sharing';
 import { Coordinate, distance, Fixture } from './src/domain/fixture';
 import { eligible } from './src/domain/engine';
 import * as session from './src/session/session';
+import { TestGuide } from './src/testing/TestGuide';
 
 type Draft = { route: Coordinate[]; stops: Fixture['stops'] };
 function Button({ label, onPress, disabled = false, secondary = false }: { label: string; onPress: () => void; disabled?: boolean; secondary?: boolean }) {
@@ -15,6 +16,7 @@ function Button({ label, onPress, disabled = false, secondary = false }: { label
 export default function App() {
   const { fixture, state, fatal, service, recent } = useSyncExternalStore(session.subscribe, session.getSnapshot);
   const [busy, setBusy] = useState(false), [editing, setEditing] = useState(false);
+  const [guideOpen, setGuideOpen] = useState(false);
   const [json, setJson] = useState(''), [diagnostics, setDiagnostics] = useState(true);
   const [recording, setRecording] = useState(false), [checked, setChecked] = useState(false);
   const [draft, setDraft] = useState<Draft>({ route: [], stops: [] });
@@ -77,6 +79,8 @@ export default function App() {
     <Text style={styles.eyebrow}>WALKING TOUR LAB · M1</Text>
     <Text style={styles.heading}>{'A walk. A pause.\nThe next arrival.'}</Text>
     <Text style={styles.description}>A device experiment, with real silence between local clips. Physical acceptance is still pending.</Text>
+    <Button secondary label="Offline test guide / saved results" onPress={() => setGuideOpen(true)} />
+    {guideOpen && <TestGuide onClose={() => setGuideOpen(false)} />}
     {fatal ? <View style={styles.warning}><Text selectable>{fatal}</Text></View> : null}
     <View style={styles.card}>
       <Text style={styles.section}>{fixture?.title || 'Set up your test walk'}</Text>
@@ -121,7 +125,7 @@ export default function App() {
       <Button secondary label="Delete diagnostic log" disabled={state.active} onPress={() => Alert.alert('Delete local diagnostics?', 'Export first if you need this walk for debugging. Progress is kept.', [{ text: 'Cancel' }, { text: 'Delete', style: 'destructive', onPress: session.clearDiagnostics }])} />
       {recent.slice(0, 8).map((event, i) => <Text key={i} style={styles.log}>{new Date(event.at).toLocaleTimeString()} · {event.reason}</Text>)}
     </View>
-    <Text style={styles.footer}>First walk: load assets → Start → hear A → unplug / stop Metro → lock → 3–5 minutes of silence → arrive B → repeat to C → export. Pause must stay respected. End stops location. Reopening requires Start then deliberate Resume.</Text>
+    <Text style={styles.footer}>Read the Offline test guide before your next attempt. Use the self-contained build away from the Mac; development tests need preparation. Pause stays respected. End stops location. Reopening requires Start then deliberate Resume.</Text>
   </ScrollView>;
 }
 const styles = StyleSheet.create({
