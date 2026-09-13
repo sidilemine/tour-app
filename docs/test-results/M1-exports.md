@@ -18,12 +18,21 @@ Expo compatibility passes; Expo Doctor passes 21/21. Both Android variants built
 
 Runtime source ID: `4fa6ab9dd753797d`. Self-contained APK SHA-256: `ed8a47d24344e5711cdc78094092489d853fb78ae155288dfda492f2fbef0c65`. Development APK SHA-256: `ad9d843bc708c1c329e05508fae1e3abb4fb49c4104980a74c753dcf670eb3d6`. The native development APK is unchanged; its current JavaScript requires Metro. The self-contained artifact embeds the updated UI and guide.
 
-The phone was not connected (`adb devices` returned no device). Installation and actual folder-picker checks are pending; the previously installed guide build has not been replaced. Sidi has been asked to reconnect/unlock. Unit tests cannot establish Android's actual provider behavior or a successful on-device save. No new walk or audible playback result is claimed.
+## Connected-phone verification
 
-Remaining connected-phone procedure:
+Completed on 13 September 2026, approximately 12:44–12:52 BST, on Pixel 6 / Android 17. The phone reconnected after the initial build-only handoff. Installed the self-contained APK with `adb install -r`; its installed checksum matches the artifact above. No uninstall or data clearing occurred. Declined Play Protect's optional upload of the APK.
 
-1. Verify tracking is stopped and preserve the existing route, progress and journal; install the self-contained APK with `adb install -r`, never uninstall or clear data.
-2. Export fixture JSON, edit its name and save under a local Documents/Walking Tour Tests folder. Check the success message and parse the saved file privately. Repeat a custom name and confirm a separate file exists without changing the earlier file.
-3. Save test results from the nested guide dialog and private diagnostics with distinct default names. Pull privately, verify retained attempts/route and replay diagnostics. Keep raw files ignored.
-4. Cancel folder selection and confirm no file/success message. Open Share instead with an edited filename, then cancel without selecting a recipient; do not treat chooser closure as delivery.
-5. Check cold opening/local saving offline, restore original connectivity settings, inspect app-scoped crashes and leave tracking stopped. Record actual outcomes here; this stationary check does not pass the full walking gate.
+Observed checks:
+
+- Renamed the fixture export to `export-save-check` in the app; Android created `export-save-check.json` in local **Documents/Walking Tour Tests**. The app reported Saved and verified after readback. The folder was created through Android's picker, with access limited to that chosen folder.
+- Saved the same custom name again. Android created `export-save-check (1).json`. Both files were pulled privately and byte-compared; the earlier file was unchanged. Both contained the existing three stops and ten route points.
+- Cancelled a subsequent folder selection. Android Back first moved up the folder hierarchy; further Back exited the picker. The app reported cancellation without success and created no extra file.
+- Share instead displayed the edited `export-save-check.json` filename. Cancelled the chooser without selecting any recipient or external service. This verifies chooser handoff, not delivery through recipient apps.
+- Disabled Wi-Fi/mobile data and force-stopped/reopened the app. Android reported **Active default network: none**. The self-contained app recovered its guide, selected case and original inconclusive note: “Engineer UI smoke check. No walk performed.” No attempt was added or reclassified.
+- From the nested guide export dialog, saved two new test-result snapshots offline using default filenames. Both files had distinct timestamped names, parsed as JSON and contained source `4fa6ab9dd753797d`, guide revision 2 and the unchanged original attempt with its original build/revision.
+- Saved private diagnostics to the same local folder while offline. Parsed the file privately and replayed it with `npm run replay -- diagnostics/export-device-check/latest-diagnostics.json`: **299 transitions in 7 segments, all stored transitions reproduced**. These are retained historical transitions, not evidence of a new walk.
+- Verified the original network settings were restored (Wi-Fi/data enabled, airplane mode off). No app entry appeared in the crash buffer during this test interval. Left the player foreground, **TOUR STOPPED**, ended hold, no unplayed stops, original three-stop/ten-point route retained.
+
+Five local JSON files remain in Documents/Walking Tour Tests: two fixture save checks, two result snapshots and one diagnostic export. Private pulled files and UI/native evidence remain ignored under `diagnostics/export-device-check/` and `diagnostics/`; no coordinates or private traces were committed or uploaded.
+
+The direct-save, rename, collision and offline export handoff is verified on this phone. The source implementation and APK did not change during this follow-up; the previous 61 automated tests and build checks apply, with real exported-data replay added here. Other document providers and recipient apps are not certified by this check. No new walk, audibility or audio-interruption result is claimed; M1's full physical matrix remains pending.
