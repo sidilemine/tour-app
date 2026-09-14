@@ -31,8 +31,30 @@ Outputs remain under ignored `artifacts/`; the previous self-contained APK was r
 
 The self-contained update installed successfully with `adb install -r`, without uninstalling or clearing data. The installed base APK SHA-256 exactly matches the artifact above. With no listener on the Mac's Metro port, force-stop followed by activity launch reported **COLD**, status OK, 148 ms; Android reported no active app services afterwards. No tour was started during this check and no connectivity setting changed. App-scoped exit records show the expected package update and deliberate force-stop; retained crash records contain only the earlier 13 September failures, with no new app crash from this installation/launch.
 
-The phone remained keyguard-locked. Unlock was requested, but not received during this run. Consequently, visible UI/guide/progress confirmation, runtime audio status and the live stationary locked-location test are **pending**. A successful activity launch behind keyguard is not a visible cold-open or offline-network acceptance pass. The four original exports and existing route backup remain preserved. The update used Android's data-preserving replacement, but saved state has not yet been visually rechecked on this build.
+The initial installation ended with the phone keyguard-locked, so visible recovery and live stationary delivery were then pending. The subsequent connected check below resolves those items. Runtime audible release at B and offline-network walking acceptance remain physical retests; they are not inferred from a cold activity launch.
 
-Required connected check: preserve the saved fixture/progress, install with `adb install -r`, cold-open without Metro, start tracking with the existing hold respected, then observe fresh timestamps through a stationary locked interval longer than 60 seconds. End tracking afterwards and review native crashes and exported callbacks. This checks stationary delivery on one connected phone; it is not an unplugged walking or battery pass.
+### Connected stationary check — passed, with limits
 
-Required field retests: on the corrected self-contained build, repeat the two A→B pause cases. First let A finish, pause, walk to B and wait 60 seconds; Resume while stationary should promptly allow B with a fresh usable fix. Second pause A mid-clip, walk/wait likewise, then Resume: the rest of A should finish before B, without an unexplained long silence afterwards. Time any wait, let B finish, End and save results plus diagnostics. Actual remote controls and the full baseline/interruption/recovery matrix remain separate. M1 stays open until its real acceptance criteria are met.
+The phone was unlocked in the follow-up session. The player displayed the original three stops/ten route points, A completed, B paused at 5.6 s and C unplayed. Start retained the ended hold and did not play audio; an explicit in-app Pause set the manual hold. The phone remained USB-connected/powered and was left stationary as instructed. No network, battery or permission settings changed.
+
+The sleep request was followed by native screen-off/keyguard-shown at **11:44:10.585 BST**. Analysis starts at this confirmed locked state, not the earlier sleep request. Through **11:45:24.078**, a **73.493-second** screen-off/locked window with no intervening wake in the retained native events:
+
+| Measure | Observed |
+|---|---:|
+| Fix callbacks received/persisted | 36 |
+| Median callback interval | 2.000 s |
+| Minimum / maximum callback interval | 1.954 / 2.042 s |
+| Maximum provider-fix age at callback | 0.181 s |
+| First fix after lock / last fix before window end | 1.527 / 1.966 s |
+| Manual hold | Preserved on every fix |
+| Playback effects in the locked window | None |
+
+This directly demonstrates regular stationary background callbacks on this connected Pixel 6 with the corrected request, unlike the minute-long gaps in the earlier field attempts. It does not establish audible pending-stop release, moving arrival, unplugged battery cost, every OEM's behavior or the full M1 gate. The eligible stop was not reached; the test deliberately preserved the previous route/progress and hold instead of inventing a physical arrival.
+
+After Sidi unlocked, End stopped tracking at **11:47:04 BST**. The app's **Saved and verified** flow wrote `walking-diagnostics-2026-09-14T10-47-21-378Z-3tijgn.json` in Documents/Walking Tour Tests. The copied file and phone SHA-256 match: `45e1984c48913c24804ab2d5da234acae30d51c6984d5ea810869d9b81f10cef`. Source `84599b46333c1aa1`, `offline-release`. Full replay reproduced **1,995 transitions / 16 segments**; the new Start→End interval reproduced **115 transitions / one segment**. Fixture, stop states and exact **5.603-second** B offset match the pre-update export.
+
+A subsequent deliberate force-stop/cold reopen, with Metro absent and no installation/data clear between checkpoint and assertion, visibly restored the same route, progress and ended hold. Android then reported no remaining app services. The bundled **Guide 3 · Self-contained build** opened and showed the updated stationary/timing instructions. An unfinished guide attempt from 10:57:32 and the older saved observation remained present; neither was edited or automatically marked passed. Retained app crash records showed no new crash, with the earlier 13 September failures preserved. The stopped player was left visible; the phone can be disconnected.
+
+Only documentation changed in this follow-up: export checksum, replay, fixture/offset equality, native screen/service/crash evidence, local links, guide parity and diff were checked. No new app build or unit-test run was necessary.
+
+Required field retests: on the corrected self-contained build, repeat the two A→B pause cases. First let A finish, pause, walk to B and wait 60 seconds; Resume while stationary should promptly allow B with a fresh usable fix. Second pause A mid-clip, walk/wait likewise, then Resume: the rest of A should finish before B, without an unexplained long silence afterwards. No minimum A→B travel time applies to these pause cases: a normal or brisk walk is fine. Keep the full 60-second wait at B. Time any delay after Resume, let B finish, End and save results plus diagnostics. Actual remote controls and the full baseline/interruption/recovery matrix remain separate. M1 stays open until its real acceptance criteria are met.

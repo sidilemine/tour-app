@@ -12,12 +12,14 @@ Latest review: [four pause-walk exports](test-results/M1-four-pause-walks.md) su
 
 ## Pause-at-arrival evidence and retest
 
-The [stationary-location correction](test-results/M1-stationary-location.md) is implemented and the self-contained update installed (source `84599b46333c1aa1`). **First unlock the connected phone for the engineer’s stationary callback/progress check; then repeat the two pause walks below.** Build/automated checks pass, but the locked-phone location check is pending. Guide revision 3 includes stationary wait timing and letting B finish; its full acceptance cases are retained.
+The [stationary-location correction](test-results/M1-stationary-location.md) is installed (source `84599b46333c1aa1`). **The connected check passed: 36 fresh callbacks during 73.5 seconds locked, median 2 seconds, longest gap 2.04 seconds, with manual hold preserved. Your route/progress and visible cold reopening were verified. You can now repeat the two pause walks below.** This is not the outdoor release or full M1 pass. Guide revision 3 includes stationary wait timing and letting B finish.
+
+For these pause tests, **A→B does not need to take three minutes**: a normal or brisk walk is fine. Wait a full **60 seconds at B while paused**, stay still when pressing Resume, and time any subsequent delay. The three-minute genuine-silence rule applies to the separate baseline walks.
 
 - [x] In-app Pause during silence stays held on arrival and through a reported 60-second wait: supported by the second 14 September attempt. B's release was delayed, so this is the hold subcriterion only.
 - [x] In-app Pause during unfinished A stays held at B through a reported 60-second wait; Resume continues A before B: supported by the fourth attempt. B's additional location wait remains a defect.
-- [ ] After the connected check, repeat the complete silent-pause case while stationary at B: no speech during the hold, then prompt B with a fresh position after explicit Resume.
-- [ ] After the connected check, repeat the complete unfinished-A case: finish A on Resume, then B without the demonstrated stale-position delay.
+- [ ] Repeat the complete silent-pause case while stationary at B: no speech during the hold, then prompt B with a fresh position after explicit Resume.
+- [ ] Repeat the complete unfinished-A case: finish A on Resume, then B without the demonstrated stale-position delay.
 - [ ] Repeat with actual lock-screen/headset controls. Prior ADB media-key checks do not establish physical controls during a walk.
 
 Stop safely before touching the screen. **End** stops tracking. Export diagnostics after each attempt; New walk retains old logs. Do not delete logs or reinstall between a checkpoint and a recovery check.
