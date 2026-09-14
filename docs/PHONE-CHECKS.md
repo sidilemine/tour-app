@@ -8,15 +8,17 @@ Updated 14 September 2026. M1: **implemented; awaiting physical test**. This is 
 
 Your current self-contained app can reopen away from the Mac. Your three-stop route stays saved when you select **New walk / reset progress**. The engineer prepares development builds and collects/replays the private JSON; you supply the real walking, audible observations and phone prompts.
 
-Latest review: [both corrected pause retests passed](test-results/M1-pause-retests.md), supported by Sidi's successful walk report and the saved exports. The earlier [four delayed attempts](test-results/M1-four-pause-walks.md) remain historical evidence; their stationary-release delay did not recur. Earlier [two A/B/C walks](test-results/M1-two-more-walks.md) retain their functional/Spotify evidence and acceptance limits.
+Latest review: [earbud Pause/Play and the self-contained offline locked walk passed](test-results/M1-remote-and-offline-walks.md), supported by saved diagnostics and Sidi’s physical observations. The [two earlier in-app pause retests](test-results/M1-pause-retests.md) remain passed. C's reported roughly 10 m early trigger is retained as calibration evidence; these successful cases do not need another identical repeat.
+
+Remaining outdoor plan, assuming successful attempts: **four full-route runs** (three development baselines, one separate battery-saver run) and **three short field cases** (detour/rejoin, early arrival, pass pending). The five at-home checks below remain open. Poor GPS is a conditional observation subcase; it is not an instruction to wander until reception fails.
 
 ## Pause-at-arrival evidence
 
-The [stationary-location correction](test-results/M1-stationary-location.md) is installed (source `84599b46333c1aa1`). The connected locked check and both outdoor repeats now support fresh delivery during a held arrival. Guide revision 3 retains the procedure for future regressions. **No further identical in-app pause walks are needed.** These passes do not replace the separate baseline or remote-control tests.
+The [stationary-location correction](test-results/M1-stationary-location.md) is installed (source `84599b46333c1aa1`). The connected locked check and both outdoor repeats now support fresh delivery during a held arrival. Guide revision 3 retains the procedure for future regressions. **No further identical in-app pause walks are needed.** The later remote-control case also passed below; the development baselines and other remaining cases stay separate.
 
 - [x] In-app Pause after A finishes: B stays held, then starts **0.187 seconds after explicit Resume**. The recognised held-arrival interval was 69.4 seconds.
 - [x] In-app Pause during A: arrival stays held; Resume finishes A, then B starts **0.121 seconds after A ends**, with no stale-position delay. The recognised held-arrival interval was 71.0 seconds.
-- [ ] Repeat with actual lock-screen/headset controls. The stationary earbud case test delivered a real remote Pause, but neither it nor prior ADB media-key checks establishes physical controls during an arrival walk.
+- [x] Actual earbud Pause/Play during an arrival walk: Sidi confirms 60 seconds physically waiting at B; remote Play resumed A before B. GPS recognised held arrival 46.873 seconds before Play, recorded separately from the physical wait. See the [new result](test-results/M1-remote-and-offline-walks.md).
 
 The pause cases do not require three minutes of A→B travel; their procedure requires a full 60-second wait at B while paused. GPS-derived held intervals support the result but are not surveyed physical arrival times; see the result record for confirmation limits. The three-minute genuine-silence rule remains required for the separate baseline walks.
 
@@ -30,7 +32,7 @@ The first functional walk worked: B/C triggered once and all clips completed. Th
 - [ ] Development baseline 1: lock through A → silence → B → silence → C.
 - [ ] Development baseline 2: same conditions, new walk.
 - [ ] Development baseline 3: same conditions, new walk. Three consecutive successes required.
-- [ ] Self-contained repeat: cold-open with no Metro/network and repeat the locked silent-gap scenario.
+- [x] Self-contained offline locked walking repeat: 4:17.469 and 3:16.878 silent gaps, A/B/C once and completed. Same-build offline cold opening passed separately in the connected recovery session; this outing was not a new cold-process launch. See the [evidence distinction](test-results/M1-remote-and-offline-walks.md).
 
 Aim for **four minutes of actual silence after each clip ends** before entering the next stop area (minimum three). If necessary wait safely before approaching the stop; time spent after an early trigger cannot lengthen the tested gap. Do not unlock between clips. Each next clip must begin once within 30 seconds of physically arriving. Note estimated arrival time for comparison with logs. The engineer restores the self-contained variant after development tests.
 
