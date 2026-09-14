@@ -1,6 +1,6 @@
 # Architecture
 
-Status: updated 13 September 2026. M1 implemented; full physical acceptance pending. A functional self-contained walk has passed; see the result record for its limits. [PRODUCT.md](PRODUCT.md) defines the experience; [ROADMAP.md](ROADMAP.md) defines the evidence required before advancing. The owner's revisions override the original brief's mixed state machine, numerical claim-confidence examples, lifecycle milestone ordering and early backend/knowledge-base recommendations.
+Status: updated 14 September 2026. M1 implemented; full physical acceptance pending. A functional self-contained walk has passed; see the result record for its limits. [PRODUCT.md](PRODUCT.md) defines the experience; [ROADMAP.md](ROADMAP.md) defines the evidence required before advancing. The owner's revisions override the original brief's mixed state machine, numerical claim-confidence examples, lifecycle milestone ordering and early backend/knowledge-base recommendations.
 
 ## Decisions and boundaries
 
@@ -116,6 +116,8 @@ The current M1 implementation confirms arrival inside a 30 m radius, with at lea
 [Arrival calibration research](docs/ARRIVAL-CALIBRATION.md) identifies single-fix stop capture as a separate uncertainty from live GPS and trigger policy. Prioritize fresh stationary capture, provenance and repeated physical verification before per-stop radius tuning. The proposed capture experiment is not implemented; current fixtures lack capture-quality metadata. Pinned Android source inspection found that an enum-only High → Highest change would leave our explicitly configured continuous location request unchanged. Keep the installed M1 build stable during current acceptance tests.
 
 M1 starts with a known route and simple next-stop gating; later fixtures cover dense streets and crossings. Include normal travel, GPS jump, noisy parallel street, reversal, long silence/coffee stop, crossing route, stale/batched fixes, signal loss, jumping ahead, implausible bus speed and restart. Manual fallback must work regardless of matcher output.
+
+The [14 September pause walks](docs/test-results/M1-four-pause-walks.md) expose a separate location-freshness conflict: the active request's 2 m minimum displacement permits long stationary callback gaps, while pending speech requires a fix no older than 15 seconds. Held B was recognised but delayed or never released after Resume. Correct stationary delivery/revalidation and log its waits before further radius tuning; keep the freshness/manual-hold guards. This remains an open adapter issue, not an implemented correction.
 
 ## Android lifecycle hypothesis to test first
 

@@ -4,17 +4,21 @@ The app now includes **Offline test guide / saved results**. Choose a case, begi
 
 To save each JSON, keep its unique default name or edit it in **Save or share JSON**, tap **Save to folder**, choose/create **Walking Tour Tests** under Documents or Downloads, then **Use this folder** → **Allow**. Wait for **Saved and verified**. Use a subfolder if Downloads itself is blocked. Save both test results and private diagnostics after each attempt. **Share instead** is optional and does not confirm a local save. The self-contained export update is installed; direct saving, editable/repeated names and offline exports passed the connected-phone checks. The local **Documents/Walking Tour Tests** folder is ready. See [export delivery evidence](test-results/M1-exports.md).
 
-Updated 13 September 2026. M1: **implemented; awaiting physical test**. This is the working checklist; [ROADMAP](../ROADMAP.md#physical-phone-procedure-for-m1) retains the full criteria and [M1 results](test-results/M1.md) holds evidence. Tick a box only after its observations/logs are recorded, not because the code exists.
+Updated 14 September 2026. M1: **implemented; awaiting physical test**. This is the working checklist; [ROADMAP](../ROADMAP.md#physical-phone-procedure-for-m1) retains the full criteria and [M1 results](test-results/M1.md) holds evidence. Tick a box only after its observations/logs are recorded, not because the code exists.
 
 Your current self-contained app can reopen away from the Mac. Your three-stop route stays saved when you select **New walk / reset progress**. The engineer prepares development builds and collects/replays the private JSON; you supply the real walking, audible observations and phone prompts.
 
-Latest review: [two further completed walks](test-results/M1-two-more-walks.md) each played A/B/C once with more than three minutes between tour clips. The first was music-free and locked according to Sidi; network/end-battery conditions and brief AppState entries remain unresolved. The second used Spotify: B began during unlock, C began screen-off, and Spotify yielding/resuming is user-reported. The controlled baseline and actual pause/interruption tests remain open. Their earlier setup attempts retained already-completed progress: use **End → New walk / reset progress → Start** for a fresh repeat. The guide journal has no new completed attempt records yet; begin/save an attempt there as well as exporting diagnostics.
+Latest review: [four pause-walk exports](test-results/M1-four-pause-walks.md) support in-app manual hold and unfinished-story ordering, but reveal delayed/missing B after Resume while standing still. Two attempts include a reported 60-second wait with the hold preserved. Fresh GPS was unavailable at release; keep the complete pause cases open until corrected and retested. All four used the phone speaker/app buttons; only the first was in flight mode. Earlier [two A/B/C walks](test-results/M1-two-more-walks.md) remain useful functional/Spotify evidence, with their original acceptance limits.
 
-## Next convenient walk: pause at arrival
+## Pause-at-arrival evidence and retest
 
-- [ ] Start a new diagnostic walk. Let A finish, then **Pause** during silence. Walk to B, wait at least 60 seconds: no audio. **Resume** should release the hold and permit B when still appropriate.
-- [ ] In another attempt, pause part-way through a clip; reach the next stop while paused. Wait 60 seconds, still silent; Resume continues unfinished narration before any eligible next clip.
-- [ ] Repeat the pause with the actual lock-screen or headset control. ADB media-key checks have passed; actual controls during a walk are outstanding.
+The next engineering step is stationary location delivery/revalidation. **No further identical pause walk is needed on the current build before that correction.** The embedded guide remains available; its full cases are unchanged.
+
+- [x] In-app Pause during silence stays held on arrival and through a reported 60-second wait: supported by the second 14 September attempt. B's release was delayed, so this is the hold subcriterion only.
+- [x] In-app Pause during unfinished A stays held at B through a reported 60-second wait; Resume continues A before B: supported by the fourth attempt. B's additional location wait remains a defect.
+- [ ] After the correction, repeat the complete silent-pause case while stationary at B: no speech during the hold, then prompt B with a fresh position after explicit Resume.
+- [ ] After the correction, repeat the complete unfinished-A case: finish A on Resume, then B without the demonstrated stale-position delay.
+- [ ] Repeat with actual lock-screen/headset controls. Prior ADB media-key checks do not establish physical controls during a walk.
 
 Stop safely before touching the screen. **End** stops tracking. Export diagnostics after each attempt; New walk retains old logs. Do not delete logs or reinstall between a checkpoint and a recovery check.
 

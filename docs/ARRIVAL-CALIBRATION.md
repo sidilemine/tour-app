@@ -4,6 +4,8 @@ Research reviewed 13 September 2026 against source commit `e0b52d7`, installed `
 
 The present active-location approach is reasonable for an offline walking player. The simplest next improvement is better stop capture and verification, followed by measured, stop-specific arrival tuning. There is no evidence yet that we need another location SDK or a sophisticated navigation engine.
 
+Follow-up, 14 September: [new pause-walk evidence](test-results/M1-four-pause-walks.md) shows B already recognised but unable to play promptly after a stationary wait because its last fix became stale. Correct active-session stationary delivery/revalidation before the capture/radius experiment below. This is a separate issue from physical pin accuracy; no correction is installed yet.
+
 ## Three different sources of discrepancy
 
 1. **The recorded target.** In [App.tsx](../App.tsx), Capture stop saves one latest fix, accepting an age up to 15 seconds and reported accuracy up to 35 m. The recorder asks the user to stop, but does not collect a stationary sample set or preserve capture age, accuracy and spread with the stop. At an illustrative 1.4 m/s, a 15-second-old moving fix could be 21 m behind the walker. That is a permitted failure mode, not a finding that this happened when Sidi recorded B.
