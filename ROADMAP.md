@@ -22,6 +22,8 @@ The M1 follow-up adds a bundled [offline test guide](docs/TEST-GUIDE.md) and per
 
 The later [connected recovery and permission checks](docs/test-results/M1-connected-recovery-permissions.md) passed self-contained active-clip force-stop recovery and manual hold persistence, denied-location manual playback and location off/on restoration. This is stationary device evidence; skipped-stop/guide-note recovery coverage, other lifecycle cases and controlled walking baselines remain required. The full criteria below are unchanged.
 
+The [stationary Spotify and Bluetooth earbud checks](docs/test-results/M1-audio-interruptions.md) passed interruption with explicit resume and the owner’s case/disconnect/reconnect sequence. Temporary audio-focus return remains open because Spotify retained focus after pausing. The walking remote-control and full baseline criteria remain required.
+
 ### Delivery stages
 
 1. **M1a — first installable vertical slice:** configurable three-stop fixture, live background fixes, owned local audio, Start/Pause/Resume/manual/End controls, basic SQLite progress and diagnostic export. Build and attempt installation as soon as these connect end to end. Deliver a short first-walk checklist.

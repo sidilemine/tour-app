@@ -16,7 +16,7 @@ The [stationary-location correction](test-results/M1-stationary-location.md) is 
 
 - [x] In-app Pause after A finishes: B stays held, then starts **0.187 seconds after explicit Resume**. The recognised held-arrival interval was 69.4 seconds.
 - [x] In-app Pause during A: arrival stays held; Resume finishes A, then B starts **0.121 seconds after A ends**, with no stale-position delay. The recognised held-arrival interval was 71.0 seconds.
-- [ ] Repeat with actual lock-screen/headset controls. Prior ADB media-key checks do not establish physical controls during a walk.
+- [ ] Repeat with actual lock-screen/headset controls. The stationary earbud case test delivered a real remote Pause, but neither it nor prior ADB media-key checks establishes physical controls during an arrival walk.
 
 The pause cases do not require three minutes of A→B travel; their procedure requires a full 60-second wait at B while paused. GPS-derived held intervals support the result but are not surveyed physical arrival times; see the result record for confirmation limits. The three-minute genuine-silence rule remains required for the separate baseline walks.
 
@@ -38,8 +38,9 @@ Aim for **four minutes of actual silence after each clip ends** before entering 
 
 Latest [connected recovery/permission results](test-results/M1-connected-recovery-permissions.md) cover the self-contained build. The Android permission-dialog process crashed once during testing; its retry succeeded. Original phone settings were restored, and the stopped self-contained app was left installed.
 
-- [ ] Real call or competing audio: interruption pauses; returning audio focus never resumes by itself.
-- [ ] Headphones/Bluetooth disconnect: narration stops, does not jump to speaker, waits for Resume.
+- [x] Spotify interrupts narration; stopping music leaves it held; explicit Resume continues the saved clip. [14 September audio results](test-results/M1-audio-interruptions.md).
+- [ ] Temporary interruption with actual audio-focus return (for example a call): returning focus never resumes narration by itself. Spotify retained focus when paused, so its successful test did not exercise this subcase.
+- [x] Bluetooth earbuds into their closed case, then reconnect: no speaker narration, hold remains, and explicit Resume completes B through the earbuds. Tested with Sidi’s earbuds; wired and other output patterns are not inferred.
 - [x] Deny/revoke location and switch it off/on: manual A remained audible, denied Start explained the limitation, and restored fresh fixes preserved manual hold (14 September connected check).
 - [x] Self-contained force-stop during active tracking/playback and with a saved manual hold, reopen offline: route/completed stops and offsets recovered within the five-second target; Sidi confirmed silence after reopening. Stationary connected evidence, not a walking baseline.
 - [ ] Extend recovery coverage to a deliberately skipped stop and an active guide attempt/notes; verify both survive alongside progress. Preserve the existing journal.
