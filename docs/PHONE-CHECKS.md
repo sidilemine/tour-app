@@ -34,16 +34,19 @@ The first functional walk worked: B/C triggered once and all clips completed. Th
 
 Aim for **four minutes of actual silence after each clip ends** before entering the next stop area (minimum three). If necessary wait safely before approaching the stop; time spent after an early trigger cannot lengthen the tested gap. Do not unlock between clips. Each next clip must begin once within 30 seconds of physically arriving. Note estimated arrival time for comparison with logs. The engineer restores the self-contained variant after development tests.
 
-## Short connected-phone session with the engineer
+## Connected-phone checks with the engineer
+
+Latest [connected recovery/permission results](test-results/M1-connected-recovery-permissions.md) cover the self-contained build. The Android permission-dialog process crashed once during testing; its retry succeeded. Original phone settings were restored, and the stopped self-contained app was left installed.
 
 - [ ] Real call or competing audio: interruption pauses; returning audio focus never resumes by itself.
 - [ ] Headphones/Bluetooth disconnect: narration stops, does not jump to speaker, waits for Resume.
-- [ ] Deny/revoke location and switch it off/on: no uncertain automatic speech; manual playback still works; existing manual hold remains.
-- [ ] Terminate during an active walk/clip, reopen offline: saved route, completed/skipped stops, offset (≤5 seconds lost) and hold recover; no spontaneous speech.
+- [x] Deny/revoke location and switch it off/on: manual A remained audible, denied Start explained the limitation, and restored fresh fixes preserved manual hold (14 September connected check).
+- [x] Self-contained force-stop during active tracking/playback and with a saved manual hold, reopen offline: route/completed stops and offsets recovered within the five-second target; Sidi confirmed silence after reopening. Stationary connected evidence, not a walking baseline.
+- [ ] Extend recovery coverage to a deliberately skipped stop and an active guide attempt/notes; verify both survive alongside progress. Preserve the existing journal.
 - [ ] Swipe-away separately: document actual service/progress behavior, then reopen deliberately.
 - [ ] Development-build recovery: same checks, recording any Metro dependency. Unscheduled process kill is separate from orderly End.
 
-Stationary self-contained cold launch, media pause/resume and force-stop recovery at a saved pause have already passed. The cases above extend that evidence; force-close is allowed to stop the tour until reopened.
+Self-contained cold launch, stationary media pause/resume, and the connected force-stop/permission cases above have passed within their recorded scope. The remaining cases extend that evidence; force-close is allowed to stop the tour until reopened.
 
 ## Engineer-prepared field edge cases
 

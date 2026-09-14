@@ -20,6 +20,8 @@ The M1 follow-up adds a bundled [offline test guide](docs/TEST-GUIDE.md) and per
 
 14 September field review: [four pause-walk exports](docs/test-results/M1-four-pause-walks.md) support manual holds but reveal a stationary-location delay on release. The [subsequent correction](docs/test-results/M1-stationary-location.md) removes the active-tour displacement filter and explains stale-position waits, preserving arrival/freshness/hold rules. The connected stationary check then delivered 36 fresh callbacks over 73.5 seconds locked with the hold preserved. The [two corrected outdoor in-app pause retests passed](docs/test-results/M1-pause-retests.md): B started 0.187 seconds after Resume with A complete, and 0.121 seconds after unfinished A completed. Actual remote controls and the rest of the physical matrix remain open; earlier review evidence is retained.
 
+The later [connected recovery and permission checks](docs/test-results/M1-connected-recovery-permissions.md) passed self-contained active-clip force-stop recovery and manual hold persistence, denied-location manual playback and location off/on restoration. This is stationary device evidence; skipped-stop/guide-note recovery coverage, other lifecycle cases and controlled walking baselines remain required. The full criteria below are unchanged.
+
 ### Delivery stages
 
 1. **M1a — first installable vertical slice:** configurable three-stop fixture, live background fixes, owned local audio, Start/Pause/Resume/manual/End controls, basic SQLite progress and diagnostic export. Build and attempt installation as soon as these connect end to end. Deliver a short first-walk checklist.
