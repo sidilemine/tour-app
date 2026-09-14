@@ -1,6 +1,6 @@
 # M1: stationary location delivery correction
 
-14 September 2026. **Implemented; awaiting physical test.** Follows the [four pause-walk failures/delays](M1-four-pause-walks.md). Those original observations remain unchanged.
+14 September 2026. **Correction passed connected and two outdoor in-app pause retests; full M1 remains implemented, awaiting physical test.** Follows the [four pause-walk failures/delays](M1-four-pause-walks.md). Those original observations remain unchanged.
 
 ## Change
 
@@ -31,7 +31,7 @@ Outputs remain under ignored `artifacts/`; the previous self-contained APK was r
 
 The self-contained update installed successfully with `adb install -r`, without uninstalling or clearing data. The installed base APK SHA-256 exactly matches the artifact above. With no listener on the Mac's Metro port, force-stop followed by activity launch reported **COLD**, status OK, 148 ms; Android reported no active app services afterwards. No tour was started during this check and no connectivity setting changed. App-scoped exit records show the expected package update and deliberate force-stop; retained crash records contain only the earlier 13 September failures, with no new app crash from this installation/launch.
 
-The initial installation ended with the phone keyguard-locked, so visible recovery and live stationary delivery were then pending. The subsequent connected check below resolves those items. Runtime audible release at B and offline-network walking acceptance remain physical retests; they are not inferred from a cold activity launch.
+The initial installation ended with the phone keyguard-locked, so visible recovery and live stationary delivery were then pending. The subsequent connected check below resolves those items. The later outdoor retests below establish audible release at B with the owner’s report; offline-network walking acceptance remains separate and is not inferred from a cold activity launch.
 
 ### Connected stationary check — passed, with limits
 
@@ -57,4 +57,8 @@ A subsequent deliberate force-stop/cold reopen, with Metro absent and no install
 
 Only documentation changed in this follow-up: export checksum, replay, fixture/offset equality, native screen/service/crash evidence, local links, guide parity and diff were checked. No new app build or unit-test run was necessary.
 
-Required field retests: on the corrected self-contained build, repeat the two A→B pause cases. First let A finish, pause, walk to B and wait 60 seconds; Resume while stationary should promptly allow B with a fresh usable fix. Second pause A mid-clip, walk/wait likewise, then Resume: the rest of A should finish before B, without an unexplained long silence afterwards. No minimum A→B travel time applies to these pause cases: a normal or brisk walk is fine. Keep the full 60-second wait at B. Time any delay after Resume, let B finish, End and save results plus diagnostics. Actual remote controls and the full baseline/interruption/recovery matrix remain separate. M1 stays open until its real acceptance criteria are met.
+### Outdoor release retests — passed
+
+The two requested A→B repeats were subsequently completed on this corrected self-contained build. Sidi reports that both worked great; their [saved logs and timing review](M1-pause-retests.md) show held arrivals for 69.4 and 71.0 seconds with fresh positions through release. B started 0.187 seconds after Resume when A was already complete. In the unfinished-A case, Resume continued A at its saved offset, and B started 0.121 seconds after A finished. Neither reproduced the earlier long stale-position wait. Physical condition limits are recorded with those results.
+
+No further identical in-app pause repeats are required. Actual remote controls and the full baseline/interruption/recovery matrix remain separate. M1 stays open until its real acceptance criteria are met.

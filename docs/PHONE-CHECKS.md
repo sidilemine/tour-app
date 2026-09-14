@@ -8,19 +8,17 @@ Updated 14 September 2026. M1: **implemented; awaiting physical test**. This is 
 
 Your current self-contained app can reopen away from the Mac. Your three-stop route stays saved when you select **New walk / reset progress**. The engineer prepares development builds and collects/replays the private JSON; you supply the real walking, audible observations and phone prompts.
 
-Latest review: [four pause-walk exports](test-results/M1-four-pause-walks.md) support in-app manual hold and unfinished-story ordering, but reveal delayed/missing B after Resume while standing still. Two attempts include a reported 60-second wait with the hold preserved. Fresh GPS was unavailable at release; keep the complete pause cases open until corrected and retested. All four used the phone speaker/app buttons; only the first was in flight mode. Earlier [two A/B/C walks](test-results/M1-two-more-walks.md) remain useful functional/Spotify evidence, with their original acceptance limits.
+Latest review: [both corrected pause retests passed](test-results/M1-pause-retests.md), supported by Sidi's successful walk report and the saved exports. The earlier [four delayed attempts](test-results/M1-four-pause-walks.md) remain historical evidence; their stationary-release delay did not recur. Earlier [two A/B/C walks](test-results/M1-two-more-walks.md) retain their functional/Spotify evidence and acceptance limits.
 
-## Pause-at-arrival evidence and retest
+## Pause-at-arrival evidence
 
-The [stationary-location correction](test-results/M1-stationary-location.md) is installed (source `84599b46333c1aa1`). **The connected check passed: 36 fresh callbacks during 73.5 seconds locked, median 2 seconds, longest gap 2.04 seconds, with manual hold preserved. Your route/progress and visible cold reopening were verified. You can now repeat the two pause walks below.** This is not the outdoor release or full M1 pass. Guide revision 3 includes stationary wait timing and letting B finish.
+The [stationary-location correction](test-results/M1-stationary-location.md) is installed (source `84599b46333c1aa1`). The connected locked check and both outdoor repeats now support fresh delivery during a held arrival. Guide revision 3 retains the procedure for future regressions. **No further identical in-app pause walks are needed.** These passes do not replace the separate baseline or remote-control tests.
 
-For these pause tests, **A→B does not need to take three minutes**: a normal or brisk walk is fine. Wait a full **60 seconds at B while paused**, stay still when pressing Resume, and time any subsequent delay. The three-minute genuine-silence rule applies to the separate baseline walks.
-
-- [x] In-app Pause during silence stays held on arrival and through a reported 60-second wait: supported by the second 14 September attempt. B's release was delayed, so this is the hold subcriterion only.
-- [x] In-app Pause during unfinished A stays held at B through a reported 60-second wait; Resume continues A before B: supported by the fourth attempt. B's additional location wait remains a defect.
-- [ ] Repeat the complete silent-pause case while stationary at B: no speech during the hold, then prompt B with a fresh position after explicit Resume.
-- [ ] Repeat the complete unfinished-A case: finish A on Resume, then B without the demonstrated stale-position delay.
+- [x] In-app Pause after A finishes: B stays held, then starts **0.187 seconds after explicit Resume**. The recognised held-arrival interval was 69.4 seconds.
+- [x] In-app Pause during A: arrival stays held; Resume finishes A, then B starts **0.121 seconds after A ends**, with no stale-position delay. The recognised held-arrival interval was 71.0 seconds.
 - [ ] Repeat with actual lock-screen/headset controls. Prior ADB media-key checks do not establish physical controls during a walk.
+
+The pause cases do not require three minutes of A→B travel; their procedure requires a full 60-second wait at B while paused. GPS-derived held intervals support the result but are not surveyed physical arrival times; see the result record for confirmation limits. The three-minute genuine-silence rule remains required for the separate baseline walks.
 
 Stop safely before touching the screen. **End** stops tracking. Export diagnostics after each attempt; New walk retains old logs. Do not delete logs or reinstall between a checkpoint and a recovery check.
 
