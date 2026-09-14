@@ -1,5 +1,5 @@
 {
-  "revision": 2,
+  "revision": 3,
   "title": "Offline test guide",
   "intro": "Read this before starting. Opening the guide never starts, pauses or ends a tour. Stop safely before using the screen. Your results are observations awaiting review; this guide does not certify M1.",
   "common": [
@@ -22,9 +22,9 @@
         "At A, End any previous tour, then New walk / reset progress. Begin an attempt here, then return to the player and enable private diagnostics.",
         "Start tracking + first clip. Let A finish. Tap Pause during the silent gap.",
         "Walk to B and wait at least 60 seconds. Do not press Manual Play: that deliberately plays a clip even while automatic speech is held.",
-        "Tap Resume while still at B. After observing the result, End the tour, return here and save your result."
+        "Stay still at B and tap Resume once. Time how long B takes to start; record any waiting-for-location message. Let B finish, then End, save the result and export both results and diagnostics."
       ],
-      "expected": "No automatic audio during the 60-second wait. Resume permits B when its arrival is still appropriate. No duplicate clip."
+      "expected": "No automatic audio during the 60-second wait. With fresh usable location, Resume promptly permits B while you remain at the stop. No duplicate clip; record any delay."
     },
     {
       "id": "pause-narration",
@@ -35,8 +35,8 @@
       "steps": [
         "Begin a fresh diagnostic walk at A. Tap Pause before A finishes; note its saved position.",
         "Walk to B while paused and wait at least 60 seconds. The unfinished A and the arrival at B must remain separate.",
-        "Tap Resume. Listen for A to continue from its saved position, then B if you remain appropriately at B.",
-        "End and record the outcome; include any overlap, lost position or unexpected speech."
+        "Stay still at B and tap Resume once. Listen for A to continue from its saved position, then B. Time any silence after A finishes separately from the remaining A narration; note any waiting-for-location message.",
+        "Let B finish, then End and save/export the outcome. Include wait timings, overlap, lost position or unexpected speech."
       ],
       "expected": "Silence until explicit Resume; unfinished A resumes before eligible B. No overlap or automatic clearing of pause."
     },

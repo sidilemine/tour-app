@@ -7,7 +7,7 @@ import * as Battery from 'expo-battery';
 import * as Device from 'expo-device';
 import { AppState, PermissionsAndroid, Platform } from 'react-native';
 import { Fixture, parseFixture } from '../domain/fixture';
-import { eligible, Event, initialState, recovered, reduce, State } from '../domain/engine';
+import { eligible, Event, initialState, pendingArrivalNeedsFreshFix, recovered, reduce, State } from '../domain/engine';
 import { Store } from '../storage/store';
 import { PlayGate } from './playGate';
 import buildInfo from '../buildInfo.json';
@@ -96,6 +96,12 @@ export function dispatch(event: Event): Promise<void> {
     store.commit('progress', { fixture: JSON.stringify(fixture), state: result.state }, result.state.diagnostics ? { kind: 'transition', fixtureKey: fixtureKey(fixture), event, before: state, after: result.state, effects: result.effects, reason: result.reason } : undefined);
     state = result.state;
     recent.unshift({ reason: result.reason, at: event.at }); recent.splice(20); notify();
+    if ((event.type === 'resume' || (event.type === 'audio' && event.finished) || event.type === 'automatic')
+      && pendingArrivalNeedsFreshFix(state, event.at)) {
+      record('pending-arrival-waiting-for-fresh-location', {
+        index: eligible(state), fixAgeMs: state.location.fix ? event.at - state.location.fix.timestamp : null,
+      });
+    }
     for (const effect of result.effects) {
       if (effect.type === 'pause') { player?.pause(); continue; }
       try {
@@ -161,13 +167,15 @@ export async function start(diagnostics: boolean) {
   const background = await Location.requestBackgroundPermissionsAsync();
   if (!background.granted) throw Error('Allow location “all the time” in Settings for this background test. Manual playback remains available.');
   await Location.startLocationUpdatesAsync(LOCATION_TASK, {
-    accuracy: Location.Accuracy.High, timeInterval: 2000, distanceInterval: 2,
+    // A visitor can wait motionless at a held stop. Displacement filtering
+    // otherwise starves the 15-second freshness gate when Resume is pressed.
+    accuracy: Location.Accuracy.High, timeInterval: 2000, distanceInterval: 0,
     deferredUpdatesInterval: 0, deferredUpdatesDistance: 0,
     foregroundService: { notificationTitle: 'Walking tour active', notificationBody: 'Location stays active through silence. Open to pause or end.', killServiceOnDestroy: true },
   });
   service = await Location.hasStartedLocationUpdatesAsync(LOCATION_TASK) ? 'Registered; waiting for fixes' : 'Not registered';
   await dispatch({ type: 'start', at: Date.now(), diagnostics });
-  record('session-start', { battery: await Battery.getBatteryLevelAsync(), lowPower: await Battery.isLowPowerModeEnabledAsync(), foreground, background, service, model: Device.modelName, os: Device.osVersion });
+  record('session-start', { locationRequest: { accuracy: 'high', timeIntervalMs: 2000, distanceIntervalM: 0 }, battery: await Battery.getBatteryLevelAsync(), lowPower: await Battery.isLowPowerModeEnabledAsync(), foreground, background, service, model: Device.modelName, os: Device.osVersion });
 }
 export async function end() {
   try { await dispatch({ type: 'end', at: Date.now() }); }

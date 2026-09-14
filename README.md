@@ -58,7 +58,7 @@ Standings, optional landmark coordinates, approach, viewpoint and access remain 
 
 **Friary Park, North Finchley** is the proposed nearby test area; [Barnet Council](https://www.barnet.gov.uk/directories/parks/friary-park) lists it at Friary Road, N12. No geographically invented route or claim of field verification is bundled. The recorder allows Sidi to choose actual paths and standing positions there or elsewhere.
 
-Start, Pause, Resume, manual clip play, Skip, End, automatic playback on/off and New walk/reset are available. Start after recovery restores tracking but keeps the saved hold; use Resume deliberately. End stops tracking. Manual Play intentionally plays one selection without clearing an automatic hold. Diagnostics explain eligible stop, GPS age/accuracy, route distance, dwell, pauses and audio requests/status.
+Start, Pause, Resume, manual clip play, Skip, End, automatic playback on/off and New walk/reset are available. Start after recovery restores tracking but keeps the saved hold; use Resume deliberately. End stops tracking. Manual Play intentionally plays one selection without clearing an automatic hold. Diagnostics explain eligible stop, GPS age/accuracy, route distance, dwell, pauses and audio requests/status. Active tours now request updates even while stationary so a paused arrival can be revalidated on Resume. Old locations still cannot release automatic narration; the app explains when it is waiting for a fresh fix. See the [stationary-location correction](docs/test-results/M1-stationary-location.md).
 
 ## Development setup on this Mac
 

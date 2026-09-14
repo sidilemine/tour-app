@@ -4,7 +4,7 @@ import * as Location from 'expo-location';
 import * as DocumentPicker from 'expo-document-picker';
 import * as FileSystem from 'expo-file-system/legacy';
 import { Coordinate, distance, Fixture } from './src/domain/fixture';
-import { eligible } from './src/domain/engine';
+import { eligible, pendingArrivalNeedsFreshFix } from './src/domain/engine';
 import * as session from './src/session/session';
 import { TestGuide } from './src/testing/TestGuide';
 import { ExportDialog } from './src/export/ExportDialog';
@@ -120,6 +120,7 @@ export default function App() {
     {fixture ? <View style={styles.card}><Text style={styles.section}>Manual playback</Text><Text style={styles.description}>Play a clip deliberately, even while automatic speech is held.</Text>{fixture.stops.map((stop, index) => <View key={stop.id} style={styles.stop}><Text style={styles.stopTitle}>{stop.title} · {state.stops[index]}</Text><View style={styles.row}><View style={styles.flex}><Button label={`Play ${['A', 'B', 'C'][index]}`} disabled={busy} onPress={() => void run(() => session.dispatch({ type: 'manual', index, at: Date.now() }))} /></View><View style={styles.flex}><Button secondary label="Skip" disabled={busy} onPress={() => void run(() => session.dispatch({ type: 'skip', index, at: Date.now() }))} /></View></View></View>)}</View> : null}
     <View style={styles.card}>
       <Text style={styles.section}>Why it spoke — or stayed quiet</Text>
+      {pendingArrivalNeedsFreshFix(state, recent[0]?.at ?? 0) ? <Text style={styles.hold}>Waiting for a fresh location before the next clip. Stay at the checked stop; manual playback is available.</Text> : null}
       <Text selectable style={styles.mono}>{service}{'\n'}{state.location.reason}{'\n'}{state.location.fix ? `Last fix ${new Date(state.location.fix.timestamp).toLocaleTimeString()} · ±${state.location.fix.accuracy.toFixed(0)} m` : 'No usable fix'}{'\n'}{state.location.distance !== undefined ? `To eligible stop: ${state.location.distance.toFixed(0)} m\nCross-track: ${state.location.crossTrack?.toFixed(0)} m\nAlong-route: ${state.location.along?.toFixed(0)} m\nArrival agreement: ${state.location.count} fixes` : ''}</Text>
       <Button secondary label="Export private diagnostics" disabled={busy} onPress={() => void run(exportDiagnostics)} />
       <Button secondary label="Delete diagnostic log" disabled={state.active} onPress={() => Alert.alert('Delete local diagnostics?', 'Export first if you need this walk for debugging. Progress is kept.', [{ text: 'Cancel' }, { text: 'Delete', style: 'destructive', onPress: session.clearDiagnostics }])} />

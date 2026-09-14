@@ -20,6 +20,12 @@ export type Event = { at: number } & (
 export type Effect = { type: 'play'; index: number; offset: number; token: number } | { type: 'pause' };
 export const initialState = (): State => ({ active: false, hold: 'not-started', automatic: true, diagnostics: false, startedAt: null, stops: ['unplayed', 'unplayed', 'unplayed'], playback: { status: 'idle', index: null, offset: 0, token: 0 }, location: { reason: 'Waiting for location', count: 0 } });
 export const eligible = (s: State) => s.stops.findIndex(x => x === 'unplayed');
+// Explanation only: never relax the reducer's fresh-position playback gate.
+export function pendingArrivalNeedsFreshFix(s: State, at: number): boolean {
+  const i = eligible(s);
+  return s.active && s.automatic && !s.hold && s.playback.index === null && i >= 0
+    && s.location.arrived === i && (!s.location.fix || at - s.location.fix.timestamp > 15000);
+}
 export function recovered(state: State): State {
   return { ...state, active: false, hold: state.hold || 'recovery', playback: { ...state.playback, status: state.playback.index === null ? 'idle' : 'paused', token: state.playback.token + 1 }, location: { reason: 'Reopened: fresh location required', count: 0 } };
 }

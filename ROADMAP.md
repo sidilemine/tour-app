@@ -18,7 +18,7 @@ Implementation/build evidence: [M1 result record](docs/test-results/M1.md). For 
 
 The M1 follow-up adds a bundled [offline test guide](docs/TEST-GUIDE.md) and persistent attempt notes/results, with independent and engineer-prepared cases distinguished. See [guide delivery evidence](docs/test-results/M1-guide.md). A further [export follow-up](docs/test-results/M1-exports.md) adds editable unique names and direct local folder saving for all JSON exports. The full criteria below are unchanged.
 
-14 September field review: [four pause-walk exports](docs/test-results/M1-four-pause-walks.md) support manual holds but reveal a stationary-location delay on release. Correct/retest fresh-position delivery before repeating these cases; the complete pause acceptance remains open. No radius or phone build changed during review.
+14 September field review: [four pause-walk exports](docs/test-results/M1-four-pause-walks.md) support manual holds but reveal a stationary-location delay on release. The [subsequent correction](docs/test-results/M1-stationary-location.md) removes the active-tour displacement filter and explains stale-position waits, preserving arrival/freshness/hold rules. Complete pause acceptance still requires the corrected physical retests; earlier review evidence is retained.
 
 ### Delivery stages
 

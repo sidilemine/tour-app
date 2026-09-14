@@ -117,7 +117,7 @@ The current M1 implementation confirms arrival inside a 30 m radius, with at lea
 
 M1 starts with a known route and simple next-stop gating; later fixtures cover dense streets and crossings. Include normal travel, GPS jump, noisy parallel street, reversal, long silence/coffee stop, crossing route, stale/batched fixes, signal loss, jumping ahead, implausible bus speed and restart. Manual fallback must work regardless of matcher output.
 
-The [14 September pause walks](docs/test-results/M1-four-pause-walks.md) expose a separate location-freshness conflict: the active request's 2 m minimum displacement permits long stationary callback gaps, while pending speech requires a fix no older than 15 seconds. Held B was recognised but delayed or never released after Resume. Correct stationary delivery/revalidation and log its waits before further radius tuning; keep the freshness/manual-hold guards. This remains an open adapter issue, not an implemented correction.
+The [14 September pause walks](docs/test-results/M1-four-pause-walks.md) exposed a conflict between the old 2 m displacement filter and pending playback's 15-second freshness gate. Active touring now requests High accuracy at a desired 2 s interval with zero minimum displacement, including while paused and stationary. End still stops tracking; the recorder retains its separate 3 m path-sampling request. The reducer's radius, freshness, hold and ordering rules are unchanged. A stale pending arrival after Resume/completion is explicitly logged and explained on screen. See the [correction and retest record](docs/test-results/M1-stationary-location.md); regular native delivery and battery cost require device evidence, not an interval guarantee.
 
 ## Android lifecycle hypothesis to test first
 
