@@ -1,22 +1,22 @@
-# Remaining phone checks
+# M1 phone checks — complete
 
-Latest review, 15 September: [stay-at-B early arrival and Battery Saver both passed](test-results/M1-final-outdoor-report.md). **The planned M1 outdoor batch is complete; no more outdoor walks are requested.** Both used Battery Saver, recorded explicitly. The remaining work is the connected-phone checklist below. The installed self-contained source `aaa261ee84596b55` and guide 5 were unchanged during this read-only review; the bundled guide retains all procedures and is not a live acceptance tracker.
+Latest review, 15 September: [stay-at-B early arrival and Battery Saver both passed](test-results/M1-final-outdoor-report.md). **The planned M1 outdoor batch is complete; no more outdoor walks are requested.** Both used Battery Saver, recorded explicitly. The [final connected checks and loading correction](test-results/M1-closure.md) also passed. **No M1 phone action remains.** The self-contained source `75fd0c0718dda379`, guide 6, is installed and cold reopening verified with Metro stopped. The bundled guide retains procedures as a reference, not a live acceptance tracker.
 
 The app now includes **Offline test guide / saved results**. Choose a case, begin an attempt, return to the player to test, then record observations and export results alongside diagnostics. All instructions are available offline; engineer-prepared cases are labelled. [Full bundled guide](TEST-GUIDE.md).
 
 To save each JSON, keep its unique default name or edit it in **Save or share JSON**, tap **Save to folder**, choose/create **Walking Tour Tests** under Documents or Downloads, then **Use this folder** → **Allow**. Wait for **Saved and verified**. Use a subfolder if Downloads itself is blocked. Save both test results and private diagnostics after each attempt. **Share instead** is optional and does not confirm a local save. The named export update is included in both prepared builds; direct saving, editable/repeated names and offline exports passed the connected-phone checks. The local **Documents/Walking Tour Tests** folder is ready. See [export delivery evidence](test-results/M1-exports.md).
 
-Updated 15 September 2026. M1: **implemented; awaiting physical test**. This is the working checklist; [ROADMAP](../ROADMAP.md#physical-phone-procedure-for-m1) retains the full criteria and [M1 results](test-results/M1.md) holds evidence. Tick a box only after its observations/logs are recorded, not because the code exists.
+Updated 15 September 2026. M1: **complete on the tested Pixel 6 / Android 17**. This is the working checklist; [ROADMAP](../ROADMAP.md#physical-phone-procedure-for-m1) retains the full criteria and [M1 results](test-results/M1.md) holds evidence. Tick a box only after its observations/logs are recorded, not because the code exists.
 
 Historical morning preparation (superseded by the self-contained handoff above): on 15 September the engineer left a loaded **development session** for the seven-case outdoor batch, with Metro stopped, Fast Refresh off, and network off. Do not force-close/reload it outdoors; cold reopening may need the Mac. Restore the self-contained APK after this batch for independent cold reopening. Your three-stop route stays saved when you select **New walk / reset progress**. The engineer collects/replays private JSON; you supply the real walking, audible observations and phone prompts.
 
 Earlier baseline review: [three development walks and a detour](test-results/M1-three-baselines-and-detour.md). All six automatic arrivals met the locked silent-gap requirement, so the three-run arrival baseline is closed. Run 2’s timer unlock preceded another uninterrupted three-minute interval; run 3’s End cut C short after the successful locked arrival. Those limits are recorded, not relabelled as three full narration completions. No more normal baseline walks are requested.
 
-Outdoor acceptance is closed: the new long-A walk supplies completion while still at B, distinct from the earlier pass/return case. Battery Saver also passed with confirmed offline/locked conditions. Connected-phone checks below remain open; poor GPS remains a conditional observation subcase, not an extra scheduled outing.
+Outdoor acceptance is closed: the new long-A walk supplies completion while still at B, distinct from the earlier pass/return case. Battery Saver also passed with confirmed offline/locked conditions. Connected-phone checks below are also complete; poor GPS remains a conditional observation subcase, not an extra scheduled outing.
 
 ## Pause-at-arrival evidence
 
-The [stationary-location correction](test-results/M1-stationary-location.md) was physically verified on source `84599b46333c1aa1` and remains unchanged in the prepared build `bb0a0e3554c55ed7`. The connected locked check and both outdoor repeats now support fresh delivery during a held arrival. Guide revision 4 retains the procedure for future regressions. **No further identical in-app pause walks are needed.** The later remote-control case also passed below; the development baselines and other remaining cases stay separate.
+The [stationary-location correction](test-results/M1-stationary-location.md) was physically verified on source `84599b46333c1aa1` and remains unchanged in the prepared build `bb0a0e3554c55ed7`. The connected locked check and both outdoor repeats now support fresh delivery during a held arrival. Guide revision 4 retains the procedure for future regressions. **No further identical in-app pause walks are needed.** The later remote-control case also passed below; the development baselines and other cases retain their separate evidence.
 
 - [x] In-app Pause after A finishes: B stays held, then starts **0.187 seconds after explicit Resume**. The recognised held-arrival interval was 69.4 seconds.
 - [x] In-app Pause during A: arrival stays held; Resume finishes A, then B starts **0.121 seconds after A ends**, with no stale-position delay. The recognised held-arrival interval was 71.0 seconds.
@@ -40,21 +40,21 @@ Aim for **four minutes of actual silence after each clip ends** before entering 
 
 ## Connected-phone checks with the engineer
 
-The [final connected-session plan](M1-FINAL-CONNECTED-CHECKS.md) batches the five remaining cases, with an engineer-operated transient-focus companion to avoid arranging a call. Preparation is complete; native execution and acceptance still require the connected phone.
+The [final connected-session plan](M1-FINAL-CONNECTED-CHECKS.md) grouped the last five cases. All passed within the scopes recorded in [M1 closure](test-results/M1-closure.md), including actual transient focus return through a temporary competing app.
 
 Latest [connected recovery/permission results](test-results/M1-connected-recovery-permissions.md) cover the self-contained build. The Android permission-dialog process crashed once during testing; its retry succeeded. Original phone settings were restored, and the stopped self-contained app was left installed.
 
 - [x] Spotify interrupts narration; stopping music leaves it held; explicit Resume continues the saved clip. [14 September audio results](test-results/M1-audio-interruptions.md).
-- [ ] Temporary interruption with actual audio-focus return (for example a call): returning focus never resumes narration by itself. Spotify retained focus when paused, so its successful test did not exercise this subcase.
+- [x] Actual transient focus loss and return from the native focus companion: interruption hold persisted for 31.469 seconds after actual gain until explicit Resume. Sidi confirmed audible continuation only after Resume. This complements Spotify; it does not certify telephony-specific routing.
 - [x] Bluetooth earbuds into their closed case, then reconnect: no speaker narration, hold remains, and explicit Resume completes B through the earbuds. Tested with Sidi’s earbuds; wired and other output patterns are not inferred.
 - [x] Deny/revoke location and switch it off/on: manual A remained audible, denied Start explained the limitation, and restored fresh fixes preserved manual hold (14 September connected check).
 - [x] Self-contained force-stop during active tracking/playback and with a saved manual hold, reopen offline: route/completed stops and offsets recovered within the five-second target; Sidi confirmed silence after reopening. Stationary connected evidence, not a walking baseline.
-- [ ] Extend recovery coverage to a deliberately skipped stop and an active guide attempt/notes; verify both survive alongside progress. Preserve the existing journal.
-- [ ] Swipe-away separately: document actual service/progress behavior, then reopen deliberately.
-- [ ] Development-build recovery: same checks, recording any Metro dependency.
-- [ ] Unscheduled process kill during an active session: recover durable progress/offset/hold; inspect exit records. This is separate from End, force-stop and swipe-away and already exists in the bundled guide.
+- [x] Self-contained offline force-stop preserved completed A, deliberately skipped B, manual hold and the exact active guide note. Original journal preserved; the saved partial report does not pretend to repeat the previously accepted playing-offset subcase.
+- [x] Actual Recents removal verified separately, with native REMOVE TASK exit and services stopped. Deliberate cold reopening preserved progress, manual hold and the guide note; this was a held active session.
+- [x] Development force-stop recovered exactly 185.727 seconds/manual hold and completed/skipped progress after reconnecting Metro. Offline cold launch reached the development launcher, as documented; independent use needs the self-contained APK.
+- [x] App-UID SIGKILL during playback verified by native SIGNALED/status 9. Reopening recovered 188.424 seconds with recovery hold and no speech until deliberate action. Conservative uncheckpointed bound below 1.6 seconds; Sidi confirmed audible stop and silent reopening.
 
-Self-contained cold launch, stationary media pause/resume, and the connected force-stop/permission cases above have passed within their recorded scope. The remaining cases extend that evidence; force-close is allowed to stop the tour until reopened.
+Self-contained cold launch, stationary media pause/resume, and the connected force-stop/permission cases above have passed within their recorded scope. The closure cases extend that evidence; force-close is allowed to stop the tour until reopened.
 
 ## Engineer-prepared field edge cases
 

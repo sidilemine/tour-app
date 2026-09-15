@@ -1,6 +1,6 @@
 # Walking Tour Lab
 
-An Android device experiment for a self-guided walking audio player, built with React Native, Expo and TypeScript. M1 is **implemented; awaiting physical test**. This is a three-stop lifecycle lab, not the six-stop product or an offline map/navigation engine.
+An Android device experiment for a self-guided walking audio player, built with React Native, Expo and TypeScript. M1 is **complete on Sidi’s Pixel 6 / Android 17**, with [acceptance and final build evidence](docs/test-results/M1-closure.md). This is a three-stop lifecycle lab, not the six-stop product or an offline map/navigation engine.
 
 The original [brief](ai_self_guided_tour_project_brief.md) is unchanged. [PRODUCT.md](PRODUCT.md), [ARCHITECTURE.md](ARCHITECTURE.md), [AGENTS.md](AGENTS.md) and [ROADMAP.md](ROADMAP.md) are the maintained project contract. The owner's latest instructions override conflicting brief recommendations.
 
@@ -8,7 +8,7 @@ The original [brief](ai_self_guided_tour_project_brief.md) is unchanged. [PRODUC
 
 **Use the self-contained APK for recording paths and using the app away from the Mac.** The engineer should leave this variant installed between assisted test sessions and verify reopening with Metro stopped. The development APK needs Metro again on a cold start; a “Failed to connect to /127.0.0.1:8081” launcher error means its development server is unavailable. Switch variants with `adb install -r`, preserving saved app data; do not uninstall or clear storage. The required development-build walk is a separately prepared M1 test, followed by restoring the self-contained variant.
 
-Start with [docs/FIRST-WALK.md](docs/FIRST-WALK.md). After the first successful walk, use the actionable [remaining phone checklist](docs/PHONE-CHECKS.md). The full physical acceptance matrix remains in [ROADMAP.md](ROADMAP.md#physical-phone-procedure-for-m1); an initial successful walk does not complete M1. Recorded verification is in [docs/test-results/M1.md](docs/test-results/M1.md).
+The [first-walk procedure](docs/FIRST-WALK.md) and [completed phone checklist](docs/PHONE-CHECKS.md) remain available for targeted regression checks. No further M1 walk is requested. The full physical acceptance matrix remains in [ROADMAP.md](ROADMAP.md#physical-phone-procedure-for-m1); an initial successful walk does not complete M1. Recorded verification is in [docs/test-results/M1.md](docs/test-results/M1.md).
 
 Local build outputs (ignored by Git):
 
@@ -18,7 +18,7 @@ Local build outputs (ignored by Git):
 | `artifacts/walking-tour-offline.apk` | Self-contained release variant with embedded JavaScript and all three clips; no Metro needed |
 | `artifacts/walking-tour-m1a-development.apk` | Earlier vertical-slice checkpoint; prefer the final development build |
 
-The APKs target ARM64 Android, minimum API 24, target/compile API 36. USB installation and development-app launch are verified on Sidi's Pixel 6 (Android 17/API 37, ARM64). A functional self-contained walk and stationary offline recovery have passed; the complete repeated-walk and failure-path acceptance remains pending. See the result record. Both final APKs use the same package ID (`uk.sidi.walkingtourlab`) and development signing certificate. Installing one replaces the other without needing to uninstall; never clear app data during recovery testing.
+The APKs target ARM64 Android, minimum API 24, target/compile API 36. USB installation and development-app launch are verified on Sidi's Pixel 6 (Android 17/API 37, ARM64). The repeated locked-screen walking and planned failure-path matrix have passed within their recorded device/build scopes. See the result record. Both final APKs use the same package ID (`uk.sidi.walkingtourlab`) and development signing certificate. Installing one replaces the other without needing to uninstall; never clear app data during recovery testing.
 
 ```sh
 sh tools/android-env.sh adb devices -l
@@ -87,7 +87,7 @@ npm run build:android
 
 `build:android` regenerates native projects from committed Expo config, builds both ARM64 variants and verifies their signatures. Native `/android` and `/ios` directories are generated/ignored. Keep customizations in committed scripts/config/owned modules before regenerating. Android autolinking explicitly builds `expo-audio` from source in `package.json`; Expo's stock precompiled artifact omits our changes. The build checks native APK markers and required location-job permissions (including RECEIVE_BOOT_COMPLETED), and playback checks the adapter revision at runtime. The only native library patch is the version-guarded [audio adapter patch](tools/patch-expo-audio.cjs), applied by `npm ci`'s postinstall and the build script. Rebuild after native changes; JavaScript-only changes use Metro. Rebuild the self-contained APK after any application change.
 
-No backend, paid TTS, AI provider, map key, full Xcode or store membership is needed for M1. Sidi's Pixel 6 is authorized over USB and the app has launched. There is no remaining local installation blocker. For later connections, use a data cable, enable USB debugging and accept this Mac on the handset. The engineer can run installation/build commands; Sidi supplies phone/OS prompts and walking observations.
+No backend, paid TTS, AI provider, map key, full Xcode or store membership is needed for M1. Sidi's Pixel 6 is authorized over USB and the app has launched. There is no remaining local installation blocker. The closure-time online Expo check recommends newer SDK-57 patches; the physically tested lockfile is retained, with the exact maintenance recommendations recorded in [M1 closure](docs/test-results/M1-closure.md). For later connections, use a data cable, enable USB debugging and accept this Mac on the handset. The engineer can run installation/build commands; Sidi supplies phone/OS prompts and walking observations.
 
 ## Verification and diagnostics
 
@@ -114,7 +114,7 @@ Raw exports stay ignored/private. Logcat may include unrelated device informatio
 
 ## Independent content preparation
 
-While M1 awaits physical acceptance, the [Finchley six-stop editorial draft](docs/content/FINCHLEY-DRAFT.md) and [two supervised listening briefs](docs/content/E1-BRIEFS.md) can be reviewed independently. They do not replace the phone fixture or establish a walk-ready route. [Map/routing decision notes](docs/content/MAPS-AND-ROUTING.md) prepare the next native experiment.
+With M1 accepted, the [Finchley six-stop editorial draft](docs/content/FINCHLEY-DRAFT.md) and [two supervised listening briefs](docs/content/E1-BRIEFS.md) can be reviewed independently. They do not replace the phone fixture or establish a walk-ready route. [Map/routing decision notes](docs/content/MAPS-AND-ROUTING.md) prepare the next native experiment.
 
 ```sh
 npm run check:package -- content/finchley/manifest.json
@@ -147,10 +147,10 @@ Use the [batch evidence review tool](docs/TEST-EVIDENCE-REVIEW.md) to deduplicat
 
 [Arrival calibration research](docs/ARRIVAL-CALIBRATION.md) compares official location guidance, current capture/trigger code and the two recent walks. It proposes improving stop capture before changing radii; the phone build and current test procedure are unchanged.
 
-### Prepared outdoor batch
+### Completed outdoor batch and regression preparation
 
-See [the remaining outdoor cases](docs/FOUR-REMAINING-WALKS.md). Guide revision 5 is embedded in both builds. The optional M1 fixture field `audioProfile: "edge-long-a"` selects one 3:30 local A recording; omitted means the original short clips. `node --import tsx tools/testing/prepare-field-fixtures.ts <private-original.json> <new-private-folder>` writes standard and edge fixtures without changing geometry or verification. Keep these precise-coordinate files ignored; never commit them. Import through the existing Configure / load fixture flow, export each attempt before switching, and verify the visible STANDARD CLIPS / EDGE TEST label. Distinct durable audio filenames prevent the long recording from contaminating normal baselines.
+See [the completed outdoor procedures](docs/FOUR-REMAINING-WALKS.md). Guide revision 6 is embedded in the self-contained build and source loaded by the development client; it retains procedures as a reference. The optional M1 fixture field `audioProfile: "edge-long-a"` selects one 3:30 local A recording; omitted means the original short clips. `node --import tsx tools/testing/prepare-field-fixtures.ts <private-original.json> <new-private-folder>` writes standard and edge fixtures without changing geometry or verification. Keep these precise-coordinate files ignored; never commit them. Import through the existing Configure / load fixture flow, export each attempt before switching, and verify the visible STANDARD CLIPS / EDGE TEST label. Distinct durable audio filenames prevent the long recording from contaminating normal baselines.
 
-The development baselines and [final stay-at-B and Battery Saver cases](docs/test-results/M1-final-outdoor-report.md) are accepted. The planned outdoor batch is complete; only the existing connected-phone checks remain. The completed final cases used the self-contained APK and corrected files in Documents / Walking Tour Remaining. After the long-A update, use New walk rather than resuming an old 6:21 offset. Any future development regression session still needs immediate preparation; overnight survival is not promised.
+The development baselines and [final stay-at-B and Battery Saver cases](docs/test-results/M1-final-outdoor-report.md) are accepted. The outdoor batch and [final connected checks](docs/test-results/M1-closure.md) are complete. The final loading-checkpoint correction passed 79 automated tests and a short installed-device recovery check; no arrival or native-audio policy changed. The completed final cases used the self-contained APK and corrected files in Documents / Walking Tour Remaining. After the long-A update, use New walk rather than resuming an old 6:21 offset. Any future development regression session still needs immediate preparation; overnight survival is not promised.
 
 On the pinned Android stack, the React Native developer menu’s **Disable Fast Refresh** action raised a null-argument exception after saving the setting. Reloading with the persisted setting already false worked. Avoid that menu action during a prepared session; verify the saved setting and record the issue rather than treating setup as crash-free. See [field preparation evidence](docs/test-results/M1-field-preparation.md).

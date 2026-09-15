@@ -28,7 +28,7 @@ export function TestGuide({ onClose }: { onClose: () => void }) {
     <KeyboardAvoidingView style={s.screen} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
       <View style={s.header}><Text style={s.heading}>Offline test guide</Text><Button title="Back to player" onPress={onClose} /></View>
       <ScrollView key={data?.selectedCase ?? 'case-list'} contentContainerStyle={s.content} keyboardShouldPersistTaps="handled">
-        <Text style={s.description}>M1: implemented; awaiting physical test. Guide {guide.revision} · {context.variant === 'development' ? 'Development build' : 'Self-contained build'}.</Text>
+        <Text style={s.description}>M1 device test reference. Guide {guide.revision} · {context.variant === 'development' ? 'Development build' : 'Self-contained build'}.</Text>
         {!!error && <Text accessibilityRole="alert" selectable style={s.error}>{error}</Text>}
         {data && <>
           {item ? <>

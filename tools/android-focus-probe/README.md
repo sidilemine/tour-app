@@ -1,6 +1,6 @@
 # Transient audio-focus companion
 
-Engineer-only Android test app for M1's outstanding **actual focus return** case. It requests `AUDIOFOCUS_GAIN_TRANSIENT` through Android's `AudioManager`, emits one quiet 300 ms beep, then abandons the same request after eight seconds. It never dispatches tour events or accesses tour storage. No network or Android permissions are requested. This is controlled native competing-app evidence, not a simulated phone call or a walking test.
+Engineer-only Android test app for M1's **actual focus return** case. It requests `AUDIOFOCUS_GAIN_TRANSIENT` through Android's `AudioManager`, emits one quiet 300 ms beep, then abandons the same request after eight seconds. It never dispatches tour events or accesses tour storage. No network or Android permissions are requested. This is controlled native competing-app evidence, not a simulated phone call or a walking test.
 
 Uses the existing project JDK/SDK and generated standard debug keystore; no dependencies, main-app changes or remote build. Outputs and signing material stay ignored. Do not distribute this debugging companion or use its key for production.
 
@@ -25,4 +25,4 @@ Official basis: [Android audio focus](https://developer.android.com/media/optimi
 
 ## Preparation result
 
-15 September: compiled and signed locally; APK signature verified and manifest inspection confirms no requested permissions. Initial compilation against Android's boot stubs failed on Java lambda support; compiling with JDK `--release 8` and the Android API classpath, followed by D8 desugaring, passed. No main-player source or binary changed. Phone execution and the M1 acceptance result remain pending until recorded in the connected-check evidence.
+15 September: compiled and signed locally; APK signature verified and manifest inspection confirms no requested permissions. Initial compilation against Android's boot stubs failed on Java lambda support; compiling with JDK `--release 8` and the Android API classpath, followed by D8 desugaring, passed. No main-player source or binary changed. Subsequent execution passed on Pixel 6 / Android 17: native loss and gain were delivered, the tour remained silent for 31.469 seconds after gain until explicit Resume, and Sidi confirmed audible continuation. The companion was removed afterward. See [connected closure evidence](../../docs/test-results/M1-closure.md).

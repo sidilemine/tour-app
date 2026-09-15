@@ -1,8 +1,8 @@
 # Offline phone test guide
 
-Generated from `src/testing/guide.json`; edit that source and run `npm run docs:guide`. Revision 5.
+Generated from `src/testing/guide.json`; edit that source and run `npm run docs:guide`. Revision 6.
 
-Read this before starting. Opening the guide never starts, pauses or ends a tour. Stop safely before using the screen. Your results are observations awaiting review; this guide does not certify M1. Current remaining outdoor checks: stay at B until long A finishes, then a separate full Battery Saver walk. Long A is now 3 minutes 30 seconds. Use the self-contained app and prepared files in Documents / Walking Tour Remaining. The other procedures remain available for reference; do not repeat accepted cases unless the engineer identifies a relevant regression.
+The planned M1 outdoor walks are complete. These procedures remain available for reference and targeted regression checks; do not repeat a walk unless the engineer identifies a specific need. Opening this guide never starts, pauses or ends a tour. Stop safely before using the screen. Saved results are observations: acceptance combines diagnostic review and physical feedback in the project checklist. Long A lasts 3 minutes 30 seconds and is only a test asset; desk interruption and recovery checks need just a few seconds of playback.
 
 ## Before and after each attempt
 

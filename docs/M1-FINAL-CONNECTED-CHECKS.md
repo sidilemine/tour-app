@@ -1,6 +1,6 @@
 # Final M1 connected session
 
-Prepared 15 September 2026. All planned outdoor cases are accepted. These are the five existing remaining cases, grouped to minimize Sidi's involvement; no further walk is planned. M1 remains **implemented; awaiting physical test**.
+Completed 15 September 2026. **M1 complete.** All five connected cases passed within the [recorded scopes](test-results/M1-closure.md), and the loading-checkpoint correction passed automated and installed-device checks. The plan below is retained as a regression procedure; no owner action or further walk is pending.
 
 The engineer operates the device, captures evidence and restores the self-contained build. Allow roughly 20–30 minutes of connected availability, subject to installer prompts or failures; Sidi should only need a few minutes of listening and any unlock/authorization prompts. Stop and preserve state if the phone disconnects, another app unexpectedly takes the foreground, or evidence is ambiguous. Do not substitute a successful build or replay for physical recovery.
 
@@ -30,4 +30,4 @@ Use the [bounded focus companion](../tools/android-focus-probe/README.md) to req
 
 End tracking; export and replay each new segment; compare original fixture/journal/history preservation. Restore the self-contained APK and original phone settings, remove the temporary focus companion, and verify a silent offline cold reopening with Metro stopped. Review all five cases against their evidence. Fix failures and repeat only affected checks. Update the working checklist/result record and commit coherent changes. Mark M1 complete only if the remaining acceptance criteria actually pass; otherwise state the precise open case.
 
-Preparation checks: TypeScript, lint and all 78 existing tests passed on 15 September; the focus companion compiled and its signature/permissions were checked. No connected-case result is claimed by this plan. The phone was not detected during preparation; the owner has been asked to reconnect.
+Preparation checks: TypeScript, lint and all 78 existing tests passed on 15 September; the focus companion compiled and its signature/permissions were checked. These were preparation results, not connected acceptance. The phone was not detected at that stage. The later [closure record](test-results/M1-closure.md) supplies actual device/audible evidence, the 79-test final suite, corrected APK identity and self-contained handoff.

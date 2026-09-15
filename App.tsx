@@ -77,7 +77,7 @@ export default function App() {
   return <ScrollView style={styles.screen} contentContainerStyle={styles.content} keyboardShouldPersistTaps="handled">
     <Text style={styles.eyebrow}>WALKING TOUR LAB · M1</Text>
     <Text style={styles.heading}>{'A walk. A pause.\nThe next arrival.'}</Text>
-    <Text style={styles.description}>A device experiment, with real silence between local clips. Physical acceptance is still pending.</Text>
+    <Text style={styles.description}>A device experiment, with real silence between local clips. The guide retains procedures for reference and targeted checks.</Text>
     <Button secondary label="Offline test guide / saved results" onPress={() => setGuideOpen(true)} />
     {exportDraft && <ExportDialog draft={exportDraft} onClose={() => setExportDraft(null)} />}
     {guideOpen && <TestGuide onClose={() => setGuideOpen(false)} />}

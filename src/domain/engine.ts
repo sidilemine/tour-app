@@ -105,7 +105,12 @@ export function reduce(previous: State, event: Event, fixture: Fixture): { state
     }
     case 'audio':
       if (event.token !== s.playback.token || s.playback.index === null) { reason = 'obsolete-audio-event'; break; }
-      s.playback.offset = Math.max(0, event.offset);
+      // Initial load/seek callbacks can report zero before the saved seek takes
+      // effect. Keep the durable target through buffering, failure and a Pause
+      // during loading; only a usable playback position may replace it.
+      if (!event.buffering && !event.error && (s.playback.status !== 'loading' || event.playing)) {
+        s.playback.offset = Math.max(0, event.offset);
+      }
       if (event.error) {
         s.playback.status = 'failed'; s.hold = 'audio-error'; effects.push({ type: 'pause' }); reason = event.error;
       } else if (event.finished) {

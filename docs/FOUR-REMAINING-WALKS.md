@@ -1,6 +1,6 @@
 # Four remaining outdoor checks
 
-Prepared 15 September 2026 after accepting the three development baselines. These are the existing remaining outdoor cases. The self-contained app can run them without Metro, including after reopening. M1 remains implemented; awaiting physical test.
+Prepared 15 September 2026 after accepting the three development baselines. These were the existing remaining outdoor cases. The self-contained app can run them without Metro, including after reopening. M1 subsequently completed; see [closure evidence](test-results/M1-closure.md).
 
 Latest review: [the final stay-at-B and Battery Saver cases passed](test-results/M1-final-outdoor-report.md), following the accepted detour and pass-pending cases. **All four planned outdoor checks are complete.** No repeat is requested. The instructions below are retained as completed test procedures, not the current to-do list; use [remaining phone checks](PHONE-CHECKS.md) for current status.
 
@@ -14,7 +14,7 @@ Use **Documents / Walking Tour Remaining**, not the older Walking Tour Morning f
 
 The route line was reconstructed from the first successful baseline trace and compared with the other two. Its physical verification status remains unverified; it follows the previously walked path but does not establish new access or orientation. The original files and progress remain preserved. Check current path access as usual.
 
-Start with Battery Saver off, Wi-Fi/mobile data off and Location on. The corrected standard fixture should be selected, stopped and ready for a new walk. Use the same audio output for the batch and record which one. Embedded guide revision 5 matches the current folder and two remaining cases. Long A has been shortened to 3:30; use New walk before the next attempt rather than resuming an old narration offset. Do not repeat the three completed baseline cases.
+Start with Battery Saver off, Wi-Fi/mobile data off and Location on. The corrected standard fixture should be selected, stopped and ready for a new walk. Use the same audio output for the batch and record which one. Guide revision 5 matched that prepared folder and the two cases remaining at that time; revision 6 now retains them as reference procedures. Long A has been shortened to 3:30; use New walk before the next attempt rather than resuming an old narration offset. Do not repeat the three completed baseline cases.
 
 For each test: select the fixture first, New walk / reset progress, begin the matching Offline test guide attempt, then Start in the player. Stop safely before reading the screen. End and export before changing fixtures.
 

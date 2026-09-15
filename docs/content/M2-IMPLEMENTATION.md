@@ -1,6 +1,6 @@
 # Next implementation: one curated offline walk
 
-Prepared 13 September 2026. **Ready as an implementation plan; M1 remains implemented and awaiting physical test.** These are small ordered tasks for the next assigned milestone, not authorization to bypass the lifecycle gate. Existing research, provisional package validation and listening drafts are retained.
+Prepared 13 September; status updated 15 September 2026. **Ready as an implementation plan; M1 passed its [acceptance gate](../test-results/M1-closure.md).** These are small ordered tasks for the next assigned milestone, not authorization to bypass the lifecycle gate. Existing research, provisional package validation and listening drafts are retained.
 
 ## Preparation available now
 
@@ -44,4 +44,4 @@ Done when: the M2 acceptance matrix passes and Sidi's E1 outcome is recorded as 
 
 ## Decisions still open
 
-Map dataset/rights and demonstrated renderer format; verified visitor points and feasible leg timing; final six-stop selection, voice/rights and script duration. These require evidence or later feedback, not guesses now. Sidi's immediate work remains the existing M1 phone tests; this preparation adds no extra test walk today.
+Map dataset/rights and demonstrated renderer format; verified visitor points and feasible leg timing; final six-stop selection, voice/rights and script duration. These require evidence or later feedback, not guesses now. No M1 phone test remains. This plan adds no immediate owner action; batch future field/content review and present its purpose and time requirement before requesting it.
