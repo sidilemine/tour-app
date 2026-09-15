@@ -8,9 +8,9 @@ Updated 15 September 2026. M1: **implemented; awaiting physical test**. This is 
 
 On 15 September the engineer left a loaded **development session** for the seven-case outdoor batch, with Metro stopped, Fast Refresh off, and network off. Do not force-close/reload it outdoors; cold reopening may need the Mac. Restore the self-contained APK after this batch for independent cold reopening. Your three-stop route stays saved when you select **New walk / reset progress**. The engineer collects/replays private JSON; you supply the real walking, audible observations and phone prompts.
 
-Latest review: [earbud Pause/Play and the self-contained offline locked walk passed](test-results/M1-remote-and-offline-walks.md), supported by saved diagnostics and Sidi’s physical observations. The [two earlier in-app pause retests](test-results/M1-pause-retests.md) remain passed. C's reported roughly 10 m early trigger is retained as calibration evidence; these successful cases do not need another identical repeat.
+Latest review: [three development walks and a detour](test-results/M1-three-baselines-and-detour.md). All six automatic arrivals met the locked silent-gap requirement, so the three-run arrival baseline is closed. Run 2’s timer unlock preceded another uninterrupted three-minute interval; run 3’s End cut C short after the successful locked arrival. Those limits are recorded, not relabelled as three full narration completions. No more normal baseline walks are requested.
 
-Remaining outdoor plan, assuming successful attempts: **four full-route runs** (three development baselines, one separate battery-saver run) and **three short field cases** (detour/rejoin, early arrival, pass pending). The five at-home checks below remain open. Poor GPS is a conditional observation subcase; it is not an instruction to wander until reception fails.
+Remaining outdoor work: **one full-route battery-saver run and three short cases**—early arrival, pass pending, and the corrected detour including manual replay/paused return. The detour exposed inaccurate saved path geometry; a corrected candidate is prepared privately, not installed. Sidi confirms only leaving/rejoining in the latest attempt. The five at-home checks below remain open. Poor GPS remains a conditional observation subcase.
 
 ## Pause-at-arrival evidence
 
@@ -28,10 +28,10 @@ Stop safely before touching the screen. **End** stops tracking. Export diagnosti
 
 The first functional walk worked: B/C triggered once and all clips completed. The log measured 3:09.6 and 2:50.7 silent gaps; it also contains brief foreground activity. It is useful evidence, but not one of the strict baseline passes.
 
-- [ ] Engineer prepares the development build, caches clips and disables Fast Refresh. Verify fresh fixes before leaving; unplug USB, stop Metro, disable Wi-Fi/mobile data, keep Location on. Use ordinary battery settings and no debugger.
-- [ ] Development baseline 1: lock through A → silence → B → silence → C.
-- [ ] Development baseline 2: same conditions, new walk.
-- [ ] Development baseline 3: same conditions, new walk. Three consecutive successes required.
+- [x] Engineer prepared the development build, cached clips and disabled Fast Refresh. Verify fresh fixes before leaving; unplug USB, stop Metro, disable Wi-Fi/mobile data, keep Location on. Use ordinary battery settings and no debugger.
+- [x] Development baseline 1: reported successful; both gaps exceed three minutes and A/B/C completed with the app backgrounded through the critical interval. See the 15 September review.
+- [x] Development baseline 2: both quiet-gap arrivals and all clips succeeded. Timer unlock was followed by over three uninterrupted locked minutes before B.
+- [x] Development baseline 3: both locked quiet-gap arrivals succeeded, completing the six-arrival series. End stopped C early after its arrival; do not claim full C completion for this run.
 - [x] Self-contained offline locked walking repeat: 4:17.469 and 3:16.878 silent gaps, A/B/C once and completed. Same-build offline cold opening passed separately in the connected recovery session; this outing was not a new cold-process launch. See the [evidence distinction](test-results/M1-remote-and-offline-walks.md).
 
 Aim for **four minutes of actual silence after each clip ends** before entering the next stop area (minimum three). If necessary wait safely before approaching the stop; time spent after an early trigger cannot lengthen the tested gap. Do not unlock between clips. Each next clip must begin once within 30 seconds of physically arriving. Note estimated arrival time for comparison with logs. The engineer restores the self-contained variant after development tests.
@@ -57,7 +57,7 @@ The [prepared seven-case batch](TOMORROW-WALKS.md) explains ordering and fixture
 
 - [ ] Prepared long-A fixture: reach B before A finishes. No overlapping or cut-off story; B only plays when A finishes and arrival remains appropriate.
 - [ ] Pass the pending stop before A ends: no stale backlog of “stand here” narration.
-- [ ] Leave/rejoin the known route, poor/lost GPS: useful reasons and manual fallback, no duplicate/wrong arrival.
+- [ ] Leave/rejoin: approximately 62-second false off-route status traced to sparse fixture geometry. Corrected candidate prepared locally; manual-fallback/held-return substeps are not in the latest log. Poor/lost GPS remains conditional.
 - [ ] Record start/end battery, battery saver and app battery policy for baseline walks. Try power-saving conditions separately; report limits rather than silently changing settings for a pass.
 
 ## Result card (copy per attempt)

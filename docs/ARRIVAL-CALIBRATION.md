@@ -6,6 +6,8 @@ The present active-location approach is reasonable for an offline walking player
 
 Follow-up, 14 September: [new pause-walk evidence](test-results/M1-four-pause-walks.md) shows B already recognised but unable to play promptly after a stationary wait because its last fix became stale. The [subsequent stationary-delivery correction](test-results/M1-stationary-location.md) takes priority over the capture/radius experiment below. This is separate from physical pin accuracy; the linked record distinguishes implementation and device evidence.
 
+Follow-up, 15 September: [the detour comparison](test-results/M1-three-baselines-and-detour.md) confirms a separate **route-shape error**. Repeated normal traces lie around 100 m from sparse fixture chords; a detour remains falsely off-route for about 62 seconds after rejoining those traces. Fresh fixes arrive normally. Correct the path geometry before changing corridor/arrival radii; the private candidate preserves every standing coordinate and remains unverified/uninstalled. This does not establish new stop calibration.
+
 ## Three different sources of discrepancy
 
 1. **The recorded target.** In [App.tsx](../App.tsx), Capture stop saves one latest fix, accepting an age up to 15 seconds and reported accuracy up to 35 m. The recorder asks the user to stop, but does not collect a stationary sample set or preserve capture age, accuracy and spread with the stop. At an illustrative 1.4 m/s, a 15-second-old moving fix could be 21 m behind the walker. That is a permitted failure mode, not a finding that this happened when Sidi recorded B.
