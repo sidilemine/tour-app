@@ -1,6 +1,6 @@
 # Next implementation: one curated offline walk
 
-Prepared 13 September; status updated 15 September 2026. **First map slice authorized and implemented; most desk checks verified, targeted physical gates pending. M1 passed its [acceptance gate](../test-results/M1-closure.md).** These are small ordered tasks for the next assigned milestone, not authorization to bypass the lifecycle gate. Existing research, provisional package validation and listening drafts are retained.
+Prepared 13 September; status updated 15 September 2026. **First map slice authorized and implemented; desk checks verified, outdoor gates pending. M1 passed its [acceptance gate](../test-results/M1-closure.md).** These are small ordered tasks for the next assigned milestone, not authorization to bypass the lifecycle gate. Existing research, provisional package validation and listening drafts are retained.
 
 ## Preparation available now
 
@@ -14,7 +14,7 @@ Current owner direction: minimise walking time while preserving valid tests, beg
 
 ### 1. Prove one small offline map
 
-Current implementation: fixed North Finchley PMTiles, local style/fonts/credits and read-only session position. Both native builds and local checks pass. Offline cold drawing, coverage, short memory measurements, resource repair and remote/focus/recovery now have device evidence. Audio while opening/closing the map, live position display and targeted offline locked arrival remain pending; see [slice results and handset procedure](../test-results/M2-offline-map.md).
+Current implementation: fixed North Finchley PMTiles, local style/fonts/credits and read-only session position. Both native builds and local checks pass. Offline cold drawing, coverage, short memory measurements, resource repair and remote/focus/recovery now have device evidence. Audio while opening/closing the map also passed with owner confirmation. Live position display and targeted offline locked arrival remain pending; see [slice results and handset procedure](../test-results/M2-offline-map.md).
 
 Use the existing [map/routing comparison](MAPS-AND-ROUTING.md) as the experiment proposal. First document a permitted small dataset and its attribution, offline storage/redistribution rights, expiry and cost. Ask Sidi only if the choice creates material cost or lock-in. Then isolate the renderer adapter and prove native compatibility before settling a package map format.
 

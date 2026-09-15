@@ -1,6 +1,6 @@
 # M2 first slice — offline North Finchley map
 
-15 September 2026. **Implemented; offline map and most desk regressions verified, remaining physical gates pending.** Sidi authorized the previously discussed small-map slice after agreeing the shortest useful North Finchley testing plan. This is not M2 acceptance or a selected six-stop itinerary.
+15 September 2026. **Implemented; offline map and desk regressions verified, outdoor gates pending.** Sidi authorized the previously discussed small-map slice after agreeing the shortest useful North Finchley testing plan. This is not M2 acceptance or a selected six-stop itinerary.
 
 ## Implemented boundary
 
@@ -35,7 +35,7 @@ The self-contained APK grew by 19,095,050 bytes from the accepted M1 build. A lo
 
 ## Connected desk results — 15 September evening
 
-Pixel 6 / Android 17. Sidi requested a listening-readiness check before audio; each audible sequence waited for an explicit ready reply. The final self-contained audio/navigation prompt had not been answered when the silent handoff checks were completed, so that subcase remains pending. No outdoor test took place.
+Pixel 6 / Android 17. Sidi requested a listening-readiness check before audio; each audible sequence waited for an explicit ready reply. At the first handoff, the self-contained audio/navigation prompt had not been answered; the follow-up below subsequently closed that subcase. No outdoor test took place.
 
 ### Map, data preservation and header correction
 
@@ -47,7 +47,7 @@ Pixel 6 / Android 17. Sidi requested a listening-readiness check before audio; e
 
 ### Audio, recovery and stationary location
 
-- Real Android media Pause/Play commands reached the guarded adapter and produced logged remote commands. Manual hold survived Start and map opening. With the map open, Play advanced narration and remote Pause held it again. Opening/closing the map **during uninterrupted playback** was not established by this sequence and remains a short follow-up.
+- Real Android media Pause/Play commands reached the guarded adapter and produced logged remote commands. Manual hold survived Start and map opening. With the map open, Play advanced narration and remote Pause held it again. Opening/closing the map **during uninterrupted playback** was not established by that initial sequence; the later listening follow-up below supplies it.
 - The first focus attempt was inconclusive: the tour was already paused when the companion requested focus. The repeat first verified actual playing state. Native loss occurred **22:03:17.340 BST**, gain **22:03:25.403**, and explicit Resume **22:03:42.186**. Position **12.420 s** stayed held for **16.783 s after actual gain**. Sidi confirmed narration stopped, stayed silent, and resumed deliberately; the marker beep was **not heard**, so no audible-beep claim is made. Native focus loss/return and narration behaviour establish the interruption result.
 - After another deliberate short Resume, remote Pause saved **15.084 s**. Development force-stop/cold reload restored exactly that position, manual hold, stopped tracking, completed A and skipped B. No play effect occurred on recovery. End then deliberately stopped the test. The earlier **192.158 s** was replaced by intentional test playback, not lost during map use.
 - **Indoor network-off limitation:** Start delivered one fix about **294.8 s old**, rejected as stale; no fresh locked callback was established in that condition. This is not a passed offline-location check or proof of a map regression.
@@ -71,11 +71,25 @@ These are short process measurements, not an absolute peak, a leak clearance or 
 
 The original four journal attempts were verified unchanged. One new desk attempt spans the development and self-contained work and is saved **inconclusive** for the full case, with variant-specific limits in its note; it is not an acceptance certificate. Automated hardware-key note entry caused development reloads (consistent with React Native's double-R shortcut while editing a modal); final note entry succeeded in self-contained release. This preparation limitation is separate from audio/location results. The shared named-save flow is used for the journal and matching private diagnostics.
 
-**Verified handoff:** installed self-contained APK hash matches the final table. Metro is stopped; cold reopening shows stopped/ended at **15.1 s**, with no app services. The temporary focus companion was removed. Both exports reported **Saved and verified** in the existing local Documents / Walking Tour Tests folder; readback on the Mac preserved all five attempts, and the saved diagnostic export reproduced the same **77 transitions / two segments**. Session exit history contains five requested force-stops and one package update, with no recorded crash/ANR; the inspected release log has no fatal exception. No further audible check was started without a readiness reply.
+**First verified handoff, before the listening follow-up:** installed self-contained APK hash matches the final table. Metro is stopped; cold reopening shows stopped/ended at **15.1 s**, with no app services. The temporary focus companion was removed. Both exports reported **Saved and verified** in the existing local Documents / Walking Tour Tests folder; readback on the Mac preserved all five attempts, and the saved diagnostic export reproduced the same **77 transitions / two segments**. Session exit history contains five requested force-stops and one package update, with no recorded crash/ANR; the inspected release log has no fatal exception. No further audible check was started without a readiness reply.
 
 Wi-Fi and mobile data were re-enabled; Battery Saver and charging stay-awake remained off. **Airplane mode was off at final inspection**, whereas it had been on initially; this session issued no airplane-mode change and retained the later observed setting. Thus final connectivity is recorded explicitly, not described as an exact restoration of every original setting. The reversible map-copy backup remains under the app's cache, separate from the fresh working map; no tour data was deleted.
 
-**Remaining gates:** the short audible check opening/closing the map during playback, usable in-area position-dot/camera observation, and the targeted offline locked silence-to-arrival / paused stationary release outdoors. Reuse the completed map, repair, focus and recovery evidence; do not repeat the whole desk batch. The broader six-stop product, route verification and M2 acceptance remain open.
+### Self-contained listening follow-up — 15 September, 22:44 BST
+
+**Listening subcase passed.** The owner requested completion and explicitly confirmed readiness before sound. Same self-contained source `a7c69f00e14e185a` / guide 7, Metro stopped, Wi-Fi/data off with no default network; tracking stayed stopped. No app code, APK, dependencies, fixture or policy changed.
+
+The first procedure's hierarchy inspection could not obtain an idle screen while the narration counter updated. Its cleanup paused at **27.764 s** in native media state (**27.763 s** in the persisted callback); that aborted procedure is not counted as map-navigation evidence. The retry used previously verified control positions, screenshots, app-specific native MediaSession state and a separate 18-second pause timeout, avoiding hierarchy polling during playback.
+
+- Native MediaSession remained **PLAYING** before, during and after opening/closing the map. The map drew in **0.5 s**; the returned player visibly showed continuing narration at **35.6 s**.
+- Actual remote Pause then held **36.384 s**. Reopening and closing the map again kept native **PAUSED** state at exactly that position and retained the visible manual hold.
+- Sidi confirmed the last sequence sounded correct: narration was uninterrupted through the map changes, then stayed silent during both changes after Pause. The successful audible portion advanced about **8.6 seconds**; no beep or focus repeat was required.
+- End retained stopped tracking, paused playback and **36.384 s**; Wi-Fi/mobile data were re-enabled. USB disconnected while finishing the report, then reconnected successfully. A separate self-contained guide attempt records the listening pass while keeping the whole case **inconclusive** for its untested outdoor portions. Both new exports reported **Saved and verified** through the named local-save flow in Documents / Walking Tour Tests. Mac readback verified all **five earlier attempts unchanged**, **six completed attempts** and no active attempt.
+- The matching export reproduced **43 new transitions / one segment**; the combined M2 evening replay reproduced **120 transitions / three segments**. Actual audio callbacks advanced continuously from **27.771 s** through **35.581 s**, then held **36.384 s** after Pause. There was no intervening reload or additional play effect during map navigation. Raw exports, screenshots, native state and timing remain in a separate ignored directory, preserving earlier evidence.
+
+**Final handoff:** same self-contained APK, Metro stopped with port 8081 absent. After End, Android still listed the audio-controls service; a silent force-stop/cold reopen then showed **TOUR STOPPED**, ended hold and **36.4 s**, with **no app services**. Wi-Fi/mobile data are on; airplane mode and Battery Saver are off. The current session's exit records contain requested stops, with no recorded crash/ANR. No app rebuild or full automated-suite repeat was needed for this documentation-only follow-up; the new diagnostic replay, guide parity, local-link and diff checks passed.
+
+**Remaining gates:** usable in-area position-dot/camera observation and the targeted offline locked silence-to-arrival / paused stationary release outdoors. Reuse the completed map, repair, focus and recovery evidence; do not repeat the whole desk batch. The broader six-stop product, route verification and M2 acceptance remain open.
 
 ## Prepared connected-phone batch
 

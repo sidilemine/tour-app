@@ -1,6 +1,6 @@
 # Walking Tour Lab
 
-An Android device experiment for a self-guided walking audio player, built with React Native, Expo and TypeScript. M1 is **complete on Sidi’s Pixel 6 / Android 17**, with [acceptance and final build evidence](docs/test-results/M1-closure.md). M2 now adds a small North Finchley offline-map preview alongside the existing three-stop lifecycle lab. **Implemented; offline map and most desk regressions verified, targeted physical checks pending.** The six-stop product, verified itinerary and general package importer remain later work.
+An Android device experiment for a self-guided walking audio player, built with React Native, Expo and TypeScript. M1 is **complete on Sidi’s Pixel 6 / Android 17**, with [acceptance and final build evidence](docs/test-results/M1-closure.md). M2 now adds a small North Finchley offline-map preview alongside the existing three-stop lifecycle lab. **Implemented; offline map and desk regressions verified, outdoor checks pending.** The six-stop product, verified itinerary and general package importer remain later work.
 
 The original [brief](ai_self_guided_tour_project_brief.md) is unchanged. [PRODUCT.md](PRODUCT.md), [ARCHITECTURE.md](ARCHITECTURE.md), [AGENTS.md](AGENTS.md) and [ROADMAP.md](ROADMAP.md) are the maintained project contract. The owner's latest instructions override conflicting brief recommendations.
 
@@ -155,7 +155,7 @@ npm run check:map
 python3 tools/verify-map-apk.py artifacts/walking-tour-development.apk artifacts/walking-tour-offline.apk
 ```
 
-MapLibre RN 11.3.10/native Android 13.2.0 are pinned without upgrading the accepted Expo/audio/location stack. Guide revision 7 adds the prepared map check. Native offline drawing, repair, short memory measurements, remote/focus controls and recovery now have recorded device evidence. The short audio/map-navigation follow-up and targeted offline locked arrival remain pending; see the [desk results and remaining gates](docs/test-results/M2-offline-map.md). See [map source/licence details](assets/maps/north-finchley/README.md).
+MapLibre RN 11.3.10/native Android 13.2.0 are pinned without upgrading the accepted Expo/audio/location stack. Guide revision 7 adds the prepared map check. Native offline drawing, repair, short memory measurements, remote/focus controls and recovery now have recorded device evidence. The self-contained audio/map-navigation follow-up passed; live position display and targeted offline locked arrival remain pending; see the [desk results and remaining gates](docs/test-results/M2-offline-map.md). See [map source/licence details](assets/maps/north-finchley/README.md).
 
 ## Preparing the next checks and milestone
 
