@@ -1,8 +1,6 @@
 # Remaining phone checks
 
-Latest owner report, 15 September: both remaining outdoor runs worked as expected. Battery Saver was tested first and remained on for the subsequent stay-at-B long-A run. This does not invalidate early-arrival coverage; preserve that condition when reviewing its evidence. Both are **reported successful; diagnostic review pending**, not yet accepted. The phone was not detected over ADB at intake. No repeat walk is requested; collect the saved exports when connected. See [report intake](test-results/M1-final-outdoor-report.md). The preparation and unticked acceptance items below remain until review.
-
-Current review: [the corrected detour and pass-pending walk passed](test-results/M1-corrected-detour-and-pass-pending.md). Outdoors, only **stay at B until long A finishes** and the **Battery Saver A/B/C walk** remain. Use cases 2 and 4 of [the prepared plan](FOUR-REMAINING-WALKS.md), with files in Documents / Walking Tour Remaining. The [3:30 long-A update is installed](test-results/M1-shorter-long-A.md), with guide 5, EDGE TEST selected, stopped/reset progress and no active guide attempt. Wi-Fi/data were restored on after the offline check; turn them off for Battery Saver. Select STANDARD CLIPS for that full walk. Earlier batch details below retain their historical scope.
+Latest review, 15 September: [stay-at-B early arrival and Battery Saver both passed](test-results/M1-final-outdoor-report.md). **The planned M1 outdoor batch is complete; no more outdoor walks are requested.** Both used Battery Saver, recorded explicitly. The remaining work is the connected-phone checklist below. The installed self-contained source `aaa261ee84596b55` and guide 5 were unchanged during this read-only review; the bundled guide retains all procedures and is not a live acceptance tracker.
 
 The app now includes **Offline test guide / saved results**. Choose a case, begin an attempt, return to the player to test, then record observations and export results alongside diagnostics. All instructions are available offline; engineer-prepared cases are labelled. [Full bundled guide](TEST-GUIDE.md).
 
@@ -14,7 +12,7 @@ Historical morning preparation (superseded by the self-contained handoff above):
 
 Earlier baseline review: [three development walks and a detour](test-results/M1-three-baselines-and-detour.md). All six automatic arrivals met the locked silent-gap requirement, so the three-run arrival baseline is closed. Run 2’s timer unlock preceded another uninterrupted three-minute interval; run 3’s End cut C short after the successful locked arrival. Those limits are recorded, not relabelled as three full narration completions. No more normal baseline walks are requested.
 
-Remaining outdoor work: **one short stay-at-B early-arrival case and one full-route Battery Saver run**. Corrected detour/manual fallback/paused return and pass-pending are closed. The long-A return to B happened after A ended, so it does not exercise completion while still at B. Connected-phone checks below remain open; poor GPS remains a conditional observation subcase.
+Outdoor acceptance is closed: the new long-A walk supplies completion while still at B, distinct from the earlier pass/return case. Battery Saver also passed with confirmed offline/locked conditions. Connected-phone checks below remain open; poor GPS remains a conditional observation subcase, not an extra scheduled outing.
 
 ## Pause-at-arrival evidence
 
@@ -51,18 +49,19 @@ Latest [connected recovery/permission results](test-results/M1-connected-recover
 - [x] Self-contained force-stop during active tracking/playback and with a saved manual hold, reopen offline: route/completed stops and offsets recovered within the five-second target; Sidi confirmed silence after reopening. Stationary connected evidence, not a walking baseline.
 - [ ] Extend recovery coverage to a deliberately skipped stop and an active guide attempt/notes; verify both survive alongside progress. Preserve the existing journal.
 - [ ] Swipe-away separately: document actual service/progress behavior, then reopen deliberately.
-- [ ] Development-build recovery: same checks, recording any Metro dependency. Unscheduled process kill is separate from orderly End.
+- [ ] Development-build recovery: same checks, recording any Metro dependency.
+- [ ] Unscheduled process kill during an active session: recover durable progress/offset/hold; inspect exit records. This is separate from End, force-stop and swipe-away and already exists in the bundled guide.
 
 Self-contained cold launch, stationary media pause/resume, and the connected force-stop/permission cases above have passed within their recorded scope. The remaining cases extend that evidence; force-close is allowed to stop the tour until reopened.
 
 ## Engineer-prepared field edge cases
 
-Use [cases 2 and 4 of the current plan](FOUR-REMAINING-WALKS.md). Both files use the corrected version-2 path and unchanged A/B/C positions. EDGE TEST selects long A; STANDARD CLIPS is required for Battery Saver. The installed self-contained app does not need Metro preparation.
+Completed procedures are retained in [the four-case plan](FOUR-REMAINING-WALKS.md); do not repeat them without a specific regression reason. Both files use the corrected version-2 path and unchanged A/B/C positions. EDGE TEST selects long A; STANDARD CLIPS is required for Battery Saver. The installed self-contained app does not need Metro preparation.
 
-- [ ] Prepared long-A fixture: reach B before A finishes. No overlapping or cut-off story; B only plays when A finishes and arrival remains appropriate.
+- [x] Prepared long-A fixture: B remained pending while A spoke, then began 115 ms after A finished with a fresh fix at B. Both clips completed once; Battery Saver was also enabled.
 - [x] Pass pending: B stayed silent after A finished about 70 m away; a fresh return then triggered B once. See the corrected-detour/pass-pending review.
 - [x] Corrected leave/rejoin, manual replay and paused return: route recognition recovered, manual hold persisted, and B played 178 ms after Resume. Poor/lost GPS remains conditional.
-- [ ] Record start/end battery, battery saver and app battery policy for baseline walks. Try power-saving conditions separately; report limits rather than silently changing settings for a pass.
+- [x] Separate Battery Saver full walk: offline/locked conditions confirmed, 239.576 s and 213.747 s silent gaps, all clips once and completed; battery 98% → 97%. The long-A run was 97% → 96%. These rounded readings do not establish endurance; the export does not capture app-specific battery policy.
 
 ## Result card (copy per attempt)
 

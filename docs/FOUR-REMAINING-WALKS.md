@@ -2,7 +2,7 @@
 
 Prepared 15 September 2026 after accepting the three development baselines. These are the existing remaining outdoor cases. The self-contained app can run them without Metro, including after reopening. M1 remains implemented; awaiting physical test.
 
-Latest review: [cases 1 and 3 passed](test-results/M1-corrected-detour-and-pass-pending.md). Only **case 2 (stay at B until long A finishes)** and **case 4 (Battery Saver)** remain outdoors. The original four-case instructions below are retained for reference.
+Latest review: [the final stay-at-B and Battery Saver cases passed](test-results/M1-final-outdoor-report.md), following the accepted detour and pass-pending cases. **All four planned outdoor checks are complete.** No repeat is requested. The instructions below are retained as completed test procedures, not the current to-do list; use [remaining phone checks](PHONE-CHECKS.md) for current status.
 
 ## Files and preparation
 

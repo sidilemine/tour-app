@@ -34,6 +34,8 @@ The [corrected detour and long-A pass/return review](docs/test-results/M1-correc
 
 The [3:30 long-A asset update](docs/test-results/M1-shorter-long-A.md) shortens the owner’s remaining stay-at-B test and refreshes guide instructions. It changes neither arrival policy nor accepted walking results.
 
+Latest field acceptance: [the final stay-at-B and Battery Saver walks passed](docs/test-results/M1-final-outdoor-report.md). The planned outdoor batch is complete, with both runs using Battery Saver and the standard run’s offline/locked conditions explicitly confirmed. No further outdoor walk is requested. Existing connected interruption/recovery cases remain in [the working checklist](docs/PHONE-CHECKS.md); M1 stays implemented; awaiting physical test until those pass.
+
 ### Delivery stages
 
 1. **M1a — first installable vertical slice:** configurable three-stop fixture, live background fixes, owned local audio, Start/Pause/Resume/manual/End controls, basic SQLite progress and diagnostic export. Build and attempt installation as soon as these connect end to end. Deliver a short first-walk checklist.
