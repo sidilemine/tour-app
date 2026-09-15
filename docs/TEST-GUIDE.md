@@ -1,8 +1,8 @@
 # Offline phone test guide
 
-Generated from `src/testing/guide.json`; edit that source and run `npm run docs:guide`. Revision 6.
+Generated from `src/testing/guide.json`; edit that source and run `npm run docs:guide`. Revision 7.
 
-The planned M1 outdoor walks are complete. These procedures remain available for reference and targeted regression checks; do not repeat a walk unless the engineer identifies a specific need. Opening this guide never starts, pauses or ends a tour. Stop safely before using the screen. Saved results are observations: acceptance combines diagnostic review and physical feedback in the project checklist. Long A lasts 3 minutes 30 seconds and is only a test asset; desk interruption and recovery checks need just a few seconds of playback.
+The planned M1 outdoor walks are complete. These procedures remain available for reference and targeted regression checks; do not repeat a walk unless the engineer identifies a specific need. Opening this guide never starts, pauses or ends a tour. Stop safely before using the screen. Saved results are observations: acceptance combines diagnostic review and physical feedback in the project checklist. Long A lasts 3 minutes 30 seconds and is only a test asset; desk interruption and recovery checks need just a few seconds of playback. M2 adds an engineer-prepared offline-map desk check; this does not reopen the full M1 field matrix.
 
 ## Before and after each attempt
 
@@ -246,3 +246,18 @@ A separately labelled run; do not change baseline conditions to manufacture a pa
 3. If the phone restricts operation, save an inconclusive/failed observation with conditions and export. Restore your preferred settings afterwards.
 
 Expected: Battery use and operating limits are recorded honestly. This run is separate from the three ordinary-settings development baselines.
+
+## 19. M2 offline map / session regression
+
+Case: `offline-map`. Preparation: engineer. Build: either.
+
+Engineer-prepared map APK; for development, verified cached map and all four audio assets. Use the existing checked M1 fixture only for the later targeted outdoor case.
+
+1. At the desk, begin this attempt. Record the build, network condition and map revision. With Metro stopped and phone networking off, cold reopen the self-contained app. Open North Finchley offline map and record its first complete frame time.
+2. Pan to all four saved-area edges and corners, zoom from overview to street detail, and check street labels. Grey outside coverage is expected. Open Map credits; return to the map and then the player. Report blank tiles, missing characters, errors or a stalled screen.
+3. Engineer: preserve data and inject a missing font and a same-size damaged map copy in separate runs. Reopen the map: it must show Map unavailable. The player must remain usable. Rebuild local map copy, recheck drawing offline and record actual recovery. Never delete tour or test databases.
+4. With the engineer at the desk, use only seconds of existing test audio. Open/close the map during playback and manual pause; check real remote controls, focus and reopen recovery as directed. Map navigation must not start location, clear a hold or restart narration. Engineer checks app-scoped crashes and memory.
+5. Only after desk checks pass: on an already checked M1 segment, prepare a separate diagnostic attempt for one locked silence-to-arrival case. Allow at least three minutes of genuine silence before arrival. Check fresh locked location, one eligible clip and manual pause/release at the stationary stop. Stop for failed arrival, unexpected speech, unsafe access or missing evidence.
+6. Save observations and export through the existing named local-save flow. Engineer restores the self-contained build without clearing data and verifies cold reopening with Metro stopped. No North Finchley route survey or full six-stop acceptance is claimed by this test.
+
+Expected: Entire declared map area draws with labels and network off; damaged local resources fail visibly and recover. Map screen does not own location or playback. Native audio/location and the targeted locked arrival remain correct. Desk, outdoor and automation evidence are recorded separately.

@@ -1,6 +1,6 @@
 # Walking Tour Lab
 
-An Android device experiment for a self-guided walking audio player, built with React Native, Expo and TypeScript. M1 is **complete on Sidi’s Pixel 6 / Android 17**, with [acceptance and final build evidence](docs/test-results/M1-closure.md). This is a three-stop lifecycle lab, not the six-stop product or an offline map/navigation engine.
+An Android device experiment for a self-guided walking audio player, built with React Native, Expo and TypeScript. M1 is **complete on Sidi’s Pixel 6 / Android 17**, with [acceptance and final build evidence](docs/test-results/M1-closure.md). M2 now adds a small North Finchley offline-map preview alongside the existing three-stop lifecycle lab. **Implemented; awaiting physical map/session testing.** The six-stop product, verified itinerary and general package importer remain later work.
 
 The original [brief](ai_self_guided_tour_project_brief.md) is unchanged. [PRODUCT.md](PRODUCT.md), [ARCHITECTURE.md](ARCHITECTURE.md), [AGENTS.md](AGENTS.md) and [ROADMAP.md](ROADMAP.md) are the maintained project contract. The owner's latest instructions override conflicting brief recommendations.
 
@@ -11,6 +11,8 @@ The original [brief](ai_self_guided_tour_project_brief.md) is unchanged. [PRODUC
 The [first-walk procedure](docs/FIRST-WALK.md) and [completed phone checklist](docs/PHONE-CHECKS.md) remain available for targeted regression checks. No further M1 walk is requested. The full physical acceptance matrix remains in [ROADMAP.md](ROADMAP.md#physical-phone-procedure-for-m1); an initial successful walk does not complete M1. Recorded verification is in [docs/test-results/M1.md](docs/test-results/M1.md).
 
 Local build outputs (ignored by Git):
+
+Current `walking-tour-*` outputs include the M2 preview. The accepted M1 APKs are retained under `artifacts/m1-accepted/`; the phone has not been updated by building these files. See the [M2 map record and handset procedure](docs/test-results/M2-offline-map.md).
 
 | File | Purpose |
 | --- | --- |
@@ -131,6 +133,7 @@ node --import tsx tools/render-listening-samples.ts
 - `App.tsx`: controls, fixture recorder/import and diagnostics UI.
 - `src/domain/`: fixture validation, geometry and deterministic state transitions.
 - `src/session/`: live Expo location/audio adapters, task registration and serialized coordination.
+- `src/map/`: fixed local-map resources, verified staging and a read-only session-position view; no map-owned location or playback.
 - `src/storage/`: shared SQL transaction policy used by Expo SQLite and Node tests.
 - `src/export/`: named JSON snapshots, editable export dialog and scoped Android folder saving.
 - `src/testing/`: embedded guide and durable test journal, independent of tour progress.
@@ -140,6 +143,19 @@ node --import tsx tools/render-listening-samples.ts
 - `assets/audio/`: three short local clips; [provenance/transcripts](assets/audio/README.md).
 
 The Expo blank template's license is retained in [TEMPLATE-LICENSE](TEMPLATE-LICENSE). The project is private and no distribution license has been granted.
+
+## M2 offline-map preview
+
+Open **North Finchley offline map**. The preview has roads, paths, railways, buildings, water and local street/place labels; it does not yet draw a selected tour. Grey outside coverage is deliberate. The position dot uses only the existing active session's recent usable fix and disappears when stale, stopped or outside the area. Opening/closing the map never starts a tour or changes a playback hold.
+
+The self-contained APK embeds every map/font resource. The app copies them to a versioned document directory because native PMTiles needs random access to a real local file. Every open checks size and MD5; missing/corrupt copies show an error and **Rebuild local map copy**. The build verifies SHA-256 and decodes every tile. Network access is disabled for the Android renderer, and the style contains only local sources. A development session must load/copy the resources with Metro available before disconnecting; this does not make development cold reopening independent of Metro.
+
+```sh
+npm run check:map
+python3 tools/verify-map-apk.py artifacts/walking-tour-development.apk artifacts/walking-tour-offline.apk
+```
+
+MapLibre RN 11.3.10/native Android 13.2.0 are pinned without upgrading the accepted Expo/audio/location stack. Guide revision 7 adds the prepared map check. Native drawing, memory and the targeted locked audio/location regression remain required; archive/APK checks alone do not establish them. See [map source/licence details](assets/maps/north-finchley/README.md).
 
 ## Preparing the next checks and milestone
 

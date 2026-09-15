@@ -1,10 +1,10 @@
 # Next implementation: one curated offline walk
 
-Prepared 13 September; status updated 15 September 2026. **Ready as an implementation plan; M1 passed its [acceptance gate](../test-results/M1-closure.md).** These are small ordered tasks for the next assigned milestone, not authorization to bypass the lifecycle gate. Existing research, provisional package validation and listening drafts are retained.
+Prepared 13 September; status updated 15 September 2026. **First map slice authorized and implemented; awaiting physical testing. M1 passed its [acceptance gate](../test-results/M1-closure.md).** These are small ordered tasks for the next assigned milestone, not authorization to bypass the lifecycle gate. Existing research, provisional package validation and listening drafts are retained.
 
 ## Preparation available now
 
-Current owner direction: minimise walking time while preserving valid tests, beginning near North Finchley bus station and finishing nearby. The [short-walk evidence plan](M2-TEST-PLAN.md) replaces the earlier provisional area/duration target with a 20–30-minute design goal, subject to six useful verified stops. It distinguishes desk checks, route survey, the completed walk and targeted regressions. M2 implementation remains under discussion; neither the old Finchley sequence nor the new candidate pool is a verified itinerary.
+Current owner direction: minimise walking time while preserving valid tests, beginning near North Finchley bus station and finishing nearby. The [short-walk evidence plan](M2-TEST-PLAN.md) replaces the earlier provisional area/duration target with a 20–30-minute design goal, subject to six useful verified stops. It distinguishes desk checks, route survey, the completed walk and targeted regressions. The first map slice is now authorized; neither the old Finchley sequence nor the new candidate pool is a verified itinerary.
 
 - Review batches of M1 evidence using the [local intake tool](../TEST-EVIDENCE-REVIEW.md), then resolve actual failures without changing the test definition.
 - Reuse the record structure in the [Finchley field worksheet](FINCHLEY-FIELD-WORKSHEET.md) for separately verified visitor positions, approaches and viewpoints; prepare candidate-specific prompts for North Finchley before a survey. Its named sites belong to the earlier area and are not the new itinerary.
@@ -13,6 +13,8 @@ Current owner direction: minimise walking time while preserving valid tests, beg
 ## Ordered implementation tasks after the M1 gate
 
 ### 1. Prove one small offline map
+
+Current implementation: fixed North Finchley PMTiles, local style/fonts/credits and read-only session position. Both native builds and local checks pass. Cold drawing, pan/zoom, memory and targeted audio/location regression are still unverified; see [slice results and handset procedure](../test-results/M2-offline-map.md).
 
 Use the existing [map/routing comparison](MAPS-AND-ROUTING.md) as the experiment proposal. First document a permitted small dataset and its attribution, offline storage/redistribution rights, expiry and cost. Ask Sidi only if the choice creates material cost or lock-in. Then isolate the renderer adapter and prove native compatibility before settling a package map format.
 
@@ -46,4 +48,4 @@ Done when: the M2 acceptance matrix passes and Sidi's E1 outcome is recorded as 
 
 ## Decisions still open
 
-Map dataset/rights and demonstrated renderer format; verified visitor points and feasible leg timing; final six-stop selection, voice/rights and script duration. These require evidence or later feedback, not guesses now. No M1 phone test remains. This plan adds no immediate owner action; batch future field/content review and present its purpose and time requirement before requesting it.
+Native proof of the selected PMTiles experiment (dataset/rights are documented); verified visitor points and feasible leg timing; final six-stop selection, voice/rights and script duration. These require evidence or later feedback, not guesses now. No M1 phone test remains. The next owner action is the short prepared connected-phone check, when available; batch future field/content review and present its purpose and time requirement before requesting it.

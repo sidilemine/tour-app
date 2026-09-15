@@ -1,5 +1,7 @@
 # Offline map and routing decision preparation
 
+Original comparison: 13 September 2026. **Update, 15 September:** the authorized prototype now uses MapLibre RN 11.3.10 / Android 13.2.0 with a fixed local PMTiles extract. Native builds and local resource checks pass; actual drawing and session coexistence remain pending. See [current results](../test-results/M2-offline-map.md) and [source/rights](../../assets/maps/north-finchley/README.md). The comparison below is retained as the earlier decision preparation.
+
 Official documentation checked 13 September 2026. Recommendation: after M1 passes, prove a small MapLibre React Native offline region on the phone, using a map source with explicit offline rights. Keep routing an authoring-time operation and store reviewed geometry/directions in the package. This is a recommended experiment, not a selected data contract or an installed dependency.
 
 | Option | Practical benefit | Unresolved issue / disposition |

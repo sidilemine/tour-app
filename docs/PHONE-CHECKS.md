@@ -1,4 +1,6 @@
-# M1 phone checks — complete
+# Phone checks — M1 complete; M2 map check prepared
+
+**Current M2 work:** the offline-map preview is built but has not been installed/tested on the phone. The [prepared M2 desk procedure](test-results/M2-offline-map.md) needs about 5–10 minutes of owner prompts/audible confirmations, plus engineer handset time. No new walk is requested until those checks pass. Guide 7 adds the map case; the M1 evidence below remains accepted for its recorded build.
 
 Latest review, 15 September: [stay-at-B early arrival and Battery Saver both passed](test-results/M1-final-outdoor-report.md). **The planned M1 outdoor batch is complete; no more outdoor walks are requested.** Both used Battery Saver, recorded explicitly. The [final connected checks and loading correction](test-results/M1-closure.md) also passed. **No M1 phone action remains.** The self-contained source `75fd0c0718dda379`, guide 6, is installed and cold reopening verified with Metro stopped. The bundled guide retains procedures as a reference, not a live acceptance tracker.
 

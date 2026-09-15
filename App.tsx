@@ -9,6 +9,7 @@ import * as session from './src/session/session';
 import { TestGuide } from './src/testing/TestGuide';
 import { ExportDialog } from './src/export/ExportDialog';
 import { makeExport, ExportDraft } from './src/export/jsonExport';
+import { OfflineMap } from './src/map/OfflineMap';
 
 type Draft = { route: Coordinate[]; stops: Fixture['stops'] };
 function Button({ label, onPress, disabled = false, secondary = false }: { label: string; onPress: () => void; disabled?: boolean; secondary?: boolean }) {
@@ -18,6 +19,7 @@ export default function App() {
   const { fixture, state, fatal, service, recent } = useSyncExternalStore(session.subscribe, session.getSnapshot);
   const [busy, setBusy] = useState(false), [editing, setEditing] = useState(false);
   const [guideOpen, setGuideOpen] = useState(false);
+  const [mapOpen, setMapOpen] = useState(false);
   const [exportDraft, setExportDraft] = useState<ExportDraft | null>(null);
   const [json, setJson] = useState(''), [diagnostics, setDiagnostics] = useState(true);
   const [recording, setRecording] = useState(false), [checked, setChecked] = useState(false);
@@ -75,10 +77,12 @@ export default function App() {
   const next = eligible(state);
   const current = state.playback.index === null ? 'Silence' : fixture?.stops[state.playback.index].title;
   return <ScrollView style={styles.screen} contentContainerStyle={styles.content} keyboardShouldPersistTaps="handled">
-    <Text style={styles.eyebrow}>WALKING TOUR LAB · M1</Text>
+    <Text style={styles.eyebrow}>WALKING TOUR LAB · M2 MAP PREVIEW</Text>
     <Text style={styles.heading}>{'A walk. A pause.\nThe next arrival.'}</Text>
     <Text style={styles.description}>A device experiment, with real silence between local clips. The guide retains procedures for reference and targeted checks.</Text>
     <Button secondary label="Offline test guide / saved results" onPress={() => setGuideOpen(true)} />
+    <Button secondary label="North Finchley offline map" onPress={() => setMapOpen(true)} disabled={recording} />
+    {mapOpen && <OfflineMap state={state} onClose={() => setMapOpen(false)} />}
     {exportDraft && <ExportDialog draft={exportDraft} onClose={() => setExportDraft(null)} />}
     {guideOpen && <TestGuide onClose={() => setGuideOpen(false)} />}
     {fatal ? <View style={styles.warning}><Text selectable>{fatal}</Text></View> : null}

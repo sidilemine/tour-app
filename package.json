@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "main": "index.ts",
   "dependencies": {
+    "@maplibre/maplibre-react-native": "11.3.10",
+    "@types/geojson": "7946.0.16",
     "expo": "~57.0.22",
     "expo-asset": "~57.0.17",
     "expo-audio": "57.0.5",
@@ -24,10 +26,13 @@
     "zod": "^4.6.2"
   },
   "devDependencies": {
+    "@mapbox/vector-tile": "3.0.0",
     "@types/node": "^24.13.4",
     "@types/react": "~19.2.2",
     "eslint": "^9.39.5",
     "eslint-config-expo": "^57.0.2",
+    "pbf": "5.1.2",
+    "pmtiles": "4.5.0",
     "tsx": "^4.23.13",
     "typescript": "~6.0.3"
   },
@@ -41,6 +46,7 @@
     "build:android": "sh tools/build-android.sh",
     "replay": "node --import tsx tools/replay.ts",
     "check:package": "node --import tsx tools/check-package.ts",
+    "check:map": "node --import tsx tools/maps/check.ts",
     "docs:guide": "node --import tsx tools/guide-docs.ts",
     "docs:check": "node --import tsx tools/guide-docs.ts --check"
   },
