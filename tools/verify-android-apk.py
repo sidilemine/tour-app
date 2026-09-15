@@ -16,7 +16,7 @@ for path in sys.argv[1:]:
             # Hermes can store a string containing Unicode as UTF-16, including
             # its otherwise ASCII substrings. Check both representations.
             for marker in ('Offline test guide', 'walking-tests.db', 'pause-silence', 'process-kill',
-                           'Walking Tour Morning', 'edge-long-a', source_id):
+                           'Walking Tour Remaining', 'edge-long-a', 'edge-a-v2', '3:30', source_id):
                 if marker.encode('utf-8') not in bundle and marker.encode('utf-16le') not in bundle:
                     raise SystemExit(f'{path}: bundled guide marker missing: {marker!r}')
             audio_hashes = {hashlib.sha256(apk.read(name)).digest() for name in apk.namelist() if name.endswith('.m4a')}

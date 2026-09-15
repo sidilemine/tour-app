@@ -1,6 +1,6 @@
 # Remaining phone checks
 
-Current review: [the corrected detour and pass-pending walk passed](test-results/M1-corrected-detour-and-pass-pending.md). Outdoors, only **stay at B until long A finishes** and the **Battery Saver A/B/C walk** remain. Use cases 2 and 4 of [the prepared plan](FOUR-REMAINING-WALKS.md), with files in Documents / Walking Tour Remaining. The self-contained app remains installed; the latest export is the ended long-A run. Select the appropriate fixture and New walk before starting. Earlier batch details below retain their historical scope.
+Current review: [the corrected detour and pass-pending walk passed](test-results/M1-corrected-detour-and-pass-pending.md). Outdoors, only **stay at B until long A finishes** and the **Battery Saver A/B/C walk** remain. Use cases 2 and 4 of [the prepared plan](FOUR-REMAINING-WALKS.md), with files in Documents / Walking Tour Remaining. The [3:30 long-A update is installed](test-results/M1-shorter-long-A.md), with guide 5, EDGE TEST selected, stopped/reset progress and no active guide attempt. Wi-Fi/data were restored on after the offline check; turn them off for Battery Saver. Select STANDARD CLIPS for that full walk. Earlier batch details below retain their historical scope.
 
 The app now includes **Offline test guide / saved results**. Choose a case, begin an attempt, return to the player to test, then record observations and export results alongside diagnostics. All instructions are available offline; engineer-prepared cases are labelled. [Full bundled guide](TEST-GUIDE.md).
 

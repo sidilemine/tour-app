@@ -9,12 +9,12 @@ Latest review: [cases 1 and 3 passed](test-results/M1-corrected-detour-and-pass-
 Use **Documents / Walking Tour Remaining**, not the older Walking Tour Morning folder:
 
 - `01-standard-walk.json`: STANDARD CLIPS, corrected route version 2, original A/B/C standing coordinates.
-- `02-edge-tests-long-A.json`: EDGE TEST, matching corrected route version 2, A speaks for approximately 6:21.
-- `00-Four-tests.txt`: these instructions, readable offline.
+- `02-edge-tests-long-A.json`: EDGE TEST, matching corrected route version 2, A speaks for approximately 3:30.
+- `00-Four-tests-v5.txt`: these updated instructions, readable offline.
 
 The route line was reconstructed from the first successful baseline trace and compared with the other two. Its physical verification status remains unverified; it follows the previously walked path but does not establish new access or orientation. The original files and progress remain preserved. Check current path access as usual.
 
-Start with Battery Saver off, Wi-Fi/mobile data off and Location on. The corrected standard fixture should be selected, stopped and ready for a new walk. Use the same audio output for the batch and record which one. The embedded guide revision 4 contains the individual procedures, but its old seven-case overview and **Walking Tour Morning** folder reference are historical: use this four-case plan and the **Walking Tour Remaining** files instead. Do not repeat the three completed baseline cases.
+Start with Battery Saver off, Wi-Fi/mobile data off and Location on. The corrected standard fixture should be selected, stopped and ready for a new walk. Use the same audio output for the batch and record which one. Embedded guide revision 5 matches the current folder and two remaining cases. Long A has been shortened to 3:30; use New walk before the next attempt rather than resuming an old narration offset. Do not repeat the three completed baseline cases.
 
 For each test: select the fixture first, New walk / reset progress, begin the matching Offline test guide attempt, then Start in the player. Stop safely before reading the screen. End and export before changing fixtures.
 

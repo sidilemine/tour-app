@@ -1,4 +1,4 @@
-Stop A. This is the long narration for the two arrival timing tests. It is deliberately several minutes long. Use your usual checked path from A to B. For the early arrival test, wait at B until this recording finishes. For the pass pending test, wait at B until the app recognises the pending arrival, then continue along your known path well beyond B before this recording finishes. This is test speech, not directions. Stop safely before looking at the screen.
+Stop A. This is the three minute thirty second narration for the arrival timing tests. Use your usual checked path from A to B. For the early arrival test, reach B while this recording is still speaking, then stay there until it finishes. B should wait for the end of A before playing. For the pass pending test, continue beyond B before this recording finishes. This is test speech, not directions. Stop safely before looking at the screen.
 
 Test section 1. The first story is still playing. A new arrival must wait for this recording to finish. Keep to the path you already know and follow the instructions for your selected test. You do not need to hurry. If you are waiting at B, stay in the checked standing area. If you are passing B, continue only where you know the path is safe. A manual pause always remains available.
 
@@ -11,19 +11,5 @@ Test section 4. The first story is still playing. A new arrival must wait for th
 Test section 5. The first story is still playing. A new arrival must wait for this recording to finish. Keep to the path you already know and follow the instructions for your selected test. You do not need to hurry. If you are waiting at B, stay in the checked standing area. If you are passing B, continue only where you know the path is safe. A manual pause always remains available.
 
 Test section 6. The first story is still playing. A new arrival must wait for this recording to finish. Keep to the path you already know and follow the instructions for your selected test. You do not need to hurry. If you are waiting at B, stay in the checked standing area. If you are passing B, continue only where you know the path is safe. A manual pause always remains available.
-
-Test section 7. The first story is still playing. A new arrival must wait for this recording to finish. Keep to the path you already know and follow the instructions for your selected test. You do not need to hurry. If you are waiting at B, stay in the checked standing area. If you are passing B, continue only where you know the path is safe. A manual pause always remains available.
-
-Test section 8. The first story is still playing. A new arrival must wait for this recording to finish. Keep to the path you already know and follow the instructions for your selected test. You do not need to hurry. If you are waiting at B, stay in the checked standing area. If you are passing B, continue only where you know the path is safe. A manual pause always remains available.
-
-Test section 9. The first story is still playing. A new arrival must wait for this recording to finish. Keep to the path you already know and follow the instructions for your selected test. You do not need to hurry. If you are waiting at B, stay in the checked standing area. If you are passing B, continue only where you know the path is safe. A manual pause always remains available.
-
-Test section 10. The first story is still playing. A new arrival must wait for this recording to finish. Keep to the path you already know and follow the instructions for your selected test. You do not need to hurry. If you are waiting at B, stay in the checked standing area. If you are passing B, continue only where you know the path is safe. A manual pause always remains available.
-
-Test section 11. The first story is still playing. A new arrival must wait for this recording to finish. Keep to the path you already know and follow the instructions for your selected test. You do not need to hurry. If you are waiting at B, stay in the checked standing area. If you are passing B, continue only where you know the path is safe. A manual pause always remains available.
-
-Test section 12. The first story is still playing. A new arrival must wait for this recording to finish. Keep to the path you already know and follow the instructions for your selected test. You do not need to hurry. If you are waiting at B, stay in the checked standing area. If you are passing B, continue only where you know the path is safe. A manual pause always remains available.
-
-Test section 13. The first story is still playing. A new arrival must wait for this recording to finish. Keep to the path you already know and follow the instructions for your selected test. You do not need to hurry. If you are waiting at B, stay in the checked standing area. If you are passing B, continue only where you know the path is safe. A manual pause always remains available.
 
 This is the end of the long A recording. If you stayed at B, its clip should now be allowed to play. If you passed beyond B, it should remain unplayed. When it is safe, inspect the result, end the tour, and save your diagnostic export.

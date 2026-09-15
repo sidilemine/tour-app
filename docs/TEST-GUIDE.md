@@ -1,8 +1,8 @@
 # Offline phone test guide
 
-Generated from `src/testing/guide.json`; edit that source and run `npm run docs:guide`. Revision 4.
+Generated from `src/testing/guide.json`; edit that source and run `npm run docs:guide`. Revision 5.
 
-Read this before starting. Opening the guide never starts, pauses or ends a tour. Stop safely before using the screen. Your results are observations awaiting review; this guide does not certify M1. Next outdoor batch: three development baselines, detour/rejoin, early arrival, pass pending, then battery saver. Connect briefly to the engineer’s Mac before leaving to load the development app; all seven can then use that loaded session. Do not reload or force-close it outdoors. The engineer restores the self-contained build after the batch.
+Read this before starting. Opening the guide never starts, pauses or ends a tour. Stop safely before using the screen. Your results are observations awaiting review; this guide does not certify M1. Current remaining outdoor checks: stay at B until long A finishes, then a separate full Battery Saver walk. Long A is now 3 minutes 30 seconds. Use the self-contained app and prepared files in Documents / Walking Tour Remaining. The other procedures remain available for reference; do not repeat accepted cases unless the engineer identifies a relevant regression.
 
 ## Before and after each attempt
 
@@ -13,7 +13,7 @@ Read this before starting. Opening the guide never starts, pauses or ends a tour
 5. For locked baselines, read the procedure first and close the guide before locking. Do not unlock to tick steps during a silent interval. Aim for four minutes after each clip ends before approaching the next stop.
 6. After the attempt: End, save observed pass/fail/inconclusive with notes, then export both Test results and Private diagnostics. Each export opens Save or share JSON with a unique date-and-time filename you can edit. Choose Save to folder, then a local Walking Tour Tests subfolder under Documents or Downloads, Use this folder and Allow. Save success is confirmed after verification. Share instead is optional; Android may block selecting Downloads itself, so choose a subfolder.
 7. Never uninstall or clear storage. Do not replace builds within a recovery check. Engineer-prepared cases need the stated preparation. The edge fixture uses your existing checked geometry with long A narration; it asserts no new verified location.
-8. Prepared fixtures are in Documents / Walking Tour Morning. End and export before changing: Configure / load fixture → Choose JSON file → 01-standard-walk.json or 02-edge-tests-long-A.json → Validate and load JSON → Load, then New walk. Begin the guide attempt afterwards. EDGE TEST is only for early-arrival and pass-pending; restore STANDARD CLIPS for all other walks.
+8. Prepared fixtures are in Documents / Walking Tour Remaining. End and export before changing: Configure / load fixture → Choose JSON file → 01-standard-walk.json or 02-edge-tests-long-A.json → Validate and load JSON → Load, then New walk. Begin the guide attempt afterwards. EDGE TEST is only for early-arrival and pass-pending; restore STANDARD CLIPS for all other walks. After updating the long-A recording, always use New walk before a fresh attempt; do not resume an offset saved against the older 6:21 recording.
 
 ## 1. Pause during silence
 
@@ -163,10 +163,10 @@ Expected: Diagnostics explain uncertain/off-route fixes; manual fallback works. 
 
 Case: `early-arrival`. Preparation: engineer. Build: either.
 
-Engineer supplies 02-edge-tests-long-A.json using your original A/B/C and path, with several minutes of local A speech. Load it BEFORE beginning the guide attempt. Check the player says EDGE TEST. No new standing position is invented.
+Engineer supplies 02-edge-tests-long-A.json using your original A/B/C and path, with 3 minutes 30 seconds of local A speech. Load it BEFORE beginning the guide attempt. Check the player says EDGE TEST. No new standing position is invented.
 
 1. End the current tour and export its diagnostics. Configure / load fixture → Choose JSON file → 02-edge-tests-long-A.json → Validate and load JSON → Load. Close configuration. New walk / reset progress. Begin this guide attempt.
-2. At your usual A, Start a diagnostic walk. A must announce the long narration. Walk normally to your usual B while A continues speaking; do not pause or use manual Play.
+2. At your usual A, Start a diagnostic walk. A must announce the three minute thirty second narration. Walk normally to your usual B while A continues speaking; do not pause or use manual Play.
 3. At B, stop safely and check the recent diagnostic events for arrival-pending-unfinished-clip. Stay at B until A finishes. B should then play once, without cutting off or overlapping A. If A finished before you reached B, record inconclusive.
 4. Let B finish, then End. Save the result and export diagnostics BEFORE changing fixtures. No C or three-minute silence is required. Use New walk with the same edge fixture for the pass-pending case; restore 01-standard-walk.json for other walks.
 

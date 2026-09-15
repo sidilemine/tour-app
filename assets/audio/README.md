@@ -18,6 +18,8 @@ The clips make no claims about a particular place. They play once; the interval 
 
 ## Long A for the two timing edge cases
 
-`edge-a.m4a` is a separate, single 381.039-second (6:21) recording, 3,273,149 bytes, made locally with the same Daniel voice/rate and AAC settings. Its complete original text is in [edge-a.txt](edge-a.txt). It contains continuing diagnostic speech, not a silent keepalive or an audio loop. It is used only by an explicitly selected `audioProfile: "edge-long-a"` fixture. Normal A/B/C files are unchanged. It is not suitable for a genuine-silence baseline.
+`edge-a.m4a` is a separate, single 209.982-second (3:30) recording, 1,807,722 bytes, made locally with the same Daniel voice/rate and AAC settings, with a small tempo adjustment to fit the requested duration. Its complete original text is in [edge-a.txt](edge-a.txt). It contains continuing diagnostic speech, not a silent keepalive or an audio loop. It is used only by an explicitly selected `audioProfile: "edge-long-a"` fixture. Normal A/B/C files are unchanged. It is not suitable for a genuine-silence baseline.
 
-Reproduce locally with `say -v Daniel -r 145 -f assets/audio/edge-a.txt -o /tmp/tour-edge-a.aiff`, then encode that AIFF with FFmpeg (`-c:a aac -b:a 64k`) to a new output file. Do not overwrite assets without updating the asset revision and verifying duration.
+Revision 2, shortened at the owner’s request on 15 September. The durable filename is `edge-a-v2.m4a`; the prior v1 file is not overwritten or reused. The earlier 381.039-second recording and its field evidence remain in Git/history. Start a New walk after upgrading rather than resuming an offset from the older asset.
+
+Reproduce locally with `say -v Daniel -r 145 -f assets/audio/edge-a.txt -o /tmp/tour-edge-a.aiff`, then encode that AIFF with FFmpeg (`-af atempo=0.951241119 -c:a aac -b:a 64k`) to a new output file. Do not overwrite assets without updating the asset revision and verifying duration.

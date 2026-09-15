@@ -85,7 +85,7 @@ export default function App() {
     <View style={styles.card}>
       <Text style={styles.section}>{fixture?.title || 'Set up your test walk'}</Text>
       <Text style={styles.description}>{fixture ? `3 stops · ${fixture.verification.status.replace('_', ' ')} · ${fixture.route.length} route points` : 'Record your own path or load a three-stop JSON fixture. No sample route is represented as safe or verified.'}</Text>
-      {fixture && <Text style={fixture.audioProfile ? styles.hold : styles.description}>{fixture.audioProfile ? 'EDGE TEST: long A narration. Use only for early-arrival / pass-pending checks.' : 'STANDARD CLIPS: short A/B/C. Use for baseline, detour and battery-saver walks.'}</Text>}
+      {fixture && <Text style={fixture.audioProfile ? styles.hold : styles.description}>{fixture.audioProfile ? 'EDGE TEST: A lasts 3:30. Use only for early-arrival / pass-pending checks.' : 'STANDARD CLIPS: short A/B/C. Use for baseline, detour and battery-saver walks.'}</Text>}
       <Button secondary label={editing ? 'Close configuration' : 'Configure / load fixture'} disabled={state.active || busy} onPress={() => { setEditing(!editing); setJson(fixture ? JSON.stringify(fixture, null, 2) : ''); }} />
       {fixture && !editing ? <Button secondary label="Export fixture JSON" onPress={() => void run(exportFixture)} disabled={busy} /> : null}
     </View>

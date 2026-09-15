@@ -32,6 +32,8 @@ The [15 September development/detour review](docs/test-results/M1-three-baseline
 
 The [corrected detour and long-A pass/return review](docs/test-results/M1-corrected-detour-and-pass-pending.md) accepts detour/manual-fallback/paused-return and pass-pending. Staying at B when A ends and Battery Saver remain outdoors, alongside the existing connected lifecycle checks. The eligible-leg-only “off route” label is misleading for onward travel past an unplayed stop; its future diagnostic distinction must preserve arrival eligibility and is not a new walk category.
 
+The [3:30 long-A asset update](docs/test-results/M1-shorter-long-A.md) shortens the owner’s remaining stay-at-B test and refreshes guide instructions. It changes neither arrival policy nor accepted walking results.
+
 ### Delivery stages
 
 1. **M1a — first installable vertical slice:** configurable three-stop fixture, live background fixes, owned local audio, Start/Pause/Resume/manual/End controls, basic SQLite progress and diagnostic export. Build and attempt installation as soon as these connect end to end. Deliver a short first-walk checklist.
