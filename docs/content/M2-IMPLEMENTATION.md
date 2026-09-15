@@ -4,9 +4,11 @@ Prepared 13 September; status updated 15 September 2026. **Ready as an implement
 
 ## Preparation available now
 
+Current owner direction: minimise walking time while preserving valid tests, beginning near North Finchley bus station and finishing nearby. The [short-walk evidence plan](M2-TEST-PLAN.md) replaces the earlier provisional area/duration target with a 20–30-minute design goal, subject to six useful verified stops. It distinguishes desk checks, route survey, the completed walk and targeted regressions. M2 implementation remains under discussion; neither the old Finchley sequence nor the new candidate pool is a verified itinerary.
+
 - Review batches of M1 evidence using the [local intake tool](../TEST-EVIDENCE-REVIEW.md), then resolve actual failures without changing the test definition.
-- Use the [Finchley field worksheet](FINCHLEY-FIELD-WORKSHEET.md) to turn candidate landmarks into separately verified visitor positions, approaches and viewpoints. It supplies blank records, not invented route geometry.
-- Retain the two [E1 briefs and predictions](E1-BRIEFS.md). Desk listening can reveal dull stories before routing, but does not establish enjoyable or usable walks. The current six audio drafts are reproducible with the existing local renderer; no new voice service is needed.
+- Reuse the record structure in the [Finchley field worksheet](FINCHLEY-FIELD-WORKSHEET.md) for separately verified visitor positions, approaches and viewpoints; prepare candidate-specific prompts for North Finchley before a survey. Its named sites belong to the earlier area and are not the new itinerary.
+- Retain the two [E1 briefs and predictions](E1-BRIEFS.md) as historical preparation; re-author them for the compact area once feasibility is known. Desk listening can reveal dull stories before routing, but does not establish enjoyable or usable walks. The current six audio drafts are reproducible with the existing local renderer; no new voice service is needed for desk drafts.
 
 ## Ordered implementation tasks after the M1 gate
 

@@ -91,6 +91,8 @@ Arrival preparation: [calibration research](docs/ARRIVAL-CALIBRATION.md) propose
 
 Deliver a validated versioned package, durable local import, a local map with full renderer assets, verified planned walking legs/directions, six narrated stops, transcripts, source/rights display and clear manual controls. Compare offline map/data and routing options before commitment; present any material cost or lock-in for owner review. Use owned audio initially if voice selection would delay the walk.
 
+**Current planning direction:** Sidi requests the shortest valid walk, starting near North Finchley bus station and ending nearby. The [short-walk evidence plan](docs/content/M2-TEST-PLAN.md) targets 20–30 minutes including narration, subject to six useful verified stops; there is no M2 minimum duration. The earlier Finchley Central draft and 60–75-minute Friary Park discussion are not selected routes. Survey, full-tour acceptance and targeted native/cue regressions remain distinct; accepted M1 evidence is reused and its duration-sensitive cases remain intact. This records planning, not authorization to begin M2 implementation or physical acceptance.
+
 Acceptance:
 
 - Six stops have separate landmark, standing, approach, viewpoint and access data; physical instructions and operational constraints have review status/date. Missing critical verification blocks readiness.

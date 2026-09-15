@@ -1,5 +1,7 @@
 # Finchley six-stop editorial draft
 
+Current planning note, 15 September 2026: retain this as earlier research. Sidi now prefers the shortest valid walk starting/ending near North Finchley bus station; see the [short-walk plan](M2-TEST-PLAN.md). The sequence and duration below have not been selected or field-verified.
+
 Prepared 13 September 2026. A nearby candidate around Finchley Central, Church End and Stephens House & Gardens, consistent with Sidi's preference for the Northern line's Barnet branch. **Desk research only; not a verified walk or an importable phone tour.** The existing three-stop phone fixture remains the M1 test route.
 
 The [manifest](../../content/finchley/manifest.json) contains six original short scripts, nine evidence-linked claims and eight primary sources. Review excerpts, source URLs, dates and uncertainty are preserved there. The checker currently reports missing field verification, route, map and media as blockers; see [package instructions](PACKAGES.md).

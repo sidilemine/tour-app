@@ -1,5 +1,7 @@
 # E1: two supervised Finchley briefs
 
+Current planning note, 15 September 2026: these are retained drafts for the earlier area. The [short-walk plan](M2-TEST-PLAN.md) now prioritises North Finchley bus station and minimum useful walking time. Re-author both briefs to the same feasible short envelope before walking; keep the comparison gate and original preparation history.
+
 Prepared 13 September 2026. **Preparation only; E1 is not passed.** AI-authored outputs are supervised drafts. No additional model service, paid TTS, content factory or backend has been introduced.
 
 ## Shared constraints for both briefs
