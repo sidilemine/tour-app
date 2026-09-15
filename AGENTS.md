@@ -32,6 +32,8 @@ Keep credentials, signing material and private traces out of committed files and
 
 ## Finish each assignment
 
+Treat Sidi's limited availability alongside a demanding job as a test-planning constraint. Catch failures early with automated/replay and engineer-operated device checks before requesting field time. Batch compatible physical cases and use short route segments or shorter test narration when they establish the required behavior; retain real duration, silence and full-route coverage where those are the subject of the test. Before each outdoor batch, state its purpose, estimated owner time, evidence needed and stopping conditions. Reuse accepted evidence when the relevant behavior is unchanged; justify any repeat or newly required case by a changed dependency, failure or uncovered risk. Preserve acceptance criteria and distinguish automation from physical evidence. Revisit the M3 field plan with Sidi after M2, before committing to outing counts or durations.
+
 1. Run applicable type/lint, unit/replay, storage and build checks. Test relevant failure paths; exercise the feature locally where possible. For documentation-only work, verify consistency, links, whitespace and the diff—do not fabricate app tests.
 2. Diagnose failures caused by the change, fix them and rerun the necessary checks. Do not weaken assertions or hide errors to produce a pass. Keep device failures as reproducible regression fixtures when possible.
 3. Perform available automated/device checks yourself. Sidi supplies physical phone actions, real walking observations, subjective content feedback and approvals that tools cannot supply. Prepare a practical procedure and build first; explain precisely what remains unverified.

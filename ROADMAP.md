@@ -115,6 +115,8 @@ Acceptance and decision gate:
 
 **Status: planned after M2.** Expand route matching and recovery only in response to field failures.
 
+**Owner-time planning:** revisit the physical test plan with Sidi after M2. The conversational estimate of 3–5 outings is provisional, not an acceptance requirement or booked commitment. First exercise failures through automated replay and engineer-operated device checks; then batch compatible field cases, using short segments and appropriately shortened test audio where full duration is unnecessary. Reserve full-length walks for end-to-end coverage and duration-sensitive behavior. Present estimated owner time, purpose and stopping conditions for each batch; reuse applicable accepted evidence and explain any repeat or added case. Thoroughness and the acceptance criteria below remain unchanged.
+
 Acceptance: replay fixtures for noisy streets, parallel paths, self-crossing route, reversal, coffee stop, lost signal, implausible speed, skipped/ahead stops and restart have explicit expected events. Sanitized field failures reproduce before the fix and pass after it. Repeat the full six-stop walk offline with screen locked, interruptions and saved recovery. Report trigger mistakes, manual fallback use and battery change with conditions; fix unacceptable failures and agree remaining limits with Sidi. Recheck the M1 gate after relevant native/SDK changes.
 
 ## Milestone 4 — local tour compiler
