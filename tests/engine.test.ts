@@ -128,3 +128,23 @@ test('route projection respects expected leg at a crossing',()=>{
   assert.ok(early.crossTrack<1);assert.ok(late.crossTrack<1);assert.ok(late.along>early.along+100);
 });
 test('reducer never mutates input snapshots',()=>{const before=initialState(),copy=structuredClone(before);reduce(before,{type:'start',at:0,diagnostics:true},fixture);assert.deepEqual(before,copy);});
+
+test('passing B on the onward route keeps it unplayed until a fresh return arrival',()=>{
+  // Synthetic counterpart of the long-A field walk. Full-route proximity must
+  // never become permission to play a missed stop or jump directly to C.
+  const h=harness();h.send({type:'start',at:0,diagnostics:true});h.arrive(1,200000);
+  assert.equal(h.history.at(-1)?.reason,'arrival-pending-unfinished-clip');
+  const beyond={latitude:fixture.stops[1].standing.latitude+0.001,longitude:0};
+  assert.ok(project(beyond,fixture.route).crossTrack<1e-9);
+  assert.ok(project(beyond,fixture.route,0,fixture.stops[1].routeIndex).crossTrack>45);
+  h.send({type:'fix',at:245000,fix:{...beyond,accuracy:5,timestamp:245000}});
+  assert.equal(h.state.location.arrived,undefined);
+  h.finish(381000);
+  assert.equal(h.state.playback.index,null);assert.equal(h.state.stops[1],'unplayed');
+  h.fix(1,430000);assert.equal(h.state.playback.index,null);
+  h.fix(1,432000);assert.equal(h.state.playback.index,null);
+  h.fix(1,434000);assert.equal(h.state.playback.index,1);
+  h.fix(1,436000);
+  assert.deepEqual(h.history.flatMap(x=>x.effects).filter(x=>x.type==='play').map(x=>x.index),[0,1]);
+  assert.equal(h.state.stops[2],'unplayed');
+});

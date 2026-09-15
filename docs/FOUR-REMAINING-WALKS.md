@@ -2,6 +2,8 @@
 
 Prepared 15 September 2026 after accepting the three development baselines. These are the existing remaining outdoor cases. The self-contained app can run them without Metro, including after reopening. M1 remains implemented; awaiting physical test.
 
+Latest review: [cases 1 and 3 passed](test-results/M1-corrected-detour-and-pass-pending.md). Only **case 2 (stay at B until long A finishes)** and **case 4 (Battery Saver)** remain outdoors. The original four-case instructions below are retained for reference.
+
 ## Files and preparation
 
 Use **Documents / Walking Tour Remaining**, not the older Walking Tour Morning folder:

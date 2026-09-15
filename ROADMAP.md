@@ -1,6 +1,6 @@
 # Roadmap
 
-Status: 14 September 2026. M0 is complete; M1 is implemented and awaiting physical acceptance. This roadmap supersedes the original brief's ordering: lifecycle reliability comes first, and the supervised AI experiment runs alongside early curation. Each implementation assignment ends in appropriate tests/debugging, updated documents and a coherent local commit.
+Status: 15 September 2026. M0 is complete; M1 is implemented and awaiting physical acceptance. This roadmap supersedes the original brief's ordering: lifecycle reliability comes first, and the supervised AI experiment runs alongside early curation. Each implementation assignment ends in appropriate tests/debugging, updated documents and a coherent local commit.
 
 “Implemented; awaiting physical test” is a valid intermediate status, not a passed milestone. Only actual result records can establish device behavior or enjoyable content. Do not treat the whole roadmap as authorization to implement all future work.
 
@@ -28,7 +28,9 @@ The [evening remote-pause and self-contained offline walk](docs/test-results/M1-
 
 The [prepared outdoor batch](docs/TOMORROW-WALKS.md) uses a separate long-A fixture on the original route for the two timing cases. It changed preparation, not acceptance criteria; the original seven-case batch is now partially completed as recorded below.
 
-The [15 September development/detour review](docs/test-results/M1-three-baselines-and-detour.md) accepts the six locked quiet-gap arrivals after owner clarification, while recording the timer unlock before a sufficient locked interval and the explicit End before the last C finished. The detour exposed sparse route geometry; a private corrected candidate has been evaluated, not installed or physically accepted.
+The [15 September development/detour review](docs/test-results/M1-three-baselines-and-detour.md) accepts the six locked quiet-gap arrivals after owner clarification, while recording the timer unlock before a sufficient locked interval and the explicit End before the last C finished. That review exposed sparse route geometry and prepared a private candidate; the subsequent installed-candidate results are recorded below.
+
+The [corrected detour and long-A pass/return review](docs/test-results/M1-corrected-detour-and-pass-pending.md) accepts detour/manual-fallback/paused-return and pass-pending. Staying at B when A ends and Battery Saver remain outdoors, alongside the existing connected lifecycle checks. The eligible-leg-only “off route” label is misleading for onward travel past an unplayed stop; its future diagnostic distinction must preserve arrival eligibility and is not a new walk category.
 
 ### Delivery stages
 

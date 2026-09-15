@@ -1,6 +1,6 @@
 # Remaining phone checks
 
-Current preparation: use [the four remaining outdoor checks](FOUR-REMAINING-WALKS.md) and Documents / Walking Tour Remaining. The development baselines are complete; the [self-contained preparation is complete](test-results/M1-four-case-preparation.md). Corrected STANDARD CLIPS is selected, stopped and reset, with no active guide attempt. The app can cold-reopen away from the Mac. Earlier batch details below retain their historical scope.
+Current review: [the corrected detour and pass-pending walk passed](test-results/M1-corrected-detour-and-pass-pending.md). Outdoors, only **stay at B until long A finishes** and the **Battery Saver A/B/C walk** remain. Use cases 2 and 4 of [the prepared plan](FOUR-REMAINING-WALKS.md), with files in Documents / Walking Tour Remaining. The self-contained app remains installed; the latest export is the ended long-A run. Select the appropriate fixture and New walk before starting. Earlier batch details below retain their historical scope.
 
 The app now includes **Offline test guide / saved results**. Choose a case, begin an attempt, return to the player to test, then record observations and export results alongside diagnostics. All instructions are available offline; engineer-prepared cases are labelled. [Full bundled guide](TEST-GUIDE.md).
 
@@ -8,11 +8,11 @@ To save each JSON, keep its unique default name or edit it in **Save or share JS
 
 Updated 15 September 2026. M1: **implemented; awaiting physical test**. This is the working checklist; [ROADMAP](../ROADMAP.md#physical-phone-procedure-for-m1) retains the full criteria and [M1 results](test-results/M1.md) holds evidence. Tick a box only after its observations/logs are recorded, not because the code exists.
 
-On 15 September the engineer left a loaded **development session** for the seven-case outdoor batch, with Metro stopped, Fast Refresh off, and network off. Do not force-close/reload it outdoors; cold reopening may need the Mac. Restore the self-contained APK after this batch for independent cold reopening. Your three-stop route stays saved when you select **New walk / reset progress**. The engineer collects/replays private JSON; you supply the real walking, audible observations and phone prompts.
+Historical morning preparation (superseded by the self-contained handoff above): on 15 September the engineer left a loaded **development session** for the seven-case outdoor batch, with Metro stopped, Fast Refresh off, and network off. Do not force-close/reload it outdoors; cold reopening may need the Mac. Restore the self-contained APK after this batch for independent cold reopening. Your three-stop route stays saved when you select **New walk / reset progress**. The engineer collects/replays private JSON; you supply the real walking, audible observations and phone prompts.
 
-Latest review: [three development walks and a detour](test-results/M1-three-baselines-and-detour.md). All six automatic arrivals met the locked silent-gap requirement, so the three-run arrival baseline is closed. Run 2’s timer unlock preceded another uninterrupted three-minute interval; run 3’s End cut C short after the successful locked arrival. Those limits are recorded, not relabelled as three full narration completions. No more normal baseline walks are requested.
+Earlier baseline review: [three development walks and a detour](test-results/M1-three-baselines-and-detour.md). All six automatic arrivals met the locked silent-gap requirement, so the three-run arrival baseline is closed. Run 2’s timer unlock preceded another uninterrupted three-minute interval; run 3’s End cut C short after the successful locked arrival. Those limits are recorded, not relabelled as three full narration completions. No more normal baseline walks are requested.
 
-Remaining outdoor work: **one full-route battery-saver run and three short cases**—early arrival, pass pending, and the corrected detour including manual replay/paused return. The detour exposed inaccurate saved path geometry; a corrected candidate is prepared privately, not installed. Sidi confirms only leaving/rejoining in the latest attempt. The five at-home checks below remain open. Poor GPS remains a conditional observation subcase.
+Remaining outdoor work: **one short stay-at-B early-arrival case and one full-route Battery Saver run**. Corrected detour/manual fallback/paused return and pass-pending are closed. The long-A return to B happened after A ended, so it does not exercise completion while still at B. Connected-phone checks below remain open; poor GPS remains a conditional observation subcase.
 
 ## Pause-at-arrival evidence
 
@@ -55,11 +55,11 @@ Self-contained cold launch, stationary media pause/resume, and the connected for
 
 ## Engineer-prepared field edge cases
 
-The [prepared seven-case batch](TOMORROW-WALKS.md) explains ordering and fixture selection. The two timing cases use the original A/B/C path with a separate long-A fixture; the app labels it EDGE TEST. Connect briefly before leaving to load the development session.
+Use [cases 2 and 4 of the current plan](FOUR-REMAINING-WALKS.md). Both files use the corrected version-2 path and unchanged A/B/C positions. EDGE TEST selects long A; STANDARD CLIPS is required for Battery Saver. The installed self-contained app does not need Metro preparation.
 
 - [ ] Prepared long-A fixture: reach B before A finishes. No overlapping or cut-off story; B only plays when A finishes and arrival remains appropriate.
-- [ ] Pass the pending stop before A ends: no stale backlog of “stand here” narration.
-- [ ] Leave/rejoin: approximately 62-second false off-route status traced to sparse fixture geometry. Corrected candidate prepared locally; manual-fallback/held-return substeps are not in the latest log. Poor/lost GPS remains conditional.
+- [x] Pass pending: B stayed silent after A finished about 70 m away; a fresh return then triggered B once. See the corrected-detour/pass-pending review.
+- [x] Corrected leave/rejoin, manual replay and paused return: route recognition recovered, manual hold persisted, and B played 178 ms after Resume. Poor/lost GPS remains conditional.
 - [ ] Record start/end battery, battery saver and app battery policy for baseline walks. Try power-saving conditions separately; report limits rather than silently changing settings for a pass.
 
 ## Result card (copy per attempt)
