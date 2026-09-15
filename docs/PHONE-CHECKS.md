@@ -1,6 +1,6 @@
 # Remaining phone checks
 
-Current preparation: use [the four remaining outdoor checks](FOUR-REMAINING-WALKS.md) and Documents / Walking Tour Remaining. The development baselines are complete; the self-contained variant is installed, but [final readiness checks](test-results/M1-four-case-preparation.md) await phone unlock. Corrected long-A is currently selected; do not treat the handoff as ready yet. Earlier batch details below retain their historical scope.
+Current preparation: use [the four remaining outdoor checks](FOUR-REMAINING-WALKS.md) and Documents / Walking Tour Remaining. The development baselines are complete; the [self-contained preparation is complete](test-results/M1-four-case-preparation.md). Corrected STANDARD CLIPS is selected, stopped and reset, with no active guide attempt. The app can cold-reopen away from the Mac. Earlier batch details below retain their historical scope.
 
 The app now includes **Offline test guide / saved results**. Choose a case, begin an attempt, return to the player to test, then record observations and export results alongside diagnostics. All instructions are available offline; engineer-prepared cases are labelled. [Full bundled guide](TEST-GUIDE.md).
 
