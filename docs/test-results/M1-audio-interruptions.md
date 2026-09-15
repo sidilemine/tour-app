@@ -1,5 +1,7 @@
 # M1: Spotify interruption and Bluetooth earbud disconnection
 
+Historical record: this preserves the build, observations and open cases at the time of this check. M1 completed on 15 September 2026; use the [closure record](M1-closure.md) and [completed checklist](../PHONE-CHECKS.md) for current status.
+
 14 September 2026, 18:00–18:10 BST. **The observed Spotify loss/explicit-resume and Bluetooth case/disconnect/reconnect sequences passed. M1 remains implemented; awaiting physical test.** Temporary audio-focus return to the tour was not exercised by Spotify's paused session and remains open.
 
 ## Setup and preserved evidence

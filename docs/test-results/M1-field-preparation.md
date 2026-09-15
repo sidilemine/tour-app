@@ -1,6 +1,8 @@
 # M1: remaining outdoor test preparation
 
-Current preparation: use [the four remaining outdoor checks](../FOUR-REMAINING-WALKS.md) and Documents / Walking Tour Remaining. The development baselines are complete; the self-contained variant is ready with corrected version-2 geometry. Earlier batch details below retain their historical scope.
+Historical record: this preserves the build, observations and open cases at the time of this check. M1 completed on 15 September 2026; use the [closure record](M1-closure.md) and [completed checklist](../PHONE-CHECKS.md) for current status.
+
+Completed batch: M1 has [passed its final acceptance](M1-closure.md). No walk or morning connection is pending. The preparation instructions below are historical, including their earlier fixture, clip duration and guide version; do not use them as a current assignment.
 
 14–15 September 2026. **Implemented; awaiting physical test.** This prepares the existing seven remaining outdoor cases; it does not pass them or reopen previously accepted cases. Build source `bb0a0e3554c55ed7`, guide revision 4, Pixel 6 / Android 17.
 

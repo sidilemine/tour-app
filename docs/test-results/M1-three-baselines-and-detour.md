@@ -1,5 +1,7 @@
 # M1: three development walks and detour review
 
+Historical record: this preserves the build, observations and open cases at the time of this check. M1 completed on 15 September 2026; use the [closure record](M1-closure.md) and [completed checklist](../PHONE-CHECKS.md) for current status.
+
 15 September 2026. **The three consecutive locked-arrival baselines are accepted for the six required quiet-gap arrivals, with the procedural exceptions below explicitly retained. The detour exposed incorrect route geometry. M1 remains implemented; awaiting physical test.** Sidi reports three full walks with Wi-Fi/mobile network off, consistent with expectations, and a detour whose return to the route took roughly a minute to be recognised.
 
 ## Preserved evidence

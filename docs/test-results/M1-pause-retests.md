@@ -1,5 +1,7 @@
 # M1: successful pause-at-arrival retests
 
+Historical record: this preserves the build, observations and open cases at the time of this check. M1 completed on 15 September 2026; use the [closure record](M1-closure.md) and [completed checklist](../PHONE-CHECKS.md) for current status.
+
 14 September 2026. Sidi reports that both requested repeats “worked great.” The saved exports corroborate held arrival, prompt release and unfinished-story ordering on corrected self-contained build `84599b46333c1aa1`, Pixel 6 / Android 17. These two in-app pause cases pass for this tested build/route. **M1 remains implemented; awaiting physical test** for the rest of its matrix.
 
 ## Evidence

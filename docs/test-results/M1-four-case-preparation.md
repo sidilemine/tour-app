@@ -1,5 +1,7 @@
 # M1: corrected-route four-case preparation
 
+Historical record: this preserves the build, observations and open cases at the time of this check. M1 completed on 15 September 2026; use the [closure record](M1-closure.md) and [completed checklist](../PHONE-CHECKS.md) for current status.
+
 15 September 2026. **Prepared and handed back in the self-contained app; outdoor results pending.** M1 remains implemented; awaiting physical test. The [three development baseline result](M1-three-baselines-and-detour.md) is retained. The remaining four outdoor cases can use the self-contained app; they do not require another development baseline.
 
 ## Completed preparation

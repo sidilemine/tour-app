@@ -15,7 +15,7 @@ Local build outputs (ignored by Git):
 | File | Purpose |
 | --- | --- |
 | `artifacts/walking-tour-development.apk` | Installed Expo development client; load JavaScript from Metro before the walk |
-| `artifacts/walking-tour-offline.apk` | Self-contained release variant with embedded JavaScript and all three clips; no Metro needed |
+| `artifacts/walking-tour-offline.apk` | Self-contained release variant with embedded JavaScript, three standard clips and optional long A; no Metro needed |
 | `artifacts/walking-tour-m1a-development.apk` | Earlier vertical-slice checkpoint; prefer the final development build |
 
 The APKs target ARM64 Android, minimum API 24, target/compile API 36. USB installation and development-app launch are verified on Sidi's Pixel 6 (Android 17/API 37, ARM64). The repeated locked-screen walking and planned failure-path matrix have passed within their recorded device/build scopes. See the result record. Both final APKs use the same package ID (`uk.sidi.walkingtourlab`) and development signing certificate. Installing one replaces the other without needing to uninstall; never clear app data during recovery testing.
@@ -145,7 +145,7 @@ The Expo blank template's license is retained in [TEMPLATE-LICENSE](TEMPLATE-LIC
 
 Use the [batch evidence review tool](docs/TEST-EVIDENCE-REVIEW.md) to deduplicate saved attempts and replay candidate diagnostics locally. It never certifies physical acceptance. The [M2 implementation plan](docs/content/M2-IMPLEMENTATION.md) orders the offline-map proof, verified content, durable import and cue/player work after the M1 gate; the [field worksheet](docs/content/FINCHLEY-FIELD-WORKSHEET.md) prepares actual visitor/leg verification. None of this changes the installed phone build.
 
-[Arrival calibration research](docs/ARRIVAL-CALIBRATION.md) compares official location guidance, current capture/trigger code and the two recent walks. It proposes improving stop capture before changing radii; the phone build and current test procedure are unchanged.
+[Arrival calibration research](docs/ARRIVAL-CALIBRATION.md) compares official location guidance, capture/trigger code and the two initial walks, with follow-ups for stationary delivery and corrected route geometry. It proposes improving stop capture before changing radii; the phone build and current test procedure are unchanged.
 
 ### Completed outdoor batch and regression preparation
 

@@ -16,7 +16,7 @@ Outdoor acceptance is closed: the new long-A walk supplies completion while stil
 
 ## Pause-at-arrival evidence
 
-The [stationary-location correction](test-results/M1-stationary-location.md) was physically verified on source `84599b46333c1aa1` and remains unchanged in the prepared build `bb0a0e3554c55ed7`. The connected locked check and both outdoor repeats now support fresh delivery during a held arrival. Guide revision 4 retains the procedure for future regressions. **No further identical in-app pause walks are needed.** The later remote-control case also passed below; the development baselines and other cases retain their separate evidence.
+The [stationary-location correction](test-results/M1-stationary-location.md) was physically verified on source `84599b46333c1aa1` and remains unchanged in the final build `75fd0c0718dda379`. The connected locked check and both outdoor repeats now support fresh delivery during a held arrival. Guide revision 6 retains the procedure for future regressions. **No further identical in-app pause walks are needed.** The later remote-control case also passed below; the development baselines and other cases retain their separate evidence.
 
 - [x] In-app Pause after A finishes: B stays held, then starts **0.187 seconds after explicit Resume**. The recognised held-arrival interval was 69.4 seconds.
 - [x] In-app Pause during A: arrival stays held; Resume finishes A, then B starts **0.121 seconds after A ends**, with no stale-position delay. The recognised held-arrival interval was 71.0 seconds.

@@ -1,5 +1,7 @@
 # M1: stationary location delivery correction
 
+Historical record: this preserves the build, observations and open cases at the time of this check. M1 completed on 15 September 2026; use the [closure record](M1-closure.md) and [completed checklist](../PHONE-CHECKS.md) for current status.
+
 14 September 2026. **Correction passed connected and two outdoor in-app pause retests; full M1 remains implemented, awaiting physical test.** Follows the [four pause-walk failures/delays](M1-four-pause-walks.md). Those original observations remain unchanged.
 
 ## Change

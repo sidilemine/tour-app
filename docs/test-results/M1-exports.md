@@ -1,5 +1,7 @@
 # M1 named JSON export delivery
 
+Historical record: this preserves the build, observations and open cases at the time of this check. M1 completed on 15 September 2026; use the [closure record](M1-closure.md) and [completed checklist](../PHONE-CHECKS.md) for current status.
+
 13 September 2026. M1 remains **implemented; awaiting physical test**. This change fixes the chooser-only export handoff; it does not complete the walking matrix.
 
 ## Implemented behavior

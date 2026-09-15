@@ -193,7 +193,7 @@ Navigation cues are deliberately absent from M1. The corrected M2 walking policy
 
 ## Independent M2 preparation — 13 September 2026
 
-The owner authorized independent development while physical M1 checks are pending. A Node-only [package preflight](tools/content/package.ts) now checks an authored versioned manifest, references, review declarations, planned leg continuity and local asset integrity. Its schema is a provisional curated-package contract, separate from the existing M1 fixture. It reuses only a pure domain distance helper; the mobile session does not import authoring tools. See [scope and limits](docs/content/PACKAGES.md).
+The owner authorized independent development while physical M1 checks were pending; M1 has since completed. A Node-only [package preflight](tools/content/package.ts) now checks an authored versioned manifest, references, review declarations, planned leg continuity and local asset integrity. Its schema is a provisional curated-package contract, separate from the existing M1 fixture. It reuses only a pure domain distance helper; the mobile session does not import authoring tools. See [scope and limits](docs/content/PACKAGES.md).
 
 Readiness declarations require separate standing/approach/viewpoint/access reviews, source-checked claim evidence, real route provenance, local map/audio/transcript resources and an offline renderer review. This is structural validation of recorded assertions, not proof of truth, access, resource decoding or permission. Mobile staging, atomic import/version pinning and renderer validation remain M2 work after the M1 gate. Map format alternatives in the provisional schema do not assert that an adapter supports each format.
 

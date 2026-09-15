@@ -1,5 +1,7 @@
 # M1: remote-pause walk and self-contained offline locked walk
 
+Historical record: this preserves the build, observations and open cases at the time of this check. M1 completed on 15 September 2026; use the [closure record](M1-closure.md) and [completed checklist](../PHONE-CHECKS.md) for current status.
+
 14 September 2026. **Both newly reported walking cases pass within the evidence below. M1 remains implemented; awaiting physical test for the remaining matrix.** Sidi identifies these as the earbud Pause/Play A→B test and the full offline locked A→B→C walk, reports both went according to plan, and separately confirms the full 60-second physical wait at B. For the second walk, Sidi confirms SIM and Wi-Fi off, locked operation and at least three minutes of silence on each leg.
 
 ## Evidence and preservation

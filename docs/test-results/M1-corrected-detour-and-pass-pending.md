@@ -1,5 +1,7 @@
 # M1: corrected detour and long-narration pass/return
 
+Historical record: this preserves the build, observations and open cases at the time of this check. M1 completed on 15 September 2026; use the [closure record](M1-closure.md) and [completed checklist](../PHONE-CHECKS.md) for current status.
+
 15 September 2026. **Corrected detour/manual fallback/paused return and pass-pending cases accepted. Stay-at-B early-arrival release and Battery Saver remain open outdoors. M1 remains implemented; awaiting physical test.** The owner reports a prompt corrected-route return, silence after passing B while long A played, and automatic B after walking back. The saved exports support those observations. One run does not exercise both outcomes of the unfinished-narration case.
 
 ## Preserved evidence and scope

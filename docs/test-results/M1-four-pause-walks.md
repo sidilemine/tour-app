@@ -1,5 +1,7 @@
 # M1: four pause-walk exports and stationary-location delay
 
+Historical record: this preserves the build, observations and open cases at the time of this check. M1 completed on 15 September 2026; use the [closure record](M1-closure.md) and [completed checklist](../PHONE-CHECKS.md) for current status.
+
 14 September 2026. **Implemented; awaiting physical test.** Manual hold is supported by these field runs, but the complete pause/resume cases remain open because stationary location delivery delayed or prevented B after Resume. No app, installed APK, route, progress or phone setting changed during this review.
 
 Sidi confirms all four attempts used the **app's Pause/Resume buttons and phone speaker**. Only attempt 1 was in flight mode. Attempts 2–4 were not; that does not independently establish which networks were connected.

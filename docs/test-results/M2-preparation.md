@@ -1,5 +1,7 @@
 # Independent M2 / E1 preparation
 
+Historical preparation record, 13 September. M1 has since [completed](M1-closure.md); the [M2 implementation plan](../content/M2-IMPLEMENTATION.md) identifies the current next work. The preparation results below retain their original scope.
+
 13 September 2026. Owner authorized independent development while away and will complete the retained phone checks later. **M1 remains implemented; awaiting physical test.** This record is not a new physical result.
 
 ## Delivered

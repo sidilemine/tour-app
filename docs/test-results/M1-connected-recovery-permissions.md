@@ -1,5 +1,7 @@
 # M1: connected offline recovery and location permissions
 
+Historical record: this preserves the build, observations and open cases at the time of this check. M1 completed on 15 September 2026; use the [closure record](M1-closure.md) and [completed checklist](../PHONE-CHECKS.md) for current status.
+
 14 September 2026, approximately 17:26–17:41 BST. **The tested self-contained force-stop and location-permission cases passed; M1 remains implemented, awaiting physical test for the remaining matrix.** These were stationary USB-connected checks on Sidi's Pixel 6 / Android 17, not additional walking baselines.
 
 ## Build and preserved evidence

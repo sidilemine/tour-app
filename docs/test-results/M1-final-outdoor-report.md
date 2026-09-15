@@ -1,5 +1,7 @@
 # M1: final outdoor batch review
 
+Historical record: this preserves the build, observations and open cases at the time of this check. M1 completed on 15 September 2026; use the [closure record](M1-closure.md) and [completed checklist](../PHONE-CHECKS.md) for current status.
+
 15 September 2026. **Stay-at-B early arrival and Battery Saver accepted. The planned M1 outdoor batch is complete.** M1 remains implemented; awaiting physical test because connected lifecycle/interruption checks remain open.
 
 ## Owner observations and intake

@@ -1,5 +1,7 @@
 # M1: long A shortened to 3:30
 
+Historical record: this preserves the build, observations and open cases at the time of this check. M1 completed on 15 September 2026; use the [closure record](M1-closure.md) and [completed checklist](../PHONE-CHECKS.md) for current status.
+
 15 September 2026. Owner-requested test-asset update. **Installed and ready; stay-at-B and Battery Saver outdoor results remain pending.** M1 remains implemented; awaiting physical test. Previously accepted walks retain their recorded scope and do not require repeating for this asset change.
 
 ## Change

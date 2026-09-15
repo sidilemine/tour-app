@@ -1,6 +1,6 @@
 # Local package preflight
 
-Implemented 13 September 2026 as independent M2 preparation while M1 awaits physical acceptance. Run from the project root:
+Implemented 13 September 2026 as independent M2 preparation while M1 was awaiting physical acceptance. M1 has since [completed](../test-results/M1-closure.md); mobile package import remains unimplemented. Run from the project root:
 
 ```sh
 npm run check:package -- content/finchley/manifest.json

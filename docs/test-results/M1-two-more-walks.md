@@ -1,5 +1,7 @@
 # M1: two further walks and Spotify observation
 
+Historical record: this preserves the build, observations and open cases at the time of this check. M1 completed on 15 September 2026; use the [closure record](M1-closure.md) and [completed checklist](../PHONE-CHECKS.md) for current status.
+
 13 September 2026. **Implemented; awaiting physical test.** This is a review of two actual diagnostic exports and Sidi's observations, preserving the earlier setup attempts separately. No app code, trigger thresholds, route or installed APK changed during review.
 
 ## Evidence preserved
