@@ -1,5 +1,7 @@
 # Prepared outdoor test batch
 
+Current preparation: use [the four remaining outdoor checks](FOUR-REMAINING-WALKS.md) and Documents / Walking Tour Remaining. The development baselines are complete; the self-contained variant is being prepared with corrected version-2 geometry. Earlier batch details below retain their historical scope.
+
 Preparation: 14 September 2026 for the next morning. These are the existing seven remaining outdoor cases, not new acceptance requirements. The engineer records installation verification in [the preparation result](test-results/M1-field-preparation.md). M1 remains implemented; awaiting physical test.
 
 ## Before leaving

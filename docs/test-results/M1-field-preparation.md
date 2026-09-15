@@ -1,5 +1,7 @@
 # M1: remaining outdoor test preparation
 
+Current preparation: use [the four remaining outdoor checks](../FOUR-REMAINING-WALKS.md) and Documents / Walking Tour Remaining. The development baselines are complete; the self-contained variant is being prepared with corrected version-2 geometry. Earlier batch details below retain their historical scope.
+
 14–15 September 2026. **Implemented; awaiting physical test.** This prepares the existing seven remaining outdoor cases; it does not pass them or reopen previously accepted cases. Build source `bb0a0e3554c55ed7`, guide revision 4, Pixel 6 / Android 17.
 
 ## Change and scope
