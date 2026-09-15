@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { AppState, Modal, Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { AppState, Modal, Platform, Pressable, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, View } from 'react-native';
 import { Camera, GeoJSONSource, Layer, LogManager, Map, NetworkManager } from '@maplibre/maplibre-react-native';
 import type { State } from '../domain/engine';
 import { prepareLocalMap } from './localMap';
@@ -69,7 +69,7 @@ export function OfflineMap({ state, onClose }: { state: State; onClose: () => vo
   </Modal>;
 }
 const styles = StyleSheet.create({
-  screen: { flex: 1, backgroundColor: '#f4f5ef' }, header: { paddingHorizontal: 18, paddingTop: 24, paddingBottom: 10, gap: 4 },
+  screen: { flex: 1, backgroundColor: '#f4f5ef' }, header: { paddingHorizontal: 18, paddingTop: Platform.OS === 'android' ? (StatusBar.currentHeight ?? 24) + 12 : 24, paddingBottom: 10, gap: 4 },
   title: { fontSize: 23, fontWeight: '700', color: '#183c30' }, body: { fontSize: 14, lineHeight: 20, color: '#40594b' }, small: { fontSize: 11, lineHeight: 16, color: '#52645c' },
   button: { minHeight: 44, justifyContent: 'center' }, link: { fontSize: 14, fontWeight: '600', color: '#215b44' }, map: { flex: 1 },
   message: { flex: 1, padding: 22, gap: 16, justifyContent: 'center' }, footer: { padding: 16, paddingBottom: 24, gap: 4 }, credits: { flex: 1, padding: 20 },

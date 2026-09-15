@@ -1,6 +1,6 @@
 # Walking Tour Lab
 
-An Android device experiment for a self-guided walking audio player, built with React Native, Expo and TypeScript. M1 is **complete on Sidi’s Pixel 6 / Android 17**, with [acceptance and final build evidence](docs/test-results/M1-closure.md). M2 now adds a small North Finchley offline-map preview alongside the existing three-stop lifecycle lab. **Implemented; awaiting physical map/session testing.** The six-stop product, verified itinerary and general package importer remain later work.
+An Android device experiment for a self-guided walking audio player, built with React Native, Expo and TypeScript. M1 is **complete on Sidi’s Pixel 6 / Android 17**, with [acceptance and final build evidence](docs/test-results/M1-closure.md). M2 now adds a small North Finchley offline-map preview alongside the existing three-stop lifecycle lab. **Implemented; offline map and most desk regressions verified, targeted physical checks pending.** The six-stop product, verified itinerary and general package importer remain later work.
 
 The original [brief](ai_self_guided_tour_project_brief.md) is unchanged. [PRODUCT.md](PRODUCT.md), [ARCHITECTURE.md](ARCHITECTURE.md), [AGENTS.md](AGENTS.md) and [ROADMAP.md](ROADMAP.md) are the maintained project contract. The owner's latest instructions override conflicting brief recommendations.
 
@@ -12,7 +12,7 @@ The [first-walk procedure](docs/FIRST-WALK.md) and [completed phone checklist](d
 
 Local build outputs (ignored by Git):
 
-Current `walking-tour-*` outputs include the M2 preview. The accepted M1 APKs are retained under `artifacts/m1-accepted/`; the phone has not been updated by building these files. See the [M2 map record and handset procedure](docs/test-results/M2-offline-map.md).
+Current `walking-tour-*` outputs include the M2 preview. The accepted M1 APKs are retained under `artifacts/m1-accepted/`; the corrected self-contained preview is now installed and cold opening without Metro is verified. See the [M2 map record and handset procedure](docs/test-results/M2-offline-map.md).
 
 | File | Purpose |
 | --- | --- |
@@ -45,7 +45,7 @@ Open **Offline test guide / saved results** near the top of Walking Tour Lab. Re
 
 **Saving JSON:** each Export button opens **Save or share JSON** with a new timestamped filename. Keep it or edit it, then choose **Save to folder**. Select or create a local **Walking Tour Tests** subfolder under Documents or Downloads, tap **Use this folder**, then **Allow**. Wait for **Saved and verified**. Android may block Downloads itself; use a subfolder. Repeated custom names create separate documents (the provider may add a number). **Share instead** remains available, but closing its chooser is not confirmation of a save. Cancelled/failed exports leave original records intact.
 
-All 18 procedures are embedded and readable offline. Cases needing the development build, a prepared long-A timing fixture or an engineer-controlled process kill are labelled; they are not silently substituted with easier tests. The guide never starts a tour or automatically certifies acceptance. Older observations remain tied to their original build/route. No historical pass is pre-ticked.
+All 19 procedures are embedded and readable offline (18 retained M1 cases and one prepared M2 map case). Cases needing the development build, a prepared long-A timing fixture or an engineer-controlled process kill are labelled; they are not silently substituted with easier tests. The guide never starts a tour or automatically certifies acceptance. Older observations remain tied to their original build/route. No historical pass is pre-ticked.
 
 The [full guide text](docs/TEST-GUIDE.md) is generated from the same content as the phone. The [working checklist](docs/PHONE-CHECKS.md) and [M1 result record](docs/test-results/M1.md) remain the human-reviewed status. New guide delivery evidence is recorded in [M1 guide results](docs/test-results/M1-guide.md); the direct-save follow-up is in [M1 export results](docs/test-results/M1-exports.md).
 
@@ -155,7 +155,7 @@ npm run check:map
 python3 tools/verify-map-apk.py artifacts/walking-tour-development.apk artifacts/walking-tour-offline.apk
 ```
 
-MapLibre RN 11.3.10/native Android 13.2.0 are pinned without upgrading the accepted Expo/audio/location stack. Guide revision 7 adds the prepared map check. Native drawing, memory and the targeted locked audio/location regression remain required; archive/APK checks alone do not establish them. See [map source/licence details](assets/maps/north-finchley/README.md).
+MapLibre RN 11.3.10/native Android 13.2.0 are pinned without upgrading the accepted Expo/audio/location stack. Guide revision 7 adds the prepared map check. Native offline drawing, repair, short memory measurements, remote/focus controls and recovery now have recorded device evidence. The short audio/map-navigation follow-up and targeted offline locked arrival remain pending; see the [desk results and remaining gates](docs/test-results/M2-offline-map.md). See [map source/licence details](assets/maps/north-finchley/README.md).
 
 ## Preparing the next checks and milestone
 
@@ -165,7 +165,7 @@ Use the [batch evidence review tool](docs/TEST-EVIDENCE-REVIEW.md) to deduplicat
 
 ### Completed outdoor batch and regression preparation
 
-See [the completed outdoor procedures](docs/FOUR-REMAINING-WALKS.md). Guide revision 6 is embedded in the self-contained build and source loaded by the development client; it retains procedures as a reference. The optional M1 fixture field `audioProfile: "edge-long-a"` selects one 3:30 local A recording; omitted means the original short clips. `node --import tsx tools/testing/prepare-field-fixtures.ts <private-original.json> <new-private-folder>` writes standard and edge fixtures without changing geometry or verification. Keep these precise-coordinate files ignored; never commit them. Import through the existing Configure / load fixture flow, export each attempt before switching, and verify the visible STANDARD CLIPS / EDGE TEST label. Distinct durable audio filenames prevent the long recording from contaminating normal baselines.
+See [the completed outdoor procedures](docs/FOUR-REMAINING-WALKS.md). The accepted M1 closure used guide revision 6; the M2 preview embeds revision 7 and retains those procedures as a reference. The optional M1 fixture field `audioProfile: "edge-long-a"` selects one 3:30 local A recording; omitted means the original short clips. `node --import tsx tools/testing/prepare-field-fixtures.ts <private-original.json> <new-private-folder>` writes standard and edge fixtures without changing geometry or verification. Keep these precise-coordinate files ignored; never commit them. Import through the existing Configure / load fixture flow, export each attempt before switching, and verify the visible STANDARD CLIPS / EDGE TEST label. Distinct durable audio filenames prevent the long recording from contaminating normal baselines.
 
 The development baselines and [final stay-at-B and Battery Saver cases](docs/test-results/M1-final-outdoor-report.md) are accepted. The outdoor batch and [final connected checks](docs/test-results/M1-closure.md) are complete. The final loading-checkpoint correction passed 79 automated tests and a short installed-device recovery check; no arrival or native-audio policy changed. The completed final cases used the self-contained APK and corrected files in Documents / Walking Tour Remaining. After the long-A update, use New walk rather than resuming an old 6:21 offset. Any future development regression session still needs immediate preparation; overnight survival is not promised.
 
