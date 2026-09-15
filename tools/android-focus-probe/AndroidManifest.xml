@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="uk.sidi.walkingtour.focusprobe">
+  <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="36" />
+  <application android:label="Tour Focus Check" android:theme="@android:style/Theme.Material.Light.NoActionBar" android:allowBackup="false" android:debuggable="true">
+    <activity android:name=".FocusActivity" android:exported="true" />
+  </application>
+</manifest>

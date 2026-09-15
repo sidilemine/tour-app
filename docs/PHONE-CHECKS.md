@@ -40,6 +40,8 @@ Aim for **four minutes of actual silence after each clip ends** before entering 
 
 ## Connected-phone checks with the engineer
 
+The [final connected-session plan](M1-FINAL-CONNECTED-CHECKS.md) batches the five remaining cases, with an engineer-operated transient-focus companion to avoid arranging a call. Preparation is complete; native execution and acceptance still require the connected phone.
+
 Latest [connected recovery/permission results](test-results/M1-connected-recovery-permissions.md) cover the self-contained build. The Android permission-dialog process crashed once during testing; its retry succeeded. Original phone settings were restored, and the stopped self-contained app was left installed.
 
 - [x] Spotify interrupts narration; stopping music leaves it held; explicit Resume continues the saved clip. [14 September audio results](test-results/M1-audio-interruptions.md).
