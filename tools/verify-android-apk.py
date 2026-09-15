@@ -4,17 +4,25 @@ import re
 import subprocess
 from pathlib import Path
 import zipfile
+import json
+import hashlib
 
 for path in sys.argv[1:]:
     with zipfile.ZipFile(path) as apk:
         dex = b''.join(apk.read(name) for name in apk.namelist() if name.endswith('.dex'))
         if Path(path).name == 'walking-tour-offline.apk':
             bundle = apk.read('assets/index.android.bundle')
-            for marker in (b'Offline test guide', b'walking-tests.db', b'pause-silence', b'process-kill'):
-                if marker not in bundle:
+            source_id = json.loads(Path('src/buildInfo.json').read_text())['sourceId']
+            # Hermes can store a string containing Unicode as UTF-16, including
+            # its otherwise ASCII substrings. Check both representations.
+            for marker in ('Offline test guide', 'walking-tests.db', 'pause-silence', 'process-kill',
+                           'Walking Tour Morning', 'edge-long-a', source_id):
+                if marker.encode('utf-8') not in bundle and marker.encode('utf-16le') not in bundle:
                     raise SystemExit(f'{path}: bundled guide marker missing: {marker!r}')
-            if len([name for name in apk.namelist() if name.endswith('.m4a')]) < 3:
-                raise SystemExit(f'{path}: missing embedded test clips')
+            audio_hashes = {hashlib.sha256(apk.read(name)).digest() for name in apk.namelist() if name.endswith('.m4a')}
+            for clip in ('a', 'b', 'c', 'edge-a'):
+                if hashlib.sha256(Path(f'assets/audio/{clip}.m4a').read_bytes()).digest() not in audio_hashes:
+                    raise SystemExit(f'{path}: missing or changed embedded {clip} clip')
     missing = [marker for marker in (b'tourAdapterVersion', b'tourGeneration', b'tourCommand') if marker not in dex]
     if missing:
         raise SystemExit(f'{path}: required native audio markers missing: {missing}. Check Android buildFromSource.')

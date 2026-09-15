@@ -26,6 +26,8 @@ The [stationary Spotify and Bluetooth earbud checks](docs/test-results/M1-audio-
 
 The [evening remote-pause and self-contained offline walk](docs/test-results/M1-remote-and-offline-walks.md) passed, including both required silent gaps and one completion per clip in the full walk. Physical wait/offline/lock observations and logged timings are distinguished. Same-build cold-start evidence comes from the earlier connected session. The three development baselines, remaining lifecycle/field cases and power-saving observation remain open.
 
+The [prepared outdoor batch](docs/TOMORROW-WALKS.md) uses a separate long-A fixture on the original route for the two timing cases. It changes preparation, not acceptance criteria or the seven remaining outdoor cases.
+
 ### Delivery stages
 
 1. **M1a — first installable vertical slice:** configurable three-stop fixture, live background fixes, owned local audio, Start/Pause/Resume/manual/End controls, basic SQLite progress and diagnostic export. Build and attempt installation as soon as these connect end to end. Deliver a short first-walk checklist.

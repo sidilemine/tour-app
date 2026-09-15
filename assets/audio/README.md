@@ -15,3 +15,9 @@ B: “Stop B. This is the second arrival clip. If your phone remained locked thr
 C: “Stop C. You have reached the final test stop. When it is safe to stop, unlock your phone and export the diagnostics. One successful walk does not complete the test matrix.”
 
 The clips make no claims about a particular place. They play once; the interval between files is genuine silence. Final tour voice selection and distribution rights remain a later content decision.
+
+## Long A for the two timing edge cases
+
+`edge-a.m4a` is a separate, single 381.039-second (6:21) recording, 3,273,149 bytes, made locally with the same Daniel voice/rate and AAC settings. Its complete original text is in [edge-a.txt](edge-a.txt). It contains continuing diagnostic speech, not a silent keepalive or an audio loop. It is used only by an explicitly selected `audioProfile: "edge-long-a"` fixture. Normal A/B/C files are unchanged. It is not suitable for a genuine-silence baseline.
+
+Reproduce locally with `say -v Daniel -r 145 -f assets/audio/edge-a.txt -o /tmp/tour-edge-a.aiff`, then encode that AIFF with FFmpeg (`-c:a aac -b:a 64k`) to a new output file. Do not overwrite assets without updating the asset revision and verifying duration.

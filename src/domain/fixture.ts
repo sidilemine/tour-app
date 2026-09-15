@@ -9,6 +9,8 @@ const stop = z.object({
 export const fixtureSchema = z.object({
   schemaVersion: z.literal(1), id: z.string().min(1).max(80), version: z.number().int().positive(),
   title: z.string().min(1).max(120),
+  // Absent on all original fixtures: retain byte-for-byte recovery identity.
+  audioProfile: z.enum(['edge-long-a']).optional(),
   verification: z.object({ status: z.enum(['unverified', 'user_checked']), note: z.string().max(2000) }),
   route: z.array(coordinate).min(3).max(10000), stops: z.array(stop).length(3),
 });

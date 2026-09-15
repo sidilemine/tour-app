@@ -43,6 +43,8 @@ These are initial testable defaults. Change them using observed walking feedback
 
 The lifecycle lab includes an offline test guide with preparation, steps, expected behavior and durable attempt notes. It distinguishes independent tests from engineer-prepared cases. Saving an observed pass/fail/inconclusive result does not control playback or mark M1 accepted; diagnostics and physical observations still need review. Test records stay separate from tour progress and export only on request. Test results, diagnostics and fixture exports offer distinct timestamped default filenames, an editable name and direct saving to a chosen local Android folder. Share is a separate optional action. Cancellation or an unsuccessful save must preserve the original records; repeated exports must not overwrite an earlier result.
 
+The lab can select a separate long-A timing fixture using the same checked path for unfinished-narration tests. The player clearly distinguishes this from standard short clips. This is test preparation, not a change to story ordering, arrival policy or the walking product scope.
+
 ## Scope of the curated prototype
 
 One walk in a location Sidi can test, six publicly reachable stops, a clear start/end, verified walking legs and standing positions. Include natural spoken narration, transcripts, clear manual controls, visible route, local map and directions, sources, asset rights and restart recovery. The actual area, themes, walking duration and voice are chosen with Sidi during early curation, not invented as settled decisions here.

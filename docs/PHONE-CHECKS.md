@@ -2,11 +2,11 @@
 
 The app now includes **Offline test guide / saved results**. Choose a case, begin an attempt, return to the player to test, then record observations and export results alongside diagnostics. All instructions are available offline; engineer-prepared cases are labelled. [Full bundled guide](TEST-GUIDE.md).
 
-To save each JSON, keep its unique default name or edit it in **Save or share JSON**, tap **Save to folder**, choose/create **Walking Tour Tests** under Documents or Downloads, then **Use this folder** → **Allow**. Wait for **Saved and verified**. Use a subfolder if Downloads itself is blocked. Save both test results and private diagnostics after each attempt. **Share instead** is optional and does not confirm a local save. The self-contained export update is installed; direct saving, editable/repeated names and offline exports passed the connected-phone checks. The local **Documents/Walking Tour Tests** folder is ready. See [export delivery evidence](test-results/M1-exports.md).
+To save each JSON, keep its unique default name or edit it in **Save or share JSON**, tap **Save to folder**, choose/create **Walking Tour Tests** under Documents or Downloads, then **Use this folder** → **Allow**. Wait for **Saved and verified**. Use a subfolder if Downloads itself is blocked. Save both test results and private diagnostics after each attempt. **Share instead** is optional and does not confirm a local save. The named export update is included in both prepared builds; direct saving, editable/repeated names and offline exports passed the connected-phone checks. The local **Documents/Walking Tour Tests** folder is ready. See [export delivery evidence](test-results/M1-exports.md).
 
-Updated 14 September 2026. M1: **implemented; awaiting physical test**. This is the working checklist; [ROADMAP](../ROADMAP.md#physical-phone-procedure-for-m1) retains the full criteria and [M1 results](test-results/M1.md) holds evidence. Tick a box only after its observations/logs are recorded, not because the code exists.
+Updated 15 September 2026. M1: **implemented; awaiting physical test**. This is the working checklist; [ROADMAP](../ROADMAP.md#physical-phone-procedure-for-m1) retains the full criteria and [M1 results](test-results/M1.md) holds evidence. Tick a box only after its observations/logs are recorded, not because the code exists.
 
-Your current self-contained app can reopen away from the Mac. Your three-stop route stays saved when you select **New walk / reset progress**. The engineer prepares development builds and collects/replays the private JSON; you supply the real walking, audible observations and phone prompts.
+On 15 September the engineer left a loaded **development session** for the seven-case outdoor batch, with Metro stopped, Fast Refresh off, and network off. Do not force-close/reload it outdoors; cold reopening may need the Mac. Restore the self-contained APK after this batch for independent cold reopening. Your three-stop route stays saved when you select **New walk / reset progress**. The engineer collects/replays private JSON; you supply the real walking, audible observations and phone prompts.
 
 Latest review: [earbud Pause/Play and the self-contained offline locked walk passed](test-results/M1-remote-and-offline-walks.md), supported by saved diagnostics and Sidi’s physical observations. The [two earlier in-app pause retests](test-results/M1-pause-retests.md) remain passed. C's reported roughly 10 m early trigger is retained as calibration evidence; these successful cases do not need another identical repeat.
 
@@ -14,7 +14,7 @@ Remaining outdoor plan, assuming successful attempts: **four full-route runs** (
 
 ## Pause-at-arrival evidence
 
-The [stationary-location correction](test-results/M1-stationary-location.md) is installed (source `84599b46333c1aa1`). The connected locked check and both outdoor repeats now support fresh delivery during a held arrival. Guide revision 3 retains the procedure for future regressions. **No further identical in-app pause walks are needed.** The later remote-control case also passed below; the development baselines and other remaining cases stay separate.
+The [stationary-location correction](test-results/M1-stationary-location.md) was physically verified on source `84599b46333c1aa1` and remains unchanged in the prepared build `bb0a0e3554c55ed7`. The connected locked check and both outdoor repeats now support fresh delivery during a held arrival. Guide revision 4 retains the procedure for future regressions. **No further identical in-app pause walks are needed.** The later remote-control case also passed below; the development baselines and other remaining cases stay separate.
 
 - [x] In-app Pause after A finishes: B stays held, then starts **0.187 seconds after explicit Resume**. The recognised held-arrival interval was 69.4 seconds.
 - [x] In-app Pause during A: arrival stays held; Resume finishes A, then B starts **0.121 seconds after A ends**, with no stale-position delay. The recognised held-arrival interval was 71.0 seconds.
@@ -53,7 +53,9 @@ Self-contained cold launch, stationary media pause/resume, and the connected for
 
 ## Engineer-prepared field edge cases
 
-- [ ] Short-approach fixture: reach B before A finishes. No overlapping or cut-off story; B only plays when A finishes and arrival remains appropriate.
+The [prepared seven-case batch](TOMORROW-WALKS.md) explains ordering and fixture selection. The two timing cases use the original A/B/C path with a separate long-A fixture; the app labels it EDGE TEST. Connect briefly before leaving to load the development session.
+
+- [ ] Prepared long-A fixture: reach B before A finishes. No overlapping or cut-off story; B only plays when A finishes and arrival remains appropriate.
 - [ ] Pass the pending stop before A ends: no stale backlog of “stand here” narration.
 - [ ] Leave/rejoin the known route, poor/lost GPS: useful reasons and manual fallback, no duplicate/wrong arrival.
 - [ ] Record start/end battery, battery saver and app battery policy for baseline walks. Try power-saving conditions separately; report limits rather than silently changing settings for a pass.

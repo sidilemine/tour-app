@@ -201,7 +201,7 @@ The [Finchley draft](content/finchley/manifest.json) deliberately fails readines
 
 A React Native modal presents the guide without taking ownership of the active session. Opening, closing, beginning or saving a test never issues playback or location commands. The journal uses a separate `walking-tests.db` and the shared synchronous transactional Store: selected case, active notes/conditions and append-only completed attempts recover independently of the tour. It records source/variant, device, route identity, guide revision and start/end context; observations are not automatic acceptance decisions. It prevents overlapping attempts and an observed pass spanning a changed build/route. Corrupt data and write failures are surfaced without deleting saved records. Retention stops at 500 completed attempts pending deliberate archival; nothing is silently discarded.
 
-The explicit test-results export is separate from precise diagnostics. Match the two using attempt times, route identity and walk timestamps. Drafts and previous failures remain available. All guide instructions work offline, while development-build, short-approach and unscheduled-kill tests still require engineer preparation. This change does not add a fabricated short route or expand navigation.
+The explicit test-results export is separate from precise diagnostics. Match the two using attempt times, route identity and walk timestamps. Drafts and previous failures remain available. All guide instructions work offline, while development-build, long-A timing-fixture and unscheduled-kill tests still require engineer preparation. This change does not add a fabricated short route or expand navigation.
 
 
 ## Named local exports — M1 follow-up
@@ -215,3 +215,7 @@ On Android, the existing [Expo legacy FileSystem StorageAccessFramework](https:/
 ## Local evidence intake
 
 `tools/testing/review.ts` and `tools/review-test-exports.ts` operate only on explicitly supplied local JSON exports. They deduplicate completed journal observations, retain conflicting copies as warnings, replay diagnostics with the current policy and suggest candidates by source/fixture/time overlap. These are evidence aids, not acceptance decisions or proof of complete coverage; variant, audibility and locked-screen conditions still require review. Notes and coordinates are omitted from the report, but filenames and times remain private. No mobile import, native dependency or phone behavior is changed. See [review procedure](docs/TEST-EVIDENCE-REVIEW.md).
+
+## M1 field-test audio preparation
+
+Guide revision 4 supports a separate timing fixture using the original path/standing positions and optional `audioProfile: "edge-long-a"`. Its A is one locally rendered 6:21 speech asset. B/C and normal A are unchanged. This replaces the need to invent a shorter route for the two unfinished-narration field cases; their acceptance behavior is unchanged. Original fixtures omit the optional field so serialized recovery identity is preserved. Edge copies have separate IDs and archived progress. Audio preparation keys its cache by explicit asset filenames (`edge-a-v1` versus normal `0`); switching back must select normal A even in the same process. No looping, silent keepalive, trigger-policy or native changes. Normal locked-silence baselines must use standard clips. Physical timing remains to be tested.

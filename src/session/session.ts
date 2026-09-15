@@ -12,10 +12,12 @@ import { Store } from '../storage/store';
 import { PlayGate } from './playGate';
 import buildInfo from '../buildInfo.json';
 import { nativeAudioGeneration } from './nativeAudio';
+import { clipNames } from './clipPlan';
 const build = { ...buildInfo, variant: __DEV__ ? 'development' : 'offline-release' };
 
 export const LOCATION_TASK = 'walking-tour-location-v1';
 const assets = [require('../../assets/audio/a.m4a'), require('../../assets/audio/b.m4a'), require('../../assets/audio/c.m4a')];
+const edgeA = require('../../assets/audio/edge-a.m4a');
 const listeners = new Set<() => void>();
 let store: Store;
 let fixture: Fixture | null = null;
@@ -23,6 +25,7 @@ let state = initialState();
 let player: AudioPlayer | null = null;
 let statusListener: { remove(): void } | null = null;
 let files: string[] = [];
+let preparedProfile = '';
 let fatal = '';
 let initialized = false;
 let service = 'Stopped';
@@ -60,14 +63,15 @@ export function init() {
   notify();
 }
 async function prepareAudio() {
-  if (!files.length) {
+  const names = clipNames(fixture), profile = names.join(',');
+  if (!files.length || preparedProfile !== profile) {
     const dir = `${FileSystem.documentDirectory}clips/`;
     await FileSystem.makeDirectoryAsync(dir, { intermediates: true });
     const ready: string[] = [];
     for (let i = 0; i < assets.length; i++) {
-      const target = `${dir}${i}.m4a`;
+      const target = `${dir}${names[i]}.m4a`;
       if (!(await FileSystem.getInfoAsync(target)).exists) {
-        const asset = await Asset.fromModule(assets[i]).downloadAsync();
+        const asset = await Asset.fromModule(i === 0 && fixture?.audioProfile === 'edge-long-a' ? edgeA : assets[i]).downloadAsync();
         if (!asset.localUri) throw Error('Local audio asset is unavailable. Load all assets while Metro is connected.');
         await FileSystem.copyAsync({ from: asset.localUri, to: target });
       }
@@ -76,6 +80,7 @@ async function prepareAudio() {
       ready.push(target);
     }
     files = ready;
+    preparedProfile = profile;
   }
   await setAudioModeAsync({ playsInSilentMode: true, shouldPlayInBackground: true, interruptionMode: 'doNotMix', allowsRecording: false });
 }

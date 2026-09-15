@@ -1,8 +1,8 @@
 # Offline phone test guide
 
-Generated from `src/testing/guide.json`; edit that source and run `npm run docs:guide`. Revision 3.
+Generated from `src/testing/guide.json`; edit that source and run `npm run docs:guide`. Revision 4.
 
-Read this before starting. Opening the guide never starts, pauses or ends a tour. Stop safely before using the screen. Your results are observations awaiting review; this guide does not certify M1.
+Read this before starting. Opening the guide never starts, pauses or ends a tour. Stop safely before using the screen. Your results are observations awaiting review; this guide does not certify M1. Next outdoor batch: three development baselines, detour/rejoin, early arrival, pass pending, then battery saver. Connect briefly to the engineer’s Mac before leaving to load the development app; all seven can then use that loaded session. Do not reload or force-close it outdoors. The engineer restores the self-contained build after the batch.
 
 ## Before and after each attempt
 
@@ -12,7 +12,8 @@ Read this before starting. Opening the guide never starts, pauses or ends a tour
 4. Record network, output/headphones, precise/background permission, battery start/end, saver and app battery policy. The app captures build, phone, route identity and attempt times; these conditions still need your observations.
 5. For locked baselines, read the procedure first and close the guide before locking. Do not unlock to tick steps during a silent interval. Aim for four minutes after each clip ends before approaching the next stop.
 6. After the attempt: End, save observed pass/fail/inconclusive with notes, then export both Test results and Private diagnostics. Each export opens Save or share JSON with a unique date-and-time filename you can edit. Choose Save to folder, then a local Walking Tour Tests subfolder under Documents or Downloads, Use this folder and Allow. Save success is confirmed after verification. Share instead is optional; Android may block selecting Downloads itself, so choose a subfolder.
-7. Never uninstall, clear storage or reinstall within a recovery check. Engineer-prepared cases remain available to read but require the stated preparation. No short-approach route is invented or pre-verified.
+7. Never uninstall or clear storage. Do not replace builds within a recovery check. Engineer-prepared cases need the stated preparation. The edge fixture uses your existing checked geometry with long A narration; it asserts no new verified location.
+8. Prepared fixtures are in Documents / Walking Tour Morning. End and export before changing: Configure / load fixture → Choose JSON file → 01-standard-walk.json or 02-edge-tests-long-A.json → Validate and load JSON → Load, then New walk. Begin the guide attempt afterwards. EDGE TEST is only for early-arrival and pass-pending; restore STANDARD CLIPS for all other walks.
 
 ## 1. Pause during silence
 
@@ -150,10 +151,11 @@ Case: `off-route`. Preparation: independent. Build: either.
 
 Only a known safe public detour. Do not enter unsafe areas to degrade GPS.
 
-1. Begin a separate diagnostic walk. Leave the recorded path by a safe known detour and inspect the location reason while stopped.
-2. Try manual playback if automatic arrival is suppressed. Pause before returning to the path.
-3. Rejoin and wait for fresh usable fixes: hold must remain. Resume deliberately and observe the next eligible stop.
-4. If naturally poor or lost GPS occurs, record it; otherwise mark that subcase inconclusive. End and export.
+1. Start a fresh diagnostic walk at A using STANDARD CLIPS. Let A finish. Before B, take a familiar safe public side path about 60 m sideways from the recorded route.
+2. Stop and read Why it spoke — or stayed quiet. Look for off-route; if it does not appear, record the actual reason rather than wandering to force it.
+3. Tap Play A to check manual fallback. Let that replay finish, then tap Pause. Return to the recorded path and continue to B while paused.
+4. At B, wait about 10–15 seconds for fresh fixes. B must remain silent until you deliberately Resume, then play once. End and export. No trip to C, three-minute silent gap or 60-second wait is required.
+5. If naturally poor GPS occurs, record it separately; otherwise that subcase is untested. The app does not calculate a detour or directions back.
 
 Expected: Diagnostics explain uncertain/off-route fixes; manual fallback works. No wrong or duplicate arrivals, no automatic removal of the hold.
 
@@ -161,11 +163,12 @@ Expected: Diagnostics explain uncertain/off-route fixes; manual fallback works. 
 
 Case: `early-arrival`. Preparation: engineer. Build: either.
 
-A separately checked short-approach fixture is required; it is NOT bundled. Engineer prepares realistic trigger spacing using local clips. Do not replace your main route without exporting it.
+Engineer supplies 02-edge-tests-long-A.json using your original A/B/C and path, with several minutes of local A speech. Load it BEFORE beginning the guide attempt. Check the player says EDGE TEST. No new standing position is invented.
 
-1. Engineer loads the checked short-approach fixture and confirms B can receive usable dwell fixes while A is still audible.
-2. Start a fresh diagnostic walk at A and reach B before A finishes. Stay at B.
-3. Listen until A finishes, then observe B. End and export before switching back to the main route.
+1. End the current tour and export its diagnostics. Configure / load fixture → Choose JSON file → 02-edge-tests-long-A.json → Validate and load JSON → Load. Close configuration. New walk / reset progress. Begin this guide attempt.
+2. At your usual A, Start a diagnostic walk. A must announce the long narration. Walk normally to your usual B while A continues speaking; do not pause or use manual Play.
+3. At B, stop safely and check the recent diagnostic events for arrival-pending-unfinished-clip. Stay at B until A finishes. B should then play once, without cutting off or overlapping A. If A finished before you reached B, record inconclusive.
+4. Let B finish, then End. Save the result and export diagnostics BEFORE changing fixtures. No C or three-minute silence is required. Use New walk with the same edge fixture for the pass-pending case; restore 01-standard-walk.json for other walks.
 
 Expected: A finishes without overlap or being cut off. B waits and plays only if still eligible. An arrival after A finished is inconclusive for this case.
 
@@ -173,11 +176,13 @@ Expected: A finishes without overlap or being cut off. B waits and plays only if
 
 Case: `pass-pending`. Preparation: engineer. Build: either.
 
-The same separately prepared short-approach fixture; sufficient safe space to leave B before A ends.
+Use the prepared 02-edge-tests-long-A.json with the same known path and standing points. It has long A narration, not short baseline clips. Load it before beginning this guide attempt.
 
-1. Reach B while A is still playing, then pass beyond B before A finishes. Remain on a checked path.
-2. When A ends, listen for a stale queued B. Inspect the diagnostic reason while stopped.
-3. Use manual playback if desired, then End and export before restoring your main route.
+1. End and New walk / reset progress. Begin this guide attempt, then Start at your usual A. Walk normally towards B while the long A recording is speaking. Do not pause or manually play a clip.
+2. At B, stop safely for about 10 seconds and inspect recent events. Confirm arrival-pending-unfinished-clip while A is still speaking. Without a confirmed pending arrival, this attempt cannot establish the case.
+3. Continue along your familiar B-to-C path to a safe point at least about 70 m beyond B while A is still playing. Stop and check To eligible stop is over 50 m with fresh fixes. Do not return towards B. If A ends before you have left its arrival area, record inconclusive.
+4. Wait there for A to finish. B must stay unplayed and silent: it must not deliver a stale queued story. C is not required. You may manually play B afterwards to check fallback, but record that deliberate action separately.
+5. End, save the result and export diagnostics before changing routes. Restore 01-standard-walk.json via Configure / load fixture, then New walk. Verify STANDARD CLIPS before baseline, detour or battery-saver walks.
 
 Expected: No stale backlog or outdated standing instructions. B remains unplayed and manually available if its arrival is no longer appropriate.
 
@@ -234,9 +239,9 @@ Expected: Last durable progress recovers, ≤5 seconds of narration position los
 
 Case: `battery-saver`. Preparation: independent. Build: either.
 
-A separately labelled run; do not change baseline conditions to manufacture a pass.
+A separately labelled run; do not change baseline conditions to manufacture a pass. Use 01-standard-walk.json / STANDARD CLIPS, never the long-A edge fixture.
 
-1. Record battery percentage, battery saver and the app’s battery policy. Use the locked silent-gap procedure on the checked route.
+1. Use STANDARD CLIPS. Record battery percentage and the app’s battery policy, then enable Android Battery Saver for this separate test. Keep network off and Location on. Use the full locked A/B/C procedure with at least three minutes of actual silence before each arrival; aim for four. Do not change app-specific battery restrictions to manufacture a pass.
 2. Record end battery and whether fixes/arrivals were delayed. Compare with ordinary-settings baselines.
 3. If the phone restricts operation, save an inconclusive/failed observation with conditions and export. Restore your preferred settings afterwards.
 
