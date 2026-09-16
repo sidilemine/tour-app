@@ -103,6 +103,8 @@ The first two follow Sidi's comment; the fuller repertoire is an initial proposa
 
 Write one clear tour promise and theme. Compare candidate insights and routes, then prepare two contrasting sample stops with different tones and plausible timing. Review those at the desk before polishing a complete tour. During normal use, collect brief reactions about what was interesting, confusing, dull or worth the walk; follow concrete issues rather than creating a new test campaign.
 
+The [first North Finchley sample pair](NORTH-FINCHLEY-SAMPLE-STOPS.md) puts a light naming anecdote beside a quieter neighbourhood memorial story. It is draft material awaiting Sidi's response, not evidence that these styles or candidates have been accepted.
+
 Keep this guide current as preferences change. Future automation should use the same versioned editorial reference rather than accumulating inconsistent rules in separate prompts. There is no new automation, route choice, app change or physical acceptance claim in this revision.
 
 ## Comment coverage and revision history
