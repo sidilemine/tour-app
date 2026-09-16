@@ -12,7 +12,7 @@ The [first-walk procedure](docs/FIRST-WALK.md) and [completed phone checklist](d
 
 Local build outputs (ignored by Git):
 
-Current `walking-tour-*` outputs include the M2 preview. The accepted M1 APKs are retained under `artifacts/m1-accepted/`; the corrected self-contained preview is now installed and cold opening without Metro is verified. See the [M2 map record and handset procedure](docs/test-results/M2-offline-map.md).
+Current `walking-tour-*` outputs include the M2 preview. The accepted M1 APKs are retained under `artifacts/m1-accepted/`; self-contained cold opening without Metro is verified. For the 16 September targeted outdoor batch, the phone has a prepared development session; see the [short field procedure](docs/M2-SHORT-OUTDOOR-CHECK.md). Restore self-contained after collecting that result. See the [M2 map record and handset procedure](docs/test-results/M2-offline-map.md).
 
 | File | Purpose |
 | --- | --- |
@@ -155,7 +155,7 @@ npm run check:map
 python3 tools/verify-map-apk.py artifacts/walking-tour-development.apk artifacts/walking-tour-offline.apk
 ```
 
-MapLibre RN 11.3.10/native Android 13.2.0 are pinned without upgrading the accepted Expo/audio/location stack. Guide revision 7 adds the prepared map check. Native offline drawing, repair, short memory measurements, remote/focus controls and recovery now have recorded device evidence. The self-contained audio/map-navigation follow-up passed; live position display and targeted offline locked arrival remain pending; see the [desk results and remaining gates](docs/test-results/M2-offline-map.md). See [map source/licence details](assets/maps/north-finchley/README.md).
+MapLibre RN 11.3.10/native Android 13.2.0 are pinned without upgrading the accepted Expo/audio/location stack. Guide revision 7 adds the prepared map check. Native offline drawing, repair, short memory measurements, remote/focus controls and recovery now have recorded device evidence. The self-contained audio/map-navigation follow-up passed; stationary live position/camera checks also passed on 16 September; walking position and targeted offline locked arrival remain pending; see the [desk results and remaining gates](docs/test-results/M2-offline-map.md). See [map source/licence details](assets/maps/north-finchley/README.md).
 
 ## Preparing the next checks and milestone
 

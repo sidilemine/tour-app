@@ -14,7 +14,7 @@ Current owner direction: minimise walking time while preserving valid tests, beg
 
 ### 1. Prove one small offline map
 
-Current implementation: fixed North Finchley PMTiles, local style/fonts/credits and read-only session position. Both native builds and local checks pass. Offline cold drawing, coverage, short memory measurements, resource repair and remote/focus/recovery now have device evidence. Audio while opening/closing the map also passed with owner confirmation. Live position display and targeted offline locked arrival remain pending; see [slice results and handset procedure](../test-results/M2-offline-map.md).
+Current implementation: fixed North Finchley PMTiles, local style/fonts/credits and read-only session position. Both native builds and local checks pass. Offline cold drawing, coverage, short memory measurements, resource repair and remote/focus/recovery now have device evidence. Audio while opening/closing the map also passed with owner confirmation. Stationary live position/camera checks also passed on 16 September; walking position and targeted offline locked arrival remain pending; see [slice results and handset procedure](../test-results/M2-offline-map.md).
 
 Use the existing [map/routing comparison](MAPS-AND-ROUTING.md) as the experiment proposal. First document a permitted small dataset and its attribution, offline storage/redistribution rights, expiry and cost. Ask Sidi only if the choice creates material cost or lock-in. Then isolate the renderer adapter and prove native compatibility before settling a package map format.
 
