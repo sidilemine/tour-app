@@ -118,7 +118,7 @@ Raw exports stay ignored/private. Logcat may include unrelated device informatio
 
 ## Independent content preparation
 
-The [walking-tour design research and proposed guidelines](docs/content/WALKING-TOUR-DESIGN-RESEARCH.md) now inform the M2 editorial discussion. It distinguishes visitor evidence, professional conventions and our proposed choices; guidelines remain pending agreement before final route/content selection.
+The [living walking tour design guidance](docs/content/TOUR-DESIGN-GUIDANCE.md) records Sidi's comments on the research, with owner preferences, working interpretations and future ideas kept distinct. Use it for M2 editorial choices and update it as feedback arrives. The [research review](docs/content/WALKING-TOUR-DESIGN-RESEARCH.md) retains the supporting visitor evidence and professional conventions; final route/content selection remains open.
 
 With M1 accepted, the [Finchley six-stop editorial draft](docs/content/FINCHLEY-DRAFT.md) and [two supervised listening briefs](docs/content/E1-BRIEFS.md) can be reviewed independently. They do not replace the phone fixture or establish a walk-ready route. [Map/routing decision notes](docs/content/MAPS-AND-ROUTING.md) prepare the next native experiment.
 

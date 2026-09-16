@@ -8,6 +8,8 @@ The first useful product is one curated six-stop walk that Sidi would willingly 
 
 Tours are prepared before use. A downloaded tour contains the local map, planned walking route, directions, narration, transcripts, relevant images/attributions and everything needed to recover progress. Normal touring does not call a server, LLM, TTS or online routing service. The user can complete the planned walk manually if GPS is unreliable.
 
+Editorial direction is maintained in the [walking tour design guidance](docs/content/TOUR-DESIGN-GUIDANCE.md), incorporating Sidi's 16 September Word comments. It distinguishes owner preferences, working assumptions and future ideas; consult it for theme, story selection, pacing and tone. It does not expand the implementation scope below.
+
 ## Personal-use delivery and testing
 
 Sidi is the current user and test subject; there is no broad public launch to certify. Validate the ordinary walking experience and the changes needed to progress on his phone. Reuse accepted evidence and prefer automated checks before requesting a short physical check for a specific unresolved risk. Rare, recoverable defects can be recorded and fixed if encountered during normal use, without holding up the next useful version. Keep effective controls, saved data, privacy and usable route instructions central. The [engineering testing policy](AGENTS.md#testing-policy-for-the-personal-prototype) defines how to select checks and defer issues honestly; no fixed outing count or broad device matrix is implied.

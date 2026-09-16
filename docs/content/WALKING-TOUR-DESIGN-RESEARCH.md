@@ -2,6 +2,8 @@
 
 [Editable Word review copy](walking-tour-design-review.docx) for comments on this draft.
 
+**Review update, 16 September:** Sidi's 24 Word comments have been incorporated into the [living walking tour design guidance](TOUR-DESIGN-GUIDANCE.md). Use that document for current editorial preferences, working interpretations and future ideas. The research and initial proposals below, and their Word review copy, remain the original discussion record.
+
 Research and discussion draft, 16 September 2026. **Proposed guidelines for agreement with Sidi, not an adopted product contract or a new test gate.** M2's offline-map slice remains complete; this work concerns the quality of the tour itself. No route, script, app behavior or physical acceptance status changes here.
 
 ## Main conclusion
