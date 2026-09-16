@@ -1,6 +1,6 @@
 # Walking Tour Lab
 
-An Android device experiment for a self-guided walking audio player, built with React Native, Expo and TypeScript. M1 is **complete on Sidi’s Pixel 6 / Android 17**, with [acceptance and final build evidence](docs/test-results/M1-closure.md). M2 now adds a small North Finchley offline-map preview alongside the existing three-stop lifecycle lab. **Implemented; offline map and desk regressions verified, outdoor checks pending.** The six-stop product, verified itinerary and general package importer remain later work.
+An Android device experiment for a self-guided walking audio player, built with React Native, Expo and TypeScript. M1 is **complete on Sidi’s Pixel 6 / Android 17**, with [acceptance and final build evidence](docs/test-results/M1-closure.md). M2 now adds a small North Finchley offline-map preview alongside the existing three-stop lifecycle lab. **First map slice verified on the tested Pixel, including the reviewed outdoor regression.** The six-stop product, verified itinerary and general package importer remain later work.
 
 The original [brief](ai_self_guided_tour_project_brief.md) is unchanged. [PRODUCT.md](PRODUCT.md), [ARCHITECTURE.md](ARCHITECTURE.md), [AGENTS.md](AGENTS.md) and [ROADMAP.md](ROADMAP.md) are the maintained project contract. The owner's latest instructions override conflicting brief recommendations.
 
@@ -12,7 +12,7 @@ The [first-walk procedure](docs/FIRST-WALK.md) and [completed phone checklist](d
 
 Local build outputs (ignored by Git):
 
-Current `walking-tour-*` outputs include the M2 preview. The accepted M1 APKs are retained under `artifacts/m1-accepted/`; self-contained cold opening without Metro is verified. For the 16 September targeted outdoor batch, the phone has a prepared development session; see the [short field procedure](docs/M2-SHORT-OUTDOOR-CHECK.md). Restore self-contained after collecting that result. See the [M2 map record and handset procedure](docs/test-results/M2-offline-map.md).
+Current `walking-tour-*` outputs include the M2 preview. The accepted M1 APKs are retained under `artifacts/m1-accepted/`; self-contained cold opening without Metro is verified. The 16 September development outdoor result is [reviewed](docs/test-results/M2-outdoor-map.md), and the self-contained app is restored with completed progress. See the [M2 map record and handset procedure](docs/test-results/M2-offline-map.md).
 
 | File | Purpose |
 | --- | --- |
@@ -155,7 +155,7 @@ npm run check:map
 python3 tools/verify-map-apk.py artifacts/walking-tour-development.apk artifacts/walking-tour-offline.apk
 ```
 
-MapLibre RN 11.3.10/native Android 13.2.0 are pinned without upgrading the accepted Expo/audio/location stack. Guide revision 7 adds the prepared map check. Native offline drawing, repair, short memory measurements, remote/focus controls and recovery now have recorded device evidence. The self-contained audio/map-navigation follow-up passed; stationary live position/camera checks also passed on 16 September; walking position and targeted offline locked arrival remain pending; see the [desk results and remaining gates](docs/test-results/M2-offline-map.md). See [map source/licence details](assets/maps/north-finchley/README.md).
+MapLibre RN 11.3.10/native Android 13.2.0 are pinned without upgrading the accepted Expo/audio/location stack. Guide revision 7 adds the prepared map check. Native offline drawing, repair, short memory measurements, remote/focus controls and recovery now have recorded device evidence. The self-contained audio/map-navigation follow-up and stationary live position/camera checks passed. The [outdoor regression review](docs/test-results/M2-outdoor-map.md) closes the map slice using combined evidence, explicitly retaining the skipped-minute limitation. See the [map result record](docs/test-results/M2-offline-map.md). See [map source/licence details](assets/maps/north-finchley/README.md).
 
 ## Preparing the next checks and milestone
 

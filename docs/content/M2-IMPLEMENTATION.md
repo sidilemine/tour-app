@@ -1,6 +1,6 @@
 # Next implementation: one curated offline walk
 
-Prepared 13 September; status updated 15 September 2026. **First map slice authorized and implemented; desk checks verified, outdoor gates pending. M1 passed its [acceptance gate](../test-results/M1-closure.md).** These are small ordered tasks for the next assigned milestone, not authorization to bypass the lifecycle gate. Existing research, provisional package validation and listening drafts are retained.
+Prepared 13 September; status updated 16 September 2026. **First map slice implemented and verified using combined desk/outdoor evidence. M1 passed its [acceptance gate](../test-results/M1-closure.md).** These are small ordered tasks for the next assigned milestone, not authorization to bypass the lifecycle gate. Existing research, provisional package validation and listening drafts are retained.
 
 ## Preparation available now
 
@@ -14,7 +14,7 @@ Current owner direction: minimise walking time while preserving valid tests, beg
 
 ### 1. Prove one small offline map
 
-Current implementation: fixed North Finchley PMTiles, local style/fonts/credits and read-only session position. Both native builds and local checks pass. Offline cold drawing, coverage, short memory measurements, resource repair and remote/focus/recovery now have device evidence. Audio while opening/closing the map also passed with owner confirmation. Stationary live position/camera checks also passed on 16 September; walking position and targeted offline locked arrival remain pending; see [slice results and handset procedure](../test-results/M2-offline-map.md).
+Current implementation: fixed North Finchley PMTiles, local style/fonts/credits and read-only session position. Both native builds and local checks pass. Offline cold drawing, coverage, short memory measurements, resource repair and remote/focus/recovery now have device evidence. Audio while opening/closing the map also passed with owner confirmation. Stationary live position/camera checks and the targeted outdoor regression have been reviewed. The [outdoor result](../test-results/M2-outdoor-map.md) records the skipped stationary minute and justified reuse of accepted M1 evidence; no repeat outing is requested. See [slice results](../test-results/M2-offline-map.md).
 
 Use the existing [map/routing comparison](MAPS-AND-ROUTING.md) as the experiment proposal. First document a permitted small dataset and its attribution, offline storage/redistribution rights, expiry and cost. Ask Sidi only if the choice creates material cost or lock-in. Then isolate the renderer adapter and prove native compatibility before settling a package map format.
 
@@ -48,4 +48,4 @@ Done when: the M2 acceptance matrix passes and Sidi's E1 outcome is recorded as 
 
 ## Decisions still open
 
-Native proof of the selected PMTiles experiment (dataset/rights are documented); verified visitor points and feasible leg timing; final six-stop selection, voice/rights and script duration. These require evidence or later feedback, not guesses now. No M1 phone test remains. The next owner action is the short prepared connected-phone check, when available; batch future field/content review and present its purpose and time requirement before requesting it.
+The PMTiles native proof and targeted map regression are complete within their recorded Pixel scope. Still open: verified visitor points and feasible leg timing; final six-stop selection, voice/rights and script duration. These require evidence or later feedback, not guesses now. No further M1 or map-regression phone test is requested. Prepare the compact route/content proposal for discussion before the next implementation slice or survey, with purpose and owner time stated before any field request.

@@ -1,6 +1,8 @@
 # M2 first slice — offline North Finchley map
 
-15 September 2026. **Implemented; offline map and desk regressions verified, outdoor gates pending.** Sidi authorized the previously discussed small-map slice after agreeing the shortest useful North Finchley testing plan. This is not M2 acceptance or a selected six-stop itinerary.
+15–16 September 2026. **First offline-map slice verified on the recorded Pixel; targeted outdoor regression reviewed and closed using combined evidence.** Sidi authorized the previously discussed small-map slice after agreeing the shortest useful North Finchley testing plan. This is not M2 acceptance or a selected six-stop itinerary.
+
+The [outdoor result and final handoff](M2-outdoor-map.md) close the map regression. The omitted stationary-minute repeat remains explicit; accepted unchanged M1 evidence is reused, so no additional outing is requested. The self-contained app is restored.
 
 ## Implemented boundary
 
@@ -105,7 +107,7 @@ The first procedure's hierarchy inspection could not obtain an idle screen while
 
 The separate instructions are saved and byte-verified at **Documents / Walking Tour M2 / M2-short-outdoor-check-20260916.txt**. Do not force-close/reload/reboot this prepared development session; reconnect if the launcher needs Metro. Collect the outdoor observations and named exports, then restore the self-contained APK without clearing data. No outdoor pass is inferred from this setup. Guide parity, local links and diff checks pass; the unchanged prior 87-test/build evidence is reused rather than relabelled as rerun today.
 
-## Prepared connected-phone batch
+## Original connected-phone procedure (completed)
 
 **Purpose:** establish the native offline map and catch interference with the accepted player before requesting a walk. **Owner time:** about **5–10 minutes** of permission prompts and short audible confirmations; the engineer needs the handset longer. Keep the existing fixture, guide journal, progress and previous exports. Use `adb install -r`; never uninstall or clear app storage.
 
@@ -117,7 +119,9 @@ The separate instructions are saved and byte-verified at **Documents / Walking T
 
 Use embedded guide case **19** for observations, noting separate development and self-contained attempts. Save/export through the existing named local-save flow; no new export boundary was introduced. Stop the affected check for missing tiles/labels, persistent resource errors, unusable controls, unexpected speech, lost hold/offset, absent fresh location or a crash. Preserve evidence, fix the failing boundary and repeat that case before walking.
 
-## Outdoor gate after desk success
+## Original outdoor procedure and reviewed result
+
+The [16 September result](M2-outdoor-map.md) closes this targeted map regression. It records the omitted 60-second stationary repeat and the explicit decision to reuse accepted unchanged M1 evidence; no repeat outing is requested. The original preparation was:
 
 One **roughly 10–15-minute** targeted M1 segment: accepted fixture, appropriate prepared development build, networking off and locked through **at least three minutes of real silence** before an eligible arrival. Observe exactly one correct clip and fresh locked callbacks. Include a short paused stationary wait and explicit release if compatible. Export before changing fixtures. Stop for unsafe access, failed arrival, violated hold, overlapping speech or missing evidence. Batch with a compatible visit where practical; it is not automatically another full route outing.
 

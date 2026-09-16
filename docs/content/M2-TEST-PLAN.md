@@ -1,6 +1,6 @@
 # M2: shortest useful walk and physical evidence
 
-Planning discussion, 15 September 2026. Sidi requests the shortest walk consistent with valid testing, starting around North Finchley bus station and ending nearby. This supersedes the earlier provisional area/duration preferences, not the six-stop acceptance criteria. Sidi subsequently authorized the discussed first offline-map slice. It is now implemented with automated/build checks and recorded offline-map/desk results; [walking position and targeted outdoor arrival checks remain pending](../test-results/M2-offline-map.md).
+Planning discussion, 15 September 2026. Sidi requests the shortest walk consistent with valid testing, starting around North Finchley bus station and ending nearby. This supersedes the earlier provisional area/duration preferences, not the six-stop acceptance criteria. Sidi subsequently authorized the discussed first offline-map slice. The first map slice is now verified using automated/build, desk and [reviewed outdoor evidence](../test-results/M2-outdoor-map.md). The omitted stationary minute remains recorded; accepted unchanged M1 evidence is reused and no repeat map outing is requested. The survey and six-stop product below remain later work.
 
 ## Route brief
 

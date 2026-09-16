@@ -1,6 +1,6 @@
 # M2 map: one short outdoor check
 
-16 September 2026. **Procedure prepared; outdoor result pending.** Use the familiar A → B → C path, corrected standard fixture version 2, with short clips. All 19 route points and all three standing positions lie inside the saved map area. Its recorded line is approximately 604 m; this is not a new access survey or a North Finchley tour itinerary.
+16 September 2026. **Completed and reviewed; no repeat outing requested.** The [result record](test-results/M2-outdoor-map.md) preserves the omitted stationary minute and explains reuse of accepted M1 evidence. The original procedure below is retained as history, not a new task. Use the familiar A → B → C path, corrected standard fixture version 2, with short clips. All 19 route points and all three standing positions lie inside the saved map area. Its recorded line is approximately 604 m; this is not a new access survey or a North Finchley tour itinerary.
 
 **Purpose:** check live map position, one automatic arrival after locked silence, and a paused arrival released while stationary, with the new native map dependency installed. Reuse yesterday's accepted desk checks. **Owner time:** about 10–15 minutes from A, excluding travel to A and returning the phone. No other M1 walks are requested.
 
