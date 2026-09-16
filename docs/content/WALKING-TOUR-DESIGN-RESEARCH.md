@@ -1,5 +1,7 @@
 # What makes a good walking tour?
 
+[Editable Word review copy](walking-tour-design-review.docx) for comments on this draft.
+
 Research and discussion draft, 16 September 2026. **Proposed guidelines for agreement with Sidi, not an adopted product contract or a new test gate.** M2's offline-map slice remains complete; this work concerns the quality of the tour itself. No route, script, app behavior or physical acceptance status changes here.
 
 ## Main conclusion
