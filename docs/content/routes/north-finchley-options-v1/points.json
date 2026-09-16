@@ -1,0 +1,65 @@
+{
+  "points": {
+    "bus_station_approach": [
+      -0.17684,
+      51.61305
+    ],
+    "tally_ho": [
+      -0.17672,
+      51.6141
+    ],
+    "stanhope": [
+      -0.1757,
+      51.61494
+    ],
+    "torrington": [
+      -0.17702,
+      51.61642
+    ],
+    "trinity": [
+      -0.17857,
+      51.61355
+    ],
+    "grand_arcade": [
+      -0.17648,
+      51.61345
+    ],
+    "artsdepot": [
+      -0.17684,
+      51.61305
+    ],
+    "meeting_house": [
+      -0.18448,
+      51.61334
+    ],
+    "moss_hall_crescent": [
+      -0.18115,
+      51.61014
+    ],
+    "elephant": [
+      -0.17916,
+      51.61151
+    ]
+  },
+  "orders": {
+    "A": [
+      "bus_station_approach",
+      "tally_ho",
+      "grand_arcade",
+      "stanhope",
+      "torrington",
+      "trinity",
+      "artsdepot"
+    ],
+    "B": [
+      "bus_station_approach",
+      "tally_ho",
+      "trinity",
+      "meeting_house",
+      "moss_hall_crescent",
+      "elephant",
+      "artsdepot"
+    ]
+  },
+  "status": "desk map positions, not verified visitor standing areas"
+}

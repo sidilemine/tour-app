@@ -1,0 +1,188 @@
+{
+  "purpose": "Durable text capture of owner editorial comments; original Word files remain untouched. IDs are local to each source document.",
+  "reviewed_on": "2026-09-16",
+  "documents": [
+    {
+      "source_file": "walking-tour-design-review Sidi COMMENTS.docx",
+      "sha256": "3029ddb62228578c45f8b5f11bfb8eb9fc43e20721962de0707d53042673795a",
+      "comments": [
+        {
+          "id": "0",
+          "anchor": "presenter qualities ",
+          "comment": "Which? Let's keep those ideas somewhere, mabe start a guidance document to be revised and edited to serve as single source of truth and consistency when we build the automation. We'll keep updating it and in the end it will be mostly my vision preferences + feedback from friends and family but we can start it with a baseline of assumptions"
+        },
+        {
+          "id": "1",
+          "anchor": "presenter qualities ",
+          "comment": "Feel free to keep editing it with the results of our conversations at this stage if you feel it will. prove useful later"
+        },
+        {
+          "id": "2",
+          "anchor": "screens ",
+          "comment": "I do assume that there will be a visual component at some point, e.g. \"learn more\" with text, photos, etc. The podcast 99% invisible (which is great and aligns a lot with the spirit in which I am building this) does this to support audio content and it works great"
+        },
+        {
+          "id": "3",
+          "anchor": "own resources reported higher satisfaction ",
+          "comment": "fits with my gut feeling; I wonder if the personalization aspect (not hearing about stuff you don't care about) might be part of it as much as the self-satisfaction on a job well done"
+        },
+        {
+          "id": "4",
+          "anchor": "Audio ",
+          "comment": "Ambient music, soundscaping, and filler playlists are all on my mind but that is all far into the future"
+        },
+        {
+          "id": "5",
+          "anchor": "meaningful idea",
+          "comment": "Can be link to theme"
+        },
+        {
+          "id": "6",
+          "anchor": "main theme",
+          "comment": "important"
+        },
+        {
+          "id": "7",
+          "anchor": "hear a visitor's ",
+          "comment": "Not 100% impossible with STT and an LLM - ultimately even real-time could be possible. But yes fully out of scope for what we're building now"
+        },
+        {
+          "id": "8",
+          "anchor": "not a trial proving visitor enjoyment",
+          "comment": "Agreed, and we will need to balance things out - tons of professional tours include speculative elements to add a little frisson, as well as something that isn't necessarily in the encyclopedia. It's all about enjoyment within some boundaries"
+        },
+        {
+          "id": "9",
+          "anchor": "Develop the route ",
+          "comment": "still good principles - rhythm is essential and should be thought throug: roughly equidistant stops, neither too close nor too far apart; narrations that fit comfortably within the legs; and subjects picked to fit within this type of narration (not \"WW2, the 5 min summary\")"
+        },
+        {
+          "id": "10",
+          "anchor": "does not establish",
+          "comment": "Fair but we don't have JUST the GPS. we can also tell which way they should be coming from, and we can identify landmarks on the map (you should arrive at a pharmacy; turn left at that intersection)"
+        },
+        {
+          "id": "11",
+          "anchor": "VoiceMap",
+          "comment": "We should give some weight to these overall"
+        },
+        {
+          "id": "12",
+          "anchor": "A climax is an editorial option",
+          "comment": "Agreed - both are options but we should list the options and pick one that suits best each time. Ultimately this could be one of the options to pick from (along with tour duration, themes, etc)"
+        },
+        {
+          "id": "13",
+          "anchor": "promise",
+          "comment": "Ultimately, in a lot of cases, it will be about seeing the hidden meaning beneath the bricks and mortar - peeling back the veil for a deeper experience. Anyone can walk, look, and even google / wiki; but every insight gain, every bit of non-obvious knowledge brings a deeper sense of connection and understanding of the place, whether new or already familiar. "
+        },
+        {
+          "id": "14",
+          "anchor": "because we are standing here",
+          "comment": "This is great. It's not just about making taking the tour worthwhile, but just getting outside instead of reading about it from the comfort of one's own home / hotel"
+        },
+        {
+          "id": "15",
+          "anchor": "identical dramatic formula",
+          "comment": "Agreed - if anything it would be best to avoid style repetition between stops. on e.g. a 12 stop tour, most can be pretty even keeled, with one dramatic, one reflective, one cute (just an example)"
+        },
+        {
+          "id": "16",
+          "anchor": "pleasant to walk",
+          "comment": "this will be interesting to think about. i.e. not walking on highways, etc"
+        },
+        {
+          "id": "17",
+          "anchor": "pleasant to walk",
+          "comment": "We could consider using streetview for confirmation "
+        },
+        {
+          "id": "18",
+          "anchor": "proposed balance ",
+          "comment": "I like that"
+        },
+        {
+          "id": "19",
+          "anchor": "telling them what they must feel",
+          "comment": "True but we can still say \"this impressive facade\" etc"
+        },
+        {
+          "id": "20",
+          "anchor": "complicate ",
+          "comment": "not too much. this shouldn't descend into cognitive demand for people who are already possibly in unfamiliar environments, outside, and who just want to have a nice, enjoyable, relaxing and interesting walk around"
+        },
+        {
+          "id": "21",
+          "anchor": "plausible route ",
+          "comment": "what are we going to use to query walking times etc? "
+        },
+        {
+          "id": "22",
+          "anchor": "ask only",
+          "comment": "Is this for testers? IF so we should enable voice memos as we want it while the iron is hot but don't want people having to type long reports in the street"
+        },
+        {
+          "id": "23",
+          "anchor": "noticing ",
+          "comment": "Not just having a look though, interesting tidbits are where it's at"
+        }
+      ]
+    },
+    {
+      "source_file": "north-finchley-sample-stops-review - Sidi comments.docx",
+      "sha256": "c236e13926fef84d370fa5da55d09894114fde758528b5deeceacc78ac47bd19",
+      "comments": [
+        {
+          "id": "0",
+          "anchor": "For your comments",
+          "comment": "I like the tone and the quirkyness of it but I think it should come after something just a litle more conventional. Ideally I would build around a factual anchor: the coaching inn. Start with the crossroads and where it came from (must be old roads, how old? Roman? medieval? where was it going to and from, for what, for who?), then it leading naturally to being a coaching station (tally ho), and then the quirky anecdote, and maybe something short about what it is today if anything remarkable and positive is found (I don't think that's the case for current day tally ho). Obviously that's a lot so we'd want to probably gauge how many of these we can / want to string together depending on how long we feel we have (and user preferences re. length and interests when we get to that)"
+        },
+        {
+          "id": "1",
+          "anchor": "there were 114 houses from which 111 men",
+          "comment": "Is this a lot? How is the user supposed to feel about it? "
+        },
+        {
+          "id": "2",
+          "anchor": "One of the men remembered here is ",
+          "comment": "He is THE one remembered here, so we would say \"one of them is remembered here\""
+        },
+        {
+          "id": "3",
+          "anchor": "The bench is a recent addition to his story. The council installed it in 2025 after a soldier silhouette commemorating him was stolen.",
+          "comment": "Not positive, not meaningful"
+        },
+        {
+          "id": "4",
+          "anchor": "Looking across the car park, there's room to picture the missing street: houses, front doors, neighbours",
+          "comment": "Not great - rather than telling them something is missing we would paint an evocative picture if that's the point of the stop"
+        },
+        {
+          "id": "5",
+          "anchor": "Those are the surroundings this memorial asks us to remember",
+          "comment": "It doesn't. It's a WW1 memorial"
+        },
+        {
+          "id": "6",
+          "anchor": "For your comments",
+          "comment": "Solemn subjects must be treated in formal, almost formulaic fashion. no room for poetic creativity in my opinion. If I'm honest unless they're major attracitons (e.g. holocaust memorial etc) I'd steer clear. "
+        },
+        {
+          "id": "7",
+          "anchor": "figures easy to follow",
+          "comment": "Not really - it meanders between the person, history at large, and local color"
+        },
+        {
+          "id": "8",
+          "anchor": "over-written",
+          "comment": "A bit over-written, but mostly unclear about its purpose"
+        },
+        {
+          "id": "9",
+          "anchor": "either ",
+          "comment": "Overall I lean strongly towards tally ho"
+        }
+      ]
+    }
+  ]
+}

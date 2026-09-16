@@ -4,6 +4,8 @@ Prepared 13 September; status updated 16 September 2026. **First map slice imple
 
 ## Preparation available now
 
+Latest editorial proposal, 16 September: [two North Finchley options](NORTH-FINCHLEY-TOUR-OPTIONS.md) compare an entertainment-led walk (1.4 km / 28–33 minutes) with broader neighbourhood variety (1.9 km / 37–42 minutes). Actual pedestrian responses, provisional points and maps are saved. These establish desk feasibility estimates, not verified visitor positions or a selected itinerary; B deliberately exceeds the earlier short-walk target. The [editorial review record](EDITORIAL-REVIEW-RECORD.md) collates prior comments and tracks the pending choice. No new field work is requested at this stage.
+
 Editorial preparation, 16 September: [walking-tour design research](WALKING-TOUR-DESIGN-RESEARCH.md) brings together visitor studies, heritage conventions and audio-tour practice. Sidi's Word review now informs the [living design guidance](TOUR-DESIGN-GUIDANCE.md): non-obvious insights, a meaningful theme, relaxed pacing, varied tone and comfortable leg/story timing. It distinguishes owner direction from proposed applications and future features. Use it before selecting the final route or fixing narration lengths; it adds no physical test gate or feature implementation.
 
 Sidi reviewed the [first two North Finchley sample stops](NORTH-FINCHLEY-SAMPLE-STOPS.md): develop Tally Ho with factual context before its light anecdote, and retire the minor memorial stop. [Tally Ho revision 2](TALLY-HO-SAMPLE-V2.md) and the living guidance apply all ten comments. The revised wording still needs owner judgement; retained stops need route/viewpoint checks later. These are not full E1 variants or a selected six-stop walk.
@@ -28,7 +30,7 @@ Done when: the entire candidate area pans/zooms after cold opening with networki
 
 ### 2. Establish one usable route and content version
 
-Complete visitor records first, obtain and preserve real pedestrian routing output between those points, then review crossings, gates and all legs. Keep the six-stop order provisional until spacing and access are known. Combine or replace nearby garden stops if they cannot support distinct useful experiences; bring a material change to the six-stop scope to Sidi.
+Use the saved candidate routing to compare stories and walking costs with Sidi. For the retained set, complete visitor records, reroute between reviewed positions as needed, then review crossings, access and all legs. Keep the six-stop order provisional until spacing and access are known. Combine or replace close stops if they cannot support distinct useful experiences; bring a material change to the six-stop scope to Sidi.
 
 Done when: six retained stops have evidence and field review records, all legs/directions have provenance and observed access, and the measured walking/listening/silence budget fits. Factual script passages map to reviewed claims; source freshness, uncertainty, reviewer/date/method and rights are explicit. The manifest fails readiness for any unresolved critical physical or asset requirement.
 
@@ -54,4 +56,4 @@ M2 is done when the curated offline tour is useful under its stated acceptance s
 
 ## Decisions still open
 
-The PMTiles native proof and targeted map regression are complete within their recorded Pixel scope. Still open: verified visitor points and feasible leg timing; final six-stop selection, voice/rights and script duration. These require evidence or later feedback, not guesses now. No further M1 or map-regression phone test is requested. Prepare the compact route/content proposal for discussion before the next implementation slice or survey, with purpose and owner time stated before any field request.
+The PMTiles native proof and targeted map regression are complete within their recorded Pixel scope. Still open: verified visitor points and feasible leg timing; final six-stop selection, voice/rights and script duration. These require evidence or later feedback, not guesses now. No further M1 or map-regression phone test is requested. Discuss the prepared route/content options before the next implementation slice or survey, with purpose and owner time stated before any field request.

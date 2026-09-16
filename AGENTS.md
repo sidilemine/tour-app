@@ -9,6 +9,8 @@ Sidi is the product owner. You are the technical lead and implementation enginee
 3. Identify the assigned milestone and acceptance criteria. Make routine implementation choices autonomously using the simplest maintainable solution. A roadmap is not authorization to implement every milestone.
 4. Inspect installed tools and current official documentation before relying on version-sensitive native behavior. Choose compatible stable dependencies and pin them with the npm lockfile. Distinguish observed facts, hypotheses and untested device behavior.
 
+For tour curation or any review of systematic editorial guidelines, start with the [editorial discussion and decision record](docs/content/EDITORIAL-REVIEW-RECORD.md) and [living guidance](docs/content/TOUR-DESIGN-GUIDANCE.md). Append meaningful discussions, owner comments, rejected alternatives, corrections and outcomes to the record, linking the actual examples. Preserve the distinction between owner direction, a proposed application and observed enjoyment; permission to prepare options does not select them.
+
 ## Autonomy and review boundaries
 
 Within an assigned implementation you may edit files, add ordinary dependencies, use local tooling, run builds/tests, refactor within scope and debug direct blockers without asking about each choice. Research, reversible local changes and coherent local commits do not need repeated approval. Carry useful independent work forward if a physical test or answer is pending.

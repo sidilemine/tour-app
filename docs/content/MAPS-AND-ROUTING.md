@@ -1,6 +1,6 @@
 # Offline map and routing decision preparation
 
-Original comparison: 13 September 2026. **Update, 15 September:** the authorized prototype now uses MapLibre RN 11.3.10 / Android 13.2.0 with a fixed local PMTiles extract. Native builds and local resource checks pass; actual drawing and session coexistence remain pending. See [current results](../test-results/M2-offline-map.md) and [source/rights](../../assets/maps/north-finchley/README.md). The comparison below is retained as the earlier decision preparation.
+Original comparison: 13 September 2026. **Update, 16 September:** the authorized prototype uses MapLibre RN 11.3.10 / Android 13.2.0 with a fixed local PMTiles extract. Native drawing and session coexistence now have accepted desk and targeted outdoor evidence. See [current results](../test-results/M2-offline-map.md), [outdoor review](../test-results/M2-outdoor-map.md) and [source/rights](../../assets/maps/north-finchley/README.md). The comparison below is retained as the earlier decision preparation.
 
 Official documentation checked 13 September 2026. Recommendation: after M1 passes, prove a small MapLibre React Native offline region on the phone, using a map source with explicit offline rights. Keep routing an authoring-time operation and store reviewed geometry/directions in the package. This is a recommended experiment, not a selected data contract or an installed dependency.
 
@@ -16,7 +16,7 @@ MapLibre is the renderer, not a grant of rights to any tile service. The standar
 
 ## Planned routing boundary
 
-[Valhalla](https://github.com/valhalla/valhalla) is a candidate for pedestrian routing at authoring time. Its project documents a public demonstration service; that is not a production availability agreement. We have not yet run a six-stop routing request because the visitor waypoints are unknown. Routing between building centroids would not resolve that gap.
+[Valhalla](https://github.com/valhalla/valhalla) is a candidate for pedestrian routing at authoring time. Its project documents a public demonstration service; that is not a production availability agreement. On 16 September, bounded pedestrian requests for public candidate points produced [two saved six-stop proposals](routes/north-finchley-options-v1/README.md). These support comparison of approximate paths and costs; they do not resolve the still-unverified visitor standing areas, access or sightlines. No phone trace was uploaded and no production provider commitment follows.
 
 Once the visitor points are reviewed, request a walking route and preserve input waypoints/constraints, provider/version where available, generation date, actual output geometry, maneuvers, distances and timing. Review road crossings, private access, steps and garden closures independently. Derived duration is a planning estimate until timed in person. Playback reads the saved route and directions without contacting the router. Arbitrary offline rerouting remains out of scope.
 

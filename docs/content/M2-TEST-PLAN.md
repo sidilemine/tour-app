@@ -12,9 +12,11 @@ Planning discussion, 15 September 2026. Sidi requests the shortest walk consiste
 - The earlier Finchley Central–Church End–Stephens House sequence was an unrouted editorial candidate. Its backtracking was not a deliberate route feature. The later suggested Friary Park circuit and 60–75-minute allowance are not needed to satisfy M2.
 - Keep all six stops and review their spacing, safe viewpoints and story value. Do not manufacture six triggers at one junction, tighten GPS thresholds merely to fit, or count manual recovery as a successful automatic arrival. If the compact area cannot support six good stops, identify the failing constraint and propose the smallest extension.
 
-### Desk-research candidates, not a selected itinerary
+### Current proposals and historical candidate pool
 
-The [OpenStreetMap street layout](https://www.openstreetmap.org/#map=16/51.61290/-0.18100) was inspected on 15 September. No pedestrian-router output, field-approved geometry, visitor coordinates or final distance has been produced. The following is a candidate pool, not walking instructions or field evidence:
+The [16 September tour options](NORTH-FINCHLEY-TOUR-OPTIONS.md) now provide actual pedestrian routing estimates for two provisional six-stop sets: A about 1.4 km / 28–33 minutes, B about 1.9 km / 37–42 minutes. B exceeds the original design target and needs owner preference before selection. Neither has field-approved geometry, verified visitor positions or measured tour duration. Review comments and choices belong in the [editorial record](EDITORIAL-REVIEW-RECORD.md).
+
+The [OpenStreetMap street layout](https://www.openstreetmap.org/#map=16/51.61290/-0.18100) was first inspected on 15 September. The following table preserves that earlier discovery pool; it is superseded by the story-led options for current discussion, not a checklist of sites to survey:
 
 | Candidate | Research starting point | Required physical check |
 | --- | --- | --- |
@@ -25,7 +27,7 @@ The [OpenStreetMap street layout](https://www.openstreetmap.org/#map=16/51.61290
 | Finchley Progressive Synagogue / Hutton Grove | [The congregation's contact page](https://www.fps.org/about-us/contact-us/) identifies the site and says visitors should make contact beforehand | Exterior-only candidate; verify an appropriate public viewpoint, with no assumed entry or visibility beyond its gates |
 | Trinity Church, Nether Street | [Church history](https://trinitychurchnorthfinchley.co.uk/history.html) and [location](https://www.trinitychurchnorthfinchley.co.uk/joomla/index.php/find-us) | Identify the building, exterior view and standing space; check separation from start/end |
 
-The original sources were consulted on 15 September 2026; the John Parr bench correction was checked on 16 September against the council's indexed notice. These are discovery material; full claim review, minimal evidence passages, rights and physical review records remain necessary before narration/package readiness. The mix of institutions must earn its place through distinct stories and visible details, not merely supply a sixth address. Final selection and order remain open. After the [sample review](TALLY-HO-SAMPLE-V2.md), the memorial is excluded from the active shortlist; six suitable stops still need to be found and selected. Do not count the retired candidate or manufacture a replacement merely to fill the table.
+The original sources were consulted on 15 September 2026; the John Parr bench correction was checked on 16 September against the council's indexed notice. These are discovery material; full claim review, minimal evidence passages, rights and physical review records remain necessary before narration/package readiness. The mix of institutions must earn its place through distinct stories and visible details, not merely supply a sixth address. Final selection and order remain open. After the [sample review](TALLY-HO-SAMPLE-V2.md), the memorial is excluded from the active shortlist; the current options supply alternative sets, with the final six still to be selected and verified. Do not count the retired candidate or manufacture a replacement merely to fill the table.
 
 ## What establishes confidence
 

@@ -53,6 +53,8 @@ The lab can select a separate long-A timing fixture using the same checked path 
 
 ## Scope of the curated prototype
 
+Use the [editorial discussion and decision record](docs/content/EDITORIAL-REVIEW-RECORD.md) alongside the [living design guidance](docs/content/TOUR-DESIGN-GUIDANCE.md). Preserve feedback, alternatives and corrections there so later systematic guidelines can be traced to actual examples and outcomes, rather than inferred from the latest draft alone.
+
 One walk in a location Sidi can test, six publicly reachable stops, a clear start/end, verified walking legs and standing positions. Include natural spoken narration, transcripts, clear manual controls, visible route, local map and directions, sources, asset rights and restart recovery. The actual area, themes, walking duration and voice are chosen with Sidi during early curation, not invented as settled decisions here.
 
 Accessibility descriptions must state what was checked, when and what remains unknown: stairs, gradient, surface, crossings, gates, opening hours, fees and rest options where relevant. Do not advertise a route as wheelchair accessible on inference alone. An unavailable or unsafe stop must have a curated alternative or be omitted; never guide through a closed gate because a route line exists.
