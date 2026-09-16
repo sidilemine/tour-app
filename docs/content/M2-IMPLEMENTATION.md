@@ -4,6 +4,8 @@ Prepared 13 September; status updated 16 September 2026. **First map slice imple
 
 ## Preparation available now
 
+New editorial preparation, 16 September: [walking-tour design research](WALKING-TOUR-DESIGN-RESEARCH.md) brings together visitor studies, heritage conventions and audio-tour practice, with proposed guidelines for discussion. Agree the intended experience before selecting the final route or fixing narration lengths. These recommendations are not yet owner-approved guidelines and add no physical test gate.
+
 Current owner direction: minimise walking time while preserving valid tests, beginning near North Finchley bus station and finishing nearby. The [short-walk evidence plan](M2-TEST-PLAN.md) replaces the earlier provisional area/duration target with a 20–30-minute design goal, subject to six useful verified stops. It distinguishes desk checks, route survey, the completed walk and targeted regressions. The first map slice is now authorized; neither the old Finchley sequence nor the new candidate pool is a verified itinerary.
 
 The 16 September [personal-use testing policy](../../AGENTS.md#testing-policy-for-the-personal-prototype) governs each task below: reuse accepted evidence, automate relevant checks and request physical work only for a material unresolved question. Recorded rare recoverable issues need not block progression. “Done when” describes the useful outcome; it does not require a physical test for every listed failure mode.
