@@ -93,6 +93,8 @@ No backend, paid TTS, AI provider, map key, full Xcode or store membership is ne
 
 ## Verification and diagnostics
 
+Follow the [personal-use testing policy](AGENTS.md#testing-policy-for-the-personal-prototype): reuse existing evidence, automate relevant checks and ask for physical testing only for a material unresolved question. Rare recoverable issues can be recorded and fixed from Sidi's normal-use feedback. The bundled guide is a reference library, not a mandatory recurring checklist; no preset outing count or broad device matrix is required.
+
 ```sh
 npm run typecheck
 npm run lint

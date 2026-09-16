@@ -8,6 +8,10 @@ The first useful product is one curated six-stop walk that Sidi would willingly 
 
 Tours are prepared before use. A downloaded tour contains the local map, planned walking route, directions, narration, transcripts, relevant images/attributions and everything needed to recover progress. Normal touring does not call a server, LLM, TTS or online routing service. The user can complete the planned walk manually if GPS is unreliable.
 
+## Personal-use delivery and testing
+
+Sidi is the current user and test subject; there is no broad public launch to certify. Validate the ordinary walking experience and the changes needed to progress on his phone. Reuse accepted evidence and prefer automated checks before requesting a short physical check for a specific unresolved risk. Rare, recoverable defects can be recorded and fixed if encountered during normal use, without holding up the next useful version. Keep effective controls, saved data, privacy and usable route instructions central. The [engineering testing policy](AGENTS.md#testing-policy-for-the-personal-prototype) defines how to select checks and defer issues honestly; no fixed outing count or broad device matrix is implied.
+
 ## Core promises
 
 - **Route and story agree.** Plan and verify the walk before budgeting narration. Leave time for navigation, stopping, looking and silence; do not fill every gap with speech.
@@ -57,7 +61,7 @@ Offline means the downloaded **planned route** works. Within the downloaded area
 
 Run this alongside development of the curated six-stop walk, before investing in a full tour factory. Use the same test area and comparable time/access constraints, but contrasting briefs—for example engineering/architecture versus ordinary lives/unusual stories. Test differences in selected stops or route, story focus, pacing and enjoyment, not just different adjectives applied to an identical script.
 
-Produce reviewable candidate routes, claim/evidence packs and short narration samples using human-supervised steps. Route with a real walking router, verify physical orientation, inspect claims, and use existing authorized tools or owned recordings. Record edits, generation effort and any approved costs. Sidi listens and walks both variants; [ROADMAP.md](ROADMAP.md#experiment-e1--supervised-ai-brief-comparison) defines the decision gate. This is a learning experiment with local artifacts, not a backend or personalized-generation UI.
+Produce reviewable candidate routes, claim/evidence packs and short narration samples using human-supervised steps. Route with a real walking router, verify physical orientation, inspect claims, and use existing authorized tools or owned recordings. Record edits, generation effort and any approved costs. Sidi compares both variants, starting with short listening samples and using shared or different walking segments only where they would change the decision; [ROADMAP.md](ROADMAP.md#experiment-e1--supervised-ai-brief-comparison) defines the decision gate. This is a learning experiment with local artifacts, not a backend or personalized-generation UI.
 
 ## Non-goals until explicitly scheduled
 

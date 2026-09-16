@@ -2,6 +2,8 @@
 
 Current planning note, 15 September 2026: these are retained drafts for the earlier area. The [short-walk plan](M2-TEST-PLAN.md) now prioritises North Finchley bus station and minimum useful walking time. Re-author both briefs to the same feasible short envelope before walking; keep the comparison gate and original preparation history.
 
+Testing revision, 16 September: follow the [personal-use testing policy](../../AGENTS.md#testing-policy-for-the-personal-prototype). Compare short samples first. Reuse shared route evidence and request walking only where context or pacing remains material to the decision; two full variant walks are not required. Label conclusions by what Sidi actually heard or walked.
+
 Prepared 13 September 2026. **Preparation only; E1 is not passed.** AI-authored outputs are supervised drafts. No additional model service, paid TTS, content factory or backend has been introduced.
 
 ## Shared constraints for both briefs
@@ -51,7 +53,7 @@ Listen in either order and record the order. Keep the same voice/rate for both t
 
 1. Engineer verifies facts, develops real routed plans between inspected visitor points, fits narration to measured budgets and resolves all physical blockers. Compare both against the six-stop baseline in the same time/access envelope.
 2. Review unsupported claims, pronunciation, rights and orientation; record edits and editing time. Preserve corrections instead of quietly replacing the experiment history.
-3. Sidi walks/listens to both, noting order and familiarity. Record brief fit, enjoyment, clarity, factual trust, pacing and willingness to choose that walk, with concrete examples.
+3. Sidi compares both through short listening samples, noting order and familiarity. Add representative walking segments only to resolve material location/pacing questions; shared paths need not be walked twice. Record brief fit, enjoyment, clarity, factual trust, pacing and willingness to choose that walk, with concrete examples and the limits of desk-only observations.
 4. Record route/access defects separately from story preferences. Recheck any changes that affect trigger spacing or cue timing.
 5. Write **proceed**, **revise and repeat**, or **do not automate yet**, with reasons. Sidi decides whether the evidence warrants a later automated factory. A small personal experiment is not statistical proof.
 

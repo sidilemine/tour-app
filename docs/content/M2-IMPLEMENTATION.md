@@ -6,6 +6,8 @@ Prepared 13 September; status updated 16 September 2026. **First map slice imple
 
 Current owner direction: minimise walking time while preserving valid tests, beginning near North Finchley bus station and finishing nearby. The [short-walk evidence plan](M2-TEST-PLAN.md) replaces the earlier provisional area/duration target with a 20–30-minute design goal, subject to six useful verified stops. It distinguishes desk checks, route survey, the completed walk and targeted regressions. The first map slice is now authorized; neither the old Finchley sequence nor the new candidate pool is a verified itinerary.
 
+The 16 September [personal-use testing policy](../../AGENTS.md#testing-policy-for-the-personal-prototype) governs each task below: reuse accepted evidence, automate relevant checks and request physical work only for a material unresolved question. Recorded rare recoverable issues need not block progression. “Done when” describes the useful outcome; it does not require a physical test for every listed failure mode.
+
 - Review batches of M1 evidence using the [local intake tool](../TEST-EVIDENCE-REVIEW.md), then resolve actual failures without changing the test definition.
 - Reuse the record structure in the [Finchley field worksheet](FINCHLEY-FIELD-WORKSHEET.md) for separately verified visitor positions, approaches and viewpoints; prepare candidate-specific prompts for North Finchley before a survey. Its named sites belong to the earlier area and are not the new itinerary.
 - Retain the two [E1 briefs and predictions](E1-BRIEFS.md) as historical preparation; re-author them for the compact area once feasibility is known. Desk listening can reveal dull stories before routing, but does not establish enjoyable or usable walks. The current six audio drafts are reproducible with the existing local renderer; no new voice service is needed for desk drafts.
@@ -38,13 +40,13 @@ Adapt the proven M1 session without mixing location, narration and progress. Pro
 
 A prepared actionable walking cue may pause a story, play, and restore its saved offset. Check manual intent before both cue start and story resume. A user pause during preparation, the cue, focus recovery or a restored session cancels automatic continuation. If a cue is stale after departure, do not play an outdated instruction; retain usable local guidance and manual choice. No online rerouting dependency is introduced.
 
-Done when: race tests cover arrival during narration, cue versus pause in both orders, pause during cue, interruption, stale cue, skip/end and process death during story/cue handover. Follow with native phone checks; a reducer pass does not establish audible behavior. The whole planned walk remains manually usable without location permission or network.
+Done when: relevant race tests cover arrival during narration, cue versus pause in both orders, pause during cue, interruption, stale cue, skip/end and process death during story/cue handover. Confirm new audible handover and pause behavior in one short phone session; reuse unchanged native interruption/recovery evidence and add cases only for a material gap or failure. A reducer pass does not establish audible behavior. The whole planned walk remains manually usable without location permission or network.
 
 ### 5. Walk, correct and compare
 
-Complete the six-stop walk offline, then review story length, directions, arrival behavior, recoverability and enjoyment. Preserve defects and retest fixes. Finish the feasible routed E1 variants with the same duration/access envelope, record presentation order and concrete differences, and compare to the curated baseline.
+Use the six-stop walk offline, then briefly review story length, directions, arrivals and enjoyment. Fix blockers and retain low-impact issues for normal-use feedback; retest only what a fix needs. E1 is a separate decision: compare short samples first and walk representative segments only where it would change the choice, recording presentation order and concrete differences.
 
-Done when: the M2 acceptance matrix passes and Sidi's E1 outcome is recorded as proceed, revise and repeat, or do not automate yet. Backend infrastructure, a reusable city knowledge base, driving and a full AI factory remain outside this milestone.
+M2 is done when the curated offline tour is useful under its stated acceptance scope, with remaining non-blocking limits recorded. E1 separately records proceed, revise and repeat, or do not automate yet before authorizing a factory; it need not delay the usable M2 tour. Backend infrastructure, a reusable city knowledge base, driving and a full AI factory remain outside this milestone.
 
 ## Decisions still open
 

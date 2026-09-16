@@ -2,6 +2,8 @@
 
 Status: updated 15 September 2026. M1 complete on the tested Pixel 6 / Android 17; see [final acceptance](docs/test-results/M1-closure.md) and the linked field records for build/condition limits. [PRODUCT.md](PRODUCT.md) defines the experience; [ROADMAP.md](ROADMAP.md) defines the evidence required before advancing. The owner's revisions override the original brief's mixed state machine, numerical claim-confidence examples, lifecycle milestone ordering and early backend/knowledge-base recommendations.
 
+Testing policy updated 16 September: apply the [personal-use policy](AGENTS.md#testing-policy-for-the-personal-prototype) to verification and hardening. Preserve the behavioral design below, reuse accepted evidence and target material gaps. Rare recoverable issues can be deferred to normal-use feedback; lists of possible scenarios do not mandate separate physical tests or speculative implementation.
+
 ## Decisions and boundaries
 
 | Decision | Current choice and reason | Revisit when |
@@ -113,7 +115,7 @@ Arrival requires the next eligible visitor zone, plausible route position, usabl
 
 The current M1 implementation confirms arrival inside a 30 m radius, with at least three usable fixes spanning four seconds, cross-track ≤45 m and reversal rejection. Reported horizontal accuracy must be ≤35 m; retained arrival uses a 40 m exit radius. These are broad lab defaults, not exact-pin or physically verified viewpoint guarantees. [Repeated field observations](docs/test-results/M1-two-more-walks.md) require checking recorded visitor coordinates and approach geometry before tightening zones; no threshold was changed during that review.
 
-[Arrival calibration research](docs/ARRIVAL-CALIBRATION.md) identifies single-fix stop capture as a separate uncertainty from live GPS and trigger policy. Prioritize fresh stationary capture, provenance and repeated physical verification before per-stop radius tuning. The proposed capture experiment is not implemented; current fixtures lack capture-quality metadata. Pinned Android source inspection found that an enum-only High → Highest change would leave our explicitly configured continuous location request unchanged. Retain the accepted M1 baseline; evaluate capture changes as bounded M2 work.
+[Arrival calibration research](docs/ARRIVAL-CALIBRATION.md) identifies single-fix stop capture as a separate uncertainty from live GPS and trigger policy. If the selected route exposes a meaningful placement problem, inspect capture and physical geometry before per-stop radius tuning; repeated visits are not a default M2 prerequisite. The proposed capture experiment is not implemented; current fixtures lack capture-quality metadata. Pinned Android source inspection found that an enum-only High → Highest change would leave our explicitly configured continuous location request unchanged. Retain the accepted M1 baseline and add capture work only when it answers an observed need.
 
 The [15 September detour review](docs/test-results/M1-three-baselines-and-detour.md) identifies a concrete input-data failure: ten sparse route points form chords far from the repeatedly walked curved path, producing false off-route status despite fresh accurate fixes. A corrected private geometry candidate preserves standing coordinates and removes those false labels in counterfactual replay without changing playback effects. That initial evaluation was not physical acceptance. The subsequent [corrected detour passed](docs/test-results/M1-corrected-detour-and-pass-pending.md); do not widen the global corridor to mask bad route geometry.
 
@@ -167,7 +169,7 @@ Authoring order: interpret brief → candidates/evidence → verified visitor po
 | --- | --- | --- |
 | Silent-gap Android playback and task/player lifetime | M1 passed repeated development runs and the self-contained offline repeat on Pixel 6; recheck affected behavior after native/SDK changes | M1 closed; regression / engineer |
 | Audio interruptions/remote pause observability | M1 passed actual remote controls, Spotify, Bluetooth disconnect and transient-focus return; telephony-specific routing remains outside that evidence | M1 closed; regression / engineer |
-| OEM battery/GPS behavior | Pixel 6 ordinary and Battery Saver cases passed; rounded short-run readings do not establish endurance or other-device behavior | M3 / engineer + physical tests |
+| Battery/GPS limits in personal use | Pixel 6 ordinary and Battery Saver cases passed; investigate endurance only if normal use or a planned longer tour raises a concern. Other-device coverage is deferred | Observed need / engineer; targeted physical check if necessary |
 | SDK patch maintenance | Closure-time online Expo check recommends newer SDK-57 patches; retain the physically accepted lockfile until an affected native/build/device regression pass accompanies an update | Next maintenance / engineer |
 | Offline map renderer/data and routing provider | Demonstrate a small local map, full asset coverage, route export, offline rights/attribution, cost and SDK compatibility | Before M2 package commitment / engineer; owner approves material cost/lock-in |
 | Arbitrary offline rerouting | Current scope excludes it; decide only if field evidence makes stored-route recovery insufficient | After M3 / owner |

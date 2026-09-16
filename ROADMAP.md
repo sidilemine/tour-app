@@ -1,8 +1,12 @@
 # Roadmap
 
-Status: 15 September 2026. M0 and M1 are complete; M1 acceptance is scoped to the recorded Pixel 6 / Android 17 results. This roadmap supersedes the original brief's ordering: lifecycle reliability comes first, and the supervised AI experiment runs alongside early curation. Each implementation assignment ends in appropriate tests/debugging, updated documents and a coherent local commit.
+Status: 16 September 2026. M0 and M1 are complete; M1 acceptance is scoped to the recorded Pixel 6 / Android 17 results. This roadmap supersedes the original brief's ordering: lifecycle reliability comes first, and the supervised AI experiment runs alongside early curation. Each implementation assignment ends in appropriate tests/debugging, updated documents and a coherent local commit.
 
 “Implemented; awaiting physical test” is a valid intermediate status, not a passed milestone. Only actual result records can establish device behavior or enjoyable content. Do not treat the whole roadmap as authorization to implement all future work.
+
+## Testing and progression policy
+
+Sidi's 16 September direction applies throughout: this is a personal-use prototype on his phone. Follow the [engineering testing policy](AGENTS.md#testing-policy-for-the-personal-prototype). Progress on enough evidence for the next useful version, combining automated checks, accepted physical results and the smallest check of any material remaining uncertainty. Record rare recoverable issues as non-blocking and fix them when encountered; do not require blanket edge-case, duration or device coverage. A deferred or failed case is never relabelled as a pass. Historical M1 procedures below retain their original meaning but impose no automatic repeat quota on later milestones.
 
 ## Milestone 0 — foundation
 
@@ -85,7 +89,7 @@ The first reported field attempt on 13 September failed with native crashes at S
 
 ## Milestone 2 — curated six-stop offline walk
 
-Arrival preparation: [calibration research](docs/ARRIVAL-CALIBRATION.md) proposes a bounded stationary-capture/provenance experiment and repeated visitor-position verification before per-stop radius tuning. This remains proposed M2 work; it neither changes the installed M1 defaults nor replaces any acceptance criterion.
+Arrival preparation: [calibration research](docs/ARRIVAL-CALIBRATION.md) retains a possible capture/geometry experiment if the selected route reveals a meaningful placement problem. Repeated captures and approaches are not prerequisites for M2; inspect actual route geometry before tuning radii and request a repeat only to resolve an observed discrepancy.
 
 **Status: first offline-map slice implemented and verified on the recorded Pixel using combined desk/outdoor evidence.** Sidi authorized the discussed North Finchley map slice on 15 September. The app now has a fixed local PMTiles map, bundled fonts/style/credits and a read-only session-position view. Native builds, offline cold map drawing, resource recovery and the recorded desk regressions pass. The [outdoor review](docs/test-results/M2-outdoor-map.md) closes the targeted native-map regression while recording the unperformed stationary-minute repeat and reuse of unchanged M1 evidence. No further map-regression outing is requested; this is not full M2 acceptance. General mobile package import, the six-stop player/cues and routed/verified content remain outstanding. Earlier [preparation results](docs/test-results/M2-preparation.md), the [ordered plan](docs/content/M2-IMPLEMENTATION.md) and [visitor/leg worksheet](docs/content/FINCHLEY-FIELD-WORKSHEET.md) are retained. M1 passed separately through its recorded physical and automated evidence.
 
@@ -99,7 +103,7 @@ Acceptance:
 - Each factual passage maps to reviewed claims and supporting source excerpts. Audio duration fits its stop/leg budget, including reserved navigation time and silence. Image/voice/map rights are recorded.
 - With network off after import and a cold launch, local map, planned route, directions, audio, transcript and progress recovery work across the entire tour area. The app explicitly handles leaving map coverage; it does not promise arbitrary offline rerouting.
 - Reject incomplete/corrupt/unsupported packages; an interrupted import preserves the working version. Test retained progress against pinned content versions.
-- Sidi completes the six-stop walk with manual controls and automatic arrivals, recording route/content/UX defects. Fix blockers before calling the curated prototype complete.
+- Sidi uses the complete six-stop walk with manual controls and automatic arrivals, giving brief route/content/UX feedback. This can be ordinary use of the prepared tour. Fix blockers to useful completion; record occasional recoverable failures and retest only affected behavior when needed. Do not count a manual recovery as a successful automatic arrival or require an otherwise useful whole walk to be repeated for that alone.
 
 ## Experiment E1 — supervised AI brief comparison
 
@@ -113,7 +117,7 @@ Acceptance and decision gate:
 
 - Each variant has a complete feasible walk plan and at least three narrated sample stops. Compare against the curated six-stop baseline using the same time/access envelope.
 - Before listening, identify at least two substantive predicted differences (stop/route choices, visible details, thematic arc or pacing). Sidi can describe the differences after trying both; stylistic wording alone does not count.
-- Sidi walks/listens to both and records brief fit, enjoyment, orientation clarity, factual trust, pacing and “would choose this walk” with concrete examples. Record presentation order to expose possible order/familiarity effects. Optional ratings are subjective feedback, not claim-confidence scores.
+- Sidi compares both through short listening samples first, then representative walking segments where location or pacing remains material to the choice. Reuse shared paths and prior route observations; two full repeat walks are not mandatory. Record brief fit, enjoyment, orientation clarity, factual trust, pacing and “would choose this walk” with concrete examples and presentation order. State which judgments came from listening versus walking. Optional ratings are subjective feedback, not claim-confidence scores.
 - Record all unsupported assertions, corrections, route/access failures, pronunciation issues and editing time. No unreviewed physical or factual claims go into the walked samples.
 - Write a short outcome: **proceed**, **revise and repeat**, or **do not automate yet**, with rationale. These are exploratory findings from a small sample, not statistical proof. Do not build the full automated factory without a positive owner decision based on this evidence.
 
@@ -121,9 +125,9 @@ Acceptance and decision gate:
 
 **Status: planned after M2.** Expand route matching and recovery only in response to field failures.
 
-**Owner-time planning:** revisit the physical test plan with Sidi after M2. The conversational estimate of 3–5 outings is provisional, not an acceptance requirement or booked commitment. First exercise failures through automated replay and engineer-operated device checks; then batch compatible field cases, using short segments and appropriately shortened test audio where full duration is unnecessary. Reserve full-length walks for end-to-end coverage and duration-sensitive behavior. Present estimated owner time, purpose and stopping conditions for each batch; reuse applicable accepted evidence and explain any repeat or added case. Thoroughness and the acceptance criteria below remain unchanged.
+**Owner-time planning:** there is no preset outing count, duration or required full-walk repeat. The earlier 3–5-outing estimate is superseded by the personal-use testing policy. After M2, select work from actual defects and material risks to Sidi's next use. Use replay and engineer-operated checks first; request a short field check only when it changes the decision. Normal use may supply the observation. A full walk or endurance run needs its own unresolved integration/duration question.
 
-Acceptance: replay fixtures for noisy streets, parallel paths, self-crossing route, reversal, coffee stop, lost signal, implausible speed, skipped/ahead stops and restart have explicit expected events. Sanitized field failures reproduce before the fix and pass after it. Repeat the full six-stop walk offline with screen locked, interruptions and saved recovery. Report trigger mistakes, manual fallback use and battery change with conditions; fix unacceptable failures and agree remaining limits with Sidi. Recheck the M1 gate after relevant native/SDK changes.
+Acceptance: resolve the selected blockers to ordinary walking and preserve useful regression fixtures for reproducible failures. Noisy streets, parallel paths, self-crossings, reversal, coffee stops, lost signal, implausible speed, skipped/ahead stops and restart are candidate replay scenarios, not a mandatory physical matrix. Use explicit expected events for the relevant cases; demonstrate a reproduced bug before and after its fix where possible. Reuse M2's full-tour evidence, retest affected segments only as necessary, and record remaining low-impact limitations for normal-use feedback. Battery measurements are needed when endurance is a real concern, not as a reason for another outing. Native/SDK changes require an assessment and targeted checks of affected behavior, not an automatic rerun of M1.
 
 ## Milestone 4 — local tour compiler
 
@@ -141,7 +145,7 @@ Acceptance: stage inputs/outputs are inspectable, repeatable/cached and independ
 
 **Status: planned once Android behavior is stable; can precede M5 if product priorities change.** Use the same domain/package while implementing platform-specific permissions and lifecycle adapters.
 
-Acceptance: repeat the locked silent-gap, remote pause, interruption, offline and termination/reopen matrix on a physical iPhone. Simulator results alone are insufficient. Record signing/toolchain needs at this milestone, not as Android prerequisites.
+Acceptance: when iOS is assigned, establish ordinary locked arrival, controls, offline use and recovery on the intended physical iPhone using the smallest representative session. Reuse platform-independent evidence; add native edge cases only for material uncertainties or observed failures. Simulator results alone cannot establish phone behavior. Record signing/toolchain needs at this milestone, not as Android prerequisites.
 
 ## Later, only when needed
 
