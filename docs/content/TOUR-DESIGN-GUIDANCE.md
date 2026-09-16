@@ -1,6 +1,6 @@
 # Walking tour design guidance
 
-Living editorial reference, revision 1, 16 September 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
+Living editorial reference, revision 2, 16 September 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
 
 **Our aim:** make an enjoyable, relaxing walk reveal the non-obvious stories and meaning beneath the surroundings, giving the listener a deeper connection to a place, whether new or familiar. Being there should contribute something that reading at home cannot.
 
@@ -12,6 +12,8 @@ The sections below distinguish **owner direction**, **working interpretations** 
 
 Basis: Sidi's 24 comments, IDs 0–23, in `walking-tour-design-review Sidi COMMENTS.docx`, reviewed on 16 September. The Word body matches the original, with no tracked insertions or deletions. The original and commented Word files remain untouched. The [research review](WALKING-TOUR-DESIGN-RESEARCH.md) preserves source details and limitations.
 
+Additional basis: Sidi's ten comments, IDs 0–9, in `north-finchley-sample-stops-review - Sidi comments.docx`, reviewed on 16 September. The body again matches the original, with no tracked insertions or deletions. Comment numbers in the original sections refer to the research review; new sections below explicitly identify sample-review comments.
+
 ## Owner direction
 
 ### Reveal something worth knowing in this place
@@ -19,6 +21,16 @@ Basis: Sidi's 24 comments, IDs 0–23, in `walking-tour-design-review Sidi COMME
 Interesting, non-obvious knowledge is central. Help the listener understand why an ordinary-looking feature matters, how it came about, or what it reveals. An invitation to look is useful when it leads to an insight; merely pointing out visible objects is insufficient. A missing feature can also tell a story if its relationship to the current scene is clear.
 
 At each main stop ask: **What becomes more interesting or understandable because we are here?** The experience should reward going outside as well as listening. Sidi identifies 99% Invisible as a reference for this spirit, including its use of supporting visual material. Its own [description](https://99percentinvisible.org/about/the-show/) centres on overlooked design and architecture. Comments 2, 13, 14 and 23.
+
+### Establish the place before adding the anecdote
+
+Start with enough conventional factual context to explain what the listener is looking at and why it matters. Let the distinctive anecdote enrich that understanding. For Tally Ho, Sidi prefers the roads and coaching context before the postcard story, while retaining its light tone. Choose how much of the chain to tell according to available time and listener interests; do not try to answer every research question in speech. A present-day coda belongs only when it adds something meaningful and, for this intended walk, positive. Sample-review comments 0 and 9.
+
+A suggested factual anchor is a research question until supported. Evidence for coach horses near a junction does not identify a particular coaching inn. Keep useful context and the honest uncertainty together rather than overstating the building history to improve the story.
+
+### Be selective about solemn subjects
+
+For this enjoyable personal walk, steer clear of minor solemn sites. A major attraction may warrant inclusion; treat it formally, with restrained, conventional language and no poetic embellishment. This is Sidi's editorial preference, not a universal rule about heritage interpretation. Reflection remains available for other subjects. The John Parr sample is retired from the proposed North Finchley walk. Sample-review comment 6.
 
 ### Give the tour a meaningful theme
 
@@ -53,6 +65,14 @@ Use a clear theme as a selection aid, without forcing unrelated material into a 
 For each candidate retain a brief note: the non-obvious insight; what the visitor experiences here; theme connection; evidence; intended tone; access; and the cost in walking and listening time. Compare candidates against one another so that several individually good stops do not repeat the same idea.
 
 For each leg, estimate walking time, identify navigation moments and allocate moving narration, quiet and any separate stationary story. Count simultaneous walking and listening once in the tour total. Use the measured recording length before finalising the budget; shorten the subject or change the route when it does not fit. No universal words-per-stop target or dramatic-stop quota is adopted.
+
+### Keep each stop focused and meaningful
+
+Choose one clear purpose before writing. Context, biography and local colour should serve that purpose; the fact that each detail is sourced is not enough. Sample-review comments 7 and 8.
+
+Give a statistic a useful scale or comparison when its significance depends on one; omit it when it adds arithmetic without insight. Do not prescribe an emotional response. Maintenance, theft or replacement can belong in the factual record without belonging in the story. Sample-review comments 1 and 3.
+
+If a vanished scene is worth describing, use concrete, supported details to make it intelligible. A generic invitation to picture missing houses is weak. Do not assign a memorial an intended meaning without evidence, and distinguish a person commemorated there from a wider historical cohort. The original John Parr ending did this poorly; its claimed meaning is withdrawn, not defended as harmless interpretation. Sample-review comments 2, 4 and 5.
 
 ### Presenter qualities worth retaining
 
@@ -103,7 +123,7 @@ The first two follow Sidi's comment; the fuller repertoire is an initial proposa
 
 Write one clear tour promise and theme. Compare candidate insights and routes, then prepare two contrasting sample stops with different tones and plausible timing. Review those at the desk before polishing a complete tour. During normal use, collect brief reactions about what was interesting, confusing, dull or worth the walk; follow concrete issues rather than creating a new test campaign.
 
-The [first North Finchley sample pair](NORTH-FINCHLEY-SAMPLE-STOPS.md) puts a light naming anecdote beside a quieter neighbourhood memorial story. It is draft material awaiting Sidi's response, not evidence that these styles or candidates have been accepted.
+Sidi preferred the light tone of the [first North Finchley sample pair](NORTH-FINCHLEY-SAMPLE-STOPS.md), with firmer factual grounding. The memorial sample is retired. [Tally Ho revision 2](TALLY-HO-SAMPLE-V2.md) puts the road and coaching history before the postcard anecdote; the new wording and duration remain for review. Use the next useful contrast in subject or treatment rather than manufacturing a second solemn sample.
 
 Keep this guide current as preferences change. Future automation should use the same versioned editorial reference rather than accumulating inconsistent rules in separate prompts. There is no new automation, route choice, app change or physical acceptance claim in this revision.
 
@@ -112,3 +132,5 @@ Keep this guide current as preferences change. Future automation should use the 
 All 24 comments were considered: 0–1 guidance and presenter qualities; 2 visual depth and 99% Invisible; 3 personalisation hypothesis; 4 sound; 5–6 theme; 7 dialogue; 8 speculation; 9 rhythm; 10 orientation; 11 producer guidance; 12 endings; 13–14 purpose and presence; 15 variety; 16–17 walking quality and Street View; 18 pacing agreement; 19 descriptive judgement; 20 cognitive effort; 21 routing estimates; 22 spoken tester feedback; 23 non-obvious knowledge.
 
 Revision 1 records Sidi's Word comments and the engineer's explicitly labelled interpretations. Presenter details and the routing project documentation were checked on 16 September 2026. The wider source review remains in the linked research document; no new user study or field evidence is claimed.
+
+Revision 2 applies all ten sample-review comments: 0 context before anecdote and flexible depth; 1 meaningful statistics; 2 accurate commemoration; 3 relevant detail; 4 purposeful evocation; 5 no invented memorial intent; 6 selection and formal treatment of solemn subjects; 7–8 one clear purpose; 9 develop Tally Ho. The revised sample retains claim-level source limitations. No new field test or application change is requested.

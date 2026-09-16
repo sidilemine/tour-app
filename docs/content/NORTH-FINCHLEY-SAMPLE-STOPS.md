@@ -1,5 +1,7 @@
 # Two North Finchley sample stops
 
+**Historical draft, reviewed 16 September 2026.** Sidi preferred Tally Ho with more factual context; see [revision 2 and response to all ten comments](TALLY-HO-SAMPLE-V2.md). The memorial sample is retired from the proposed walk. Its final sentence assigned an unsupported purpose to the memorial, and the original engineer assessment below incorrectly defended that wording. Both are retained as the reviewed draft, not current editorial guidance. The original Word and commented copies are untouched.
+
 Editorial draft 1, 16 September 2026, for Sidi's feedback. These samples apply the [living design guidance](TOUR-DESIGN-GUIDANCE.md). They explore different tones within one possible theme, not competing tour variants or a completed E1 comparison.
 
 [Word copy for comments](north-finchley-sample-stops-review.docx).
@@ -40,7 +42,7 @@ Parr's name gives us one person to follow. The figures for these three streets g
 
 Would either make you glad you took the walk? Mark any sentence that feels dull, over-written or too instructive. In particular, does A tell its uncertain story naturally, and does B feel quietly interesting or too solemn? Both, either or neither can work; this is not a forced choice between two whole-tour styles.
 
-**Engineer assessment before feedback:** A has a clear small human problem and a light payoff, but its rival origin accounts need to remain audible. B adds tonal range and a concrete connection to the place; the three numbers may be too much for the ear. Its final paragraph is interpretation rather than a historical claim about what the council intended. If the ending feels heavy, shorten it before adding more historical background. Owner feedback is pending.
+**Engineer assessment before feedback:** A has a clear small human problem and a light payoff, but its rival origin accounts need to remain audible. B adds tonal range and a concrete connection to the place; the three numbers may be too much for the ear. Its final paragraph is interpretation rather than a historical claim about what the council intended. If the ending feels heavy, shorten it before adding more historical background. Owner feedback was pending at this assessment; the review outcome above supersedes it.
 
 ## Timing and physical limits
 
@@ -76,6 +78,8 @@ Reviewed by Codex on 16 September 2026. `source_checked` means the stated passag
 
 **Minimal supporting excerpts:** “William Street – which ran through what is now the car park”; “111 men fought”; “at least nine” (capitalisation normalised). Locators: paragraph beginning “From the 114 houses”; opening three paragraphs for Parr and the memorial.
 
+**Historical evidence note — correction after review:** paragraph 5 does imply an unsupported commemorative intention and is withdrawn. The original assessment in the following mapping is preserved for traceability.
+
 **Mapping:** B paragraphs 1–2, local residence/age/month in paragraph 3, and replacement in paragraph 4. **Status:** source_checked as the council's published account. Counts are explicitly attributed in speech. Current bench condition and visibility are unverified. Paragraph 5 is a grounded invitation to imagine the former residential street, not a reconstruction of named residents or an assertion of the memorial designer's intentions.
 
 ### B2 The qualification on first casualty
@@ -86,6 +90,6 @@ Reviewed by Codex on 16 September 2026. `source_checked` means the stated passag
 
 ## Required candidate correction
 
-The older War Memorials Online record describes a silhouette and contains an inconsistent death date. Barnet's 2025 notice records its theft and replacement with a bench. Use the bench as the current desk-research candidate; do not script a visible silhouette or direct the listener to a resident's doorway. The candidate pool is updated accordingly. Barnet also [reports completed Lodge Lane road changes](https://www.barnet.gov.uk/roads-and-pavements/road-and-pavement-maintenance/major-highways-projects/lodge-lane-road-safety); old street imagery may predate the current layout.
+The older War Memorials Online record describes a silhouette and contains an inconsistent death date. Barnet's 2025 notice records its theft and replacement with a bench. At draft 1, the bench replaced the silhouette as the desk-research candidate; after editorial review the stop is not retained. If the material is ever reconsidered, do not script a visible silhouette or direct the listener to a resident's doorway. The candidate pool is updated accordingly. Barnet also [reports completed Lodge Lane road changes](https://www.barnet.gov.uk/roads-and-pavements/road-and-pavement-maintenance/major-highways-projects/lodge-lane-road-safety); old street imagery may predate the current layout.
 
-No field session is requested for this writing review. If these candidates survive editorial selection, check their useful public viewpoints and route connection together during the necessary route preparation.
+No field session is requested for this writing review. For retained candidates such as the revised Tally Ho proposal, check useful public viewpoints and route connection together during necessary route preparation. No John Parr viewpoint check is currently needed.
