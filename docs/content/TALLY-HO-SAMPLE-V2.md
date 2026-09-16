@@ -22,11 +22,12 @@ According to the writer, cycling notices spread the name, and a local hotel put 
 - **1 — unexplained numbers.** Omit statistics that lack a useful comparison or narrative purpose. Do not tell the listener how to feel. The horse count here describes the scale of a specific operation, without calling it unusually large.
 - **2 — who is commemorated.** The original wording implied a group memorial. If John Parr material is ever reused, distinguish him from the wider neighbourhood cohort: one of those men is commemorated here.
 - **3 — theft and replacement.** Keep maintenance and replacement history in the asset/source record unless it materially serves the story. Its factual availability did not justify its inclusion in narration.
-- **4 and 5 — imagined scene and memorial meaning.** The original closing line assigned the memorial an unsupported purpose. Withdraw that interpretation. Evocative historical description must have a clear purpose and evidence; merely asking the listener to picture missing buildings adds little.
+- **4 — bring the scene to life, clarified in conversation.** Sidi wants strongly supported imagined colour: the narrator should supply the scene's character and atmosphere, rather than leave the listener to imagine missing buildings unaided. My initial interpretation was too restrictive. A well-supported reconstruction can use ordinary descriptive detail without an eyewitness source for every element; see the living guidance, revision 3.
+- **5 — memorial meaning.** The original closing line assigned the memorial an unsupported purpose. Withdraw that interpretation. This is separate from the welcome use of imaginative reconstruction to evoke a vanished place.
 - **6 — solemn subjects.** Avoid minor solemn sites in the intended enjoyable walk. If a major attraction merits inclusion, use formal, restrained, conventional treatment without poetic embellishment. This does not rule out reflection in other stories.
 - **7 and 8 — focus.** Give each stop one understandable purpose. Do not drift among biography, general history and local colour just because all are sourced. The John Parr sample is retired from the proposed walk, rather than polished into another version.
 
-The [living guidance](TOUR-DESIGN-GUIDANCE.md) and M2 candidate record reflect these lessons. Original Word files and comments are preserved. This revision remains subject to Sidi's writing judgement; acceptance of the direction is not acceptance of every sentence.
+The [living guidance](TOUR-DESIGN-GUIDANCE.md) and M2 candidate record reflect these lessons. Original Word files and comments are preserved. The later conversation clarification above supersedes the narrower evocation summary in the dated revision 2 Word copy; the Tally Ho narration is unchanged. This revision remains subject to Sidi's writing judgement; acceptance of the direction is not acceptance of every sentence.
 
 ## Length and scope
 

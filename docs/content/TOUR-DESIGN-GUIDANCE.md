@@ -1,6 +1,6 @@
 # Walking tour design guidance
 
-Living editorial reference, revision 2, 16 September 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
+Living editorial reference, revision 3, 16 September 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
 
 **Our aim:** make an enjoyable, relaxing walk reveal the non-obvious stories and meaning beneath the surroundings, giving the listener a deeper connection to a place, whether new or familiar. Being there should contribute something that reading at home cannot.
 
@@ -13,6 +13,8 @@ The sections below distinguish **owner direction**, **working interpretations** 
 Basis: Sidi's 24 comments, IDs 0–23, in `walking-tour-design-review Sidi COMMENTS.docx`, reviewed on 16 September. The Word body matches the original, with no tracked insertions or deletions. The original and commented Word files remain untouched. The [research review](WALKING-TOUR-DESIGN-RESEARCH.md) preserves source details and limitations.
 
 Additional basis: Sidi's ten comments, IDs 0–9, in `north-finchley-sample-stops-review - Sidi comments.docx`, reviewed on 16 September. The body again matches the original, with no tracked insertions or deletions. Comment numbers in the original sections refer to the research review; new sections below explicitly identify sample-review comments.
+
+Revision 3 incorporates Sidi's subsequent conversation correction: the narrator should actively bring vanished scenes to life through strongly supported imagined colour. The earlier response to sample comment 4 was too restrictive.
 
 ## Owner direction
 
@@ -31,6 +33,12 @@ A suggested factual anchor is a research question until supported. Evidence for 
 ### Be selective about solemn subjects
 
 For this enjoyable personal walk, steer clear of minor solemn sites. A major attraction may warrant inclusion; treat it formally, with restrained, conventional language and no poetic embellishment. This is Sidi's editorial preference, not a universal rule about heritage interpretation. Reflection remains available for other subjects. The John Parr sample is retired from the proposed North Finchley walk. Sample-review comment 6.
+
+### Bring vanished places to life
+
+The narrator should do the imaginative work. Asking a listener to imagine a vanished street without helping them picture it is a missed opportunity. Use evocative description and strongly supported imagined colour to convey its character, activity and atmosphere, with the descriptive freedom of a well-researched audiobook. This is a positive part of the writing brief, not merely an exception that evidence rules tolerate. Sidi's conversation clarification of sample-review comment 4.
+
+The evidence can establish the kind of place, its period and its everyday life without documenting every sensory detail at one particular moment. Build a convincing scene from that foundation. Keep this separate from assigning an unsupported meaning to a memorial: the failure of that ending does not make imaginative reconstruction inappropriate elsewhere.
 
 ### Give the tour a meaningful theme
 
@@ -72,7 +80,7 @@ Choose one clear purpose before writing. Context, biography and local colour sho
 
 Give a statistic a useful scale or comparison when its significance depends on one; omit it when it adds arithmetic without insight. Do not prescribe an emotional response. Maintenance, theft or replacement can belong in the factual record without belonging in the story. Sample-review comments 1 and 3.
 
-If a vanished scene is worth describing, use concrete, supported details to make it intelligible. A generic invitation to picture missing houses is weak. Do not assign a memorial an intended meaning without evidence, and distinguish a person commemorated there from a wider historical cohort. The original John Parr ending did this poorly; its claimed meaning is withdrawn, not defended as harmless interpretation. Sample-review comments 2, 4 and 5.
+For vanished scenes, supply the descriptive detail that lets the listener picture the place, following the owner direction above. Do not assign a memorial an intended meaning without evidence, and distinguish a person commemorated there from a wider historical cohort. The original John Parr ending did this poorly; its claimed meaning is withdrawn. The objection to that claim is distinct from the welcome use of imagined colour. Sample-review comments 2, 4 and 5, with the subsequent clarification of comment 4.
 
 ### Presenter qualities worth retaining
 
@@ -87,7 +95,7 @@ Proposed writing rules within the existing claim-evidence contract:
 - State supported facts naturally and retain their evidence behind the script.
 - Introduce a reasonable inference as a possibility and preserve what supports it. “Perhaps” is not a substitute for a reason.
 - Introduce a documented legend as a legend. Evidence that a story is told does not prove that its events happened.
-- An invitation to imagine a scene may add atmosphere if it is clearly imaginative and its historical setting is supported. Do not present invented dialogue, motives or events as recovered history.
+- Actively reconstruct a scene when it helps the listener understand the place. Use documented features and strongly supported inferences about ordinary activity and sensory texture; a specific eyewitness record for every descriptive detail is unnecessary. Retain the factual foundation and reconstruction rationale behind the script. Establish the imagined frame naturally, then let the description flow without qualifying every sentence. Do not present invented dialogue, named people's thoughts or a particular undocumented incident as recovered history.
 - Keep directions and access instructions literal and checked; entertaining uncertainty belongs in the story, not in whether a visitor can cross or enter somewhere.
 
 These distinctions permit intrigue while preserving trust. Apply them in editorial review and retain the basis for each passage in the existing evidence records.
@@ -134,3 +142,5 @@ All 24 comments were considered: 0–1 guidance and presenter qualities; 2 visua
 Revision 1 records Sidi's Word comments and the engineer's explicitly labelled interpretations. Presenter details and the routing project documentation were checked on 16 September 2026. The wider source review remains in the linked research document; no new user study or field evidence is claimed.
 
 Revision 2 applies all ten sample-review comments: 0 context before anecdote and flexible depth; 1 meaningful statistics; 2 accurate commemoration; 3 relevant detail; 4 purposeful evocation; 5 no invented memorial intent; 6 selection and formal treatment of solemn subjects; 7–8 one clear purpose; 9 develop Tally Ho. The revised sample retains claim-level source limitations. No new field test or application change is requested.
+
+Revision 3 corrects the overly restrictive interpretation of imagined scenes after Sidi's conversation feedback. Strongly supported imaginative colour is encouraged: the narrator helps the listener experience the character of the place. Evidence constrains the historical foundation without requiring every ordinary descriptive detail to have been individually recorded. The separate correction about memorial intent and the preference on solemn sites remain in force. This clarification updates the maintained guidance; the earlier Word review remains the dated review copy.
