@@ -1,6 +1,6 @@
 # Roadmap
 
-Status: 16 September 2026. M0 and M1 are complete; M1 acceptance is scoped to the recorded Pixel 6 / Android 17 results. This roadmap supersedes the original brief's ordering: lifecycle reliability comes first, and the supervised AI experiment runs alongside early curation. Each implementation assignment ends in appropriate tests/debugging, updated documents and a coherent local commit.
+Status: 17 September 2026. M0 and M1 are complete; M1 acceptance is scoped to the recorded Pixel 6 / Android 17 results. This roadmap supersedes the original brief's ordering: lifecycle reliability comes first, and the supervised AI experiment runs alongside early curation. Each implementation assignment ends in appropriate tests/debugging, updated documents and a coherent local commit.
 
 “Implemented; awaiting physical test” is a valid intermediate status, not a passed milestone. Only actual result records can establish device behavior or enjoyable content. Do not treat the whole roadmap as authorization to implement all future work.
 
@@ -95,7 +95,7 @@ Arrival preparation: [calibration research](docs/ARRIVAL-CALIBRATION.md) retains
 
 Deliver a validated versioned package, durable local import, a local map with full renderer assets, verified planned walking legs/directions, six narrated stops, transcripts, source/rights display and clear manual controls. Compare offline map/data and routing options before commitment; present any material cost or lock-in for owner review. Use owned audio initially if voice selection would delay the walk.
 
-**Current planning direction:** Sidi requests the shortest valid walk, starting near North Finchley bus station and ending nearby. The [short-walk evidence plan](docs/content/M2-TEST-PLAN.md) targets 20–30 minutes including narration, subject to six useful verified stops; there is no M2 minimum duration. The earlier Finchley Central draft and 60–75-minute Friary Park discussion are not selected routes. Survey, full-tour acceptance and targeted native/cue regressions remain distinct; accepted M1 evidence is reused and its duration-sensitive cases remain intact. The subsequent go-ahead authorizes the discussed first map slice; it does not establish physical acceptance or a selected itinerary.
+**Current planning direction, 17 September:** develop both North Finchley tours for feedback, starting/ending near the bus station. Sidi accepts B’s extra walking and clarifies that a short footprint was for economical technical tests, not a product cap. The [review brief](docs/content/NORTH-FINCHLEY-REVIEW-RESPONSE.md) retains B as the six-stop M2 baseline, removes Stanhope’s dedicated detour from comparison A, and prepares a 2–3-minute walking chapter on B’s 3→4 leg plus per-story ratings and voice notes. Those features and final routes are not implemented or physically accepted. The earlier 20–30-minute target in the [evidence plan](docs/content/M2-TEST-PLAN.md) is superseded as a finished-tour constraint. Preserve accepted M1/map evidence and separate content review from technical regression work.
 
 Acceptance:
 

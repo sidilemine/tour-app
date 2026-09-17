@@ -1,0 +1,66 @@
+{
+  "purpose": "Durable text capture of owner tour-options review; original Word file remains untouched. Comment IDs are local to this document.",
+  "reviewed_on": "2026-09-17",
+  "source_file": "north-finchley-tour-options-review sidi comments.docx",
+  "sha256": "d885abe289ef7d2e533dfe08c48bccd5513bb1437bf8f44d7e18dd55f7025378",
+  "body_matches_original": true,
+  "tracked_insertions": 0,
+  "tracked_deletions": 0,
+  "comments": [
+    {
+      "id": "0",
+      "anchor": "1  Tally Ho and the meeting place",
+      "comment": "That works"
+    },
+    {
+      "id": "1",
+      "anchor": "2  Grand Arcade and the everyday shortcut",
+      "comment": "Cute, local, I like it"
+    },
+    {
+      "id": "2",
+      "anchor": "3  Stanhope and a different kind of cinema",
+      "comment": "We really only have that one image to go on; now it's an electronics company. This is where the agent being able to walk around on street view could help. If it was just on the way I would say why not (it could even be something to hear while passing by, and look at it on the phone). As it is, I don't feel it warrants a detour to a side street and back"
+    },
+    {
+      "id": "3",
+      "anchor": "106 metres apart",
+      "comment": "That seems fine - varying the pace is good, particularly around the center of an area to show the density"
+    },
+    {
+      "id": "4",
+      "anchor": "Two cinema stories ",
+      "comment": "In this case it's easy to pick the Gaumont over the stanhope as it's on the road, it has something related there now (sense of continuity, something to look at), and it's a more established back story than just that one image we have for the stanhope"
+    },
+    {
+      "id": "5",
+      "anchor": "breathing room ",
+      "comment": "Do we want to try to have something in one of the legs that plays *between* spots? We would need to have a narration about 2-3 minutes long, probably something about the area in general / theme of the tour, with some reflection on how / when / why the area came to be built up, that plays when the user has left one of the stops? I would put it between 3 and 4 as it's toward the middle of the tour"
+    },
+    {
+      "id": "6",
+      "anchor": "Your three strongest stories",
+      "comment": "Let's build both tours and I can fill in a survey - you can build a small number review dimensions that I'll rate out of 10 for each story along with a voice note right after each one, while I'm out? "
+    },
+    {
+      "id": "7",
+      "anchor": "Does B earn its roughly ten extra minutes",
+      "comment": "Yes I feel like it does - I'm actually slightly more excited about this one"
+    },
+    {
+      "id": "8",
+      "anchor": "smaller footprint",
+      "comment": "My desire for a small footprint is just to keep tech tests economical - ultimately it will be very very rare that anyone wants such a short walking tour. "
+    },
+    {
+      "id": "9",
+      "anchor": "two different cinema stories ",
+      "comment": "A fully cinema / theatre / arts themed tour, with further explanation between the stops, makes a lot of sense. There are lots of themed tours in london (there is actually one about The Kinks somewhere around here, look it up). But without that strong narrative threat, two disappeared cinemas, without a reason to include both (e.g. one was high end, the other working class, or some other contrast) could feel repetitive, like when you get church fatigue when visiting europe or temple fatigue in asia"
+    },
+    {
+      "id": "10",
+      "anchor": "How much repeated pavement or quiet walking ",
+      "comment": "A fair amount - it is a walking tour after all, not a museum visit. I also want to be able to make it a social thing in the future so silences would be welcome; for solo tourists we can always partially fill the void with curated music and stories-while-you-walk"
+    }
+  ]
+}

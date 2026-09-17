@@ -1,6 +1,6 @@
 # Editorial discussion and decision record
 
-Start here when resuming tour curation or reviewing how to make systematic guidelines. Updated 16 September 2026. This is the durable history of discussion, alternatives, corrections and outcomes; [TOUR-DESIGN-GUIDANCE](TOUR-DESIGN-GUIDANCE.md) contains the current working rules. Keep evidence and owner preference distinguishable.
+Start here when resuming tour curation or reviewing how to make systematic guidelines. Updated 17 September 2026. This is the durable history of discussion, alternatives, corrections and outcomes; [TOUR-DESIGN-GUIDANCE](TOUR-DESIGN-GUIDANCE.md) contains the current working rules. Keep evidence and owner preference distinguishable.
 
 ## How to maintain this record
 
@@ -13,8 +13,9 @@ When we take a serious look back: read this record, the captured comments and th
 ## Evidence index
 
 - [Initial walking-tour research](WALKING-TOUR-DESIGN-RESEARCH.md) and [original Word review](walking-tour-design-review.docx).
-- [All 34 owner Word comments with anchored text](reviews/2026-09-16-owner-word-comments.json): 24 on the research review, 10 on the narration pair; document-local IDs and source-file SHA-256 retained. This committed text capture remains usable if the original commented Word files are absent from another checkout. Original commented files remain locally under `docs/content/` and are not overwritten.
-- [Current design guidance](TOUR-DESIGN-GUIDANCE.md), revisions 1–3 with revision history.
+- [First 34 owner Word comments with anchored text](reviews/2026-09-16-owner-word-comments.json): 24 on the research review, 10 on the narration pair; document-local IDs and source-file SHA-256 retained. This committed text capture remains usable if the original commented Word files are absent from another checkout. Original commented files remain locally under `docs/content/` and are not overwritten.
+- [Latest 11 tour-options comments](reviews/2026-09-17-tour-options-comments.json) and [response/development brief](NORTH-FINCHLEY-REVIEW-RESPONSE.md): **45 comments total** across the three reviews. All retain source-file hashes, local IDs and anchored text.
+- [Current design guidance](TOUR-DESIGN-GUIDANCE.md), revisions 1–4 with revision history.
 - [First North Finchley sample pair](NORTH-FINCHLEY-SAMPLE-STOPS.md) and [original Word copy](north-finchley-sample-stops-review.docx), including the rejected memorial execution.
 - [Tally Ho revision 2 and response mapping](TALLY-HO-SAMPLE-V2.md) and [Word copy](tally-ho-sample-review-v2.docx). The later imagined-colour correction supersedes its narrower review note, not its narration.
 - [Current tour options A and B](NORTH-FINCHLEY-TOUR-OPTIONS.md), [Word proposal](north-finchley-tour-options-review.docx), and [actual routing evidence](routes/north-finchley-options-v1/README.md).
@@ -26,7 +27,7 @@ When we take a serious look back: read this record, the captured comments and th
 
 **Context:** M2 preparation and the map slice, before the editorial research. **Owner direction:** start around North Finchley bus station and finish nearby; the shorter the better within valid test needs. The Finchley Central–Church End–Stephens House backtracking was queried and was not intentional. The later 20–30-minute compact target is a working design goal, not a measured route or minimum acceptance duration.
 
-After the map walk, Sidi reported accurate location, correct audio and airplane-mode use, but did not do the stationary minute at C or note battery. Those omissions remain explicit in [the result](../test-results/M2-outdoor-map.md); unchanged accepted M1 evidence was reused. Sidi then directed pragmatic testing throughout: he is the user/test subject, and rare recoverable edge cases can be fixed when encountered. **Outcome:** adopted in AGENTS, PRODUCT and ROADMAP. This does not establish that every enjoyable future tour must be the shortest technical test route. **Open:** acceptable finished-tour length when extra time buys better content.
+After the map walk, Sidi reported accurate location, correct audio and airplane-mode use, but did not do the stationary minute at C or note battery. Those omissions remain explicit in [the result](../test-results/M2-outdoor-map.md); unchanged accepted M1 evidence was reused. Sidi then directed pragmatic testing throughout: he is the user/test subject, and rare recoverable edge cases can be fixed when encountered. **Outcome:** adopted in AGENTS, PRODUCT and ROADMAP. This does not establish that every enjoyable future tour must be the shortest technical test route. **Then open:** acceptable finished-tour length when extra time buys better content. Resolved for these proposals in entry 08: B’s longer duration is welcome; the short footprint was for technical tests.
 
 ### 02 Research before relying on taste alone
 
@@ -64,7 +65,21 @@ After the map walk, Sidi reported accurate location, correct audio and airplane-
 
 **Current proposal:** A, entertainment-led, about 1.4 km / 28–33 minutes; B, broader neighbourhood variety, about 1.9 km / 37–42 minutes. Both begin/end by the bus station. The full [options document](NORTH-FINCHLEY-TOUR-OPTIONS.md) explains sources, limits and weaker candidates.
 
-**Decision status: awaiting owner feedback.** Neither tour, longer duration nor a general rule about theme/spacing is accepted. Sidi's next response should be recorded here against this version, including disliked choices and why. Existing E1 requirements remain separate; two outlines are not completed comparison variants.
+**Status at proposal:** awaiting owner feedback; neither option was selected then. Entry 08 records the subsequent decision to develop both and the required changes. Existing E1 requirements remain separate; two outlines are not completed comparison variants.
+
+### 08 Owner review of the two tours
+
+**17 September 2026. Artifact:** proposal 1 and its commented Word copy. [All 11 comments, IDs 0–10](reviews/2026-09-17-tour-options-comments.json); [complete response and development brief](NORTH-FINCHLEY-REVIEW-RESPONSE.md). The original body including table text is unchanged, with no tracked insertions/deletions; all four pages were inspected. Original files are preserved.
+
+**Owner direction and accepted choices:** develop both tours for actual feedback; B's extra time is welcome and it is slightly more exciting on paper. Keep the Tally Ho treatment and Grand Arcade. Drop Stanhope's dedicated detour: limited researched material and weak current continuity do not earn it. Prefer Gaumont/artsdepot for its position, present connection and fuller back story. Stanhope could be a passing story with a picture if a future route naturally passes it; this is not a requested detour or an independently verified frontage.
+
+**Corrections to our planning:** the short footprint was for economical technical tests, not a product ambition. Close stops can convey a dense centre; longer walking, some retracing and quiet can be enjoyable, particularly for social use. The earlier emphasis on even spacing and treating all empty legs as weaknesses was too rigid. Two cinemas are not inherently repetitive: they need a strong developing theme or meaningful contrast. Sidi's high-end/working-class example is illustrative, not historical evidence about our cinemas. The Kinks tour was explicitly suggested for lookup; the response links the provider's East Finchley-based tour and distinguishes its advertised design from verified experience.
+
+**New requested development:** a 2–3-minute area/theme chapter after departure from B's stop 3, on the way to stop 4; a small set of scores out of ten and a voice note after each story during the walk. Music, richer visual support and social touring remain future ideas. The specific chapter and per-story feedback are now active preparation, not merely distant ideas.
+
+**Engineer proposals, not separately owner-approved:** develop B's complete content first, then revised A; use B as the six-stop M2 baseline and A as a five-stop comparison after removing Stanhope, without padding; try three review dimensions (interest, value of being here, storytelling), optional short voice notes and explicit pause/resume around recording. Detailed departure/recording mechanics are proposed in the brief and are not implemented. No new itinerary has field acceptance. The old A routing output still contains Stanhope and is historical; do not use its timings for revised A.
+
+**Outcomes:** guidance revision 4; current M2 planning corrected; 45 comments collated. Both-tour development is authorised, not a request to choose A or B again. Physical access, final scripts, new player behavior and actual enjoyment remain unverified. Future comparative conclusions must record differences in duration, number of stories, review interruptions and exposure to shared stories, rather than claim a controlled comparison or E1 success from these comments.
 
 ## Questions to carry into a later systematic review
 
@@ -84,6 +99,9 @@ After the map walk, Sidi reported accurate location, correct audio and airplane-
 | Factual grounding plus light anecdote | Owner direction | Response to revised wording |
 | Minor solemn memorial in this walk | Rejected | Reconsider only for a compelling new reason |
 | Strongly supported imagined colour | Owner direction | Review an actual passage |
-| A versus B and specific six stops | Engineer proposals | Owner story/time preferences |
+| Both tours | Owner direction to develop both; initial preference B | Completed content and ordinary-use feedback |
+| Stanhope detour | Rejected; Gaumont preferred | New reason to include a passing treatment, if any |
+| Product duration and spacing | Short test footprint is not a product cap; variable rhythm accepted | Actual enjoyment and walking feedback |
+| B walking chapter and per-story review | Requested; concrete design proposed | Script, bounded implementation and useful owner feedback |
 | Distinct standing areas, access and crossings | Unverified | Desk inspection, then only necessary physical checks |
 | Systematic guidelines from these options | Open learning questions | Recorded choices and actual experience; no automatic promotion |

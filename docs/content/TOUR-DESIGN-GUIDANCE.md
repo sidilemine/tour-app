@@ -1,22 +1,24 @@
 # Walking tour design guidance
 
-Living editorial reference, revision 3, 16 September 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
+Living editorial reference, revision 4, 17 September 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
 
 **Our aim:** make an enjoyable, relaxing walk reveal the non-obvious stories and meaning beneath the surroundings, giving the listener a deeper connection to a place, whether new or familiar. Being there should contribute something that reading at home cannot.
 
 ## Authority and use
 
-The [editorial discussion and decision record](EDITORIAL-REVIEW-RECORD.md) is the companion history: all 34 anchored Word comments, conversation corrections, rejected examples, current options and decision status. Read it before a systematic revision of these guidelines and append new feedback there. The [two North Finchley proposals](NORTH-FINCHLEY-TOUR-OPTIONS.md) are discussion material, not new general rules or selected itineraries.
+The [editorial discussion and decision record](EDITORIAL-REVIEW-RECORD.md) is the companion history: all 45 anchored Word comments, conversation corrections, rejected examples, current options and decision status. Read it before a systematic revision of these guidelines and append new feedback there. Sidi has now directed development of both [North Finchley proposals](NORTH-FINCHLEY-TOUR-OPTIONS.md), with the [changes recorded in the latest review](NORTH-FINCHLEY-REVIEW-RESPONSE.md). Their access and scripts are not yet accepted.
 
 Sidi's preferences lead. Research provides starting assumptions; feedback from Sidi, friends and family will refine them. This document is the single maintained reference for editorial choices, alongside the technical and evidence contracts in [PRODUCT](../../PRODUCT.md) and [ARCHITECTURE](../../ARCHITECTURE.md). It replaces the initial research draft's pending-preference summary, not its research findings.
 
-The sections below distinguish **owner direction**, **working interpretations** and **future ideas**. Working interpretations are proposed ways to apply the comments, not separately approved decisions. None of these notes implements a feature or creates an additional physical test requirement. The M2 six-stop scope and compact North Finchley brief remain unchanged; the owner's twelve-stop example illustrated tonal variety.
+The sections below distinguish **owner direction**, **working interpretations** and **future ideas**. Working interpretations are proposed ways to apply the comments, not separately approved decisions. None of these notes implements a feature or creates an additional physical test requirement. B retains the six-stop M2 baseline. The latest review separates technical-test economy from product duration; it does not require every tour to be short or have six stops. The owner's earlier twelve-stop example illustrated tonal variety.
 
 Basis: Sidi's 24 comments, IDs 0–23, in `walking-tour-design-review Sidi COMMENTS.docx`, reviewed on 16 September. The Word body matches the original, with no tracked insertions or deletions. The original and commented Word files remain untouched. The [research review](WALKING-TOUR-DESIGN-RESEARCH.md) preserves source details and limitations.
 
 Additional basis: Sidi's ten comments, IDs 0–9, in `north-finchley-sample-stops-review - Sidi comments.docx`, reviewed on 16 September. The body again matches the original, with no tracked insertions or deletions. Comment numbers in the original sections refer to the research review; new sections below explicitly identify sample-review comments.
 
 Revision 3 incorporates Sidi's subsequent conversation correction: the narrator should actively bring vanished scenes to life through strongly supported imagined colour. The earlier response to sample comment 4 was too restrictive.
+
+Additional basis for revision 4: all 11 tour-options comments, IDs 0–10, reviewed on 17 September. The [exact capture](reviews/2026-09-17-tour-options-comments.json) and [response](NORTH-FINCHLEY-REVIEW-RESPONSE.md) preserve the choices and reasoning.
 
 ## Owner direction
 
@@ -48,7 +50,15 @@ A main theme and connections between stops matter. Individual insights can conne
 
 ### Treat rhythm as part of route selection
 
-Aim for roughly even spacing, avoiding clusters of stops followed by long empty stretches. Narration should fit comfortably into the relevant walking leg or planned pause, with room for directions and silence. Select subjects that fit the available time: a specific local event or revealing decision is more suitable than compressing an enormous subject into a short summary. Deliberate quiet and varied depth are welcome. Give VoiceMap's practical production advice real weight when planning this rhythm. Comments 9, 11 and 18.
+Choose a rhythm that suits the place rather than making spacing even. Closely spaced stops can reveal the density of a centre; longer walks and deliberate silence can give space to look, think or talk. Sidi accepts the roughly 106-metre central leg and a fair amount of walking/retracing in these proposals. Narration still needs room for directions and must fit the relevant leg or planned pause. A place-specific chapter while walking can supply broader context without filling every gap. Keep the subject focused enough to fit comfortably, and retain VoiceMap’s practical production advice as an input to the rhythm. Initial research-review comments 9, 11 and 18, refined by tour-options comments 3, 5 and 10.
+
+### Separate test economy from tour length
+
+Keep technical checks short when they answer the necessary question. Do not make that economy a maximum duration or smallest-footprint rule for finished tours. Sidi accepts B's extra walking and expects most eventual tours to be longer than these compact examples; that is owner product direction, not a population finding. Budget and report the ordinary tour separately from ratings, voice notes and technical interruptions. Tour-options comments 7–8.
+
+### Make a detour earn its place
+
+Judge the story together with what can be seen, present-day continuity and the cost of getting there. Stanhope's current pitch does not warrant its side-street return; Gaumont/artsdepot has a better route position, fuller researched history and a related venue today. A brief passing story with an archival image could be worthwhile where a dedicated visit is not. Similar site types can work within a strong narrative thread or explicit contrast; do not assume two cinemas are either automatically repetitive or automatically a theme. Tour-options comments 2, 4 and 9.
 
 ### Vary tone while keeping the walk easy to enjoy
 
@@ -70,7 +80,7 @@ Keep a repertoire of endings and choose what suits the tour. A climax and a refl
 
 ### Structure and pacing
 
-Use a clear theme as a selection aid, without forcing unrelated material into a thesis. Prefer a calm conversational voice with occasional tonal variation. Roughly even spacing means a comfortable rhythm, not identical metres or audio lengths: crossings, terrain, a strong story and a useful viewpoint can justify variation. These are editorial judgements, not numerical research findings.
+Use a clear theme as a selection aid, without forcing unrelated material into a thesis. Prefer a calm conversational voice with occasional tonal variation. Use central clusters, longer legs and quiet deliberately; assess whether they reward the actual walk. Crossings, terrain, a strong story and a useful viewpoint affect that judgement. These are editorial judgements, not numerical research findings.
 
 For each candidate retain a brief note: the non-obvious insight; what the visitor experiences here; theme connection; evidence; intended tone; access; and the cost in walking and listening time. Compare candidates against one another so that several individually good stops do not repeat the same idea.
 
@@ -127,7 +137,10 @@ The first two follow Sidi's comment; the fuller repertoire is an initial proposa
 - **Personal relevance — hypothesis.** Sidi suggests that choosing subjects one cares about, alongside satisfaction in self-directed discovery, might explain some visitors' preference for their own resources. The Edinburgh Castle study does not establish either mechanism. Use this as a question for later personalisation and feedback, not a causal research finding. Comment 3.
 - **Music and sound — distant ideas.** Ambient music, soundscapes and filler playlists are retained for later exploration, without current implementation. Comment 4.
 - **Interactive conversation — distant idea.** Speech recognition and an LLM might eventually allow responsive or real-time dialogue. The recorded tour cannot currently hear an answer; that is a present scope limit, not a claim of permanent impossibility. Live services remain outside the current offline product. Comment 7.
-- **Voice feedback — requested direction, design pending.** The research draft's feedback questions were for testers. Capture short spoken reactions while the experience is fresh, without a street-side written report. For the next ordinary-use review, an existing phone recorder is the simplest proposed interim approach if convenient. An in-app memo action remains unscheduled; before adding it, define deliberate recording, pause interaction, local storage and export. No background recording, transcription service or sharing is implied. Comment 22.
+## Current experiments for the two-tour review
+
+- **Per-story ratings and voice feedback — now requested for the two-tour review.** Sidi wants a small number of dimensions rated out of ten and a voice note after each story while out. The [concrete proposal](NORTH-FINCHLEY-REVIEW-RESPONSE.md#a-small-review-after-each-story) uses interest, value of being here and storytelling, with an explicit local recording action and pause preserved until Resume. These dimensions are proposed, not a validated instrument. Implementation remains pending; an existing recorder is an interim fallback, not proof of an integrated review flow. Research-review comment 22 and tour-options comment 6.
+- **Walking narration — one current experiment, broader use later.** Develop a 2–3-minute chapter on B's 3→4 leg, after leaving the meeting house. It should explain the area and prepare the villas story while leaving quiet. Record its own identity and feedback; never count it as another physical stop. Music and automatically filling all quiet remain future ideas. Tour-options comments 5 and 10.
 
 ## How to use this for the next draft
 
@@ -135,7 +148,7 @@ Write one clear tour promise and theme. Compare candidate insights and routes, t
 
 Sidi preferred the light tone of the [first North Finchley sample pair](NORTH-FINCHLEY-SAMPLE-STOPS.md), with firmer factual grounding. The memorial sample is retired. [Tally Ho revision 2](TALLY-HO-SAMPLE-V2.md) puts the road and coaching history before the postcard anecdote; the new wording and duration remain for review. Use the next useful contrast in subject or treatment rather than manufacturing a second solemn sample.
 
-Keep this guide current as preferences change. Future automation should use the same versioned editorial reference rather than accumulating inconsistent rules in separate prompts. There is no new automation, route choice, app change or physical acceptance claim in this revision.
+Keep this guide current as preferences change. Future automation should use the same versioned editorial reference rather than accumulating inconsistent rules in separate prompts. This revision records the direction to develop both tours, the rejected detour and the requested chapter/review flow. It implements no app behavior and establishes no physical acceptance.
 
 ## Comment coverage and revision history
 
@@ -146,3 +159,5 @@ Revision 1 records Sidi's Word comments and the engineer's explicitly labelled i
 Revision 2 applies all ten sample-review comments: 0 context before anecdote and flexible depth; 1 meaningful statistics; 2 accurate commemoration; 3 relevant detail; 4 purposeful evocation; 5 no invented memorial intent; 6 selection and formal treatment of solemn subjects; 7–8 one clear purpose; 9 develop Tally Ho. The revised sample retains claim-level source limitations. No new field test or application change is requested.
 
 Revision 3 corrects the overly restrictive interpretation of imagined scenes after Sidi's conversation feedback. Strongly supported imaginative colour is encouraged: the narrator helps the listener experience the character of the place. Evidence constrains the historical foundation without requiring every ordinary descriptive detail to have been individually recorded. The separate correction about memorial intent and the preference on solemn sites remain in force. This clarification updates the maintained guidance; the earlier Word review remains the dated review copy.
+
+Revision 4 applies all 11 tour-options comments: 0–1 retain Tally Ho/Arcade; 2 remove the Stanhope detour and consider passing/visual treatment; 3 variable central spacing; 4 prefer Gaumont; 5 walking chapter; 6 both tours and ratings/voice notes; 7 accept B’s duration; 8 distinguish technical economy from product duration; 9 narrative thread/contrast and Kinks lookup; 10 walking, social silence and optional future sound. It supersedes the over-applied short-tour/even-spacing assumptions while retaining evidence and safe-direction requirements.

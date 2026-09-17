@@ -1,16 +1,16 @@
-# Next implementation: one curated offline walk
+# Next implementation: curated offline walking tours
 
-Prepared 13 September; status updated 16 September 2026. **First map slice implemented and verified using combined desk/outdoor evidence. M1 passed its [acceptance gate](../test-results/M1-closure.md).** These are small ordered tasks for the next assigned milestone, not authorization to bypass the lifecycle gate. Existing research, provisional package validation and listening drafts are retained.
+Prepared 13 September; status updated 17 September 2026. **First map slice implemented and verified using combined desk/outdoor evidence. M1 passed its [acceptance gate](../test-results/M1-closure.md).** These are small ordered tasks for the next assigned milestone, not authorization to bypass the lifecycle gate. Existing research, provisional package validation and listening drafts are retained.
 
 ## Preparation available now
 
-Latest editorial proposal, 16 September: [two North Finchley options](NORTH-FINCHLEY-TOUR-OPTIONS.md) compare an entertainment-led walk (1.4 km / 28–33 minutes) with broader neighbourhood variety (1.9 km / 37–42 minutes). Actual pedestrian responses, provisional points and maps are saved. These establish desk feasibility estimates, not verified visitor positions or a selected itinerary; B deliberately exceeds the earlier short-walk target. The [editorial review record](EDITORIAL-REVIEW-RECORD.md) collates prior comments and tracks the pending choice. No new field work is requested at this stage.
+Latest owner review, 17 September: [develop both North Finchley tours](NORTH-FINCHLEY-REVIEW-RESPONSE.md), with B’s additional walking welcomed and A’s Stanhope detour removed. Prepare B’s 2–3-minute chapter between stops 3 and 4 and a few scores out of ten plus a voice note after each story. The [editorial record](EDITORIAL-REVIEW-RECORD.md) collates all 45 comments and the corrections. The original A route/timing is now historical; B’s desk estimate is 1.9 km / 37–42 minutes before review overhead and final chapter timing. No new field work is requested at this review stage.
 
 Editorial preparation, 16 September: [walking-tour design research](WALKING-TOUR-DESIGN-RESEARCH.md) brings together visitor studies, heritage conventions and audio-tour practice. Sidi's Word review now informs the [living design guidance](TOUR-DESIGN-GUIDANCE.md): non-obvious insights, a meaningful theme, relaxed pacing, varied tone and comfortable leg/story timing. It distinguishes owner direction from proposed applications and future features. Use it before selecting the final route or fixing narration lengths; it adds no physical test gate or feature implementation.
 
 Sidi reviewed the [first two North Finchley sample stops](NORTH-FINCHLEY-SAMPLE-STOPS.md): develop Tally Ho with factual context before its light anecdote, and retire the minor memorial stop. [Tally Ho revision 2](TALLY-HO-SAMPLE-V2.md) and the living guidance apply all ten comments. The revised wording still needs owner judgement; retained stops need route/viewpoint checks later. These are not full E1 variants or a selected six-stop walk.
 
-Current owner direction: minimise walking time while preserving valid tests, beginning near North Finchley bus station and finishing nearby. The [short-walk evidence plan](M2-TEST-PLAN.md) replaces the earlier provisional area/duration target with a 20–30-minute design goal, subject to six useful verified stops. It distinguishes desk checks, route survey, the completed walk and targeted regressions. The first map slice is now authorized; neither the old Finchley sequence nor the new candidate pool is a verified itinerary.
+Current owner direction: economise technical tests, but let story and walking value determine finished-tour duration. The earlier 20–30-minute product target was over-applied and is superseded. Start/end convenience remains. The [evidence plan](M2-TEST-PLAN.md) distinguishes desk checks, necessary route observations, ordinary tour use and targeted regressions; neither new tour is field-verified.
 
 The 16 September [personal-use testing policy](../../AGENTS.md#testing-policy-for-the-personal-prototype) governs each task below: reuse accepted evidence, automate relevant checks and request physical work only for a material unresolved question. Recorded rare recoverable issues need not block progression. “Done when” describes the useful outcome; it does not require a physical test for every listed failure mode.
 
@@ -28,11 +28,11 @@ Use the existing [map/routing comparison](MAPS-AND-ROUTING.md) as the experiment
 
 Done when: the entire candidate area pans/zooms after cold opening with networking off; map labels/styles/glyphs/sprites work; missing/corrupt resources and leaving coverage have explicit behavior. Record size, load time, peak memory, SDK/data versions and the rights decision. A drawn route on a blank canvas is not a pass. No backend or arbitrary rerouting is added.
 
-### 2. Establish one usable route and content version
+### 2. Develop both tours with B as the six-stop baseline
 
-Use the saved candidate routing to compare stories and walking costs with Sidi. For the retained set, complete visitor records, reroute between reviewed positions as needed, then review crossings, access and all legs. Keep the six-stop order provisional until spacing and access are known. Combine or replace close stops if they cannot support distinct useful experiences; bring a material change to the six-stop scope to Sidi.
+Develop B’s full script and 3→4 walking chapter, then A’s revised five-stop thread after removing Stanhope. Reuse shared research. Reroute A and refine both between reviewed visitor positions; review crossings, access and all legs. Close central stops are editorially accepted, subject to workable physical placement. Do not add a weak replacement or count a walking chapter as a stop merely to make A six; B supplies the six-stop baseline. Final access and directions remain provisional.
 
-Done when: six retained stops have evidence and field review records, all legs/directions have provenance and observed access, and the measured walking/listening/silence budget fits. Factual script passages map to reviewed claims; source freshness, uncertainty, reviewer/date/method and rights are explicit. The manifest fails readiness for any unresolved critical physical or asset requirement.
+Done when: B’s six stops and every retained A stop have evidence and field review records, all legs/directions have provenance and observed access, and each measured walking/listening/silence budget fits. Factual script passages map to reviewed claims; source freshness, uncertainty, reviewer/date/method and rights are explicit. The manifest fails readiness for any unresolved critical physical or asset requirement.
 
 ### 3. Import a complete local package without losing a working one
 
@@ -44,16 +44,20 @@ Done when: a valid package imports locally; truncated/missing/tampered resources
 
 Adapt the proven M1 session without mixing location, narration and progress. Provide local map/route/directions, transcripts/sources and manual stop choice, replay, skip and an explicit arrival fallback. Keep one pending eligible stop, never a backlog. Stage any new audio arbitration first in deterministic tests.
 
+Add B’s leg chapter as separate versioned narration with departure eligibility, once-only progress, fresh route-relative position, manual fallback and stale-chapter handling. It must respect holds, next-stop arrival and cue priority. Replay these transitions before one brief audible/departure check; existing native evidence remains reusable. Detailed proposed behavior is in the [development brief](NORTH-FINCHLEY-REVIEW-RESPONSE.md#a-walking-chapter-with-a-purpose).
+
 A prepared actionable walking cue may pause a story, play, and restore its saved offset. Check manual intent before both cue start and story resume. A user pause during preparation, the cue, focus recovery or a restored session cancels automatic continuation. If a cue is stale after departure, do not play an outdated instruction; retain usable local guidance and manual choice. No online rerouting dependency is introduced.
 
 Done when: relevant race tests cover arrival during narration, cue versus pause in both orders, pause during cue, interruption, stale cue, skip/end and process death during story/cue handover. Confirm new audible handover and pause behavior in one short phone session; reuse unchanged native interruption/recovery evidence and add cases only for a material gap or failure. A reducer pass does not establish audible behavior. The whole planned walk remains manually usable without location permission or network.
 
-### 5. Walk, correct and compare
+### 5. Add local per-story feedback and compare both tours
 
-Use the six-stop walk offline, then briefly review story length, directions, arrivals and enjoyment. Fix blockers and retain low-impact issues for normal-use feedback; retest only what a fix needs. E1 is a separate decision: compare short samples first and walk representative segments only where it would change the choice, recording presentation order and concrete differences.
+Build the [small review flow](NORTH-FINCHLEY-REVIEW-RESPONSE.md#a-small-review-after-each-story): three proposed 0–10 dimensions plus a deliberate local voice recording linked to tour/version, story and attempt. Keep review separate from progress and saving separate from Resume. Recording denial/failure must preserve ratings and prior notes. Verify the local storage/export boundary and audible pause behavior proportionately before handing it over.
+
+Use both tours offline for owner feedback, recording order and prior exposure to shared stories. Report review overhead separately from normal duration; a full comparison need not happen on the same day or be repeated to supply identical technical evidence. Fix blockers and retain low-impact issues for normal-use feedback; retest only what a fix needs. E1 remains a separate decision: these unequal outlines and desk reactions alone do not meet its acceptance gate or authorise a factory.
 
 M2 is done when the curated offline tour is useful under its stated acceptance scope, with remaining non-blocking limits recorded. E1 separately records proceed, revise and repeat, or do not automate yet before authorizing a factory; it need not delay the usable M2 tour. Backend infrastructure, a reusable city knowledge base, driving and a full AI factory remain outside this milestone.
 
 ## Decisions still open
 
-The PMTiles native proof and targeted map regression are complete within their recorded Pixel scope. Still open: verified visitor points and feasible leg timing; final six-stop selection, voice/rights and script duration. These require evidence or later feedback, not guesses now. No further M1 or map-regression phone test is requested. Discuss the prepared route/content options before the next implementation slice or survey, with purpose and owner time stated before any field request.
+The PMTiles native proof and targeted map regression are complete within their recorded Pixel scope. Still open: verified visitor points and feasible leg timing; final six-stop selection, voice/rights and script duration. These require evidence or later feedback, not guesses now. No further M1 or map-regression phone test is requested. Both-tour development is authorised; do not ask Sidi to choose A or B again. Implement the bounded player/review work after its content and contract preparation, with purpose and owner time stated before any field request. The exact feedback dimensions and chapter mechanics remain engineering proposals, not observed behavior.

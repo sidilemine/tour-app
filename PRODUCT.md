@@ -8,7 +8,7 @@ The first useful product is one curated six-stop walk that Sidi would willingly 
 
 Tours are prepared before use. A downloaded tour contains the local map, planned walking route, directions, narration, transcripts, relevant images/attributions and everything needed to recover progress. Normal touring does not call a server, LLM, TTS or online routing service. The user can complete the planned walk manually if GPS is unreliable.
 
-Editorial direction is maintained in the [walking tour design guidance](docs/content/TOUR-DESIGN-GUIDANCE.md), incorporating Sidi's 16 September Word comments. It distinguishes owner preferences, working assumptions and future ideas; consult it for theme, story selection, pacing and tone. It does not expand the implementation scope below.
+Editorial direction is maintained in the [walking tour design guidance](docs/content/TOUR-DESIGN-GUIDANCE.md), incorporating Sidi's Word reviews through 17 September. It distinguishes owner preferences, working assumptions and future ideas; consult it for theme, story selection, pacing and tone. It does not expand the implementation scope below.
 
 ## Personal-use delivery and testing
 
@@ -55,7 +55,7 @@ The lab can select a separate long-A timing fixture using the same checked path 
 
 Use the [editorial discussion and decision record](docs/content/EDITORIAL-REVIEW-RECORD.md) alongside the [living design guidance](docs/content/TOUR-DESIGN-GUIDANCE.md). Preserve feedback, alternatives and corrections there so later systematic guidelines can be traced to actual examples and outcomes, rather than inferred from the latest draft alone.
 
-One walk in a location Sidi can test, six publicly reachable stops, a clear start/end, verified walking legs and standing positions. Include natural spoken narration, transcripts, clear manual controls, visible route, local map and directions, sources, asset rights and restart recovery. The actual area, themes, walking duration and voice are chosen with Sidi during early curation, not invented as settled decisions here.
+The M2 baseline is one walk in a location Sidi can test, with six publicly reachable stops, a clear start/end, verified walking legs and standing positions. Sidi now directs development of both North Finchley candidates: B retains that six-stop baseline, with A developed as the comparison tour after removing the rejected Stanhope detour. Finished-tour length follows its content and walking value; the short-footprint request applied to economical technical tests. See the [review brief](docs/content/NORTH-FINCHLEY-REVIEW-RESPONSE.md) for the requested B walking chapter and per-story ratings/voice notes, whose implementation remains pending. Include natural spoken narration, transcripts, clear manual controls, visible route, local map and directions, sources, asset rights and restart recovery. The actual area, themes, walking duration and voice are chosen with Sidi during early curation, not invented as settled decisions here.
 
 Accessibility descriptions must state what was checked, when and what remains unknown: stairs, gradient, surface, crossings, gates, opening hours, fees and rest options where relevant. Do not advertise a route as wheelchair accessible on inference alone. An unavailable or unsafe stop must have a curated alternative or be omitted; never guide through a closed gate because a route line exists.
 

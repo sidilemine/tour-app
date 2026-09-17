@@ -2,7 +2,9 @@
 
 Discussion proposal 1, 16 September 2026. [Word copy for comments](north-finchley-tour-options-review.docx). Decision and later feedback belong in the [editorial review record](EDITORIAL-REVIEW-RECORD.md), alongside the [living guidance](TOUR-DESIGN-GUIDANCE.md).
 
-## Recommendation
+**Review update, 17 September:** Sidi directs development of both tours, accepts B's extra walking and rejects Stanhope as a dedicated detour. See the [comment response and current development brief](NORTH-FINCHLEY-REVIEW-RESPONSE.md). The proposal below and its Word copy remain the dated review baseline; A's saved route/timing still includes Stanhope. The short technical-test footprint is no longer a product-duration constraint.
+
+## Original recommendation
 
 **Start with A if keeping the outing short is the priority. Consider B if the extra ten minutes buys enough variety.** A has the stronger concentration of entertainment stories; B has the better balance of built history, visible art and ordinary community life. These are two concrete proposals for discussion, not selected itineraries or completed E1 variants. My preference for B's variety is an editorial judgement, not a walking observation.
 
@@ -88,4 +90,4 @@ The route returns street/path geometry and sometimes an unhelpful instruction su
 
 ## Review status
 
-Sources and saved route summaries checked; both proposal maps and all four rendered Word pages visually reviewed. Word story order, timing and qualifications match this proposal. All 34 captured comments match the original Word text and have anchors; source-file hashes confirm the originals are unchanged. Local documentation links and whitespace checks pass. No narration recorded, app code changed, device checked or tour walked. Sidi has authorised preparation and options, not selected A, B, a replacement, a duration increase or a general editorial rule derived from them.
+Sources and saved route summaries checked; both proposal maps and all four rendered Word pages visually reviewed. Word story order, timing and qualifications match this proposal. All 34 captured comments match the original Word text and have anchors; source-file hashes confirm the originals are unchanged. Local documentation links and whitespace checks pass. No narration recorded, app code changed, device checked or tour walked. At delivery Sidi had authorised preparation and options only. The 17 September update above records the later feedback and supersedes that pending-choice status.

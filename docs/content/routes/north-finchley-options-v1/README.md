@@ -7,6 +7,8 @@
 - `A-response.json`, `B-response.json`: unmodified successful responses, including polyline6 geometry, leg summaries and manoeuvres. Engine/data revision was not supplied; request date is known, routing graph age is not.
 - `A-map.svg`, `B-map.svg` and PNG copies: original proposal graphics from saved geometry and a bounded OSM street extract. Map scales differ; each has a 100 m scale bar. Markers show provisional input points and may sit off the snapped line. Source graphics are not copied from a tile service.
 
+**17 September review:** A’s dedicated Stanhope detour was rejected. These immutable requests/responses and maps preserve proposal 1; A’s figures do not describe the revised five-stop comparison. B’s source route remains provisional. See the [review response](../../NORTH-FINCHLEY-REVIEW-RESPONSE.md).
+
 ## Results
 
 | Option | Route length | Router moving time | Leg lengths including initial approach |
