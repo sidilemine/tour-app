@@ -30,3 +30,7 @@ Allow approximately five minutes with the touring headset. Confirm listening rea
 ## Sources
 
 Implementation inspected against installed Expo Audio 57.0.5 and official [Expo recording API](https://docs.expo.dev/versions/v57.0.0/sdk/audio/), [Android audio focus](https://developer.android.com/media/optimize/audio-focus), [communication device selection](https://developer.android.com/develop/connectivity/bluetooth/ble-audio/audio-manager), and [MediaRecorder routed-device API](https://developer.android.com/reference/android/media/MediaRecorder#getRoutedDevice()). Native API availability and assembled code are not evidence that this particular headset works.
+
+## Subsequent review-resume correction
+
+The next assignment found that the 138-test run preceded adding guide case 21: the final guide-9 tree retained an obsolete expected case count of 20. The new suite exposed that failure; the assertion is now updated to require all 21 specific cases. The earlier claim did not establish a passing suite for the final guide-9 tree. Subsequent owner direction changes explicit review close to resume an active tour; the earlier close-stays-held procedure is historical, superseded by guide 10.

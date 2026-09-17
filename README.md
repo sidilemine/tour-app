@@ -183,7 +183,7 @@ On the pinned Android stack, the React Native developer menu’s **Disable Fast 
 
 ## Prepare the authored tours
 
-The self-contained APK embeds both tour transports and the exact shared map. **Prepare both Finchley tours offline** verifies media before adding them to the library. **Import tour package** accepts the same area-specific version-1 transport; it is not a universal new-area downloader. Each tour keeps its own progress. Reviews pause narration until explicit Resume; private GPS diagnostics default off in the tour home.
+The self-contained APK embeds both tour transports and the exact shared map. **Prepare both Finchley tours offline** verifies media before adding them to the library. **Import tour package** accepts the same area-specific version-1 transport; it is not a universal new-area downloader. Each tour keeps its own progress. Reviews pause narration while open; saving and closing resumes an active tour; private GPS diagnostics default off in the tour home.
 
 ```sh
 npm ci --prefix tools/voice-samples

@@ -13,7 +13,7 @@ export type State = {
 };
 export type Event = { at: number } & (
   | { type: 'start'; diagnostics: boolean }
-  | { type: 'pause'; reason?: string } | { type: 'resume' } | { type: 'end' }
+  | { type: 'pause'; reason?: string } | { type: 'resume' } | { type: 'review-close' } | { type: 'end' }
   | { type: 'automatic'; enabled: boolean }
   | { type: 'manual'; index: number } | { type: 'skip'; index: number }
   | { type: 'fix'; fix: Fix }
@@ -121,6 +121,10 @@ export function reduce(previous: State, event: Event, fixture: Fixture): { state
       s.playback.status = s.playback.index === null ? 'idle' : 'paused';
       effects.push({ type: 'pause' });
       break;
+    case 'review-close':
+      // Explicit review completion resumes an existing walk, never starts one.
+      if (!s.active) break;
+      // falls through
     case 'resume':
       s.hold = null;
       if (s.playback.index !== null) play(s.playback.index, s.playback.offset); else auto();

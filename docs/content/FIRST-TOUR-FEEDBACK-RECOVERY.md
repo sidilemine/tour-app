@@ -132,3 +132,7 @@ No whole-memo re-recording is requested. A separate technical follow-up can esta
 ## Retrieval and phone handoff
 
 The matching development APK was installed in place to retrieve private app storage, then the existing self-contained George APK was restored. No uninstall, clearing, progress reset or recording playback. Cold reopening without Metro showed B selected, all stops complete and tracking stopped. The optional Play Protect upload was declined. The preserved archive includes prior notes as well as this outing; private recordings, exact device paths and location traces stay out of Git.
+
+## Recovery completeness clarified with Sidi
+
+Sidi asked whether all speech was recovered. The engineer clarified that intact files and useful feedback from every subject do not establish complete transcription: garbled/uncertain passages and speech after recording stopped may be missing. Sidi accepts proceeding with the recovered material and building on it in subsequent tours. No further recovery or re-recording is requested. Separately, he directs explicit review saving/closing to resume the tour; see [the implementation record](../test-results/M2-review-resume.md).

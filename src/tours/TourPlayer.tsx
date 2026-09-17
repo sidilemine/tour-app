@@ -72,7 +72,7 @@ export function TourPlayer({ onOpenLab }: { onOpenLab: () => void }) {
       <View style={styles.card}>
         <Text style={styles.title}>{tour.title}</Text>
         <Text style={styles.body}>{narration.introduction}</Text>
-        <Text style={styles.body}>{narration.reviewNote}</Text>
+        <Text style={styles.body}>{narration.reviewNote.replace('close it and Resume when ready', 'save and close it to resume the tour')}</Text>
         <Button secondary label="Map and numbered stops" action={() => setMap(true)} />
       </View>
       <View style={styles.card}>

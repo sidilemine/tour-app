@@ -148,3 +148,34 @@ test('passing B on the onward route keeps it unplayed until a fresh return arriv
   assert.deepEqual(h.history.flatMap(x=>x.effects).filter(x=>x.type==='play').map(x=>x.index),[0,1]);
   assert.equal(h.state.stops[2],'unplayed');
 });
+
+test('explicit review close resumes saved narration at its offset', () => {
+  const h = harness(); h.send({ type: 'start', at: 0, diagnostics: false });
+  h.send({ type: 'audio', at: 5000, token: h.state.playback.token, playing: true, finished: false, offset: 5, buffering: false });
+  h.send({ type: 'pause', at: 5100, reason: 'review' });
+  const result = h.send({ type: 'review-close', at: 10000 });
+  assert.equal(h.state.hold, null);
+  assert.ok(result.effects.some(e => e.type === 'play' && e.index === 0 && e.offset === 5));
+});
+test('review close re-enables subsequent location arrivals without replaying the completed stop', () => {
+  const h = harness(); h.send({ type: 'start', at: 0, diagnostics: false }); h.finish(12000);
+  h.send({ type: 'pause', at: 13000, reason: 'review' });
+  assert.deepEqual(h.send({ type: 'review-close', at: 14000 }).effects, []);
+  h.arrive(1, 20000); assert.equal(h.state.playback.index, 1);
+});
+test('review close preserves automatic-off and never restarts an ended walk', () => {
+  const h = harness(); h.send({ type: 'start', at: 0, diagnostics: false }); h.finish(12000);
+  h.send({ type: 'pause', at: 13000, reason: 'review' });
+  h.send({ type: 'automatic', at: 14000, enabled: false }); h.arrive(1, 20000);
+  assert.deepEqual(h.send({ type: 'review-close', at: 25000 }).effects, []);
+  assert.equal(h.state.automatic, false);
+  h.send({ type: 'end', at: 26000 });
+  const result = h.send({ type: 'review-close', at: 27000 });
+  assert.deepEqual(result.effects, []); assert.equal(h.state.active, false); assert.equal(h.state.hold, 'ended');
+});
+test('review close still requires fresh position for a pending arrival', () => {
+  const h = harness(); h.send({ type: 'start', at: 0, diagnostics: false }); h.finish(12000);
+  h.send({ type: 'pause', at: 13000, reason: 'review' }); h.arrive(1, 20000);
+  assert.deepEqual(h.send({ type: 'review-close', at: 60000 }).effects, []);
+  h.fix(1, 62000); assert.equal(h.state.playback.index, 1);
+});

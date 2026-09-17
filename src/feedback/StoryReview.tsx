@@ -5,7 +5,7 @@ import { Fixture } from '../domain/fixture';
 import { narrationAt } from '../domain/narration';
 import { ExportDialog } from '../export/ExportDialog';
 import { ExportDraft, makeExport } from '../export/jsonExport';
-import { setReviewMode } from '../session/session';
+import { finishReview, setReviewMode } from '../session/session';
 import { FeedbackCapture, CapturePhase } from './capture';
 import { recordingAdapter, startVerifiedRecording } from './recordingInput';
 import { exportReviews, Review, VoiceNote } from './model';
@@ -143,7 +143,7 @@ export function StoryReview({ fixture, storyIndex, onClose }: { fixture: Fixture
     try {
       await capture.current?.stop('close');
       if (current.current) feedbackStore().update(current.current.id, { status: 'saved' });
-      await setReviewMode(false); onClose();
+      await finishReview(); onClose();
     } catch (error) { setMessage(`Could not finish saving: ${String(error)}. Earlier feedback is retained.`); closePending.current = false; setClosing(false); }
   }
   async function saveVoice(voice: VoiceNote, key = storyId) {
@@ -179,7 +179,7 @@ export function StoryReview({ fixture, storyIndex, onClose }: { fixture: Fixture
   return <Modal visible animationType="slide" onRequestClose={() => void close()}>
     <ScrollView contentContainerStyle={s.content} keyboardShouldPersistTaps="handled">
       <Text style={s.heading}>Review this story</Text><Text style={s.title}>{storyTitle}</Text>
-      <Text style={s.text}>Stop somewhere comfortable. Scores are optional: 0 is lowest, 10 highest. Close this review, then choose Resume when you want narration again.</Text>
+      <Text style={s.text}>Stop somewhere comfortable. Scores are optional: 0 is lowest, 10 highest. Saving and closing this review resumes your active tour. Saving a voice note keeps this review open and narration paused.</Text>
       {review && <>
         <Score title="Interest" question="How much did you want to hear this story?" value={review.interest} disabled={busy} onChange={interest => update({ interest })} />
         <Score title="Value of being here" question="How much did being here add to the story?" value={review.placeValue} disabled={busy} onChange={placeValue => update({ placeValue })} />
@@ -200,7 +200,7 @@ export function StoryReview({ fixture, storyIndex, onClose }: { fixture: Fixture
         </View>)}
       </>}
       <Text accessibilityRole="alert" style={s.message}>{message}</Text>
-      <Button title="Save review and close" disabled={closing || exporting} onPress={() => void close()} />
+      <Button title="Save review and resume tour" disabled={closing || exporting} onPress={() => void close()} />
       {history.length > 0 && <>
         <Text style={s.title}>Saved history for this tour</Text>
         <Text style={s.text}>Each opening keeps a separate attempt. Earlier notes remain saved.</Text>

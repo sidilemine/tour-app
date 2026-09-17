@@ -102,11 +102,16 @@ function disposePlayer() {
 export async function setReviewMode(enabled: boolean): Promise<void> {
   reviewActive = enabled;
   if (enabled) await dispatch({ type: 'pause', at: Date.now(), reason: 'review' });
-  // Closing/saving a review never resumes narration.
+  // Passive unmount/background cleanup only removes the UI gate.
+}
+// Called only after an explicit close has saved feedback and stopped note audio.
+export async function finishReview(): Promise<void> {
+  reviewActive = false;
+  if (AppState.currentState === 'active') await dispatch({ type: 'review-close', at: Date.now() });
 }
 export function dispatch(event: Event): Promise<void> {
   if (event.type === 'end') startEpoch++;
-  if (reviewActive && ['manual', 'resume', 'start'].includes(event.type)) return Promise.reject(Error('Close the story review before resuming narration.'));
+  if (reviewActive && ['manual', 'resume', 'review-close', 'start'].includes(event.type)) return Promise.reject(Error('Close the story review before resuming narration.'));
   // A queued pause cancels in-flight asynchronous preparation before any sound.
   const playEpoch = playGate.receive(event.type);
   if (event.type === 'pause' || event.type === 'end') player?.pause();
@@ -119,7 +124,7 @@ export function dispatch(event: Event): Promise<void> {
     store.commit('progress', { fixture: JSON.stringify(fixture), state: result.state }, result.state.diagnostics ? { kind: 'transition', fixtureKey: fixtureKey(fixture), event, before: state, after: result.state, effects: result.effects, reason: result.reason } : undefined);
     state = result.state;
     recent.unshift({ reason: result.reason, at: event.at }); recent.splice(20); notify();
-    if ((event.type === 'resume' || (event.type === 'audio' && event.finished) || event.type === 'automatic')
+    if ((event.type === 'resume' || event.type === 'review-close' || (event.type === 'audio' && event.finished) || event.type === 'automatic')
       && pendingArrivalNeedsFreshFix(state, event.at)) {
       record('pending-arrival-waiting-for-fresh-location', {
         index: eligible(state), fixAgeMs: state.location.fix ? event.at - state.location.fix.timestamp : null,
