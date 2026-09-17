@@ -7,16 +7,18 @@
 - `A-manifest.json`, `B-manifest.json`: readable inspection copies with audio payloads replaced by an explanatory marker; **not import files**.
 - `preparation.json`: measured durations, bytes/hashes, provider-route references, voice/rate and estimates. The ordinary duration excludes optional review time; B's chapter overlaps walking.
 
-All speech was generated locally with the installed macOS Daniel voice at 145 words per minute, then AAC encoded at 64 kb/s. No paid synthesis, network generation, music or third-party audio was used. Source photographs and Street View frames were inspected but are not included in the packages. Distribution/voice rights have not been cleared for publication; these files are for Sidi's private review.
+Current version 2 speech is generated locally with **Kokoro George (`bm_george`)**, selected by Sidi after the saved Emma/George audition, at speed 1. Paragraph-level narration is encoded as 24 kHz mono AAC at 64 kb/s, with a common loudness target. Model/runtime provenance is recorded in `preparation.json`; Kokoro is Apache-2.0. Version 1 used macOS Daniel and remains in Git history and any earlier phone imports. No paid synthesis, network generation, music or third-party audio was used. Source photographs and Street View frames were inspected but are not included in the packages. These complete tour packages remain for Sidi's private review; public distribution is a separate decision.
 
 Reproduce this particular authored pair with:
 
 ```sh
+npm ci --prefix tools/voice-samples
+# First-time model caching: npm run samples --prefix tools/voice-samples
 node --import tsx tools/prepare-finchley-tours.ts
 node --import tsx --test tests/prepared-tours.test.ts
 ```
 
-The tool caches unchanged narration by transcript SHA-256 under ignored `artifacts/finchley-audio/`. It saves real-provider responses separately, checks the package contract and measures actual files. It does not research, choose new places, verify current access or call an LLM. Once a version has been imported on the phone, change the content version before changing its fixture or media; changed content under the same ID/version is rejected.
+The tool caches unchanged narration using transcript plus voice/model/render settings under ignored `artifacts/finchley-audio-george-v2/`. The original Daniel cache remains separate. It saves real-provider responses separately, checks the package contract and measures actual files. It does not research, choose new places, verify current access or call an LLM. Once a version has been imported on the phone, change the content version before changing its fixture or media; changed content under the same ID/version is rejected.
 
 ## Physical data and first-use scope
 

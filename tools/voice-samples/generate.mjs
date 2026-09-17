@@ -1,6 +1,7 @@
 // Local audition only. Never imports or changes a mobile tour package.
 import { mkdir, readFile, writeFile, rename, access } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
+import { Buffer } from 'node:buffer';
 import { fileURLToPath } from 'node:url';
 import { resolve, dirname } from 'node:path';
 import { spawnSync } from 'node:child_process';

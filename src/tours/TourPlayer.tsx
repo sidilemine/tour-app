@@ -23,6 +23,11 @@ export function TourPlayer({ onOpenLab }: { onOpenLab: () => void }) {
   const tour = fixture?.narration ? fixture : null, narration = tour?.narration;
   const playing = state.playback.index === null || !tour ? undefined : narrationAt(tour, state.playback.index);
   const next = eligible(state);
+  // Retain old packages/progress, but show the latest edition of each walk.
+  // An older selected edition stays visible until the user changes tours.
+  const visibleLibrary = library.filter(entry =>
+    (entry.fixture.id === tour?.id && entry.fixture.version === tour.version)
+    || !library.some(newer => newer.fixture.id === entry.fixture.id && newer.fixture.version > entry.fixture.version));
   async function run(action: () => Promise<unknown>) {
     setBusy(true);
     try { await action(); } catch (error) { Alert.alert('Could not finish', String(error)); }
@@ -52,7 +57,7 @@ export function TourPlayer({ onOpenLab }: { onOpenLab: () => void }) {
     {fatal ? <Text selectable style={styles.warning}>{fatal}</Text> : null}
     <View style={styles.card}>
       <Text style={styles.title}>Your tours</Text>
-      {library.map(entry => <View key={`${entry.fixture.id}@${entry.fixture.version}`} style={styles.item}>
+      {visibleLibrary.map(entry => <View key={`${entry.fixture.id}@${entry.fixture.version}`} style={styles.item}>
         <Text style={styles.title}>{entry.fixture.title}</Text><Text style={styles.body}>{entry.fixture.narration?.description}</Text>
         <Button label={tour?.id === entry.fixture.id && tour.version === entry.fixture.version ? 'Selected' : 'Choose this tour'} disabled={busy || state.active || (tour?.id === entry.fixture.id && tour.version === entry.fixture.version)} action={() => void run(() => session.loadFixture(JSON.stringify(entry.fixture)))} />
       </View>)}

@@ -8,7 +8,7 @@ The bounded mobile transport is `walking-tour-package`, version 1, with a versio
 
 Import publishes against the latest catalogue, preserving other imports; the same ID/version cannot name different content. A same-version repair can refresh missing/corrupt audio without resetting progress. Start verifies the current directory/assets. Old versions and unsuccessful orphan stages are not aggressively garbage-collected; measured storage pressure would justify cleanup later. No network download or hosted service was added.
 
-Fixture/progress/archive changes commit together. Active state is pinned to exact immutable fixture content. Switching tours restores that version's own stopped/held progress. Reopening requires deliberate tracking/resume. The three-stop lab keeps its original schema and replay identity when narration is absent.
+Fixture/progress/archive changes commit together. Active state is pinned to exact immutable fixture content. Switching tours restores that version's own stopped/held progress. The library shows the latest version of each tour, plus an older version if it is currently selected; older packages and their progress remain stored. Reopening requires deliberate tracking/resume. The three-stop lab keeps its original schema and replay identity when narration is absent.
 
 ## Playback and walking directions
 

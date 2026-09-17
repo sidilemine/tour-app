@@ -186,9 +186,11 @@ On the pinned Android stack, the React Native developer menu’s **Disable Fast 
 The self-contained APK embeds both tour transports and the exact shared map. **Prepare both Finchley tours offline** verifies media before adding them to the library. **Import tour package** accepts the same area-specific version-1 transport; it is not a universal new-area downloader. Each tour keeps its own progress. Reviews pause narration until explicit Resume; private GPS diagnostics default off in the tour home.
 
 ```sh
+npm ci --prefix tools/voice-samples
+# First-time model caching: npm run samples --prefix tools/voice-samples
 node --import tsx tools/prepare-finchley-tours.ts
 node --import tsx --test tests/prepared-tours.test.ts
 python3 tools/verify-tour-apk.py artifacts/walking-tour-offline.apk
 ```
 
-`content/north-finchley/packages/` is included in the build identity. The generator uses local Daniel speech and cached authored inputs; it is not the later automated authoring factory. Preserve content versions once imported. Source scripts, evidence, route requests and measured durations remain reviewable in the repository.
+`content/north-finchley/packages/` is included in the build identity. The generator uses the owner-selected local Kokoro George voice (install its isolated tooling with `npm ci --prefix tools/voice-samples`) and cached authored inputs; it is not the later automated authoring factory. Preserve content versions once imported. Source scripts, evidence, route requests and measured durations remain reviewable in the repository.

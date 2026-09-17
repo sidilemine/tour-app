@@ -5,7 +5,7 @@
   "fixture": {
     "schemaVersion": 1,
     "id": "north-finchley-b",
-    "version": 1,
+    "version": 2,
     "title": "B · How a neighbourhood makes itself",
     "verification": {
       "status": "unverified",
@@ -532,11 +532,11 @@
       }
     ],
     "narration": {
-      "description": "6 stops + one walking chapter · about 1.92 km · allow 39–44 minutes, plus optional feedback.",
+      "description": "George narration · v2 · 6 stops + one walking chapter · about 1.92 km · allow 40–45 minutes, plus optional feedback.",
       "introduction": "Begin on the public pavement at Tally Ho Corner, a short walk north along Ballards Lane from North Finchley bus station / artsdepot. Start the tour there. Both walks finish outside artsdepot. Use the numbered map and street-name directions; the line is approximate and can follow road centres, so remain on pavements and use pedestrian crossings. No indoor visits are required.",
       "finishInstructions": "Finish by artsdepot, beside the North Finchley bus station area. Tap End tour to stop location tracking. A useful final note is whether the walk was worth the time and one change you would make.",
       "reviewNote": "First personal review version. Choose Review after any story to save optional scores and a voice note; close it and Resume when ready. Allow roughly 45–60 seconds per review. If a view is blocked or an arrival misses, use manual Play or Skip. Current views and the walking experience are for your first-use feedback.",
-      "rightsNote": "Original narration prepared for Sidi’s private tour review; rendered locally with the installed macOS Daniel voice at 145 words per minute. No music, source recordings or photographs copied. Map data © OpenStreetMap contributors (ODbL); Protomaps / Natural Earth and Noto font credits are available on the map. Public source links and paragraph evidence are stored with each transcript. Redistribution/voice rights have not been cleared for publication.",
+      "rightsNote": "Original narration prepared for Sidi’s private tour review; rendered locally with Kokoro George (bm_george), selected by Sidi. Kokoro model and inference library: Apache-2.0; model https://huggingface.co/hexgrad/Kokoro-82M and runtime https://github.com/hexgrad/kokoro. No subscription or cloud synthesis. No music, source recordings or photographs copied. Map data © OpenStreetMap contributors (ODbL); Protomaps / Natural Earth and Noto font credits are available on the map. Public source links and paragraph evidence are stored with each transcript. Prepared for private review; public distribution of the complete tour is a separate decision.",
       "stories": [
         {
           "id": "tally-ho",
@@ -621,9 +621,9 @@
           ],
           "audio": {
             "key": "north-finchley-b-tally-ho",
-            "bytes": 885111,
-            "md5": "4fedd6f0957fc1717f17ebf97d1be2a6",
-            "durationSeconds": 102.708707
+            "bytes": 909968,
+            "md5": "c57c24f0a9217c8502c1f22d1b1a9e63",
+            "durationSeconds": 106.3
           }
         },
         {
@@ -692,9 +692,9 @@
           ],
           "audio": {
             "key": "north-finchley-b-trinity",
-            "bytes": 674452,
-            "md5": "4b77093ceb56c7f4add4f6e4ae560bbb",
-            "durationSeconds": 78.815147
+            "bytes": 699201,
+            "md5": "6d3ab82cd51597620b19a82258d0ca08",
+            "durationSeconds": 82
           }
         },
         {
@@ -764,9 +764,9 @@
           ],
           "audio": {
             "key": "north-finchley-b-meeting-house",
-            "bytes": 861751,
-            "md5": "5f83444e8c9d44216db3598df81a8932",
-            "durationSeconds": 100.724535
+            "bytes": 878471,
+            "md5": "f269c80adcf85d70ab6e76d89bfce95a",
+            "durationSeconds": 102.6
           }
         },
         {
@@ -830,9 +830,9 @@
           ],
           "audio": {
             "key": "north-finchley-b-moss-hall-crescent",
-            "bytes": 783169,
-            "md5": "7c6953ef691d137cad743ecb5a1ce093",
-            "durationSeconds": 91.366576
+            "bytes": 814914,
+            "md5": "c0b4c34f23284f00c82e193e1e12faff",
+            "durationSeconds": 95.2
           }
         },
         {
@@ -893,9 +893,9 @@
           ],
           "audio": {
             "key": "north-finchley-b-elephant",
-            "bytes": 519875,
-            "md5": "5f231e4adbf54f0e7567afde338b11d6",
-            "durationSeconds": 60.136054
+            "bytes": 558703,
+            "md5": "d2646263268347c5633a67dc2ce69ede",
+            "durationSeconds": 64.8
           }
         },
         {
@@ -973,9 +973,9 @@
           ],
           "audio": {
             "key": "north-finchley-b-artsdepot",
-            "bytes": 903812,
-            "md5": "c3a8f2d0ae5bbbabbf22375f5dcec226",
-            "durationSeconds": 105.211066
+            "bytes": 920693,
+            "md5": "fa69922c32f8c087012b41d5bef524ee",
+            "durationSeconds": 107.1
           }
         }
       ],
@@ -1055,9 +1055,9 @@
           ],
           "audio": {
             "key": "north-finchley-b-walking-neighbourhood",
-            "bytes": 1200113,
-            "md5": "30ebb3a57fd6a1ab38f8685cc5d5c10d",
-            "durationSeconds": 140.906349
+            "bytes": 1191898,
+            "md5": "46697fd2cffc72ca548265d32dd20585",
+            "durationSeconds": 139.5
           },
           "afterStopIndex": 2,
           "startRouteIndex": 40,

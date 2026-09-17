@@ -6,11 +6,12 @@ import { resolve } from 'node:path';
 import { parseTourPackage } from '../src/tours/package';
 import { distance, Fixture } from '../src/domain/fixture';
 import catalog from '../src/map/catalog.json';
+import { renderGeorge, closeRenderer, voiceConfig } from './voice-samples/render-tour.mjs';
 
 type Paragraph = { text: string; kind: 'source_checked' | 'supported_reconstruction' | 'editorial'; basis: string; sourceUrls: string[] };
 type Authored = { id: string; title: string; paragraphs: Paragraph[]; sources: { title: string; url: string }[] };
 const authored = JSON.parse(readFileSync('content/north-finchley/stories.json', 'utf8')).stories as Authored[];
-const root = resolve('content/north-finchley'), audioDir = resolve('artifacts/finchley-audio');
+const root = resolve('content/north-finchley'), audioDir = resolve('artifacts/finchley-audio-george-v2');
 mkdirSync(audioDir, { recursive: true }); mkdirSync(`${root}/packages`, { recursive: true });
 const pointData = JSON.parse(readFileSync('docs/content/routes/north-finchley-options-v1/points.json', 'utf8')).points;
 const osmUrl = 'https://www.openstreetmap.org/#map=17/51.6133/-0.1800';
@@ -58,6 +59,7 @@ function decode(shape: string) {
   return points;
 }
 function command(file: string, args: string[]) { const result = spawnSync(file, args, { encoding: 'utf8' }); if (result.error || result.status !== 0) throw Error(`${file}: ${result.error ?? result.stderr}`); return result.stdout; }
+async function main() {
 const summaries: unknown[] = [];
 for (const variant of ['B', 'A']) {
   const order = variant === 'A' ? ['tally-ho', 'grand-arcade', 'torrington', 'trinity', 'artsdepot'] : ['tally-ho', 'trinity', 'meeting-house', 'moss-hall-crescent', 'elephant', 'artsdepot'];
@@ -70,16 +72,16 @@ for (const variant of ['B', 'A']) {
     route.push(...(route.length ? points.slice(1) : points)); stopIndices.push(route.length - 1);
   }
   const id = `north-finchley-${variant.toLowerCase()}`, assets: { key: string; base64: string }[] = [];
-  const makeStory = (storyId: string) => {
+  const makeStory = async (storyId: string) => {
     const original = authored.find(s => s.id === storyId); if (!original) throw Error(`Missing story: ${storyId}`);
     const cue = directions[variant][storyId]; if (!cue) throw Error('Missing directions');
     const paragraphs = [...original.paragraphs, { text: cue.join(' '), kind: 'source_checked' as const, basis: `Desk navigation from public OpenStreetMap streets and ${sourceFile}, reviewed 2026-09-17. Approximate exterior positions; no current field sightline/access claim.`, sourceUrls: [osmUrl] }];
     const transcript = paragraphs.map(p => p.text).join('\n\n'), key = `${id}-${storyId}`;
-    const digest = createHash('sha256').update(transcript).digest('hex'), audioPath = `${audioDir}/${key}.m4a`, textPath = `${audioDir}/${key}.txt`;
+    const digest = createHash('sha256').update(JSON.stringify(voiceConfig)).update(transcript).digest('hex'), audioPath = `${audioDir}/${key}.m4a`, textPath = `${audioDir}/${key}.txt`;
     if (!existsSync(`${audioPath}.sha256`) || readFileSync(`${audioPath}.sha256`, 'utf8').trim() !== digest || !existsSync(audioPath)) {
       writeFileSync(textPath, transcript + '\n');
-      command('/usr/bin/say', ['-v', 'Daniel', '-r', '145', '-f', textPath, '-o', `${audioDir}/${key}.aiff`]);
-      command('/usr/local/bin/ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', '-i', `${audioDir}/${key}.aiff`, '-c:a', 'aac', '-b:a', '64k', audioPath]);
+      console.log(`Rendering George: ${key}`);
+      await renderGeorge(transcript, audioPath);
       writeFileSync(`${audioPath}.sha256`, digest + '\n');
     }
     const bytes = readFileSync(audioPath), durationSeconds = Number(command('/usr/local/bin/ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'default=noprint_wrappers=1:nokey=1', audioPath]).trim());
@@ -88,28 +90,29 @@ for (const variant of ['B', 'A']) {
       evidence: paragraphs.map(p => ({ paragraph: p.text, kind: p.kind, basis: p.basis, sourceUrls: p.sourceUrls })),
       audio: { key, bytes: bytes.length, md5: createHash('md5').update(bytes).digest('hex'), durationSeconds } };
   };
-  const stories = order.map(makeStory);
+  const stories = [];
+  for (const storyId of order) stories.push(await makeStory(storyId));
   const chapters: NonNullable<Fixture['narration']>['chapters'] = [];
   if (variant === 'B') {
     const from = stopIndices[2], to = stopIndices[3]; let metres = 0, startRouteIndex = -1, endRouteIndex = -1;
     for (let i = from + 1; i < to; i++) { metres += distance(route[i - 1], route[i]); if (startRouteIndex < 0 && metres >= 70) startRouteIndex = i; if (endRouteIndex < 0 && metres >= 160) endRouteIndex = i; }
     if (startRouteIndex < 0 || endRouteIndex <= startRouteIndex) throw Error('No usable departure chapter interval');
-    chapters.push({ ...makeStory('walking-neighbourhood'), afterStopIndex: 2, startRouteIndex, endRouteIndex });
+    chapters.push({ ...await makeStory('walking-neighbourhood'), afterStopIndex: 2, startRouteIndex, endRouteIndex });
   }
   const title = variant === 'A' ? 'A · Places people went for a good time' : 'B · How a neighbourhood makes itself';
   const stationarySeconds = stories.reduce((sum, s) => sum + s.audio.durationSeconds, 0), movingMinutes = response.trip.summary.time / 60;
   const ordinaryMinutes = Math.ceil(movingMinutes + stationarySeconds / 60 + 3);
-  const fixture: Fixture = { schemaVersion: 1, id, version: 1, title,
+  const fixture: Fixture = { schemaVersion: 1, id, version: 2, title,
     verification: { status: 'unverified', note: 'Desk-reviewed public exterior route, OSM/Valhalla geometry and published addresses, 17 September 2026. Current sightlines, pavement obstructions and access are not yet field-checked. First owner use supplies those observations; manual play/skip remains available.' },
     route, stops: order.map((stopId, i) => {
       const place = places[stopId], point = pointData[place.point];
       return { id: stopId, title: place.title, routeIndex: stopIndices[i], standing: pavement[stopId] ? { longitude: pavement[stopId][0], latitude: pavement[stopId][1] } : route[stopIndices[i]], landmark: { longitude: point[0], latitude: point[1] }, approach: place.approach, viewpoint: place.view, access: place.access };
     }),
-    narration: { description: `${order.length} stops${chapters.length ? ' + one walking chapter' : ''} · about ${response.trip.summary.length.toFixed(2)} km · allow ${ordinaryMinutes}–${ordinaryMinutes + 5} minutes, plus optional feedback.`,
+    narration: { description: `George narration · v2 · ${order.length} stops${chapters.length ? ' + one walking chapter' : ''} · about ${response.trip.summary.length.toFixed(2)} km · allow ${ordinaryMinutes}–${ordinaryMinutes + 5} minutes, plus optional feedback.`,
       introduction: 'Begin on the public pavement at Tally Ho Corner, a short walk north along Ballards Lane from North Finchley bus station / artsdepot. Start the tour there. Both walks finish outside artsdepot. Use the numbered map and street-name directions; the line is approximate and can follow road centres, so remain on pavements and use pedestrian crossings. No indoor visits are required.',
       finishInstructions: 'Finish by artsdepot, beside the North Finchley bus station area. Tap End tour to stop location tracking. A useful final note is whether the walk was worth the time and one change you would make.',
       reviewNote: 'First personal review version. Choose Review after any story to save optional scores and a voice note; close it and Resume when ready. Allow roughly 45–60 seconds per review. If a view is blocked or an arrival misses, use manual Play or Skip. Current views and the walking experience are for your first-use feedback.',
-      rightsNote: 'Original narration prepared for Sidi’s private tour review; rendered locally with the installed macOS Daniel voice at 145 words per minute. No music, source recordings or photographs copied. Map data © OpenStreetMap contributors (ODbL); Protomaps / Natural Earth and Noto font credits are available on the map. Public source links and paragraph evidence are stored with each transcript. Redistribution/voice rights have not been cleared for publication.',
+      rightsNote: 'Original narration prepared for Sidi’s private tour review; rendered locally with Kokoro George (bm_george), selected by Sidi. Kokoro model and inference library: Apache-2.0; model https://huggingface.co/hexgrad/Kokoro-82M and runtime https://github.com/hexgrad/kokoro. No subscription or cloud synthesis. No music, source recordings or photographs copied. Map data © OpenStreetMap contributors (ODbL); Protomaps / Natural Earth and Noto font credits are available on the map. Public source links and paragraph evidence are stored with each transcript. Prepared for private review; public distribution of the complete tour is a separate decision.',
       stories, chapters,
     },
   };
@@ -117,8 +120,10 @@ for (const variant of ['B', 'A']) {
   parseTourPackage(transport);
   writeFileSync(`${root}/packages/${variant}.json`, JSON.stringify(transport) + '\n');
   writeFileSync(`${root}/${variant}-manifest.json`, JSON.stringify({ ...transport, assets: assets.map(a => ({ key: a.key, base64: '[audio is in the companion import package]' })) }, null, 2) + '\n');
-  summaries.push({ variant, id, title, version: 1, routeResponse: sourceFile, distanceKm: response.trip.summary.length, routerMovingSeconds: response.trip.summary.time, stationaryAudioSeconds: stationarySeconds, chapterAudioSeconds: chapters.reduce((s,c) => s+c.audio.durationSeconds,0), ordinaryEstimateMinutes: [ordinaryMinutes,ordinaryMinutes+5], audio: [...stories,...chapters].map(s => s.audio) });
+  summaries.push({ variant, id, title, version: 2, routeResponse: sourceFile, distanceKm: response.trip.summary.length, routerMovingSeconds: response.trip.summary.time, stationaryAudioSeconds: stationarySeconds, chapterAudioSeconds: chapters.reduce((s,c) => s+c.audio.durationSeconds,0), ordinaryEstimateMinutes: [ordinaryMinutes,ordinaryMinutes+5], audio: [...stories,...chapters].map(s => s.audio) });
 }
-writeFileSync(`${root}/preparation.json`, JSON.stringify({ preparedAt: new Date().toISOString(), voice: 'macOS Daniel', wordsPerMinute: 145, routeDataLicense: 'OpenStreetMap ODbL', variants: summaries }, null, 2) + '\n');
+writeFileSync(`${root}/preparation.json`, JSON.stringify({ preparedAt: new Date().toISOString(), voice: 'Kokoro George', synthesis: voiceConfig, routeDataLicense: 'OpenStreetMap ODbL', variants: summaries }, null, 2) + '\n');
 writeFileSync('src/tours/bundled.ts', "import type { TourTransport } from './package';\nimport B from '../../content/north-finchley/packages/B.json';\nimport A from '../../content/north-finchley/packages/A.json';\nexport const bundledTours = [B, A] as unknown as (TourTransport & { fixture: import('../domain/fixture').Fixture })[];\n");
 console.log(JSON.stringify(summaries,null,2));
+}
+main().catch(error => { console.error(error); process.exitCode = 1; }).finally(closeRenderer);

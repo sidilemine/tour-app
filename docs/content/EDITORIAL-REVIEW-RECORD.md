@@ -109,7 +109,7 @@ After the map walk, Sidi reported accurate location, correct audio and airplane-
 
 **17 September 2026. Owner feedback:** the installed macOS Daniel voice is too robotic for sustained listening. Sidi wants a quick, easy, free improvement for now; he has ElevenLabs and Hume subscriptions for later serious work. Their mention does not authorise paid usage or uploading scripts.
 
-**Authorised next step:** prepare matching short Kokoro samples in British Emma and George. [The audition and metadata](voice-samples/README.md) preserve the exact excerpt and outputs. Both were generated locally and decoded successfully, with no audible device action or phone/package change. **Open:** which voice Sidi finds comfortable, whether speed/pronunciation need adjustment, then replacement narration and measured chapter timing. Preparing samples does not select a voice or establish tour enjoyment.
+**Authorised next step:** prepare matching short Kokoro samples in British Emma and George. [The audition and metadata](voice-samples/README.md) preserve the exact excerpt and outputs. Both were generated locally and decoded successfully, with no audible device action or phone/package change. **Owner decision after listening:** both are good. Emma sounds crisper but quite flat; George has better intonation, feels deeper and more appropriate for a London tour. **Accepted choice: Kokoro George (`bm_george`)** at the auditioned speed. Regenerate both tours with George. This is a preference from this direct comparison, not a universal rule about male voices or proof of full-tour enjoyment. Recheck measured chapter timing; pronunciation and sustained comfort remain ordinary-use observations.
 
 ## Questions to carry into a later systematic review
 

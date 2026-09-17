@@ -1,65 +1,78 @@
 {
-  "preparedAt": "2026-09-17T11:10:04.847Z",
-  "voice": "macOS Daniel",
-  "wordsPerMinute": 145,
+  "preparedAt": "2026-09-17T13:23:51.587Z",
+  "voice": "Kokoro George",
+  "synthesis": {
+    "provider": "Kokoro",
+    "voice": "bm_george",
+    "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+    "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+    "dtype": "fp32",
+    "device": "cpu",
+    "speed": 1,
+    "kokoroJs": "1.2.1",
+    "paragraphGapSeconds": 0.25,
+    "loudnessLufs": -19,
+    "encoding": "AAC mono 24 kHz 64 kb/s",
+    "rendererRevision": 2
+  },
   "routeDataLicense": "OpenStreetMap ODbL",
   "variants": [
     {
       "variant": "B",
       "id": "north-finchley-b",
       "title": "B · How a neighbourhood makes itself",
-      "version": 1,
+      "version": 2,
       "routeResponse": "docs/content/routes/north-finchley-options-v1/B-response.json",
       "distanceKm": 1.918,
       "routerMovingSeconds": 1605.59,
-      "stationaryAudioSeconds": 538.962085,
-      "chapterAudioSeconds": 140.906349,
+      "stationaryAudioSeconds": 558,
+      "chapterAudioSeconds": 139.5,
       "ordinaryEstimateMinutes": [
-        39,
-        44
+        40,
+        45
       ],
       "audio": [
         {
           "key": "north-finchley-b-tally-ho",
-          "bytes": 885111,
-          "md5": "4fedd6f0957fc1717f17ebf97d1be2a6",
-          "durationSeconds": 102.708707
+          "bytes": 909968,
+          "md5": "c57c24f0a9217c8502c1f22d1b1a9e63",
+          "durationSeconds": 106.3
         },
         {
           "key": "north-finchley-b-trinity",
-          "bytes": 674452,
-          "md5": "4b77093ceb56c7f4add4f6e4ae560bbb",
-          "durationSeconds": 78.815147
+          "bytes": 699201,
+          "md5": "6d3ab82cd51597620b19a82258d0ca08",
+          "durationSeconds": 82
         },
         {
           "key": "north-finchley-b-meeting-house",
-          "bytes": 861751,
-          "md5": "5f83444e8c9d44216db3598df81a8932",
-          "durationSeconds": 100.724535
+          "bytes": 878471,
+          "md5": "f269c80adcf85d70ab6e76d89bfce95a",
+          "durationSeconds": 102.6
         },
         {
           "key": "north-finchley-b-moss-hall-crescent",
-          "bytes": 783169,
-          "md5": "7c6953ef691d137cad743ecb5a1ce093",
-          "durationSeconds": 91.366576
+          "bytes": 814914,
+          "md5": "c0b4c34f23284f00c82e193e1e12faff",
+          "durationSeconds": 95.2
         },
         {
           "key": "north-finchley-b-elephant",
-          "bytes": 519875,
-          "md5": "5f231e4adbf54f0e7567afde338b11d6",
-          "durationSeconds": 60.136054
+          "bytes": 558703,
+          "md5": "d2646263268347c5633a67dc2ce69ede",
+          "durationSeconds": 64.8
         },
         {
           "key": "north-finchley-b-artsdepot",
-          "bytes": 903812,
-          "md5": "c3a8f2d0ae5bbbabbf22375f5dcec226",
-          "durationSeconds": 105.211066
+          "bytes": 920693,
+          "md5": "fa69922c32f8c087012b41d5bef524ee",
+          "durationSeconds": 107.1
         },
         {
           "key": "north-finchley-b-walking-neighbourhood",
-          "bytes": 1200113,
-          "md5": "30ebb3a57fd6a1ab38f8685cc5d5c10d",
-          "durationSeconds": 140.906349
+          "bytes": 1191898,
+          "md5": "46697fd2cffc72ca548265d32dd20585",
+          "durationSeconds": 139.5
         }
       ]
     },
@@ -67,11 +80,11 @@
       "variant": "A",
       "id": "north-finchley-a",
       "title": "A · Places people went for a good time",
-      "version": 1,
+      "version": 2,
       "routeResponse": "docs/content/routes/north-finchley-review-v2/A-exterior-response.json",
       "distanceKm": 1.158,
       "routerMovingSeconds": 951.833,
-      "stationaryAudioSeconds": 468.718549,
+      "stationaryAudioSeconds": 483.20000000000005,
       "chapterAudioSeconds": 0,
       "ordinaryEstimateMinutes": [
         27,
@@ -80,33 +93,33 @@
       "audio": [
         {
           "key": "north-finchley-a-tally-ho",
-          "bytes": 903337,
-          "md5": "3f661fc1206a60f012f276ff834ff76d",
-          "durationSeconds": 105.053923
+          "bytes": 924338,
+          "md5": "18f7f6b736aa1433c6b3a6ed7016384f",
+          "durationSeconds": 108.1
         },
         {
           "key": "north-finchley-a-grand-arcade",
-          "bytes": 759515,
-          "md5": "57efe82de9b82a7d73800c82d88c59e5",
-          "durationSeconds": 87.944308
+          "bytes": 790424,
+          "md5": "d640b0dbef841182f328d4f9ff2324c4",
+          "durationSeconds": 92.3
         },
         {
           "key": "north-finchley-a-torrington",
-          "bytes": 825346,
-          "md5": "eddf6997ae1cfa7696cc3d82a259a7ab",
-          "durationSeconds": 96.036236
+          "bytes": 850337,
+          "md5": "2d76f85da88e09fbb8718a0c6c4a4440",
+          "durationSeconds": 98.6
         },
         {
           "key": "north-finchley-a-trinity",
-          "bytes": 637554,
-          "md5": "ba4fe3ac7be5bf211156cf92e84ecbbd",
-          "durationSeconds": 74.473016
+          "bytes": 661575,
+          "md5": "d892cb092ff2807d0a23eda171b566bb",
+          "durationSeconds": 77.1
         },
         {
           "key": "north-finchley-a-artsdepot",
-          "bytes": 903812,
-          "md5": "c3a8f2d0ae5bbbabbf22375f5dcec226",
-          "durationSeconds": 105.211066
+          "bytes": 920693,
+          "md5": "fa69922c32f8c087012b41d5bef524ee",
+          "durationSeconds": 107.1
         }
       ]
     }

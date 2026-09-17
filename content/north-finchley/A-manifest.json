@@ -5,7 +5,7 @@
   "fixture": {
     "schemaVersion": 1,
     "id": "north-finchley-a",
-    "version": 1,
+    "version": 2,
     "title": "A · Places people went for a good time",
     "verification": {
       "status": "unverified",
@@ -352,11 +352,11 @@
       }
     ],
     "narration": {
-      "description": "5 stops · about 1.16 km · allow 27–32 minutes, plus optional feedback.",
+      "description": "George narration · v2 · 5 stops · about 1.16 km · allow 27–32 minutes, plus optional feedback.",
       "introduction": "Begin on the public pavement at Tally Ho Corner, a short walk north along Ballards Lane from North Finchley bus station / artsdepot. Start the tour there. Both walks finish outside artsdepot. Use the numbered map and street-name directions; the line is approximate and can follow road centres, so remain on pavements and use pedestrian crossings. No indoor visits are required.",
       "finishInstructions": "Finish by artsdepot, beside the North Finchley bus station area. Tap End tour to stop location tracking. A useful final note is whether the walk was worth the time and one change you would make.",
       "reviewNote": "First personal review version. Choose Review after any story to save optional scores and a voice note; close it and Resume when ready. Allow roughly 45–60 seconds per review. If a view is blocked or an arrival misses, use manual Play or Skip. Current views and the walking experience are for your first-use feedback.",
-      "rightsNote": "Original narration prepared for Sidi’s private tour review; rendered locally with the installed macOS Daniel voice at 145 words per minute. No music, source recordings or photographs copied. Map data © OpenStreetMap contributors (ODbL); Protomaps / Natural Earth and Noto font credits are available on the map. Public source links and paragraph evidence are stored with each transcript. Redistribution/voice rights have not been cleared for publication.",
+      "rightsNote": "Original narration prepared for Sidi’s private tour review; rendered locally with Kokoro George (bm_george), selected by Sidi. Kokoro model and inference library: Apache-2.0; model https://huggingface.co/hexgrad/Kokoro-82M and runtime https://github.com/hexgrad/kokoro. No subscription or cloud synthesis. No music, source recordings or photographs copied. Map data © OpenStreetMap contributors (ODbL); Protomaps / Natural Earth and Noto font credits are available on the map. Public source links and paragraph evidence are stored with each transcript. Prepared for private review; public distribution of the complete tour is a separate decision.",
       "stories": [
         {
           "id": "tally-ho",
@@ -441,9 +441,9 @@
           ],
           "audio": {
             "key": "north-finchley-a-tally-ho",
-            "bytes": 903337,
-            "md5": "3f661fc1206a60f012f276ff834ff76d",
-            "durationSeconds": 105.053923
+            "bytes": 924338,
+            "md5": "18f7f6b736aa1433c6b3a6ed7016384f",
+            "durationSeconds": 108.1
           }
         },
         {
@@ -505,9 +505,9 @@
           ],
           "audio": {
             "key": "north-finchley-a-grand-arcade",
-            "bytes": 759515,
-            "md5": "57efe82de9b82a7d73800c82d88c59e5",
-            "durationSeconds": 87.944308
+            "bytes": 790424,
+            "md5": "d640b0dbef841182f328d4f9ff2324c4",
+            "durationSeconds": 92.3
           }
         },
         {
@@ -576,9 +576,9 @@
           ],
           "audio": {
             "key": "north-finchley-a-torrington",
-            "bytes": 825346,
-            "md5": "eddf6997ae1cfa7696cc3d82a259a7ab",
-            "durationSeconds": 96.036236
+            "bytes": 850337,
+            "md5": "2d76f85da88e09fbb8718a0c6c4a4440",
+            "durationSeconds": 98.6
           }
         },
         {
@@ -647,9 +647,9 @@
           ],
           "audio": {
             "key": "north-finchley-a-trinity",
-            "bytes": 637554,
-            "md5": "ba4fe3ac7be5bf211156cf92e84ecbbd",
-            "durationSeconds": 74.473016
+            "bytes": 661575,
+            "md5": "d892cb092ff2807d0a23eda171b566bb",
+            "durationSeconds": 77.1
           }
         },
         {
@@ -727,9 +727,9 @@
           ],
           "audio": {
             "key": "north-finchley-a-artsdepot",
-            "bytes": 903812,
-            "md5": "c3a8f2d0ae5bbbabbf22375f5dcec226",
-            "durationSeconds": 105.211066
+            "bytes": 920693,
+            "md5": "fa69922c32f8c087012b41d5bef524ee",
+            "durationSeconds": 107.1
           }
         }
       ],

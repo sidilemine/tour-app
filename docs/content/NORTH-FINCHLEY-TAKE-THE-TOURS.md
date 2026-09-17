@@ -2,13 +2,15 @@
 
 Ready for Sidi's first personal content review. Both tours are installed and prepared on the Pixel; the [17 September phone handoff](../test-results/M2-tour-phone.md) records the successful recording/playback, copy and cold-reopening checks. Full-tour enjoyment and current outdoor conditions remain first-use observations.
 
+George narration is selected for version 2; the [voice update record](../test-results/M2-george-voice.md) tracks installation. Choose entries labelled **George narration · v2** after the update.
+
 ## Choose a walk
 
 | | A — Places people went for a good time | B — How a neighbourhood makes itself |
 | --- | --- | --- |
 | Route | About 1.16 km | About 1.92 km |
-| Ordinary tour | Allow 27–32 minutes | Allow 39–44 minutes |
-| Content | Five stops | Six stops plus a 2 minute 21 second walking chapter |
+| Ordinary tour | Allow 27–32 minutes | Allow 40–45 minutes |
+| Content | Five stops | Six stops plus a 2 minute 20 second walking chapter |
 | Optional feedback | About 4–5 additional minutes | About 5–7 additional minutes |
 | Stops | Tally Ho → Grand Arcade entrance → Torrington → Trinity → artsdepot | Tally Ho → Trinity → Meeting House sculpture → Moss Hall Crescent → Elephant → artsdepot |
 
