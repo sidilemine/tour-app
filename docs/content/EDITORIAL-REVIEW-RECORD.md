@@ -20,6 +20,7 @@ When we take a serious look back: read this record, the captured comments and th
 - [Tally Ho revision 2 and response mapping](TALLY-HO-SAMPLE-V2.md) and [Word copy](tally-ho-sample-review-v2.docx). The later imagined-colour correction supersedes its narrower review note, not its narration.
 - [Current tour options A and B](NORTH-FINCHLEY-TOUR-OPTIONS.md), [Word proposal](north-finchley-tour-options-review.docx), and [actual routing evidence](routes/north-finchley-options-v1/README.md).
 - [Personal-use testing policy](../../AGENTS.md#testing-policy-for-the-personal-prototype), [M2 implementation status](M2-IMPLEMENTATION.md) and [route/test brief](M2-TEST-PLAN.md). Device evidence stays in the linked test records; content feedback does not certify technical acceptance.
+- [First ordinary Tour B feedback recovery](FIRST-TOUR-FEEDBACK-RECOVERY.md): all seven saved ratings and reviewed paraphrases from 14 field recordings, with three explicit clarification gaps.
 
 ## Discussion history
 
@@ -110,6 +111,16 @@ After the map walk, Sidi reported accurate location, correct audio and airplane-
 **17 September 2026. Owner feedback:** the installed macOS Daniel voice is too robotic for sustained listening. Sidi wants a quick, easy, free improvement for now; he has ElevenLabs and Hume subscriptions for later serious work. Their mention does not authorise paid usage or uploading scripts.
 
 **Authorised next step:** prepare matching short Kokoro samples in British Emma and George. [The audition and metadata](voice-samples/README.md) preserve the exact excerpt and outputs. Both were generated locally and decoded successfully, with no audible device action or phone/package change. **Owner decision after listening:** both are good. Emma sounds crisper but quite flat; George has better intonation, feels deeper and more appropriate for a London tour. **Accepted choice: Kokoro George (`bm_george`)** at the auditioned speed. Regenerate both tours with George. This is a preference from this direct comparison, not a universal rule about male voices or proof of full-tour enjoyment. Recheck measured chapter timing; pronunciation and sustained comfort remain ordinary-use observations.
+
+### 12 First ordinary Tour B use and voice-note recovery
+
+**17 September 2026. Owner report and request:** Sidi took the first tour and left long voice memos at the stops. He expected the headphones' microphone to capture them, then found the recordings difficult to hear. Retrieve what is usable and ask focused questions or request re-recording only for missing material.
+
+**Observed result:** the selected outing is B, George version 2. Fourteen field files (19 minutes 29 seconds) and scores for all six stops plus the walking chapter were recovered locally. Every file decodes; originals and timestamped machine outputs remain private. Local transcription of original and filtered copies supplies substantive feedback for every subject. [The complete recovery summary](FIRST-TOUR-FEEDBACK-RECOVERY.md) retains scores, stop-specific points, uncertain passages and app reports. This is reviewed machine-assisted recovery, not verbatim owner confirmation of every phrase.
+
+**Recovered themes for discussion:** anchor each stop in what the visitor sees; give dates and historical context; connect the junction/coaching/cycling and wider estate stories more clearly; use imagined colour to convey a different era rather than over-describing familiar activities. The Crescent receives 10/10 in all dimensions; the walking chapter is especially promising. Research the church/music relationship, artist/meeting-house context and historical continuity rather than padding known facts. Photographs would help the vanished cinema. Preserve the idea of separate research, curation, assembly, writing and review for later process discussion; no agent framework was commissioned here.
+
+**Open:** the Crescent lease detail, the precise confusing turn and the sculpture/reflection distinction need short clarification. Reported microphone selection, locking/camera recording stops, Spotify interaction and manual narration starts need scoped technical diagnosis. Saved completion does not certify automatic starts. **Outcome:** no full re-recording or repeat walk requested; no content/code changes yet. Keep this outing's actual responses distinct from earlier desk preferences and await corrections before adopting detailed general rules.
 
 ## Questions to carry into a later systematic review
 

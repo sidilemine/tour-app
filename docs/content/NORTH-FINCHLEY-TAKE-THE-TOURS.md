@@ -1,8 +1,8 @@
 # Take the two Finchley tours
 
-Ready for Sidi's first personal content review. Both tours are installed and prepared on the Pixel; the [17 September phone handoff](../test-results/M2-tour-phone.md) records the successful recording/playback, copy and cold-reopening checks. Full-tour enjoyment and current outdoor conditions remain first-use observations.
+Sidi has completed the first Tour B walk; [recovered feedback and open questions](FIRST-TOUR-FEEDBACK-RECOVERY.md) are saved for review. A remains available. Both tours are installed and prepared on the Pixel; the [17 September phone handoff](../test-results/M2-tour-phone.md) records the successful recording/playback, copy and cold-reopening checks. The first B outing supplies ordinary-use feedback; it does not establish conditions or enjoyment for A.
 
-Both **George narration · v2** editions are installed and prepared; the [voice update record](../test-results/M2-george-voice.md) records the silent installation and cold-reopening check. B is selected and stopped at Tally Ho, ready to begin there.
+Both **George narration · v2** editions are installed and prepared; the [voice update record](../test-results/M2-george-voice.md) records the silent installation and cold-reopening check. After feedback retrieval, B is selected with all stops complete and tracking stopped. Choose A for the other walk; use **Take this tour again** only when intentionally restarting B.
 
 ## Choose a walk
 
