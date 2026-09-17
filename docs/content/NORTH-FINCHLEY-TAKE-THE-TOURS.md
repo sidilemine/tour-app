@@ -2,7 +2,7 @@
 
 Ready for Sidi's first personal content review. Both tours are installed and prepared on the Pixel; the [17 September phone handoff](../test-results/M2-tour-phone.md) records the successful recording/playback, copy and cold-reopening checks. Full-tour enjoyment and current outdoor conditions remain first-use observations.
 
-George narration is selected for version 2; the [voice update record](../test-results/M2-george-voice.md) tracks installation. Choose entries labelled **George narration · v2** after the update.
+Both **George narration · v2** editions are installed and prepared; the [voice update record](../test-results/M2-george-voice.md) records the silent installation and cold-reopening check. B is selected and stopped at Tally Ho, ready to begin there.
 
 ## Choose a walk
 
