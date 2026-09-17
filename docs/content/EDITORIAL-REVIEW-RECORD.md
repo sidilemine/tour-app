@@ -15,7 +15,7 @@ When we take a serious look back: read this record, the captured comments and th
 - [Initial walking-tour research](WALKING-TOUR-DESIGN-RESEARCH.md) and [original Word review](walking-tour-design-review.docx).
 - [First 34 owner Word comments with anchored text](reviews/2026-09-16-owner-word-comments.json): 24 on the research review, 10 on the narration pair; document-local IDs and source-file SHA-256 retained. This committed text capture remains usable if the original commented Word files are absent from another checkout. Original commented files remain locally under `docs/content/` and are not overwritten.
 - [Latest 11 tour-options comments](reviews/2026-09-17-tour-options-comments.json) and [response/development brief](NORTH-FINCHLEY-REVIEW-RESPONSE.md): **45 comments total** across the three reviews. All retain source-file hashes, local IDs and anchored text.
-- [Current design guidance](TOUR-DESIGN-GUIDANCE.md), revisions 1–4 with revision history.
+- [Current design guidance](TOUR-DESIGN-GUIDANCE.md), revisions 1–5 with revision history.
 - [First North Finchley sample pair](NORTH-FINCHLEY-SAMPLE-STOPS.md) and [original Word copy](north-finchley-sample-stops-review.docx), including the rejected memorial execution.
 - [Tally Ho revision 2 and response mapping](TALLY-HO-SAMPLE-V2.md) and [Word copy](tally-ho-sample-review-v2.docx). The later imagined-colour correction supersedes its narrower review note, not its narration.
 - [Current tour options A and B](NORTH-FINCHLEY-TOUR-OPTIONS.md), [Word proposal](north-finchley-tour-options-review.docx), and [actual routing evidence](routes/north-finchley-options-v1/README.md).
@@ -81,6 +81,16 @@ After the map walk, Sidi reported accurate location, correct audio and airplane-
 
 **Outcomes:** guidance revision 4; current M2 planning corrected; 45 comments collated. Both-tour development is authorised, not a request to choose A or B again. Physical access, final scripts, new player behavior and actual enjoyment remain unverified. Future comparative conclusions must record differences in duration, number of stories, review interruptions and exposure to shared stories, rather than claim a controlled comparison or E1 success from these comments.
 
+### 09 Survey before selection and retain reusable research
+
+**17 September 2026, conversation. Owner direction:** the first step for a new area should be a full survey of publicly available walking tours, cataloguing stops, themes and stories. The aim is to learn from the existing guiding knowledge rather than duplicate or plagiarise it. Plan a database of locations and related research so each new tour does not start from scratch.
+
+**Outcome:** [survey protocol](AREA-TOUR-SURVEY.md) added to startup instructions, living guidance revision 5 and current M2 sequencing. A comprehensive Finchley survey now comes before full scripting, preserving the existing A/B work and owner choices for reconsideration against better coverage. The [local reusable catalogue](../../ROADMAP.md#reusable-location-and-research-catalogue) is explicitly planned; structured records come first, database implementation after observed reuse needs. Earlier generic deferral of a city knowledge base does not prohibit these research records or the newly requested roadmap item. A hosted knowledge service remains separate.
+
+**Engineering interpretation:** cover multiple source families and nearby areas, deduplicate listings, catalogue only publicly supported stop/story details, document access gaps, independently verify adopted claims, and preserve alternative stories per place. “Full” is a documented broad survey, not a claim of access to unpublished scripts. The protocol is ready; the actual survey and database are not complete.
+
+**Working preferences and advice request:** Sidi asked which thinking level and whether sub-agents would help for the next tasks, then clarified not to worry much about token spend. Prioritise quality and useful progress. Recommended High as the main-thread default, independent research/checking sub-agents for broad surveys, and higher effort selectively for difficult synthesis or playback races. This is engineering advice, not a measured performance result or a changed app setting. A question about delegation is not itself a request to spawn agents.
+
 ## Questions to carry into a later systematic review
 
 - Does context before anecdote usually improve the story, and when can an immediate intriguing detail work better?
@@ -104,4 +114,6 @@ After the map walk, Sidi reported accurate location, correct audio and airplane-
 | Product duration and spacing | Short test footprint is not a product cap; variable rhythm accepted | Actual enjoyment and walking feedback |
 | B walking chapter and per-story review | Requested; concrete design proposed | Script, bounded implementation and useful owner feedback |
 | Distinct standing areas, access and crossings | Unverified | Desk inspection, then only necessary physical checks |
+| Public-tour survey before new-area curation | Owner direction; protocol adopted | Comprehensive Finchley catalogue and synthesis |
+| Reusable place/source/story database | Explicitly planned; not implemented | Actual records and reuse requirements from the survey/two tours |
 | Systematic guidelines from these options | Open learning questions | Recorded choices and actual experience; no automatic promotion |

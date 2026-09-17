@@ -2,6 +2,8 @@
 
 17 September 2026. Response to all 11 comments in Sidi's `north-finchley-tour-options-review sidi comments.docx`. [Exact comments and anchors](reviews/2026-09-17-tour-options-comments.json); [discussion history](EDITORIAL-REVIEW-RECORD.md); [original proposal](NORTH-FINCHLEY-TOUR-OPTIONS.md). The Word body is unchanged and contains no tracked insertions or deletions. Both original Word files are preserved.
 
+**Later conversation update, 17 September:** Sidi directs a full survey/catalogue of publicly available tours before further curation. The [survey protocol](AREA-TOUR-SURVEY.md) now precedes the scripting sequence proposed in this dated review response. Both-tour development and the recorded feedback remain in force.
+
 ## What is decided
 
 **Develop both tours for actual use and feedback.** Sidi is slightly more excited about B and accepts its extra walking. Short technical tests remain desirable; they do not set a maximum duration for finished tours. The original 20–30-minute target was over-applied to content selection and is superseded as a product constraint.

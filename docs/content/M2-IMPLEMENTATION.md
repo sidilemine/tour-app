@@ -4,6 +4,8 @@ Prepared 13 September; status updated 17 September 2026. **First map slice imple
 
 ## Preparation available now
 
+**Latest sequencing direction, 17 September:** first conduct the [comprehensive public walking-tour survey](AREA-TOUR-SURVEY.md), cataloguing stops, themes and stories with sources. Revisit the two outlines against it before full scripting. This supersedes the immediate B-script-first sequence below, while preserving the direction to develop both tours. Save reusable structured research; database implementation is a later roadmap item.
+
 Latest owner review, 17 September: [develop both North Finchley tours](NORTH-FINCHLEY-REVIEW-RESPONSE.md), with B’s additional walking welcomed and A’s Stanhope detour removed. Prepare B’s 2–3-minute chapter between stops 3 and 4 and a few scores out of ten plus a voice note after each story. The [editorial record](EDITORIAL-REVIEW-RECORD.md) collates all 45 comments and the corrections. The original A route/timing is now historical; B’s desk estimate is 1.9 km / 37–42 minutes before review overhead and final chapter timing. No new field work is requested at this review stage.
 
 Editorial preparation, 16 September: [walking-tour design research](WALKING-TOUR-DESIGN-RESEARCH.md) brings together visitor studies, heritage conventions and audio-tour practice. Sidi's Word review now informs the [living design guidance](TOUR-DESIGN-GUIDANCE.md): non-obvious insights, a meaningful theme, relaxed pacing, varied tone and comfortable leg/story timing. It distinguishes owner direction from proposed applications and future features. Use it before selecting the final route or fixing narration lengths; it adds no physical test gate or feature implementation.
@@ -30,7 +32,7 @@ Done when: the entire candidate area pans/zooms after cold opening with networki
 
 ### 2. Develop both tours with B as the six-stop baseline
 
-Develop B’s full script and 3→4 walking chapter, then A’s revised five-stop thread after removing Stanhope. Reuse shared research. Reroute A and refine both between reviewed visitor positions; review crossings, access and all legs. Close central stops are editorially accepted, subject to workable physical placement. Do not add a weak replacement or count a walking chapter as a stop merely to make A six; B supplies the six-stop baseline. Final access and directions remain provisional.
+Complete the public-tour survey and reconcile its findings with the owner-reviewed outlines first. Then develop B’s full script and 3→4 walking chapter, followed by A’s revised five-stop thread after removing Stanhope. Reuse shared research. Reroute A and refine both between reviewed visitor positions; review crossings, access and all legs. Close central stops are editorially accepted, subject to workable physical placement. Do not add a weak replacement or count a walking chapter as a stop merely to make A six; B supplies the six-stop baseline. Final access and directions remain provisional.
 
 Done when: B’s six stops and every retained A stop have evidence and field review records, all legs/directions have provenance and observed access, and each measured walking/listening/silence budget fits. Factual script passages map to reviewed claims; source freshness, uncertainty, reviewer/date/method and rights are explicit. The manifest fails readiness for any unresolved critical physical or asset requirement.
 

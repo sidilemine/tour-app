@@ -1,6 +1,6 @@
 # Walking tour design guidance
 
-Living editorial reference, revision 4, 17 September 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
+Living editorial reference, revision 5, 17 September 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
 
 **Our aim:** make an enjoyable, relaxing walk reveal the non-obvious stories and meaning beneath the surroundings, giving the listener a deeper connection to a place, whether new or familiar. Being there should contribute something that reading at home cannot.
 
@@ -21,6 +21,10 @@ Revision 3 incorporates Sidi's subsequent conversation correction: the narrator 
 Additional basis for revision 4: all 11 tour-options comments, IDs 0–10, reviewed on 17 September. The [exact capture](reviews/2026-09-17-tour-options-comments.json) and [response](NORTH-FINCHLEY-REVIEW-RESPONSE.md) preserve the choices and reasoning.
 
 ## Owner direction
+
+### Survey existing walking tours first
+
+Before choosing stops or writing for a new area, comprehensively survey publicly available walking tours and catalogue their published stops, themes and stories. Use the [survey protocol](AREA-TOUR-SURVEY.md) to cover operators, heritage organisations, self-guided/audio routes and local themed walks, with clear source coverage and gaps. Learn from the area’s existing guiding knowledge, then independently research claims and create our own route and narration. Preserve discovery provenance and reusable place/story records. This is Sidi’s 17 September direction and applies to Finchley before the next full scripts; the earlier isolated Kinks lookup does not fulfil it.
 
 ### Reveal something worth knowing in this place
 
@@ -137,6 +141,7 @@ The first two follow Sidi's comment; the fuller repertoire is an initial proposa
 - **Personal relevance — hypothesis.** Sidi suggests that choosing subjects one cares about, alongside satisfaction in self-directed discovery, might explain some visitors' preference for their own resources. The Edinburgh Castle study does not establish either mechanism. Use this as a question for later personalisation and feedback, not a causal research finding. Comment 3.
 - **Music and sound — distant ideas.** Ambient music, soundscapes and filler playlists are retained for later exploration, without current implementation. Comment 4.
 - **Interactive conversation — distant idea.** Speech recognition and an LLM might eventually allow responsive or real-time dialogue. The recorded tour cannot currently hear an answer; that is a present scope limit, not a claim of permanent impossibility. Live services remain outside the current offline product. Comment 7.
+
 ## Current experiments for the two-tour review
 
 - **Per-story ratings and voice feedback — now requested for the two-tour review.** Sidi wants a small number of dimensions rated out of ten and a voice note after each story while out. The [concrete proposal](NORTH-FINCHLEY-REVIEW-RESPONSE.md#a-small-review-after-each-story) uses interest, value of being here and storytelling, with an explicit local recording action and pause preserved until Resume. These dimensions are proposed, not a validated instrument. Implementation remains pending; an existing recorder is an interim fallback, not proof of an integrated review flow. Research-review comment 22 and tour-options comment 6.
@@ -144,7 +149,7 @@ The first two follow Sidi's comment; the fuller repertoire is an initial proposa
 
 ## How to use this for the next draft
 
-Write one clear tour promise and theme. Compare candidate insights and routes, then prepare two contrasting sample stops with different tones and plausible timing. Review those at the desk before polishing a complete tour. During normal use, collect brief reactions about what was interesting, confusing, dull or worth the walk; follow concrete issues rather than creating a new test campaign.
+Start with the public-tour survey and catalogue. Then write one clear tour promise and theme. Compare candidate insights and routes, then prepare two contrasting sample stops with different tones and plausible timing. Review those at the desk before polishing a complete tour. During normal use, collect brief reactions about what was interesting, confusing, dull or worth the walk; follow concrete issues rather than creating a new test campaign.
 
 Sidi preferred the light tone of the [first North Finchley sample pair](NORTH-FINCHLEY-SAMPLE-STOPS.md), with firmer factual grounding. The memorial sample is retired. [Tally Ho revision 2](TALLY-HO-SAMPLE-V2.md) puts the road and coaching history before the postcard anecdote; the new wording and duration remain for review. Use the next useful contrast in subject or treatment rather than manufacturing a second solemn sample.
 
@@ -161,3 +166,5 @@ Revision 2 applies all ten sample-review comments: 0 context before anecdote and
 Revision 3 corrects the overly restrictive interpretation of imagined scenes after Sidi's conversation feedback. Strongly supported imaginative colour is encouraged: the narrator helps the listener experience the character of the place. Evidence constrains the historical foundation without requiring every ordinary descriptive detail to have been individually recorded. The separate correction about memorial intent and the preference on solemn sites remain in force. This clarification updates the maintained guidance; the earlier Word review remains the dated review copy.
 
 Revision 4 applies all 11 tour-options comments: 0–1 retain Tally Ho/Arcade; 2 remove the Stanhope detour and consider passing/visual treatment; 3 variable central spacing; 4 prefer Gaumont; 5 walking chapter; 6 both tours and ratings/voice notes; 7 accept B’s duration; 8 distinguish technical economy from product duration; 9 narrative thread/contrast and Kinks lookup; 10 walking, social silence and optional future sound. It supersedes the over-applied short-tour/even-spacing assumptions while retaining evidence and safe-direction requirements.
+
+Revision 5 adds the owner-directed comprehensive public-tour survey as the first step for a new area and records reusable cataloguing as a planned capability. This changes the next Finchley task from full scripting to surveying and revisiting the existing outlines. The research and database implementation remain pending.

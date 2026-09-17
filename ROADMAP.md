@@ -97,6 +97,8 @@ Deliver a validated versioned package, durable local import, a local map with fu
 
 **Current planning direction, 17 September:** develop both North Finchley tours for feedback, starting/ending near the bus station. Sidi accepts B’s extra walking and clarifies that a short footprint was for economical technical tests, not a product cap. The [review brief](docs/content/NORTH-FINCHLEY-REVIEW-RESPONSE.md) retains B as the six-stop M2 baseline, removes Stanhope’s dedicated detour from comparison A, and prepares a 2–3-minute walking chapter on B’s 3→4 leg plus per-story ratings and voice notes. Those features and final routes are not implemented or physically accepted. The earlier 20–30-minute target in the [evidence plan](docs/content/M2-TEST-PLAN.md) is superseded as a finished-tour constraint. Preserve accepted M1/map evidence and separate content review from technical regression work.
 
+Preparation order: first complete the [public walking-tour survey and catalogue](docs/content/AREA-TOUR-SURVEY.md) for Finchley, then revisit both outlines before full scripting. The 17 September owner direction makes this the first step for future areas as well. Save reusable structured research now; the database is planned separately below.
+
 Acceptance:
 
 - Six stops have separate landmark, standing, approach, viewpoint and access data; physical instructions and operational constraints have review status/date. Missing critical verification blocks readiness.
@@ -135,6 +137,16 @@ Acceptance: resolve the selected blockers to ordinary walking and preserve usefu
 
 Acceptance: a fixture compiles repeatably; normalized real-routing outputs determine timing before writing; measured audio durations enforce budgets; missing assets, evidence, physical verification or rights fail validation. Cache reusable outputs within this project where permitted. Demonstrate a different provider fixture without changing playback. Emit a local package for import; publication is a separate authorization.
 
+### Reusable location and research catalogue
+
+**Planned, owner-requested 17 September; shape after the first comprehensive area survey, develop alongside M4 before scaling M5.** Avoid rebuilding the same place/source/story research for each tour. Save structured survey records now; database implementation is later work, not a prerequisite to completing M2.
+
+Retain stable places and aliases; existing tours and their published stop sequences/themes; multiple story angles per place; source/claim evidence and relationships; separate visitor positions, access checks and freshness; our scripts, owner feedback and inclusion/rejection history. A tour references those reusable records, and its exported package preserves a reviewed version. Reuse must never silently promote an unverified claim or stale access report.
+
+Initial engineering recommendation: a local SQLite authoring database with import/export from the structured records, search by area/theme/place, reviewed duplicate merging and links back to source material. No hosted service is needed for this capability; storage choice is settled from actual authoring queries. Keep it separate from runtime progress and private phone recordings.
+
+Done when our two tours can reuse shared places/evidence without duplicate research, retain distinct narrative treatments, preserve provenance and review history, and rebuild the same package version from its recorded inputs. Historical claims and current access have independent update/review lifecycles. A schema alone is not the outcome.
+
 ## Milestone 5 — bounded content automation
 
 **Status: gated by E1's positive decision and M4.** Automate only demonstrated useful stages: evidence collection/review, selection/routing, narrative planning, evidence-bound writing/verification, pronunciation, TTS and assembly.
@@ -149,4 +161,4 @@ Acceptance: when iOS is assigned, establish ordinary locked arrival, controls, o
 
 ## Later, only when needed
 
-Private sharing/download hosting, accounts/sync, wider generation UI and a reusable city knowledge base need concrete demand and separate infrastructure/cost/publication decisions. Driving, live AI, optional branches, dynamic closures and arbitrary offline rerouting each require explicit scope. Do not add their code to earlier milestones for hypothetical reuse.
+Private sharing/download hosting, accounts/sync, wider generation UI and a hosted city knowledge service need concrete demand and separate infrastructure/cost/publication decisions. The local reusable research catalogue above is now planned explicitly; its implementation does not authorise those services. Driving, live AI, optional branches, dynamic closures and arbitrary offline rerouting each require explicit scope. Do not add their code to earlier milestones for hypothetical reuse.
