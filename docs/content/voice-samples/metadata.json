@@ -1,0 +1,50 @@
+{
+  "modelId": "onnx-community/Kokoro-82M-v1.0-ONNX",
+  "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+  "dtype": "fp32",
+  "device": "cpu",
+  "speed": 1,
+  "text": "Tally Ho Corner grew out of two roads meeting. Ballards Lane was a medieval road, but for centuries it stopped short of the High Road. The connection came in 1756, when the lane was extended to join what was then the Great North Road. North Finchley had become a junction on the road out of London.",
+  "textSha256": "d51e55ab3367caaee990011054ff83b0316f7ddbbbf790be0a219abfa5876167",
+  "source": "content/north-finchley/stories.json: tally-ho paragraph 1",
+  "modelFiles": [
+    {
+      "name": "config.json",
+      "bytes": 44,
+      "sha256": "df34b4f930b23447cd4dc410fabfb42eb3f24e803e6c3f97d618fb359380a36f"
+    },
+    {
+      "name": "tokenizer.json",
+      "bytes": 3497,
+      "sha256": "77a02c8e164413299b4b4c403b14f8e0e1c1b727db4d46a09d6327b861060a34"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "bytes": 113,
+      "sha256": "be1cb066d6ef6b074b3f15e6a6dd21ac88ff3cdaedf325f0aaed686c70f75d20"
+    },
+    {
+      "name": "onnx/model.onnx",
+      "bytes": 325532232,
+      "sha256": "8fbea51ea711f2af382e88c833d9e288c6dc82ce5e98421ea61c058ce21a34cb"
+    }
+  ],
+  "samples": [
+    {
+      "voice": "bf_emma",
+      "file": "emma.mp3",
+      "durationSeconds": 18.05,
+      "bytes": 217772,
+      "sha256": "7c3c27f61e2bb78e20d5f2e716c6fea4b0d0d45d443858141d0ed6456aa7c1bb",
+      "generationAndEncodeSeconds": 4.31
+    },
+    {
+      "voice": "bm_george",
+      "file": "george.mp3",
+      "durationSeconds": 20.825,
+      "bytes": 250892,
+      "sha256": "1a2efa312c2859c68921ec11b7dd9afc67c0daebc836883b3cfdf35249c227fd",
+      "generationAndEncodeSeconds": 4.573
+    }
+  ]
+}

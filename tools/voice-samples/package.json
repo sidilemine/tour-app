@@ -1,0 +1,12 @@
+{
+  "name": "walking-tour-voice-samples",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "samples": "node generate.mjs"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "3.8.1",
+    "kokoro-js": "1.2.1"
+  }
+}

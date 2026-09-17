@@ -105,6 +105,12 @@ After the map walk, Sidi reported accurate location, correct audio and airplane-
 
 **Phone outcome:** the [17 September check](../test-results/M2-tour-phone.md) passed representative recording/playback/save/reopen checks; both tours are installed for independent use. **Next owner evidence:** ordinary A/B use with optional feedback. No new baseline walking quota or stationary-minute repeat. The [tour guide](NORTH-FINCHLEY-TAKE-THE-TOURS.md) records the actual steps and time estimates.
 
+### 11 A voice comfortable enough for the whole walk
+
+**17 September 2026. Owner feedback:** the installed macOS Daniel voice is too robotic for sustained listening. Sidi wants a quick, easy, free improvement for now; he has ElevenLabs and Hume subscriptions for later serious work. Their mention does not authorise paid usage or uploading scripts.
+
+**Authorised next step:** prepare matching short Kokoro samples in British Emma and George. [The audition and metadata](voice-samples/README.md) preserve the exact excerpt and outputs. Both were generated locally and decoded successfully, with no audible device action or phone/package change. **Open:** which voice Sidi finds comfortable, whether speed/pronunciation need adjustment, then replacement narration and measured chapter timing. Preparing samples does not select a voice or establish tour enjoyment.
+
 ## Questions to carry into a later systematic review
 
 - Does context before anecdote usually improve the story, and when can an immediate intriguing detail work better?
