@@ -103,7 +103,7 @@ After the map walk, Sidi reported accurate location, correct audio and airplane-
 
 **Implementation:** local packages, variable stops, once-only departure chapter, numbered map, transcripts/directions/evidence and private scores/voice notes are implemented. Reviews preserve pause, recordings and earlier attempts; saving a voice copy is explicit and verified. The simple prepared spoken directions and measured chapter window serve these routes; generic interrupting navigation cues remain deferred. [Implementation](M2-PLAYER-IMPLEMENTATION.md) and [build/device results](../test-results/M2-tour-build.md) distinguish completed checks from first-use evidence. No E1 automation decision, authoring database or public release is inferred.
 
-**Next owner evidence:** one brief clustered phone recording/playback/save check, then ordinary A/B use with optional feedback. No new baseline walking quota or stationary-minute repeat. The [tour guide](NORTH-FINCHLEY-TAKE-THE-TOURS.md) records the actual steps and time estimates.
+**Phone outcome:** the [17 September check](../test-results/M2-tour-phone.md) passed representative recording/playback/save/reopen checks; both tours are installed for independent use. **Next owner evidence:** ordinary A/B use with optional feedback. No new baseline walking quota or stationary-minute repeat. The [tour guide](NORTH-FINCHLEY-TAKE-THE-TOURS.md) records the actual steps and time estimates.
 
 ## Questions to carry into a later systematic review
 
@@ -126,7 +126,7 @@ After the map walk, Sidi reported accurate location, correct audio and airplane-
 | Both tours | Owner direction to develop both; initial preference B | Completed content and ordinary-use feedback |
 | Stanhope detour | Rejected; Gaumont preferred | New reason to include a passing treatment, if any |
 | Product duration and spacing | Short test footprint is not a product cap; variable rhythm accepted | Actual enjoyment and walking feedback |
-| B walking chapter and per-story review | Implemented; measured content and automated checks | Actual phone capture/playback and useful owner feedback |
+| B walking chapter and per-story review | Implemented; measured content and automated checks | Phone capture/playback verified; ordinary tour enjoyment and pacing feedback next |
 | Distinct standing areas, access and crossings | Desk-reviewed public-exterior candidates with dated imagery; no current field claim | Current conditions during ordinary first use |
 | Public-tour survey before new-area curation | Applied; comprehensive first Finchley catalogue and synthesis recorded | Reuse and improve coverage for the next area |
 | Reusable place/source/story database | Explicitly planned; not implemented | Actual records and reuse requirements from the survey/two tours |

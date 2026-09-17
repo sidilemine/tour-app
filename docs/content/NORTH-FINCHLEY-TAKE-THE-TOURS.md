@@ -1,6 +1,6 @@
 # Take the two Finchley tours
 
-Prepared for Sidi's first personal content review. Final phone installation and the short recording/playback check are recorded separately in the [build/check record](../test-results/M2-tour-build.md). This guide is not itself a passed device or outdoor result.
+Ready for Sidi's first personal content review. Both tours are installed and prepared on the Pixel; the [17 September phone handoff](../test-results/M2-tour-phone.md) records the successful recording/playback, copy and cold-reopening checks. Full-tour enjoyment and current outdoor conditions remain first-use observations.
 
 ## Choose a walk
 

@@ -68,6 +68,10 @@ The first sandboxed Gradle attempt could not open its local lock-contention sock
 
 Local ignored evidence: `.cache/m2-tour-build/build-initial.log`, `build-initial-escalated.log`, `initial-metadata.json` and the prebuild archive/checksums. APKs remain in ignored `artifacts/`; no upload or installation occurred in this build task.
 
+## Subsequent phone handoff
+
+The final self-contained APK was installed and checked on the Pixel in the [17 September handoff](M2-tour-phone.md). That separate record adds actual listening, microphone, saved-note playback, copy/readback and cold-reopening evidence; assembly alone does not establish these results.
+
 ## What this does not establish
 
 Assembly and static payload checks do not establish actual microphone permission/capture, audible saved-note playback, route access, outdoor triggers, narration enjoyment or cold reopening without Metro. Relevant accepted M1/M2 map evidence remains available for reuse, while new feedback and walking-chapter behavior need only the short representative device/use checks justified by the current personal-prototype testing policy. This record does not repeat or supersede those historical physical results.
