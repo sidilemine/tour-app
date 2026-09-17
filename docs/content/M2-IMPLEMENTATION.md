@@ -2,9 +2,15 @@
 
 Prepared 13 September; status updated 17 September 2026. **First map slice implemented and verified using combined desk/outdoor evidence. M1 passed its [acceptance gate](../test-results/M1-closure.md).** These are small ordered tasks for the next assigned milestone, not authorization to bypass the lifecycle gate. Existing research, provisional package validation and listening drafts are retained.
 
+## Implementation update — 17 September
+
+The assigned preparation and app work is implemented: [survey and synthesis](survey/README.md), full [A/B narratives/packages](../../content/north-finchley/README.md), [public-exterior route checks](routes/north-finchley-review-v2/EXTERIOR-CHECKS.md), variable-stop/chapter playback, route overlay, durable import and local recorded feedback. See [actual behaviour and limits](M2-PLAYER-IMPLEMENTATION.md) and [build/device evidence](../test-results/M2-tour-build.md). Remaining work is the one clustered phone handoff check and ordinary owner use. The task descriptions below preserve the planning contract; they are not a claim those implemented features remain absent.
+
+For these tours, spoken street-name directions conclude each story and the walking chapter fits before the next turn. The previously proposed generic interrupting cue is deferred until a concrete route/navigation problem requires it. Dated imagery resolves the two material exterior-view questions; current conditions can be reported during ordinary use, without a separate reconnaissance outing.
+
 ## Preparation available now
 
-**Latest sequencing direction, 17 September:** first conduct the [comprehensive public walking-tour survey](AREA-TOUR-SURVEY.md), cataloguing stops, themes and stories with sources. Revisit the two outlines against it before full scripting. This supersedes the immediate B-script-first sequence below, while preserving the direction to develop both tours. Save reusable structured research; database implementation is a later roadmap item.
+**Sequencing direction applied, 17 September:** first conduct the [comprehensive public walking-tour survey](AREA-TOUR-SURVEY.md), cataloguing stops, themes and stories with sources. Revisit the two outlines against it before full scripting. This supersedes the immediate B-script-first sequence below, while preserving the direction to develop both tours. Save reusable structured research; database implementation is a later roadmap item.
 
 Latest owner review, 17 September: [develop both North Finchley tours](NORTH-FINCHLEY-REVIEW-RESPONSE.md), with B’s additional walking welcomed and A’s Stanhope detour removed. Prepare B’s 2–3-minute chapter between stops 3 and 4 and a few scores out of ten plus a voice note after each story. The [editorial record](EDITORIAL-REVIEW-RECORD.md) collates all 45 comments and the corrections. The original A route/timing is now historical; B’s desk estimate is 1.9 km / 37–42 minutes before review overhead and final chapter timing. No new field work is requested at this review stage.
 
@@ -60,6 +66,6 @@ Use both tours offline for owner feedback, recording order and prior exposure to
 
 M2 is done when the curated offline tour is useful under its stated acceptance scope, with remaining non-blocking limits recorded. E1 separately records proceed, revise and repeat, or do not automate yet before authorizing a factory; it need not delay the usable M2 tour. Backend infrastructure, a reusable city knowledge base, driving and a full AI factory remain outside this milestone.
 
-## Decisions still open
+## Planning decisions at the earlier review
 
 The PMTiles native proof and targeted map regression are complete within their recorded Pixel scope. Still open: verified visitor points and feasible leg timing; final six-stop selection, voice/rights and script duration. These require evidence or later feedback, not guesses now. No further M1 or map-regression phone test is requested. Both-tour development is authorised; do not ask Sidi to choose A or B again. Implement the bounded player/review work after its content and contract preparation, with purpose and owner time stated before any field request. The exact feedback dimensions and chapter mechanics remain engineering proposals, not observed behavior.

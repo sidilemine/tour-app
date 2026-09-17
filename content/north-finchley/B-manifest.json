@@ -1,0 +1,1099 @@
+{
+  "format": "walking-tour-package",
+  "version": 1,
+  "mapId": "north-finchley-abc1a7e4d563d305",
+  "fixture": {
+    "schemaVersion": 1,
+    "id": "north-finchley-b",
+    "version": 1,
+    "title": "B · How a neighbourhood makes itself",
+    "verification": {
+      "status": "unverified",
+      "note": "Desk-reviewed public exterior route, OSM/Valhalla geometry and published addresses, 17 September 2026. Current sightlines, pavement obstructions and access are not yet field-checked. First owner use supplies those observations; manual play/skip remains available."
+    },
+    "route": [
+      {
+        "latitude": 51.613142,
+        "longitude": -0.176806
+      },
+      {
+        "latitude": 51.613149,
+        "longitude": -0.176855
+      },
+      {
+        "latitude": 51.613197,
+        "longitude": -0.177101
+      },
+      {
+        "latitude": 51.613413,
+        "longitude": -0.176972
+      },
+      {
+        "latitude": 51.613449,
+        "longitude": -0.17695
+      },
+      {
+        "latitude": 51.613652,
+        "longitude": -0.176858
+      },
+      {
+        "latitude": 51.614025,
+        "longitude": -0.176722
+      },
+      {
+        "latitude": 51.614097,
+        "longitude": -0.176698
+      },
+      {
+        "latitude": 51.614025,
+        "longitude": -0.176722
+      },
+      {
+        "latitude": 51.613652,
+        "longitude": -0.176858
+      },
+      {
+        "latitude": 51.613449,
+        "longitude": -0.17695
+      },
+      {
+        "latitude": 51.613413,
+        "longitude": -0.176972
+      },
+      {
+        "latitude": 51.613416,
+        "longitude": -0.176986
+      },
+      {
+        "latitude": 51.613435,
+        "longitude": -0.177085
+      },
+      {
+        "latitude": 51.613441,
+        "longitude": -0.177115
+      },
+      {
+        "latitude": 51.613447,
+        "longitude": -0.177145
+      },
+      {
+        "latitude": 51.613282,
+        "longitude": -0.177234
+      },
+      {
+        "latitude": 51.613238,
+        "longitude": -0.177279
+      },
+      {
+        "latitude": 51.613344,
+        "longitude": -0.177647
+      },
+      {
+        "latitude": 51.613451,
+        "longitude": -0.178062
+      },
+      {
+        "latitude": 51.613571,
+        "longitude": -0.178559
+      },
+      {
+        "latitude": 51.613657,
+        "longitude": -0.178914
+      },
+      {
+        "latitude": 51.613986,
+        "longitude": -0.180393
+      },
+      {
+        "latitude": 51.614089,
+        "longitude": -0.180881
+      },
+      {
+        "latitude": 51.614223,
+        "longitude": -0.181792
+      },
+      {
+        "latitude": 51.61443,
+        "longitude": -0.183052
+      },
+      {
+        "latitude": 51.614452,
+        "longitude": -0.183233
+      },
+      {
+        "latitude": 51.614348,
+        "longitude": -0.183846
+      },
+      {
+        "latitude": 51.614257,
+        "longitude": -0.184155
+      },
+      {
+        "latitude": 51.614151,
+        "longitude": -0.184387
+      },
+      {
+        "latitude": 51.6138,
+        "longitude": -0.18486
+      },
+      {
+        "latitude": 51.613506,
+        "longitude": -0.185219
+      },
+      {
+        "latitude": 51.613412,
+        "longitude": -0.185299
+      },
+      {
+        "latitude": 51.613277,
+        "longitude": -0.185412
+      },
+      {
+        "latitude": 51.613259,
+        "longitude": -0.185237
+      },
+      {
+        "latitude": 51.613248,
+        "longitude": -0.185199
+      },
+      {
+        "latitude": 51.613094,
+        "longitude": -0.18468
+      },
+      {
+        "latitude": 51.613084,
+        "longitude": -0.18464
+      },
+      {
+        "latitude": 51.612969,
+        "longitude": -0.184162
+      },
+      {
+        "latitude": 51.612889,
+        "longitude": -0.183875
+      },
+      {
+        "latitude": 51.612818,
+        "longitude": -0.183644
+      },
+      {
+        "latitude": 51.612804,
+        "longitude": -0.183592
+      },
+      {
+        "latitude": 51.61277,
+        "longitude": -0.183499
+      },
+      {
+        "latitude": 51.61273,
+        "longitude": -0.183407
+      },
+      {
+        "latitude": 51.612675,
+        "longitude": -0.183286
+      },
+      {
+        "latitude": 51.612615,
+        "longitude": -0.1832
+      },
+      {
+        "latitude": 51.612543,
+        "longitude": -0.183145
+      },
+      {
+        "latitude": 51.612479,
+        "longitude": -0.183109
+      },
+      {
+        "latitude": 51.612396,
+        "longitude": -0.183053
+      },
+      {
+        "latitude": 51.61233,
+        "longitude": -0.182984
+      },
+      {
+        "latitude": 51.612258,
+        "longitude": -0.182886
+      },
+      {
+        "latitude": 51.612187,
+        "longitude": -0.182739
+      },
+      {
+        "latitude": 51.612148,
+        "longitude": -0.18265
+      },
+      {
+        "latitude": 51.612101,
+        "longitude": -0.182548
+      },
+      {
+        "latitude": 51.612049,
+        "longitude": -0.182448
+      },
+      {
+        "latitude": 51.611987,
+        "longitude": -0.182357
+      },
+      {
+        "latitude": 51.611873,
+        "longitude": -0.182248
+      },
+      {
+        "latitude": 51.611515,
+        "longitude": -0.182068
+      },
+      {
+        "latitude": 51.61134,
+        "longitude": -0.181928
+      },
+      {
+        "latitude": 51.611216,
+        "longitude": -0.181757
+      },
+      {
+        "latitude": 51.610632,
+        "longitude": -0.180452
+      },
+      {
+        "latitude": 51.610472,
+        "longitude": -0.180736
+      },
+      {
+        "latitude": 51.610201,
+        "longitude": -0.181194
+      },
+      {
+        "latitude": 51.610177,
+        "longitude": -0.181225
+      },
+      {
+        "latitude": 51.610201,
+        "longitude": -0.181194
+      },
+      {
+        "latitude": 51.610472,
+        "longitude": -0.180736
+      },
+      {
+        "latitude": 51.610632,
+        "longitude": -0.180452
+      },
+      {
+        "latitude": 51.610569,
+        "longitude": -0.180312
+      },
+      {
+        "latitude": 51.610615,
+        "longitude": -0.180248
+      },
+      {
+        "latitude": 51.610634,
+        "longitude": -0.180223
+      },
+      {
+        "latitude": 51.610904,
+        "longitude": -0.179872
+      },
+      {
+        "latitude": 51.610954,
+        "longitude": -0.179809
+      },
+      {
+        "latitude": 51.611251,
+        "longitude": -0.179418
+      },
+      {
+        "latitude": 51.611297,
+        "longitude": -0.17934
+      },
+      {
+        "latitude": 51.611416,
+        "longitude": -0.179144
+      },
+      {
+        "latitude": 51.611472,
+        "longitude": -0.179077
+      },
+      {
+        "latitude": 51.611504,
+        "longitude": -0.179039
+      },
+      {
+        "latitude": 51.61152,
+        "longitude": -0.179032
+      },
+      {
+        "latitude": 51.611527,
+        "longitude": -0.179037
+      },
+      {
+        "latitude": 51.611535,
+        "longitude": -0.179024
+      },
+      {
+        "latitude": 51.611556,
+        "longitude": -0.178994
+      },
+      {
+        "latitude": 51.611576,
+        "longitude": -0.178966
+      },
+      {
+        "latitude": 51.611583,
+        "longitude": -0.178953
+      },
+      {
+        "latitude": 51.611589,
+        "longitude": -0.178921
+      },
+      {
+        "latitude": 51.611715,
+        "longitude": -0.17874
+      },
+      {
+        "latitude": 51.611836,
+        "longitude": -0.178583
+      },
+      {
+        "latitude": 51.611828,
+        "longitude": -0.178569
+      },
+      {
+        "latitude": 51.611804,
+        "longitude": -0.178521
+      },
+      {
+        "latitude": 51.611959,
+        "longitude": -0.178296
+      },
+      {
+        "latitude": 51.612226,
+        "longitude": -0.17796
+      },
+      {
+        "latitude": 51.612281,
+        "longitude": -0.177879
+      },
+      {
+        "latitude": 51.612327,
+        "longitude": -0.177851
+      },
+      {
+        "latitude": 51.612391,
+        "longitude": -0.177819
+      },
+      {
+        "latitude": 51.612439,
+        "longitude": -0.177784
+      },
+      {
+        "latitude": 51.612486,
+        "longitude": -0.177746
+      },
+      {
+        "latitude": 51.612587,
+        "longitude": -0.177636
+      },
+      {
+        "latitude": 51.612593,
+        "longitude": -0.177635
+      },
+      {
+        "latitude": 51.612625,
+        "longitude": -0.177628
+      },
+      {
+        "latitude": 51.612649,
+        "longitude": -0.17761
+      },
+      {
+        "latitude": 51.612779,
+        "longitude": -0.177502
+      },
+      {
+        "latitude": 51.612801,
+        "longitude": -0.177489
+      },
+      {
+        "latitude": 51.613217,
+        "longitude": -0.177206
+      },
+      {
+        "latitude": 51.613197,
+        "longitude": -0.177101
+      },
+      {
+        "latitude": 51.613149,
+        "longitude": -0.176855
+      },
+      {
+        "latitude": 51.613142,
+        "longitude": -0.176806
+      }
+    ],
+    "stops": [
+      {
+        "id": "tally-ho",
+        "title": "Tally Ho Corner",
+        "routeIndex": 7,
+        "standing": {
+          "longitude": -0.1766871,
+          "latitude": 51.6141189
+        },
+        "landmark": {
+          "longitude": -0.17672,
+          "latitude": 51.6141
+        },
+        "approach": "From the artsdepot / bus station area, follow the pavement north along Ballards Lane to Tally Ho Corner.",
+        "viewpoint": "Use the public pavement at Tally Ho Corner, near the junction of High Road and Ballards Lane. Keep the pedestrian crossing clear.",
+        "access": "Exterior street stop. No pub entry needed."
+      },
+      {
+        "id": "trinity",
+        "title": "Trinity Church",
+        "routeIndex": 20,
+        "standing": {
+          "longitude": -0.1785888,
+          "latitude": 51.6135386
+        },
+        "landmark": {
+          "longitude": -0.17857,
+          "latitude": 51.61355
+        },
+        "approach": "Follow Nether Street away from Ballards Lane to Trinity Church.",
+        "viewpoint": "View Trinity Church from the Nether Street pavement, without blocking the entrance.",
+        "access": "Exterior only; no rehearsal or church opening is promised."
+      },
+      {
+        "id": "meeting-house",
+        "title": "Finchley Meeting House",
+        "routeIndex": 37,
+        "standing": {
+          "longitude": -0.1847,
+          "latitude": 51.61315
+        },
+        "landmark": {
+          "longitude": -0.18448,
+          "latitude": 51.61334
+        },
+        "approach": "Continue along Nether Street away from the town centre, then turn into Alexandra Grove. Look for the Meeting House at number 58.",
+        "viewpoint": "Look for number 58 Alexandra Grove and the bottle-and-slate artwork on the front wall. Use the pavement beside the driveway, keeping the dropped kerb and entrance clear. If the work is not visible, use the transcript or skip without entering a closed gate.",
+        "access": "The meeting invites visitors to see its front-wall artwork. September 2024 Street View shows the sculpture from Alexandra Grove; current obstructions remain a first-use observation. No indoor access needed."
+      },
+      {
+        "id": "moss-hall-crescent",
+        "title": "Moss Hall Crescent",
+        "routeIndex": 63,
+        "standing": {
+          "longitude": -0.18122,
+          "latitude": 51.61023
+        },
+        "landmark": {
+          "longitude": -0.18115,
+          "latitude": 51.61014
+        },
+        "approach": "Follow Alexandra Grove to Moss Hall Crescent; turn into the Crescent and pause at the villas behind the green.",
+        "viewpoint": "Stay on the house-side pavement along the northern part of Moss Hall Crescent. View the villas through their frontage planting; the shared green strip is across the Crescent roadway towards Ballards Lane. Do not stand in the road or enter the green or private gardens.",
+        "access": "Residential exterior view. Do not enter the shared green or private gardens."
+      },
+      {
+        "id": "elephant",
+        "title": "The Elephant Inn",
+        "routeIndex": 75,
+        "standing": {
+          "longitude": -0.1790389,
+          "latitude": 51.6115036
+        },
+        "landmark": {
+          "longitude": -0.17916,
+          "latitude": 51.61151
+        },
+        "approach": "Return to Alexandra Grove, continue to Ballards Lane and follow its pavement towards the town centre to the Elephant Inn.",
+        "viewpoint": "View the Elephant Inn at 283 Ballards Lane from the pavement, leaving room for people to pass.",
+        "access": "Exterior story. Food, drink and an interior look are optional and outside the tour timing."
+      },
+      {
+        "id": "artsdepot",
+        "title": "Gaumont to artsdepot",
+        "routeIndex": 104,
+        "standing": {
+          "longitude": -0.1768546,
+          "latitude": 51.613149
+        },
+        "landmark": {
+          "longitude": -0.17684,
+          "latitude": 51.61305
+        },
+        "approach": "Follow Ballards Lane towards the town centre and turn into Nether Street beside artsdepot.",
+        "viewpoint": "Finish outside artsdepot by Nether Street and the bus station area. Stay in pedestrian space, clear of bus access.",
+        "access": "Exterior finish; no performance ticket or building access required."
+      }
+    ],
+    "narration": {
+      "description": "6 stops + one walking chapter · about 1.92 km · allow 39–44 minutes, plus optional feedback.",
+      "introduction": "Begin on the public pavement at Tally Ho Corner, a short walk north along Ballards Lane from North Finchley bus station / artsdepot. Start the tour there. Both walks finish outside artsdepot. Use the numbered map and street-name directions; the line is approximate and can follow road centres, so remain on pavements and use pedestrian crossings. No indoor visits are required.",
+      "finishInstructions": "Finish by artsdepot, beside the North Finchley bus station area. Tap End tour to stop location tracking. A useful final note is whether the walk was worth the time and one change you would make.",
+      "reviewNote": "First personal review version. Choose Review after any story to save optional scores and a voice note; close it and Resume when ready. Allow roughly 45–60 seconds per review. If a view is blocked or an arrival misses, use manual Play or Skip. Current views and the walking experience are for your first-use feedback.",
+      "rightsNote": "Original narration prepared for Sidi’s private tour review; rendered locally with the installed macOS Daniel voice at 145 words per minute. No music, source recordings or photographs copied. Map data © OpenStreetMap contributors (ODbL); Protomaps / Natural Earth and Noto font credits are available on the map. Public source links and paragraph evidence are stored with each transcript. Redistribution/voice rights have not been cleared for publication.",
+      "stories": [
+        {
+          "id": "tally-ho",
+          "title": "A junction with a shorter address",
+          "transcript": "Tally Ho Corner grew out of two roads meeting. Ballards Lane was a medieval road, but for centuries it stopped short of the High Road. The connection came in 1756, when the lane was extended to join what was then the Great North Road. North Finchley had become a junction on the road out of London.\n\nIn the following century, a new toll road from Marylebone joined this route through Ballards Lane. Long-distance travellers needed more than a road: their coaches needed fresh horses. Barnet's local history records sixteen horses kept near this corner by the Tally Ho Coach Company, ready for the Birmingham coach's first change.\n\nThat gives Tally Ho a coaching connection. But a Victorian cyclist offered a different account of the name, involving a friend with a postcard to write.\n\nWriting in 1880 as Le Voyageur, he described meeting that friend here for bicycle rides. They came by different roads, so this was a convenient rendezvous. Describing it every time was less convenient. His friend grew tired of writing “Junction of North and Finchley roads” and came up with Tally Ho Corner instead.\n\nAccording to the writer, cycling notices spread the name, and a local hotel put it above the door. His account doesn't settle who used it first. But it's a pleasingly practical contribution to local history: two people arranging a bicycle ride, and one of them deciding that their meeting place needed a shorter address.\n\nWhen you are ready, follow the Ballards Lane pavement south towards artsdepot. Turn into Nether Street, away from the main road, and continue to Trinity Church.",
+          "sources": [
+            {
+              "title": "From Long Lane to Dollis Valley: Points of Interest — Barry and Sue Blain, Finchley Society (15 August 2020)",
+              "url": "https://www.finchleysociety.org.uk/wp-content/uploads/2020/08/From-Long-Lane-to-Dollis-Valley-Points-of-Interest.pdf"
+            },
+            {
+              "title": "Tally Ho Corner and the High Road (Finchley N12) — Barnet Council",
+              "url": "https://www.barnet.gov.uk/libraries-old/local-studies-and-archives/pocket-histories/finchley-friern-barnet-and-totteridge-13"
+            },
+            {
+              "title": "Finchley’s Toll Gate — Lynn Radnedge, St Mary at Finchley (27 September 2024)",
+              "url": "https://stmaryatfinchley.org.uk/finchleys-toll-gate/"
+            },
+            {
+              "title": "Tally-ho! – The truth behind the name — North Finchley Town Centre, reproducing Le Voyageur, The Country Gentleman, 4 December 1880",
+              "url": "https://northfinchleytowncentre.co.uk/local-stories/story/tally-ho-the-truth-behind-the-name/"
+            },
+            {
+              "title": "OpenStreetMap public streets and paths; saved Valhalla pedestrian responses, reviewed 17 September 2026",
+              "url": "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+            }
+          ],
+          "directions": [
+            "When you are ready, follow the Ballards Lane pavement south towards artsdepot. Turn into Nether Street, away from the main road, and continue to Trinity Church."
+          ],
+          "evidence": [
+            {
+              "paragraph": "Tally Ho Corner grew out of two roads meeting. Ballards Lane was a medieval road, but for centuries it stopped short of the High Road. The connection came in 1756, when the lane was extended to join what was then the Great North Road. North Finchley had become a junction on the road out of London.",
+              "kind": "source_checked",
+              "basis": "Blain and Blain, printed page 2, Ballards Lane section: medieval road and 1756 raised connection; minimal excerpt: “important medieval thoroughfare”. Council pocket history paragraph 2 corroborates extension. Council text checked through search index on 17 September 2026; direct access returned 403. No Roman origin or specific medieval construction date claimed.",
+              "sourceUrls": [
+                "https://www.finchleysociety.org.uk/wp-content/uploads/2020/08/From-Long-Lane-to-Dollis-Valley-Points-of-Interest.pdf",
+                "https://www.barnet.gov.uk/libraries-old/local-studies-and-archives/pocket-histories/finchley-friern-barnet-and-totteridge-13"
+              ]
+            },
+            {
+              "paragraph": "In the following century, a new toll road from Marylebone joined this route through Ballards Lane. Long-distance travellers needed more than a road: their coaches needed fresh horses. Barnet's local history records sixteen horses kept near this corner by the Tally Ho Coach Company, ready for the Birmingham coach's first change.",
+              "kind": "source_checked",
+              "basis": "Radnedge, opening historical paragraphs, connects Marylebone and Finchley through Ballards Lane. Council pocket history paragraph 2 supports attributed company, sixteen horses and Birmingham first change; minimal excerpt: “kept 16 horses near the corner”. Exact stable, inn, coach location and first naming remain unsettled; no such identification is asserted.",
+              "sourceUrls": [
+                "https://stmaryatfinchley.org.uk/finchleys-toll-gate/",
+                "https://www.barnet.gov.uk/libraries-old/local-studies-and-archives/pocket-histories/finchley-friern-barnet-and-totteridge-13"
+              ]
+            },
+            {
+              "paragraph": "That gives Tally Ho a coaching connection. But a Victorian cyclist offered a different account of the name, involving a friend with a postcard to write.",
+              "kind": "source_checked",
+              "basis": "Town Centre page reproduces an account attributed to Le Voyageur, The Country Gentleman, 4 December 1880. The original newspaper issue was not independently inspected. This is an attributed competing account, not a settled etymology.",
+              "sourceUrls": [
+                "https://northfinchleytowncentre.co.uk/local-stories/story/tally-ho-the-truth-behind-the-name/"
+              ]
+            },
+            {
+              "paragraph": "Writing in 1880 as Le Voyageur, he described meeting that friend here for bicycle rides. They came by different roads, so this was a convenient rendezvous. Describing it every time was less convenient. His friend grew tired of writing “Junction of North and Finchley roads” and came up with Tally Ho Corner instead.",
+              "kind": "source_checked",
+              "basis": "Reproduced account, paragraphs describing friend P., postcards and rendezvous. The six-word junction description is the narration’s only quotation. Publication date is 1880; no claim that this independently establishes the name’s first use.",
+              "sourceUrls": [
+                "https://northfinchleytowncentre.co.uk/local-stories/story/tally-ho-the-truth-behind-the-name/"
+              ]
+            },
+            {
+              "paragraph": "According to the writer, cycling notices spread the name, and a local hotel put it above the door. His account doesn't settle who used it first. But it's a pleasingly practical contribution to local history: two people arranging a bicycle ride, and one of them deciding that their meeting place needed a shorter address.",
+              "kind": "source_checked",
+              "basis": "Reproduced account, closing paragraphs on bicycle-club fixtures and hotel inscription. Final appreciation is original editorial response to the attributed anecdote; no current hotel identification or proven naming priority.",
+              "sourceUrls": [
+                "https://northfinchleytowncentre.co.uk/local-stories/story/tally-ho-the-truth-behind-the-name/"
+              ]
+            },
+            {
+              "paragraph": "When you are ready, follow the Ballards Lane pavement south towards artsdepot. Turn into Nether Street, away from the main road, and continue to Trinity Church.",
+              "kind": "source_checked",
+              "basis": "Desk navigation from public OpenStreetMap streets and docs/content/routes/north-finchley-options-v1/B-response.json, reviewed 2026-09-17. Approximate exterior positions; no current field sightline/access claim.",
+              "sourceUrls": [
+                "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+              ]
+            }
+          ],
+          "audio": {
+            "key": "north-finchley-b-tally-ho",
+            "bytes": 885111,
+            "md5": "4fedd6f0957fc1717f17ebf97d1be2a6",
+            "durationSeconds": 102.708707
+          }
+        },
+        {
+          "id": "trinity",
+          "title": "The work behind the concert",
+          "transcript": "Trinity Church is also a place where an orchestra gets its music ready. Finchley Symphony Orchestra uses it for rehearsals and concerts. The players are non-professional, but their repertoire is ambitious, reaching from Beethoven to less familiar composers such as Leokadiya Kashperova.\n\nTheir own account of rehearsal life makes room for something less grand: tea, cake and a chat. There is a weekly rhythm to this kind of music-making, with the social break sitting comfortably beside the difficult score.\n\nWe can picture a rehearsal rather than a performance: a phrase tried again, a pencil lifted to mark the page, a player waiting while another section works through its part. Gradually, separate efforts begin to fit together. None of that requires a concert audience, though it is what eventually makes the concert possible.\n\nFrom the pavement, the building keeps that weekly work to itself. It is a useful addition to the street’s soundscape, even on a day when all we hear here is passing traffic.\n\nContinue along Nether Street away from the town centre. Follow it to Alexandra Grove, then turn into Alexandra Grove and look for Finchley Meeting House at number 58. The next story is the artwork on its front wall.",
+          "sources": [
+            {
+              "title": "About Us — Finchley Symphony Orchestra",
+              "url": "https://www.finchleysymphony.org/about/"
+            },
+            {
+              "title": "Contact Us — Finchley Symphony Orchestra",
+              "url": "https://www.finchleysymphony.org/contact/"
+            },
+            {
+              "title": "OpenStreetMap public streets and paths; saved Valhalla pedestrian responses, reviewed 17 September 2026",
+              "url": "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+            }
+          ],
+          "directions": [
+            "Continue along Nether Street away from the town centre. Follow it to Alexandra Grove, then turn into Alexandra Grove and look for Finchley Meeting House at number 58. The next story is the artwork on its front wall."
+          ],
+          "evidence": [
+            {
+              "paragraph": "Trinity Church is also a place where an orchestra gets its music ready. Finchley Symphony Orchestra uses it for rehearsals and concerts. The players are non-professional, but their repertoire is ambitious, reaching from Beethoven to less familiar composers such as Leokadiya Kashperova.",
+              "kind": "source_checked",
+              "basis": "Finchley Symphony Orchestra Contact Us identifies Trinity Church as normal concert and rehearsal venue; About Us identifies non-professional players and performed repertoire including Beethoven and Kashperova’s Symphony in B minor. Current published description checked 17 September 2026; no event promised during the walk.",
+              "sourceUrls": [
+                "https://www.finchleysymphony.org/about/",
+                "https://www.finchleysymphony.org/contact/"
+              ]
+            },
+            {
+              "paragraph": "Their own account of rehearsal life makes room for something less grand: tea, cake and a chat. There is a weekly rhythm to this kind of music-making, with the social break sitting comfortably beside the difficult score.",
+              "kind": "source_checked",
+              "basis": "About Us, rehearsal paragraph, explicitly describes weekly rehearsals and tea, cake and conversation. Minimal excerpt: “tea and cake”. The contrast in scale is original interpretation, not a claim about a specific rehearsal.",
+              "sourceUrls": [
+                "https://www.finchleysymphony.org/about/"
+              ]
+            },
+            {
+              "paragraph": "We can picture a rehearsal rather than a performance: a phrase tried again, a pencil lifted to mark the page, a player waiting while another section works through its part. Gradually, separate efforts begin to fit together. None of that requires a concert audience, though it is what eventually makes the concert possible.",
+              "kind": "supported_reconstruction",
+              "basis": "Generic supported reconstruction of orchestral rehearsal work, grounded in the orchestra’s published rehearsal practice. No claim that music is currently audible, that the listener can see inside, or that these actions were witnessed at Trinity.",
+              "sourceUrls": [
+                "https://www.finchleysymphony.org/about/"
+              ]
+            },
+            {
+              "paragraph": "From the pavement, the building keeps that weekly work to itself. It is a useful addition to the street’s soundscape, even on a day when all we hear here is passing traffic.",
+              "kind": "editorial",
+              "basis": "Original exterior-focused closing. Soundscape is an interpretation of the documented musical use, not a claim of live sound during this visit.",
+              "sourceUrls": [
+                "https://www.finchleysymphony.org/contact/"
+              ]
+            },
+            {
+              "paragraph": "Continue along Nether Street away from the town centre. Follow it to Alexandra Grove, then turn into Alexandra Grove and look for Finchley Meeting House at number 58. The next story is the artwork on its front wall.",
+              "kind": "source_checked",
+              "basis": "Desk navigation from public OpenStreetMap streets and docs/content/routes/north-finchley-options-v1/B-response.json, reviewed 2026-09-17. Approximate exterior positions; no current field sightline/access claim.",
+              "sourceUrls": [
+                "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+              ]
+            }
+          ],
+          "audio": {
+            "key": "north-finchley-b-trinity",
+            "bytes": 674452,
+            "md5": "4b77093ceb56c7f4add4f6e4ae560bbb",
+            "durationSeconds": 78.815147
+          }
+        },
+        {
+          "id": "meeting-house",
+          "title": "Bottles become a wave",
+          "transcript": "The artwork on the front wall of the Quaker Meeting House began with something the neighbours kept finding in the street: discarded plastic bottles. Members of the meeting were collecting litter locally. The bottles became a starting point for a commission about pollution and the climate, made with artist Alistair Lambert.\n\nLambert worked with Quakers and other local people in three workshops. They used bottles as moulds, filling them with plaster at different levels. The resulting forms were combined with reclaimed roof slates, arranged into waves. So the bottle shapes in the wall are plaster casts; the grey, layered water is made from material that once belonged on roofs.\n\nThat change of materials gives the piece its character. A bottle is made to hold water; here, its outline seems to float in it. Slate is familiar as a hard, flat covering, but repeated edges let it suggest a moving surface. The wall turns things we normally recognise in passing into something worth lingering over.\n\nThe practical beginning matters, too. This work grew out of people taking care of nearby streets, then making something together from what that experience brought to mind. A piece of public art can start with a grand commission. This one also has a connection to the much smaller business of picking something up off the pavement.\n\nContinue along Alexandra Grove towards Ballards Lane. A walking chapter will begin after you have left this stop, if automatic narration is enabled. Our next stop is the villas on Moss Hall Crescent, a turning off Alexandra Grove before Ballards Lane.",
+          "sources": [
+            {
+              "title": "Wall sculpture at Finchley Meeting House: Message from a bottle — North Finchley Town Centre",
+              "url": "https://northfinchleytowncentre.co.uk/local-stories/story/wall-sculpture-at-finchley-meeting-house-message-from-a-bottle/"
+            },
+            {
+              "title": "Home — Finchley Quaker Meeting",
+              "url": "https://finchley.quakermeeting.org/"
+            },
+            {
+              "title": "OpenStreetMap public streets and paths; saved Valhalla pedestrian responses, reviewed 17 September 2026",
+              "url": "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+            }
+          ],
+          "directions": [
+            "Continue along Alexandra Grove towards Ballards Lane. A walking chapter will begin after you have left this stop, if automatic narration is enabled. Our next stop is the villas on Moss Hall Crescent, a turning off Alexandra Grove before Ballards Lane."
+          ],
+          "evidence": [
+            {
+              "paragraph": "The artwork on the front wall of the Quaker Meeting House began with something the neighbours kept finding in the street: discarded plastic bottles. Members of the meeting were collecting litter locally. The bottles became a starting point for a commission about pollution and the climate, made with artist Alistair Lambert.",
+              "kind": "source_checked",
+              "basis": "Town Centre first-person commission account, opening paragraphs: local litter collection, plastic-bottle waste and environmental intention. Finchley Meeting’s own homepage, Regular events, independently confirms its continuing surrounding-street litter-picking activity. Minimal excerpt from commission account: “plastic bottles”.",
+              "sourceUrls": [
+                "https://northfinchleytowncentre.co.uk/local-stories/story/wall-sculpture-at-finchley-meeting-house-message-from-a-bottle/",
+                "https://finchley.quakermeeting.org/"
+              ]
+            },
+            {
+              "paragraph": "Lambert worked with Quakers and other local people in three workshops. They used bottles as moulds, filling them with plaster at different levels. The resulting forms were combined with reclaimed roof slates, arranged into waves. So the bottle shapes in the wall are plaster casts; the grey, layered water is made from material that once belonged on roofs.",
+              "kind": "source_checked",
+              "basis": "Commission account, workshop and construction paragraphs: three public/Quaker workshops, plaster poured into bottles at varying water levels, reclaimed grey roof slates and wave arrangement. Important material distinction: casts, not actual plastic bottles fixed to the wall.",
+              "sourceUrls": [
+                "https://northfinchleytowncentre.co.uk/local-stories/story/wall-sculpture-at-finchley-meeting-house-message-from-a-bottle/"
+              ]
+            },
+            {
+              "paragraph": "That change of materials gives the piece its character. A bottle is made to hold water; here, its outline seems to float in it. Slate is familiar as a hard, flat covering, but repeated edges let it suggest a moving surface. The wall turns things we normally recognise in passing into something worth lingering over.",
+              "kind": "editorial",
+              "basis": "Original visual interpretation grounded in the documented cast forms and wave composition. “Seems to float” is a reading of the artwork, not a physical description of moving water or an undocumented statement of the artist’s intention.",
+              "sourceUrls": [
+                "https://northfinchleytowncentre.co.uk/local-stories/story/wall-sculpture-at-finchley-meeting-house-message-from-a-bottle/"
+              ]
+            },
+            {
+              "paragraph": "The practical beginning matters, too. This work grew out of people taking care of nearby streets, then making something together from what that experience brought to mind. A piece of public art can start with a grand commission. This one also has a connection to the much smaller business of picking something up off the pavement.",
+              "kind": "editorial",
+              "basis": "Original synthesis of the documented commission and litter-picking origin; no claim that collected plastic became the final plaster material. The artist remains credited and the work is not presented as an anonymous found-object installation.",
+              "sourceUrls": [
+                "https://northfinchleytowncentre.co.uk/local-stories/story/wall-sculpture-at-finchley-meeting-house-message-from-a-bottle/",
+                "https://finchley.quakermeeting.org/"
+              ]
+            },
+            {
+              "paragraph": "Continue along Alexandra Grove towards Ballards Lane. A walking chapter will begin after you have left this stop, if automatic narration is enabled. Our next stop is the villas on Moss Hall Crescent, a turning off Alexandra Grove before Ballards Lane.",
+              "kind": "source_checked",
+              "basis": "Desk navigation from public OpenStreetMap streets and docs/content/routes/north-finchley-options-v1/B-response.json, reviewed 2026-09-17. Approximate exterior positions; no current field sightline/access claim.",
+              "sourceUrls": [
+                "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+              ]
+            }
+          ],
+          "audio": {
+            "key": "north-finchley-b-meeting-house",
+            "bytes": 861751,
+            "md5": "5f83444e8c9d44216db3598df81a8932",
+            "durationSeconds": 100.724535
+          }
+        },
+        {
+          "id": "moss-hall-crescent",
+          "title": "A garden written into the deal",
+          "transcript": "The houses of Moss Hall Crescent were laid out from 1867 on part of the old Moss Hall estate. Their pale brick, shallow slate roofs and decorative window surrounds gave them a comfortable Victorian respectability. The houses stand back from Ballards Lane, with planting between domestic life and the road.\n\nThat space in front was part of the original bargain. The villas’ hundred-year leases restricted changes to the buildings and required the shared front garden to remain unbuilt, fenced and planted. It was to be a communal shrubbery or pleasure ground. The greenery was an amenity the arrangement was designed to preserve.\n\nPicture the offer to an early resident: a substantial house, an orderly frontage, and a planted space that the next owner could not simply fill with another building. The garden gave the view from each home some breathing room. Its usefulness depended on several households keeping to the same agreement.\n\nThat helps explain why the gap is as much a part of the place as the bricks. Each house has its own front door, but the setting was a shared undertaking. From the public pavement, we can appreciate that arrangement without needing to know anything about the private lives behind the windows.\n\nRetrace the short section of the Crescent to Alexandra Grove. Continue to Ballards Lane and follow its pavement towards the town centre. Stop at the Elephant Inn, number 283, keeping the footway clear.",
+          "sources": [
+            {
+              "title": "Moss Hall Crescent Conservation Area: Character Appraisal and Management Proposals — Barnet Council (26 August 2015)",
+              "url": "https://open.barnet.gov.uk/download/2nx73/e21/2015-08-26%20-%20MossHallCrescentConservationArea%20-%20CharacterAppraisalAndManagementProposals.pdf"
+            },
+            {
+              "title": "OpenStreetMap public streets and paths; saved Valhalla pedestrian responses, reviewed 17 September 2026",
+              "url": "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+            }
+          ],
+          "directions": [
+            "Retrace the short section of the Crescent to Alexandra Grove. Continue to Ballards Lane and follow its pavement towards the town centre. Stop at the Elephant Inn, number 283, keeping the footway clear."
+          ],
+          "evidence": [
+            {
+              "paragraph": "The houses of Moss Hall Crescent were laid out from 1867 on part of the old Moss Hall estate. Their pale brick, shallow slate roofs and decorative window surrounds gave them a comfortable Victorian respectability. The houses stand back from Ballards Lane, with planting between domestic life and the road.",
+              "kind": "source_checked",
+              "basis": "Barnet appraisal, printed pages 9 and 12, location and historic development: villa layout from 1867, cream stock brick, shallow slate roofs, stucco classical window mouldings and planted setback. These are the ensemble’s described characteristics; individual alterations are not ruled out.",
+              "sourceUrls": [
+                "https://open.barnet.gov.uk/download/2nx73/e21/2015-08-26%20-%20MossHallCrescentConservationArea%20-%20CharacterAppraisalAndManagementProposals.pdf"
+              ]
+            },
+            {
+              "paragraph": "That space in front was part of the original bargain. The villas’ hundred-year leases restricted changes to the buildings and required the shared front garden to remain unbuilt, fenced and planted. It was to be a communal shrubbery or pleasure ground. The greenery was an amenity the arrangement was designed to preserve.",
+              "kind": "source_checked",
+              "basis": "Appraisal, printed page 12, leasehold paragraph; minimal excerpt: “unbuilt upon”. Paraphrases historical hundred-year lease restrictions and communal planted-ground provision. Does not assert that those original terms remain legally enforceable today.",
+              "sourceUrls": [
+                "https://open.barnet.gov.uk/download/2nx73/e21/2015-08-26%20-%20MossHallCrescentConservationArea%20-%20CharacterAppraisalAndManagementProposals.pdf"
+              ]
+            },
+            {
+              "paragraph": "Picture the offer to an early resident: a substantial house, an orderly frontage, and a planted space that the next owner could not simply fill with another building. The garden gave the view from each home some breathing room. Its usefulness depended on several households keeping to the same agreement.",
+              "kind": "supported_reconstruction",
+              "basis": "Supported reconstruction of the residential proposition implicit in the documented building form and collective lease restrictions. Not a quotation from a sales prospectus, not a named resident’s thoughts, and not a claim that every resident had the same reason for moving.",
+              "sourceUrls": [
+                "https://open.barnet.gov.uk/download/2nx73/e21/2015-08-26%20-%20MossHallCrescentConservationArea%20-%20CharacterAppraisalAndManagementProposals.pdf"
+              ]
+            },
+            {
+              "paragraph": "That helps explain why the gap is as much a part of the place as the bricks. Each house has its own front door, but the setting was a shared undertaking. From the public pavement, we can appreciate that arrangement without needing to know anything about the private lives behind the windows.",
+              "kind": "editorial",
+              "basis": "Original interpretation of the ensemble and shared amenity. Exterior-only framing respects occupied homes and does not invite entry, window inspection or use of the private green.",
+              "sourceUrls": [
+                "https://open.barnet.gov.uk/download/2nx73/e21/2015-08-26%20-%20MossHallCrescentConservationArea%20-%20CharacterAppraisalAndManagementProposals.pdf"
+              ]
+            },
+            {
+              "paragraph": "Retrace the short section of the Crescent to Alexandra Grove. Continue to Ballards Lane and follow its pavement towards the town centre. Stop at the Elephant Inn, number 283, keeping the footway clear.",
+              "kind": "source_checked",
+              "basis": "Desk navigation from public OpenStreetMap streets and docs/content/routes/north-finchley-options-v1/B-response.json, reviewed 2026-09-17. Approximate exterior positions; no current field sightline/access claim.",
+              "sourceUrls": [
+                "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+              ]
+            }
+          ],
+          "audio": {
+            "key": "north-finchley-b-moss-hall-crescent",
+            "bytes": 783169,
+            "md5": "7c6953ef691d137cad743ecb5a1ce093",
+            "durationSeconds": 91.366576
+          }
+        },
+        {
+          "id": "elephant",
+          "title": "The estate name at the pub",
+          "transcript": "The Elephant Inn carries another piece of Moss Hall’s history. The pub opened as the Moss Hall Tavern in 1870, when the estate was beginning to become a neighbourhood. The building was replaced in 1927; the Elephant name came much later, in the 1990s.\n\nThe earlier name placed the pub alongside the houses and streets that were taking shape around it. It helps join up the district: the estate supplied building land, its name remained in local addresses, and a tavern became part of everyday life here.\n\nOur glimpse is from outside a working pub, with another generation using a place first established for the growing neighbourhood. The name over the door has changed; the invitation to stop for a drink remains familiar.\n\nFor the final story, continue along Ballards Lane towards Tally Ho and the town centre. At Nether Street, turn towards artsdepot and stop outside the arts centre. Use the pedestrian crossings where needed.",
+          "sources": [
+            {
+              "title": "Pubs, Inns, and Alehouses — Hugh Petrie, North Finchley Town Centre",
+              "url": "https://northfinchleytowncentre.co.uk/local-stories/story/pubs-inns-and-alehouses/"
+            },
+            {
+              "title": "Elephant Inn, North Finchley – Historic Interior — CAMRA (surveyed 24 February 2026; updated 29 June 2026)",
+              "url": "https://camra.org.uk/pubs/elephant-inn-north-finchley-157939"
+            },
+            {
+              "title": "OpenStreetMap public streets and paths; saved Valhalla pedestrian responses, reviewed 17 September 2026",
+              "url": "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+            }
+          ],
+          "directions": [
+            "For the final story, continue along Ballards Lane towards Tally Ho and the town centre. At Nether Street, turn towards artsdepot and stop outside the arts centre. Use the pedestrian crossings where needed."
+          ],
+          "evidence": [
+            {
+              "paragraph": "The Elephant Inn carries another piece of Moss Hall’s history. The pub opened as the Moss Hall Tavern in 1870, when the estate was beginning to become a neighbourhood. The building was replaced in 1927; the Elephant name came much later, in the 1990s.",
+              "kind": "source_checked",
+              "basis": "Petrie, Pubs, Inns, and Alehouses, Moss Hall Tavern paragraph: opened 1870, rebuilt 1927. CAMRA entry, historical description, confirms replacement building and mid-1990s renaming; minimal excerpt: “Moss Hall Tavern”. No explanation of the Elephant name is established or offered.",
+              "sourceUrls": [
+                "https://northfinchleytowncentre.co.uk/local-stories/story/pubs-inns-and-alehouses/",
+                "https://camra.org.uk/pubs/elephant-inn-north-finchley-157939"
+              ]
+            },
+            {
+              "paragraph": "The earlier name placed the pub alongside the houses and streets that were taking shape around it. It helps join up the district: the estate supplied building land, its name remained in local addresses, and a tavern became part of everyday life here.",
+              "kind": "editorial",
+              "basis": "Original connection between independently documented estate development and pub chronology. Does not infer ownership by the estate, continuity of individual patrons, or a specific founding intention.",
+              "sourceUrls": [
+                "https://northfinchleytowncentre.co.uk/local-stories/story/pubs-inns-and-alehouses/"
+              ]
+            },
+            {
+              "paragraph": "Our glimpse is from outside a working pub, with another generation using a place first established for the growing neighbourhood. The name over the door has changed; the invitation to stop for a drink remains familiar.",
+              "kind": "editorial",
+              "basis": "Original exterior-focused interpretation of continuing pub use documented by CAMRA’s 2026 survey. No admission, meal, opening-time or surviving interior-feature promise.",
+              "sourceUrls": [
+                "https://camra.org.uk/pubs/elephant-inn-north-finchley-157939"
+              ]
+            },
+            {
+              "paragraph": "For the final story, continue along Ballards Lane towards Tally Ho and the town centre. At Nether Street, turn towards artsdepot and stop outside the arts centre. Use the pedestrian crossings where needed.",
+              "kind": "source_checked",
+              "basis": "Desk navigation from public OpenStreetMap streets and docs/content/routes/north-finchley-options-v1/B-response.json, reviewed 2026-09-17. Approximate exterior positions; no current field sightline/access claim.",
+              "sourceUrls": [
+                "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+              ]
+            }
+          ],
+          "audio": {
+            "key": "north-finchley-b-elephant",
+            "bytes": 519875,
+            "md5": "5f231e4adbf54f0e7567afde338b11d6",
+            "durationSeconds": 60.136054
+          }
+        },
+        {
+          "id": "artsdepot",
+          "title": "An audience at Tally Ho",
+          "transcript": "Before artsdepot, this part of Tally Ho had a Gaumont cinema. It opened in 1937, with a rounded brick tower and a large carved panel showing a film being made: actors, a director, lights and a camera. The building advertised the magic of cinema by showing some of the work behind it.\n\nPicture an evening there: the street left behind, rows of seats spreading out beneath an elaborate ceiling, warm wooden panelling along the lower walls. Conversation drifts across the auditorium. Then the lights fall, the screen brightens, and everyone’s attention turns in the same direction. A journey to somewhere else begins a short walk from home.\n\nThe cinema closed in 1980 and was demolished in 1987. But the later arts centre was something local people actively asked for. artsdepot traces its beginnings to a 1996 community conference where residents called for a place for the arts. Public meetings and council backing helped turn that request into a project that could be built.\n\nIt took persistence. When a proposal emerged to turn the planned venue into a library, campaigners protested. The centre’s own history recalls masks, banners and a performance by Madness at the rally. The arts plan survived, and artsdepot opened in 2004.\n\nIt is an apt place to finish: at a venue that needed its audience before it could open its doors. People first had to make the case for having it here. The performances could follow.\n\nThis is the end of the walk, back by North Finchley bus station. Choose End tour to stop location tracking. There is no need to enter the arts centre.",
+          "sources": [
+            {
+              "title": "Gaumont Finchley — Ken Roe, Cinema Treasures",
+              "url": "https://cinematreasures.org/theaters/29620"
+            },
+            {
+              "title": "Timeline — artsdepot’s history in context",
+              "url": "https://www.artsdepot.co.uk/timeline/"
+            },
+            {
+              "title": "OpenStreetMap public streets and paths; saved Valhalla pedestrian responses, reviewed 17 September 2026",
+              "url": "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+            }
+          ],
+          "directions": [
+            "This is the end of the walk, back by North Finchley bus station. Choose End tour to stop location tracking. There is no need to enter the arts centre."
+          ],
+          "evidence": [
+            {
+              "paragraph": "Before artsdepot, this part of Tally Ho had a Gaumont cinema. It opened in 1937, with a rounded brick tower and a large carved panel showing a film being made: actors, a director, lights and a camera. The building advertised the magic of cinema by showing some of the work behind it.",
+              "kind": "source_checked",
+              "basis": "Ken Roe, Cinema Treasures, historical description: 1937 opening, semicircular brick tower and Newbury A. Trent’s Portland-stone film-making relief. artsdepot timeline, 1937–1987 section, corroborates cinema and sculptor. Last sentence is editorial interpretation. No seat count, surviving panel or exact former entrance alignment is claimed.",
+              "sourceUrls": [
+                "https://cinematreasures.org/theaters/29620",
+                "https://www.artsdepot.co.uk/timeline/"
+              ]
+            },
+            {
+              "paragraph": "Picture an evening there: the street left behind, rows of seats spreading out beneath an elaborate ceiling, warm wooden panelling along the lower walls. Conversation drifts across the auditorium. Then the lights fall, the screen brightens, and everyone’s attention turns in the same direction. A journey to somewhere else begins a short walk from home.",
+              "kind": "supported_reconstruction",
+              "basis": "Supported reconstruction framed as an imagined cinema evening. Roe describes a wide auditorium, mahogany lower-wall panelling and elaborate ceiling light fittings. Conversation, dimming and projection are ordinary cinema atmosphere, not a witnessed screening. No unseen interior is described as currently visible.",
+              "sourceUrls": [
+                "https://cinematreasures.org/theaters/29620"
+              ]
+            },
+            {
+              "paragraph": "The cinema closed in 1980 and was demolished in 1987. But the later arts centre was something local people actively asked for. artsdepot traces its beginnings to a 1996 community conference where residents called for a place for the arts. Public meetings and council backing helped turn that request into a project that could be built.",
+              "kind": "source_checked",
+              "basis": "artsdepot timeline, 1937–1987 and 1996–1999 sections: last film 1980, demolition 1987 and Barnet 2000 conference in 1996. Roe corroborates closure and demolition. Does not suggest unbroken entertainment use between buildings. Timeline’s 1996–1999 section also records the public meeting and council backing.",
+              "sourceUrls": [
+                "https://www.artsdepot.co.uk/timeline/",
+                "https://cinematreasures.org/theaters/29620"
+              ]
+            },
+            {
+              "paragraph": "It took persistence. When a proposal emerged to turn the planned venue into a library, campaigners protested. The centre’s own history recalls masks, banners and a performance by Madness at the rally. The arts plan survived, and artsdepot opened in 2004.",
+              "kind": "source_checked",
+              "basis": "artsdepot timeline, 2002 and 2004 sections: library proposal, protest with masks and banners, Madness performance, council reversal and opening. Minimal excerpt: “Madness”. Rally details explicitly attributed to institution’s own account; no independent concert record inspected.",
+              "sourceUrls": [
+                "https://www.artsdepot.co.uk/timeline/"
+              ]
+            },
+            {
+              "paragraph": "It is an apt place to finish: at a venue that needed its audience before it could open its doors. People first had to make the case for having it here. The performances could follow.",
+              "kind": "editorial",
+              "basis": "Original closing interpretation of the documented community campaign, suitable to both tour variants. No event or interior access is promised.",
+              "sourceUrls": [
+                "https://www.artsdepot.co.uk/timeline/"
+              ]
+            },
+            {
+              "paragraph": "This is the end of the walk, back by North Finchley bus station. Choose End tour to stop location tracking. There is no need to enter the arts centre.",
+              "kind": "source_checked",
+              "basis": "Desk navigation from public OpenStreetMap streets and docs/content/routes/north-finchley-options-v1/B-response.json, reviewed 2026-09-17. Approximate exterior positions; no current field sightline/access claim.",
+              "sourceUrls": [
+                "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+              ]
+            }
+          ],
+          "audio": {
+            "key": "north-finchley-b-artsdepot",
+            "bytes": 903812,
+            "md5": "c3a8f2d0ae5bbbabbf22375f5dcec226",
+            "durationSeconds": 105.211066
+          }
+        }
+      ],
+      "chapters": [
+        {
+          "id": "walking-neighbourhood",
+          "title": "How an estate became streets",
+          "transcript": "These residential streets took shape within an older network of lanes and estates. Nether Street, for example, was recorded in the Middle Ages as an access road to houses and fields. People already had routes through this landscape before the suburb arrived.\n\nMoss Hall was one of the larger houses in that landscape. Its grounds would eventually supply land for new homes, but the change came in stages. The estate was offered for sale unsuccessfully in 1830. From 1867, plots were being laid out for middle-class houses. Building leases for Dale Grove and Hutton Grove followed a few years later.\n\nRailways made living here and travelling into London easier. The line reached what are now East Finchley and Finchley Central in 1867, and the branch towards High Barnet followed in 1872. West Finchley station arrived much later, in 1933. So the nearest familiar station is younger than much of the neighbourhood it serves.\n\nTo picture the transition, bring the old and the new into the same scene: established trees and garden boundaries, then a fresh line of brickwork, a roof being finished, a newly numbered front door. A household arrives with furniture and familiar possessions, making an unfamiliar house feel like home. Elsewhere, another plot is still waiting to be built on. That is an imagined view of gradual development, with different stages existing side by side.\n\nThe old Moss Hall itself survived until 1927. For decades, the country house and the streets growing out of its estate belonged to the same local scene. The transition was long enough for what had once been new to become familiar before the house disappeared.\n\nThat is part of the pleasure of walking through a district like this. A map makes the streets look settled and complete. On foot, the changes in building style, the spaces around houses and the older routes can suggest a slower process: people making room for more neighbours, one piece of land at a time.\n\nKeep following Alexandra Grove. At Moss Hall Crescent, turn into the Crescent and look for the villas behind their green strip. The next story is there.",
+          "sources": [
+            {
+              "title": "Finchley: Introduction — A History of the County of Middlesex, Volume 6 (Victoria County History, 1980), pages 38–55",
+              "url": "https://www.british-history.ac.uk/vch/middx/vol6/pp38-55"
+            },
+            {
+              "title": "OpenStreetMap public streets and paths; saved Valhalla pedestrian responses, reviewed 17 September 2026",
+              "url": "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+            }
+          ],
+          "directions": [
+            "Keep following Alexandra Grove. At Moss Hall Crescent, turn into the Crescent and look for the villas behind their green strip. The next story is there."
+          ],
+          "evidence": [
+            {
+              "paragraph": "These residential streets took shape within an older network of lanes and estates. Nether Street, for example, was recorded in the Middle Ages as an access road to houses and fields. People already had routes through this landscape before the suburb arrived.",
+              "kind": "source_checked",
+              "basis": "Victoria County History, Finchley: Introduction, roads paragraph around footnote 43: Nether Street known in 1365, an access road to houses and fields. Full page retrieved and inspected locally on 17 September 2026 after web tool returned 403. Closing sentence is restrained context, not an invented route reconstruction.",
+              "sourceUrls": [
+                "https://www.british-history.ac.uk/vch/middx/vol6/pp38-55"
+              ]
+            },
+            {
+              "paragraph": "Moss Hall was one of the larger houses in that landscape. Its grounds would eventually supply land for new homes, but the change came in stages. The estate was offered for sale unsuccessfully in 1830. From 1867, plots were being laid out for middle-class houses. Building leases for Dale Grove and Hutton Grove followed a few years later.",
+              "kind": "source_checked",
+              "basis": "VCH, North Finchley growth section, paragraphs around footnotes 390–391: unsuccessful 1830 sale, layout from 1867 and Dale/Hutton Grove building leases from 1873. Describes published scholarly account; underlying archival lease records not independently inspected.",
+              "sourceUrls": [
+                "https://www.british-history.ac.uk/vch/middx/vol6/pp38-55"
+              ]
+            },
+            {
+              "paragraph": "Railways made living here and travelling into London easier. The line reached what are now East Finchley and Finchley Central in 1867, and the branch towards High Barnet followed in 1872. West Finchley station arrived much later, in 1933. So the nearest familiar station is younger than much of the neighbourhood it serves.",
+              "kind": "source_checked",
+              "basis": "VCH, communications and railways section around footnotes 107–114: 1867 Great Northern line, 1872 High Barnet branch and 1933 West Finchley opening; increased accessibility explicitly stated. Final comparison concerns the documented nineteenth-century development, without claiming transport was the sole cause.",
+              "sourceUrls": [
+                "https://www.british-history.ac.uk/vch/middx/vol6/pp38-55"
+              ]
+            },
+            {
+              "paragraph": "To picture the transition, bring the old and the new into the same scene: established trees and garden boundaries, then a fresh line of brickwork, a roof being finished, a newly numbered front door. A household arrives with furniture and familiar possessions, making an unfamiliar house feel like home. Elsewhere, another plot is still waiting to be built on. That is an imagined view of gradual development, with different stages existing side by side.",
+              "kind": "supported_reconstruction",
+              "basis": "Generic reconstruction grounded in the documented piecemeal estate development and leases. Trees, construction, moving possessions and unbuilt plots supply plausible texture; no particular household, delivery, date, surviving tree or exact viewpoint is asserted.",
+              "sourceUrls": [
+                "https://www.british-history.ac.uk/vch/middx/vol6/pp38-55"
+              ]
+            },
+            {
+              "paragraph": "The old Moss Hall itself survived until 1927. For decades, the country house and the streets growing out of its estate belonged to the same local scene. The transition was long enough for what had once been new to become familiar before the house disappeared.",
+              "kind": "source_checked",
+              "basis": "VCH, interwar development paragraph around footnote 471, records Moss Hall’s 1927 demolition. Survival alongside earlier estate streets follows from this and the documented 1867/1873 development dates. No claim of a preserved original estate layout throughout that period.",
+              "sourceUrls": [
+                "https://www.british-history.ac.uk/vch/middx/vol6/pp38-55"
+              ]
+            },
+            {
+              "paragraph": "That is part of the pleasure of walking through a district like this. A map makes the streets look settled and complete. On foot, the changes in building style, the spaces around houses and the older routes can suggest a slower process: people making room for more neighbours, one piece of land at a time.",
+              "kind": "editorial",
+              "basis": "Original reflective synthesis of documented staged development. Invites appreciation without a task or a claim that the listener can date every building by appearance. No route instruction or exact view is implied.",
+              "sourceUrls": []
+            },
+            {
+              "paragraph": "Keep following Alexandra Grove. At Moss Hall Crescent, turn into the Crescent and look for the villas behind their green strip. The next story is there.",
+              "kind": "source_checked",
+              "basis": "Desk navigation from public OpenStreetMap streets and docs/content/routes/north-finchley-options-v1/B-response.json, reviewed 2026-09-17. Approximate exterior positions; no current field sightline/access claim.",
+              "sourceUrls": [
+                "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+              ]
+            }
+          ],
+          "audio": {
+            "key": "north-finchley-b-walking-neighbourhood",
+            "bytes": 1200113,
+            "md5": "30ebb3a57fd6a1ab38f8685cc5d5c10d",
+            "durationSeconds": 140.906349
+          },
+          "afterStopIndex": 2,
+          "startRouteIndex": 40,
+          "endRouteIndex": 51
+        }
+      ]
+    }
+  },
+  "assets": [
+    {
+      "key": "north-finchley-b-tally-ho",
+      "base64": "[audio is in the companion import package]"
+    },
+    {
+      "key": "north-finchley-b-trinity",
+      "base64": "[audio is in the companion import package]"
+    },
+    {
+      "key": "north-finchley-b-meeting-house",
+      "base64": "[audio is in the companion import package]"
+    },
+    {
+      "key": "north-finchley-b-moss-hall-crescent",
+      "base64": "[audio is in the companion import package]"
+    },
+    {
+      "key": "north-finchley-b-elephant",
+      "base64": "[audio is in the companion import package]"
+    },
+    {
+      "key": "north-finchley-b-artsdepot",
+      "base64": "[audio is in the companion import package]"
+    },
+    {
+      "key": "north-finchley-b-walking-neighbourhood",
+      "base64": "[audio is in the companion import package]"
+    }
+  ]
+}

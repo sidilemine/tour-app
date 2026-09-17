@@ -13,6 +13,8 @@ import { PlayGate } from './playGate';
 import buildInfo from '../buildInfo.json';
 import { nativeAudioGeneration } from './nativeAudio';
 import { clipNames } from './clipPlan';
+import { narrationAt } from '../domain/narration';
+import { tourAudio, tourAudioProfile } from '../tours/nativeLibrary';
 const build = { ...buildInfo, variant: __DEV__ ? 'development' : 'offline-release' };
 
 export const LOCATION_TASK = 'walking-tour-location-v1';
@@ -26,6 +28,8 @@ let player: AudioPlayer | null = null;
 let statusListener: { remove(): void } | null = null;
 let files: string[] = [];
 let preparedProfile = '';
+let reviewActive = false;
+let startEpoch = 0;
 let fatal = '';
 let initialized = false;
 let service = 'Stopped';
@@ -51,6 +55,7 @@ export function init() {
     store = new Store(SQLite.openDatabaseSync('walking-tour.db'));
     const saved = store.read<Fixture>('fixture');
     fixture = saved ? parseFixture(JSON.stringify(saved)) : null;
+    state = initialState(fixture ?? undefined);
     const progress = store.read<{ fixture: string; state: State }>('progress');
     if (fixture && progress?.fixture === JSON.stringify(fixture)) state = recovered(progress.state);
     record('opened: explicit resume required', { model: Device.modelName, os: Device.osVersion, ...build });
@@ -62,7 +67,13 @@ export function init() {
   } catch (error) { fatal = `Storage/recovery error: ${String(error)}. Saved data has not been deleted.`; }
   notify();
 }
-async function prepareAudio() {
+async function prepareAudio(recheck = false) {
+  if (fixture?.narration) {
+    const profile = tourAudioProfile(fixture);
+    if (recheck || preparedProfile !== profile || !files.length) { files = await tourAudio(fixture); preparedProfile = profile; }
+    await setAudioModeAsync({ playsInSilentMode: true, shouldPlayInBackground: true, interruptionMode: 'doNotMix', allowsRecording: false });
+    return;
+  }
   const names = clipNames(fixture), profile = names.join(',');
   if (!files.length || preparedProfile !== profile) {
     const dir = `${FileSystem.documentDirectory}clips/`;
@@ -88,14 +99,21 @@ function disposePlayer() {
   statusListener?.remove(); statusListener = null;
   if (player) { player.pause(); player.clearLockScreenControls(); player.release(); player = null; }
 }
+export async function setReviewMode(enabled: boolean): Promise<void> {
+  reviewActive = enabled;
+  if (enabled) await dispatch({ type: 'pause', at: Date.now(), reason: 'review' });
+  // Closing/saving a review never resumes narration.
+}
 export function dispatch(event: Event): Promise<void> {
+  if (event.type === 'end') startEpoch++;
+  if (reviewActive && ['manual', 'resume', 'start'].includes(event.type)) return Promise.reject(Error('Close the story review before resuming narration.'));
   // A queued pause cancels in-flight asynchronous preparation before any sound.
   const playEpoch = playGate.receive(event.type);
   if (event.type === 'pause' || event.type === 'end') player?.pause();
   const job = queue.then(async () => {
     init();
     if (fatal) throw Error(fatal);
-    if (!fixture) throw Error('Load or record a three-stop fixture first.');
+    if (!fixture) throw Error('Choose a tour or load a fixture first.');
     const result = reduce(state, event, fixture);
     // A single synchronous transaction records policy BEFORE native effects.
     store.commit('progress', { fixture: JSON.stringify(fixture), state: result.state }, result.state.diagnostics ? { kind: 'transition', fixtureKey: fixtureKey(fixture), event, before: state, after: result.state, effects: result.effects, reason: result.reason } : undefined);
@@ -129,7 +147,7 @@ export function dispatch(event: Event): Promise<void> {
           }
           void dispatch({ type: 'audio', token: effect.token, at: Date.now(), playing: status.playing, finished: status.didJustFinish, offset: status.currentTime, buffering: status.isBuffering || !status.isLoaded, error: status.error }).catch(() => {});
         });
-        const metadata = { title: fixture.stops[effect.index].title, artist: 'Walking Tour Lab', albumTitle: fixture.title };
+        const metadata = { title: narrationAt(fixture, effect.index)?.title ?? fixture.stops[effect.index]?.title ?? 'Walking chapter', artist: 'Walking Tour Lab', albumTitle: fixture.title };
         if (existing) p.updateLockScreenMetadata(metadata);
         else p.setActiveForLockScreen(true, metadata, { showSeekBackward: false, showSeekForward: false });
         if (effect.offset) await p.seekTo(effect.offset);
@@ -147,29 +165,45 @@ export function dispatch(event: Event): Promise<void> {
   return job;
 }
 export async function loadFixture(text: string) {
-  init(); await queue;
-  if (state.active) throw Error('End the tour before replacing its fixture.');
+  init();
   const next = parseFixture(text);
-  // Same content keeps recovery state. Different content requires the UI's confirmation.
-  if (JSON.stringify(fixture) === JSON.stringify(next)) return;
-  if (fixture && fixtureKey(fixture) === fixtureKey(next)) throw Error('Changed fixture content needs a new version number.');
-  const archiveKey = `archive:${fixtureKey(next)}`;
-  const archived = store.read<{ fixture: string; state: State }>(archiveKey);
-  if (archived && archived.fixture !== JSON.stringify(next)) throw Error('That fixture ID/version already names different content. Increment its version.');
-  if (fixture) store.commit(`archive:${fixtureKey(fixture)}`, { fixture: JSON.stringify(fixture), state });
-  disposePlayer();
-  store.commit('fixture', next);
-  fixture = next; state = archived ? recovered(archived.state) : initialState();
-  store.commit('progress', { fixture: JSON.stringify(fixture), state });
-  record('fixture-loaded');
+  const job = queue.then(() => {
+    if (reviewActive) throw Error('Close the story review before choosing another tour.');
+    if (fatal) throw Error(fatal);
+    if (state.active) throw Error('End the tour before replacing its fixture.');
+    // Same content keeps recovery state. Different content keeps an archive.
+    if (JSON.stringify(fixture) === JSON.stringify(next)) return;
+    if (fixture && fixtureKey(fixture) === fixtureKey(next)) throw Error('Changed fixture content needs a new version number.');
+    const archiveKey = `archive:${fixtureKey(next)}`;
+    const archived = store.read<{ fixture: string; state: State }>(archiveKey);
+    if (archived && archived.fixture !== JSON.stringify(next)) throw Error('That fixture ID/version already names different content. Increment its version.');
+    const nextState = archived ? recovered(archived.state) : initialState(next);
+    const writes: [string, unknown][] = [
+      ['fixture', next], ['progress', { fixture: JSON.stringify(next), state: nextState }],
+    ];
+    if (fixture) writes.push([`archive:${fixtureKey(fixture)}`, { fixture: JSON.stringify(fixture), state }]);
+    // Keep the old in-memory session and files if any part of the write fails.
+    store.commitMany(writes);
+    startEpoch++;
+    fixture = next; state = nextState; files = []; preparedProfile = '';
+    try { disposePlayer(); } finally { record('fixture-loaded'); }
+  });
+  queue = job.catch(() => {});
+  return job;
 }
 export async function start(diagnostics: boolean) {
-  init(); if (!fixture) throw Error('Configure a walking fixture first.');
-  await prepareAudio();
+  init(); if (reviewActive) throw Error('Close the story review first.');
+  if (!fixture) throw Error('Configure a walking fixture first.');
+  const requestEpoch = ++startEpoch;
+  await prepareAudio(true);
+  if (requestEpoch !== startEpoch) return;
   if (Platform.OS === 'android' && Number(Platform.Version) >= 33) await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS);
+  if (requestEpoch !== startEpoch) return;
   const foreground = await Location.requestForegroundPermissionsAsync();
+  if (requestEpoch !== startEpoch) return;
   if (!foreground.granted) throw Error('Location denied. Manual playback is available; grant location to start tracking.');
   const background = await Location.requestBackgroundPermissionsAsync();
+  if (requestEpoch !== startEpoch || reviewActive) return;
   if (!background.granted) throw Error('Allow location “all the time” in Settings for this background test. Manual playback remains available.');
   await Location.startLocationUpdatesAsync(LOCATION_TASK, {
     // A visitor can wait motionless at a held stop. Displacement filtering
@@ -178,7 +212,14 @@ export async function start(diagnostics: boolean) {
     deferredUpdatesInterval: 0, deferredUpdatesDistance: 0,
     foregroundService: { notificationTitle: 'Walking tour active', notificationBody: 'Location stays active through silence. Open to pause or end.', killServiceOnDestroy: true },
   });
+  // End can arrive while Android is still registering the task. Reconcile
+  // that completed registration instead of silently restarting tracking.
+  if (requestEpoch !== startEpoch || reviewActive) {
+    if (await Location.hasStartedLocationUpdatesAsync(LOCATION_TASK)) await Location.stopLocationUpdatesAsync(LOCATION_TASK);
+    service = 'Stopped'; notify(); return;
+  }
   service = await Location.hasStartedLocationUpdatesAsync(LOCATION_TASK) ? 'Registered; waiting for fixes' : 'Not registered';
+  if (requestEpoch !== startEpoch) return;
   await dispatch({ type: 'start', at: Date.now(), diagnostics });
   record('session-start', { locationRequest: { accuracy: 'high', timeIntervalMs: 2000, distanceIntervalM: 0 }, battery: await Battery.getBatteryLevelAsync(), lowPower: await Battery.isLowPowerModeEnabledAsync(), foreground, background, service, model: Device.modelName, os: Device.osVersion });
 }
@@ -196,7 +237,7 @@ export async function newWalk() {
   init(); await queue;
   if (state.active) throw Error('End the current tour first.');
   disposePlayer();
-  const fresh = initialState();
+  const fresh = initialState(fixture ?? undefined);
   store.commit('progress', { fixture: JSON.stringify(fixture), state: fresh });
   state = fresh; record('new-walk: old diagnostics retained');
 }

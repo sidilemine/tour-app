@@ -1,0 +1,973 @@
+{
+  "schema_version": 1,
+  "retrieved_date": "2026-09-17",
+  "scope": "Commercial guided walks, historical event listings and public self-guided/audio previews. Community heritage and specialist source catalogues are separate agent outputs.",
+  "rights": "Own summaries and bibliographic facts only; no paid access, scripts, audio, images or proprietary geometry copied. No licence to reuse provider media inferred.",
+  "verification": "All historical story claims are discovery leads unless independently checked elsewhere; no visitor positions or current access verified here.",
+  "tours": [
+    {
+      "id": "com-01",
+      "title": "Local London – Highwaymen to Hamburgers",
+      "originator": "London Walks; Sam Jacobs",
+      "source_url": "https://www.walks.com/our-walks/local-london-highwaymen-to-hamburgers/",
+      "source_type": "guided walk",
+      "published_date": null,
+      "retrieved_date": "2026-09-17",
+      "status": "published dates 2025-10-08, 2026-01-14 and 2026-04-30",
+      "area": "East Finchley",
+      "theme_summary": "Settlement change: hunting landscape, coaching, railway suburb, institutions and popular culture.",
+      "advertised_duration": "2 hours",
+      "advertised_distance": null,
+      "stop_list_completeness": "Named themes and partial places. Famous residents are mentioned without addresses; do not turn every name into a stop.",
+      "sequence_status": "unknown",
+      "stops": [
+        {
+          "published_place": "East Finchley station",
+          "place_id": "east-finchley-station",
+          "sequence": null,
+          "story_angle": "Meeting point: High Road exit.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Bishop’s former hunting park",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Opening landscape subject; exact standing place unnamed.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Former Finchley Woods/Common",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Surviving landscape traces.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Cinema",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Pioneering cinema; public copy does not name it.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "McDonald’s university",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Present institution and earlier use.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Industrial school",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Domestic-service training.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Former market square",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Pig market.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Common remnant",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Closing landscape; identity unconfirmed.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "id": "com-02",
+      "title": "East Finchley to Gospel Oak: Mansions & Lost Rivers",
+      "originator": "Paul Talling",
+      "source_url": "https://www.londonslostrivers.com/eastfinchleytogospeloak.html",
+      "source_type": "guided walk",
+      "published_date": null,
+      "retrieved_date": "2026-09-17",
+      "status": "public listing; present availability not established",
+      "area": "East Finchley; Hampstead comparison",
+      "theme_summary": "Celebrity homes, conspicuous wealth and hidden watercourses.",
+      "advertised_duration": "about 4 hours",
+      "advertised_distance": null,
+      "stop_list_completeness": "Broad itinerary order is stated; minor stops, addresses and current access unknown.",
+      "sequence_status": "stated narrative order",
+      "stops": [
+        {
+          "published_place": "East Finchley station",
+          "place_id": "east-finchley-station",
+          "sequence": 1,
+          "story_angle": "Start.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "McDonald’s headquarters",
+          "place_id": null,
+          "sequence": 2,
+          "story_angle": "Corporate training site.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Peter Sellers former flat",
+          "place_id": null,
+          "sequence": 3,
+          "story_angle": "Childhood/family residence; address unstated.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "George Michael birthplace",
+          "place_id": null,
+          "sequence": 4,
+          "story_angle": "Address unstated.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Bishops Avenue",
+          "place_id": "bishops-avenue",
+          "sequence": 5,
+          "story_angle": "Mansion architecture, ownership and disuse.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Kenwood",
+          "place_id": "kenwood-house",
+          "sequence": 6,
+          "story_angle": "Final leg.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Highgate ponds",
+          "place_id": "highgate-ponds",
+          "sequence": 7,
+          "story_angle": "Fleet headwaters.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Gospel Oak station",
+          "place_id": "gospel-oak-station",
+          "sequence": 8,
+          "story_angle": "End.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "id": "com-03",
+      "title": "Trains, Tracks, Palaces, and Parades",
+      "originator": "Marilyn Greene / Footprints of London",
+      "source_url": "https://www.eventbrite.co.uk/e/walking-tour-trains-tracks-palaces-and-parades-tickets-1987602237798",
+      "source_type": "guided walk",
+      "published_date": null,
+      "retrieved_date": "2026-09-17",
+      "status": "Sunday 14 June listing; retrieved text omits year",
+      "area": "East Finchley → Muswell Hill/Alexandra Palace comparison",
+      "theme_summary": "Transport, woodland, entertainment and suburban architecture.",
+      "advertised_duration": "2 hours 30 minutes",
+      "advertised_distance": null,
+      "stop_list_completeness": "Detailed public itinerary, not a full script; Eventbrite direct fetch intermittent, search-index description available.",
+      "sequence_status": "stated narrative order",
+      "stops": [
+        {
+          "published_place": "East Finchley station",
+          "place_id": "east-finchley-station",
+          "sequence": 1,
+          "story_angle": "Modernist station; start.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Phoenix Cinema",
+          "place_id": "phoenix-cinema",
+          "sequence": 2,
+          "story_angle": "High Road development.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Edwardian shopping parade",
+          "place_id": null,
+          "sequence": 3,
+          "story_angle": "Suburban retail.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Cherry Tree Wood",
+          "place_id": "cherry-tree-wood",
+          "sequence": 4,
+          "story_angle": "Woodland history.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Highgate Wood",
+          "place_id": "highgate-wood",
+          "sequence": 5,
+          "story_angle": "Woodland history.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Former Alexandra Palace railway",
+          "place_id": null,
+          "sequence": 6,
+          "story_angle": "Railway route.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Alexandra Palace",
+          "place_id": "alexandra-palace",
+          "sequence": 7,
+          "story_angle": "Building and view.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Muswell Hill Broadway",
+          "place_id": "muswell-hill-broadway",
+          "sequence": 8,
+          "story_angle": "Suburban architecture.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Everyman Muswell Hill",
+          "place_id": "everyman-muswell-hill",
+          "sequence": 9,
+          "story_angle": "Art Deco cinema; finish.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "relationships": [
+        "Guide originator: https://footprintsoflondon.com/live/guides/marilyn-greene/",
+        "Related shorter/variant listing com-04; do not assume identical route."
+      ]
+    },
+    {
+      "id": "com-04",
+      "title": "Tracks through Northern Heights",
+      "originator": "Marilyn Greene / Proms at St Jude’s",
+      "source_url": "https://www.promsatstjudes.org.uk/2026-heritage-walks",
+      "source_type": "guided walk",
+      "published_date": null,
+      "retrieved_date": "2026-09-17",
+      "status": "historical event 2026-06-30 10:30",
+      "area": "East Finchley → Muswell Hill comparison",
+      "theme_summary": "Woodland railway traces and architecture.",
+      "advertised_duration": null,
+      "advertised_distance": null,
+      "stop_list_completeness": "Public description only; complete stop list and script unavailable.",
+      "sequence_status": "unknown",
+      "stops": [
+        {
+          "published_place": "East Finchley",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Start area; exact meeting supplied on ticket.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Cherry Tree Wood",
+          "place_id": "cherry-tree-wood",
+          "sequence": null,
+          "story_angle": "Woodland route.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Highgate Wood",
+          "place_id": "highgate-wood",
+          "sequence": null,
+          "story_angle": "Woodland route.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Parkland Walk",
+          "place_id": "parkland-walk",
+          "sequence": null,
+          "story_angle": "Former rail corridor.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Muswell Hill",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "End area; Art Deco landmarks unnamed.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "relationships": [
+        "Same guide and overlapping itinerary as com-03, but no evidence that Alexandra Palace extension is included."
+      ]
+    },
+    {
+      "id": "com-05",
+      "title": "The Kinks Tour of North London",
+      "originator": "Brit Music Tours",
+      "source_url": "https://britmusictours.com/tour/the-kinks-north-london-walking-tour/",
+      "source_type": "guided walk",
+      "published_date": null,
+      "retrieved_date": "2026-09-17",
+      "status": "public listing; present availability not established",
+      "area": "East Finchley/Fortis Green/Muswell Hill → Hornsey comparison; reseller title misleadingly says North Finchley",
+      "theme_summary": "Band formation, family life and musical sites.",
+      "advertised_duration": "2 hours",
+      "advertised_distance": "about 2 miles",
+      "stop_list_completeness": "Many addresses unnamed; advertised walk includes bus segment. Endpoint transport references vary.",
+      "sequence_status": "stated narrative order",
+      "stops": [
+        {
+          "published_place": "East Finchley station",
+          "place_id": "east-finchley-station",
+          "sequence": 1,
+          "story_angle": "Start.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Ray and Rasa homes",
+          "place_id": null,
+          "sequence": 2,
+          "story_angle": "Early marriage and later residence.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Davies family home",
+          "place_id": null,
+          "sequence": 3,
+          "story_angle": "Upbringing.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "First-gig pub",
+          "place_id": null,
+          "sequence": 4,
+          "story_angle": "Opposite family home; name omitted in text.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Second local pub",
+          "place_id": null,
+          "sequence": 5,
+          "story_angle": "Band hangout; unnamed.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Fortismere School",
+          "place_id": "fortismere-school",
+          "sequence": 6,
+          "story_angle": "Musicians’ schooldays.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Former dancehall",
+          "place_id": null,
+          "sequence": 7,
+          "story_angle": "Come Dancing association; unverified.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Nilsen-linked location",
+          "place_id": null,
+          "sequence": 8,
+          "story_angle": "Unnamed.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Davies sister’s home",
+          "place_id": null,
+          "sequence": 9,
+          "story_angle": "Unnamed.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Konk Studios",
+          "place_id": "konk-studios",
+          "sequence": 10,
+          "story_angle": "Finish reached by short bus ride.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "relationships": [
+        "Reseller aliases: The Kinks Private Walking Tour of North Finchley; Booking.com prrcjsgfojvl; Tripadvisor d33872049; Expedia a50827709. One product, not independent tours."
+      ]
+    },
+    {
+      "id": "com-06",
+      "title": "The Kinks in London",
+      "originator": "London Walks; Adam",
+      "source_url": "https://www.walks.com/our-walks/the-kinks-in-london/",
+      "source_type": "guided walk",
+      "published_date": null,
+      "retrieved_date": "2026-09-17",
+      "status": "listing includes 2026-09-27 and 2027 dates",
+      "area": "East Finchley/Fortis Green/Muswell Hill comparison",
+      "theme_summary": "Songs, family tensions and postwar surroundings.",
+      "advertised_duration": "2–2.25 hours in published dates",
+      "advertised_distance": null,
+      "stop_list_completeness": "Generic venue categories; complete itinerary unavailable. Distinct operator from com-05, not assumed identical.",
+      "sequence_status": "unknown",
+      "stops": [
+        {
+          "published_place": "East Finchley station",
+          "place_id": "east-finchley-station",
+          "sequence": null,
+          "story_angle": "Meeting point.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Fortis Green",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Advertised area. Homes, schools, pubs and entertainment venues described generically.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "id": "com-07",
+      "title": "A Walk Through Conservation Finchley",
+      "originator": "Marilyn Greene / Footprints of London",
+      "source_url": "https://london.architecturediary.org/event/a-walk-through-conservation-finchley/",
+      "source_type": "guided walk",
+      "published_date": null,
+      "retrieved_date": "2026-09-17",
+      "status": "public listing; present availability not established",
+      "area": "Finchley Central/Church End",
+      "theme_summary": "Three conservation areas: old settlement, suburban housing and cooperative development.",
+      "advertised_duration": null,
+      "advertised_distance": null,
+      "stop_list_completeness": "Detailed route outline; date, duration and exact standing areas absent from accessible listing.",
+      "sequence_status": "stated narrative order",
+      "stops": [
+        {
+          "published_place": "Finchley Central station",
+          "place_id": "finchley-central-station",
+          "sequence": 1,
+          "story_angle": "Start opposite in Station Road.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Church End",
+          "place_id": "church-end",
+          "sequence": 2,
+          "story_angle": "Church and early settlement.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Stephens House",
+          "place_id": "stephens-house",
+          "sequence": 3,
+          "story_angle": "Ink-family home.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Finchley Garden Village",
+          "place_id": "finchley-garden-village",
+          "sequence": 4,
+          "story_angle": "Co-partnership housing.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Dollis Valley Walk",
+          "place_id": "dollis-valley-greenwalk",
+          "sequence": 5,
+          "story_angle": "Connecting path.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "College Farm",
+          "place_id": "college-farm",
+          "sequence": 6,
+          "story_angle": "Milk supply.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "La Délivrance",
+          "place_id": "la-delivrance",
+          "sequence": 7,
+          "story_angle": "Finish at Henly’s Corner.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "id": "com-08",
+      "title": "Fabulous Finchley",
+      "originator": "Paul Baker / Barnet Walks",
+      "source_url": "https://www.the-archer.co.uk/archive/2012/2012Oct12.pdf",
+      "source_type": "guided walk",
+      "published_date": "2012-10",
+      "retrieved_date": "2026-09-17",
+      "status": "historical 2012/2013 listings",
+      "area": "Finchley Central → East Finchley",
+      "theme_summary": "Long local history with comedy, crime and reported ghost lore.",
+      "advertised_duration": null,
+      "advertised_distance": null,
+      "stop_list_completeness": "Named themes but mostly unidentified places; no script or complete order.",
+      "sequence_status": "unknown",
+      "stops": [
+        {
+          "published_place": "Finchley Central station",
+          "place_id": "finchley-central-station",
+          "sequence": null,
+          "story_angle": "2013 listing start, Ballards Lane exit.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Knights Templar land",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Public article does not identify plot.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Former manor house",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Haunting story advertised; folklore, not established fact.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Comedians’ and murderers’ locations",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Unnamed in public article.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "relationships": [
+        "Start evidence: https://www.the-archer.co.uk/archive/2013/2013Aug10.pdf",
+        "Current guide site https://barnet-walks.co.uk/walks.html does not establish this itinerary is still offered."
+      ]
+    },
+    {
+      "id": "com-09",
+      "title": "Finchley Goes to War",
+      "originator": "Mark King",
+      "source_url": "https://barnetpost.co.uk/2025/08/20/finchley-goes-to-war-guided-walk-on-sunday-7th-september/",
+      "source_type": "guided walk",
+      "published_date": "2025-08-20",
+      "retrieved_date": "2026-09-17",
+      "status": "historical event 2025-09-07",
+      "area": "Henly’s Corner → Finchley Central",
+      "theme_summary": "First World War civilian life, service, hospitals, technology and commemoration.",
+      "advertised_duration": "2 hours",
+      "advertised_distance": null,
+      "stop_list_completeness": "Originator-written notice gives themes and endpoints only. John Parr photograph is not proof of a stop at his plaque.",
+      "sequence_status": "unknown",
+      "stops": [
+        {
+          "published_place": "Henly’s Corner",
+          "place_id": "henlys-corner",
+          "sequence": null,
+          "story_angle": "Start.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Finchley Central",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Finish area.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "relationships": [
+        "Booking record: https://www.eventbrite.co.uk/e/finchley-goes-to-war-first-world-war-guided-walk-tickets-1554279244059"
+      ]
+    },
+    {
+      "id": "com-10",
+      "title": "Finchley in Fiction",
+      "originator": "Mike Gee and Rosie Canning / Finchley Literary Festival",
+      "source_url": "https://greenacrewriters.blogspot.com/2016/06/finchley-literary-festival.html",
+      "source_type": "guided walk",
+      "published_date": "2016-06-22",
+      "retrieved_date": "2026-09-17",
+      "status": "historical event 2016-06-26",
+      "area": "North Finchley/Woodside Park vicinity",
+      "theme_summary": "Literature about Finchley read during a walk.",
+      "advertised_duration": "12:00–16:30 event slot",
+      "advertised_distance": null,
+      "stop_list_completeness": "Refreshment points and start are known; literary reading locations and full route unknown.",
+      "sequence_status": "unknown",
+      "stops": [
+        {
+          "published_place": "Waterstones N12 9QR",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Start.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Redwood Cafe, Swan Lane Open Space",
+          "place_id": "swan-lane-open-space",
+          "sequence": null,
+          "story_angle": "Lunch stop.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Finchley Golf Club",
+          "place_id": "finchley-golf-club",
+          "sequence": null,
+          "story_angle": "Tea stop.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "relationships": [
+        "Participant report confirms readings, including Milligan: https://lindsaybamfield.blogspot.com/2016/06/",
+        "Related 2015 Walking Writer variant: https://rosemarycanning.blogspot.com/2015/05/finchley-in-fiction-part-one.html — brook, golf club then Redwood Cafe. Do not merge opposite refreshment ordering as one precise route."
+      ]
+    },
+    {
+      "id": "com-11",
+      "title": "Historic walk around Muswell Hill / Music, Murder and Madness",
+      "originator": "Sally Stevens / North London Walks",
+      "source_url": "https://northlondonwalks.co.uk/home/muswellhill/",
+      "source_type": "guided walk",
+      "published_date": null,
+      "retrieved_date": "2026-09-17",
+      "status": "public listing; present availability not established",
+      "area": "Muswell Hill comparison",
+      "theme_summary": "Suburban growth, entertainment and unusual residents.",
+      "advertised_duration": null,
+      "advertised_distance": null,
+      "stop_list_completeness": "Generic identities must not be filled from guesswork. Title variants overlap; exact version equivalence unconfirmed.",
+      "sequence_status": "unknown",
+      "stops": [
+        {
+          "published_place": "Former pleasure garden",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Unnamed location.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Rock musicians’ childhood home",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Unnamed in text.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Famous Royal Oak",
+          "place_id": "famous-royal-oak",
+          "sequence": null,
+          "story_angle": "Pub naming story.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Blues musician’s rented house",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Unnamed; pet-goat anecdote advertised.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Institutional residence",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Unnamed; prominent resident anecdote.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "relationships": [
+        "2021 MHFGA event by Sally: https://mhfga.org/archives/3408 — 2021-07-14, about 90 minutes, Clissold pub → Grove Cafe Alexandra Park. Retained as historical variant, not proven same stops."
+      ]
+    },
+    {
+      "id": "com-12",
+      "title": "West Finchley Woods Walk",
+      "originator": "jogewirtz / Go Jauntly",
+      "source_url": "https://walks.gojauntly.com/walks/west-finchley-woods-walk-4432559274525528551",
+      "source_type": "self-guided photo walk",
+      "published_date": null,
+      "retrieved_date": "2026-09-17",
+      "status": "public listing; present availability not established",
+      "area": "West Finchley",
+      "theme_summary": "Green walking and landscape discovery.",
+      "advertised_duration": "20 minutes",
+      "advertised_distance": "2.6 km",
+      "stop_list_completeness": "Six-step public preview; full route in app. Duration unusually fast for stated distance; do not reuse as our estimate.",
+      "sequence_status": "unknown",
+      "stops": [
+        {
+          "published_place": "Finchley woods",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Preview step 1.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Viaduct",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Preview step 2; exact identity unstated.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Streamside woods",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Preview step 3.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Allotments",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Preview step 5.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "id": "com-13",
+      "title": "TfL20 Whetstone to Woodside Park",
+      "originator": "Transport for London / Go Jauntly",
+      "source_url": "https://walks.gojauntly.com/walks/tfl20-whetstone-to-woodside-park-8130611611634962922",
+      "source_type": "self-guided photo walk",
+      "published_date": null,
+      "retrieved_date": "2026-09-17",
+      "status": "public listing; present availability not established",
+      "area": "Whetstone → Woodside Park",
+      "theme_summary": "Short station-to-station green connection.",
+      "advertised_duration": "20 minutes",
+      "advertised_distance": "1.8 km",
+      "stop_list_completeness": "First six navigation steps only; no historical narration exposed; final approach in app.",
+      "sequence_status": "stated narrative order",
+      "stops": [
+        {
+          "published_place": "Totteridge & Whetstone station",
+          "place_id": "totteridge-whetstone-station",
+          "sequence": 1,
+          "story_angle": "Start.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Whetstone Stray",
+          "place_id": "whetstone-stray",
+          "sequence": 2,
+          "story_angle": "Join green corridor.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Dollis Valley Greenwalk",
+          "place_id": "dollis-valley-greenwalk",
+          "sequence": 3,
+          "story_angle": "Main route.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Woodside Park station",
+          "place_id": "woodside-park-station",
+          "sequence": 4,
+          "story_angle": "End stated in summary.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "id": "com-14",
+      "title": "Alexandra Palace & Muswell Hill",
+      "originator": "Turker / Walkwalk",
+      "source_url": "https://walkwalk.org/london/walks/alexandra-palace-and-muswell-hill",
+      "source_type": "self-guided web walk",
+      "published_date": "2026-04-22; updated 2026-07-23",
+      "retrieved_date": "2026-09-17",
+      "status": "public listing; present availability not established",
+      "area": "Wood Green/Muswell Hill comparison",
+      "theme_summary": "Views, parkland, cinema and suburban streets.",
+      "advertised_duration": "85 minutes",
+      "advertised_distance": "4.5 km",
+      "stop_list_completeness": "All five published points captured; header/FAQ end at Alexandra Palace conflicts with final Fortis Green Road point. Do not adopt routing/access assertions unchecked.",
+      "sequence_status": "stated narrative order",
+      "stops": [
+        {
+          "published_place": "Wood Green High Road",
+          "place_id": null,
+          "sequence": 1,
+          "story_angle": "Start.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Alexandra Park",
+          "place_id": "alexandra-park",
+          "sequence": 2,
+          "story_angle": "Views.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Alexandra Palace",
+          "place_id": "alexandra-palace",
+          "sequence": 3,
+          "story_angle": "Broadcast history.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Muswell Hill Broadway",
+          "place_id": "muswell-hill-broadway",
+          "sequence": 4,
+          "story_angle": "Shops and cinema.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Fortis Green Road",
+          "place_id": "fortis-green-road",
+          "sequence": 5,
+          "story_angle": "Residential descent.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "id": "com-15",
+      "title": "Platform 10",
+      "originator": "Creator not exposed in retrieved preview / izi.TRAVEL",
+      "source_url": "https://izi.travel/en/ccdb-platform-10-wear-headphones-full-effect/en",
+      "source_type": "self-guided audio walk",
+      "published_date": null,
+      "retrieved_date": "2026-09-17",
+      "status": "public listing; present availability not established",
+      "area": "Parkland Walk, Crouch End comparison",
+      "theme_summary": "Immersive sound walk combining memories and declared fictional/fabricated sound.",
+      "advertised_duration": null,
+      "advertised_distance": null,
+      "stop_list_completeness": "Two sights reported by platform but only starting location exposed. Direct fetch blocked; indexed public description inspected. Full audio not played or copied.",
+      "sequence_status": "unknown",
+      "stops": [
+        {
+          "published_place": "Crouch End Hill former platforms",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Starting location stated in indexed preview.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "relationships": []
+    },
+    {
+      "id": "com-16",
+      "title": "Guided tours of Stephens House & Gardens",
+      "originator": "Stephens House & Gardens",
+      "source_url": "https://www.stephenshouseandgardens.com/visit/guided-tours",
+      "source_type": "guided estate visit",
+      "published_date": null,
+      "retrieved_date": "2026-09-17",
+      "status": "public listing; present availability not established",
+      "area": "Finchley Central/Church End",
+      "theme_summary": "Estate and Stephens family.",
+      "advertised_duration": null,
+      "advertised_distance": null,
+      "stop_list_completeness": "Single-site tour, not a street itinerary. Internal points/script not public. Group access by prior arrangement; outside route must not imply automatic house entry.",
+      "sequence_status": "unknown",
+      "stops": [
+        {
+          "published_place": "Stephens House and estate",
+          "place_id": "stephens-house",
+          "sequence": null,
+          "story_angle": "17 East End Road.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "relationships": []
+    }
+  ],
+  "leads": [
+    {
+      "title": "Temple Fortune to East Finchley, Guide D",
+      "url": "https://isokongallery.org/products/guide-d-temple-fortune-to-east-finchley",
+      "status": "Paid booklet publicly listed; no purchase; stop list not accessible",
+      "followup": "Identify originating series/publisher if architecture route selected."
+    },
+    {
+      "title": "From Streamline to Arts and Crafts",
+      "url": "https://www.artdecosociety.uk/blouses-skirts-and-twitterns-the-hampstead-garden-suburb/",
+      "status": "Report published 2025-11-17 for Marilyn Greene walk 2023-08-12",
+      "followup": "East Finchley station south exit and unnamed timber-framed housing green observed in text. Adjacent HGS architectural route, not North Finchley. Full detailed report is a future architectural source."
+    },
+    {
+      "title": "A Tour Along Parts of North Finchley and Friern Barnet",
+      "url": "https://www.friern-barnethistory.org.uk/userfiles/file/our_archives/books/Books-History-North-London.pdf",
+      "status": "Archive bibliographic record only: Ollie Natelson, June 2000",
+      "followup": "Potentially valuable exact-area historical itinerary; contents not located publicly."
+    },
+    {
+      "title": "North Finchley Mosque visits",
+      "url": "https://ianl.org.uk/services/visits/",
+      "status": "Publicly advertised institution visits with facilities/faith/Q&A sequence",
+      "followup": "Separate single-site learning visit, not adopted as an unbooked street-tour stop."
+    },
+    {
+      "title": "Here We Go Walks: East Finchley video",
+      "url": "https://www.youtube.com/watch?v=oZs9LlVS6KQ",
+      "status": "Published 2022-02-11; description starts at station, no waypoint list",
+      "followup": "Visual walk documentation only; video not inspected end-to-end or counted as narrated itinerary."
+    },
+    {
+      "title": "Hendon Central to Finchley Central video",
+      "url": "https://www.youtube.com/watch?v=gheuocfcp08",
+      "status": "Published 2023-05-25; architecture/shopping description only",
+      "followup": "No stop/story list in public description; excluded from detailed tour count."
+    }
+  ],
+  "search_log": {
+    "date": "2026-09-17",
+    "queries": [
+      "Finchley walking tour guided walk North Finchley Church End",
+      "Finchley self guided audio tour VoiceMap izi travel",
+      "East Finchley walking tour guided London Walks",
+      "\"North Finchley\" \"walk\" \"guided\"",
+      "\"Finchley Central\" \"walking tour\"",
+      "\"Woodside Park\" \"guided walk\"",
+      "\"Finchley\" \"tour\" \"Footprints\"",
+      "Finchley walking tours guide \"Church End\"",
+      "\"North Finchley\" \"walking tour\" -site:reddit.com",
+      "site:voicemap.me Finchley",
+      "\"Muswell Hill\" \"walking tour\" guide",
+      "\"The Kinks Private Walking Tour of North Finchley\"",
+      "site:izi.travel \"Finchley\"",
+      "\"Finchley\" \"guided walk\"",
+      "site:britmusictours.com Kinks walking tour",
+      "\"Fabulous Finchley\" walk Paul Baker",
+      "\"Finchley in Fiction\" walk",
+      "\"Finchley\" \"audio tour\"",
+      "\"Finchley\" \"self-guided\" tour",
+      "\"Finchley\" \"GPSmyCity\"",
+      "\"Woodside Park\" \"history walk\"",
+      "\"Finchley\" walking tour \"Marilyn Greene\"",
+      "\"Finchley Goes to War\" Mark King stops",
+      "\"Woodside Park\" \"walk\" \"heritage\" tour",
+      "site:walks.gojauntly.com/walks/ \"Finchley\"",
+      "\"Finchley\" \"walking tour\" \"Open House\"",
+      "\"Muswell Hill\" \"Sally\" walk music murder",
+      "\"A Walk Through Conservation Finchley\" date"
+    ],
+    "coverage": [
+      "London Walks",
+      "Brit Music Tours and reseller deduplication",
+      "Footprints of London/Marilyn Greene",
+      "Barnet Walks/Paul Baker historic press",
+      "Paul Talling",
+      "North London Walks/Sally Stevens",
+      "Historical Finchley literary and war events",
+      "Go Jauntly/TfL",
+      "VoiceMap, izi.TRAVEL and GPSmyCity targeted searches",
+      "YouTube public descriptions",
+      "Open House search and single-institution tours"
+    ],
+    "gaps": [
+      "No specific Finchley VoiceMap or GPSmyCity tour identified in targeted indexed searches; not proof no app-only/unindexed tour exists.",
+      "No paid tours/booklets purchased; inaccessible full steps/scripts remain unknown.",
+      "No comprehensive North Finchley bus-station commercial loop identified. Kinks reseller geography misleading.",
+      "No private guide contact, archive request or booking made.",
+      "Adjacent routes do not establish safe/pleasant connectivity to our bus-station loops."
+    ]
+  },
+  "exclusions": [
+    "Florist SEO pages making vague tour suggestions without an identifiable originator/itinerary.",
+    "Finchley Road/Hampstead search hits outside Finchley; incidental transit mentions.",
+    "Generic nearby attractions/recommendations from travel resellers.",
+    "Housing viewings and overseas Woodside Park results."
+  ]
+}

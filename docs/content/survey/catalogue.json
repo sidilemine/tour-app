@@ -1,0 +1,5908 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-17",
+  "status": "comprehensive public survey; partial public itineraries explicitly retained",
+  "deduplication": {
+    "thematic-kinks-brit": "com-05",
+    "thematic-kinks-londonwalks": "com-06",
+    "thematic-literary-2016": "com-10",
+    "thematic-trains-palaces": "com-03",
+    "thematic-finchley-war": "com-09"
+  },
+  "records": [
+    {
+      "id": "h-north-landmarks",
+      "title": "North Finchley Landmarks",
+      "sourceUrls": [
+        "https://www.tonero.me.uk/walkmaps/ourwalks120.pdf"
+      ],
+      "area": "North Finchley / Woodside",
+      "branchRecords": [
+        {
+          "file": "heritage.json",
+          "id": "h-north-landmarks"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "placeId": "place-brook-farm-open-space-whetstone-stray",
+          "publishedName": "Brook Farm Open Space / Whetstone Stray",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-swan-lane-open-space",
+          "publishedName": "Swan Lane Open Space",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-terrace-house-terrace-cottage",
+          "publishedName": "Terrace House / Terrace Cottage",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-the-white-house",
+          "publishedName": "The White House",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-lodge-to-finchley-catholic-high-school",
+          "publishedName": "Lodge to Finchley Catholic High School",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-finchley-rink-cinema-site",
+          "publishedName": "Finchley Rink Cinema site",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-bow-street-riders-site",
+          "publishedName": "Bow Street Riders site",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-north-finchley-library-model",
+          "publishedName": "North Finchley Library / model",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-32-34-torrington-park",
+          "publishedName": "32–34 Torrington Park",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-dollis-brook-folly-brook",
+          "publishedName": "Dollis Brook / Folly Brook",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-lodge-lane-church-path",
+          "publishedName": "Lodge Lane / Church Path",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-john-parr-memorial",
+          "publishedName": "John Parr memorial",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-carriageway",
+          "publishedName": "Carriageway",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-stanhope-cinema-site",
+          "publishedName": "Stanhope Cinema site",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-tally-ho-corner",
+          "publishedName": "Tally Ho Corner",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-grand-arcade",
+          "publishedName": "Grand Arcade",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-grand-hall-cinema-site",
+          "publishedName": "Grand Hall Cinema site",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-gaumont-cinema-site",
+          "publishedName": "Gaumont Cinema site",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-tram-depot-site-kingsway",
+          "publishedName": "Tram Depot site / Kingsway",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-st-kilda-s-memorial",
+          "publishedName": "St Kilda’s memorial",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-woodhouse-school-lodge",
+          "publishedName": "Woodhouse / school lodge",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-christ-church",
+          "publishedName": "Christ Church",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-finchley-lido-site",
+          "publishedName": "Finchley Lido site",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-moss-hall-site",
+          "publishedName": "Moss Hall site",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-brent-lodge-gatehouse",
+          "publishedName": "Brent Lodge gatehouse",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-lodge-cottage",
+          "publishedName": "Lodge Cottage",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-dollis-viaduct",
+          "publishedName": "Dollis Viaduct",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-victoria-park",
+          "publishedName": "Victoria Park",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-cornwall-house",
+          "publishedName": "Cornwall House",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        }
+      ],
+      "completeness": "See source record for marker/sequence/completeness distinctions"
+    },
+    {
+      "id": "h-central-landmarks",
+      "title": "College Farm, Church End, Finchley Village, Victoria Park",
+      "sourceUrls": [
+        "https://www.tonero.me.uk/walkmaps/ourwalks120.pdf"
+      ],
+      "area": "Finchley Central / Church End",
+      "branchRecords": [
+        {
+          "file": "heritage.json",
+          "id": "h-central-landmarks"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "placeId": "place-brent-lodge-gatehouse",
+          "publishedName": "Brent Lodge gatehouse",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-lodge-cottage",
+          "publishedName": "Lodge Cottage",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-dollis-viaduct",
+          "publishedName": "Dollis Viaduct",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-wentworth-cinema-site",
+          "publishedName": "Wentworth Cinema site",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-victoria-park",
+          "publishedName": "Victoria Park",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-cornwall-house",
+          "publishedName": "Cornwall House",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-old-bohemia-new-bohemia-arcadia-sites",
+          "publishedName": "Old Bohemia / New Bohemia / Arcadia sites",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-st-mary-s-school-site",
+          "publishedName": "St Mary’s School site",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-park-house",
+          "publishedName": "Park House",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-gothic-cottage-flora-cottage",
+          "publishedName": "Gothic Cottage / Flora Cottage",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-royal-terrace",
+          "publishedName": "Royal Terrace",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-hamilton-hall",
+          "publishedName": "Hamilton Hall",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-clerk-s-house",
+          "publishedName": "Clerk’s House",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-st-mary-at-finchley",
+          "publishedName": "St Mary-at-Finchley",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-old-christ-s-college",
+          "publishedName": "Old Christ’s College",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-finchley-hall-site",
+          "publishedName": "Finchley Hall site",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-king-edward-hall",
+          "publishedName": "King Edward Hall",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-30a-hendon-avenue",
+          "publishedName": "30A Hendon Avenue",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-grass-farm-lodge",
+          "publishedName": "Grass Farm Lodge",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-finchley-garden-village",
+          "publishedName": "Finchley Garden Village",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-hertford-lodge",
+          "publishedName": "Hertford Lodge",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-stephens-house-and-gardens",
+          "publishedName": "Stephens House and Gardens",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-manor-house-sternberg-centre",
+          "publishedName": "Manor House / Sternberg Centre",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-windsor-open-space",
+          "publishedName": "Windsor Open Space",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-college-farm",
+          "publishedName": "College Farm",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-la-d-livrance",
+          "publishedName": "La Délivrance",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-finchley-memorial-hospital",
+          "publishedName": "Finchley Memorial Hospital",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        }
+      ],
+      "completeness": "See source record for marker/sequence/completeness distinctions"
+    },
+    {
+      "id": "h-east-landmarks",
+      "title": "East Finchley, Coppetts Wood, Victoria Park",
+      "sourceUrls": [
+        "https://www.tonero.me.uk/walkmaps/ourwalks120.pdf"
+      ],
+      "area": "East Finchley",
+      "branchRecords": [
+        {
+          "file": "heritage.json",
+          "id": "h-east-landmarks"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "placeId": "place-victoria-park",
+          "publishedName": "Victoria Park",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-finchley-memorial-hospital",
+          "publishedName": "Finchley Memorial Hospital",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-glebelands",
+          "publishedName": "Glebelands",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-coppetts-wood",
+          "publishedName": "Coppetts Wood",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-long-lane-pasture",
+          "publishedName": "Long Lane Pasture",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-st-pancras-and-islington-cemetery",
+          "publishedName": "St Pancras and Islington Cemetery",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-turpin-s-oak-site",
+          "publishedName": "Turpin’s Oak site",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-the-grange-oak-lodge-simms-site",
+          "publishedName": "The Grange / Oak Lodge / Simms site",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-red-lion-hill-cuckolds-haven",
+          "publishedName": "Red Lion Hill / Cuckolds Haven",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-the-walks",
+          "publishedName": "The Walks",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-east-finchley-library",
+          "publishedName": "East Finchley Library",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-baptist-church-hall",
+          "publishedName": "Baptist Church Hall",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-coldfall-wood",
+          "publishedName": "Coldfall Wood",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-convent-of-the-good-shepherd-east-end-house",
+          "publishedName": "Convent of the Good Shepherd / East End House",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-east-finchley-cemetery",
+          "publishedName": "East Finchley Cemetery",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-park-farm-george-sanger-site",
+          "publishedName": "Park Farm / George Sanger site",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-fairacres",
+          "publishedName": "Fairacres",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-elmhurst-site",
+          "publishedName": "Elmhurst site",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-holy-trinity-church",
+          "publishedName": "Holy Trinity Church",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-five-bells",
+          "publishedName": "Five Bells",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-richard-cromwell-house-site",
+          "publishedName": "Richard Cromwell house site",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-cromwell-hall-site",
+          "publishedName": "Cromwell Hall site",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-congregational-chapel-british-school-site",
+          "publishedName": "Congregational chapel / British School site",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-market-place",
+          "publishedName": "Market Place",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-holy-trinity-school-site",
+          "publishedName": "Holy Trinity School site",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-bald-faced-stag",
+          "publishedName": "Bald Faced Stag",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-dairy-site",
+          "publishedName": "Dairy site",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-phoenix-cinema",
+          "publishedName": "Phoenix Cinema",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-east-finchley-station",
+          "publishedName": "East Finchley Station",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-old-white-lion",
+          "publishedName": "Old White Lion",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        },
+        {
+          "placeId": "place-cherry-tree-wood",
+          "publishedName": "Cherry Tree Wood",
+          "sequence": null,
+          "sourceId": "h-tonero120"
+        }
+      ],
+      "completeness": "See source record for marker/sequence/completeness distinctions"
+    },
+    {
+      "id": "h-longlane-dollis",
+      "title": "From Long Lane to Dollis Valley",
+      "sourceUrls": [
+        "https://www.finchleysociety.org.uk/wp-content/uploads/2020/08/From-Long-Lane-to-Dollis-Valley-Walk-Text.pdf",
+        "https://www.finchleysociety.org.uk/wp-content/uploads/2020/08/From-Long-Lane-to-Dollis-Valley-Points-of-Interest.pdf",
+        "https://www.finchleysociety.org.uk/from-long-lane-to-dollis-valley/"
+      ],
+      "area": "Finchley Central / Church End",
+      "branchRecords": [
+        {
+          "file": "heritage.json",
+          "id": "h-longlane-dollis"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "placeId": "place-finchley-central-station",
+          "publishedName": "Finchley Central Station",
+          "sequence": 1,
+          "sourceId": "h-blain-route"
+        },
+        {
+          "placeId": "place-claigmar-gardens",
+          "publishedName": "Claigmar Gardens",
+          "sequence": 2,
+          "sourceId": "h-blain-route"
+        },
+        {
+          "placeId": "place-victoria-park-optional-detour",
+          "publishedName": "Victoria Park (optional detour)",
+          "sequence": 3,
+          "sourceId": "h-blain-route"
+        },
+        {
+          "placeId": "place-long-lane",
+          "publishedName": "Long Lane",
+          "sequence": 4,
+          "sourceId": "h-blain-route"
+        },
+        {
+          "placeId": "place-long-lane-pasture-optional-detour",
+          "publishedName": "Long Lane Pasture (optional detour)",
+          "sequence": 5,
+          "sourceId": "h-blain-route"
+        },
+        {
+          "placeId": "place-the-avenue",
+          "publishedName": "The Avenue",
+          "sequence": 6,
+          "sourceId": "h-blain-route"
+        },
+        {
+          "placeId": "place-stephens-house-and-gardens-optional-detour",
+          "publishedName": "Stephens House and Gardens (optional detour)",
+          "sequence": 7,
+          "sourceId": "h-blain-route"
+        },
+        {
+          "placeId": "place-regents-park-road",
+          "publishedName": "Regents Park Road",
+          "sequence": 8,
+          "sourceId": "h-blain-route"
+        },
+        {
+          "placeId": "place-st-mary-at-finchley",
+          "publishedName": "St Mary-at-Finchley",
+          "sequence": 9,
+          "sourceId": "h-blain-route"
+        },
+        {
+          "placeId": "place-dollis-valley-greenwalk",
+          "publishedName": "Dollis Valley Greenwalk",
+          "sequence": 10,
+          "sourceId": "h-blain-route"
+        },
+        {
+          "placeId": "place-dollis-viaduct",
+          "publishedName": "Dollis Viaduct",
+          "sequence": 11,
+          "sourceId": "h-blain-route"
+        },
+        {
+          "placeId": "place-lovers-walk",
+          "publishedName": "Lovers Walk",
+          "sequence": 12,
+          "sourceId": "h-blain-route"
+        },
+        {
+          "placeId": "place-ballards-lane",
+          "publishedName": "Ballards Lane",
+          "sequence": 13,
+          "sourceId": "h-blain-route"
+        }
+      ],
+      "completeness": "See source record for marker/sequence/completeness distinctions"
+    },
+    {
+      "id": "h-green-spaces",
+      "title": "Finchley and Friern Barnet green spaces",
+      "sourceUrls": [
+        "https://www.finchleysociety.org.uk/wp-content/uploads/2018/02/finchleygreenwalkmap.pdf",
+        "https://www.finchleysociety.org.uk/689-2/"
+      ],
+      "area": "Finchley / Friern Barnet / adjoining Haringey",
+      "branchRecords": [
+        {
+          "file": "heritage.json",
+          "id": "h-green-spaces"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "placeId": "place-brook-farm-open-space",
+          "publishedName": "Brook Farm Open Space",
+          "sequence": 1,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-dollis-valley-greenwalk",
+          "publishedName": "Dollis Valley Greenwalk",
+          "sequence": 2,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-whetstone-stray",
+          "publishedName": "Whetstone Stray",
+          "sequence": 3,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-rocklands-pond",
+          "publishedName": "Rocklands Pond",
+          "sequence": 4,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-finchley-village-green",
+          "publishedName": "Finchley Village Green",
+          "sequence": 5,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-windsor-open-space",
+          "publishedName": "Windsor Open Space",
+          "sequence": 6,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-mutton-brook",
+          "publishedName": "Mutton Brook",
+          "sequence": 7,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-little-wood",
+          "publishedName": "Little Wood",
+          "sequence": 8,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-big-wood",
+          "publishedName": "Big Wood",
+          "sequence": 9,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-lyttelton-field",
+          "publishedName": "Lyttelton Field",
+          "sequence": 10,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-cherry-tree-wood",
+          "publishedName": "Cherry Tree Wood",
+          "sequence": 11,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-coldfall-wood",
+          "publishedName": "Coldfall Wood",
+          "sequence": 12,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-muswell-hill-sports-ground",
+          "publishedName": "Muswell Hill Sports Ground",
+          "sequence": 13,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-coppetts-wood",
+          "publishedName": "Coppetts Wood",
+          "sequence": 14,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-glebelands",
+          "publishedName": "Glebelands",
+          "sequence": 15,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-victoria-park",
+          "publishedName": "Victoria Park",
+          "sequence": 16,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-st-mary-s-churchyard",
+          "publishedName": "St Mary’s churchyard",
+          "sequence": 17,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-avenue-house-grounds",
+          "publishedName": "Avenue House grounds",
+          "sequence": 18,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-garden-of-hope",
+          "publishedName": "Garden of Hope",
+          "sequence": 19,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-east-finchley-cemetery",
+          "publishedName": "East Finchley Cemetery",
+          "sequence": 20,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-holy-trinity-churchyard",
+          "publishedName": "Holy Trinity churchyard",
+          "sequence": 21,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-elmhurst-church-lane",
+          "publishedName": "Elmhurst / Church Lane",
+          "sequence": 22,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-st-pancras-and-islington-cemetery",
+          "publishedName": "St Pancras and Islington Cemetery",
+          "sequence": 23,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-halliwick-recreation-ground",
+          "publishedName": "Halliwick Recreation Ground",
+          "sequence": 24,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-hollickwood-park",
+          "publishedName": "Hollickwood Park",
+          "sequence": 25,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-friern-bridge-open-space",
+          "publishedName": "Friern Bridge Open Space",
+          "sequence": 26,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-bethune-park",
+          "publishedName": "Bethune Park",
+          "sequence": 27,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-friary-park",
+          "publishedName": "Friary Park",
+          "sequence": 28,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-st-james-s-churchyard",
+          "publishedName": "St James’s churchyard",
+          "sequence": 29,
+          "sourceId": "h-greenmap"
+        },
+        {
+          "placeId": "place-swan-lane-open-space",
+          "publishedName": "Swan Lane Open Space",
+          "sequence": 30,
+          "sourceId": "h-greenmap"
+        }
+      ],
+      "completeness": "See source record for marker/sequence/completeness distinctions"
+    },
+    {
+      "id": "h-stmary-loop",
+      "title": "St Mary’s guided heritage walk",
+      "sourceUrls": [
+        "https://stmaryatfinchley.org.uk/wp-content/uploads/2024/05/smaf-heritage-walk-route-map-trial-1.pdf",
+        "https://stmaryatfinchley.org.uk/join-st-marys-guided-heritage-walk/"
+      ],
+      "area": "Church End",
+      "branchRecords": [
+        {
+          "file": "heritage.json",
+          "id": "h-stmary-loop"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "placeId": "place-st-mary-at-finchley",
+          "publishedName": "St Mary-at-Finchley",
+          "sequence": 1,
+          "sourceId": "h-stmary-map"
+        },
+        {
+          "placeId": "place-church-crescent",
+          "publishedName": "Church Crescent",
+          "sequence": 2,
+          "sourceId": "h-stmary-map"
+        },
+        {
+          "placeId": "place-dollis-valley-greenwalk",
+          "publishedName": "Dollis Valley Greenwalk",
+          "sequence": 3,
+          "sourceId": "h-stmary-map"
+        },
+        {
+          "placeId": "place-windsor-open-space",
+          "publishedName": "Windsor Open Space",
+          "sequence": 4,
+          "sourceId": "h-stmary-map"
+        },
+        {
+          "placeId": "place-capital-ring-henlys-corner",
+          "publishedName": "Capital Ring / Henlys Corner",
+          "sequence": 5,
+          "sourceId": "h-stmary-map"
+        },
+        {
+          "placeId": "place-mutton-brook",
+          "publishedName": "Mutton Brook",
+          "sequence": 6,
+          "sourceId": "h-stmary-map"
+        },
+        {
+          "placeId": "place-garden-of-hope",
+          "publishedName": "Garden of Hope",
+          "sequence": 7,
+          "sourceId": "h-stmary-map"
+        },
+        {
+          "placeId": "place-the-avenue-stephens-house",
+          "publishedName": "The Avenue / Stephens House",
+          "sequence": 8,
+          "sourceId": "h-stmary-map"
+        },
+        {
+          "placeId": "place-st-mary-at-finchley",
+          "publishedName": "St Mary-at-Finchley",
+          "sequence": 9,
+          "sourceId": "h-stmary-map"
+        }
+      ],
+      "completeness": "See source record for marker/sequence/completeness distinctions"
+    },
+    {
+      "id": "h-barnet-central",
+      "title": "East Finchley to Finchley Church End",
+      "sourceUrls": [
+        "https://www.barnet.gov.uk/sites/default/files/barnet_healthy_heritage_walks_-_east_finchley_to_finchley_church_end_walk_map.pdf",
+        "https://www.barnet.gov.uk/health-and-wellbeing/keeping-well-and-active/healthy-heritage-walks"
+      ],
+      "area": "East Finchley / Church End",
+      "branchRecords": [
+        {
+          "file": "heritage.json",
+          "id": "h-barnet-central"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "placeId": "place-east-finchley-station",
+          "publishedName": "East Finchley Station",
+          "sequence": 1,
+          "sourceId": "h-barnet-central-map"
+        },
+        {
+          "placeId": "place-abbots-gardens-cromwell-hall",
+          "publishedName": "Abbots Gardens / Cromwell Hall",
+          "sequence": 2,
+          "sourceId": "h-barnet-central-map"
+        },
+        {
+          "placeId": "place-five-bells",
+          "publishedName": "Five Bells",
+          "sequence": 3,
+          "sourceId": "h-barnet-central-map"
+        },
+        {
+          "placeId": "place-holy-trinity-church-shree-aden-depala-mitramandal",
+          "publishedName": "Holy Trinity Church / Shree Aden Depala Mitramandal",
+          "sequence": 4,
+          "sourceId": "h-barnet-central-map"
+        },
+        {
+          "placeId": "place-east-finchley-cemetery",
+          "publishedName": "East Finchley Cemetery",
+          "sequence": 5,
+          "sourceId": "h-barnet-central-map"
+        },
+        {
+          "placeId": "place-east-end-house",
+          "publishedName": "East End House",
+          "sequence": 6,
+          "sourceId": "h-barnet-central-map"
+        },
+        {
+          "placeId": "place-sternberg-centre",
+          "publishedName": "Sternberg Centre",
+          "sequence": 7,
+          "sourceId": "h-barnet-central-map"
+        },
+        {
+          "placeId": "place-stephens-house-and-gardens",
+          "publishedName": "Stephens House and Gardens",
+          "sequence": 8,
+          "sourceId": "h-barnet-central-map"
+        },
+        {
+          "placeId": "place-st-mary-at-finchley-finchley-church-end",
+          "publishedName": "St Mary-at-Finchley / Finchley Church End",
+          "sequence": 9,
+          "sourceId": "h-barnet-central-map"
+        }
+      ],
+      "completeness": "See source record for marker/sequence/completeness distinctions"
+    },
+    {
+      "id": "h-barnet-southgate",
+      "title": "East Finchley to New Southgate",
+      "sourceUrls": [
+        "https://www.barnet.gov.uk/sites/default/files/2021-11/east_finchley_to_new_southgate_walk.pdf",
+        "https://www.barnet.gov.uk/health-and-wellbeing/keeping-well-and-active/healthy-heritage-walks"
+      ],
+      "area": "East Finchley / Friern Barnet / New Southgate",
+      "branchRecords": [
+        {
+          "file": "heritage.json",
+          "id": "h-barnet-southgate"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "placeId": "place-st-pancras-and-islington-cemetery-entrance",
+          "publishedName": "St Pancras and Islington Cemetery entrance",
+          "sequence": 1,
+          "sourceId": "h-barnet-southgate"
+        },
+        {
+          "placeId": "place-cemetery-chapel",
+          "publishedName": "Cemetery chapel",
+          "sequence": 2,
+          "sourceId": "h-barnet-southgate"
+        },
+        {
+          "placeId": "place-parachutist-memorial",
+          "publishedName": "Parachutist memorial",
+          "sequence": 3,
+          "sourceId": "h-barnet-southgate"
+        },
+        {
+          "placeId": "place-mond-mausoleum",
+          "publishedName": "Mond Mausoleum",
+          "sequence": 4,
+          "sourceId": "h-barnet-southgate"
+        },
+        {
+          "placeId": "place-melesi-mausoleum",
+          "publishedName": "Melesi Mausoleum",
+          "sequence": 5,
+          "sourceId": "h-barnet-southgate"
+        },
+        {
+          "placeId": "place-coppetts-wood",
+          "publishedName": "Coppetts Wood",
+          "sequence": 6,
+          "sourceId": "h-barnet-southgate"
+        },
+        {
+          "placeId": "place-friern-barnet-old-town-hall",
+          "publishedName": "Friern Barnet Old Town Hall",
+          "sequence": 7,
+          "sourceId": "h-barnet-southgate"
+        },
+        {
+          "placeId": "place-colney-hatch-asylum-princess-park-manor",
+          "publishedName": "Colney Hatch Asylum / Princess Park Manor",
+          "sequence": 8,
+          "sourceId": "h-barnet-southgate"
+        }
+      ],
+      "completeness": "See source record for marker/sequence/completeness distinctions"
+    },
+    {
+      "id": "h-waylamps",
+      "title": "Waylamps of Barnet: A Heritage Discovery Trail",
+      "sourceUrls": [
+        "https://acrobat.adobe.com/id/urn:aaid:sc:eu:df4a79be-97f6-46c0-a1f6-b6b65980142f",
+        "https://www.lightandflight.co.uk/projects/barnet-heritage-trail",
+        "https://acrobat.adobe.com/id/urn:aaid:sc:EU:b585115a-c95f-4ae7-ab02-d235a1041020"
+      ],
+      "area": "North Finchley / Central / Dollis / Colindale",
+      "branchRecords": [
+        {
+          "file": "heritage.json",
+          "id": "h-waylamps"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "placeId": "place-matters-colindale",
+          "publishedName": "Matters — Colindale",
+          "sequence": null,
+          "sourceId": "h-waylamps-map"
+        },
+        {
+          "placeId": "place-slocombe-dollis-brook",
+          "publishedName": "Slocombe — Dollis Brook",
+          "sequence": null,
+          "sourceId": "h-waylamps-map"
+        },
+        {
+          "placeId": "place-milligan-albert-place",
+          "publishedName": "Milligan — Albert Place",
+          "sequence": null,
+          "sourceId": "h-waylamps-map"
+        },
+        {
+          "placeId": "place-reiniger-north-of-tally-ho",
+          "publishedName": "Reiniger — north of Tally Ho",
+          "sequence": null,
+          "sourceId": "h-waylamps-map"
+        }
+      ],
+      "completeness": "See source record for marker/sequence/completeness distinctions"
+    },
+    {
+      "id": "h-tonero-eastwalks",
+      "title": "East Finchley Walks",
+      "sourceUrls": [
+        "https://www.tonero.me.uk/walkmaps/ourwalks102.pdf",
+        "https://www.tonero.me.uk/walksfromfinchley.htm"
+      ],
+      "area": "East Finchley",
+      "branchRecords": [
+        {
+          "file": "heritage.json",
+          "id": "h-tonero-eastwalks"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "placeId": "place-east-finchley-station",
+          "publishedName": "East Finchley Station",
+          "sequence": null,
+          "sourceId": "h-tonero-102"
+        },
+        {
+          "placeId": "place-market-place",
+          "publishedName": "Market Place",
+          "sequence": null,
+          "sourceId": "h-tonero-102"
+        },
+        {
+          "placeId": "place-the-walks",
+          "publishedName": "The Walks",
+          "sequence": null,
+          "sourceId": "h-tonero-102"
+        },
+        {
+          "placeId": "place-red-lion-hill",
+          "publishedName": "Red Lion Hill",
+          "sequence": null,
+          "sourceId": "h-tonero-102"
+        },
+        {
+          "placeId": "place-coppetts-wood",
+          "publishedName": "Coppetts Wood",
+          "sequence": null,
+          "sourceId": "h-tonero-102"
+        },
+        {
+          "placeId": "place-coldfall-wood",
+          "publishedName": "Coldfall Wood",
+          "sequence": null,
+          "sourceId": "h-tonero-102"
+        }
+      ],
+      "completeness": "See source record for marker/sequence/completeness distinctions"
+    },
+    {
+      "id": "h-tonero-cemeteries",
+      "title": "Two East Finchley Cemeteries",
+      "sourceUrls": [
+        "https://www.tonero.me.uk/walkmaps/ourwalks118.pdf",
+        "https://www.tonero.me.uk/walksfromfinchley.htm"
+      ],
+      "area": "East Finchley",
+      "branchRecords": [
+        {
+          "file": "heritage.json",
+          "id": "h-tonero-cemeteries"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "placeId": "place-east-finchley-cemetery",
+          "publishedName": "East Finchley Cemetery",
+          "sequence": null,
+          "sourceId": "h-tonero-118"
+        },
+        {
+          "placeId": "place-st-pancras-and-islington-cemetery",
+          "publishedName": "St Pancras and Islington Cemetery",
+          "sequence": null,
+          "sourceId": "h-tonero-118"
+        }
+      ],
+      "completeness": "See source record for marker/sequence/completeness distinctions"
+    },
+    {
+      "id": "h-tonero-muswell-fortis",
+      "title": "Muswell Hill and Fortis Green",
+      "sourceUrls": [
+        "https://www.tonero.me.uk/walkmaps/ourwalks97.pdf",
+        "https://www.tonero.me.uk/walksfromfinchley.htm"
+      ],
+      "area": "adjoining Muswell Hill comparison",
+      "branchRecords": [
+        {
+          "file": "heritage.json",
+          "id": "h-tonero-muswell-fortis"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "placeId": "place-muswell-hill-broadway",
+          "publishedName": "Muswell Hill Broadway",
+          "sequence": null,
+          "sourceId": "h-tonero-97"
+        },
+        {
+          "placeId": "place-alexandra-palace",
+          "publishedName": "Alexandra Palace",
+          "sequence": null,
+          "sourceId": "h-tonero-97"
+        },
+        {
+          "placeId": "place-parkland-walk",
+          "publishedName": "Parkland Walk",
+          "sequence": null,
+          "sourceId": "h-tonero-97"
+        },
+        {
+          "placeId": "place-fortis-green",
+          "publishedName": "Fortis Green",
+          "sequence": null,
+          "sourceId": "h-tonero-97"
+        },
+        {
+          "placeId": "place-mus-well-site",
+          "publishedName": "Mus Well site",
+          "sequence": null,
+          "sourceId": "h-tonero-97"
+        }
+      ],
+      "completeness": "See source record for marker/sequence/completeness distinctions"
+    },
+    {
+      "id": "h-tonero-shady",
+      "title": "Shady Wood Walk Highgate",
+      "sourceUrls": [
+        "https://www.tonero.me.uk/walkmaps/ourwalks101.pdf",
+        "https://www.tonero.me.uk/walksfromfinchley.htm"
+      ],
+      "area": "East Finchley / adjacent Highgate",
+      "branchRecords": [
+        {
+          "file": "heritage.json",
+          "id": "h-tonero-shady"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "placeId": "place-cherry-tree-wood",
+          "publishedName": "Cherry Tree Wood",
+          "sequence": null,
+          "sourceId": "h-tonero-101"
+        },
+        {
+          "placeId": "place-highgate-wood",
+          "publishedName": "Highgate Wood",
+          "sequence": null,
+          "sourceId": "h-tonero-101"
+        },
+        {
+          "placeId": "place-queen-s-wood",
+          "publishedName": "Queen’s Wood",
+          "sequence": null,
+          "sourceId": "h-tonero-101"
+        }
+      ],
+      "completeness": "See source record for marker/sequence/completeness distinctions"
+    },
+    {
+      "id": "h-tonero-hampstead-highgate",
+      "title": "East Finchley, Hampstead and Highgate circular walks",
+      "sourceUrls": [
+        "https://www.tonero.me.uk/walkmaps/ourwalks15.pdf",
+        "https://www.tonero.me.uk/walksfromfinchley.htm"
+      ],
+      "area": "East Finchley / nearby comparison",
+      "branchRecords": [
+        {
+          "file": "heritage.json",
+          "id": "h-tonero-hampstead-highgate"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "placeId": "place-east-finchley-station",
+          "publishedName": "East Finchley Station",
+          "sequence": null,
+          "sourceId": "h-tonero-15"
+        },
+        {
+          "placeId": "place-cherry-tree-wood",
+          "publishedName": "Cherry Tree Wood",
+          "sequence": null,
+          "sourceId": "h-tonero-15"
+        },
+        {
+          "placeId": "place-highgate-wood",
+          "publishedName": "Highgate Wood",
+          "sequence": null,
+          "sourceId": "h-tonero-15"
+        },
+        {
+          "placeId": "place-hampstead-heath",
+          "publishedName": "Hampstead Heath",
+          "sequence": null,
+          "sourceId": "h-tonero-15"
+        },
+        {
+          "placeId": "place-kenwood",
+          "publishedName": "Kenwood",
+          "sequence": null,
+          "sourceId": "h-tonero-15"
+        },
+        {
+          "placeId": "place-heath-extension",
+          "publishedName": "Heath Extension",
+          "sequence": null,
+          "sourceId": "h-tonero-15"
+        }
+      ],
+      "completeness": "See source record for marker/sequence/completeness distinctions"
+    },
+    {
+      "id": "h-tonero-allypally",
+      "title": "Muswell Hill and Ally Pally",
+      "sourceUrls": [
+        "https://www.tonero.me.uk/walkmaps/ourwalks16.pdf",
+        "https://www.tonero.me.uk/walksfromfinchley.htm"
+      ],
+      "area": "nearby comparison",
+      "branchRecords": [
+        {
+          "file": "heritage.json",
+          "id": "h-tonero-allypally"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "placeId": "place-alexandra-palace",
+          "publishedName": "Alexandra Palace",
+          "sequence": null,
+          "sourceId": "h-tonero-16"
+        },
+        {
+          "placeId": "place-alexandra-park",
+          "publishedName": "Alexandra Park",
+          "sequence": null,
+          "sourceId": "h-tonero-16"
+        },
+        {
+          "placeId": "place-muswell-hill",
+          "publishedName": "Muswell Hill",
+          "sequence": null,
+          "sourceId": "h-tonero-16"
+        }
+      ],
+      "completeness": "See source record for marker/sequence/completeness distinctions"
+    },
+    {
+      "id": "h-tonero-west",
+      "title": "Six Walks West of Finchley",
+      "sourceUrls": [
+        "https://www.tonero.me.uk/walkmaps/ourwalks20.pdf",
+        "https://www.tonero.me.uk/walksfromfinchley.htm"
+      ],
+      "area": "Dollis Valley / Hendon / Totteridge comparison",
+      "branchRecords": [
+        {
+          "file": "heritage.json",
+          "id": "h-tonero-west"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "placeId": "place-dollis-brook",
+          "publishedName": "Dollis Brook",
+          "sequence": null,
+          "sourceId": "h-tonero-20"
+        },
+        {
+          "placeId": "place-folly-brook",
+          "publishedName": "Folly Brook",
+          "sequence": null,
+          "sourceId": "h-tonero-20"
+        },
+        {
+          "placeId": "place-darland-lake",
+          "publishedName": "Darland Lake",
+          "sequence": null,
+          "sourceId": "h-tonero-20"
+        },
+        {
+          "placeId": "place-totteridge-village",
+          "publishedName": "Totteridge Village",
+          "sequence": null,
+          "sourceId": "h-tonero-20"
+        },
+        {
+          "placeId": "place-arrandene",
+          "publishedName": "Arrandene",
+          "sequence": null,
+          "sourceId": "h-tonero-20"
+        },
+        {
+          "placeId": "place-mill-hill-east",
+          "publishedName": "Mill Hill East",
+          "sequence": null,
+          "sourceId": "h-tonero-20"
+        }
+      ],
+      "completeness": "See source record for marker/sequence/completeness distinctions"
+    },
+    {
+      "id": "h-tonero-byways",
+      "title": "Byways to Hampstead",
+      "sourceUrls": [
+        "https://www.tonero.me.uk/walkmaps/ourwalks103.pdf",
+        "https://www.tonero.me.uk/walksfromfinchley.htm"
+      ],
+      "area": "nearby comparison",
+      "branchRecords": [
+        {
+          "file": "heritage.json",
+          "id": "h-tonero-byways"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "placeId": "place-hampstead",
+          "publishedName": "Hampstead",
+          "sequence": null,
+          "sourceId": "h-tonero-103"
+        },
+        {
+          "placeId": "place-hampstead-garden-suburb",
+          "publishedName": "Hampstead Garden Suburb",
+          "sequence": null,
+          "sourceId": "h-tonero-103"
+        }
+      ],
+      "completeness": "See source record for marker/sequence/completeness distinctions"
+    },
+    {
+      "id": "h-tonero-lockdown",
+      "title": "Lockdown walks from Sedgemere Avenue",
+      "sourceUrls": [
+        "https://www.tonero.me.uk/walkmaps/covidwalks.pdf"
+      ],
+      "area": "Finchley / nearby comparison",
+      "branchRecords": [
+        {
+          "file": "heritage.json",
+          "id": "h-tonero-lockdown"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "placeId": "place-stephens-house",
+          "publishedName": "Stephens House",
+          "sequence": null,
+          "sourceId": "h-tonero-lockdown"
+        },
+        {
+          "placeId": "place-east-finchley-cemetery",
+          "publishedName": "East Finchley Cemetery",
+          "sequence": null,
+          "sourceId": "h-tonero-lockdown"
+        },
+        {
+          "placeId": "place-victoria-park",
+          "publishedName": "Victoria Park",
+          "sequence": null,
+          "sourceId": "h-tonero-lockdown"
+        },
+        {
+          "placeId": "place-coppetts-wood",
+          "publishedName": "Coppetts Wood",
+          "sequence": null,
+          "sourceId": "h-tonero-lockdown"
+        },
+        {
+          "placeId": "place-coldfall-wood",
+          "publishedName": "Coldfall Wood",
+          "sequence": null,
+          "sourceId": "h-tonero-lockdown"
+        },
+        {
+          "placeId": "place-college-farm",
+          "publishedName": "College Farm",
+          "sequence": null,
+          "sourceId": "h-tonero-lockdown"
+        },
+        {
+          "placeId": "place-church-end",
+          "publishedName": "Church End",
+          "sequence": null,
+          "sourceId": "h-tonero-lockdown"
+        },
+        {
+          "placeId": "place-swan-lane-open-space",
+          "publishedName": "Swan Lane Open Space",
+          "sequence": null,
+          "sourceId": "h-tonero-lockdown"
+        },
+        {
+          "placeId": "place-friary-park",
+          "publishedName": "Friary Park",
+          "sequence": null,
+          "sourceId": "h-tonero-lockdown"
+        }
+      ],
+      "completeness": "See source record for marker/sequence/completeness distinctions"
+    },
+    {
+      "id": "com-01",
+      "title": "Local London – Highwaymen to Hamburgers",
+      "sourceUrls": [
+        "https://www.walks.com/our-walks/local-london-highwaymen-to-hamburgers/"
+      ],
+      "area": "East Finchley",
+      "branchRecords": [
+        {
+          "file": "commercial.json",
+          "id": "com-01"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "published_place": "East Finchley station",
+          "place_id": "east-finchley-station",
+          "sequence": null,
+          "story_angle": "Meeting point: High Road exit.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Bishop’s former hunting park",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Opening landscape subject; exact standing place unnamed.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Former Finchley Woods/Common",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Surviving landscape traces.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Cinema",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Pioneering cinema; public copy does not name it.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "McDonald’s university",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Present institution and earlier use.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Industrial school",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Domestic-service training.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Former market square",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Pig market.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Common remnant",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Closing landscape; identity unconfirmed.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "completeness": "Named themes and partial places. Famous residents are mentioned without addresses; do not turn every name into a stop."
+    },
+    {
+      "id": "com-02",
+      "title": "East Finchley to Gospel Oak: Mansions & Lost Rivers",
+      "sourceUrls": [
+        "https://www.londonslostrivers.com/eastfinchleytogospeloak.html"
+      ],
+      "area": "East Finchley; Hampstead comparison",
+      "branchRecords": [
+        {
+          "file": "commercial.json",
+          "id": "com-02"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "published_place": "East Finchley station",
+          "place_id": "east-finchley-station",
+          "sequence": 1,
+          "story_angle": "Start.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "McDonald’s headquarters",
+          "place_id": null,
+          "sequence": 2,
+          "story_angle": "Corporate training site.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Peter Sellers former flat",
+          "place_id": null,
+          "sequence": 3,
+          "story_angle": "Childhood/family residence; address unstated.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "George Michael birthplace",
+          "place_id": null,
+          "sequence": 4,
+          "story_angle": "Address unstated.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Bishops Avenue",
+          "place_id": "bishops-avenue",
+          "sequence": 5,
+          "story_angle": "Mansion architecture, ownership and disuse.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Kenwood",
+          "place_id": "kenwood-house",
+          "sequence": 6,
+          "story_angle": "Final leg.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Highgate ponds",
+          "place_id": "highgate-ponds",
+          "sequence": 7,
+          "story_angle": "Fleet headwaters.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Gospel Oak station",
+          "place_id": "gospel-oak-station",
+          "sequence": 8,
+          "story_angle": "End.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "completeness": "Broad itinerary order is stated; minor stops, addresses and current access unknown."
+    },
+    {
+      "id": "com-03",
+      "title": "Trains, Tracks, Palaces, and Parades",
+      "sourceUrls": [
+        "https://www.eventbrite.co.uk/e/walking-tour-trains-tracks-palaces-and-parades-tickets-1987602237798"
+      ],
+      "area": "East Finchley → Muswell Hill/Alexandra Palace comparison",
+      "branchRecords": [
+        {
+          "file": "commercial.json",
+          "id": "com-03"
+        },
+        {
+          "file": "thematic.json",
+          "id": "thematic-trains-palaces"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "published_place": "East Finchley station",
+          "place_id": "east-finchley-station",
+          "sequence": 1,
+          "story_angle": "Modernist station; start.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Phoenix Cinema",
+          "place_id": "phoenix-cinema",
+          "sequence": 2,
+          "story_angle": "High Road development.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Edwardian shopping parade",
+          "place_id": null,
+          "sequence": 3,
+          "story_angle": "Suburban retail.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Cherry Tree Wood",
+          "place_id": "cherry-tree-wood",
+          "sequence": 4,
+          "story_angle": "Woodland history.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Highgate Wood",
+          "place_id": "highgate-wood",
+          "sequence": 5,
+          "story_angle": "Woodland history.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Former Alexandra Palace railway",
+          "place_id": null,
+          "sequence": 6,
+          "story_angle": "Railway route.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Alexandra Palace",
+          "place_id": "alexandra-palace",
+          "sequence": 7,
+          "story_angle": "Building and view.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Muswell Hill Broadway",
+          "place_id": "muswell-hill-broadway",
+          "sequence": 8,
+          "story_angle": "Suburban architecture.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Everyman Muswell Hill",
+          "place_id": "everyman-muswell-hill",
+          "sequence": 9,
+          "story_angle": "Art Deco cinema; finish.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "completeness": "Detailed public itinerary, not a full script; Eventbrite direct fetch intermittent, search-index description available."
+    },
+    {
+      "id": "com-04",
+      "title": "Tracks through Northern Heights",
+      "sourceUrls": [
+        "https://www.promsatstjudes.org.uk/2026-heritage-walks"
+      ],
+      "area": "East Finchley → Muswell Hill comparison",
+      "branchRecords": [
+        {
+          "file": "commercial.json",
+          "id": "com-04"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "published_place": "East Finchley",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Start area; exact meeting supplied on ticket.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Cherry Tree Wood",
+          "place_id": "cherry-tree-wood",
+          "sequence": null,
+          "story_angle": "Woodland route.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Highgate Wood",
+          "place_id": "highgate-wood",
+          "sequence": null,
+          "story_angle": "Woodland route.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Parkland Walk",
+          "place_id": "parkland-walk",
+          "sequence": null,
+          "story_angle": "Former rail corridor.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Muswell Hill",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "End area; Art Deco landmarks unnamed.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "completeness": "Public description only; complete stop list and script unavailable."
+    },
+    {
+      "id": "com-05",
+      "title": "The Kinks Tour of North London",
+      "sourceUrls": [
+        "https://britmusictours.com/tour/the-kinks-north-london-walking-tour/"
+      ],
+      "area": "East Finchley/Fortis Green/Muswell Hill → Hornsey comparison; reseller title misleadingly says North Finchley",
+      "branchRecords": [
+        {
+          "file": "commercial.json",
+          "id": "com-05"
+        },
+        {
+          "file": "thematic.json",
+          "id": "thematic-kinks-brit"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "published_place": "East Finchley station",
+          "place_id": "east-finchley-station",
+          "sequence": 1,
+          "story_angle": "Start.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Ray and Rasa homes",
+          "place_id": null,
+          "sequence": 2,
+          "story_angle": "Early marriage and later residence.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Davies family home",
+          "place_id": null,
+          "sequence": 3,
+          "story_angle": "Upbringing.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "First-gig pub",
+          "place_id": null,
+          "sequence": 4,
+          "story_angle": "Opposite family home; name omitted in text.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Second local pub",
+          "place_id": null,
+          "sequence": 5,
+          "story_angle": "Band hangout; unnamed.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Fortismere School",
+          "place_id": "fortismere-school",
+          "sequence": 6,
+          "story_angle": "Musicians’ schooldays.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Former dancehall",
+          "place_id": null,
+          "sequence": 7,
+          "story_angle": "Come Dancing association; unverified.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Nilsen-linked location",
+          "place_id": null,
+          "sequence": 8,
+          "story_angle": "Unnamed.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Davies sister’s home",
+          "place_id": null,
+          "sequence": 9,
+          "story_angle": "Unnamed.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Konk Studios",
+          "place_id": "konk-studios",
+          "sequence": 10,
+          "story_angle": "Finish reached by short bus ride.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "completeness": "Many addresses unnamed; advertised walk includes bus segment. Endpoint transport references vary."
+    },
+    {
+      "id": "com-06",
+      "title": "The Kinks in London",
+      "sourceUrls": [
+        "https://www.walks.com/our-walks/the-kinks-in-london/"
+      ],
+      "area": "East Finchley/Fortis Green/Muswell Hill comparison",
+      "branchRecords": [
+        {
+          "file": "commercial.json",
+          "id": "com-06"
+        },
+        {
+          "file": "thematic.json",
+          "id": "thematic-kinks-londonwalks"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "published_place": "East Finchley station",
+          "place_id": "east-finchley-station",
+          "sequence": null,
+          "story_angle": "Meeting point.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Fortis Green",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Advertised area. Homes, schools, pubs and entertainment venues described generically.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "completeness": "Generic venue categories; complete itinerary unavailable. Distinct operator from com-05, not assumed identical."
+    },
+    {
+      "id": "com-07",
+      "title": "A Walk Through Conservation Finchley",
+      "sourceUrls": [
+        "https://london.architecturediary.org/event/a-walk-through-conservation-finchley/"
+      ],
+      "area": "Finchley Central/Church End",
+      "branchRecords": [
+        {
+          "file": "commercial.json",
+          "id": "com-07"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "published_place": "Finchley Central station",
+          "place_id": "finchley-central-station",
+          "sequence": 1,
+          "story_angle": "Start opposite in Station Road.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Church End",
+          "place_id": "church-end",
+          "sequence": 2,
+          "story_angle": "Church and early settlement.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Stephens House",
+          "place_id": "stephens-house",
+          "sequence": 3,
+          "story_angle": "Ink-family home.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Finchley Garden Village",
+          "place_id": "finchley-garden-village",
+          "sequence": 4,
+          "story_angle": "Co-partnership housing.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Dollis Valley Walk",
+          "place_id": "dollis-valley-greenwalk",
+          "sequence": 5,
+          "story_angle": "Connecting path.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "College Farm",
+          "place_id": "college-farm",
+          "sequence": 6,
+          "story_angle": "Milk supply.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "La Délivrance",
+          "place_id": "la-delivrance",
+          "sequence": 7,
+          "story_angle": "Finish at Henly’s Corner.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "completeness": "Detailed route outline; date, duration and exact standing areas absent from accessible listing."
+    },
+    {
+      "id": "com-08",
+      "title": "Fabulous Finchley",
+      "sourceUrls": [
+        "https://www.the-archer.co.uk/archive/2012/2012Oct12.pdf"
+      ],
+      "area": "Finchley Central → East Finchley",
+      "branchRecords": [
+        {
+          "file": "commercial.json",
+          "id": "com-08"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "published_place": "Finchley Central station",
+          "place_id": "finchley-central-station",
+          "sequence": null,
+          "story_angle": "2013 listing start, Ballards Lane exit.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Knights Templar land",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Public article does not identify plot.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Former manor house",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Haunting story advertised; folklore, not established fact.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Comedians’ and murderers’ locations",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Unnamed in public article.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "completeness": "Named themes but mostly unidentified places; no script or complete order."
+    },
+    {
+      "id": "com-09",
+      "title": "Finchley Goes to War",
+      "sourceUrls": [
+        "https://barnetpost.co.uk/2025/08/20/finchley-goes-to-war-guided-walk-on-sunday-7th-september/"
+      ],
+      "area": "Henly’s Corner → Finchley Central",
+      "branchRecords": [
+        {
+          "file": "commercial.json",
+          "id": "com-09"
+        },
+        {
+          "file": "thematic.json",
+          "id": "thematic-finchley-war"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "published_place": "Henly’s Corner",
+          "place_id": "henlys-corner",
+          "sequence": null,
+          "story_angle": "Start.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Finchley Central",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Finish area.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "completeness": "Originator-written notice gives themes and endpoints only. John Parr photograph is not proof of a stop at his plaque."
+    },
+    {
+      "id": "com-10",
+      "title": "Finchley in Fiction",
+      "sourceUrls": [
+        "https://greenacrewriters.blogspot.com/2016/06/finchley-literary-festival.html"
+      ],
+      "area": "North Finchley/Woodside Park vicinity",
+      "branchRecords": [
+        {
+          "file": "commercial.json",
+          "id": "com-10"
+        },
+        {
+          "file": "thematic.json",
+          "id": "thematic-literary-2016"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "published_place": "Waterstones N12 9QR",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Start.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Redwood Cafe, Swan Lane Open Space",
+          "place_id": "swan-lane-open-space",
+          "sequence": null,
+          "story_angle": "Lunch stop.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Finchley Golf Club",
+          "place_id": "finchley-golf-club",
+          "sequence": null,
+          "story_angle": "Tea stop.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "completeness": "Refreshment points and start are known; literary reading locations and full route unknown."
+    },
+    {
+      "id": "com-11",
+      "title": "Historic walk around Muswell Hill / Music, Murder and Madness",
+      "sourceUrls": [
+        "https://northlondonwalks.co.uk/home/muswellhill/"
+      ],
+      "area": "Muswell Hill comparison",
+      "branchRecords": [
+        {
+          "file": "commercial.json",
+          "id": "com-11"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "published_place": "Former pleasure garden",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Unnamed location.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Rock musicians’ childhood home",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Unnamed in text.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Famous Royal Oak",
+          "place_id": "famous-royal-oak",
+          "sequence": null,
+          "story_angle": "Pub naming story.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Blues musician’s rented house",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Unnamed; pet-goat anecdote advertised.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Institutional residence",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Unnamed; prominent resident anecdote.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "completeness": "Generic identities must not be filled from guesswork. Title variants overlap; exact version equivalence unconfirmed."
+    },
+    {
+      "id": "com-12",
+      "title": "West Finchley Woods Walk",
+      "sourceUrls": [
+        "https://walks.gojauntly.com/walks/west-finchley-woods-walk-4432559274525528551"
+      ],
+      "area": "West Finchley",
+      "branchRecords": [
+        {
+          "file": "commercial.json",
+          "id": "com-12"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "published_place": "Finchley woods",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Preview step 1.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Viaduct",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Preview step 2; exact identity unstated.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Streamside woods",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Preview step 3.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Allotments",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Preview step 5.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "completeness": "Six-step public preview; full route in app. Duration unusually fast for stated distance; do not reuse as our estimate."
+    },
+    {
+      "id": "com-13",
+      "title": "TfL20 Whetstone to Woodside Park",
+      "sourceUrls": [
+        "https://walks.gojauntly.com/walks/tfl20-whetstone-to-woodside-park-8130611611634962922"
+      ],
+      "area": "Whetstone → Woodside Park",
+      "branchRecords": [
+        {
+          "file": "commercial.json",
+          "id": "com-13"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "published_place": "Totteridge & Whetstone station",
+          "place_id": "totteridge-whetstone-station",
+          "sequence": 1,
+          "story_angle": "Start.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Whetstone Stray",
+          "place_id": "whetstone-stray",
+          "sequence": 2,
+          "story_angle": "Join green corridor.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Dollis Valley Greenwalk",
+          "place_id": "dollis-valley-greenwalk",
+          "sequence": 3,
+          "story_angle": "Main route.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Woodside Park station",
+          "place_id": "woodside-park-station",
+          "sequence": 4,
+          "story_angle": "End stated in summary.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "completeness": "First six navigation steps only; no historical narration exposed; final approach in app."
+    },
+    {
+      "id": "com-14",
+      "title": "Alexandra Palace & Muswell Hill",
+      "sourceUrls": [
+        "https://walkwalk.org/london/walks/alexandra-palace-and-muswell-hill"
+      ],
+      "area": "Wood Green/Muswell Hill comparison",
+      "branchRecords": [
+        {
+          "file": "commercial.json",
+          "id": "com-14"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "published_place": "Wood Green High Road",
+          "place_id": null,
+          "sequence": 1,
+          "story_angle": "Start.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Alexandra Park",
+          "place_id": "alexandra-park",
+          "sequence": 2,
+          "story_angle": "Views.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Alexandra Palace",
+          "place_id": "alexandra-palace",
+          "sequence": 3,
+          "story_angle": "Broadcast history.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Muswell Hill Broadway",
+          "place_id": "muswell-hill-broadway",
+          "sequence": 4,
+          "story_angle": "Shops and cinema.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        },
+        {
+          "published_place": "Fortis Green Road",
+          "place_id": "fortis-green-road",
+          "sequence": 5,
+          "story_angle": "Residential descent.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "completeness": "All five published points captured; header/FAQ end at Alexandra Palace conflicts with final Fortis Green Road point. Do not adopt routing/access assertions unchecked."
+    },
+    {
+      "id": "com-15",
+      "title": "Platform 10",
+      "sourceUrls": [
+        "https://izi.travel/en/ccdb-platform-10-wear-headphones-full-effect/en"
+      ],
+      "area": "Parkland Walk, Crouch End comparison",
+      "branchRecords": [
+        {
+          "file": "commercial.json",
+          "id": "com-15"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "published_place": "Crouch End Hill former platforms",
+          "place_id": null,
+          "sequence": null,
+          "story_angle": "Starting location stated in indexed preview.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "completeness": "Two sights reported by platform but only starting location exposed. Direct fetch blocked; indexed public description inspected. Full audio not played or copied."
+    },
+    {
+      "id": "com-16",
+      "title": "Guided tours of Stephens House & Gardens",
+      "sourceUrls": [
+        "https://www.stephenshouseandgardens.com/visit/guided-tours"
+      ],
+      "area": "Finchley Central/Church End",
+      "branchRecords": [
+        {
+          "file": "commercial.json",
+          "id": "com-16"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "published_place": "Stephens House and estate",
+          "place_id": "stephens-house",
+          "sequence": null,
+          "story_angle": "17 East End Road.",
+          "verification_status": "tour discovery only; historical claim and standing area not verified"
+        }
+      ],
+      "completeness": "Single-site tour, not a street itinerary. Internal points/script not public. Group access by prior arrangement; outside route must not imply automatic house entry."
+    },
+    {
+      "id": "thematic-kinks-map",
+      "title": "Big Black Smoke: Muswell Hill places",
+      "sourceUrls": [
+        "https://london.kastoffkinks.co.uk/html/muswell.html"
+      ],
+      "area": "East Finchley/Muswell Hill/Hornsey comparator",
+      "branchRecords": [
+        {
+          "file": "thematic.json",
+          "id": "thematic-kinks-map"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "name": "Konk Studios",
+          "sequence": null,
+          "story": "Recording studio",
+          "place_id": "konk-studios"
+        },
+        {
+          "name": "The Lane Cafe",
+          "sequence": null,
+          "story": "Working Man’s Cafe album cover",
+          "place_id": null
+        },
+        {
+          "name": "Muswell Hill",
+          "sequence": null,
+          "story": "Band geography",
+          "place_id": null
+        },
+        {
+          "name": "6 Denmark Terrace",
+          "sequence": null,
+          "story": "Davies childhood home",
+          "place_id": null
+        },
+        {
+          "name": "Fortismere School",
+          "sequence": null,
+          "story": "William Grimshaw predecessor",
+          "place_id": "fortismere-school"
+        },
+        {
+          "name": "Clissold Arms",
+          "sequence": null,
+          "story": "Davies family pub and early performance",
+          "place_id": "clissold-arms"
+        },
+        {
+          "name": "St James primary school",
+          "sequence": null,
+          "story": "Separates current school from historical Fortis Green site",
+          "place_id": null
+        },
+        {
+          "name": "59 Steeds Road",
+          "sequence": null,
+          "story": "Pete Quaife family home",
+          "place_id": null
+        },
+        {
+          "name": "Athenaeum Place",
+          "sequence": null,
+          "story": "Former dancehall associated with Come Dancing",
+          "place_id": null
+        }
+      ],
+      "completeness": "nine directory entries; not ordered walking itinerary"
+    },
+    {
+      "id": "thematic-literary-2014",
+      "title": "A Literary Finchley Walk",
+      "sourceUrls": [
+        "https://greenacrewriters.blogspot.com/2014/04/a-literary-finchley-walk.html"
+      ],
+      "area": "Finchley Central core",
+      "branchRecords": [
+        {
+          "file": "thematic.json",
+          "id": "thematic-literary-2014"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "name": "Finchley Central station",
+          "sequence": 1,
+          "story": "Meeting point",
+          "place_id": "finchley-central-station"
+        }
+      ],
+      "completeness": "meeting point only; guide explicitly withheld authors"
+    },
+    {
+      "id": "thematic-walking-writer-2015",
+      "title": "Walking Writer workshop",
+      "sourceUrls": [
+        "https://rosemarycanning.blogspot.com/2015/05/finchley-in-fiction-part-one.html"
+      ],
+      "area": "Finchley/Whetstone core and edge",
+      "branchRecords": [
+        {
+          "file": "thematic.json",
+          "id": "thematic-walking-writer-2015"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "name": "Brook towards Whetstone",
+          "sequence": null,
+          "story": "Walking environment; brook not named in this passage",
+          "place_id": null
+        },
+        {
+          "name": "Finchley Golf Club",
+          "sequence": null,
+          "story": "Planned stop",
+          "place_id": "finchley-golf-club"
+        },
+        {
+          "name": "Redwood Café",
+          "sequence": null,
+          "story": "Planned lunch",
+          "place_id": "swan-lane-open-space"
+        }
+      ],
+      "completeness": "three announced route elements; itinerary incomplete"
+    },
+    {
+      "id": "thematic-streamline-c20",
+      "title": "Streamline in the Suburb",
+      "sourceUrls": [
+        "https://secure.c20society.org.uk/Default.aspx?EventId=858&tabid=93"
+      ],
+      "area": "East Finchley/Hampstead Garden Suburb comparator",
+      "branchRecords": [
+        {
+          "file": "thematic.json",
+          "id": "thematic-streamline-c20"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "name": "East Finchley station",
+          "sequence": 1,
+          "story": "Holden station",
+          "place_id": "east-finchley-station"
+        },
+        {
+          "name": "Belvedere Court",
+          "sequence": null,
+          "story": "Ernst Freud flats",
+          "place_id": "belvedere-court"
+        },
+        {
+          "name": "Kingsley Close",
+          "sequence": null,
+          "story": "Welch, Cachemaille-Day and Lander housing",
+          "place_id": null
+        },
+        {
+          "name": "Lytton Close",
+          "sequence": null,
+          "story": "Winbourne housing; finish",
+          "place_id": "lytton-close"
+        }
+      ],
+      "completeness": "four highlights; intermediate order unstated"
+    },
+    {
+      "id": "thematic-streamform-ads",
+      "title": "From Streamform to Arts and Crafts",
+      "sourceUrls": [
+        "https://www.artdecosociety.uk/blouses-skirts-and-twitterns-the-hampstead-garden-suburb/"
+      ],
+      "area": "East Finchley/Hampstead Garden Suburb comparator",
+      "branchRecords": [
+        {
+          "file": "thematic.json",
+          "id": "thematic-streamform-ads"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "name": "East Finchley station",
+          "sequence": 1,
+          "story": "Start",
+          "place_id": "east-finchley-station"
+        },
+        {
+          "name": "Unnamed green with timber-framed housing",
+          "sequence": 2,
+          "story": "Suburb origins",
+          "place_id": null
+        },
+        {
+          "name": "Residential roads",
+          "sequence": 3,
+          "story": "Changing house styles; roads unnamed",
+          "place_id": null
+        },
+        {
+          "name": "Belvedere Court",
+          "sequence": 4,
+          "story": "Streamlined apartment building",
+          "place_id": "belvedere-court"
+        },
+        {
+          "name": "Housing named for Christian Socialists",
+          "sequence": 5,
+          "story": "Social ideas; exact location unnamed",
+          "place_id": null
+        },
+        {
+          "name": "Hedge-lined passage with brick arch",
+          "sequence": 6,
+          "story": "Finishing example; exact passage unnamed",
+          "place_id": null
+        }
+      ],
+      "completeness": "report sequence, incomplete exact locations"
+    },
+    {
+      "id": "thematic-grange-trail",
+      "title": "Grange Big Local Trail",
+      "sourceUrls": [
+        "https://www.barnet.gov.uk/events/grange-big-local-trail"
+      ],
+      "area": "East Finchley core",
+      "branchRecords": [
+        {
+          "file": "thematic.json",
+          "id": "thematic-grange-trail"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "name": "Green Arrows Garden, Archer Academy",
+          "sequence": 1,
+          "story": "Start; school garden",
+          "place_id": null
+        },
+        {
+          "name": "Market Place Playground",
+          "sequence": null,
+          "story": "Community project",
+          "place_id": "market-place-east-finchley"
+        },
+        {
+          "name": "Manor Park Road Underpass",
+          "sequence": null,
+          "story": "Community project",
+          "place_id": null
+        },
+        {
+          "name": "Vale Farm Allotments Pergola",
+          "sequence": null,
+          "story": "Community project",
+          "place_id": null
+        },
+        {
+          "name": "Tarling Road Community Centre",
+          "sequence": null,
+          "story": "Community quilt",
+          "place_id": null
+        },
+        {
+          "name": "Barnwood Forest Garden",
+          "sequence": null,
+          "story": "Finish; nature and community",
+          "place_id": null
+        }
+      ],
+      "completeness": "six advertised places; list order not explicitly guaranteed"
+    },
+    {
+      "id": "thematic-tonero-common",
+      "title": "East Finchley Walks: former common circuit",
+      "sourceUrls": [
+        "https://tonero.me.uk/wefwalks.htm"
+      ],
+      "area": "East Finchley core, eastern common edge",
+      "branchRecords": [
+        {
+          "file": "thematic.json",
+          "id": "thematic-tonero-common"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "name": "East Finchley station",
+          "sequence": 1,
+          "story": "Start and return",
+          "place_id": "east-finchley-station"
+        },
+        {
+          "name": "Market Place",
+          "sequence": 2,
+          "story": "Old market landscape",
+          "place_id": "market-place-east-finchley"
+        },
+        {
+          "name": "The Walks / Church Lane",
+          "sequence": 3,
+          "story": "Older path and settlement",
+          "place_id": null
+        },
+        {
+          "name": "Red Lion Hill",
+          "sequence": 4,
+          "story": "Earlier settlement",
+          "place_id": null
+        },
+        {
+          "name": "Oak Road / Tarling Road",
+          "sequence": 5,
+          "story": "Former estates",
+          "place_id": null
+        },
+        {
+          "name": "Brownswell / Glebelands",
+          "sequence": 6,
+          "story": "Common settlement/boundary",
+          "place_id": null
+        },
+        {
+          "name": "Summers Lane / Nursery Approach",
+          "sequence": 7,
+          "story": "Onward route",
+          "place_id": null
+        },
+        {
+          "name": "Coppetts Wood",
+          "sequence": 8,
+          "story": "Common eastern boundary",
+          "place_id": null
+        },
+        {
+          "name": "Coldfall Wood",
+          "sequence": 9,
+          "story": "Boundary and woodland",
+          "place_id": "coldfall-wood"
+        },
+        {
+          "name": "Durham Road / Summerlee Avenue",
+          "sequence": 10,
+          "story": "Old boundary",
+          "place_id": null
+        },
+        {
+          "name": "Cherry Tree Wood",
+          "sequence": 11,
+          "story": "Return",
+          "place_id": "cherry-tree-wood"
+        }
+      ],
+      "completeness": "major route elements in published prose; minor directions omitted"
+    },
+    {
+      "id": "thematic-woodside-ultimate",
+      "title": "Ultimate London Walk section 3",
+      "sourceUrls": [
+        "https://www.walks.com/our-walks/the-ultimate-london-walk-section-3-woodside-park-to-mill-hill-east/"
+      ],
+      "area": "Woodside Park core to Mill Hill East edge",
+      "branchRecords": [
+        {
+          "file": "thematic.json",
+          "id": "thematic-woodside-ultimate"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "name": "Woodside Park station",
+          "sequence": 1,
+          "story": "Start",
+          "place_id": "woodside-park-station"
+        },
+        {
+          "name": "Folly Brook",
+          "sequence": 2,
+          "story": "Old field landscape",
+          "place_id": null
+        },
+        {
+          "name": "Frith Manor Farm",
+          "sequence": 3,
+          "story": "Horses and farming",
+          "place_id": null
+        },
+        {
+          "name": "Bittacy Farm / former barracks",
+          "sequence": 4,
+          "story": "Land-use change",
+          "place_id": null
+        },
+        {
+          "name": "Lovers Lane / Nether Hall",
+          "sequence": 5,
+          "story": "Entrepreneurial house; Finchley Golf Club",
+          "place_id": "finchley-golf-club"
+        },
+        {
+          "name": "Dollis Brook viaduct",
+          "sequence": 6,
+          "story": "Railway landscape",
+          "place_id": null
+        },
+        {
+          "name": "Mill Hill East",
+          "sequence": 7,
+          "story": "End in title",
+          "place_id": null
+        }
+      ],
+      "completeness": "provider narrative sequence, intermediate itinerary incomplete"
+    },
+    {
+      "id": "thematic-trainwalk-2",
+      "title": "Northern Tube line walk 2: Archway to Finchley Central",
+      "sourceUrls": [
+        "https://trainwalkslondon.wordpress.com/2019/04/04/northern-tube-line-walk-2-archway-walk-to-finchley-central/"
+      ],
+      "area": "Archway comparator into East Finchley/Church End core",
+      "branchRecords": [
+        {
+          "file": "thematic.json",
+          "id": "thematic-trainwalk-2"
+        }
+      ],
+      "publishedPlaces": [
+        {
+          "name": "Archway station",
+          "sequence": 1,
+          "story": "Start",
+          "place_id": null
+        },
+        {
+          "name": "Parkland Walk",
+          "sequence": null,
+          "story": "Former railway",
+          "place_id": null
+        },
+        {
+          "name": "Queen’s Wood",
+          "sequence": null,
+          "story": "Green route",
+          "place_id": null
+        },
+        {
+          "name": "Highgate Wood",
+          "sequence": null,
+          "story": "Green route",
+          "place_id": "highgate-wood"
+        },
+        {
+          "name": "Cherry Tree Wood",
+          "sequence": null,
+          "story": "Green route",
+          "place_id": "cherry-tree-wood"
+        },
+        {
+          "name": "East Finchley station",
+          "sequence": null,
+          "story": "Modernism",
+          "place_id": "east-finchley-station"
+        },
+        {
+          "name": "Coldfall Wood",
+          "sequence": null,
+          "story": "Woodland",
+          "place_id": "coldfall-wood"
+        },
+        {
+          "name": "St Pancras and Islington Cemetery",
+          "sequence": null,
+          "story": "Memorial architecture",
+          "place_id": null
+        },
+        {
+          "name": "Stephens House grounds",
+          "sequence": null,
+          "story": "Estate and gardens",
+          "place_id": "stephens-house"
+        },
+        {
+          "name": "Finchley Central station",
+          "sequence": null,
+          "story": "Finish",
+          "place_id": "finchley-central-station"
+        }
+      ],
+      "completeness": "selected principal landmarks; detailed directions public, not all extracted"
+    },
+    {
+      "id": "thematic-video-uk4k",
+      "title": "October 2022 Finchley North London street walk",
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=0Iu3Z7X2oFI"
+      ],
+      "area": "Finchley; exact route unresolved",
+      "branchRecords": [
+        {
+          "file": "thematic.json",
+          "id": "thematic-video-uk4k"
+        }
+      ],
+      "publishedPlaces": [],
+      "completeness": "no verified stop list or timestamp extraction"
+    },
+    {
+      "id": "thematic-video-herewego",
+      "title": "East Finchley Walk: Every Tube Station in London",
+      "sourceUrls": [
+        "https://www.youtube.com/watch?v=oZs9LlVS6KQ"
+      ],
+      "area": "East Finchley core",
+      "branchRecords": [
+        {
+          "file": "thematic.json",
+          "id": "thematic-video-herewego"
+        }
+      ],
+      "publishedPlaces": [],
+      "completeness": "no verified stops or timestamp extraction"
+    }
+  ],
+  "placeNameClusters": [
+    {
+      "id": "place-name-7d1194342441",
+      "name": "Brook Farm Open Space / Whetstone Stray",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Brook Farm Open Space / Whetstone Stray"
+        }
+      ]
+    },
+    {
+      "id": "place-name-a1b9d44828a5",
+      "name": "Swan Lane Open Space",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Swan Lane Open Space"
+        },
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Swan Lane Open Space"
+        },
+        {
+          "catalogueId": "h-tonero-lockdown",
+          "publishedName": "Swan Lane Open Space"
+        }
+      ]
+    },
+    {
+      "id": "place-name-7d1cf00aa2aa",
+      "name": "Terrace House / Terrace Cottage",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Terrace House / Terrace Cottage"
+        }
+      ]
+    },
+    {
+      "id": "place-name-000d03ca0e07",
+      "name": "The White House",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "The White House"
+        }
+      ]
+    },
+    {
+      "id": "place-name-84fe25284d24",
+      "name": "Lodge to Finchley Catholic High School",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Lodge to Finchley Catholic High School"
+        }
+      ]
+    },
+    {
+      "id": "place-name-cb7319476648",
+      "name": "Finchley Rink Cinema site",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Finchley Rink Cinema site"
+        }
+      ]
+    },
+    {
+      "id": "place-name-bc293a81b1d4",
+      "name": "Bow Street Riders site",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Bow Street Riders site"
+        }
+      ]
+    },
+    {
+      "id": "place-name-2e6470d42d9a",
+      "name": "North Finchley Library / model",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "North Finchley Library / model"
+        }
+      ]
+    },
+    {
+      "id": "place-name-0f900fd3b703",
+      "name": "32–34 Torrington Park",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "32–34 Torrington Park"
+        }
+      ]
+    },
+    {
+      "id": "place-name-4cedb69de2fb",
+      "name": "Dollis Brook / Folly Brook",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Dollis Brook / Folly Brook"
+        }
+      ]
+    },
+    {
+      "id": "place-name-74e9124ad180",
+      "name": "Lodge Lane / Church Path",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Lodge Lane / Church Path"
+        }
+      ]
+    },
+    {
+      "id": "place-name-1e1ebe69c11c",
+      "name": "John Parr memorial",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "John Parr memorial"
+        }
+      ]
+    },
+    {
+      "id": "place-name-8402256da18a",
+      "name": "Carriageway",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Carriageway"
+        }
+      ]
+    },
+    {
+      "id": "place-name-b35322011d05",
+      "name": "Stanhope Cinema site",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Stanhope Cinema site"
+        }
+      ]
+    },
+    {
+      "id": "place-name-6ac74e2212f4",
+      "name": "Tally Ho Corner",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Tally Ho Corner"
+        }
+      ]
+    },
+    {
+      "id": "place-name-8f603abb762d",
+      "name": "Grand Arcade",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Grand Arcade"
+        }
+      ]
+    },
+    {
+      "id": "place-name-a35eed82e8a8",
+      "name": "Grand Hall Cinema site",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Grand Hall Cinema site"
+        }
+      ]
+    },
+    {
+      "id": "place-name-4007762c4862",
+      "name": "Gaumont Cinema site",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Gaumont Cinema site"
+        }
+      ]
+    },
+    {
+      "id": "place-name-0e421edd3fae",
+      "name": "Tram Depot site / Kingsway",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Tram Depot site / Kingsway"
+        }
+      ]
+    },
+    {
+      "id": "place-name-3ee1d7e3dc2f",
+      "name": "St Kilda’s memorial",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "St Kilda’s memorial"
+        }
+      ]
+    },
+    {
+      "id": "place-name-54f54b132d69",
+      "name": "Woodhouse / school lodge",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Woodhouse / school lodge"
+        }
+      ]
+    },
+    {
+      "id": "place-name-d6b8f650f8e5",
+      "name": "Christ Church",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Christ Church"
+        }
+      ]
+    },
+    {
+      "id": "place-name-40f37196ba91",
+      "name": "Finchley Lido site",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Finchley Lido site"
+        }
+      ]
+    },
+    {
+      "id": "place-name-bd3ee407d995",
+      "name": "Moss Hall site",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Moss Hall site"
+        }
+      ]
+    },
+    {
+      "id": "place-name-541853ab61e9",
+      "name": "Brent Lodge gatehouse",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Brent Lodge gatehouse"
+        },
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "Brent Lodge gatehouse"
+        }
+      ]
+    },
+    {
+      "id": "place-name-396bad9348d5",
+      "name": "Lodge Cottage",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Lodge Cottage"
+        },
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "Lodge Cottage"
+        }
+      ]
+    },
+    {
+      "id": "place-name-c175e0a885e2",
+      "name": "Dollis Viaduct",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Dollis Viaduct"
+        },
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "Dollis Viaduct"
+        },
+        {
+          "catalogueId": "h-longlane-dollis",
+          "publishedName": "Dollis Viaduct"
+        }
+      ]
+    },
+    {
+      "id": "place-name-a4ac73539549",
+      "name": "Victoria Park",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Victoria Park"
+        },
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "Victoria Park"
+        },
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Victoria Park"
+        },
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Victoria Park"
+        },
+        {
+          "catalogueId": "h-tonero-lockdown",
+          "publishedName": "Victoria Park"
+        }
+      ]
+    },
+    {
+      "id": "place-name-b023d9819695",
+      "name": "Cornwall House",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-north-landmarks",
+          "publishedName": "Cornwall House"
+        },
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "Cornwall House"
+        }
+      ]
+    },
+    {
+      "id": "place-name-7533a199ff40",
+      "name": "Wentworth Cinema site",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "Wentworth Cinema site"
+        }
+      ]
+    },
+    {
+      "id": "place-name-1d12a99c357a",
+      "name": "Old Bohemia / New Bohemia / Arcadia sites",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "Old Bohemia / New Bohemia / Arcadia sites"
+        }
+      ]
+    },
+    {
+      "id": "place-name-64a5e341864f",
+      "name": "St Mary’s School site",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "St Mary’s School site"
+        }
+      ]
+    },
+    {
+      "id": "place-name-c8fca9466cb7",
+      "name": "Park House",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "Park House"
+        }
+      ]
+    },
+    {
+      "id": "place-name-a77a0331b79d",
+      "name": "Gothic Cottage / Flora Cottage",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "Gothic Cottage / Flora Cottage"
+        }
+      ]
+    },
+    {
+      "id": "place-name-416d523e660b",
+      "name": "Royal Terrace",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "Royal Terrace"
+        }
+      ]
+    },
+    {
+      "id": "place-name-b0bc8c5f69eb",
+      "name": "Hamilton Hall",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "Hamilton Hall"
+        }
+      ]
+    },
+    {
+      "id": "place-name-48135b2dcbac",
+      "name": "Clerk’s House",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "Clerk’s House"
+        }
+      ]
+    },
+    {
+      "id": "place-name-e1b8a7a1be04",
+      "name": "St Mary-at-Finchley",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "St Mary-at-Finchley"
+        },
+        {
+          "catalogueId": "h-longlane-dollis",
+          "publishedName": "St Mary-at-Finchley"
+        },
+        {
+          "catalogueId": "h-stmary-loop",
+          "publishedName": "St Mary-at-Finchley"
+        },
+        {
+          "catalogueId": "h-stmary-loop",
+          "publishedName": "St Mary-at-Finchley"
+        }
+      ]
+    },
+    {
+      "id": "place-name-fea4be0c263d",
+      "name": "Old Christ’s College",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "Old Christ’s College"
+        }
+      ]
+    },
+    {
+      "id": "place-name-655c5a73e0d5",
+      "name": "Finchley Hall site",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "Finchley Hall site"
+        }
+      ]
+    },
+    {
+      "id": "place-name-5597735439f8",
+      "name": "King Edward Hall",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "King Edward Hall"
+        }
+      ]
+    },
+    {
+      "id": "place-name-a93ea78b26f9",
+      "name": "30A Hendon Avenue",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "30A Hendon Avenue"
+        }
+      ]
+    },
+    {
+      "id": "place-name-84c4684ed05a",
+      "name": "Grass Farm Lodge",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "Grass Farm Lodge"
+        }
+      ]
+    },
+    {
+      "id": "place-name-34537cc8f5c7",
+      "name": "Finchley Garden Village",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "Finchley Garden Village"
+        },
+        {
+          "catalogueId": "com-07",
+          "publishedName": "Finchley Garden Village"
+        }
+      ]
+    },
+    {
+      "id": "place-name-4d9edb46bc15",
+      "name": "Hertford Lodge",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "Hertford Lodge"
+        }
+      ]
+    },
+    {
+      "id": "place-name-e0cf1ac96181",
+      "name": "Stephens House and Gardens",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "Stephens House and Gardens"
+        },
+        {
+          "catalogueId": "h-barnet-central",
+          "publishedName": "Stephens House and Gardens"
+        }
+      ]
+    },
+    {
+      "id": "place-name-015b0c68a084",
+      "name": "Manor House / Sternberg Centre",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "Manor House / Sternberg Centre"
+        }
+      ]
+    },
+    {
+      "id": "place-name-860f011fa20f",
+      "name": "Windsor Open Space",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "Windsor Open Space"
+        },
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Windsor Open Space"
+        },
+        {
+          "catalogueId": "h-stmary-loop",
+          "publishedName": "Windsor Open Space"
+        }
+      ]
+    },
+    {
+      "id": "place-name-8526b88f912a",
+      "name": "College Farm",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "College Farm"
+        },
+        {
+          "catalogueId": "h-tonero-lockdown",
+          "publishedName": "College Farm"
+        },
+        {
+          "catalogueId": "com-07",
+          "publishedName": "College Farm"
+        }
+      ]
+    },
+    {
+      "id": "place-name-2e16d48acb8a",
+      "name": "La Délivrance",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "La Délivrance"
+        },
+        {
+          "catalogueId": "com-07",
+          "publishedName": "La Délivrance"
+        }
+      ]
+    },
+    {
+      "id": "place-name-a8eb854ef929",
+      "name": "Finchley Memorial Hospital",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-central-landmarks",
+          "publishedName": "Finchley Memorial Hospital"
+        },
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Finchley Memorial Hospital"
+        }
+      ]
+    },
+    {
+      "id": "place-name-2d51fc6e6a55",
+      "name": "Glebelands",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Glebelands"
+        },
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Glebelands"
+        }
+      ]
+    },
+    {
+      "id": "place-name-fe9945fef389",
+      "name": "Coppetts Wood",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Coppetts Wood"
+        },
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Coppetts Wood"
+        },
+        {
+          "catalogueId": "h-barnet-southgate",
+          "publishedName": "Coppetts Wood"
+        },
+        {
+          "catalogueId": "h-tonero-eastwalks",
+          "publishedName": "Coppetts Wood"
+        },
+        {
+          "catalogueId": "h-tonero-lockdown",
+          "publishedName": "Coppetts Wood"
+        },
+        {
+          "catalogueId": "thematic-tonero-common",
+          "publishedName": "Coppetts Wood"
+        }
+      ]
+    },
+    {
+      "id": "place-name-10799bec247a",
+      "name": "Long Lane Pasture",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Long Lane Pasture"
+        }
+      ]
+    },
+    {
+      "id": "place-name-b007608c6972",
+      "name": "St Pancras and Islington Cemetery",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "St Pancras and Islington Cemetery"
+        },
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "St Pancras and Islington Cemetery"
+        },
+        {
+          "catalogueId": "h-tonero-cemeteries",
+          "publishedName": "St Pancras and Islington Cemetery"
+        },
+        {
+          "catalogueId": "thematic-trainwalk-2",
+          "publishedName": "St Pancras and Islington Cemetery"
+        }
+      ]
+    },
+    {
+      "id": "place-name-ef798f0268eb",
+      "name": "Turpin’s Oak site",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Turpin’s Oak site"
+        }
+      ]
+    },
+    {
+      "id": "place-name-2130bf6e3fe7",
+      "name": "The Grange / Oak Lodge / Simms site",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "The Grange / Oak Lodge / Simms site"
+        }
+      ]
+    },
+    {
+      "id": "place-name-6e90ef2c5679",
+      "name": "Red Lion Hill / Cuckolds Haven",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Red Lion Hill / Cuckolds Haven"
+        }
+      ]
+    },
+    {
+      "id": "place-name-8cc6179b5e92",
+      "name": "The Walks",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "The Walks"
+        },
+        {
+          "catalogueId": "h-tonero-eastwalks",
+          "publishedName": "The Walks"
+        }
+      ]
+    },
+    {
+      "id": "place-name-2f45d2cb6872",
+      "name": "East Finchley Library",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "East Finchley Library"
+        }
+      ]
+    },
+    {
+      "id": "place-name-6eef22954dbd",
+      "name": "Baptist Church Hall",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Baptist Church Hall"
+        }
+      ]
+    },
+    {
+      "id": "place-name-d7f52581512f",
+      "name": "Coldfall Wood",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Coldfall Wood"
+        },
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Coldfall Wood"
+        },
+        {
+          "catalogueId": "h-tonero-eastwalks",
+          "publishedName": "Coldfall Wood"
+        },
+        {
+          "catalogueId": "h-tonero-lockdown",
+          "publishedName": "Coldfall Wood"
+        },
+        {
+          "catalogueId": "thematic-tonero-common",
+          "publishedName": "Coldfall Wood"
+        },
+        {
+          "catalogueId": "thematic-trainwalk-2",
+          "publishedName": "Coldfall Wood"
+        }
+      ]
+    },
+    {
+      "id": "place-name-527ac0544803",
+      "name": "Convent of the Good Shepherd / East End House",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Convent of the Good Shepherd / East End House"
+        }
+      ]
+    },
+    {
+      "id": "place-name-09aa2b0014d8",
+      "name": "East Finchley Cemetery",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "East Finchley Cemetery"
+        },
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "East Finchley Cemetery"
+        },
+        {
+          "catalogueId": "h-barnet-central",
+          "publishedName": "East Finchley Cemetery"
+        },
+        {
+          "catalogueId": "h-tonero-cemeteries",
+          "publishedName": "East Finchley Cemetery"
+        },
+        {
+          "catalogueId": "h-tonero-lockdown",
+          "publishedName": "East Finchley Cemetery"
+        }
+      ]
+    },
+    {
+      "id": "place-name-ebc410e9824b",
+      "name": "Park Farm / George Sanger site",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Park Farm / George Sanger site"
+        }
+      ]
+    },
+    {
+      "id": "place-name-696979a27770",
+      "name": "Fairacres",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Fairacres"
+        }
+      ]
+    },
+    {
+      "id": "place-name-95b15c2e53c0",
+      "name": "Elmhurst site",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Elmhurst site"
+        }
+      ]
+    },
+    {
+      "id": "place-name-904e600ab728",
+      "name": "Holy Trinity Church",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Holy Trinity Church"
+        }
+      ]
+    },
+    {
+      "id": "place-name-ea48403f4728",
+      "name": "Five Bells",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Five Bells"
+        },
+        {
+          "catalogueId": "h-barnet-central",
+          "publishedName": "Five Bells"
+        }
+      ]
+    },
+    {
+      "id": "place-name-c10f9a5b84d7",
+      "name": "Richard Cromwell house site",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Richard Cromwell house site"
+        }
+      ]
+    },
+    {
+      "id": "place-name-8029ba1c6525",
+      "name": "Cromwell Hall site",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Cromwell Hall site"
+        }
+      ]
+    },
+    {
+      "id": "place-name-230638f8dbac",
+      "name": "Congregational chapel / British School site",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Congregational chapel / British School site"
+        }
+      ]
+    },
+    {
+      "id": "place-name-821eba134516",
+      "name": "Market Place",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Market Place"
+        },
+        {
+          "catalogueId": "h-tonero-eastwalks",
+          "publishedName": "Market Place"
+        },
+        {
+          "catalogueId": "thematic-tonero-common",
+          "publishedName": "Market Place"
+        }
+      ]
+    },
+    {
+      "id": "place-name-7d6c499572be",
+      "name": "Holy Trinity School site",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Holy Trinity School site"
+        }
+      ]
+    },
+    {
+      "id": "place-name-58429693db75",
+      "name": "Bald Faced Stag",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Bald Faced Stag"
+        }
+      ]
+    },
+    {
+      "id": "place-name-b7cbac8df1d9",
+      "name": "Dairy site",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Dairy site"
+        }
+      ]
+    },
+    {
+      "id": "place-name-5d0855e66278",
+      "name": "Phoenix Cinema",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Phoenix Cinema"
+        },
+        {
+          "catalogueId": "com-03",
+          "publishedName": "Phoenix Cinema"
+        }
+      ]
+    },
+    {
+      "id": "place-name-f056bcc04388",
+      "name": "East Finchley Station",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "East Finchley Station"
+        },
+        {
+          "catalogueId": "h-barnet-central",
+          "publishedName": "East Finchley Station"
+        },
+        {
+          "catalogueId": "h-tonero-eastwalks",
+          "publishedName": "East Finchley Station"
+        },
+        {
+          "catalogueId": "h-tonero-hampstead-highgate",
+          "publishedName": "East Finchley Station"
+        },
+        {
+          "catalogueId": "com-01",
+          "publishedName": "East Finchley station"
+        },
+        {
+          "catalogueId": "com-02",
+          "publishedName": "East Finchley station"
+        },
+        {
+          "catalogueId": "com-03",
+          "publishedName": "East Finchley station"
+        },
+        {
+          "catalogueId": "com-05",
+          "publishedName": "East Finchley station"
+        },
+        {
+          "catalogueId": "com-06",
+          "publishedName": "East Finchley station"
+        },
+        {
+          "catalogueId": "thematic-streamline-c20",
+          "publishedName": "East Finchley station"
+        },
+        {
+          "catalogueId": "thematic-streamform-ads",
+          "publishedName": "East Finchley station"
+        },
+        {
+          "catalogueId": "thematic-tonero-common",
+          "publishedName": "East Finchley station"
+        },
+        {
+          "catalogueId": "thematic-trainwalk-2",
+          "publishedName": "East Finchley station"
+        }
+      ]
+    },
+    {
+      "id": "place-name-82d49aec548c",
+      "name": "Old White Lion",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Old White Lion"
+        }
+      ]
+    },
+    {
+      "id": "place-name-be73509d573d",
+      "name": "Cherry Tree Wood",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-east-landmarks",
+          "publishedName": "Cherry Tree Wood"
+        },
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Cherry Tree Wood"
+        },
+        {
+          "catalogueId": "h-tonero-shady",
+          "publishedName": "Cherry Tree Wood"
+        },
+        {
+          "catalogueId": "h-tonero-hampstead-highgate",
+          "publishedName": "Cherry Tree Wood"
+        },
+        {
+          "catalogueId": "com-03",
+          "publishedName": "Cherry Tree Wood"
+        },
+        {
+          "catalogueId": "com-04",
+          "publishedName": "Cherry Tree Wood"
+        },
+        {
+          "catalogueId": "thematic-tonero-common",
+          "publishedName": "Cherry Tree Wood"
+        },
+        {
+          "catalogueId": "thematic-trainwalk-2",
+          "publishedName": "Cherry Tree Wood"
+        }
+      ]
+    },
+    {
+      "id": "place-name-e2f4113c1904",
+      "name": "Finchley Central Station",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-longlane-dollis",
+          "publishedName": "Finchley Central Station"
+        },
+        {
+          "catalogueId": "com-07",
+          "publishedName": "Finchley Central station"
+        },
+        {
+          "catalogueId": "com-08",
+          "publishedName": "Finchley Central station"
+        },
+        {
+          "catalogueId": "thematic-literary-2014",
+          "publishedName": "Finchley Central station"
+        },
+        {
+          "catalogueId": "thematic-trainwalk-2",
+          "publishedName": "Finchley Central station"
+        }
+      ]
+    },
+    {
+      "id": "place-name-1b71244eadf7",
+      "name": "Claigmar Gardens",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-longlane-dollis",
+          "publishedName": "Claigmar Gardens"
+        }
+      ]
+    },
+    {
+      "id": "place-name-c8b8869cf542",
+      "name": "Victoria Park (optional detour)",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-longlane-dollis",
+          "publishedName": "Victoria Park (optional detour)"
+        }
+      ]
+    },
+    {
+      "id": "place-name-c0d550f7da59",
+      "name": "Long Lane",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-longlane-dollis",
+          "publishedName": "Long Lane"
+        }
+      ]
+    },
+    {
+      "id": "place-name-ad355c92efae",
+      "name": "Long Lane Pasture (optional detour)",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-longlane-dollis",
+          "publishedName": "Long Lane Pasture (optional detour)"
+        }
+      ]
+    },
+    {
+      "id": "place-name-516cbb04f359",
+      "name": "The Avenue",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-longlane-dollis",
+          "publishedName": "The Avenue"
+        }
+      ]
+    },
+    {
+      "id": "place-name-03516889ef65",
+      "name": "Stephens House and Gardens (optional detour)",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-longlane-dollis",
+          "publishedName": "Stephens House and Gardens (optional detour)"
+        }
+      ]
+    },
+    {
+      "id": "place-name-5a677bc19310",
+      "name": "Regents Park Road",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-longlane-dollis",
+          "publishedName": "Regents Park Road"
+        }
+      ]
+    },
+    {
+      "id": "place-name-513bd10acc78",
+      "name": "Dollis Valley Greenwalk",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-longlane-dollis",
+          "publishedName": "Dollis Valley Greenwalk"
+        },
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Dollis Valley Greenwalk"
+        },
+        {
+          "catalogueId": "h-stmary-loop",
+          "publishedName": "Dollis Valley Greenwalk"
+        },
+        {
+          "catalogueId": "com-13",
+          "publishedName": "Dollis Valley Greenwalk"
+        }
+      ]
+    },
+    {
+      "id": "place-name-03ad1008119b",
+      "name": "Lovers Walk",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-longlane-dollis",
+          "publishedName": "Lovers Walk"
+        }
+      ]
+    },
+    {
+      "id": "place-name-eb6b5128400b",
+      "name": "Ballards Lane",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-longlane-dollis",
+          "publishedName": "Ballards Lane"
+        }
+      ]
+    },
+    {
+      "id": "place-name-b7a202543712",
+      "name": "Brook Farm Open Space",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Brook Farm Open Space"
+        }
+      ]
+    },
+    {
+      "id": "place-name-127c6c306717",
+      "name": "Whetstone Stray",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Whetstone Stray"
+        },
+        {
+          "catalogueId": "com-13",
+          "publishedName": "Whetstone Stray"
+        }
+      ]
+    },
+    {
+      "id": "place-name-fcb822c2db8b",
+      "name": "Rocklands Pond",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Rocklands Pond"
+        }
+      ]
+    },
+    {
+      "id": "place-name-8ffc2e4602dd",
+      "name": "Finchley Village Green",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Finchley Village Green"
+        }
+      ]
+    },
+    {
+      "id": "place-name-bc51de5fd29a",
+      "name": "Mutton Brook",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Mutton Brook"
+        },
+        {
+          "catalogueId": "h-stmary-loop",
+          "publishedName": "Mutton Brook"
+        }
+      ]
+    },
+    {
+      "id": "place-name-ca2665a2afb1",
+      "name": "Little Wood",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Little Wood"
+        }
+      ]
+    },
+    {
+      "id": "place-name-b2092cbd9ffc",
+      "name": "Big Wood",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Big Wood"
+        }
+      ]
+    },
+    {
+      "id": "place-name-b9e87f0df11f",
+      "name": "Lyttelton Field",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Lyttelton Field"
+        }
+      ]
+    },
+    {
+      "id": "place-name-a30db4320d97",
+      "name": "Muswell Hill Sports Ground",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Muswell Hill Sports Ground"
+        }
+      ]
+    },
+    {
+      "id": "place-name-26dd232f77b2",
+      "name": "St Mary’s churchyard",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "St Mary’s churchyard"
+        }
+      ]
+    },
+    {
+      "id": "place-name-5177b3529ebb",
+      "name": "Avenue House grounds",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Avenue House grounds"
+        }
+      ]
+    },
+    {
+      "id": "place-name-75041d9d1155",
+      "name": "Garden of Hope",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Garden of Hope"
+        },
+        {
+          "catalogueId": "h-stmary-loop",
+          "publishedName": "Garden of Hope"
+        }
+      ]
+    },
+    {
+      "id": "place-name-da6624efca60",
+      "name": "Holy Trinity churchyard",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Holy Trinity churchyard"
+        }
+      ]
+    },
+    {
+      "id": "place-name-6f073abc4617",
+      "name": "Elmhurst / Church Lane",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Elmhurst / Church Lane"
+        }
+      ]
+    },
+    {
+      "id": "place-name-8ee37812d220",
+      "name": "Halliwick Recreation Ground",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Halliwick Recreation Ground"
+        }
+      ]
+    },
+    {
+      "id": "place-name-a939868e51a9",
+      "name": "Hollickwood Park",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Hollickwood Park"
+        }
+      ]
+    },
+    {
+      "id": "place-name-183d40973354",
+      "name": "Friern Bridge Open Space",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Friern Bridge Open Space"
+        }
+      ]
+    },
+    {
+      "id": "place-name-94344a692190",
+      "name": "Bethune Park",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Bethune Park"
+        }
+      ]
+    },
+    {
+      "id": "place-name-0411bd49a737",
+      "name": "Friary Park",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "Friary Park"
+        },
+        {
+          "catalogueId": "h-tonero-lockdown",
+          "publishedName": "Friary Park"
+        }
+      ]
+    },
+    {
+      "id": "place-name-9e13d9e360a0",
+      "name": "St James’s churchyard",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-green-spaces",
+          "publishedName": "St James’s churchyard"
+        }
+      ]
+    },
+    {
+      "id": "place-name-d2831c1fe188",
+      "name": "Church Crescent",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-stmary-loop",
+          "publishedName": "Church Crescent"
+        }
+      ]
+    },
+    {
+      "id": "place-name-fc39ba15cf48",
+      "name": "Capital Ring / Henlys Corner",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-stmary-loop",
+          "publishedName": "Capital Ring / Henlys Corner"
+        }
+      ]
+    },
+    {
+      "id": "place-name-5a81485b0210",
+      "name": "The Avenue / Stephens House",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-stmary-loop",
+          "publishedName": "The Avenue / Stephens House"
+        }
+      ]
+    },
+    {
+      "id": "place-name-c9b34f60a68d",
+      "name": "Abbots Gardens / Cromwell Hall",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-barnet-central",
+          "publishedName": "Abbots Gardens / Cromwell Hall"
+        }
+      ]
+    },
+    {
+      "id": "place-name-1b466f234bd2",
+      "name": "Holy Trinity Church / Shree Aden Depala Mitramandal",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-barnet-central",
+          "publishedName": "Holy Trinity Church / Shree Aden Depala Mitramandal"
+        }
+      ]
+    },
+    {
+      "id": "place-name-a86aaaa27cee",
+      "name": "East End House",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-barnet-central",
+          "publishedName": "East End House"
+        }
+      ]
+    },
+    {
+      "id": "place-name-19ba325c021a",
+      "name": "Sternberg Centre",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-barnet-central",
+          "publishedName": "Sternberg Centre"
+        }
+      ]
+    },
+    {
+      "id": "place-name-09a7c729609b",
+      "name": "St Mary-at-Finchley / Finchley Church End",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-barnet-central",
+          "publishedName": "St Mary-at-Finchley / Finchley Church End"
+        }
+      ]
+    },
+    {
+      "id": "place-name-020adcec6973",
+      "name": "St Pancras and Islington Cemetery entrance",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-barnet-southgate",
+          "publishedName": "St Pancras and Islington Cemetery entrance"
+        }
+      ]
+    },
+    {
+      "id": "place-name-365b3a08caa9",
+      "name": "Cemetery chapel",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-barnet-southgate",
+          "publishedName": "Cemetery chapel"
+        }
+      ]
+    },
+    {
+      "id": "place-name-991e3f3042c0",
+      "name": "Parachutist memorial",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-barnet-southgate",
+          "publishedName": "Parachutist memorial"
+        }
+      ]
+    },
+    {
+      "id": "place-name-7497e20bda1d",
+      "name": "Mond Mausoleum",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-barnet-southgate",
+          "publishedName": "Mond Mausoleum"
+        }
+      ]
+    },
+    {
+      "id": "place-name-efb7f3204164",
+      "name": "Melesi Mausoleum",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-barnet-southgate",
+          "publishedName": "Melesi Mausoleum"
+        }
+      ]
+    },
+    {
+      "id": "place-name-8d2c1bf38d41",
+      "name": "Friern Barnet Old Town Hall",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-barnet-southgate",
+          "publishedName": "Friern Barnet Old Town Hall"
+        }
+      ]
+    },
+    {
+      "id": "place-name-424f22026e0f",
+      "name": "Colney Hatch Asylum / Princess Park Manor",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-barnet-southgate",
+          "publishedName": "Colney Hatch Asylum / Princess Park Manor"
+        }
+      ]
+    },
+    {
+      "id": "place-name-30d7abc52563",
+      "name": "Matters — Colindale",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-waylamps",
+          "publishedName": "Matters — Colindale"
+        }
+      ]
+    },
+    {
+      "id": "place-name-7675d7b6a911",
+      "name": "Slocombe — Dollis Brook",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-waylamps",
+          "publishedName": "Slocombe — Dollis Brook"
+        }
+      ]
+    },
+    {
+      "id": "place-name-ade7bb9bd2a6",
+      "name": "Milligan — Albert Place",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-waylamps",
+          "publishedName": "Milligan — Albert Place"
+        }
+      ]
+    },
+    {
+      "id": "place-name-75b24d124fa2",
+      "name": "Reiniger — north of Tally Ho",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-waylamps",
+          "publishedName": "Reiniger — north of Tally Ho"
+        }
+      ]
+    },
+    {
+      "id": "place-name-0c836576b3f1",
+      "name": "Red Lion Hill",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-eastwalks",
+          "publishedName": "Red Lion Hill"
+        },
+        {
+          "catalogueId": "thematic-tonero-common",
+          "publishedName": "Red Lion Hill"
+        }
+      ]
+    },
+    {
+      "id": "place-name-29b7f4ea20bf",
+      "name": "Muswell Hill Broadway",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-muswell-fortis",
+          "publishedName": "Muswell Hill Broadway"
+        },
+        {
+          "catalogueId": "com-03",
+          "publishedName": "Muswell Hill Broadway"
+        },
+        {
+          "catalogueId": "com-14",
+          "publishedName": "Muswell Hill Broadway"
+        }
+      ]
+    },
+    {
+      "id": "place-name-2ac0f4f7a681",
+      "name": "Alexandra Palace",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-muswell-fortis",
+          "publishedName": "Alexandra Palace"
+        },
+        {
+          "catalogueId": "h-tonero-allypally",
+          "publishedName": "Alexandra Palace"
+        },
+        {
+          "catalogueId": "com-03",
+          "publishedName": "Alexandra Palace"
+        },
+        {
+          "catalogueId": "com-14",
+          "publishedName": "Alexandra Palace"
+        }
+      ]
+    },
+    {
+      "id": "place-name-b99e4cc3e061",
+      "name": "Parkland Walk",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-muswell-fortis",
+          "publishedName": "Parkland Walk"
+        },
+        {
+          "catalogueId": "com-04",
+          "publishedName": "Parkland Walk"
+        },
+        {
+          "catalogueId": "thematic-trainwalk-2",
+          "publishedName": "Parkland Walk"
+        }
+      ]
+    },
+    {
+      "id": "place-name-a8ea67157832",
+      "name": "Fortis Green",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-muswell-fortis",
+          "publishedName": "Fortis Green"
+        },
+        {
+          "catalogueId": "com-06",
+          "publishedName": "Fortis Green"
+        }
+      ]
+    },
+    {
+      "id": "place-name-a72a61884dbe",
+      "name": "Mus Well site",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-muswell-fortis",
+          "publishedName": "Mus Well site"
+        }
+      ]
+    },
+    {
+      "id": "place-name-265260e77b0a",
+      "name": "Highgate Wood",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-shady",
+          "publishedName": "Highgate Wood"
+        },
+        {
+          "catalogueId": "h-tonero-hampstead-highgate",
+          "publishedName": "Highgate Wood"
+        },
+        {
+          "catalogueId": "com-03",
+          "publishedName": "Highgate Wood"
+        },
+        {
+          "catalogueId": "com-04",
+          "publishedName": "Highgate Wood"
+        },
+        {
+          "catalogueId": "thematic-trainwalk-2",
+          "publishedName": "Highgate Wood"
+        }
+      ]
+    },
+    {
+      "id": "place-name-7517f46d49ef",
+      "name": "Queen’s Wood",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-shady",
+          "publishedName": "Queen’s Wood"
+        },
+        {
+          "catalogueId": "thematic-trainwalk-2",
+          "publishedName": "Queen’s Wood"
+        }
+      ]
+    },
+    {
+      "id": "place-name-fc6fdd68aa32",
+      "name": "Hampstead Heath",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-hampstead-highgate",
+          "publishedName": "Hampstead Heath"
+        }
+      ]
+    },
+    {
+      "id": "place-name-976e40079732",
+      "name": "Kenwood",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-hampstead-highgate",
+          "publishedName": "Kenwood"
+        },
+        {
+          "catalogueId": "com-02",
+          "publishedName": "Kenwood"
+        }
+      ]
+    },
+    {
+      "id": "place-name-114f0e849a28",
+      "name": "Heath Extension",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-hampstead-highgate",
+          "publishedName": "Heath Extension"
+        }
+      ]
+    },
+    {
+      "id": "place-name-1977f23a019f",
+      "name": "Alexandra Park",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-allypally",
+          "publishedName": "Alexandra Park"
+        },
+        {
+          "catalogueId": "com-14",
+          "publishedName": "Alexandra Park"
+        }
+      ]
+    },
+    {
+      "id": "place-name-21b6a8ace513",
+      "name": "Muswell Hill",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-allypally",
+          "publishedName": "Muswell Hill"
+        },
+        {
+          "catalogueId": "com-04",
+          "publishedName": "Muswell Hill"
+        },
+        {
+          "catalogueId": "thematic-kinks-map",
+          "publishedName": "Muswell Hill"
+        }
+      ]
+    },
+    {
+      "id": "place-name-bec9e3cc3419",
+      "name": "Dollis Brook",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-west",
+          "publishedName": "Dollis Brook"
+        }
+      ]
+    },
+    {
+      "id": "place-name-a7fb5af63420",
+      "name": "Folly Brook",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-west",
+          "publishedName": "Folly Brook"
+        },
+        {
+          "catalogueId": "thematic-woodside-ultimate",
+          "publishedName": "Folly Brook"
+        }
+      ]
+    },
+    {
+      "id": "place-name-411432db1e53",
+      "name": "Darland Lake",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-west",
+          "publishedName": "Darland Lake"
+        }
+      ]
+    },
+    {
+      "id": "place-name-18fd97c2b2c0",
+      "name": "Totteridge Village",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-west",
+          "publishedName": "Totteridge Village"
+        }
+      ]
+    },
+    {
+      "id": "place-name-3d8b60b18b60",
+      "name": "Arrandene",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-west",
+          "publishedName": "Arrandene"
+        }
+      ]
+    },
+    {
+      "id": "place-name-20ad3d1ce1a5",
+      "name": "Mill Hill East",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-west",
+          "publishedName": "Mill Hill East"
+        },
+        {
+          "catalogueId": "thematic-woodside-ultimate",
+          "publishedName": "Mill Hill East"
+        }
+      ]
+    },
+    {
+      "id": "place-name-1bf237d805b3",
+      "name": "Hampstead",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-byways",
+          "publishedName": "Hampstead"
+        }
+      ]
+    },
+    {
+      "id": "place-name-d56a0c178058",
+      "name": "Hampstead Garden Suburb",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-byways",
+          "publishedName": "Hampstead Garden Suburb"
+        }
+      ]
+    },
+    {
+      "id": "place-name-3e0beb4e584b",
+      "name": "Stephens House",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-lockdown",
+          "publishedName": "Stephens House"
+        },
+        {
+          "catalogueId": "com-07",
+          "publishedName": "Stephens House"
+        }
+      ]
+    },
+    {
+      "id": "place-name-660b2aceb303",
+      "name": "Church End",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "h-tonero-lockdown",
+          "publishedName": "Church End"
+        },
+        {
+          "catalogueId": "com-07",
+          "publishedName": "Church End"
+        }
+      ]
+    },
+    {
+      "id": "place-name-4babadab5218",
+      "name": "Bishop’s former hunting park",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-01",
+          "publishedName": "Bishop’s former hunting park"
+        }
+      ]
+    },
+    {
+      "id": "place-name-9e8d4cce5124",
+      "name": "Former Finchley Woods/Common",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-01",
+          "publishedName": "Former Finchley Woods/Common"
+        }
+      ]
+    },
+    {
+      "id": "place-name-b815843425f6",
+      "name": "Cinema",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-01",
+          "publishedName": "Cinema"
+        }
+      ]
+    },
+    {
+      "id": "place-name-fb72fb458a12",
+      "name": "McDonald’s university",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-01",
+          "publishedName": "McDonald’s university"
+        }
+      ]
+    },
+    {
+      "id": "place-name-2acccda4c174",
+      "name": "Industrial school",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-01",
+          "publishedName": "Industrial school"
+        }
+      ]
+    },
+    {
+      "id": "place-name-96d95c95ef39",
+      "name": "Former market square",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-01",
+          "publishedName": "Former market square"
+        }
+      ]
+    },
+    {
+      "id": "place-name-a2ad5a2652d8",
+      "name": "Common remnant",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-01",
+          "publishedName": "Common remnant"
+        }
+      ]
+    },
+    {
+      "id": "place-name-daddb4127b7e",
+      "name": "McDonald’s headquarters",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-02",
+          "publishedName": "McDonald’s headquarters"
+        }
+      ]
+    },
+    {
+      "id": "place-name-f4b5f6173fa8",
+      "name": "Peter Sellers former flat",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-02",
+          "publishedName": "Peter Sellers former flat"
+        }
+      ]
+    },
+    {
+      "id": "place-name-d6da19206c94",
+      "name": "George Michael birthplace",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-02",
+          "publishedName": "George Michael birthplace"
+        }
+      ]
+    },
+    {
+      "id": "place-name-2ec062a1a97d",
+      "name": "Bishops Avenue",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-02",
+          "publishedName": "Bishops Avenue"
+        }
+      ]
+    },
+    {
+      "id": "place-name-a3a4200fbc6e",
+      "name": "Highgate ponds",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-02",
+          "publishedName": "Highgate ponds"
+        }
+      ]
+    },
+    {
+      "id": "place-name-f51c086d25e3",
+      "name": "Gospel Oak station",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-02",
+          "publishedName": "Gospel Oak station"
+        }
+      ]
+    },
+    {
+      "id": "place-name-86aaf9799595",
+      "name": "Edwardian shopping parade",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-03",
+          "publishedName": "Edwardian shopping parade"
+        }
+      ]
+    },
+    {
+      "id": "place-name-2160bbcd0e35",
+      "name": "Former Alexandra Palace railway",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-03",
+          "publishedName": "Former Alexandra Palace railway"
+        }
+      ]
+    },
+    {
+      "id": "place-name-13b822d7127c",
+      "name": "Everyman Muswell Hill",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-03",
+          "publishedName": "Everyman Muswell Hill"
+        }
+      ]
+    },
+    {
+      "id": "place-name-cd14550cf481",
+      "name": "East Finchley",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-04",
+          "publishedName": "East Finchley"
+        }
+      ]
+    },
+    {
+      "id": "place-name-8974356d7f17",
+      "name": "Ray and Rasa homes",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-05",
+          "publishedName": "Ray and Rasa homes"
+        }
+      ]
+    },
+    {
+      "id": "place-name-e66933691340",
+      "name": "Davies family home",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-05",
+          "publishedName": "Davies family home"
+        }
+      ]
+    },
+    {
+      "id": "place-name-e7ffd3115e25",
+      "name": "First-gig pub",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-05",
+          "publishedName": "First-gig pub"
+        }
+      ]
+    },
+    {
+      "id": "place-name-0546d569d758",
+      "name": "Second local pub",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-05",
+          "publishedName": "Second local pub"
+        }
+      ]
+    },
+    {
+      "id": "place-name-e732b69e4517",
+      "name": "Fortismere School",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-05",
+          "publishedName": "Fortismere School"
+        },
+        {
+          "catalogueId": "thematic-kinks-map",
+          "publishedName": "Fortismere School"
+        }
+      ]
+    },
+    {
+      "id": "place-name-57268e54af3d",
+      "name": "Former dancehall",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-05",
+          "publishedName": "Former dancehall"
+        }
+      ]
+    },
+    {
+      "id": "place-name-46e1067d278e",
+      "name": "Nilsen-linked location",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-05",
+          "publishedName": "Nilsen-linked location"
+        }
+      ]
+    },
+    {
+      "id": "place-name-4df3920dd50e",
+      "name": "Davies sister’s home",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-05",
+          "publishedName": "Davies sister’s home"
+        }
+      ]
+    },
+    {
+      "id": "place-name-3f7ddec2e6e6",
+      "name": "Konk Studios",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-05",
+          "publishedName": "Konk Studios"
+        },
+        {
+          "catalogueId": "thematic-kinks-map",
+          "publishedName": "Konk Studios"
+        }
+      ]
+    },
+    {
+      "id": "place-name-241dbfe3d219",
+      "name": "Dollis Valley Walk",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-07",
+          "publishedName": "Dollis Valley Walk"
+        }
+      ]
+    },
+    {
+      "id": "place-name-812ccd9b600f",
+      "name": "Knights Templar land",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-08",
+          "publishedName": "Knights Templar land"
+        }
+      ]
+    },
+    {
+      "id": "place-name-b9506683d1a3",
+      "name": "Former manor house",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-08",
+          "publishedName": "Former manor house"
+        }
+      ]
+    },
+    {
+      "id": "place-name-2b75278fb056",
+      "name": "Comedians’ and murderers’ locations",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-08",
+          "publishedName": "Comedians’ and murderers’ locations"
+        }
+      ]
+    },
+    {
+      "id": "place-name-5e71a4c8ffba",
+      "name": "Henly’s Corner",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-09",
+          "publishedName": "Henly’s Corner"
+        }
+      ]
+    },
+    {
+      "id": "place-name-b11f6aa5b2f5",
+      "name": "Finchley Central",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-09",
+          "publishedName": "Finchley Central"
+        }
+      ]
+    },
+    {
+      "id": "place-name-66b1ba238d8d",
+      "name": "Waterstones N12 9QR",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-10",
+          "publishedName": "Waterstones N12 9QR"
+        }
+      ]
+    },
+    {
+      "id": "place-name-89ff718d8ed7",
+      "name": "Redwood Cafe, Swan Lane Open Space",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-10",
+          "publishedName": "Redwood Cafe, Swan Lane Open Space"
+        }
+      ]
+    },
+    {
+      "id": "place-name-1e099a94b8b3",
+      "name": "Finchley Golf Club",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-10",
+          "publishedName": "Finchley Golf Club"
+        },
+        {
+          "catalogueId": "thematic-walking-writer-2015",
+          "publishedName": "Finchley Golf Club"
+        }
+      ]
+    },
+    {
+      "id": "place-name-09e465963b25",
+      "name": "Former pleasure garden",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-11",
+          "publishedName": "Former pleasure garden"
+        }
+      ]
+    },
+    {
+      "id": "place-name-93f629289aba",
+      "name": "Rock musicians’ childhood home",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-11",
+          "publishedName": "Rock musicians’ childhood home"
+        }
+      ]
+    },
+    {
+      "id": "place-name-6d74a0b99aa7",
+      "name": "Famous Royal Oak",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-11",
+          "publishedName": "Famous Royal Oak"
+        }
+      ]
+    },
+    {
+      "id": "place-name-3b65ab75c68e",
+      "name": "Blues musician’s rented house",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-11",
+          "publishedName": "Blues musician’s rented house"
+        }
+      ]
+    },
+    {
+      "id": "place-name-a95538b1fe92",
+      "name": "Institutional residence",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-11",
+          "publishedName": "Institutional residence"
+        }
+      ]
+    },
+    {
+      "id": "place-name-2508cf539761",
+      "name": "Finchley woods",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-12",
+          "publishedName": "Finchley woods"
+        }
+      ]
+    },
+    {
+      "id": "place-name-68c7e826c28a",
+      "name": "Viaduct",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-12",
+          "publishedName": "Viaduct"
+        }
+      ]
+    },
+    {
+      "id": "place-name-b40463ff0861",
+      "name": "Streamside woods",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-12",
+          "publishedName": "Streamside woods"
+        }
+      ]
+    },
+    {
+      "id": "place-name-68fc7198bb17",
+      "name": "Allotments",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-12",
+          "publishedName": "Allotments"
+        }
+      ]
+    },
+    {
+      "id": "place-name-38d2769eba96",
+      "name": "Totteridge & Whetstone station",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-13",
+          "publishedName": "Totteridge & Whetstone station"
+        }
+      ]
+    },
+    {
+      "id": "place-name-3c2d1c273bab",
+      "name": "Woodside Park station",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-13",
+          "publishedName": "Woodside Park station"
+        },
+        {
+          "catalogueId": "thematic-woodside-ultimate",
+          "publishedName": "Woodside Park station"
+        }
+      ]
+    },
+    {
+      "id": "place-name-f3069df7a823",
+      "name": "Wood Green High Road",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-14",
+          "publishedName": "Wood Green High Road"
+        }
+      ]
+    },
+    {
+      "id": "place-name-1a3c84555c03",
+      "name": "Fortis Green Road",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-14",
+          "publishedName": "Fortis Green Road"
+        }
+      ]
+    },
+    {
+      "id": "place-name-b6a5cab7aeda",
+      "name": "Crouch End Hill former platforms",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-15",
+          "publishedName": "Crouch End Hill former platforms"
+        }
+      ]
+    },
+    {
+      "id": "place-name-0ea5f78407f7",
+      "name": "Stephens House and estate",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "com-16",
+          "publishedName": "Stephens House and estate"
+        }
+      ]
+    },
+    {
+      "id": "place-name-99344e68af2c",
+      "name": "The Lane Cafe",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-kinks-map",
+          "publishedName": "The Lane Cafe"
+        }
+      ]
+    },
+    {
+      "id": "place-name-a0d20e858d82",
+      "name": "6 Denmark Terrace",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-kinks-map",
+          "publishedName": "6 Denmark Terrace"
+        }
+      ]
+    },
+    {
+      "id": "place-name-6201707ebe45",
+      "name": "Clissold Arms",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-kinks-map",
+          "publishedName": "Clissold Arms"
+        }
+      ]
+    },
+    {
+      "id": "place-name-e8fd5e96cf51",
+      "name": "St James primary school",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-kinks-map",
+          "publishedName": "St James primary school"
+        }
+      ]
+    },
+    {
+      "id": "place-name-99469be3fd21",
+      "name": "59 Steeds Road",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-kinks-map",
+          "publishedName": "59 Steeds Road"
+        }
+      ]
+    },
+    {
+      "id": "place-name-905dce9fee47",
+      "name": "Athenaeum Place",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-kinks-map",
+          "publishedName": "Athenaeum Place"
+        }
+      ]
+    },
+    {
+      "id": "place-name-45d6c2000a01",
+      "name": "Brook towards Whetstone",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-walking-writer-2015",
+          "publishedName": "Brook towards Whetstone"
+        }
+      ]
+    },
+    {
+      "id": "place-name-7855b500aec4",
+      "name": "Redwood Café",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-walking-writer-2015",
+          "publishedName": "Redwood Café"
+        }
+      ]
+    },
+    {
+      "id": "place-name-253f472fabfb",
+      "name": "Belvedere Court",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-streamline-c20",
+          "publishedName": "Belvedere Court"
+        },
+        {
+          "catalogueId": "thematic-streamform-ads",
+          "publishedName": "Belvedere Court"
+        }
+      ]
+    },
+    {
+      "id": "place-name-2d6027e3791e",
+      "name": "Kingsley Close",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-streamline-c20",
+          "publishedName": "Kingsley Close"
+        }
+      ]
+    },
+    {
+      "id": "place-name-a7176abd5cfc",
+      "name": "Lytton Close",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-streamline-c20",
+          "publishedName": "Lytton Close"
+        }
+      ]
+    },
+    {
+      "id": "place-name-cc5d38b564ff",
+      "name": "Unnamed green with timber-framed housing",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-streamform-ads",
+          "publishedName": "Unnamed green with timber-framed housing"
+        }
+      ]
+    },
+    {
+      "id": "place-name-225677648e45",
+      "name": "Residential roads",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-streamform-ads",
+          "publishedName": "Residential roads"
+        }
+      ]
+    },
+    {
+      "id": "place-name-d3bc20d1b140",
+      "name": "Housing named for Christian Socialists",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-streamform-ads",
+          "publishedName": "Housing named for Christian Socialists"
+        }
+      ]
+    },
+    {
+      "id": "place-name-301eaa82cbb2",
+      "name": "Hedge-lined passage with brick arch",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-streamform-ads",
+          "publishedName": "Hedge-lined passage with brick arch"
+        }
+      ]
+    },
+    {
+      "id": "place-name-e6f5697662e7",
+      "name": "Green Arrows Garden, Archer Academy",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-grange-trail",
+          "publishedName": "Green Arrows Garden, Archer Academy"
+        }
+      ]
+    },
+    {
+      "id": "place-name-7440ebecd6b1",
+      "name": "Market Place Playground",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-grange-trail",
+          "publishedName": "Market Place Playground"
+        }
+      ]
+    },
+    {
+      "id": "place-name-ff09144b3211",
+      "name": "Manor Park Road Underpass",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-grange-trail",
+          "publishedName": "Manor Park Road Underpass"
+        }
+      ]
+    },
+    {
+      "id": "place-name-0bc640e1088f",
+      "name": "Vale Farm Allotments Pergola",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-grange-trail",
+          "publishedName": "Vale Farm Allotments Pergola"
+        }
+      ]
+    },
+    {
+      "id": "place-name-16c91f6ddd35",
+      "name": "Tarling Road Community Centre",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-grange-trail",
+          "publishedName": "Tarling Road Community Centre"
+        }
+      ]
+    },
+    {
+      "id": "place-name-a1529c8ca055",
+      "name": "Barnwood Forest Garden",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-grange-trail",
+          "publishedName": "Barnwood Forest Garden"
+        }
+      ]
+    },
+    {
+      "id": "place-name-324db713f527",
+      "name": "The Walks / Church Lane",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-tonero-common",
+          "publishedName": "The Walks / Church Lane"
+        }
+      ]
+    },
+    {
+      "id": "place-name-12fe67b17203",
+      "name": "Oak Road / Tarling Road",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-tonero-common",
+          "publishedName": "Oak Road / Tarling Road"
+        }
+      ]
+    },
+    {
+      "id": "place-name-4cc34e2fcc16",
+      "name": "Brownswell / Glebelands",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-tonero-common",
+          "publishedName": "Brownswell / Glebelands"
+        }
+      ]
+    },
+    {
+      "id": "place-name-ba2474693b44",
+      "name": "Summers Lane / Nursery Approach",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-tonero-common",
+          "publishedName": "Summers Lane / Nursery Approach"
+        }
+      ]
+    },
+    {
+      "id": "place-name-b262ea825cca",
+      "name": "Durham Road / Summerlee Avenue",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-tonero-common",
+          "publishedName": "Durham Road / Summerlee Avenue"
+        }
+      ]
+    },
+    {
+      "id": "place-name-103ab3bd0ab4",
+      "name": "Frith Manor Farm",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-woodside-ultimate",
+          "publishedName": "Frith Manor Farm"
+        }
+      ]
+    },
+    {
+      "id": "place-name-95e90b325d85",
+      "name": "Bittacy Farm / former barracks",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-woodside-ultimate",
+          "publishedName": "Bittacy Farm / former barracks"
+        }
+      ]
+    },
+    {
+      "id": "place-name-595e4839b965",
+      "name": "Lovers Lane / Nether Hall",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-woodside-ultimate",
+          "publishedName": "Lovers Lane / Nether Hall"
+        }
+      ]
+    },
+    {
+      "id": "place-name-8b770723387c",
+      "name": "Dollis Brook viaduct",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-woodside-ultimate",
+          "publishedName": "Dollis Brook viaduct"
+        }
+      ]
+    },
+    {
+      "id": "place-name-b942878c9c3d",
+      "name": "Archway station",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-trainwalk-2",
+          "publishedName": "Archway station"
+        }
+      ]
+    },
+    {
+      "id": "place-name-7b875c786c72",
+      "name": "Stephens House grounds",
+      "identityStatus": "name cluster; exact identity/aliases not yet resolved",
+      "references": [
+        {
+          "catalogueId": "thematic-trainwalk-2",
+          "publishedName": "Stephens House grounds"
+        }
+      ]
+    }
+  ]
+}

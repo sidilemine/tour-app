@@ -1,6 +1,6 @@
 # Walking Tour Lab
 
-An Android device experiment for a self-guided walking audio player, built with React Native, Expo and TypeScript. M1 is **complete on Sidi’s Pixel 6 / Android 17**, with [acceptance and final build evidence](docs/test-results/M1-closure.md). M2 now adds a small North Finchley offline-map preview alongside the existing three-stop lifecycle lab. **First map slice verified on the tested Pixel, including the reviewed outdoor regression.** The six-stop product, verified itinerary and general package importer remain later work.
+An offline walking-tour app for Sidi's Pixel, built with React Native, Expo and TypeScript. M1 and the first M2 map slice have accepted physical evidence. The two authored North Finchley tours, numbered route map, walking chapter and local story reviews are now implemented. See the [tour guide](docs/content/NORTH-FINCHLEY-TAKE-THE-TOURS.md), [implementation](docs/content/M2-PLAYER-IMPLEMENTATION.md) and [current build/device evidence](docs/test-results/M2-tour-build.md). First full-tour enjoyment and route observations remain pending; do not infer M2 acceptance from a build.
 
 The original [brief](ai_self_guided_tour_project_brief.md) is unchanged. [PRODUCT.md](PRODUCT.md), [ARCHITECTURE.md](ARCHITECTURE.md), [AGENTS.md](AGENTS.md) and [ROADMAP.md](ROADMAP.md) are the maintained project contract. The owner's latest instructions override conflicting brief recommendations.
 
@@ -45,7 +45,7 @@ Open **Offline test guide / saved results** near the top of Walking Tour Lab. Re
 
 **Saving JSON:** each Export button opens **Save or share JSON** with a new timestamped filename. Keep it or edit it, then choose **Save to folder**. Select or create a local **Walking Tour Tests** subfolder under Documents or Downloads, tap **Use this folder**, then **Allow**. Wait for **Saved and verified**. Android may block Downloads itself; use a subfolder. Repeated custom names create separate documents (the provider may add a number). **Share instead** remains available, but closing its chooser is not confirmation of a save. Cancelled/failed exports leave original records intact.
 
-All 19 procedures are embedded and readable offline (18 retained M1 cases and one prepared M2 map case). Cases needing the development build, a prepared long-A timing fixture or an engineer-controlled process kill are labelled; they are not silently substituted with easier tests. The guide never starts a tour or automatically certifies acceptance. Older observations remain tied to their original build/route. No historical pass is pre-ticked.
+All 20 procedures are embedded and readable offline (18 retained M1 cases, the retained M2 map case and one clustered curated-tour feedback check). Cases needing the development build, a prepared long-A timing fixture or an engineer-controlled process kill are labelled; they are not silently substituted with easier tests. The guide never starts a tour or automatically certifies acceptance. Older observations remain tied to their original build/route. No historical pass is pre-ticked.
 
 The [full guide text](docs/TEST-GUIDE.md) is generated from the same content as the phone. The [working checklist](docs/PHONE-CHECKS.md) and [M1 result record](docs/test-results/M1.md) remain the human-reviewed status. New guide delivery evidence is recorded in [M1 guide results](docs/test-results/M1-guide.md); the direct-save follow-up is in [M1 export results](docs/test-results/M1-exports.md).
 
@@ -118,7 +118,7 @@ Raw exports stay ignored/private. Logcat may include unrelated device informatio
 
 ## Independent content preparation
 
-The next content task is the [comprehensive public-tour survey](docs/content/AREA-TOUR-SURVEY.md), before full scripts or further route selection. Catalogue published stops, themes and stories; retain reusable records and coverage gaps. A local research database is now explicitly on the roadmap, with implementation deferred until the first survey establishes the useful structure.
+The [comprehensive public-tour survey](docs/content/survey/README.md) is complete for this first Finchley pass: 45 consolidated walk/resource entries with published stops/themes/stories, coverage gaps and source-family records. It informed the [authored A/B packages](content/north-finchley/README.md). A retains five stops without Stanhope and uses the Arcade street entrance; B has six stops plus its 141-second walking chapter. Current estimates are A 1.16 km / 27–32 minutes and B 1.92 km / 39–44 minutes, plus optional feedback. Dated [exterior checks](docs/content/routes/north-finchley-review-v2/EXTERIOR-CHECKS.md) support public-pavement views; no current field walk is claimed. The reusable research database remains planned for a later stage.
 
 Start with the [editorial discussion and decision record](docs/content/EDITORIAL-REVIEW-RECORD.md) when resuming curation or developing systematic guidelines. It collates the conversation outcomes, all 45 anchored Word comments, rejected examples and open decisions. The current [North Finchley options](docs/content/NORTH-FINCHLEY-TOUR-OPTIONS.md) and [Word review copy](docs/content/north-finchley-tour-options-review.docx) compare two researched six-stop proposals with saved pedestrian routing: A about 1.4 km / 28–33 minutes, B about 1.9 km / 37–42 minutes. The [17 September review](docs/content/NORTH-FINCHLEY-REVIEW-RESPONSE.md) directs development of both, accepts B’s extra time, removes A’s Stanhope detour and requests walking narration plus per-story ratings/voice notes. A’s quoted estimate is historical; both need final route/content work and physical review.
 
@@ -141,7 +141,9 @@ node --import tsx tools/render-listening-samples.ts
 - `App.tsx`: controls, fixture recorder/import and diagnostics UI.
 - `src/domain/`: fixture validation, geometry and deterministic state transitions.
 - `src/session/`: live Expo location/audio adapters, task registration and serialized coordination.
-- `src/map/`: fixed local-map resources, verified staging and a read-only session-position view; no map-owned location or playback.
+- `src/map/`: fixed local-map resources, route/stop overlays and a read-only session-position view; no map-owned location or playback.
+- `src/tours/`: bounded local package import, versioned library and tour home.
+- `src/feedback/`: separate scores/text, explicit private recording/playback and verified local voice-copy export.
 - `src/storage/`: shared SQL transaction policy used by Expo SQLite and Node tests.
 - `src/export/`: named JSON snapshots, editable export dialog and scoped Android folder saving.
 - `src/testing/`: embedded guide and durable test journal, independent of tour progress.
@@ -154,7 +156,7 @@ The Expo blank template's license is retained in [TEMPLATE-LICENSE](TEMPLATE-LIC
 
 ## M2 offline-map preview
 
-Open **North Finchley offline map**. The preview has roads, paths, railways, buildings, water and local street/place labels; it does not yet draw a selected tour. Grey outside coverage is deliberate. The position dot uses only the existing active session's recent usable fix and disappears when stale, stopped or outside the area. Opening/closing the map never starts a tour or changes a playback hold.
+Open **North Finchley offline map**. The preview has roads, paths, railways, buildings, water and local street/place labels; it draws the selected curated tour with numbered stops. Grey outside coverage is deliberate. The position dot uses only the existing active session's recent usable fix and disappears when stale, stopped or outside the area. Opening/closing the map never starts a tour or changes a playback hold.
 
 The self-contained APK embeds every map/font resource. The app copies them to a versioned document directory because native PMTiles needs random access to a real local file. Every open checks size and MD5; missing/corrupt copies show an error and **Rebuild local map copy**. The build verifies SHA-256 and decodes every tile. Network access is disabled for the Android renderer, and the style contains only local sources. A development session must load/copy the resources with Metro available before disconnecting; this does not make development cold reopening independent of Metro.
 
@@ -178,3 +180,15 @@ See [the completed outdoor procedures](docs/FOUR-REMAINING-WALKS.md). The accept
 The development baselines and [final stay-at-B and Battery Saver cases](docs/test-results/M1-final-outdoor-report.md) are accepted. The outdoor batch and [final connected checks](docs/test-results/M1-closure.md) are complete. The final loading-checkpoint correction passed 79 automated tests and a short installed-device recovery check; no arrival or native-audio policy changed. The completed final cases used the self-contained APK and corrected files in Documents / Walking Tour Remaining. After the long-A update, use New walk rather than resuming an old 6:21 offset. Any future development regression session still needs immediate preparation; overnight survival is not promised.
 
 On the pinned Android stack, the React Native developer menu’s **Disable Fast Refresh** action raised a null-argument exception after saving the setting. Reloading with the persisted setting already false worked. Avoid that menu action during a prepared session; verify the saved setting and record the issue rather than treating setup as crash-free. See [field preparation evidence](docs/test-results/M1-field-preparation.md).
+
+## Prepare the authored tours
+
+The self-contained APK embeds both tour transports and the exact shared map. **Prepare both Finchley tours offline** verifies media before adding them to the library. **Import tour package** accepts the same area-specific version-1 transport; it is not a universal new-area downloader. Each tour keeps its own progress. Reviews pause narration until explicit Resume; private GPS diagnostics default off in the tour home.
+
+```sh
+node --import tsx tools/prepare-finchley-tours.ts
+node --import tsx --test tests/prepared-tours.test.ts
+python3 tools/verify-tour-apk.py artifacts/walking-tour-offline.apk
+```
+
+`content/north-finchley/packages/` is included in the build identity. The generator uses local Daniel speech and cached authored inputs; it is not the later automated authoring factory. Preserve content versions once imported. Source scripts, evidence, route requests and measured durations remain reviewable in the repository.

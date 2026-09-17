@@ -1,0 +1,761 @@
+{
+  "format": "walking-tour-package",
+  "version": 1,
+  "mapId": "north-finchley-abc1a7e4d563d305",
+  "fixture": {
+    "schemaVersion": 1,
+    "id": "north-finchley-a",
+    "version": 1,
+    "title": "A · Places people went for a good time",
+    "verification": {
+      "status": "unverified",
+      "note": "Desk-reviewed public exterior route, OSM/Valhalla geometry and published addresses, 17 September 2026. Current sightlines, pavement obstructions and access are not yet field-checked. First owner use supplies those observations; manual play/skip remains available."
+    },
+    "route": [
+      {
+        "latitude": 51.613142,
+        "longitude": -0.176806
+      },
+      {
+        "latitude": 51.613149,
+        "longitude": -0.176855
+      },
+      {
+        "latitude": 51.613197,
+        "longitude": -0.177101
+      },
+      {
+        "latitude": 51.613413,
+        "longitude": -0.176972
+      },
+      {
+        "latitude": 51.613449,
+        "longitude": -0.17695
+      },
+      {
+        "latitude": 51.613652,
+        "longitude": -0.176858
+      },
+      {
+        "latitude": 51.614025,
+        "longitude": -0.176722
+      },
+      {
+        "latitude": 51.614097,
+        "longitude": -0.176698
+      },
+      {
+        "latitude": 51.614025,
+        "longitude": -0.176722
+      },
+      {
+        "latitude": 51.613652,
+        "longitude": -0.176858
+      },
+      {
+        "latitude": 51.613449,
+        "longitude": -0.17695
+      },
+      {
+        "latitude": 51.613652,
+        "longitude": -0.176858
+      },
+      {
+        "latitude": 51.614025,
+        "longitude": -0.176722
+      },
+      {
+        "latitude": 51.614278,
+        "longitude": -0.176639
+      },
+      {
+        "latitude": 51.614319,
+        "longitude": -0.176638
+      },
+      {
+        "latitude": 51.614573,
+        "longitude": -0.176641
+      },
+      {
+        "latitude": 51.614574,
+        "longitude": -0.176662
+      },
+      {
+        "latitude": 51.614578,
+        "longitude": -0.176746
+      },
+      {
+        "latitude": 51.614579,
+        "longitude": -0.176776
+      },
+      {
+        "latitude": 51.614581,
+        "longitude": -0.176818
+      },
+      {
+        "latitude": 51.614605,
+        "longitude": -0.176816
+      },
+      {
+        "latitude": 51.614876,
+        "longitude": -0.176804
+      },
+      {
+        "latitude": 51.614895,
+        "longitude": -0.176802
+      },
+      {
+        "latitude": 51.614911,
+        "longitude": -0.176802
+      },
+      {
+        "latitude": 51.61542,
+        "longitude": -0.176815
+      },
+      {
+        "latitude": 51.615449,
+        "longitude": -0.176816
+      },
+      {
+        "latitude": 51.615484,
+        "longitude": -0.176817
+      },
+      {
+        "latitude": 51.616094,
+        "longitude": -0.176853
+      },
+      {
+        "latitude": 51.61611,
+        "longitude": -0.176854
+      },
+      {
+        "latitude": 51.61614,
+        "longitude": -0.176856
+      },
+      {
+        "latitude": 51.616194,
+        "longitude": -0.176863
+      },
+      {
+        "latitude": 51.616396,
+        "longitude": -0.176884
+      },
+      {
+        "latitude": 51.61645,
+        "longitude": -0.17689
+      },
+      {
+        "latitude": 51.616457,
+        "longitude": -0.177015
+      },
+      {
+        "latitude": 51.61645,
+        "longitude": -0.17689
+      },
+      {
+        "latitude": 51.616396,
+        "longitude": -0.176884
+      },
+      {
+        "latitude": 51.616194,
+        "longitude": -0.176863
+      },
+      {
+        "latitude": 51.61614,
+        "longitude": -0.176856
+      },
+      {
+        "latitude": 51.61611,
+        "longitude": -0.176854
+      },
+      {
+        "latitude": 51.616094,
+        "longitude": -0.176853
+      },
+      {
+        "latitude": 51.615484,
+        "longitude": -0.176817
+      },
+      {
+        "latitude": 51.615449,
+        "longitude": -0.176816
+      },
+      {
+        "latitude": 51.61542,
+        "longitude": -0.176815
+      },
+      {
+        "latitude": 51.614911,
+        "longitude": -0.176802
+      },
+      {
+        "latitude": 51.614895,
+        "longitude": -0.176802
+      },
+      {
+        "latitude": 51.614876,
+        "longitude": -0.176804
+      },
+      {
+        "latitude": 51.614605,
+        "longitude": -0.176816
+      },
+      {
+        "latitude": 51.614581,
+        "longitude": -0.176818
+      },
+      {
+        "latitude": 51.614366,
+        "longitude": -0.176829
+      },
+      {
+        "latitude": 51.614057,
+        "longitude": -0.176887
+      },
+      {
+        "latitude": 51.613707,
+        "longitude": -0.177005
+      },
+      {
+        "latitude": 51.613447,
+        "longitude": -0.177145
+      },
+      {
+        "latitude": 51.613282,
+        "longitude": -0.177234
+      },
+      {
+        "latitude": 51.613238,
+        "longitude": -0.177279
+      },
+      {
+        "latitude": 51.613344,
+        "longitude": -0.177647
+      },
+      {
+        "latitude": 51.613451,
+        "longitude": -0.178062
+      },
+      {
+        "latitude": 51.613571,
+        "longitude": -0.178559
+      },
+      {
+        "latitude": 51.613451,
+        "longitude": -0.178062
+      },
+      {
+        "latitude": 51.613344,
+        "longitude": -0.177647
+      },
+      {
+        "latitude": 51.613238,
+        "longitude": -0.177279
+      },
+      {
+        "latitude": 51.613217,
+        "longitude": -0.177206
+      },
+      {
+        "latitude": 51.613197,
+        "longitude": -0.177101
+      },
+      {
+        "latitude": 51.613149,
+        "longitude": -0.176855
+      },
+      {
+        "latitude": 51.613142,
+        "longitude": -0.176806
+      }
+    ],
+    "stops": [
+      {
+        "id": "tally-ho",
+        "title": "Tally Ho Corner",
+        "routeIndex": 7,
+        "standing": {
+          "longitude": -0.1766871,
+          "latitude": 51.6141189
+        },
+        "landmark": {
+          "longitude": -0.17672,
+          "latitude": 51.6141
+        },
+        "approach": "From the artsdepot / bus station area, follow the pavement north along Ballards Lane to Tally Ho Corner.",
+        "viewpoint": "Use the public pavement at Tally Ho Corner, near the junction of High Road and Ballards Lane. Keep the pedestrian crossing clear.",
+        "access": "Exterior street stop. No pub entry needed."
+      },
+      {
+        "id": "grand-arcade",
+        "title": "Grand Arcade",
+        "routeIndex": 10,
+        "standing": {
+          "longitude": -0.1769498,
+          "latitude": 51.6134494
+        },
+        "landmark": {
+          "longitude": -0.17648,
+          "latitude": 51.61345
+        },
+        "approach": "Follow Ballards Lane south from Tally Ho towards artsdepot; find the Arcade entrance before Nether Street.",
+        "viewpoint": "Look into the Grand Arcade from its Ballards Lane street entrance. You do not need to enter the passage.",
+        "access": "Use the public street entrance. If the passage is open, a look inside is optional; the planned onward walk stays outside."
+      },
+      {
+        "id": "torrington",
+        "title": "The Torrington site",
+        "routeIndex": 33,
+        "standing": {
+          "longitude": -0.1768879,
+          "latitude": 51.6164799
+        },
+        "landmark": {
+          "longitude": -0.17702,
+          "latitude": 51.61642
+        },
+        "approach": "Follow the High Road north to Lodge Lane and the former pub corner.",
+        "viewpoint": "The former Torrington pub site is at the Lodge Lane / High Road corner, historically 811 High Road. Use the public pavement; no interior visit is needed.",
+        "access": "Exterior story about a former venue. Current shop/occupancy is not part of the directions."
+      },
+      {
+        "id": "trinity",
+        "title": "Trinity Church",
+        "routeIndex": 56,
+        "standing": {
+          "longitude": -0.1785888,
+          "latitude": 51.6135386
+        },
+        "landmark": {
+          "longitude": -0.17857,
+          "latitude": 51.61355
+        },
+        "approach": "Follow Nether Street away from Ballards Lane to Trinity Church.",
+        "viewpoint": "View Trinity Church from the Nether Street pavement, without blocking the entrance.",
+        "access": "Exterior only; no rehearsal or church opening is promised."
+      },
+      {
+        "id": "artsdepot",
+        "title": "Gaumont to artsdepot",
+        "routeIndex": 63,
+        "standing": {
+          "longitude": -0.1768546,
+          "latitude": 51.613149
+        },
+        "landmark": {
+          "longitude": -0.17684,
+          "latitude": 51.61305
+        },
+        "approach": "Follow Ballards Lane towards the town centre and turn into Nether Street beside artsdepot.",
+        "viewpoint": "Finish outside artsdepot by Nether Street and the bus station area. Stay in pedestrian space, clear of bus access.",
+        "access": "Exterior finish; no performance ticket or building access required."
+      }
+    ],
+    "narration": {
+      "description": "5 stops · about 1.16 km · allow 27–32 minutes, plus optional feedback.",
+      "introduction": "Begin on the public pavement at Tally Ho Corner, a short walk north along Ballards Lane from North Finchley bus station / artsdepot. Start the tour there. Both walks finish outside artsdepot. Use the numbered map and street-name directions; the line is approximate and can follow road centres, so remain on pavements and use pedestrian crossings. No indoor visits are required.",
+      "finishInstructions": "Finish by artsdepot, beside the North Finchley bus station area. Tap End tour to stop location tracking. A useful final note is whether the walk was worth the time and one change you would make.",
+      "reviewNote": "First personal review version. Choose Review after any story to save optional scores and a voice note; close it and Resume when ready. Allow roughly 45–60 seconds per review. If a view is blocked or an arrival misses, use manual Play or Skip. Current views and the walking experience are for your first-use feedback.",
+      "rightsNote": "Original narration prepared for Sidi’s private tour review; rendered locally with the installed macOS Daniel voice at 145 words per minute. No music, source recordings or photographs copied. Map data © OpenStreetMap contributors (ODbL); Protomaps / Natural Earth and Noto font credits are available on the map. Public source links and paragraph evidence are stored with each transcript. Redistribution/voice rights have not been cleared for publication.",
+      "stories": [
+        {
+          "id": "tally-ho",
+          "title": "A junction with a shorter address",
+          "transcript": "Tally Ho Corner grew out of two roads meeting. Ballards Lane was a medieval road, but for centuries it stopped short of the High Road. The connection came in 1756, when the lane was extended to join what was then the Great North Road. North Finchley had become a junction on the road out of London.\n\nIn the following century, a new toll road from Marylebone joined this route through Ballards Lane. Long-distance travellers needed more than a road: their coaches needed fresh horses. Barnet's local history records sixteen horses kept near this corner by the Tally Ho Coach Company, ready for the Birmingham coach's first change.\n\nThat gives Tally Ho a coaching connection. But a Victorian cyclist offered a different account of the name, involving a friend with a postcard to write.\n\nWriting in 1880 as Le Voyageur, he described meeting that friend here for bicycle rides. They came by different roads, so this was a convenient rendezvous. Describing it every time was less convenient. His friend grew tired of writing “Junction of North and Finchley roads” and came up with Tally Ho Corner instead.\n\nAccording to the writer, cycling notices spread the name, and a local hotel put it above the door. His account doesn't settle who used it first. But it's a pleasingly practical contribution to local history: two people arranging a bicycle ride, and one of them deciding that their meeting place needed a shorter address.\n\nWhen you are ready, follow the Ballards Lane pavement south, back towards artsdepot. Grand Arcade is about seventy-five metres away, before Nether Street. Stop at its street entrance.",
+          "sources": [
+            {
+              "title": "From Long Lane to Dollis Valley: Points of Interest — Barry and Sue Blain, Finchley Society (15 August 2020)",
+              "url": "https://www.finchleysociety.org.uk/wp-content/uploads/2020/08/From-Long-Lane-to-Dollis-Valley-Points-of-Interest.pdf"
+            },
+            {
+              "title": "Tally Ho Corner and the High Road (Finchley N12) — Barnet Council",
+              "url": "https://www.barnet.gov.uk/libraries-old/local-studies-and-archives/pocket-histories/finchley-friern-barnet-and-totteridge-13"
+            },
+            {
+              "title": "Finchley’s Toll Gate — Lynn Radnedge, St Mary at Finchley (27 September 2024)",
+              "url": "https://stmaryatfinchley.org.uk/finchleys-toll-gate/"
+            },
+            {
+              "title": "Tally-ho! – The truth behind the name — North Finchley Town Centre, reproducing Le Voyageur, The Country Gentleman, 4 December 1880",
+              "url": "https://northfinchleytowncentre.co.uk/local-stories/story/tally-ho-the-truth-behind-the-name/"
+            },
+            {
+              "title": "OpenStreetMap public streets and paths; saved Valhalla pedestrian responses, reviewed 17 September 2026",
+              "url": "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+            }
+          ],
+          "directions": [
+            "When you are ready, follow the Ballards Lane pavement south, back towards artsdepot. Grand Arcade is about seventy-five metres away, before Nether Street. Stop at its street entrance."
+          ],
+          "evidence": [
+            {
+              "paragraph": "Tally Ho Corner grew out of two roads meeting. Ballards Lane was a medieval road, but for centuries it stopped short of the High Road. The connection came in 1756, when the lane was extended to join what was then the Great North Road. North Finchley had become a junction on the road out of London.",
+              "kind": "source_checked",
+              "basis": "Blain and Blain, printed page 2, Ballards Lane section: medieval road and 1756 raised connection; minimal excerpt: “important medieval thoroughfare”. Council pocket history paragraph 2 corroborates extension. Council text checked through search index on 17 September 2026; direct access returned 403. No Roman origin or specific medieval construction date claimed.",
+              "sourceUrls": [
+                "https://www.finchleysociety.org.uk/wp-content/uploads/2020/08/From-Long-Lane-to-Dollis-Valley-Points-of-Interest.pdf",
+                "https://www.barnet.gov.uk/libraries-old/local-studies-and-archives/pocket-histories/finchley-friern-barnet-and-totteridge-13"
+              ]
+            },
+            {
+              "paragraph": "In the following century, a new toll road from Marylebone joined this route through Ballards Lane. Long-distance travellers needed more than a road: their coaches needed fresh horses. Barnet's local history records sixteen horses kept near this corner by the Tally Ho Coach Company, ready for the Birmingham coach's first change.",
+              "kind": "source_checked",
+              "basis": "Radnedge, opening historical paragraphs, connects Marylebone and Finchley through Ballards Lane. Council pocket history paragraph 2 supports attributed company, sixteen horses and Birmingham first change; minimal excerpt: “kept 16 horses near the corner”. Exact stable, inn, coach location and first naming remain unsettled; no such identification is asserted.",
+              "sourceUrls": [
+                "https://stmaryatfinchley.org.uk/finchleys-toll-gate/",
+                "https://www.barnet.gov.uk/libraries-old/local-studies-and-archives/pocket-histories/finchley-friern-barnet-and-totteridge-13"
+              ]
+            },
+            {
+              "paragraph": "That gives Tally Ho a coaching connection. But a Victorian cyclist offered a different account of the name, involving a friend with a postcard to write.",
+              "kind": "source_checked",
+              "basis": "Town Centre page reproduces an account attributed to Le Voyageur, The Country Gentleman, 4 December 1880. The original newspaper issue was not independently inspected. This is an attributed competing account, not a settled etymology.",
+              "sourceUrls": [
+                "https://northfinchleytowncentre.co.uk/local-stories/story/tally-ho-the-truth-behind-the-name/"
+              ]
+            },
+            {
+              "paragraph": "Writing in 1880 as Le Voyageur, he described meeting that friend here for bicycle rides. They came by different roads, so this was a convenient rendezvous. Describing it every time was less convenient. His friend grew tired of writing “Junction of North and Finchley roads” and came up with Tally Ho Corner instead.",
+              "kind": "source_checked",
+              "basis": "Reproduced account, paragraphs describing friend P., postcards and rendezvous. The six-word junction description is the narration’s only quotation. Publication date is 1880; no claim that this independently establishes the name’s first use.",
+              "sourceUrls": [
+                "https://northfinchleytowncentre.co.uk/local-stories/story/tally-ho-the-truth-behind-the-name/"
+              ]
+            },
+            {
+              "paragraph": "According to the writer, cycling notices spread the name, and a local hotel put it above the door. His account doesn't settle who used it first. But it's a pleasingly practical contribution to local history: two people arranging a bicycle ride, and one of them deciding that their meeting place needed a shorter address.",
+              "kind": "source_checked",
+              "basis": "Reproduced account, closing paragraphs on bicycle-club fixtures and hotel inscription. Final appreciation is original editorial response to the attributed anecdote; no current hotel identification or proven naming priority.",
+              "sourceUrls": [
+                "https://northfinchleytowncentre.co.uk/local-stories/story/tally-ho-the-truth-behind-the-name/"
+              ]
+            },
+            {
+              "paragraph": "When you are ready, follow the Ballards Lane pavement south, back towards artsdepot. Grand Arcade is about seventy-five metres away, before Nether Street. Stop at its street entrance.",
+              "kind": "source_checked",
+              "basis": "Desk navigation from public OpenStreetMap streets and docs/content/routes/north-finchley-review-v2/A-exterior-response.json, reviewed 2026-09-17. Approximate exterior positions; no current field sightline/access claim.",
+              "sourceUrls": [
+                "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+              ]
+            }
+          ],
+          "audio": {
+            "key": "north-finchley-a-tally-ho",
+            "bytes": 903337,
+            "md5": "3f661fc1206a60f012f276ff834ff76d",
+            "durationSeconds": 105.053923
+          }
+        },
+        {
+          "id": "grand-arcade",
+          "title": "Guitar strings in the Grand Arcade",
+          "transcript": "The Grand Arcade belongs to the North Finchley of the 1930s: a covered shopping passage, with a name that promises a little more ceremony than an ordinary row of shops. Its Art Deco design gave everyday errands a setting of their own, tucked away from the main street.\n\nOne of those errands was buying guitar strings. Dave Davies, who grew up in Muswell Hill and became the Kinks’ guitarist, remembered coming to the arcade’s music shop as a teenager. Before a guitar becomes part of a famous band’s sound, it still needs the small, unglamorous things a shop can supply.\n\nYears later, Davies supported a campaign to secure recognition for the arcade. Local campaigner Ian Dunn helped lead that effort, and in 2022 the arcade was added to Barnet’s local heritage list. That recognition recorded the value people placed on a building woven into their ordinary lives.\n\nThere is something appealing about that kind of attachment. A grand name gets you through the entrance; buying something small, returning for it, and remembering the shopkeeper can make a place your own.\n\nFor the next story, return north along Ballards Lane towards Tally Ho, then continue along the High Road to Lodge Lane. The former Torrington pub stood at that corner, historically number 811 High Road. Use the pedestrian crossings where needed and stop clear of the junction.",
+          "sources": [
+            {
+              "title": "The Grand Arcade added to heritage list after successful campaign — Simon Allin, Barnet Post (19 December 2022)",
+              "url": "https://barnetpost.co.uk/2022/12/19/the-grand-arcade-added-to-heritage-list-after-successful-campaign/"
+            },
+            {
+              "title": "OpenStreetMap public streets and paths; saved Valhalla pedestrian responses, reviewed 17 September 2026",
+              "url": "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+            }
+          ],
+          "directions": [
+            "For the next story, return north along Ballards Lane towards Tally Ho, then continue along the High Road to Lodge Lane. The former Torrington pub stood at that corner, historically number 811 High Road. Use the pedestrian crossings where needed and stop clear of the junction."
+          ],
+          "evidence": [
+            {
+              "paragraph": "The Grand Arcade belongs to the North Finchley of the 1930s: a covered shopping passage, with a name that promises a little more ceremony than an ordinary row of shops. Its Art Deco design gave everyday errands a setting of their own, tucked away from the main street.",
+              "kind": "source_checked",
+              "basis": "Barnet Post, 19 December 2022, opening paragraphs identify the 1930s Art Deco shopping arcade. The ceremony of its name is original interpretation. Written for the public Ballards Lane entrance, without assuming the passage is open or the listener has entered.",
+              "sourceUrls": [
+                "https://barnetpost.co.uk/2022/12/19/the-grand-arcade-added-to-heritage-list-after-successful-campaign/"
+              ]
+            },
+            {
+              "paragraph": "One of those errands was buying guitar strings. Dave Davies, who grew up in Muswell Hill and became the Kinks’ guitarist, remembered coming to the arcade’s music shop as a teenager. Before a guitar becomes part of a famous band’s sound, it still needs the small, unglamorous things a shop can supply.",
+              "kind": "source_checked",
+              "basis": "Barnet Post, paragraphs on Dave Davies’s childhood visits and guitar-string purchases. Minimal excerpt: “bought guitar strings”. The closing observation is editorial; no claim that a particular recording used these strings.",
+              "sourceUrls": [
+                "https://barnetpost.co.uk/2022/12/19/the-grand-arcade-added-to-heritage-list-after-successful-campaign/"
+              ]
+            },
+            {
+              "paragraph": "Years later, Davies supported a campaign to secure recognition for the arcade. Local campaigner Ian Dunn helped lead that effort, and in 2022 the arcade was added to Barnet’s local heritage list. That recognition recorded the value people placed on a building woven into their ordinary lives.",
+              "kind": "source_checked",
+              "basis": "Barnet Post, campaign and listing outcome paragraphs; Davies backed the campaign, while Ian Dunn spearheaded it. Describes the historical 2022 decision, without promising permanent protection or present planning status.",
+              "sourceUrls": [
+                "https://barnetpost.co.uk/2022/12/19/the-grand-arcade-added-to-heritage-list-after-successful-campaign/"
+              ]
+            },
+            {
+              "paragraph": "There is something appealing about that kind of attachment. A grand name gets you through the entrance; buying something small, returning for it, and remembering the shopkeeper can make a place your own.",
+              "kind": "editorial",
+              "basis": "Original reflection on habitual shopping and attachment. The shopkeeper is a generic illustration, not an invented recollection attributed to Davies or Dunn.",
+              "sourceUrls": []
+            },
+            {
+              "paragraph": "For the next story, return north along Ballards Lane towards Tally Ho, then continue along the High Road to Lodge Lane. The former Torrington pub stood at that corner, historically number 811 High Road. Use the pedestrian crossings where needed and stop clear of the junction.",
+              "kind": "source_checked",
+              "basis": "Desk navigation from public OpenStreetMap streets and docs/content/routes/north-finchley-review-v2/A-exterior-response.json, reviewed 2026-09-17. Approximate exterior positions; no current field sightline/access claim.",
+              "sourceUrls": [
+                "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+              ]
+            }
+          ],
+          "audio": {
+            "key": "north-finchley-a-grand-arcade",
+            "bytes": 759515,
+            "md5": "57efe82de9b82a7d73800c82d88c59e5",
+            "durationSeconds": 87.944308
+          }
+        },
+        {
+          "id": "torrington",
+          "title": "Eighty pence at the Torrington",
+          "transcript": "This corner once had its own live-music address: the Torrington pub, at Lodge Lane and the High Road. It was rebuilt in 1962 and closed in 2004. A concert advertisement preserved by the local history society gives us a much closer view than those dates do.\n\nIn June 1977, the bill advertised John Otway and Wild Willy Barrett for a Sunday night. Doors opened at a quarter past eight, and admission was eighty pence. The following Sunday had another act on the bill. This was a place where live music could be a regular part of the week.\n\nPicture the scale of a pub gig: instruments close enough to see hands working, glasses being set down, conversations overlapping while the musicians get ready. Then the first amplified notes change the room. The people who came in separately become, for a while, an audience. That is an imagined scene, but the modest Sunday-night advertisement gives it a very ordinary, local footing.\n\nThe Torrington’s story is often told through the names of musicians associated with it. This little advert offers another way in: an address nearby, a start time, and the possibility of hearing something live before Monday came round. For the price of admission, an ordinary evening could acquire a soundtrack.\n\nNow retrace the High Road south towards Tally Ho and continue along Ballards Lane. Turn into Nether Street beside artsdepot, away from the main road. Trinity Church is a short walk along Nether Street.",
+          "sources": [
+            {
+              "title": "Farewell to the Torrington — David Berguer, Friern Barnet Newsletter, No. 19 (December 2004), page 1",
+              "url": "https://www.friern-barnethistory.org.uk/userfiles/file/Newsletters/2000-2009/2004/No-19-Dec-2004.pdf"
+            },
+            {
+              "title": "Pubs, Inns, and Alehouses — Hugh Petrie, North Finchley Town Centre",
+              "url": "https://northfinchleytowncentre.co.uk/local-stories/story/pubs-inns-and-alehouses/"
+            },
+            {
+              "title": "OpenStreetMap public streets and paths; saved Valhalla pedestrian responses, reviewed 17 September 2026",
+              "url": "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+            }
+          ],
+          "directions": [
+            "Now retrace the High Road south towards Tally Ho and continue along Ballards Lane. Turn into Nether Street beside artsdepot, away from the main road. Trinity Church is a short walk along Nether Street."
+          ],
+          "evidence": [
+            {
+              "paragraph": "This corner once had its own live-music address: the Torrington pub, at Lodge Lane and the High Road. It was rebuilt in 1962 and closed in 2004. A concert advertisement preserved by the local history society gives us a much closer view than those dates do.",
+              "kind": "source_checked",
+              "basis": "Berguer, Farewell to the Torrington, newsletter page 1: location, 1962 building and October 2004 closure; also corroborated by Petrie, Torrington paragraph. Newsletter page inspected through indexed PDF text after direct web retrieval failed.",
+              "sourceUrls": [
+                "https://www.friern-barnethistory.org.uk/userfiles/file/Newsletters/2000-2009/2004/No-19-Dec-2004.pdf",
+                "https://northfinchleytowncentre.co.uk/local-stories/story/pubs-inns-and-alehouses/"
+              ]
+            },
+            {
+              "paragraph": "In June 1977, the bill advertised John Otway and Wild Willy Barrett for a Sunday night. Doors opened at a quarter past eight, and admission was eighty pence. The following Sunday had another act on the bill. This was a place where live music could be a regular part of the week.",
+              "kind": "source_checked",
+              "basis": "Newsletter page 1 reproduces the 1977 Torrington Music advertisement, 19 June and 26 June listings, 8.15 opening and admission. Minimal excerpt: “Admission 80p”. Barrett’s surname is normalised from the advert’s “BARRAT”. These are advertised arrangements; actual performance and attendance were not independently established. Final sentence is cautious interpretation of consecutive listings.",
+              "sourceUrls": [
+                "https://www.friern-barnethistory.org.uk/userfiles/file/Newsletters/2000-2009/2004/No-19-Dec-2004.pdf"
+              ]
+            },
+            {
+              "paragraph": "Picture the scale of a pub gig: instruments close enough to see hands working, glasses being set down, conversations overlapping while the musicians get ready. Then the first amplified notes change the room. The people who came in separately become, for a while, an audience. That is an imagined scene, but the modest Sunday-night advertisement gives it a very ordinary, local footing.",
+              "kind": "supported_reconstruction",
+              "basis": "Supported reconstruction of the kind of pub performance advertised, not a witnessed account of the 19 June gig. Sensory detail supplies a plausible atmosphere; no named musician’s action, performed song, specific incident, crowd size or room layout is invented.",
+              "sourceUrls": [
+                "https://www.friern-barnethistory.org.uk/userfiles/file/Newsletters/2000-2009/2004/No-19-Dec-2004.pdf"
+              ]
+            },
+            {
+              "paragraph": "The Torrington’s story is often told through the names of musicians associated with it. This little advert offers another way in: an address nearby, a start time, and the possibility of hearing something live before Monday came round. For the price of admission, an ordinary evening could acquire a soundtrack.",
+              "kind": "editorial",
+              "basis": "Original interpretation of the advert’s local, repeatable invitation. The paragraph deliberately avoids an unverified celebrity appearance list and does not claim that all attendees lived nearby.",
+              "sourceUrls": [
+                "https://www.friern-barnethistory.org.uk/userfiles/file/Newsletters/2000-2009/2004/No-19-Dec-2004.pdf"
+              ]
+            },
+            {
+              "paragraph": "Now retrace the High Road south towards Tally Ho and continue along Ballards Lane. Turn into Nether Street beside artsdepot, away from the main road. Trinity Church is a short walk along Nether Street.",
+              "kind": "source_checked",
+              "basis": "Desk navigation from public OpenStreetMap streets and docs/content/routes/north-finchley-review-v2/A-exterior-response.json, reviewed 2026-09-17. Approximate exterior positions; no current field sightline/access claim.",
+              "sourceUrls": [
+                "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+              ]
+            }
+          ],
+          "audio": {
+            "key": "north-finchley-a-torrington",
+            "bytes": 825346,
+            "md5": "eddf6997ae1cfa7696cc3d82a259a7ab",
+            "durationSeconds": 96.036236
+          }
+        },
+        {
+          "id": "trinity",
+          "title": "The work behind the concert",
+          "transcript": "Trinity Church is also a place where an orchestra gets its music ready. Finchley Symphony Orchestra uses it for rehearsals and concerts. The players are non-professional, but their repertoire is ambitious, reaching from Beethoven to less familiar composers such as Leokadiya Kashperova.\n\nTheir own account of rehearsal life makes room for something less grand: tea, cake and a chat. There is a weekly rhythm to this kind of music-making, with the social break sitting comfortably beside the difficult score.\n\nWe can picture a rehearsal rather than a performance: a phrase tried again, a pencil lifted to mark the page, a player waiting while another section works through its part. Gradually, separate efforts begin to fit together. None of that requires a concert audience, though it is what eventually makes the concert possible.\n\nFrom the pavement, the building keeps that weekly work to itself. It is a useful addition to the street’s soundscape, even on a day when all we hear here is passing traffic.\n\nFor the final story, follow Nether Street back towards Ballards Lane and artsdepot. Stop outside the arts centre, clear of the bus station access.",
+          "sources": [
+            {
+              "title": "About Us — Finchley Symphony Orchestra",
+              "url": "https://www.finchleysymphony.org/about/"
+            },
+            {
+              "title": "Contact Us — Finchley Symphony Orchestra",
+              "url": "https://www.finchleysymphony.org/contact/"
+            },
+            {
+              "title": "OpenStreetMap public streets and paths; saved Valhalla pedestrian responses, reviewed 17 September 2026",
+              "url": "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+            }
+          ],
+          "directions": [
+            "For the final story, follow Nether Street back towards Ballards Lane and artsdepot. Stop outside the arts centre, clear of the bus station access."
+          ],
+          "evidence": [
+            {
+              "paragraph": "Trinity Church is also a place where an orchestra gets its music ready. Finchley Symphony Orchestra uses it for rehearsals and concerts. The players are non-professional, but their repertoire is ambitious, reaching from Beethoven to less familiar composers such as Leokadiya Kashperova.",
+              "kind": "source_checked",
+              "basis": "Finchley Symphony Orchestra Contact Us identifies Trinity Church as normal concert and rehearsal venue; About Us identifies non-professional players and performed repertoire including Beethoven and Kashperova’s Symphony in B minor. Current published description checked 17 September 2026; no event promised during the walk.",
+              "sourceUrls": [
+                "https://www.finchleysymphony.org/about/",
+                "https://www.finchleysymphony.org/contact/"
+              ]
+            },
+            {
+              "paragraph": "Their own account of rehearsal life makes room for something less grand: tea, cake and a chat. There is a weekly rhythm to this kind of music-making, with the social break sitting comfortably beside the difficult score.",
+              "kind": "source_checked",
+              "basis": "About Us, rehearsal paragraph, explicitly describes weekly rehearsals and tea, cake and conversation. Minimal excerpt: “tea and cake”. The contrast in scale is original interpretation, not a claim about a specific rehearsal.",
+              "sourceUrls": [
+                "https://www.finchleysymphony.org/about/"
+              ]
+            },
+            {
+              "paragraph": "We can picture a rehearsal rather than a performance: a phrase tried again, a pencil lifted to mark the page, a player waiting while another section works through its part. Gradually, separate efforts begin to fit together. None of that requires a concert audience, though it is what eventually makes the concert possible.",
+              "kind": "supported_reconstruction",
+              "basis": "Generic supported reconstruction of orchestral rehearsal work, grounded in the orchestra’s published rehearsal practice. No claim that music is currently audible, that the listener can see inside, or that these actions were witnessed at Trinity.",
+              "sourceUrls": [
+                "https://www.finchleysymphony.org/about/"
+              ]
+            },
+            {
+              "paragraph": "From the pavement, the building keeps that weekly work to itself. It is a useful addition to the street’s soundscape, even on a day when all we hear here is passing traffic.",
+              "kind": "editorial",
+              "basis": "Original exterior-focused closing. Soundscape is an interpretation of the documented musical use, not a claim of live sound during this visit.",
+              "sourceUrls": [
+                "https://www.finchleysymphony.org/contact/"
+              ]
+            },
+            {
+              "paragraph": "For the final story, follow Nether Street back towards Ballards Lane and artsdepot. Stop outside the arts centre, clear of the bus station access.",
+              "kind": "source_checked",
+              "basis": "Desk navigation from public OpenStreetMap streets and docs/content/routes/north-finchley-review-v2/A-exterior-response.json, reviewed 2026-09-17. Approximate exterior positions; no current field sightline/access claim.",
+              "sourceUrls": [
+                "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+              ]
+            }
+          ],
+          "audio": {
+            "key": "north-finchley-a-trinity",
+            "bytes": 637554,
+            "md5": "ba4fe3ac7be5bf211156cf92e84ecbbd",
+            "durationSeconds": 74.473016
+          }
+        },
+        {
+          "id": "artsdepot",
+          "title": "An audience at Tally Ho",
+          "transcript": "Before artsdepot, this part of Tally Ho had a Gaumont cinema. It opened in 1937, with a rounded brick tower and a large carved panel showing a film being made: actors, a director, lights and a camera. The building advertised the magic of cinema by showing some of the work behind it.\n\nPicture an evening there: the street left behind, rows of seats spreading out beneath an elaborate ceiling, warm wooden panelling along the lower walls. Conversation drifts across the auditorium. Then the lights fall, the screen brightens, and everyone’s attention turns in the same direction. A journey to somewhere else begins a short walk from home.\n\nThe cinema closed in 1980 and was demolished in 1987. But the later arts centre was something local people actively asked for. artsdepot traces its beginnings to a 1996 community conference where residents called for a place for the arts. Public meetings and council backing helped turn that request into a project that could be built.\n\nIt took persistence. When a proposal emerged to turn the planned venue into a library, campaigners protested. The centre’s own history recalls masks, banners and a performance by Madness at the rally. The arts plan survived, and artsdepot opened in 2004.\n\nIt is an apt place to finish: at a venue that needed its audience before it could open its doors. People first had to make the case for having it here. The performances could follow.\n\nThis is the end of the walk, back by North Finchley bus station. Choose End tour to stop location tracking. There is no need to enter the arts centre.",
+          "sources": [
+            {
+              "title": "Gaumont Finchley — Ken Roe, Cinema Treasures",
+              "url": "https://cinematreasures.org/theaters/29620"
+            },
+            {
+              "title": "Timeline — artsdepot’s history in context",
+              "url": "https://www.artsdepot.co.uk/timeline/"
+            },
+            {
+              "title": "OpenStreetMap public streets and paths; saved Valhalla pedestrian responses, reviewed 17 September 2026",
+              "url": "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+            }
+          ],
+          "directions": [
+            "This is the end of the walk, back by North Finchley bus station. Choose End tour to stop location tracking. There is no need to enter the arts centre."
+          ],
+          "evidence": [
+            {
+              "paragraph": "Before artsdepot, this part of Tally Ho had a Gaumont cinema. It opened in 1937, with a rounded brick tower and a large carved panel showing a film being made: actors, a director, lights and a camera. The building advertised the magic of cinema by showing some of the work behind it.",
+              "kind": "source_checked",
+              "basis": "Ken Roe, Cinema Treasures, historical description: 1937 opening, semicircular brick tower and Newbury A. Trent’s Portland-stone film-making relief. artsdepot timeline, 1937–1987 section, corroborates cinema and sculptor. Last sentence is editorial interpretation. No seat count, surviving panel or exact former entrance alignment is claimed.",
+              "sourceUrls": [
+                "https://cinematreasures.org/theaters/29620",
+                "https://www.artsdepot.co.uk/timeline/"
+              ]
+            },
+            {
+              "paragraph": "Picture an evening there: the street left behind, rows of seats spreading out beneath an elaborate ceiling, warm wooden panelling along the lower walls. Conversation drifts across the auditorium. Then the lights fall, the screen brightens, and everyone’s attention turns in the same direction. A journey to somewhere else begins a short walk from home.",
+              "kind": "supported_reconstruction",
+              "basis": "Supported reconstruction framed as an imagined cinema evening. Roe describes a wide auditorium, mahogany lower-wall panelling and elaborate ceiling light fittings. Conversation, dimming and projection are ordinary cinema atmosphere, not a witnessed screening. No unseen interior is described as currently visible.",
+              "sourceUrls": [
+                "https://cinematreasures.org/theaters/29620"
+              ]
+            },
+            {
+              "paragraph": "The cinema closed in 1980 and was demolished in 1987. But the later arts centre was something local people actively asked for. artsdepot traces its beginnings to a 1996 community conference where residents called for a place for the arts. Public meetings and council backing helped turn that request into a project that could be built.",
+              "kind": "source_checked",
+              "basis": "artsdepot timeline, 1937–1987 and 1996–1999 sections: last film 1980, demolition 1987 and Barnet 2000 conference in 1996. Roe corroborates closure and demolition. Does not suggest unbroken entertainment use between buildings. Timeline’s 1996–1999 section also records the public meeting and council backing.",
+              "sourceUrls": [
+                "https://www.artsdepot.co.uk/timeline/",
+                "https://cinematreasures.org/theaters/29620"
+              ]
+            },
+            {
+              "paragraph": "It took persistence. When a proposal emerged to turn the planned venue into a library, campaigners protested. The centre’s own history recalls masks, banners and a performance by Madness at the rally. The arts plan survived, and artsdepot opened in 2004.",
+              "kind": "source_checked",
+              "basis": "artsdepot timeline, 2002 and 2004 sections: library proposal, protest with masks and banners, Madness performance, council reversal and opening. Minimal excerpt: “Madness”. Rally details explicitly attributed to institution’s own account; no independent concert record inspected.",
+              "sourceUrls": [
+                "https://www.artsdepot.co.uk/timeline/"
+              ]
+            },
+            {
+              "paragraph": "It is an apt place to finish: at a venue that needed its audience before it could open its doors. People first had to make the case for having it here. The performances could follow.",
+              "kind": "editorial",
+              "basis": "Original closing interpretation of the documented community campaign, suitable to both tour variants. No event or interior access is promised.",
+              "sourceUrls": [
+                "https://www.artsdepot.co.uk/timeline/"
+              ]
+            },
+            {
+              "paragraph": "This is the end of the walk, back by North Finchley bus station. Choose End tour to stop location tracking. There is no need to enter the arts centre.",
+              "kind": "source_checked",
+              "basis": "Desk navigation from public OpenStreetMap streets and docs/content/routes/north-finchley-review-v2/A-exterior-response.json, reviewed 2026-09-17. Approximate exterior positions; no current field sightline/access claim.",
+              "sourceUrls": [
+                "https://www.openstreetmap.org/#map=17/51.6133/-0.1800"
+              ]
+            }
+          ],
+          "audio": {
+            "key": "north-finchley-a-artsdepot",
+            "bytes": 903812,
+            "md5": "c3a8f2d0ae5bbbabbf22375f5dcec226",
+            "durationSeconds": 105.211066
+          }
+        }
+      ],
+      "chapters": []
+    }
+  },
+  "assets": [
+    {
+      "key": "north-finchley-a-tally-ho",
+      "base64": "[audio is in the companion import package]"
+    },
+    {
+      "key": "north-finchley-a-grand-arcade",
+      "base64": "[audio is in the companion import package]"
+    },
+    {
+      "key": "north-finchley-a-torrington",
+      "base64": "[audio is in the companion import package]"
+    },
+    {
+      "key": "north-finchley-a-trinity",
+      "base64": "[audio is in the companion import package]"
+    },
+    {
+      "key": "north-finchley-a-artsdepot",
+      "base64": "[audio is in the companion import package]"
+    }
+  ]
+}

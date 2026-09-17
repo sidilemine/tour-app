@@ -1,6 +1,6 @@
 # Architecture
 
-Status: updated 15 September 2026. M1 complete on the tested Pixel 6 / Android 17; see [final acceptance](docs/test-results/M1-closure.md) and the linked field records for build/condition limits. [PRODUCT.md](PRODUCT.md) defines the experience; [ROADMAP.md](ROADMAP.md) defines the evidence required before advancing. The owner's revisions override the original brief's mixed state machine, numerical claim-confidence examples, lifecycle milestone ordering and early backend/knowledge-base recommendations.
+Status: updated 17 September 2026. M1 complete on the tested Pixel 6 / Android 17; see [final acceptance](docs/test-results/M1-closure.md) and the linked field records for build/condition limits. [PRODUCT.md](PRODUCT.md) defines the experience; [ROADMAP.md](ROADMAP.md) defines the evidence required before advancing. The owner's revisions override the original brief's mixed state machine, numerical claim-confidence examples, lifecycle milestone ordering and early backend/knowledge-base recommendations.
 
 Testing policy updated 16 September: apply the [personal-use policy](AGENTS.md#testing-policy-for-the-personal-prototype) to verification and hardening. Preserve the behavioral design below, reuse accepted evidence and target material gaps. Rare recoverable issues can be deferred to normal-use feedback; lists of possible scenarios do not mandate separate physical tests or speculative implementation.
 
@@ -31,7 +31,10 @@ src/export/              JSON snapshots, naming and platform save/share adapters
 src/testing/             bundled offline guide, independent journal and guide screen
 fixtures/                synthetic or approved sanitized tours/traces
 assets/                  small owned test media
-tools/content/           Node-only package preflight; no mobile importer yet
+tools/content/           Historical editorial package preflight
+src/tours/               Bounded area-specific transport import and tour home
+src/feedback/            Independent private reviews and foreground voice capture
+content/north-finchley/  Authored A/B review packages and paragraph evidence
 content/finchley/         public-source editorial and listening drafts
 docs/test-results/       sanitized build/device result summaries
 diagnostics/             ignored private raw device exports
@@ -238,3 +241,9 @@ On Android, the existing [Expo legacy FileSystem StorageAccessFramework](https:/
 The timing fixture uses the existing path/standing positions and optional `audioProfile: "edge-long-a"`. Guide revision 4 introduced a local 6:21 speech asset; the [owner-requested guide 5 update](docs/test-results/M1-shorter-long-A.md) shortened it to 3:30 and changed the durable cache filename from `edge-a-v1` to `edge-a-v2`. B/C and normal A remain unchanged. Original fixtures omit the optional field; edge copies have separate IDs and archived progress. Start a new walk rather than restoring an old long-A offset after the asset change. Explicit cache filenames prevent long audio from contaminating standard clips. No looping, silent keepalive, trigger-policy or native change was introduced.
 
 The [final timing walk passed](docs/test-results/M1-final-outdoor-report.md): pending B remained held while A spoke and began 115 ms after natural completion with a fresh fix at B. Battery Saver was enabled for that walk and for the separate accepted full standard-clip offline/locked walk. The planned outdoor batch and connected lifecycle/interruption checks are complete. Guide 6 retains the procedures for reference; the final app source is `75fd0c0718dda379`. These observations do not establish universal GPS or battery behavior.
+
+## M2 authored-tour implementation, 17 September
+
+The [player implementation record](docs/content/M2-PLAYER-IMPLEMENTATION.md) describes the actual package transport, atomic catalogue/version switching, variable stops and separate chapter progress, recording/hold boundary, verified voice-copy export and limits. The generic cue-preemption policy above is a retained design direction, not implemented behaviour. These authored tours instead use spoken end-of-story directions and a measured launch window for the walking chapter. A specific missed-navigation problem would justify adding interruption/arbitration.
+
+The exact imported package JSON now contributes to build source identity; final APK verification inspects every embedded tour audio payload as well as native markers and map resources. The [build/device record](docs/test-results/M2-tour-build.md) distinguishes assembly/static verification from actual capture, audible playback and first walking observations. New native permission is explicit foreground `RECORD_AUDIO`; no background microphone service or cloud transcription was added.

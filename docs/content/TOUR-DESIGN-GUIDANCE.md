@@ -1,6 +1,6 @@
 # Walking tour design guidance
 
-Living editorial reference, revision 5, 17 September 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
+Living editorial reference, revision 6, 17 September 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
 
 **Our aim:** make an enjoyable, relaxing walk reveal the non-obvious stories and meaning beneath the surroundings, giving the listener a deeper connection to a place, whether new or familiar. Being there should contribute something that reading at home cannot.
 
@@ -144,7 +144,7 @@ The first two follow Sidi's comment; the fuller repertoire is an initial proposa
 
 ## Current experiments for the two-tour review
 
-- **Per-story ratings and voice feedback — now requested for the two-tour review.** Sidi wants a small number of dimensions rated out of ten and a voice note after each story while out. The [concrete proposal](NORTH-FINCHLEY-REVIEW-RESPONSE.md#a-small-review-after-each-story) uses interest, value of being here and storytelling, with an explicit local recording action and pause preserved until Resume. These dimensions are proposed, not a validated instrument. Implementation remains pending; an existing recorder is an interim fallback, not proof of an integrated review flow. Research-review comment 22 and tour-options comment 6.
+- **Per-story ratings and voice feedback — now requested for the two-tour review.** Sidi wants a small number of dimensions rated out of ten and a voice note after each story while out. The [concrete proposal](NORTH-FINCHLEY-REVIEW-RESPONSE.md#a-small-review-after-each-story) uses interest, value of being here and storytelling, with an explicit local recording action and pause preserved until Resume. These dimensions are proposed, not a validated instrument. The integrated local review is now implemented; [actual build/phone evidence](../test-results/M2-tour-build.md) remains separate from useful feedback during the tours. Research-review comment 22 and tour-options comment 6.
 - **Walking narration — one current experiment, broader use later.** Develop a 2–3-minute chapter on B's 3→4 leg, after leaving the meeting house. It should explain the area and prepare the villas story while leaving quiet. Record its own identity and feedback; never count it as another physical stop. Music and automatically filling all quiet remain future ideas. Tour-options comments 5 and 10.
 
 ## How to use this for the next draft
@@ -153,7 +153,7 @@ Start with the public-tour survey and catalogue. Then write one clear tour promi
 
 Sidi preferred the light tone of the [first North Finchley sample pair](NORTH-FINCHLEY-SAMPLE-STOPS.md), with firmer factual grounding. The memorial sample is retired. [Tally Ho revision 2](TALLY-HO-SAMPLE-V2.md) puts the road and coaching history before the postcard anecdote; the new wording and duration remain for review. Use the next useful contrast in subject or treatment rather than manufacturing a second solemn sample.
 
-Keep this guide current as preferences change. Future automation should use the same versioned editorial reference rather than accumulating inconsistent rules in separate prompts. This revision records the direction to develop both tours, the rejected detour and the requested chapter/review flow. It implements no app behavior and establishes no physical acceptance.
+Keep this guide current as preferences change. Future automation should use the same versioned editorial reference rather than accumulating inconsistent rules in separate prompts. This revision records the direction to develop both tours, the rejected detour and the requested chapter/review flow. Its editorial rules establish no physical acceptance; the [current player implementation](M2-PLAYER-IMPLEMENTATION.md) records the separate app work.
 
 ## Comment coverage and revision history
 
@@ -168,3 +168,5 @@ Revision 3 corrects the overly restrictive interpretation of imagined scenes aft
 Revision 4 applies all 11 tour-options comments: 0–1 retain Tally Ho/Arcade; 2 remove the Stanhope detour and consider passing/visual treatment; 3 variable central spacing; 4 prefer Gaumont; 5 walking chapter; 6 both tours and ratings/voice notes; 7 accept B’s duration; 8 distinguish technical economy from product duration; 9 narrative thread/contrast and Kinks lookup; 10 walking, social silence and optional future sound. It supersedes the over-applied short-tour/even-spacing assumptions while retaining evidence and safe-direction requirements.
 
 Revision 5 adds the owner-directed comprehensive public-tour survey as the first step for a new area and records reusable cataloguing as a planned capability. This changes the next Finchley task from full scripting to surveying and revisiting the existing outlines. The research and database implementation remain pending.
+
+Revision 6 records application of the survey to the authored A/B versions and the implemented local review flow. See [survey synthesis](survey/README.md) and [tour preparation](../../content/north-finchley/README.md). The new scripts, public-exterior placements and timing are candidates for actual owner enjoyment feedback; they are not elevated into proven general rules.

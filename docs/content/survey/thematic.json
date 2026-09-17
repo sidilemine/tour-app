@@ -1,0 +1,1000 @@
+{
+  "schema_version": 1,
+  "research_date": "2026-09-17",
+  "scope": "Specialist/thematic and public walking-blog/video tranche. Merge/deduplicate original URLs with other survey tranches. Not a complete area survey alone.",
+  "evidence_policy": "Published inclusion and advertised stories are discovery evidence. No route access, historical anecdote, quality or owner enjoyment is certified by inclusion. Null means unknown, not absent. Coordinates deliberately absent without checked provenance.",
+  "records": [
+    {
+      "id": "thematic-kinks-brit",
+      "title": "The Kinks Tour of North London",
+      "originator": "Brit Music Tours",
+      "url": "https://britmusictours.com/tour/the-kinks-north-london-walking-tour/",
+      "retrieved": "2026-09-17",
+      "area": "East Finchley/Muswell Hill/Hornsey comparator",
+      "kind": "guided tour",
+      "status": "public listing current",
+      "theme": "Band formation, family, songwriting and fame",
+      "stops": [
+        {
+          "name": "East Finchley station",
+          "sequence": 1,
+          "story": "Start",
+          "place_id": "east-finchley-station"
+        },
+        {
+          "name": "Ray and Rasa homes",
+          "sequence": 2,
+          "story": "Two successive homes; addresses unpublished",
+          "place_id": null
+        },
+        {
+          "name": "Davies childhood home",
+          "sequence": 3,
+          "story": "Family upbringing; address unpublished",
+          "place_id": null
+        },
+        {
+          "name": "Pub opposite childhood home",
+          "sequence": 4,
+          "story": "Provider calls this first gig; do not equate early Davies performance with formed band",
+          "place_id": null
+        },
+        {
+          "name": "Another local pub",
+          "sequence": 5,
+          "story": "Band hangout; unnamed",
+          "place_id": null
+        },
+        {
+          "name": "Fortismere School",
+          "sequence": 6,
+          "story": "Former William Grimshaw; teenage band connections",
+          "place_id": "fortismere-school"
+        },
+        {
+          "name": "Former dancehall",
+          "sequence": 7,
+          "story": "Come Dancing inspiration; unnamed",
+          "place_id": null
+        },
+        {
+          "name": "Nilsen-associated site",
+          "sequence": 8,
+          "story": "Crime diversion; unnamed",
+          "place_id": null
+        },
+        {
+          "name": "Davies sister home",
+          "sequence": 9,
+          "story": "Family story; unnamed",
+          "place_id": null
+        },
+        {
+          "name": "Konk Studios",
+          "sequence": 10,
+          "story": "End after bus connection",
+          "place_id": "konk-studios"
+        }
+      ],
+      "duration": "2 hours",
+      "distance": "approximately 2 miles",
+      "start": "East Finchley station",
+      "end": "Konk Studios",
+      "stop_list_completeness": "ordered public outline; addresses and intermediate itinerary incomplete",
+      "publication_date": null,
+      "notes": "Sequence follows provider description; not a verified route. Booking.com North Finchley title is a reseller location error, not a separate North Finchley itinerary."
+    },
+    {
+      "id": "thematic-kinks-londonwalks",
+      "title": "The Kinks in London",
+      "originator": "London Walks / Adam",
+      "url": "https://www.walks.com/our-walks/the-kinks-in-london/",
+      "retrieved": "2026-09-17",
+      "area": "N2/N10 comparator",
+      "kind": "guided tour",
+      "status": "2026/2027 dates advertised",
+      "theme": "Kinks, postwar background, influences and musical legacy",
+      "stops": [
+        {
+          "name": "East Finchley station",
+          "sequence": 1,
+          "story": "Meeting point",
+          "place_id": "east-finchley-station"
+        }
+      ],
+      "duration": "2 to 2.25 hours in displayed schedule",
+      "distance": null,
+      "start": "East Finchley station",
+      "end": null,
+      "stop_list_completeness": "meeting point only; venue/home/school/dancehall/park/cinema/pub categories unnamed",
+      "publication_date": null,
+      "notes": "Separately originated tour; do not import the Brit Music itinerary. Public preview names song subjects but gives no place-level story mapping."
+    },
+    {
+      "id": "thematic-kinks-map",
+      "title": "Big Black Smoke: Muswell Hill places",
+      "originator": "Big Black Smoke / Kast Off Kinks host",
+      "url": "https://london.kastoffkinks.co.uk/html/muswell.html",
+      "retrieved": "2026-09-17",
+      "area": "East Finchley/Muswell Hill/Hornsey comparator",
+      "kind": "self-guided place directory",
+      "status": "undated historical resource",
+      "theme": "Kinks locations and song associations",
+      "stops": [
+        {
+          "name": "Konk Studios",
+          "sequence": null,
+          "story": "Recording studio",
+          "place_id": "konk-studios"
+        },
+        {
+          "name": "The Lane Cafe",
+          "sequence": null,
+          "story": "Working Man’s Cafe album cover",
+          "place_id": null
+        },
+        {
+          "name": "Muswell Hill",
+          "sequence": null,
+          "story": "Band geography",
+          "place_id": null
+        },
+        {
+          "name": "6 Denmark Terrace",
+          "sequence": null,
+          "story": "Davies childhood home",
+          "place_id": null
+        },
+        {
+          "name": "Fortismere School",
+          "sequence": null,
+          "story": "William Grimshaw predecessor",
+          "place_id": "fortismere-school"
+        },
+        {
+          "name": "Clissold Arms",
+          "sequence": null,
+          "story": "Davies family pub and early performance",
+          "place_id": "clissold-arms"
+        },
+        {
+          "name": "St James primary school",
+          "sequence": null,
+          "story": "Separates current school from historical Fortis Green site",
+          "place_id": null
+        },
+        {
+          "name": "59 Steeds Road",
+          "sequence": null,
+          "story": "Pete Quaife family home",
+          "place_id": null
+        },
+        {
+          "name": "Athenaeum Place",
+          "sequence": null,
+          "story": "Former dancehall associated with Come Dancing",
+          "place_id": null
+        }
+      ],
+      "duration": null,
+      "distance": null,
+      "start": null,
+      "end": null,
+      "stop_list_completeness": "nine directory entries; not ordered walking itinerary",
+      "publication_date": null,
+      "notes": "Map directions and business details may be stale. Source is discovery evidence; anecdotes and exact historical locations need independent checks."
+    },
+    {
+      "id": "thematic-literary-2014",
+      "title": "A Literary Finchley Walk",
+      "originator": "Paul Baker / Finchley Literary Festival",
+      "url": "https://greenacrewriters.blogspot.com/2014/04/a-literary-finchley-walk.html",
+      "retrieved": "2026-09-17",
+      "area": "Finchley Central core",
+      "kind": "guided literary walk",
+      "status": "historical event 2014-05-30",
+      "theme": "Writers and Finchley",
+      "stops": [
+        {
+          "name": "Finchley Central station",
+          "sequence": 1,
+          "story": "Meeting point",
+          "place_id": "finchley-central-station"
+        }
+      ],
+      "duration": null,
+      "distance": null,
+      "start": "Finchley Central station",
+      "end": null,
+      "stop_list_completeness": "meeting point only; guide explicitly withheld authors",
+      "publication_date": "2014-04-18",
+      "notes": "Broad Barnet literary examples in the preview are not published stops. No inferred Dickens/Trollope/Thackeray route."
+    },
+    {
+      "id": "thematic-literary-2016",
+      "title": "Finchley in Fiction",
+      "originator": "Mike Gee and Rosie Canning / Finchley Literary Festival",
+      "url": "https://greenacrewriters.blogspot.com/2016/06/finchley-literary-festival.html",
+      "retrieved": "2026-09-17",
+      "area": "North Finchley/Woodside Park core",
+      "kind": "guided literary walk",
+      "status": "historical event 2016-06-26",
+      "theme": "Local literary references and readings",
+      "stops": [
+        {
+          "name": "Waterstones North Finchley",
+          "sequence": 1,
+          "story": "Meeting point",
+          "place_id": null
+        },
+        {
+          "name": "Redwood Café, Swan Lane Open Space",
+          "sequence": null,
+          "story": "Lunch stop",
+          "place_id": "swan-lane-open-space"
+        },
+        {
+          "name": "Finchley Golf Club",
+          "sequence": null,
+          "story": "Tea stop",
+          "place_id": "finchley-golf-club"
+        }
+      ],
+      "duration": "12:00–16:30 advertised; includes breaks",
+      "distance": null,
+      "start": "Waterstones N12 9QR",
+      "end": null,
+      "stop_list_completeness": "meeting and refreshment points only; reading stops unpublished",
+      "publication_date": "2016-06-22",
+      "supplementary_sources": [
+        {
+          "url": "https://lindsaybamfield.blogspot.com/2016/06/",
+          "relationship": "organiser report of event",
+          "finding": "Readings included writing mentioning Finchley and work by Spike Milligan; exact stop mapping absent."
+        }
+      ]
+    },
+    {
+      "id": "thematic-walking-writer-2015",
+      "title": "Walking Writer workshop",
+      "originator": "Rosie Canning / Finchley Literary Festival",
+      "url": "https://rosemarycanning.blogspot.com/2015/05/finchley-in-fiction-part-one.html",
+      "retrieved": "2026-09-17",
+      "area": "Finchley/Whetstone core and edge",
+      "kind": "guided writing walk",
+      "status": "historical 2015 festival",
+      "theme": "Walking, nature and writing",
+      "stops": [
+        {
+          "name": "Brook towards Whetstone",
+          "sequence": null,
+          "story": "Walking environment; brook not named in this passage",
+          "place_id": null
+        },
+        {
+          "name": "Finchley Golf Club",
+          "sequence": null,
+          "story": "Planned stop",
+          "place_id": "finchley-golf-club"
+        },
+        {
+          "name": "Redwood Café",
+          "sequence": null,
+          "story": "Planned lunch",
+          "place_id": "swan-lane-open-space"
+        }
+      ],
+      "duration": null,
+      "distance": null,
+      "start": null,
+      "end": null,
+      "stop_list_completeness": "three announced route elements; itinerary incomplete",
+      "publication_date": "2015-05-03",
+      "notes": "Article also surveys fiction, but its author mentions are not each a workshop stop. Do not turn a conjectured literary path into historical fact."
+    },
+    {
+      "id": "thematic-streamline-c20",
+      "title": "Streamline in the Suburb",
+      "originator": "Joe Mathieson / Twentieth Century Society",
+      "url": "https://secure.c20society.org.uk/Default.aspx?EventId=858&tabid=93",
+      "retrieved": "2026-09-17",
+      "area": "East Finchley/Hampstead Garden Suburb comparator",
+      "kind": "guided architecture walk",
+      "status": "historical event 2022-05-07",
+      "theme": "Suburban adaptation of Streamline Moderne",
+      "stops": [
+        {
+          "name": "East Finchley station",
+          "sequence": 1,
+          "story": "Holden station",
+          "place_id": "east-finchley-station"
+        },
+        {
+          "name": "Belvedere Court",
+          "sequence": null,
+          "story": "Ernst Freud flats",
+          "place_id": "belvedere-court"
+        },
+        {
+          "name": "Kingsley Close",
+          "sequence": null,
+          "story": "Welch, Cachemaille-Day and Lander housing",
+          "place_id": null
+        },
+        {
+          "name": "Lytton Close",
+          "sequence": null,
+          "story": "Winbourne housing; finish",
+          "place_id": "lytton-close"
+        }
+      ],
+      "duration": "11:00–13:30; source incorrectly adds am to finish",
+      "distance": null,
+      "start": "East Finchley station",
+      "end": "Lytton Close",
+      "stop_list_completeness": "four highlights; intermediate order unstated",
+      "publication_date": null,
+      "notes": "Nearby comparator, not North Finchley extension. 2024 Open House report describes another occurrence with same title and guide; retain as version lead, not independent tour concept.",
+      "supplementary_sources": [
+        {
+          "url": "https://saltertonartsreview.com/2024/09/open-house-london-2024-part-ii/",
+          "relationship": "attendee report of 2024 version",
+          "finding": "Same guide and 1930s theme; exact route equivalence not established."
+        }
+      ]
+    },
+    {
+      "id": "thematic-streamform-ads",
+      "title": "From Streamform to Arts and Crafts",
+      "originator": "Marilyn Greene / Art Deco Society",
+      "url": "https://www.artdecosociety.uk/blouses-skirts-and-twitterns-the-hampstead-garden-suburb/",
+      "retrieved": "2026-09-17",
+      "area": "East Finchley/Hampstead Garden Suburb comparator",
+      "kind": "guided architecture walk",
+      "status": "historical event 2023-08-12",
+      "theme": "Housing design, planning ideals and architectural details",
+      "stops": [
+        {
+          "name": "East Finchley station",
+          "sequence": 1,
+          "story": "Start",
+          "place_id": "east-finchley-station"
+        },
+        {
+          "name": "Unnamed green with timber-framed housing",
+          "sequence": 2,
+          "story": "Suburb origins",
+          "place_id": null
+        },
+        {
+          "name": "Residential roads",
+          "sequence": 3,
+          "story": "Changing house styles; roads unnamed",
+          "place_id": null
+        },
+        {
+          "name": "Belvedere Court",
+          "sequence": 4,
+          "story": "Streamlined apartment building",
+          "place_id": "belvedere-court"
+        },
+        {
+          "name": "Housing named for Christian Socialists",
+          "sequence": 5,
+          "story": "Social ideas; exact location unnamed",
+          "place_id": null
+        },
+        {
+          "name": "Hedge-lined passage with brick arch",
+          "sequence": 6,
+          "story": "Finishing example; exact passage unnamed",
+          "place_id": null
+        }
+      ],
+      "duration": null,
+      "distance": null,
+      "start": "East Finchley station",
+      "end": "unnamed passage",
+      "stop_list_completeness": "report sequence, incomplete exact locations",
+      "publication_date": "2025-11-17",
+      "notes": "Report dated 2025 explicitly describes 2023 event. Window, material and passage details give listeners concrete things to notice; do not transfer Suburb social ideals to Moss Hall without evidence."
+    },
+    {
+      "id": "thematic-trains-palaces",
+      "title": "Trains, Tracks, Palaces, and Parades",
+      "originator": "Marilyn Greene / Footprints of London",
+      "url": "https://www.eventbrite.co.uk/e/walking-tour-trains-tracks-palaces-and-parades-tickets-1987602237798",
+      "retrieved": "2026-09-17",
+      "area": "East Finchley/Muswell Hill/Alexandra Palace comparator",
+      "kind": "guided architecture/history walk",
+      "status": "historical listing Sunday 14 June; year not explicit in fetched excerpt",
+      "theme": "Transport, suburban development, shopping and public entertainment",
+      "stops": [
+        {
+          "name": "East Finchley station",
+          "sequence": 1,
+          "story": "Modernist station",
+          "place_id": "east-finchley-station"
+        },
+        {
+          "name": "Phoenix Cinema and High Road parade",
+          "sequence": 2,
+          "story": "High-street development",
+          "place_id": "phoenix-cinema"
+        },
+        {
+          "name": "Cherry Tree Wood",
+          "sequence": 3,
+          "story": "Woodland history",
+          "place_id": "cherry-tree-wood"
+        },
+        {
+          "name": "Highgate Wood",
+          "sequence": 4,
+          "story": "Woodland history",
+          "place_id": "highgate-wood"
+        },
+        {
+          "name": "Old Highgate–Alexandra Palace railway",
+          "sequence": 5,
+          "story": "Railway remains",
+          "place_id": null
+        },
+        {
+          "name": "Alexandra Palace",
+          "sequence": 6,
+          "story": "Building and views",
+          "place_id": "alexandra-palace"
+        },
+        {
+          "name": "Muswell Hill Broadway",
+          "sequence": 7,
+          "story": "Town development",
+          "place_id": null
+        },
+        {
+          "name": "Everyman Cinema Muswell Hill",
+          "sequence": 8,
+          "story": "Art Deco finish",
+          "place_id": null
+        }
+      ],
+      "duration": "2.5 hours",
+      "distance": null,
+      "start": "East Finchley station",
+      "end": "Everyman Cinema Muswell Hill",
+      "stop_list_completeness": "public description sequence, not every pause or direction",
+      "publication_date": null,
+      "access": "Search-index text accessible; direct event fetch returned cache miss."
+    },
+    {
+      "id": "thematic-grange-trail",
+      "title": "Grange Big Local Trail",
+      "originator": "Grange Big Local; Barnet Council event host",
+      "url": "https://www.barnet.gov.uk/events/grange-big-local-trail",
+      "retrieved": "2026-09-17",
+      "area": "East Finchley core",
+      "kind": "guided and self-guided community trail",
+      "status": "historical event 2025-06-08; self-guided alternative advertised",
+      "theme": "Resident-led greening, biodiversity and neighbourhood improvement",
+      "stops": [
+        {
+          "name": "Green Arrows Garden, Archer Academy",
+          "sequence": 1,
+          "story": "Start; school garden",
+          "place_id": null
+        },
+        {
+          "name": "Market Place Playground",
+          "sequence": null,
+          "story": "Community project",
+          "place_id": "market-place-east-finchley"
+        },
+        {
+          "name": "Manor Park Road Underpass",
+          "sequence": null,
+          "story": "Community project",
+          "place_id": null
+        },
+        {
+          "name": "Vale Farm Allotments Pergola",
+          "sequence": null,
+          "story": "Community project",
+          "place_id": null
+        },
+        {
+          "name": "Tarling Road Community Centre",
+          "sequence": null,
+          "story": "Community quilt",
+          "place_id": null
+        },
+        {
+          "name": "Barnwood Forest Garden",
+          "sequence": null,
+          "story": "Finish; nature and community",
+          "place_id": null
+        }
+      ],
+      "duration": "11:00–13:30 event including activities",
+      "distance": "2 km",
+      "start": "Green Arrows Garden, Eagans Close",
+      "end": "Barnwood, Tarling Road",
+      "stop_list_completeness": "six advertised places; list order not explicitly guaranteed",
+      "publication_date": null,
+      "access": "Full event text returned in search index; direct page 403. Original map/film site unavailable in this pass.",
+      "notes": "School garden and Barnwood opening times require checking. No assumption all six locations are always open. Strong conceptual comparator for B; these are not near-bus-station replacements."
+    },
+    {
+      "id": "thematic-finchley-war",
+      "title": "Finchley Goes to War",
+      "originator": "Mark King / Blue Badge guide and Finchley Society member",
+      "url": "https://barnetpost.co.uk/2025/08/20/finchley-goes-to-war-guided-walk-on-sunday-7th-september/",
+      "retrieved": "2026-09-17",
+      "area": "Church End core",
+      "kind": "guided social-history walk",
+      "status": "historical event 2025-09-07",
+      "theme": "First World War service, home front, nursing, technology and remembrance",
+      "stops": [
+        {
+          "name": "Henly’s Corner",
+          "sequence": 1,
+          "story": "Start",
+          "place_id": null
+        },
+        {
+          "name": "Finchley Central",
+          "sequence": null,
+          "story": "Finish",
+          "place_id": "finchley-central-station"
+        }
+      ],
+      "duration": "2 hours",
+      "distance": null,
+      "start": "Henly’s Corner",
+      "end": "Finchley Central",
+      "stop_list_completeness": "endpoints only; pictured memorial not proof of an itinerary stop",
+      "publication_date": "2025-08-20",
+      "notes": "Author is the guide, so firsthand description of product. Exists as earlier 2014 guide-association listing; not counted twice. Does not override owner rejection of minor solemn memorial for A/B."
+    },
+    {
+      "id": "thematic-tonero-common",
+      "title": "East Finchley Walks: former common circuit",
+      "originator": "Tony Roberts / Tonero",
+      "url": "https://tonero.me.uk/wefwalks.htm",
+      "retrieved": "2026-09-17",
+      "area": "East Finchley core, eastern common edge",
+      "kind": "self-guided historical walk",
+      "status": "undated public route",
+      "theme": "Old common boundaries and settlement beneath present streets",
+      "stops": [
+        {
+          "name": "East Finchley station",
+          "sequence": 1,
+          "story": "Start and return",
+          "place_id": "east-finchley-station"
+        },
+        {
+          "name": "Market Place",
+          "sequence": 2,
+          "story": "Old market landscape",
+          "place_id": "market-place-east-finchley"
+        },
+        {
+          "name": "The Walks / Church Lane",
+          "sequence": 3,
+          "story": "Older path and settlement",
+          "place_id": null
+        },
+        {
+          "name": "Red Lion Hill",
+          "sequence": 4,
+          "story": "Earlier settlement",
+          "place_id": null
+        },
+        {
+          "name": "Oak Road / Tarling Road",
+          "sequence": 5,
+          "story": "Former estates",
+          "place_id": null
+        },
+        {
+          "name": "Brownswell / Glebelands",
+          "sequence": 6,
+          "story": "Common settlement/boundary",
+          "place_id": null
+        },
+        {
+          "name": "Summers Lane / Nursery Approach",
+          "sequence": 7,
+          "story": "Onward route",
+          "place_id": null
+        },
+        {
+          "name": "Coppetts Wood",
+          "sequence": 8,
+          "story": "Common eastern boundary",
+          "place_id": null
+        },
+        {
+          "name": "Coldfall Wood",
+          "sequence": 9,
+          "story": "Boundary and woodland",
+          "place_id": "coldfall-wood"
+        },
+        {
+          "name": "Durham Road / Summerlee Avenue",
+          "sequence": 10,
+          "story": "Old boundary",
+          "place_id": null
+        },
+        {
+          "name": "Cherry Tree Wood",
+          "sequence": 11,
+          "story": "Return",
+          "place_id": "cherry-tree-wood"
+        }
+      ],
+      "duration": null,
+      "distance": null,
+      "start": "East Finchley station",
+      "end": "East Finchley station",
+      "stop_list_completeness": "major route elements in published prose; minor directions omitted",
+      "publication_date": null,
+      "notes": "Historical notes are leads, not verified claims. Roads, crossings and path availability not freshly inspected; no coordinates invented."
+    },
+    {
+      "id": "thematic-woodside-ultimate",
+      "title": "Ultimate London Walk section 3",
+      "originator": "London Walks / Charlie or Dr Ann",
+      "url": "https://www.walks.com/our-walks/the-ultimate-london-walk-section-3-woodside-park-to-mill-hill-east/",
+      "retrieved": "2026-09-17",
+      "area": "Woodside Park core to Mill Hill East edge",
+      "kind": "guided landscape/history walk",
+      "status": "2026 dates advertised",
+      "theme": "Fields, horses, estates and suburban development",
+      "stops": [
+        {
+          "name": "Woodside Park station",
+          "sequence": 1,
+          "story": "Start",
+          "place_id": "woodside-park-station"
+        },
+        {
+          "name": "Folly Brook",
+          "sequence": 2,
+          "story": "Old field landscape",
+          "place_id": null
+        },
+        {
+          "name": "Frith Manor Farm",
+          "sequence": 3,
+          "story": "Horses and farming",
+          "place_id": null
+        },
+        {
+          "name": "Bittacy Farm / former barracks",
+          "sequence": 4,
+          "story": "Land-use change",
+          "place_id": null
+        },
+        {
+          "name": "Lovers Lane / Nether Hall",
+          "sequence": 5,
+          "story": "Entrepreneurial house; Finchley Golf Club",
+          "place_id": "finchley-golf-club"
+        },
+        {
+          "name": "Dollis Brook viaduct",
+          "sequence": 6,
+          "story": "Railway landscape",
+          "place_id": null
+        },
+        {
+          "name": "Mill Hill East",
+          "sequence": 7,
+          "story": "End in title",
+          "place_id": null
+        }
+      ],
+      "duration": "2 hours 45 minutes in displayed schedule",
+      "distance": null,
+      "start": "Woodside Park station",
+      "end": "Mill Hill East",
+      "stop_list_completeness": "provider narrative sequence, intermediate itinerary incomplete",
+      "publication_date": null,
+      "notes": "Tutankhamun hook not adopted: preview withholds causal explanation. Reviews describe occasional interior access, not general public permission."
+    },
+    {
+      "id": "thematic-trainwalk-2",
+      "title": "Northern Tube line walk 2: Archway to Finchley Central",
+      "originator": "trainwalkslondon",
+      "url": "https://trainwalkslondon.wordpress.com/2019/04/04/northern-tube-line-walk-2-archway-walk-to-finchley-central/",
+      "retrieved": "2026-09-17",
+      "area": "Archway comparator into East Finchley/Church End core",
+      "kind": "self-guided illustrated walk",
+      "status": "historical 2019 route",
+      "theme": "Station architecture, green routes and changing land use",
+      "stops": [
+        {
+          "name": "Archway station",
+          "sequence": 1,
+          "story": "Start",
+          "place_id": null
+        },
+        {
+          "name": "Parkland Walk",
+          "sequence": null,
+          "story": "Former railway",
+          "place_id": null
+        },
+        {
+          "name": "Queen’s Wood",
+          "sequence": null,
+          "story": "Green route",
+          "place_id": null
+        },
+        {
+          "name": "Highgate Wood",
+          "sequence": null,
+          "story": "Green route",
+          "place_id": "highgate-wood"
+        },
+        {
+          "name": "Cherry Tree Wood",
+          "sequence": null,
+          "story": "Green route",
+          "place_id": "cherry-tree-wood"
+        },
+        {
+          "name": "East Finchley station",
+          "sequence": null,
+          "story": "Modernism",
+          "place_id": "east-finchley-station"
+        },
+        {
+          "name": "Coldfall Wood",
+          "sequence": null,
+          "story": "Woodland",
+          "place_id": "coldfall-wood"
+        },
+        {
+          "name": "St Pancras and Islington Cemetery",
+          "sequence": null,
+          "story": "Memorial architecture",
+          "place_id": null
+        },
+        {
+          "name": "Stephens House grounds",
+          "sequence": null,
+          "story": "Estate and gardens",
+          "place_id": "stephens-house"
+        },
+        {
+          "name": "Finchley Central station",
+          "sequence": null,
+          "story": "Finish",
+          "place_id": "finchley-central-station"
+        }
+      ],
+      "duration": "3.25 hours author estimate",
+      "distance": null,
+      "start": "Archway station",
+      "end": "Finchley Central station",
+      "stop_list_completeness": "selected principal landmarks; detailed directions public, not all extracted",
+      "publication_date": "2019-04-04",
+      "notes": "Useful walking-environment comparator. Some prose explicitly guesses building history; verify independently before reuse."
+    },
+    {
+      "id": "thematic-video-uk4k",
+      "title": "October 2022 Finchley North London street walk",
+      "originator": "UK 4K WALK",
+      "url": "https://www.youtube.com/watch?v=0Iu3Z7X2oFI",
+      "retrieved": "2026-09-17",
+      "area": "Finchley; exact route unresolved",
+      "kind": "video walk",
+      "status": "historical video 2022-10-07",
+      "theme": "Street observation",
+      "stops": [],
+      "duration": null,
+      "distance": null,
+      "start": null,
+      "end": null,
+      "stop_list_completeness": "no verified stop list or timestamp extraction",
+      "publication_date": "2022-10-07",
+      "access": "Indexed title and description only; footage not reviewed.",
+      "notes": "Description mixes generic East Finchley and wider Finchley material. Named amenities are not confirmed footage stops. Cannot establish current access."
+    },
+    {
+      "id": "thematic-video-herewego",
+      "title": "East Finchley Walk: Every Tube Station in London",
+      "originator": "Here We Go",
+      "url": "https://www.youtube.com/watch?v=oZs9LlVS6KQ",
+      "retrieved": "2026-09-17",
+      "area": "East Finchley core",
+      "kind": "video walk",
+      "status": "public indexed video; precise date unverified",
+      "theme": "Street observation",
+      "stops": [],
+      "duration": null,
+      "distance": null,
+      "start": null,
+      "end": null,
+      "stop_list_completeness": "no verified stops or timestamp extraction",
+      "publication_date": null,
+      "access": "Indexed metadata only; direct video fetch failed.",
+      "notes": "Video remains a coverage record rather than route/access evidence."
+    }
+  ],
+  "search_log": [
+    {
+      "query": "Finchley walking tour music literary architecture Kinks walk stops",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "North Finchley heritage walk Quaker Moss Hall walking tour",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "East Finchley walking tour architecture literary walk",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "\"North Finchley\" \"walk\" \"Torrington\" history",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "\"Finchley\" \"walking tour\" \"Jewish\"",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "\"Finchley\" \"walk\" \"Quaker\" history",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "\"Woodside Park\" \"walk\" history tour",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "\"Finchley\" \"walk\" \"Spike Milligan\" tour",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "\"Finchley\" \"walking tour\" youtube North",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "\"North Finchley\" \"walk\" \"music\" history tour",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "\"Finchley\" \"literary walk\" 2015 2016",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "\"Finchley in Fiction\" walk",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "\"Finchley Goes to War\" walk",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "\"North Finchley\" walking tour site:youtube.com/watch",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "\"Finchley\" \"Grand Arcade\" \"Dave Davies\"",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "\"Finchley\" \"walking\" \"architecture\" \"Open House\"",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "\"Finchley\" \"walking tour\" \"church\" history",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "\"Streamline in the Suburb\" Mathieson",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "\"East Finchley\" \"Tarling\" \"Festival of Architecture\" walk",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "\"Finchley\" \"Elephant Inn\" history 1839",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "\"Grand Arcade\" site:barnet.gov.uk heritage 2022",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "site:grangebiglocal.org trail map walk",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "\"Grange Big Local Trail\" stops",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "site:youtube.com \"North Finchley\" \"walk\" \"Tally\"",
+      "date": "2026-09-17"
+    },
+    {
+      "query": "site:tonero.me.uk walks about Tony",
+      "date": "2026-09-17"
+    }
+  ],
+  "targeted_fact_checks": [
+    {
+      "id": "elephant-history",
+      "url": "https://northfinchleytowncentre.co.uk/local-stories/story/pubs-inns-and-alehouses/",
+      "author": "Hugh Petrie, Barnet heritage officer",
+      "claims": [
+        {
+          "claim": "Moss Hall Tavern opened in 1870 and was rebuilt in 1927; now Elephant Inn.",
+          "status": "supported by named local heritage officer"
+        }
+      ],
+      "implication": "B can connect estate naming to a surviving communal building; no invented origin of Elephant name."
+    },
+    {
+      "id": "elephant-interior",
+      "url": "https://camra.org.uk/pubs/elephant-inn-north-finchley-157939",
+      "author": "CAMRA historic interiors inventory",
+      "claims": [
+        {
+          "claim": "1927 building retains parts of multi-room plan, panelling and publican office; 1991 refit means a mixture of old and new.",
+          "status": "supported by specialist inventory; last surveyed 2026-02-24"
+        }
+      ],
+      "implication": "Strongest detailed payoff is indoors. Outdoor script must not promise listener can see it from pavement."
+    },
+    {
+      "id": "arcade-local-listing",
+      "url": "https://barnetpost.co.uk/2022/12/19/the-grand-arcade-added-to-heritage-list-after-successful-campaign/",
+      "author": "Simon Allin, Local Democracy Reporter",
+      "claims": [
+        {
+          "claim": "Grand Arcade was locally listed in 2022 after a campaign supported by Dave Davies; listing does not prevent demolition.",
+          "status": "reported; relevant committee decision should anchor final legal/status wording"
+        }
+      ],
+      "implication": "Do not say permanently saved; Davies link local to A, distant Kinks itinerary unnecessary."
+    },
+    {
+      "id": "arcade-fabric",
+      "url": "https://www.barnet.gov.uk/sites/default/files/local_heritage_list_nominations_2021.pdf",
+      "author": "Barnet Council nomination document",
+      "claims": [
+        {
+          "claim": "Nomination describes two opposing three-storey blocks linked by glass-covered arcade, built 1937 by T Spencer Rutter.",
+          "status": "supported by council nomination, not itself adopted listing decision"
+        }
+      ],
+      "implication": "Concrete visible passage geometry makes better opening than generic Art Deco label."
+    },
+    {
+      "id": "quaker-meeting",
+      "url": "https://quakersinlondon.org/local-meetings/",
+      "author": "Quakers in London",
+      "claims": [
+        {
+          "claim": "Finchley Meeting House opened 28 October 1967, funded by fundraising, grants and gifts of money and land.",
+          "status": "supported by owning faith community"
+        }
+      ],
+      "implication": "Community action can be narrated concretely without requiring worship or interior entry."
+    }
+  ],
+  "coverage_gaps": [
+    "No dedicated publicly documented Finchley Jewish/Quaker walking itinerary located in these queries; many matches refer to walks elsewhere or transport via Finchley Road. Not proof none exist.",
+    "Literary tour announcements often withhold story stops. Archived author essays are leads, not inferred itineraries.",
+    "Video metadata captured; footage and timestamps not inspected. No video used as current-access evidence.",
+    "Grange trail original linked map/film site not retrieved; full published six-place list available in Barnet search index.",
+    "Tonero Landmarks PDF 120 referred to main/heritage researcher; not duplicated here.",
+    "Commercial Kinks/Ultimate London/Trains listings may overlap commercial tranche. Deduplicate by originator and original URL, preserve distinct versions."
+  ]
+}

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { AppState, Modal, Platform, Pressable, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, View } from 'react-native';
 import { Camera, GeoJSONSource, Layer, LogManager, Map, NetworkManager } from '@maplibre/maplibre-react-native';
 import type { State } from '../domain/engine';
+import type { Fixture } from '../domain/fixture';
 import { prepareLocalMap } from './localMap';
 import { bounds, centre, makeMapStyle, visibleFix } from './style';
 import catalog from './catalog.json';
@@ -9,7 +10,7 @@ import notices from './notices.json';
 
 const initialViewState = { center: centre, zoom: 15.5 };
 
-export function OfflineMap({ state, onClose }: { state: State; onClose: () => void }) {
+export function OfflineMap({ state, fixture, onClose }: { state: State; fixture?: Fixture | null; onClose: () => void }) {
   const [directory, setDirectory] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [attempt, setAttempt] = useState(0), [credits, setCredits] = useState(false);
@@ -43,7 +44,7 @@ export function OfflineMap({ state, onClose }: { state: State; onClose: () => vo
       <View style={styles.header}>
         <Pressable accessibilityRole="button" onPress={onClose} style={styles.button}><Text style={styles.link}>Back to player</Text></Pressable>
         <Text style={styles.title}>North Finchley</Text>
-        <Text style={styles.body}>Offline area map · route still being planned</Text>
+        <Text style={styles.body}>{fixture?.narration ? fixture.title : 'Offline area map'}</Text>
       </View>
       {credits ? <ScrollView style={styles.credits}>
         <Pressable accessibilityRole="button" onPress={() => setCredits(false)} style={styles.button}><Text style={styles.link}>Back to map</Text></Pressable>
@@ -55,6 +56,15 @@ export function OfflineMap({ state, onClose }: { state: State; onClose: () => vo
       </View> : style ? <Map style={styles.map} mapStyle={style} attribution={false} logo={false} compass={false} touchRotate={false} touchPitch={false} preferredFramesPerSecond={30}
         onDidFinishRenderingMapFully={didRender} onDidFailLoadingMap={() => setError('The local map could not be loaded.')}>
         <Camera initialViewState={initialViewState} minZoom={14} maxZoom={18} maxBounds={bounds} />
+        {fixture?.narration && <>
+          <GeoJSONSource id="planned-route" data={{ type: 'Feature', properties: {}, geometry: { type: 'LineString', coordinates: fixture.route.map(p => [p.longitude, p.latitude]) } }}>
+            <Layer id="planned-route-line" type="line" paint={{ 'line-color': '#216846', 'line-width': 4, 'line-opacity': 0.8 }} />
+          </GeoJSONSource>
+          <GeoJSONSource id="planned-stops" data={{ type: 'FeatureCollection', features: fixture.stops.map((s, i) => ({ type: 'Feature', properties: { number: String(i + 1) }, geometry: { type: 'Point', coordinates: [s.standing.longitude, s.standing.latitude] } })) }}>
+            <Layer id="planned-stop-dots" type="circle" paint={{ 'circle-color': '#214f3d', 'circle-radius': 13, 'circle-stroke-color': '#fff', 'circle-stroke-width': 2 }} />
+            <Layer id="planned-stop-numbers" type="symbol" layout={{ 'text-field': ['get', 'number'], 'text-font': ['Noto Sans Regular'], 'text-size': 14, 'text-allow-overlap': true }} paint={{ 'text-color': '#fff' }} />
+          </GeoJSONSource>
+        </>}
         {fix && <GeoJSONSource id="session-position" data={{ type: 'Feature', properties: {}, geometry: { type: 'Point', coordinates: [fix.longitude, fix.latitude] } }}>
           <Layer id="session-position-dot" type="circle" paint={{ 'circle-color': '#196ca1', 'circle-radius': 7, 'circle-stroke-color': '#ffffff', 'circle-stroke-width': 3 }} />
         </GeoJSONSource>}

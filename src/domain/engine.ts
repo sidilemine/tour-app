@@ -2,10 +2,13 @@ import { Coordinate, distance, Fixture, project } from './fixture';
 
 export type Fix = Coordinate & { timestamp: number; accuracy: number; speed?: number };
 export type Playback = { status: 'idle' | 'loading' | 'playing' | 'paused' | 'failed'; index: number | null; offset: number; token: number };
+export type ChapterProgress = 'unplayed' | 'in-progress' | 'completed' | 'skipped' | 'expired';
 export type State = {
   active: boolean; hold: string | null; automatic: boolean; diagnostics: boolean; startedAt: number | null;
   stops: ('unplayed' | 'in-progress' | 'completed' | 'skipped')[];
   playback: Playback;
+  chapters?: ChapterProgress[];
+  chapterCandidate?: { index: number; since: number; count: number };
   location: { reason: string; fix?: Fix; crossTrack?: number; along?: number; distance?: number; candidate?: number; since?: number; count: number; arrived?: number };
 };
 export type Event = { at: number } & (
@@ -18,7 +21,7 @@ export type Event = { at: number } & (
   | { type: 'audio'; token: number; playing: boolean; finished: boolean; offset: number; buffering: boolean; error?: string | null }
 );
 export type Effect = { type: 'play'; index: number; offset: number; token: number } | { type: 'pause' };
-export const initialState = (): State => ({ active: false, hold: 'not-started', automatic: true, diagnostics: false, startedAt: null, stops: ['unplayed', 'unplayed', 'unplayed'], playback: { status: 'idle', index: null, offset: 0, token: 0 }, location: { reason: 'Waiting for location', count: 0 } });
+export const initialState = (fixture?: Fixture): State => ({ active: false, hold: 'not-started', automatic: true, diagnostics: false, startedAt: null, stops: Array.from({ length: fixture?.stops.length ?? 3 }, () => 'unplayed' as const), ...(fixture?.narration ? { chapters: fixture.narration.chapters.map(() => 'unplayed' as const) } : {}), playback: { status: 'idle', index: null, offset: 0, token: 0 }, location: { reason: 'Waiting for location', count: 0 } });
 export const eligible = (s: State) => s.stops.findIndex(x => x === 'unplayed');
 // Explanation only: never relax the reducer's fresh-position playback gate.
 export function pendingArrivalNeedsFreshFix(s: State, at: number): boolean {
@@ -27,22 +30,84 @@ export function pendingArrivalNeedsFreshFix(s: State, at: number): boolean {
     && s.location.arrived === i && (!s.location.fix || at - s.location.fix.timestamp > 15000);
 }
 export function recovered(state: State): State {
-  return { ...state, active: false, hold: state.hold || 'recovery', playback: { ...state.playback, status: state.playback.index === null ? 'idle' : 'paused', token: state.playback.token + 1 }, location: { reason: 'Reopened: fresh location required', count: 0 } };
+  const { chapterCandidate: _candidate, ...durable } = state;
+  return { ...durable, active: false, hold: state.hold || 'recovery', playback: { ...state.playback, status: state.playback.index === null ? 'idle' : 'paused', token: state.playback.token + 1 }, location: { reason: 'Reopened: fresh location required', count: 0 } };
 }
 
 export function reduce(previous: State, event: Event, fixture: Fixture): { state: State; effects: Effect[]; reason: string } {
   const s: State = { ...previous, stops: [...previous.stops], playback: { ...previous.playback }, location: { ...previous.location } }, effects: Effect[] = [];
+  if (previous.chapters) s.chapters = [...previous.chapters];
+  if (previous.chapterCandidate) s.chapterCandidate = { ...previous.chapterCandidate };
+  const chapters = fixture.narration?.chapters ?? [];
+  const stopCount = fixture.stops.length;
+  const validIndex = (index: number) => Number.isInteger(index) && index >= 0 && index < stopCount + chapters.length;
+  if (!Number.isFinite(event.at)
+    || ((event.type === 'manual' || event.type === 'skip') && !validIndex(event.index))
+    || (event.type === 'audio' && (!Number.isInteger(event.token) || !Number.isFinite(event.offset) || event.offset < 0))) {
+    return { state: s, effects, reason: 'invalid-event' };
+  }
   let reason: string = event.type;
+  const resetChapterCandidate = () => { delete s.chapterCandidate; };
+  const finishedStop = (index: number) => s.stops[index] === 'completed' || s.stops[index] === 'skipped';
+  const routeDistance = (index: number) => {
+    let total = 0;
+    for (let point = 1; point <= index; point++) total += distance(fixture.route[point - 1], fixture.route[point]);
+    return total;
+  };
+  const chapterInside = (index: number) => {
+    const chapter = chapters[index], l = s.location;
+    return chapter && l.fix && l.along !== undefined && (l.crossTrack ?? Infinity) <= 45
+      && event.at - l.fix.timestamp <= 15000
+      && l.along >= routeDistance(chapter.startRouteIndex) && l.along < routeDistance(chapter.endRouteIndex)
+      && distance(l.fix, fixture.stops[chapter.afterStopIndex].standing) > 40
+      && distance(l.fix, fixture.stops[chapter.afterStopIndex + 1].standing) > 40;
+  };
   const play = (index: number, offset = 0) => {
-    if (index < 0 || index > 2) return;
+    if (!validIndex(index)) return;
+    const old = s.playback.index;
+    if (old !== null && old !== index) {
+      // A deliberate selection must leave the interrupted stop eligible for a
+      // later manual/arrival retry; a walking chapter is explicitly abandoned.
+      if (old < stopCount && s.stops[old] === 'in-progress') s.stops[old] = 'unplayed';
+      else if (old >= stopCount && s.chapters?.[old - stopCount] === 'in-progress') s.chapters[old - stopCount] = 'skipped';
+    }
     s.playback = { index, offset, status: 'loading', token: s.playback.token + 1 };
-    if (s.stops[index] === 'unplayed') s.stops[index] = 'in-progress';
+    if (index < stopCount && s.stops[index] === 'unplayed') s.stops[index] = 'in-progress';
+    if (index >= stopCount && s.chapters && ['unplayed', 'expired'].includes(s.chapters[index - stopCount])) s.chapters[index - stopCount] = 'in-progress';
+    resetChapterCandidate();
     effects.push({ type: 'play', index, offset, token: s.playback.token });
   };
   const auto = () => {
     if (!s.active || !s.automatic || s.hold || s.playback.index !== null) return;
     const i = eligible(s), l = s.location;
-    if (i >= 0 && l.arrived === i && l.fix && event.at - l.fix.timestamp <= 15000 && distance(l.fix, fixture.stops[i].standing) <= 40) play(i);
+    if (i >= 0 && l.arrived === i && l.fix && event.at - l.fix.timestamp <= 15000 && distance(l.fix, fixture.stops[i].standing) <= 40) { play(i); return; }
+    const candidate = s.chapterCandidate;
+    if (candidate && s.chapters?.[candidate.index] === 'unplayed' && candidate.count >= 3
+      && l.fix && l.fix.timestamp - candidate.since >= 4000
+      && finishedStop(chapters[candidate.index].afterStopIndex)
+      && i === chapters[candidate.index].afterStopIndex + 1 && chapterInside(candidate.index)) {
+      play(stopCount + candidate.index);
+    }
+  };
+  const updateChapters = (fix: Fix, old?: Fix) => {
+    if (!s.chapters) return;
+    const i = eligible(s), l = s.location;
+    // Once the onward opportunity has passed, automatic playback must never
+    // resurrect an old walking chapter. Manual selection remains available.
+    for (let index = 0; index < chapters.length; index++) {
+      const chapter = chapters[index];
+      if (s.chapters[index] === 'unplayed' && (finishedStop(chapter.afterStopIndex + 1)
+        || (i === chapter.afterStopIndex + 1 && (l.arrived === i
+          || ((l.crossTrack ?? Infinity) <= 45 && (l.along ?? 0) >= routeDistance(chapter.endRouteIndex)))))) {
+        s.chapters[index] = 'expired';
+      }
+    }
+    const index = chapters.findIndex((c, index) => s.chapters?.[index] === 'unplayed'
+      && finishedStop(c.afterStopIndex) && i === c.afterStopIndex + 1 && chapterInside(index));
+    if (index < 0 || l.reason === 'reversal') { resetChapterCandidate(); return; }
+    const continuing = s.chapterCandidate?.index === index && old && fix.timestamp - old.timestamp <= 15000;
+    s.chapterCandidate = { index, since: continuing ? s.chapterCandidate!.since : fix.timestamp,
+      count: continuing ? s.chapterCandidate!.count + 1 : 1 };
   };
   switch (event.type) {
     case 'start':
@@ -67,24 +132,29 @@ export function reduce(previous: State, event: Event, fixture: Fixture): { state
     case 'automatic': s.automatic = event.enabled; auto(); break;
     case 'manual': play(event.index); break;
     case 'skip':
-      if (event.index < 0 || event.index > 2) break;
-      s.stops[event.index] = 'skipped';
+      if (event.index < stopCount) s.stops[event.index] = 'skipped';
+      else if (s.chapters) s.chapters[event.index - stopCount] = 'skipped';
+      resetChapterCandidate();
+      chapters.forEach((c, index) => {
+        if (event.index === c.afterStopIndex + 1 && s.chapters?.[index] === 'unplayed') s.chapters[index] = 'expired';
+      });
       if (s.playback.index === event.index) {
         effects.push({ type: 'pause' });
         s.playback = { status: 'idle', index: null, offset: 0, token: s.playback.token + 1 };
       }
       s.location = { reason: 'Skipped: waiting for fresh arrival', count: 0 }; break;
     case 'unavailable':
+      resetChapterCandidate();
       s.location = { reason: event.reason, count: 0 }; reason = event.reason; break;
     case 'fix': {
       const f = event.fix, old = s.location.fix, i = eligible(s);
-      const reject = (why: string) => { s.location = { reason: why, fix: old, count: 0 }; reason = why; };
+      const reject = (why: string) => { resetChapterCandidate(); s.location = { reason: why, fix: old, count: 0 }; reason = why; };
       if (!Number.isFinite(f.timestamp) || !Number.isFinite(f.latitude) || !Number.isFinite(f.longitude) || Math.abs(f.latitude) > 85 || Math.abs(f.longitude) > 180) { reject('invalid-fix'); break; }
       if (event.at - f.timestamp > 15000 || f.timestamp > event.at + 2000) { reject('stale-fix'); break; }
       if (old && f.timestamp <= old.timestamp) { reason = 'duplicate-or-out-of-order-fix'; break; }
       if (!Number.isFinite(f.accuracy) || f.accuracy < 0 || f.accuracy > 35) { reject('poor-accuracy'); break; }
-      if ((f.speed ?? 0) > 5.5 || (old && distance(old, f) > 70 + (f.timestamp - old.timestamp) / 1000 * 5.5)) { reject('implausible-speed-or-jump'); break; }
-      if (i < 0) { s.location = { reason: 'no-eligible-stop', fix: f, count: 0 }; break; }
+      if ((f.speed !== undefined && !Number.isFinite(f.speed)) || (f.speed ?? 0) > 5.5 || (old && distance(old, f) > 70 + (f.timestamp - old.timestamp) / 1000 * 5.5)) { reject('implausible-speed-or-jump'); break; }
+      if (i < 0) { resetChapterCandidate(); s.location = { reason: 'no-eligible-stop', fix: f, count: 0 }; break; }
       const start = i ? fixture.stops[i - 1].routeIndex : 0;
       const end = Math.max(start + 1, fixture.stops[i].routeIndex);
       const match = project(f, fixture.route, start, end);
@@ -98,6 +168,7 @@ export function reduce(previous: State, event: Event, fixture: Fixture): { state
       const arrived = retained || (inside && count >= 3 && f.timestamp - since >= 4000);
       reason = reversing ? 'reversal' : match.crossTrack > 45 ? 'off-route' : arrived ? 'arrival-confirmed' : inside ? 'arrival-dwell' : 'between-stops';
       s.location = { reason, fix: f, ...match, distance: near, count, ...(inside ? { candidate: i, since } : {}), ...(arrived ? { arrived: i } : {}) };
+      updateChapters(f, old);
       if (arrived && s.hold) reason = `arrival-held:${s.hold}`;
       else if (arrived && s.playback.index !== null) reason = 'arrival-pending-unfinished-clip';
       else if (arrived && !s.automatic) reason = 'arrival-automatic-disabled';
@@ -115,7 +186,8 @@ export function reduce(previous: State, event: Event, fixture: Fixture): { state
         s.playback.status = 'failed'; s.hold = 'audio-error'; effects.push({ type: 'pause' }); reason = event.error;
       } else if (event.finished) {
         const index = s.playback.index;
-        if (s.stops[index] !== 'skipped') s.stops[index] = 'completed';
+        if (index < stopCount && s.stops[index] !== 'skipped') s.stops[index] = 'completed';
+        else if (index >= stopCount && s.chapters && s.chapters[index - stopCount] !== 'skipped') s.chapters[index - stopCount] = 'completed';
         s.playback = { status: 'idle', index: null, offset: 0, token: s.playback.token + 1 };
         auto();
       } else if (event.playing) {

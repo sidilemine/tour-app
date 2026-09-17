@@ -15,3 +15,5 @@ sh tools/android-env.sh apksigner verify artifacts/walking-tour-development.apk
 sh tools/android-env.sh apksigner verify artifacts/walking-tour-offline.apk
 python3 tools/verify-android-apk.py artifacts/walking-tour-development.apk artifacts/walking-tour-offline.apk
 python3 tools/verify-map-apk.py artifacts/walking-tour-development.apk artifacts/walking-tour-offline.apk
+
+python3 tools/verify-tour-apk.py artifacts/walking-tour-offline.apk

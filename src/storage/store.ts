@@ -14,9 +14,13 @@ export class Store {
     return row ? JSON.parse(row.value) as T : null;
   }
   commit(key: string, value: unknown, event?: unknown) {
+    this.commitMany([[key, value]], event);
+  }
+  // Fixture, current progress and the outgoing archive must change together.
+  commitMany(entries: readonly (readonly [string, unknown])[], event?: unknown) {
     this.db.execSync('BEGIN IMMEDIATE');
     try {
-      this.db.runSync('INSERT INTO kv(key,value) VALUES(?,?) ON CONFLICT(key) DO UPDATE SET value=excluded.value', key, JSON.stringify(value));
+      for (const [key, value] of entries) this.db.runSync('INSERT INTO kv(key,value) VALUES(?,?) ON CONFLICT(key) DO UPDATE SET value=excluded.value', key, JSON.stringify(value));
       if (event) this.db.runSync('INSERT INTO events(value) VALUES(?)', JSON.stringify(event));
       this.db.execSync('DELETE FROM events WHERE seq <= (SELECT COALESCE(MAX(seq),0)-10000 FROM events); COMMIT');
     } catch (error) { this.db.execSync('ROLLBACK'); throw error; }

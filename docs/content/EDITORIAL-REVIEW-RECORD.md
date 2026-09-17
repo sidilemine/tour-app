@@ -15,7 +15,7 @@ When we take a serious look back: read this record, the captured comments and th
 - [Initial walking-tour research](WALKING-TOUR-DESIGN-RESEARCH.md) and [original Word review](walking-tour-design-review.docx).
 - [First 34 owner Word comments with anchored text](reviews/2026-09-16-owner-word-comments.json): 24 on the research review, 10 on the narration pair; document-local IDs and source-file SHA-256 retained. This committed text capture remains usable if the original commented Word files are absent from another checkout. Original commented files remain locally under `docs/content/` and are not overwritten.
 - [Latest 11 tour-options comments](reviews/2026-09-17-tour-options-comments.json) and [response/development brief](NORTH-FINCHLEY-REVIEW-RESPONSE.md): **45 comments total** across the three reviews. All retain source-file hashes, local IDs and anchored text.
-- [Current design guidance](TOUR-DESIGN-GUIDANCE.md), revisions 1–5 with revision history.
+- [Current design guidance](TOUR-DESIGN-GUIDANCE.md), revisions 1–6 with revision history.
 - [First North Finchley sample pair](NORTH-FINCHLEY-SAMPLE-STOPS.md) and [original Word copy](north-finchley-sample-stops-review.docx), including the rejected memorial execution.
 - [Tally Ho revision 2 and response mapping](TALLY-HO-SAMPLE-V2.md) and [Word copy](tally-ho-sample-review-v2.docx). The later imagined-colour correction supersedes its narrower review note, not its narration.
 - [Current tour options A and B](NORTH-FINCHLEY-TOUR-OPTIONS.md), [Word proposal](north-finchley-tour-options-review.docx), and [actual routing evidence](routes/north-finchley-options-v1/README.md).
@@ -91,6 +91,20 @@ After the map walk, Sidi reported accurate location, correct audio and airplane-
 
 **Working preferences and advice request:** Sidi asked which thinking level and whether sub-agents would help for the next tasks, then clarified not to worry much about token spend. Prioritise quality and useful progress. Recommended High as the main-thread default, independent research/checking sub-agents for broad surveys, and higher effort selectively for difficult synthesis or playback races. This is engineering advice, not a measured performance result or a changed app setting. A question about delegation is not itself a request to spawn agents.
 
+### 10 Survey findings and preparation through usable tours
+
+**17 September 2026, conversation. Owner direction:** proceed with the necessary work and keep going until the tours are ready for him to take. Token spend is secondary to quality. When asked about a connected phone, Sidi requested one clustered session rather than leaving it connected throughout development; desk work/builds proceed first, with listening readiness checked separately before sound.
+
+**Outcome in preparation:** three delegated source-family surveys produced 50 raw walk/resource records and 45 consolidated entries after five cross-branch duplicates were merged. These include collections and partial listings, not 45 complete scripts. [Synthesis and decisions](survey/README.md) retain the published places/themes/stories, gaps and future leads. Preserve the owner-selected themes and bus-station geography; the Kinks tours are mostly East Finchley comparisons. Reiniger's Waylamp and Postgate remain future leads without forcing new unverified stops.
+
+**Editorial application:** A retains five stops, removes Stanhope and views the Arcade from its street entrance. B keeps six stops and its separate estate-to-streets chapter. The chapter supplies development context, the villas explain the shared garden arrangement, and the Elephant is deliberately brief. [Nine shared narratives](../../content/north-finchley/stories.json) retain paragraph evidence and supported imagined colour; the original Tally Ho revision is reused. This is a proposed successful application, not observed enjoyment.
+
+**Physical interpretation:** dated Street View establishes credible pavement views of the sculpture and villas; camera coordinates, landmark pins and approximate standing nominees remain distinct. The Crescent green lies across the roadway from the house-side pavement. [Exterior checks](routes/north-finchley-review-v2/EXTERIOR-CHECKS.md) resolve the need for separate reconnaissance while retaining current-obstruction uncertainty for ordinary use.
+
+**Implementation:** local packages, variable stops, once-only departure chapter, numbered map, transcripts/directions/evidence and private scores/voice notes are implemented. Reviews preserve pause, recordings and earlier attempts; saving a voice copy is explicit and verified. The simple prepared spoken directions and measured chapter window serve these routes; generic interrupting navigation cues remain deferred. [Implementation](M2-PLAYER-IMPLEMENTATION.md) and [build/device results](../test-results/M2-tour-build.md) distinguish completed checks from first-use evidence. No E1 automation decision, authoring database or public release is inferred.
+
+**Next owner evidence:** one brief clustered phone recording/playback/save check, then ordinary A/B use with optional feedback. No new baseline walking quota or stationary-minute repeat. The [tour guide](NORTH-FINCHLEY-TAKE-THE-TOURS.md) records the actual steps and time estimates.
+
 ## Questions to carry into a later systematic review
 
 - Does context before anecdote usually improve the story, and when can an immediate intriguing detail work better?
@@ -112,8 +126,8 @@ After the map walk, Sidi reported accurate location, correct audio and airplane-
 | Both tours | Owner direction to develop both; initial preference B | Completed content and ordinary-use feedback |
 | Stanhope detour | Rejected; Gaumont preferred | New reason to include a passing treatment, if any |
 | Product duration and spacing | Short test footprint is not a product cap; variable rhythm accepted | Actual enjoyment and walking feedback |
-| B walking chapter and per-story review | Requested; concrete design proposed | Script, bounded implementation and useful owner feedback |
-| Distinct standing areas, access and crossings | Unverified | Desk inspection, then only necessary physical checks |
-| Public-tour survey before new-area curation | Owner direction; protocol adopted | Comprehensive Finchley catalogue and synthesis |
+| B walking chapter and per-story review | Implemented; measured content and automated checks | Actual phone capture/playback and useful owner feedback |
+| Distinct standing areas, access and crossings | Desk-reviewed public-exterior candidates with dated imagery; no current field claim | Current conditions during ordinary first use |
+| Public-tour survey before new-area curation | Applied; comprehensive first Finchley catalogue and synthesis recorded | Reuse and improve coverage for the next area |
 | Reusable place/source/story database | Explicitly planned; not implemented | Actual records and reuse requirements from the survey/two tours |
 | Systematic guidelines from these options | Open learning questions | Recorded choices and actual experience; no automatic promotion |

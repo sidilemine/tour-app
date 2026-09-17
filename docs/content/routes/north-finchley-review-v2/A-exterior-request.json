@@ -1,0 +1,43 @@
+{
+  "locations": [
+    {
+      "lon": -0.17684,
+      "lat": 51.61305,
+      "type": "break"
+    },
+    {
+      "lon": -0.17672,
+      "lat": 51.6141,
+      "type": "break"
+    },
+    {
+      "lon": -0.176925,
+      "lat": 51.61345,
+      "type": "break"
+    },
+    {
+      "lon": -0.17702,
+      "lat": 51.61642,
+      "type": "break"
+    },
+    {
+      "lon": -0.17857,
+      "lat": 51.61355,
+      "type": "break"
+    },
+    {
+      "lon": -0.17684,
+      "lat": 51.61305,
+      "type": "break"
+    }
+  ],
+  "costing": "pedestrian",
+  "costing_options": {
+    "pedestrian": {
+      "walking_speed": 4.5
+    }
+  },
+  "units": "kilometers",
+  "language": "en-GB",
+  "id": "north-finchley-A-exterior-arcade-review"
+}

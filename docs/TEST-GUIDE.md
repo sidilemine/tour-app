@@ -1,8 +1,8 @@
 # Offline phone test guide
 
-Generated from `src/testing/guide.json`; edit that source and run `npm run docs:guide`. Revision 7.
+Generated from `src/testing/guide.json`; edit that source and run `npm run docs:guide`. Revision 8.
 
-The planned M1 outdoor walks are complete. These procedures remain available for reference and targeted regression checks; do not repeat a walk unless the engineer identifies a specific need. Opening this guide never starts, pauses or ends a tour. Stop safely before using the screen. Saved results are observations: acceptance combines diagnostic review and physical feedback in the project checklist. Long A lasts 3 minutes 30 seconds and is only a test asset; desk interruption and recovery checks need just a few seconds of playback. M2 adds an engineer-prepared offline-map desk check; this does not reopen the full M1 field matrix.
+The planned M1 outdoor walks are complete. These procedures remain available for reference and targeted regression checks; do not repeat a walk unless the engineer identifies a specific need. Opening this guide never starts, pauses or ends a tour. Stop safely before using the screen. Saved results are observations: acceptance combines diagnostic review and physical feedback in the project checklist. Long A lasts 3 minutes 30 seconds and is only a test asset; desk interruption and recovery checks need just a few seconds of playback. M2 adds an engineer-prepared offline-map desk check; this does not reopen the full M1 field matrix. The Finchley tour home now contains the prepared A/B walks, transcripts, directions and story reviews. Case 20 records one short engineer-led check of the new import/recording boundary; it does not require another baseline walk.
 
 ## Before and after each attempt
 
@@ -261,3 +261,16 @@ Engineer-prepared map APK; for development, verified cached map and all four aud
 6. Save observations and export through the existing named local-save flow. Engineer restores the self-contained build without clearing data and verifies cold reopening with Metro stopped. No North Finchley route survey or full six-stop acceptance is claimed by this test.
 
 Expected: Entire declared map area draws with labels and network off; damaged local resources fail visibly and recover. Map screen does not own location or playback. Native audio/location and the targeted locked arrival remain correct. Desk, outdoor and automation evidence are recorded separately.
+
+## 20. Curated tours: offline preparation and feedback
+
+Case: `curated-tour-feedback`. Preparation: engineer. Build: offline-release.
+
+Final self-contained A/B build; phone connected for one clustered session. Ask whether Sidi is listening before any audible playback. Preserve prior phone data and reviews.
+
+1. Engineer: prepare both bundled tours, confirm five A stops and six B stops plus its walking chapter, and open numbered route/map and directions. With Metro stopped and networking off, cold reopen and confirm saved tour/progress. Import/corruption/version handling has automated evidence; do not repeat destructive file tests on the phone without a concrete need.
+2. After Sidi confirms listening, play a few seconds of a tour story, open Review and confirm narration pauses. Record a brief spoken note deliberately, stop/save and play the saved note back. Close review: narration must remain held until explicit Resume. Engineer inspects permission, actual file finalization and app-scoped errors.
+3. Save a voice-note copy to a chosen local folder and verify successful readback; cancel one save and confirm the original remains. Reopen the app silently and confirm ratings, text and note remain. End tracking after any short native location check.
+4. Engineer restores/retains the self-contained app, ready to choose A or B. Normal tour use supplies route/enjoyment feedback; no stationary-minute or three-minute repeat is required for this case. Save observed results and any specific unresolved issue.
+
+Expected: Both tours remain usable offline; new recordings are audible and durable; Review/record/save/close never resumes narration; requested local export is verified and cancellation preserves original. Actual phone observations are distinct from automation and first tour enjoyment.

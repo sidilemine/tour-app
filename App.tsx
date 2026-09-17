@@ -10,6 +10,8 @@ import { TestGuide } from './src/testing/TestGuide';
 import { ExportDialog } from './src/export/ExportDialog';
 import { makeExport, ExportDraft } from './src/export/jsonExport';
 import { OfflineMap } from './src/map/OfflineMap';
+import { TourPlayer } from './src/tours/TourPlayer';
+import { narrationAt } from './src/domain/narration';
 
 type Draft = { route: Coordinate[]; stops: Fixture['stops'] };
 function Button({ label, onPress, disabled = false, secondary = false }: { label: string; onPress: () => void; disabled?: boolean; secondary?: boolean }) {
@@ -17,6 +19,7 @@ function Button({ label, onPress, disabled = false, secondary = false }: { label
 }
 export default function App() {
   const { fixture, state, fatal, service, recent } = useSyncExternalStore(session.subscribe, session.getSnapshot);
+  const [lab, setLab] = useState(false);
   const [busy, setBusy] = useState(false), [editing, setEditing] = useState(false);
   const [guideOpen, setGuideOpen] = useState(false);
   const [mapOpen, setMapOpen] = useState(false);
@@ -75,21 +78,23 @@ export default function App() {
     ]);
   }
   const next = eligible(state);
-  const current = state.playback.index === null ? 'Silence' : fixture?.stops[state.playback.index].title;
+  const current = state.playback.index === null || !fixture ? 'Silence' : narrationAt(fixture, state.playback.index)?.title ?? fixture.stops[state.playback.index]?.title ?? 'Walking chapter';
+  if (!lab) return <TourPlayer onOpenLab={() => setLab(true)} />;
   return <ScrollView style={styles.screen} contentContainerStyle={styles.content} keyboardShouldPersistTaps="handled">
+    <Button secondary label="Back to Finchley tours" onPress={() => setLab(false)} />
     <Text style={styles.eyebrow}>WALKING TOUR LAB · M2 MAP PREVIEW</Text>
     <Text style={styles.heading}>{'A walk. A pause.\nThe next arrival.'}</Text>
     <Text style={styles.description}>A device experiment, with real silence between local clips. The guide retains procedures for reference and targeted checks.</Text>
     <Button secondary label="Offline test guide / saved results" onPress={() => setGuideOpen(true)} />
     <Button secondary label="North Finchley offline map" onPress={() => setMapOpen(true)} disabled={recording} />
-    {mapOpen && <OfflineMap state={state} onClose={() => setMapOpen(false)} />}
+    {mapOpen && <OfflineMap state={state} fixture={fixture} onClose={() => setMapOpen(false)} />}
     {exportDraft && <ExportDialog draft={exportDraft} onClose={() => setExportDraft(null)} />}
     {guideOpen && <TestGuide onClose={() => setGuideOpen(false)} />}
     {fatal ? <View style={styles.warning}><Text selectable>{fatal}</Text></View> : null}
     <View style={styles.card}>
       <Text style={styles.section}>{fixture?.title || 'Set up your test walk'}</Text>
-      <Text style={styles.description}>{fixture ? `3 stops · ${fixture.verification.status.replace('_', ' ')} · ${fixture.route.length} route points` : 'Record your own path or load a three-stop JSON fixture. No sample route is represented as safe or verified.'}</Text>
-      {fixture && <Text style={fixture.audioProfile ? styles.hold : styles.description}>{fixture.audioProfile ? 'EDGE TEST: A lasts 3:30. Use only for early-arrival / pass-pending checks.' : 'STANDARD CLIPS: short A/B/C. Use for baseline, detour and battery-saver walks.'}</Text>}
+      <Text style={styles.description}>{fixture ? `${fixture.stops.length} stops · ${fixture.verification.status.replace('_', ' ')} · ${fixture.route.length} route points` : 'Record your own path or load a three-stop JSON fixture. No sample route is represented as safe or verified.'}</Text>
+      {fixture && <Text style={fixture.audioProfile ? styles.hold : styles.description}>{fixture.narration ? 'CURATED TOUR: use the Finchley tour home for chapters, directions and story reviews.' : fixture.audioProfile ? 'EDGE TEST: A lasts 3:30. Use only for early-arrival / pass-pending checks.' : 'STANDARD CLIPS: short A/B/C. Use for baseline, detour and battery-saver walks.'}</Text>}
       <Button secondary label={editing ? 'Close configuration' : 'Configure / load fixture'} disabled={state.active || busy} onPress={() => { setEditing(!editing); setJson(fixture ? JSON.stringify(fixture, null, 2) : ''); }} />
       {fixture && !editing ? <Button secondary label="Export fixture JSON" onPress={() => void run(exportFixture)} disabled={busy} /> : null}
     </View>
@@ -122,7 +127,7 @@ export default function App() {
       <Button secondary label="New walk / reset progress" disabled={!fixture || state.active || busy} onPress={() => Alert.alert('Start a new attempt?', 'This resets stop progress and audio position. Existing diagnostics are retained.', [{ text: 'Cancel' }, { text: 'New walk', onPress: () => void run(session.newWalk) }])} />
       <View style={styles.row}><Switch accessibilityLabel="Automatic arrival playback" value={state.automatic} disabled={!fixture || busy} onValueChange={enabled => void run(() => session.dispatch({ type: 'automatic', at: Date.now(), enabled }))} /><Text style={styles.flex}>Automatic arrival playback</Text></View>
     </View>
-    {fixture ? <View style={styles.card}><Text style={styles.section}>Manual playback</Text><Text style={styles.description}>Play a clip deliberately, even while automatic speech is held.</Text>{fixture.stops.map((stop, index) => <View key={stop.id} style={styles.stop}><Text style={styles.stopTitle}>{stop.title} · {state.stops[index]}</Text><View style={styles.row}><View style={styles.flex}><Button label={`Play ${['A', 'B', 'C'][index]}`} disabled={busy} onPress={() => void run(() => session.dispatch({ type: 'manual', index, at: Date.now() }))} /></View><View style={styles.flex}><Button secondary label="Skip" disabled={busy} onPress={() => void run(() => session.dispatch({ type: 'skip', index, at: Date.now() }))} /></View></View></View>)}</View> : null}
+    {fixture ? <View style={styles.card}><Text style={styles.section}>Manual playback</Text><Text style={styles.description}>Play a clip deliberately, even while automatic speech is held.</Text>{fixture.stops.map((stop, index) => <View key={stop.id} style={styles.stop}><Text style={styles.stopTitle}>{stop.title} · {state.stops[index]}</Text><View style={styles.row}><View style={styles.flex}><Button label={`Play ${index + 1}`} disabled={busy} onPress={() => void run(() => session.dispatch({ type: 'manual', index, at: Date.now() }))} /></View><View style={styles.flex}><Button secondary label="Skip" disabled={busy} onPress={() => void run(() => session.dispatch({ type: 'skip', index, at: Date.now() }))} /></View></View></View>)}</View> : null}
     <View style={styles.card}>
       <Text style={styles.section}>Why it spoke — or stayed quiet</Text>
       {pendingArrivalNeedsFreshFix(state, recent[0]?.at ?? 0) ? <Text style={styles.hold}>Waiting for a fresh location before the next clip. Stay at the checked stop; manual playback is available.</Text> : null}

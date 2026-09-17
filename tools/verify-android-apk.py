@@ -33,6 +33,7 @@ for path in sys.argv[1:]:
     permissions = set(re.findall(r"uses-permission: name='([^']+)'", output))
     required = {
         'android.permission.RECEIVE_BOOT_COMPLETED',
+        'android.permission.RECORD_AUDIO',
         'android.permission.ACCESS_FINE_LOCATION',
         'android.permission.ACCESS_BACKGROUND_LOCATION',
         'android.permission.FOREGROUND_SERVICE_LOCATION',

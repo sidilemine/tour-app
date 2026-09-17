@@ -1,6 +1,6 @@
 # Survey existing tours before curating a new area
 
-Owner direction, 17 September 2026. This is the first research step for every new area, before selecting our stops, fixing a theme or drafting narration. It also comes next for Finchley: the existing A/B proposals and owner feedback are retained, but the broad survey has not yet been done. The earlier Kinks lookup is one lead, not a completed survey.
+Owner direction, 17 September 2026. This is the first research step for every new area, before selecting our stops, fixing a theme or drafting narration. It also comes next for Finchley: the existing A/B proposals and owner feedback are retained, but the broad survey is now [recorded](survey/README.md). The earlier Kinks lookup is one lead, not a completed survey.
 
 ## Purpose and coverage
 
@@ -48,4 +48,4 @@ Start by saving structured survey records in the repository. Shape the database 
 
 ## Current status
 
-Protocol recorded; comprehensive Finchley survey pending. No tour catalogue, database or new route verification is claimed by this document. The next content task is the survey, followed by revisiting the two outlines before full scripting.
+Protocol applied: the [first comprehensive Finchley survey](survey/README.md) is complete, with source-family records, consolidated catalogue, coverage gaps and decisions for the two authored tours. The database remains planned. Survey completion does not establish physical access or actual enjoyment.

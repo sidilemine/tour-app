@@ -1,0 +1,114 @@
+{
+  "preparedAt": "2026-09-17T11:10:04.847Z",
+  "voice": "macOS Daniel",
+  "wordsPerMinute": 145,
+  "routeDataLicense": "OpenStreetMap ODbL",
+  "variants": [
+    {
+      "variant": "B",
+      "id": "north-finchley-b",
+      "title": "B · How a neighbourhood makes itself",
+      "version": 1,
+      "routeResponse": "docs/content/routes/north-finchley-options-v1/B-response.json",
+      "distanceKm": 1.918,
+      "routerMovingSeconds": 1605.59,
+      "stationaryAudioSeconds": 538.962085,
+      "chapterAudioSeconds": 140.906349,
+      "ordinaryEstimateMinutes": [
+        39,
+        44
+      ],
+      "audio": [
+        {
+          "key": "north-finchley-b-tally-ho",
+          "bytes": 885111,
+          "md5": "4fedd6f0957fc1717f17ebf97d1be2a6",
+          "durationSeconds": 102.708707
+        },
+        {
+          "key": "north-finchley-b-trinity",
+          "bytes": 674452,
+          "md5": "4b77093ceb56c7f4add4f6e4ae560bbb",
+          "durationSeconds": 78.815147
+        },
+        {
+          "key": "north-finchley-b-meeting-house",
+          "bytes": 861751,
+          "md5": "5f83444e8c9d44216db3598df81a8932",
+          "durationSeconds": 100.724535
+        },
+        {
+          "key": "north-finchley-b-moss-hall-crescent",
+          "bytes": 783169,
+          "md5": "7c6953ef691d137cad743ecb5a1ce093",
+          "durationSeconds": 91.366576
+        },
+        {
+          "key": "north-finchley-b-elephant",
+          "bytes": 519875,
+          "md5": "5f231e4adbf54f0e7567afde338b11d6",
+          "durationSeconds": 60.136054
+        },
+        {
+          "key": "north-finchley-b-artsdepot",
+          "bytes": 903812,
+          "md5": "c3a8f2d0ae5bbbabbf22375f5dcec226",
+          "durationSeconds": 105.211066
+        },
+        {
+          "key": "north-finchley-b-walking-neighbourhood",
+          "bytes": 1200113,
+          "md5": "30ebb3a57fd6a1ab38f8685cc5d5c10d",
+          "durationSeconds": 140.906349
+        }
+      ]
+    },
+    {
+      "variant": "A",
+      "id": "north-finchley-a",
+      "title": "A · Places people went for a good time",
+      "version": 1,
+      "routeResponse": "docs/content/routes/north-finchley-review-v2/A-exterior-response.json",
+      "distanceKm": 1.158,
+      "routerMovingSeconds": 951.833,
+      "stationaryAudioSeconds": 468.718549,
+      "chapterAudioSeconds": 0,
+      "ordinaryEstimateMinutes": [
+        27,
+        32
+      ],
+      "audio": [
+        {
+          "key": "north-finchley-a-tally-ho",
+          "bytes": 903337,
+          "md5": "3f661fc1206a60f012f276ff834ff76d",
+          "durationSeconds": 105.053923
+        },
+        {
+          "key": "north-finchley-a-grand-arcade",
+          "bytes": 759515,
+          "md5": "57efe82de9b82a7d73800c82d88c59e5",
+          "durationSeconds": 87.944308
+        },
+        {
+          "key": "north-finchley-a-torrington",
+          "bytes": 825346,
+          "md5": "eddf6997ae1cfa7696cc3d82a259a7ab",
+          "durationSeconds": 96.036236
+        },
+        {
+          "key": "north-finchley-a-trinity",
+          "bytes": 637554,
+          "md5": "ba4fe3ac7be5bf211156cf92e84ecbbd",
+          "durationSeconds": 74.473016
+        },
+        {
+          "key": "north-finchley-a-artsdepot",
+          "bytes": 903812,
+          "md5": "c3a8f2d0ae5bbbabbf22375f5dcec226",
+          "durationSeconds": 105.211066
+        }
+      ]
+    }
+  ]
+}
