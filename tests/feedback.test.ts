@@ -118,3 +118,24 @@ test('a native record-start failure still stops the prepared microphone and reta
   assert.equal(h.stopped(), 1); assert.equal(h.capture.phase, 'idle');
   assert.equal(h.store.all()[0].interest, 6); assert.equal(h.store.all()[0].voices[0].status, 'failed'); h.db.close();
 });
+
+test('closing during microphone-route verification saves capture without entering recording UI', async () => {
+  let finishStart!: () => void, entered!: () => void;
+  const waiting = new Promise<void>(resolve => { entered = resolve; });
+  const phases: string[] = [];
+  const h = setup({ record: () => { entered(); return new Promise<void>(resolve => { finishStart = resolve; }); },
+    changed: phase => phases.push(phase) });
+  const start = h.capture.start(); await waiting;
+  const close = h.capture.stop('close'); finishStart(); await Promise.all([start, close]);
+  assert.equal(phases.includes('recording'), false);
+  assert.equal(h.store.all()[0].voices[0].status, 'saved'); assert.equal(h.stopped(), 1); h.db.close();
+});
+
+test('audio/input interruption finalises the existing note once and leaves earlier ratings intact', async () => {
+  let message = '';
+  const h = setup({ changed: (_phase, value) => { message = value; } });
+  h.store.update('attempt', { interest: 9 }); await h.capture.start();
+  await Promise.all([h.capture.stop('interruption'), h.capture.stop('background')]);
+  assert.equal(h.stopped(), 1); assert.equal(h.store.all()[0].voices[0].status, 'saved');
+  assert.equal(h.store.all()[0].interest, 9); assert.match(message, /interrupted.*saved/); h.db.close();
+});

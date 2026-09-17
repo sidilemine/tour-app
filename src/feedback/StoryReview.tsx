@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { AppState, Modal, Pressable, ScrollView, StatusBar, StyleSheet, Text, TextInput, View } from 'react-native';
+import { AppState, Modal, PermissionsAndroid, Platform, Pressable, ScrollView, StatusBar, StyleSheet, Text, TextInput, View } from 'react-native';
 import { AudioModule, createAudioPlayer, RecordingPresets, setAudioModeAsync, useAudioRecorder } from 'expo-audio';
 import { Fixture } from '../domain/fixture';
 import { narrationAt } from '../domain/narration';
@@ -7,6 +7,7 @@ import { ExportDialog } from '../export/ExportDialog';
 import { ExportDraft, makeExport } from '../export/jsonExport';
 import { setReviewMode } from '../session/session';
 import { FeedbackCapture, CapturePhase } from './capture';
+import { recordingAdapter, startVerifiedRecording } from './recordingInput';
 import { exportReviews, Review, VoiceNote } from './model';
 import { VoicePlayback } from './playback';
 import { saveVoiceCopy } from './voiceExport';
@@ -15,8 +16,10 @@ import { feedbackStore, inspectVoice, recoverInterruptedNotes } from './native';
 export function StoryReview({ fixture, storyIndex, onClose }: { fixture: Fixture; storyIndex: number; onClose: () => void }) {
   const story = narrationAt(fixture, storyIndex), storyId = story?.id ?? fixture.stops[storyIndex]?.id;
   const storyTitle = story?.title ?? fixture.stops[storyIndex]?.title ?? 'Story';
-  const recorder = useAudioRecorder({ ...RecordingPresets.HIGH_QUALITY, directory: 'document' });
+  const recorder = useAudioRecorder({ ...RecordingPresets.HIGH_QUALITY, numberOfChannels: 1, directory: 'document' });
   const recorderReleased = useRef(false);
+  const preferHeadset = useRef(true);
+  const [useHeadset, setUseHeadset] = useState(true), [microphone, setMicrophone] = useState('');
   const [recorderBroken, setRecorderBroken] = useState(false), [recordingMillis, setRecordingMillis] = useState(0);
   const [voicePlaying, setVoicePlaying] = useState<string | null>(null);
   const voicePlayback = useRef<VoicePlayback | null>(null), voiceRequest = useRef(0);
@@ -61,7 +64,14 @@ export function StoryReview({ fixture, storyIndex, onClose }: { fixture: Fixture
         if (!storyId) throw Error('No story selected.');
         current.current = repository.create({ tourId: fixture.id, tourVersion: fixture.version, storyId, storyTitle, storyIndex });
         capture.current = new FeedbackCapture(repository, current.current.id, {
-          permission: async () => (await AudioModule.requestRecordingPermissionsAsync()).granted,
+          permission: async () => {
+            if (!(await AudioModule.requestRecordingPermissionsAsync()).granted) return false;
+            if (Platform.OS === 'android' && Number(Platform.Version) >= 31 && preferHeadset.current) {
+              const granted = await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.BLUETOOTH_CONNECT);
+              if (granted !== PermissionsAndroid.RESULTS.GRANTED) throw Error('Nearby devices permission is needed for the headset microphone. Allow it, or choose Phone microphone.');
+            }
+            return true;
+          },
           mode: recording => setAudioModeAsync({ allowsRecording: recording, playsInSilentMode: true,
             shouldPlayInBackground: true, allowsBackgroundRecording: false, interruptionMode: 'doNotMix' }),
           prepare: async () => {
@@ -70,7 +80,14 @@ export function StoryReview({ fixture, storyIndex, onClose }: { fixture: Fixture
             if (!recorder.uri) throw Error('Recorder did not provide a private file.');
             return recorder.uri;
           },
-          record: () => recorder.record(), stop: async () => {
+          record: async () => {
+            setMicrophone('');
+            if (Platform.OS !== 'android') { recorder.record(); setMicrophone('System microphone'); return; }
+            await startVerifiedRecording(recordingAdapter(recorder), preferHeadset.current,
+              () => !cancelled && !closePending.current && AppState.currentState === 'active', input => {
+                if (!cancelled) setMicrophone(input.kind === 'phone' ? 'Phone microphone — hold the phone near you' : `Headset microphone — ${input.name ?? 'connected headset'}`);
+              });
+          }, stop: async () => {
             if (recorderReleased.current) return;
             try {
               // The pinned Android implementation returns its final status despite
@@ -95,7 +112,13 @@ export function StoryReview({ fixture, storyIndex, onClose }: { fixture: Fixture
     })();
     const poll = setInterval(() => {
       if (cancelled || recorderReleased.current) return;
-      try { setRecordingMillis(recorder.getStatus().durationMillis); } catch { /* Native object may be releasing during unmount. */ }
+      try {
+        setRecordingMillis(recorder.getStatus().durationMillis);
+        if (Platform.OS === 'android' && capture.current?.phase === 'recording') {
+          const input = recordingAdapter(recorder).getTourRecordingStatus();
+          if (input.interruption) void capture.current.stop('interruption');
+        }
+      } catch { /* Native object may be releasing during unmount. */ }
     }, 250);
     const subscription = AppState.addEventListener('change', state => {
       if (state !== 'active') { ++voiceRequest.current; voicePlayback.current?.stop(); }
@@ -165,7 +188,9 @@ export function StoryReview({ fixture, storyIndex, onClose }: { fixture: Fixture
         <Text style={s.title}>What stayed with you, and what would you change?</Text>
         <TextInput accessibilityLabel="Story feedback text" placeholder="Optional text note" value={review.text} multiline maxLength={8000} editable={!closing} onChangeText={text => update({ text })} style={s.input} />
         <Text style={s.text}>A voice note of about 20–40 seconds is useful if convenient. The microphone starts only when you tap Record. Locking the phone or leaving this screen stops and saves it.</Text>
-        {phase === 'recording' && <Text accessibilityRole="alert" style={s.recording}>Recording · {Math.floor(recordingMillis / 1000)} seconds</Text>}
+        <Button title={useHeadset ? 'Microphone: headset if connected (tap for phone)' : 'Microphone: phone (tap to prefer headset)'} disabled={phase !== 'idle' || busy} onPress={() => { preferHeadset.current = !preferHeadset.current; setUseHeadset(preferHeadset.current); setMicrophone(''); }} />
+        <Text style={s.text}>Record pauses other audio. Wait for the microphone name before speaking. If no headset is connected, use the phone near your mouth.</Text>
+        {phase === 'recording' && <Text accessibilityRole="alert" style={s.recording}>Recording · {Math.floor(recordingMillis / 1000)} seconds{`\n${microphone}`}</Text>}
         <Button title={phase === 'recording' ? 'Stop and save voice note' : busy ? 'Working…' : 'Record voice note'} disabled={busy || recorderBroken} onPress={recordOrStop} />
         {recorderBroken && <Text style={s.text}>The microphone was safely released after an error. Close and reopen this review to record another note.</Text>}
         <Text style={s.text}>Voice notes stay in private storage on this phone. There is no upload or transcription. JSON export includes ratings, text and note metadata. Save voice copy to folder creates a separate M4A file only when you choose it; its name includes the note ID for matching to the JSON.</Text>

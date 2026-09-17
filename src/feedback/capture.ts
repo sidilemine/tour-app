@@ -3,7 +3,7 @@ import { ReviewStore, VoiceNote } from './model';
 export type CapturePhase = 'idle' | 'starting' | 'recording' | 'stopping';
 export type CapturePorts = {
   permission(): Promise<boolean>; mode(recording: boolean): Promise<void>;
-  prepare(): Promise<string>; record(): void; stop(): Promise<void>;
+  prepare(): Promise<string>; record(): void | Promise<void>; stop(): Promise<void>;
   inspect(uri: string): Promise<{ bytes: number }>; durationMs(): number;
   foreground(): boolean; changed(phase: CapturePhase, message: string): void;
 };
@@ -36,14 +36,16 @@ export class FeedbackCapture {
       const now = Date.now();
       this.note = { id: `${now}-${Math.random().toString(36).slice(2, 10)}`, uri, status: 'recording', createdAt: now, durationMs: 0, bytes: 0, error: null };
       this.reviews.voice(this.reviewId, this.note); // Persist actual URI before any capture.
-      this.ports.record(); this.set('recording', 'Recording. Stop and save when ready.');
+      await this.ports.record();
+      if (!valid()) return; // finish() awaits start and saves any captured audio.
+      this.set('recording', 'Recording. Stop and save when ready.');
     } catch (error) {
       await this.stopPrepared();
       if (this.note) this.saveFailure(String(error));
       this.set('idle', `Recording did not start: ${String(error)}. Earlier feedback is unchanged.`);
     }
   }
-  stop(reason: 'save' | 'background' | 'close' = 'save'): Promise<void> {
+  stop(reason: 'save' | 'background' | 'close' | 'interruption' = 'save'): Promise<void> {
     ++this.generation;
     if (this.stopping) return this.stopping;
     this.stopping = this.finish(reason).finally(() => { this.stopping = null; });
@@ -62,7 +64,7 @@ export class FeedbackCapture {
       if (!bytes) throw Error('The voice file is empty or missing.');
       this.reviews.voice(this.reviewId, { ...note, status: 'saved', durationMs, bytes, error: null });
       this.note = null;
-      this.set('idle', reason === 'save' ? 'Voice note saved on this phone.' : 'Voice note stopped and saved. The tour remains paused.');
+      this.set('idle', reason === 'save' ? 'Voice note saved on this phone.' : reason === 'interruption' ? 'Recording was interrupted. The captured note is saved; reconnect your microphone or stop other audio before recording again. The tour remains paused.' : 'Voice note stopped and saved. The tour remains paused.');
     } catch (error) {
       await this.stopPrepared();
       this.saveFailure(String(error));

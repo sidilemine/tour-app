@@ -23,7 +23,7 @@ for path in sys.argv[1:]:
             for clip in ('a', 'b', 'c', 'edge-a'):
                 if hashlib.sha256(Path(f'assets/audio/{clip}.m4a').read_bytes()).digest() not in audio_hashes:
                     raise SystemExit(f'{path}: missing or changed embedded {clip} clip')
-    missing = [marker for marker in (b'tourAdapterVersion', b'tourGeneration', b'tourCommand') if marker not in dex]
+    missing = [marker for marker in (b'tourAdapterVersion', b'tourGeneration', b'tourCommand', b'startTourRecording', b'getTourRecordingStatus', b'TourRecordingSession') if marker not in dex]
     if missing:
         raise SystemExit(f'{path}: required native audio markers missing: {missing}. Check Android buildFromSource.')
     output = subprocess.check_output([
@@ -34,6 +34,7 @@ for path in sys.argv[1:]:
     required = {
         'android.permission.RECEIVE_BOOT_COMPLETED',
         'android.permission.RECORD_AUDIO',
+        'android.permission.BLUETOOTH_CONNECT',
         'android.permission.ACCESS_FINE_LOCATION',
         'android.permission.ACCESS_BACKGROUND_LOCATION',
         'android.permission.FOREGROUND_SERVICE_LOCATION',

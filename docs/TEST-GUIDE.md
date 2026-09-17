@@ -1,6 +1,6 @@
 # Offline phone test guide
 
-Generated from `src/testing/guide.json`; edit that source and run `npm run docs:guide`. Revision 8.
+Generated from `src/testing/guide.json`; edit that source and run `npm run docs:guide`. Revision 9.
 
 The planned M1 outdoor walks are complete. These procedures remain available for reference and targeted regression checks; do not repeat a walk unless the engineer identifies a specific need. Opening this guide never starts, pauses or ends a tour. Stop safely before using the screen. Saved results are observations: acceptance combines diagnostic review and physical feedback in the project checklist. Long A lasts 3 minutes 30 seconds and is only a test asset; desk interruption and recovery checks need just a few seconds of playback. M2 adds an engineer-prepared offline-map desk check; this does not reopen the full M1 field matrix. The Finchley tour home now contains the prepared A/B walks, transcripts, directions and story reviews. Case 20 records one short engineer-led check of the new import/recording boundary; it does not require another baseline walk.
 
@@ -274,3 +274,16 @@ Final self-contained A/B build; phone connected for one clustered session. Ask w
 4. Engineer restores/retains the self-contained app, ready to choose A or B. Normal tour use supplies route/enjoyment feedback; no stationary-minute or three-minute repeat is required for this case. Save observed results and any specific unresolved issue.
 
 Expected: Both tours remain usable offline; new recordings are audible and durable; Review/record/save/close never resumes narration; requested local export is verified and cancellation preserves original. Actual phone observations are distinct from automation and first tour enjoyment.
+
+## 21. Headset microphone and competing music
+
+Case: `headset-recording-focus`. Preparation: engineer. Build: offline-release.
+
+Prepared microphone/focus fix and the headphones used for touring. One short desk session; confirm listening readiness before any audible action. Keep prior recordings and tour progress intact.
+
+1. Engineer verifies installed recording adapter revision 1, microphone/Nearby devices permissions and actual available inputs. No tour restart or outdoor walk is needed.
+2. After Sidi confirms listening, start Spotify, then tap Record in a story review. Wait for a verified Headset microphone label. Speak one short sentence with the phone away from the mouth, then stop/save. Confirm music paused during capture and the saved sentence is clear.
+3. Confirm another short note can be saved with Phone microphone selected, and that the displayed input changes accordingly. If the headset disconnects during a deliberately started short capture, the existing note should be saved with an interruption message, without silently continuing on another microphone.
+4. Confirm saved-note or a few seconds of deliberate narration playback returns through the headphones after recording. Stop playback, close review and confirm narration remains held. Engineer inspects app-scoped errors and restores the self-contained variant with existing progress.
+
+Expected: Recording requests exclusive focus; the displayed microphone is an actual verified route, not merely a preference. Saved notes are intelligible, interrupted capture retains its file, and recording cleanup restores ordinary playback routing. No automatic tour resumption; no baseline walk or export repeat required.

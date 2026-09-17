@@ -9,7 +9,7 @@
     "android": {
       "package": "uk.sidi.walkingtourlab",
       "versionCode": 1,
-      "permissions": ["POST_NOTIFICATIONS", "RECEIVE_BOOT_COMPLETED"]
+      "permissions": ["POST_NOTIFICATIONS", "RECEIVE_BOOT_COMPLETED", "BLUETOOTH_CONNECT"]
     },
     "plugins": [
       ["expo-location", {"isAndroidBackgroundLocationEnabled": true, "isAndroidForegroundServiceEnabled": true}],

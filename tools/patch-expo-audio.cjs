@@ -47,3 +47,35 @@ patch('AudioPlayer.kt', '  fun setMediaSource(source: MediaSource) {\n    previo
 patch('AudioPlayer.kt', '      "id" to id,', '      "tourGeneration" to tourGeneration,\n      "id" to id,');
 
 patch('AudioPlayer.kt', '      "tourGeneration" to tourGeneration,', '      "tourAdapterVersion" to 1,\n      "tourGeneration" to tourGeneration,');
+
+// Owned foreground-recording adapter: verified input and exclusive focus are
+// deliberately separate from the accepted narration player's focus lifecycle.
+fs.copyFileSync('tools/native/TourRecordingSession.kt', `${root}/android/src/main/java/expo/modules/audio/TourRecordingSession.kt`);
+patch('AudioRecorder.kt', '  private var recorder: MediaRecorder? = null', `  private var tourRecording: TourRecordingSession? = null
+  val isTourRecording: Boolean get() = tourRecording != null
+  fun startTourRecording(preferHeadset: Boolean) {
+    check(isPrepared) { "Prepare the microphone before recording." }
+    check(tourRecording == null) { "A recording is already active." }
+    val session = TourRecordingSession(context, { recorder }, { if (isRecording) pauseRecording() })
+    tourRecording = session
+    try { session.begin(preferHeadset); record() }
+    catch (error: Exception) { session.close(); tourRecording = null; throw error }
+  }
+  fun tourRecordingStatus(): Map<String, Any?> = tourRecording?.status()
+    ?: mapOf("revision" to 1, "verified" to false, "kind" to "unknown", "name" to null, "interruption" to "Recording is not active.")
+
+  private var recorder: MediaRecorder? = null`, '  fun startTourRecording(');
+patch('AudioRecorder.kt', '  private fun reset() {', `  private fun reset() {
+    try { tourRecording?.close() } finally { tourRecording = null }`);
+patch('AudioModule.kt', '      Function("record") { recorder: AudioRecorder, options: RecordOptions? ->', `      Function("startTourRecording") { recorder: AudioRecorder, preferHeadset: Boolean ->
+        checkRecordingPermission()
+        recorder.startTourRecording(preferHeadset)
+      }
+
+      Function("getTourRecordingStatus") { recorder: AudioRecorder ->
+        recorder.tourRecordingStatus()
+      }
+
+      Function("record") { recorder: AudioRecorder, options: RecordOptions? ->`, '      Function("startTourRecording")');
+patch('AudioModule.kt', '          if (recorder.isPaused) {', '          if (recorder.isPaused && !recorder.isTourRecording) {');
+console.log('expo-audio: verified tour recording input/focus revision 1 installed');
