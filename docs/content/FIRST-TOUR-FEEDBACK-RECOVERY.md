@@ -2,9 +2,15 @@
 
 17 September 2026. **Tour B, “How a neighbourhood makes itself”, George narration, content version 2.** Sidi reported taking his first tour and recording long comments, then discovering that the headphones' microphone apparently had not been used. He authorised retrieval and recovery, offering re-recording or Q&A for gaps.
 
+## Owner's purpose and overall verdict — subsequent clarification
+
+Sidi explicitly says the tour was a **fantastic first effort**, he **100% enjoyed it**, and learned a great deal about his own area. The detailed comments below are intended as guidance for **building tours in general**, not a commission to fine-tune this tour. His main learning is to divide the work between different agents rather than attempting all stages in one pass. This supersedes the initial engineer framing of the examples as a local repair/rewrite backlog.
+
+Preserve the original examples, recovered wording, research limits and draft alternatives as learning evidence. The Crescent's unresolved historical details are not a newly assigned investigation; the draft turn is not a scheduled narration change. The [proposed workflow](TOUR-AUTHORING-WORKFLOW.md) translates the lessons into separate authoring responsibilities and handoffs. Product recording/interaction reports remain separate from the successful content experience.
+
 ## Outcome and limits
 
-Useful, coherent feedback was recovered for **all six stops and the walking chapter**. A complete re-recording is unnecessary. Some words and several detailed passages remain uncertain; the three specific clarification questions below should take priority over repeating whole memos.
+Useful, coherent feedback was recovered for **all six stops and the walking chapter**. A complete re-recording is unnecessary. Some words and several detailed passages remain uncertain; the specific clarification questions below should take priority over repeating whole memos. Sidi has since clarified all three points; their research and implementation consequences are recorded below.
 
 The private app archive contains **14 field recordings totalling 19 minutes 29 seconds**, plus the separate seven-second desk recording from the earlier phone check. All 14 field files decode fully; their extracted bytes match the preserved archive. Ratings are intact for all seven subjects. Very short recording attempts are included in that count, not treated as additional substantive reviews.
 
@@ -20,9 +26,9 @@ These are Sidi's stored scores, not inferred from tone or transcription.
 | --- | ---: | ---: | ---: | --- |
 | Tally Ho | 7 | 7 | 5 | Main feedback recovered; precise orientation example partly garbled |
 | Trinity | 8 | 5 | 7 | Main feedback recovered |
-| Meeting House sculpture | 9 | 10 | 9 | Substantial feedback recovered; reflection/theme distinction needs confirmation |
+| Meeting House sculpture | 9 | 10 | 9 | Substantial feedback recovered; reflection/theme distinction subsequently clarified below |
 | Walking chapter | 9 | 10 | 8 | Main editorial feedback recovered; extent of automatic-start problem uncertain |
-| Moss Hall Crescent | 10 | 10 | 10 | Strong overall response recovered; lease detail and exact confusing turn need clarification |
+| Moss Hall Crescent | 10 | 10 | 10 | Strong overall response recovered; lease and turn questions clarified by Sidi below; historical answers still need research |
 | Elephant | 8 | 8 | 9 | Main feedback recovered, especially the final memo spoken directly into the phone |
 | artsdepot | 9 | 7 | 10 | Main feedback recovered |
 
@@ -95,11 +101,31 @@ The strongest repeated editorial themes are **physical orientation, temporal ori
 - The walking chapter reportedly required a manual start, with a less clear reference to other automatic starts not working. Saved final state has automatic narration enabled, six stops and the chapter completed, tracking off and a review hold. Field diagnostic logging was off, so old retained logs cannot establish the walk's arrival/hold sequence. Completion is not proof of automatic arrival success. Review intentionally holds narration until explicit Resume; whether that explains this outing needs a targeted follow-up, not an assumed diagnosis.
 - No app code, narration or route was changed during this recovery task. Future fixes should address the observed recording/navigation needs with the smallest useful check, not require another full baseline walk.
 
-## Three clarification questions
+## Initial clarification questions and subsequent answers
 
 1. At the Crescent, what did you want explained more clearly about the lease/ownership arrangement?
 2. Which turn or instruction near Ballards Lane was confusing, and what made it confusing?
 3. At the sculpture, was your point to keep broader reflection brief unless it is the tour's explicit theme, or was there a different distinction?
+
+### Owner clarification: development, leases and the parallel street
+
+Sidi clarified that the story made the green sound like a shared responsibility and endeavour without explaining how the development actually happened. He asks who developed it, who granted the lease to whom, and who owns and maintains the green now. His suggestion of a single developer is a question to investigate, not a verified historical answer. The issue is the missing explanation of the people and arrangement, not difficulty understanding what a communal garden is.
+
+For the turn, Sidi identifies the **right turn from Alexandra Grove into Moss Hall Crescent**, approaching Ballards Lane. The Crescent runs directly parallel to Ballards Lane, so in practice one continues to the main-road junction area and then turns right. It should not sound like a separate obvious earlier side road. Sidi calls for map and possibly Street View/image review in preparing directions: irregular street layouts are normal design conditions, and misleading spoken guidance is worse than simply referring to a usable route map.
+
+**Engineer check:** the saved B map shows the adjacent parallel roads, agreeing with the substance of the owner’s field observation. Installed wording calls the Crescent “a turning off Alexandra Grove before Ballards Lane”; it misses the visual relationship. Previous Street View checks reviewed the villa viewpoint, not recognition of this junction from the approaching walker’s perspective. A candidate rewrite is: “Continue along Alexandra Grove to the Ballards Lane junction. Turn right into Moss Hall Crescent, the small road running alongside Ballards Lane, with the green strip between them.” This is a draft based on the field report/map, not newly verified pavement/crossing guidance or an installed change. The final check must identify the exact pedestrian entry and avoid directing the listener into traffic.
+
+**History check, 17 September:** Barnet’s [2015 appraisal](https://open.barnet.gov.uk/download/2nx73/e21), printed p.12, describes plot subdivision from 1867 and lease restrictions protecting a planted space for villa occupiers. It does not identify the developer or the parties to those leases. Printed p.30 describes mowing/pruning at that time without naming the responsible party. Neither establishes current ownership or maintenance. These four questions remain open; do not substitute an assumed council/developer transaction or infer communal ownership from communal use. Appropriate next evidence is the original lease/development records and a current land/maintenance record. No paid title search or external enquiry was made.
+
+The installed phrase “shared undertaking” and the preceding suggestion of households keeping to an agreement need revision because they imply a social/development mechanism the cited passage does not explain. Shared amenity, ownership, development and maintenance must be kept distinct. The owner’s two Crescent clarification answers are captured; the sculpture answer follows.
+
+### Owner clarification: sculpture and bounded digressions
+
+Sidi welcomes both immediately place-linked material and broader thinking/digressions within the same story. His concern is that digressions should have time caps so they cannot accidentally overwhelm it. The whole experience should remain grounded, with the visitor clearly benefiting from walking there rather than hearing the same material at home or in a hotel room. This supersedes the initial tentative question that linked permission for reflection to an explicit tour theme; that restriction was not his point.
+
+**Owner direction:** coexistence with an explicit time budget and a clear benefit from being present. **Engineer proposal, not yet owner-approved:** start with broader digressions occupying at most roughly 25% of each stationary story's spoken duration, excluding directions. Track the planned allowance and check the rendered duration, rather than allowing several small tangents to accumulate. Historical explanation tied to the visible place remains core content even when describing something vanished. Any deliberate larger allowance should be identified during authoring and justified by what it adds to this particular place. The number is an initial working hypothesis, not a finding from the walking-tour literature or a settled universal quota.
+
+All three recovery clarification questions are now answered. No missing whole memo requires re-recording.
 
 No whole-memo re-recording is requested. A separate technical follow-up can establish whether Resume was used after reviews and which later automatic starts failed, when that diagnosis is the active task.
 

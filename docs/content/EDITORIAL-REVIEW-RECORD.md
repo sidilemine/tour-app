@@ -15,7 +15,7 @@ When we take a serious look back: read this record, the captured comments and th
 - [Initial walking-tour research](WALKING-TOUR-DESIGN-RESEARCH.md) and [original Word review](walking-tour-design-review.docx).
 - [First 34 owner Word comments with anchored text](reviews/2026-09-16-owner-word-comments.json): 24 on the research review, 10 on the narration pair; document-local IDs and source-file SHA-256 retained. This committed text capture remains usable if the original commented Word files are absent from another checkout. Original commented files remain locally under `docs/content/` and are not overwritten.
 - [Latest 11 tour-options comments](reviews/2026-09-17-tour-options-comments.json) and [response/development brief](NORTH-FINCHLEY-REVIEW-RESPONSE.md): **45 comments total** across the three reviews. All retain source-file hashes, local IDs and anchored text.
-- [Current design guidance](TOUR-DESIGN-GUIDANCE.md), revisions 1–6 with revision history.
+- [Current design guidance](TOUR-DESIGN-GUIDANCE.md), revisions 1–9 with revision history.
 - [First North Finchley sample pair](NORTH-FINCHLEY-SAMPLE-STOPS.md) and [original Word copy](north-finchley-sample-stops-review.docx), including the rejected memorial execution.
 - [Tally Ho revision 2 and response mapping](TALLY-HO-SAMPLE-V2.md) and [Word copy](tally-ho-sample-review-v2.docx). The later imagined-colour correction supersedes its narrower review note, not its narration.
 - [Current tour options A and B](NORTH-FINCHLEY-TOUR-OPTIONS.md), [Word proposal](north-finchley-tour-options-review.docx), and [actual routing evidence](routes/north-finchley-options-v1/README.md).
@@ -121,6 +121,30 @@ After the map walk, Sidi reported accurate location, correct audio and airplane-
 **Recovered themes for discussion:** anchor each stop in what the visitor sees; give dates and historical context; connect the junction/coaching/cycling and wider estate stories more clearly; use imagined colour to convey a different era rather than over-describing familiar activities. The Crescent receives 10/10 in all dimensions; the walking chapter is especially promising. Research the church/music relationship, artist/meeting-house context and historical continuity rather than padding known facts. Photographs would help the vanished cinema. Preserve the idea of separate research, curation, assembly, writing and review for later process discussion; no agent framework was commissioned here.
 
 **Open:** the Crescent lease detail, the precise confusing turn and the sculpture/reflection distinction need short clarification. Reported microphone selection, locking/camera recording stops, Spotify interaction and manual narration starts need scoped technical diagnosis. Saved completion does not certify automatic starts. **Outcome:** no full re-recording or repeat walk requested; no content/code changes yet. Keep this outing's actual responses distinct from earlier desk preferences and await corrections before adopting detailed general rules.
+
+### 13 Explain who acted, and check directions from the actual approach
+
+**17 September 2026. Owner clarification of first-walk feedback:** at the Crescent, “shared responsibility and endeavour” left the development mechanism unexplained. Who developed it, who leased what to whom, and who owns/maintains the green now? A single developer is Sidi's hypothesis to investigate, not a sourced fact. The specific navigation failure was the right turn from Alexandra Grove at the Ballards Lane end: the Crescent runs parallel to the main road, so an instruction suggesting a separate earlier side street is confusing.
+
+**Owner direction:** use maps and potentially Street View screenshots to prepare usable guidance. Irregular city street layouts should be expected, not dismissed as rare edge cases. A visible route map is a useful fallback; bad guidance is worse than no guidance.
+
+**Engineer outcome:** [the recovery record](FIRST-TOUR-FEEDBACK-RECOVERY.md#owner-clarification-development-leases-and-the-parallel-street) now includes the clarified questions, exact installed wording, map comparison, candidate wording and limits of the council source. Shared use does not establish shared ownership or collective development. The existing appraisal does not answer the developer/lease-party/current-management questions. Earlier imagery checks concerned the stop viewpoint, not the approach junction, so they did not validate this instruction. Guidance revision 7 adds an explicit check of the historical actors and arrangements, plus map/approach-image review for spoken directions. No audio/package or phone update occurred; entry 14 records the subsequent sculpture/reflection clarification.
+
+### 14 Welcome broader thinking, but budget its duration
+
+**17 September 2026. Owner clarification:** both directly place-linked material and broader thinking/digressions are welcome in the same story. Cap the time spent on digressions so they do not accidentally overwhelm it. Keep the experience grounded and make being there meaningfully better than listening at home or in a hotel room. This corrects the tentative recovery question: broader reflection need not be reserved for a tour with an explicitly matching theme.
+
+**Accepted direction:** use a time allowance and a test of the benefit from being present. **Engineer proposal, not an accepted numeric rule:** initially allow roughly 25% of a stationary story's spoken duration for broader digression, excluding directions; check the actual audio duration and label any deliberate exception during authoring. Place-specific historical context belongs to the core story, even when its subject has vanished. Guidance revision 8 separates this proposal from Sidi's principle. All three voice-recovery clarification gaps are now answered; no wholesale re-recording is required. Historical ownership/development research and navigation/app corrections remain separate next work.
+
+### 15 Purpose correction: general authoring lessons, not Finchley polishing
+
+**17 September 2026. Explicit owner direction:** all these comments are intended to guide how tours are built in general, not to fine-tune this particular tour. Sidi calls the result a fantastic first effort, says he “100% enjoyed it”, and learned a lot about where he lives. His perfectionism explains the detailed critique; it must not be interpreted as dissatisfaction or an unsuccessful first tour.
+
+**Owner's main learning:** divide the work between different agents instead of trying to do everything in one pass. This is an authoring-process direction, not permission to build a speculative framework or spawn unrelated agents during documentation work.
+
+**Superseded engineer framing:** entries 12–14 and the initial recovery summary treated several examples as candidate local research/rewrite tasks. Keep those examples as evidence for general lessons; they are not a Finchley improvement backlog. The open developer/lease/current-maintenance details illustrate incomplete research of an arrangement; they do not now commission an exhaustive title-history investigation. Candidate junction wording illustrates approach-aware guidance, not a promised re-recording or route patch.
+
+**Outcome:** the first B walk supplies explicit positive enjoyment/learning evidence for M2. Saved completion does not prove automatic arrivals, and reported recording behaviour remains a separate product concern; neither invalidates the owner's enjoyment. Guidance revision 9 and the [proposed authoring workflow](TOUR-AUTHORING-WORKFLOW.md) organise the lessons into distinct responsibilities, handoffs and an integrated review. A remains optional comparative learning, not a required retake of B. Numeric digression budgets and the precise division of roles are engineer proposals for future use, not newly imposed acceptance gates.
 
 ## Questions to carry into a later systematic review
 

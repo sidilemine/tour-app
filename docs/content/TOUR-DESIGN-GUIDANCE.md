@@ -1,6 +1,6 @@
 # Walking tour design guidance
 
-Living editorial reference, revision 6, 17 September 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
+Living editorial reference, revision 9, 17 September 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
 
 **Our aim:** make an enjoyable, relaxing walk reveal the non-obvious stories and meaning beneath the surroundings, giving the listener a deeper connection to a place, whether new or familiar. Being there should contribute something that reading at home cannot.
 
@@ -19,6 +19,12 @@ Additional basis: Sidi's ten comments, IDs 0–9, in `north-finchley-sample-stop
 Revision 3 incorporates Sidi's subsequent conversation correction: the narrator should actively bring vanished scenes to life through strongly supported imagined colour. The earlier response to sample comment 4 was too restrictive.
 
 Additional basis for revision 4: all 11 tour-options comments, IDs 0–10, reviewed on 17 September. The [exact capture](reviews/2026-09-17-tour-options-comments.json) and [response](NORTH-FINCHLEY-REVIEW-RESPONSE.md) preserve the choices and reasoning.
+
+## First-walk interpretation and authoring process
+
+Sidi explicitly enjoyed the first Tour B walk and learned a lot about his own area. His detailed comments are lessons for future tour creation, **not a request to polish Finchley**. Keep examples as evidence without automatically creating a local rewrite backlog. The three recovered clarification gaps are closed as feedback questions; unresolved source details illustrate what future research should catch.
+
+Divide authoring work among agents with distinct responsibilities and clear handoffs instead of asking one agent to research, select, navigate, write and assess itself in one pass. The [proposed workflow](TOUR-AUTHORING-WORKFLOW.md) separates research, curation, route review, writing and independent checking, with a lead responsible for integration. This is the owner's general process direction; the exact roles and deliverables are an initial implementation proposal for the next authoring task. It does not commission a software orchestration framework.
 
 ## Owner direction
 
@@ -48,6 +54,10 @@ The narrator should do the imaginative work. Asking a listener to imagine a vani
 
 The evidence can establish the kind of place, its period and its everyday life without documenting every sensory detail at one particular moment. Build a convincing scene from that foundation. Keep this separate from assigning an unsupported meaning to a memorial: the failure of that ending does not make imaginative reconstruction inappropriate elsewhere.
 
+### Welcome broader thought without losing the place
+
+A story can combine immediate observations and place-specific history with broader reflection or digression. Sidi expressly welcomes both. Give digressions a time cap so they cannot accidentally overwhelm the story, and keep the whole experience grounded: being at this place should add clear value over hearing the same narration at home or in a hotel room. Broader thinking does not require an explicitly matching tour theme. This is Sidi's clarification of the sculpture feedback after the first Tour B walk.
+
 ### Give the tour a meaningful theme
 
 A main theme and connections between stops matter. Individual insights can connect a physical feature to that theme. Keep the connection understandable without asking listeners to retain a complicated argument or resolve a series of intellectual challenges. The walk should remain relaxing and interesting in unfamiliar surroundings. Comments 5, 6 and 20.
@@ -72,6 +82,18 @@ Avoid repeating the same dramatic formula at every stop. Most stories can be eve
 
 Avoid unsuitable road environments and uncomfortable stopping places. Walking quality matters alongside story quality. Use the planned incoming route and recognisable landmarks to establish directions; GPS is one input, not our only context. For example, a verified pharmacy at the relevant junction can anchor a turn. Street View is worth considering as a desk check of approaches, pavements and visible features. Comments 10, 16 and 17.
 
+### Explain the people and arrangement behind the story
+
+When a story turns on a development, lease, communal amenity or institution, explain who did what and how the arrangement worked. Distinguish the landowner, developer, lease parties, beneficiaries and maintainers where relevant. Shared use does not imply shared ownership or a collective development project. Do not let phrases such as “shared undertaking” substitute for a missing explanation. Research the unanswered relationship, or keep the interpretation within what the sources establish. This follows Sidi's first-walk Crescent clarification; the actual developer, lease parties and current green ownership/maintenance remain research questions.
+
+### Write directions from the walker's approach
+
+Review each spoken decision against the route map and the actual incoming direction. Use dated Street View/panoramas, and screenshots where useful for review, to resolve ambiguous junctions, parallel roads, set-back entrances, pavement connections and landmarks/signs visible from that approach. A reviewed destination viewpoint does not establish that the approach instructions work. Expect irregular city layouts as an ordinary authoring problem, not an exception to ignore.
+
+A useful direction explains what the visitor reaches, the action there and a recognisable confirmation afterwards. Distinguish a street-name label on a map from a sign the walker can actually see. If the layout cannot be resolved, give an honest map-check instruction instead of an overconfident turn. Keep a compact record of the map, approach image/date/heading where used, interpretation and remaining uncertainty. Use this to prepare directions before the walk; it does not add a live Street View dependency or demand a separate field test of every junction.
+
+Sidi's example is Alexandra Grove → Moss Hall Crescent: the Crescent runs alongside Ballards Lane. Wording suggesting a distinct earlier side street failed to convey the layout. The [clarified field record](FIRST-TOUR-FEEDBACK-RECOVERY.md#owner-clarification-development-leases-and-the-parallel-street) contains a candidate rewrite; it is not yet installed or checked for exact pavement/crossing placement.
+
 ### Allow intrigue within honest boundaries
 
 Enjoyment can include speculation, folklore and material beyond an encyclopaedic account. The evidence policy should support engaging narration rather than strip it of personality. The practical distinction between fact, inference, legend and imagination is set out below; the specific wording is a working interpretation of Sidi's preference. Comment 8.
@@ -89,6 +111,12 @@ Use a clear theme as a selection aid, without forcing unrelated material into a 
 For each candidate retain a brief note: the non-obvious insight; what the visitor experiences here; theme connection; evidence; intended tone; access; and the cost in walking and listening time. Compare candidates against one another so that several individually good stops do not repeat the same idea.
 
 For each leg, estimate walking time, identify navigation moments and allocate moving narration, quiet and any separate stationary story. Count simultaneous walking and listening once in the tour total. Use the measured recording length before finalising the budget; shorten the subject or change the route when it does not fit. No universal words-per-stop target or dramatic-stop quota is adopted.
+
+### Proposed initial digression budget
+
+**Engineer proposal, awaiting owner agreement:** try a maximum of roughly one quarter of each stationary story's spoken duration for broader digressions, excluding navigation. Mark the intended allowance in the outline and check measured audio after rendering. Several small asides count towards the same allowance. A deliberate exception should have a stated place-specific purpose, rather than arising accidentally during drafting. This is a practical starting hypothesis, not a literature-backed optimum or an owner-approved numerical standard.
+
+Count historical context that explains the actual place as core story, including a vanished scene tied to that location. The distinction is not visible versus invisible, or facts versus reflection. Ask whether the passage helps the visitor understand what makes this particular place worth visiting, and whether the broader thought returns their attention to it. A time cap alone cannot establish that benefit.
 
 ### Keep each stop focused and meaningful
 
@@ -170,3 +198,9 @@ Revision 4 applies all 11 tour-options comments: 0–1 retain Tally Ho/Arcade; 2
 Revision 5 adds the owner-directed comprehensive public-tour survey as the first step for a new area and records reusable cataloguing as a planned capability. This changes the next Finchley task from full scripting to surveying and revisiting the existing outlines. The research and database implementation remain pending.
 
 Revision 6 records application of the survey to the authored A/B versions and the implemented local review flow. See [survey synthesis](survey/README.md) and [tour preparation](../../content/north-finchley/README.md). The new scripts, public-exterior placements and timing are candidates for actual owner enjoyment feedback; they are not elevated into proven general rules.
+
+Revision 7 incorporates Sidi’s first-walk clarification: explain the actors and arrangements behind communal-space stories, and check spoken navigation against maps and the walker’s actual approach, using dated street imagery for ambiguity. Two Crescent clarification gaps are closed as feedback questions; historical research and revised installed content remain outstanding.
+
+Revision 8 records Sidi’s explicit welcome for place-linked material and broader digressions together, with time caps and a clear benefit from being there. The proposed 25% starting allowance is kept separate from accepted owner direction and awaits agreement.
+
+Revision 9 records the owner’s positive first-walk verdict and explicit purpose correction: general tour-building lessons, not a Finchley polishing assignment. It adds the direction to divide work between specialist agents and links the proposed handoffs/integration workflow.
