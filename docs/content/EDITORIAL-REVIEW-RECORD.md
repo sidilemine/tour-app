@@ -146,6 +146,14 @@ After the map walk, Sidi reported accurate location, correct audio and airplane-
 
 **Outcome:** the first B walk supplies explicit positive enjoyment/learning evidence for M2. Saved completion does not prove automatic arrivals, and reported recording behaviour remains a separate product concern; neither invalidates the owner's enjoyment. Guidance revision 9 and the [proposed authoring workflow](TOUR-AUTHORING-WORKFLOW.md) organise the lessons into distinct responsibilities, handoffs and an integrated review. A remains optional comparative learning, not a required retake of B. Numeric digression budgets and the precise division of roles are engineer proposals for future use, not newly imposed acceptance gates.
 
+### 16 Second tour: historical hierarchy, the present place, motives and detailed preservation
+
+**18 September 2026.** Sidi reports the second tour complete. [Detailed recovery](SECOND-TOUR-FEEDBACK-RECOVERY.md) preserves the five stored reviews and nine recordings (15:11), with uncertain passages and the likely Torrington/Trinity labelling mismatch explicit. Both raw timestamped recognition passes are collated in one private local file, alongside untouched recordings. Do not reduce the detailed record to this index entry when later synthesising guidelines.
+
+Recovered directions extend the first outing: establish historically significant context before subsidiary anecdotes; investigate genuinely independent source coverage for depth and subject selection (Wikipedia notability is suggested as inspiration, not a hard imported rule); connect heritage to today's businesses and condition; evoke the differences between a specific past period and today; introduce performers/institutions instead of assuming familiarity; explain the relationship between people, activity and this place; check sensory claims for internal consistency; and uncover motives so facts convey meaning. Each point's examples, qualification and uncertainty remain in the detailed record. These are general-authoring inputs, not a commissioned rewrite of Finchley.
+
+Sidi explicitly asks to preserve generous detail/raw text for later work on agent guidelines and guardrails, potentially using another model/thinking level then. Preserve the material now; no model switch, new agent framework or rigid numerical research rule is implied. There is strong stop-specific praise for the Arcade and artsdepot; do not invent an overall A enjoyment verdict from those passages. Audio capture/Spotify and automatic-arrival questions remain separate technical issues.
+
 ## Questions to carry into a later systematic review
 
 - Does context before anecdote usually improve the story, and when can an immediate intriguing detail work better?

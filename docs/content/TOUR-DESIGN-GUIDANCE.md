@@ -20,6 +20,10 @@ Revision 3 incorporates Sidi's subsequent conversation correction: the narrator 
 
 Additional basis for revision 4: all 11 tour-options comments, IDs 0–10, reviewed on 17 September. The [exact capture](reviews/2026-09-17-tour-options-comments.json) and [response](NORTH-FINCHLEY-REVIEW-RESPONSE.md) preserve the choices and reasoning.
 
+## Second-tour material awaiting systematic synthesis
+
+The [18 September detailed feedback](SECOND-TOUR-FEEDBACK-RECOVERY.md) and [discussion entry 16](EDITORIAL-REVIEW-RECORD.md#16-second-tour-historical-hierarchy-the-present-place-motives-and-detailed-preservation) extend the evidence for historical context, present-day relevance, supported evocation, independent-source depth and explanations of motives. Sidi asks us to preserve detail for later synthesis; read the full recovery record and retained private transcripts before reducing this to agent instructions. No fixed source-count/notability rule is adopted here.
+
 ## First-walk interpretation and authoring process
 
 Sidi explicitly enjoyed the first Tour B walk and learned a lot about his own area. His detailed comments are lessons for future tour creation, **not a request to polish Finchley**. Keep examples as evidence without automatically creating a local rewrite backlog. The three recovered clarification gaps are closed as feedback questions; unresolved source details illustrate what future research should catch.

@@ -17,3 +17,7 @@ TypeScript, lint and guide parity pass. **142 tests pass**, including saved-offs
 Build source **`de251b0367a4c3b6`**, guide **10**. Both development and self-contained APKs assembled successfully. Native marker/permission checks passed; all 257 offline map files and both tours’ 12 audio entries match the expected bytes. No native API or dependency changed in this assignment; the previous microphone/Spotify implementation and its pending physical evidence remain separate.
 
 The Pixel was disconnected during preparation. No installation or new audible result is claimed. Cluster a brief review-close/resumption observation into the already prepared EarFun/Spotify session; no repeat walk or full M1 matrix is requested. Existing location/offset checks remain reusable.
+
+## Installation, 18 September
+
+After the second-tour backup, the self-contained guide-10 APK above was installed in place and cold-opened without Metro. A remains selected with all stops complete and tracking stopped; updated resume-on-close help is visible. This is a silent handoff, not an audible resumption test. The second outing used the previous guide-9 APK and provides no evidence for the new close behaviour.

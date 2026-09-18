@@ -1,8 +1,8 @@
 # Take the two Finchley tours
 
-Sidi has completed the first Tour B walk; [recovered feedback and open questions](FIRST-TOUR-FEEDBACK-RECOVERY.md) are saved for review. A remains available and is recommended as authored once the short microphone/Spotify check is complete. Its Arcade and Torrington stories add useful comparison; B’s Crescent junction is not on A. No rewrite is needed before trying it. Both tours are installed and prepared on the Pixel; the [17 September phone handoff](../test-results/M2-tour-phone.md) records the successful recording/playback, copy and cold-reopening checks. The first B outing supplies ordinary-use feedback; it does not establish conditions or enjoyment for A.
+Sidi has now taken both tours. The [first Tour B feedback](FIRST-TOUR-FEEDBACK-RECOVERY.md) and [second Tour A feedback](SECOND-TOUR-FEEDBACK-RECOVERY.md) are saved as general authoring input; no editorial rewrite is scheduled. The records distinguish reported enjoyment, route coverage and unresolved app behaviour.
 
-Both **George narration · v2** editions are installed and prepared; the [voice update record](../test-results/M2-george-voice.md) records the silent installation and cold-reopening check. After feedback retrieval, B is selected with all stops complete and tracking stopped. Choose A for the other walk; use **Take this tour again** only when intentionally restarting B.
+Both **George narration · v2** editions remain installed and prepared. After the 18 September retrieval, A is selected with all stops complete and tracking stopped. The resume-on-close update is installed; microphone/Spotify behaviour is still under review. See [current phone status](../PHONE-CHECKS.md). Choose either tour in the library; **Take this tour again** intentionally resets that tour's progress while preserving feedback.
 
 ## Choose a walk
 

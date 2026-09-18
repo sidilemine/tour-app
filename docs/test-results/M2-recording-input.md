@@ -34,3 +34,7 @@ Implementation inspected against installed Expo Audio 57.0.5 and official [Expo 
 ## Subsequent review-resume correction
 
 The next assignment found that the 138-test run preceded adding guide case 21: the final guide-9 tree retained an obsolete expected case count of 20. The new suite exposed that failure; the assertion is now updated to require all 21 specific cases. The earlier claim did not establish a passing suite for the final guide-9 tree. Subsequent owner direction changes explicit review close to resume an active tour; the earlier close-stays-held procedure is historical, superseded by guide 10.
+
+## Second outing, 18 September
+
+The retrieved installed APK confirms source `ab54dddf76bf5cd0` was used. The [new feedback](../content/SECOND-TOUR-FEEDBACK-RECOVERY.md) includes a clear report at Tally Ho that recording did not stop Spotify, followed by an unclear short Arcade report that something worked. Actual input route was not persisted; successful saved files do not establish headset capture or focus correctness. Keep this issue open, with the conflicting/unclear later observation retained. The review-resume update was installed silently after retrieval; no further listening test occurred.
