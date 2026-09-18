@@ -16,7 +16,8 @@ When we take a serious look back: read this record, the captured comments and th
 - [First 34 owner Word comments with anchored text](reviews/2026-09-16-owner-word-comments.json): 24 on the research review, 10 on the narration pair; document-local IDs and source-file SHA-256 retained. This committed text capture remains usable if the original commented Word files are absent from another checkout. Original commented files remain locally under `docs/content/` and are not overwritten.
 - [Latest 11 tour-options comments](reviews/2026-09-17-tour-options-comments.json) and [response/development brief](NORTH-FINCHLEY-REVIEW-RESPONSE.md): **45 comments total** across the three reviews. All retain source-file hashes, local IDs and anchored text.
 - [Current design guidance](TOUR-DESIGN-GUIDANCE.md), revisions 1–10 with revision history.
-- [Authoring synthesis/playbook](TOUR-AUTHORING-PLAYBOOK.md), [Word review copy](tour-authoring-playbook-review.docx), [proposed agent briefs](authoring/AGENT-BRIEFS.md) and [source map](authoring/SOURCE-MAP.md). Prepared for the extra-high second pass; not a new tour assignment or a milestone acceptance decision.
+- [First authoring synthesis/playbook](TOUR-AUTHORING-PLAYBOOK.md), [original Word review copy](tour-authoring-playbook-review.docx), [proposed agent briefs](authoring/AGENT-BRIEFS.md) and [source map](authoring/SOURCE-MAP.md). Preserved as the first pass; not a milestone acceptance decision.
+- [Second craft pass](TOUR-STORY-CRAFT-SECOND-PASS.md), [Word discussion copy](tour-story-craft-second-pass-review.docx) and [expanded research notes](authoring/SECOND-PASS-SOURCES.md). Contrasting prose and proposed next-tour experiments are for discussion, not accepted new defaults.
 - [First North Finchley sample pair](NORTH-FINCHLEY-SAMPLE-STOPS.md) and [original Word copy](north-finchley-sample-stops-review.docx), including the rejected memorial execution.
 - [Tally Ho revision 2 and response mapping](TALLY-HO-SAMPLE-V2.md) and [Word copy](tally-ho-sample-review-v2.docx). The later imagined-colour correction supersedes its narrower review note, not its narration.
 - [Current tour options A and B](NORTH-FINCHLEY-TOUR-OPTIONS.md), [Word proposal](north-finchley-tour-options-review.docx), and [actual routing evidence](routes/north-finchley-options-v1/README.md).
@@ -179,6 +180,22 @@ Sidi explicitly asks to preserve generous detail/raw text for later work on agen
 
 **Status:** first synthesis prepared, pending the owner's requested extra-high second pass. No new model setting, agent run, physical test, code change or milestone acceptance is implied. The living guidance remains authoritative; the operational sequence and briefs remain proposals.
 
+### 19 Second pass: story discovery, wider craft and more hand-built tours
+
+**18 September 2026. Owner request:** return to the synthesis with deeper thinking, take his comments and sources into account while looking beyond them, and prepare a document he can react to. Questions and collaborative development are welcome. Several dictated phrases were unclear. The engineer's explicit working interpretation is two more hand-built **tours** and wider lessons from storytelling/writing/film; a clarification was sent rather than treating that interpretation as an owner-confirmed statement. A separate optional question asks whether to use familiar or unfamiliar areas; neither answer is assumed.
+
+**Prepared:** [Making a walk worth taking](TOUR-STORY-CRAFT-SECOND-PASS.md), its new Word copy and [source register](authoring/SECOND-PASS-SOURCES.md). Original review documents and raw comments remain unchanged. New research includes an interest-study abstract, first-party radio and tour guidance, documentary-maker/editor accounts, artists' descriptions and a published 99% Invisible transcript. Reading scope and limits are recorded; no new listening, film viewing or physical-tour evidence is claimed.
+
+**Engineer analysis:** the first pass organised responsibilities better than it explained how to discover and tell a compelling story. Strengthen competing research questions, specific details, the relationships between stops and positive editorial ambition. Keep several possible forms rather than requiring conflict at every stop. Sources provide techniques and counterexamples; they do not supersede Sidi's preferences or prove an ideal formula.
+
+**Concrete discussion material:** three original Crescent treatments using the existing evidence and its unresolved ownership limits; a Torrington research probe using an attributed artist biography and primary chart record to change the story pitch; artsdepot as an example of a writing problem needing further research; one proposed question-led tour and one place-portrait tour, prepared sequentially. These are craft sketches and briefs, not rewritten packages, chosen destinations or a controlled comparison. One familiar and one unfamiliar area is an engineer preference pending Sidi's convenience and choice.
+
+**Proposed process changes:** researchers preserve decisive details and alternative explanations; writing can return focused questions to research; the lead edits the whole narrator/route experience; independent review reads central source material rather than approving another agent's summary. Add the moment worth preserving, an alternative treatment and the unknown that would change a decision to existing handoffs. No agent framework is implemented and no new agent tasks are launched by this paper.
+
+**Status:** second discussion paper prepared for owner reaction. Existing living guidance remains authoritative; new craft choices remain proposals. No app behavior, audio package, technical acceptance or M2 closure status changes. Next practical decisions are the desired feel and actual area/time brief for the next tour, followed by survey-first preparation.
+
+**Verification:** ten-page Word copy rendered and visually checked; its text matches the Markdown paper. All 12 numbered references are cited and defined; 159 local links/anchors across the changed text files resolve. The three owner-commented source documents retain their recorded hashes. `npm run docs:check` and whitespace checks pass. This documentation-only assignment needs no app build or physical test.
+
 ## Questions to carry into a later systematic review
 
 - Does context before anecdote usually improve the story, and when can an immediate intriguing detail work better?
@@ -204,4 +221,4 @@ Sidi explicitly asks to preserve generous detail/raw text for later work on agen
 | Distinct standing areas, access and crossings | Desk-reviewed public-exterior candidates with dated imagery; no current field claim | Current conditions during ordinary first use |
 | Public-tour survey before new-area curation | Applied; comprehensive first Finchley catalogue and synthesis recorded | Reuse and improve coverage for the next area |
 | Reusable place/source/story database | Explicitly planned; not implemented | Actual records and reuse requirements from the survey/two tours |
-| Systematic guidelines from these options | First authoring synthesis and role briefs prepared; proposals distinguished from owner direction | Owner-requested extra-high second pass; no automatic promotion |
+| Systematic guidelines from these options | First synthesis retained; second craft paper and contrasting examples prepared | Owner reaction and application to the next hand-built tour; no automatic promotion |

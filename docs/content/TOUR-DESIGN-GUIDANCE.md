@@ -6,7 +6,7 @@ Living editorial reference, revision 10, 18 September 2026. Maintained for Sidi 
 
 ## Authority and use
 
-The [authoring playbook](TOUR-AUTHORING-PLAYBOOK.md), [role briefs](authoring/AGENT-BRIEFS.md) and [source map](authoring/SOURCE-MAP.md) turn these preferences into a proposed working method. Prepared 18 September for review; the extra-high second pass is pending. This guidance remains the authority for owner preferences.
+The [authoring playbook](TOUR-AUTHORING-PLAYBOOK.md), [role briefs](authoring/AGENT-BRIEFS.md) and [source map](authoring/SOURCE-MAP.md) turn these preferences into a proposed working method. The [second craft pass](TOUR-STORY-CRAFT-SECOND-PASS.md), prepared 18 September, adds wider research, contrasting prose and proposed learning through two more tours. Its new craft choices and handoff additions await discussion/use; this guidance remains the authority for owner preferences.
 
 The [editorial discussion and decision record](EDITORIAL-REVIEW-RECORD.md) is the companion history: all 45 anchored Word comments, conversation corrections, rejected examples, current options and decision status. Read it before a systematic revision of these guidelines and append new feedback there. Sidi has now directed development of both [North Finchley proposals](NORTH-FINCHLEY-TOUR-OPTIONS.md), with the [changes recorded in the latest review](NORTH-FINCHLEY-REVIEW-RESPONSE.md). Their access and scripts are not yet accepted.
 

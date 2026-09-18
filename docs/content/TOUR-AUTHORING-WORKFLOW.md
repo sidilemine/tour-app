@@ -1,8 +1,10 @@
 # Tour authoring — proposed division of work
 
+**Current discussion:** [Making a walk worth taking](TOUR-STORY-CRAFT-SECOND-PASS.md), 18 September, proposes stronger story discovery, feedback loops between research and writing, and lead editing across specialist drafts. Its handoff additions are proposals for the next assignment, not an agent framework or already-tested process. The earlier role definitions below remain available.
+
 17 September 2026. Based on Sidi's [first Tour B feedback](FIRST-TOUR-FEEDBACK-RECOVERY.md) and [explicit purpose correction](EDITORIAL-REVIEW-RECORD.md#15-purpose-correction-general-authoring-lessons-not-finchley-polishing).
 
-**18 September synthesis:** the [playbook](TOUR-AUTHORING-PLAYBOOK.md) and [ready-to-copy role briefs](authoring/AGENT-BRIEFS.md) develop this proposal using both walks and all 45 Word comments. The newer briefs separate survey from story research for clearer handoffs. The five responsibilities below remain the original proposal, not a fixed agent count. The [source map](authoring/SOURCE-MAP.md) preserves provenance and superseded interpretations. Work stops at synthesis pending Sidi's extra-high second pass.
+**18 September first synthesis:** the [playbook](TOUR-AUTHORING-PLAYBOOK.md) and [ready-to-copy role briefs](authoring/AGENT-BRIEFS.md) develop this proposal using both walks and all 45 Word comments. The newer briefs separate survey from story research for clearer handoffs. The five responsibilities below remain the original proposal, not a fixed agent count. The [source map](authoring/SOURCE-MAP.md) preserves provenance and superseded interpretations. The second discussion paper linked above extends this synthesis; practical application awaits the next tour brief.
 
 **Owner direction:** divide the work among agents rather than trying to accomplish everything in one pass. The first tour was fully enjoyed and taught Sidi about his area; its detailed critiques are material for a general process, not a Finchley polishing backlog.
 
