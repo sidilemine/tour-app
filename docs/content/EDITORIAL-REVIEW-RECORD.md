@@ -154,6 +154,18 @@ Recovered directions extend the first outing: establish historically significant
 
 Sidi explicitly asks to preserve generous detail/raw text for later work on agent guidelines and guardrails, potentially using another model/thinking level then. Preserve the material now; no model switch, new agent framework or rigid numerical research rule is implied. There is strong stop-specific praise for the Arcade and artsdepot; do not invent an overall A enjoyment verdict from those passages. Audio capture/Spotify and automatic-arrival questions remain separate technical issues.
 
+### 17 Clarified: present affairs, contextualised names and grounded insight
+
+**18 September 2026. Direct owner answers:** preserve the [full supplied wording](reviews/2026-09-18-second-tour-clarifications.md) alongside the [detailed recovery](SECOND-TOUR-FEEDBACK-RECOVERY.md#owner-clarification--18-september). All four targeted recovery prompts are answered; this does not certify every word of the original audio.
+
+**Arcade:** re-anchoring history in current affairs is a must for future tours. Closures after a long history/preservation effort invite questions about current decline, its causes and any renewed campaign. An old family-owned jeweller and a traditional greasy-spoon café are concrete present-day subjects to research. This supersedes the earlier positive-only coda preference: truthful current relevance may include sadness and unanswered questions. No decline cause, business history or campaign is asserted without research.
+
+**Torrington:** investigate the performers named in the clipping rather than dropping unexplained names. Their identities should inform the evoked night, music, audience and atmosphere; apply the same contextual care to people, places and organisations generally. Example genres/social groups are research questions, not preselected scene details. The owner confirms this feedback was recorded under Trinity before the actual Trinity review; preserve the stored label while interpreting review 14 as Torrington.
+
+**artsdepot:** the existing story is nearly there. Close the final connection between why people wanted this cultural place and the wider insight/theme. Seek their stated reasons in documents; show how the small local story connects to the bigger world. High-level thought is welcome while grounded throughout. This is not a request to remove interpretation or add an unrelated moral.
+
+**Technical clarification, separate from editorial direction:** headset-microphone recording left Spotify playing and sounded poor on headphone playback; switching to the phone microphone stopped Spotify at recording start. The earlier positive Arcade observation no longer suggests Bluetooth success. The phone path is the practical fallback; Bluetooth input/focus remains unresolved. Guidance revision 10 records the three clarified editorial directions; no Finchley rewrite or new phone session is requested by this clarification.
+
 ## Questions to carry into a later systematic review
 
 - Does context before anecdote usually improve the story, and when can an immediate intriguing detail work better?

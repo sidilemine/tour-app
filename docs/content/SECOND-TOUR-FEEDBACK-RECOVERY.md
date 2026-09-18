@@ -17,7 +17,7 @@ The outing used source `ab54dddf76bf5cd0`, guide 9: microphone/focus changes wer
 - The likely Torrington memo loses connecting detail late in the recording. The second recogniser marks approximately 1:51–2:17 and 2:24–end as inaudible; the other pass supplies fragments, insufficient for a complete account.
 - The artsdepot memo has unclear opening phrases and a passage around 1:37–2:07. Both passes recover the broader request for motives/meaning and the later preservation instruction. Machine-marked spans indicate recognition difficulty, not proof that no audible speech exists.
 
-These are identified gaps, not a guarantee that every other word was recovered. No wholesale re-recording is requested. Two focused owner questions are pending: the Spotify observation across attempts, and the likely Torrington review saved as Trinity.
+These are identified gaps, not a guarantee that every other word was recovered. No wholesale re-recording is requested. The owner has now answered the four targeted prompts; see the clarification below. This resolves those substantive questions, not every word in the original recordings.
 
 ## Stored ratings and subject mapping
 
@@ -25,11 +25,11 @@ These are identified gaps, not a guarantee that every other word was recovered. 
 | --- | --- | ---: | ---: | ---: | --- |
 | 12 | Tally Ho | 8 | 8 | 5 | Three recordings: two short attempts and the main comments |
 | 13 | Grand Arcade | 9 | 10 | 9 | Main comments plus a short recording/Spotify observation |
-| 14 | Trinity | 7 | Unrated | 7 | Speech discusses a 1977 gig and performers: likely Torrington material, despite the saved Trinity label |
+| 14 | Trinity | 7 | Unrated | 7 | Owner confirms this is Torrington feedback; original saved label is Trinity |
 | 15 | Trinity | 7 | 8 | 4 | Speech explicitly discusses the orchestra and church |
 | 16 | artsdepot | 9 | 9 | 9 | Substantial praise, historical evocation, motivation/meaning and preserving detailed feedback |
 
-Do not silently relabel review 14 or transfer its scores to Torrington. The content supports a likely subject, not a proven cause of the mismatch. No review is stored under Torrington. All heard-before flags are false and text fields empty; those flags do not establish whether familiar stories were recognised.
+The owner confirms review 14 concerns Torrington and was recorded under Trinity before the actual Trinity review. Interpret its comments and ratings with that confirmed subject, while preserving the original stored label. No original review is stored under Torrington. All heard-before flags are false and text fields empty; those flags do not establish whether familiar stories were recognised.
 
 ## Detailed recovered comments
 
@@ -53,7 +53,7 @@ He suggests recent reviews as one possible research input, looking for places pe
 
 The guitar/music reflection should connect notable achievement back to ordinary local places: shops and neighbourhood activity can contribute to later creative success. He wants the listener to see value in what is here now, rather than letting the famous-band association end in a generic digression. Some intermediate examples in this memo remain unclear; retain the raw passages rather than filling them in.
 
-### Likely Torrington material, saved under Trinity: transport the listener to a particular past
+### Torrington material, confirmed by owner; saved under Trinity: transport the listener to a particular past
 
 The first review labelled Trinity discusses imagining a gig in 1977. Sidi distinguishes a generic familiar experience (“imagine being at a gig”) from an unfamiliar historical world. Very few intended listeners experienced that particular period/setting. Research who attended, what they wore and what differed from today, then use those differences to create a supported scene.
 
@@ -89,10 +89,22 @@ Sidi explicitly asks for detailed notes without excessive compression. A large b
 
 ## Product observations kept separate
 
-The main Tally Ho memo reports that recording **did not stop Spotify**. A short Arcade follow-up appears more positive about recording/music behaviour, but its wording is uncertain. The installed build contained the proposed focus change; this outing therefore does not justify marking that issue fixed. Do not infer the actual microphone from the recogniser's output or recording quality. A specific follow-up should distinguish music audible during capture from music restarting afterwards.
+The owner clarifies the microphone distinction: with the headset microphone selected, Spotify continued during capture and the saved audio sounded poor when played back through his headphones. After switching to the phone microphone, starting recording stopped Spotify. These are different conditions, not conflicting reports of one path. The installed focus change did not reliably solve the reported Bluetooth use case. Actual native input/focus state was not logged, so the mechanism remains unproved.
 
 The older close-stays-paused behaviour applied during this outing. The new resume-on-close update was installed only after retrieval. No automatic-arrival pass, microphone-route pass or audible review-resume pass is claimed by the silent handoff.
 
 ## Handoff
 
 The development APK was installed in place solely to retrieve private storage, without launching a Metro session, uninstalling or clearing data. The self-contained source `de251b0367a4c3b6`, guide 10, was then installed. Cold opening without Metro showed A selected, all stops complete and **TOUR STOPPED**, with the updated close-to-resume help visible. No recording or audio playback was started. The optional Play Protect upload was declined. Sidi was told he could disconnect and continue remotely; no further phone work is required for this review.
+
+## Owner clarification — 18 September
+
+The [owner's full wording](reviews/2026-09-18-second-tour-clarifications.md) is retained, not just this synthesis.
+
+**Arcade:** current shop closures raise questions after the historical story: what is happening now, why is it declining, and is there another effort to preserve it? Sidi identifies an old family-owned jeweller and a traditional greasy-spoon café as concrete living subjects worth researching. The general requirement is to re-anchor historical narration in the present state of affairs. It need not end positively when the visible reality is difficult. The identities, causes and any new campaign remain research questions.
+
+**Torrington:** the clipping supplies two performers' names, but listeners need to know who they were. Research people, places and names when introducing them; use what that reveals to inform the imagined night, its music, audience and atmosphere. Jazz, rockabilly and hipsters are illustrative possibilities, not asserted facts. This is richer than adding a short biography: that research should inform the colour of the scene. Sidi confirms this was the first review stored under Trinity.
+
+**artsdepot:** the story is nearly there. The missing final connection turns local events into an insight listeners can recognise in the wider world. Investigate what a cinema, concert venue or arts centre gave people and why they wanted it. Where possible, use campaigners' own documented reasons, connecting those motives both to the individual story and the tour's broader theme. High-level thinking is welcome throughout if it stays grounded in local evidence; do not translate this request into avoiding interpretation.
+
+**Recording:** headset selection left Spotify playing and produced poor audio on playback; phone-microphone selection stopped Spotify at recording start. Treat phone capture as the current practical fallback and Bluetooth capture/focus as an unresolved defect. No claim is made that the exact hardware route or reason was established, or that phone audio quality was separately confirmed by this answer. No more clarification is needed for these four points.

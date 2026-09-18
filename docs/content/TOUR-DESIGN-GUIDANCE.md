@@ -1,6 +1,6 @@
 # Walking tour design guidance
 
-Living editorial reference, revision 9, 17 September 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
+Living editorial reference, revision 10, 18 September 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
 
 **Our aim:** make an enjoyable, relaxing walk reveal the non-obvious stories and meaning beneath the surroundings, giving the listener a deeper connection to a place, whether new or familiar. Being there should contribute something that reading at home cannot.
 
@@ -22,7 +22,7 @@ Additional basis for revision 4: all 11 tour-options comments, IDs 0–10, revie
 
 ## Second-tour material awaiting systematic synthesis
 
-The [18 September detailed feedback](SECOND-TOUR-FEEDBACK-RECOVERY.md) and [discussion entry 16](EDITORIAL-REVIEW-RECORD.md#16-second-tour-historical-hierarchy-the-present-place-motives-and-detailed-preservation) extend the evidence for historical context, present-day relevance, supported evocation, independent-source depth and explanations of motives. Sidi asks us to preserve detail for later synthesis; read the full recovery record and retained private transcripts before reducing this to agent instructions. No fixed source-count/notability rule is adopted here.
+The [18 September detailed feedback](SECOND-TOUR-FEEDBACK-RECOVERY.md) and [discussion entry 16](EDITORIAL-REVIEW-RECORD.md#16-second-tour-historical-hierarchy-the-present-place-motives-and-detailed-preservation) extend the evidence for historical context, present-day relevance, supported evocation, independent-source depth and explanations of motives. Sidi asks us to preserve detail for later synthesis; read the full recovery record and retained private transcripts before reducing this to agent instructions. No fixed source-count/notability rule is adopted here. The [subsequent direct clarification](reviews/2026-09-18-second-tour-clarifications.md) resolves the four targeted recovery questions and supplies the owner directions added in revision 10.
 
 ## First-walk interpretation and authoring process
 
@@ -44,9 +44,21 @@ At each main stop ask: **What becomes more interesting or understandable because
 
 ### Establish the place before adding the anecdote
 
-Start with enough conventional factual context to explain what the listener is looking at and why it matters. Let the distinctive anecdote enrich that understanding. For Tally Ho, Sidi prefers the roads and coaching context before the postcard story, while retaining its light tone. Choose how much of the chain to tell according to available time and listener interests; do not try to answer every research question in speech. A present-day coda belongs only when it adds something meaningful and, for this intended walk, positive. Sample-review comments 0 and 9.
+Start with enough conventional factual context to explain what the listener is looking at and why it matters. Let the distinctive anecdote enrich that understanding. For Tally Ho, Sidi prefers the roads and coaching context before the postcard story, while retaining its light tone. Choose how much of the chain to tell according to available time and listener interests; do not try to answer every research question in speech. The earlier preference for a meaningful, positive present-day coda is superseded by the 18 September direction: always re-anchor the history in current affairs, including decline where that is what the visitor encounters. Sample-review comments 0 and 9.
 
 A suggested factual anchor is a research question until supported. Evidence for coach horses near a junction does not identify a particular coaching inn. Keep useful context and the honest uncertainty together rather than overstating the building history to improve the story.
+
+### Re-anchor history in the present
+
+Sidi's 18 September clarification makes this a requirement for future authoring: after explaining the past, help the visitor understand the current state of the place. Research living businesses and institutions, change or decline, its causes where supported, and any continuing preservation effort. The Arcade's old family-owned jeweller and greasy-spoon café are concrete examples to investigate. Do not end in the past while the listener faces an unexplained present. Current reporting/reviews can help discovery; distinguish dated observation, established cause and open questions. Present-day relevance does not require forced praise or a cheerful ending.
+
+### Give names context and let research inform imagined colour
+
+Do not introduce a person, place or organisation as an unexplained proper name. Investigate who or what it was and supply enough context for this story. At Torrington, the performers named in a clipping should help establish what kind of night, music and audience the listener is picturing. Let that research inform supported imagined colour; do not choose a stock historical crowd or insert a genre without evidence. This also applies to institutions such as the orchestra and its relationship with its host church. It does not require speaking an exhaustive biography for every passing mention.
+
+### Complete the connection from local evidence to wider insight
+
+High-level thinking can remain grounded throughout. Ask what people sought from this place and why they acted: what did a cinema, concert venue or arts centre contribute to their lives? Prefer their documented reasons where available. Connect that evidence to an understandable insight and the tour's theme, so the small local story illuminates something larger. At artsdepot, Sidi says the account is nearly there; the missing final link is meaning, not more generic commentary. Do not invent motives, prescribe an emotion, or force the same moral onto every stop. This complements the existing allowance for broader thought and its duration budget.
 
 ### Be selective about solemn subjects
 

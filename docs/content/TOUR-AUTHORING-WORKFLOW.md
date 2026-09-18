@@ -23,6 +23,16 @@
 5. Generate audio after the outline, claims and directions are reviewed. Check actual narration duration, pronunciation and navigation margins; feed necessary changes back to the right role.
 6. Use ordinary owner feedback to refine the process. Do not turn every detailed comment into repeated local polishing or a new physical-test campaign.
 
+## Second-tour handoff refinements
+
+The [18 September direct clarification](reviews/2026-09-18-second-tour-clarifications.md) adds concrete material for the proposed roles, without making a Finchley rewrite task:
+
+- Research includes the current state of affairs, living businesses/institutions, named people's identities and documented motives. Track unanswered questions about decline or change rather than replacing them with a cheerful historical ending.
+- The writer uses those identities and period differences to inform imagined colour, and connects local motives to the story's insight/theme. Context should shape the scene rather than become a disconnected biographical aside.
+- Independent review asks whether a listener understands introduced names, whether the story returns to today's place, and whether the final insight actually follows from local evidence. Check dated business/access facts separately from durable history.
+
+Keep the owner's detailed wording and examples available to the eventual guideline synthesis; these handoff prompts do not replace them.
+
 ## Digression budget: direction versus proposal
 
 Sidi welcomes place-grounded material and broader thought together, with time caps preventing the latter from taking over. A proposed initial allowance is roughly 25% of a stationary story's spoken duration, excluding navigation. This number is **not yet agreed** and is not a universal standard. Test the approach in the next authoring work; historical explanation tied to the actual place remains core material even when it describes something vanished. The central question is whether visiting the place adds clear value over listening at home.

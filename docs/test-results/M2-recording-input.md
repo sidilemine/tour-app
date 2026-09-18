@@ -1,6 +1,6 @@
 # M2 headset recording and competing music
 
-17 September 2026. **Implemented and built; actual headset capture and Spotify interaction await a short connected check.** This addresses the first Tour B feedback, without changing the authored tours or requiring another baseline walk.
+17 September 2026. **Implemented and built; the 18 September owner report identifies an unresolved headset-path failure. Phone-microphone recording stopped Spotify in the reported use.** This addresses the first Tour B feedback, without changing the authored tours or requiring another baseline walk.
 
 ## Diagnosis and change
 
@@ -38,3 +38,11 @@ The next assignment found that the 138-test run preceded adding guide case 21: t
 ## Second outing, 18 September
 
 The retrieved installed APK confirms source `ab54dddf76bf5cd0` was used. The [new feedback](../content/SECOND-TOUR-FEEDBACK-RECOVERY.md) includes a clear report at Tally Ho that recording did not stop Spotify, followed by an unclear short Arcade report that something worked. Actual input route was not persisted; successful saved files do not establish headset capture or focus correctness. Keep this issue open, with the conflicting/unclear later observation retained. The review-resume update was installed silently after retrieval; no further listening test occurred.
+
+## Owner clarification and next diagnosis, 18 September
+
+The owner explicitly distinguishes the cases: Spotify did not stop when recording with the headset microphone, and the saved sound was poor when replayed through the headphones. After switching to the phone microphone, starting capture did stop Spotify. This resolves the apparently conflicting Arcade follow-up. Treat phone selection as the practical fallback; do not label the Bluetooth fix accepted. This report does not separately establish phone recording quality or the native routed device.
+
+**Source inspection:** both selection paths request the same transient-exclusive focus before recording. Only the Bluetooth branch then changes AudioManager mode and communication device and selects a Bluetooth input. The next investigation should capture app-scoped focus and actual route state across that transition, plus the verified-input label and saved sample, using the EarFun headset. A routing/focus interaction is a hypothesis, not a proved cause; poor capture and continued music need not share one cause. No speculative native patch was made from this report alone.
+
+Reuse the owner's ordinary-use observation for the phone fallback. When the phone/headset are next available, the smallest useful check is a brief Spotify-playing/headset-capture sequence with native state captured before/during/after, then playback of the sample after listening readiness. Stop once the route/focus failure is explained; no full tour or broad matrix is required. Sidi is away and no reconnect request is made now. Resume-on-close verification can be clustered into the same session if still needed.
