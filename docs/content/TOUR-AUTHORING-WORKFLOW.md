@@ -2,6 +2,8 @@
 
 17 September 2026. Based on Sidi's [first Tour B feedback](FIRST-TOUR-FEEDBACK-RECOVERY.md) and [explicit purpose correction](EDITORIAL-REVIEW-RECORD.md#15-purpose-correction-general-authoring-lessons-not-finchley-polishing).
 
+**18 September synthesis:** the [playbook](TOUR-AUTHORING-PLAYBOOK.md) and [ready-to-copy role briefs](authoring/AGENT-BRIEFS.md) develop this proposal using both walks and all 45 Word comments. The newer briefs separate survey from story research for clearer handoffs. The five responsibilities below remain the original proposal, not a fixed agent count. The [source map](authoring/SOURCE-MAP.md) preserves provenance and superseded interpretations. Work stops at synthesis pending Sidi's extra-high second pass.
+
 **Owner direction:** divide the work among agents rather than trying to accomplish everything in one pass. The first tour was fully enjoyed and taught Sidi about his area; its detailed critiques are material for a general process, not a Finchley polishing backlog.
 
 **Engineer proposal:** use the responsibilities below for the next actual authoring assignment. These are roles with concrete outputs, not necessarily five agents running simultaneously or a new orchestration platform. Keep parallel work independent; later stages consume reviewed inputs. The lead owns the whole experience and resolves conflicts.

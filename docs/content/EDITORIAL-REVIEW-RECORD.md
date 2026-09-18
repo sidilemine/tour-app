@@ -1,6 +1,6 @@
 # Editorial discussion and decision record
 
-Start here when resuming tour curation or reviewing how to make systematic guidelines. Updated 17 September 2026. This is the durable history of discussion, alternatives, corrections and outcomes; [TOUR-DESIGN-GUIDANCE](TOUR-DESIGN-GUIDANCE.md) contains the current working rules. Keep evidence and owner preference distinguishable.
+Start here when resuming tour curation or reviewing how to make systematic guidelines. Updated 18 September 2026. This is the durable history of discussion, alternatives, corrections and outcomes; [TOUR-DESIGN-GUIDANCE](TOUR-DESIGN-GUIDANCE.md) contains the current working rules. Keep evidence and owner preference distinguishable.
 
 ## How to maintain this record
 
@@ -15,7 +15,8 @@ When we take a serious look back: read this record, the captured comments and th
 - [Initial walking-tour research](WALKING-TOUR-DESIGN-RESEARCH.md) and [original Word review](walking-tour-design-review.docx).
 - [First 34 owner Word comments with anchored text](reviews/2026-09-16-owner-word-comments.json): 24 on the research review, 10 on the narration pair; document-local IDs and source-file SHA-256 retained. This committed text capture remains usable if the original commented Word files are absent from another checkout. Original commented files remain locally under `docs/content/` and are not overwritten.
 - [Latest 11 tour-options comments](reviews/2026-09-17-tour-options-comments.json) and [response/development brief](NORTH-FINCHLEY-REVIEW-RESPONSE.md): **45 comments total** across the three reviews. All retain source-file hashes, local IDs and anchored text.
-- [Current design guidance](TOUR-DESIGN-GUIDANCE.md), revisions 1–9 with revision history.
+- [Current design guidance](TOUR-DESIGN-GUIDANCE.md), revisions 1–10 with revision history.
+- [Authoring synthesis/playbook](TOUR-AUTHORING-PLAYBOOK.md), [Word review copy](tour-authoring-playbook-review.docx), [proposed agent briefs](authoring/AGENT-BRIEFS.md) and [source map](authoring/SOURCE-MAP.md). Prepared for the extra-high second pass; not a new tour assignment or a milestone acceptance decision.
 - [First North Finchley sample pair](NORTH-FINCHLEY-SAMPLE-STOPS.md) and [original Word copy](north-finchley-sample-stops-review.docx), including the rejected memorial execution.
 - [Tally Ho revision 2 and response mapping](TALLY-HO-SAMPLE-V2.md) and [Word copy](tally-ho-sample-review-v2.docx). The later imagined-colour correction supersedes its narrower review note, not its narration.
 - [Current tour options A and B](NORTH-FINCHLEY-TOUR-OPTIONS.md), [Word proposal](north-finchley-tour-options-review.docx), and [actual routing evidence](routes/north-finchley-options-v1/README.md).
@@ -166,6 +167,18 @@ Sidi explicitly asks to preserve generous detail/raw text for later work on agen
 
 **Technical clarification, separate from editorial direction:** headset-microphone recording left Spotify playing and sounded poor on headphone playback; switching to the phone microphone stopped Spotify at recording start. The earlier positive Arcade observation no longer suggests Bluetooth success. The phone path is the practical fallback; Bluetooth input/focus remains unresolved. Guidance revision 10 records the three clarified editorial directions; no Finchley rewrite or new phone session is requested by this clarification.
 
+### 18 Authoring synthesis prepared; stop for the second pass
+
+**18 September 2026. Owner assignment:** start the next M2 steps and progress independently. **Subsequent scope direction:** “When you're done with the synthesis, stop there - I'll make you do a second pass in extra high thinking”. This limits the assignment to the synthesis and review artifacts; technical follow-up, M2 closure and new tour authoring remain outside this turn.
+
+**Prepared:** the [playbook](TOUR-AUTHORING-PLAYBOOK.md) and matching [Word review copy](tour-authoring-playbook-review.docx), [bounded agent briefs](authoring/AGENT-BRIEFS.md) and [source map](authoring/SOURCE-MAP.md). The source map accounts for all 45 captured Word comments, the saved research and both walks' detailed feedback/direct clarifications. Original records remain intact. No new literature search or complete audio recovery is claimed.
+
+**Engineer proposal:** survey, research, curate with route review, write, independently review, then release and learn proportionately. Six role briefs separate survey from story research without prescribing six simultaneous agents. Concrete Finchley examples calibrate review; they do not commission rewritten tours. The actual artsdepot script already supplies 1937, so missing perceived temporal bearings must not be misrepresented as a proven absence of a date.
+
+**Corrections retained:** supported imagined colour is wanted; wider thought belongs with the local story within a deliberate time allowance; the proposed 25% cap is not approved; present-day relevance can include decline; test economy does not cap product length; source counts are not quality scores; owner clarifications outrank uncertain transcription. Positive enjoyment and discovery remain part of the evidence alongside criticism.
+
+**Status:** first synthesis prepared, pending the owner's requested extra-high second pass. No new model setting, agent run, physical test, code change or milestone acceptance is implied. The living guidance remains authoritative; the operational sequence and briefs remain proposals.
+
 ## Questions to carry into a later systematic review
 
 - Does context before anecdote usually improve the story, and when can an immediate intriguing detail work better?
@@ -191,4 +204,4 @@ Sidi explicitly asks to preserve generous detail/raw text for later work on agen
 | Distinct standing areas, access and crossings | Desk-reviewed public-exterior candidates with dated imagery; no current field claim | Current conditions during ordinary first use |
 | Public-tour survey before new-area curation | Applied; comprehensive first Finchley catalogue and synthesis recorded | Reuse and improve coverage for the next area |
 | Reusable place/source/story database | Explicitly planned; not implemented | Actual records and reuse requirements from the survey/two tours |
-| Systematic guidelines from these options | Open learning questions | Recorded choices and actual experience; no automatic promotion |
+| Systematic guidelines from these options | First authoring synthesis and role briefs prepared; proposals distinguished from owner direction | Owner-requested extra-high second pass; no automatic promotion |
