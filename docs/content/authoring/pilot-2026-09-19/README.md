@@ -1,8 +1,10 @@
 # Tour authoring pilot
 
-19 September 2026. A completed desk exercise in commissioning agents: one stationary story and one walking chapter, ready for the owner's editorial reaction. **Start with the [two samples and choices](REVIEW-PACKET.md).** Read the [brief](BRIEF.md) for scope and the [run log](RUN-LOG.md) for actual launches and handoffs. The owner approved the exercise after discussing how prompts, evidence and coordination fit together.
+19 September 2026. A completed desk exercise in commissioning agents: one stationary story and one walking chapter, with the owner's editorial response now captured. **Start with the [two samples and choices](REVIEW-PACKET.md).** Read the [brief](BRIEF.md) for scope and the [run log](RUN-LOG.md) for actual launches and handoffs. The owner approved the exercise after discussing how prompts, evidence and coordination fit together.
 
 **Listening follow-up:** the owner requested recordings of the main samples. [George reads artsdepot and Emma reads Alexandra Grove](audio/README.md), with exact transcripts, measured durations and generation metadata. Recording the main versions does not select the editorial alternatives or establish walking suitability.
+
+**Owner response received:** [full feedback and choices](OWNER-FEEDBACK.md). Sidi prefers the railway-led opening, leans towards a better-written warmer ending, and clarifies the need for distinctive evocation, the relevant before-state and preservation of vivid material when improving an explanation. Current guidance and agent briefs incorporate the response. The initial calibration, prompts, inputs, scripts and recordings remain the artifacts of the completed pilot.
 
 ## How the work moves
 
@@ -38,7 +40,7 @@ Counts include each task heading, exclude the launch message and supporting file
 
 [BASELINE.json](BASELINE.json) captures four relevant original stories for comparison. It is historical material, not a claim that those sources were reopened by every role. [CALIBRATION.md](CALIBRATION.md) connects the owner's reactions to practical choices. Original packages, raw voice notes and owner Word documents are outside the write scope.
 
-The run log records material discoveries, review findings and revisions. [V1](DRAFT-V1.md), the [independent review](REVIEW.md), [V2](DRAFT-V2.md) and [revision notes](REVISION-NOTES.md) are retained separately. Owner selection remains pending until Sidi has seen the samples; completing the workflow does not prove improved enjoyment or physical suitability.
+The run log records material discoveries, review findings and revisions. [V1](DRAFT-V1.md), the [independent review](REVIEW.md), [V2](DRAFT-V2.md) and [revision notes](REVISION-NOTES.md) are retained separately. Owner choices and their qualifications are now recorded in the response above; completing the workflow did not establish improved enjoyment or physical suitability.
 
 ## What this run taught us
 
@@ -47,4 +49,4 @@ The run log records material discoveries, review findings and revisions. [V1](DR
 - **Ready means a named completed version.** Source checks overlapped drafting usefully, but preliminary comments targeted text the writer was still editing. The final review names the frozen V1 hash. Preserve that handoff before evaluating prose, and separate earlier working observations from actual revision findings.
 - **Ask for more research when there is a gap.** The writer needed no additional research for these chosen angles. The coordinator stopped further exploration once the packets were adequate; unresolved archive and exact-entry questions remain labelled for relevant future work.
 
-These are observations about this pilot, not a controlled comparison of agent counts. The next learning is Sidi's judgement of the actual passages and alternatives. No permanent extra agent, software framework or new test campaign follows automatically.
+These are observations about this pilot, not a controlled comparison of agent counts. Sidi's subsequent response also exposes generic evocation, missing comparisons and vivid material lost during selection. The briefs already asked for distinctiveness; future review must test the actual passages and compare gains and losses. No permanent extra agent, software framework or new test campaign follows automatically.

@@ -1,6 +1,6 @@
 # Walking tour design guidance
 
-Living editorial reference, revision 11, 19 September 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
+Living editorial reference, revision 12, 19 September 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
 
 **Our aim:** make an enjoyable, relaxing walk reveal the non-obvious stories and meaning beneath the surroundings, giving the listener a deeper connection to a place, whether new or familiar. Being there should contribute something that reading at home cannot.
 
@@ -23,6 +23,8 @@ Revision 3 incorporates Sidi's subsequent conversation correction: the narrator 
 Additional basis for revision 4: all 11 tour-options comments, IDs 0–10, reviewed on 17 September. The [exact capture](reviews/2026-09-17-tour-options-comments.json) and [response](NORTH-FINCHLEY-REVIEW-RESPONSE.md) preserve the choices and reasoning.
 
 Additional basis for revision 11: all 55 second-pass comments, IDs 0–54, reviewed on 19 September. The [capture](reviews/2026-09-19-second-pass-comments.json) retains anchors and paragraph context, with the private transport-origin postcode redacted; original Word files are unchanged. The subsequent direct answer selects reconstruction and atmosphere for the next writing experiment.
+
+Revision 12 applies the [owner's response to the two recorded pilot samples](authoring/pilot-2026-09-19/OWNER-FEEDBACK.md): purposeful evocation, preserving vivid material through revision, the missing before-state, and selective use of longer stories. These are direct conversation comments, additional to the 100 captured Word comments.
 
 ## Second-tour evidence for synthesis
 
@@ -90,6 +92,16 @@ The narrator should do the imaginative work. Asking a listener to imagine a vani
 
 The evidence can establish the kind of place, its period and its everyday life without documenting every sensory detail at one particular moment. Build a convincing scene from that foundation. Keep this separate from assigning an unsupported meaning to a memorial: the failure of that ending does not make imaginative reconstruction inappropriate elsewhere.
 
+**Purpose comes before description.** First identify what the listener would not readily picture from normal life, then use supported colour to supply it. Plausible but universal activity does not earn a vignette: the pilot's opening books, arranging chairs and beginning a lesson added little to an already familiar school scene. Sidi welcomes the school subject and a revealing vignette; the generic execution failed. The Gaumont's wood panelling begins to disclose a different cinema experience, but the passage stops before making that experience intelligible. Research the relevant differences rather than assuming what they were. This is the owner's 19 September clarification, not a demand for spectacle or for every historical gesture to be individually documented.
+
+### Supply the missing before-state
+
+A change becomes interesting when the listener understands what preceded it. Identify the knowledge gap that gives a fact its significance: a half-hour train journey needs a useful account of the earlier journey, and estate subdivision needs a picture of what occupied the land before housing. Seek a comparable origin, destination, mode and period before quantifying travel-time improvement. Research the local landscape rather than treating “estate” as a sufficient picture or assuming all undeveloped land was alike. Include the context needed for this story, not every preceding historical detail. Sidi prefers the pilot's railway-led opening for the bearings it provides, while asking for these missing comparisons.
+
+### Preserve vivid material when improving an explanation
+
+Review what a revision gains and what it loses. In the artsdepot pilot, research improved the explanation of the centre's intended uses, but repeated plans and intentions displaced the protests, masks and reported Madness performance that Sidi found vivid and interesting. Keep supported actions and telling details in contention as ways to carry meaning; cut repeated explanation when it uses time better spent on them. The institutional-history source limits still apply, and the owner's recollection of a free gig needs verification before that adjective becomes a claim. This is a selection lesson, not a rule to retain every anecdote or force conflict into every story.
+
 ### Welcome broader thought without losing the place
 
 A story can combine immediate observations and place-specific history with broader reflection or digression. Sidi expressly welcomes both. Give digressions a time cap so they cannot accidentally overwhelm the story, and keep the whole experience grounded: being at this place should add clear value over hearing the same narration at home or in a hotel room. Broader thinking does not require an explicitly matching tour theme. This is Sidi's clarification of the sculpture feedback after the first Tour B walk.
@@ -109,6 +121,8 @@ Choose a rhythm that suits the place rather than making spacing even. Closely sp
 ### Separate test economy from tour length
 
 Keep technical checks short when they answer the necessary question. Do not make that economy a maximum duration or smallest-footprint rule for finished tours. Sidi accepts B's extra walking and expects most eventual tours to be longer than these compact examples; that is owner product direction, not a population finding. Budget and report the ordinary tour separately from ratings, voice notes and technical interruptions. Tour-options comments 7–8.
+
+After hearing the pilot, Sidi considers about two minutes somewhat long but acceptable for some especially important or interesting stops. Spend that time selectively; it is neither a default duration nor a universal ceiling. For artsdepot he leans towards the warmer ending **if better written**; the present words are not approved, and this is not a preferred ending for every stop.
 
 ### Make a detour earn its place
 
@@ -254,3 +268,5 @@ Revision 9 records the owner’s positive first-walk verdict and explicit purpos
 Revision 10 incorporated the 18 September direct second-tour clarifications: re-anchor history in the present, contextualise names, let research inform imagined colour, and complete the link between local evidence and wider insight. The existing sections carried these changes; this entry completes their revision-history index.
 
 Revision 11 applies all 55 second-pass comments and the direct reconstruction/atmosphere choice. It strengthens walking narration (two legs for the next tour), spoken fluency, confident inference, present continuity and levity; allows loose discovery walks; expands surveys to guides and current places; records Sidi as editorial lead for the next workshop; and links the first practical writing brief. AI provenance is a product direction; exact values and the proposed search/assembly mechanics remain to be developed. The 25% cap is not adopted. Original review papers and packages remain unchanged.
+
+Revision 12 records direct feedback on the two pilot recordings. Evocation must reveal what ordinary experience would not supply; changes need the relevant before-state and comparison; revisions must account for vivid material displaced by explanation. The owner conditionally favours a better-written warm artsdepot ending and prefers the railway-led walking opening. About two minutes is acceptable selectively for stronger stops. These choices and the retained raw feedback inform the next task; no recording, installed package or historical source is rewritten by this update.

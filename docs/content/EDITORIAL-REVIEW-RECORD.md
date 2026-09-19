@@ -247,6 +247,22 @@ Sidi explicitly asks to preserve generous detail/raw text for later work on agen
 
 **Verification:** both MP3s decode completely; encoded durations agree with all rendered chunks and pauses. Text fidelity, voice settings, file hashes, type checking, lint, guide consistency and whitespace checks pass. The source packet now displays measured timings. No app build or physical test is needed for these desk samples. Listening reactions and the two editorial choices remain pending.
 
+### 23 Pilot listening response: reveal the unfamiliar and preserve the story
+
+**19 September 2026. Source:** Sidi's direct response to both recorded samples, preserved in full with distinctions between decisions and proposed application in the [pilot owner-feedback record](authoring/pilot-2026-09-19/OWNER-FEEDBACK.md). This is general tour-authoring guidance drawn from specific examples. It adds no Word-comment IDs and commissions no installed-tour rewrite.
+
+**Strong clarification on evocation:** decide first what the listener could not readily picture from normal life. Use a scene to supply that missing understanding. Gaumont's wood panelling begins well but the distinctive experience of a cinema visit in that period remains underdeveloped. The school is a welcome discovery and vignette subject, but opening books and moving chairs feel universal and waste the opportunity. Plausibility alone is insufficient; this sharpens the positive instruction to reconstruct vanished life rather than withdrawing it. The actual differences remain research questions, not licence to invent unusual practices.
+
+**Preserve gains and vivid material:** the artsdepot explanation improved, but plans and intentions became repetitive while protests, masks and the remembered free Madness gig disappeared. The campaign material still existed in the research handoff; this was a selection/integration failure. Future revisions should compare their gains and losses, make room for supported action, and remove repetitive explanation. The saved evidence's limits remain: the reported appearance comes from the institution's history, admission terms are not separately established in the local handoff, and the council account qualifies the older simplified library-versus-arts story.
+
+**Editorial choices and pacing:** Sidi **leans towards a warmer artsdepot ending if better written**, not approval of the existing wording. About two minutes feels somewhat long but acceptable for some especially important or interesting stops; this is not a default or hard cap. He **prefers the railway-led Alexandra Grove opening** for context and the sense of a proper introduction, superseding the engineer's street-led recommendation for this sample.
+
+**Fill the explanatory gaps:** the rail journey needs a comparison with travel before the train, and suburban development needs a picture of what occupied the land before the houses. Seek the relevant before-state and comparable journey endpoints/mode/period, not an invented duration or generic assumption about estates. This generalises the earlier instruction to give statistics useful context.
+
+**Application and limits:** living guidance revision 12, writing brief version 2 and current agent briefs carry these directions into the next assignment. The earlier briefs already asked for distinctiveness and period differences: the pilot shows a need to apply them to actual passages and compare revisions, not proof that adding more instructions will solve the problem. Original assignments, drafts, audio, metadata, baseline and research remain historical artifacts. No new historical answer, audio rendering or physical-test result is claimed.
+
+**Verification:** changed-document links/anchors, consistency and whitespace checked; the retained pilot scripts/audio/research and original owner Word documents are unchanged. Guide consistency passes. Documentation-only capture needs no app build or phone session.
+
 ## Questions to carry into a later systematic review
 
 - Does context before anecdote usually improve the story, and when can an immediate intriguing detail work better?
@@ -264,7 +280,7 @@ Sidi explicitly asks to preserve generous detail/raw text for later work on agen
 | Pragmatic personal testing | Adopted policy | A material changed behavior or reported failure |
 | Factual grounding plus light anecdote | Owner direction | Response to revised wording |
 | Minor solemn memorial in this walk | Rejected | Reconsider only for a compelling new reason |
-| Strongly supported imagined colour | Owner direction | Review an actual passage |
+| Strongly supported imagined colour | Owner direction; pilot clarifies that a scene must reveal what ordinary experience would not supply | A future passage that delivers that specific understanding |
 | Both tours | Owner direction to develop both; initial preference B | Completed content and ordinary-use feedback |
 | Stanhope detour | Rejected; Gaumont preferred | New reason to include a passing treatment, if any |
 | Product duration and spacing | Short test footprint is not a product cap; variable rhythm accepted | Actual enjoyment and walking feedback |
@@ -272,7 +288,8 @@ Sidi explicitly asks to preserve generous detail/raw text for later work on agen
 | Distinct standing areas, access and crossings | Desk-reviewed public-exterior candidates with dated imagery; no current field claim | Current conditions during ordinary first use |
 | Public-tour survey before new-area curation | Applied; comprehensive first Finchley catalogue and synthesis recorded | Reuse and improve coverage for the next area |
 | Reusable place/source/story database | Explicitly planned; not implemented | Actual records and reuse requirements from the survey/two tours |
-| Systematic guidelines from these options | All 100 comments indexed; revision 11 and a practical writing brief apply the owner review | Use and refine in the owner-led workshop |
+| Systematic guidelines from these options | All 100 Word comments indexed; revision 12 and writing brief v2 also incorporate direct pilot feedback | Use and refine in the owner-led workshop |
+| Pilot editorial choices | Railway-led opening preferred; warmer ending conditional on better writing; about two minutes acceptable selectively | A later draft addresses missing comparisons, distinctive scenes and lost campaign material |
 | Two narrated legs in the next tour | Owner-directed editorial brief | Area/route assembly and samples that make good use of movement |
 | Authoring workshop | Sidi takes editorial lead; engineer prepares and executes | Record consequential choices and useful revisions; no permanent agent count assumed |
 | Editorial values and AI provenance | Owner wants an outlook and upfront disclosure | Develop values from choices; scope the eventual presentation separately |

@@ -1,6 +1,6 @@
 # Writing brief for the next walking tour
 
-Version 1, 19 September 2026. Practical writer and editor handoff drawn from the [living guidance](../TOUR-DESIGN-GUIDANCE.md) and [second-pass review](../SECOND-PASS-REVIEW-RESPONSE.md). Owner preferences below apply now; workflow devices and evidence labels are provisional ways to implement them. No script, route or listening outcome is approved by this brief.
+Version 2, 19 September 2026. Practical writer and editor handoff drawn from the [living guidance](../TOUR-DESIGN-GUIDANCE.md), [second-pass review](../SECOND-PASS-REVIEW-RESPONSE.md) and [pilot listening feedback](pilot-2026-09-19/OWNER-FEEDBACK.md). Owner preferences below apply now; workflow devices and evidence labels are provisional ways to implement them. No script, route or listening outcome is approved by this brief.
 
 ## The experience
 
@@ -13,6 +13,8 @@ Sidi leads the next editorial workshop. Give him meaningful alternatives and exp
 The writer needs an intended experience, reviewed material, current context and a place in the route. A short outline names the story's attraction, how it develops, its ending, and its relevant view or walking setting. An interesting question without a supported answer remains a research lead. Return focused questions to research when better material could improve the passage.
 
 The research packet holds sources, claims, inference/reconstruction notes and unresolved issues. The spoken script holds what the visitor needs to hear. The writer does not need to narrate the process of checking every claim.
+
+Identify the listener's missing picture or comparison before choosing details. For a transformation, establish the relevant before-state: what occupied the land, how a journey worked, or what people did before the change. A half-hour journey has little explanatory force if the listener cannot judge what it replaced. Return material gaps to research; do not manufacture a baseline or add an exhaustive preamble.
 
 ## Ways to carry interest
 
@@ -41,6 +43,8 @@ Avoid routine phrases such as “this suggests”, “the attraction here is”,
 
 Be generous with supported imagined colour. Establish a period, setting and activity, then help the listener inhabit it. A light invitation to imagine can establish the frame; do not break the scene with repeated disclaimers. Plausible activity and feeling can be inferred from the evidence without pretending to possess someone's private thoughts.
 
+**First decide what the listener would struggle to picture from normal life.** The description earns its time by supplying that understanding. The pilot's school vignette offered familiar books and chairs; Sidi welcomed the subject but found the generic scene wasted time. The Gaumont's wood panelling began well, then stopped short of the distinctive experience of a visit in its period. Seek researched differences in the setting or activity, not more sensory adjectives around universal actions. If no revealing scene is available, keep the discovery concise. This remains a positive brief for reconstruction and atmosphere.
+
 Use these provisional editorial labels behind the passage: **directly supported; reasonably inferred; reconstructed; unresolved/disputed**. Record the reason, including any important contrary evidence. A credible historical inference can support fluent narration; certainty need not mean an eyewitness source for every detail. Do not invent numeric confidence percentages or change the package schema to match these labels.
 
 An event advert may support a reasonable inference of occurrence; it is not independent confirmation. Period behaviour can inform a reconstruction; a unique incident recorded elsewhere does not silently become a recovered fact at this stop. Match the claim to the foundation and use an imagined frame where appropriate. Sidi's follow-up choice is **reconstruction and atmosphere** for the next samples; invented dialogue and composite characters are outside this first experiment. Navigation and access statements stay literal.
@@ -57,11 +61,17 @@ For a small feature, give a reliable locator and allow time to find it. Use revi
 
 Ask why: what produced the visible world, whose choices mattered, and what did the place offer people? Let the explanation emerge through particulars. Give broader excursions a deliberate time allowance and a way back to the local account. No 25% rule is adopted; a more qualitative judgement may prove better.
 
+When revising, compare the draft with the strongest earlier material. In the artsdepot pilot, improved explanation crowded out the vivid campaign while intentions were repeated. Let supported actions convey some of the meaning; shorten repetition to make space. Preserve gains and explain consequential losses rather than assuming the latest version improves everything.
+
+About two minutes feels somewhat long to Sidi but can suit especially important or interesting stops; allocate it selectively. His pilot choices are a warmer artsdepot ending **if better written**, and the railway-led Alexandra Grove opening for its context. These are specific calibration, not rules for every ending or introduction.
+
 The tour may convey Sidi's editorial outlook. Values should guide curiosity and selection while remaining open to contradictory evidence. Their final wording is not settled. The AI narrator can be warm and expressive without claiming personal preferences, memories, friendships or firsthand experience. Clearly disclose AI provenance in the product's presentation; the implementation of that disclosure is separate work. Emotional influence through good telling is welcome; commanding the listener's feelings is unnecessary.
 
 ## Review the sample and the whole walk
 
 Ask whether the listener can follow it once, whether the detail is distinctive, whether the scene is vivid, and whether the ending earns its place. Identify the strongest moment as well as the problem. Check the sources for central claims, then review spoken fluency separately so caution does not flatten the prose.
+
+Name what the actual scene taught or enabled the listener to picture beyond ordinary experience. Check that a change has the comparison needed to understand it, and that an explanatory rewrite has not discarded its best actions or details. These checks apply to the passage itself: merely listing the principles in a prompt did not make the pilot satisfy them.
 
 For the tour, inspect the variation between stops and legs, navigation demands, present-day connections, levity and the finish. Sidi's early sample choices refine this brief before full production. After ordinary use, ask:
 

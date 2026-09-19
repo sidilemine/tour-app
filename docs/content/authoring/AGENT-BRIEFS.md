@@ -1,6 +1,6 @@
 # Agent briefs for walking tour authoring
 
-Updated 19 September 2026 after the [second-pass review](../SECOND-PASS-REVIEW-RESPONSE.md). Proposed task briefs accompanying the [playbook](../TOUR-AUTHORING-PLAYBOOK.md). These are instructions for the next assigned authoring task, not active delegations or an automated framework. Sidi takes the editorial lead/orchestrator role in the next workshop; the engineer prepares task briefs, coordinates execution and batches editorial choices for him. A role can be used more than once for a bounded subset of candidates.
+Updated 19 September 2026 after the [second-pass review](../SECOND-PASS-REVIEW-RESPONSE.md) and [pilot listening feedback](pilot-2026-09-19/OWNER-FEEDBACK.md). Proposed task briefs accompanying the [playbook](../TOUR-AUTHORING-PLAYBOOK.md). These are instructions for the next assigned authoring task, not active delegations or an automated framework. Sidi takes the editorial lead/orchestrator role in the next workshop; the engineer prepares task briefs, coordinates execution and batches editorial choices for him. A role can be used more than once for a bounded subset of candidates.
 
 ## Shared instructions for every role
 
@@ -36,6 +36,8 @@ A candidate here means a place/story opportunity; a whole-tour theme is a separa
 
 For an arrangement, distinguish developer, owner, lease parties, users and maintainer. For a business/institution, establish what it is and why it belongs here. For a named performer, research identity and period context that would change the pictured event. For a preservation story, seek the participants' documented reasons and what happened afterwards. Do not assume that three sources or Wikipedia inclusion is universally necessary.
 
+Identify the knowledge gap that makes this story matter. For a proposed scene, seek what the listener could not readily picture from normal life; generic activity is insufficient. For a change, research the relevant prior condition and comparison, such as earlier transport or land use. A travel-time comparison needs compatible places, mode and period. State unresolved gaps before the writer fills them with familiar but uninformative detail.
+
 **Check before returning:** is there enough material for an explanation rather than a set of disconnected facts? What can the visitor connect to today's place? If a key link is unknown, supply the narrower supported claim and options to research, omit or reframe it.
 
 ## Curator and narrative planner
@@ -47,6 +49,8 @@ For an arrangement, distinguish developer, owner, lease parties, users and maint
 **Deliver:** selected and rejected candidates with reasons; sequence; each stop's contribution; what being there adds; story/walking-chapter/silence plan; rough speech and walking budgets; and an ending choice. Explain how similar subjects deepen the theme or offer a useful contrast. Account for detours and repeated pavement without assuming either is forbidden.
 
 Agree the physical outline with the route reviewer before asking for final scripts. Treat the short technical-test footprint as historical testing context, not a limit on the product. Preserve comfortable silence and variable rhythm. Give broader excursions an explicit allowance and purpose; the 25% cap is not adopted. The next-tour brief includes two narrated legs and at least one moment of levity unless the subject is deliberately sombre.
+
+Compare revisions against the strongest retained actions and details. Improving the explanation must include a conscious choice about what it displaces; repeated intentions should not silently crowd out vivid supported events. About two minutes can suit some especially important or interesting stops, rather than setting the default for all of them.
 
 **Check before returning:** would the sequence make sense to someone hearing it once while outside? Are facts or subthemes accumulating beyond what the walk can comfortably carry? Is there a reason to choose this walk beyond the number of sights covered?
 
@@ -82,6 +86,8 @@ Use the [writing brief](WRITING-BRIEF.md). Establish context and temporal bearin
 
 Bring the past into the present and complete the connection from local evidence to insight. Allow broader ideas within the planned budget. Vary tone and structure rather than using one dramatic template, generic atmosphere or a forced moral at every stop. Keep cognitive effort low and leave space for looking and silence.
 
+Before an evocative passage, say in the working notes what unfamiliar picture it supplies; verify that the actual prose supplies it. Before a transformation, check whether the listener understands the before-state. Retain good earlier material while improving the explanation, and identify any consequential loss for the lead. A school scene of books and chairs did not pass this test in the pilot, despite the subject being welcomed.
+
 **Check before returning:** read the whole sequence aloud, including transitions and directions. Identify passages that could be spoken unchanged anywhere. Refine those or justify their place. Do not rewrite factual or access records silently to rescue a fluent sentence.
 
 ## Independent reviewer and lead integration
@@ -93,6 +99,8 @@ Bring the past into the present and complete the connection from local evidence 
 **Deliver:** a short findings list with location/passage, evidence, consequence, responsible role and concrete remedy. Separate a material factual/access error, a missing explanatory link, a navigation problem and a discretionary style suggestion. Recognise what worked, so editing does not erase successful material.
 
 Check historical hierarchy, unexplained names/relationships, current relevance, supported scene detail, grounded insight, sensory consistency, approach-aware directions, repetition and listening effort. Verify that every central claim has support without pretending source-link presence proves truth. Inspect whether a supposedly absent fact is already in the script but poorly placed for understanding. Apply no numerical enjoyment score or blanket quota.
+
+Read the earlier strongest material as well as the final draft. Name what an evocation adds beyond ordinary experience, whether the before/after comparison is intelligible, and which worthwhile action or detail a revision lost. The pilot's factual review did not establish that its scenes or selection worked for the owner. Check these questions against actual passages, not merely against the existence of research notes or instructions.
 
 The engineer resolves routine implementation issues and sends focused revisions to their owners. Sidi leads the consequential editorial choices in this workshop; preserve his reasoning and the resulting change. After audio generation, compare actual duration and pronunciation with the walking plan. Stop when material issues are addressed and consciously retained limitations are documented; batch editorial questions rather than creating repeated permission requests.
 

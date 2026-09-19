@@ -2,7 +2,9 @@
 
 19 September 2026. We have run the small agent pilot: researchers prepared evidence and route constraints, a writer drafted these two excerpts, and a fresh reviewer checked their sources and telling. This is a desk workshop using familiar Finchley material. The two excerpts are independent; the next complete tour and its area remain for us to choose.
 
-Read the spoken passages first. The short alternatives underneath make the editorial decisions concrete. My proposed starting choices are the warmer artsdepot ending and the street-led walking opening, but neither is selected for you.
+Read the spoken passages first. The short alternatives underneath make the editorial decisions concrete. The engineer initially proposed the warmer artsdepot ending and the street-led walking opening.
+
+**Owner response, 19 September:** Sidi prefers the **railway-led opening** and leans towards the **warmer ending if better written**. His [full feedback](OWNER-FEEDBACK.md) asks for revealing evocation, the missing before-state/comparison, and recovery of vivid campaign material displaced by repeated explanation. The passages and original choice prompts below are retained as reviewed, not silently rewritten to imply those issues are resolved.
 
 ## Artsdepot and room to take part
 
@@ -69,4 +71,4 @@ The first completed draft and independent review are retained alongside the rese
 - [Artsdepot evidence](P01-RESEARCH.md) and [walking evidence and route budget](P02-RESEARCH-ROUTE.md).
 - [Preserved first draft](DRAFT-V1.md), [independent review](REVIEW.md), [revised draft and evidence maps](DRAFT-V2.md), and [exact revision](REVISION-NOTES.md).
 
-There was no need for an additional writer research request on these chosen angles. The question-and-return route remains available when a real gap appears. We will record your selections and reasons after you respond, then use them to refine the next assignment.
+The writer made no additional research request during this run. The owner's response now identifies useful research gaps and selection problems; those are preserved with his choices and reasons in the feedback record and current briefs for the next assignment.
