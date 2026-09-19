@@ -1,6 +1,6 @@
 # Writing brief for the next walking tour
 
-Version 2, 19 September 2026. Practical writer and editor handoff drawn from the [living guidance](../TOUR-DESIGN-GUIDANCE.md), [second-pass review](../SECOND-PASS-REVIEW-RESPONSE.md) and [pilot listening feedback](pilot-2026-09-19/OWNER-FEEDBACK.md). Owner preferences below apply now; workflow devices and evidence labels are provisional ways to implement them. No script, route or listening outcome is approved by this brief.
+Version 3, 19 September 2026. Practical writer and editor handoff drawn from the [living guidance](../TOUR-DESIGN-GUIDANCE.md), [second-pass review](../SECOND-PASS-REVIEW-RESPONSE.md) and [pilot listening feedback](pilot-2026-09-19/OWNER-FEEDBACK.md). Owner preferences below apply now; workflow devices and evidence labels are provisional ways to implement them. No script, route or listening outcome is approved by this brief.
 
 ## The experience
 
@@ -14,7 +14,19 @@ The writer needs an intended experience, reviewed material, current context and 
 
 The research packet holds sources, claims, inference/reconstruction notes and unresolved issues. The spoken script holds what the visitor needs to hear. The writer does not need to narrate the process of checking every claim.
 
-Identify the listener's missing picture or comparison before choosing details. For a transformation, establish the relevant before-state: what occupied the land, how a journey worked, or what people did before the change. A half-hour journey has little explanatory force if the listener cannot judge what it replaced. Return material gaps to research; do not manufacture a baseline or add an exhaustive preamble.
+Identify the listener's missing picture or comparison before choosing details. Explain what came before **when it supplies relevant interest or understanding**. To a listener for whom half an hour into London is familiar, the historical rail figure needs the earlier journey to reveal what changed. Other facts may already be meaningful without a before/after account. Return material gaps to research; do not manufacture a baseline or add an exhaustive preamble.
+
+## Select material within the story
+
+**Proposed lightweight method, for the next use:** the researcher supplies candidate material and evidence; the writer or curator makes a small selection pass before prose, and the lead reviews consequential tradeoffs. Use a short working note inside the existing handoff, not another framework or mandatory agent.
+
+1. **State a provisional promise.** In one sentence, what could the listener find interesting or understand differently here? Let the strongest discoveries change it; do not force all research into the first thesis.
+2. **Shortlist the promising material.** Group related facts into usable pieces: a scene, action, person, explanation, revealing comparison or present-day connection. Give each a short reason it might earn its time and keep its evidence reference. Do not catalogue every date again or attach numerical merit scores.
+3. **Choose a combination.** Compare interest, contribution, repetition, explanation needed and listening time. Prefer pieces that do different jobs and strengthen one another. Mark the few selected pieces, plus any strong omission and why. Evidence strength and editorial attraction remain distinct: an exciting unresolved claim is a research lead, not ready narration.
+4. **Arrange the short outline and test the joins.** Say what each piece adds and why it follows the previous one. Add necessary bearings, remove repeated explanations and return awkward gaps to research. Sequence may be chronological, thematic or built around a scene; no compulsory dramatic arc.
+5. **Read once for flow and subtraction.** Does it sound like a connected story? What understanding or pleasure disappears if a piece is removed? Retain worthwhile atmosphere, humour and rhythm as well as explanation. Park good material that does not fit; only sketch a second outline if it offers a genuinely different experience.
+
+**Illustration, not a selected rewrite:** artsdepot could move from brief cinema context to what people wanted, then the campaign's visible actions, a concrete present-day use and a warm ending. The campaign could show commitment that repeated statements of intent merely explain. A fuller cinema experience might instead deserve more of the time and a different centre of gravity. Compare those uses of the budget; do not pack both complete stories into a short stop. Source qualifications remain with each piece.
 
 ## Ways to carry interest
 
@@ -45,6 +57,8 @@ Be generous with supported imagined colour. Establish a period, setting and acti
 
 **First decide what the listener would struggle to picture from normal life.** The description earns its time by supplying that understanding. The pilot's school vignette offered familiar books and chairs; Sidi welcomed the subject but found the generic scene wasted time. The Gaumont's wood panelling began well, then stopped short of the distinctive experience of a visit in its period. Seek researched differences in the setting or activity, not more sensory adjectives around universal actions. If no revealing scene is available, keep the discovery concise. This remains a positive brief for reconstruction and atmosphere.
 
+The revealing detail need not be unique to this institution. The local school can introduce what education at a girls' school in 1887 was like compared with the listener's experience now. Research the suitable period, school type and social context; questions about teaching, expectations or opportunities can guide discovery without predetermining the answers. Use supported broader knowledge for reconstruction without representing it as this school's recovered timetable or pupils' documented experiences. Missing institution-specific archives alone are not a reason to abandon a useful scene.
+
 Use these provisional editorial labels behind the passage: **directly supported; reasonably inferred; reconstructed; unresolved/disputed**. Record the reason, including any important contrary evidence. A credible historical inference can support fluent narration; certainty need not mean an eyewitness source for every detail. Do not invent numeric confidence percentages or change the package schema to match these labels.
 
 An event advert may support a reasonable inference of occurrence; it is not independent confirmation. Period behaviour can inform a reconstruction; a unique incident recorded elsewhere does not silently become a recovered fact at this stop. Match the claim to the foundation and use an imagined frame where appropriate. Sidi's follow-up choice is **reconstruction and atmosphere** for the next samples; invented dialogue and composite characters are outside this first experiment. Navigation and access statements stay literal.
@@ -71,7 +85,7 @@ The tour may convey Sidi's editorial outlook. Values should guide curiosity and 
 
 Ask whether the listener can follow it once, whether the detail is distinctive, whether the scene is vivid, and whether the ending earns its place. Identify the strongest moment as well as the problem. Check the sources for central claims, then review spoken fluency separately so caution does not flatten the prose.
 
-Name what the actual scene taught or enabled the listener to picture beyond ordinary experience. Check that a change has the comparison needed to understand it, and that an explanatory rewrite has not discarded its best actions or details. These checks apply to the passage itself: merely listing the principles in a prompt did not make the pilot satisfy them.
+Name what the actual scene taught or enabled the listener to picture beyond ordinary experience; this may come from period context rather than a unique local detail. Check whether a comparison is needed and, if so, whether it is supplied. Check the merits and joins of the selected material, including whether a rewrite discarded its best actions or details. These checks apply to the passage itself: merely listing the principles in a prompt did not make the pilot satisfy them.
 
 For the tour, inspect the variation between stops and legs, navigation demands, present-day connections, levity and the finish. Sidi's early sample choices refine this brief before full production. After ordinary use, ask:
 

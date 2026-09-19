@@ -263,6 +263,20 @@ Sidi explicitly asks to preserve generous detail/raw text for later work on agen
 
 **Verification:** changed-document links/anchors, consistency and whitespace checked; the retained pilot scripts/audio/research and original owner Word documents are unchanged. Guide consistency passes. Documentation-only capture needs no app build or phone session.
 
+### 24 Period context, relevant comparisons and curation within a story
+
+**19 September 2026. Source:** direct follow-up, retained verbatim in the [pilot feedback record](authoring/pilot-2026-09-19/OWNER-FEEDBACK.md#follow-up-clarification-period-context-and-selection-within-a-story).
+
+**Owner clarification:** a revealing school vignette need not depend on something unique to that institution. Research what a girls' school in the relevant period was like compared with the listener's experience today. The named local school can provide the entry into that broader history. Evidence appropriate to period and type can support reconstruction, while precise local claims retain their own support requirements.
+
+**Relevance correction:** explain the earlier condition when it makes the chosen fact interesting or understandable. Sidi's familiar present-day half-hour journey illustrates why the rail figure alone says little: the pre-rail contrast is the potentially interesting part. The earlier guidance was too categorical. No current timetable, earlier journey duration or specific school practice has been researched in this discussion.
+
+**Curation direction:** select among the facts, scenes and explanations gathered for a place, weighing comparative merits and how the pieces combine into a harmonious narrative. This extends beyond preserving an earlier anecdote or choosing a stop. A large source collection must not become a spoken laundry list.
+
+**Proposed method:** the [short selection pass](authoring/WRITING-BRIEF.md#select-material-within-the-story) uses a provisional story promise, a shortlist of promising pieces, complementary selection, an ordered outline with intelligible joins, and a final flow/subtraction check. Keep a reason for consequential omissions and use existing evidence references. The writer/curator can do this in an ordinary note; no scoring system, fixed story formula, new agent or infrastructure is commissioned. The method is an engineer proposal, not an owner-approved permanent process.
+
+**Outcome:** guidance revision 13, writing brief v3 and role briefs incorporate the clarifications. Original prose/audio and research stay available for comparison. Links, guide consistency and whitespace checked; no app or physical test is relevant to this documentation update.
+
 ## Questions to carry into a later systematic review
 
 - Does context before anecdote usually improve the story, and when can an immediate intriguing detail work better?
@@ -288,7 +302,7 @@ Sidi explicitly asks to preserve generous detail/raw text for later work on agen
 | Distinct standing areas, access and crossings | Desk-reviewed public-exterior candidates with dated imagery; no current field claim | Current conditions during ordinary first use |
 | Public-tour survey before new-area curation | Applied; comprehensive first Finchley catalogue and synthesis recorded | Reuse and improve coverage for the next area |
 | Reusable place/source/story database | Explicitly planned; not implemented | Actual records and reuse requirements from the survey/two tours |
-| Systematic guidelines from these options | All 100 Word comments indexed; revision 12 and writing brief v2 also incorporate direct pilot feedback | Use and refine in the owner-led workshop |
+| Systematic guidelines from these options | All 100 Word comments indexed; revision 13 and writing brief v3 incorporate direct pilot feedback and clarifications | Try and assess the proposed selection pass within a story |
 | Pilot editorial choices | Railway-led opening preferred; warmer ending conditional on better writing; about two minutes acceptable selectively | A later draft addresses missing comparisons, distinctive scenes and lost campaign material |
 | Two narrated legs in the next tour | Owner-directed editorial brief | Area/route assembly and samples that make good use of movement |
 | Authoring workshop | Sidi takes editorial lead; engineer prepares and executes | Record consequential choices and useful revisions; no permanent agent count assumed |

@@ -45,3 +45,21 @@ These are the engineer's practical implementation of the feedback, not additiona
 4. **Review the actual passage against those answers.** The previous briefs already asked for distinctive detail and what differed from today. The pilot did not apply that standard strongly enough; another instruction alone is not evidence of improvement. A factual pass and a complete set of agent outputs do not establish an engaging story.
 
 Useful future research questions: what made a Gaumont visit of that period different from a familiar cinema visit; what distinguished the educational setting beyond universal classroom actions; what comparable journey preceded the train; what occupied the housing land; and what exactly the campaign account supports. This capture commissions no new research run, rewritten recording or field session. Current authoring guidance and role briefs now carry these lessons into the next assignment.
+
+## Follow-up clarification: period context and selection within a story
+
+19 September 2026. Sidi subsequently sharpened the interpretation above. His wording, with the chat's whitespace entity omitted and emphasis rendered:
+
+> it's not necessarily THAT school in particular but an all girl's school in 1887 - what was that like and what was different from a school in 2026?
+>
+> For curation (re. arts depot), it seems it also needs to happen within the facts we gather - some places will have laundry lists of available data and we'll need to weigh the comparative merits of each, and how they can or can't fit together in a harmonious narrative flow. Let's see if we can think of a method, again without critically overengineering it
+>
+> re. half an hour into london, the change needs explaining *when relevant* - going back to "what was different": it's still 30 min to london in 2026, so what is interesting / different is that it took much longer before.
+>
+> Does this all make sense?
+
+**Clarifications adopted:** the distinctive experience may belong to the period and type of institution. Appropriate research into girls' education can support an evocative passage without requiring an unusual fact from this exact school. The local discovery provides the connection. Specific age range, curriculum or pupils' experiences are not established by this editorial example; broader reconstruction should be framed accordingly.
+
+Comparison is conditional on relevance. The half-hour figure feels familiar to Sidi now; its earlier contrast is what could supply interest here. This does not establish a current timetable or a pre-rail duration, and it does not require every historical change to receive a before/after treatment. The previous response had made this too formulaic.
+
+Curation applies to material within each story as well as to choosing stops. Individual interest and the ability of selected pieces to work together both matter. The engineer proposes a short pass in the [writing brief](../WRITING-BRIEF.md#select-material-within-the-story): state a provisional promise; shortlist promising material; choose complementary pieces; arrange and test the joins; read for flow and remove what adds little. Use existing notes, evidence links and the writer/curator role. No scores, new framework or mandatory additional agent. The proposed artsdepot outline illustrates the method; it is not an approved rewrite. This method remains for discussion/use, distinct from the owner's underlying direction.
