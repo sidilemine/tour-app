@@ -1,0 +1,82 @@
+{
+  "purpose": "Hash inventory of baseline shared inputs at pilot launch. Records availability, not proof every agent read each file. No private recordings or owner documents are copied.",
+  "baseline_commit": "2da9368aeee6717bdd6720d7fba3bae2acded582",
+  "date": "2026-09-19",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "59f272b7485cfe675aae860580d6e01d117be1b9ddea55e30bd8a1aac4c00963",
+      "bytes": 15081
+    },
+    {
+      "path": "PRODUCT.md",
+      "sha256": "c534a649d3fb715a48d3decd191bfcbe6fad00ac0a7282949609f6b5d3279c66",
+      "bytes": 13212
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "sha256": "ddadfecdcca64adf0ad604a9345b2245e831943ca807a17872f1d8cd838fdfbe",
+      "bytes": 42972
+    },
+    {
+      "path": "ROADMAP.md",
+      "sha256": "e73d71c42acc53977f10f989c0224998bb0729ed120afe45edaa80812d7913e0",
+      "bytes": 34908
+    },
+    {
+      "path": "README.md",
+      "sha256": "0d5498a9168983bc560f2d6147dc407795252c110881f3a7cbb09e1f25db58fb",
+      "bytes": 25818
+    },
+    {
+      "path": "docs/content/TOUR-DESIGN-GUIDANCE.md",
+      "sha256": "d018bb4794b79c5b9704ccb69dccc9d1d3a93a258af9b08f507129e7fffb333c",
+      "bytes": 41356
+    },
+    {
+      "path": "docs/content/authoring/WRITING-BRIEF.md",
+      "sha256": "4c9ed440580400800f433dc6fc446ea968b88381a251be53c06ee4f8e1f032ac",
+      "bytes": 8279
+    },
+    {
+      "path": "docs/content/authoring/AGENT-BRIEFS.md",
+      "sha256": "b4949e8380708806eda46ad3cdf9153e4128a9d765b1704d3eaeae23c6a858dc",
+      "bytes": 13709
+    },
+    {
+      "path": "docs/content/SECOND-PASS-REVIEW-RESPONSE.md",
+      "sha256": "2971e1a31c6bb16bece76947351374725ae73379f680b0130e9cf8aed87ba737",
+      "bytes": 17845
+    },
+    {
+      "path": "content/north-finchley/stories.json",
+      "sha256": "b8ad49d78906a65f2c5c25c6311424d38b2c2171b260ffe6b0e8968c9e5cad89",
+      "bytes": 36400
+    },
+    {
+      "path": "content/north-finchley/B-manifest.json",
+      "sha256": "20428c38d8f69f49bbf272be3a8535be5549123dc47f27eea95d0234d671308a",
+      "bytes": 66736
+    },
+    {
+      "path": "content/north-finchley/preparation.json",
+      "sha256": "2bc5b295b1fe5a43272469a052b291b33efe6d918d710d6e1037fc946ee86fa7",
+      "bytes": 3687
+    },
+    {
+      "path": "docs/content/routes/north-finchley-review-v2/README.md",
+      "sha256": "b6d13d78c030ae46612974d1d445b82984fd558d432df4e6d308744980b6eba9",
+      "bytes": 3781
+    },
+    {
+      "path": "docs/content/routes/north-finchley-review-v2/EXTERIOR-CHECKS.md",
+      "sha256": "24483116dffc29c2ffcb572dd40a78f26fbfe16dac5a26f28ebc116ec06dfd30",
+      "bytes": 9398
+    },
+    {
+      "path": "docs/content/routes/north-finchley-options-v1/B-response.json",
+      "sha256": "4b32cc929ec67ffab304d93bd640bcc0009c56b27ce2baedac531cdcaab79ff9",
+      "bytes": 14911
+    }
+  ]
+}

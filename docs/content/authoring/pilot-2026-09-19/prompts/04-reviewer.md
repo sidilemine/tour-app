@@ -1,0 +1,11 @@
+# Independent reviewer assignment
+
+Read `../BRIEF.md`, `../CALIBRATION.md`, `../../WRITING-BRIEF.md`, `../P01-RESEARCH.md`, `../P02-RESEARCH-ROUTE.md` and `../DRAFT-V1.md`. Review the two actual spoken scripts as a fresh reader. Your job is to help the next revision become reliable and enjoyable without flattening the prose into a list of qualifications. The owner has expressly welcomed reasonable inference, vivid reconstruction and broader walking stories.
+
+Independently open the source material behind the central historical, causal and present-day claims. Do not count repeating the researcher's summary as checking a source. Use the retained route and chapter-window evidence for physical statements and budget. Distinguish source review, dated imagery, owner observations and untested current conditions. No new field test, live routing or imagery purchase is commissioned.
+
+Write only `../REVIEW.md`. For each material finding give sample/paragraph, what the listener would believe, supporting or conflicting source, consequence and smallest useful remedy. Separate a factual/access problem, a missing explanatory link and a discretionary style choice. Identify the strongest passage in each sample and what should survive editing. Check claim mapping, contextual names, current relevance, reconstruction frame, repeated material from adjacent stops, usable walking connections, speech budget and spoken rhythm. A word-based estimate is not measured audio or physical timing evidence.
+
+For each alternative opening/ending, say what experience it changes rather than declaring a universal winner. Keep genuine editorial tradeoffs for Sidi. Do not enforce a numeric enjoyment score, automatic source-count rule, 25% digression cap or obligatory caveats. Do not ask the writer to make every passage more solemn or thematic.
+
+Record what you actually opened, its date/locator and any access limitation, with minimal quotations within source limits. A small source list is enough when it directly checks the central claims; do not restart the entire area survey. Return a concise summary of material revisions, retained strengths and decisions for the owner. Do not edit the drafts or evidence packets, launch agents or commit. If there are no material findings, say so and preserve that result; do not manufacture faults to prove independence.

@@ -221,6 +221,22 @@ Sidi explicitly asks to preserve generous detail/raw text for later work on agen
 
 **Verification:** all 55 comment texts match the source apart from the disclosed private-origin redaction; every comment anchor/reference is present, and all 100 IDs are mapped once within their source document. All four owner-document hashes still match their captures; the original second-pass paper is unchanged. The commented Word copy was rendered and all ten pages inspected. All 251 local links/anchors across the changed Markdown resolve; `npm run docs:check` and whitespace checks pass. No app build or physical test was needed.
 
+### 21 A visible agent authoring pilot
+
+**19 September 2026. Owner instruction:** after asking how a writing brief becomes an agent prompt, how long assignments are and what coordination is needed, Sidi approved trying the workflow on one stop story and one walking chapter. The [pilot record](authoring/pilot-2026-09-19/README.md) preserves the actual task files, launch/follow-up messages, evidence, drafts and review. The engineer chose existing Finchley material for this bounded exercise; it does not select the next tour area or reopen an installed-tour rewrite programme.
+
+**Execution:** separate agents researched artsdepot and the Meeting House–Moss Hall walking leg in parallel. A writer received both evidence packets plus the writing brief and calibration examples; a fresh reviewer independently read central sources, route constraints and the completed scripts. Each had named output ownership. The task files are 322–357 words, excluding shared instructions and supporting material; the research packets together are about 5,400 words. No exact token-use or cost estimate is inferred from word counts.
+
+**Material discoveries:** contemporary reporting of artsdepot director Alison Duthie's 2004 plans supplies particular uses and a meeting-place aspiration, distinct from claiming unanimous residents' motives. An 1886–87 directory locates ladies' education establishments on Alexandra Grove, supplying an ordinary-life foundation for reconstruction without identifying a surviving doorway. The route handoff tightens the proposed speech budget from the measured historical chapter and saved launch geometry. Research is not proof of current physical access or audible timing.
+
+**Review and coordination:** the frozen first draft has no material factual defect identified in its main scripts. The independent review catches a missing Moss Hall introduction when the optional railway opening is substituted; the writer resolves it in V2, preserving the main scripts and V1. The complete alternative is 278 words including navigation. A preliminary read encountered wording still being edited, so the final review explicitly records the finished draft hash and excludes superseded concerns. This demonstrates the usefulness of a ready signal and checking a replacement in its full context. It does not establish improved enjoyment or prove that more agents always improve results.
+
+**Owner choices:** the [sample packet](authoring/pilot-2026-09-19/REVIEW-PACKET.md) asks about a warmer versus more concrete artsdepot ending, and a street-led versus railway-led walking opening. The engineer's suggested starting choices are labelled as proposals. Sidi's selection and reasons remain pending. No additional research question was needed from the writer on these supported angles; no artificial question loop was manufactured.
+
+**Scope:** documentation and original desk prose only. No app code, package, source Word document or physical-test result changes. Audio has not been generated or heard. Exact pedestrian entry at the known Crescent turn remains a later-use issue. The pilot introduces no database, orchestration service, new paid dependency or new outdoor test request.
+
+**Verification:** 196 local links/anchors across 17 Markdown files resolve; JSON and baseline fidelity checks pass. The coordinator verified the frozen draft hash, unchanged main scripts, exact sample-packet text, task word counts and the complete 278-word alternative. All four owner Word sources retain their hashes. `npm run docs:check` and whitespace checks pass; no app build or physical test was run.
+
 ## Questions to carry into a later systematic review
 
 - Does context before anecdote usually improve the story, and when can an immediate intriguing detail work better?

@@ -1,0 +1,11 @@
+# Artsdepot researcher assignment
+
+Read and follow this assignment and `../BRIEF.md`. You are the P01 story researcher for a bounded authoring pilot. Your job is to give the writer something specific and worthwhile to explain about artsdepot, especially what local people wanted it to provide. Research can overturn the starting pitch.
+
+Required inputs: `../BASELINE.json` (artsdepot entry), `../CALIBRATION.md`, `../../WRITING-BRIEF.md`, the story researcher section of `../../AGENT-BRIEFS.md`, and the current guidance on present-day context and completing local-to-wider insight. Paths are relative to this prompt file. Read applicable repository instructions. Existing source links are leads, not evidence that you have checked their contents in this run.
+
+Reopen the institution's timeline and investigate the 1996 community conference and subsequent campaign. Seek explicit aims, needs, people or alternatives in primary records, institutional accounts, council material or contemporary reporting. Look for what changed the offer from a cinema into an arts centre, and something concrete about its present use. Start with a handful of promising sources; follow up where a useful question remains, then stop once further searching no longer changes the explanation. Do not invent campaigners' motives, equate public access with universal use, or infer that all local residents wanted the same thing.
+
+Write only `../P01-RESEARCH.md` and, if needed later, append dated replies there. Include: a paragraph pitch and strongest alternative; central claim IDs; source title/publisher/date/URL/access date and page/section; minimal supporting excerpts within source limits; interpretation/reconstruction possibilities; current facts with date; useful unknowns and search coverage. Distinguish contemporary evidence, retrospective institutional claims and your interpretation. Save enough for a writer and independent reviewer to inspect the actual support. Avoid full copyrighted-page archives.
+
+Send the coordinator a concise handoff with the strongest discovery, any premise the evidence changed and the exact file. You may answer later focused writer questions. Do not draft the final script, edit other files, launch more agents or commit. No new tour, app changes, paid access or field request. Preserve all earlier package material untouched.
