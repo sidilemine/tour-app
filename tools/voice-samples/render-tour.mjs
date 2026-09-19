@@ -32,12 +32,17 @@ async function model() {
   return instance;
 }
 export async function renderGeorge(text, destination) {
+  return renderNarration(text, destination, 'bm_george');
+}
+export async function renderNarration(text, destination, voice) {
+  if (!['bm_george', 'bf_emma'].includes(voice)) throw Error('Unsupported audition voice');
+  const config = { ...voiceConfig, voice };
   const tts = await model(), parts = [], chunks = [];
   // Paragraphs retain the audition's multi-sentence intonation; the tokenizer
   // guard rejects oversized passages before any incomplete audio is published.
   const paragraphs = text.split(/\n\s*\n/).filter(Boolean);
   for (let p = 0; p < paragraphs.length; p++) {
-    const audio = await tts.generate(paragraphs[p], { voice: voiceConfig.voice, speed: voiceConfig.speed });
+    const audio = await tts.generate(paragraphs[p], { voice, speed: config.speed });
     if (audio.sampling_rate !== 24000 || !audio.audio.length || audio.audio.some(n => !Number.isFinite(n))) throw Error('Invalid generated audio');
     parts.push(audio.audio);
     chunks.push({ paragraph: p, text: paragraphs[p], durationSeconds: audio.audio.length / 24000 });
@@ -50,6 +55,6 @@ export async function renderGeorge(text, destination) {
   const result = spawnSync('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', '-i', `${destination}.wav`,
     '-af', 'loudnorm=I=-19:TP=-2:LRA=11', '-ar', '24000', '-ac', '1', '-c:a', 'aac', '-b:a', '64k', destination], { encoding: 'utf8' });
   if (result.status !== 0) throw Error(result.stderr || 'Narration encode failed');
-  await writeFile(`${destination}.render.json`, JSON.stringify({ voiceConfig, chunks }, null, 2) + '\n');
+  await writeFile(`${destination}.render.json`, JSON.stringify({ voiceConfig: config, chunks }, null, 2) + '\n');
 }
 export async function closeRenderer() { if (instance) { await instance.model.dispose(); instance = undefined; } }

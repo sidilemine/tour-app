@@ -233,9 +233,19 @@ Sidi explicitly asks to preserve generous detail/raw text for later work on agen
 
 **Owner choices:** the [sample packet](authoring/pilot-2026-09-19/REVIEW-PACKET.md) asks about a warmer versus more concrete artsdepot ending, and a street-led versus railway-led walking opening. The engineer's suggested starting choices are labelled as proposals. Sidi's selection and reasons remain pending. No additional research question was needed from the writer on these supported angles; no artificial question loop was manufactured.
 
-**Scope:** documentation and original desk prose only. No app code, package, source Word document or physical-test result changes. Audio has not been generated or heard. Exact pedestrian entry at the known Crescent turn remains a later-use issue. The pilot introduces no database, orchestration service, new paid dependency or new outdoor test request.
+**Scope at completion of the prose pilot:** documentation and original desk prose only. No app code, package, source Word document or physical-test result changes. Audio had not yet been generated or heard; the subsequent listening request is recorded below. Exact pedestrian entry at the known Crescent turn remains a later-use issue. The pilot introduces no database, orchestration service, new paid dependency or new outdoor test request.
 
 **Verification:** 196 local links/anchors across 17 Markdown files resolve; JSON and baseline fidelity checks pass. The coordinator verified the frozen draft hash, unchanged main scripts, exact sample-packet text, task word counts and the complete 278-word alternative. All four owner Word sources retain their hashes. `npm run docs:check` and whitespace checks pass; no app build or physical test was run.
+
+### 22 Pilot recordings in George and Emma
+
+**19 September 2026. Owner request:** record the two samples, one in George and one in the other auditioned voice. The engineer assigned **artsdepot to George** and **Alexandra Grove to Emma**, using the main versions and including the walking chapter's candidate direction. This request does not select either editorial alternative or replace the previously chosen George voice for installed tours.
+
+**Outcome:** [two local MP3s and exact transcripts](authoring/pilot-2026-09-19/audio/README.md), with source version, model/settings, chunk records and hashes. Artsdepot is **123.650 seconds**; Alexandra Grove is **97.650 seconds**. The same cached free Kokoro setup generated both at speed 1 and a common loudness target. No subscription use, upload, phone playback or package update occurred.
+
+**Rendering correction:** the existing model-token guard stopped the first walking attempt. The long estate paragraph was split at a sentence boundary without changing words, and the full recording then succeeded. George's completed PCM was retained and reused after input/settings checks. Emma's measured pace is faster than the writing estimate; this is not owner feedback about how the narration feels or field evidence of its route fit.
+
+**Verification:** both MP3s decode completely; encoded durations agree with all rendered chunks and pauses. Text fidelity, voice settings, file hashes, type checking, lint, guide consistency and whitespace checks pass. The source packet now displays measured timings. No app build or physical test is needed for these desk samples. Listening reactions and the two editorial choices remain pending.
 
 ## Questions to carry into a later systematic review
 

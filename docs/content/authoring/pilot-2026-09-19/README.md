@@ -2,6 +2,8 @@
 
 19 September 2026. A completed desk exercise in commissioning agents: one stationary story and one walking chapter, ready for the owner's editorial reaction. **Start with the [two samples and choices](REVIEW-PACKET.md).** Read the [brief](BRIEF.md) for scope and the [run log](RUN-LOG.md) for actual launches and handoffs. The owner approved the exercise after discussing how prompts, evidence and coordination fit together.
 
+**Listening follow-up:** the owner requested recordings of the main samples. [George reads artsdepot and Emma reads Alexandra Grove](audio/README.md), with exact transcripts, measured durations and generation metadata. Recording the main versions does not select the editorial alternatives or establish walking suitability.
+
 ## How the work moves
 
 ```mermaid

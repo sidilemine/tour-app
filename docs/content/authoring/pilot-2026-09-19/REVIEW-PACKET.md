@@ -6,7 +6,7 @@ Read the spoken passages first. The short alternatives underneath make the edito
 
 ## Artsdepot and room to take part
 
-**Setting:** outside artsdepot near Nether Street. **Draft length:** 317 words, roughly 2 minutes 11 seconds to 2 minutes 21 seconds at the assumed pace, before extra pauses. These are writing estimates; no audio was generated.
+**Setting:** outside artsdepot near Nether Street. **Length:** 317 words. [George's recording](audio/artsdepot-george.mp3) measures 123.650 seconds (about 2:04). The earlier writing estimate was 2:11–2:21 before extra pauses; measured delivery supersedes it for this recording.
 
 Here on Nether Street, artsdepot occupies the site of the Gaumont cinema, which opened in 1937.
 
@@ -30,7 +30,7 @@ A theatre gives you somewhere to sit and watch. Here, the writing group also has
 
 ## A walking chapter on Alexandra Grove
 
-**Setting:** after leaving the Quaker Meeting House, before the Moss Hall Crescent turn. **Draft length:** 266 words including the candidate orientation below, roughly 1 minute 54 seconds to 1 minute 58 seconds before extra pauses. The route handoff proposes a final audio target of 115–125 seconds; that remains unmeasured.
+**Setting:** after leaving the Quaker Meeting House, before the Moss Hall Crescent turn. **Length:** 266 words including the candidate orientation below. [Emma's recording](audio/alexandra-grove-emma.mp3) measures 97.650 seconds (about 1:38), shorter than the 1:54–1:58 writing estimate and proposed 115–125-second target. This is measured desk audio; walking suitability remains unverified.
 
 As you walk along Alexandra Grove, the separate front doors make this look like an ordinary residential street. In the nineteenth century, this neighbourhood was taking shape around one much larger home: Moss Hall.
 
