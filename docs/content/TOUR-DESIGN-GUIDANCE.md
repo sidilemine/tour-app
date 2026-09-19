@@ -1,14 +1,14 @@
 # Walking tour design guidance
 
-Living editorial reference, revision 10, 18 September 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
+Living editorial reference, revision 11, 19 September 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
 
 **Our aim:** make an enjoyable, relaxing walk reveal the non-obvious stories and meaning beneath the surroundings, giving the listener a deeper connection to a place, whether new or familiar. Being there should contribute something that reading at home cannot.
 
 ## Authority and use
 
-The [authoring playbook](TOUR-AUTHORING-PLAYBOOK.md), [role briefs](authoring/AGENT-BRIEFS.md) and [source map](authoring/SOURCE-MAP.md) turn these preferences into a proposed working method. The [second craft pass](TOUR-STORY-CRAFT-SECOND-PASS.md), prepared 18 September, adds wider research, contrasting prose and proposed learning through two more tours. Its new craft choices and handoff additions await discussion/use; this guidance remains the authority for owner preferences.
+The [authoring playbook](TOUR-AUTHORING-PLAYBOOK.md), [role briefs](authoring/AGENT-BRIEFS.md) and [source map](authoring/SOURCE-MAP.md) turn these preferences into a proposed working method. The [second craft pass](TOUR-STORY-CRAFT-SECOND-PASS.md) remains a dated discussion paper; the [19 September response](SECOND-PASS-REVIEW-RESPONSE.md) and [writing brief](authoring/WRITING-BRIEF.md) incorporate its 55 owner comments and the follow-up choice of reconstruction and atmosphere. This guidance remains the authority for preferences; the search budgets and assembly method remain proposals for use.
 
-The [editorial discussion and decision record](EDITORIAL-REVIEW-RECORD.md) is the companion history: all 45 anchored Word comments, conversation corrections, rejected examples, current options and decision status. Read it before a systematic revision of these guidelines and append new feedback there. Sidi has now directed development of both [North Finchley proposals](NORTH-FINCHLEY-TOUR-OPTIONS.md), with the [changes recorded in the latest review](NORTH-FINCHLEY-REVIEW-RESPONSE.md). Their access and scripts are not yet accepted.
+The [editorial discussion and decision record](EDITORIAL-REVIEW-RECORD.md) is the companion history: all 100 anchored Word comments, conversation corrections, rejected examples, current options and decision status. Read it before a systematic revision of these guidelines and append new feedback there. Both North Finchley tours have now supplied ordinary-use feedback, recorded separately from technical acceptance. Their examples inform general authoring; this review does not commission their revision.
 
 Sidi's preferences lead. Research provides starting assumptions; feedback from Sidi, friends and family will refine them. This document is the single maintained reference for editorial choices, alongside the technical and evidence contracts in [PRODUCT](../../PRODUCT.md) and [ARCHITECTURE](../../ARCHITECTURE.md). It replaces the initial research draft's pending-preference summary, not its research findings.
 
@@ -22,7 +22,9 @@ Revision 3 incorporates Sidi's subsequent conversation correction: the narrator 
 
 Additional basis for revision 4: all 11 tour-options comments, IDs 0–10, reviewed on 17 September. The [exact capture](reviews/2026-09-17-tour-options-comments.json) and [response](NORTH-FINCHLEY-REVIEW-RESPONSE.md) preserve the choices and reasoning.
 
-## Second-tour material awaiting systematic synthesis
+Additional basis for revision 11: all 55 second-pass comments, IDs 0–54, reviewed on 19 September. The [capture](reviews/2026-09-19-second-pass-comments.json) retains anchors and paragraph context, with the private transport-origin postcode redacted; original Word files are unchanged. The subsequent direct answer selects reconstruction and atmosphere for the next writing experiment.
+
+## Second-tour evidence for synthesis
 
 The [18 September detailed feedback](SECOND-TOUR-FEEDBACK-RECOVERY.md) and [discussion entry 16](EDITORIAL-REVIEW-RECORD.md#16-second-tour-historical-hierarchy-the-present-place-motives-and-detailed-preservation) extend the evidence for historical context, present-day relevance, supported evocation, independent-source depth and explanations of motives. Sidi asks us to preserve detail for later synthesis; read the full recovery record and retained private transcripts before reducing this to agent instructions. No fixed source-count/notability rule is adopted here. The [subsequent direct clarification](reviews/2026-09-18-second-tour-clarifications.md) resolves the four targeted recovery questions and supplies the owner directions added in revision 10.
 
@@ -32,11 +34,27 @@ Sidi explicitly enjoyed the first Tour B walk and learned a lot about his own ar
 
 Divide authoring work among agents with distinct responsibilities and clear handoffs instead of asking one agent to research, select, navigate, write and assess itself in one pass. The [proposed workflow](TOUR-AUTHORING-WORKFLOW.md) separates research, curation, route review, writing and independent checking, with a lead responsible for integration. This is the owner's general process direction; the exact roles and deliverables are an initial implementation proposal for the next authoring task. It does not commission a software orchestration framework.
 
+For the next workshop, **Sidi takes the editorial lead/orchestrator role**. Bring useful batches of choices and retain his reasons, selected/rejected alternatives and revisions so we can learn how that function should work. The engineer continues to handle execution and routine choices. Researchers may dig deeper on their own or at the writer/lead's request within a focused question and a stopping rule. Treat tour assembly as a distinct proposed function joining research, curation and route design, without assuming a permanent extra agent. Second-pass comments 0, 7, 9, 46 and 49–51.
+
 ## Owner direction
 
 ### Survey existing walking tours first
 
 Before choosing stops or writing for a new area, comprehensively survey publicly available walking tours and catalogue their published stops, themes and stories. Use the [survey protocol](AREA-TOUR-SURVEY.md) to cover operators, heritage organisations, self-guided/audio routes and local themed walks, with clear source coverage and gaps. Learn from the area’s existing guiding knowledge, then independently research claims and create our own route and narration. Preserve discovery provenance and reusable place/story records. This is Sidi’s 17 September direction and applies to Finchley before the next full scripts; the earlier isolated Kinks lookup does not fulfil it.
+
+The 19 September extension includes guides/books and present-day places themselves. Build a varied candidate pool that permits route and thematic choices together; add useful descriptors such as widely listed, less covered, music or other subjects as evidence warrants. Use a bounded source-family search before open-ended follow-up, adapting to heavily visited and sparsely documented areas. See the [proposed programme](AREA-TOUR-SURVEY.md#bounded-search-programme-for-the-next-area). No database implementation or exhaustive corpus is required. Second-pass comments 4, 5 and 23.
+
+### Use a warm documentary voice with an editorial outlook
+
+Sidi prefers an insightful documentary with warmth. 99% Invisible is a reference for research, writing and narration across the programme. Why-led explanation is especially valuable; the five story forms in the second pass are a useful repertoire, not a required formula. A cute detail or anecdote can earn its place without a substantial thesis. Second-pass comments 2, 9, 21–22, 41–43 and 52.
+
+The app should be upfront about AI generation. Its editorial perspective can reflect Sidi's values, while the narrator should not invent personal tastes, memories or lived experience. Warmth, emotional colour and a gentle invitation to feel are welcome; avoid commanding the listener's reaction. The final values are still to be developed through choices, rather than adopting his illustrative slogans as settled principles. AI disclosure is a product direction, not evidence of factual correctness or a claim that the current UI already implements it. Second-pass comments 3, 8 and 40.
+
+### Keep evidence work behind graceful spoken prose
+
+Vary sentence lengths, structures and rhythm. Context can take one or two factual sentences; an entire story of equally clipped statements sounds monotonous. Connect related clauses where that helps the ear. Give names at least a short identifying description; this can be general context rather than only their function in the immediate plot. Keep the listener oriented in the story as well as on the pavement. Second-pass comments 10–12 and 26–30.
+
+Do not routinely narrate irrelevant unknowns, rejected interpretations or the editor's rationale. The Crescent ownership aside, its disclaimer about an imagined buyer, Torrington's vague “their later account” and its explanation of “the attraction here” are rejected as spoken execution. A caveat belongs in speech when it materially changes what the listener would otherwise believe. B is the preferred Crescent treatment; C may lead into it or follow it, with better rhythm and no unnecessary disclaimers. These choices calibrate the writing brief; they do not request a Finchley package rewrite. Second-pass comments 15 and 28–37, 53.
 
 ### Reveal something worth knowing in this place
 
@@ -56,7 +74,7 @@ Sidi's 18 September clarification makes this a requirement for future authoring:
 
 ### Give names context and let research inform imagined colour
 
-Do not introduce a person, place or organisation as an unexplained proper name. Investigate who or what it was and supply enough context for this story. At Torrington, the performers named in a clipping should help establish what kind of night, music and audience the listener is picturing. Let that research inform supported imagined colour; do not choose a stock historical crowd or insert a genre without evidence. This also applies to institutions such as the orchestra and its relationship with its host church. It does not require speaking an exhaustive biography for every passing mention.
+Do not introduce a person, place or organisation as an unexplained proper name. Investigate who or what it was and supply enough context for this story. At Torrington, the performers named in a clipping should help establish what kind of night, music and audience the listener is picturing. Let that research inform supported imagined colour; do not choose a stock historical crowd or insert a genre without evidence. Look for continuing lives and present-day connections, including the still-touring performers, with dated checks. This also applies to institutions such as the orchestra and its relationship with its host church. It does not require speaking an exhaustive biography for every passing mention.
 
 ### Complete the connection from local evidence to wider insight
 
@@ -76,9 +94,13 @@ The evidence can establish the kind of place, its period and its everyday life w
 
 A story can combine immediate observations and place-specific history with broader reflection or digression. Sidi expressly welcomes both. Give digressions a time cap so they cannot accidentally overwhelm the story, and keep the whole experience grounded: being at this place should add clear value over hearing the same narration at home or in a hotel room. Broader thinking does not require an explicitly matching tour theme. This is Sidi's clarification of the sculpture feedback after the first Tour B walk.
 
-### Give the tour a meaningful theme
+### Give the tour coherence without requiring a strong theme
 
-A main theme and connections between stops matter. Individual insights can connect a physical feature to that theme. Keep the connection understandable without asking listeners to retain a complicated argument or resolve a series of intellectual challenges. The walk should remain relaxing and interesting in unfamiliar surroundings. Comments 5, 6 and 20.
+A main theme and connections can add value, but themed tours are not the only valid form. A loosely assembled walk of discovery and oddities can be delightful; a theme may emerge or be lightly retrofitted after seeing the material. Curate from a sufficiently varied pool and consider route and narrative together. Keep the connection understandable without asking listeners to retain a complicated argument. The walk should remain relaxing and interesting in unfamiliar surroundings. Initial comments 5, 6 and 20, refined by second-pass comments 21–24.
+
+### Develop substantial stories while walking
+
+Walking narration is a core part of the desired experience. It gives room for broader and more thoughtful stories about the area, with greater freedom in subject, writing and timing. Connect each passage once or twice to what the walker can notice around them. Plan it from the outset and use it to connect worthwhile destinations across longer gaps, while preserving directions, attention for crossings and comfortable quiet. The next-tour brief calls for **two narrated legs**. This is not a fixed quota for all future tours or a request to fill every silence. Driving remains a later ambition, recalled through the original Shaka Guide inspiration, without current driving implementation. Second-pass comments 1, 17 and 45.
 
 ### Treat rhythm as part of route selection
 
@@ -94,7 +116,7 @@ Judge the story together with what can be seen, present-day continuity and the c
 
 ### Vary tone while keeping the walk easy to enjoy
 
-Avoid repeating the same dramatic formula at every stop. Most stories can be even-keel, with occasional dramatic, reflective, amusing or charming moments where the material supports them. These are possibilities, not quotas. Descriptive judgement such as “an impressive façade” is acceptable; avoid prescribing the listener's emotions or making participation feel like homework. Comments 15, 19 and 20.
+Avoid repeating the same dramatic formula at every stop. Most stories can be even-keel, with occasional dramatic, reflective, amusing or charming moments where the material supports them. The 19 September direction adds at least one moment of levity to an ordinary tour, unless the subject is deliberately sombre or serious. Descriptive judgement such as “an impressive façade” is acceptable; emotional colour is welcome, while demanding a particular reaction or making participation feel like homework is not. Initial comments 15, 19 and 20; second-pass comments 3, 43 and 44.
 
 ### Make the walking pleasant and the directions concrete
 
@@ -110,6 +132,8 @@ Review each spoken decision against the route map and the actual incoming direct
 
 A useful direction explains what the visitor reaches, the action there and a recognisable confirmation afterwards. Distinguish a street-name label on a map from a sign the walker can actually see. If the layout cannot be resolved, give an honest map-check instruction instead of an overconfident turn. Keep a compact record of the map, approach image/date/heading where used, interpretation and remaining uncertainty. Use this to prepare directions before the walk; it does not add a live Street View dependency or demand a separate field test of every junction.
 
+Small features are not excluded: give a clear locator and time to find them, and avoid making the entire explanation fail if one is missed. A bounded agent task to inspect street imagery is a promising preparation step; mechanism, reuse rights and cost controls need a concrete provider review before automation. Second-pass comment 19.
+
 Sidi's example is Alexandra Grove → Moss Hall Crescent: the Crescent runs alongside Ballards Lane. Wording suggesting a distinct earlier side street failed to convey the layout. The [clarified field record](FIRST-TOUR-FEEDBACK-RECOVERY.md#owner-clarification-development-leases-and-the-parallel-street) contains a candidate rewrite; it is not yet installed or checked for exact pavement/crossing placement.
 
 ### Allow intrigue within honest boundaries
@@ -124,7 +148,7 @@ Keep a repertoire of endings and choose what suits the tour. A climax and a refl
 
 ### Structure and pacing
 
-Use a clear theme as a selection aid, without forcing unrelated material into a thesis. Prefer a calm conversational voice with occasional tonal variation. Use central clusters, longer legs and quiet deliberately; assess whether they reward the actual walk. Crossings, terrain, a strong story and a useful viewpoint affect that judgement. These are editorial judgements, not numerical research findings.
+Use a theme where it helps selection, or compose a looser portrait/discovery walk with clear connections. Prefer a warm, insightful documentary voice with tonal variation. Use central clusters, longer legs and quiet deliberately; assess whether they reward the actual walk. Crossings, terrain, a strong story and a useful viewpoint affect that judgement. These are editorial judgements, not numerical research findings.
 
 For each candidate retain a brief note: the non-obvious insight; what the visitor experiences here; theme connection; evidence; intended tone; access; and the cost in walking and listening time. Compare candidates against one another so that several individually good stops do not repeat the same idea.
 
@@ -132,7 +156,7 @@ For each leg, estimate walking time, identify navigation moments and allocate mo
 
 ### Proposed initial digression budget
 
-**Engineer proposal, awaiting owner agreement:** try a maximum of roughly one quarter of each stationary story's spoken duration for broader digressions, excluding navigation. Mark the intended allowance in the outline and check measured audio after rendering. Several small asides count towards the same allowance. A deliberate exception should have a stated place-specific purpose, rather than arising accidentally during drafting. This is a practical starting hypothesis, not a literature-backed optimum or an owner-approved numerical standard.
+**Current direction, second-pass comment 16:** use a deliberate time allowance for wider excursions and review how they return to the place. Mark the intended allowance in the outline and check actual audio. Sidi accepts this starting approach and allows it to become more qualitative if that works better. The previous roughly-one-quarter proposal is not adopted. A substantial walking chapter has its own editorial purpose and leg budget; do not treat all its broader content as a stationary-story digression.
 
 Count historical context that explains the actual place as core story, including a vanished scene tied to that location. The distinction is not visible versus invisible, or facts versus reflection. Ask whether the passage helps the visitor understand what makes this particular place worth visiting, and whether the broader thought returns their attention to it. A time cap alone cannot establish that benefit.
 
@@ -155,12 +179,14 @@ Our proposed audio translation is clear delivery, well-understood material, audi
 Proposed writing rules within the existing claim-evidence contract:
 
 - State supported facts naturally and retain their evidence behind the script.
-- Introduce a reasonable inference as a possibility and preserve what supports it. “Perhaps” is not a substitute for a reason.
+- Make reasonable historical inferences and preserve what supports them. Match the wording to the strength and importance of the claim; do not require “perhaps” or “this suggests” before every interpretation. Check contrary evidence where it could materially change the account.
 - Introduce a documented legend as a legend. Evidence that a story is told does not prove that its events happened.
 - Actively reconstruct a scene when it helps the listener understand the place. Use documented features and strongly supported inferences about ordinary activity and sensory texture; a specific eyewitness record for every descriptive detail is unnecessary. Retain the factual foundation and reconstruction rationale behind the script. Establish the imagined frame naturally, then let the description flow without qualifying every sentence. Do not present invented dialogue, named people's thoughts or a particular undocumented incident as recovered history.
 - Keep directions and access instructions literal and checked; entertaining uncertainty belongs in the story, not in whether a visitor can cross or enter somewhere.
 
 These distinctions permit intrigue while preserving trust. Apply them in editorial review and retain the basis for each passage in the existing evidence records.
+
+Second-pass comments 6, 13, 38 and 39 explicitly favour reasonable historical inference and period-informed reconstruction. An advert can support an inference that an event happened without proving it independently. Behaviour documented in the same period may inform imagined activity; it does not turn a unique episode elsewhere into a documented local event. Use reasoned qualitative judgements to keep or adjust detail, not invented numerical confidence. In the follow-up to comment 20, Sidi chose **reconstruction and atmosphere** for the next experiment, leaving invented dialogue and composite characters outside its present scope. The label scheme in the writing brief is an editorial proposal, not a package-schema change.
 
 ### Route preparation and walking times
 
@@ -190,16 +216,18 @@ The first two follow Sidi's comment; the fuller repertoire is an initial proposa
 
 ## Current experiments for the two-tour review
 
-- **Per-story ratings and voice feedback — now requested for the two-tour review.** Sidi wants a small number of dimensions rated out of ten and a voice note after each story while out. The [concrete proposal](NORTH-FINCHLEY-REVIEW-RESPONSE.md#a-small-review-after-each-story) uses interest, value of being here and storytelling, with an explicit local recording action and pause preserved until Resume. These dimensions are proposed, not a validated instrument. The integrated local review is now implemented; [actual build/phone evidence](../test-results/M2-tour-build.md) remains separate from useful feedback during the tours. Research-review comment 22 and tour-options comment 6.
-- **Walking narration — one current experiment, broader use later.** Develop a 2–3-minute chapter on B's 3→4 leg, after leaving the meeting house. It should explain the area and prepare the villas story while leaving quiet. Record its own identity and feedback; never count it as another physical stop. Music and automatically filling all quiet remain future ideas. Tour-options comments 5 and 10.
+- **Per-story ratings and voice feedback — implemented for the first two tours.** The [original proposal](NORTH-FINCHLEY-REVIEW-RESPONSE.md#a-small-review-after-each-story) uses interest, value of being here and storytelling, with explicit local recording. These dimensions are not a validated instrument. Reviews pause narration while open; the later owner-directed save/close flow resumes an active tour, as recorded in the [player implementation](M2-PLAYER-IMPLEMENTATION.md#review-completion-update-17-september). Build/phone evidence remains separate from useful feedback during the tours. Research-review comment 22 and tour-options comment 6.
+- **Walking narration — broaden the next experiment.** B's implemented 3→4 chapter supplies the initial experience. Plan two narrated legs for the next tour, as directed in second-pass comment 45. Each keeps its own identity and feedback, and is not an extra physical stop. Music and automatically filling quiet remain future ideas.
 
 ## How to use this for the next draft
 
-Start with the public-tour survey and catalogue. Then write one clear tour promise and theme. Compare candidate insights and routes, then prepare two contrasting sample stops with different tones and plausible timing. Review those at the desk before polishing a complete tour. During normal use, collect brief reactions about what was interesting, confusing, dull or worth the walk; follow concrete issues rather than creating a new test campaign.
+Start with the bounded survey of tours, guides and current places. Present candidate discoveries and alternative assemblies to Sidi, who leads this workshop. The next tour should feel like a warm, insightful documentary, with two narrated legs and a moment of levity. Use the [writing brief](authoring/WRITING-BRIEF.md) for an early stationary explanation and walking sample; refine it from choices before polishing the complete tour. Area choice is open, with convenient public transport from N12 a bonus rather than a strict local boundary. Second-pass comments 45–54.
+
+Keep the ordinary-use prompt explicit: **What stayed with you? What place changed in your eyes? What dragged or confused you?** Add **How did the walking narration fit the walk?** for this experiment. Refine the prompt as the brief sharpens; an answer at every stop and another technical test campaign are not required.
 
 Sidi preferred the light tone of the [first North Finchley sample pair](NORTH-FINCHLEY-SAMPLE-STOPS.md), with firmer factual grounding. The memorial sample is retired. [Tally Ho revision 2](TALLY-HO-SAMPLE-V2.md) puts the road and coaching history before the postcard anecdote; the new wording and duration remain for review. Use the next useful contrast in subject or treatment rather than manufacturing a second solemn sample.
 
-Keep this guide current as preferences change. Future automation should use the same versioned editorial reference rather than accumulating inconsistent rules in separate prompts. This revision records the direction to develop both tours, the rejected detour and the requested chapter/review flow. Its editorial rules establish no physical acceptance; the [current player implementation](M2-PLAYER-IMPLEMENTATION.md) records the separate app work.
+Keep this guide current as preferences change. Future automation should use the same versioned editorial reference rather than accumulating inconsistent rules in separate prompts. This revision records the owner-led workshop and refined writing/survey direction. Its editorial rules establish no physical acceptance; the [current player implementation](M2-PLAYER-IMPLEMENTATION.md) records the separate app work.
 
 ## Comment coverage and revision history
 
@@ -222,3 +250,7 @@ Revision 7 incorporates Sidi’s first-walk clarification: explain the actors an
 Revision 8 records Sidi’s explicit welcome for place-linked material and broader digressions together, with time caps and a clear benefit from being there. The proposed 25% starting allowance is kept separate from accepted owner direction and awaits agreement.
 
 Revision 9 records the owner’s positive first-walk verdict and explicit purpose correction: general tour-building lessons, not a Finchley polishing assignment. It adds the direction to divide work between specialist agents and links the proposed handoffs/integration workflow.
+
+Revision 10 incorporated the 18 September direct second-tour clarifications: re-anchor history in the present, contextualise names, let research inform imagined colour, and complete the link between local evidence and wider insight. The existing sections carried these changes; this entry completes their revision-history index.
+
+Revision 11 applies all 55 second-pass comments and the direct reconstruction/atmosphere choice. It strengthens walking narration (two legs for the next tour), spoken fluency, confident inference, present continuity and levity; allows loose discovery walks; expands surveys to guides and current places; records Sidi as editorial lead for the next workshop; and links the first practical writing brief. AI provenance is a product direction; exact values and the proposed search/assembly mechanics remain to be developed. The 25% cap is not adopted. Original review papers and packages remain unchanged.

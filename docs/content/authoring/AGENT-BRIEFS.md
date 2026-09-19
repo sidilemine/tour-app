@@ -1,6 +1,6 @@
 # Agent briefs for walking tour authoring
 
-18 September 2026. Proposed task briefs accompanying the [playbook](../TOUR-AUTHORING-PLAYBOOK.md). These are instructions for the next assigned authoring task, not active delegations or an automated framework. The lead fills the area, brief, candidate IDs, input paths and output paths before assigning work. A role can be used more than once for a bounded subset of candidates.
+Updated 19 September 2026 after the [second-pass review](../SECOND-PASS-REVIEW-RESPONSE.md). Proposed task briefs accompanying the [playbook](../TOUR-AUTHORING-PLAYBOOK.md). These are instructions for the next assigned authoring task, not active delegations or an automated framework. Sidi takes the editorial lead/orchestrator role in the next workshop; the engineer prepares task briefs, coordinates execution and batches editorial choices for him. A role can be used more than once for a bounded subset of candidates.
 
 ## Shared instructions for every role
 
@@ -10,9 +10,11 @@ Use only the assigned scope and output files. Reuse stable place, story, claim a
 
 At handoff report: what is ready; where its supporting material lives; which assumptions remain; whether they affect use; and any question requiring another role. Supply concrete evidence rather than a self-assigned quality score. Costs, external publication and private-data uploads follow repository authorization rules. Do not launch another area, manufacture field evidence or expand the task into a software framework.
 
+Also preserve the moment/detail worth keeping, a worthwhile alternative and the unresolved question that could change the choice. Follow the [writing brief](WRITING-BRIEF.md) for current tone, historical inference and reconstruction. Keep evidence notes separate from spoken prose. Sidi's editorial choices and reasons should be retained; do not require his approval for routine searching or file preparation.
+
 ## Survey researcher
 
-**Task:** survey publicly available walking tours for the assigned area before our stop/story selection. Follow the existing [survey protocol](../AREA-TOUR-SURVEY.md).
+**Task:** survey publicly available tours, guides and present-day places for the assigned area before our stop/story selection. Follow the [survey protocol and bounded search programme](../AREA-TOUR-SURVEY.md).
 
 **Inputs:** area boundary or named neighbourhood, audience/practical brief, existing survey records and an assigned output location.
 
@@ -26,6 +28,8 @@ At handoff report: what is ready; where its supporting material lives; which ass
 
 **Task:** explain the assigned candidates well enough for selection and original narration, including their current state. Follow promising relationships beyond the first convenient source.
 
+A candidate here means a place/story opportunity; a whole-tour theme is a separate hypothesis you may propose. You can deepen and enrich a lead autonomously or at the writer/lead's request. Give each further research round a useful question, review what it added and stop or reframe when returns diminish. Use the [story-discovery method](../SECOND-PASS-REVIEW-RESPONSE.md#a-method-for-finding-the-interesting-part) to make the pitch explainable to an editor.
+
 **Inputs:** survey candidates/IDs, the intended theme or open alternatives, route/viewpoint notes where available, existing claims and sources.
 
 **Deliver for each candidate:** the main explanatory question; principal chronology; actors and their relationships; relevant motives; context for introduced names; current condition/activity with review date; evidence-backed details that could inform a historical scene; and unresolved material questions. Each proposed fact needs claim/source links, a minimal supporting passage and honest status. Group dependent copies rather than treating them as independent corroboration.
@@ -36,15 +40,21 @@ For an arrangement, distinguish developer, owner, lease parties, users and maint
 
 ## Curator and narrative planner
 
-**Task:** make the candidates into a worthwhile walk with a clear promise, developing thread and intentional finish.
+**Task:** select worthwhile material and its editorial promise. A strong theme or a loosely composed discovery walk can both work. Treat assembling the route/sequence as a visible separate function, even if the same agent performs it.
 
 **Inputs:** brief, survey, research notes, route costs and physical limitations.
 
 **Deliver:** selected and rejected candidates with reasons; sequence; each stop's contribution; what being there adds; story/walking-chapter/silence plan; rough speech and walking budgets; and an ending choice. Explain how similar subjects deepen the theme or offer a useful contrast. Account for detours and repeated pavement without assuming either is forbidden.
 
-Agree the physical outline with the route reviewer before asking for final scripts. Treat the short technical-test footprint as historical testing context, not a limit on the product. Preserve comfortable silence and variable rhythm. Give broader reflections an explicit allowance and purpose; the previously floated 25% cap remains unapproved.
+Agree the physical outline with the route reviewer before asking for final scripts. Treat the short technical-test footprint as historical testing context, not a limit on the product. Preserve comfortable silence and variable rhythm. Give broader excursions an explicit allowance and purpose; the 25% cap is not adopted. The next-tour brief includes two narrated legs and at least one moment of levity unless the subject is deliberately sombre.
 
 **Check before returning:** would the sequence make sense to someone hearing it once while outside? Are facts or subthemes accumulating beyond what the walk can comfortably carry? Is there a reason to choose this walk beyond the number of sights covered?
+
+## Tour assembly function
+
+**Task:** combine the curated pool and route constraints into two useful alternative outlines for Sidi. This is a proposed function, not a seventh mandatory agent or an autonomous route optimiser.
+
+**Deliver:** order of stops and narrated legs; quieter stretches; each encounter's purpose; rough walking/listening budget; and the differences between alternatives. Name the strong candidate sacrificed, detour accepted or theme loosened in each. Walking chapters may carry substantial subjects chosen for movement from the outset. Resolve feasibility questions with the route reviewer; return story gaps to research. Sidi chooses or combines the outlines, and the engineer records his rationale before full scripting.
 
 ## Route and visitor experience reviewer
 
@@ -56,6 +66,8 @@ Agree the physical outline with the route reviewer before asking for final scrip
 
 Inspect ambiguous junctions from the walker's incoming approach. A street running parallel to the main road may not look like an ordinary side turning. Do not certify an approach from a photograph of the destination. Route centreline geometry is not a pavement survey. Never infer safe entry from proximity to a pin or a model's confident prose.
 
+Small details can be valuable if a reliable locator and viewing time make them findable. Scope imagery review around actual approach/view questions, date the observations and avoid repeated views without a new question. Any automated imagery mechanism or paid usage needs its own concrete cost/rights review; no bulk screenshot collection is commissioned here.
+
 **Check before returning:** can each instruction be understood from this approach without remembering a chain of turns? Is the proposed standing area useful and public? If material uncertainty remains, narrow the instruction, propose a map/manual alternative or explain the smallest observation needed. Do not request a reconnaissance walk for every desk uncertainty.
 
 ## Narration writer
@@ -66,7 +78,7 @@ Inspect ambiguous junctions from the walker's incoming approach. A street runnin
 
 **Deliver:** spoken introduction, stories/chapters, timely directions and ending; paragraph/claim mapping; reconstruction rationale; pronunciation notes; estimated duration; and any research gaps returned to their owner.
 
-Establish context and temporal bearings where the listener needs them. Explain unfamiliar names succinctly. Build imagined scenes from research into this period and activity: what differs from today, and what will help the listener picture it? A natural imagined frame can support flowing prose without qualifiers in every sentence. Do not invent personal recollections, named thoughts, dialogue or undocumented incidents. Keep navigation literal.
+Use the [writing brief](WRITING-BRIEF.md). Establish context and temporal bearings where the listener needs them. Explain unfamiliar names succinctly. Build imagined scenes from research into this period and activity: what differs from today, and what will help the listener picture it? A natural imagined frame supports flowing prose without qualifiers in every sentence. The next experiment uses reconstruction and atmosphere; do not add invented dialogue, composite characters or narrator memories. Reasonable historical inference is allowed with its basis retained, without presenting imagined details as recovered facts. Keep navigation literal.
 
 Bring the past into the present and complete the connection from local evidence to insight. Allow broader ideas within the planned budget. Vary tone and structure rather than using one dramatic template, generic atmosphere or a forced moral at every stop. Keep cognitive effort low and leave space for looking and silence.
 
@@ -82,7 +94,7 @@ Bring the past into the present and complete the connection from local evidence 
 
 Check historical hierarchy, unexplained names/relationships, current relevance, supported scene detail, grounded insight, sensory consistency, approach-aware directions, repetition and listening effort. Verify that every central claim has support without pretending source-link presence proves truth. Inspect whether a supposedly absent fact is already in the script but poorly placed for understanding. Apply no numerical enjoyment score or blanket quota.
 
-The lead resolves conflicts, sends focused revisions to their owners and checks the integrated result. After audio generation, compare actual duration and pronunciation with the walking plan. Stop when material issues are addressed and consciously retained limitations are documented; request owner judgement only for a real preference or tradeoff not already settled.
+The engineer resolves routine implementation issues and sends focused revisions to their owners. Sidi leads the consequential editorial choices in this workshop; preserve his reasoning and the resulting change. After audio generation, compare actual duration and pronunciation with the walking plan. Stop when material issues are addressed and consciously retained limitations are documented; batch editorial questions rather than creating repeated permission requests.
 
 ## Minimal handoff record
 

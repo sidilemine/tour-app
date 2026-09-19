@@ -8,7 +8,7 @@ The first useful product is one curated six-stop walk that Sidi would willingly 
 
 Tours are prepared before use. A downloaded tour contains the local map, planned walking route, directions, narration, transcripts, relevant images/attributions and everything needed to recover progress. Normal touring does not call a server, LLM, TTS or online routing service. The user can complete the planned walk manually if GPS is unreliable.
 
-Editorial direction is maintained in the [walking tour design guidance](docs/content/TOUR-DESIGN-GUIDANCE.md), incorporating Sidi's Word reviews through 17 September. It distinguishes owner preferences, working assumptions and future ideas; consult it for theme, story selection, pacing and tone. It does not expand the implementation scope below.
+Editorial direction is maintained in the [walking tour design guidance](docs/content/TOUR-DESIGN-GUIDANCE.md), incorporating Sidi's Word reviews through 19 September. It distinguishes owner preferences, working assumptions and future ideas; consult it for theme, story selection, pacing and tone. The next authoring workshop is owner-led, with warm documentary narration and two narrated walking legs in its brief. Tours should clearly disclose AI generation and can express the owner's editorial outlook without fictitious narrator memories or personal tastes. The disclosure UI and final values are not implemented or settled by this documentation update; the scope below remains unchanged.
 
 ## Personal-use delivery and testing
 

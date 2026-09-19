@@ -1,0 +1,571 @@
+{
+  "purpose": "Durable owner-comment capture with anchors and full paragraph context. Source Word documents remain untouched; IDs are document-local. One private transport-origin postcode is redacted in this repository copy.",
+  "reviewed_on": "2026-09-19",
+  "source_file": "tour-story-craft-second-pass-review sidi comments.docx",
+  "sha256": "4677ffedcef4c54e7c0560af8ba301bb150319873b3cbcc2f0b04110a43bd782",
+  "original_file": "tour-story-craft-second-pass-review.docx",
+  "original_sha256": "142e3ae94b595ed70e12094a656878cfde3229cc8a506068c4fcf4e9aa205cfc",
+  "body_matches_original": true,
+  "tracked_insertions": 0,
+  "tracked_deletions": 0,
+  "comment_count": 55,
+  "comments": [
+    {
+      "id": "0",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T17:15:00Z",
+      "anchor": "Discovery ",
+      "context": [
+        "Discovery before drafting. Ask competing questions of the material. Research should be allowed to change the proposed story, not merely furnish citations for it."
+      ],
+      "comment": "The researcher should also be allowed to \"dig deeper\" to supplement, explore, and enrich findings - either on their own (within guardrails to not disappear in unwarranted rabbit holes) or prompted by writer or orchestrator"
+    },
+    {
+      "id": "1",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T17:14:00Z",
+      "anchor": "between stops",
+      "context": [
+        "The experience between stops. Approaches, transitions, contrasts, quiet and the end of the walk deserve editorial attention alongside the individual scripts."
+      ],
+      "comment": "Stories while walking are a big part of what I want here. It can give us more room to expand into broader, more thoughtful stories about the area, with a bit more freedom in subject, writing, and timing, as long as we find a way to connect it once or twice to what the user can see around them. "
+    },
+    {
+      "id": "2",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:01:00Z",
+      "anchor": "Several ways ",
+      "context": [
+        "Several ways a story can work"
+      ],
+      "comment": "This feels like gold to me"
+    },
+    {
+      "id": "3",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T17:19:00Z",
+      "anchor": "desk-researched tour",
+      "context": [
+        "The Moth's advice makes desire, dilemma and consequences central to its true first-person stories. That is useful when a historical episode contains documented human stakes; its performance rules are not a universal definition of storytelling. [2] RaMell Ross describes Hale County This Morning, This Evening as an experience of a place, with meaning emerging through attention and the relationship between moments. That offers a different possibility. His method grew from sustained life within the community; a desk-researched tour cannot claim the same intimacy. [3]"
+      ],
+      "comment": "We're going to be very upfront that this is AI generated and that comes with upsides and downsides.True. What we gain in trust in the veracity, we have to accept that we lose in human connection. We can intuit how people in the past felt, and recount e.g. reviews and personal accounts, and we can nudge the user into feeling a certain way, but we can't express e.g. personal preference. "
+    },
+    {
+      "id": "4",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T17:22:00Z",
+      "anchor": "tours ",
+      "context": [
+        "Your survey-first rule is a strong starting point. Existing tours reveal what knowledgeable guides have found worthwhile and how they connect it. They also reflect what is already easy to market and document. After the survey, look deliberately at ordinary local life, overlooked relationships and the questions that published routes leave unanswered. The catalogue should widen our options before we choose."
+      ],
+      "comment": "Not just tours but guides. These can build a large database of candidates, which we will annotate with some dimensions as we go - e.g. popular must-see, beyond the beaten path, music, true crime, whatever. This is just for future thinking, but existing tours are one of the obvious initial sources for the survey, and I'd like your help to think of a disciplined search programme that doesn't go completely nuts in volume but covers the bases before more googling happens. We need to think of both hyper-touristic places (central london) and less well documented ones"
+    },
+    {
+      "id": "5",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T17:23:00Z",
+      "anchor": "ordinary local life",
+      "context": [
+        "Your survey-first rule is a strong starting point. Existing tours reveal what knowledgeable guides have found worthwhile and how they connect it. They also reflect what is already easy to market and document. After the survey, look deliberately at ordinary local life, overlooked relationships and the questions that published routes leave unanswered. The catalogue should widen our options before we choose."
+      ],
+      "comment": "And obviously, the places themselves, in the here and now"
+    },
+    {
+      "id": "6",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T17:24:00Z",
+      "anchor": "typical detail occurred that night",
+      "context": [
+        "That an advertised event happened; that a typical detail occurred that night"
+      ],
+      "comment": "we can still take *some* liberties for the sake of enjoyment and good communication, as long as the language reflects it"
+    },
+    {
+      "id": "7",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T17:26:00Z",
+      "anchor": "Stopping rule",
+      "context": [
+        "Stopping rule: continue research while a plausible next source could change the central explanation, selection or scene. Once the account is supported and the remaining unknowns can be omitted or stated honestly, draft it. A narrow unknown about an incidental detail need not turn a pleasant tour into a research project without end."
+      ],
+      "comment": "This will require attentive formulation and testing to get it right but this is the correct direction"
+    },
+    {
+      "id": "8",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T17:41:00Z",
+      "anchor": "why a local venue mattered",
+      "context": [
+        "A useful draft asks what the listener knows at the start and what becomes clearer by the end. The change can be small: noticing an agreement in the shape of a garden, understanding why a local venue mattered, or recognising a vanished social world. The narrator need not announce this change as a moral."
+      ],
+      "comment": "As we move forward, I think we should probably develop an overarching editorial perspective, e.g. there is magic in the everyday life, or local communities have power, or beauty is everywhere - none of these are right, but as we move towards there, we could maybe build a set of values that can be shared through stories and tours. The AI is impartial, but this is my app and I feel like it should reflect my views to an extent"
+    },
+    {
+      "id": "9",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T17:42:00Z",
+      "anchor": "finding the genuinely compelling part of the material ",
+      "context": [
+        "Ira Glass describes a productive relationship between events and reflection in his kind of radio storytelling. He also stresses finding the genuinely compelling part of the material and recognises exceptions to his usual narrative form. I would borrow that movement between the particular and its meaning, while avoiding a compulsory “big idea” at every stop. [4]"
+      ],
+      "comment": "Are you clear on methods to do that? They can be intuitive - I expect the orchestrator agent to operate at a decent level of thinking - but as long as we could clearly explain it to a human editor I'd be ok. If not, let's do a bit more research on it and agree on a first draft of it"
+    },
+    {
+      "id": "10",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T17:43:00Z",
+      "anchor": "before its absence causes confusion",
+      "context": [
+        "Your Tally Ho feedback calls for the important road context before the secondary naming anecdote. That should guide this example. More generally, context needs to arrive before its absence causes confusion. It need not become a compulsory opening paragraph containing the whole chronology."
+      ],
+      "comment": "Just like the physical act of taking a walking tours, it's about grounding and a feeling of the user knowing where they are in the story. Lack of context can feel unmoored, or disjointed, and that's what we want to avoid"
+    },
+    {
+      "id": "11",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T17:45:00Z",
+      "anchor": "through their role in this story",
+      "context": [
+        "Introduce an unfamiliar person through their role in this story. Give a date where it locates a change or scene. Use a name again only when the listener needs to remember it. The aim is to make the account understandable on one hearing, not to remove every proper noun or interesting complication."
+      ],
+      "comment": "Or just a general statement, like you would do when writing a magazine article or a book - you don't just throw a name out there and move on, you make an effort to contextualise it. It can be 5 words or a full sentence, but it needs to happen"
+    },
+    {
+      "id": "12",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T17:45:00Z",
+      "anchor": "through their role in this story",
+      "context": [
+        "Introduce an unfamiliar person through their role in this story. Give a date where it locates a change or scene. Use a name again only when the listener needs to remember it. The aim is to make the account understandable on one hearing, not to remove every proper noun or interesting complication."
+      ],
+      "comment": "It's part of what makes it stick"
+    },
+    {
+      "id": "13",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T17:53:00Z",
+      "anchor": "stay consistent with what we know",
+      "context": [
+        "Choose a period and a particular kind of activity. Establish the documented physical setting and the relevant social context. Then use plausible movement, sound and ordinary activity to make that setting imaginable, with a natural frame such as “Picture an evening here in…”. Individual sensory details need not each have an eyewitness record. The reconstruction should stay consistent with what we know."
+      ],
+      "comment": "Exactly. We can gauge confidence levels as well about these and keep / adjust them above a certain threshold"
+    },
+    {
+      "id": "14",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T17:58:00Z",
+      "anchor": "the performers' ",
+      "context": [
+        "At Torrington, the performers' identities could determine what sort of scene is plausible. It would still take more evidence to describe the actual audience's clothes, reactions or a particular exchange on stage. Generic period knowledge can inform an imagined crowd without becoming a witnessed account of that advertised night."
+      ],
+      "comment": "Omg they're still alive and re-united! lots about their audience and cult following. Like for the Kinks bit, there's great value in these bits linking the past to the present, particularly in uncovering rare bits of knowledge in unlikely places; as long as we can contextualise them. Fair to assume the user might have heard of The Kinks (I guess?) but less likely for these two, even if they apparently have a serious cult following"
+    },
+    {
+      "id": "15",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T17:59:00Z",
+      "anchor": "This suggests",
+      "context": [
+        "An insight can say more than the source explicitly says. It should show its reasoning and remain proportionate to the evidence. “This suggests…” can introduce interpretation, but does not excuse a leap."
+      ],
+      "comment": "Even that feels clunky. We're not writing a freshman university essay - we need to tell a story with confidence, verve, and grace"
+    },
+    {
+      "id": "16",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T17:59:00Z",
+      "anchor": "25% ceiling is still untested and unapproved",
+      "context": [
+        "Your digression cap should remain a time allowance. Before assigning one, distinguish context needed to understand this place from an excursion into a wider subject. Then ask what the excursion gives back to the local account. A short generic sermon can be worse than a longer, tightly connected explanation. The proposed 25% ceiling is still untested and unapproved; I would use a deliberate seconds allowance for the next draft, with the return to the place written into the outline."
+      ],
+      "comment": "yes agreed - it might take a more qualitative shape down the road if that's what works best"
+    },
+    {
+      "id": "17",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:06:00Z",
+      "anchor": "having travelled ",
+      "context": [
+        "We have been evaluating the benefit of being at each stop. I would add the benefit of having travelled between them: a change of scale, noise, frontage or use can make the next story intelligible. Two individually modest places can make a strong pair; two excellent standalone accounts can still feel repetitive together."
+      ],
+      "comment": "But also travelling! Let's not lose sight of building stories for between stops. This can give us a lot more flexibility in tour design when we want a certain set but there are a few big gaps. Also will be 100% essential when we come full circle to car tours (as shaka guide was the original inspiration)"
+    },
+    {
+      "id": "18",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:00:00Z",
+      "anchor": "proposals ",
+      "context": [
+        "Film provides useful craft analogies. An establishing view locates a scene. A close detail directs attention. Juxtaposition makes differences legible. Returning to an earlier image can give an ending its force. These are proposals for tour design, not proof that a walker responds like a cinema audience."
+      ],
+      "comment": "I like where this is going"
+    },
+    {
+      "id": "19",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:05:00Z",
+      "anchor": "spotting a tiny, unverified feature ",
+      "context": [
+        "A film controls its frame and timing; our visitor chooses where to look, may miss a cue and can encounter a changed street. Spoken orientation should invite and support attention without pretending to control the view. Never make a central explanation depend on spotting a tiny, unverified feature at an exact second."
+      ],
+      "comment": "tiny feature: make sure to give good enough guidance and allow them time to find it. \nUnverified: the more I think about it the more I feel like an agent looking at streetview snapshots or something like that could be key. We'll have to think about the mechanisms and cost management"
+    },
+    {
+      "id": "20",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:07:00Z",
+      "anchor": "need a different contract",
+      "context": [
+        "Janet Cardiff and George Bures Miller's own description of their walks illustrates how recorded material and present surroundings can interact. Their work deliberately uses fiction and perceptual ambiguity; our historical narrator and directions need a different contract. We can learn from the importance of being there without importing simulated events or promising immersion from narration alone. [7]"
+      ],
+      "comment": "Do they? Why? Not saying you're wrong but let's align on that"
+    },
+    {
+      "id": "21",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:11:00Z",
+      "anchor": "a more productive question ",
+      "context": [
+        "A topic might be entertainment; a more productive question is what kinds of gathering a neighbourhood made possible, for whom, and what survives. Different stops could supply pleasure, access, aspiration, exclusion or reinvention. They need not all confirm one answer."
+      ],
+      "comment": "I'm personally invested in the idea of something feeling insightful - which in my qual research career I've always linked to the question \"why\""
+    },
+    {
+      "id": "22",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:11:00Z",
+      "anchor": "a more productive question ",
+      "context": [
+        "A topic might be entertainment; a more productive question is what kinds of gathering a neighbourhood made possible, for whom, and what survives. Different stops could supply pleasure, access, aspiration, exclusion or reinvention. They need not all confirm one answer."
+      ],
+      "comment": "But everything you say here rings true as well"
+    },
+    {
+      "id": "23",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:13:00Z",
+      "anchor": "theme should be proposed after the survey",
+      "context": [
+        "A theme should be proposed after the survey, challenged by research, and revised before final writing. A memorable outlier may earn a place as relief or contrast. If it requires a strained bridge, admit that it is a delightful aside or omit it."
+      ],
+      "comment": "What I am thinking, which might be over-engineering, is that we could aim to end the survey with significantly enough candidates to enable curation to happens in a combination of routing and thematic coherence"
+    },
+    {
+      "id": "24",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:14:00Z",
+      "anchor": "memorable outlier ",
+      "context": [
+        "A theme should be proposed after the survey, challenged by research, and revised before final writing. A memorable outlier may earn a place as relief or contrast. If it requires a strained bridge, admit that it is a delightful aside or omit it."
+      ],
+      "comment": "With all that being said, yes a theme can absolutely be loosely retrofitted. I don't intend \"themed tours\" to be the be all and end all. Discovery and oddities has its own charm, and I think that's what 90% of self-guided walking tour books do. "
+    },
+    {
+      "id": "25",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:15:00Z",
+      "anchor": "memorable outlier ",
+      "context": [
+        "A theme should be proposed after the survey, challenged by research, and revised before final writing. A memorable outlier may earn a place as relief or contrast. If it requires a strained bridge, admit that it is a delightful aside or omit it."
+      ],
+      "comment": "As an aside: would it make sense for me to get some of these popular self-guided walking tour books in digital format and feed them to another Astra instance to analyze the formats and look for some learnings? Could be cool, could be unnecessary"
+    },
+    {
+      "id": "26",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:17:00Z",
+      "anchor": "What it lacks",
+      "context": [
+        "What it offers: clarity and economy. What it lacks: much sense of discovery or lived experience. This could be sufficient for a short passing observation."
+      ],
+      "comment": "It's also quite a brutally monotonous way of writing. Short factual sentences, of the same length, structure, and rhythm, one after the other. Let's remember one of our core principles: write for spoken narration and enjoyment"
+    },
+    {
+      "id": "27",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:18:00Z",
+      "anchor": "short ",
+      "context": [
+        "What it offers: clarity and economy. What it lacks: much sense of discovery or lived experience. This could be sufficient for a short passing observation."
+      ],
+      "comment": "yes or for a simple bit of context. One sentence, maybe two "
+    },
+    {
+      "id": "28",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:22:00Z",
+      "anchor": "Treatment B",
+      "context": [
+        "Treatment B An explanation you can see"
+      ],
+      "comment": "Overall my preferred"
+    },
+    {
+      "id": "29",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:19:00Z",
+      "anchor": "and planted. So ",
+      "context": [
+        "The houses stand back from the road, behind a strip of greenery. When the villas were laid out from 1867, that open space was part of the deal. Their hundred-year leases required it to stay unbuilt and planted. So the layout included a restriction on what could fill the gap. The buildings tell you where construction happened; the garden helps you picture a limit placed on it. The surviving historical account does not tell us who maintains the ground today, so it would be a mistake to call it a residents' cooperative."
+      ],
+      "comment": "see I would connect these sentences: \"to stay unbuilt and planted, so the layout included\""
+    },
+    {
+      "id": "30",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:20:00Z",
+      "anchor": "helps you picture ",
+      "context": [
+        "The houses stand back from the road, behind a strip of greenery. When the villas were laid out from 1867, that open space was part of the deal. Their hundred-year leases required it to stay unbuilt and planted. So the layout included a restriction on what could fill the gap. The buildings tell you where construction happened; the garden helps you picture a limit placed on it. The surviving historical account does not tell us who maintains the ground today, so it would be a mistake to call it a residents' cooperative."
+      ],
+      "comment": "clumsy - do they? "
+    },
+    {
+      "id": "31",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:20:00Z",
+      "anchor": "The surviving historical account does not tell us who maintains the ground today, so it would be a mistake to call it a residents' cooperative",
+      "context": [
+        "The houses stand back from the road, behind a strip of greenery. When the villas were laid out from 1867, that open space was part of the deal. Their hundred-year leases required it to stay unbuilt and planted. So the layout included a restriction on what could fill the gap. The buildings tell you where construction happened; the garden helps you picture a limit placed on it. The surviving historical account does not tell us who maintains the ground today, so it would be a mistake to call it a residents' cooperative."
+      ],
+      "comment": "I wouldn't include that - why bore the listener with what we don't know or what it maybe isn't? "
+    },
+    {
+      "id": "32",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:22:00Z",
+      "anchor": "Treatment C ",
+      "context": [
+        "Treatment C A brief imagined offer"
+      ],
+      "comment": "This could lead to B"
+    },
+    {
+      "id": "33",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:21:00Z",
+      "anchor": "We do not know what any particular buyer thought of it; this is a way of imagining what the arrangement made available.",
+      "context": [
+        "Picture choosing a home here in the years after 1867. There is the house, of course: its own front door, its windows facing the road. But there is also the space before you reach that road, planted rather than built over. The lease protects that part of the prospect. You are being offered a setting as well as a building. We do not know what any particular buyer thought of it; this is a way of imagining what the arrangement made available."
+      ],
+      "comment": "same again - I wouldn't include that"
+    },
+    {
+      "id": "34",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:22:00Z",
+      "anchor": "version of B followed by selected detail from C",
+      "context": [
+        "My preference is a short version of B followed by selected detail from C, if that combination earns its time. A is not a failure; it is a different use of the material. The best treatment depends on the route, surrounding stories and how long we comfortably ask someone to stand here."
+      ],
+      "comment": "yes that could work, or the other way around"
+    },
+    {
+      "id": "35",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:23:00Z",
+      "anchor": "Their later account",
+      "context": [
+        "Picture reading this bill in June 1977. Eighty pence, Sunday evening, John Otway and Wild Willy Barrett. Their later account describes a partnership built on contrasts: Barrett's musical skill and dry humour alongside Otway's unruly showmanship. By December, the pair would be in the singles chart with Really Free. That future was still ahead of this little advert. The attraction here is the possibility of encountering an act locally before knowing what would become of it."
+      ],
+      "comment": "???"
+    },
+    {
+      "id": "36",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:24:00Z",
+      "anchor": "By December",
+      "context": [
+        "Picture reading this bill in June 1977. Eighty pence, Sunday evening, John Otway and Wild Willy Barrett. Their later account describes a partnership built on contrasts: Barrett's musical skill and dry humour alongside Otway's unruly showmanship. By December, the pair would be in the singles chart with Really Free. That future was still ahead of this little advert. The attraction here is the possibility of encountering an act locally before knowing what would become of it."
+      ],
+      "comment": "This is great, but missing the opportunity to bring it all the way to the here and now as they're still touring and still a cult act, 50 years later"
+    },
+    {
+      "id": "37",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:25:00Z",
+      "anchor": "The attraction here is the possibility of encountering an act locally before knowing what would become of it.",
+      "context": [
+        "Picture reading this bill in June 1977. Eighty pence, Sunday evening, John Otway and Wild Willy Barrett. Their later account describes a partnership built on contrasts: Barrett's musical skill and dry humour alongside Otway's unruly showmanship. By December, the pair would be in the singles chart with Really Free. That future was still ahead of this little advert. The attraction here is the possibility of encountering an act locally before knowing what would become of it."
+      ],
+      "comment": "This is internal monologue - not user-facing"
+    },
+    {
+      "id": "38",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:26:00Z",
+      "anchor": "took place ",
+      "context": [
+        "The dates support the contrast; the final attraction is my interpretation. We still cannot assert that the advertised concert took place or transplant a reported stunt from another performance into this pub. A contemporary review or recording could refine the performance description. The research has nevertheless already changed the pitch and the scene we would try to write. This is a demonstration of the method, not a revision to the installed tour."
+      ],
+      "comment": "fair to assume though. A historian wouldn't say \"I don't know, all I have is these ledgers and adverts and correspondence\""
+    },
+    {
+      "id": "39",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:27:00Z",
+      "anchor": "reported stunt from another performance ",
+      "context": [
+        "The dates support the contrast; the final attraction is my interpretation. We still cannot assert that the advertised concert took place or transplant a reported stunt from another performance into this pub. A contemporary review or recording could refine the performance description. The research has nevertheless already changed the pitch and the scene we would try to write. This is a demonstration of the method, not a revision to the installed tour."
+      ],
+      "comment": "Again, if we know of said stunt from the same period of time, it would be fair to make the leap"
+    },
+    {
+      "id": "40",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:28:00Z",
+      "anchor": "people need culture",
+      "context": [
+        "The known sequence runs from cinema to closure and demolition, then a request for cultural provision, campaigning and a new venue. The tempting shortcut is “people need culture”. The richer research question is what these people wanted this venue to do, which alternatives they considered, and who expected to use it."
+      ],
+      "comment": "to be fair, this could be part of the values that guide our editorial process down the line. But I agree with what you're saying"
+    },
+    {
+      "id": "41",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:29:00Z",
+      "anchor": "99% Invisible",
+      "context": [
+        "99% Invisible, “Curb Cuts”. The published transcript begins with an unusual museum object, connects it to people and access, and later broadens the significance of an everyday street feature. My craft takeaway is the connection between a concrete thing and a wider mechanism. We should not transplant Berkeley's history onto a London pavement or require its long podcast structure at one stop. This is a transcript study, not a new listening assessment. [8]"
+      ],
+      "comment": "I LOVE 99PI. the writing, the research, the narration - I would be very happy to emulate them in that regard"
+    },
+    {
+      "id": "42",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:29:00Z",
+      "anchor": "99% Invisible",
+      "context": [
+        "99% Invisible, “Curb Cuts”. The published transcript begins with an unusual museum object, connects it to people and access, and later broadens the significance of an everyday street feature. My craft takeaway is the connection between a concrete thing and a wider mechanism. We should not transplant Berkeley's history onto a London pavement or require its long podcast structure at one stop. This is a transcript study, not a new listening assessment. [8]"
+      ],
+      "comment": "Not just this episode but in general"
+    },
+    {
+      "id": "43",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:30:00Z",
+      "anchor": "not become an excuse ",
+      "context": [
+        "Ross on Hale County. His account challenges the assumption that every encounter must be a dramatic incident. It suggests looking for revealing relationships among ordinary moments. Our adaptation still needs clear orientation and specific discovery; “atmospheric” must not become an excuse for weak research. [3]"
+      ],
+      "comment": "No but not everything needs to be a phd thesis either. Sometimes there's just a cute detail or anecdote and that's fine"
+    },
+    {
+      "id": "44",
+      "author": "Sidi Lemine",
+      "date": "2026-09-18T18:30:00Z",
+      "anchor": "not become an excuse ",
+      "context": [
+        "Ross on Hale County. His account challenges the assumption that every encounter must be a dramatic incident. It suggests looking for revealing relationships among ordinary moments. Our adaptation still needs clear orientation and specific discovery; “atmospheric” must not become an excuse for weak research. [3]"
+      ],
+      "comment": "Actually I feel like we should ensure every tour has at least one moment of levity (unless the theme is super sombre / serious etc)"
+    },
+    {
+      "id": "45",
+      "author": "Sidi Lemine",
+      "date": "2026-09-19T11:54:00Z",
+      "anchor": "a leg",
+      "context": [
+        "Aim for a leg that changes how the next stop is understood, one well-supported imagined scene, and an ending that revisits something the listener encountered earlier. These are proposed ambitions, not boxes to force onto unsuitable material."
+      ],
+      "comment": "let's try to have two narrated legs - I want to make some progress on this and I feel like we've been laser focused on stops"
+    },
+    {
+      "id": "46",
+      "author": "Sidi Lemine",
+      "date": "2026-09-19T11:57:00Z",
+      "anchor": "workshop",
+      "context": [
+        "Prepare each with a small editorial workshop"
+      ],
+      "comment": "I like that. I can be the lead / orchestrator in this so you can learn about that function from my choices and behaviors, and we can try to start emulating how the agent swarm will behave moving forward to catch any (in)efficiencies, build solid processes etc. Let's make this as much of a learning experiment as possible rather than trying to one-shot it\n"
+    },
+    {
+      "id": "47",
+      "author": "Sidi Lemine",
+      "date": "2026-09-19T12:04:00Z",
+      "anchor": "strength of actual prose",
+      "context": [
+        "3. Try contrasting samples. Draft two short treatments of one promising subject and one sample of a different form. Choose on the strength of actual prose, not just labels such as “cinematic”. Sidi can react to these together; no routine permission chain is needed."
+      ],
+      "comment": "Is it too early to do this? do we already have writing guidelines in  place? "
+    },
+    {
+      "id": "48",
+      "author": "Sidi Lemine",
+      "date": "2026-09-19T12:07:00Z",
+      "anchor": "a moment that stayed with you, a place that changed in your eyes, and a stretch that dragged or confused you",
+      "context": [
+        "After ordinary use, the most useful feedback is a moment that stayed with you, a place that changed in your eyes, and a stretch that dragged or confused you. Existing ratings and voice notes remain available; an answer at every stop is unnecessary. Keep subjective preference separate from a factual error or a technical failure."
+      ],
+      "comment": "good let's keep that reviewing prompt explicit, and keep fine tuning it as our brief sharpens"
+    },
+    {
+      "id": "49",
+      "author": "Sidi Lemine",
+      "date": "2026-09-19T12:08:00Z",
+      "anchor": "Divide the work ",
+      "context": [
+        "9 Divide the work without losing the story"
+      ],
+      "comment": "great"
+    },
+    {
+      "id": "50",
+      "author": "Sidi Lemine",
+      "date": "2026-09-19T12:09:00Z",
+      "anchor": "candidate ",
+      "context": [
+        "Researchers return candidate explanations and decisive details, not just verified fact lists. They identify what would change the pitch and where the evidence is thin."
+      ],
+      "comment": "for places / stories or whole tour / themes? would assembly be useful as a standalone function separate from research and curation or is that overengineering? "
+    },
+    {
+      "id": "51",
+      "author": "Sidi Lemine",
+      "date": "2026-09-19T12:10:00Z",
+      "anchor": "whether a thin destination story belongs on a walking leg ",
+      "context": [
+        "Curator and route reviewer work together early. They decide what each encounter and the journey contribute, and whether a thin destination story belongs on a walking leg instead."
+      ],
+      "comment": "nice"
+    },
+    {
+      "id": "52",
+      "author": "Sidi Lemine",
+      "date": "2026-09-19T12:26:00Z",
+      "anchor": "explanatory documentary ",
+      "context": [
+        "1. How should the next walk feel overall? My default is an observant, well-informed companion with room for amusement and occasional wonder. Would you like the first new tour to lean more towards an explanatory documentary or an evocative portrait?"
+      ],
+      "comment": "More towards an insightful documentary but without losing a sense of warmth"
+    },
+    {
+      "id": "53",
+      "author": "Sidi Lemine",
+      "date": "2026-09-19T12:26:00Z",
+      "anchor": "closest ",
+      "context": [
+        "2. Which Crescent treatment is closest to the pleasure you want? We can discuss the prose and its balance of explanation and imagination, without reopening the completed Finchley package."
+      ],
+      "comment": "See above - the middle one. "
+    },
+    {
+      "id": "54",
+      "author": "Sidi Lemine",
+      "date": "2026-09-19T12:28:00Z",
+      "anchor": "Where ",
+      "context": [
+        "3. Where should the next pair take us? One familiar and one unfamiliar area is my proposal. Travel convenience, realistic available time and your curiosity should decide the actual brief."
+      ],
+      "comment": "Open to anywhere - if I can get to and from the tour quickly from [private N12 transport origin] on public transport that's a bonus; but doesn't have to be super near if it really serves the experiment. I don't know the area where I live super well, and I do believe there are a fair few areas of interest in the general region"
+    }
+  ],
+  "redactions": [
+    {
+      "comment_id": "54",
+      "field": "comment",
+      "reason": "Precise personal transport origin retained only in the original local Word file and ignored private capture; N12 convenience preference preserved."
+    }
+  ]
+}

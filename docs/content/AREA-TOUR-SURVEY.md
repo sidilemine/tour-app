@@ -1,5 +1,7 @@
 # Survey existing tours before curating a new area
 
+**19 September extension:** survey guides as well as existing tours, and investigate present-day places. Sidi wants a varied reusable candidate pool for route and story assembly, with a disciplined search programme for both heavily visited and sparsely documented areas. The original Finchley scope below is historical; use the next area's agreed boundary for each new assignment.
+
 Owner direction, 17 September 2026. This is the first research step for every new area, before selecting our stops, fixing a theme or drafting narration. It also comes next for Finchley: the existing A/B proposals and owner feedback are retained, but the broad survey is now [recorded](survey/README.md). The earlier Kinks lookup is one lead, not a completed survey.
 
 ## Purpose and coverage
@@ -14,6 +16,7 @@ Search across these source families:
 - Council, museum, local-history and community organisations; heritage trails, leaflets, maps and PDFs.
 - Self-guided/audio-tour platforms and publicly accessible previews, walking blogs and published video/audio walks with identifiable places.
 - Local music, architecture, literary, religious, social-history and other themed walks; follow references to further routes and guides.
+- Published area guides and walking books where accessible; current businesses, venues, cultural listings and public institutions as sources about places today. Distinguish an actual reading from a catalogue entry or preview.
 
 Maintain a search log with area/name variants, theme queries, source families covered, useful references followed and access gaps. Deduplicate reseller listings of the same tour. Prefer the originator's account and preserve historical versions when they materially differ.
 
@@ -33,6 +36,24 @@ Use simple versioned local records first. These are the fields to capture, not a
 | Reuse and review | What we might investigate; likely visitor payoff; repetition/contrast with other candidates; owner comments; our eventual inclusion/rejection reason; media/source rights metadata where relevant |
 
 A location may support several stories, and the same story may appear in several tours. Preserve those many-to-many relationships. Another tour's inclusion is discovery evidence, not factual corroboration or a verified public standing area. Several reseller pages or guides copying one source do not constitute independent support.
+
+Add lightweight descriptive tags as records accumulate: subject (music, architecture, everyday life, true crime, and so on), widely listed versus less covered, present-day activity, and likely role as a stop, passing observation or walking story. Record the reason or source for a popularity label; repeated marketing copies do not prove popularity. These are provisional descriptors, not a fixed taxonomy, quality score or approval to include a particular subject.
+
+## Bounded search programme for the next area
+
+**Proposed operating method, to refine in Sidi's workshop.** Broad coverage comes before deep candidate research. A finite first pass should leave worthwhile alternatives for curation, route assembly and two narrated legs, without creating full dossiers for every place mentioned.
+
+1. **Define the patch.** Record the core area, nearby comparison area, name variants, convenient transport gateways and the questions the survey should answer. Avoid searching all of London as one area.
+2. **Run a source-family sweep.** Cover (a) tour operators and individual guides, (b) published guides/books and self-guided/audio resources, (c) civic/heritage archives, (d) local reporting/community history, (e) theme-specific specialists, and (f) current places/operators/events. Log useful searches and gaps. As an initial review budget, inspect up to four materially different resources in each family, prioritising information gain over search rank. This is neither a minimum nor a claim that 24 pages establish completeness.
+3. **Extract lightly and deduplicate.** Capture published stops, angles and short candidate records with provenance. Preserve a long source list compactly; choose which entries warrant enrichment rather than researching all of them immediately. Mark likely route clusters and distinct story possibilities without selecting the tour yet.
+4. **Audit the gaps.** Identify the few omissions that could change our choices: a part of the area, living culture, a subject, a route connection or a missing viewpoint. Do one targeted follow-up batch, initially no more than three gaps with up to two promising new resources per gap. Broaden it only for a stated potential benefit; numbers are adjustable work budgets.
+5. **Hand over the pool.** Provide candidate clusters, source coverage/gaps, appealing alternatives and enough material for two plausible assembly proposals. If the pool cannot support a worthwhile walk, say why and propose a wider boundary or a different area. Do not manufacture interest to satisfy a target count.
+
+For a heavily visited area, deduplicate standard itineraries early and look for different explanations and less-covered current life. Bound by source families and route clusters rather than the volume of search hits. For a thinly documented area, broaden the kinds of sources and historical name variants; make one deliberate check of the adjoining area. Absence of published tours does not mean absence of stories, but an unproductive survey is a reason to reconsider the patch.
+
+Pause the broad search when every relevant family has been checked or has a recorded access gap, new resources mainly duplicate the candidate pool, and material gaps have received a targeted check. Candidate-specific questions then move to research. Keep a parking list for interesting tangents rather than following every link now.
+
+This is our proposed discipline, not an empirically established search limit. [Transom's practitioner account of finding stories elsewhere](https://transom.org/2012/how-to-find-stories-where-you-dont-live/), checked 19 September 2026, supports using varied local sources and refining unproductive searches. Its old software examples are not adopted and this plan creates no monitoring subscriptions.
 
 ## Synthesis before our own selection
 

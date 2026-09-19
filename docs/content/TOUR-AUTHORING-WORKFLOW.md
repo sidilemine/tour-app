@@ -1,6 +1,6 @@
 # Tour authoring — proposed division of work
 
-**Current discussion:** [Making a walk worth taking](TOUR-STORY-CRAFT-SECOND-PASS.md), 18 September, proposes stronger story discovery, feedback loops between research and writing, and lead editing across specialist drafts. Its handoff additions are proposals for the next assignment, not an agent framework or already-tested process. The earlier role definitions below remain available.
+**Current discussion:** the [19 September review response](SECOND-PASS-REVIEW-RESPONSE.md) records all 55 second-pass comments. Sidi takes the editorial lead role in the next workshop; the [updated role briefs](authoring/AGENT-BRIEFS.md) distinguish candidate research, curation and a proposed assembly function, with the [first writing brief](authoring/WRITING-BRIEF.md) supplying the practical prose standard. No agent framework or already-tested process is implied. The earlier role definitions below remain historical proposals and yield to these updates.
 
 17 September 2026. Based on Sidi's [first Tour B feedback](FIRST-TOUR-FEEDBACK-RECOVERY.md) and [explicit purpose correction](EDITORIAL-REVIEW-RECORD.md#15-purpose-correction-general-authoring-lessons-not-finchley-polishing).
 
@@ -39,7 +39,7 @@ Keep the owner's detailed wording and examples available to the eventual guideli
 
 ## Digression budget: direction versus proposal
 
-Sidi welcomes place-grounded material and broader thought together, with time caps preventing the latter from taking over. A proposed initial allowance is roughly 25% of a stationary story's spoken duration, excluding navigation. This number is **not yet agreed** and is not a universal standard. Test the approach in the next authoring work; historical explanation tied to the actual place remains core material even when it describes something vanished. The central question is whether visiting the place adds clear value over listening at home.
+Sidi welcomes place-grounded material and broader thought together, with time allowances preventing the latter from taking over. The historical proposal of roughly 25% of a stationary story's spoken duration is **not adopted**. The 19 September review accepts a deliberate allowance as a starting approach and leaves room for a qualitative judgement after use. Historical explanation tied to the actual place remains core material even when it describes something vanished. The central question is whether visiting the place adds clear value over listening at home.
 
 ## Scope
 

@@ -1,6 +1,6 @@
 # Editorial discussion and decision record
 
-Start here when resuming tour curation or reviewing how to make systematic guidelines. Updated 18 September 2026. This is the durable history of discussion, alternatives, corrections and outcomes; [TOUR-DESIGN-GUIDANCE](TOUR-DESIGN-GUIDANCE.md) contains the current working rules. Keep evidence and owner preference distinguishable.
+Start here when resuming tour curation or reviewing how to make systematic guidelines. Updated 19 September 2026. This is the durable history of discussion, alternatives, corrections and outcomes; [TOUR-DESIGN-GUIDANCE](TOUR-DESIGN-GUIDANCE.md) contains the current working rules. Keep evidence and owner preference distinguishable.
 
 ## How to maintain this record
 
@@ -14,8 +14,9 @@ When we take a serious look back: read this record, the captured comments and th
 
 - [Initial walking-tour research](WALKING-TOUR-DESIGN-RESEARCH.md) and [original Word review](walking-tour-design-review.docx).
 - [First 34 owner Word comments with anchored text](reviews/2026-09-16-owner-word-comments.json): 24 on the research review, 10 on the narration pair; document-local IDs and source-file SHA-256 retained. This committed text capture remains usable if the original commented Word files are absent from another checkout. Original commented files remain locally under `docs/content/` and are not overwritten.
-- [Latest 11 tour-options comments](reviews/2026-09-17-tour-options-comments.json) and [response/development brief](NORTH-FINCHLEY-REVIEW-RESPONSE.md): **45 comments total** across the three reviews. All retain source-file hashes, local IDs and anchored text.
-- [Current design guidance](TOUR-DESIGN-GUIDANCE.md), revisions 1–10 with revision history.
+- [11 tour-options comments](reviews/2026-09-17-tour-options-comments.json) and [response/development brief](NORTH-FINCHLEY-REVIEW-RESPONSE.md): the first **45 comments** across three reviews. All retain source-file hashes, local IDs and anchored text.
+- [55 second-pass comments](reviews/2026-09-19-second-pass-comments.json) and [response with complete coverage map](SECOND-PASS-REVIEW-RESPONSE.md): **100 Word comments total** across four reviews. This capture adds paragraph context; a precise private transport origin is redacted while the local original is preserved.
+- [Current design guidance](TOUR-DESIGN-GUIDANCE.md), revisions 1–11 with revision history, and the [first practical writing brief](authoring/WRITING-BRIEF.md).
 - [First authoring synthesis/playbook](TOUR-AUTHORING-PLAYBOOK.md), [original Word review copy](tour-authoring-playbook-review.docx), [proposed agent briefs](authoring/AGENT-BRIEFS.md) and [source map](authoring/SOURCE-MAP.md). Preserved as the first pass; not a milestone acceptance decision.
 - [Second craft pass](TOUR-STORY-CRAFT-SECOND-PASS.md), [Word discussion copy](tour-story-craft-second-pass-review.docx) and [expanded research notes](authoring/SECOND-PASS-SOURCES.md). Contrasting prose and proposed next-tour experiments are for discussion, not accepted new defaults.
 - [First North Finchley sample pair](NORTH-FINCHLEY-SAMPLE-STOPS.md) and [original Word copy](north-finchley-sample-stops-review.docx), including the rejected memorial execution.
@@ -196,6 +197,30 @@ Sidi explicitly asks to preserve generous detail/raw text for later work on agen
 
 **Verification:** ten-page Word copy rendered and visually checked; its text matches the Markdown paper. All 12 numbered references are cited and defined; 159 local links/anchors across the changed text files resolve. The three owner-commented source documents retain their recorded hashes. `npm run docs:check` and whitespace checks pass. This documentation-only assignment needs no app build or physical test.
 
+### 20 Second-pass owner review and the authoring workshop
+
+**19 September 2026. Source:** `tour-story-craft-second-pass-review sidi comments.docx`, comments 0–54. All 55 comments and their anchors/context are captured. The Word body matches the reviewed paper; no tracked insertions/deletions. The [full response](SECOND-PASS-REVIEW-RESPONSE.md) covers every ID, preserves rejected prose and answers the methodological questions. Both original and commented documents remain untouched.
+
+**Owner direction:** lean towards an insightful documentary with warmth, taking 99% Invisible's research, writing and narration as a reference across the programme. The five story forms are strongly welcomed. Let research deepen and enrich findings autonomously or through writer/lead questions. Seek why-led insight, but allow a charming detail or anecdote without a thesis. Add at least one moment of levity unless the tour is deliberately sombre. A theme can be loose or lightly retrofitted; discovery and oddities are worthwhile.
+
+**Walking narration:** central to the experience, not just transitions or spare material. Broader stories can connect once or twice to visible surroundings; the next tour should have **two narrated legs**. Sidi recalls eventual driving tours as part of the longer-term ambition, without commissioning driving work now.
+
+**Voice and evidence corrections:** contextualise names and supply narrative bearings; vary sentence rhythm. B is the preferred Crescent treatment, with C before or after it. A is monotonous as a story and useful only as short context. Remove the ownership/buyer disclaimers, vague attribution and internal editorial rationale from narration. The owner permits reasonable historical inference and period-informed reconstruction, including inference from adverts; do not interpret evidence discipline as a demand for eyewitness proof of every detail. Qualitative evidence judgements are the engineer's proposed implementation, not invented numerical confidence or a changed package schema. The time-allowance approach is accepted as a start; the 25% cap is not adopted, and a qualitative approach may prove better.
+
+**Direct clarification after comment 20:** asked whether the next brief should also explore invented dialogue or composite characters, Sidi selected **“Start with reconstruction and atmosphere”**. This selects the initial writing experiment, not a permanent ban on fictional forms. The brief records the distinction between vivid reconstruction and falsely attributing a specific documented incident to another place. Physical navigation remains literal.
+
+**Editorial outlook:** be upfront about AI generation; the app may reflect Sidi's values, while the narrator does not invent personal tastes or lived experience. The values themselves are to be developed; his example slogans are not selected. This is product/editorial direction, not an implemented disclosure UI or a claim that AI provenance establishes accuracy.
+
+**Survey and assembly:** broaden discovery to guides/books and present-day places, with a varied tagged candidate pool and a disciplined programme suitable for dense and sparse areas. Sidi asks whether assembly deserves its own function. The engineer proposes separating place/story research, curation and assembly decisions, while reusing agents where practical. The [source-family sweep and gap pass](AREA-TOUR-SURVEY.md#bounded-search-programme-for-the-next-area) are initial adjustable work budgets, not completeness claims or accepted numerical quotas. A small comparative study of walking books is recommended, with no books acquired or private material uploaded in this review. Bounded imagery review is a promising future task; mechanism, rights and cost need concrete evaluation before automated collection.
+
+**Workshop decision:** Sidi takes the editorial lead/orchestrator role to learn through choices and iteration. The engineer handles task preparation/execution, batches meaningful options and records selections, reasons and revisions. The [writing brief](authoring/WRITING-BRIEF.md) is prepared as a usable first draft, not a finished style theory. Current [agent briefs](authoring/AGENT-BRIEFS.md) reflect this handoff. No agents were launched and no full tour was generated by this review.
+
+**Next-area preference and feedback:** anywhere is open; convenient public transport from N12 is a bonus, not a restriction to the immediate neighbourhood. No destination, outing length or travel time is selected. Retain the explicit prompt about a remembered moment, changed view of a place, and a dragging/confusing stretch; the next experiment also asks how walking narration fitted the walk. A response at every stop is not required.
+
+**Outcome:** guidance revision 11, a full response, practical writing brief, bounded survey programme and current role briefs. Focused primary-source checks support the responses about 99PI pitching, researching elsewhere, Cardiff/Miller and current Otway/Barrett touring. The former Finchley packages, app code, physical acceptance and separate recording issue remain outside this editorial assignment.
+
+**Verification:** all 55 comment texts match the source apart from the disclosed private-origin redaction; every comment anchor/reference is present, and all 100 IDs are mapped once within their source document. All four owner-document hashes still match their captures; the original second-pass paper is unchanged. The commented Word copy was rendered and all ten pages inspected. All 251 local links/anchors across the changed Markdown resolve; `npm run docs:check` and whitespace checks pass. No app build or physical test was needed.
+
 ## Questions to carry into a later systematic review
 
 - Does context before anecdote usually improve the story, and when can an immediate intriguing detail work better?
@@ -221,4 +246,7 @@ Sidi explicitly asks to preserve generous detail/raw text for later work on agen
 | Distinct standing areas, access and crossings | Desk-reviewed public-exterior candidates with dated imagery; no current field claim | Current conditions during ordinary first use |
 | Public-tour survey before new-area curation | Applied; comprehensive first Finchley catalogue and synthesis recorded | Reuse and improve coverage for the next area |
 | Reusable place/source/story database | Explicitly planned; not implemented | Actual records and reuse requirements from the survey/two tours |
-| Systematic guidelines from these options | First synthesis retained; second craft paper and contrasting examples prepared | Owner reaction and application to the next hand-built tour; no automatic promotion |
+| Systematic guidelines from these options | All 100 comments indexed; revision 11 and a practical writing brief apply the owner review | Use and refine in the owner-led workshop |
+| Two narrated legs in the next tour | Owner-directed editorial brief | Area/route assembly and samples that make good use of movement |
+| Authoring workshop | Sidi takes editorial lead; engineer prepares and executes | Record consequential choices and useful revisions; no permanent agent count assumed |
+| Editorial values and AI provenance | Owner wants an outlook and upfront disclosure | Develop values from choices; scope the eventual presentation separately |

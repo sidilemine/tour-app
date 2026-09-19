@@ -1,6 +1,6 @@
 # Sources and decisions behind the authoring synthesis
 
-18 September 2026. This map connects the [playbook](../TOUR-AUTHORING-PLAYBOOK.md) and [agent briefs](AGENT-BRIEFS.md) to the existing record. It is a navigation aid; the original comments and detailed feedback remain the evidence. IDs below are local to their Word document. All 45 captured comments are accounted for, including deferred ideas and superseded interpretations.
+Updated 19 September 2026. This map connects the [playbook](../TOUR-AUTHORING-PLAYBOOK.md) and [agent briefs](AGENT-BRIEFS.md) to the existing record. It is a navigation aid; the original comments and detailed feedback remain the evidence. IDs below are local to their Word document. All 100 captured comments are accounted for: the original 45 below and the subsequent 55 through the coverage map linked in the new section.
 
 ## Research and its limits
 
@@ -69,6 +69,12 @@ Source: [11 anchored comments](../reviews/2026-09-17-tour-options-comments.json)
 | 9 | Similar subjects need a theme or meaningful contrast | Curation and narrative progression |
 | 10 | Walking, repeated pavement and silence can be welcome | Route judgement and room for social/quiet experience; music remains deferred |
 
+## Second craft pass Word comments
+
+The [55 anchored comments](../reviews/2026-09-19-second-pass-comments.json), IDs 0–54, retain full paragraph context and the source hash. The [review response coverage table](../SECOND-PASS-REVIEW-RESPONSE.md#coverage-of-the-55-comments) maps every ID once to its outcome. The original Word body is unchanged and has no tracked edits; one precise private transport origin is redacted in the repository capture.
+
+The [writing brief](WRITING-BRIEF.md), [revised survey programme](../AREA-TOUR-SURVEY.md#bounded-search-programme-for-the-next-area) and updated role briefs apply the review. Current owner directions include warm insightful documentary tone, two walking chapters for the next tour, levity, loose themes where appropriate, contextual names, graceful spoken inference and Sidi leading the workshop. The direct follow-up answer to the fiction question is **“Start with reconstruction and atmosphere”**. Numerical confidence, the 25% cap, fixed values, a destination and a permanent additional assembly agent are not selected.
+
 ## Conversation and walk evidence
 
 | Source | What it changes or supports | Interpretation boundary |
@@ -95,4 +101,4 @@ Source: [11 anchored comments](../reviews/2026-09-17-tour-options-comments.json)
 
 ## Proposed method versus decisions still open
 
-The six roles, document handoffs, prompt wording and review findings format are engineer proposals for application. They are ready for an extra-high second pass. No new area, duration target, model choice, numerical digression limit or database design is selected by this synthesis. Sidi's instruction is to stop here before that second pass; no new authoring task or technical work is launched.
+The first synthesis's six roles and handoffs were proposals for the second pass, which is now complete and owner-reviewed. The [19 September response](../SECOND-PASS-REVIEW-RESPONSE.md) distinguishes accepted preferences from the proposed search budgets, story-discovery method and assembly function. Sidi will lead the next workshop. No new area, duration target, model choice, numerical confidence/digression limit or database design is selected; this review launches no full tour production or technical work.
