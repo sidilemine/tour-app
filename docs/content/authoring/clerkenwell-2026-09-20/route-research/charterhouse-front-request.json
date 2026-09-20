@@ -1,0 +1,28 @@
+{
+  "locations": [
+    {
+      "lat": 51.52026,
+      "lon": -0.10498,
+      "type": "break"
+    },
+    {
+      "lat": 51.52103,
+      "lon": -0.0997,
+      "type": "break"
+    },
+    {
+      "lat": 51.51983,
+      "lon": -0.1019,
+      "type": "break"
+    }
+  ],
+  "costing": "pedestrian",
+  "costing_options": {
+    "pedestrian": {
+      "walking_speed": 4.5
+    }
+  },
+  "units": "kilometers",
+  "language": "en-GB",
+  "id": "clerkenwell-research-charterhouse-front"
+}

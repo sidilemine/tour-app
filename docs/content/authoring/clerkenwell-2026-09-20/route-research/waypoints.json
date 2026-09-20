@@ -1,0 +1,90 @@
+{
+  "date": "2026-09-20",
+  "status": "Public map candidates; not field-verified; routing points are not certified standing locations.",
+  "points": [
+    {
+      "id": "farringdon",
+      "latitude": 51.52026,
+      "longitude": -0.10498,
+      "type": "candidate-stop"
+    },
+    {
+      "id": "smithfield",
+      "latitude": 51.51983,
+      "longitude": -0.1019,
+      "type": "candidate-stop"
+    },
+    {
+      "id": "booths",
+      "latitude": 51.52154,
+      "longitude": -0.10392,
+      "type": "candidate-stop"
+    },
+    {
+      "id": "gate",
+      "latitude": 51.52188,
+      "longitude": -0.10269,
+      "type": "candidate-stop"
+    },
+    {
+      "id": "green",
+      "latitude": 51.52292,
+      "longitude": -0.10562,
+      "type": "candidate-stop"
+    },
+    {
+      "id": "close-bend",
+      "latitude": 51.52371,
+      "longitude": -0.1068,
+      "type": "route-shaping-via"
+    },
+    {
+      "id": "sans-west",
+      "latitude": 51.52414,
+      "longitude": -0.10625,
+      "type": "route-shaping-via"
+    },
+    {
+      "id": "sans-east",
+      "latitude": 51.52473,
+      "longitude": -0.10477,
+      "type": "route-shaping-via"
+    },
+    {
+      "id": "woodbridge",
+      "latitude": 51.52408,
+      "longitude": -0.10406,
+      "type": "candidate-stop"
+    },
+    {
+      "id": "sekforde-top",
+      "latitude": 51.52548,
+      "longitude": -0.1042,
+      "type": "route-shaping-via"
+    },
+    {
+      "id": "ingersoll",
+      "latitude": 51.52551,
+      "longitude": -0.10388,
+      "type": "candidate-stop"
+    },
+    {
+      "id": "skinner-west",
+      "latitude": 51.52616,
+      "longitude": -0.10685,
+      "type": "route-shaping-via"
+    },
+    {
+      "id": "exmouth-east",
+      "latitude": 51.52638,
+      "longitude": -0.1082,
+      "type": "route-shaping-via"
+    },
+    {
+      "id": "exmouth-finish",
+      "latitude": 51.52566,
+      "longitude": -0.10953,
+      "type": "candidate-stop"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "locations": [
+    {
+      "lat": 51.52566,
+      "lon": -0.10953,
+      "type": "break"
+    },
+    {
+      "lat": 51.52026,
+      "lon": -0.10498,
+      "type": "break"
+    }
+  ],
+  "costing": "pedestrian",
+  "costing_options": {
+    "pedestrian": {
+      "walking_speed": 4.5
+    }
+  },
+  "units": "kilometers",
+  "language": "en-GB",
+  "id": "clerkenwell-research-return-farringdon"
+}

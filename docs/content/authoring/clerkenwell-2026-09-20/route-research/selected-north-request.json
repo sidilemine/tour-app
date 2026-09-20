@@ -1,0 +1,58 @@
+{
+  "locations": [
+    {
+      "lat": 51.52292,
+      "lon": -0.10562,
+      "type": "break"
+    },
+    {
+      "lat": 51.5233746,
+      "lon": -0.1059221,
+      "type": "via"
+    },
+    {
+      "lat": 51.5237431,
+      "lon": -0.1066771,
+      "type": "via"
+    },
+    {
+      "lat": 51.52431,
+      "lon": -0.10593,
+      "type": "via"
+    },
+    {
+      "lat": 51.52408,
+      "lon": -0.10406,
+      "type": "break"
+    },
+    {
+      "lat": 51.52551,
+      "lon": -0.10388,
+      "type": "break"
+    },
+    {
+      "lat": 51.5257457,
+      "lon": -0.1050356,
+      "type": "via"
+    },
+    {
+      "lat": 51.526294,
+      "lon": -0.1069461,
+      "type": "via"
+    },
+    {
+      "lat": 51.52566,
+      "lon": -0.10953,
+      "type": "break"
+    }
+  ],
+  "costing": "pedestrian",
+  "costing_options": {
+    "pedestrian": {
+      "walking_speed": 4.5
+    }
+  },
+  "units": "kilometers",
+  "language": "en-GB",
+  "id": "clerkenwell-research-selected-north"
+}

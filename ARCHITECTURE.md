@@ -35,6 +35,7 @@ tools/content/           Historical editorial package preflight
 src/tours/               Bounded area-specific transport import and tour home
 src/feedback/            Independent private reviews and foreground voice capture
 content/north-finchley/  Authored A/B review packages and paragraph evidence
+content/clerkenwell/     Authored eight-stop / two-chapter package, route plan and evidence
 content/finchley/         public-source editorial and listening drafts
 docs/test-results/       sanitized build/device result summaries
 diagnostics/             ignored private raw device exports
@@ -251,3 +252,7 @@ The [player implementation record](docs/content/M2-PLAYER-IMPLEMENTATION.md) des
 The exact imported package JSON now contributes to build source identity; final APK verification inspects every embedded tour audio payload as well as native markers and map resources. The [build/device record](docs/test-results/M2-tour-build.md) distinguishes assembly/static verification from actual capture, audible playback and first walking observations. New native permission is explicit foreground `RECORD_AUDIO`; no background microphone service or cloud transcription was added.
 
 The [headset recording correction](docs/test-results/M2-recording-input.md) adds a separate, versioned recording adapter in the pinned Expo Audio module. It owns transient exclusive audio focus, verifies the actual MediaRecorder input before acknowledging capture, and cleans up temporary Bluetooth communication routing on release. Android `BLUETOOTH_CONNECT` permission supports explicit headset selection. Interruption or input change finalises the existing note without clearing narration hold. Foreground-only recording remains deliberate; no background microphone service is added. Native helper sources contribute to the APK source identity.
+
+## Clerkenwell authored integration, 20 September
+
+The [third package](content/clerkenwell/README.md) uses the existing player/engine contract with eight stops and two chapters. Its explicit route plan retains selected provider geometry hashes, station-approach offset and navigation-decision indices outside the runtime fixture. The bounded preparation tool validates every rendered paragraph and enforces measured audio plus 15 seconds after the latest launch at 6 km/h. The first story starts immediately, so the public station approach is drawn before stop 1 and the introduction says to start at Charterhouse. Existing Finchley package versions are unchanged. Build source identity includes both authored package directories; the final APK verifier checks all three transports, 22 audio entries and both map IDs. This adds authored content rather than native playback behaviour or an automated compiler. [Results and remaining physical scope](docs/test-results/M2-clerkenwell-tour.md).

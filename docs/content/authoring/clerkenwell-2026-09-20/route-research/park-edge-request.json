@@ -1,0 +1,38 @@
+{
+  "locations": [
+    {
+      "lat": 51.52551,
+      "lon": -0.10388,
+      "type": "break"
+    },
+    {
+      "lat": 51.525545,
+      "lon": -0.1058,
+      "type": "via"
+    },
+    {
+      "lat": 51.52589,
+      "lon": -0.10745,
+      "type": "via"
+    },
+    {
+      "lat": 51.52565,
+      "lon": -0.1088,
+      "type": "via"
+    },
+    {
+      "lat": 51.52566,
+      "lon": -0.10953,
+      "type": "break"
+    }
+  ],
+  "costing": "pedestrian",
+  "costing_options": {
+    "pedestrian": {
+      "walking_speed": 4.5
+    }
+  },
+  "units": "kilometers",
+  "language": "en-GB",
+  "id": "clerkenwell-park-edge-option"
+}

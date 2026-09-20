@@ -1,8 +1,8 @@
 # Offline phone test guide
 
-Generated from `src/testing/guide.json`; edit that source and run `npm run docs:guide`. Revision 11.
+Generated from `src/testing/guide.json`; edit that source and run `npm run docs:guide`. Revision 12.
 
-The planned M1 outdoor walks are complete. These procedures remain available for reference and targeted regression checks; do not repeat a walk unless the engineer identifies a specific need. Opening this guide never starts, pauses or ends a tour. Stop safely before using the screen. Saved results are observations: acceptance combines diagnostic review and physical feedback in the project checklist. Long A lasts 3 minutes 30 seconds and is only a test asset; desk interruption and recovery checks need just a few seconds of playback. M2 adds an engineer-prepared offline-map desk check; this does not reopen the full M1 field matrix. The tour home now contains the prepared A/B walks, transcripts, directions and story reviews. Case 20 records one short engineer-led check of the new import/recording boundary; it does not require another baseline walk. Guide 11 updates the map label for two bundled areas; a new area needs its own short drawing/selection check, not a repeat of the historical map matrix.
+The planned M1 outdoor walks are complete. These procedures remain available for reference and targeted regression checks; do not repeat a walk unless the engineer identifies a specific need. Opening this guide never starts, pauses or ends a tour. Stop safely before using the screen. Saved results are observations: acceptance combines diagnostic review and physical feedback in the project checklist. Long A lasts 3 minutes 30 seconds and is only a test asset; desk interruption and recovery checks need just a few seconds of playback. M2 adds an engineer-prepared offline-map desk check; this does not reopen the full M1 field matrix. The tour home contains the Finchley A/B walks and the new Clerkenwell walk, with transcripts, directions and story reviews. Case 20 records one short engineer-led check of the new import/recording boundary; it does not require another baseline walk. Guide 12 includes Clerkenwell’s eight stops and two walking chapters in the combined preparation check. A new area needs a short drawing/selection check, not a repeat of the historical map matrix.
 
 ## Before and after each attempt
 
@@ -266,24 +266,24 @@ Expected: Entire declared map area draws with labels and network off; damaged lo
 
 Case: `curated-tour-feedback`. Preparation: engineer. Build: offline-release.
 
-Final self-contained A/B build; phone connected for one clustered session. Ask whether Sidi is listening before any audible playback. Preserve prior phone data and reviews.
+Final self-contained three-tour build; phone connected for one clustered session. Ask whether Sidi is listening before any audible playback. Preserve prior phone data and reviews.
 
-1. Engineer: prepare both bundled tours, confirm five A stops and six B stops plus its walking chapter, and open numbered route/map and directions. With Metro stopped and networking off, cold reopen and confirm saved tour/progress. Import/corruption/version handling has automated evidence; do not repeat destructive file tests on the phone without a concrete need.
+1. Engineer: prepare Clerkenwell offline and confirm eight stops and two walking chapters. Retain the existing Finchley A/B packages and progress. With Metro stopped and networking off, cold reopen, inspect the Clerkenwell numbered route/map and representative labels, switch to a retained Finchley map and check progress, then return to Clerkenwell. Read the first-stop approach/directions. Import/corruption/version handling has automated evidence; do not repeat destructive file tests without a concrete need.
 2. After Sidi confirms listening, play a few seconds of a tour story, open Review and confirm narration pauses. Record a brief spoken note deliberately, stop/save and play the saved note back. Save and close review: an active tour resumes, continuing unfinished narration or awaiting the next eligible location. Saving the voice note while Review remains open stays silent. Closing a review on an ended tour must not restart it. Engineer inspects permission, actual file finalization and app-scoped errors.
-3. Save a voice-note copy to a chosen local folder and verify successful readback; cancel one save and confirm the original remains. Reopen the app silently and confirm ratings, text and note remain. End tracking after any short native location check.
-4. Engineer restores/retains the self-contained app, ready to choose A or B. Normal tour use supplies route/enjoyment feedback; no stationary-minute or three-minute repeat is required for this case. Save observed results and any specific unresolved issue.
+3. Reuse the accepted local voice-copy/readback/cancellation evidence while that boundary is unchanged. Confirm the new diagnostic note remains after reopening; repeat copying only to recover it for the specific diagnosis. End tracking after any short native location check.
+4. Engineer retains the self-contained app with Clerkenwell selected and unstarted, and prior Finchley progress intact. Normal tour use supplies route/enjoyment feedback; no stationary-minute or three-minute repeat is required. Save actual observations and specific unresolved issues.
 
-Expected: Both tours remain usable offline; new recordings are audible and durable; Review/record/voice-save stays paused; explicit review close resumes an active tour; requested local export is verified and cancellation preserves original. Actual phone observations are distinct from automation and first tour enjoyment.
+Expected: All three tours retain their offline packages; the selected map and saved progress survive reopening. New diagnostic recordings are audible and durable; Review/record/voice-save stays paused; explicit review close resumes an active tour. Reuse unchanged export evidence. Actual phone observations are distinct from automation and enjoyment.
 
 ## 21. Headset microphone and competing music
 
 Case: `headset-recording-focus`. Preparation: engineer. Build: offline-release.
 
-Prepared microphone/focus fix and the headphones used for touring. One short desk session; confirm listening readiness before any audible action. Keep prior recordings and tour progress intact.
+Installed microphone adapter and the touring headphones. The reported EarFun/Spotify problem remains unresolved. One short diagnostic desk session; confirm listening readiness before sound. Preserve prior recordings and progress.
 
 1. Engineer verifies installed recording adapter revision 1, microphone/Nearby devices permissions and actual available inputs. No tour restart or outdoor walk is needed.
 2. After Sidi confirms listening, start Spotify, then tap Record in a story review. Wait for a verified Headset microphone label. Speak one short sentence with the phone away from the mouth, then stop/save. Confirm music paused during capture and the saved sentence is clear.
-3. Confirm another short note can be saved with Phone microphone selected, and that the displayed input changes accordingly. If the headset disconnects during a deliberately started short capture, the existing note should be saved with an interruption message, without silently continuing on another microphone.
+3. Compare one short Phone microphone note only if the headset problem reproduces or a usable feedback path still needs confirmation. Check the actual input label. Reuse automated interruption coverage; a deliberate disconnect is not required for this batch. If a real disconnect occurs, preserve the note and report whether capture stopped with an interruption message.
 4. Confirm saved-note or a few seconds of deliberate narration playback returns through the headphones after recording. Stop note playback, save/close review and confirm the active tour resumes. Ended tours stay stopped. Engineer inspects app-scoped errors and restores the self-contained variant with existing progress.
 
 Expected: Recording requests exclusive focus; the displayed microphone is an actual verified route, not merely a preference. Saved notes are intelligible, interrupted capture retains its file, and recording cleanup restores ordinary playback routing. Only explicit review close/resume releases the tour hold; passive background/locking does not. No baseline walk or export repeat required.

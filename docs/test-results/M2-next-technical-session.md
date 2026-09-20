@@ -2,6 +2,8 @@
 
 Prepared 20 September 2026. **Procedure only; no device was contacted, installed, played or recorded during this preparation.** The owner authorised preparation alongside the editorial workshop. No reconnect request is pending. Allow **about 5–7 minutes of owner attention** when the Pixel and EarFun headset are next available, with engineer setup completed first. Stop earlier when the diagnostic question is answered; a fix in the same session is not promised.
 
+**Subsequent combined handoff preparation:** the complete [Clerkenwell build](M2-clerkenwell-tour.md) is now guide 12/source `9505427915e2d1df`. The recorder/native code is unchanged. Its installation is justified by the new tour/map, so perform that silent preparation first and use this same bounded recorder/review sequence on a completed Finchley story. Record the actual new source rather than claim a guide-10 observation; leave fresh Clerkenwell progress unstarted afterwards. The initial standalone instruction below to avoid installing merely for snapshots is superseded for this combined content handoff.
+
 ## Questions and existing evidence
 
 1. While the app records through the EarFun microphone, does its exclusive focus survive the communication-route change, what input is actually reported, and is the saved sentence intelligible after ordinary headphone routing returns?

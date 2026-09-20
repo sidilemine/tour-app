@@ -4,36 +4,82 @@ import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { Coordinate, distance, Fixture } from '../src/domain/fixture';
 import { Event, initialState, reduce } from '../src/domain/engine';
+import { narrationAt } from '../src/domain/narration';
 import { parseTourPackage } from '../src/tours/package';
 
-const packages = ['A', 'B'].map(variant => ({ variant, package: parseTourPackage(JSON.parse(readFileSync(`content/north-finchley/packages/${variant}.json`, 'utf8'))) }));
-function simulate(fixture: Fixture) {
-  let state = initialState(fixture), at = 0, chapterEnds: number | undefined;
-  const plays: { index: number; at: number; point?: Coordinate }[] = [];
+const packages = [
+  { variant: 'A', path: 'content/north-finchley/packages/A.json', stops: 5, chapterIds: [] as string[], mapId: 'north-finchley-abc1a7e4d563d305' },
+  { variant: 'B', path: 'content/north-finchley/packages/B.json', stops: 6, chapterIds: ['walking-neighbourhood'], mapId: 'north-finchley-abc1a7e4d563d305' },
+  { variant: 'C', path: 'content/clerkenwell/packages/working-lives.json', stops: 8, chapterIds: ['many-hands', 'next-days-stock'], mapId: 'clerkenwell-8f45f13ad1755318' },
+];
+type PreparedPackage = typeof packages[number];
+// Read inside each test so an absent new artifact cannot prevent the existing
+// packages' checks from running. C remains required: its tests fail if absent.
+function loadPackage(definition: PreparedPackage) {
+  const p = parseTourPackage(JSON.parse(readFileSync(definition.path, 'utf8')));
+  assert.equal(p.mapId, definition.mapId, `${definition.variant}: intended offline map`);
+  assert.equal(p.fixture.stops.length, definition.stops, `${definition.variant}: physical stop count`);
+  assert.deepEqual(p.fixture.narration!.chapters.map(c => c.id), definition.chapterIds, `${definition.variant}: ordered walking chapters`);
+  assert.equal(p.assets.length, definition.stops + definition.chapterIds.length, `${definition.variant}: complete clip count`);
+  return p;
+}
+function simulate(fixture: Fixture, walking?: { metresPerSecond: number; fixEveryMilliseconds: number }) {
+  let state = initialState(fixture), at = 0;
+  let chapterEnd: { at: number; index: number; token: number } | undefined;
+  const plays: { index: number; at: number; point?: Coordinate; along?: number }[] = [];
   const send = (event: Event) => {
     const result = reduce(state, event, fixture); state = result.state;
-    for (const effect of result.effects) if (effect.type === 'play') {
-      plays.push({ index: effect.index, at: event.at, point: state.location.fix });
-      if (effect.index >= fixture.stops.length) chapterEnds = event.at + fixture.narration!.chapters[effect.index - fixture.stops.length].audio.durationSeconds * 1000;
+    for (const effect of result.effects) {
+      if (effect.type === 'pause') chapterEnd = undefined;
+      if (effect.type === 'play') {
+        plays.push({ index: effect.index, at: event.at, point: state.location.fix, along: state.location.along });
+        chapterEnd = effect.index < fixture.stops.length ? undefined : {
+          at: event.at + (narrationAt(fixture, effect.index)!.audio.durationSeconds - effect.offset) * 1000,
+          index: effect.index, token: effect.token,
+        };
+      }
     }
     return result;
   };
   const fix = (point: Coordinate, milliseconds = 2000) => {
     const next = at + milliseconds;
-    if (chapterEnds !== undefined && chapterEnds <= next) {
-      const finish = chapterEnds; chapterEnds = undefined;
-      send({ type: 'audio', at: finish, token: state.playback.token, offset: fixture.narration!.chapters[0].audio.durationSeconds, finished: true, playing: false, buffering: false });
+    if (chapterEnd !== undefined && chapterEnd.at <= next) {
+      const finish = chapterEnd; chapterEnd = undefined;
+      assert.equal(state.playback.index, finish.index, 'Simulator must complete the active chapter');
+      assert.equal(state.playback.token, finish.token, 'Simulator must complete the active playback attempt');
+      const duration = narrationAt(fixture, finish.index)!.audio.durationSeconds;
+      send({ type: 'audio', at: finish.at, token: finish.token, offset: duration, finished: true, playing: false, buffering: false });
     }
-    at = next; return send({ type: 'fix', at, fix: { ...point, accuracy: 7, timestamp: at, speed: 1.25 } });
+    at = next; return send({ type: 'fix', at, fix: { ...point, accuracy: 7, timestamp: at, speed: walking?.metresPerSecond ?? 1.25 } });
   };
   const dwell = (point: Coordinate) => { for (let i = 0; i < 4; i++) fix(point); };
   const finishStory = () => {
-    assert.ok(state.playback.index !== null && state.playback.index < fixture.stops.length);
+    assert.ok(state.playback.index !== null && state.playback.index < fixture.stops.length,
+      `Expected a stationary story to finish, got ${state.playback.index}; ${state.location.reason}`);
     const duration = fixture.narration!.stories[state.playback.index].audio.durationSeconds;
     at += duration * 1000;
     send({ type: 'audio', at, token: state.playback.token, offset: duration, finished: true, playing: false, buffering: false });
   };
   const walk = (start: number, end: number) => {
+    if (walking) {
+      const offsets = [0];
+      for (let i = start + 1; i <= end; i++) offsets.push(offsets.at(-1)! + distance(fixture.route[i - 1], fixture.route[i]));
+      const total = offsets.at(-1)!, metresPerFix = walking.metresPerSecond * walking.fixEveryMilliseconds / 1000;
+      let segment = 1;
+      // Carry the distance between route vertices. Emitting an extra fix at
+      // every vertex would give short launch windows unrealistically dense GPS.
+      for (let sample = 1; sample <= Math.ceil(total / metresPerFix); sample++) {
+        const along = Math.min(total, sample * metresPerFix);
+        while (segment < offsets.length - 1 && offsets[segment] < along) segment++;
+        const from = fixture.route[start + segment - 1], to = fixture.route[start + segment];
+        const segmentMetres = offsets[segment] - offsets[segment - 1];
+        const fraction = segmentMetres ? (along - offsets[segment - 1]) / segmentMetres : 0;
+        // The last sample can include a partial interval stationary at the stop.
+        fix({ latitude: from.latitude + (to.latitude - from.latitude) * fraction,
+          longitude: from.longitude + (to.longitude - from.longitude) * fraction }, walking.fixEveryMilliseconds);
+      }
+      return;
+    }
     for (let i = start + 1; i <= end; i++) {
       const from = fixture.route[i - 1], to = fixture.route[i], metres = distance(from, to), steps = Math.max(1, Math.ceil(metres / 2.5));
       for (let n = 1; n <= steps; n++) fix({ latitude: from.latitude + (to.latitude - from.latitude) * n / steps, longitude: from.longitude + (to.longitude - from.longitude) * n / steps }, Math.max(1, metres / steps / 1.25 * 1000));
@@ -41,46 +87,63 @@ function simulate(fixture: Fixture) {
   };
   return { get state() { return state; }, get at() { return at; }, send, fix, dwell, finishStory, walk, plays };
 }
-
-for (const { variant, package: p } of packages) test(`prepared ${variant}: every ideal route arrival completes in order including retraced streets`, () => {
-  const fixture = p.fixture, h = simulate(fixture);
+function completeThroughStop(fixture: Fixture, h: ReturnType<typeof simulate>, lastStop: number) {
   h.send({ type: 'start', at: 0, diagnostics: false }); h.dwell(fixture.stops[0].standing); h.finishStory();
-  for (let stop = 1; stop < fixture.stops.length; stop++) {
+  for (let stop = 1; stop <= lastStop; stop++) {
     h.walk(fixture.stops[stop - 1].routeIndex, fixture.stops[stop].routeIndex); h.dwell(fixture.stops[stop].standing);
-    assert.equal(h.state.playback.index, stop, `${variant} arrival ${stop}: ${h.state.location.reason}, ${JSON.stringify(h.state.stops)}`);
+    assert.equal(h.state.playback.index, stop, `${fixture.id} arrival ${stop}: ${h.state.location.reason}, ${JSON.stringify(h.state.stops)}`);
     h.finishStory();
   }
-  assert.deepEqual(h.state.stops, fixture.stops.map(() => 'completed'));
-  assert.deepEqual(h.plays.filter(p => p.index < fixture.stops.length).map(p => p.index), fixture.stops.map((_, i) => i));
-  assert.deepEqual(h.state.chapters, fixture.narration!.chapters.map(() => 'completed'));
-  assert.equal(h.plays.filter(p => p.index >= fixture.stops.length).length, fixture.narration!.chapters.length);
-});
+}
 
-test('prepared audio bytes and durations match manifests before any phone preparation', () => {
-  for (const { package: p } of packages) for (const story of [...p.fixture.narration!.stories, ...p.fixture.narration!.chapters]) {
-    const bytes = Buffer.from(p.assets.find(a => a.key === story.audio.key)!.base64, 'base64');
-    assert.equal(bytes.length, story.audio.bytes);
-    assert.equal(createHash('md5').update(bytes).digest('hex'), story.audio.md5);
-    assert.ok(story.audio.durationSeconds > 0);
-  }
-});
+for (const definition of packages) {
+  const { variant } = definition;
+  test(`prepared ${variant}: every ideal route arrival and walking chapter completes in order including retraced streets`, () => {
+    const fixture = loadPackage(definition).fixture, h = simulate(fixture);
+    completeThroughStop(fixture, h, fixture.stops.length - 1);
+    assert.deepEqual(h.state.stops, fixture.stops.map(() => 'completed'), `${variant}: every stop completed`);
+    assert.deepEqual(h.state.chapters, fixture.narration!.chapters.map(() => 'completed'), `${variant}: every chapter completed`);
+    const expectedPlays = fixture.stops.flatMap((_, stopIndex) => [stopIndex,
+      ...fixture.narration!.chapters.flatMap((chapter, chapterIndex) => chapter.afterStopIndex === stopIndex ? [fixture.stops.length + chapterIndex] : []),
+    ]);
+    assert.deepEqual(h.plays.map(p => p.index), expectedPlays, `${variant}: each story/chapter must play once, in the complete interleaved order`);
+  });
 
-test('prepared B: held departure and expired opportunity never force a walking chapter after the turn', () => {
-  const fixture = packages.find(p => p.variant === 'B')!.package.fixture, chapter = fixture.narration!.chapters[0], h = simulate(fixture);
-  h.send({ type: 'start', at: 0, diagnostics: false }); h.finishStory();
-  for (let stop = 1; stop <= chapter.afterStopIndex; stop++) {
-    h.walk(fixture.stops[stop - 1].routeIndex, fixture.stops[stop].routeIndex); h.dwell(fixture.stops[stop].standing); h.finishStory();
+  test(`prepared ${variant}: audio bytes and durations match manifests before any phone preparation`, () => {
+    const p = loadPackage(definition);
+    for (const story of [...p.fixture.narration!.stories, ...p.fixture.narration!.chapters]) {
+      const bytes = Buffer.from(p.assets.find(a => a.key === story.audio.key)!.base64, 'base64');
+      assert.equal(bytes.length, story.audio.bytes, `${variant}/${story.id}: audio byte count`);
+      assert.equal(createHash('md5').update(bytes).digest('hex'), story.audio.md5, `${variant}/${story.id}: audio MD5`);
+      assert.ok(Number.isFinite(story.audio.durationSeconds) && story.audio.durationSeconds > 0, `${variant}/${story.id}: finite measured duration`);
+    }
+  });
+
+  for (const [chapterIndex, chapterId] of definition.chapterIds.entries()) {
+    test(`prepared ${variant}: held departure and expired ${chapterId} never force a chapter after its opportunity`, () => {
+      const fixture = loadPackage(definition).fixture, chapter = fixture.narration!.chapters[chapterIndex], h = simulate(fixture);
+      completeThroughStop(fixture, h, chapter.afterStopIndex);
+      const playbackIndex = fixture.stops.length + chapterIndex;
+      h.send({ type: 'pause', at: h.at + 1 });
+      const heldPlays = h.plays.length;
+      h.walk(fixture.stops[chapter.afterStopIndex].routeIndex, chapter.startRouteIndex); h.dwell(fixture.route[chapter.startRouteIndex]);
+      assert.equal(h.state.playback.index, null, `${variant}/${chapterId}: departure stays silent while held`);
+      assert.equal(h.state.hold, 'manual', `${variant}/${chapterId}: departure preserves manual pause`);
+      assert.equal(h.state.chapters?.[chapterIndex], 'unplayed', `${variant}/${chapterId}: launch opportunity remains available while held`);
+      h.walk(chapter.startRouteIndex, fixture.stops[chapter.afterStopIndex + 1].routeIndex); h.dwell(fixture.stops[chapter.afterStopIndex + 1].standing);
+      assert.equal(h.state.chapters?.[chapterIndex], 'expired', `${variant}/${chapterId}: missed launch expires`);
+      assert.equal(h.state.hold, 'manual', `${variant}/${chapterId}: arrival does not release manual pause`);
+      assert.equal(h.plays.length, heldPlays, `${variant}/${chapterId}: neither chapter nor arrival plays while held`);
+      assert.equal(h.plays.some(p => p.index === playbackIndex), false, `${variant}/${chapterId}: expired chapter was never started`);
+      h.send({ type: 'resume', at: h.at + 1 });
+      assert.equal(h.state.playback.index, chapter.afterStopIndex + 1, `${variant}/${chapterId}: Resume starts the freshly reached stop`);
+      assert.equal(h.state.chapters?.[chapterIndex], 'expired', `${variant}/${chapterId}: Resume does not resurrect the missed chapter`);
+    });
   }
-  h.send({ type: 'pause', at: h.at + 1 });
-  h.walk(fixture.stops[chapter.afterStopIndex].routeIndex, chapter.startRouteIndex); h.dwell(fixture.route[chapter.startRouteIndex]);
-  assert.equal(h.state.playback.index, null); assert.equal(h.state.hold, 'manual');
-  h.walk(chapter.startRouteIndex, fixture.stops[chapter.afterStopIndex + 1].routeIndex); h.dwell(fixture.stops[chapter.afterStopIndex + 1].standing);
-  assert.equal(h.state.chapters?.[0], 'expired'); assert.equal(h.plays.some(p => p.index === fixture.stops.length), false);
-  h.send({ type: 'resume', at: h.at + 1 }); assert.equal(h.state.playback.index, chapter.afterStopIndex + 1);
-});
+}
 
 test('prepared B: latest chapter launch leaves full measured narration and navigation margin before Moss Hall turn', () => {
-  const fixture = packages.find(p => p.variant === 'B')!.package.fixture, chapter = fixture.narration!.chapters[0];
+  const fixture = loadPackage(packages.find(p => p.variant === 'B')!).fixture, chapter = fixture.narration!.chapters[0];
   // Saved B Valhalla response, leg 3, maneuver 1: turn off Alexandra Grove.
   // This is the navigation decision, earlier than the destination standing point.
   const turn = { latitude: 51.610632, longitude: -0.180452 };
@@ -92,4 +155,61 @@ test('prepared B: latest chapter launch leaves full measured narration and navig
   assert.ok(remainingMetres >= 200, `Only ${remainingMetres.toFixed(1)} m remains before turning.`);
   assert.ok(remainingMetres / 1.25 >= chapter.audio.durationSeconds + 15,
     `Narration ${chapter.audio.durationSeconds.toFixed(1)} s does not fit ${remainingMetres.toFixed(1)} m with a useful margin.`);
+});
+
+type ChapterWindow = {
+  id: string; afterStopIndex: number; startRouteIndex: number; endRouteIndex: number;
+  navigationRouteIndex: number; fastWalkingMetresPerSecond: number; marginSeconds: number;
+};
+for (const [chapterIndex, chapterId] of packages.find(p => p.variant === 'C')!.chapterIds.entries()) {
+  test(`prepared C: latest ${chapterId} launch fits measured audio and authored navigation margin`, () => {
+    const fixture = loadPackage(packages.find(p => p.variant === 'C')!).fixture;
+    const plan = JSON.parse(readFileSync('content/clerkenwell/plan.json', 'utf8')) as {
+      fixture: Pick<Fixture, 'route' | 'stops'>; chapters: ChapterWindow[];
+    };
+    assert.deepEqual(plan.fixture.route, fixture.route, 'Clerkenwell budget plan and packaged route must agree');
+    assert.deepEqual(plan.fixture.stops.map(s => s.routeIndex), fixture.stops.map(s => s.routeIndex), 'Clerkenwell budget plan and packaged stop indices must agree');
+    assert.deepEqual(plan.chapters.map(c => c.id), fixture.narration!.chapters.map(c => c.id), 'Clerkenwell plan includes each packaged chapter in order');
+    const window = plan.chapters[chapterIndex], chapter = fixture.narration!.chapters[chapterIndex];
+    for (const key of ['afterStopIndex', 'startRouteIndex', 'endRouteIndex'] as const) {
+      assert.equal(window[key], chapter[key], `${chapterId}: plan/package ${key} agrees`);
+    }
+    assert.ok(Number.isInteger(window.navigationRouteIndex) && window.navigationRouteIndex > chapter.endRouteIndex
+      && window.navigationRouteIndex <= fixture.stops[chapter.afterStopIndex + 1].routeIndex,
+    `${chapterId}: navigation decision must follow the latest launch and precede or reach the next stop`);
+    assert.ok(Number.isFinite(window.fastWalkingMetresPerSecond) && window.fastWalkingMetresPerSecond > 0,
+      `${chapterId}: explicit positive fast walking speed`);
+    assert.ok(Number.isFinite(window.marginSeconds) && window.marginSeconds >= 0, `${chapterId}: explicit nonnegative navigation margin`);
+    let remainingMetres = 0;
+    for (let i = chapter.endRouteIndex + 1; i <= window.navigationRouteIndex; i++) remainingMetres += distance(fixture.route[i - 1], fixture.route[i]);
+    // The engine starts strictly before endRouteIndex. Budget from the boundary
+    // conservatively, using the authored faster pace and the measured recording.
+    const availableSeconds = remainingMetres / window.fastWalkingMetresPerSecond;
+    assert.ok(availableSeconds >= chapter.audio.durationSeconds + window.marginSeconds,
+      `${chapterId}: latest launch leaves ${remainingMetres.toFixed(1)} m / ${availableSeconds.toFixed(1)} s at ${window.fastWalkingMetresPerSecond} m/s before navigation; audio needs ${chapter.audio.durationSeconds.toFixed(1)} s plus ${window.marginSeconds} s margin`);
+  });
+}
+
+test('prepared C: brisk 6 km/h walk with two-second fixes catches both short chapter windows in the full sequence', t => {
+  const fixture = loadPackage(packages.find(p => p.variant === 'C')!).fixture;
+  const speed = 6 / 3.6, h = simulate(fixture, { metresPerSecond: speed, fixEveryMilliseconds: 2000 });
+  completeThroughStop(fixture, h, fixture.stops.length - 1);
+  assert.deepEqual(h.plays.map(p => narrationAt(fixture, p.index)!.id), [
+    'charterhouse', 'smithfield', 'booths', 'stjohn-gate', 'green', 'many-hands', 'flowers', 'ingersoll', 'next-days-stock', 'exmouth',
+  ], 'Brisk cadence must launch each chapter once in its intended place among the eight stops');
+  assert.deepEqual(h.state.stops, fixture.stops.map(() => 'completed'), 'Brisk replay completes every stop');
+  assert.deepEqual(h.state.chapters, ['completed', 'completed'], 'Brisk replay completes both chapters');
+  const plan = JSON.parse(readFileSync('content/clerkenwell/plan.json', 'utf8')) as { chapters: ChapterWindow[] };
+  const offsets = [0];
+  for (let i = 1; i < fixture.route.length; i++) offsets.push(offsets.at(-1)! + distance(fixture.route[i - 1], fixture.route[i]));
+  for (const [index, chapter] of fixture.narration!.chapters.entries()) {
+    const play = h.plays.find(p => p.index === fixture.stops.length + index)!;
+    assert.ok(play.along !== undefined && play.along >= offsets[chapter.startRouteIndex] && play.along < offsets[chapter.endRouteIndex],
+      `${chapter.id}: brisk replay launch must fall inside its actual interval`);
+    const window = plan.chapters.find(c => c.id === chapter.id)!;
+    const reserveSeconds = (offsets[window.navigationRouteIndex] - play.along) / speed - chapter.audio.durationSeconds;
+    assert.ok(reserveSeconds >= window.marginSeconds,
+      `${chapter.id}: brisk replay leaves only ${reserveSeconds.toFixed(2)} seconds after audio before the navigation decision`);
+    t.diagnostic(`${chapter.id}: launch ${(play.along - offsets[chapter.startRouteIndex]).toFixed(2)} m into interval; ${reserveSeconds.toFixed(2)} s remain after narration before navigation`);
+  }
 });

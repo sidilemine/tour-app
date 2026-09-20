@@ -37,3 +37,7 @@ Accepted M1 background location/audio and M2 offline-map evidence remain reusabl
 ### Review completion update, 17 September
 
 Sidi requests saving/closing Review to resume the tour. The foreground Save review and resume tour action and Android Back first stop note playback/capture and save the review, then send an explicit `review-close` event through the serialized session. It resumes an active walk using the existing offset/arrival/freshness rules, without changing automatic-off or starting an ended tour. Passive unmount, background/locking, score autosave and voice-note save do not resume. This supersedes the original close-remains-paused behaviour in earlier phone evidence; no earlier listening result is relabelled.
+
+## Third authored tour, 20 September
+
+[Clerkenwell](../../content/clerkenwell/README.md) now exercises the existing player with eight stops and two walking chapters, using the selected second offline area. Exact source/audio evidence, latest-launch timing and the full ordered route replay pass; the short-window replay also uses a fixed two-second callback interval at 6 km/h. The guide-12 self-contained build includes all three tours. This authored expansion changes neither the native recorder nor the arrival/hold policy; the [combined phone session](../test-results/M2-clerkenwell-tour.md) remains pending.

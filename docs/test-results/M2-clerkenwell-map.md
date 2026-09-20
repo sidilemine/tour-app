@@ -23,3 +23,7 @@ The [Clerkenwell source record](../../assets/maps/clerkenwell/README.md) retains
 After the complete tour is bundled, verify both map archives and the exact narration bytes in the actual APK. In the single prepared phone session, cold-open the self-contained app without Metro/networking, view the Clerkenwell route and representative labels/coverage, switch to a retained Finchley tour/map and confirm saved progress remains, then return to Clerkenwell. This checks the changed area selection and native drawing. Existing resource-repair, map/audio coexistence and M1 location/audio evidence remain reusable; no new walk follows from adding another map extract alone.
 
 The complete route and walking chapters will receive their own geometry/timing replays before travel. Current street access cannot be established by the tile archive or these tests.
+
+## Complete-tour follow-through
+
+The [final Clerkenwell build](M2-clerkenwell-tour.md) now includes the narration, eight stops and two walking passages, with guide 12/source `9505427915e2d1df`. Its APK re-verifies all map resources and three tours. This supersedes the earlier local build as the handoff candidate; native drawing/selection still awaits the single combined phone session.

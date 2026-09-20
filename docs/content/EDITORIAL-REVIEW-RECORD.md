@@ -305,6 +305,18 @@ Sidi explicitly asks to preserve generous detail/raw text for later work on agen
 
 Guidance revision 14 and writing brief v4 carry this direction forward. The existing pragmatic testing policy remains in force. Detailed research and route assembly follow the selected area/promise; no full package or current access is accepted by this discussion.
 
+### 27 Complete Clerkenwell preparation and review outcomes
+
+**20 September 2026. Execution of the existing owner brief:** the [complete authoring record](authoring/clerkenwell-2026-09-20/README.md) collates the survey, source packets, selection, writer assignment, frozen V1, fresh review, final corrections and navigation check. The final package has eight exterior stops and two walking passages, all in George. Start at Charterhouse after the mapped Farringdon approach; finish at Exmouth. The relaxed 75–90-minute allowance combines movement, 14m42s of stationary speech/directions and time to look, with the walking speech concurrent. It is not a promise of ninety minutes of content or a requirement to visit interiors.
+
+**Consequential corrections:** fresh review found a buyer-attribution error in the flower stock account, an unsupported distinction between interviewers, and wording that could imply local manufacture through Ingersoll's showroom. All were corrected with matching evidence. The chapel gained a brief current church identity; repeated chair/notes-to-speech explanations were shortened while retaining the vivid material. Space EC1 gained its checked street number. These examples show why exact source links alone are insufficient and why review can improve clarity without increasing hedging.
+
+**Route/writing coordination:** an initially inappropriate Clerkenwell Road crossing was replaced with the pedestrian signals by Old Sessions House. The selected walking corridors follow mapped pavements; the final Rosoman crossing instructions were independently checked. George's actual 65.8/64.8-second clips leave 15.31/40.89-second reserves from the latest launch at 6 km/h. These are authoring budgets, not evidence of current native GPS or acoustics. Skinner remains a bus street. The records retain rejected raw routes and the difference between map/imagery candidates and actual field observations.
+
+**Technical outcome and owner burden:** [guide 12/source `9505427915e2d1df`](../test-results/M2-clerkenwell-tour.md) contains three tours, 22 audio entries and both offline map areas. All 153 automated tests and both APK builds pass. Current native dependencies remain pinned; Expo's recommended patch updates are recorded rather than introduced during this content handoff. One combined 10–12-minute phone session is prepared for the new area's drawing/selection and the already-pending headset/Spotify and review-resume observations. No new reconnaissance or repeat Finchley outing is required. A phone-connection availability question is pending; no sound will start without a separate fresh listening response.
+
+**Discussion status:** the [process lessons](authoring/clerkenwell-2026-09-20/README.md#what-this-teaches-the-process-provisionally) are coordinator observations from this execution. Sidi has not yet judged this completed tour, its reconstructed scenes, duration or walking passages. Preserve his next reactions before turning these observations into systematic guidelines. M2 remains open; neither E1 comparison nor the later automated factory has been completed by this hand-built tour.
+
 ## Questions to carry into a later systematic review
 
 - Does context before anecdote usually improve the story, and when can an immediate intriguing detail work better?
@@ -332,7 +344,7 @@ Guidance revision 14 and writing brief v4 carry this direction forward. The exis
 | Reusable place/source/story database | Explicitly planned; not implemented | Actual records and reuse requirements from the survey/two tours |
 | Systematic guidelines from these options | All 100 Word comments indexed; revision 14 and writing brief v4 incorporate direct feedback, George and the Clerkenwell brief | Try and assess the proposed selection pass within a story |
 | Pilot editorial choices | Railway-led opening preferred; warmer ending conditional on better writing; revised scripts and audio ready | Owner reaction to the revised comparisons, scenes, campaign and ending |
-| Two narrated legs in the next tour | Owner-directed editorial brief | Area/route assembly and samples that make good use of movement |
+| Two narrated legs in the next tour | Implemented in Clerkenwell; actual George timing and deterministic replays pass | How both passages launch and fit during ordinary use |
 | Authoring workshop | Sidi takes editorial lead; engineer prepares and executes | Record consequential choices and useful revisions; no permanent agent count assumed |
-| Next complete tour | Clerkenwell / Farringdon; broad survey complete; Working lives, hidden in plain sight; George; about 75–90 minutes excluding travel | Focused candidate research and route assembly with two narrated legs |
-| Editorial values and AI provenance | Owner wants an outlook and upfront disclosure | Develop values from choices; scope the eventual presentation separately |
+| Next complete tour | Clerkenwell Working lives; eight stops, two passages, George; complete package/build ready | One combined phone handoff, then enjoyment and practical feedback |
+| Editorial values and AI provenance | AI provenance visible in the Clerkenwell introduction; values still developing | Develop the outlook from actual editorial choices and feedback |

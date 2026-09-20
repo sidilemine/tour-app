@@ -1,0 +1,38 @@
+{
+  "locations": [
+    {
+      "lat": 51.52026,
+      "lon": -0.10498,
+      "type": "break"
+    },
+    {
+      "lat": 51.51983,
+      "lon": -0.1019,
+      "type": "break"
+    },
+    {
+      "lat": 51.5207,
+      "lon": -0.10039,
+      "type": "break"
+    },
+    {
+      "lat": 51.52154,
+      "lon": -0.10392,
+      "type": "break"
+    },
+    {
+      "lat": 51.52188,
+      "lon": -0.10269,
+      "type": "break"
+    }
+  ],
+  "costing": "pedestrian",
+  "costing_options": {
+    "pedestrian": {
+      "walking_speed": 4.5
+    }
+  },
+  "units": "kilometers",
+  "language": "en-GB",
+  "id": "clerkenwell-charterhouse-option"
+}

@@ -102,3 +102,7 @@ The [writing brief](WRITING-BRIEF.md), [revised survey programme](../AREA-TOUR-S
 ## Proposed method versus decisions still open
 
 The first synthesis's six roles and handoffs were proposals for the second pass, which is now complete and owner-reviewed. The [19 September response](../SECOND-PASS-REVIEW-RESPONSE.md) distinguishes accepted preferences from the proposed search budgets, story-discovery method and assembly function. Sidi will lead the next workshop. No new area, duration target, model choice, numerical confidence/digression limit or database design is selected; this review launches no full tour production or technical work.
+
+## Subsequent execution, 20 September
+
+The earlier paragraph describes the second-pass starting point. Sidi subsequently selected Clerkenwell / Farringdon, Working lives, George and about 75–90 minutes, and authorised continued preparation. The [complete authoring record](clerkenwell-2026-09-20/README.md) now preserves the survey, research, route, eight stories/two chapters, independent reviews, corrections and compiled audio. The [discussion record entry 27](../EDITORIAL-REVIEW-RECORD.md#27-complete-clerkenwell-preparation-and-review-outcomes) distinguishes these execution observations from owner enjoyment feedback still to come.

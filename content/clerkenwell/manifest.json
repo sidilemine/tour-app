@@ -1,0 +1,2300 @@
+{
+  "format": "walking-tour-package",
+  "version": 1,
+  "mapId": "clerkenwell-8f45f13ad1755318",
+  "fixture": {
+    "schemaVersion": 1,
+    "id": "clerkenwell-working-lives",
+    "version": 1,
+    "title": "Clerkenwell — Working lives, hidden in plain sight",
+    "verification": {
+      "status": "unverified",
+      "note": "Public-exterior route reviewed against saved pedestrian routing, maps, official access information and dated street imagery on 20 September 2026. Visitor positions remain desk candidates; current works, furniture, noise and sightlines have not been walked. Landmark/camera locations are not certified standing places. The route includes the written Farringdon approach before stop 1; press Start only at Charterhouse. Read the in-app approach/directions and use current pedestrian signs."
+    },
+    "route": [
+      {
+        "latitude": 51.520286,
+        "longitude": -0.104959
+      },
+      {
+        "latitude": 51.520268,
+        "longitude": -0.104963
+      },
+      {
+        "latitude": 51.520258,
+        "longitude": -0.104853
+      },
+      {
+        "latitude": 51.520312,
+        "longitude": -0.10468
+      },
+      {
+        "latitude": 51.520355,
+        "longitude": -0.104714
+      },
+      {
+        "latitude": 51.520364,
+        "longitude": -0.104684
+      },
+      {
+        "latitude": 51.52037,
+        "longitude": -0.104666
+      },
+      {
+        "latitude": 51.520341,
+        "longitude": -0.104633
+      },
+      {
+        "latitude": 51.520343,
+        "longitude": -0.104625
+      },
+      {
+        "latitude": 51.520344,
+        "longitude": -0.104619
+      },
+      {
+        "latitude": 51.520285,
+        "longitude": -0.104566
+      },
+      {
+        "latitude": 51.520204,
+        "longitude": -0.104472
+      },
+      {
+        "latitude": 51.52016,
+        "longitude": -0.104408
+      },
+      {
+        "latitude": 51.520172,
+        "longitude": -0.104388
+      },
+      {
+        "latitude": 51.520159,
+        "longitude": -0.104331
+      },
+      {
+        "latitude": 51.520141,
+        "longitude": -0.104184
+      },
+      {
+        "latitude": 51.520138,
+        "longitude": -0.104
+      },
+      {
+        "latitude": 51.520143,
+        "longitude": -0.103559
+      },
+      {
+        "latitude": 51.520145,
+        "longitude": -0.103348
+      },
+      {
+        "latitude": 51.520146,
+        "longitude": -0.103254
+      },
+      {
+        "latitude": 51.520146,
+        "longitude": -0.103189
+      },
+      {
+        "latitude": 51.520144,
+        "longitude": -0.103131
+      },
+      {
+        "latitude": 51.52013,
+        "longitude": -0.102937
+      },
+      {
+        "latitude": 51.520118,
+        "longitude": -0.102769
+      },
+      {
+        "latitude": 51.520101,
+        "longitude": -0.102504
+      },
+      {
+        "latitude": 51.520092,
+        "longitude": -0.102436
+      },
+      {
+        "latitude": 51.520087,
+        "longitude": -0.102392
+      },
+      {
+        "latitude": 51.520022,
+        "longitude": -0.10222
+      },
+      {
+        "latitude": 51.519908,
+        "longitude": -0.102097
+      },
+      {
+        "latitude": 51.519897,
+        "longitude": -0.102078
+      },
+      {
+        "latitude": 51.51988,
+        "longitude": -0.102028
+      },
+      {
+        "latitude": 51.51988,
+        "longitude": -0.101967
+      },
+      {
+        "latitude": 51.519885,
+        "longitude": -0.10186
+      },
+      {
+        "latitude": 51.519879,
+        "longitude": -0.101818
+      },
+      {
+        "latitude": 51.51987,
+        "longitude": -0.101781
+      },
+      {
+        "latitude": 51.519849,
+        "longitude": -0.101747
+      },
+      {
+        "latitude": 51.519808,
+        "longitude": -0.101728
+      },
+      {
+        "latitude": 51.519793,
+        "longitude": -0.101705
+      },
+      {
+        "latitude": 51.51982,
+        "longitude": -0.101673
+      },
+      {
+        "latitude": 51.519829,
+        "longitude": -0.101662
+      },
+      {
+        "latitude": 51.519828,
+        "longitude": -0.101656
+      },
+      {
+        "latitude": 51.519828,
+        "longitude": -0.10164
+      },
+      {
+        "latitude": 51.519832,
+        "longitude": -0.101606
+      },
+      {
+        "latitude": 51.519905,
+        "longitude": -0.101303
+      },
+      {
+        "latitude": 51.519914,
+        "longitude": -0.101267
+      },
+      {
+        "latitude": 51.519995,
+        "longitude": -0.100978
+      },
+      {
+        "latitude": 51.520012,
+        "longitude": -0.100949
+      },
+      {
+        "latitude": 51.520024,
+        "longitude": -0.100932
+      },
+      {
+        "latitude": 51.520126,
+        "longitude": -0.100853
+      },
+      {
+        "latitude": 51.520137,
+        "longitude": -0.10084
+      },
+      {
+        "latitude": 51.520147,
+        "longitude": -0.100829
+      },
+      {
+        "latitude": 51.520538,
+        "longitude": -0.10042
+      },
+      {
+        "latitude": 51.520566,
+        "longitude": -0.100399
+      },
+      {
+        "latitude": 51.520572,
+        "longitude": -0.100392
+      },
+      {
+        "latitude": 51.520549,
+        "longitude": -0.100343
+      },
+      {
+        "latitude": 51.52066,
+        "longitude": -0.100205
+      },
+      {
+        "latitude": 51.520677,
+        "longitude": -0.100181
+      },
+      {
+        "latitude": 51.520847,
+        "longitude": -0.099965
+      },
+      {
+        "latitude": 51.52088,
+        "longitude": -0.099924
+      },
+      {
+        "latitude": 51.521002,
+        "longitude": -0.099773
+      },
+      {
+        "latitude": 51.521022,
+        "longitude": -0.099735
+      },
+      {
+        "latitude": 51.521032,
+        "longitude": -0.099701
+      },
+      {
+        "latitude": 51.521022,
+        "longitude": -0.099735
+      },
+      {
+        "latitude": 51.521002,
+        "longitude": -0.099773
+      },
+      {
+        "latitude": 51.52088,
+        "longitude": -0.099924
+      },
+      {
+        "latitude": 51.520847,
+        "longitude": -0.099965
+      },
+      {
+        "latitude": 51.520677,
+        "longitude": -0.100181
+      },
+      {
+        "latitude": 51.52066,
+        "longitude": -0.100205
+      },
+      {
+        "latitude": 51.520549,
+        "longitude": -0.100343
+      },
+      {
+        "latitude": 51.520572,
+        "longitude": -0.100392
+      },
+      {
+        "latitude": 51.520566,
+        "longitude": -0.100399
+      },
+      {
+        "latitude": 51.520538,
+        "longitude": -0.10042
+      },
+      {
+        "latitude": 51.520147,
+        "longitude": -0.100829
+      },
+      {
+        "latitude": 51.520137,
+        "longitude": -0.10084
+      },
+      {
+        "latitude": 51.520126,
+        "longitude": -0.100853
+      },
+      {
+        "latitude": 51.520024,
+        "longitude": -0.100932
+      },
+      {
+        "latitude": 51.520012,
+        "longitude": -0.100949
+      },
+      {
+        "latitude": 51.519995,
+        "longitude": -0.100978
+      },
+      {
+        "latitude": 51.519914,
+        "longitude": -0.101267
+      },
+      {
+        "latitude": 51.519905,
+        "longitude": -0.101303
+      },
+      {
+        "latitude": 51.519832,
+        "longitude": -0.101606
+      },
+      {
+        "latitude": 51.519828,
+        "longitude": -0.10164
+      },
+      {
+        "latitude": 51.519828,
+        "longitude": -0.101656
+      },
+      {
+        "latitude": 51.519829,
+        "longitude": -0.101662
+      },
+      {
+        "latitude": 51.51982,
+        "longitude": -0.101673
+      },
+      {
+        "latitude": 51.519793,
+        "longitude": -0.101705
+      },
+      {
+        "latitude": 51.519772,
+        "longitude": -0.101735
+      },
+      {
+        "latitude": 51.519752,
+        "longitude": -0.101773
+      },
+      {
+        "latitude": 51.519753,
+        "longitude": -0.101803
+      },
+      {
+        "latitude": 51.519756,
+        "longitude": -0.101832
+      },
+      {
+        "latitude": 51.519758,
+        "longitude": -0.101861
+      },
+      {
+        "latitude": 51.519761,
+        "longitude": -0.101887
+      },
+      {
+        "latitude": 51.519839,
+        "longitude": -0.101871
+      },
+      {
+        "latitude": 51.519858,
+        "longitude": -0.101866
+      },
+      {
+        "latitude": 51.519885,
+        "longitude": -0.10186
+      },
+      {
+        "latitude": 51.519932,
+        "longitude": -0.101848
+      },
+      {
+        "latitude": 51.519936,
+        "longitude": -0.101848
+      },
+      {
+        "latitude": 51.519939,
+        "longitude": -0.101847
+      },
+      {
+        "latitude": 51.519991,
+        "longitude": -0.101839
+      },
+      {
+        "latitude": 51.520009,
+        "longitude": -0.101837
+      },
+      {
+        "latitude": 51.520238,
+        "longitude": -0.101831
+      },
+      {
+        "latitude": 51.520631,
+        "longitude": -0.101858
+      },
+      {
+        "latitude": 51.520654,
+        "longitude": -0.10186
+      },
+      {
+        "latitude": 51.52067,
+        "longitude": -0.101868
+      },
+      {
+        "latitude": 51.520697,
+        "longitude": -0.101886
+      },
+      {
+        "latitude": 51.520908,
+        "longitude": -0.102055
+      },
+      {
+        "latitude": 51.521052,
+        "longitude": -0.10217
+      },
+      {
+        "latitude": 51.521059,
+        "longitude": -0.102176
+      },
+      {
+        "latitude": 51.521071,
+        "longitude": -0.102186
+      },
+      {
+        "latitude": 51.52115,
+        "longitude": -0.102249
+      },
+      {
+        "latitude": 51.521291,
+        "longitude": -0.102332
+      },
+      {
+        "latitude": 51.521303,
+        "longitude": -0.102356
+      },
+      {
+        "latitude": 51.521319,
+        "longitude": -0.102348
+      },
+      {
+        "latitude": 51.521338,
+        "longitude": -0.102365
+      },
+      {
+        "latitude": 51.521364,
+        "longitude": -0.102387
+      },
+      {
+        "latitude": 51.521372,
+        "longitude": -0.10241
+      },
+      {
+        "latitude": 51.521397,
+        "longitude": -0.102404
+      },
+      {
+        "latitude": 51.521538,
+        "longitude": -0.102492
+      },
+      {
+        "latitude": 51.521581,
+        "longitude": -0.102532
+      },
+      {
+        "latitude": 51.521693,
+        "longitude": -0.102616
+      },
+      {
+        "latitude": 51.521714,
+        "longitude": -0.102641
+      },
+      {
+        "latitude": 51.521723,
+        "longitude": -0.102658
+      },
+      {
+        "latitude": 51.521726,
+        "longitude": -0.102694
+      },
+      {
+        "latitude": 51.521722,
+        "longitude": -0.102726
+      },
+      {
+        "latitude": 51.521655,
+        "longitude": -0.102995
+      },
+      {
+        "latitude": 51.521648,
+        "longitude": -0.103024
+      },
+      {
+        "latitude": 51.521623,
+        "longitude": -0.103107
+      },
+      {
+        "latitude": 51.521615,
+        "longitude": -0.103149
+      },
+      {
+        "latitude": 51.521569,
+        "longitude": -0.103363
+      },
+      {
+        "latitude": 51.521524,
+        "longitude": -0.103497
+      },
+      {
+        "latitude": 51.521501,
+        "longitude": -0.103549
+      },
+      {
+        "latitude": 51.52144,
+        "longitude": -0.103697
+      },
+      {
+        "latitude": 51.52142,
+        "longitude": -0.103742
+      },
+      {
+        "latitude": 51.521423,
+        "longitude": -0.103756
+      },
+      {
+        "latitude": 51.521441,
+        "longitude": -0.103778
+      },
+      {
+        "latitude": 51.521464,
+        "longitude": -0.103802
+      },
+      {
+        "latitude": 51.521471,
+        "longitude": -0.103801
+      },
+      {
+        "latitude": 51.521471,
+        "longitude": -0.103805
+      },
+      {
+        "latitude": 51.521474,
+        "longitude": -0.103823
+      },
+      {
+        "latitude": 51.521546,
+        "longitude": -0.103906
+      },
+      {
+        "latitude": 51.521474,
+        "longitude": -0.103823
+      },
+      {
+        "latitude": 51.521471,
+        "longitude": -0.103805
+      },
+      {
+        "latitude": 51.521471,
+        "longitude": -0.103801
+      },
+      {
+        "latitude": 51.521472,
+        "longitude": -0.103776
+      },
+      {
+        "latitude": 51.521552,
+        "longitude": -0.103528
+      },
+      {
+        "latitude": 51.521727,
+        "longitude": -0.102979
+      },
+      {
+        "latitude": 51.521813,
+        "longitude": -0.102679
+      },
+      {
+        "latitude": 51.52181,
+        "longitude": -0.102673
+      },
+      {
+        "latitude": 51.521783,
+        "longitude": -0.102652
+      },
+      {
+        "latitude": 51.521793,
+        "longitude": -0.10262
+      },
+      {
+        "latitude": 51.521914,
+        "longitude": -0.102701
+      },
+      {
+        "latitude": 51.521936,
+        "longitude": -0.102713
+      },
+      {
+        "latitude": 51.521972,
+        "longitude": -0.102736
+      },
+      {
+        "latitude": 51.522038,
+        "longitude": -0.10278
+      },
+      {
+        "latitude": 51.522075,
+        "longitude": -0.102808
+      },
+      {
+        "latitude": 51.522112,
+        "longitude": -0.102848
+      },
+      {
+        "latitude": 51.522178,
+        "longitude": -0.10292
+      },
+      {
+        "latitude": 51.521978,
+        "longitude": -0.103609
+      },
+      {
+        "latitude": 51.521951,
+        "longitude": -0.103701
+      },
+      {
+        "latitude": 51.52192,
+        "longitude": -0.103753
+      },
+      {
+        "latitude": 51.521917,
+        "longitude": -0.10376
+      },
+      {
+        "latitude": 51.521817,
+        "longitude": -0.104007
+      },
+      {
+        "latitude": 51.521766,
+        "longitude": -0.104125
+      },
+      {
+        "latitude": 51.521757,
+        "longitude": -0.104145
+      },
+      {
+        "latitude": 51.52178,
+        "longitude": -0.104171
+      },
+      {
+        "latitude": 51.521991,
+        "longitude": -0.1044
+      },
+      {
+        "latitude": 51.522094,
+        "longitude": -0.104522
+      },
+      {
+        "latitude": 51.522158,
+        "longitude": -0.104613
+      },
+      {
+        "latitude": 51.522207,
+        "longitude": -0.104682
+      },
+      {
+        "latitude": 51.522281,
+        "longitude": -0.104761
+      },
+      {
+        "latitude": 51.522318,
+        "longitude": -0.104795
+      },
+      {
+        "latitude": 51.522357,
+        "longitude": -0.104811
+      },
+      {
+        "latitude": 51.522354,
+        "longitude": -0.104833
+      },
+      {
+        "latitude": 51.522341,
+        "longitude": -0.104927
+      },
+      {
+        "latitude": 51.52233,
+        "longitude": -0.105014
+      },
+      {
+        "latitude": 51.522326,
+        "longitude": -0.105042
+      },
+      {
+        "latitude": 51.522197,
+        "longitude": -0.105963
+      },
+      {
+        "latitude": 51.522208,
+        "longitude": -0.105967
+      },
+      {
+        "latitude": 51.522262,
+        "longitude": -0.105983
+      },
+      {
+        "latitude": 51.52231,
+        "longitude": -0.105996
+      },
+      {
+        "latitude": 51.522328,
+        "longitude": -0.106004
+      },
+      {
+        "latitude": 51.522315,
+        "longitude": -0.1061
+      },
+      {
+        "latitude": 51.522318,
+        "longitude": -0.106149
+      },
+      {
+        "latitude": 51.522388,
+        "longitude": -0.10617
+      },
+      {
+        "latitude": 51.522544,
+        "longitude": -0.106317
+      },
+      {
+        "latitude": 51.522559,
+        "longitude": -0.106326
+      },
+      {
+        "latitude": 51.522572,
+        "longitude": -0.106337
+      },
+      {
+        "latitude": 51.522593,
+        "longitude": -0.106348
+      },
+      {
+        "latitude": 51.522701,
+        "longitude": -0.106355
+      },
+      {
+        "latitude": 51.522706,
+        "longitude": -0.106338
+      },
+      {
+        "latitude": 51.522842,
+        "longitude": -0.105895
+      },
+      {
+        "latitude": 51.522939,
+        "longitude": -0.105639
+      },
+      {
+        "latitude": 51.522941,
+        "longitude": -0.105635
+      },
+      {
+        "latitude": 51.523034,
+        "longitude": -0.10541
+      },
+      {
+        "latitude": 51.523043,
+        "longitude": -0.105391
+      },
+      {
+        "latitude": 51.52308,
+        "longitude": -0.105311
+      },
+      {
+        "latitude": 51.523091,
+        "longitude": -0.105269
+      },
+      {
+        "latitude": 51.523096,
+        "longitude": -0.10525
+      },
+      {
+        "latitude": 51.523197,
+        "longitude": -0.105348
+      },
+      {
+        "latitude": 51.523312,
+        "longitude": -0.105488
+      },
+      {
+        "latitude": 51.52337,
+        "longitude": -0.105588
+      },
+      {
+        "latitude": 51.523383,
+        "longitude": -0.105666
+      },
+      {
+        "latitude": 51.52338,
+        "longitude": -0.10571
+      },
+      {
+        "latitude": 51.52338,
+        "longitude": -0.105716
+      },
+      {
+        "latitude": 51.523382,
+        "longitude": -0.105804
+      },
+      {
+        "latitude": 51.523375,
+        "longitude": -0.105922
+      },
+      {
+        "latitude": 51.523349,
+        "longitude": -0.106052
+      },
+      {
+        "latitude": 51.52333,
+        "longitude": -0.106117
+      },
+      {
+        "latitude": 51.523329,
+        "longitude": -0.106183
+      },
+      {
+        "latitude": 51.52334,
+        "longitude": -0.106224
+      },
+      {
+        "latitude": 51.523521,
+        "longitude": -0.106435
+      },
+      {
+        "latitude": 51.523658,
+        "longitude": -0.106594
+      },
+      {
+        "latitude": 51.523689,
+        "longitude": -0.10663
+      },
+      {
+        "latitude": 51.523743,
+        "longitude": -0.106677
+      },
+      {
+        "latitude": 51.523782,
+        "longitude": -0.106676
+      },
+      {
+        "latitude": 51.523806,
+        "longitude": -0.10665
+      },
+      {
+        "latitude": 51.52383,
+        "longitude": -0.106622
+      },
+      {
+        "latitude": 51.52388,
+        "longitude": -0.106547
+      },
+      {
+        "latitude": 51.523925,
+        "longitude": -0.106499
+      },
+      {
+        "latitude": 51.524033,
+        "longitude": -0.106401
+      },
+      {
+        "latitude": 51.524118,
+        "longitude": -0.106296
+      },
+      {
+        "latitude": 51.524126,
+        "longitude": -0.106216
+      },
+      {
+        "latitude": 51.524136,
+        "longitude": -0.106226
+      },
+      {
+        "latitude": 51.524144,
+        "longitude": -0.106206
+      },
+      {
+        "latitude": 51.524155,
+        "longitude": -0.106216
+      },
+      {
+        "latitude": 51.524159,
+        "longitude": -0.10622
+      },
+      {
+        "latitude": 51.52423,
+        "longitude": -0.106055
+      },
+      {
+        "latitude": 51.524292,
+        "longitude": -0.10591
+      },
+      {
+        "latitude": 51.52438,
+        "longitude": -0.105701
+      },
+      {
+        "latitude": 51.524414,
+        "longitude": -0.105619
+      },
+      {
+        "latitude": 51.524403,
+        "longitude": -0.105522
+      },
+      {
+        "latitude": 51.524757,
+        "longitude": -0.104804
+      },
+      {
+        "latitude": 51.524751,
+        "longitude": -0.104793
+      },
+      {
+        "latitude": 51.524736,
+        "longitude": -0.104772
+      },
+      {
+        "latitude": 51.524753,
+        "longitude": -0.104737
+      },
+      {
+        "latitude": 51.524574,
+        "longitude": -0.104526
+      },
+      {
+        "latitude": 51.524451,
+        "longitude": -0.104553
+      },
+      {
+        "latitude": 51.524446,
+        "longitude": -0.104492
+      },
+      {
+        "latitude": 51.524436,
+        "longitude": -0.104428
+      },
+      {
+        "latitude": 51.524432,
+        "longitude": -0.10442
+      },
+      {
+        "latitude": 51.52441,
+        "longitude": -0.10444
+      },
+      {
+        "latitude": 51.524391,
+        "longitude": -0.104454
+      },
+      {
+        "latitude": 51.524395,
+        "longitude": -0.10442
+      },
+      {
+        "latitude": 51.524383,
+        "longitude": -0.104385
+      },
+      {
+        "latitude": 51.524349,
+        "longitude": -0.104348
+      },
+      {
+        "latitude": 51.524136,
+        "longitude": -0.104096
+      },
+      {
+        "latitude": 51.524088,
+        "longitude": -0.104042
+      },
+      {
+        "latitude": 51.524136,
+        "longitude": -0.104096
+      },
+      {
+        "latitude": 51.524349,
+        "longitude": -0.104348
+      },
+      {
+        "latitude": 51.524383,
+        "longitude": -0.104385
+      },
+      {
+        "latitude": 51.524395,
+        "longitude": -0.10442
+      },
+      {
+        "latitude": 51.524391,
+        "longitude": -0.104454
+      },
+      {
+        "latitude": 51.52441,
+        "longitude": -0.10444
+      },
+      {
+        "latitude": 51.524432,
+        "longitude": -0.10442
+      },
+      {
+        "latitude": 51.524443,
+        "longitude": -0.104411
+      },
+      {
+        "latitude": 51.524453,
+        "longitude": -0.104396
+      },
+      {
+        "latitude": 51.524471,
+        "longitude": -0.104417
+      },
+      {
+        "latitude": 51.524525,
+        "longitude": -0.104443
+      },
+      {
+        "latitude": 51.524625,
+        "longitude": -0.104453
+      },
+      {
+        "latitude": 51.524978,
+        "longitude": -0.10444
+      },
+      {
+        "latitude": 51.525272,
+        "longitude": -0.104388
+      },
+      {
+        "latitude": 51.525353,
+        "longitude": -0.104352
+      },
+      {
+        "latitude": 51.525416,
+        "longitude": -0.104299
+      },
+      {
+        "latitude": 51.525448,
+        "longitude": -0.104272
+      },
+      {
+        "latitude": 51.525454,
+        "longitude": -0.104267
+      },
+      {
+        "latitude": 51.525468,
+        "longitude": -0.104255
+      },
+      {
+        "latitude": 51.52547,
+        "longitude": -0.104237
+      },
+      {
+        "latitude": 51.525475,
+        "longitude": -0.104192
+      },
+      {
+        "latitude": 51.525487,
+        "longitude": -0.104194
+      },
+      {
+        "latitude": 51.5255,
+        "longitude": -0.104196
+      },
+      {
+        "latitude": 51.525531,
+        "longitude": -0.104206
+      },
+      {
+        "latitude": 51.525548,
+        "longitude": -0.104209
+      },
+      {
+        "latitude": 51.525702,
+        "longitude": -0.104158
+      },
+      {
+        "latitude": 51.5257,
+        "longitude": -0.104144
+      },
+      {
+        "latitude": 51.52569,
+        "longitude": -0.104074
+      },
+      {
+        "latitude": 51.525679,
+        "longitude": -0.103993
+      },
+      {
+        "latitude": 51.525677,
+        "longitude": -0.10398
+      },
+      {
+        "latitude": 51.525636,
+        "longitude": -0.103994
+      },
+      {
+        "latitude": 51.525511,
+        "longitude": -0.103997
+      },
+      {
+        "latitude": 51.525636,
+        "longitude": -0.103994
+      },
+      {
+        "latitude": 51.525677,
+        "longitude": -0.10398
+      },
+      {
+        "latitude": 51.525679,
+        "longitude": -0.103993
+      },
+      {
+        "latitude": 51.52569,
+        "longitude": -0.104074
+      },
+      {
+        "latitude": 51.5257,
+        "longitude": -0.104144
+      },
+      {
+        "latitude": 51.525702,
+        "longitude": -0.104158
+      },
+      {
+        "latitude": 51.525732,
+        "longitude": -0.104217
+      },
+      {
+        "latitude": 51.525744,
+        "longitude": -0.104207
+      },
+      {
+        "latitude": 51.525793,
+        "longitude": -0.104204
+      },
+      {
+        "latitude": 51.525843,
+        "longitude": -0.104202
+      },
+      {
+        "latitude": 51.525855,
+        "longitude": -0.1042
+      },
+      {
+        "latitude": 51.525853,
+        "longitude": -0.104217
+      },
+      {
+        "latitude": 51.525846,
+        "longitude": -0.104279
+      },
+      {
+        "latitude": 51.525839,
+        "longitude": -0.104329
+      },
+      {
+        "latitude": 51.525833,
+        "longitude": -0.104371
+      },
+      {
+        "latitude": 51.525816,
+        "longitude": -0.104522
+      },
+      {
+        "latitude": 51.525778,
+        "longitude": -0.104765
+      },
+      {
+        "latitude": 51.525746,
+        "longitude": -0.105036
+      },
+      {
+        "latitude": 51.525749,
+        "longitude": -0.105166
+      },
+      {
+        "latitude": 51.525772,
+        "longitude": -0.105456
+      },
+      {
+        "latitude": 51.525776,
+        "longitude": -0.105514
+      },
+      {
+        "latitude": 51.525811,
+        "longitude": -0.105683
+      },
+      {
+        "latitude": 51.525823,
+        "longitude": -0.105731
+      },
+      {
+        "latitude": 51.525864,
+        "longitude": -0.105856
+      },
+      {
+        "latitude": 51.525929,
+        "longitude": -0.106013
+      },
+      {
+        "latitude": 51.52615,
+        "longitude": -0.106453
+      },
+      {
+        "latitude": 51.526249,
+        "longitude": -0.106668
+      },
+      {
+        "latitude": 51.526266,
+        "longitude": -0.106714
+      },
+      {
+        "latitude": 51.526277,
+        "longitude": -0.10676
+      },
+      {
+        "latitude": 51.526294,
+        "longitude": -0.106946
+      },
+      {
+        "latitude": 51.526299,
+        "longitude": -0.107098
+      },
+      {
+        "latitude": 51.526306,
+        "longitude": -0.107297
+      },
+      {
+        "latitude": 51.526311,
+        "longitude": -0.10736
+      },
+      {
+        "latitude": 51.526315,
+        "longitude": -0.107395
+      },
+      {
+        "latitude": 51.526324,
+        "longitude": -0.107446
+      },
+      {
+        "latitude": 51.526343,
+        "longitude": -0.107493
+      },
+      {
+        "latitude": 51.526453,
+        "longitude": -0.107662
+      },
+      {
+        "latitude": 51.526415,
+        "longitude": -0.10775
+      },
+      {
+        "latitude": 51.526395,
+        "longitude": -0.107802
+      },
+      {
+        "latitude": 51.526383,
+        "longitude": -0.107833
+      },
+      {
+        "latitude": 51.526413,
+        "longitude": -0.107865
+      },
+      {
+        "latitude": 51.526425,
+        "longitude": -0.107938
+      },
+      {
+        "latitude": 51.526425,
+        "longitude": -0.107988
+      },
+      {
+        "latitude": 51.526424,
+        "longitude": -0.108006
+      },
+      {
+        "latitude": 51.526406,
+        "longitude": -0.108034
+      },
+      {
+        "latitude": 51.526396,
+        "longitude": -0.108053
+      },
+      {
+        "latitude": 51.526315,
+        "longitude": -0.108206
+      },
+      {
+        "latitude": 51.526279,
+        "longitude": -0.10827
+      },
+      {
+        "latitude": 51.526217,
+        "longitude": -0.108383
+      },
+      {
+        "latitude": 51.526087,
+        "longitude": -0.10866
+      },
+      {
+        "latitude": 51.525908,
+        "longitude": -0.109035
+      },
+      {
+        "latitude": 51.525802,
+        "longitude": -0.109264
+      },
+      {
+        "latitude": 51.525779,
+        "longitude": -0.109303
+      },
+      {
+        "latitude": 51.525656,
+        "longitude": -0.109524
+      }
+    ],
+    "stops": [
+      {
+        "id": "charterhouse",
+        "title": "Charterhouse",
+        "standing": {
+          "latitude": 51.52103,
+          "longitude": -0.0997
+        },
+        "routeIndex": 61,
+        "approach": "Use the Farringdon exit onto Cowcross Street. Follow Cowcross Street east to St John Street, then the public Charterhouse Street pavement towards Charterhouse Square. Follow the square’s western street edge past Malmaison to the Charterhouse frontage on the north side. Keep to the public street; do not enter the private Charterhouse Mews passage or university campus.",
+        "viewpoint": "Stop clear of the north-side entrances, with the Charterhouse buildings in view. Start the tour here; the first story plays immediately.",
+        "access": "Exterior story; no ticket or garden entry needed. This is a residential community. The garden and visitor rooms have separate hours and may close."
+      },
+      {
+        "id": "smithfield",
+        "title": "Smithfield Market",
+        "standing": {
+          "latitude": 51.51983,
+          "longitude": -0.1019
+        },
+        "routeIndex": 92,
+        "approach": "Return along the western side of Charterhouse Square, then follow Charterhouse Street towards the meat-market halls.",
+        "viewpoint": "Use the north pavement of Charterhouse Street, looking across towards the East/West Meat Market frontage near Grand Avenue. Stay clear of crossings and loading entrances.",
+        "access": "The tour stays outside. Trading is principally overnight on weekdays. Follow current works signs; the proposed point is a desk candidate, not a claim about today’s barriers."
+      },
+      {
+        "id": "booths",
+        "title": "Booth’s panels, 25 Britton Street",
+        "standing": {
+          "latitude": 51.52154,
+          "longitude": -0.10388
+        },
+        "routeIndex": 139,
+        "approach": "From Smithfield take St John Street north, then St John’s Lane towards the Gate. Turn west into Briset Street just before the Gate, then north into Britton Street.",
+        "viewpoint": "On the east pavement opposite number 25, look high below the cornice for five pale reliefs among the brick and stone. Trees may hide some; adjust along the same pavement without stepping into the road.",
+        "access": "No entry required. The opposite pavement is narrow: keep doors and passing space clear."
+      },
+      {
+        "id": "stjohn-gate",
+        "title": "St John’s Gate",
+        "standing": {
+          "latitude": 51.52185,
+          "longitude": -0.10266
+        },
+        "routeIndex": 150,
+        "approach": "Retrace Britton Street to Briset Street, turn east along Briset, then towards the Gate on St John’s Lane.",
+        "viewpoint": "Stand to one side of the southern paved approach and look towards the arch. Keep its through-route and museum door clear.",
+        "access": "Exterior story. Museum and guided rooms have separate hours. Use current signs if roof works affect the approach."
+      },
+      {
+        "id": "green",
+        "title": "Clerkenwell Green",
+        "standing": {
+          "latitude": 51.52291,
+          "longitude": -0.10559
+        },
+        "routeIndex": 191,
+        "approach": "Pass through the Gate, turn west through St John’s Square and St John’s Path to Britton Street, then north. Follow the south pavement of Clerkenwell Road west to the pedestrian signals beside Old Sessions House. Cross at those signals, then go around the Sessions House towards the Green.",
+        "viewpoint": "From public space on the Green, face the white frontage and red door of the Marx Memorial Library at 37a. Stop clear of café tables and through-routes.",
+        "access": "The 2024 layout differs from old imagery. Follow current paving and works signs; there is no need to enter the library."
+      },
+      {
+        "id": "flowers",
+        "title": "Woodbridge Chapel",
+        "standing": {
+          "latitude": 51.52408,
+          "longitude": -0.10404
+        },
+        "routeIndex": 246,
+        "approach": "Leave the Green by Clerkenwell Close. Follow the Close around the churchyard. At the Three Kings, follow Clerkenwell Close as it bends right, leaving the branch to the left. Turn right into Sans Walk. Follow Sans Walk to Woodbridge Street and turn right. At the Sekforde Street junction, continue down Woodbridge Street to the chapel.",
+        "viewpoint": "Use a clear place on the opposite/northeast pavement. Look across for the brick chapel and white CLERKENWELL MEDICAL MISSION fascia.",
+        "access": "Both pavements are narrow; keep doors and driveways clear. Current church use does not imply access to the former workroom."
+      },
+      {
+        "id": "ingersoll",
+        "title": "Ingersoll, St John Street",
+        "standing": {
+          "latitude": 51.52551,
+          "longitude": -0.10395
+        },
+        "routeIndex": 278,
+        "approach": "Retrace Woodbridge Street northwest to Sekforde Street. Take Sekforde north to St John Street, then use the nearby pedestrian signals to reach the opposite/east pavement. Return a short distance south to see the frontage.",
+        "viewpoint": "From the east pavement, look across and up towards the green and cream Ingersoll lettering at 223–227 St John Street. Stay clear of the Sekforde corner and the crossing landing.",
+        "access": "Exterior view; no building entry. Use the signals rather than crossing directly from the Sekforde mouth."
+      },
+      {
+        "id": "exmouth",
+        "title": "Exmouth Market",
+        "standing": {
+          "latitude": 51.52566,
+          "longitude": -0.10953
+        },
+        "routeIndex": 332,
+        "approach": "From the Ingersoll view return north to the signals. Complete the crossings to Skinner Street’s north pavement, then follow Skinner west to Rosoman Street. Use the zebra crossing to cross Rosoman Street. On the far pavement, turn right for a few steps, then left into Exmouth Market.",
+        "viewpoint": "Continue southwest along Exmouth to the church/Spafield Street area opposite the green-tiled Exmouth Arms. Stop on a clear pavement edge, away from entrances and deliveries. Space EC1 is number 25; GAIL’s is 33–35.",
+        "access": "This remains a working street with deliveries and café tables. Weekday market pitches and individual businesses have different hours. No purchase or interior is required."
+      }
+    ],
+    "narration": {
+      "description": "Eight stops and two short walking stories, from the Charterhouse to Exmouth Market: markets, print, flower-making and the watch trade. George throughout. About 2.75 km including the Farringdon approach; allow 75–90 minutes at a leisurely pace.",
+      "introduction": "Begin at the Charterhouse exterior on the north side of Charterhouse Square, beyond Malmaison. From Farringdon, use the Cowcross Street exit; the map includes a roughly 7-minute public-street approach via Cowcross Street and Charterhouse Street. Read stop 1’s approach before setting off. Press Start only when you reach the Charterhouse: its story plays immediately. Eight exterior stops lead to Exmouth Market, with two short passages during the walk. Keep narration automatic for arrivals, or use I’m here / play story when needed. No building entry or purchase is required. This is an AI-created tour, researched against the sources saved with each story, with George’s synthetic narration.",
+      "finishInstructions": "The tour ends on Exmouth Market. Tap End tour / stop location before settling down or heading home. For Farringdon, allow about 12–15 minutes: continue southwest to Vineyard Walk, follow it to Farringdon Road, then head south and turn towards the Cowcross Street station entrance, using pedestrian crossings. For Angel, allow about 15–18 minutes: return northeast along Exmouth to Rosoman Street, go north to Rosebery Avenue, follow it east to St John Street, then north towards the signed station entrance. These return walks are additional to the tour; there is no automatic rerouting.",
+      "reviewNote": "Enjoy the walk first. A note at every stop is optional. The most useful feedback is what stayed with you, what place changed in your eyes, what dragged or confused you, and how the two walking passages fitted the walk. Review pauses narration; saving and closing it resumes an active tour. For dependable notes use Phone microphone and speak near the phone; Bluetooth microphone quality is still under investigation.",
+      "rightsNote": "Original AI-assisted research, writing and local Kokoro George synthesis for Sidi’s private review. No paid or live generation during playback. Kokoro model/runtime provenance is retained with the preparation record; model Apache-2.0. Historical sources are linked per story; reconstruction is identified in its evidence. No third-party photographs or Street View images are bundled. Route/map data © OpenStreetMap contributors, ODbL, with Protomaps map attribution available on the map. Public distribution is a separate decision.",
+      "stories": [
+        {
+          "id": "charterhouse",
+          "title": "A home within history",
+          "transcript": "Welcome to Clerkenwell. Our walk follows people who made a living here, through markets, workshops and printing rooms. We begin with somewhere to live: the Charterhouse.\n\nThese buildings have been a monastery, a grand Tudor mansion, and a charitable home. In 1611, Thomas Sutton, a wealthy businessman and civil servant, bought the mansion to establish a foundation for older people and schoolboys. He died that year, leaving others to put the plan into practice.\n\nThe governors made provision for eighty pensioners. Admission meant passing some very particular tests: an applicant had to be an unmarried man over fifty, or over forty if disabled, with references for his character and religious beliefs. Need opened the conversation; the governors decided who could come in.\n\nThe residents became known as Brothers. The name survives, although today it includes women. The charity now provides housing and support for independent living to people aged sixty and over who have financial, housing and social needs.\n\nSo the next chapter of the Charterhouse is also an ordinary one: people making a home. As we set out to find the work hidden in these streets, keep that living community in mind. For some Londoners, this extraordinary piece of history is their address.\n\nFor Smithfield, return along the western side of Charterhouse Square, then follow Charterhouse Street towards the covered meat-market halls. Our next stop is on the north pavement, looking across towards the market near Grand Avenue.",
+          "sources": [
+            {
+              "title": "The Charterhouse — History",
+              "url": "https://thecharterhouse.org/explore-the-charterhouse/history/"
+            },
+            {
+              "title": "London Museum — A history of the London Charterhouse",
+              "url": "https://www.londonmuseum.org.uk/collections/london-stories/history-london-charterhouse/"
+            }
+          ],
+          "evidence": [
+            {
+              "paragraph": "Welcome to Clerkenwell. Our walk follows people who made a living here, through markets, workshops and printing rooms. We begin with somewhere to live: the Charterhouse.",
+              "kind": "source_checked",
+              "basis": "A-C01/A-C03: site identification and continuing residential purpose. The rest is the editorial promise of the selected route, not an additional historical claim.",
+              "sourceUrls": [
+                "https://thecharterhouse.org/explore-the-charterhouse/history/"
+              ]
+            },
+            {
+              "paragraph": "These buildings have been a monastery, a grand Tudor mansion, and a charitable home. In 1611, Thomas Sutton, a wealthy businessman and civil servant, bought the mansion to establish a foundation for older people and schoolboys. He died that year, leaving others to put the plan into practice.",
+              "kind": "source_checked",
+              "basis": "A-C01 and A-S01/A-S03: institutional sequence, Sutton’s identity, purchase, death and intended foundation. Brief bearings omit the executions, royal visits and full school history.",
+              "sourceUrls": [
+                "https://thecharterhouse.org/explore-the-charterhouse/history/",
+                "https://www.londonmuseum.org.uk/collections/london-stories/history-london-charterhouse/"
+              ]
+            },
+            {
+              "paragraph": "The governors made provision for eighty pensioners. Admission meant passing some very particular tests: an applicant had to be an unmarried man over fifty, or over forty if disabled, with references for his character and religious beliefs. Need opened the conversation; the governors decided who could come in.",
+              "kind": "supported_reconstruction",
+              "basis": "A-C01/A-C02: 1613 provision and eligibility rules. The final sentence interprets the selective scheme; it invents no interview, individual applicant or rejection. Historical eligibility language is paraphrased, not applied to residents now.",
+              "sourceUrls": [
+                "https://thecharterhouse.org/explore-the-charterhouse/history/"
+              ]
+            },
+            {
+              "paragraph": "The residents became known as Brothers. The name survives, although today it includes women. The charity now provides housing and support for independent living to people aged sixty and over who have financial, housing and social needs.",
+              "kind": "source_checked",
+              "basis": "A-C03: current institution’s description, checked 20 September 2026; corroborated by A-S03. This is the stated provision, not testimony about every resident’s experience.",
+              "sourceUrls": [
+                "https://thecharterhouse.org/explore-the-charterhouse/history/",
+                "https://www.londonmuseum.org.uk/collections/london-stories/history-london-charterhouse/"
+              ]
+            },
+            {
+              "paragraph": "So the next chapter of the Charterhouse is also an ordinary one: people making a home. As we set out to find the work hidden in these streets, keep that living community in mind. For some Londoners, this extraordinary piece of history is their address.",
+              "kind": "supported_reconstruction",
+              "basis": "A-C03 supports the living residential community. Closing interpretation connects it to the walk without claiming access to residents’ private lives or requiring an interior visit.",
+              "sourceUrls": [
+                "https://www.londonmuseum.org.uk/collections/london-stories/history-london-charterhouse/"
+              ]
+            },
+            {
+              "paragraph": "For Smithfield, return along the western side of Charterhouse Square, then follow Charterhouse Street towards the covered meat-market halls. Our next stop is on the north pavement, looking across towards the market near Grand Avenue.",
+              "kind": "editorial",
+              "basis": "Literal transition authored from the selected public route, named streets, official access information and dated imagery in docs/content/authoring/clerkenwell-2026-09-20/ROUTE-RESEARCH.md. Desk-reviewed on 20 September 2026; current pedestrian signs and conditions take precedence. No historical inference establishes safe access.",
+              "sourceUrls": []
+            }
+          ],
+          "directions": [
+            "Return along the western side of Charterhouse Square, then follow Charterhouse Street towards the meat-market halls.",
+            "Use the north pavement of Charterhouse Street, looking across towards the East/West Meat Market frontage near Grand Avenue. Stay clear of crossings and loading entrances."
+          ],
+          "audio": {
+            "key": "clerkenwell-working-lives-charterhouse",
+            "bytes": 867078,
+            "md5": "45794bed700b522503228c49497edfa3",
+            "durationSeconds": 100.5
+          }
+        },
+        {
+          "id": "smithfield",
+          "title": "A working day before yours",
+          "transcript": "Smithfield keeps a different clock. The meat market’s advertised weekday hours run from midnight to seven in the morning. A daytime visitor arrives after much of the business has happened. These great covered halls make more sense when you picture them at the other end of the night.\n\nImagine a delivery here in the nineteen-seventies. Porters in blue overalls and white caps unload the lorry. Other porters, called pitchers, carry the meat into the market. Once a buyer has made a purchase, another worker, a bummaree, is paid to take it out again. One load passes through a sequence of jobs.\n\nThe porters were self-employed, licensed by the City, and paid according to how much they carried. Their arm badges identified them. Moving meat was a livelihood with its own rules and rights; even the market’s tenants had to employ the porters to shift it.\n\nThe night shift gave customers time to get their purchases ready for sale that same day. Some nearby pubs served workers finishing their shift. For someone finishing work here, a drink early in the morning could be the end of the day.\n\nIn the nineteen-nineties, overhead rails changed the handling of carcasses, and a settlement ended the porters’ exclusive right to move the meat. The work has kept changing. So has the future of the buildings.\n\nLondon Museum is due to open in the former General Market on the twenty-eighth of November, 2026. Meat trading continues in other halls, with traders expected to remain here until at least 2028 while a proposed move to the Royal Docks goes through approvals. For now, Smithfield holds two different futures alongside one another.\n\nNext are carved panels in Britton Street. Take St John Street north, then St John’s Lane towards the Gate. Just before the Gate, turn left into Briset Street, then right into Britton Street. Look across towards number twenty-five.",
+          "sources": [
+            {
+              "title": "Smithfield Market Tenants’ Association — Contact and opening hours",
+              "url": "https://smithfieldmarket.com/contact/"
+            },
+            {
+              "title": "London Museum — The history of Smithfield Market",
+              "url": "https://www.londonmuseum.org.uk/collections/london-stories/history-smithfield-market/"
+            },
+            {
+              "title": "London Museum — Porter’s Badge from Smithfield Meat Market, 1977",
+              "url": "https://www.londonmuseum.org.uk/collections/v/object-45167/porters-badge-from-smithfield-meat-market/"
+            },
+            {
+              "title": "London Museum — Announced Smithfield opening, 28 November 2026",
+              "url": "https://www.londonmuseum.org.uk/about/press/press-releases/london-museum-smithfield-will-open-doors/"
+            },
+            {
+              "title": "City of London — The future of Smithfield and Billingsgate Markets",
+              "url": "https://www.cityoflondon.gov.uk/supporting-businesses/wholesale-markets/the-future-of-smithfield-and-billingsgate-markets"
+            }
+          ],
+          "evidence": [
+            {
+              "paragraph": "Smithfield keeps a different clock. The meat market’s advertised weekday hours run from midnight to seven in the morning. A daytime visitor arrives after much of the business has happened. These great covered halls make more sense when you picture them at the other end of the night.",
+              "kind": "supported_reconstruction",
+              "basis": "S-C05/S-S04: current advertised hours, checked 20 September 2026. S-C01/S-S01 supplies covered meat-market context. The visitor comparison is an inference from those hours; it promises neither current bustle nor access inside.",
+              "sourceUrls": [
+                "https://smithfieldmarket.com/contact/",
+                "https://www.londonmuseum.org.uk/collections/london-stories/history-smithfield-market/"
+              ]
+            },
+            {
+              "paragraph": "Imagine a delivery here in the nineteen-seventies. Porters in blue overalls and white caps unload the lorry. Other porters, called pitchers, carry the meat into the market. Once a buyer has made a purchase, another worker, a bummaree, is paid to take it out again. One load passes through a sequence of jobs.",
+              "kind": "supported_reconstruction",
+              "basis": "S-C02/S-S02: dated reconstruction from the museum’s 1977 badge record. Clothing, distinct carrying jobs and buyers paying bummarees are documented. No named person, dialogue, individual delivery or exact pace is invented.",
+              "sourceUrls": [
+                "https://www.londonmuseum.org.uk/collections/v/object-45167/porters-badge-from-smithfield-meat-market/"
+              ]
+            },
+            {
+              "paragraph": "The porters were self-employed, licensed by the City, and paid according to how much they carried. Their arm badges identified them. Moving meat was a livelihood with its own rules and rights; even the market’s tenants had to employ the porters to shift it.",
+              "kind": "source_checked",
+              "basis": "S-C02/S-S02: the historical licensed porter system, paid by quantity, with tenants forbidden to move goods themselves. This paragraph continues the clearly dated scene; it is not a statement of present rules.",
+              "sourceUrls": [
+                "https://www.londonmuseum.org.uk/collections/v/object-45167/porters-badge-from-smithfield-meat-market/"
+              ]
+            },
+            {
+              "paragraph": "The night shift gave customers time to get their purchases ready for sale that same day. Some nearby pubs served workers finishing their shift. For someone finishing work here, a drink early in the morning could be the end of the day.",
+              "kind": "supported_reconstruction",
+              "basis": "S-C03/S-S01: same-day preparation explains overnight trade; early pubs served workers after their shift. The final sentence is a natural interpretation, with no claim about a named pub’s current licence or an individual worker’s habits.",
+              "sourceUrls": [
+                "https://www.londonmuseum.org.uk/collections/london-stories/history-smithfield-market/"
+              ]
+            },
+            {
+              "paragraph": "In the nineteen-nineties, overhead rails changed the handling of carcasses, and a settlement ended the porters’ exclusive right to move the meat. The work has kept changing. So has the future of the buildings.",
+              "kind": "source_checked",
+              "basis": "S-C02/S-S02: 1990s modernisation and settlement. Closing transition is editorial. No suggestion that porter work vanished altogether.",
+              "sourceUrls": [
+                "https://www.londonmuseum.org.uk/collections/v/object-45167/porters-badge-from-smithfield-meat-market/"
+              ]
+            },
+            {
+              "paragraph": "London Museum is due to open in the former General Market on the twenty-eighth of November, 2026. Meat trading continues in other halls, with traders expected to remain here until at least 2028 while a proposed move to the Royal Docks goes through approvals. For now, Smithfield holds two different futures alongside one another.",
+              "kind": "source_checked",
+              "basis": "S-C06/S-C07: announced museum opening and separate trading relocation programme, checked 20 September 2026. The move remains conditional on parliamentary/planning processes; 2028 is a minimum stated occupation horizon, not a promised closing date. Refresh before an outing crossing 28 November 2026.",
+              "sourceUrls": [
+                "https://www.londonmuseum.org.uk/about/press/press-releases/london-museum-smithfield-will-open-doors/",
+                "https://www.cityoflondon.gov.uk/supporting-businesses/wholesale-markets/the-future-of-smithfield-and-billingsgate-markets"
+              ]
+            },
+            {
+              "paragraph": "Next are carved panels in Britton Street. Take St John Street north, then St John’s Lane towards the Gate. Just before the Gate, turn left into Briset Street, then right into Britton Street. Look across towards number twenty-five.",
+              "kind": "editorial",
+              "basis": "Literal transition authored from the selected public route, named streets, official access information and dated imagery in docs/content/authoring/clerkenwell-2026-09-20/ROUTE-RESEARCH.md. Desk-reviewed on 20 September 2026; current pedestrian signs and conditions take precedence. No historical inference establishes safe access.",
+              "sourceUrls": []
+            }
+          ],
+          "directions": [
+            "From Smithfield take St John Street north, then St John’s Lane towards the Gate. Turn west into Briset Street just before the Gate, then north into Britton Street.",
+            "On the east pavement opposite number 25, look high below the cornice for five pale reliefs among the brick and stone. Trees may hide some; adjust along the same pavement without stepping into the road."
+          ],
+          "audio": {
+            "key": "clerkenwell-working-lives-smithfield",
+            "bytes": 1056664,
+            "md5": "ac062212480d83967f4ece1e488fb510",
+            "durationSeconds": 123.9
+          }
+        },
+        {
+          "id": "booths",
+          "title": "A wall that found another job",
+          "transcript": "At number twenty-five Britton Street, look for the pale carved panels high among the windows, above the bands of brick and stone. There are five, though foliage may hide part of the sequence. They came from the offices of Booth’s gin distillery, and their subject is work.\n\nThe carvings turn gin into a chain of labour, from harvesting grain to drawing drink from a cask. Grain supplies the alcohol; the characteristic flavour comes from botanicals, especially juniper. Making a consistent drink involves judgement, because those botanical oils vary from harvest to harvest.\n\nThe wall itself has had a second career. It originally stood in Turnmill Street. In the nineteen-seventies, the architects developing this site realised the salvaged frontage was just the right width for their new building. The height was trickier: split-level flats helped make the rooms behind fit the old elevation.\n\nSome decayed stone had to be replaced, but the carved workers came along. A frontage designed to advertise a distillery became the face of flats and offices. Once you have found the panels, take in the whole wall again. The people in stone are still making gin above rooms built for quite different lives.\n\nNow retrace your steps to Briset Street and turn towards St John’s Gate. Find a place to one side of its southern approach, leaving the archway clear.",
+          "sources": [
+            {
+              "title": "Historic England designation decision — Mountford House, reference 1414903",
+              "url": "https://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?resourceID=7&uid=1414903"
+            },
+            {
+              "title": "Victorian Web — Mountford’s New Premises in Cowcross Street",
+              "url": "https://victorianweb.org/art/architecture/mountford/2.html"
+            },
+            {
+              "title": "The Gin Guild — Gin Navigator: Gin Explained",
+              "url": "https://www.theginguild.com/guidance-for-members/gin-navigator/"
+            }
+          ],
+          "evidence": [
+            {
+              "paragraph": "At number twenty-five Britton Street, look for the pale carved panels high among the windows, above the bands of brick and stone. There are five, though foliage may hide part of the sequence. They came from the offices of Booth’s gin distillery, and their subject is work.",
+              "kind": "source_checked",
+              "basis": "S-C09/S-S08: address, materials, panel number/location, office origin and gin-making subject. Foliage limitation is the coordinator’s dated route-imagery finding supplied to the writer on 20 September 2026; it avoids promising all five are legible. The root will integrate the reviewed standing position.",
+              "sourceUrls": [
+                "https://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?resourceID=7&uid=1414903"
+              ]
+            },
+            {
+              "paragraph": "The carvings turn gin into a chain of labour, from harvesting grain to drawing drink from a cask. Grain supplies the alcohol; the characteristic flavour comes from botanicals, especially juniper. Making a consistent drink involves judgement, because those botanical oils vary from harvest to harvest.",
+              "kind": "source_checked",
+              "basis": "S-C12/S-S10 supports the broad depicted chain; no precise panel order or gesture is identified. S-C13/S-S11 supplies general gin-making context, not a recovered Booth recipe or proof that all manufacturing stages happened in these offices. The scientific explanation is deliberately brief.",
+              "sourceUrls": [
+                "https://victorianweb.org/art/architecture/mountford/2.html",
+                "https://www.theginguild.com/guidance-for-members/gin-navigator/"
+              ]
+            },
+            {
+              "paragraph": "The wall itself has had a second career. It originally stood in Turnmill Street. In the nineteen-seventies, the architects developing this site realised the salvaged frontage was just the right width for their new building. The height was trickier: split-level flats helped make the rooms behind fit the old elevation.",
+              "kind": "source_checked",
+              "basis": "S-C09/S-C10/S-S08: relocated frontage and 1975–76 redevelopment, width match and split-level flats. No claim that every stone survived unchanged or the whole distillery moved.",
+              "sourceUrls": [
+                "https://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?resourceID=7&uid=1414903"
+              ]
+            },
+            {
+              "paragraph": "Some decayed stone had to be replaced, but the carved workers came along. A frontage designed to advertise a distillery became the face of flats and offices. Once you have found the panels, take in the whole wall again. The people in stone are still making gin above rooms built for quite different lives.",
+              "kind": "supported_reconstruction",
+              "basis": "S-C09/S-C10/S-S08: partial renewal, retained Portland-stone reliefs and residential/office redevelopment. The workers “still making gin” is an explicitly visual interpretation of the carvings, not a present manufacturing claim. No interior inspection is implied.",
+              "sourceUrls": [
+                "https://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?resourceID=7&uid=1414903"
+              ]
+            },
+            {
+              "paragraph": "Now retrace your steps to Briset Street and turn towards St John’s Gate. Find a place to one side of its southern approach, leaving the archway clear.",
+              "kind": "editorial",
+              "basis": "Literal transition authored from the selected public route, named streets, official access information and dated imagery in docs/content/authoring/clerkenwell-2026-09-20/ROUTE-RESEARCH.md. Desk-reviewed on 20 September 2026; current pedestrian signs and conditions take precedence. No historical inference establishes safe access.",
+              "sourceUrls": []
+            }
+          ],
+          "directions": [
+            "Retrace Britton Street to Briset Street, turn east along Briset, then towards the Gate on St John’s Lane.",
+            "Stand to one side of the southern paved approach and look towards the arch. Keep its through-route and museum door clear."
+          ],
+          "audio": {
+            "key": "clerkenwell-working-lives-booths",
+            "bytes": 765117,
+            "md5": "c6ecc6f92dae035e263449380c2fcd08",
+            "durationSeconds": 89.5
+          }
+        },
+        {
+          "id": "stjohn-gate",
+          "title": "Parliament in disguise",
+          "transcript": "St John’s Gate was completed in 1504 as the entrance to a religious house. Today it houses the Museum of the Order of St John. In the seventeen-thirties, it became the address of a publishing enterprise. Edward Cave, a printer and publisher, ran the Gentleman’s Magazine here. Among the writers he employed was Samuel Johnson, long before Johnson’s dictionary made his name.\n\nReaders wanted to know what Parliament was saying. Parliament was less keen to have it printed. In 1738, the Commons reaffirmed that publishing its proceedings breached its privileges. The magazine found a literary way round the problem: it sent its readers to Lilliput, the imaginary country in Gulliver’s Travels.\n\nA debate published in 1741 takes place in the Senate of Lilliput. One speaker appears as the Hurgo Quadrert. Then the introduction rather helpfully mentions a parallel debate in the British Parliament, which readers have been asking for. It is a disguise with a very large wink.\n\nProducing these speeches took more than changing the names. Johnson worked from other people’s reports and sparse notes. His biographer, James Boswell, records him saying that sometimes he received little more than the speakers’ names and which side they had taken. From that, the working writer had to supply the arguments and the language.\n\nA reader settling down to a substantial parliamentary speech was also reading the work of a hired writer. Here in Clerkenwell, political eloquence was being made on its way into print.\n\nCave put an image of the Gate on the magazine’s title-page, making this old entrance the face of his business. He even used it on the doors of his coach in place of a coat of arms. The building we are looking at was good enough to serve as his personal emblem.\n\nGo through the arch and turn west through St John’s Square and St John’s Path to Britton Street. Turn right, then follow Clerkenwell Road’s south pavement left towards Old Sessions House. Use the pedestrian signals there to cross, then head around the Sessions House to the Green. The map shows this approach.",
+          "sources": [
+            {
+              "title": "Survey of London — St John’s Gate and St John’s Lane",
+              "url": "https://discovery.ucl.ac.uk/10198364/1/Chapter%205%20St%20John%27s%20Gate%20and%20St%20John%27s%20Lane.pdf"
+            },
+            {
+              "title": "Museum of the Order of St John — Guided tours and current address",
+              "url": "https://museumstjohn.org.uk/planning-your-visit/guided-tours/"
+            },
+            {
+              "title": "Nikki Hessell — Samuel Johnson: beyond Lilliput, chapter summary",
+              "url": "https://www.cambridge.org/core/books/abs/literary-authors-parliamentary-reporters/samuel-johnson-beyond-lilliput/B989325EA048E795B97830B91F5518BD"
+            },
+            {
+              "title": "James Boswell — Life of Johnson, Gentleman’s Magazine account",
+              "url": "https://www.gutenberg.org/files/1564/1564-h/1564-h.htm"
+            },
+            {
+              "title": "The Gentleman’s Magazine, July 1741 — Debate on removing Walpole, modern transcription",
+              "url": "https://www.samueljohnson.com/debates/174107.html"
+            }
+          ],
+          "evidence": [
+            {
+              "paragraph": "St John’s Gate was completed in 1504 as the entrance to a religious house. Today it houses the Museum of the Order of St John. In the seventeen-thirties, it became the address of a publishing enterprise. Edward Cave, a printer and publisher, ran the Gentleman’s Magazine here. Among the writers he employed was Samuel Johnson, long before Johnson’s dictionary made his name.",
+              "kind": "source_checked",
+              "basis": "S-C14/S-C15: priory entrance, completion, Cave’s enterprise and Johnson’s early work. The architectural source distinguishes the original gate from its later-restored exterior; no unchanged interior or precise room is asserted. Current museum identity/address is confirmed by the already-surveyed official tours page, reopened by the writer on 20 September 2026; no opening or interior access promise.",
+              "sourceUrls": [
+                "https://discovery.ucl.ac.uk/10198364/1/Chapter%205%20St%20John%27s%20Gate%20and%20St%20John%27s%20Lane.pdf",
+                "https://museumstjohn.org.uk/planning-your-visit/guided-tours/"
+              ]
+            },
+            {
+              "paragraph": "Readers wanted to know what Parliament was saying. Parliament was less keen to have it printed. In 1738, the Commons reaffirmed that publishing its proceedings breached its privileges. The magazine found a literary way round the problem: it sent its readers to Lilliput, the imaginary country in Gulliver’s Travels.",
+              "kind": "source_checked",
+              "basis": "S-C16/S-C17: Commons’ 1738 assertion of privilege and the magazine’s Lilliput device. This does not recast privilege as a modern blanket criminal statute or claim the disguise guaranteed immunity.",
+              "sourceUrls": [
+                "https://www.cambridge.org/core/books/abs/literary-authors-parliamentary-reporters/samuel-johnson-beyond-lilliput/B989325EA048E795B97830B91F5518BD",
+                "https://www.gutenberg.org/files/1564/1564-h/1564-h.htm",
+                "https://www.samueljohnson.com/debates/174107.html"
+              ]
+            },
+            {
+              "paragraph": "A debate published in 1741 takes place in the Senate of Lilliput. One speaker appears as the Hurgo Quadrert. Then the introduction rather helpfully mentions a parallel debate in the British Parliament, which readers have been asking for. It is a disguise with a very large wink.",
+              "kind": "supported_reconstruction",
+              "basis": "S-C17/S-S15: actual heading, speaker and explicit parallel-British-debate reference in the inspected transcription. The wink is interpretation of the publication’s own device. The modern editor’s identification of Quadrert is not presented as original text.",
+              "sourceUrls": [
+                "https://www.samueljohnson.com/debates/174107.html"
+              ]
+            },
+            {
+              "paragraph": "Producing these speeches took more than changing the names. Johnson worked from other people’s reports and sparse notes. His biographer, James Boswell, records him saying that sometimes he received little more than the speakers’ names and which side they had taken. From that, the working writer had to supply the arguments and the language.",
+              "kind": "source_checked",
+              "basis": "S-C18/S-S14: later biographical testimony, partly recalling Johnson’s own account. “Sometimes” is retained; no claim that every debate was invented or that these were verbatim transcripts. The last sentence explains the composition described in that account.",
+              "sourceUrls": [
+                "https://www.gutenberg.org/files/1564/1564-h/1564-h.htm"
+              ]
+            },
+            {
+              "paragraph": "A reader settling down to a substantial parliamentary speech was also reading the work of a hired writer. Here in Clerkenwell, political eloquence was being made on its way into print.",
+              "kind": "supported_reconstruction",
+              "basis": "S-C18/S-S14 supports the expansion from notes to speeches; the reader is an unnamed generic imagined reading situation, not a composite character or recovered incident. This paragraph makes the production mechanism intelligible without adding a reported individual response. V2 shortens the notes-to-speech explanation and removes a generic instruction to picture it; the original source/reconstruction boundary remains.",
+              "sourceUrls": [
+                "https://www.gutenberg.org/files/1564/1564-h/1564-h.htm"
+              ]
+            },
+            {
+              "paragraph": "Cave put an image of the Gate on the magazine’s title-page, making this old entrance the face of his business. He even used it on the doors of his coach in place of a coat of arms. The building we are looking at was good enough to serve as his personal emblem.",
+              "kind": "source_checked",
+              "basis": "S-C15/S-S12: title-page image and coach doors in the Survey of London. Final present-view connection is interpretation, with no claim that Cave’s coach or an unchanged eighteenth-century façade survives here.",
+              "sourceUrls": [
+                "https://discovery.ucl.ac.uk/10198364/1/Chapter%205%20St%20John%27s%20Gate%20and%20St%20John%27s%20Lane.pdf"
+              ]
+            },
+            {
+              "paragraph": "Go through the arch and turn west through St John’s Square and St John’s Path to Britton Street. Turn right, then follow Clerkenwell Road’s south pavement left towards Old Sessions House. Use the pedestrian signals there to cross, then head around the Sessions House to the Green. The map shows this approach.",
+              "kind": "editorial",
+              "basis": "Literal transition authored from the selected public route, named streets, official access information and dated imagery in docs/content/authoring/clerkenwell-2026-09-20/ROUTE-RESEARCH.md. Desk-reviewed on 20 September 2026; current pedestrian signs and conditions take precedence. No historical inference establishes safe access.",
+              "sourceUrls": []
+            }
+          ],
+          "directions": [
+            "Pass through the Gate, turn west through St John’s Square and St John’s Path to Britton Street, then north. Follow the south pavement of Clerkenwell Road west to the pedestrian signals beside Old Sessions House. Cross at those signals, then go around the Sessions House towards the Green.",
+            "From public space on the Green, face the white frontage and red door of the Marx Memorial Library at 37a. Stop clear of café tables and through-routes."
+          ],
+          "audio": {
+            "key": "clerkenwell-working-lives-stjohn-gate",
+            "bytes": 1171334,
+            "md5": "adc982aa48c22e28cd1950237e644157",
+            "durationSeconds": 137.5
+          }
+        },
+        {
+          "id": "green",
+          "title": "Room for one more editor",
+          "transcript": "At thirty-seven A Clerkenwell Green, the Marx Memorial Library remembers a great deal of political history. One story here concerns a very small office. In 1902, this building housed a printing business managed by Harry Quelch, who also edited the socialist newspaper Justice.\n\nThe Russian revolutionary Lenin was then an editor in exile, years before the revolution of 1917. His newspaper, Iskra, needed somewhere to be printed. Quelch and his fellow British socialists made their equipment available. Seventeen issues came out of this building in 1902 and 1903.\n\nThe extra enterprise took up room. Writing after Quelch’s death, Lenin remembered his host squeezing into a corner screened off by a thin partition. There was a small writing table, a bookshelf above it, and one chair. When Lenin visited, there was no space for a second chair.\n\nIt is a wonderfully awkward picture: two editors, a newspaper to discuss, and nowhere to put the visitor. Quelch had made international cooperation fit into a corner.\n\nToday the library continues to teach and discuss politics, with courses on trade unions and Marxism. Those public debates still have an address in this building.\n\nOur next stretch follows Clerkenwell Close around the churchyard. At the Three Kings, keep on the Close as it bends right, then turn right into Sans Walk. Follow Sans Walk to Woodbridge Street, turn right, and continue down Woodbridge past the Sekforde junction. A short story will play on the Close; the map and written directions remain available.",
+          "sources": [
+            {
+              "title": "Survey of London — Clerkenwell Green",
+              "url": "https://discovery.ucl.ac.uk/id/eprint/10198342/1/Chapter%203%20Clerkenwell%20Green.pdf"
+            },
+            {
+              "title": "Marx Memorial Library — Current and forthcoming courses",
+              "url": "https://www.marx-memorial-library.org.uk/education/current-and-forthcoming-courses"
+            },
+            {
+              "title": "V. I. Lenin — Harry Quelch, 1913; Marxists Internet Archive",
+              "url": "https://www.marxists.org/archive/lenin/works/1913/sep/12.htm"
+            }
+          ],
+          "evidence": [
+            {
+              "paragraph": "At thirty-seven A Clerkenwell Green, the Marx Memorial Library remembers a great deal of political history. One story here concerns a very small office. In 1902, this building housed a printing business managed by Harry Quelch, who also edited the socialist newspaper Justice.",
+              "kind": "source_checked",
+              "basis": "CW-N-C01/C04; CW-N-S02/S03: address, publishing use, Quelch’s role and present library. The small-office introduction is editorial framing of the documented episode.",
+              "sourceUrls": [
+                "https://discovery.ucl.ac.uk/id/eprint/10198342/1/Chapter%203%20Clerkenwell%20Green.pdf",
+                "https://www.marx-memorial-library.org.uk/education/current-and-forthcoming-courses"
+              ]
+            },
+            {
+              "paragraph": "The Russian revolutionary Lenin was then an editor in exile, years before the revolution of 1917. His newspaper, Iskra, needed somewhere to be printed. Quelch and his fellow British socialists made their equipment available. Seventeen issues came out of this building in 1902 and 1903.",
+              "kind": "source_checked",
+              "basis": "CW-N-C01/C02 and CW-N-S01/S02: Iskra, London printing and seventeen issues. Brief identity context locates Lenin before 1917. The practical cooperation does not imply uniform agreement among every printer or an endorsement of later politics.",
+              "sourceUrls": [
+                "https://discovery.ucl.ac.uk/id/eprint/10198342/1/Chapter%203%20Clerkenwell%20Green.pdf",
+                "https://www.marxists.org/archive/lenin/works/1913/sep/12.htm"
+              ]
+            },
+            {
+              "paragraph": "The extra enterprise took up room. Writing after Quelch’s death, Lenin remembered his host squeezing into a corner screened off by a thin partition. There was a small writing table, a bookshelf above it, and one chair. When Lenin visited, there was no space for a second chair.",
+              "kind": "source_checked",
+              "basis": "CW-N-C02/C03; CW-N-S01: attributed retrospective participant recollection, written in a partisan obituary in 1913. Furniture and space follow that account; this is not identified with the surviving memorial room.",
+              "sourceUrls": [
+                "https://www.marxists.org/archive/lenin/works/1913/sep/12.htm"
+              ]
+            },
+            {
+              "paragraph": "It is a wonderfully awkward picture: two editors, a newspaper to discuss, and nowhere to put the visitor. Quelch had made international cooperation fit into a corner.",
+              "kind": "supported_reconstruction",
+              "basis": "CW-N-C02/S01: the two editors’ documented visit and cramped workspace support the imagined practical encounter. Discussion of their newspaper is ordinary inference, not recovered dialogue; no gestures, emotional reaction or exact visitor position is invented. The last sentence is an interpretation of the material accommodation. V2 trims repeated explanation while preserving the warm interpretation of the remembered room.",
+              "sourceUrls": [
+                "https://www.marxists.org/archive/lenin/works/1913/sep/12.htm"
+              ]
+            },
+            {
+              "paragraph": "Today the library continues to teach and discuss politics, with courses on trade unions and Marxism. Those public debates still have an address in this building.",
+              "kind": "supported_reconstruction",
+              "basis": "CW-N-C04/S03: current courses checked 20 September 2026, without promising opening or an in-person class during the walk. CW-N-C01/C02 support the closing recollection. No assertion that today’s memorial room preserves the office unchanged. V2 ends with the current use instead of repeating the absent-chair conclusion.",
+              "sourceUrls": [
+                "https://www.marx-memorial-library.org.uk/education/current-and-forthcoming-courses",
+                "https://discovery.ucl.ac.uk/id/eprint/10198342/1/Chapter%203%20Clerkenwell%20Green.pdf",
+                "https://www.marxists.org/archive/lenin/works/1913/sep/12.htm"
+              ]
+            },
+            {
+              "paragraph": "Our next stretch follows Clerkenwell Close around the churchyard. At the Three Kings, keep on the Close as it bends right, then turn right into Sans Walk. Follow Sans Walk to Woodbridge Street, turn right, and continue down Woodbridge past the Sekforde junction. A short story will play on the Close; the map and written directions remain available.",
+              "kind": "editorial",
+              "basis": "Literal transition authored from the selected public route, named streets, official access information and dated imagery in docs/content/authoring/clerkenwell-2026-09-20/ROUTE-RESEARCH.md. Desk-reviewed on 20 September 2026; current pedestrian signs and conditions take precedence. No historical inference establishes safe access.",
+              "sourceUrls": []
+            }
+          ],
+          "directions": [
+            "Leave the Green by Clerkenwell Close. Follow the Close around the churchyard. At the Three Kings, follow Clerkenwell Close as it bends right, leaving the branch to the left. Turn right into Sans Walk. Follow Sans Walk to Woodbridge Street and turn right. At the Sekforde Street junction, continue down Woodbridge Street to the chapel.",
+            "Use a clear place on the opposite/northeast pavement. Look across for the brick chapel and white CLERKENWELL MEDICAL MISSION fascia.",
+            "If Clerkenwell Close is obstructed, skip the Many hands walking chapter. Go east/northeast across the Green to Sekforde Street at Aylesbury Street, turn left up Sekforde, then right into Woodbridge Street towards the chapel. Use public street pavements; avoid the Hayward’s Place shortcut. Play the chapel story manually if GPS does not recognise this shorter approach."
+          ],
+          "audio": {
+            "key": "clerkenwell-working-lives-green",
+            "bytes": 903363,
+            "md5": "615cdcdb752416560240dd4bba1c72e0",
+            "durationSeconds": 105.8
+          }
+        },
+        {
+          "id": "flowers",
+          "title": "Giving a petal its curve",
+          "transcript": "Woodbridge Chapel once sheltered a workroom full of flowers: roses, daisies and cornflowers, all being made by hand. In 1898, an investigator working on Charles Booth’s great inquiry into London life came here and found about thirty girls and women making artificial flowers in the schoolroom beneath the chapel.\n\nTheir usual workroom was being enlarged. They belonged to the flower-making work of John Groom’s mission, which trained disabled women. The visitor caught the work in temporary quarters, giving us a glimpse of an activity that the chapel’s exterior cannot explain by itself.\n\nTo picture the skill, follow a petal through the trade. Fabric was cut into shapes and dyed. Moulds pressed veins and texture into it. Then came the curve: a metal tool with a ball on the end was heated over a spirit lamp, and the petal shaped around it. A flat scrap began to resemble something that had grown.\n\nThat was still only a petal. The pieces had to be assembled into a flower, held on a wire stem and arranged into sprays. The stem itself could be covered with paper or silk. Each stage helped the finished thing conceal the small operations that had made it.\n\nA mission assistant reported that training took two years. That gives the little flowers a different weight. Their lightness and delicacy depended on skills learnt over time, before a customer ever pinned them to a hat or dress.\n\nToday the chapel is home to GraceLife London, a church congregation. Hold the earlier picture beside it for a moment: a room beneath the chapel, thirty people at work, and the beginnings of roses and cornflowers passing through their hands.\n\nReturn up Woodbridge Street to Sekforde Street, then follow Sekforde north to St John Street. Use the nearby pedestrian signals to reach the opposite pavement. From there, look back towards the Ingersoll lettering above numbers two hundred and twenty-three to two hundred and twenty-seven.",
+          "sources": [
+            {
+              "title": "LSE, Charles Booth inquiry — Notebook BOOTH/B/237, selected 1898 interviews and observations",
+              "url": "https://booth.lse.ac.uk/iiif_page/BOOTH%2FB%2F237"
+            },
+            {
+              "title": "London Archives via AIM25 — John Groom’s Association for Disabled People",
+              "url": "https://atom.aim25.com/index.php/john-grooms-association-for-disabled-people"
+            },
+            {
+              "title": "London Museum — Rediscover London’s lost art of flower-making",
+              "url": "https://www.londonmuseum.org.uk/blog/rediscover-londons-lost-art-of-flower-making/"
+            },
+            {
+              "title": "GraceLife London — current church at Woodbridge Chapel",
+              "url": "https://www.gracelifelondon.org/"
+            }
+          ],
+          "evidence": [
+            {
+              "paragraph": "Woodbridge Chapel once sheltered a workroom full of flowers: roses, daisies and cornflowers, all being made by hand. In 1898, an investigator working on Charles Booth’s great inquiry into London life came here and found about thirty girls and women making artificial flowers in the schoolroom beneath the chapel.",
+              "kind": "source_checked",
+              "basis": "CW-N-C05/CW-N-S06: directly observed notebook p207, in the 1898 inquiry context. The investigator is not identified as Charles Booth himself. Flower types and approximate headcount are documented; no invented colour or named worker.",
+              "sourceUrls": [
+                "https://booth.lse.ac.uk/iiif_page/BOOTH%2FB%2F237"
+              ]
+            },
+            {
+              "paragraph": "Their usual workroom was being enlarged. They belonged to the flower-making work of John Groom’s mission, which trained disabled women. The visitor caught the work in temporary quarters, giving us a glimpse of an activity that the chapel’s exterior cannot explain by itself.",
+              "kind": "source_checked",
+              "basis": "CW-N-C05/C06; CW-N-S05/S06, notebook pp131 and 207, and S04’s institutional description. The “glimpse” and exterior comparison are editorial framing. No current interior use or recovered floor plan is asserted.",
+              "sourceUrls": [
+                "https://booth.lse.ac.uk/iiif_page/BOOTH%2FB%2F237",
+                "https://atom.aim25.com/index.php/john-grooms-association-for-disabled-people"
+              ]
+            },
+            {
+              "paragraph": "To picture the skill, follow a petal through the trade. Fabric was cut into shapes and dyed. Moulds pressed veins and texture into it. Then came the curve: a metal tool with a ball on the end was heated over a spirit lamp, and the petal shaped around it. A flat scrap began to resemble something that had grown.",
+              "kind": "supported_reconstruction",
+              "basis": "CW-N-C07/CW-N-S08: broader period process from museum curators, expressly introduced as the trade. This does not claim the investigator inventoried these tools or watched all these stages in the chapel. No object is assigned to a particular maker.",
+              "sourceUrls": [
+                "https://www.londonmuseum.org.uk/blog/rediscover-londons-lost-art-of-flower-making/"
+              ]
+            },
+            {
+              "paragraph": "That was still only a petal. The pieces had to be assembled into a flower, held on a wire stem and arranged into sprays. The stem itself could be covered with paper or silk. Each stage helped the finished thing conceal the small operations that had made it.",
+              "kind": "supported_reconstruction",
+              "basis": "CW-N-C07/S08: wire assembly, stem covering and sprays. Final sentence interprets the effect of the documented process. No local output quantity or individual task division is inferred.",
+              "sourceUrls": [
+                "https://www.londonmuseum.org.uk/blog/rediscover-londons-lost-art-of-flower-making/"
+              ]
+            },
+            {
+              "paragraph": "A mission assistant reported that training took two years. That gives the little flowers a different weight. Their lightness and delicacy depended on skills learnt over time, before a customer ever pinned them to a hat or dress.",
+              "kind": "supported_reconstruction",
+              "basis": "CW-N-C06/S05, p131: the assistant’s estimate, not a guaranteed two-year qualification. S08 supports contemporary use on hats, bonnets and dresses; the imagined customer is generic and does not establish the destination of a specific local flower. V2 removes the unsupported claim that a different interviewer took this account.",
+              "sourceUrls": [
+                "https://booth.lse.ac.uk/iiif_page/BOOTH%2FB%2F237",
+                "https://www.londonmuseum.org.uk/blog/rediscover-londons-lost-art-of-flower-making/"
+              ]
+            },
+            {
+              "paragraph": "Today the chapel is home to GraceLife London, a church congregation. Hold the earlier picture beside it for a moment: a room beneath the chapel, thirty people at work, and the beginnings of roses and cornflowers passing through their hands.",
+              "kind": "supported_reconstruction",
+              "basis": "CW-N-C05/C07: returns to the observed temporary workroom through a bounded imagined scene. “Passing through their hands” follows the documented handcraft; no private feelings or invented incident. The present connection is to the chapel’s exterior, without claiming the workroom survives. V2 adds current church identity from the operator website, read 20 September 2026. This does not imply the flower workroom survives or invite entry.",
+              "sourceUrls": [
+                "https://booth.lse.ac.uk/iiif_page/BOOTH%2FB%2F237",
+                "https://www.londonmuseum.org.uk/blog/rediscover-londons-lost-art-of-flower-making/",
+                "https://www.gracelifelondon.org/"
+              ]
+            },
+            {
+              "paragraph": "Return up Woodbridge Street to Sekforde Street, then follow Sekforde north to St John Street. Use the nearby pedestrian signals to reach the opposite pavement. From there, look back towards the Ingersoll lettering above numbers two hundred and twenty-three to two hundred and twenty-seven.",
+              "kind": "editorial",
+              "basis": "Literal transition authored from the selected public route, named streets, official access information and dated imagery in docs/content/authoring/clerkenwell-2026-09-20/ROUTE-RESEARCH.md. Desk-reviewed on 20 September 2026; current pedestrian signs and conditions take precedence. No historical inference establishes safe access.",
+              "sourceUrls": []
+            }
+          ],
+          "directions": [
+            "Retrace Woodbridge Street northwest to Sekforde Street. Take Sekforde north to St John Street, then use the nearby pedestrian signals to reach the opposite/east pavement. Return a short distance south to see the frontage.",
+            "From the east pavement, look across and up towards the green and cream Ingersoll lettering at 223–227 St John Street. Stay clear of the Sekforde corner and the crossing landing."
+          ],
+          "audio": {
+            "key": "clerkenwell-working-lives-flowers",
+            "bytes": 1094332,
+            "md5": "48a4b7e3e8713d5a84cec150c9301034",
+            "durationSeconds": 128.8
+          }
+        },
+        {
+          "id": "ingersoll",
+          "title": "From pocket to wrist",
+          "transcript": "Look for the Ingersoll name in green and cream mosaic. This building was the watch company’s warehouse and showroom. A large sign for a small object: here, the business was storing and selling watches.\n\nOne surviving Ingersoll watch, now in the Clockmakers’ collection, shows how an everyday habit changed. It began as a pocket watch. Someone added small projecting loops to the case at twelve and six, so that a strap could hold it against the wrist.\n\nDuring the First World War, wearing a watch this way let soldiers consult the time while keeping their hands free. On the surviving example, the alteration is built into the object. The dial tells another part of its journey: the parts were made in America, and the watch assembled in England.\n\nThe building here was later converted into flats, but the company name survived. Between that public sign and those tiny added loops, you have two different traces of the trade: how a watch was sold, and how someone found a handier way to wear it.\n\nFor our last stretch, return north to the signals and complete the crossings to Skinner Street’s north pavement. Follow it west; a short walking story follows the junction. At Rosoman Street use the zebra crossing, then turn right for a few steps and left into Exmouth Market. The full route is on the map.",
+          "sources": [
+            {
+              "title": "Survey of London — St John Street: introduction and west side",
+              "url": "https://discovery.ucl.ac.uk/id/eprint/10198365/1/Chapter%208%20St%20John%20Street.pdf"
+            },
+            {
+              "title": "London Museum — Lathe, watchmaker’s turn, 1785–1830",
+              "url": "https://www.londonmuseum.org.uk/collections/v/object-277111/lathe-watchmakers-turn/"
+            },
+            {
+              "title": "Science Museum Group — Ingersoll “Sterling” watch converted for the wrist, L2015-4073",
+              "url": "https://collection.sciencemuseumgroup.org.uk/objects/co8558607/sterling-watch-by-ingersoll-converted-for-use-on-the-wrist"
+            }
+          ],
+          "evidence": [
+            {
+              "paragraph": "Look for the Ingersoll name in green and cream mosaic. This building was the watch company’s warehouse and showroom. A large sign for a small object: here, the business was storing and selling watches.",
+              "kind": "supported_reconstruction",
+              "basis": "CW-N-C17/C19; CW-N-S14/S16: warehouse/showroom, mosaic and local watch-trade context. The distribution explanation follows the documented use; it does not claim manufacturing at this address or a particular shipment. V2 removes an implied local-manufacture chain; this was a warehouse/showroom and no specific watch is traced through it.",
+              "sourceUrls": [
+                "https://discovery.ucl.ac.uk/id/eprint/10198365/1/Chapter%208%20St%20John%20Street.pdf",
+                "https://www.londonmuseum.org.uk/collections/v/object-277111/lathe-watchmakers-turn/"
+              ]
+            },
+            {
+              "paragraph": "One surviving Ingersoll watch, now in the Clockmakers’ collection, shows how an everyday habit changed. It began as a pocket watch. Someone added small projecting loops to the case at twelve and six, so that a strap could hold it against the wrist.",
+              "kind": "source_checked",
+              "basis": "CW-N-C18/CW-N-S15, object L2015-4073: pocket-to-wrist conversion with lugs. It is explicitly a museum object of this brand, not a watch established to have passed through this building. “Loops” makes lugs intelligible to the ear.",
+              "sourceUrls": [
+                "https://collection.sciencemuseumgroup.org.uk/objects/co8558607/sterling-watch-by-ingersoll-converted-for-use-on-the-wrist"
+              ]
+            },
+            {
+              "paragraph": "During the First World War, wearing a watch this way let soldiers consult the time while keeping their hands free. On the surviving example, the alteration is built into the object. The dial tells another part of its journey: the parts were made in America, and the watch assembled in England.",
+              "kind": "source_checked",
+              "basis": "CW-N-C18/S15: museum’s broader military-use explanation and this object’s dial inscription. No military owner or wartime conversion date is asserted for this specific watch. Uncertain luminous-paint history is omitted.",
+              "sourceUrls": [
+                "https://collection.sciencemuseumgroup.org.uk/objects/co8558607/sterling-watch-by-ingersoll-converted-for-use-on-the-wrist"
+              ]
+            },
+            {
+              "paragraph": "The building here was later converted into flats, but the company name survived. Between that public sign and those tiny added loops, you have two different traces of the trade: how a watch was sold, and how someone found a handier way to wear it.",
+              "kind": "supported_reconstruction",
+              "basis": "CW-N-C17/S14: 1995–96 residential conversion and retained mosaic. CW-N-C18/S15 supports the object comparison. No claim that this watch’s conversion happened in St John Street.",
+              "sourceUrls": [
+                "https://discovery.ucl.ac.uk/id/eprint/10198365/1/Chapter%208%20St%20John%20Street.pdf",
+                "https://collection.sciencemuseumgroup.org.uk/objects/co8558607/sterling-watch-by-ingersoll-converted-for-use-on-the-wrist"
+              ]
+            },
+            {
+              "paragraph": "For our last stretch, return north to the signals and complete the crossings to Skinner Street’s north pavement. Follow it west; a short walking story follows the junction. At Rosoman Street use the zebra crossing, then turn right for a few steps and left into Exmouth Market. The full route is on the map.",
+              "kind": "editorial",
+              "basis": "Literal transition authored from the selected public route, named streets, official access information and dated imagery in docs/content/authoring/clerkenwell-2026-09-20/ROUTE-RESEARCH.md. Desk-reviewed on 20 September 2026; current pedestrian signs and conditions take precedence. No historical inference establishes safe access.",
+              "sourceUrls": []
+            }
+          ],
+          "directions": [
+            "From the Ingersoll view return north to the signals. Complete the crossings to Skinner Street’s north pavement, then follow Skinner west to Rosoman Street. Use the zebra crossing to cross Rosoman Street. On the far pavement, turn right for a few steps, then left into Exmouth Market.",
+            "Continue southwest along Exmouth to the church/Spafield Street area opposite the green-tiled Exmouth Arms. Stop on a clear pavement edge, away from entrances and deliveries. Space EC1 is number 25; GAIL’s is 33–35.",
+            "Skinner Street carries buses. Pause the walking story if traffic or a crossing needs your attention; it remains available to play manually."
+          ],
+          "audio": {
+            "key": "clerkenwell-working-lives-ingersoll",
+            "bytes": 730806,
+            "md5": "888a5292c82fa4739396dbeea357ae0f",
+            "durationSeconds": 86.2
+          }
+        },
+        {
+          "id": "exmouth",
+          "title": "Making a street work",
+          "transcript": "We finish in Exmouth Market, where earning a living is much more visible. On weekdays, food traders use the street’s market pitches. At other times the shops, cafés and restaurants give it a different rhythm. What you find today will depend on the day, the hour, and who has opened up.\n\nAt number twenty-five, the gift shop Space EC1 belongs to Mo and Jo, a mother and daughter who say they fell into retail. They established the business in 1998 and describe a taste for colour, pattern and saucy humour. Choosing what might delight a stranger is part of the work behind a shop window.\n\nAn earlier attempt to serve the street put the refreshments into the street furniture itself. The Pluto hot-water lamp was a late-Victorian contraption remembered here as a dispenser of tea and coffee. It sounds like an excellent idea for anyone who has been walking around London.\n\nThe local authority’s report for 1899 gives it a brisk review: “not a success”. Its owners offered to convert it into a drinking fountain if the vestry, the local governing body, would take it over. The vestry declined, and the lamp was removed. Even its application for a simpler job had been unsuccessful.\n\nToday, GAIL’s bakery has a reclaimed Victorian fountain as a tribute to that experiment. The original lamp is gone; the idea has found a small afterlife in another business serving the street.\n\nThat leaves us among the people still deciding what to make, what to stock, and what might tempt a passer-by to stop. Thank you for walking through Clerkenwell. This is the end of our tour. Tap End tour in the app, and enjoy the rest of Exmouth Market.",
+          "sources": [
+            {
+              "title": "Islington Council — Market information for customers: Exmouth Market",
+              "url": "https://www.islington.gov.uk/business/markets/market-information-for-customers"
+            },
+            {
+              "title": "Space EC1 / I Found It In Space — About Us",
+              "url": "https://ifounditinspace.co.uk/pages/about-us"
+            },
+            {
+              "title": "GAIL’s — Exmouth Market and the Pluto lamp tribute",
+              "url": "https://gails.com/pages/exmouth-market"
+            },
+            {
+              "title": "Clerkenwell official report, 1899 — Pluto lamp outcome, printed page 138",
+              "url": "https://wellcomelibrary.org/moh/report/b20056424/147"
+            },
+            {
+              "title": "Exmouth Market business directory — Space EC1, 25 Exmouth Market",
+              "url": "https://exmouth.london/space-ec1/"
+            }
+          ],
+          "evidence": [
+            {
+              "paragraph": "We finish in Exmouth Market, where earning a living is much more visible. On weekdays, food traders use the street’s market pitches. At other times the shops, cafés and restaurants give it a different rhythm. What you find today will depend on the day, the hour, and who has opened up.",
+              "kind": "source_checked",
+              "basis": "CW-N-C12/C13/C16; CW-N-S11/S12/S13: council’s weekday pitches plus current operators. This day-sensitive introduction does not promise weekend stalls, universal trading or any business open at the moment of listening. Current pages checked 20 September 2026.",
+              "sourceUrls": [
+                "https://www.islington.gov.uk/business/markets/market-information-for-customers",
+                "https://ifounditinspace.co.uk/pages/about-us",
+                "https://gails.com/pages/exmouth-market"
+              ]
+            },
+            {
+              "paragraph": "At number twenty-five, the gift shop Space EC1 belongs to Mo and Jo, a mother and daughter who say they fell into retail. They established the business in 1998 and describe a taste for colour, pattern and saucy humour. Choosing what might delight a stranger is part of the work behind a shop window.",
+              "kind": "supported_reconstruction",
+              "basis": "CW-N-C13/S12: operator’s current account, relationship, founding date and chosen character. Last sentence is an interpretation of selecting gifts, not a claim about a specific customer or item in the present window. A-C06/A-S05: number 25 verified in the current local business directory, read 20 September 2026; no opening-hours promise.",
+              "sourceUrls": [
+                "https://ifounditinspace.co.uk/pages/about-us",
+                "https://exmouth.london/space-ec1/"
+              ]
+            },
+            {
+              "paragraph": "An earlier attempt to serve the street put the refreshments into the street furniture itself. The Pluto hot-water lamp was a late-Victorian contraption remembered here as a dispenser of tea and coffee. It sounds like an excellent idea for anyone who has been walking around London.",
+              "kind": "supported_reconstruction",
+              "basis": "CW-N-C14/C15: contemporary report establishes the lamp; the tea/coffee identity is from S13’s modern local retelling, not a verified contemporary technical account. “Remembered here” retains that distinction without claiming a menu, price or mechanism. Closing humour is editorial.",
+              "sourceUrls": [
+                "https://wellcomelibrary.org/moh/report/b20056424/147",
+                "https://gails.com/pages/exmouth-market"
+              ]
+            },
+            {
+              "paragraph": "The local authority’s report for 1899 gives it a brisk review: “not a success”. Its owners offered to convert it into a drinking fountain if the vestry, the local governing body, would take it over. The vestry declined, and the lamp was removed. Even its application for a simpler job had been unsuccessful.",
+              "kind": "supported_reconstruction",
+              "basis": "CW-N-C14/S10: published OCR of report p138, read by researcher; three-word quotation and proposed takeover/conversion, refusal and removal. No cause of failure or precise removal day is invented. Last sentence personifies the proposal for a clearly editorial comic coda.",
+              "sourceUrls": [
+                "https://wellcomelibrary.org/moh/report/b20056424/147"
+              ]
+            },
+            {
+              "paragraph": "Today, GAIL’s bakery has a reclaimed Victorian fountain as a tribute to that experiment. The original lamp is gone; the idea has found a small afterlife in another business serving the street.",
+              "kind": "source_checked",
+              "basis": "CW-N-C16/S13: operator’s stated tribute, explicitly distinguished from original lamp; S10 supports removal. No claim that the tribute is visible from the listening position or that a purchase/interior visit is required.",
+              "sourceUrls": [
+                "https://gails.com/pages/exmouth-market",
+                "https://wellcomelibrary.org/moh/report/b20056424/147"
+              ]
+            },
+            {
+              "paragraph": "That leaves us among the people still deciding what to make, what to stock, and what might tempt a passer-by to stop. Thank you for walking through Clerkenwell. This is the end of our tour. Tap End tour in the app, and enjoy the rest of Exmouth Market.",
+              "kind": "editorial",
+              "basis": "Editorial farewell and invitation, with no required purchase, guaranteed activity, access promise or new historical assertion. This is the end of the selected tour, not an instruction to enter a particular business. V2 makes completion and the explicit End action clear; it does not claim narration automatically stops location tracking.",
+              "sourceUrls": []
+            }
+          ],
+          "directions": [
+            "The tour ends on Exmouth Market. Tap End tour / stop location before settling down or heading home. For Farringdon, allow about 12–15 minutes: continue southwest to Vineyard Walk, follow it to Farringdon Road, then head south and turn towards the Cowcross Street station entrance, using pedestrian crossings. For Angel, allow about 15–18 minutes: return northeast along Exmouth to Rosoman Street, go north to Rosebery Avenue, follow it east to St John Street, then north towards the signed station entrance. These return walks are additional to the tour; there is no automatic rerouting.",
+            "Space EC1 is 25 Exmouth Market. GAIL’s reclaimed tribute fountain is at 33–35, farther northeast along the street; it is not the original Pluto lamp. Both are optional looks, subject to current opening."
+          ],
+          "audio": {
+            "key": "clerkenwell-working-lives-exmouth",
+            "bytes": 944140,
+            "md5": "d65ff7b1e512976ec66f05710fdd1a71",
+            "durationSeconds": 109.6
+          }
+        }
+      ],
+      "chapters": [
+        {
+          "id": "many-hands",
+          "title": "Many hands, small parts",
+          "transcript": "As we leave the Green, the houses around these streets offer another way to picture an industrial district. In the nineteenth century, craftspeople on the nearby Seckford estate worked in adapted rooms and workshops behind their homes. Some also took in apprentices or clerks as lodgers.\n\nWatchmaking was divided among specialists. A person making one small component might be supplying a larger firm in the City or Westminster. A finished watch could bring together work done by people who occupied quite different premises.\n\nPicture the scale of it: a small lathe clamped in a vice, powered by a bow moving backwards and forwards. The maker could shape a tiny part with a tool small enough for a workbench. Precision industry could live inside a domestic room.\n\nSo keep the ordinary house front in the picture, along with the workshop. Behind a single address, a household might be sleeping, taking in a lodger, and making something that would eventually bear another business’s name.",
+          "sources": [
+            {
+              "title": "Survey of London — Sekforde Street area",
+              "url": "https://www.british-history.ac.uk/survey-london/vol46/pp72-85"
+            },
+            {
+              "title": "London Museum — Lathe, watchmaker’s turn, 1785–1830",
+              "url": "https://www.londonmuseum.org.uk/collections/v/object-277111/lathe-watchmakers-turn/"
+            }
+          ],
+          "evidence": [
+            {
+              "paragraph": "As we leave the Green, the houses around these streets offer another way to picture an industrial district. In the nineteenth century, craftspeople on the nearby Seckford estate worked in adapted rooms and workshops behind their homes. Some also took in apprentices or clerks as lodgers.",
+              "kind": "source_checked",
+              "basis": "CW-N-C20/CW-N-S17: houses, home workrooms, rear workshops and lodgers on the redeveloped Seckford estate. This is neighbourhood context, not identification of any particular window passed.",
+              "sourceUrls": [
+                "https://www.british-history.ac.uk/survey-london/vol46/pp72-85"
+              ]
+            },
+            {
+              "paragraph": "Watchmaking was divided among specialists. A person making one small component might be supplying a larger firm in the City or Westminster. A finished watch could bring together work done by people who occupied quite different premises.",
+              "kind": "supported_reconstruction",
+              "basis": "CW-N-C19/CW-N-S16: specialist component makers and suppliers to major City/Westminster firms. The final sentence draws the supported relationship together; no individual watch’s door-to-door journey is claimed.",
+              "sourceUrls": [
+                "https://www.londonmuseum.org.uk/collections/v/object-277111/lathe-watchmakers-turn/"
+              ]
+            },
+            {
+              "paragraph": "Picture the scale of it: a small lathe clamped in a vice, powered by a bow moving backwards and forwards. The maker could shape a tiny part with a tool small enough for a workbench. Precision industry could live inside a domestic room.",
+              "kind": "supported_reconstruction",
+              "basis": "CW-N-C19/C20; S16’s 1785–1830 tool description supports the bow-operated turn clamped in a vice. Back-and-forth motion explains the ordinary mechanism. S17 supplies domestic workrooms. The museum object is not claimed to have been used on this estate or at Ingersoll.",
+              "sourceUrls": [
+                "https://www.londonmuseum.org.uk/collections/v/object-277111/lathe-watchmakers-turn/",
+                "https://www.british-history.ac.uk/survey-london/vol46/pp72-85"
+              ]
+            },
+            {
+              "paragraph": "So keep the ordinary house front in the picture, along with the workshop. Behind a single address, a household might be sleeping, taking in a lodger, and making something that would eventually bear another business’s name.",
+              "kind": "supported_reconstruction",
+              "basis": "CW-N-C19/C20: bounded generic reconstruction connecting local mixed domestic/work use, lodgers and specialist supply. No composite character or identified house is invented; it does not require spotting a workshop during the chapter.",
+              "sourceUrls": [
+                "https://www.british-history.ac.uk/survey-london/vol46/pp72-85",
+                "https://www.londonmuseum.org.uk/collections/v/object-277111/lathe-watchmakers-turn/"
+              ]
+            }
+          ],
+          "directions": [
+            "Leave the Green by Clerkenwell Close. Follow the Close around the churchyard. At the Three Kings, follow Clerkenwell Close as it bends right, leaving the branch to the left. Turn right into Sans Walk. Follow Sans Walk to Woodbridge Street and turn right. At the Sekforde Street junction, continue down Woodbridge Street to the chapel.",
+            "Use a clear place on the opposite/northeast pavement. Look across for the brick chapel and white CLERKENWELL MEDICAL MISSION fascia.",
+            "If Clerkenwell Close is obstructed, skip the Many hands walking chapter. Go east/northeast across the Green to Sekforde Street at Aylesbury Street, turn left up Sekforde, then right into Woodbridge Street towards the chapel. Use public street pavements; avoid the Hayward’s Place shortcut. Play the chapel story manually if GPS does not recognise this shorter approach."
+          ],
+          "audio": {
+            "key": "clerkenwell-working-lives-many-hands",
+            "bytes": 560464,
+            "md5": "d114dc3430d15b4c5b11b4f9c266f173",
+            "durationSeconds": 65.8
+          },
+          "afterStopIndex": 4,
+          "startRouteIndex": 199,
+          "endRouteIndex": 204
+        },
+        {
+          "id": "next-days-stock",
+          "title": "The next day’s stock",
+          "transcript": "The flowers made beneath the chapel could last for years. Fresh flowers gave street sellers a much shorter clock. John Groom’s mission also lent money to women selling flowers in the streets, where the stock could perish before it brought in enough to replace itself.\n\nGroom told the investigator that a missionary had previously bought stock for the women. Now they did the buying themselves, under his supervision. Groom said the market sellers gave them concessions. A loan might top up a woman’s own money so she could buy a larger lot going cheaply.\n\nPicture the judgement involved in that bargain. A larger lot offered a better price, but it also meant more flowers to sell while they were fresh. Money was tied up in petals and stems. Turning it back into cash was what made another day’s trading possible.\n\nAs we head towards Exmouth Market, keep that small act of buying in mind. Long before a customer sees the goods, somebody has had to choose what to offer, and how much to risk on it.",
+          "sources": [
+            {
+              "title": "London Museum — Rediscover London’s lost art of flower-making",
+              "url": "https://www.londonmuseum.org.uk/blog/rediscover-londons-lost-art-of-flower-making/"
+            },
+            {
+              "title": "LSE, Charles Booth inquiry — Notebook BOOTH/B/237, selected 1898 interviews and observations",
+              "url": "https://booth.lse.ac.uk/iiif_page/BOOTH%2FB%2F237"
+            }
+          ],
+          "evidence": [
+            {
+              "paragraph": "The flowers made beneath the chapel could last for years. Fresh flowers gave street sellers a much shorter clock. John Groom’s mission also lent money to women selling flowers in the streets, where the stock could perish before it brought in enough to replace itself.",
+              "kind": "supported_reconstruction",
+              "basis": "CW-N-C07/C08: explicit reset from artificial makers to fresh-flower street sellers. Durability versus perishability is a reasonable material comparison, not a measured lifespan of a particular artificial flower. S06, notebook p205, specifically notes perishable stock and loans.",
+              "sourceUrls": [
+                "https://www.londonmuseum.org.uk/blog/rediscover-londons-lost-art-of-flower-making/",
+                "https://booth.lse.ac.uk/iiif_page/BOOTH%2FB%2F237"
+              ]
+            },
+            {
+              "paragraph": "Groom told the investigator that a missionary had previously bought stock for the women. Now they did the buying themselves, under his supervision. Groom said the market sellers gave them concessions. A loan might top up a woman’s own money so she could buy a larger lot going cheaply.",
+              "kind": "source_checked",
+              "basis": "CW-N-C08/CW-N-S06, pp205–207: attributed institutional informant account. The women’s purchases, supervision, reported concessions and capital supplementation remain distinct. No direct female testimony or unrestricted independence is claimed. V2 corrects the antecedent in notebook p205: the senior missionary previously bought, not Groom himself. Groom remains the institutional informant; no direct testimony from the women.",
+              "sourceUrls": [
+                "https://booth.lse.ac.uk/iiif_page/BOOTH%2FB%2F237"
+              ]
+            },
+            {
+              "paragraph": "Picture the judgement involved in that bargain. A larger lot offered a better price, but it also meant more flowers to sell while they were fresh. Money was tied up in petals and stems. Turning it back into cash was what made another day’s trading possible.",
+              "kind": "supported_reconstruction",
+              "basis": "CW-N-C08/S06: generic commercial reconstruction grounded in the cheap larger lot, capital and perishability described by Groom. No documented individual transaction, exact price, weather, route or outcome is invented. Cheap stock creates an inferred volume/perishability tradeoff.",
+              "sourceUrls": [
+                "https://booth.lse.ac.uk/iiif_page/BOOTH%2FB%2F237"
+              ]
+            },
+            {
+              "paragraph": "As we head towards Exmouth Market, keep that small act of buying in mind. Long before a customer sees the goods, somebody has had to choose what to offer, and how much to risk on it.",
+              "kind": "editorial",
+              "basis": "Editorial return to the route and a general commercial reflection. It asserts no shared Victorian/current working conditions, continuity of a particular trade or exact sighting during this walking leg.",
+              "sourceUrls": []
+            }
+          ],
+          "directions": [
+            "From the Ingersoll view return north to the signals. Complete the crossings to Skinner Street’s north pavement, then follow Skinner west to Rosoman Street. Use the zebra crossing to cross Rosoman Street. On the far pavement, turn right for a few steps, then left into Exmouth Market.",
+            "Continue southwest along Exmouth to the church/Spafield Street area opposite the green-tiled Exmouth Arms. Stop on a clear pavement edge, away from entrances and deliveries. Space EC1 is number 25; GAIL’s is 33–35.",
+            "Skinner Street carries buses. Pause the walking story if traffic or a crossing needs your attention; it remains available to play manually."
+          ],
+          "audio": {
+            "key": "clerkenwell-working-lives-next-days-stock",
+            "bytes": 558286,
+            "md5": "a29606a7ce678dcb12ba05d8369c417c",
+            "durationSeconds": 64.8
+          },
+          "afterStopIndex": 6,
+          "startRouteIndex": 294,
+          "endRouteIndex": 298
+        }
+      ]
+    }
+  },
+  "assets": [
+    {
+      "key": "clerkenwell-working-lives-charterhouse",
+      "base64": "[in companion package]"
+    },
+    {
+      "key": "clerkenwell-working-lives-smithfield",
+      "base64": "[in companion package]"
+    },
+    {
+      "key": "clerkenwell-working-lives-booths",
+      "base64": "[in companion package]"
+    },
+    {
+      "key": "clerkenwell-working-lives-stjohn-gate",
+      "base64": "[in companion package]"
+    },
+    {
+      "key": "clerkenwell-working-lives-green",
+      "base64": "[in companion package]"
+    },
+    {
+      "key": "clerkenwell-working-lives-flowers",
+      "base64": "[in companion package]"
+    },
+    {
+      "key": "clerkenwell-working-lives-ingersoll",
+      "base64": "[in companion package]"
+    },
+    {
+      "key": "clerkenwell-working-lives-exmouth",
+      "base64": "[in companion package]"
+    },
+    {
+      "key": "clerkenwell-working-lives-many-hands",
+      "base64": "[in companion package]"
+    },
+    {
+      "key": "clerkenwell-working-lives-next-days-stock",
+      "base64": "[in companion package]"
+    }
+  ]
+}

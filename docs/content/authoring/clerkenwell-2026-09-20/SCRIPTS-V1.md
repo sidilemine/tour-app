@@ -1,0 +1,310 @@
+# Clerkenwell — Working lives, hidden in plain sight
+
+## First complete narration draft
+
+20 September 2026. **V1, ready for fresh editorial and evidence review.** Written for George throughout from the [selected sequence](SELECTION.md), [writing brief v4](../WRITING-BRIEF.md), and the [south](SOUTH-RESEARCH.md), [north](NORTH-RESEARCH.md) and [additional](ADDITIONAL-RESEARCH.md) evidence packets. The prose below exactly matches [the JSON handoff](draft-stories-v1.json). It is a proposal, not owner approval or evidence of listening enjoyment.
+
+The first audio begins at the Charterhouse exterior. The mapped/written approach from Farringdon, literal directions, safe standing positions, launch windows and measured audio remain coordinator-owned. No optional interior is assumed in the tour’s timing. The owner’s 75–90-minute outing includes walking and looking; these stories have not been lengthened to manufacture that duration.
+
+### Shape and consequential choices
+
+The opening home and final shops give the historical work a living frame. Smithfield carries movement and payment; the panels offer a visual discovery; the Gate concerns composition; the Green concerns hospitality. The first walking chapter connects houses with specialist work. Flowers then supply a close view of hand skill, while Ingersoll changes scale to an adapted object. The second walking chapter considers buying perishable stock before the contemporary finish.
+
+The most promising moments are the porter relay, the split-level rooms behind a salvaged frontage, Lilliput’s openly signalled disguise, Quelch’s missing second chair, a flat petal acquiring its curve, the pocket watch’s added strap loops, and the vestry declining the lamp’s proposed new job. Their interest still needs an actual listening judgement.
+
+The Gate keeps Cave’s coach as a brief return to the visible building; the amateur theatricals stay out. Smithfield omits the railway engineering so its people and current transition can breathe. Flowers gains atmosphere from a directly observed room and broader craft evidence, with no invented worker biography or gratitude. The repeated medium of print and repeated subject of flowers serve different stories rather than replaying the same explanation.
+
+### Remaining integration issues
+
+- Measure George’s delivery and phoneme tokens. The first walking chapter is aimed at the tight Close window; reserve the actual crossing/turn margin before accepting its length. The second urban window is not assumed to be quiet.
+- The panel locator gives height, colour and building number without promising all five reliefs are readable. The route review supplies the exact viewing position; no left/right directions are invented here.
+- Recheck current museum/trading wording if the outing crosses 28 November 2026, and current businesses/courses near handoff. Present statements here were researched on 20 September 2026.
+- The flower process is wider period evidence. The 1898 visitor recorded the room, people and flower types, not an inventory of all the tools described. The writer also visually read the retained notebook scans for handwritten pp131 and 205–207.
+- The Pluto outcome is securely supported by the official report’s published OCR; its tea-and-coffee identity remains a modern local retelling, signalled in the prose. Detailed machine mechanics add little and are omitted.
+- No historical research gap blocks this first complete draft. Present interior uses and unobserved access are not filled in by prose. Voice rendering, navigation fit and enjoyment remain untested.
+
+## Script in route order
+
+### 1. A home within history
+
+**Stationary story · `charterhouse` · 204 words**
+
+Welcome to Clerkenwell. Our walk follows people who made a living here, through markets, workshops and printing rooms. We begin with somewhere to live: the Charterhouse.
+
+These buildings have been a monastery, a grand Tudor mansion, and a charitable home. In 1611, Thomas Sutton, a wealthy businessman and civil servant, bought the mansion to establish a foundation for older people and schoolboys. He died that year, leaving others to put the plan into practice.
+
+The governors made provision for eighty pensioners. Admission meant passing some very particular tests: an applicant had to be an unmarried man over fifty, or over forty if disabled, with references for his character and religious beliefs. Need opened the conversation; the governors decided who could come in.
+
+The residents became known as Brothers. The name survives, although today it includes women. The charity now provides housing and support for independent living to people aged sixty and over who have financial, housing and social needs.
+
+So the next chapter of the Charterhouse is also an ordinary one: people making a home. As we set out to find the work hidden in these streets, keep that living community in mind. For some Londoners, this extraordinary piece of history is their address.
+
+**Selection note:** Retains a living home as the opening frame. The admission rules give the charity a specific historical shape; the story does not turn every resident into a retired manual worker. Optional visiting information stays outside the narration.
+
+**Paragraph evidence** (exact paragraph text and full rationale in the JSON):
+
+| Paragraph | Kind | Basis |
+| --- | --- | --- |
+| 1 | `source_checked` | A-C01/A-C03: site identification and continuing residential purpose. The rest is the editorial promise of the selected route, not an additional historical claim. |
+| 2 | `source_checked` | A-C01 and A-S01/A-S03: institutional sequence, Sutton’s identity, purchase, death and intended foundation. Brief bearings omit the executions, royal visits and full school history. |
+| 3 | `supported_reconstruction` | A-C01/A-C02: 1613 provision and eligibility rules. The final sentence interprets the selective scheme; it invents no interview, individual applicant or rejection. Historical eligibility language is paraphrased, not applied to residents now. |
+| 4 | `source_checked` | A-C03: current institution’s description, checked 20 September 2026; corroborated by A-S03. This is the stated provision, not testimony about every resident’s experience. |
+| 5 | `supported_reconstruction` | A-C03 supports the living residential community. Closing interpretation connects it to the walk without claiming access to residents’ private lives or requiring an interior visit. |
+
+**Sources:** [The Charterhouse — History](https://thecharterhouse.org/explore-the-charterhouse/history/) · [London Museum — A history of the London Charterhouse](https://www.londonmuseum.org.uk/collections/london-stories/history-london-charterhouse/)
+
+### 2. A working day before yours
+
+**Stationary story · `smithfield` · 275 words**
+
+Smithfield keeps a different clock. The meat market’s advertised weekday hours run from midnight to seven in the morning. A daytime visitor arrives after much of the business has happened. These great covered halls make more sense when you picture them at the other end of the night.
+
+Imagine a delivery here in the nineteen-seventies. Porters in blue overalls and white caps unload the lorry. Other porters, called pitchers, carry the meat into the market. Once a buyer has made a purchase, another worker, a bummaree, is paid to take it out again. One load passes through a sequence of jobs.
+
+The porters were self-employed, licensed by the City, and paid according to how much they carried. Their arm badges identified them. Moving meat was a livelihood with its own rules and rights; even the market’s tenants had to employ the porters to shift it.
+
+The night shift gave customers time to get their purchases ready for sale that same day. Some nearby pubs served workers finishing their shift. For someone finishing work here, a drink early in the morning could be the end of the day.
+
+In the nineteen-nineties, overhead rails changed the handling of carcasses, and a settlement ended the porters’ exclusive right to move the meat. The work has kept changing. So has the future of the buildings.
+
+London Museum is due to open in the former General Market on the twenty-eighth of November, 2026. Meat trading continues in other halls, with traders expected to remain here until at least 2028 while a proposed move to the Royal Docks goes through approvals. For now, Smithfield holds two different futures alongside one another.
+
+**Selection note:** The human relay carries the historical scene. The railway and earlier livestock market are omitted to leave room for the present museum/trader distinction. This is one of the longer stories; check George’s rendering before trimming its concrete action.
+
+**Paragraph evidence** (exact paragraph text and full rationale in the JSON):
+
+| Paragraph | Kind | Basis |
+| --- | --- | --- |
+| 1 | `supported_reconstruction` | S-C05/S-S04: current advertised hours, checked 20 September 2026. S-C01/S-S01 supplies covered meat-market context. The visitor comparison is an inference from those hours; it promises neither current bustle nor access inside. |
+| 2 | `supported_reconstruction` | S-C02/S-S02: dated reconstruction from the museum’s 1977 badge record. Clothing, distinct carrying jobs and buyers paying bummarees are documented. No named person, dialogue, individual delivery or exact pace is invented. |
+| 3 | `source_checked` | S-C02/S-S02: the historical licensed porter system, paid by quantity, with tenants forbidden to move goods themselves. This paragraph continues the clearly dated scene; it is not a statement of present rules. |
+| 4 | `supported_reconstruction` | S-C03/S-S01: same-day preparation explains overnight trade; early pubs served workers after their shift. The final sentence is a natural interpretation, with no claim about a named pub’s current licence or an individual worker’s habits. |
+| 5 | `source_checked` | S-C02/S-S02: 1990s modernisation and settlement. Closing transition is editorial. No suggestion that porter work vanished altogether. |
+| 6 | `source_checked` | S-C06/S-C07: announced museum opening and separate trading relocation programme, checked 20 September 2026. The move remains conditional on parliamentary/planning processes; 2028 is a minimum stated occupation horizon, not a promised closing date. Refresh before an outing crossing 28 November 2026. |
+
+**Sources:** [Smithfield Market Tenants’ Association — Contact and opening hours](https://smithfieldmarket.com/contact/) · [London Museum — The history of Smithfield Market](https://www.londonmuseum.org.uk/collections/london-stories/history-smithfield-market/) · [London Museum — Porter’s Badge from Smithfield Meat Market, 1977](https://www.londonmuseum.org.uk/collections/v/object-45167/porters-badge-from-smithfield-meat-market/) · [London Museum — Announced Smithfield opening, 28 November 2026](https://www.londonmuseum.org.uk/about/press/press-releases/london-museum-smithfield-will-open-doors/) · [City of London — The future of Smithfield and Billingsgate Markets](https://www.cityoflondon.gov.uk/supporting-businesses/wholesale-markets/the-future-of-smithfield-and-billingsgate-markets)
+
+### 3. A wall that found another job
+
+**Stationary story · `booths` · 196 words**
+
+At number twenty-five Britton Street, look for the pale carved panels high among the windows, above the bands of brick and stone. There are five, though foliage may hide part of the sequence. They came from the offices of Booth’s gin distillery, and their subject is work.
+
+The carvings turn gin into a chain of labour, from harvesting grain to drawing drink from a cask. Grain supplies the alcohol; the characteristic flavour comes from botanicals, especially juniper. Making a consistent drink involves judgement, because those botanical oils vary from harvest to harvest.
+
+The wall itself has had a second career. It originally stood in Turnmill Street. In the nineteen-seventies, the architects developing this site realised the salvaged frontage was just the right width for their new building. The height was trickier: split-level flats helped make the rooms behind fit the old elevation.
+
+Some decayed stone had to be replaced, but the carved workers came along. A frontage designed to advertise a distillery became the face of flats and offices. Once you have found the panels, take in the whole wall again. The people in stone are still making gin above rooms built for quite different lives.
+
+**Selection note:** Uses the broad production sequence because some reliefs are obscured; exact actions and expressions are not essential. The salvage and split-level solution provide the main reveal. The national-listing decision is not misrepresented as a listing.
+
+**Paragraph evidence** (exact paragraph text and full rationale in the JSON):
+
+| Paragraph | Kind | Basis |
+| --- | --- | --- |
+| 1 | `source_checked` | S-C09/S-S08: address, materials, panel number/location, office origin and gin-making subject. Foliage limitation is the coordinator’s dated route-imagery finding supplied to the writer on 20 September 2026; it avoids promising all five are legible. The root will integrate the reviewed standing position. |
+| 2 | `source_checked` | S-C12/S-S10 supports the broad depicted chain; no precise panel order or gesture is identified. S-C13/S-S11 supplies general gin-making context, not a recovered Booth recipe or proof that all manufacturing stages happened in these offices. The scientific explanation is deliberately brief. |
+| 3 | `source_checked` | S-C09/S-C10/S-S08: relocated frontage and 1975–76 redevelopment, width match and split-level flats. No claim that every stone survived unchanged or the whole distillery moved. |
+| 4 | `supported_reconstruction` | S-C09/S-C10/S-S08: partial renewal, retained Portland-stone reliefs and residential/office redevelopment. The workers “still making gin” is an explicitly visual interpretation of the carvings, not a present manufacturing claim. No interior inspection is implied. |
+
+**Sources:** [Historic England designation decision — Mountford House, reference 1414903](https://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?resourceID=7&uid=1414903) · [Victorian Web — Mountford’s New Premises in Cowcross Street](https://victorianweb.org/art/architecture/mountford/2.html) · [The Gin Guild — Gin Navigator: Gin Explained](https://www.theginguild.com/guidance-for-members/gin-navigator/)
+
+### 4. Parliament in disguise
+
+**Stationary story · `stjohn-gate` · 313 words**
+
+St John’s Gate was completed in 1504 as the entrance to a religious house. Today it houses the Museum of the Order of St John. In the seventeen-thirties, it became the address of a publishing enterprise. Edward Cave, a printer and publisher, ran the Gentleman’s Magazine here. Among the writers he employed was Samuel Johnson, long before Johnson’s dictionary made his name.
+
+Readers wanted to know what Parliament was saying. Parliament was less keen to have it printed. In 1738, the Commons reaffirmed that publishing its proceedings breached its privileges. The magazine found a literary way round the problem: it sent its readers to Lilliput, the imaginary country in Gulliver’s Travels.
+
+A debate published in 1741 takes place in the Senate of Lilliput. One speaker appears as the Hurgo Quadrert. Then the introduction rather helpfully mentions a parallel debate in the British Parliament, which readers have been asking for. It is a disguise with a very large wink.
+
+Producing these speeches took more than changing the names. Johnson worked from other people’s reports and sparse notes. His biographer, James Boswell, records him saying that sometimes he received little more than the speakers’ names and which side they had taken. From that, the working writer had to supply the arguments and the language.
+
+Picture the distance between those few notes and a reader settling down to a substantial parliamentary speech. Part of what sounded like a statesman’s eloquence had been made at a writer’s desk. Here in Clerkenwell, political news passed through a remarkable amount of composition on its way into print.
+
+Cave put an image of the Gate on the magazine’s title-page, making this old entrance the face of his business. He even used it on the doors of his coach in place of a coat of arms. The building we are looking at was good enough to serve as his personal emblem.
+
+**Selection note:** The period publication’s own wink is stronger than the doubtful Whig-dogs anecdote. The coach detail is retained as a short visual return to the Gate, while the amateur theatricals remain a genuine alternative rather than a second plot.
+
+**Paragraph evidence** (exact paragraph text and full rationale in the JSON):
+
+| Paragraph | Kind | Basis |
+| --- | --- | --- |
+| 1 | `source_checked` | S-C14/S-C15: priory entrance, completion, Cave’s enterprise and Johnson’s early work. The architectural source distinguishes the original gate from its later-restored exterior; no unchanged interior or precise room is asserted. Current museum identity/address is confirmed by the already-surveyed official tours page, reopened by the writer on 20 September 2026; no opening or interior access promise. |
+| 2 | `source_checked` | S-C16/S-C17: Commons’ 1738 assertion of privilege and the magazine’s Lilliput device. This does not recast privilege as a modern blanket criminal statute or claim the disguise guaranteed immunity. |
+| 3 | `supported_reconstruction` | S-C17/S-S15: actual heading, speaker and explicit parallel-British-debate reference in the inspected transcription. The wink is interpretation of the publication’s own device. The modern editor’s identification of Quadrert is not presented as original text. |
+| 4 | `source_checked` | S-C18/S-S14: later biographical testimony, partly recalling Johnson’s own account. “Sometimes” is retained; no claim that every debate was invented or that these were verbatim transcripts. The last sentence explains the composition described in that account. |
+| 5 | `supported_reconstruction` | S-C18/S-S14 supports the expansion from notes to speeches; the reader is an unnamed generic imagined reading situation, not a composite character or recovered incident. This paragraph makes the production mechanism intelligible without adding a reported individual response. |
+| 6 | `source_checked` | S-C15/S-S12: title-page image and coach doors in the Survey of London. Final present-view connection is interpretation, with no claim that Cave’s coach or an unchanged eighteenth-century façade survives here. |
+
+**Sources:** [Survey of London — St John’s Gate and St John’s Lane](https://discovery.ucl.ac.uk/10198364/1/Chapter%205%20St%20John%27s%20Gate%20and%20St%20John%27s%20Lane.pdf) · [Museum of the Order of St John — Guided tours and current address](https://museumstjohn.org.uk/planning-your-visit/guided-tours/) · [Nikki Hessell — Samuel Johnson: beyond Lilliput, chapter summary](https://www.cambridge.org/core/books/abs/literary-authors-parliamentary-reporters/samuel-johnson-beyond-lilliput/B989325EA048E795B97830B91F5518BD) · [James Boswell — Life of Johnson, Gentleman’s Magazine account](https://www.gutenberg.org/files/1564/1564-h/1564-h.htm) · [The Gentleman’s Magazine, July 1741 — Debate on removing Walpole, modern transcription](https://www.samueljohnson.com/debates/174107.html)
+
+### 5. Room for one more editor
+
+**Stationary story · `green` · 227 words**
+
+At thirty-seven A Clerkenwell Green, the Marx Memorial Library remembers a great deal of political history. One story here concerns a very small office. In 1902, this building housed a printing business managed by Harry Quelch, who also edited the socialist newspaper Justice.
+
+The Russian revolutionary Lenin was then an editor in exile, years before the revolution of 1917. His newspaper, Iskra, needed somewhere to be printed. Quelch and his fellow British socialists made their equipment available. Seventeen issues came out of this building in 1902 and 1903.
+
+The extra enterprise took up room. Writing after Quelch’s death, Lenin remembered his host squeezing into a corner screened off by a thin partition. There was a small writing table, a bookshelf above it, and one chair. When Lenin visited, there was no space for a second chair.
+
+It is a wonderfully awkward picture: two editors, a newspaper to discuss, and nowhere to put the visitor. Sharing printing facilities had reached right down to the question of where Quelch could sit and do his own work. He had made international cooperation fit into a corner.
+
+Today the library continues to teach and discuss politics, with courses on trade unions and Marxism. The grand questions are still here. So is the building in which one editor gave another a practical welcome, even when he could scarcely offer him a seat.
+
+**Selection note:** Keeps Quelch central and gives the second print story a distinct subject: practical hospitality and space. The historical room is not equated with today’s Lenin Room. Pronunciation of Quelch and Iskra needs the usual George rendering check.
+
+**Paragraph evidence** (exact paragraph text and full rationale in the JSON):
+
+| Paragraph | Kind | Basis |
+| --- | --- | --- |
+| 1 | `source_checked` | CW-N-C01/C04; CW-N-S02/S03: address, publishing use, Quelch’s role and present library. The small-office introduction is editorial framing of the documented episode. |
+| 2 | `source_checked` | CW-N-C01/C02 and CW-N-S01/S02: Iskra, London printing and seventeen issues. Brief identity context locates Lenin before 1917. The practical cooperation does not imply uniform agreement among every printer or an endorsement of later politics. |
+| 3 | `source_checked` | CW-N-C02/C03; CW-N-S01: attributed retrospective participant recollection, written in a partisan obituary in 1913. Furniture and space follow that account; this is not identified with the surviving memorial room. |
+| 4 | `supported_reconstruction` | CW-N-C02/S01: the two editors’ documented visit and cramped workspace support the imagined practical encounter. Discussion of their newspaper is ordinary inference, not recovered dialogue; no gestures, emotional reaction or exact visitor position is invented. The last sentence is an interpretation of the material accommodation. |
+| 5 | `supported_reconstruction` | CW-N-C04/S03: current courses checked 20 September 2026, without promising opening or an in-person class during the walk. CW-N-C01/C02 support the closing recollection. No assertion that today’s memorial room preserves the office unchanged. |
+
+**Sources:** [Survey of London — Clerkenwell Green](https://discovery.ucl.ac.uk/id/eprint/10198342/1/Chapter%203%20Clerkenwell%20Green.pdf) · [Marx Memorial Library — Current and forthcoming courses](https://www.marx-memorial-library.org.uk/education/current-and-forthcoming-courses) · [V. I. Lenin — Harry Quelch, 1913; Marxists Internet Archive](https://www.marxists.org/archive/lenin/works/1913/sep/12.htm)
+
+### 6. Many hands, small parts
+
+**Walking chapter · `many-hands` · 162 words**
+
+As we leave the Green, the houses around these streets offer another way to picture an industrial district. In the nineteenth century, craftspeople on the nearby Seckford estate worked in adapted rooms and workshops behind their homes. Some also took in apprentices or clerks as lodgers.
+
+Watchmaking was divided among specialists. A person making one small component might be supplying a larger firm in the City or Westminster. A finished watch could bring together work done by people who occupied quite different premises.
+
+Picture the scale of it: a small lathe clamped in a vice, powered by a bow moving backwards and forwards. The maker could shape a tiny part with a tool small enough for a workbench. Precision industry could live inside a domestic room.
+
+So keep the ordinary house front in the picture, along with the workshop. Behind a single address, a household might be sleeping, taking in a lodger, and making something that would eventually bear another business’s name.
+
+**Selection note:** Lean first walking chapter for the Close window. Houses and specialist supply do complementary jobs; the tool gives one concrete action. The final version must fit measured George audio plus the route’s navigation margin.
+
+**Paragraph evidence** (exact paragraph text and full rationale in the JSON):
+
+| Paragraph | Kind | Basis |
+| --- | --- | --- |
+| 1 | `source_checked` | CW-N-C20/CW-N-S17: houses, home workrooms, rear workshops and lodgers on the redeveloped Seckford estate. This is neighbourhood context, not identification of any particular window passed. |
+| 2 | `supported_reconstruction` | CW-N-C19/CW-N-S16: specialist component makers and suppliers to major City/Westminster firms. The final sentence draws the supported relationship together; no individual watch’s door-to-door journey is claimed. |
+| 3 | `supported_reconstruction` | CW-N-C19/C20; S16’s 1785–1830 tool description supports the bow-operated turn clamped in a vice. Back-and-forth motion explains the ordinary mechanism. S17 supplies domestic workrooms. The museum object is not claimed to have been used on this estate or at Ingersoll. |
+| 4 | `supported_reconstruction` | CW-N-C19/C20: bounded generic reconstruction connecting local mixed domestic/work use, lodgers and specialist supply. No composite character or identified house is invented; it does not require spotting a workshop during the chapter. |
+
+**Sources:** [Survey of London — Sekforde Street area](https://www.british-history.ac.uk/survey-london/vol46/pp72-85) · [London Museum — Lathe, watchmaker’s turn, 1785–1830](https://www.londonmuseum.org.uk/collections/v/object-277111/lathe-watchmakers-turn/)
+
+### 7. Giving a petal its curve
+
+**Stationary story · `flowers` · 282 words**
+
+Woodbridge Chapel once sheltered a workroom full of flowers: roses, daisies and cornflowers, all being made by hand. In 1898, an investigator working on Charles Booth’s great inquiry into London life came here and found about thirty girls and women making artificial flowers in the schoolroom beneath the chapel.
+
+Their usual workroom was being enlarged. They belonged to the flower-making work of John Groom’s mission, which trained disabled women. The visitor caught the work in temporary quarters, giving us a glimpse of an activity that the chapel’s exterior cannot explain by itself.
+
+To picture the skill, follow a petal through the trade. Fabric was cut into shapes and dyed. Moulds pressed veins and texture into it. Then came the curve: a metal tool with a ball on the end was heated over a spirit lamp, and the petal shaped around it. A flat scrap began to resemble something that had grown.
+
+That was still only a petal. The pieces had to be assembled into a flower, held on a wire stem and arranged into sprays. The stem itself could be covered with paper or silk. Each stage helped the finished thing conceal the small operations that had made it.
+
+A mission assistant told another interviewer that training took two years. That gives the little flowers a different weight. Their lightness and delicacy depended on skills learnt over time, before a customer ever pinned them to a hat or dress.
+
+Hold that picture beside the chapel for a moment: a room beneath it, thirty people at work, and the beginnings of roses and cornflowers passing through their hands. The building has room in its history for every one of those carefully made petals.
+
+**Selection note:** The direct visit supplies the room and flowers; period craft supplies the unfamiliar process. The founder receives only enough context to explain the institution. No gratitude, individual disability, wage or satisfaction is invented. The current interior use remains outside the story.
+
+**Paragraph evidence** (exact paragraph text and full rationale in the JSON):
+
+| Paragraph | Kind | Basis |
+| --- | --- | --- |
+| 1 | `source_checked` | CW-N-C05/CW-N-S06: directly observed notebook p207, in the 1898 inquiry context. The investigator is not identified as Charles Booth himself. Flower types and approximate headcount are documented; no invented colour or named worker. |
+| 2 | `source_checked` | CW-N-C05/C06; CW-N-S05/S06, notebook pp131 and 207, and S04’s institutional description. The “glimpse” and exterior comparison are editorial framing. No current interior use or recovered floor plan is asserted. |
+| 3 | `supported_reconstruction` | CW-N-C07/CW-N-S08: broader period process from museum curators, expressly introduced as the trade. This does not claim the investigator inventoried these tools or watched all these stages in the chapel. No object is assigned to a particular maker. |
+| 4 | `supported_reconstruction` | CW-N-C07/S08: wire assembly, stem covering and sprays. Final sentence interprets the effect of the documented process. No local output quantity or individual task division is inferred. |
+| 5 | `supported_reconstruction` | CW-N-C06/S05, p131: the assistant’s estimate, not a guaranteed two-year qualification. S08 supports contemporary use on hats, bonnets and dresses; the imagined customer is generic and does not establish the destination of a specific local flower. |
+| 6 | `supported_reconstruction` | CW-N-C05/C07: returns to the observed temporary workroom through a bounded imagined scene. “Passing through their hands” follows the documented handcraft; no private feelings or invented incident. The present connection is to the chapel’s exterior, without claiming the workroom survives. |
+
+**Sources:** [LSE, Charles Booth inquiry — Notebook BOOTH/B/237, selected 1898 interviews and observations](https://booth.lse.ac.uk/iiif_page/BOOTH%2FB%2F237) · [London Archives via AIM25 — John Groom’s Association for Disabled People](https://atom.aim25.com/index.php/john-grooms-association-for-disabled-people) · [London Museum — Rediscover London’s lost art of flower-making](https://www.londonmuseum.org.uk/blog/rediscover-londons-lost-art-of-flower-making/)
+
+### 8. From pocket to wrist
+
+**Stationary story · `ingersoll` · 182 words**
+
+Look for the Ingersoll name in green and cream mosaic. This building was the watch company’s warehouse and showroom. A large sign for a small object: watches could leave a district known for making them through premises devoted to storing and selling them.
+
+One surviving Ingersoll watch, now in the Clockmakers’ collection, shows how an everyday habit changed. It began as a pocket watch. Someone added small projecting loops to the case at twelve and six, so that a strap could hold it against the wrist.
+
+During the First World War, wearing a watch this way let soldiers consult the time while keeping their hands free. On the surviving example, the alteration is built into the object. The dial tells another part of its journey: the parts were made in America, and the watch assembled in England.
+
+The building here was later converted into flats, but the company name survived. Between that public sign and those tiny added loops, you have two different traces of the trade: how a watch was sold, and how someone found a handier way to wear it.
+
+**Selection note:** Keeps the object adaptation and commercial building together without inventing local manufacture. The domestic workshop chapter has already carried specialist craft, so the precision tool is not retold here.
+
+**Paragraph evidence** (exact paragraph text and full rationale in the JSON):
+
+| Paragraph | Kind | Basis |
+| --- | --- | --- |
+| 1 | `supported_reconstruction` | CW-N-C17/C19; CW-N-S14/S16: warehouse/showroom, mosaic and local watch-trade context. The distribution explanation follows the documented use; it does not claim manufacturing at this address or a particular shipment. |
+| 2 | `source_checked` | CW-N-C18/CW-N-S15, object L2015-4073: pocket-to-wrist conversion with lugs. It is explicitly a museum object of this brand, not a watch established to have passed through this building. “Loops” makes lugs intelligible to the ear. |
+| 3 | `source_checked` | CW-N-C18/S15: museum’s broader military-use explanation and this object’s dial inscription. No military owner or wartime conversion date is asserted for this specific watch. Uncertain luminous-paint history is omitted. |
+| 4 | `supported_reconstruction` | CW-N-C17/S14: 1995–96 residential conversion and retained mosaic. CW-N-C18/S15 supports the object comparison. No claim that this watch’s conversion happened in St John Street. |
+
+**Sources:** [Survey of London — St John Street: introduction and west side](https://discovery.ucl.ac.uk/id/eprint/10198365/1/Chapter%208%20St%20John%20Street.pdf) · [London Museum — Lathe, watchmaker’s turn, 1785–1830](https://www.londonmuseum.org.uk/collections/v/object-277111/lathe-watchmakers-turn/) · [Science Museum Group — Ingersoll “Sterling” watch converted for the wrist, L2015-4073](https://collection.sciencemuseumgroup.org.uk/objects/co8558607/sterling-watch-by-ingersoll-converted-for-use-on-the-wrist)
+
+### 9. The next day’s stock
+
+**Walking chapter · `next-days-stock` · 177 words**
+
+The flowers made beneath the chapel could last for years. Fresh flowers gave street sellers a much shorter clock. John Groom’s mission also lent money to women selling flowers in the streets, where the stock could perish before it brought in enough to replace itself.
+
+Groom told the investigator that he had once bought stock for the women. Now they did the buying themselves, with a missionary attending the market. He said the sellers gave them concessions. A loan might top up a woman’s own money so she could buy a larger lot going cheaply.
+
+Picture the judgement involved in that bargain. A larger lot offered a better price, but it also meant more flowers to sell while they were fresh. Money was tied up in petals and stems. Turning it back into cash was what made another day’s trading possible.
+
+As we head towards Exmouth Market, keep that small act of buying in mind. Long before a customer sees the goods, somebody has had to choose what to offer, and how much to risk on it.
+
+**Selection note:** Distinct second flower subject: purchasing and capital, not artificial manufacture. The commercial reconstruction reveals an actual dilemma without an invented seller. This urban walking window is not described as quiet.
+
+**Paragraph evidence** (exact paragraph text and full rationale in the JSON):
+
+| Paragraph | Kind | Basis |
+| --- | --- | --- |
+| 1 | `supported_reconstruction` | CW-N-C07/C08: explicit reset from artificial makers to fresh-flower street sellers. Durability versus perishability is a reasonable material comparison, not a measured lifespan of a particular artificial flower. S06, notebook p205, specifically notes perishable stock and loans. |
+| 2 | `source_checked` | CW-N-C08/CW-N-S06, pp205–207: attributed institutional informant account. The women’s purchases, supervision, reported concessions and capital supplementation remain distinct. No direct female testimony or unrestricted independence is claimed. |
+| 3 | `supported_reconstruction` | CW-N-C08/S06: generic commercial reconstruction grounded in the cheap larger lot, capital and perishability described by Groom. No documented individual transaction, exact price, weather, route or outcome is invented. Cheap stock creates an inferred volume/perishability tradeoff. |
+| 4 | `editorial` | Editorial return to the route and a general commercial reflection. It asserts no shared Victorian/current working conditions, continuity of a particular trade or exact sighting during this walking leg. |
+
+**Sources:** [London Museum — Rediscover London’s lost art of flower-making](https://www.londonmuseum.org.uk/blog/rediscover-londons-lost-art-of-flower-making/) · [LSE, Charles Booth inquiry — Notebook BOOTH/B/237, selected 1898 interviews and observations](https://booth.lse.ac.uk/iiif_page/BOOTH%2FB%2F237)
+
+### 10. Making a street work
+
+**Stationary story · `exmouth` · 279 words**
+
+We finish in Exmouth Market, where earning a living is much more visible. On weekdays, food traders use the street’s market pitches. At other times the shops, cafés and restaurants give it a different rhythm. What you find today will depend on the day, the hour, and who has opened up.
+
+One shop here, Space EC1, belongs to Mo and Jo, a mother and daughter who say they fell into retail. They established the business in 1998 and describe a taste for colour, pattern and saucy humour. Choosing what might delight a stranger is part of the work behind a shop window.
+
+An earlier attempt to serve the street put the refreshments into the street furniture itself. The Pluto hot-water lamp was a late-Victorian contraption remembered here as a dispenser of tea and coffee. It sounds like an excellent idea for anyone who has been walking around London.
+
+The local authority’s report for 1899 gives it a brisk review: “not a success”. Its owners offered to convert it into a drinking fountain if the vestry, the local governing body, would take it over. The vestry declined, and the lamp was removed. Even its application for a simpler job had been unsuccessful.
+
+Today, GAIL’s bakery has a reclaimed Victorian fountain as a tribute to that experiment. The original lamp is gone; the idea has found a small afterlife in another business serving the street.
+
+That leaves us among the people still deciding what to make, what to stock, and what might tempt a passer-by to stop. There is time now to follow your own curiosity along the street. Thank you for walking through Clerkenwell. The next discovery can be yours.
+
+**Selection note:** Gives the present shop a human identity before the lamp’s official anticlimax. Retains the fountain tribute because it connects the historical failure to a current business, with no request to enter. Rejects the elaborate unverified mechanism and counterfeit-coin explanation.
+
+**Paragraph evidence** (exact paragraph text and full rationale in the JSON):
+
+| Paragraph | Kind | Basis |
+| --- | --- | --- |
+| 1 | `source_checked` | CW-N-C12/C13/C16; CW-N-S11/S12/S13: council’s weekday pitches plus current operators. This day-sensitive introduction does not promise weekend stalls, universal trading or any business open at the moment of listening. Current pages checked 20 September 2026. |
+| 2 | `supported_reconstruction` | CW-N-C13/S12: operator’s current account, relationship, founding date and chosen character. Last sentence is an interpretation of selecting gifts, not a claim about a specific customer or item in the present window. |
+| 3 | `supported_reconstruction` | CW-N-C14/C15: contemporary report establishes the lamp; the tea/coffee identity is from S13’s modern local retelling, not a verified contemporary technical account. “Remembered here” retains that distinction without claiming a menu, price or mechanism. Closing humour is editorial. |
+| 4 | `supported_reconstruction` | CW-N-C14/S10: published OCR of report p138, read by researcher; three-word quotation and proposed takeover/conversion, refusal and removal. No cause of failure or precise removal day is invented. Last sentence personifies the proposal for a clearly editorial comic coda. |
+| 5 | `source_checked` | CW-N-C16/S13: operator’s stated tribute, explicitly distinguished from original lamp; S10 supports removal. No claim that the tribute is visible from the listening position or that a purchase/interior visit is required. |
+| 6 | `editorial` | Editorial farewell and invitation, with no required purchase, guaranteed activity, access promise or new historical assertion. This is the end of the selected tour, not an instruction to enter a particular business. |
+
+**Sources:** [Islington Council — Market information for customers: Exmouth Market](https://www.islington.gov.uk/business/markets/market-information-for-customers) · [Space EC1 / I Found It In Space — About Us](https://ifounditinspace.co.uk/pages/about-us) · [GAIL’s — Exmouth Market and the Pluto lamp tribute](https://gails.com/pages/exmouth-market) · [Clerkenwell official report, 1899 — Pluto lamp outcome, printed page 138](https://wellcomelibrary.org/moh/report/b20056424/147)
+
+## Draft verification
+
+JSON parsing, unique IDs, story/chapter order, complete exact paragraph-to-evidence matching, source registration, allowed evidence kinds and Markdown/JSON prose fidelity were checked locally. These are authoring checks, not audio, app, device, access or enjoyment tests. No navigation has been appended.

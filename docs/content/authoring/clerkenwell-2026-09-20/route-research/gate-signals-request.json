@@ -1,0 +1,38 @@
+{
+  "locations": [
+    {
+      "lat": 51.52188,
+      "lon": -0.10269,
+      "type": "break"
+    },
+    {
+      "lat": 51.52222,
+      "lon": -0.1045,
+      "type": "via"
+    },
+    {
+      "lat": 51.5222076,
+      "lon": -0.1059674,
+      "type": "via"
+    },
+    {
+      "lat": 51.5223103,
+      "lon": -0.1059962,
+      "type": "via"
+    },
+    {
+      "lat": 51.52292,
+      "lon": -0.10562,
+      "type": "break"
+    }
+  ],
+  "costing": "pedestrian",
+  "costing_options": {
+    "pedestrian": {
+      "walking_speed": 4.5
+    }
+  },
+  "units": "kilometers",
+  "language": "en-GB",
+  "id": "clerkenwell-research-gate-signals-green"
+}

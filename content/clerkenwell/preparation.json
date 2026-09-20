@@ -1,0 +1,484 @@
+{
+  "preparedAt": "2026-09-20T17:48:13.462Z",
+  "inputs": [
+    {
+      "path": "content/clerkenwell/stories.json",
+      "sha256": "e56e49d924dc71fdbd5e1de9dc6a80ca28f2eaad4dd870d8adb7dc4c8b6fb64e"
+    },
+    {
+      "path": "content/clerkenwell/plan.json",
+      "sha256": "28c1f3758e8d8010ef0ba03bf77e85fe4bb8724404ccd32242b8a3bf580b49a2"
+    }
+  ],
+  "mapId": "clerkenwell-8f45f13ad1755318",
+  "routeEvidence": "docs/content/authoring/clerkenwell-2026-09-20/ROUTE-RESEARCH.md",
+  "synthesis": {
+    "provider": "Kokoro",
+    "voice": "bm_george",
+    "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+    "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+    "dtype": "fp32",
+    "device": "cpu",
+    "speed": 1,
+    "kokoroJs": "1.2.1",
+    "paragraphGapSeconds": 0.25,
+    "loudnessLufs": -19,
+    "encoding": "AAC mono 24 kHz 64 kb/s",
+    "rendererRevision": 2
+  },
+  "stationaryAudioSeconds": 881.8000000000001,
+  "walkingAudioSeconds": 130.6,
+  "budgets": [
+    {
+      "id": "many-hands",
+      "afterStopIndex": 4,
+      "startRouteIndex": 199,
+      "endRouteIndex": 204,
+      "navigationRouteIndex": 220,
+      "fastWalkingMetresPerSecond": 1.6666666666666665,
+      "marginSeconds": 15,
+      "metresAfterLatestLaunch": 135.1827752482165,
+      "availableSeconds": 81.1096651489299,
+      "audioSeconds": 65.8
+    },
+    {
+      "id": "next-days-stock",
+      "afterStopIndex": 6,
+      "startRouteIndex": 294,
+      "endRouteIndex": 298,
+      "navigationRouteIndex": 315,
+      "fastWalkingMetresPerSecond": 1.6666666666666665,
+      "marginSeconds": 15,
+      "metresAfterLatestLaunch": 176.1423028187829,
+      "availableSeconds": 105.68538169126974,
+      "audioSeconds": 64.8
+    }
+  ],
+  "recordings": [
+    {
+      "id": "charterhouse",
+      "key": "clerkenwell-working-lives-charterhouse",
+      "bytes": 867078,
+      "md5": "45794bed700b522503228c49497edfa3",
+      "durationSeconds": 100.5,
+      "sha256": "2faf289a9e7c2af418d6da9f6c4d7d567cb2f5ccfaa14c3e92f0a24779d806ea",
+      "textSha256": "b6bc8e082ba0c7ba3990d2ab50735a5f1fd111d774c043dd1e3680bbb6b75a22",
+      "cache": "artifacts/clerkenwell-audio/9d1b33b465af89c4d636994e4c70d4c010e9f19d6cc0ec39485d9ddc69e29faa",
+      "words": 239,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "Welcome to Clerkenwell. Our walk follows people who made a living here, through markets, workshops and printing rooms. We begin with somewhere to live: the Charterhouse.",
+          "durationSeconds": 10.925
+        },
+        {
+          "paragraph": 1,
+          "text": "These buildings have been a monastery, a grand Tudor mansion, and a charitable home. In 1611, Thomas Sutton, a wealthy businessman and civil servant, bought the mansion to establish a foundation for older people and schoolboys. He died that year, leaving others to put the plan into practice.",
+          "durationSeconds": 19.775
+        },
+        {
+          "paragraph": 2,
+          "text": "The governors made provision for eighty pensioners. Admission meant passing some very particular tests: an applicant had to be an unmarried man over fifty, or over forty if disabled, with references for his character and religious beliefs. Need opened the conversation; the governors decided who could come in.",
+          "durationSeconds": 20.375
+        },
+        {
+          "paragraph": 3,
+          "text": "The residents became known as Brothers. The name survives, although today it includes women. The charity now provides housing and support for independent living to people aged sixty and over who have financial, housing and social needs.",
+          "durationSeconds": 16.275
+        },
+        {
+          "paragraph": 4,
+          "text": "So the next chapter of the Charterhouse is also an ordinary one: people making a home. As we set out to find the work hidden in these streets, keep that living community in mind. For some Londoners, this extraordinary piece of history is their address.",
+          "durationSeconds": 16.45
+        },
+        {
+          "paragraph": 5,
+          "text": "For Smithfield, return along the western side of Charterhouse Square, then follow Charterhouse Street towards the covered meat-market halls. Our next stop is on the north pavement, looking across towards the market near Grand Avenue.",
+          "durationSeconds": 15.4
+        }
+      ],
+      "verification": "Complete text/chunks, mono 24 kHz, duration and full decode checked; subjective listening separate."
+    },
+    {
+      "id": "smithfield",
+      "key": "clerkenwell-working-lives-smithfield",
+      "bytes": 1056664,
+      "md5": "ac062212480d83967f4ece1e488fb510",
+      "durationSeconds": 123.9,
+      "sha256": "7fcfb1a3088e9b3a91e7b4bc1d52c2bd0a48e8ce050c0f052aa7ed8af17ff13b",
+      "textSha256": "694ffe57f54fcf0483d528deb12ced69ae02f3b5e5ead0083efbbdccbb070d64",
+      "cache": "artifacts/clerkenwell-audio/7e0cbb2990f568a532a999a2507e56fc427dc96df7aa25bd735bf41e7fe1b6d8",
+      "words": 313,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "Smithfield keeps a different clock. The meat market’s advertised weekday hours run from midnight to seven in the morning. A daytime visitor arrives after much of the business has happened. These great covered halls make more sense when you picture them at the other end of the night.",
+          "durationSeconds": 17.925
+        },
+        {
+          "paragraph": 1,
+          "text": "Imagine a delivery here in the nineteen-seventies. Porters in blue overalls and white caps unload the lorry. Other porters, called pitchers, carry the meat into the market. Once a buyer has made a purchase, another worker, a bummaree, is paid to take it out again. One load passes through a sequence of jobs.",
+          "durationSeconds": 20.4
+        },
+        {
+          "paragraph": 2,
+          "text": "The porters were self-employed, licensed by the City, and paid according to how much they carried. Their arm badges identified them. Moving meat was a livelihood with its own rules and rights; even the market’s tenants had to employ the porters to shift it.",
+          "durationSeconds": 17.15
+        },
+        {
+          "paragraph": 3,
+          "text": "The night shift gave customers time to get their purchases ready for sale that same day. Some nearby pubs served workers finishing their shift. For someone finishing work here, a drink early in the morning could be the end of the day.",
+          "durationSeconds": 14.9
+        },
+        {
+          "paragraph": 4,
+          "text": "In the nineteen-nineties, overhead rails changed the handling of carcasses, and a settlement ended the porters’ exclusive right to move the meat. The work has kept changing. So has the future of the buildings.",
+          "durationSeconds": 13.9
+        },
+        {
+          "paragraph": 5,
+          "text": "London Museum is due to open in the former General Market on the twenty-eighth of November, 2026. Meat trading continues in other halls, with traders expected to remain here until at least 2028 while a proposed move to the Royal Docks goes through approvals. For now, Smithfield holds two different futures alongside one another.",
+          "durationSeconds": 22.475
+        },
+        {
+          "paragraph": 6,
+          "text": "Next are carved panels in Britton Street. Take St John Street north, then St John’s Lane towards the Gate. Just before the Gate, turn left into Briset Street, then right into Britton Street. Look across towards number twenty-five.",
+          "durationSeconds": 15.575
+        }
+      ],
+      "verification": "Complete text/chunks, mono 24 kHz, duration and full decode checked; subjective listening separate."
+    },
+    {
+      "id": "booths",
+      "key": "clerkenwell-working-lives-booths",
+      "bytes": 765117,
+      "md5": "c6ecc6f92dae035e263449380c2fcd08",
+      "durationSeconds": 89.5,
+      "sha256": "00eb227036765af6b79d25b32cc821e689faa5c1e9bb8f35fef491dbaab7dcb6",
+      "textSha256": "127ab310969c268a8ab18aff3bee17f82801c9c075f32098ae3f8595d37ae38f",
+      "cache": "artifacts/clerkenwell-audio/81ad6a45779a4c7fbb3831a4808b3c9b2263db02ed9ff0be09ada11f6b9f9ec1",
+      "words": 223,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "At number twenty-five Britton Street, look for the pale carved panels high among the windows, above the bands of brick and stone. There are five, though foliage may hide part of the sequence. They came from the offices of Booth’s gin distillery, and their subject is work.",
+          "durationSeconds": 17.325
+        },
+        {
+          "paragraph": 1,
+          "text": "The carvings turn gin into a chain of labour, from harvesting grain to drawing drink from a cask. Grain supplies the alcohol; the characteristic flavour comes from botanicals, especially juniper. Making a consistent drink involves judgement, because those botanical oils vary from harvest to harvest.",
+          "durationSeconds": 20.675
+        },
+        {
+          "paragraph": 2,
+          "text": "The wall itself has had a second career. It originally stood in Turnmill Street. In the nineteen-seventies, the architects developing this site realised the salvaged frontage was just the right width for their new building. The height was trickier: split-level flats helped make the rooms behind fit the old elevation.",
+          "durationSeconds": 20.2
+        },
+        {
+          "paragraph": 3,
+          "text": "Some decayed stone had to be replaced, but the carved workers came along. A frontage designed to advertise a distillery became the face of flats and offices. Once you have found the panels, take in the whole wall again. The people in stone are still making gin above rooms built for quite different lives.",
+          "durationSeconds": 19.9
+        },
+        {
+          "paragraph": 4,
+          "text": "Now retrace your steps to Briset Street and turn towards St John’s Gate. Find a place to one side of its southern approach, leaving the archway clear.",
+          "durationSeconds": 10.375
+        }
+      ],
+      "verification": "Complete text/chunks, mono 24 kHz, duration and full decode checked; subjective listening separate."
+    },
+    {
+      "id": "stjohn-gate",
+      "key": "clerkenwell-working-lives-stjohn-gate",
+      "bytes": 1171334,
+      "md5": "adc982aa48c22e28cd1950237e644157",
+      "durationSeconds": 137.5,
+      "sha256": "433b9894888be8d03f5f35412b081fbbee853f961b72f5bef9947c58ac6bd59a",
+      "textSha256": "f636f3a2e6b68734b1de26c665e86d151ce66178e2da7fd4d3d9124860da57a5",
+      "cache": "artifacts/clerkenwell-audio/2b8b171c903fac190a21ab62497d5174187edddd544039fe25a224a24a288162",
+      "words": 347,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "St John’s Gate was completed in 1504 as the entrance to a religious house. Today it houses the Museum of the Order of St John. In the seventeen-thirties, it became the address of a publishing enterprise. Edward Cave, a printer and publisher, ran the Gentleman’s Magazine here. Among the writers he employed was Samuel Johnson, long before Johnson’s dictionary made his name.",
+          "durationSeconds": 24.45
+        },
+        {
+          "paragraph": 1,
+          "text": "Readers wanted to know what Parliament was saying. Parliament was less keen to have it printed. In 1738, the Commons reaffirmed that publishing its proceedings breached its privileges. The magazine found a literary way round the problem: it sent its readers to Lilliput, the imaginary country in Gulliver’s Travels.",
+          "durationSeconds": 20.95
+        },
+        {
+          "paragraph": 2,
+          "text": "A debate published in 1741 takes place in the Senate of Lilliput. One speaker appears as the Hurgo Quadrert. Then the introduction rather helpfully mentions a parallel debate in the British Parliament, which readers have been asking for. It is a disguise with a very large wink.",
+          "durationSeconds": 19.25
+        },
+        {
+          "paragraph": 3,
+          "text": "Producing these speeches took more than changing the names. Johnson worked from other people’s reports and sparse notes. His biographer, James Boswell, records him saying that sometimes he received little more than the speakers’ names and which side they had taken. From that, the working writer had to supply the arguments and the language.",
+          "durationSeconds": 21.5
+        },
+        {
+          "paragraph": 4,
+          "text": "A reader settling down to a substantial parliamentary speech was also reading the work of a hired writer. Here in Clerkenwell, political eloquence was being made on its way into print.",
+          "durationSeconds": 12.925
+        },
+        {
+          "paragraph": 5,
+          "text": "Cave put an image of the Gate on the magazine’s title-page, making this old entrance the face of his business. He even used it on the doors of his coach in place of a coat of arms. The building we are looking at was good enough to serve as his personal emblem.",
+          "durationSeconds": 17.15
+        },
+        {
+          "paragraph": 6,
+          "text": "Go through the arch and turn west through St John’s Square and St John’s Path to Britton Street. Turn right, then follow Clerkenwell Road’s south pavement left towards Old Sessions House. Use the pedestrian signals there to cross, then head around the Sessions House to the Green. The map shows this approach.",
+          "durationSeconds": 19.7
+        }
+      ],
+      "verification": "Complete text/chunks, mono 24 kHz, duration and full decode checked; subjective listening separate."
+    },
+    {
+      "id": "green",
+      "key": "clerkenwell-working-lives-green",
+      "bytes": 903363,
+      "md5": "615cdcdb752416560240dd4bba1c72e0",
+      "durationSeconds": 105.8,
+      "sha256": "ae36824713b451a804e823259e503f3eb627d9d359bc664e3cb635cbc230b197",
+      "textSha256": "758b2ac37244b9adf99061a9100626269c576edae2cbc96219a4434ef30281e3",
+      "cache": "artifacts/clerkenwell-audio/a99fe8fdd198247d686d29d9458470f75b502558dfded38492d3a743aabc8b34",
+      "words": 247,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "At thirty-seven A Clerkenwell Green, the Marx Memorial Library remembers a great deal of political history. One story here concerns a very small office. In 1902, this building housed a printing business managed by Harry Quelch, who also edited the socialist newspaper Justice.",
+          "durationSeconds": 19.825
+        },
+        {
+          "paragraph": 1,
+          "text": "The Russian revolutionary Lenin was then an editor in exile, years before the revolution of 1917. His newspaper, Iskra, needed somewhere to be printed. Quelch and his fellow British socialists made their equipment available. Seventeen issues came out of this building in 1902 and 1903.",
+          "durationSeconds": 21.1
+        },
+        {
+          "paragraph": 2,
+          "text": "The extra enterprise took up room. Writing after Quelch’s death, Lenin remembered his host squeezing into a corner screened off by a thin partition. There was a small writing table, a bookshelf above it, and one chair. When Lenin visited, there was no space for a second chair.",
+          "durationSeconds": 18.075
+        },
+        {
+          "paragraph": 3,
+          "text": "It is a wonderfully awkward picture: two editors, a newspaper to discuss, and nowhere to put the visitor. Quelch had made international cooperation fit into a corner.",
+          "durationSeconds": 11.75
+        },
+        {
+          "paragraph": 4,
+          "text": "Today the library continues to teach and discuss politics, with courses on trade unions and Marxism. Those public debates still have an address in this building.",
+          "durationSeconds": 11.75
+        },
+        {
+          "paragraph": 5,
+          "text": "Our next stretch follows Clerkenwell Close around the churchyard. At the Three Kings, keep on the Close as it bends right, then turn right into Sans Walk. Follow Sans Walk to Woodbridge Street, turn right, and continue down Woodbridge past the Sekforde junction. A short story will play on the Close; the map and written directions remain available.",
+          "durationSeconds": 22.05
+        }
+      ],
+      "verification": "Complete text/chunks, mono 24 kHz, duration and full decode checked; subjective listening separate."
+    },
+    {
+      "id": "flowers",
+      "key": "clerkenwell-working-lives-flowers",
+      "bytes": 1094332,
+      "md5": "48a4b7e3e8713d5a84cec150c9301034",
+      "durationSeconds": 128.8,
+      "sha256": "94fb23106f65c3aebec3f97899c628eb5175b730571b051ebd0d35acc3891319",
+      "textSha256": "690e51712fd6a9f456836e9621aafa7d3d83c6e82e4701af1833ea9d55a11436",
+      "cache": "artifacts/clerkenwell-audio/8ffa9791095af12d137a4bdb461a46f9dbff896e078875b4f64b11f68aca2a32",
+      "words": 321,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "Woodbridge Chapel once sheltered a workroom full of flowers: roses, daisies and cornflowers, all being made by hand. In 1898, an investigator working on Charles Booth’s great inquiry into London life came here and found about thirty girls and women making artificial flowers in the schoolroom beneath the chapel.",
+          "durationSeconds": 22.05
+        },
+        {
+          "paragraph": 1,
+          "text": "Their usual workroom was being enlarged. They belonged to the flower-making work of John Groom’s mission, which trained disabled women. The visitor caught the work in temporary quarters, giving us a glimpse of an activity that the chapel’s exterior cannot explain by itself.",
+          "durationSeconds": 17.975
+        },
+        {
+          "paragraph": 2,
+          "text": "To picture the skill, follow a petal through the trade. Fabric was cut into shapes and dyed. Moulds pressed veins and texture into it. Then came the curve: a metal tool with a ball on the end was heated over a spirit lamp, and the petal shaped around it. A flat scrap began to resemble something that had grown.",
+          "durationSeconds": 20.05
+        },
+        {
+          "paragraph": 3,
+          "text": "That was still only a petal. The pieces had to be assembled into a flower, held on a wire stem and arranged into sprays. The stem itself could be covered with paper or silk. Each stage helped the finished thing conceal the small operations that had made it.",
+          "durationSeconds": 17.175
+        },
+        {
+          "paragraph": 4,
+          "text": "A mission assistant reported that training took two years. That gives the little flowers a different weight. Their lightness and delicacy depended on skills learnt over time, before a customer ever pinned them to a hat or dress.",
+          "durationSeconds": 15.2
+        },
+        {
+          "paragraph": 5,
+          "text": "Today the chapel is home to GraceLife London, a church congregation. Hold the earlier picture beside it for a moment: a room beneath the chapel, thirty people at work, and the beginnings of roses and cornflowers passing through their hands.",
+          "durationSeconds": 15.975
+        },
+        {
+          "paragraph": 6,
+          "text": "Return up Woodbridge Street to Sekforde Street, then follow Sekforde north to St John Street. Use the nearby pedestrian signals to reach the opposite pavement. From there, look back towards the Ingersoll lettering above numbers two hundred and twenty-three to two hundred and twenty-seven.",
+          "durationSeconds": 18.875
+        }
+      ],
+      "verification": "Complete text/chunks, mono 24 kHz, duration and full decode checked; subjective listening separate."
+    },
+    {
+      "id": "ingersoll",
+      "key": "clerkenwell-working-lives-ingersoll",
+      "bytes": 730806,
+      "md5": "888a5292c82fa4739396dbeea357ae0f",
+      "durationSeconds": 86.2,
+      "sha256": "c656baff4d76823b1bd5f5feaedacd62fcc4ed22cb29be936cf6d6fd96025809",
+      "textSha256": "fe042e734a83a4fc6a6f6d90b5089566fc6a27b38a6a805f0de6b007d11c4773",
+      "cache": "artifacts/clerkenwell-audio/ec81c5973c12ca948a0e190a39205f05aca2f4687df7953df3c45c1411ec511c",
+      "words": 227,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "Look for the Ingersoll name in green and cream mosaic. This building was the watch company’s warehouse and showroom. A large sign for a small object: here, the business was storing and selling watches.",
+          "durationSeconds": 13.85
+        },
+        {
+          "paragraph": 1,
+          "text": "One surviving Ingersoll watch, now in the Clockmakers’ collection, shows how an everyday habit changed. It began as a pocket watch. Someone added small projecting loops to the case at twelve and six, so that a strap could hold it against the wrist.",
+          "durationSeconds": 16.625
+        },
+        {
+          "paragraph": 2,
+          "text": "During the First World War, wearing a watch this way let soldiers consult the time while keeping their hands free. On the surviving example, the alteration is built into the object. The dial tells another part of its journey: the parts were made in America, and the watch assembled in England.",
+          "durationSeconds": 19.05
+        },
+        {
+          "paragraph": 3,
+          "text": "The building here was later converted into flats, but the company name survived. Between that public sign and those tiny added loops, you have two different traces of the trade: how a watch was sold, and how someone found a handier way to wear it.",
+          "durationSeconds": 16
+        },
+        {
+          "paragraph": 4,
+          "text": "For our last stretch, return north to the signals and complete the crossings to Skinner Street’s north pavement. Follow it west; a short walking story follows the junction. At Rosoman Street use the zebra crossing, then turn right for a few steps and left into Exmouth Market. The full route is on the map.",
+          "durationSeconds": 19.6
+        }
+      ],
+      "verification": "Complete text/chunks, mono 24 kHz, duration and full decode checked; subjective listening separate."
+    },
+    {
+      "id": "exmouth",
+      "key": "clerkenwell-working-lives-exmouth",
+      "bytes": 944140,
+      "md5": "d65ff7b1e512976ec66f05710fdd1a71",
+      "durationSeconds": 109.6,
+      "sha256": "94fc77d1477a7980d6798708feb411120ea2c8c0272673136ce61cdec3cf1446",
+      "textSha256": "a1fcdcdb80620db2bf3960f3fec42bdbc241e3e61a4b936545d42d8640d3c46b",
+      "cache": "artifacts/clerkenwell-audio/4ac220f92dde5651733ee5c22c67e80d40eee98419651eef86669043a1dd9fd8",
+      "words": 284,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "We finish in Exmouth Market, where earning a living is much more visible. On weekdays, food traders use the street’s market pitches. At other times the shops, cafés and restaurants give it a different rhythm. What you find today will depend on the day, the hour, and who has opened up.",
+          "durationSeconds": 18.325
+        },
+        {
+          "paragraph": 1,
+          "text": "At number twenty-five, the gift shop Space EC1 belongs to Mo and Jo, a mother and daughter who say they fell into retail. They established the business in 1998 and describe a taste for colour, pattern and saucy humour. Choosing what might delight a stranger is part of the work behind a shop window.",
+          "durationSeconds": 20.4
+        },
+        {
+          "paragraph": 2,
+          "text": "An earlier attempt to serve the street put the refreshments into the street furniture itself. The Pluto hot-water lamp was a late-Victorian contraption remembered here as a dispenser of tea and coffee. It sounds like an excellent idea for anyone who has been walking around London.",
+          "durationSeconds": 18.4
+        },
+        {
+          "paragraph": 3,
+          "text": "The local authority’s report for 1899 gives it a brisk review: “not a success”. Its owners offered to convert it into a drinking fountain if the vestry, the local governing body, would take it over. The vestry declined, and the lamp was removed. Even its application for a simpler job had been unsuccessful.",
+          "durationSeconds": 21.325
+        },
+        {
+          "paragraph": 4,
+          "text": "Today, GAIL’s bakery has a reclaimed Victorian fountain as a tribute to that experiment. The original lamp is gone; the idea has found a small afterlife in another business serving the street.",
+          "durationSeconds": 13.875
+        },
+        {
+          "paragraph": 5,
+          "text": "That leaves us among the people still deciding what to make, what to stock, and what might tempt a passer-by to stop. Thank you for walking through Clerkenwell. This is the end of our tour. Tap End tour in the app, and enjoy the rest of Exmouth Market.",
+          "durationSeconds": 15.95
+        }
+      ],
+      "verification": "Complete text/chunks, mono 24 kHz, duration and full decode checked; subjective listening separate."
+    },
+    {
+      "id": "many-hands",
+      "key": "clerkenwell-working-lives-many-hands",
+      "bytes": 560464,
+      "md5": "d114dc3430d15b4c5b11b4f9c266f173",
+      "durationSeconds": 65.8,
+      "sha256": "78cabd6c51b231140cbf9eb8a9951006e1fa46e9618209b39527b54a89551d45",
+      "textSha256": "09af451eaa16584d4c08783850d943bed2da99bf2e12f4d67db843b5cb52720e",
+      "cache": "artifacts/clerkenwell-audio/a87396243455adbb1fa0ddfe77afedd8a0b6dceea54e7fc47d2d97936fa7bef9",
+      "words": 162,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "As we leave the Green, the houses around these streets offer another way to picture an industrial district. In the nineteenth century, craftspeople on the nearby Seckford estate worked in adapted rooms and workshops behind their homes. Some also took in apprentices or clerks as lodgers.",
+          "durationSeconds": 19
+        },
+        {
+          "paragraph": 1,
+          "text": "Watchmaking was divided among specialists. A person making one small component might be supplying a larger firm in the City or Westminster. A finished watch could bring together work done by people who occupied quite different premises.",
+          "durationSeconds": 16.25
+        },
+        {
+          "paragraph": 2,
+          "text": "Picture the scale of it: a small lathe clamped in a vice, powered by a bow moving backwards and forwards. The maker could shape a tiny part with a tool small enough for a workbench. Precision industry could live inside a domestic room.",
+          "durationSeconds": 15.55
+        },
+        {
+          "paragraph": 3,
+          "text": "So keep the ordinary house front in the picture, along with the workshop. Behind a single address, a household might be sleeping, taking in a lodger, and making something that would eventually bear another business’s name.",
+          "durationSeconds": 14.25
+        }
+      ],
+      "verification": "Complete text/chunks, mono 24 kHz, duration and full decode checked; subjective listening separate."
+    },
+    {
+      "id": "next-days-stock",
+      "key": "clerkenwell-working-lives-next-days-stock",
+      "bytes": 558286,
+      "md5": "a29606a7ce678dcb12ba05d8369c417c",
+      "durationSeconds": 64.8,
+      "sha256": "6df9eaecb4e8bf8de9d615d6162b9f9016786bcfd553950feebd38c9a4f7c85e",
+      "textSha256": "8af2321d85d1b83737917f7ead6af43f5e8448bc9ec956d5dcb1ebf9289821fc",
+      "cache": "artifacts/clerkenwell-audio/f0ff475e6333f628dc58c0716a71a53aa427734c80b451b02455c33a3fe56150",
+      "words": 176,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "The flowers made beneath the chapel could last for years. Fresh flowers gave street sellers a much shorter clock. John Groom’s mission also lent money to women selling flowers in the streets, where the stock could perish before it brought in enough to replace itself.",
+          "durationSeconds": 16.775
+        },
+        {
+          "paragraph": 1,
+          "text": "Groom told the investigator that a missionary had previously bought stock for the women. Now they did the buying themselves, under his supervision. Groom said the market sellers gave them concessions. A loan might top up a woman’s own money so she could buy a larger lot going cheaply.",
+          "durationSeconds": 18.475
+        },
+        {
+          "paragraph": 2,
+          "text": "Picture the judgement involved in that bargain. A larger lot offered a better price, but it also meant more flowers to sell while they were fresh. Money was tied up in petals and stems. Turning it back into cash was what made another day’s trading possible.",
+          "durationSeconds": 16.425
+        },
+        {
+          "paragraph": 3,
+          "text": "As we head towards Exmouth Market, keep that small act of buying in mind. Long before a customer sees the goods, somebody has had to choose what to offer, and how much to risk on it.",
+          "durationSeconds": 12.35
+        }
+      ],
+      "verification": "Complete text/chunks, mono 24 kHz, duration and full decode checked; subjective listening separate."
+    }
+  ]
+}

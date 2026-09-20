@@ -2,6 +2,8 @@
 
 An offline walking-tour app for Sidi's Pixel, built with React Native, Expo and TypeScript. M1 and the first M2 map slice have accepted physical evidence. The two authored North Finchley tours, numbered route map, walking chapter and local story reviews are now implemented. See the [tour guide](docs/content/NORTH-FINCHLEY-TAKE-THE-TOURS.md), [implementation](docs/content/M2-PLAYER-IMPLEMENTATION.md) and [current build/device evidence](docs/test-results/M2-tour-build.md). First Tour B feedback is recorded in the [recovery review](docs/content/FIRST-TOUR-FEEDBACK-RECOVERY.md); the [second Tour A outing](docs/content/SECOND-TOUR-FEEDBACK-RECOVERY.md) is also recorded; do not infer M2 acceptance from a build.
 
+**Latest local build, 20 September:** the complete [Clerkenwell tour](docs/content/CLERKENWELL-TAKE-THE-TOUR.md) is prepared with George, eight stops, two walking passages and its own offline map. Both APKs and 153 automated checks pass; [guide 12/source `9505427915e2d1df`](docs/test-results/M2-clerkenwell-tour.md) awaits the combined phone handoff. Research, selection and all review outcomes are collated in the [authoring record](docs/content/authoring/clerkenwell-2026-09-20/README.md).
+
 The original [brief](ai_self_guided_tour_project_brief.md) is unchanged. [PRODUCT.md](PRODUCT.md), [ARCHITECTURE.md](ARCHITECTURE.md), [AGENTS.md](AGENTS.md) and [ROADMAP.md](ROADMAP.md) are the maintained project contract. The owner's latest instructions override conflicting brief recommendations.
 
 ## Install and take the first walk
@@ -193,7 +195,7 @@ On the pinned Android stack, the React Native developer menu’s **Disable Fast 
 
 ## Prepare the authored tours
 
-The self-contained build embeds the authored tour transports and explicit map bundles. **Prepare bundled tours offline** verifies media and the selected map before publishing each library entry. The currently authored transports remain the two Finchley tours; Clerkenwell content is in preparation. **Import tour package** accepts version-1 transports referencing one of the two bundled map IDs, with matching route/standing coverage; it is not an arbitrary map downloader. Each tour keeps its own progress, and existing Finchley versions/assets remain unchanged. Reviews pause narration while open; saving and closing resumes an active tour; private GPS diagnostics default off in the tour home.
+The self-contained build embeds the authored tour transports and explicit map bundles. **Prepare bundled tours offline** verifies media and the selected map before publishing each library entry. The three authored transports are Finchley A/B and [Clerkenwell Working lives](content/clerkenwell/README.md), with eight stops and two walking chapters. **Import tour package** accepts version-1 transports referencing one of the two bundled map IDs, with matching route/standing coverage; it is not an arbitrary map downloader. Each tour keeps its own progress, and existing Finchley versions/assets remain unchanged. Reviews pause narration while open; saving and closing resumes an active tour; private GPS diagnostics default off in the tour home.
 
 ```sh
 npm ci --prefix tools/voice-samples
