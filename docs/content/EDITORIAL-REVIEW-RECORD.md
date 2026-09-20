@@ -1,6 +1,6 @@
 # Editorial discussion and decision record
 
-Start here when resuming tour curation or reviewing how to make systematic guidelines. Updated 19 September 2026. This is the durable history of discussion, alternatives, corrections and outcomes; [TOUR-DESIGN-GUIDANCE](TOUR-DESIGN-GUIDANCE.md) contains the current working rules. Keep evidence and owner preference distinguishable.
+Start here when resuming tour curation or reviewing how to make systematic guidelines. Updated 20 September 2026. This is the durable history of discussion, alternatives, corrections and outcomes; [TOUR-DESIGN-GUIDANCE](TOUR-DESIGN-GUIDANCE.md) contains the current working rules. Keep evidence and owner preference distinguishable.
 
 ## How to maintain this record
 
@@ -16,7 +16,7 @@ When we take a serious look back: read this record, the captured comments and th
 - [First 34 owner Word comments with anchored text](reviews/2026-09-16-owner-word-comments.json): 24 on the research review, 10 on the narration pair; document-local IDs and source-file SHA-256 retained. This committed text capture remains usable if the original commented Word files are absent from another checkout. Original commented files remain locally under `docs/content/` and are not overwritten.
 - [11 tour-options comments](reviews/2026-09-17-tour-options-comments.json) and [response/development brief](NORTH-FINCHLEY-REVIEW-RESPONSE.md): the first **45 comments** across three reviews. All retain source-file hashes, local IDs and anchored text.
 - [55 second-pass comments](reviews/2026-09-19-second-pass-comments.json) and [response with complete coverage map](SECOND-PASS-REVIEW-RESPONSE.md): **100 Word comments total** across four reviews. This capture adds paragraph context; a precise private transport origin is redacted while the local original is preserved.
-- [Current design guidance](TOUR-DESIGN-GUIDANCE.md), revisions 1–11 with revision history, and the [first practical writing brief](authoring/WRITING-BRIEF.md).
+- [Current design guidance](TOUR-DESIGN-GUIDANCE.md), revision 14 with revision history, and the [practical writing brief v4](authoring/WRITING-BRIEF.md).
 - [First authoring synthesis/playbook](TOUR-AUTHORING-PLAYBOOK.md), [original Word review copy](tour-authoring-playbook-review.docx), [proposed agent briefs](authoring/AGENT-BRIEFS.md) and [source map](authoring/SOURCE-MAP.md). Preserved as the first pass; not a milestone acceptance decision.
 - [Second craft pass](TOUR-STORY-CRAFT-SECOND-PASS.md), [Word discussion copy](tour-story-craft-second-pass-review.docx) and [expanded research notes](authoring/SECOND-PASS-SOURCES.md). Contrasting prose and proposed next-tour experiments are for discussion, not accepted new defaults.
 - [First North Finchley sample pair](NORTH-FINCHLEY-SAMPLE-STOPS.md) and [original Word copy](north-finchley-sample-stops-review.docx), including the rejected memorial execution.
@@ -277,6 +277,34 @@ Sidi explicitly asks to preserve generous detail/raw text for later work on agen
 
 **Outcome:** guidance revision 13, writing brief v3 and role briefs incorporate the clarifications. Original prose/audio and research stay available for comparison. Links, guide consistency and whitespace checked; no app or physical test is relevant to this documentation update.
 
+### 25 Focused revision, thinking effort and the next area
+
+**20 September 2026. Owner instruction:** Sidi approved the proposed next steps, asked about thinking level and delegation, then switched to Extra High and instructed the engineer to carry on. The [revision brief and saved assignments](authoring/revision-2026-09-20/BRIEF.md) preserve the scope: one focused revision of the two workshop samples, new-area discovery and useful technical preparation. This does not turn all feedback into an installed Finchley rewrite backlog.
+
+**Effort and collaboration:** Extra High is the recommended single setting for this editorial batch; High is ordinarily sufficient for bounded research/review, with Extra High useful for synthesis and difficult causal reasoning. Routine rendering needs less deliberation. These are engineering judgements, not measured model comparisons. The two original research launches were interrupted by the setting change; replacement research, the writer and subsequent delegated work explicitly use Extra High. Separate research handoffs precede one writer; independent review follows a frozen draft. More agents do not replace selection, integration or the owner's editorial judgement.
+
+**Material recovered:** the [cinema/campaign packet](authoring/revision-2026-09-20/ARTSDEPOT-RESEARCH.md) supplies the Gaumont's scale, rising organ and opening double bill, with the masks/banners/Madness account and its qualifications. The [walking packet](authoring/revision-2026-09-20/WALKING-RESEARCH.md) supplies the earlier coach duration, different journey origins, estate landscape and a more distinctive period educational context. These expand the choices available to the writer; they are not a requirement to narrate every fact. The exact local school curriculum remains unknown, and “free” is not established for the Madness appearance.
+
+**Area decision:** the [three-area comparison](authoring/revision-2026-09-20/NEXT-AREA-OPTIONS.md) starts with public walks. Sidi selected **Clerkenwell / Farringdon**, agreeing with the engineer's recommendation. Hampstead and Spitalfields remain alternatives rather than rejected areas. That choice selects no theme, itinerary, duration or final stops. The [Clerkenwell survey brief](survey/clerkenwell-2026-09-20/BRIEF.md) assigns public operator/guide discovery and local heritage/current-context discovery separately, before consolidation and our own assembly options. The next complete tour retains the two-narrated-leg brief.
+
+**Technical work stays distinct:** the [M2 evidence review](../test-results/M2-closure-review-2026-09-20.md) and [prepared short phone session](../test-results/M2-next-technical-session.md) preserve the reported headset failure and unobserved audible review resumption. No phone connection, listening test or repeat outing was requested in this batch. Existing enjoyment evidence does not establish unrecorded automatic arrivals, and desk writing does not close M2.
+
+**Completed sample revision:** [the exact scripts](authoring/revision-2026-09-20/SCRIPTS.md) retain the writer's 291/266 words after independent review found no required prose change. The school paragraph's 590 model tokens exceeded the 512-token limit; the coordinator added one sentence-boundary paragraph break before the academic contrast, changing no words. New [George/Emma audio](authoring/revision-2026-09-20/audio/README.md) measures 121.725/101.575 seconds. The complete files pass text/chunk, hash, duration and decode checks. Improved enjoyment, pronunciation and the warmer ending remain owner listening judgements; no preference is inferred from generation.
+
+**Survey and second decision:** the [Clerkenwell survey](survey/clerkenwell-2026-09-20/README.md) records all six source families, explicit partial/inaccessible material, 19 differentiated walk/guide/visit records and 84 consolidated discovery entries. The three gap checks concern current Smithfield works, everyday present life and an archival trail behind flower work. Sidi then chose **Working lives, hidden in plain sight** over *Making room for a better life* for the first tour. This selects a provisional portrait of markets, making, print, livelihoods and Exmouth today; exact stops, route and scripts still need research and assembly. The alternative remains parked, not rejected. No withheld book purchase or exhaustive archival investigation was needed to make that choice.
+
+### 26 George throughout and a Clerkenwell outing worth the journey
+
+**20 September 2026. Direct owner message:** “let's use george in general, just a little bit more pleasant. And let's make sure we have all we need to be thorough - it takes me an hour to get to clarkenwell so let's make it count”.
+
+**Decision:** George is the general voice, including walking narration. Retain the Emma sample as comparison history; do not infer that its faster delivery sets a George chapter's budget. The voice preference alone does not approve the new script's content or ending.
+
+**Application:** prepare the selected working-lives tour as a worthwhile outing. Invest in the strongest stories, current context, views and actual pedestrian approaches; complete the available offline/technical checks before requesting travel. The owner-provided journey estimate is a planning input, not a measured timetable. Avoid filler, unnecessary detours and test outings merely to complete a checklist.
+
+**Duration decision:** asked about time in Clerkenwell excluding travel, Sidi selected **about 75–90 minutes**. Budget walking, listening and looking together without double-counting simultaneous walking narration. Longer interior visits can be optional; do not stretch stories to fill the target. The [focused research/route brief](authoring/clerkenwell-2026-09-20/BRIEF.md) carries this into the next stage.
+
+Guidance revision 14 and writing brief v4 carry this direction forward. The existing pragmatic testing policy remains in force. Detailed research and route assembly follow the selected area/promise; no full package or current access is accepted by this discussion.
+
 ## Questions to carry into a later systematic review
 
 - Does context before anecdote usually improve the story, and when can an immediate intriguing detail work better?
@@ -302,8 +330,9 @@ Sidi explicitly asks to preserve generous detail/raw text for later work on agen
 | Distinct standing areas, access and crossings | Desk-reviewed public-exterior candidates with dated imagery; no current field claim | Current conditions during ordinary first use |
 | Public-tour survey before new-area curation | Applied; comprehensive first Finchley catalogue and synthesis recorded | Reuse and improve coverage for the next area |
 | Reusable place/source/story database | Explicitly planned; not implemented | Actual records and reuse requirements from the survey/two tours |
-| Systematic guidelines from these options | All 100 Word comments indexed; revision 13 and writing brief v3 incorporate direct pilot feedback and clarifications | Try and assess the proposed selection pass within a story |
-| Pilot editorial choices | Railway-led opening preferred; warmer ending conditional on better writing; about two minutes acceptable selectively | A later draft addresses missing comparisons, distinctive scenes and lost campaign material |
+| Systematic guidelines from these options | All 100 Word comments indexed; revision 14 and writing brief v4 incorporate direct feedback, George and the Clerkenwell brief | Try and assess the proposed selection pass within a story |
+| Pilot editorial choices | Railway-led opening preferred; warmer ending conditional on better writing; revised scripts and audio ready | Owner reaction to the revised comparisons, scenes, campaign and ending |
 | Two narrated legs in the next tour | Owner-directed editorial brief | Area/route assembly and samples that make good use of movement |
 | Authoring workshop | Sidi takes editorial lead; engineer prepares and executes | Record consequential choices and useful revisions; no permanent agent count assumed |
+| Next complete tour | Clerkenwell / Farringdon; broad survey complete; Working lives, hidden in plain sight; George; about 75–90 minutes excluding travel | Focused candidate research and route assembly with two narrated legs |
 | Editorial values and AI provenance | Owner wants an outlook and upfront disclosure | Develop values from choices; scope the eventual presentation separately |

@@ -70,3 +70,5 @@ Start by saving structured survey records in the repository. Shape the database 
 ## Current status
 
 Protocol applied: the [first comprehensive Finchley survey](survey/README.md) is complete, with source-family records, consolidated catalogue, coverage gaps and decisions for the two authored tours. The database remains planned. Survey completion does not establish physical access or actual enjoyment.
+
+**20 September:** the [Clerkenwell / Farringdon survey](survey/clerkenwell-2026-09-20/README.md) applies the extended source-family sweep, deduplicates the two research handoffs and records three targeted gap checks. Sidi selected *Working lives, hidden in plain sight* from the resulting options. The structured catalogue is ready for focused research and route assembly; no complete new tour or physical readiness follows from discovery alone.

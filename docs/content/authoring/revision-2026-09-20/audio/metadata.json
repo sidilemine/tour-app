@@ -1,0 +1,133 @@
+{
+  "generatedAt": "2026-09-20T16:41:59.857Z",
+  "source": "docs/content/authoring/revision-2026-09-20/SCRIPTS.md",
+  "sourceSha256": "13e3e4f5ca92aeb959c900a795825cb7c91e81f0b537159021021ecf260485aa",
+  "sourceSnapshot": "script-source.txt",
+  "synthesis": {
+    "provider": "Kokoro",
+    "voice": "Per recording below",
+    "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+    "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+    "dtype": "fp32",
+    "device": "cpu",
+    "speed": 1,
+    "kokoroJs": "1.2.1",
+    "paragraphGapSeconds": 0.25,
+    "loudnessLufs": -19,
+    "encoding": "MP3 mono 24 kHz 96 kb/s",
+    "rendererRevision": 2
+  },
+  "modelHashReference": "docs/content/voice-samples/metadata.json",
+  "recordingScope": "Desk listening only; candidate walking direction is not installed or physically verified.",
+  "audibleReview": "Not performed by the renderer; owner listening is pending.",
+  "recordings": [
+    {
+      "file": "artsdepot-george.mp3",
+      "title": "Artsdepot — George",
+      "voice": "bm_george",
+      "words": 291,
+      "durationSeconds": 121.725,
+      "bytes": 1461644,
+      "sha256": "61c1c2640a96d3fc29a8c97fc34bc19eff7a5f6929f1dd32926db6d8f3c6039e",
+      "textFile": "artsdepot-george.txt",
+      "textSha256": "45d8d99d535ede45b964f786b3df7b5b43804c5ad634c280cb26f431bdc74436",
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "Here on Nether Street, artsdepot stands on the site of the Gaumont cinema, which opened in 1937.",
+          "durationSeconds": 7.925
+        },
+        {
+          "paragraph": 1,
+          "text": "Picture a visit in its early days. Mahogany panels line an auditorium with room for over two thousand people, beneath elaborate ceiling lights. Beside the orchestra pit, the organist rises into view at the keyboard, carried up on a lift. The opening bill offered two films, and a guest organist played during the first week. A cinema audience could become a concert audience without even changing seats.",
+          "durationSeconds": 24.525
+        },
+        {
+          "paragraph": 2,
+          "text": "The cinema closed in 1980 and was demolished seven years later. At a local consultation in 1996, people asked for a bigger version of the Bull Arts Centre in High Barnet. Getting it built would mean defending what they wanted it to contain.",
+          "durationSeconds": 17.75
+        },
+        {
+          "paragraph": 3,
+          "text": "In 2002, the council considered a joint arts and library facility instead of the proposed theatre. The centre's own history recalls protesters with masks and banners, and a rally performance by the band Madness. The campaign had a theatrical streak of its own. The council dropped the alternative.",
+          "durationSeconds": 20.125
+        },
+        {
+          "paragraph": 4,
+          "text": "Before artsdepot opened in 2004, director Alison Duthie described a theatre for visiting productions and a smaller studio for educational and local groups, with exhibitions and workshops too. A professional show and an afternoon spent making something could belong in the same building.",
+          "durationSeconds": 20.075
+        },
+        {
+          "paragraph": 5,
+          "text": "Today, Creative Circle brings people over fifty-five together to develop poetry and prose. This February's programme featured a show created and performed by members of the writing and dance groups, with other local artists.",
+          "durationSeconds": 15.675
+        },
+        {
+          "paragraph": 6,
+          "text": "A few lines brought to a writing group may one day become the reason someone else comes out for the evening. That possibility belongs here too, alongside the pleasure of settling into a seat and letting the show begin.",
+          "durationSeconds": 14.15
+        }
+      ],
+      "checks": {
+        "allParagraphsRendered": true,
+        "fullDecode": true,
+        "sampleRate": 24000,
+        "channels": 1
+      }
+    },
+    {
+      "file": "alexandra-grove-emma.mp3",
+      "title": "Alexandra Grove — Emma",
+      "voice": "bf_emma",
+      "words": 266,
+      "durationSeconds": 101.575,
+      "bytes": 1220012,
+      "sha256": "408bdaf6a350ca4dc7f7e254749c8e73842eb9c09c72240878326a32d222b17f",
+      "textFile": "alexandra-grove-emma.txt",
+      "textSha256": "bfbf2c4e63fa2b2b310816c6aaa3847a8d5e45e0671f7e0cb2515643e2a2feae",
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "By 1870, trains from Finchley's Church End reached London in half an hour. The older world of horse-drawn travel lay close behind: during the 1860s, the coach from Whetstone had taken about an hour and three quarters. Living out here and working in London were becoming easier to combine.",
+          "durationSeconds": 17.625
+        },
+        {
+          "paragraph": 1,
+          "text": "The houses along Alexandra Grove grew around a much larger home: Moss Hall, a red-brick country house set in its own grounds. Its estate was divided into building plots from 1867. The hall survived among curving paths and grounds edged with trees while the new street acquired separate addresses.",
+          "durationSeconds": 18.7
+        },
+        {
+          "paragraph": 2,
+          "text": "One was Miss Amner's Moss Hall College for Ladies, listed in a directory of 1886 to 1887. That name opens onto a changing world of girls' education.",
+          "durationSeconds": 10.95
+        },
+        {
+          "paragraph": 3,
+          "text": "In many middle-class girls' schools, music was expected even of pupils with little taste for it. Picture the piano lessons: one girl at the keyboard, then another, each needing individual attention. Hours went into acquiring the accomplishments expected of a young lady.",
+          "durationSeconds": 16.275
+        },
+        {
+          "paragraph": 4,
+          "text": "But that idea of education was being challenged. Some schools were taking mathematics seriously, and in 1878 the University of London opened full degrees to women. Alongside the expectation of an accomplished young lady stood the possibility of a future graduate.",
+          "durationSeconds": 17.075
+        },
+        {
+          "paragraph": 5,
+          "text": "The new suburb was already more than a place to come home to. It was somewhere to spend the day learning.",
+          "durationSeconds": 6.2
+        },
+        {
+          "paragraph": 6,
+          "text": "Continue along Alexandra Grove towards the Ballards Lane junction. Moss Hall Crescent is the small road on the right, running alongside Ballards Lane with a green strip between them. Follow the map and stay on the pavement.",
+          "durationSeconds": 13.25
+        }
+      ],
+      "checks": {
+        "allParagraphsRendered": true,
+        "fullDecode": true,
+        "sampleRate": 24000,
+        "channels": 1
+      }
+    }
+  ]
+}

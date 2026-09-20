@@ -1,0 +1,3260 @@
+{
+  "area": "Clerkenwell / Farringdon",
+  "retrievedOn": "2026-09-20",
+  "scope": {
+    "core": "Farringdon, Smithfield/Charterhouse, Clerkenwell Green/Close, St John’s, Exmouth/Spa Fields; southern New River Head boundary",
+    "nearby": "Hatton Garden, Angel, St Paul’s/Barbican approaches",
+    "role": "Public-walk researcher",
+    "status": "Complete and frozen for coordinator handoff",
+    "limits": "Discovery metadata only; no historical corroboration, route selection, narration, physical verification or current operator booking guarantee. Source families counted by works/originators, not URLs.",
+    "sequencePolicy": "Except the Metro numbered map and VoiceMap sample 26, sequence gives order of selected points in source prose, not an original numbered itinerary.",
+    "counts": {
+      "operatorWorks": 3,
+      "selfGuidedAudioWorks": 4,
+      "bookWorks": 3,
+      "tourResourceRecords": 11,
+      "sources": 13,
+      "places": 63
+    },
+    "candidateAnglePolicy": "Candidate angles are provisional research questions or proposed uses, not established factual claims; a map label alone establishes inclusion only.",
+    "crossRoleDeduplication": [
+      {
+        "url": "https://historyfrombelow.com/a-historical-walk-through-clerkenwell-tracing-the-social-footsteps-of-its-past/",
+        "canonicalTourId": "CW-LC-T07",
+        "canonicalSourceId": "CW-LC-S06",
+        "file": "local-context.json"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "CW-PW-S-londonwalks",
+      "title": "London’s Secret Village",
+      "originator": "London Walks",
+      "url": "https://www.walks.com/our-walks/londons-secret-village/",
+      "kind": "operator tour page",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "commercial-independent",
+      "relationshipNotes": "",
+      "summary": "General heritage highlights; no complete itinerary. Reviews were not used to reconstruct missing stops.",
+      "rightsNotes": "Copyright retained by originator. Discovery metadata and short original summaries only; no script, image or map reuse licence established."
+    },
+    {
+      "id": "CW-PW-S-industrial",
+      "title": "From Chimneys to Locomotives",
+      "originator": "Visites Londres",
+      "url": "https://www.visiteslondres.com/visite-industrielle-en",
+      "kind": "operator tour page",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "commercial-independent",
+      "relationshipNotes": "",
+      "summary": "French-language industrial-history walk; named infrastructure topics are mostly not assigned to specific buildings.",
+      "rightsNotes": "Copyright retained by originator. Discovery metadata and short original summaries only; no script, image or map reuse licence established."
+    },
+    {
+      "id": "CW-PW-S-booth",
+      "title": "Charles Booth Poverty Map",
+      "originator": "Sean Patterson / Charles Booth Walks",
+      "url": "https://www.charlesboothwalks.com/charles-booth-poverty-map/",
+      "kind": "operator tour page",
+      "publishedDate": "2019-05-13",
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "commercial-independent",
+      "relationshipNotes": "Same guide is represented by Footprints of London; do not count its biography or listings as another independent tour.",
+      "summary": "Clerkenwell entry specifies notebook-led social history and selected subjects, without a street itinerary.",
+      "rightsNotes": "Copyright retained by originator. Discovery metadata and short original summaries only; no script, image or map reuse licence established."
+    },
+    {
+      "id": "CW-PW-S-jones",
+      "title": "The Clerkenwell Self-Guided Walk",
+      "originator": "Richard Jones / London Walking Tours",
+      "url": "https://www.london-walking-tours.co.uk/free-tours/clerkenwell-walk.htm",
+      "kind": "self-guided text route",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "self-guided-audio",
+      "relationshipNotes": "",
+      "summary": "Full directions and narrative available; Dickens supplies a prominent frame. Undated operational statements may be stale.",
+      "rightsNotes": "Copyright retained by originator. Discovery metadata and short original summaries only; no script, image or map reuse licence established."
+    },
+    {
+      "id": "CW-PW-S-voicemap",
+      "title": "From Righteous to Wretched: A Clerkenwell Tale",
+      "originator": "Steve Matthews / VoiceMap",
+      "url": "https://voicemap.me/tour/london/from-righteous-to-wretched-a-clerkenwell-tale",
+      "kind": "audio-tour public product and sample page",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-20",
+      "access": "partial",
+      "family": "self-guided-audio",
+      "relationshipNotes": "One creator/platform work. The locations link failed; no purchase, login or hidden paid content accessed.",
+      "summary": "Public overview, selected landmarks and Exmouth sample read. Full 46-location route and audio not obtained.",
+      "rightsNotes": "Copyright retained by originator. Discovery metadata and short original summaries only; no script, image or map reuse licence established."
+    },
+    {
+      "id": "CW-PW-S-mylondon",
+      "title": "A walk from Farringdon to Clerkenwell",
+      "originator": "Kevin Abbey / My London Walks",
+      "url": "https://mylondonwalks.com/walks/a-walk-from-farringdon-to-clerkenwell/",
+      "kind": "self-guided text route",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "self-guided-audio",
+      "relationshipNotes": "Page states updated 17 February 2025; original publication date unstated. Its PDF is the same work, not another tour.",
+      "summary": "Long route with optional interiors, institutions, housing and food. Several present-day assertions need replacement.",
+      "rightsNotes": "Copyright retained by originator. Discovery metadata and short original summaries only; no script, image or map reuse licence established."
+    },
+    {
+      "id": "CW-PW-S-lady",
+      "title": "Lady’s Clerkenwell Walking Tour",
+      "originator": "A Lady in London",
+      "url": "https://www.aladyinlondon.com/2020/05/clerkenwell-walking-tour.html",
+      "kind": "self-guided text route",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "self-guided-audio",
+      "relationshipNotes": "May 2020 URL and comments; precise publication date not asserted. Later roundup links are not independent tours.",
+      "summary": "Architecture and food route extending through Hatton Garden to Angel.",
+      "rightsNotes": "Copyright retained by originator. Discovery metadata and short original summaries only; no script, image or map reuse licence established."
+    },
+    {
+      "id": "CW-PW-S-metro-index",
+      "title": "Walking Map Downloads",
+      "originator": "Metro Publications",
+      "url": "https://metropublications.com/pages/copy-of-walking-maps",
+      "kind": "publisher download index",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "published-books-guides",
+      "relationshipNotes": "Supersedes the initially opened copy-of-walking-map-downloads index, whose Clerkenwell label had no usable link in extracted text.",
+      "summary": "Links a Clerkenwell map under London’s Hidden Walks Volume 2.",
+      "rightsNotes": "Copyright retained by originator. Discovery metadata and short original summaries only; no script, image or map reuse licence established."
+    },
+    {
+      "id": "CW-PW-S-metro-map",
+      "title": "Clerkenwell Walk: public companion map",
+      "originator": "Stephen Millar / Metro Publications",
+      "url": "https://cdn.shopify.com/s/files/1/1085/9500/files/Clerkenwell.pdf?v=1679586142",
+      "kind": "publisher companion map PDF",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "published-books-guides",
+      "relationshipNotes": "Downloaded from publisher-linked URL after web-tool failure; text extracted and entire page rendered/visually inspected. Map edition/date unstated; do not assume it matches the current second edition.",
+      "summary": "One-page map contains 41 numbered references. These are map entries, not 41 separate story scripts.",
+      "rightsNotes": "Public download permits reading; no licence to redistribute or adapt the map established. Only factual point labels catalogued."
+    },
+    {
+      "id": "CW-PW-S-metro-book",
+      "title": "London’s Hidden Walks Volume 2",
+      "originator": "Stephen Millar / Metro Publications",
+      "url": "https://metropublications.com/products/londons-hidden-walks-volume-2",
+      "kind": "publisher book listing",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-20",
+      "access": "partial",
+      "family": "published-books-guides",
+      "relationshipNotes": "Author attribution for companion resource; current edition correspondence of map remains unknown.",
+      "summary": "Current listing identifies second edition and ISBN 9781902910772. Full book not read.",
+      "rightsNotes": "Copyright retained by originator. Discovery metadata and short original summaries only; no script, image or map reuse licence established."
+    },
+    {
+      "id": "CW-PW-S-rebel",
+      "title": "Rebel Footprints, second edition: public look-inside",
+      "originator": "David Rosenberg / Pluto Press",
+      "url": "https://s3.amazonaws.com/supadu-imgix/plutopress-uk/pdfs/look-inside/LI-9780745338552.pdf",
+      "kind": "publisher book preview PDF",
+      "publishedDate": "2019",
+      "retrievedOn": "2026-09-20",
+      "access": "partial",
+      "family": "published-books-guides",
+      "relationshipNotes": "Web text extraction succeeded; screenshots/cache fetch and direct PDF retrieval failed. An older 2015 preview also opened, but is not counted as another work. Publisher product page failed to open.",
+      "summary": "Contents and introduction inspected. The Clerkenwell chapter starts at printed page 45, outside the 19-page preview.",
+      "rightsNotes": "Copyright David Rosenberg 2015, 2019. Short original discovery summary; no chapter or route reproduction."
+    },
+    {
+      "id": "CW-PW-S-os-listing",
+      "title": "City Walks in London Walking Guidebook",
+      "originator": "Andy Rashleigh / OS Pathfinder",
+      "url": "https://shop.osmaps.com/london-city-walks-pathfinder-guidebook/",
+      "kind": "publisher book listing",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "published-books-guides",
+      "relationshipNotes": "Redirected from shop.ordnancesurvey.co.uk; book ISBN 9780319090350.",
+      "summary": "Catalogue discloses separate Smithfield and Clerkenwell walks and advertised distances.",
+      "rightsNotes": "Copyright retained by originator. Discovery metadata and short original summaries only; no script, image or map reuse licence established."
+    },
+    {
+      "id": "CW-PW-S-os-sample",
+      "title": "London City Walks: public sample",
+      "originator": "Andy Rashleigh / OS Pathfinder",
+      "url": "https://shop.ordnancesurvey.co.uk/content/downloads/CityWalksLondon.pdf",
+      "kind": "publisher book sample PDF",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-20",
+      "access": "partial",
+      "family": "published-books-guides",
+      "relationshipNotes": "Eight-page image-only PDF downloaded from listing and all pages visually inspected. No local-route chapter or intermediate stops in sample.",
+      "summary": "Contents disclose local route titles and station endpoints; sample walking pages cover other districts.",
+      "rightsNotes": "Public preview only. No licence for copying book maps or prose established."
+    }
+  ],
+  "tours": [
+    {
+      "id": "CW-PW-T-secret-village",
+      "title": "London’s Secret Village",
+      "sourceIds": [
+        "CW-PW-S-londonwalks"
+      ],
+      "originator": "London Walks",
+      "status": "Public listing accessible; operation on a particular date unverified",
+      "areaRelation": "core plus St Paul’s approach",
+      "themes": [
+        "heritage",
+        "religion",
+        "crime",
+        "film"
+      ],
+      "duration": "2 hours",
+      "distance": null,
+      "start": "St Paul’s underground station, exit 2",
+      "end": "Farringdon station",
+      "stopListCompleteness": "Selected marketing highlights only; no itinerary or intermediate order",
+      "stops": [
+        {
+          "name": "Norman church",
+          "placeId": null,
+          "sequence": null,
+          "sourceId": "CW-PW-S-londonwalks",
+          "role": "published point"
+        },
+        {
+          "name": "Tudor gateway",
+          "placeId": null,
+          "sequence": null,
+          "sourceId": "CW-PW-S-londonwalks",
+          "role": "published point"
+        },
+        {
+          "name": "Charterhouse",
+          "placeId": "CW-PW-P-charterhouse",
+          "sequence": null,
+          "sourceId": "CW-PW-S-londonwalks",
+          "role": "published point"
+        },
+        {
+          "name": "Hercule Poirot’s London flat",
+          "placeId": null,
+          "sequence": null,
+          "sourceId": "CW-PW-S-londonwalks",
+          "role": "published point"
+        },
+        {
+          "name": "trendiest house in town",
+          "placeId": null,
+          "sequence": null,
+          "sourceId": "CW-PW-S-londonwalks",
+          "role": "published point"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Advertises medieval institutions, public spectacle, violence and screen associations.",
+          "sourceIds": [
+            "CW-PW-S-londonwalks"
+          ],
+          "placeIds": [],
+          "availability": "Published description; historical claim not independently verified"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "CW-PW-T-industrial",
+      "title": "From Chimneys to Locomotives",
+      "sourceIds": [
+        "CW-PW-S-industrial"
+      ],
+      "originator": "Visites Londres",
+      "status": "Public listing accessible; operation on a particular date unverified",
+      "areaRelation": "core",
+      "themes": [
+        "transport",
+        "water",
+        "health",
+        "watchmaking"
+      ],
+      "duration": "2.5–3 hours",
+      "distance": null,
+      "start": "Farringdon station, Cowcross Street exit",
+      "end": null,
+      "stopListCompleteness": "Meeting point and broad highlights only; specific building stops unknown",
+      "stops": [
+        {
+          "name": "Farringdon station",
+          "placeId": "CW-PW-P-farringdon",
+          "sequence": null,
+          "sourceId": "CW-PW-S-industrial",
+          "role": "meeting point"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Railway, sanitation, watchmaking and fire protection frame urban transformation.",
+          "sourceIds": [
+            "CW-PW-S-industrial"
+          ],
+          "placeIds": [
+            "CW-PW-P-farringdon"
+          ],
+          "availability": "Published description; historical claim not independently verified"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "CW-PW-T-booth",
+      "title": "Booth’s Clerkenwell",
+      "sourceIds": [
+        "CW-PW-S-booth"
+      ],
+      "originator": "Sean Patterson",
+      "status": "Undated current availability; description page has 2019 timestamp",
+      "areaRelation": "core",
+      "themes": [
+        "social history",
+        "poverty",
+        "literature",
+        "migration"
+      ],
+      "duration": "2 hours 15 minutes",
+      "distance": null,
+      "start": null,
+      "end": null,
+      "stopListCompleteness": "Themes and people only; no individual stop list",
+      "stops": [],
+      "stories": [
+        {
+          "summary": "Uses 1898 police-walk notes and readings; advertised subjects include Zeppelin raids, Harris’s sausage business, gun invention, Little Italy and Frankie Fraser.",
+          "sourceIds": [
+            "CW-PW-S-booth"
+          ],
+          "placeIds": [],
+          "availability": "Published description; historical claim not independently verified"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "CW-PW-T-jones",
+      "title": "The Clerkenwell Self-Guided Walk",
+      "sourceIds": [
+        "CW-PW-S-jones"
+      ],
+      "originator": "Richard Jones",
+      "status": "Public listing accessible; operation on a particular date unverified",
+      "areaRelation": "core plus Hatton Garden",
+      "themes": [
+        "Dickens",
+        "crime",
+        "housing",
+        "religion"
+      ],
+      "duration": "1 hour 45 minutes",
+      "distance": null,
+      "start": "Barbican station",
+      "end": "Farringdon station",
+      "stopListCompleteness": "Full text route available; narrative headings and salient named passing points extracted",
+      "stops": [
+        {
+          "name": "The Charterhouse",
+          "placeId": "CW-PW-P-charterhouse",
+          "sequence": 1,
+          "sourceId": "CW-PW-S-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Fox and Anchor",
+          "placeId": "CW-PW-P-fox",
+          "sequence": 2,
+          "sourceId": "CW-PW-S-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Smithfield Market",
+          "placeId": "CW-PW-P-smithfield",
+          "sequence": 3,
+          "sourceId": "CW-PW-S-jones",
+          "role": "published point"
+        },
+        {
+          "name": "St John’s Gate",
+          "placeId": "CW-PW-P-stjohn-gate",
+          "sequence": 4,
+          "sourceId": "CW-PW-S-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Jerusalem Tavern",
+          "placeId": "CW-PW-P-jerusalem-tavern",
+          "sequence": 5,
+          "sourceId": "CW-PW-S-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Booth’s Gin friezes",
+          "placeId": "CW-PW-P-booths",
+          "sequence": 6,
+          "sourceId": "CW-PW-S-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Turnmill Street",
+          "placeId": "CW-PW-P-turnmill",
+          "sequence": 7,
+          "sourceId": "CW-PW-S-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Middlesex Sessions House",
+          "placeId": "CW-PW-P-sessions",
+          "sequence": 8,
+          "sourceId": "CW-PW-S-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Clerkenwell Green",
+          "placeId": "CW-PW-P-green",
+          "sequence": 9,
+          "sourceId": "CW-PW-S-jones",
+          "role": "published point"
+        },
+        {
+          "name": "St James",
+          "placeId": "CW-PW-P-stjames",
+          "sequence": 10,
+          "sourceId": "CW-PW-S-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Ellen Steinberg and her children",
+          "placeId": "CW-PW-P-steinberg",
+          "sequence": 11,
+          "sourceId": "CW-PW-S-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Peabody Trust flats",
+          "placeId": "CW-PW-P-peabody",
+          "sequence": 12,
+          "sourceId": "CW-PW-S-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Pear Tree Court",
+          "placeId": "CW-PW-P-peartree",
+          "sequence": 13,
+          "sourceId": "CW-PW-S-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Betsy Trotwood",
+          "placeId": "CW-PW-P-betsey",
+          "sequence": 14,
+          "sourceId": "CW-PW-S-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Hatton Place / former police-office approach",
+          "placeId": null,
+          "sequence": 15,
+          "sourceId": "CW-PW-S-jones",
+          "role": "published point"
+        },
+        {
+          "name": "54 Hatton Garden",
+          "placeId": "CW-PW-P-hatton54",
+          "sequence": 16,
+          "sourceId": "CW-PW-S-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Saffron Hill",
+          "placeId": "CW-PW-P-saffron",
+          "sequence": 17,
+          "sourceId": "CW-PW-S-jones",
+          "role": "published point"
+        },
+        {
+          "name": "One Tun Pub",
+          "placeId": null,
+          "sequence": 18,
+          "sourceId": "CW-PW-S-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Bleeding Heart Yard",
+          "placeId": "CW-PW-P-bleeding",
+          "sequence": 19,
+          "sourceId": "CW-PW-S-jones",
+          "role": "published point"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Contrasts Dickens’s street settings with surviving institutions and housing; gin-making reliefs offer a visible industrial detail.",
+          "sourceIds": [
+            "CW-PW-S-jones"
+          ],
+          "placeIds": [
+            "CW-PW-P-booths"
+          ],
+          "availability": "Published description; historical claim not independently verified"
+        }
+      ],
+      "notes": "Sequence is order of the extracted points in published directions, not publisher numbering. Turning-only streets omitted."
+    },
+    {
+      "id": "CW-PW-T-voicemap",
+      "title": "From Righteous to Wretched: A Clerkenwell Tale",
+      "sourceIds": [
+        "CW-PW-S-voicemap"
+      ],
+      "originator": "Steve Matthews",
+      "status": "Public listing accessible; operation on a particular date unverified",
+      "areaRelation": "core",
+      "themes": [
+        "religion",
+        "poverty",
+        "crime",
+        "water",
+        "everyday life"
+      ],
+      "duration": "120 minutes",
+      "distance": "3 km",
+      "start": "Farringdon station",
+      "end": "Smithfield Market / Grand Avenue",
+      "stopListCompleteness": "Partial: 46 locations advertised; only overview, landmarks and one sample catalogued",
+      "stops": [
+        {
+          "name": "Saint John’s Gardens",
+          "placeId": "CW-PW-P-stjohn-gardens",
+          "sequence": null,
+          "sourceId": "CW-PW-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "Clerkenwell Green",
+          "placeId": "CW-PW-P-green",
+          "sequence": null,
+          "sourceId": "CW-PW-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "Marx Memorial Library & Workers School",
+          "placeId": "CW-PW-P-marx",
+          "sequence": null,
+          "sourceId": "CW-PW-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "Cattle Trough",
+          "placeId": null,
+          "sequence": null,
+          "sourceId": "CW-PW-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "Betsey Trotwood",
+          "placeId": "CW-PW-P-betsey",
+          "sequence": null,
+          "sourceId": "CW-PW-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "St James’ Gardens",
+          "placeId": "CW-PW-P-stjames-gardens",
+          "sequence": null,
+          "sourceId": "CW-PW-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "Jerusalem Passage",
+          "placeId": "CW-PW-P-jerusalem-passage",
+          "sequence": null,
+          "sourceId": "CW-PW-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "Saint John Priory Church",
+          "placeId": "CW-PW-P-stjohn-church",
+          "sequence": null,
+          "sourceId": "CW-PW-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "Passing Alley",
+          "placeId": "CW-PW-P-passing",
+          "sequence": null,
+          "sourceId": "CW-PW-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "Smithfield Market",
+          "placeId": "CW-PW-P-smithfield",
+          "sequence": null,
+          "sourceId": "CW-PW-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "Clerk’s Well",
+          "placeId": "CW-PW-P-well",
+          "sequence": null,
+          "sourceId": "CW-PW-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "Cut Throat Lane",
+          "placeId": null,
+          "sequence": null,
+          "sourceId": "CW-PW-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "former Clerkenwell Prison site",
+          "placeId": "CW-PW-P-house-detention",
+          "sequence": null,
+          "sourceId": "CW-PW-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "St James",
+          "placeId": "CW-PW-P-stjames",
+          "sequence": null,
+          "sourceId": "CW-PW-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "Exmouth Market",
+          "placeId": "CW-PW-P-exmouth",
+          "sequence": 26,
+          "sourceId": "CW-PW-S-voicemap",
+          "role": "public sample location"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Promotes gin, a brothel, pickled eggs, penal violence and altered alley names.",
+          "sourceIds": [
+            "CW-PW-S-voicemap"
+          ],
+          "placeIds": [],
+          "availability": "Published description; historical claim not independently verified"
+        },
+        {
+          "summary": "Exmouth sample describes a coin-operated hot-drinks lamp; promising everyday-life/levity lead, not verified history.",
+          "sourceIds": [
+            "CW-PW-S-voicemap"
+          ],
+          "placeIds": [
+            "CW-PW-P-exmouth"
+          ],
+          "availability": "Public sample transcript read; audio not played"
+        }
+      ],
+      "notes": "Only Exmouth Market has a directly inspected numbered location (26). Unnumbered landmarks are not ordered here."
+    },
+    {
+      "id": "CW-PW-T-mylondon",
+      "title": "A walk from Farringdon to Clerkenwell",
+      "sourceIds": [
+        "CW-PW-S-mylondon"
+      ],
+      "originator": "Kevin Abbey / My London Walks",
+      "status": "Public listing accessible; operation on a particular date unverified",
+      "areaRelation": "core",
+      "themes": [
+        "institutions",
+        "housing",
+        "food",
+        "politics"
+      ],
+      "duration": "around 4 hours",
+      "distance": "about 3 miles",
+      "start": "Farringdon station",
+      "end": "Exmouth Market",
+      "stopListCompleteness": "Full text route available; principal named points and optional visits extracted",
+      "stops": [
+        {
+          "name": "The Rookery",
+          "placeId": "CW-PW-P-rookery",
+          "sequence": 1,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Hope Inn",
+          "placeId": "CW-PW-P-hope",
+          "sequence": 2,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Smithfield Market",
+          "placeId": "CW-PW-P-smithfield",
+          "sequence": 3,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "St Bartholomew the Less",
+          "placeId": "CW-PW-P-bartsless",
+          "sequence": 4,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "St Bartholomew’s Hospital Museum",
+          "placeId": "CW-PW-P-barts",
+          "sequence": 5,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "St Bartholomew the Great",
+          "placeId": "CW-PW-P-bartsgreat",
+          "sequence": 6,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Cloth Fair",
+          "placeId": "CW-PW-P-clothfair",
+          "sequence": 7,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "No. 41 Cloth Fair",
+          "placeId": "CW-PW-P-cloth41",
+          "sequence": 8,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Rising Sun",
+          "placeId": null,
+          "sequence": 9,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Hand & Shears",
+          "placeId": null,
+          "sequence": 10,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Old Red Cow",
+          "placeId": null,
+          "sequence": 11,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Florin Court",
+          "placeId": "CW-PW-P-florin",
+          "sequence": 12,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Charterhouse Square / Priory",
+          "placeId": "CW-PW-P-charterhouse",
+          "sequence": 13,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Fox & Anchor",
+          "placeId": "CW-PW-P-fox",
+          "sequence": 14,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Smithfield Tavern",
+          "placeId": null,
+          "sequence": 15,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Watchmaker Court",
+          "placeId": null,
+          "sequence": 16,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Passing Alley",
+          "placeId": "CW-PW-P-passing",
+          "sequence": 17,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "St John’s Gate",
+          "placeId": "CW-PW-P-stjohn-gate",
+          "sequence": 18,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "St John’s Square",
+          "placeId": "CW-PW-P-stjohn-square",
+          "sequence": 19,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Priory Church of the Order of St John",
+          "placeId": "CW-PW-P-stjohn-church",
+          "sequence": 20,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Jerusalem Passage",
+          "placeId": "CW-PW-P-jerusalem-passage",
+          "sequence": 21,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Thomas Britton’s corner house",
+          "placeId": null,
+          "sequence": 22,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Clerkenwell Green",
+          "placeId": "CW-PW-P-green",
+          "sequence": 23,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Crown Tavern",
+          "placeId": "CW-PW-P-crown",
+          "sequence": 24,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "St James’s Church",
+          "placeId": "CW-PW-P-stjames",
+          "sequence": 25,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Marx Memorial Library",
+          "placeId": "CW-PW-P-marx",
+          "sequence": 26,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Old Sessions House",
+          "placeId": "CW-PW-P-sessions",
+          "sequence": 27,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Clerks’ Well",
+          "placeId": "CW-PW-P-well",
+          "sequence": 28,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Betsey Trotwood",
+          "placeId": "CW-PW-P-betsey",
+          "sequence": 29,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Pear Tree Court / Peabody estate",
+          "placeId": "CW-PW-P-peabody",
+          "sequence": 30,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Clerkenwell House of Detention",
+          "placeId": "CW-PW-P-house-detention",
+          "sequence": 31,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Hugh Myddleton School / Kingsway Place",
+          "placeId": "CW-PW-P-school",
+          "sequence": 32,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Finsbury Bank for Savings",
+          "placeId": "CW-PW-P-finsburybank",
+          "sequence": 33,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Spa Fields",
+          "placeId": "CW-PW-P-spa",
+          "sequence": 34,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "London Metropolitan Archives",
+          "placeId": "CW-PW-P-archives",
+          "sequence": 35,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Exmouth Market",
+          "placeId": "CW-PW-P-exmouth",
+          "sequence": 36,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Our Most Holy Redeemer",
+          "placeId": "CW-PW-P-redeemer",
+          "sequence": 37,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Exmouth Arms",
+          "placeId": null,
+          "sequence": 38,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Mount Pleasant sorting office",
+          "placeId": "CW-PW-P-mountpleasant",
+          "sequence": 39,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "narrative point; interiors optional where described"
+        },
+        {
+          "name": "Postal Museum / Mail Rail",
+          "placeId": "CW-PW-P-postal",
+          "sequence": null,
+          "sourceId": "CW-PW-S-mylondon",
+          "role": "optional attraction described from endpoint; not walked by main directions"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Raises workers’ daily rhythms, savings, housing, confinement and postal machinery.",
+          "sourceIds": [
+            "CW-PW-S-mylondon"
+          ],
+          "placeIds": [
+            "CW-PW-P-hope",
+            "CW-PW-P-finsburybank",
+            "CW-PW-P-peabody",
+            "CW-PW-P-postal"
+          ],
+          "availability": "Published description; historical claim not independently verified"
+        }
+      ],
+      "notes": "Sequence follows the extracted narrative points, not publisher numbering. Nearby Spa Green estate and Finsbury Health Centre are context, not asserted stops. Several historical assertions also need checking."
+    },
+    {
+      "id": "CW-PW-T-lady",
+      "title": "Lady’s Clerkenwell Walking Tour",
+      "sourceIds": [
+        "CW-PW-S-lady"
+      ],
+      "originator": "A Lady in London",
+      "status": "Public listing accessible; operation on a particular date unverified",
+      "areaRelation": "core plus Hatton Garden and Angel",
+      "themes": [
+        "food",
+        "architecture",
+        "discovery"
+      ],
+      "duration": "1.5–3 hours",
+      "distance": null,
+      "start": "Farringdon station",
+      "end": "Angel station",
+      "stopListCompleteness": "Full directions available; named destinations and salient passing points extracted",
+      "stops": [
+        {
+          "name": "Cowcross Street",
+          "placeId": "CW-PW-P-cowcross",
+          "sequence": 1,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Peter’s Lane",
+          "placeId": "CW-PW-P-rookery",
+          "sequence": 2,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "St. John restaurant",
+          "placeId": "CW-PW-P-stjohn-restaurant",
+          "sequence": 3,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "St John’s Gate",
+          "placeId": "CW-PW-P-stjohn-gate",
+          "sequence": 4,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "St John’s Square",
+          "placeId": "CW-PW-P-stjohn-square",
+          "sequence": 5,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Jerusalem Passage",
+          "placeId": "CW-PW-P-jerusalem-passage",
+          "sequence": 6,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Smithfield Market",
+          "placeId": "CW-PW-P-smithfield",
+          "sequence": 7,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Fox & Anchor",
+          "placeId": "CW-PW-P-fox",
+          "sequence": 8,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Charterhouse Square / Charterhouse",
+          "placeId": "CW-PW-P-charterhouse",
+          "sequence": 9,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "St Bartholomew the Great",
+          "placeId": "CW-PW-P-bartsgreat",
+          "sequence": 10,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Cloth Fair",
+          "placeId": "CW-PW-P-clothfair",
+          "sequence": 11,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "West Smithfield",
+          "placeId": "CW-PW-P-westsmithfield",
+          "sequence": 12,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "William Wallace Memorial",
+          "placeId": "CW-PW-P-wallace",
+          "sequence": 13,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Ely Place",
+          "placeId": "CW-PW-P-ely",
+          "sequence": 14,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "St Etheldreda’s Church",
+          "placeId": "CW-PW-P-etheldreda",
+          "sequence": 15,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Ye Olde Mitre",
+          "placeId": "CW-PW-P-mitre",
+          "sequence": 16,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Bleeding Heart Yard",
+          "placeId": "CW-PW-P-bleeding",
+          "sequence": 17,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Leather Lane",
+          "placeId": "CW-PW-P-leather",
+          "sequence": 18,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "The Eagle",
+          "placeId": "CW-PW-P-eagle",
+          "sequence": 19,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Exmouth Market",
+          "placeId": "CW-PW-P-exmouth",
+          "sequence": 20,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Myddelton Square Gardens / St Marks Church",
+          "placeId": "CW-PW-P-myddelton",
+          "sequence": 21,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Angel station",
+          "placeId": "CW-PW-P-angel",
+          "sequence": 22,
+          "sourceId": "CW-PW-S-lady",
+          "role": "published point"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Treats eating places and markets as part of the walk’s appeal alongside older buildings.",
+          "sourceIds": [
+            "CW-PW-S-lady"
+          ],
+          "placeIds": [
+            "CW-PW-P-stjohn-restaurant",
+            "CW-PW-P-exmouth",
+            "CW-PW-P-leather"
+          ],
+          "availability": "Published description; historical claim not independently verified"
+        }
+      ],
+      "notes": "Sequence follows extracted narrative points. Optional alley explorations and turning-only streets omitted."
+    },
+    {
+      "id": "CW-PW-T-metro",
+      "title": "Clerkenwell Walk — London’s Hidden Walks Volume 2 companion map",
+      "sourceIds": [
+        "CW-PW-S-metro-index",
+        "CW-PW-S-metro-map",
+        "CW-PW-S-metro-book"
+      ],
+      "originator": "Stephen Millar / Metro Publications",
+      "status": "Public companion map accessible; date/edition match unconfirmed",
+      "areaRelation": "core plus Hatton Garden",
+      "themes": [
+        "mixed discovery"
+      ],
+      "duration": null,
+      "distance": null,
+      "start": null,
+      "end": null,
+      "stopListCompleteness": "Complete 41-entry numbered map legend; accompanying book narrative unavailable",
+      "stops": [
+        {
+          "name": "Carthusian Street",
+          "placeId": "CW-PW-P-carthusian",
+          "sequence": 1,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Florin Court",
+          "placeId": "CW-PW-P-florin",
+          "sequence": 2,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Charterhouse",
+          "placeId": "CW-PW-P-charterhouse",
+          "sequence": 3,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Fox and Anchor",
+          "placeId": "CW-PW-P-fox",
+          "sequence": 4,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Smithfield Meat Market",
+          "placeId": "CW-PW-P-smithfield",
+          "sequence": 5,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "West Smithfield",
+          "placeId": "CW-PW-P-westsmithfield",
+          "sequence": 6,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "William Wallace",
+          "placeId": "CW-PW-P-wallace",
+          "sequence": 7,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "St Bartholomew-the-Great",
+          "placeId": "CW-PW-P-bartsgreat",
+          "sequence": 8,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Cloth Fair",
+          "placeId": "CW-PW-P-clothfair",
+          "sequence": 9,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Number 41",
+          "placeId": "CW-PW-P-cloth41",
+          "sequence": 10,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "St Bartholomew’s Hospital",
+          "placeId": "CW-PW-P-barts",
+          "sequence": 11,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "St Bartholomew-the-Less",
+          "placeId": "CW-PW-P-bartsless",
+          "sequence": 12,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "St John’s Gate",
+          "placeId": "CW-PW-P-stjohn-gate",
+          "sequence": 13,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "British Order of St John",
+          "placeId": null,
+          "sequence": 14,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Order of St John Museum",
+          "placeId": "CW-PW-P-stjohn-gate",
+          "sequence": 15,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "St John’s Square",
+          "placeId": "CW-PW-P-stjohn-square",
+          "sequence": 16,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Priory Church of St John",
+          "placeId": "CW-PW-P-stjohn-church",
+          "sequence": 17,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Jerusalem Passage",
+          "placeId": "CW-PW-P-jerusalem-passage",
+          "sequence": 18,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Clerkenwell Green",
+          "placeId": "CW-PW-P-green",
+          "sequence": 19,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Marx Memorial Library",
+          "placeId": "CW-PW-P-marx",
+          "sequence": 20,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Scotti’s Snack Bar",
+          "placeId": "CW-PW-P-scottis",
+          "sequence": 21,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Middlesex Sessions House",
+          "placeId": "CW-PW-P-sessions",
+          "sequence": 22,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "clerk’s well",
+          "placeId": "CW-PW-P-well",
+          "sequence": 23,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Crown Tavern",
+          "placeId": "CW-PW-P-crown",
+          "sequence": 24,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "St James",
+          "placeId": "CW-PW-P-stjames",
+          "sequence": 25,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "The Horseshoe",
+          "placeId": "CW-PW-P-horseshoe",
+          "sequence": 26,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Peabody Trust",
+          "placeId": "CW-PW-P-peabody",
+          "sequence": 27,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Hugh Myddleton School",
+          "placeId": "CW-PW-P-school",
+          "sequence": 28,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Clerkenwell House of Detention",
+          "placeId": "CW-PW-P-house-detention",
+          "sequence": 29,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Corporation Row",
+          "placeId": "CW-PW-P-corporationrow",
+          "sequence": 30,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Spa Fields",
+          "placeId": "CW-PW-P-spa",
+          "sequence": 31,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Exmouth Market",
+          "placeId": "CW-PW-P-exmouth",
+          "sequence": 32,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Mount Pleasant Sorting Office",
+          "placeId": "CW-PW-P-mountpleasant",
+          "sequence": 33,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Coach and Horses",
+          "placeId": "CW-PW-P-coach",
+          "sequence": 34,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "St Peter’s Italian Church",
+          "placeId": "CW-PW-P-stpeters",
+          "sequence": 35,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Saffron Hill",
+          "placeId": "CW-PW-P-saffron",
+          "sequence": 36,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Ziggurat Building",
+          "placeId": "CW-PW-P-ziggurat",
+          "sequence": 37,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Bleeding Heart Yard",
+          "placeId": "CW-PW-P-bleeding",
+          "sequence": 38,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Ye Olde Mitre Tavern",
+          "placeId": "CW-PW-P-mitre",
+          "sequence": 39,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "Ely Place",
+          "placeId": "CW-PW-P-ely",
+          "sequence": 40,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        },
+        {
+          "name": "St. Etheldra’s",
+          "placeId": "CW-PW-P-etheldreda",
+          "sequence": 41,
+          "sourceId": "CW-PW-S-metro-map",
+          "role": "numbered map reference"
+        }
+      ],
+      "stories": [],
+      "notes": "Numbers are publisher map-reference numbers, not guaranteed stop order or separate narration units. Map suggests a Barbican approach but prints no start/end instruction; endpoints remain null."
+    },
+    {
+      "id": "CW-PW-T-rebel",
+      "title": "Trailblazers for Democracy in Clerkenwell Green — Rebel Footprints",
+      "sourceIds": [
+        "CW-PW-S-rebel"
+      ],
+      "originator": "David Rosenberg",
+      "status": "2019 book preview; historical interpretation, not current tour schedule",
+      "areaRelation": "core",
+      "themes": [
+        "politics",
+        "democracy"
+      ],
+      "duration": null,
+      "distance": null,
+      "start": null,
+      "end": null,
+      "stopListCompleteness": "Chapter title only; local chapter and itinerary outside preview",
+      "stops": [],
+      "stories": [
+        {
+          "summary": "Introduction recounts the 1833 Coldbath Fields rally, a police death and the jury’s resistance to the directed verdict.",
+          "sourceIds": [
+            "CW-PW-S-rebel"
+          ],
+          "placeIds": [
+            "CW-PW-P-coldbath"
+          ],
+          "availability": "Printed pp. 2–5 in introduction; local chapter not inspected"
+        }
+      ],
+      "notes": "The following story is from the introduction, not an exposed Clerkenwell walk stop."
+    },
+    {
+      "id": "CW-PW-T-os-clerkenwell",
+      "title": "Monks, Nuns and the Dispossessed — Clerkenwell",
+      "sourceIds": [
+        "CW-PW-S-os-listing",
+        "CW-PW-S-os-sample"
+      ],
+      "originator": "Andy Rashleigh / OS Pathfinder",
+      "status": "Book listed publicly; date not established",
+      "areaRelation": "core plus Angel",
+      "themes": [
+        "heritage"
+      ],
+      "duration": null,
+      "distance": "0.75 miles",
+      "start": "Farringdon",
+      "end": "The Angel",
+      "stopListCompleteness": "Contents and catalogue only; no intermediate stops disclosed in sample",
+      "stops": [],
+      "stories": [],
+      "notes": "Endpoints read from sample contents p. 2. Distance quoted from product listing, not validated against a route. No tour geometry inferred."
+    },
+    {
+      "id": "CW-PW-T-os-smithfield",
+      "title": "To the Banks of the Fleet — Smithfield",
+      "sourceIds": [
+        "CW-PW-S-os-listing",
+        "CW-PW-S-os-sample"
+      ],
+      "originator": "Andy Rashleigh / OS Pathfinder",
+      "status": "Book listed publicly; date not established",
+      "areaRelation": "core plus St Paul’s",
+      "themes": [
+        "heritage"
+      ],
+      "duration": null,
+      "distance": "1 mile",
+      "start": "St Paul’s",
+      "end": "Farringdon",
+      "stopListCompleteness": "Contents and catalogue only; no intermediate stops disclosed in sample",
+      "stops": [],
+      "stories": [],
+      "notes": "Endpoints read from sample contents p. 2. Distance quoted from product listing, not validated against a route. No tour geometry inferred."
+    }
+  ],
+  "places": [
+    {
+      "id": "CW-PW-P-farringdon",
+      "name": "Farringdon station",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-industrial"
+      ],
+      "tourIds": [
+        "CW-PW-T-industrial"
+      ],
+      "candidateAngles": [
+        "Railways changing the district"
+      ],
+      "tags": [
+        "transport",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-charterhouse",
+      "name": "The Charterhouse",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-londonwalks",
+        "CW-PW-S-jones",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-secret-village",
+        "CW-PW-T-jones",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Changing purposes of one institution"
+      ],
+      "tags": [
+        "religion",
+        "housing",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-smithfield",
+      "name": "Smithfield Market",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-jones",
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones",
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Food logistics and city change"
+      ],
+      "tags": [
+        "food",
+        "work",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks. My London Walks’ 2025/26 closure/Dagenham narrative is stale according to the parallel local-context handoff; use its official current sources before writing."
+    },
+    {
+      "id": "CW-PW-P-stjohn-gate",
+      "name": "St John’s Gate",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-jones",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Religious, publishing and charitable uses"
+      ],
+      "tags": [
+        "religion",
+        "printing",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-stjohn-square",
+      "name": "St John’s Square",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Changes in the former priory precinct"
+      ],
+      "tags": [
+        "religion",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-stjohn-church",
+      "name": "Priory Church of St John",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Hospital care and religious continuity"
+      ],
+      "tags": [
+        "religion",
+        "health",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-stjohn-gardens",
+      "name": "Saint John’s Gardens",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-voicemap"
+      ],
+      "tourIds": [
+        "CW-PW-T-voicemap"
+      ],
+      "candidateAngles": [
+        "Garden named in audio listing"
+      ],
+      "tags": [
+        "green-space",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks. Do not merge automatically with the priory/cloister garden: public listing does not resolve this identity."
+    },
+    {
+      "id": "CW-PW-P-jerusalem-passage",
+      "name": "Jerusalem Passage",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Small passage through a former precinct"
+      ],
+      "tags": [
+        "streets",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-green",
+      "name": "Clerkenwell Green",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-jones",
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones",
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Public speech and civic power"
+      ],
+      "tags": [
+        "politics",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-marx",
+      "name": "Marx Memorial Library",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Print, learning and political organisation"
+      ],
+      "tags": [
+        "politics",
+        "printing",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-sessions",
+      "name": "Old Sessions House",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-jones",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Justice and changing public institutions"
+      ],
+      "tags": [
+        "law",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-well",
+      "name": "Clerk’s Well",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Water and performance"
+      ],
+      "tags": [
+        "water",
+        "theatre",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-stjames",
+      "name": "St James’s Church",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-jones",
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones",
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Parish life and changing church ground"
+      ],
+      "tags": [
+        "religion",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-stjames-gardens",
+      "name": "St James’s Gardens",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-voicemap"
+      ],
+      "tourIds": [
+        "CW-PW-T-voicemap"
+      ],
+      "candidateAngles": [
+        "Churchyard as public space"
+      ],
+      "tags": [
+        "green-space",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-crown",
+      "name": "Crown Tavern",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Social spaces around the Green"
+      ],
+      "tags": [
+        "food",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-peabody",
+      "name": "Peabody estate, Clerkenwell",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-jones",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Housing provision and changing standards"
+      ],
+      "tags": [
+        "housing",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-peartree",
+      "name": "Pear Tree Court",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-jones"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones"
+      ],
+      "candidateAngles": [
+        "Housing and Dickens geography"
+      ],
+      "tags": [
+        "housing",
+        "literature",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-betsey",
+      "name": "Betsey Trotwood",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-jones",
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones",
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon"
+      ],
+      "candidateAngles": [
+        "Pub named for a fictional character"
+      ],
+      "tags": [
+        "food",
+        "literature",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-house-detention",
+      "name": "Clerkenwell House of Detention site",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Prisons and urban land reuse"
+      ],
+      "tags": [
+        "law",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-school",
+      "name": "Former Hugh Myddleton School / Kingsway Place",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Prison, school and residential reuse"
+      ],
+      "tags": [
+        "education",
+        "housing",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-spa",
+      "name": "Spa Fields",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Leisure, burial and political gathering"
+      ],
+      "tags": [
+        "green-space",
+        "politics",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-exmouth",
+      "name": "Exmouth Market",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Street food and everyday infrastructure"
+      ],
+      "tags": [
+        "food",
+        "everyday-life",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-mountpleasant",
+      "name": "Mount Pleasant sorting-office site",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Prison and postal infrastructure"
+      ],
+      "tags": [
+        "transport",
+        "law",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-coldbath",
+      "name": "Coldbath Fields / former Middlesex House of Correction",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-rebel"
+      ],
+      "tourIds": [
+        "CW-PW-T-rebel"
+      ],
+      "candidateAngles": [
+        "Protest and incarceration"
+      ],
+      "tags": [
+        "politics",
+        "law",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-postal",
+      "name": "Postal Museum / Mail Rail",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-mylondon"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon"
+      ],
+      "candidateAngles": [
+        "Hidden infrastructure"
+      ],
+      "tags": [
+        "transport",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-booths",
+      "name": "Booth’s Gin friezes",
+      "aliases": [],
+      "address": "24 Britton Street (Richard Jones route)",
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-jones"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones"
+      ],
+      "candidateAngles": [
+        "Production pictured on surviving decoration"
+      ],
+      "tags": [
+        "work",
+        "food",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-jerusalem-tavern",
+      "name": "Jerusalem Tavern, Britton Street (published name)",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-jones"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones"
+      ],
+      "candidateAngles": [
+        "Old-looking premises and later pub use"
+      ],
+      "tags": [
+        "food",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks. Published pub name not a current trading-name check; not the former tavern inside St John’s Gate."
+    },
+    {
+      "id": "CW-PW-P-turnmill",
+      "name": "Turnmill Street",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-jones"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones"
+      ],
+      "candidateAngles": [
+        "Railway, lost river and street reputation"
+      ],
+      "tags": [
+        "transport",
+        "water",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-steinberg",
+      "name": "Ellen Steinberg family memorial, St James’s churchyard",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-jones"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones"
+      ],
+      "candidateAngles": [
+        "Violence, memory and public subscription"
+      ],
+      "tags": [
+        "memorial",
+        "crime",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-fox",
+      "name": "Fox and Anchor",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-jones",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Decorated market-side pub"
+      ],
+      "tags": [
+        "food",
+        "architecture",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-clothfair",
+      "name": "Cloth Fair",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Commerce and surviving townscape"
+      ],
+      "tags": [
+        "work",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-cloth41",
+      "name": "41 Cloth Fair",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Surviving domestic frontage"
+      ],
+      "tags": [
+        "architecture",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-barts",
+      "name": "St Bartholomew’s Hospital",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Care and institutional longevity"
+      ],
+      "tags": [
+        "health",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-bartsgreat",
+      "name": "St Bartholomew the Great",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Surviving religious fabric"
+      ],
+      "tags": [
+        "religion",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-bartsless",
+      "name": "St Bartholomew the Less",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Hospital church"
+      ],
+      "tags": [
+        "religion",
+        "health",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-westsmithfield",
+      "name": "West Smithfield",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Commerce and public spectacle"
+      ],
+      "tags": [
+        "work",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-wallace",
+      "name": "William Wallace memorial",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Public memory of execution"
+      ],
+      "tags": [
+        "memorial",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-florin",
+      "name": "Florin Court",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Television location and flats"
+      ],
+      "tags": [
+        "film",
+        "housing",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-carthusian",
+      "name": "Carthusian Street",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Connection to Charterhouse"
+      ],
+      "tags": [
+        "streets",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-passing",
+      "name": "Passing Alley",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon"
+      ],
+      "tourIds": [
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon"
+      ],
+      "candidateAngles": [
+        "Changing names and remembered uses"
+      ],
+      "tags": [
+        "streets",
+        "levity",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-cowcross",
+      "name": "Cowcross Street",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-lady"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady"
+      ],
+      "candidateAngles": [
+        "Food trades and streets"
+      ],
+      "tags": [
+        "food",
+        "work",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-stjohn-restaurant",
+      "name": "St. John restaurant",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-lady"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady"
+      ],
+      "candidateAngles": [
+        "Contemporary food culture"
+      ],
+      "tags": [
+        "food",
+        "present-day",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-rookery",
+      "name": "The Rookery / Peter’s Lane",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-lady"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-lady"
+      ],
+      "candidateAngles": [
+        "Reuse of old commercial buildings"
+      ],
+      "tags": [
+        "architecture",
+        "housing",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-hope",
+      "name": "The Hope pub",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-mylondon"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon"
+      ],
+      "candidateAngles": [
+        "Different daily rhythms of market workers"
+      ],
+      "tags": [
+        "food",
+        "work",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-finsburybank",
+      "name": "Former Finsbury Bank for Savings",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-mylondon"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon"
+      ],
+      "candidateAngles": [
+        "Saving and financial habits"
+      ],
+      "tags": [
+        "everyday-life",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-archives",
+      "name": "The London Archives",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-mylondon"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon"
+      ],
+      "candidateAngles": [
+        "Printing-site reuse and collective memory"
+      ],
+      "tags": [
+        "printing",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-redeemer",
+      "name": "Church of Our Most Holy Redeemer",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-mylondon"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon"
+      ],
+      "candidateAngles": [
+        "Unexpected religious architecture"
+      ],
+      "tags": [
+        "religion",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-scottis",
+      "name": "Scotti’s Snack Bar (published name)",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Everyday food landmark in book map"
+      ],
+      "tags": [
+        "food",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-horseshoe",
+      "name": "The Horseshoe (published name)",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Pub on route map"
+      ],
+      "tags": [
+        "food",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-corporationrow",
+      "name": "Corporation Row",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Street alongside prison history"
+      ],
+      "tags": [
+        "streets",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-coach",
+      "name": "Coach and Horses, Ray Street (published name)",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Lost Fleet candidate"
+      ],
+      "tags": [
+        "water",
+        "food",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-stpeters",
+      "name": "St Peter’s Italian Church",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Migration and religious community"
+      ],
+      "tags": [
+        "migration",
+        "religion",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-ziggurat",
+      "name": "Ziggurat Building",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Industrial building reuse"
+      ],
+      "tags": [
+        "architecture",
+        "core-area"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-hatton54",
+      "name": "54 Hatton Garden",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-jones"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones"
+      ],
+      "candidateAngles": [
+        "Dickens and magistrates"
+      ],
+      "tags": [
+        "literature",
+        "law",
+        "nearby-comparison"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-saffron",
+      "name": "Saffron Hill",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-jones",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Changing streets and literary reputation"
+      ],
+      "tags": [
+        "literature",
+        "nearby-comparison"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-bleeding",
+      "name": "Bleeding Heart Yard",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-jones",
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones",
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Dickens and courtyards"
+      ],
+      "tags": [
+        "literature",
+        "nearby-comparison"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-ely",
+      "name": "Ely Place",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Ecclesiastical enclave"
+      ],
+      "tags": [
+        "religion",
+        "nearby-comparison"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-etheldreda",
+      "name": "St Etheldreda’s Church",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Surviving chapel"
+      ],
+      "tags": [
+        "religion",
+        "nearby-comparison"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-mitre",
+      "name": "Ye Olde Mitre",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "candidateAngles": [
+        "Courtyard pub"
+      ],
+      "tags": [
+        "food",
+        "nearby-comparison"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-leather",
+      "name": "Leather Lane",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-lady"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady"
+      ],
+      "candidateAngles": [
+        "Working-day street food"
+      ],
+      "tags": [
+        "food",
+        "nearby-comparison"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-eagle",
+      "name": "The Eagle, Farringdon Road",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-lady"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady"
+      ],
+      "candidateAngles": [
+        "Changing pub dining"
+      ],
+      "tags": [
+        "food",
+        "nearby-comparison"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-myddelton",
+      "name": "Myddelton Square / St Mark’s Church",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-lady"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady"
+      ],
+      "candidateAngles": [
+        "Residential square beyond core"
+      ],
+      "tags": [
+        "housing",
+        "religion",
+        "nearby-comparison"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    },
+    {
+      "id": "CW-PW-P-angel",
+      "name": "Angel station",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-PW-S-lady"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady"
+      ],
+      "candidateAngles": [
+        "Northern endpoint"
+      ],
+      "tags": [
+        "transport",
+        "nearby-comparison"
+      ],
+      "currentContext": "Present operation and visitor conditions not established by this survey record.",
+      "verificationNotes": "Discovery only. History, standing area, access and directions require independent checks."
+    }
+  ],
+  "searchLog": [
+    {
+      "id": "CW-PW-Q-01",
+      "family": "commercial-independent",
+      "queries": [
+        "Clerkenwell Farringdon walking tour London Walks",
+        "Clerkenwell guided walk Footprints London radicals",
+        "\"Clerkenwell\" \"Charles Booth\" \"walk\" Sean"
+      ],
+      "inspected": [
+        "CW-PW-S-londonwalks",
+        "CW-PW-S-industrial",
+        "CW-PW-S-booth"
+      ],
+      "result": "Three materially different originators extracted. Footprints and Sean Patterson listings treated as one originator; reviews not mined for itinerary."
+    },
+    {
+      "id": "CW-PW-Q-02",
+      "family": "self-guided-audio",
+      "queries": [
+        "Clerkenwell self guided walking tour VoiceMap",
+        "site.voicemap.me Clerkenwell",
+        "\"Clerkenwell\" \"VoiceMap\""
+      ],
+      "inspected": [
+        "CW-PW-S-jones",
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-lady"
+      ],
+      "result": "Four-resource ceiling reached; broad overlapping geography with a distinctive food-led walk and audio sample. VoiceMap locations route link inaccessible; no hidden stops guessed."
+    },
+    {
+      "id": "CW-PW-Q-03",
+      "family": "published-books-guides",
+      "queries": [
+        "Clerkenwell walking book guide route preview",
+        "Clerkenwell walking guide book Christopher Winn John Rogers London Hidden Walks",
+        "site.plutobooks.com \"Rebel Footprints\" \"Clerkenwell\"",
+        "site.metropublications.com \"London’s Hidden Walks\" \"Clerkenwell\"",
+        "site.shop.ordnancesurvey.co.uk \"London City Walks\" \"Clerkenwell\"",
+        "site.metropublications.com/products/ \"London’s Hidden Walks Vol\" \"Stephen\"",
+        "site.metropublications.com \"London's Hidden Walks Volume 2\""
+      ],
+      "inspected": [
+        "CW-PW-S-metro-index",
+        "CW-PW-S-metro-map",
+        "CW-PW-S-metro-book",
+        "CW-PW-S-rebel",
+        "CW-PW-S-os-listing",
+        "CW-PW-S-os-sample"
+      ],
+      "result": "Three book works checked. Successful publisher map and visual sample retrieval after web cache failures. Rebel introduction/contents text read; local chapter unavailable. No purchase."
+    },
+    {
+      "id": "CW-PW-Q-04",
+      "family": "cross-role-overlap",
+      "queries": [
+        "Clerkenwell Farringdon walking tour London Walks"
+      ],
+      "inspectedUrls": [
+        "https://historyfrombelow.com/a-historical-walk-through-clerkenwell-tracing-the-social-footsteps-of-its-past/"
+      ],
+      "result": "Aru route opened then assigned by coordination to local-context.json; not counted here. Footways, council/museum/community routes left to that lane."
+    },
+    {
+      "id": "CW-PW-Q-05",
+      "family": "retrieval-limit",
+      "queries": [],
+      "inspectedUrls": [
+        "https://charlesboothwalks.com/",
+        "https://www.plutobooks.com/product/rebel-footprints/",
+        "https://metropublications.com/pages/copy-of-walking-map-downloads",
+        "https://8768512fb23263ac9a23-f839e98e865f2de9ab20702733bd4398.ssl.cf2.rackcdn.com/look-inside/LI-9781783713301.pdf"
+      ],
+      "result": "Non-www Booth homepage failed; www specific page worked. Pluto product page failed; public 2019 PDF text worked. Older Rebel preview duplicates the introduction, not a new tour. Metro map and OS sample ultimately read locally; temporary PDFs not part of deliverable. Search crawl dates not used as publication dates."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "CW-PW-G-01",
+      "question": "Would the actual book chapters add a materially different story?",
+      "value": "Map-only points cannot expose a writer’s explanation or selection logic.",
+      "nextEvidence": "If needed after assembly, consult a legitimately available Clerkenwell chapter of Hidden Walks or Rebel Footprints; no purchase is necessary for this discovery handoff.",
+      "blocking": false
+    },
+    {
+      "id": "CW-PW-G-02",
+      "question": "Can the strongest everyday-life leads be independently supported?",
+      "value": "Exmouth’s vending lamp, the gin friezes and worker routines could add levity and distinctive lived experience.",
+      "nextEvidence": "Candidate research using contemporary images, period reports and institutional archives; keep unverified anecdotes out of final narration.",
+      "blocking": false
+    },
+    {
+      "id": "CW-PW-G-03",
+      "question": "Which inherited visitor assumptions remain usable today?",
+      "value": "Old pub names, market redevelopment, private interiors and narrow passages materially affect a practical walk.",
+      "nextEvidence": "Use the parallel local-context official-source checks, then inspect only proposed route approaches/access before directions are written.",
+      "blocking": false
+    }
+  ],
+  "parked": [
+    {
+      "title": "RinneOnTheRoad 2021 Farringdon/Clerkenwell video",
+      "url": "https://www.youtube.com/watch?v=S1cbMQiBMtc",
+      "status": "search-only; video not viewed",
+      "value": "Timestamped street sequence may help later route comparison; dated imagery cannot establish current access."
+    },
+    {
+      "title": "WalkWalk Exmouth to Smithfield",
+      "url": "https://walkwalk.org/london/walks/clerkenwell-exmouth-to-smithfield",
+      "status": "search-only",
+      "value": "Recent food-led page largely overlaps the four inspected self-guided works; no separate extraction."
+    },
+    {
+      "title": "Walking London: King’s Cross to Farringdon",
+      "url": "https://www.walking-london.co.uk/london-walks/kings-cross-to-farrindon/",
+      "status": "search-only; nearby approach",
+      "value": "Longer northern comparison if owner later wants a different gateway; not added to core."
+    },
+    {
+      "title": "Christopher Winn, London By Tube",
+      "url": "https://www.penguin.co.uk/books/431644/london-by-tube-by-christopher-winn/9781473528352",
+      "status": "search-only publisher listing",
+      "value": "No inspected Clerkenwell content; not counted as read."
+    },
+    {
+      "title": "VoiceMap full 46-location audio walk",
+      "url": "https://voicemap.me/tour/london/from-righteous-to-wretched-a-clerkenwell-tale",
+      "status": "paid/unavailable remainder not accessed",
+      "value": "Not needed to complete broad discovery; do not infer withheld itinerary from indexed fragments."
+    },
+    {
+      "title": "Little Italy and women’s/ordinary-life perspectives",
+      "url": null,
+      "status": "research gap assigned to local-context lane",
+      "value": "Public commercial overviews favour familiar male names and dramatic crime; check whether contextual pool supplies migration and everyday-life alternatives."
+    }
+  ]
+}

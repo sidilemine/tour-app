@@ -1,0 +1,2292 @@
+{
+  "area": "Clerkenwell / Farringdon",
+  "retrievedOn": "2026-09-20",
+  "scope": {
+    "role": "local-context researcher",
+    "core": "Farringdon; Smithfield/Charterhouse; Clerkenwell Green/Close; St John's Gate/Square; Exmouth Market/Spa Fields; southern New River Head edge",
+    "nearbyComparisons": [
+      "Angel/northern St John Street",
+      "St Peter's Italian Church/western Clerkenwell",
+      "Calthorpe Community Garden (outside core)"
+    ],
+    "purpose": "Public-source discovery before tour selection or scripting",
+    "sweepBudget": "Four materially different resources per family; civic index supports its two PDFs. Current-family fourth resource could not be opened. No follow-up batch undertaken by this role.",
+    "status": "frozen"
+  },
+  "sources": [
+    {
+      "id": "CW-LC-S01",
+      "title": "Local history routes to enjoy",
+      "originator": "Islington Council",
+      "url": "https://www.islington.gov.uk/libraries-arts-and-heritage/heritage/islington-archives/local-history-walks",
+      "kind": "council route index",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "civic-heritage-community",
+      "relationshipNotes": "Navigation/index for S02/S03, not a third independent route.",
+      "summary": "Links the EC1 and Clerkenwell leaflets; advertises 2.5 and 2 miles respectively.",
+      "rightsNotes": "Discovery metadata and original short summary only; no script/image reuse rights established."
+    },
+    {
+      "id": "CW-LC-S02",
+      "title": "The Clerkenwell Historic Trail",
+      "originator": "Islington Council / City Fringe Partnership / Clerkenwell Historic Trail Association",
+      "url": "https://www.islington.gov.uk/-/media/sharepoint-lists/public-records/leisureandculture/information/factsheets/20192020/20191116clerkenwellhistoricaltrail1998.pdf",
+      "kind": "illustrated heritage trail PDF",
+      "publishedDate": "1998",
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "civic-heritage-community",
+      "relationshipNotes": "Council hosts this distinct older trail alongside S03. Page 1 credits council and regeneration partnership; page 2 names the trail association.",
+      "summary": "Eighteen illustrated locations; a two-mile dotted trail offers four shorter sections.",
+      "rightsNotes": "Discovery metadata and original short summary only; no script/image reuse rights established.",
+      "dateNotes": "Year in council filename and handwritten cover note; no precise publication date.",
+      "accessNotes": "Both PDF pages rendered locally and inspected; web text extraction was empty."
+    },
+    {
+      "id": "CW-LC-S03",
+      "title": "EC1 Local History Trail",
+      "originator": "Islington Local History Centre / Islington Council",
+      "url": "https://www.islington.gov.uk/-/media/sharepoint-lists/public-records/leisureandculture/information/factsheets/20192020/20191116ec1localhistorytrail2005.pdf",
+      "kind": "self-guided council leaflet",
+      "publishedDate": "2005",
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "civic-heritage-community",
+      "relationshipNotes": "Same council source family as S01/S02, but a different route and treatment.",
+      "summary": "Library loop connects social provision, entertainment, religion and infrastructure.",
+      "rightsNotes": "Discovery metadata and original short summary only; no script/image reuse rights established.",
+      "dateNotes": "Year supplied by council filename; precise date not printed in extracted text."
+    },
+    {
+      "id": "CW-LC-S04",
+      "title": "A walk along St. John Street, from Clerkenwell to the Angel",
+      "originator": "Islington Society",
+      "url": "https://islingtonsociety.org.uk/wp-content/uploads/2025/02/A-walk-along-St-John-Street.pdf",
+      "kind": "local society architectural walk PDF",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "civic-heritage-community",
+      "relationshipNotes": "Uses the Society's 2021 local-list review and national listings; underlying listing checks remain later research.",
+      "summary": "A street-length reading of listed buildings, warehouses and everyday commercial fronts.",
+      "rightsNotes": "Discovery metadata and original short summary only; no script/image reuse rights established.",
+      "dateNotes": "Publication date unstated; October 2024 observation in text, February 2025 upload path."
+    },
+    {
+      "id": "CW-LC-S05",
+      "title": "Guided tours",
+      "originator": "Museum of the Order of St John",
+      "url": "https://museumstjohn.org.uk/planning-your-visit/guided-tours/",
+      "kind": "museum tour descriptions",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "civic-heritage-community",
+      "relationshipNotes": "One institution's three on-site products; not three independent neighbourhood walks.",
+      "summary": "Three bookable variants distinguish medieval, first-aid and building-reuse histories.",
+      "rightsNotes": "Discovery metadata and original short summary only; no script/image reuse rights established."
+    },
+    {
+      "id": "CW-LC-S06",
+      "title": "A Historical Walk Through Clerkenwell: Tracing the Social Footsteps of its Past",
+      "originator": "Emanuela Aru / History From Below",
+      "url": "https://historyfrombelow.com/a-historical-walk-through-clerkenwell-tracing-the-social-footsteps-of-its-past/",
+      "kind": "specialist guide's public route article",
+      "publishedDate": "2025-05-21",
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "local-reporting-specialist-history",
+      "relationshipNotes": "Also inspected by public-walk researcher; canonical extraction stays here as T07. Guide's account is discovery evidence, not independent corroboration.",
+      "summary": "Published sequence links markets, religious precincts, workshops, protest, institutions and water.",
+      "rightsNotes": "Discovery metadata and original short summary only; no script/image reuse rights established."
+    },
+    {
+      "id": "CW-LC-S07",
+      "title": "Tears as Victorian toilets in Clerkenwell Green are removed",
+      "originator": "Felix Bright / Islington Tribune",
+      "url": "https://www.islingtontribune.co.uk/article/tears-as-victorian-toilets-in-clerkenwell-green-are-removed",
+      "kind": "local reporting",
+      "publishedDate": "2026-07-10",
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "local-reporting-specialist-history",
+      "relationshipNotes": "One report includes competing attributed views; these are not independent historical confirmations.",
+      "summary": "Reports preservation objections, the Shanksy campaign and the council's safety explanation for removal and landscaping.",
+      "rightsNotes": "Discovery metadata and original short summary only; no script/image reuse rights established.",
+      "dateNotes": "Visible Friday 10 July dateline has no year; 2026 follows page context/calendar. Treat year as inferred until metadata/archive check."
+    },
+    {
+      "id": "CW-LC-S08",
+      "title": "Black Mary Project",
+      "originator": "Studio Gaylene Gould",
+      "url": "https://www.studiogaylenegould.com/blackmaryproject",
+      "kind": "artist/community project account",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "local-reporting-specialist-history",
+      "relationshipNotes": "Project-originator account links Aru's research; related to S06's author, not independent corroboration of Mary Woolaston. Artistic reconstruction and historical evidence must be separated.",
+      "summary": "Community art reinterprets a well-keeper story; records a Calthorpe sculpture and a healing-tour event.",
+      "rightsNotes": "Discovery metadata and original short summary only; no script/image reuse rights established."
+    },
+    {
+      "id": "CW-LC-S09",
+      "title": "About the Parish",
+      "originator": "Roman Catholic Parish of St Peter's Italian Church / Diocese of Westminster",
+      "url": "https://parish.rcdow.org.uk/italianchurch/about-the-parish/",
+      "kind": "community institution history",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "local-reporting-specialist-history",
+      "relationshipNotes": "Institutional self-history; claims about origins and procession primacy need independent checking.",
+      "summary": "Church describes its multi-national origins, Italian congregation, wartime remembrance and annual procession.",
+      "rightsNotes": "Discovery metadata and original short summary only; no script/image reuse rights established."
+    },
+    {
+      "id": "CW-LC-S10",
+      "title": "London Museum in Smithfield will open its doors on 28 November 2026",
+      "originator": "London Museum",
+      "url": "https://www.londonmuseum.org.uk/about/press/press-releases/london-museum-smithfield-will-open-doors/",
+      "kind": "official future-opening announcement",
+      "publishedDate": "2026-06-18",
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "current-places-operators-events",
+      "relationshipNotes": "Announcement is primary evidence of plans, not evidence an opening has happened.",
+      "summary": "General Market galleries are announced for 28 November 2026; Poultry Market for 2028.",
+      "rightsNotes": "Discovery metadata and original short summary only; no script/image reuse rights established."
+    },
+    {
+      "id": "CW-LC-S11",
+      "title": "The future of Smithfield and Billingsgate Markets",
+      "originator": "City of London Corporation",
+      "url": "https://www.cityoflondon.gov.uk/supporting-businesses/wholesale-markets/the-future-of-smithfield-and-billingsgate-markets",
+      "kind": "official market transition update",
+      "publishedDate": "2026-01-02",
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "current-places-operators-events",
+      "relationshipNotes": "Market authority's policy account. Do not treat its predicted benefits or trader-consent summary as independent community consensus.",
+      "summary": "Traders remain until at least 2028; Albert Island is the preferred move, subject to legislation and planning.",
+      "rightsNotes": "Discovery metadata and original short summary only; no script/image reuse rights established.",
+      "dateNotes": "Page's updated date, not original publication."
+    },
+    {
+      "id": "CW-LC-S12",
+      "title": "Quentin Blake Centre for Illustration",
+      "originator": "Quentin Blake Centre for Illustration",
+      "url": "https://qbcentre.org.uk/",
+      "kind": "current institution homepage",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "current-places-operators-events",
+      "relationshipNotes": "Current operator statement checked, not just an earlier opening announcement.",
+      "summary": "Homepage lists the Centre as open in former waterworks, with exhibitions, workshops and a September late event.",
+      "rightsNotes": "Discovery metadata and original short summary only; no script/image reuse rights established."
+    },
+    {
+      "id": "CW-LC-S13",
+      "title": "Exmouth Market, London",
+      "originator": "Exmouth London business directory",
+      "url": "https://exmouth.london/",
+      "kind": "local business directory",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-20",
+      "access": "inaccessible",
+      "family": "current-places-operators-events",
+      "relationshipNotes": "Search results available, but both bare and www URL opens returned internal errors. Business names stay search-only leads.",
+      "summary": "Directory open failed; search-only business leads are parked.",
+      "rightsNotes": "No page content extracted; no media reused."
+    }
+  ],
+  "tours": [
+    {
+      "id": "CW-LC-T01",
+      "title": "The Clerkenwell Historic Trail",
+      "sourceIds": [
+        "CW-LC-S01",
+        "CW-LC-S02"
+      ],
+      "originator": "Clerkenwell Historic Trail Association / Islington Council",
+      "status": "historical leaflet still linked",
+      "areaRelation": "core plus northern edge",
+      "themes": [
+        "religion",
+        "work",
+        "water",
+        "public institutions"
+      ],
+      "duration": null,
+      "distance": "about 2 miles",
+      "start": null,
+      "end": null,
+      "stopListCompleteness": "complete 18-item illustrated map key; map numbering retained separately, not asserted as compulsory order",
+      "stops": [
+        {
+          "name": "Farringdon Station",
+          "placeId": "CW-LC-P01",
+          "sequence": null,
+          "sourceId": "CW-LC-S02",
+          "mapKey": 1,
+          "locator": "PDF p2 illustrated key"
+        },
+        {
+          "name": "Middlesex Sessions House",
+          "placeId": "CW-LC-P02",
+          "sequence": null,
+          "sourceId": "CW-LC-S02",
+          "mapKey": 2,
+          "locator": "PDF p2 illustrated key"
+        },
+        {
+          "name": "Marx Memorial Library",
+          "placeId": "CW-LC-P03",
+          "sequence": null,
+          "sourceId": "CW-LC-S02",
+          "mapKey": 3,
+          "locator": "PDF p2 illustrated key"
+        },
+        {
+          "name": "Clerks Well",
+          "placeId": "CW-LC-P04",
+          "sequence": null,
+          "sourceId": "CW-LC-S02",
+          "mapKey": 4,
+          "locator": "PDF p2 illustrated key"
+        },
+        {
+          "name": "House of Detention",
+          "placeId": "CW-LC-P05",
+          "sequence": null,
+          "sourceId": "CW-LC-S02",
+          "mapKey": 5,
+          "locator": "PDF p2 illustrated key"
+        },
+        {
+          "name": "London Metropolitan Archives",
+          "placeId": "CW-LC-P06",
+          "sequence": null,
+          "sourceId": "CW-LC-S02",
+          "mapKey": 6,
+          "locator": "PDF p2 illustrated key"
+        },
+        {
+          "name": "Finsbury Health Centre",
+          "placeId": "CW-LC-P07",
+          "sequence": null,
+          "sourceId": "CW-LC-S02",
+          "mapKey": 7,
+          "locator": "PDF p2 illustrated key"
+        },
+        {
+          "name": "Church of the Holy Redeemer",
+          "placeId": "CW-LC-P08",
+          "sequence": null,
+          "sourceId": "CW-LC-S02",
+          "mapKey": 8,
+          "locator": "PDF p2 illustrated key"
+        },
+        {
+          "name": "Finsbury Town Hall",
+          "placeId": "CW-LC-P09",
+          "sequence": null,
+          "sourceId": "CW-LC-S02",
+          "mapKey": 9,
+          "locator": "PDF p2 illustrated key"
+        },
+        {
+          "name": "Family Records Office",
+          "placeId": "CW-LC-P10",
+          "sequence": null,
+          "sourceId": "CW-LC-S02",
+          "mapKey": 10,
+          "locator": "PDF p2 illustrated key"
+        },
+        {
+          "name": "Sadler's Wells Theatre",
+          "placeId": "CW-LC-P11",
+          "sequence": null,
+          "sourceId": "CW-LC-S02",
+          "mapKey": 11,
+          "locator": "PDF p2 illustrated key"
+        },
+        {
+          "name": "City University",
+          "placeId": "CW-LC-P12",
+          "sequence": null,
+          "sourceId": "CW-LC-S02",
+          "mapKey": 12,
+          "locator": "PDF p2 illustrated key"
+        },
+        {
+          "name": "Finsbury Bank for Savings",
+          "placeId": "CW-LC-P13",
+          "sequence": null,
+          "sourceId": "CW-LC-S02",
+          "mapKey": 13,
+          "locator": "PDF p2 illustrated key"
+        },
+        {
+          "name": "Hugh Myddelton School",
+          "placeId": "CW-LC-P14",
+          "sequence": null,
+          "sourceId": "CW-LC-S02",
+          "mapKey": 14,
+          "locator": "PDF p2 illustrated key"
+        },
+        {
+          "name": "St James's Church",
+          "placeId": "CW-LC-P15",
+          "sequence": null,
+          "sourceId": "CW-LC-S02",
+          "mapKey": 15,
+          "locator": "PDF p2 illustrated key"
+        },
+        {
+          "name": "Grand Priory Church of the Order of St John",
+          "placeId": "CW-LC-P16",
+          "sequence": null,
+          "sourceId": "CW-LC-S02",
+          "mapKey": 16,
+          "locator": "PDF p2 illustrated key"
+        },
+        {
+          "name": "St John's Gate",
+          "placeId": "CW-LC-P17",
+          "sequence": null,
+          "sourceId": "CW-LC-S02",
+          "mapKey": 17,
+          "locator": "PDF p2 illustrated key"
+        },
+        {
+          "name": "Smithfield Market",
+          "placeId": "CW-LC-P18",
+          "sequence": null,
+          "sourceId": "CW-LC-S02",
+          "mapKey": 18,
+          "locator": "PDF p2 illustrated key"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Monastic land, artisan work, water and public life",
+          "sourceId": "CW-LC-S02",
+          "locator": "PDF p1",
+          "status": "published-angle-not-corroborated"
+        }
+      ],
+      "routeNotes": "Dotted trail has four shorter sections. Map is discovery context, not current navigation."
+    },
+    {
+      "id": "CW-LC-T02",
+      "title": "EC1 Local History Trail",
+      "sourceIds": [
+        "CW-LC-S01",
+        "CW-LC-S03"
+      ],
+      "originator": "Islington Local History Centre",
+      "status": "historical leaflet still linked",
+      "areaRelation": "core plus northern edge",
+      "themes": [
+        "social provision",
+        "music",
+        "water",
+        "leisure"
+      ],
+      "duration": null,
+      "distance": "2.5 miles (council index)",
+      "start": "Finsbury Library",
+      "end": "Finsbury Library",
+      "stopListCompleteness": "complete 20-item published key; additional prose-only features not exhaustively itemised",
+      "stops": [
+        {
+          "name": "Finsbury Library",
+          "placeId": "CW-LC-P19",
+          "sequence": 1,
+          "sourceId": "CW-LC-S03",
+          "locator": "PDF p3 key; sequence follows p2 prose"
+        },
+        {
+          "name": "Finsbury Savings Bank",
+          "placeId": "CW-LC-P13",
+          "sequence": 2,
+          "sourceId": "CW-LC-S03",
+          "locator": "PDF p3 key; sequence follows p2 prose"
+        },
+        {
+          "name": "Clerkenwell Medical Mission",
+          "placeId": "CW-LC-P20",
+          "sequence": 3,
+          "sourceId": "CW-LC-S03",
+          "locator": "PDF p3 key; sequence follows p2 prose"
+        },
+        {
+          "name": "Thomas Britton, the Musical Coalman",
+          "placeId": "CW-LC-P21",
+          "sequence": 4,
+          "sourceId": "CW-LC-S03",
+          "locator": "PDF p3 key; sequence follows p2 prose"
+        },
+        {
+          "name": "St John's Gateway",
+          "placeId": "CW-LC-P17",
+          "sequence": 5,
+          "sourceId": "CW-LC-S03",
+          "locator": "PDF p3 key; sequence follows p2 prose"
+        },
+        {
+          "name": "Passing Alley",
+          "placeId": "CW-LC-P22",
+          "sequence": 6,
+          "sourceId": "CW-LC-S03",
+          "locator": "PDF p3 key; sequence follows p2 prose"
+        },
+        {
+          "name": "Peter's Lane",
+          "placeId": "CW-LC-P23",
+          "sequence": 7,
+          "sourceId": "CW-LC-S03",
+          "locator": "PDF p3 key; sequence follows p2 prose"
+        },
+        {
+          "name": "Farringdon Station",
+          "placeId": "CW-LC-P01",
+          "sequence": 8,
+          "sourceId": "CW-LC-S03",
+          "locator": "PDF p3 key; sequence follows p2 prose"
+        },
+        {
+          "name": "The Clerks Well",
+          "placeId": "CW-LC-P04",
+          "sequence": 9,
+          "sourceId": "CW-LC-S03",
+          "locator": "PDF p3 key; sequence follows p2 prose"
+        },
+        {
+          "name": "Clerkenwell Green",
+          "placeId": "CW-LC-P24",
+          "sequence": 10,
+          "sourceId": "CW-LC-S03",
+          "locator": "PDF p3 key; sequence follows p2 prose"
+        },
+        {
+          "name": "St James's Parish Church",
+          "placeId": "CW-LC-P15",
+          "sequence": 11,
+          "sourceId": "CW-LC-S03",
+          "locator": "PDF p3 key; sequence follows p2 prose"
+        },
+        {
+          "name": "Hugh Myddleton School",
+          "placeId": "CW-LC-P14",
+          "sequence": 12,
+          "sourceId": "CW-LC-S03",
+          "locator": "PDF p3 key; sequence follows p2 prose"
+        },
+        {
+          "name": "House of Detention",
+          "placeId": "CW-LC-P05",
+          "sequence": 13,
+          "sourceId": "CW-LC-S03",
+          "locator": "PDF p3 key; sequence follows p2 prose"
+        },
+        {
+          "name": "Spa Fields",
+          "placeId": "CW-LC-P25",
+          "sequence": 14,
+          "sourceId": "CW-LC-S03",
+          "locator": "PDF p3 key; sequence follows p2 prose"
+        },
+        {
+          "name": "Finsbury Health Centre",
+          "placeId": "CW-LC-P07",
+          "sequence": 15,
+          "sourceId": "CW-LC-S03",
+          "locator": "PDF p3 key; sequence follows p2 prose"
+        },
+        {
+          "name": "Spa Fields Chapel",
+          "placeId": "CW-LC-P08",
+          "sequence": 16,
+          "sourceId": "CW-LC-S03",
+          "locator": "PDF p3 key; sequence follows p2 prose"
+        },
+        {
+          "name": "The London Spa",
+          "placeId": "CW-LC-P26",
+          "sequence": 17,
+          "sourceId": "CW-LC-S03",
+          "locator": "PDF p3 key; sequence follows p2 prose"
+        },
+        {
+          "name": "Finsbury Town Hall",
+          "placeId": "CW-LC-P09",
+          "sequence": 18,
+          "sourceId": "CW-LC-S03",
+          "locator": "PDF p3 key; sequence follows p2 prose"
+        },
+        {
+          "name": "Metropolitan Water Board",
+          "placeId": "CW-LC-P27",
+          "sequence": 19,
+          "sourceId": "CW-LC-S03",
+          "locator": "PDF p3 key; sequence follows p2 prose"
+        },
+        {
+          "name": "Sadler's Wells Theatre",
+          "placeId": "CW-LC-P11",
+          "sequence": 20,
+          "sourceId": "CW-LC-S03",
+          "locator": "PDF p3 key; sequence follows p2 prose"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Paper-flower work, saving, public care and entertainment",
+          "sourceId": "CW-LC-S03",
+          "locator": "PDF p2",
+          "status": "published-angle-not-corroborated"
+        }
+      ],
+      "routeNotes": "Old present-tense uses, navigation and access are not carried forward."
+    },
+    {
+      "id": "CW-LC-T03",
+      "title": "A walk along St. John Street, from Clerkenwell to the Angel",
+      "sourceIds": [
+        "CW-LC-S04"
+      ],
+      "originator": "Islington Society",
+      "status": "published walk; observations include October 2024",
+      "areaRelation": "core to Angel comparison",
+      "themes": [
+        "architecture",
+        "trade",
+        "everyday buildings"
+      ],
+      "duration": null,
+      "distance": null,
+      "start": "3 and 5 St John Street, Smithfield end",
+      "end": "The Red Lion, Angel end",
+      "stopListCompleteness": "all main property groups in prose; incidental neighbours excluded",
+      "stops": [
+        {
+          "name": "3 and 5 St John Street",
+          "placeId": null,
+          "sequence": 1,
+          "sourceId": "CW-LC-S04",
+          "locator": "PDF pp1–4, prose order"
+        },
+        {
+          "name": "34 and 36 St John Street (Farmiloe)",
+          "placeId": "CW-LC-P35",
+          "sequence": 2,
+          "sourceId": "CW-LC-S04",
+          "locator": "PDF pp1–4, prose order"
+        },
+        {
+          "name": "44 and 46 St John Street / Smokehouse Yard",
+          "placeId": null,
+          "sequence": 3,
+          "sourceId": "CW-LC-S04",
+          "locator": "PDF pp1–4, prose order"
+        },
+        {
+          "name": "47–53 St John Street",
+          "placeId": null,
+          "sequence": 4,
+          "sourceId": "CW-LC-S04",
+          "locator": "PDF pp1–4, prose order"
+        },
+        {
+          "name": "97 St John Street",
+          "placeId": null,
+          "sequence": 5,
+          "sourceId": "CW-LC-S04",
+          "locator": "PDF pp1–4, prose order"
+        },
+        {
+          "name": "99 St John Street",
+          "placeId": null,
+          "sequence": 6,
+          "sourceId": "CW-LC-S04",
+          "locator": "PDF pp1–4, prose order"
+        },
+        {
+          "name": "116 and 118 St John Street (Criterion)",
+          "placeId": null,
+          "sequence": 7,
+          "sourceId": "CW-LC-S04",
+          "locator": "PDF pp1–4, prose order"
+        },
+        {
+          "name": "3–6 Albemarle Way",
+          "placeId": null,
+          "sequence": 8,
+          "sourceId": "CW-LC-S04",
+          "locator": "PDF pp1–4, prose order"
+        },
+        {
+          "name": "148–154 St John Street",
+          "placeId": null,
+          "sequence": 9,
+          "sourceId": "CW-LC-S04",
+          "locator": "PDF pp1–4, prose order"
+        },
+        {
+          "name": "156–162 St John Street (Cannon Brewery)",
+          "placeId": "CW-LC-P36",
+          "sequence": 10,
+          "sourceId": "CW-LC-S04",
+          "locator": "PDF pp1–4, prose order"
+        },
+        {
+          "name": "201 St John Street (Nicholson's)",
+          "placeId": "CW-LC-P37",
+          "sequence": 11,
+          "sourceId": "CW-LC-S04",
+          "locator": "PDF pp1–4, prose order"
+        },
+        {
+          "name": "238 and 240 St John Street (The Peasant)",
+          "placeId": null,
+          "sequence": 12,
+          "sourceId": "CW-LC-S04",
+          "locator": "PDF pp1–4, prose order"
+        },
+        {
+          "name": "Former 14 Wyclif Street rectory",
+          "placeId": null,
+          "sequence": 13,
+          "sourceId": "CW-LC-S04",
+          "locator": "PDF pp1–4, prose order"
+        },
+        {
+          "name": "383–399 St John Street",
+          "placeId": null,
+          "sequence": 14,
+          "sourceId": "CW-LC-S04",
+          "locator": "PDF pp1–4, prose order"
+        },
+        {
+          "name": "406 and 412–416 St John Street",
+          "placeId": null,
+          "sequence": 15,
+          "sourceId": "CW-LC-S04",
+          "locator": "PDF pp1–4, prose order"
+        },
+        {
+          "name": "The Red Lion",
+          "placeId": null,
+          "sequence": 16,
+          "sourceId": "CW-LC-S04",
+          "locator": "PDF pp1–4, prose order"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Commercial façades reveal food, brewing and materials trades",
+          "sourceId": "CW-LC-S04",
+          "locator": "PDF pp1–3",
+          "status": "published-angle-not-corroborated"
+        }
+      ],
+      "routeNotes": "Order follows walking progression; Nicholson's precedes The Peasant despite being mentioned retrospectively. Most northern property groups are comparison material. Old closure/scaffolding statements are unverified today."
+    },
+    {
+      "id": "CW-LC-T04",
+      "title": "The Lost Priory of the Medieval Order of St John",
+      "sourceIds": [
+        "CW-LC-S05"
+      ],
+      "originator": "Museum of the Order of St John",
+      "status": "currently advertised; individual availability unchecked",
+      "areaRelation": "core on-site visit",
+      "themes": [
+        "medieval religious institution"
+      ],
+      "duration": "45 minutes",
+      "distance": null,
+      "start": null,
+      "end": null,
+      "stopListCompleteness": "advertised spaces only; internal sequence unknown",
+      "stops": [
+        {
+          "name": "Priory church",
+          "placeId": "CW-LC-P16",
+          "sequence": null,
+          "sourceId": "CW-LC-S05"
+        },
+        {
+          "name": "Twelfth-century crypt",
+          "placeId": "CW-LC-P16",
+          "sequence": null,
+          "sourceId": "CW-LC-S05"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Origins and dissolution",
+          "sourceId": "CW-LC-S05",
+          "locator": "Lost Priory section",
+          "status": "published-angle-not-corroborated"
+        }
+      ]
+    },
+    {
+      "id": "CW-LC-T05",
+      "title": "St John Ambulance: A Victorian Masterpiece",
+      "sourceIds": [
+        "CW-LC-S05"
+      ],
+      "originator": "Museum of the Order of St John",
+      "status": "currently advertised; individual availability unchecked",
+      "areaRelation": "core on-site visit",
+      "themes": [
+        "first aid"
+      ],
+      "duration": "45 minutes",
+      "distance": null,
+      "start": null,
+      "end": null,
+      "stopListCompleteness": "advertised spaces only; internal sequence unknown",
+      "stops": [
+        {
+          "name": "Galleries and Victorian interiors of St John's Gate",
+          "placeId": "CW-LC-P17",
+          "sequence": null,
+          "sourceId": "CW-LC-S05"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "People who developed public first aid",
+          "sourceId": "CW-LC-S05",
+          "locator": "Victorian Masterpiece section",
+          "status": "published-angle-not-corroborated"
+        }
+      ]
+    },
+    {
+      "id": "CW-LC-T06",
+      "title": "Knights, Revellers & Saviours: The Many Lives of St John's Gate",
+      "sourceIds": [
+        "CW-LC-S05"
+      ],
+      "originator": "Museum of the Order of St John",
+      "status": "currently advertised; individual availability unchecked",
+      "areaRelation": "core on-site visit",
+      "themes": [
+        "building reuse"
+      ],
+      "duration": "60 minutes",
+      "distance": null,
+      "start": null,
+      "end": null,
+      "stopListCompleteness": "advertised spaces only; internal sequence unknown",
+      "stops": [
+        {
+          "name": "Priory Church",
+          "placeId": "CW-LC-P16",
+          "sequence": null,
+          "sourceId": "CW-LC-S05"
+        },
+        {
+          "name": "Crypt",
+          "placeId": "CW-LC-P16",
+          "sequence": null,
+          "sourceId": "CW-LC-S05"
+        },
+        {
+          "name": "Historic rooms in St John's Gate",
+          "placeId": "CW-LC-P17",
+          "sequence": null,
+          "sourceId": "CW-LC-S05"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Successive occupants adapted the buildings",
+          "sourceId": "CW-LC-S05",
+          "locator": "Knights, Revellers & Saviours section",
+          "status": "published-angle-not-corroborated"
+        }
+      ]
+    },
+    {
+      "id": "CW-LC-T07",
+      "title": "A Historical Walk Through Clerkenwell: Tracing the Social Footsteps of its Past",
+      "sourceIds": [
+        "CW-LC-S06"
+      ],
+      "originator": "Emanuela Aru / History From Below",
+      "status": "published 2025 route narrative",
+      "areaRelation": "core and New River Head edge",
+      "themes": [
+        "work",
+        "faith",
+        "politics",
+        "water"
+      ],
+      "duration": null,
+      "distance": null,
+      "start": "Farringdon Station",
+      "end": "New River Head",
+      "stopListCompleteness": "complete article heading sequence plus start; headings group places, not a complete guided-tour script",
+      "stops": [
+        {
+          "name": "Farringdon Station",
+          "placeId": "CW-LC-P01",
+          "sequence": 1,
+          "sourceId": "CW-LC-S06",
+          "locator": "Opening paragraph",
+          "identityNotes": null
+        },
+        {
+          "name": "Cowcross Street and St John Street",
+          "placeId": null,
+          "sequence": 2,
+          "sourceId": "CW-LC-S06",
+          "locator": "Article section 1",
+          "identityNotes": "Grouped published section; placeId identifies its anchor only, not all locations."
+        },
+        {
+          "name": "St John's Lane, Gate and Square",
+          "placeId": "CW-LC-P17",
+          "sequence": 3,
+          "sourceId": "CW-LC-S06",
+          "locator": "Article section 2",
+          "identityNotes": "Grouped published section; placeId identifies its anchor only, not all locations."
+        },
+        {
+          "name": "Briset Street and Britton Street",
+          "placeId": null,
+          "sequence": 4,
+          "sourceId": "CW-LC-S06",
+          "locator": "Article section 3",
+          "identityNotes": "Grouped published section; placeId identifies its anchor only, not all locations."
+        },
+        {
+          "name": "Clerkenwell Green",
+          "placeId": "CW-LC-P24",
+          "sequence": 5,
+          "sourceId": "CW-LC-S06",
+          "locator": "Article section 4",
+          "identityNotes": null
+        },
+        {
+          "name": "St James's Church and Clerkenwell Close",
+          "placeId": "CW-LC-P15",
+          "sequence": 6,
+          "sourceId": "CW-LC-S06",
+          "locator": "Article section 5",
+          "identityNotes": "Grouped published section; placeId identifies its anchor only, not all locations."
+        },
+        {
+          "name": "Woodbridge Street, Corporation Row and Rosoman Street",
+          "placeId": null,
+          "sequence": 7,
+          "sourceId": "CW-LC-S06",
+          "locator": "Article section 6",
+          "identityNotes": "Grouped published section; placeId identifies its anchor only, not all locations."
+        },
+        {
+          "name": "New River Head and the valley of the River Fleet",
+          "placeId": "CW-LC-P28",
+          "sequence": 8,
+          "sourceId": "CW-LC-S06",
+          "locator": "Article section 7",
+          "identityNotes": "Grouped published section; placeId identifies its anchor only, not all locations."
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Markets, print, household workshops, assembly and water",
+          "sourceId": "CW-LC-S06",
+          "locator": "Article headings and body",
+          "status": "published-angle-not-corroborated"
+        }
+      ],
+      "routeNotes": "Additional named mentions (including Spa Fields, Marx Library, Sans Walk and Sekforde Street) are not promoted to distinct booked-tour stops."
+    },
+    {
+      "id": "CW-LC-T08",
+      "title": "Black Mary Healing Tour",
+      "sourceIds": [
+        "CW-LC-S08"
+      ],
+      "originator": "Black Mary Project / Studio Gaylene Gould",
+      "status": "historical event mentioned retrospectively",
+      "areaRelation": "nearby comparison; route undisclosed",
+      "themes": [
+        "water",
+        "community art"
+      ],
+      "duration": null,
+      "distance": null,
+      "start": null,
+      "end": null,
+      "stopListCompleteness": "no stops disclosed in opened project overview",
+      "stops": [],
+      "stories": [
+        {
+          "summary": "Artist/community healing event",
+          "sourceId": "CW-LC-S08",
+          "locator": "Project overview",
+          "status": "published-angle-not-corroborated"
+        }
+      ],
+      "routeNotes": "Do not infer the route or a historical-well stop from the title or sculpture site."
+    }
+  ],
+  "places": [
+    {
+      "id": "CW-LC-P01",
+      "name": "Farringdon station",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S03",
+        "CW-LC-S06"
+      ],
+      "tourIds": [
+        "CW-LC-T01",
+        "CW-LC-T02",
+        "CW-LC-T07"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Transport and street change",
+          "sourceIds": [
+            "CW-LC-S02",
+            "CW-LC-S03",
+            "CW-LC-S06"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "transport"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Historical assertions, visitor standing position, physical access and directions unverified."
+    },
+    {
+      "id": "CW-LC-P02",
+      "name": "Old Sessions House",
+      "aliases": [
+        "Middlesex Sessions House",
+        "Sessions House"
+      ],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T01"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Justice and civic display",
+          "sourceIds": [
+            "CW-LC-S02",
+            "CW-LC-S03"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "institutions"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Older leaflet's Masonic-hall present tense is stale/unverified; no current interior access established."
+    },
+    {
+      "id": "CW-LC-P03",
+      "name": "Marx Memorial Library",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S03",
+        "CW-LC-S06"
+      ],
+      "tourIds": [
+        "CW-LC-T01"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Printing and political organisation",
+          "sourceIds": [
+            "CW-LC-S02",
+            "CW-LC-S03",
+            "CW-LC-S06"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "print",
+        "politics"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Historical assertions, visitor standing position, physical access and directions unverified."
+    },
+    {
+      "id": "CW-LC-P04",
+      "name": "Clerks' Well",
+      "aliases": [
+        "Clerk's Well"
+      ],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T01",
+        "CW-LC-T02"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Water and place naming",
+          "sourceIds": [
+            "CW-LC-S02",
+            "CW-LC-S03"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "water"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Historical assertions, visitor standing position, physical access and directions unverified."
+    },
+    {
+      "id": "CW-LC-P05",
+      "name": "Clerkenwell House of Detention site",
+      "aliases": [
+        "House of Detention"
+      ],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S03",
+        "CW-LC-S06"
+      ],
+      "tourIds": [
+        "CW-LC-T01",
+        "CW-LC-T02"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Prison and institutional change",
+          "sourceIds": [
+            "CW-LC-S02",
+            "CW-LC-S03",
+            "CW-LC-S06"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "institutions"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Source chronologies need checking, especially Aru's workhouse/prison relationship; no cell access established."
+    },
+    {
+      "id": "CW-LC-P06",
+      "name": "London Metropolitan Archives (historical leaflet label)",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T01"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Local historical research resource",
+          "sourceIds": [
+            "CW-LC-S02",
+            "CW-LC-S03"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "archive"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Current institutional naming and access need an operator check; retain the historical leaflet identity."
+    },
+    {
+      "id": "CW-LC-P07",
+      "name": "Finsbury Health Centre",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T01",
+        "CW-LC-T02"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Architecture of public care",
+          "sourceIds": [
+            "CW-LC-S02",
+            "CW-LC-S03"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "health",
+        "architecture"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Historical assertions, visitor standing position, physical access and directions unverified."
+    },
+    {
+      "id": "CW-LC-P08",
+      "name": "Church of Our Most Holy Redeemer",
+      "aliases": [
+        "Church of the Holy Redeemer",
+        "Spa Fields Chapel site"
+      ],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T01",
+        "CW-LC-T02"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Changing faith and leisure uses",
+          "sourceIds": [
+            "CW-LC-S02",
+            "CW-LC-S03"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "religion"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Do not merge surviving church and predecessor chapel into one historical building; leaflet's architectural superlative unverified."
+    },
+    {
+      "id": "CW-LC-P09",
+      "name": "Finsbury Town Hall",
+      "aliases": [
+        "Clerkenwell Vestry Hall"
+      ],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T01",
+        "CW-LC-T02"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Local government and representation",
+          "sourceIds": [
+            "CW-LC-S02",
+            "CW-LC-S03"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core-edge",
+        "institutions"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Historical assertions, visitor standing position, physical access and directions unverified."
+    },
+    {
+      "id": "CW-LC-P10",
+      "name": "Former Family Records Centre",
+      "aliases": [
+        "Family Records Office"
+      ],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S02"
+      ],
+      "tourIds": [
+        "CW-LC-T01"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Changing institutional occupation",
+          "sourceIds": [
+            "CW-LC-S02"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "archive"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Historical map label retained; current use/address unresolved."
+    },
+    {
+      "id": "CW-LC-P11",
+      "name": "Sadler's Wells",
+      "aliases": [
+        "Sadler's Wells Theatre"
+      ],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T01",
+        "CW-LC-T02"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Pleasure and performance",
+          "sourceIds": [
+            "CW-LC-S02",
+            "CW-LC-S03"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "nearby-northern-edge",
+        "performance"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Historical assertions, visitor standing position, physical access and directions unverified."
+    },
+    {
+      "id": "CW-LC-P12",
+      "name": "City University historic campus",
+      "aliases": [
+        "City University"
+      ],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T01"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Education and work",
+          "sourceIds": [
+            "CW-LC-S02",
+            "CW-LC-S03"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "nearby-northern-edge",
+        "education"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Historical institutional name; current institutional identity and building match need checking."
+    },
+    {
+      "id": "CW-LC-P13",
+      "name": "Finsbury Savings Bank",
+      "aliases": [
+        "Finsbury Bank for Savings"
+      ],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T01",
+        "CW-LC-T02"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Everyday saving",
+          "sourceIds": [
+            "CW-LC-S02",
+            "CW-LC-S03"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "everyday-life"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Historical assertions, visitor standing position, physical access and directions unverified."
+    },
+    {
+      "id": "CW-LC-P14",
+      "name": "Former Hugh Myddelton School",
+      "aliases": [
+        "Hugh Myddleton School"
+      ],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T01",
+        "CW-LC-T02"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Education over institutional remains",
+          "sourceIds": [
+            "CW-LC-S02",
+            "CW-LC-S03"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "education"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Historical assertions, visitor standing position, physical access and directions unverified."
+    },
+    {
+      "id": "CW-LC-P15",
+      "name": "St James's Church, Clerkenwell",
+      "aliases": [
+        "St James Church"
+      ],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S03",
+        "CW-LC-S06"
+      ],
+      "tourIds": [
+        "CW-LC-T01",
+        "CW-LC-T02",
+        "CW-LC-T07"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Parish and neighbourhood change",
+          "sourceIds": [
+            "CW-LC-S02",
+            "CW-LC-S03",
+            "CW-LC-S06"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "religion"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Historical assertions, visitor standing position, physical access and directions unverified."
+    },
+    {
+      "id": "CW-LC-P16",
+      "name": "Priory Church of the Order of St John",
+      "aliases": [
+        "Grand Priory Church",
+        "Priory Church and Crypt"
+      ],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S05"
+      ],
+      "tourIds": [
+        "CW-LC-T01",
+        "CW-LC-T04",
+        "CW-LC-T06"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Medieval institution and later reuse",
+          "sourceIds": [
+            "CW-LC-S02",
+            "CW-LC-S05"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "religion"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Historical assertions, visitor standing position, physical access and directions unverified."
+    },
+    {
+      "id": "CW-LC-P17",
+      "name": "St John's Gate",
+      "aliases": [
+        "St John's Gateway"
+      ],
+      "address": "St John's Gate, St John's Lane, Clerkenwell, London EC1M 4DA",
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S03",
+        "CW-LC-S05",
+        "CW-LC-S06"
+      ],
+      "tourIds": [
+        "CW-LC-T01",
+        "CW-LC-T02",
+        "CW-LC-T05",
+        "CW-LC-T06",
+        "CW-LC-T07"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Print, hospitality and first aid",
+          "sourceIds": [
+            "CW-LC-S02",
+            "CW-LC-S03",
+            "CW-LC-S05",
+            "CW-LC-S06"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "print",
+        "health",
+        "reuse"
+      ],
+      "currentContext": {
+        "status": "operator-listed",
+        "asOf": "2026-09-20",
+        "summary": "Museum advertises pre-booked on-site tours.",
+        "sourceIds": [
+          "CW-LC-S05"
+        ]
+      },
+      "verificationNotes": "Historical assertions, visitor standing position, physical access and directions unverified."
+    },
+    {
+      "id": "CW-LC-P18",
+      "name": "Smithfield meat market",
+      "aliases": [
+        "Smithfield Market"
+      ],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S11"
+      ],
+      "tourIds": [
+        "CW-LC-T01"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Food work and transition",
+          "sourceIds": [
+            "CW-LC-S02",
+            "CW-LC-S11"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "food",
+        "work"
+      ],
+      "currentContext": {
+        "status": "official-plan",
+        "asOf": "2026-09-20",
+        "summary": "Authority says trading remains here until at least 2028; future relocation is conditional.",
+        "sourceIds": [
+          "CW-LC-S11"
+        ]
+      },
+      "verificationNotes": "Differentiate operating meat market from museum's General/Poultry Market buildings. Loading areas and visitor viewpoints unchecked."
+    },
+    {
+      "id": "CW-LC-P19",
+      "name": "Finsbury Library",
+      "aliases": [],
+      "address": "245 St John Street, London EC1V 4NB",
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T02"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Learning and local history",
+          "sourceIds": [
+            "CW-LC-S03"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "education"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Historical assertions, visitor standing position, physical access and directions unverified."
+    },
+    {
+      "id": "CW-LC-P20",
+      "name": "Clerkenwell Medical Mission",
+      "aliases": [
+        "Woodbridge Chapel"
+      ],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T02"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Paper-flower work and care",
+          "sourceIds": [
+            "CW-LC-S03"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "work",
+        "health"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Published historical connection requires checking; current services/occupant unverified."
+    },
+    {
+      "id": "CW-LC-P21",
+      "name": "Thomas Britton plaque",
+      "aliases": [],
+      "address": "Jerusalem Passage",
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T02"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Music outside grand venues",
+          "sourceIds": [
+            "CW-LC-S03"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "music"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Historical assertions, visitor standing position, physical access and directions unverified."
+    },
+    {
+      "id": "CW-LC-P22",
+      "name": "Passing Alley",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T02"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Street-name curiosity",
+          "sourceIds": [
+            "CW-LC-S03"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "street-life"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Published etymology not corroborated; no route access check."
+    },
+    {
+      "id": "CW-LC-P23",
+      "name": "Peter's Lane",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T02"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Visible traces of goods handling",
+          "sourceIds": [
+            "CW-LC-S03"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "work"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Historical assertions, visitor standing position, physical access and directions unverified."
+    },
+    {
+      "id": "CW-LC-P24",
+      "name": "Clerkenwell Green",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S03",
+        "CW-LC-S06",
+        "CW-LC-S07"
+      ],
+      "tourIds": [
+        "CW-LC-T02",
+        "CW-LC-T07"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Public gathering and competing ideas of improvement",
+          "sourceIds": [
+            "CW-LC-S03",
+            "CW-LC-S06",
+            "CW-LC-S07"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "public-space"
+      ],
+      "currentContext": {
+        "status": "dated-report",
+        "asOf": "2026-07-10",
+        "summary": "Local report describes toilet removal, preservation objections and planned planting/seating.",
+        "sourceIds": [
+          "CW-LC-S07"
+        ]
+      },
+      "verificationNotes": "September completion/current arrangement unverified. Reported claims about freedom-of-speech origins are not adopted."
+    },
+    {
+      "id": "CW-LC-P25",
+      "name": "Spa Fields",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S03",
+        "CW-LC-S06"
+      ],
+      "tourIds": [
+        "CW-LC-T02"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Leisure, public assembly and changing land use",
+          "sourceIds": [
+            "CW-LC-S03",
+            "CW-LC-S06"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "leisure",
+        "politics"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Historical assertions, visitor standing position, physical access and directions unverified."
+    },
+    {
+      "id": "CW-LC-P26",
+      "name": "Former London Spa",
+      "aliases": [
+        "The London Spa"
+      ],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T02"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Commercial recreation",
+          "sourceIds": [
+            "CW-LC-S03"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "leisure"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Historical pub/site identity and current building use need checking."
+    },
+    {
+      "id": "CW-LC-P27",
+      "name": "Metropolitan Water Board offices",
+      "aliases": [
+        "New River Company offices"
+      ],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T02"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Water infrastructure's visible buildings",
+          "sourceIds": [
+            "CW-LC-S03"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core-edge",
+        "water"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Distinct from New River Head's waterworks and new illustration centre; present apartment claim is from old leaflet."
+    },
+    {
+      "id": "CW-LC-P28",
+      "name": "New River Head",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S06"
+      ],
+      "tourIds": [
+        "CW-LC-T07"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Supplying the city",
+          "sourceIds": [
+            "CW-LC-S06"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core-edge",
+        "water"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Historical assertions, visitor standing position, physical access and directions unverified."
+    },
+    {
+      "id": "CW-LC-P29",
+      "name": "Quentin Blake Centre for Illustration",
+      "aliases": [],
+      "address": "1 Myddelton Passage, London EC1R 1AG",
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S12"
+      ],
+      "tourIds": [],
+      "candidateAngles": [
+        {
+          "summary": "Waterworks reused for visual culture",
+          "sourceIds": [
+            "CW-LC-S12"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core-edge",
+        "current-culture",
+        "reuse"
+      ],
+      "currentContext": {
+        "status": "operator-reports-open",
+        "asOf": "2026-09-20",
+        "summary": "Open Wed–Sun 10am–5pm per homepage; exhibition changes and a 24 September late advertised.",
+        "sourceIds": [
+          "CW-LC-S12"
+        ]
+      },
+      "verificationNotes": "Current operator information is desk evidence; exact access, ticket boundaries and relation to chosen exterior viewpoint unverified."
+    },
+    {
+      "id": "CW-LC-P30",
+      "name": "Smithfield General Market / future London Museum",
+      "aliases": [
+        "London Museum Smithfield"
+      ],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S10"
+      ],
+      "tourIds": [],
+      "candidateAngles": [
+        {
+          "summary": "Food buildings become a place for the city's stories",
+          "sourceIds": [
+            "CW-LC-S10"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "current-change",
+        "reuse"
+      ],
+      "currentContext": {
+        "status": "future-opening-announcement",
+        "asOf": "2026-09-20",
+        "summary": "Opening announced for 28 November 2026; not yet open on retrieval date.",
+        "sourceIds": [
+          "CW-LC-S10"
+        ]
+      },
+      "verificationNotes": "Museum and adjacent trading market must not be conflated. No public interior available from this future announcement."
+    },
+    {
+      "id": "CW-LC-P31",
+      "name": "Smithfield Poultry Market",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S10"
+      ],
+      "tourIds": [],
+      "candidateAngles": [
+        {
+          "summary": "Later museum phase",
+          "sourceIds": [
+            "CW-LC-S10"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "current-change"
+      ],
+      "currentContext": {
+        "status": "future-plan",
+        "asOf": "2026-09-20",
+        "summary": "Museum phase announced for 2028.",
+        "sourceIds": [
+          "CW-LC-S10"
+        ]
+      },
+      "verificationNotes": "Historical assertions, visitor standing position, physical access and directions unverified."
+    },
+    {
+      "id": "CW-LC-P32",
+      "name": "St Peter's Italian Church",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S09"
+      ],
+      "tourIds": [],
+      "candidateAngles": [
+        {
+          "summary": "Living community and public procession",
+          "sourceIds": [
+            "CW-LC-S09"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "nearby-western-comparison",
+        "migration",
+        "religion"
+      ],
+      "currentContext": {
+        "status": "institution-self-description",
+        "asOf": "2026-09-20",
+        "summary": "Parish describes an ongoing annual Mount Carmel procession; no future date verified.",
+        "sourceIds": [
+          "CW-LC-S09"
+        ]
+      },
+      "verificationNotes": "This is a western comparison/possible deliberate extension; not silently inside the core. Remembrance subject needs owner-appropriate restraint."
+    },
+    {
+      "id": "CW-LC-P33",
+      "name": "Mary Woolaston sculpture, Calthorpe Community Garden",
+      "aliases": [
+        "Black Mary sculpture"
+      ],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S08"
+      ],
+      "tourIds": [],
+      "candidateAngles": [
+        {
+          "summary": "Community art and recovered or reimagined memory",
+          "sourceIds": [
+            "CW-LC-S08"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "nearby-outside-core",
+        "current-art"
+      ],
+      "currentContext": {
+        "status": "project-account",
+        "asOf": "2026-09-20",
+        "summary": "Project records permanent sculpture and visitor hours; physical access not checked.",
+        "sourceIds": [
+          "CW-LC-S08"
+        ]
+      },
+      "verificationNotes": "Not the historical well location. Artistic imagining does not verify Mary Woolaston's biography. Detour remains unselected."
+    },
+    {
+      "id": "CW-LC-P34",
+      "name": "Exmouth Market",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S03"
+      ],
+      "tourIds": [],
+      "candidateAngles": [
+        {
+          "summary": "Market street and everyday sociability",
+          "sourceIds": [
+            "CW-LC-S03"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "food",
+        "street-life"
+      ],
+      "currentContext": {
+        "status": "current-check-gap",
+        "asOf": "2026-09-20",
+        "summary": "Historical trail includes this street; current directory open failed.",
+        "sourceIds": [
+          "CW-LC-S13"
+        ]
+      },
+      "verificationNotes": "Historical assertions, visitor standing position, physical access and directions unverified."
+    },
+    {
+      "id": "CW-LC-P35",
+      "name": "Farmiloe building",
+      "aliases": [
+        "George Farmiloe and Sons"
+      ],
+      "address": "34–36 St John Street",
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S04"
+      ],
+      "tourIds": [
+        "CW-LC-T03"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Materials trade in a prominent warehouse",
+          "sourceIds": [
+            "CW-LC-S04"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "work",
+        "architecture"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Historical assertions, visitor standing position, physical access and directions unverified."
+    },
+    {
+      "id": "CW-LC-P36",
+      "name": "Cannon Brewery buildings",
+      "aliases": [],
+      "address": "156–162 St John Street",
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S04"
+      ],
+      "tourIds": [
+        "CW-LC-T03"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Industrial display and reused workplaces",
+          "sourceIds": [
+            "CW-LC-S04"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core",
+        "work",
+        "architecture"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Historical assertions, visitor standing position, physical access and directions unverified."
+    },
+    {
+      "id": "CW-LC-P37",
+      "name": "Nicholson's distillery building",
+      "aliases": [],
+      "address": "201 St John Street",
+      "coordinates": null,
+      "sourceIds": [
+        "CW-LC-S04"
+      ],
+      "tourIds": [
+        "CW-LC-T03"
+      ],
+      "candidateAngles": [
+        {
+          "summary": "Drink production on a busy street",
+          "sourceIds": [
+            "CW-LC-S04"
+          ],
+          "status": "discovery-lead"
+        }
+      ],
+      "tags": [
+        "core-edge",
+        "work"
+      ],
+      "currentContext": null,
+      "verificationNotes": "Historical assertions, visitor standing position, physical access and directions unverified."
+    }
+  ],
+  "searchLog": [
+    {
+      "family": "civic-heritage-community",
+      "queries": [
+        "site.islington.gov.uk Clerkenwell walking trail Clerks Well",
+        "Clerkenwell community heritage walking tour Museum St John Islington guided walks"
+      ],
+      "sourceIds": [
+        "CW-LC-S01",
+        "CW-LC-S02",
+        "CW-LC-S03",
+        "CW-LC-S04",
+        "CW-LC-S05"
+      ],
+      "result": "Four distinct resources inspected: two council routes, society architectural walk, museum tour page. Image-only historic PDF recovered through local Poppler render. Index not separately counted."
+    },
+    {
+      "family": "local-reporting-specialist-history",
+      "queries": [
+        "Clerkenwell local history walking History From Below Italian",
+        "site.clerkenwellpost.com 2026 Clerkenwell community Finsbury health centre",
+        "site.islingtontribune.co.uk Clerkenwell Green 2025 2026",
+        "Black Mary Project Clerkenwell well Mary Woolaston Wellcome 2026",
+        "St Peter's Italian Church London official history 2026 sagra procession"
+      ],
+      "sourceIds": [
+        "CW-LC-S06",
+        "CW-LC-S07",
+        "CW-LC-S08",
+        "CW-LC-S09"
+      ],
+      "result": "Four resources inspect route narrative, current contested public space, community art and parish history. Aru duplication with public-walk lane explicitly resolved here; newspaper and parish claims are not independently verified."
+    },
+    {
+      "family": "current-places-operators-events",
+      "queries": [
+        "Clerkenwell current 2026 Smithfield Quentin Blake Centre Exmouth Market",
+        "site.londonmuseum.org.uk Smithfield opens 2026 2027 September",
+        "site.cityoflondon.gov.uk Smithfield market 2026 closure 2028",
+        "Exmouth Market independent shops street market official"
+      ],
+      "sourceIds": [
+        "CW-LC-S10",
+        "CW-LC-S11",
+        "CW-LC-S12",
+        "CW-LC-S13"
+      ],
+      "result": "Museum future-opening and market continuation distinguished. Centre currently reports open. Exmouth directory failed twice; search snippets parked rather than treated as page inspection."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "CW-LC-G01",
+      "question": "Which Smithfield approaches/views are usable during current works?",
+      "potentialValue": "May change the southern cluster, crossing choice and possible listening positions.",
+      "nextEvidence": "Coordinator's official public-realm project page plus dated route/imagery review; exact diversions are not in this handoff.",
+      "leads": [
+        "https://www.cityoflondon.gov.uk/services/streets/projects-and-proposals/smithfield-area-public-realm-and-transportation-project"
+      ],
+      "status": "coordinator-check-requested"
+    },
+    {
+      "id": "CW-LC-G02",
+      "question": "What everyday activity can anchor the central/northern area now?",
+      "potentialValue": "Prevents a historical tour from ending with an unexplained present; supports a contemporary alternative to monuments.",
+      "nextEvidence": "At most two direct operator/community checks, prioritising an Exmouth maker/food business and Finsbury Health Centre or a nearby community institution.",
+      "leads": [
+        "https://exmouth.london/",
+        "https://www.islington.gov.uk/planning/plan_brief_major/clerkenwell-green"
+      ],
+      "status": "targeted-follow-up-nominated"
+    },
+    {
+      "id": "CW-LC-G03",
+      "question": "Does the chosen balance over-represent institutional histories and famous men?",
+      "potentialValue": "A candidate-specific check could add ordinary work, women or migration without forcing a distant detour.",
+      "nextEvidence": "Select one promising omitted-life lead (Medical Mission/John Groom or Italian community) and check the underlying local archive/history before curation; use Black Mary only with boundary and legend distinctions.",
+      "leads": [
+        "CW-LC-P20",
+        "CW-LC-P32",
+        "CW-LC-P33"
+      ],
+      "status": "candidate-research-nominated"
+    }
+  ],
+  "parked": [
+    {
+      "id": "CW-LC-L01",
+      "title": "Exmouth current businesses",
+      "status": "search-only; page opens failed",
+      "url": "https://exmouth.london/",
+      "potentialValue": "Search results identify Marby & Elm letterpress and other street businesses; operator verification would test living print/food culture.",
+      "nextEvidence": "Direct operator page, current address and visitor relevance; no assumed opening."
+    },
+    {
+      "id": "CW-LC-L02",
+      "title": "Clerkenwell Green current works",
+      "status": "search-only official lead",
+      "url": "https://www.islington.gov.uk/planning/plan_brief_major/clerkenwell-green",
+      "potentialValue": "Check current configuration against older trails and July local report.",
+      "nextEvidence": "Open official works page and inspect chosen approach later."
+    },
+    {
+      "id": "CW-LC-L03",
+      "title": "St Peter's Italian Church history and 2026 procession",
+      "status": "search-only supplementary leads",
+      "urls": [
+        "https://www.italianchurch.org.uk/chiesa/la-storia",
+        "https://www.youtube.com/watch?v=lK6szSekoB8"
+      ],
+      "potentialValue": "Local work, crafts and a living community rather than a solely commemorative angle.",
+      "nextEvidence": "Open church history; video was not watched and is not used as route or event evidence."
+    },
+    {
+      "id": "CW-LC-L04",
+      "title": "Black Mary historical foundations",
+      "status": "linked research not opened",
+      "url": "https://historyfrombelow.com/",
+      "potentialValue": "Distinguish archival person/place evidence from modern imaginative art.",
+      "nextEvidence": "Follow the project page's Mary Woolaston link only if this outside-core subject earns inclusion."
+    },
+    {
+      "id": "CW-LC-L05",
+      "title": "Clerkenwell Design Week / working design sector",
+      "status": "not inspected within current-source ceiling",
+      "url": null,
+      "potentialValue": "Potential present-day maker/design alternative, but annual-event branding alone would not explain ordinary neighbourhood life.",
+      "nextEvidence": "Official programme and one year-round participant if the owner favours this angle."
+    }
+  ]
+}

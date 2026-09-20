@@ -1,0 +1,171 @@
+{
+  "area": "Clerkenwell / Farringdon",
+  "retrievedOn": "2026-09-20",
+  "scope": "Three targeted gap checks after broad discovery; not complete claim research.",
+  "sources": [
+    {
+      "id": "CW-CO-S01",
+      "title": "Smithfield Area Public Realm and Transportation Project",
+      "originator": "City of London Corporation",
+      "url": "https://www.cityoflondon.gov.uk/services/streets/projects-and-proposals/smithfield-area-public-realm-and-transportation-project",
+      "kind": "primary project update",
+      "publishedDate": "2026-05-22",
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "targeted-gap-check",
+      "relationshipNotes": "Coordinator follow-up; see GAP-CHECK.md for scope and failed leads.",
+      "summary": "Pavement work affects West Smithfield and Charterhouse Street; this page does not establish exact current diversions.",
+      "rightsNotes": "Metadata and original summary only; no media or underlying archival documents copied."
+    },
+    {
+      "id": "CW-CO-S02",
+      "title": "About Us",
+      "originator": "Space EC1 / I Found It In Space",
+      "url": "https://ifounditinspace.co.uk/pages/about-us",
+      "kind": "operator account",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "targeted-gap-check",
+      "relationshipNotes": "Coordinator follow-up; see GAP-CHECK.md for scope and failed leads.",
+      "summary": "Mother-and-daughter Exmouth Market shop; self-described history from 1998. Hours and street conditions not checked.",
+      "rightsNotes": "Metadata and original summary only; no media or underlying archival documents copied."
+    },
+    {
+      "id": "CW-CO-S03",
+      "title": "Finsbury Health Centre",
+      "originator": "NHS / Whittington Health NHS Trust",
+      "url": "https://www.nhs.uk/services/clinic/finsbury-health-centre/RKEFC",
+      "kind": "current service directory",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "targeted-gap-check",
+      "relationshipNotes": "Coordinator follow-up; see GAP-CHECK.md for scope and failed leads.",
+      "summary": "Clinic listed at 17 Pine Street; service listing is not visitor access permission.",
+      "rightsNotes": "Metadata and original summary only; no media or underlying archival documents copied."
+    },
+    {
+      "id": "CW-CO-S04",
+      "title": "John Groom's Association for Disabled People, GB 0074 LMA/4305",
+      "originator": "The London Archives catalogue via AIM25",
+      "url": "https://atom.aim25.com/index.php/john-grooms-association-for-disabled-people",
+      "kind": "archival collection description",
+      "publishedDate": "2013-01",
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "targeted-gap-check",
+      "relationshipNotes": "Coordinator follow-up; see GAP-CHECK.md for scope and failed leads.",
+      "summary": "Connects artificial-flower work with Sekforde Street and nearby premises; identifies records, photographs and later craft/tool material. Underlying records not inspected.",
+      "rightsNotes": "Metadata and original summary only; no media or underlying archival documents copied."
+    },
+    {
+      "id": "CW-CO-S05",
+      "title": "Charles Booth's London: BOOTH/B/237 catalogue entries",
+      "originator": "LSE Library",
+      "url": "https://booth.lse.ac.uk/search?page=146",
+      "kind": "primary archive catalogue",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-20",
+      "access": "opened",
+      "family": "targeted-gap-check",
+      "relationshipNotes": "Coordinator follow-up; see GAP-CHECK.md for scope and failed leads.",
+      "summary": "Entries at pp. 116–135 and 194–209 identify Groom interviews and mission material. Catalogue read; notebook images not inspected.",
+      "rightsNotes": "Metadata and original summary only; no media or underlying archival documents copied."
+    }
+  ],
+  "tours": [],
+  "places": [
+    {
+      "id": "CW-CO-P01",
+      "name": "Space EC1",
+      "aliases": [
+        "I Found It In Space"
+      ],
+      "address": "Exmouth Market (operator statement; number not captured)",
+      "coordinates": null,
+      "sourceIds": [
+        "CW-CO-S02"
+      ],
+      "tourIds": [],
+      "candidateAngles": [
+        {
+          "summary": "Independent retail and the people running it today",
+          "sourceIds": [
+            "CW-CO-S02"
+          ],
+          "status": "operator-discovery-lead"
+        }
+      ],
+      "tags": [
+        "current-business",
+        "core-area"
+      ],
+      "currentContext": {
+        "status": "operator-self-description",
+        "asOf": "2026-09-20",
+        "sourceIds": [
+          "CW-CO-S02"
+        ]
+      },
+      "verificationNotes": "No visit, current hours or standing position checked."
+    }
+  ],
+  "enrichments": [
+    {
+      "placeId": "CW-LC-P07",
+      "sourceIds": [
+        "CW-CO-S03"
+      ],
+      "purpose": "Present-day service lead"
+    },
+    {
+      "placeId": "CW-LC-P20",
+      "sourceIds": [
+        "CW-CO-S04",
+        "CW-CO-S05"
+      ],
+      "purpose": "Underlying work/mission research trail; do not conflate every factory with the chapel"
+    },
+    {
+      "placeId": "CW-LC-P30",
+      "sourceIds": [
+        "CW-CO-S01"
+      ],
+      "purpose": "Current approach/works constraint"
+    }
+  ],
+  "searchLog": [
+    {
+      "gap": "Smithfield works",
+      "action": "Opened project URL nominated by local-context researcher",
+      "outcome": "Works established, exact current pedestrian arrangements unverified"
+    },
+    {
+      "gap": "Year-round present life",
+      "queries": [
+        "Clerkenwell Tales Exmouth Market independent bookshop about",
+        "Finsbury Health Centre NHS Pine Street"
+      ],
+      "outcome": "Opened Space EC1 and NHS sources; stale bookshop descriptions not adopted"
+    },
+    {
+      "gap": "Ordinary work source depth",
+      "queries": [
+        "Clerkenwell Medical Mission John Groom artificial flowers girls Islington archive",
+        "John Groom Clerkenwell flower girls archive annual report"
+      ],
+      "outcome": "AIM25 canonical page and LSE catalogue opened; Children's Homes direct access challenge and first AIM25 URL failure recorded in GAP-CHECK.md"
+    }
+  ],
+  "gaps": [
+    "Selected route approaches and current views need review",
+    "Selected stories require underlying claim evidence and appropriate reconstruction",
+    "No new-area geometry, offline assets or installed package prepared"
+  ],
+  "parked": [
+    "Unselected business histories",
+    "Full archival documents before a story is selected",
+    "No purchase needed for withheld book chapters at this stage"
+  ]
+}

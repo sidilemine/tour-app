@@ -21,7 +21,7 @@ After installing the authoring dependencies and caching the audition model, run 
 
 ## Agent-pilot listening samples
 
-The owner requested the two main pilot excerpts in the previously auditioned voices: artsdepot in George and Alexandra Grove in Emma. [Recordings and transcripts](../../docs/content/authoring/pilot-2026-09-19/audio/README.md) retain those desk-review versions; the editorial alternatives remain open.
+The owner requested the two main pilot excerpts in the previously auditioned voices: artsdepot in George and Alexandra Grove in Emma. [Recordings and transcripts](../../docs/content/authoring/pilot-2026-09-19/audio/README.md) retain those original desk-review versions. The [subsequent response](../../docs/content/authoring/pilot-2026-09-19/OWNER-FEEDBACK.md) prefers the railway-led opening and a warmer ending if improved; it does not alter these historical audio files.
 
 ```sh
 node tools/voice-samples/render-pilot.mjs
@@ -32,3 +32,15 @@ node tools/voice-samples/render-pilot.mjs artifacts/pilot-listening-revision
 The script extracts the two main passages from the committed review packet, includes the candidate walking direction, checks word counts and records the exact source commit/hash. It refuses to replace an existing output directory. Cached PCM intermediates are reused only when their text and settings match; published MP3s are decoded completely and checked against the combined chunk duration. One overlong walking paragraph is split at a sentence boundary without changing words. The model's token guard remains active. Both voices use speed 1 and the same output loudness target; their timings differ naturally.
 
 `renderNarration` exposes these two voices to the desk tool. The existing `renderGeorge` entry point and tour settings remain intact. No installed tour or mobile runtime is changed by running this command. No model update, paid service, upload or automatic playback is involved.
+
+## Revised samples after owner feedback
+
+The [20 September revision](../../docs/content/authoring/revision-2026-09-20/README.md) keeps the same voices and settings for comparison. `render-revision.mjs` extracts the two marked passages from `SCRIPTS.md`, including the candidate walking direction. It saves an exact source snapshot and SHA-256 rather than requiring a preliminary Git commit. Source text must remain frozen throughout rendering. Paragraph text/settings are checked before cache reuse, and all encoded audio receives the same completeness and full-decode checks as the original pilot.
+
+```sh
+node tools/voice-samples/render-revision.mjs
+# Existing review outputs are immutable; an intentional rerun needs a new folder:
+node tools/voice-samples/render-revision.mjs artifacts/revised-desk-samples
+```
+
+No installed content changes and no sound starts automatically. A successful render establishes file integrity and retained text/chunks; subjective delivery and pronunciation still need listening.

@@ -1,6 +1,6 @@
 # Walking tour design guidance
 
-Living editorial reference, revision 13, 19 September 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
+Living editorial reference, revision 14, 20 September 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
 
 **Our aim:** make an enjoyable, relaxing walk reveal the non-obvious stories and meaning beneath the surroundings, giving the listener a deeper connection to a place, whether new or familiar. Being there should contribute something that reading at home cannot.
 
@@ -47,6 +47,8 @@ Before choosing stops or writing for a new area, comprehensively survey publicly
 The 19 September extension includes guides/books and present-day places themselves. Build a varied candidate pool that permits route and thematic choices together; add useful descriptors such as widely listed, less covered, music or other subjects as evidence warrants. Use a bounded source-family search before open-ended follow-up, adapting to heavily visited and sparsely documented areas. See the [proposed programme](AREA-TOUR-SURVEY.md#bounded-search-programme-for-the-next-area). No database implementation or exhaustive corpus is required. Second-pass comments 4, 5 and 23.
 
 ### Use a warm documentary voice with an editorial outlook
+
+**Voice choice, 20 September:** use George generally, including walking narration; Sidi finds him a little more pleasant. The earlier Emma recording remains a comparison artifact, not a second default voice. Measure the actual George delivery when budgeting new chapters rather than borrowing Emma's faster timing.
 
 Sidi prefers an insightful documentary with warmth. 99% Invisible is a reference for research, writing and narration across the programme. Why-led explanation is especially valuable; the five story forms in the second pass are a useful repertoire, not a required formula. A cute detail or anecdote can earn its place without a substantial thesis. Second-pass comments 2, 9, 21–22, 41–43 and 52.
 
@@ -127,6 +129,8 @@ Choose a rhythm that suits the place rather than making spacing even. Closely sp
 ### Separate test economy from tour length
 
 Keep technical checks short when they answer the necessary question. Do not make that economy a maximum duration or smallest-footprint rule for finished tours. Sidi accepts B's extra walking and expects most eventual tours to be longer than these compact examples; that is owner product direction, not a population finding. Budget and report the ordinary tour separately from ratings, voice notes and technical interruptions. Tour-options comments 7–8.
+
+**Clerkenwell application, 20 September:** Sidi says getting there takes about an hour and asks us to make the outing count. He selected about **75–90 minutes in the area, excluding travel**. Thorough candidate research, actual route/view/approach checks, varied rewarding material and reliable offline preparation should precede the trip. This is a quality and preparation constraint, not permission to fill time with weak stops, pad narration or reinstate exhaustive physical testing. Budget walking, listening and looking together; longer interior visits can remain optional.
 
 After hearing the pilot, Sidi considers about two minutes somewhat long but acceptable for some especially important or interesting stops. Spend that time selectively; it is neither a default duration nor a universal ceiling. For artsdepot he leans towards the warmer ending **if better written**; the present words are not approved, and this is not a preferred ending for every stop.
 
@@ -278,3 +282,5 @@ Revision 11 applies all 55 second-pass comments and the direct reconstruction/at
 Revision 12 records direct feedback on the two pilot recordings. Evocation must reveal what ordinary experience would not supply; changes need the relevant before-state and comparison; revisions must account for vivid material displaced by explanation. The owner conditionally favours a better-written warm artsdepot ending and prefers the railway-led walking opening. About two minutes is acceptable selectively for stronger stops. These choices and the retained raw feedback inform the next task; no recording, installed package or historical source is rewritten by this update.
 
 Revision 13 applies the subsequent clarification: period/type-level reconstruction can be valuable without details unique to the school; a before/after comparison belongs only where it supplies relevant interest or understanding; and curation must select and combine material within each place's story. The lightweight selection method is proposed for discussion, not an approved framework or a new research result. The raw follow-up is preserved in the pilot feedback record.
+
+Revision 14 records George as the general narration choice and the travel-value constraint for Clerkenwell. Thorough preparation should make the journey worthwhile while preserving the pragmatic testing policy. See decision record entry 26; choosing the voice does not approve the revised scripts or establish an audio/route result.

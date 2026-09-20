@@ -1,12 +1,14 @@
 # Writing brief for the next walking tour
 
-Version 3, 19 September 2026. Practical writer and editor handoff drawn from the [living guidance](../TOUR-DESIGN-GUIDANCE.md), [second-pass review](../SECOND-PASS-REVIEW-RESPONSE.md) and [pilot listening feedback](pilot-2026-09-19/OWNER-FEEDBACK.md). Owner preferences below apply now; workflow devices and evidence labels are provisional ways to implement them. No script, route or listening outcome is approved by this brief.
+Version 4, 20 September 2026. Practical writer and editor handoff drawn from the [living guidance](../TOUR-DESIGN-GUIDANCE.md), [second-pass review](../SECOND-PASS-REVIEW-RESPONSE.md), [pilot listening feedback](pilot-2026-09-19/OWNER-FEEDBACK.md) and the later George/Clerkenwell direction in the [decision record](../EDITORIAL-REVIEW-RECORD.md#26-george-throughout-and-a-clerkenwell-outing-worth-the-journey). Owner preferences below apply now; workflow devices and evidence labels are provisional ways to implement them. No script, route or listening outcome is approved by this brief.
 
 ## The experience
 
 An insightful documentary with warmth: good company on a pleasant walk, making places more interesting through explanation, telling detail, imagination and occasional amusement. 99% Invisible is a reference for research, writing and narration across its work. Learn its craft through examples; create our own material and a delivery suited to walking.
 
 Sidi leads the next editorial workshop. Give him meaningful alternatives and explain the tradeoffs. The engineer handles ordinary execution; a separate decision log records selection, rationale and the change that followed.
+
+Use **George for narration generally**, including walking chapters. Sidi reaffirmed him as the more pleasant voice on 20 September. Budget against his actual recordings, not Emma's comparison timings. The selected next tour is **Clerkenwell / Farringdon: Working lives, hidden in plain sight**, targeting **about 75–90 minutes in the area excluding travel**, including walking, listening and looking. Sidi estimates an hour to get there and wants a worthwhile outing: deepen the strongest material and prepare the route thoroughly, without adding filler to manufacture length. Technical-test economy is not the finished-tour brief.
 
 ## Before drafting
 

@@ -1,0 +1,2007 @@
+{
+  "schemaVersion": 1,
+  "area": "Clerkenwell / Farringdon",
+  "retrievedOn": "2026-09-20",
+  "scope": "Deduplicated discovery index; raw handoffs retain source claims, published stop order and access limits. Entries include nearby comparisons, broad areas and individual buildings, not 84 selected stops.",
+  "sourceFiles": [
+    {
+      "file": "public-walks.json",
+      "sha256": "9efc533d82687b15f851744714a024ee2e5f474f2112f99f42b0a9136bee54f6"
+    },
+    {
+      "file": "local-context.json",
+      "sha256": "d982647ea408f1399312a32733251adfeefb3c0588d0fec977aa2b37b3086dd6"
+    },
+    {
+      "file": "coordinator.json",
+      "sha256": "15538457fcba51ab178a6389cc72d84532624d76f28d87e1bf315cece67f5a99"
+    }
+  ],
+  "counts": {
+    "sources": 31,
+    "tours": 19,
+    "places": 101,
+    "canonicalPlaceEntries": 84,
+    "aliasMerges": 17
+  },
+  "mergePolicy": "Coordinator inspected names and context; 17 clear cross-handoff aliases merged. Broad site/specific building and ambiguous street/building combinations remain distinct with relationships. Every raw place maps once. Source-family repetition is not corroboration.",
+  "tourDeduplication": [
+    {
+      "source": "History From Below / Emanuela Aru",
+      "canonicalTourId": "CW-LC-T07",
+      "canonicalSourceId": "CW-LC-S06",
+      "note": "Both researchers opened it; only local-context.json extracts its itinerary."
+    }
+  ],
+  "places": [
+    {
+      "id": "CW-C-P001",
+      "name": "Farringdon station",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-farringdon"
+        },
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P01"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-industrial",
+        "CW-LC-S02",
+        "CW-LC-S03",
+        "CW-LC-S06"
+      ],
+      "tourIds": [
+        "CW-PW-T-industrial",
+        "CW-LC-T01",
+        "CW-LC-T02",
+        "CW-LC-T07"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P002",
+      "name": "The Charterhouse",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-charterhouse"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-londonwalks",
+        "CW-PW-S-jones",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-secret-village",
+        "CW-PW-T-jones",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P003",
+      "name": "Smithfield Market",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-smithfield"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-jones",
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones",
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P004",
+      "name": "St John’s Gate",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-stjohn-gate"
+        },
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P17"
+        }
+      ],
+      "aliases": [
+        "St John's Gate",
+        "St John's Gateway"
+      ],
+      "sourceIds": [
+        "CW-PW-S-jones",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map",
+        "CW-LC-S02",
+        "CW-LC-S03",
+        "CW-LC-S05",
+        "CW-LC-S06"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-lady",
+        "CW-PW-T-metro",
+        "CW-LC-T01",
+        "CW-LC-T02",
+        "CW-LC-T05",
+        "CW-LC-T06",
+        "CW-LC-T07"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P005",
+      "name": "St John’s Square",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-stjohn-square"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P006",
+      "name": "Priory Church of St John",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-stjohn-church"
+        },
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P16"
+        }
+      ],
+      "aliases": [
+        "Priory Church of the Order of St John",
+        "Grand Priory Church",
+        "Priory Church and Crypt"
+      ],
+      "sourceIds": [
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map",
+        "CW-LC-S02",
+        "CW-LC-S05"
+      ],
+      "tourIds": [
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro",
+        "CW-LC-T01",
+        "CW-LC-T04",
+        "CW-LC-T06"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P007",
+      "name": "Saint John’s Gardens",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-stjohn-gardens"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-voicemap"
+      ],
+      "tourIds": [
+        "CW-PW-T-voicemap"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P008",
+      "name": "Jerusalem Passage",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-jerusalem-passage"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P009",
+      "name": "Clerkenwell Green",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-green"
+        },
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P24"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-jones",
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map",
+        "CW-LC-S03",
+        "CW-LC-S06",
+        "CW-LC-S07"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones",
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro",
+        "CW-LC-T02",
+        "CW-LC-T07"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P010",
+      "name": "Marx Memorial Library",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-marx"
+        },
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P03"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map",
+        "CW-LC-S02",
+        "CW-LC-S03",
+        "CW-LC-S06"
+      ],
+      "tourIds": [
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro",
+        "CW-LC-T01"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P011",
+      "name": "Old Sessions House",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-sessions"
+        },
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P02"
+        }
+      ],
+      "aliases": [
+        "Middlesex Sessions House",
+        "Sessions House"
+      ],
+      "sourceIds": [
+        "CW-PW-S-jones",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map",
+        "CW-LC-S02",
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro",
+        "CW-LC-T01"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P012",
+      "name": "Clerk’s Well",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-well"
+        },
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P04"
+        }
+      ],
+      "aliases": [
+        "Clerks' Well",
+        "Clerk's Well"
+      ],
+      "sourceIds": [
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map",
+        "CW-LC-S02",
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro",
+        "CW-LC-T01",
+        "CW-LC-T02"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P013",
+      "name": "St James’s Church",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-stjames"
+        },
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P15"
+        }
+      ],
+      "aliases": [
+        "St James's Church, Clerkenwell",
+        "St James Church"
+      ],
+      "sourceIds": [
+        "CW-PW-S-jones",
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map",
+        "CW-LC-S02",
+        "CW-LC-S03",
+        "CW-LC-S06"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones",
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro",
+        "CW-LC-T01",
+        "CW-LC-T02",
+        "CW-LC-T07"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P014",
+      "name": "St James’s Gardens",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-stjames-gardens"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-voicemap"
+      ],
+      "tourIds": [
+        "CW-PW-T-voicemap"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P015",
+      "name": "Crown Tavern",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-crown"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P016",
+      "name": "Peabody estate, Clerkenwell",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-peabody"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-jones",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P017",
+      "name": "Pear Tree Court",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-peartree"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-jones"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P018",
+      "name": "Betsey Trotwood",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-betsey"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-jones",
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones",
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P019",
+      "name": "Clerkenwell House of Detention site",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-house-detention"
+        },
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P05"
+        }
+      ],
+      "aliases": [
+        "House of Detention"
+      ],
+      "sourceIds": [
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map",
+        "CW-LC-S02",
+        "CW-LC-S03",
+        "CW-LC-S06"
+      ],
+      "tourIds": [
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro",
+        "CW-LC-T01",
+        "CW-LC-T02"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P020",
+      "name": "Former Hugh Myddleton School / Kingsway Place",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-school"
+        },
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P14"
+        }
+      ],
+      "aliases": [
+        "Former Hugh Myddelton School",
+        "Hugh Myddleton School"
+      ],
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map",
+        "CW-LC-S02",
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro",
+        "CW-LC-T01",
+        "CW-LC-T02"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P021",
+      "name": "Spa Fields",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-spa"
+        },
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P25"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map",
+        "CW-LC-S03",
+        "CW-LC-S06"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro",
+        "CW-LC-T02"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P022",
+      "name": "Exmouth Market",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-exmouth"
+        },
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P34"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map",
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P023",
+      "name": "Mount Pleasant sorting-office site",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-mountpleasant"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P024",
+      "name": "Coldbath Fields / former Middlesex House of Correction",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-coldbath"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-rebel"
+      ],
+      "tourIds": [
+        "CW-PW-T-rebel"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P025",
+      "name": "Postal Museum / Mail Rail",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-postal"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-mylondon"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P026",
+      "name": "Booth’s Gin friezes",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-booths"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-jones"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P027",
+      "name": "Jerusalem Tavern, Britton Street (published name)",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-jerusalem-tavern"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-jones"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P028",
+      "name": "Turnmill Street",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-turnmill"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-jones"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P029",
+      "name": "Ellen Steinberg family memorial, St James’s churchyard",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-steinberg"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-jones"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P030",
+      "name": "Fox and Anchor",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-fox"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-jones",
+        "CW-PW-S-mylondon",
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones",
+        "CW-PW-T-mylondon",
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P031",
+      "name": "Cloth Fair",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-clothfair"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P032",
+      "name": "41 Cloth Fair",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-cloth41"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P033",
+      "name": "St Bartholomew’s Hospital",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-barts"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P034",
+      "name": "St Bartholomew the Great",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-bartsgreat"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P035",
+      "name": "St Bartholomew the Less",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-bartsless"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P036",
+      "name": "West Smithfield",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-westsmithfield"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P037",
+      "name": "William Wallace memorial",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-wallace"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P038",
+      "name": "Florin Court",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-florin"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P039",
+      "name": "Carthusian Street",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-carthusian"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P040",
+      "name": "Passing Alley",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-passing"
+        },
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P22"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-voicemap",
+        "CW-PW-S-mylondon",
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-PW-T-voicemap",
+        "CW-PW-T-mylondon",
+        "CW-LC-T02"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P041",
+      "name": "Cowcross Street",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-cowcross"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-lady"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P042",
+      "name": "St. John restaurant",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-stjohn-restaurant"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-lady"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P043",
+      "name": "The Rookery / Peter’s Lane",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-rookery"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-PW-S-lady"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-PW-T-lady"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P044",
+      "name": "The Hope pub",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-hope"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-mylondon"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P045",
+      "name": "Former Finsbury Bank for Savings",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-finsburybank"
+        },
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P13"
+        }
+      ],
+      "aliases": [
+        "Finsbury Savings Bank",
+        "Finsbury Bank for Savings"
+      ],
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-LC-S02",
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-LC-T01",
+        "CW-LC-T02"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P046",
+      "name": "The London Archives",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-archives"
+        },
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P06"
+        }
+      ],
+      "aliases": [
+        "London Metropolitan Archives (historical leaflet label)"
+      ],
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-LC-S02",
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-LC-T01"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P047",
+      "name": "Church of Our Most Holy Redeemer",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-redeemer"
+        },
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P08"
+        }
+      ],
+      "aliases": [
+        "Church of the Holy Redeemer",
+        "Spa Fields Chapel site"
+      ],
+      "sourceIds": [
+        "CW-PW-S-mylondon",
+        "CW-LC-S02",
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-PW-T-mylondon",
+        "CW-LC-T01",
+        "CW-LC-T02"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P048",
+      "name": "Scotti’s Snack Bar (published name)",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-scottis"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P049",
+      "name": "The Horseshoe (published name)",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-horseshoe"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P050",
+      "name": "Corporation Row",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-corporationrow"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P051",
+      "name": "Coach and Horses, Ray Street (published name)",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-coach"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P052",
+      "name": "St Peter’s Italian Church",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-stpeters"
+        },
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P32"
+        }
+      ],
+      "aliases": [
+        "St Peter's Italian Church"
+      ],
+      "sourceIds": [
+        "CW-PW-S-metro-map",
+        "CW-LC-S09"
+      ],
+      "tourIds": [
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P053",
+      "name": "Ziggurat Building",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-ziggurat"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P054",
+      "name": "54 Hatton Garden",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-hatton54"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-jones"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P055",
+      "name": "Saffron Hill",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-saffron"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-jones",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P056",
+      "name": "Bleeding Heart Yard",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-bleeding"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-jones",
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-jones",
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P057",
+      "name": "Ely Place",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-ely"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P058",
+      "name": "St Etheldreda’s Church",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-etheldreda"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P059",
+      "name": "Ye Olde Mitre",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-mitre"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-lady",
+        "CW-PW-S-metro-map"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady",
+        "CW-PW-T-metro"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P060",
+      "name": "Leather Lane",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-leather"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-lady"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P061",
+      "name": "The Eagle, Farringdon Road",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-eagle"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-lady"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P062",
+      "name": "Myddelton Square / St Mark’s Church",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-myddelton"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-lady"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P063",
+      "name": "Angel station",
+      "recordRefs": [
+        {
+          "file": "public-walks.json",
+          "id": "CW-PW-P-angel"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-PW-S-lady"
+      ],
+      "tourIds": [
+        "CW-PW-T-lady"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P064",
+      "name": "Finsbury Health Centre",
+      "recordRefs": [
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P07"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S03",
+        "CW-CO-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T01",
+        "CW-LC-T02"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P065",
+      "name": "Finsbury Town Hall",
+      "recordRefs": [
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P09"
+        }
+      ],
+      "aliases": [
+        "Clerkenwell Vestry Hall"
+      ],
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T01",
+        "CW-LC-T02"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P066",
+      "name": "Former Family Records Centre",
+      "recordRefs": [
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P10"
+        }
+      ],
+      "aliases": [
+        "Family Records Office"
+      ],
+      "sourceIds": [
+        "CW-LC-S02"
+      ],
+      "tourIds": [
+        "CW-LC-T01"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P067",
+      "name": "Sadler's Wells",
+      "recordRefs": [
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P11"
+        }
+      ],
+      "aliases": [
+        "Sadler's Wells Theatre"
+      ],
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T01",
+        "CW-LC-T02"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P068",
+      "name": "City University historic campus",
+      "recordRefs": [
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P12"
+        }
+      ],
+      "aliases": [
+        "City University"
+      ],
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T01"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P069",
+      "name": "Smithfield meat market",
+      "recordRefs": [
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P18"
+        }
+      ],
+      "aliases": [
+        "Smithfield Market"
+      ],
+      "sourceIds": [
+        "CW-LC-S02",
+        "CW-LC-S11"
+      ],
+      "tourIds": [
+        "CW-LC-T01"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P070",
+      "name": "Finsbury Library",
+      "recordRefs": [
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P19"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T02"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P071",
+      "name": "Clerkenwell Medical Mission",
+      "recordRefs": [
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P20"
+        }
+      ],
+      "aliases": [
+        "Woodbridge Chapel"
+      ],
+      "sourceIds": [
+        "CW-LC-S03",
+        "CW-CO-S04",
+        "CW-CO-S05"
+      ],
+      "tourIds": [
+        "CW-LC-T02"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P072",
+      "name": "Thomas Britton plaque",
+      "recordRefs": [
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P21"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T02"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P073",
+      "name": "Peter's Lane",
+      "recordRefs": [
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P23"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T02"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P074",
+      "name": "Former London Spa",
+      "recordRefs": [
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P26"
+        }
+      ],
+      "aliases": [
+        "The London Spa"
+      ],
+      "sourceIds": [
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T02"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P075",
+      "name": "Metropolitan Water Board offices",
+      "recordRefs": [
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P27"
+        }
+      ],
+      "aliases": [
+        "New River Company offices"
+      ],
+      "sourceIds": [
+        "CW-LC-S03"
+      ],
+      "tourIds": [
+        "CW-LC-T02"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P076",
+      "name": "New River Head",
+      "recordRefs": [
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P28"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-LC-S06"
+      ],
+      "tourIds": [
+        "CW-LC-T07"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P077",
+      "name": "Quentin Blake Centre for Illustration",
+      "recordRefs": [
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P29"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-LC-S12"
+      ],
+      "tourIds": [],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P078",
+      "name": "Smithfield General Market / future London Museum",
+      "recordRefs": [
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P30"
+        }
+      ],
+      "aliases": [
+        "London Museum Smithfield"
+      ],
+      "sourceIds": [
+        "CW-LC-S10",
+        "CW-CO-S01"
+      ],
+      "tourIds": [],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P079",
+      "name": "Smithfield Poultry Market",
+      "recordRefs": [
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P31"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-LC-S10"
+      ],
+      "tourIds": [],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P080",
+      "name": "Mary Woolaston sculpture, Calthorpe Community Garden",
+      "recordRefs": [
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P33"
+        }
+      ],
+      "aliases": [
+        "Black Mary sculpture"
+      ],
+      "sourceIds": [
+        "CW-LC-S08"
+      ],
+      "tourIds": [],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P081",
+      "name": "Farmiloe building",
+      "recordRefs": [
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P35"
+        }
+      ],
+      "aliases": [
+        "George Farmiloe and Sons"
+      ],
+      "sourceIds": [
+        "CW-LC-S04"
+      ],
+      "tourIds": [
+        "CW-LC-T03"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P082",
+      "name": "Cannon Brewery buildings",
+      "recordRefs": [
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P36"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-LC-S04"
+      ],
+      "tourIds": [
+        "CW-LC-T03"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P083",
+      "name": "Nicholson's distillery building",
+      "recordRefs": [
+        {
+          "file": "local-context.json",
+          "id": "CW-LC-P37"
+        }
+      ],
+      "aliases": [],
+      "sourceIds": [
+        "CW-LC-S04"
+      ],
+      "tourIds": [
+        "CW-LC-T03"
+      ],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    },
+    {
+      "id": "CW-C-P084",
+      "name": "Space EC1",
+      "recordRefs": [
+        {
+          "file": "coordinator.json",
+          "id": "CW-CO-P01"
+        }
+      ],
+      "aliases": [
+        "I Found It In Space"
+      ],
+      "sourceIds": [
+        "CW-CO-S02"
+      ],
+      "tourIds": [],
+      "verification": "Discovery identity only; coordinates, visitor position, access and history are not certified by this merge."
+    }
+  ],
+  "placeCrosswalk": {
+    "CW-PW-P-farringdon": "CW-C-P001",
+    "CW-PW-P-charterhouse": "CW-C-P002",
+    "CW-PW-P-smithfield": "CW-C-P003",
+    "CW-PW-P-stjohn-gate": "CW-C-P004",
+    "CW-PW-P-stjohn-square": "CW-C-P005",
+    "CW-PW-P-stjohn-church": "CW-C-P006",
+    "CW-PW-P-stjohn-gardens": "CW-C-P007",
+    "CW-PW-P-jerusalem-passage": "CW-C-P008",
+    "CW-PW-P-green": "CW-C-P009",
+    "CW-PW-P-marx": "CW-C-P010",
+    "CW-PW-P-sessions": "CW-C-P011",
+    "CW-PW-P-well": "CW-C-P012",
+    "CW-PW-P-stjames": "CW-C-P013",
+    "CW-PW-P-stjames-gardens": "CW-C-P014",
+    "CW-PW-P-crown": "CW-C-P015",
+    "CW-PW-P-peabody": "CW-C-P016",
+    "CW-PW-P-peartree": "CW-C-P017",
+    "CW-PW-P-betsey": "CW-C-P018",
+    "CW-PW-P-house-detention": "CW-C-P019",
+    "CW-PW-P-school": "CW-C-P020",
+    "CW-PW-P-spa": "CW-C-P021",
+    "CW-PW-P-exmouth": "CW-C-P022",
+    "CW-PW-P-mountpleasant": "CW-C-P023",
+    "CW-PW-P-coldbath": "CW-C-P024",
+    "CW-PW-P-postal": "CW-C-P025",
+    "CW-PW-P-booths": "CW-C-P026",
+    "CW-PW-P-jerusalem-tavern": "CW-C-P027",
+    "CW-PW-P-turnmill": "CW-C-P028",
+    "CW-PW-P-steinberg": "CW-C-P029",
+    "CW-PW-P-fox": "CW-C-P030",
+    "CW-PW-P-clothfair": "CW-C-P031",
+    "CW-PW-P-cloth41": "CW-C-P032",
+    "CW-PW-P-barts": "CW-C-P033",
+    "CW-PW-P-bartsgreat": "CW-C-P034",
+    "CW-PW-P-bartsless": "CW-C-P035",
+    "CW-PW-P-westsmithfield": "CW-C-P036",
+    "CW-PW-P-wallace": "CW-C-P037",
+    "CW-PW-P-florin": "CW-C-P038",
+    "CW-PW-P-carthusian": "CW-C-P039",
+    "CW-PW-P-passing": "CW-C-P040",
+    "CW-PW-P-cowcross": "CW-C-P041",
+    "CW-PW-P-stjohn-restaurant": "CW-C-P042",
+    "CW-PW-P-rookery": "CW-C-P043",
+    "CW-PW-P-hope": "CW-C-P044",
+    "CW-PW-P-finsburybank": "CW-C-P045",
+    "CW-PW-P-archives": "CW-C-P046",
+    "CW-PW-P-redeemer": "CW-C-P047",
+    "CW-PW-P-scottis": "CW-C-P048",
+    "CW-PW-P-horseshoe": "CW-C-P049",
+    "CW-PW-P-corporationrow": "CW-C-P050",
+    "CW-PW-P-coach": "CW-C-P051",
+    "CW-PW-P-stpeters": "CW-C-P052",
+    "CW-PW-P-ziggurat": "CW-C-P053",
+    "CW-PW-P-hatton54": "CW-C-P054",
+    "CW-PW-P-saffron": "CW-C-P055",
+    "CW-PW-P-bleeding": "CW-C-P056",
+    "CW-PW-P-ely": "CW-C-P057",
+    "CW-PW-P-etheldreda": "CW-C-P058",
+    "CW-PW-P-mitre": "CW-C-P059",
+    "CW-PW-P-leather": "CW-C-P060",
+    "CW-PW-P-eagle": "CW-C-P061",
+    "CW-PW-P-myddelton": "CW-C-P062",
+    "CW-PW-P-angel": "CW-C-P063",
+    "CW-LC-P01": "CW-C-P001",
+    "CW-LC-P02": "CW-C-P011",
+    "CW-LC-P03": "CW-C-P010",
+    "CW-LC-P04": "CW-C-P012",
+    "CW-LC-P05": "CW-C-P019",
+    "CW-LC-P06": "CW-C-P046",
+    "CW-LC-P07": "CW-C-P064",
+    "CW-LC-P08": "CW-C-P047",
+    "CW-LC-P09": "CW-C-P065",
+    "CW-LC-P10": "CW-C-P066",
+    "CW-LC-P11": "CW-C-P067",
+    "CW-LC-P12": "CW-C-P068",
+    "CW-LC-P13": "CW-C-P045",
+    "CW-LC-P14": "CW-C-P020",
+    "CW-LC-P15": "CW-C-P013",
+    "CW-LC-P16": "CW-C-P006",
+    "CW-LC-P17": "CW-C-P004",
+    "CW-LC-P18": "CW-C-P069",
+    "CW-LC-P19": "CW-C-P070",
+    "CW-LC-P20": "CW-C-P071",
+    "CW-LC-P21": "CW-C-P072",
+    "CW-LC-P22": "CW-C-P040",
+    "CW-LC-P23": "CW-C-P073",
+    "CW-LC-P24": "CW-C-P009",
+    "CW-LC-P25": "CW-C-P021",
+    "CW-LC-P26": "CW-C-P074",
+    "CW-LC-P27": "CW-C-P075",
+    "CW-LC-P28": "CW-C-P076",
+    "CW-LC-P29": "CW-C-P077",
+    "CW-LC-P30": "CW-C-P078",
+    "CW-LC-P31": "CW-C-P079",
+    "CW-LC-P32": "CW-C-P052",
+    "CW-LC-P33": "CW-C-P080",
+    "CW-LC-P34": "CW-C-P022",
+    "CW-LC-P35": "CW-C-P081",
+    "CW-LC-P36": "CW-C-P082",
+    "CW-LC-P37": "CW-C-P083",
+    "CW-CO-P01": "CW-C-P084"
+  },
+  "relationships": [
+    {
+      "from": "CW-C-P003",
+      "to": "CW-C-P069",
+      "type": "broad-place-label-and-specific-use",
+      "note": "Generic Smithfield market mentions do not prove which current market building is meant."
+    },
+    {
+      "from": "CW-C-P003",
+      "to": "CW-C-P078",
+      "type": "complex-and-specific-building",
+      "note": "General Market / future museum remains distinct from active meat trading."
+    },
+    {
+      "from": "CW-C-P003",
+      "to": "CW-C-P079",
+      "type": "complex-and-specific-building",
+      "note": "Poultry Market has a separate museum-phase timeline."
+    },
+    {
+      "from": "CW-C-P043",
+      "to": "CW-C-P073",
+      "type": "building-and-street-label-overlap",
+      "note": "Public handoff combines Rookery and lane; local handoff names the lane alone. Retain both until precise candidate geometry is researched."
+    },
+    {
+      "from": "CW-C-P076",
+      "to": "CW-C-P077",
+      "type": "historic-site-and-current-institution",
+      "note": "New River Head and Quentin Blake Centre are related, not interchangeable visitor positions."
+    }
+  ]
+}
