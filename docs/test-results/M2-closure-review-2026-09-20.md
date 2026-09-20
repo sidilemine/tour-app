@@ -2,7 +2,13 @@
 
 **M2 remains open.** The two ordinary outings establish a useful, enjoyed tour experience and substantial preserved feedback. They do not establish every technical or physical acceptance item. This review consolidates existing evidence; it does not change the roadmap, alter either installed package, require a repeat walk, or commission a Finchley editorial rewrite.
 
-## Evidence in scope
+## Later phone evidence, 20 September
+
+The [combined Clerkenwell handoff](M2-clerkenwell-phone-handoff.md) adds representative cold offline map/reader and package-selection evidence, one clear EarFun recording with Spotify stopping and normal routing restored, and owner-confirmed active review-close continuation. Guide 12/source `9505427915e2d1df` is now installed with Clerkenwell selected and unstarted. The audible review-close question is closed at this short observed scope; the earlier headset field failure remains unexplained. No further desk session is requested before the ordinary outing. Natural automatic chapter launches and route/content observations remain distinct.
+
+The assessment below records the evidence **before this handoff**. Its pending headset/review session and unchanged-phone statements are historical and superseded by the result above; the other coverage limits and M2-open conclusion remain.
+
+## Evidence in scope at the original review
 
 - [Tour B, 17 September](../content/FIRST-TOUR-FEEDBACK-RECOVERY.md): six stops and walking chapter, George v2. Sidi explicitly enjoyed it and learned a great deal; seven ratings and 14 field recordings survive. The chapter reportedly needed manual start. Field diagnostics were off; saved completion does not identify arrival/hold/playback causes.
 - [Tour A, 18 September](../content/SECOND-TOUR-FEEDBACK-RECOVERY.md): reported complete, with five reviews and nine new recordings. The owner identifies a Torrington review stored under Trinity; the possible omission of the full Torrington approach remains a route-coverage limit. Guide 9/source `ab54dddf76bf5cd0` was used. Phone input stopped Spotify; headset input did not and sounded poor. Old recordings remain preserved.

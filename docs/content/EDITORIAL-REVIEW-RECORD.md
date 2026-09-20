@@ -317,6 +317,12 @@ Guidance revision 14 and writing brief v4 carry this direction forward. The exis
 
 **Discussion status:** the [process lessons](authoring/clerkenwell-2026-09-20/README.md#what-this-teaches-the-process-provisionally) are coordinator observations from this execution. Sidi has not yet judged this completed tour, its reconstructed scenes, duration or walking passages. Preserve his next reactions before turning these observations into systematic guidelines. M2 remains open; neither E1 comparison nor the later automated factory has been completed by this hand-built tour.
 
+## 28. Clerkenwell phone handoff — 20 September 2026
+
+**Outcome:** the [combined device session](../test-results/M2-clerkenwell-phone-handoff.md) installed guide 12 and checked the new offline area while preserving earlier work. Sidi confirmed Spotify stopped for EarFun recording, the saved sentence was clear with normal headphone output, and saving Review continued the earlier narration. The historical outdoor headset failure remains unexplained. Clerkenwell is selected, unstarted and ready for the outing; no finished-tour editorial feedback or M2 closure is inferred.
+
+**Process lesson:** setup/tool round trips made this session longer than its estimate. Keep physical cases narrow and improve operator preparation rather than enlarge the checklist. No phone-input comparison was needed after a usable headset sample. Future authoring guidance should still be informed by the ordinary walk, not the successful installation.
+
 ## Questions to carry into a later systematic review
 
 - Does context before anecdote usually improve the story, and when can an immediate intriguing detail work better?
@@ -346,5 +352,5 @@ Guidance revision 14 and writing brief v4 carry this direction forward. The exis
 | Pilot editorial choices | Railway-led opening preferred; warmer ending conditional on better writing; revised scripts and audio ready | Owner reaction to the revised comparisons, scenes, campaign and ending |
 | Two narrated legs in the next tour | Implemented in Clerkenwell; actual George timing and deterministic replays pass | How both passages launch and fit during ordinary use |
 | Authoring workshop | Sidi takes editorial lead; engineer prepares and executes | Record consequential choices and useful revisions; no permanent agent count assumed |
-| Next complete tour | Clerkenwell Working lives; eight stops, two passages, George; complete package/build ready | One combined phone handoff, then enjoyment and practical feedback |
+| Next complete tour | Clerkenwell Working lives; eight stops, two passages, George; installed and cold-verified | Ordinary outing: enjoyment, practical feedback and how the walking passages launch |
 | Editorial values and AI provenance | AI provenance visible in the Clerkenwell introduction; values still developing | Develop the outlook from actual editorial choices and feedback |

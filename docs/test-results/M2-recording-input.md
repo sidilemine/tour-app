@@ -1,6 +1,6 @@
 # M2 headset recording and competing music
 
-17 September 2026. **Implemented and built; the 18 September owner report identifies an unresolved headset-path failure. Phone-microphone recording stopped Spotify in the reported use.** This addresses the first Tour B feedback, without changing the authored tours or requiring another baseline walk.
+17 September 2026 implementation; updated 20 September. **One short EarFun/Spotify desk check now passes; the earlier outdoor failure remains unexplained.** [Actual handoff](M2-clerkenwell-phone-handoff.md). The 18 September report and its limits remain below. Phone-microphone recording stopped Spotify in that reported use. This addresses the first Tour B feedback, without changing the authored tours or requiring another baseline walk.
 
 ## Diagnosis and change
 
@@ -46,3 +46,7 @@ The owner explicitly distinguishes the cases: Spotify did not stop when recordin
 **Source inspection:** both selection paths request the same transient-exclusive focus before recording. Only the Bluetooth branch then changes AudioManager mode and communication device and selects a Bluetooth input. The next investigation should capture app-scoped focus and actual route state across that transition, plus the verified-input label and saved sample, using the EarFun headset. A routing/focus interaction is a hypothesis, not a proved cause; poor capture and continued music need not share one cause. No speculative native patch was made from this report alone.
 
 Reuse the owner's ordinary-use observation for the phone fallback. When the phone/headset are next available, the smallest useful check is a brief Spotify-playing/headset-capture sequence with native state captured before/during/after, then playback of the sample after listening readiness. Stop once the route/focus failure is explained; no full tour or broad matrix is required. Sidi is away and no reconnect request is made now. Resume-on-close verification can be clustered into the same session if still needed.
+
+## Bounded EarFun result, 20 September
+
+On unchanged recorder/native code in guide 12/source `9505427915e2d1df`, Sidi confirmed Spotify stopped during headset capture and that saved playback was clear with normal headphone sound. The UI verified EarFun Air; private snapshots show the recorder holding transient-exclusive focus during capture, Spotify receiving transient loss, and normal mode/focus restoration after Stop. The 11-second sample remains on the phone. No phone comparison or disconnect matrix was repeated. This is one observed pass, not an explanation or fix of the earlier field failure; see the [complete scoped result](M2-clerkenwell-phone-handoff.md#earfun-recording-and-spotify).

@@ -2,7 +2,7 @@
 
 **Working lives, hidden in plain sight** · George · eight stops and two short walking stories.
 
-**Preparation status, 20 September:** the complete tour is packaged and both Android builds pass their checks. A short combined phone handoff remains before travelling; this page is the prepared outing guide, not confirmation that Clerkenwell is already installed.
+**Ready on your phone, 20 September:** Clerkenwell is installed, selected and unstarted. Its offline map and directions passed the cold-launch check. A short EarFun recording was clear, Spotify stopped during capture, and saving Review resumed narration correctly. [Handoff record](../test-results/M2-clerkenwell-phone-handoff.md).
 
 ## The outing
 
@@ -14,7 +14,7 @@ Start at the **Charterhouse exterior**, finish at **Exmouth Market**. Between th
 
 ## Getting started
 
-1. Before leaving home, Clerkenwell must be prepared in the self-contained app and its map checked. This is part of our combined handoff, with your existing Finchley progress and recordings preserved.
+1. Clerkenwell is already prepared in the self-contained app. Your Finchley tours and previous feedback are retained; no further setup session is needed.
 2. At Farringdon, use the **Cowcross Street exit**. The offline map includes the roughly 7-minute approach: Cowcross Street east, then the public Charterhouse Street pavement to Charterhouse Square. Follow the western street edge past Malmaison to the Charterhouse frontage on the north side. Stay on the public streets; no private Mews passage, university campus or garden shortcut is needed.
 3. **Press Start only at the Charterhouse.** It plays the first story immediately. Keep automatic narration on for onward arrivals. After a normal completed story, walk on; deliberate Pause remains held until Resume.
 
@@ -30,7 +30,7 @@ Enjoy the tour first. There is no requirement to record at every stop or run an 
 - What dragged, confused you, or felt weakly connected to being there?
 - Did the walking stories start naturally and finish at a sensible place? If either needed manual Play, mention which one.
 
-For voice notes, choose **Phone microphone**, hold the phone near your mouth and keep Review visible. Bluetooth capture is still under investigation. A short note plus later conversation is enough. Locking or leaving Review stops and saves a recording; **Save review and resume tour** returns an active tour to narration. Written notes also work. We will check a short sample together before relying on capture for another outing.
+The **EarFun microphone** worked in our short desk check; the earlier outdoor failure remains unexplained. You can use it, with **Phone microphone** near your mouth or written notes as fallbacks if trouble returns. A short note plus later conversation is enough. Keep Review visible while speaking: locking or leaving it stops and saves the recording. **Save review and resume tour** returns an active tour to narration; that continuation was heard and confirmed. The packaged advice remains more cautious about Bluetooth.
 
 ## A few practical route details
 

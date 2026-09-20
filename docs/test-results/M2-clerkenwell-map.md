@@ -1,6 +1,6 @@
 # Clerkenwell offline-area extension
 
-20 September 2026. Implementation for the selected next tour; not M2 closure or a field result. The installed phone remains on its previous self-contained build until the later clustered handoff.
+20 September 2026. Implementation for the selected next tour; not M2 closure or a field result. The original build evidence below was followed by the [guide-12 phone handoff](M2-clerkenwell-phone-handoff.md), which passed representative cold offline drawing and area switching.
 
 ## Change
 
@@ -26,4 +26,4 @@ The complete route and walking chapters will receive their own geometry/timing r
 
 ## Complete-tour follow-through
 
-The [final Clerkenwell build](M2-clerkenwell-tour.md) now includes the narration, eight stops and two walking passages, with guide 12/source `9505427915e2d1df`. Its APK re-verifies all map resources and three tours. This supersedes the earlier local build as the handoff candidate; native drawing/selection still awaits the single combined phone session.
+The [final Clerkenwell build](M2-clerkenwell-tour.md) now includes the narration, eight stops and two walking passages, with guide 12/source `9505427915e2d1df`. Its APK re-verifies all map resources and three tours. This supersedes the earlier local build and is now installed. Representative cold offline Clerkenwell drawing/reader and switching to retained Finchley passed the [combined phone session](M2-clerkenwell-phone-handoff.md). The earlier procedure above is complete at that representative scope; current street conditions and chapter launches await ordinary use.

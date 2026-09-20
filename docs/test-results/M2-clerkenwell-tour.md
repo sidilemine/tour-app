@@ -1,6 +1,6 @@
 # M2 Clerkenwell tour: preparation and build
 
-20 September 2026. **Implemented and built; awaiting one clustered phone handoff and ordinary owner use. M2 remains open.** No phone was contacted, installed, played or recorded in this preparation. The previous installed guide 10/source `de251b0367a4c3b6` remains the last recorded handoff.
+20 September 2026. **Installed and ready for ordinary owner use; M2 remains open.** The [combined phone handoff](M2-clerkenwell-phone-handoff.md) passed representative offline map/reader checks, one short EarFun/Spotify recording and audible review-close continuation. Self-contained guide 12/source `9505427915e2d1df` is cold-verified with Clerkenwell selected and unstarted. The preparation and original procedure below remain the build record; the linked result states what actually ran.
 
 ## Delivered locally
 
@@ -32,7 +32,7 @@ The selected Close and Skinner sections use mapped pavements. The Old Sessions c
 - The self-contained APK contains all **258 distinct map/font resources byte-for-byte**, both pinned map IDs, **three tours / 22 audio entries**, feedback support and matching source identity. The ten new audio payloads are exact; all 12 old Finchley entries remain. Build identity now hashes Clerkenwell package media as well as Finchley, so a changed C package cannot reuse the old source identity.
 - APKs and raw build/test output remain ignored under `artifacts/`. Build success alone does not establish native drawing, playback, microphone quality or outdoor automatic launch.
 
-## One combined phone session before travelling
+## Prepared combined phone procedure (completed; actual scope linked above)
 
 Allow **about 10–12 minutes connected**, with roughly 5–7 minutes of active owner listening/speaking. Finish silent installation/preparation first and ask for fresh listening readiness before any sound. Stop if a tool/USB failure makes controls unreliable; preserve data and restore the self-contained app. No whole M1 matrix or extra outdoor test is requested.
 
@@ -44,4 +44,4 @@ If headset capture remains poor, retain the actual failure and use a verified sh
 
 ## Physical status
 
-**Pending:** new-area cold offline drawing/selection, representative new content readiness on the Pixel, the existing headset/Spotify diagnosis and audible review-close observation. Ordinary use will supply enjoyment, practical route observations and whether both walking chapters launched naturally. No field result or M2 acceptance is claimed by this record.
+**Observed:** new-area cold offline drawing/reader, map switching with retained A progress, one clear EarFun capture with Spotify stopping, and audible review-close continuation. The earlier headset field failure did not reproduce and is not explained or declared fixed. **Remaining:** ordinary-use enjoyment, practical route observations and natural launches of both walking chapters. No field result or M2 acceptance is claimed.

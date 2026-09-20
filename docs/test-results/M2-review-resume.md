@@ -21,3 +21,7 @@ The Pixel was disconnected during preparation. No installation or new audible re
 ## Installation, 18 September
 
 After the second-tour backup, the self-contained guide-10 APK above was installed in place and cold-opened without Metro. A remains selected with all stops complete and tracking stopped; updated resume-on-close help is visible. This is a silent handoff, not an audible resumption test. The second outing used the previous guide-9 APK and provides no evidence for the new close behaviour.
+
+## Audible observation, 20 September
+
+Self-contained guide 12/source `9505427915e2d1df` passed the [brief active-tour close/resume observation](M2-clerkenwell-phone-handoff.md#review-close-continuation). Sidi confirmed that Save review and resume tour continued the earlier sentence rather than restarting. The player was then paused and ended; Clerkenwell was left unstarted. No repeat walk or second Android Back case is needed for this boundary. Outdoor automatic launches remain a separate question.

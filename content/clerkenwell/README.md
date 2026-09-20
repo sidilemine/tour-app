@@ -31,6 +31,6 @@ Both walking passages are budgeted at 6 km/h from the **latest** launch, with at
 
 [Owner outing guide](../../docs/content/CLERKENWELL-TAKE-THE-TOUR.md) · [build and check record](../../docs/test-results/M2-clerkenwell-tour.md).
 
-Automated package/replay/build evidence and physical phone/outing evidence are recorded separately. Existing Finchley packages, feedback and progress remain intact. Headset recording/Spotify behaviour is unresolved; Phone microphone near the mouth or written notes are the practical fallbacks. No new walk is required merely to test the second map.
+Automated package/replay/build evidence and physical phone/outing evidence are recorded separately. Existing Finchley packages, feedback and progress remain intact. The [phone handoff](../../docs/test-results/M2-clerkenwell-phone-handoff.md) passed one short EarFun/Spotify capture and audible review-close continuation. The earlier outdoor headset failure remains unexplained; phone input near the mouth or written notes remain fallbacks. No new walk is required merely to test the second map.
 
 Original AI-assisted prose and local Kokoro George synthesis; AI provenance is visible in this tour's introduction. Sources and reconstruction bases remain available per story. Map/route data retain OpenStreetMap attribution and the bundled map's rights notices. No source photographs, Street View frames, third-party narration or music are packaged. Public distribution, paid services and a city database remain separate decisions.

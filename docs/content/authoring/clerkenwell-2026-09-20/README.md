@@ -10,7 +10,7 @@
 4. [Route research](ROUTE-RESEARCH.md): provider inputs/responses, candidate visitor positions separate from camera coordinates, dated imagery, public crossing approaches, current-works limits, final geometry and practical return routes.
 5. [Writer assignment](WRITER-ASSIGNMENT.md), frozen [V1 prose](SCRIPTS-V1.md) and [V1 JSON](draft-stories-v1.json): what the writer received and actually produced. The draft's original mistakes remain visible for learning.
 6. [Independent review](REVIEW-V1.md), [final-edit check](FINAL-EDIT-CHECK.md) and [navigation check](FINAL-NAVIGATION-CHECK.md): observations and exactly which final source was checked. The prose reviewer researched northern material but had not written the narration; the route reviewer did not draft the historical prose. This is distinct-role review, not a claim that every source was rediscovered independently.
-7. [Final spoken scripts](SCRIPTS.md) and [authored package](../../../../content/clerkenwell/README.md): exact evidence/transcript input, route plan, ten measured George clips and importable transport. [Build/check record](../../../test-results/M2-clerkenwell-tour.md) separates automation from future physical use.
+7. [Final spoken scripts](SCRIPTS.md) and [authored package](../../../../content/clerkenwell/README.md): exact evidence/transcript input, route plan, ten measured George clips and importable transport. [Build/check record](../../../test-results/M2-clerkenwell-tour.md) separates automation, the [completed phone handoff](../../../test-results/M2-clerkenwell-phone-handoff.md) and future outdoor use.
 8. [Owner outing guide](../../CLERKENWELL-TAKE-THE-TOUR.md): start/end, time, optional visits, practical fallbacks and a small feedback prompt.
 
 ## Decisions during integration
