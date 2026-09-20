@@ -7,7 +7,7 @@ export interface MapFiles {
   move(from: string, to: string): Promise<void>;
 }
 
-// One fixed, bundled map, not a user package importer. A directory is only
+// One selected bundled map, not a user map-package importer. A directory is only
 // published after readback succeeds. Repair affects this map copy alone.
 export async function prepareMapFiles(fs: MapFiles, root: string, id: string, files: readonly MapFile[], repair = false): Promise<string> {
   if (!/^file:\/\//.test(root) || !/^[a-z0-9-]+$/.test(id)) throw Error('Invalid local map destination');

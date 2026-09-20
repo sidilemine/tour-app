@@ -1,8 +1,8 @@
 # Offline phone test guide
 
-Generated from `src/testing/guide.json`; edit that source and run `npm run docs:guide`. Revision 10.
+Generated from `src/testing/guide.json`; edit that source and run `npm run docs:guide`. Revision 11.
 
-The planned M1 outdoor walks are complete. These procedures remain available for reference and targeted regression checks; do not repeat a walk unless the engineer identifies a specific need. Opening this guide never starts, pauses or ends a tour. Stop safely before using the screen. Saved results are observations: acceptance combines diagnostic review and physical feedback in the project checklist. Long A lasts 3 minutes 30 seconds and is only a test asset; desk interruption and recovery checks need just a few seconds of playback. M2 adds an engineer-prepared offline-map desk check; this does not reopen the full M1 field matrix. The Finchley tour home now contains the prepared A/B walks, transcripts, directions and story reviews. Case 20 records one short engineer-led check of the new import/recording boundary; it does not require another baseline walk.
+The planned M1 outdoor walks are complete. These procedures remain available for reference and targeted regression checks; do not repeat a walk unless the engineer identifies a specific need. Opening this guide never starts, pauses or ends a tour. Stop safely before using the screen. Saved results are observations: acceptance combines diagnostic review and physical feedback in the project checklist. Long A lasts 3 minutes 30 seconds and is only a test asset; desk interruption and recovery checks need just a few seconds of playback. M2 adds an engineer-prepared offline-map desk check; this does not reopen the full M1 field matrix. The tour home now contains the prepared A/B walks, transcripts, directions and story reviews. Case 20 records one short engineer-led check of the new import/recording boundary; it does not require another baseline walk. Guide 11 updates the map label for two bundled areas; a new area needs its own short drawing/selection check, not a repeat of the historical map matrix.
 
 ## Before and after each attempt
 
@@ -253,7 +253,7 @@ Case: `offline-map`. Preparation: engineer. Build: either.
 
 Engineer-prepared map APK; for development, verified cached map and all four audio assets. Use the existing checked M1 fixture only for the later targeted outdoor case.
 
-1. At the desk, begin this attempt. Record the build, network condition and map revision. With Metro stopped and phone networking off, cold reopen the self-contained app. Open North Finchley offline map and record its first complete frame time.
+1. At the desk, begin this attempt. Record the build, network condition and map revision. With Metro stopped and phone networking off, cold reopen the self-contained app. Open Offline area map (North Finchley offline map in older builds) and record its first complete frame time.
 2. Pan to all four saved-area edges and corners, zoom from overview to street detail, and check street labels. Grey outside coverage is expected. Open Map credits; return to the map and then the player. Report blank tiles, missing characters, errors or a stalled screen.
 3. Engineer: preserve data and inject a missing font and a same-size damaged map copy in separate runs. Reopen the map: it must show Map unavailable. The player must remain usable. Rebuild local map copy, recheck drawing offline and record actual recovery. Never delete tour or test databases.
 4. With the engineer at the desk, use only seconds of existing test audio. Open/close the map during playback and manual pause; check real remote controls, focus and reopen recovery as directed. Map navigation must not start location, clear a hold or restart narration. Engineer checks app-scoped crashes and memory.

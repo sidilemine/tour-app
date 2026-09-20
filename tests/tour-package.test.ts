@@ -9,6 +9,7 @@ import { LibraryEntry, parseTourPackage, publishTour, stageTour, TourFiles } fro
 import { Store, SQL } from '../src/storage/store';
 import { initialState, recovered } from '../src/domain/engine';
 import catalog from '../src/map/catalog.json';
+import clerkenwell from '../src/map/clerkenwell.json';
 
 const audio = readFileSync('assets/audio/a.m4a');
 const md5 = (bytes: Uint8Array) => createHash('md5').update(bytes).digest('hex');
@@ -91,6 +92,29 @@ test('package map identity and both route and standing positions must fit actual
   const outside = payload(); outside.fixture.route.forEach(p => { p.longitude = -0.2; }); outside.fixture.stops.forEach(s => { s.standing.longitude = -0.2; });
   assert.throws(() => parseTourPackage(outside), /offline map/);
   assert.equal(parseTourPackage(payload()).mapId, catalog.id);
+});
+
+test('Clerkenwell imports against its own coverage and cannot silently replace a pinned map association', () => {
+  const input = payload(); input.mapId = clerkenwell.id;
+  const relocate = (point: { latitude: number; longitude: number }) => ({ latitude: point.latitude - 0.09, longitude: point.longitude + 0.075 });
+  input.fixture.route = input.fixture.route.map(relocate);
+  input.fixture.stops = input.fixture.stops.map(s => ({ ...s, standing: relocate(s.standing) }));
+  const parsed = parseTourPackage(input);
+  assert.equal(parsed.mapId, clerkenwell.id);
+  assert.throws(() => parseTourPackage({ ...input, mapId: catalog.id }), /offline map/);
+  const db = new DatabaseSync(':memory:');
+  try {
+    const store = new Store(adapter(db));
+    const old = parseTourPackage(payload()).fixture;
+    publishTour(store, { fixture: old, directory: 'legacy/', importedAt: 'before' });
+    // Historical entries omit mapId; unchanged repair with explicit Finchley works.
+    publishTour(store, { fixture: old, directory: 'repaired/', importedAt: 'after', mapId: catalog.id });
+    const before = store.read('catalogue');
+    assert.throws(() => publishTour(store, { fixture: old, directory: 'wrong/', importedAt: 'bad', mapId: clerkenwell.id }), /different content/);
+    assert.deepEqual(store.read('catalogue'), before);
+    publishTour(store, { fixture: { ...parsed.fixture, id: 'clerkenwell-synthetic' }, directory: 'new/', importedAt: 'new', mapId: parsed.mapId });
+    assert.deepEqual(store.read<LibraryEntry[]>('catalogue')?.map(e => e.mapId), [catalog.id, clerkenwell.id]);
+  } finally { db.close(); }
 });
 
 test('malformed package assets reject before writes: wrong container, count, key, length and duplicate', () => {

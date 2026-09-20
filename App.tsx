@@ -12,6 +12,7 @@ import { makeExport, ExportDraft } from './src/export/jsonExport';
 import { OfflineMap } from './src/map/OfflineMap';
 import { TourPlayer } from './src/tours/TourPlayer';
 import { narrationAt } from './src/domain/narration';
+import { tourMapId } from './src/tours/nativeLibrary';
 
 type Draft = { route: Coordinate[]; stops: Fixture['stops'] };
 function Button({ label, onPress, disabled = false, secondary = false }: { label: string; onPress: () => void; disabled?: boolean; secondary?: boolean }) {
@@ -81,20 +82,20 @@ export default function App() {
   const current = state.playback.index === null || !fixture ? 'Silence' : narrationAt(fixture, state.playback.index)?.title ?? fixture.stops[state.playback.index]?.title ?? 'Walking chapter';
   if (!lab) return <TourPlayer onOpenLab={() => setLab(true)} />;
   return <ScrollView style={styles.screen} contentContainerStyle={styles.content} keyboardShouldPersistTaps="handled">
-    <Button secondary label="Back to Finchley tours" onPress={() => setLab(false)} />
+    <Button secondary label="Back to tours" onPress={() => setLab(false)} />
     <Text style={styles.eyebrow}>WALKING TOUR LAB · M2 MAP PREVIEW</Text>
     <Text style={styles.heading}>{'A walk. A pause.\nThe next arrival.'}</Text>
     <Text style={styles.description}>A device experiment, with real silence between local clips. The guide retains procedures for reference and targeted checks.</Text>
     <Button secondary label="Offline test guide / saved results" onPress={() => setGuideOpen(true)} />
-    <Button secondary label="North Finchley offline map" onPress={() => setMapOpen(true)} disabled={recording} />
-    {mapOpen && <OfflineMap state={state} fixture={fixture} onClose={() => setMapOpen(false)} />}
+    <Button secondary label="Offline area map" onPress={() => setMapOpen(true)} disabled={recording} />
+    {mapOpen && <OfflineMap state={state} fixture={fixture} mapId={tourMapId(fixture)} onClose={() => setMapOpen(false)} />}
     {exportDraft && <ExportDialog draft={exportDraft} onClose={() => setExportDraft(null)} />}
     {guideOpen && <TestGuide onClose={() => setGuideOpen(false)} />}
     {fatal ? <View style={styles.warning}><Text selectable>{fatal}</Text></View> : null}
     <View style={styles.card}>
       <Text style={styles.section}>{fixture?.title || 'Set up your test walk'}</Text>
       <Text style={styles.description}>{fixture ? `${fixture.stops.length} stops · ${fixture.verification.status.replace('_', ' ')} · ${fixture.route.length} route points` : 'Record your own path or load a three-stop JSON fixture. No sample route is represented as safe or verified.'}</Text>
-      {fixture && <Text style={fixture.audioProfile ? styles.hold : styles.description}>{fixture.narration ? 'CURATED TOUR: use the Finchley tour home for chapters, directions and story reviews.' : fixture.audioProfile ? 'EDGE TEST: A lasts 3:30. Use only for early-arrival / pass-pending checks.' : 'STANDARD CLIPS: short A/B/C. Use for baseline, detour and battery-saver walks.'}</Text>}
+      {fixture && <Text style={fixture.audioProfile ? styles.hold : styles.description}>{fixture.narration ? 'CURATED TOUR: use the tour home for chapters, directions and story reviews.' : fixture.audioProfile ? 'EDGE TEST: A lasts 3:30. Use only for early-arrival / pass-pending checks.' : 'STANDARD CLIPS: short A/B/C. Use for baseline, detour and battery-saver walks.'}</Text>}
       <Button secondary label={editing ? 'Close configuration' : 'Configure / load fixture'} disabled={state.active || busy} onPress={() => { setEditing(!editing); setJson(fixture ? JSON.stringify(fixture, null, 2) : ''); }} />
       {fixture && !editing ? <Button secondary label="Export fixture JSON" onPress={() => void run(exportFixture)} disabled={busy} /> : null}
     </View>

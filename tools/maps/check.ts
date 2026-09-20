@@ -5,19 +5,22 @@ import { PMTiles, type Source } from 'pmtiles';
 import { VectorTile } from '@mapbox/vector-tile';
 import { PbfReader } from 'pbf';
 import { validateStyleMin } from '@maplibre/maplibre-gl-style-spec';
-import catalog from '../../src/map/catalog.json';
+import { mapAreas } from '../../src/map/areas';
 import notices from '../../src/map/notices.json';
 import { makeMapStyle } from '../../src/map/style';
 
 async function main() {
-  const root = 'assets/maps/north-finchley/';
-  const registry = readFileSync('src/map/bundledAssets.ts', 'utf8');
+  const sharedRoot = 'assets/maps/north-finchley/';
+  const registry = readFileSync('src/map/bundledAssets.ts', 'utf8') + readFileSync('src/map/bundledAreas.ts', 'utf8');
+  for (const { catalog } of mapAreas) {
+  const root = catalog.id.startsWith('clerkenwell-') ? 'assets/maps/clerkenwell/' : sharedRoot;
   const glyphIds = new Set<number>();
   for (const file of catalog.files) {
-    const bytes = readFileSync(root + file.path);
+    const assetPath = (file.path.startsWith('fonts/') ? sharedRoot : root) + file.path;
+    const bytes = readFileSync(assetPath);
     assert.equal(bytes.length, file.bytes, `${file.path}: size`);
     for (const algorithm of ['md5', 'sha256'] as const) assert.equal(createHash(algorithm).update(bytes).digest('hex'), file[algorithm], `${file.path}: ${algorithm}`);
-    assert.ok(registry.includes(`require(${JSON.stringify(`../../${root}${file.path}`)})`), `${file.path}: Metro registry`);
+    assert.ok(registry.includes(`require(${JSON.stringify(`../../${assetPath}`)})`), `${file.path}: Metro registry`);
     if (file.path.endsWith('.pbf')) {
       new PbfReader(bytes).readFields((tag, ids, pbf) => {
         if (tag === 1) pbf.readMessage((field, result, stack) => {
@@ -27,7 +30,7 @@ async function main() {
     }
   }
   assert.equal(catalog.files.length, 257);
-  assert.equal(notices.fontLicense, readFileSync(root + 'FONT-LICENSE.txt', 'utf8'));
+  assert.equal(notices.fontLicense, readFileSync(sharedRoot + 'FONT-LICENSE.txt', 'utf8'));
   const bytes = readFileSync(root + 'basemap.pmtiles');
   const source: Source = { getKey: () => catalog.id, async getBytes(offset, length) {
     const slice = bytes.subarray(offset, offset + length);
@@ -39,7 +42,7 @@ async function main() {
   assert.equal(header.tileType, 1); // MVT
   assert.equal(header.minZoom, catalog.minTileZoom);
   assert.equal(header.maxZoom, catalog.maxTileZoom);
-  const style = makeMapStyle('file:///checked-map/');
+  const style = makeMapStyle('file:///checked-map/', catalog);
   assert.deepEqual(validateStyleMin(style), []);
   assert.ok(!/https?:/.test(JSON.stringify(style)), 'No online style dependency');
   const layers = new Set<string>(), roadKinds = new Set<string>(), missingGlyphs = new Set<string>();
@@ -72,5 +75,6 @@ async function main() {
   assert.equal(missingGlyphs.size, 0, `Missing glyphs for visible labels: ${[...missingGlyphs].join('')}`);
   for (const layer of style.layers) if ('source-layer' in layer) assert.ok(layers.has(layer['source-layer']!), `Missing vector layer ${layer.id}`);
   console.log(JSON.stringify({ map: catalog.id, files: catalog.files.length, bytes: catalog.files.reduce((n, f) => n + f.bytes, 0), tiles, features, glyphs: glyphIds.size, perZoom, roadKinds: [...roadKinds].sort(), result: 'All local resources verified and coverage tiles decoded; native rendering still needs the phone.' }, null, 2));
+  }
 }
 void main().catch(error => { console.error(error); process.exitCode = 1; });

@@ -42,6 +42,8 @@ The authority is [ROADMAP's five M2 criteria](../../ROADMAP.md#milestone-2--cura
 
 ### New-area engineering boundary
 
+**Subsequent implementation on 20 September:** the [second-area extension](M2-clerkenwell-map.md) implements the bounded map association described below, with automated/build evidence and no new phone observation. The following records the constraint at this evidence review's start; it is no longer the sole-map limit of the latest local source. The installed phone has not yet been changed.
+
 The installed transport requires the literal map ID **`north-finchley-abc1a7e4d563d305`**, and rejects route/standing points outside its bounds: longitude **−0.196 to −0.159**, latitude **51.600 to 51.626**. See [catalogue](../../src/map/catalog.json) and [validator](../../src/tours/package.ts). A newly chosen area cannot simply be imported with new story coordinates or a changed map ID.
 
 For an authorised new-area tour, prepare one reviewed offline map bundle with coverage, local style/fonts, attribution and geometry checks; make a bounded area-selection/package association and install a self-contained build containing that area's assets. Preserve both Finchley versions and their saved progress. Assess renderer/packaging effects with automated checks and one useful native map observation if needed. A universal map downloader/importer, server and reusable city database are separate scope, not prerequisites inferred from this workshop.

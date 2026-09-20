@@ -7,6 +7,8 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { validateStyleMin } from '@maplibre/maplibre-gl-style-spec';
 import { prepareMapFiles, type MapFiles } from '../src/map/files';
 import { bounds, covered, makeMapStyle, visibleFix } from '../src/map/style';
+import { mapArea, mapCentre } from '../src/map/areas';
+import clerkenwell from '../src/map/clerkenwell.json';
 
 const data = Buffer.from('test tile bytes'), hash = createHash('md5').update(data).digest('hex');
 const inventory = [{ path: 'basemap.pmtiles', bytes: data.length, md5: hash }, { path: 'fonts/regular/0.pbf', bytes: data.length, md5: hash }];
@@ -97,6 +99,30 @@ test('style validates and every resource URL is local; outside coverage is maske
   assert.equal(covered(bounds[0], bounds[1]), true);
   assert.equal(covered(bounds[0] - 0.00001, bounds[1]), false);
 });
+test('second area selects its own camera, coverage mask and position without widening Finchley', () => {
+  const area = mapArea(clerkenwell.id), center = mapCentre(area.catalog);
+  assert.ok(Math.abs(center[0] + 0.1035) < 1e-10 && Math.abs(center[1] - 51.5255) < 1e-10);
+  assert.throws(() => mapArea('not-installed'), /not bundled/);
+  const fix = { longitude: center[0], latitude: center[1], timestamp: 1000, accuracy: 7, speed: 0 };
+  assert.equal(visibleFix(fix, true, 1500), null);
+  assert.equal(visibleFix(fix, true, 1500, area.catalog), fix);
+  const style = makeMapStyle('file:///maps/clerkenwell/', area.catalog);
+  assert.deepEqual(validateStyleMin(style), []);
+  assert.ok(!/https?:/.test(JSON.stringify(style)));
+  const source = style.sources.basemap;
+  assert.equal(source.type, 'vector');
+  if (source.type === 'vector') assert.deepEqual(source.bounds, clerkenwell.bounds);
+  assert.ok(JSON.stringify(style.sources.outside).includes('51.536'));
+});
+test('repairing the second area leaves the first area and progress intact', () => disk(async (fs, root) => {
+  const first = await prepareMapFiles(fs, root, 'finchley', inventory);
+  const second = await prepareMapFiles(fs, root, 'clerkenwell', inventory);
+  await writeFile(new URL('progress', root), 'saved Finchley offset');
+  await writeFile(new URL('basemap.pmtiles', second), Buffer.alloc(data.length));
+  await prepareMapFiles(fs, root, 'clerkenwell', inventory, true);
+  assert.equal((await fs.info(first + inventory[0].path)).md5, hash);
+  assert.equal(await readFile(new URL('progress', root), 'utf8'), 'saved Finchley offset');
+}));
 test('map position hides stale, stopped, inaccurate, future and outside-area fixes', () => {
   const fix = { longitude: -0.178, latitude: 51.613, timestamp: 1000, accuracy: 10 };
   assert.equal(visibleFix(fix, true, 16000), fix);

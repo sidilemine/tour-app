@@ -5,6 +5,7 @@ import { Fixture } from '../domain/fixture';
 import { narrationAt } from '../domain/narration';
 import { assertTourVersion, LibraryEntry, parseTourPackage, publishTour, stageTour } from './package';
 import { prepareLocalMap } from '../map/localMap';
+import { defaultMapId } from '../map/areas';
 export type { LibraryEntry } from './package';
 
 let storage: Store | undefined;
@@ -12,7 +13,7 @@ function db() { return storage ??= new Store(SQLite.openDatabaseSync('tour-libra
 export function tourLibrary(): LibraryEntry[] { return db().read<LibraryEntry[]>('catalogue') ?? []; }
 export async function importTour(value: unknown): Promise<Fixture> {
   const p = parseTourPackage(value);
-  assertTourVersion(tourLibrary(), p.fixture);
+  assertTourVersion(tourLibrary(), p.fixture, p.mapId);
   if (!FileSystem.documentDirectory) throw Error('Local tour storage unavailable.');
   const directory = `${FileSystem.documentDirectory}tour-packages/${p.fixture.id}-${p.fixture.version}-${Date.now()}-${Math.random().toString(36).slice(2)}/`;
   await FileSystem.makeDirectoryAsync(directory, { intermediates: true });
@@ -25,8 +26,8 @@ export async function importTour(value: unknown): Promise<Fixture> {
         return { bytes: info.size, md5: info.md5 };
       },
     });
-    await prepareLocalMap();
-    publishTour(db(), { fixture: p.fixture, directory, importedAt: new Date().toISOString() });
+    await prepareLocalMap(false, p.mapId);
+    publishTour(db(), { fixture: p.fixture, directory, importedAt: new Date().toISOString(), mapId: p.mapId });
     // Older data remains recoverable. Orphan stage cleanup can wait until there
     // is real storage pressure; never delete a working version during import.
     return p.fixture;
@@ -41,6 +42,12 @@ function exactEntry(fixture: Fixture): LibraryEntry {
   return entry;
 }
 export function tourAudioProfile(fixture: Fixture): string { return exactEntry(fixture).directory; }
+export function tourMapId(fixture?: Fixture | null): string {
+  if (!fixture?.narration) return defaultMapId;
+  const entry = tourLibrary().find(e => e.fixture.id === fixture.id && e.fixture.version === fixture.version
+    && JSON.stringify(e.fixture) === JSON.stringify(fixture));
+  return entry ? entry.mapId ?? defaultMapId : 'unavailable';
+}
 export async function tourAudio(fixture: Fixture): Promise<string[]> {
   const entry = exactEntry(fixture);
   const count = fixture.stops.length + (fixture.narration?.chapters.length ?? 0), result: string[] = [];

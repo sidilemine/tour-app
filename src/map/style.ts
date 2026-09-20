@@ -1,26 +1,29 @@
 import type { StyleSpecification, LngLatBounds } from '@maplibre/maplibre-react-native';
 import type { Fix } from '../domain/engine';
 import catalog from './catalog.json';
+import { type MapCatalog } from './areas';
 
 export const bounds = catalog.bounds as LngLatBounds;
 export const centre: [number, number] = [-0.1785, 51.6130];
-export function covered(longitude: number, latitude: number): boolean {
-  return longitude >= bounds[0] && longitude <= bounds[2] && latitude >= bounds[1] && latitude <= bounds[3];
+export function covered(longitude: number, latitude: number, area: MapCatalog = catalog): boolean {
+  const [west, south, east, north] = area.bounds;
+  return longitude >= west && longitude <= east && latitude >= south && latitude <= north;
 }
-export function visibleFix(fix: Fix | undefined, active: boolean, now: number): Fix | null {
-  return active && fix && now - fix.timestamp <= 15000 && now >= fix.timestamp - 2000 && fix.accuracy >= 0 && fix.accuracy <= 35 && covered(fix.longitude, fix.latitude) ? fix : null;
+export function visibleFix(fix: Fix | undefined, active: boolean, now: number, area: MapCatalog = catalog): Fix | null {
+  return active && fix && now - fix.timestamp <= 15000 && now >= fix.timestamp - 2000 && fix.accuracy >= 0 && fix.accuracy <= 35 && covered(fix.longitude, fix.latitude, area) ? fix : null;
 }
 
 // Only embedded GeoJSON and local file sources. No default style, sprite,
 // terrain, remote glyphs, or MapLibre location subscription.
-export function makeMapStyle(directory: string): StyleSpecification {
+export function makeMapStyle(directory: string, area: MapCatalog = catalog): StyleSpecification {
   if (!directory.startsWith('file:///') || !directory.endsWith('/')) throw Error('Map needs an absolute local directory');
+  const bounds = area.bounds as LngLatBounds;
   const [w, s, e, n] = bounds;
   return {
-    version: 8, name: 'North Finchley offline proof',
+    version: 8, name: `${area.id} offline map`,
     glyphs: `${directory}fonts/{fontstack}/{range}.pbf`,
     sources: {
-      basemap: { type: 'vector', url: `pmtiles://${directory}basemap.pmtiles`, bounds, minzoom: 0, maxzoom: 15,
+      basemap: { type: 'vector', url: `pmtiles://${directory}basemap.pmtiles`, bounds, minzoom: area.minTileZoom, maxzoom: area.maxTileZoom,
         attribution: '© OpenStreetMap contributors · Natural Earth · Protomaps' },
       outside: { type: 'geojson', data: { type: 'Feature', properties: {}, geometry: { type: 'Polygon', coordinates: [
         [[-180, -85], [180, -85], [180, 85], [-180, 85], [-180, -85]],

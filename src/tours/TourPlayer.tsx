@@ -6,7 +6,7 @@ import * as session from '../session/session';
 import { eligible } from '../domain/engine';
 import { narrationAt } from '../domain/narration';
 import { OfflineMap } from '../map/OfflineMap';
-import { importTour, tourLibrary } from './nativeLibrary';
+import { importTour, tourLibrary, tourMapId } from './nativeLibrary';
 import { bundledTours } from './bundled';
 import { StoryReview } from '../feedback/StoryReview';
 import { ExportDialog } from '../export/ExportDialog';
@@ -52,7 +52,7 @@ export function TourPlayer({ onOpenLab }: { onOpenLab: () => void }) {
   }
   const readStory = reading !== null && tour ? narrationAt(tour, reading) : undefined;
   return <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
-    <Text style={styles.eyebrow}>FINCHLEY · OFFLINE WALKS</Text>
+    <Text style={styles.eyebrow}>YOUR OFFLINE WALKS</Text>
     <Text style={styles.heading}>A different view of familiar streets.</Text>
     {fatal ? <Text selectable style={styles.warning}>{fatal}</Text> : null}
     <View style={styles.card}>
@@ -61,7 +61,7 @@ export function TourPlayer({ onOpenLab }: { onOpenLab: () => void }) {
         <Text style={styles.title}>{entry.fixture.title}</Text><Text style={styles.body}>{entry.fixture.narration?.description}</Text>
         <Button label={tour?.id === entry.fixture.id && tour.version === entry.fixture.version ? 'Selected' : 'Choose this tour'} disabled={busy || state.active || (tour?.id === entry.fixture.id && tour.version === entry.fixture.version)} action={() => void run(() => session.loadFixture(JSON.stringify(entry.fixture)))} />
       </View>)}
-      {bundledTours.some(t => !library.some(e => e.fixture.id === t.fixture.id && e.fixture.version === t.fixture.version)) && <Button label="Prepare both Finchley tours offline" disabled={busy || state.active} action={() => void run(async () => {
+      {bundledTours.some(t => !library.some(e => e.fixture.id === t.fixture.id && e.fixture.version === t.fixture.version)) && <Button label="Prepare bundled tours offline" disabled={busy || state.active} action={() => void run(async () => {
         for (const p of bundledTours) await importTour(p);
         await session.loadFixture(JSON.stringify(bundledTours[0].fixture));
       })} />}
@@ -80,7 +80,7 @@ export function TourPlayer({ onOpenLab }: { onOpenLab: () => void }) {
         <Text style={styles.title}>{playing?.title ?? (next < 0 ? 'All stops complete' : 'Time to walk')}</Text>
         <Text style={styles.body}>{playing ? `${state.playback.status} · ${Math.floor(state.playback.offset)} seconds` : next >= 0 ? `Next: ${tour.stops[next]?.title}` : narration.finishInstructions}</Text>
         {state.hold && <Text style={styles.hold}>Paused. Resume when you’re ready.</Text>}
-        <Button label={state.startedAt ? 'Start location tracking' : 'Start tour at Tally Ho'} disabled={busy || state.active} action={() => void run(() => session.start(false))} />
+        <Button label={state.startedAt ? 'Start location tracking' : `Start tour at ${tour.stops[0].title}`} disabled={busy || state.active} action={() => void run(() => session.start(false))} />
         <View style={styles.row}>
           <View style={styles.flex}><Button label="Pause" disabled={busy} action={() => void run(() => session.dispatch({ type: 'pause', at: Date.now() }))} /></View>
           <View style={styles.flex}><Button label="Resume" disabled={busy} action={() => void run(() => session.dispatch({ type: 'resume', at: Date.now() }))} /></View>
@@ -112,7 +112,7 @@ export function TourPlayer({ onOpenLab }: { onOpenLab: () => void }) {
     </>}
     <Button secondary label="Technical tools and saved test results" disabled={busy} action={onOpenLab} />
     <Button secondary label="Export local diagnostics" disabled={busy} action={() => void run(async () => setExportDraft(makeExport('walking-diagnostics', await session.diagnosticSnapshot())))} />
-    {map && <OfflineMap state={state} fixture={tour} onClose={() => setMap(false)} />}
+    {map && <OfflineMap state={state} fixture={tour} mapId={tourMapId(tour)} onClose={() => setMap(false)} />}
     {review !== null && tour && <StoryReview fixture={tour} storyIndex={review} onClose={() => setReview(null)} />}
     {exportDraft && <ExportDialog draft={exportDraft} onClose={() => setExportDraft(null)} />}
     {readStory && tour && <Modal visible animationType="slide" onRequestClose={() => setReading(null)}><ScrollView style={styles.screen} contentContainerStyle={styles.content}>

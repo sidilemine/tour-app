@@ -1,27 +1,34 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { AppState, Modal, Platform, Pressable, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, View } from 'react-native';
-import { Camera, GeoJSONSource, Layer, LogManager, Map, NetworkManager } from '@maplibre/maplibre-react-native';
+import { Camera, GeoJSONSource, Layer, LogManager, Map, NetworkManager, type LngLatBounds } from '@maplibre/maplibre-react-native';
 import type { State } from '../domain/engine';
 import type { Fixture } from '../domain/fixture';
 import { prepareLocalMap } from './localMap';
-import { bounds, centre, makeMapStyle, visibleFix } from './style';
-import catalog from './catalog.json';
+import { makeMapStyle, visibleFix } from './style';
+import { defaultMapId, mapAreas, mapCentre } from './areas';
 import notices from './notices.json';
 
-const initialViewState = { center: centre, zoom: 15.5 };
-
-export function OfflineMap({ state, fixture, onClose }: { state: State; fixture?: Fixture | null; onClose: () => void }) {
+type Props = { state: State; fixture?: Fixture | null; mapId?: string; onClose: () => void };
+export function OfflineMap(props: Props) {
+  return <AreaOfflineMap key={props.mapId ?? defaultMapId} {...props} />;
+}
+function AreaOfflineMap({ state, fixture, mapId = defaultMapId, onClose }: Props) {
+  const area = mapAreas.find(candidate => candidate.catalog.id === mapId);
+  const catalog = area?.catalog;
+  const initialViewState = React.useMemo(() => catalog ? { center: mapCentre(catalog), zoom: 15.5 } : undefined, [catalog]);
   const [directory, setDirectory] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const failure = catalog ? error : 'This tour’s offline map is unavailable in this app.';
   const [attempt, setAttempt] = useState(0), [credits, setCredits] = useState(false);
   const [renderMs, setRenderMs] = useState<number | null>(null);
   const [now, setNow] = useState(() => Date.now());
   const openedAt = useRef(0), rendered = useRef(false);
-  const style = React.useMemo(() => directory ? makeMapStyle(directory) : null, [directory]);
+  const style = React.useMemo(() => directory && catalog ? makeMapStyle(directory, catalog) : null, [directory, catalog]);
   useEffect(() => {
+    if (!catalog) return;
     let cancelled = false;
     openedAt.current = Date.now(); rendered.current = false;
-    void prepareLocalMap(attempt > 0).then(path => {
+    void prepareLocalMap(attempt > 0, mapId).then(path => {
       if (cancelled) return;
       NetworkManager.setConnected(false);
       setDirectory(path);
@@ -29,13 +36,13 @@ export function OfflineMap({ state, fixture, onClose }: { state: State; fixture?
     const timeout = setTimeout(() => { if (!rendered.current && !cancelled) setError('The map has not finished drawing. Return to the player or rebuild the local map copy.'); }, 45000);
     LogManager.onLog(log => { if (!cancelled && log.level === 'error') setError(`Map rendering error: ${log.message}`); return false; });
     return () => { cancelled = true; clearTimeout(timeout); LogManager.onLog(() => false); };
-  }, [attempt]);
+  }, [attempt, catalog, mapId]);
   useEffect(() => {
     const timer = setInterval(() => setNow(Date.now()), 1000);
     const sub = AppState.addEventListener('change', () => setNow(Date.now()));
     return () => { clearInterval(timer); sub.remove(); };
   }, []);
-  const fix = visibleFix(state.location.fix, state.active, now);
+  const fix = catalog ? visibleFix(state.location.fix, state.active, now, catalog) : null;
   function didRender() {
     if (!rendered.current) { rendered.current = true; setRenderMs(Date.now() - openedAt.current); }
   }
@@ -43,19 +50,19 @@ export function OfflineMap({ state, fixture, onClose }: { state: State; fixture?
     <SafeAreaView style={styles.screen}>
       <View style={styles.header}>
         <Pressable accessibilityRole="button" onPress={onClose} style={styles.button}><Text style={styles.link}>Back to player</Text></Pressable>
-        <Text style={styles.title}>North Finchley</Text>
+        <Text style={styles.title}>{area?.title ?? 'Offline map'}</Text>
         <Text style={styles.body}>{fixture?.narration ? fixture.title : 'Offline area map'}</Text>
       </View>
       {credits ? <ScrollView style={styles.credits}>
         <Pressable accessibilityRole="button" onPress={() => setCredits(false)} style={styles.button}><Text style={styles.link}>Back to map</Text></Pressable>
         <Text selectable style={styles.body}>{notices.attribution}{'\n\n'}{notices.fontLicense}{'\n\n'}{notices.rendererLicenses}</Text>
-      </ScrollView> : error ? <View style={styles.message}>
-        <Text style={styles.title}>Map unavailable</Text><Text selectable style={styles.body}>{error}</Text>
+      </ScrollView> : failure ? <View style={styles.message}>
+        <Text style={styles.title}>Map unavailable</Text><Text selectable style={styles.body}>{failure}</Text>
         <Text style={styles.body}>The player and saved tour progress remain available.</Text>
-        <Pressable accessibilityRole="button" style={styles.button} onPress={() => { setDirectory(null); setError(null); setRenderMs(null); setAttempt(n => n + 1); }}><Text style={styles.link}>Rebuild local map copy</Text></Pressable>
+        {catalog && <Pressable accessibilityRole="button" style={styles.button} onPress={() => { setDirectory(null); setError(null); setRenderMs(null); setAttempt(n => n + 1); }}><Text style={styles.link}>Rebuild local map copy</Text></Pressable>}
       </View> : style ? <Map style={styles.map} mapStyle={style} attribution={false} logo={false} compass={false} touchRotate={false} touchPitch={false} preferredFramesPerSecond={30}
         onDidFinishRenderingMapFully={didRender} onDidFailLoadingMap={() => setError('The local map could not be loaded.')}>
-        <Camera initialViewState={initialViewState} minZoom={14} maxZoom={18} maxBounds={bounds} />
+        <Camera initialViewState={initialViewState} minZoom={14} maxZoom={18} maxBounds={catalog!.bounds as LngLatBounds} />
         {fixture?.narration && <>
           <GeoJSONSource id="planned-route" data={{ type: 'Feature', properties: {}, geometry: { type: 'LineString', coordinates: fixture.route.map(p => [p.longitude, p.latitude]) } }}>
             <Layer id="planned-route-line" type="line" paint={{ 'line-color': '#216846', 'line-width': 4, 'line-opacity': 0.8 }} />
@@ -73,7 +80,7 @@ export function OfflineMap({ state, fixture, onClose }: { state: State; fixture?
         <Text style={styles.body}>{fix ? `Recent tour position · ±${Math.round(fix.accuracy)} m` : 'No recent tour position inside this map area.'}</Text>
         <Text style={styles.small}>Grey areas are outside the saved coverage. Street data does not verify access or a safe place to stop.</Text>
         <Pressable accessibilityRole="button" onPress={() => setCredits(!credits)} style={styles.button}><Text style={styles.link}>© OpenStreetMap contributors · Map credits</Text></Pressable>
-        <Text selectable style={styles.small}>{catalog.id}{'\n'}{renderMs === null ? 'Waiting for a complete map frame' : `First complete frame: ${(renderMs / 1000).toFixed(1)} s · files checked`}</Text>
+        <Text selectable style={styles.small}>{mapId}{'\n'}{renderMs === null ? 'Waiting for a complete map frame' : `First complete frame: ${(renderMs / 1000).toFixed(1)} s · files checked`}</Text>
       </View>
     </SafeAreaView>
   </Modal>;

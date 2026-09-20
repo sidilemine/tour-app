@@ -1,12 +1,12 @@
 import { z } from 'zod';
 import { Fixture, parseFixture } from '../domain/fixture';
 import { narrationAt } from '../domain/narration';
-import catalog from '../map/catalog.json';
+import { defaultMapId, mapArea } from '../map/areas';
 import { Store } from '../storage/store';
 
 export const transportSchema = z.object({
   format: z.literal('walking-tour-package'), version: z.literal(1),
-  mapId: z.literal(catalog.id), fixture: z.unknown(),
+  mapId: z.string().refine(id => { try { mapArea(id); return true; } catch { return false; } }, 'Offline map is not bundled'), fixture: z.unknown(),
   assets: z.array(z.object({ key: z.string().regex(/^[a-z0-9][a-z0-9-]{0,79}$/), base64: z.string().min(4).max(28_000_000).regex(/^[A-Za-z0-9+/]*={0,2}$/) }).strict()).min(3).max(16),
 }).strict();
 export type TourTransport = z.infer<typeof transportSchema>;
@@ -44,7 +44,7 @@ export function parseTourPackage(value: unknown): TourTransport & { fixture: Fix
       if (evidence.sourceUrls.some(url => !sources.has(url))) throw Error(`Unknown evidence source: ${story.id}`);
     }
   }
-  const [west, south, east, north] = catalog.bounds;
+  const [west, south, east, north] = mapArea(p.mapId).catalog.bounds;
   for (const point of [...fixture.route, ...fixture.stops.map(stop => stop.standing)]) if (point.latitude < south || point.latitude > north || point.longitude < west || point.longitude > east) throw Error('Tour exceeds the installed offline map.');
   return { ...p, fixture };
 }
@@ -65,15 +65,17 @@ export async function stageTour(p: ReturnType<typeof parseTourPackage>, director
   }
 }
 
-export type LibraryEntry = { fixture: Fixture; directory: string; importedAt: string };
-export function assertTourVersion(entries: LibraryEntry[], fixture: Fixture) {
+// Entries saved before the second area have no mapId and refer to Finchley.
+export type LibraryEntry = { fixture: Fixture; directory: string; importedAt: string; mapId?: string };
+export function assertTourVersion(entries: LibraryEntry[], fixture: Fixture, mapId = defaultMapId) {
   const same = entries.find(entry => entry.fixture.id === fixture.id && entry.fixture.version === fixture.version);
-  if (same && JSON.stringify(same.fixture) !== JSON.stringify(fixture)) throw Error('This ID/version already names different content. Use a new version.');
+  if (same && (JSON.stringify(same.fixture) !== JSON.stringify(fixture) || (same.mapId ?? defaultMapId) !== mapId)) throw Error('This ID/version already names different content. Use a new version.');
 }
 // Read immediately before the synchronous publish so concurrent staging cannot
 // overwrite a tour imported while its files were being prepared.
 export function publishTour(store: Pick<Store, 'read' | 'commit'>, entry: LibraryEntry) {
   const latest = store.read<LibraryEntry[]>('catalogue') ?? [];
-  assertTourVersion(latest, entry.fixture);
+  mapArea(entry.mapId ?? defaultMapId);
+  assertTourVersion(latest, entry.fixture, entry.mapId);
   store.commit('catalogue', [...latest.filter(previous => previous.fixture.id !== entry.fixture.id || previous.fixture.version !== entry.fixture.version), entry]);
 }
