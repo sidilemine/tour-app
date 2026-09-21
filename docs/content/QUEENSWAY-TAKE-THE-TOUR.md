@@ -4,6 +4,8 @@
 
 Start at **QUEENS, 17 Queensway**, about a minute north of Queensway station. Finish near **46 Queensborough Terrace**. The route takes in QUEENS, Whiteleys and Leinster Gardens, using public streets and passageways. No tickets or park opening hours are needed. Crossing waits or a leisurely pace can add a few minutes.
 
+**Ready on your phone:** installed, selected and unstarted. The map and first directions passed the silent offline check; Wi-Fi and mobile data are restored.
+
 ## Start the demo
 
 1. Choose **Queensway — Behind the façades** in the app.

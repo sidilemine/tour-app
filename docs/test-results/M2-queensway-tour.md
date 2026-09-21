@@ -1,6 +1,6 @@
 # M2 Queensway evening demo — preparation and handoff
 
-21 September 2026. **Tour prepared and both Android builds verified; awaiting silent phone handoff.** This owner-requested dinner demo adds content and a map, with no native audio/location behavior, dependency, map-camera or guide-procedure change. M2 remains open.
+21 September 2026. **Installed and ready for the ordinary demo; silent phone handoff completed.** This owner-requested dinner demo adds content and a map, with no native audio/location behavior, dependency, map-camera or guide-procedure change. M2 remains open.
 
 [Owner guide](../content/QUEENSWAY-TAKE-THE-TOUR.md) · [content inputs](../../content/queensway/README.md) · [research/review record](../content/authoring/queensway-2026-09-21/README.md).
 
@@ -41,7 +41,20 @@ Both Android variants built successfully. The final self-contained APK contains 
 - `walking-tour-offline.apk`: 96,325,221 bytes; SHA-256 `4f7497dfad84f9431bfebbfd7f2463a1c6b8d2e7daab415500607fccd3894fb1`.
 - `walking-tour-development.apk`: 83,608,769 bytes; SHA-256 `322d3a9c8c2afbec089b0b7c33e232eb2bd07f3c3170487d1619b0531873d537`.
 
-The Pixel was absent from `adb devices` at the prepared handoff check. The owner has been asked to connect it; installation and the new map’s native opening view remain pending. No retained-progress observation or phone-ready claim is made. Existing installed Highgate source remains the last verified handoff.
+### Silent Pixel result, 21 September
+
+Completed on the Pixel 6 / Android 17. Device preparation/checks ran approximately 16:43–16:52 BST. Installation used `adb install -r`; a readback of the installed APK matched the full offline SHA-256 above. No app uninstall, storage clearing, walk reset, progress edit or review edit occurred.
+
+- Before replacement, Highgate was selected. After replacement its existing introduction and the prior library entries remained available; **Prepare bundled tours offline** added Queensway and selected it. This is representative UI preservation plus an in-place update, not a fresh checksum audit of every old progress/review/voice file.
+- Metro was absent. After Android reported **no active default network**, the app was force-stopped and cold-reopened; Queensway remained selected and unstarted. Wi-Fi and mobile data were disabled for the check.
+- The new map’s actual opening screenshot was inspected: **the complete route, all three numbered stops and the mapped return are visible**. First complete frame **0.6 seconds**, files checked. No default-centre correction or additional build was needed. Native drawing is observed separately from the prepared geometry/media checks.
+- The first stop’s reader showed the QUEENS station approach, exterior standing place, and the two-stage signals instruction across Queensway then Porchester Gardens, offline. The transcript was present. One reader-close tap did not dismiss the modal; Android Back closed it normally. No playback command was sent.
+- Final screen: **TOUR STOPPED**, **Start tour at QUEENS**, automatic narration checked/enabled. The initial held state is preserved until the owner starts the walk. No Start, Resume, Play, recording or audible test was performed.
+- Wi-Fi and mobile data restored to enabled and read back; Bluetooth and airplane mode remained off, matching the initial settings. The owner was told the phone could be disconnected before documentation work continued.
+
+A minor text-formatting defect is visible in the first approach (`about60metres`, `at17`). Its meaning is clear and spoken directions are unaffected. Keep this cosmetic correction for the next content revision, with the usual new-version rule; it does not justify another build or phone session for tonight. The final review should include every visitor-facing field, not only transcripts.
+
+No fresh EarFun/Spotify, subjective narration-quality or outdoor automatic-arrival/chapter result is implied. Reuse the unchanged prior native/audio evidence; ordinary demo feedback is sufficient next input.
 
 ## Ordinary-use limits
 

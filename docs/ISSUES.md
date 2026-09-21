@@ -246,6 +246,8 @@ These are selected unresolved items, not an additional acceptance list. The deta
 
 **Pilot integration failure corrected.** Substituting the railway opening removed Moss Hall's introduction, leaving “its estate” without an antecedent. One review also encountered a draft still changing.
 
+**Small Queensway follow-up:** the installed first-approach field still reads `about60metres` / `at17`; the spoken directions are clean. The cosmetic repair is deferred to the next version, with no extra phone check. Include introduction, approach, viewpoint, access and finish fields in the final human-readable review as well as the script and direction arrays. [Observed result](test-results/M2-queensway-tour.md#silent-pixel-result-21-september).
+
 **Carry forward:** require a ready signal and named version/hash, then read the complete substituted chapter and surrounding context. Preserve V1 and record V2's response. Changed text needs bounded rereview, not a claim that the earlier review still covers it. Use a fresh reviewer where helpful, while honestly describing any earlier research involvement. Briefs already asked for distinctive detail; reviewing the actual result remains necessary. [Pilot execution](content/EDITORIAL-REVIEW-RECORD.md#21-a-visible-agent-authoring-pilot), [repair](content/authoring/pilot-2026-09-19/REVISION-NOTES.md#r01-resolved--introduce-the-house-before-its-estate).
 
 ## Voice and media production
@@ -269,6 +271,8 @@ These are selected unresolved items, not an additional acceptance list. The deta
 **Fixed with representative phone evidence; no dedicated camera regression test.** Highgate source 03d87e38b7e80ca8 rendered at the extract centre/zoom 15.5 with its route off-screen. Shared authored-map code now fits route bounds with padding and allows zoom 13. Commit ec04275; installed source 1bd3e861342b27e4.
 
 **Evidence:** actual offline opening showed the complete Highgate route/five markers and retained Finchley A's route/five markers. The 161 tests did not specifically test opening-camera behavior. A frame-complete event is not usable orientation.
+
+**Additional evidence, 21 September:** the unchanged shared camera also opened the new compact Queensway route with all three markers and its return visible in the silent offline handoff (0.6-second first complete frame). No dedicated camera calculation test was added. [Queensway result](test-results/M2-queensway-tour.md#silent-pixel-result-21-september).
 
 **Carry forward:** retain Highgate as the displaced-route reproduction. Inspect the actual opening view when camera behavior or materially different route extent changes. Add a focused automated check if this calculation is refactored or grows; it still cannot prove native drawing. No new phone session follows from this log. [Device correction](test-results/M2-hampstead-tour.md#connected-session-correction).
 

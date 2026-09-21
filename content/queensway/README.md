@@ -29,4 +29,6 @@ These are authoring calculations and dated desk checks, not current field cleara
 
 [Owner guide](../../docs/content/QUEENSWAY-TAKE-THE-TOUR.md) · [exact build and phone status](../../docs/test-results/M2-queensway-tour.md).
 
+Installed source `056c32524c6280bf` passed the silent Pixel handoff: cold offline map with the complete route/three stops, first reader and stopped/unstarted Queensway. Original network settings restored; the phone is released. This reuses the 166 passing preparation tests and unchanged native/audio evidence. A minor first-approach spacing defect remains for the next version, without affecting spoken directions.
+
 Original AI-assisted prose and local George synthesis, with upfront provenance and source notes. OpenStreetMap attribution and bundled map/font notices are retained. No source photographs, Street View frames, third-party tour scripts or music are packaged. Prior native/headset evidence is reused; new recordings have media verification, with subjective listening and ordinary demo reactions separate.

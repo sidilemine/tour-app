@@ -369,6 +369,12 @@ Guidance revision 14 and writing brief v4 carry this direction forward. The exis
 
 **Delivery/evidence:** local George files are fully decoded and timed, and all 166 tests pass. [Build and phone status](../test-results/M2-queensway-tour.md) is maintained separately. This is a social outing: no per-stop recording requirement, extra listening battery or technical field test. Reuse prior unchanged native/headset evidence. The bounded checks, corrections and limits are added to the general issues log; a successful build is not enjoyment, current route clearance or an automatic-launch result. M2 closure and E1 remain separate work.
 
+### 34 Queensway silent phone handoff
+
+**21 September 2026. Owner connected the phone for delivery.** The prepared self-contained build was installed in place and verified byte-for-byte. With Metro absent and Android reporting no active network, the app cold-opened Queensway and drew the complete route, three markers and return in its initial map view. The first reader’s approach and two-stage crossing instructions were inspected offline. The existing shared camera correction worked without further app changes.
+
+**Handback:** Queensway selected/unstarted, automatic narration on, tracking stopped; original network settings restored and read back. The phone was released after approximately nine minutes of device checks. Existing entries remain available; no walk/review reset. No audible test or extra outing was requested. A minor first-approach spacing defect is retained for the next content revision; the general review log now explicitly includes all visitor-facing fields. [Exact result and limits](../test-results/M2-queensway-tour.md#silent-pixel-result-21-september). Ordinary demo enjoyment and automatic street triggering remain unobserved.
+
 ## Questions to carry into a later systematic review
 
 - Does context before anecdote usually improve the story, and when can an immediate intriguing detail work better?
