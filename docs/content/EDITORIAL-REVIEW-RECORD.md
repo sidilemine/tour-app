@@ -341,6 +341,14 @@ Guidance revision 14 and writing brief v4 carry this direction forward. The exis
 
 **Final state:** Highgate selected/unstarted, automatic narration on, tracking stopped; original network settings restored and the phone released. No new listening/content reaction is implied. The useful process lesson is to inspect the actual opening view, not treat a “map rendered” flag as evidence that the screen helps orientation. Ordinary walking feedback remains the next content/route evidence.
 
+### 31 Making discovered issues durable
+
+**21 September 2026. Owner question:** while building tours, how do we prevent issues such as map centring recurring, or ensure they are flagged for later correction?
+
+**Audit and response:** the camera correction is shared code and was observed on two routes, with a retained result record. The general 161-test suite does not specifically guard camera opening. Existing records already preserve defects and uncertainty, but discovery depended too much on finding individual historical documents. A short [known-issue index](../ISSUES.md) now links material issues, evidence, recurrence safeguards and concrete revisit triggers; repository startup instructions and agent handoffs point to it. It initially consolidates recent M2 follow-ups, not every historical issue.
+
+**Scope:** documentation only; no app change, extra phone session or new test campaign. Reproducible logic failures should gain useful automated regressions; visual/native outcomes need appropriately scoped observation. Editorial lessons still feed living guidance and writing briefs. This organizational improvement does not claim to make recurrence impossible or mark unresolved field behavior fixed.
+
 ## Questions to carry into a later systematic review
 
 - Does context before anecdote usually improve the story, and when can an immediate intriguing detail work better?

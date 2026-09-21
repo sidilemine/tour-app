@@ -8,6 +8,8 @@ An offline walking-tour app for Sidi's Pixel, built with React Native, Expo and 
 
 The original [brief](ai_self_guided_tour_project_brief.md) is unchanged. [PRODUCT.md](PRODUCT.md), [ARCHITECTURE.md](ARCHITECTURE.md), [AGENTS.md](AGENTS.md) and [ROADMAP.md](ROADMAP.md) are the maintained project contract. The owner's latest instructions override conflicting brief recommendations.
 
+[Known issues and follow-ups](docs/ISSUES.md) is the current index of material bugs, unresolved questions, recurrence safeguards and explicit revisit triggers. Detailed test and editorial records remain linked evidence.
+
 ## Install and take the first walk
 
 **Use the self-contained APK for recording paths and using the app away from the Mac.** The engineer should leave this variant installed between assisted test sessions and verify reopening with Metro stopped. The development APK needs Metro again on a cold start; a “Failed to connect to /127.0.0.1:8081” launcher error means its development server is unavailable. Switch variants with `adb install -r`, preserving saved app data; do not uninstall or clear storage. The required development-build walk is a separately prepared M1 test, followed by restoring the self-contained variant.
