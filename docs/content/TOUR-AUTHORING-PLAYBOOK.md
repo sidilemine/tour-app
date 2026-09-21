@@ -10,6 +10,8 @@ Tour B already demonstrated that this can work: Sidi explicitly enjoyed it and l
 
 ## How firm are these instructions
 
+Before applying or generalising this process, consult the relevant functions in the [issues, fixes and reusable lessons log](../ISSUES.md). It preserves examples and corrections from both project conversations, including later refinements to this version-1 playbook. Use the current living guidance and role briefs where an early proposal has been superseded.
+
 **Owner directions** govern the experience: survey existing tours first, ground stories in place and time, research context, return to the present, allow informed colour and wider thought, and divide authoring work among specialists. The source map links these to the actual comments.
 
 **Proposed working method** covers the sequence, handoff documents and review prompts below. It is ready to try and revise; the owner has not separately approved every implementation detail. Use ordinary editorial judgement within it rather than stopping for repeated approvals.

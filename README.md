@@ -8,7 +8,7 @@ An offline walking-tour app for Sidi's Pixel, built with React Native, Expo and 
 
 The original [brief](ai_self_guided_tour_project_brief.md) is unchanged. [PRODUCT.md](PRODUCT.md), [ARCHITECTURE.md](ARCHITECTURE.md), [AGENTS.md](AGENTS.md) and [ROADMAP.md](ROADMAP.md) are the maintained project contract. The owner's latest instructions override conflicting brief recommendations.
 
-[Known issues and follow-ups](docs/ISSUES.md) is the current index of material bugs, unresolved questions, recurrence safeguards and explicit revisit triggers. Detailed test and editorial records remain linked evidence.
+[Known issues, fixes and reusable lessons](docs/ISSUES.md) is the general log organised by agent function, covering both the foundation/M1 and M2 conversations. Consult it for demonstrated fixes, editorial lessons, unresolved questions and safeguards before new work or builder automation. Detailed test and editorial records remain linked evidence.
 
 ## Install and take the first walk
 

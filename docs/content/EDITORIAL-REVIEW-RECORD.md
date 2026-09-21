@@ -349,6 +349,16 @@ Guidance revision 14 and writing brief v4 carry this direction forward. The exis
 
 **Scope:** documentation only; no app change, extra phone session or new test campaign. Reproducible logic failures should gain useful automated regressions; visual/native outcomes need appropriately scoped observation. Editorial lessons still feed living guidance and writing briefs. This organizational improvement does not claim to make recurrence impossible or mark unresolved field behavior fixed.
 
+### 32 Retrospective log across both project conversations
+
+**21 September 2026. Owner direction:** keep one general log of known issues and fixes for later generalisation and the automated tour builder; go back through this conversation and the previous one, organised around agent functions.
+
+**Completed response:** expanded the existing [issues log](../ISSUES.md) across research, curation, writing, routing, review, media, maps/packages, runtime, feedback and delivery. The lead reviewed user messages and recorded answers from the foundation/M1 and M2 conversations; three bounded audits reconciled the retained editorial, route and engineering records, including the existing 100-comment index and both feedback recoveries. Entries retain concrete examples, actual responses, evidence limits and future safeguards. The five existing issue IDs remain; this is one cross-function entry point, with detailed evidence still in its original records.
+
+**Important distinctions retained:** criticism is general learning alongside the first tour's demonstrated enjoyment; imaginative reconstruction is permitted and should reveal unfamiliar experience; the numerical digression budget remains unapproved; the short-test request is not a tour-duration cap. A later headset pass does not explain its field failure, saved chapter completion does not prove automatic launch, and general passing tests do not establish a camera regression. The original M1 acceptance conditions remain historical evidence under the later personal-use testing policy.
+
+**Reuse and scope:** startup instructions, role briefs, the playbook and M4/M5 roadmap now point to applicable log entries. This documentation task did not change the app, installed tours, phone or milestone acceptance; it did not initiate a database, automation framework, fresh transcription or more physical testing.
+
 ## Questions to carry into a later systematic review
 
 - Does context before anecdote usually improve the story, and when can an immediate intriguing detail work better?

@@ -155,6 +155,8 @@ Acceptance: resolve the selected blockers to ordinary walking and preserve usefu
 
 **Status: planned after the authored package and walking behavior stabilize.** Build local TypeScript tooling from authored inputs to the existing package format; no server.
 
+Before designing the compiler or catalogue, use the [issues, fixes and reusable lessons log](docs/ISSUES.md) to recover actual failure cases, working contracts and owner decisions. Start with existing tour inputs and reuse cases; carry applicable lessons into agent assignments and validation without turning editorial preferences into unsupported hard rules.
+
 Acceptance: a fixture compiles repeatably; normalized real-routing outputs determine timing before writing; measured audio durations enforce budgets; missing assets, evidence, physical verification or rights fail validation. Cache reusable outputs within this project where permitted. Demonstrate a different provider fixture without changing playback. Emit a local package for import; publication is a separate authorization.
 
 ### Reusable location and research catalogue
@@ -172,6 +174,8 @@ Done when our two tours can reuse shared places/evidence without duplicate resea
 ## Milestone 5 — bounded content automation
 
 **Status: gated by E1's positive decision and M4.** Automate only demonstrated useful stages: evidence collection/review, selection/routing, narrative planning, evidence-bound writing/verification, pronunciation, TTS and assembly.
+
+Use the same [function-organised log](docs/ISSUES.md) when selecting stages and review boundaries. Preserve its distinctions between deterministic checks, semantic/editorial judgement and actual physical evidence; automate demonstrated safeguards and retain meaningful human review.
 
 Acceptance: stage inputs/outputs are inspectable, repeatable/cached and independently retryable; factual sentences retain evidence passages and review states; unsupported claims/physical instructions block package readiness. Audio is generated once, duration checked, and the package plays with generation services unavailable. Track actual usage/cost against an approved budget. Human review remains where E1 shows it is needed. No city-wide knowledge base or backend is implied.
 
