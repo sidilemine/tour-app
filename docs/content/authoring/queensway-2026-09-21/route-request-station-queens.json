@@ -1,0 +1,23 @@
+{
+  "costing": "pedestrian",
+  "costing_options": {
+    "pedestrian": {
+      "walking_speed": 4.5
+    }
+  },
+  "units": "kilometers",
+  "language": "en-GB",
+  "id": "queensway-station-queens",
+  "locations": [
+    {
+      "lat": 51.5104788,
+      "lon": -0.1871803,
+      "type": "break"
+    },
+    {
+      "lat": 51.510895,
+      "lon": -0.1873,
+      "type": "break"
+    }
+  ]
+}

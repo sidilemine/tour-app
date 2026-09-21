@@ -1,0 +1,200 @@
+{
+  "area": "Queensway / Bayswater",
+  "checkedOn": "2026-09-21",
+  "scope": "Three exterior stops and one short walking chapter; no admission or interior dependency",
+  "sources": [
+    {
+      "id": "qes-museum-skating",
+      "title": "Skating through history: London's ice rinks",
+      "publisher": "London Museum",
+      "url": "https://www.londonmuseum.org.uk/collections/london-stories/skating-through-history-londons-ice-rinks/",
+      "kind": "institutional history with collection photographs",
+      "access": "Full article text/caption read; children's photograph directly inspected in live browser at approximately 2026-09-21 15:21 UTC.",
+      "date": null,
+      "limits": "No precise party date established; visual inspection supersedes the initial alt-text-only clothing interpretation. Museum identifies party and venue; the photograph supplies the visible scene.",
+      "verificationHistory": [
+        {
+          "stage": "initial text-only research",
+          "access": "full article text and image descriptions read",
+          "limits": "Image alternative/caption read; underlying children's photograph not independently visually inspected. No precise party date established.",
+          "outcome": "Browser inspection subsequently succeeded; descriptive alt text mischaracterised visible clothing."
+        }
+      ],
+      "imageUrl": "https://media.londonmuseum.org.uk/images/WagtailSource-Queens-Ice-Rink-Ba.width-1136.format-webp_e1Qv7iz.webp"
+    },
+    {
+      "id": "qes-queens-skating",
+      "title": "Ice skating at QUEENS",
+      "publisher": "QUEENS",
+      "url": "https://queens.london/skating/",
+      "kind": "current operator page",
+      "access": "full page read",
+      "date": null,
+      "limits": "Current activities and corroborating opening year; avoid unsupported superlatives and celebrity claims."
+    },
+    {
+      "id": "qes-queens-hours",
+      "title": "About QUEENS",
+      "publisher": "QUEENS",
+      "url": "https://queens.london/about/",
+      "kind": "current operator access information",
+      "access": "full page read",
+      "date": null,
+      "limits": "Dated operational information; exterior narration does not depend on admission."
+    },
+    {
+      "id": "qes-queens-faq",
+      "title": "FAQs and terms",
+      "publisher": "QUEENS",
+      "url": "https://queens.london/faqs-and-ts-cs/",
+      "kind": "current operator access information",
+      "access": "relevant FAQ text read",
+      "date": null,
+      "limits": "Some restaurant branding appears older than other pages. No food brand is used."
+    },
+    {
+      "id": "qes-whiteley-trust",
+      "title": "On this day in 1907",
+      "publisher": "The Whiteley Homes Trust",
+      "url": "https://www.thewhiteleyhomestrust.org.uk/about-us/latest-news/on-this-day-in-1907",
+      "kind": "custodian institutional history",
+      "access": "full article read",
+      "date": "2025-01-23",
+      "limits": "Credits Alan Brown's 1992 history. Broad historical summary, not original staff payroll or rules. Avoid unqualified first-store claims and alleged-son paternity."
+    },
+    {
+      "id": "qes-whiteley-1885",
+      "title": "William Whiteley, Universal Provider: catalogue advertisement",
+      "publisher": "City of Westminster Archives Centre",
+      "url": "https://archives.westminster.gov.uk/CalmView/Record.aspx?id=WCA00308&pos=16&src=CalmView.Catalog",
+      "kind": "contemporary document catalogue",
+      "access": "catalogue metadata and description read",
+      "date": "1885",
+      "objectId": "P137Whiteley's(027)",
+      "limits": "Metadata supports advertised business identity; no claim to have read the whole catalogue."
+    },
+    {
+      "id": "qes-whiteley-met",
+      "title": "William Whiteley's catalogue of toys, games and sporting equipment",
+      "publisher": "The Metropolitan Museum of Art",
+      "url": "https://www.metmuseum.org/art/collection/search/818700",
+      "kind": "contemporary object catalogue",
+      "access": "object metadata read; no image available",
+      "date": "1875–1900",
+      "objectId": "60.684.24",
+      "limits": "Title identifies product categories. No actual page prices, arrangement or shopping event was observed."
+    },
+    {
+      "id": "qes-whiteleys-he",
+      "title": "Whiteleys Department Store",
+      "publisher": "Historic England",
+      "url": "https://historicengland.org.uk/listing/the-list/list-entry/1227450",
+      "kind": "statutory listing",
+      "access": "full relevant architectural description read",
+      "date": null,
+      "objectId": "1227450",
+      "limits": "Building description is historical listing evidence, not a current access inspection."
+    },
+    {
+      "id": "qes-whiteleys-1911",
+      "title": "The new Whiteley's store in Queen's Road, Paddington",
+      "publisher": "City of Westminster Archives Centre",
+      "url": "https://archives.westminster.gov.uk/CalmView/Record.aspx?id=WCA00034&pos=15&src=CalmView.Catalog",
+      "kind": "contemporary image catalogue",
+      "access": "catalogue metadata and description read",
+      "date": "1911-11-15",
+      "objectId": "P137Whiteley's(025)",
+      "limits": "Historical image and move date; catalogue's present-use wording predates 2026 redevelopment."
+    },
+    {
+      "id": "qes-whiteleys-2026",
+      "title": "Six Senses London opens at The Whiteley",
+      "publisher": "Six Senses",
+      "url": "https://www.sixsenses.com/en/corporate/media-center/press-releases/2026/six-senses-london-opens-at-the-whiteley/",
+      "kind": "current operator opening announcement",
+      "access": "official announcement read",
+      "date": "2026",
+      "limits": "Confirms opened status. Marketing labels and claims about wider neighbourhood benefit are not independently established; use Historic England for architectural dating."
+    },
+    {
+      "id": "qes-leinster-photo",
+      "title": "The construction of the Metropolitan District Railway",
+      "publisher": "London Museum",
+      "url": "https://www.londonmuseum.org.uk/collections/v/object-720928/the-construction-of-the-metropolitan-district-railway/",
+      "kind": "construction-era photograph and custodian catalogue",
+      "access": "catalogue description and metadata read",
+      "date": "1866–1868",
+      "creator": "Henry Flather",
+      "objectId": "IN37495",
+      "limits": "Collection title covers a larger works series; do not infer the precise operating company from that title."
+    },
+    {
+      "id": "qes-leinster-he",
+      "title": "19–22 Leinster Gardens and screen wall equivalent to numbers 23 and 24",
+      "publisher": "Historic England",
+      "url": "https://historicengland.org.uk/listing/the-list/list-entry/1221942",
+      "kind": "statutory listing",
+      "access": "listing description read",
+      "date": null,
+      "objectId": "1221942",
+      "limits": "Approximate 1855 date belongs to terrace group, not proof of screen date. Fine current visible details require route review."
+    },
+    {
+      "id": "qes-ltm-steam",
+      "title": "Metropolitan Railway A class steam locomotive No. 23",
+      "publisher": "London Transport Museum via Google Arts & Culture",
+      "url": "https://artsandculture.google.com/asset/metropolitan-railway-a-class-4-4-0t-steam-locomotive-no-23-beyer-peacock-manchester/TQGhYyhLbuPmwg",
+      "kind": "museum object catalogue",
+      "access": "museum-supplied object description read",
+      "date": "1866",
+      "objectId": "1981/535",
+      "limits": "Supports steam service and electrification chronology, not a complete condenser explanation."
+    },
+    {
+      "id": "qes-greenway",
+      "title": "Jubilee Greenway Section 1",
+      "publisher": "Go Jauntly",
+      "url": "https://cdn.gojauntly.com/walks/pdfguide/0a6e438f-c317-49a4-b9ef-726fa0ab940d.pdf",
+      "kind": "published walking-route guide",
+      "access": "full PDF text read; relevant page 8",
+      "date": "2022-10-06",
+      "limits": "Supplementary source for ventilation context. Do not copy its direction text or over-specific condenser/smoke explanation. Does not by itself prove every urban anecdote."
+    },
+    {
+      "id": "qes-bayswater-guide",
+      "title": "Bayswater conservation area mini guide",
+      "publisher": "Westminster City Council, Development Planning Services",
+      "url": "https://www.westminster.gov.uk/sites/default/files/media/documents/06%20Bayswater.pdf",
+      "kind": "local authority conservation guide",
+      "access": "both pages read; historical and character text on page 2",
+      "date": "2004-10",
+      "limits": "Dated area-level description. The 1827 starting sector is east of this route; westward expansion is explicit. Not evidence every walked house is a flat or hotel today."
+    }
+  ],
+  "parkedSources": [
+    {
+      "url": "https://www.thewhiteleylondon.com/history",
+      "reason": "Developer repeats elephant anecdote and offers a frontage chronology conflicting with the statutory listing and 1911 archive. Not used as claim authority."
+    },
+    {
+      "url": "https://queens.london/wp-content/uploads/2025/06/Queens_Xmas-Brochure_Updated-Nov-2487-1.pdf",
+      "reason": "Founder/BBC-first language is hedged and resembles an earlier blog. Year 1930 has stronger corroboration; other claims omitted."
+    },
+    {
+      "url": "https://shop.memorylane.co.uk/all-images/2021/july/17-jul-2021?pn=5",
+      "reason": "Search index suggests July 1952 for a Queens children's-party image; precise match to museum image not confirmed. Do not use date."
+    },
+    {
+      "url": "https://www.westminster.gov.uk/media/document/bayswater-conservation-area-audit",
+      "reason": "Official large PDF exceeded browser content limit. Mini guide was read instead; no unreviewed multiple-developer passage asserted."
+    },
+    {
+      "url": "https://www.british-history.ac.uk/vch/middx/vol9/pp204-212",
+      "reason": "Canonical Victoria County History chapter failed to open. A secondary mirror was encountered but not adopted as primary evidence for this compact packet."
+    },
+    {
+      "url": "https://www.stsophia.org.uk/history/",
+      "reason": "Official cathedral history checked as alternative discovery. No fourth stop developed for the current compact route."
+    }
+  ]
+}

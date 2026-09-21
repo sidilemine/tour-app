@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "surveyId": "queensway-2026-09-21",
+  "accessDate": "2026-09-21",
+  "status": "bounded-discovery-complete-selection-open",
+  "scope": {
+    "core": ["Queensway", "Whiteleys", "Leinster Gardens", "Craven Hill Gardens", "Moscow Road"],
+    "nearbyComparison": ["Paddington", "Lancaster Gate", "Notting Hill"],
+    "brief": "Evening demo near Queensway station / 46 Queensborough Terrace; three stops, four maximum; one walking story; George; owner-selected 20–25 minutes.",
+    "accessConstraint": "No Kensington Gardens gate, private garden or paid-interior dependency. Survey inclusion does not verify standing areas or dusk visibility."
+  },
+  "tours": [
+    {
+      "id": "Q-S01",
+      "title": "Bayswater Revealed",
+      "originator": "Fazilet Tharani / Westminster Guides",
+      "url": "https://westminsterguides.org.uk/walking-tour/bayswater-revealed-a-free-walking-tour/",
+      "type": "guided-tour-historical-listing",
+      "eventDate": "2024-08-21",
+      "publicationDate": "2024-07-11",
+      "accessDate": "2026-09-21",
+      "readingScope": "Entire public listing; no unpublished script.",
+      "durationMinutes": 90,
+      "distanceKm": null,
+      "start": "Bayswater Underground entrance",
+      "end": "Kensington Gardens",
+      "publishedPlaces": ["Whiteleys", "Porchester Hall", "New West End Synagogue", "St Sophia Cathedral"],
+      "placeIds": ["whiteleys", "porchester-hall", "new-west-end-synagogue", "st-sophia"],
+      "orderStatus": "Order of mention only; full itinerary unknown.",
+      "angle": "Village growth, affluent development and different communities.",
+      "supportingPassage": "This walk will include various stops",
+      "limitations": "Historical tour, not a current schedule. Broad claims and dates need primary verification.",
+      "duplicates": ["https://happeningnext.com/event/bayswater-revealed-a-free-walking-tour-eid4so9fuwk6x1"]
+    },
+    {
+      "id": "Q-S02",
+      "title": "Bayswater Then and Now",
+      "originator": "Mary Enright / Westminster Guides",
+      "url": "https://westminsterguides.org.uk/walking-tour/bayswater-then-and-now/",
+      "type": "guided-tour-synopsis",
+      "publicationDate": "2024-07-15",
+      "accessDate": "2026-09-21",
+      "readingScope": "Full public synopsis, no detailed itinerary.",
+      "durationMinutes": null,
+      "distanceKm": null,
+      "start": null,
+      "end": null,
+      "publishedPlaces": ["Whiteleys", "synagogue (unnamed)", "church (unnamed)", "Orthodox cathedral (unnamed)", "convincing fake (unnamed)", "northern Kensington Gardens"],
+      "placeIds": ["whiteleys"],
+      "orderStatus": "Unknown; circular walk described.",
+      "angle": "Changing reputation, immigration, regeneration and public art.",
+      "supportingPassage": "reveals shifting reputations",
+      "limitations": "Do not resolve unnamed places as if the provider named them. Garden dependency unsuitable for this brief."
+    },
+    {
+      "id": "Q-S03",
+      "title": "W2: The Bear Necessities",
+      "originator": "Stephen / Walking London one postcode at a time",
+      "url": "https://londonpostcodewalks.wordpress.com/2014/01/09/w2-the-bear-necessities/",
+      "accessedEquivalentUrl": "https://londonpostcodewalks.wordpress.com/tag/bayswater/",
+      "type": "self-guided-blog",
+      "publicationDate": "2014-01-09",
+      "accessDate": "2026-09-21",
+      "readingScope": "Full numbered walk text.",
+      "durationMinutes": null,
+      "distanceKm": null,
+      "start": "Post Office, 118/120 Queensway (historical locator)",
+      "end": "Marble Arch",
+      "publishedStopsInOrder": ["1 Whiteley's", "2 Former Queens Cinema", "3 Skanderbeg", "4 Queens Ice Rink and Bowl", "5a false houses rear, Porchester Terrace", "5b false houses front, Leinster Gardens", "6 32 Craven Road / Tommy Handley", "7 Paddington station", "8 Mint Building", "9 St Mary's Hospital", "10 35 Gloucester Square", "11 12 Hyde Park Street", "12 Tyburn Convent"],
+      "placeIds": ["whiteleys", "former-queens-cinema", "skanderbeg", "queens-rink", "leinster-false-fronts"],
+      "orderStatus": "Complete numbered list; includes substop 5a/5b. Passing observations also appear.",
+      "angle": "Retail, entertainment, hidden infrastructure and notable people.",
+      "supportingPassage": "Queens has quite a modest entrance",
+      "limitations": "2014 current conditions stale; rear-wall view explicitly difficult. Other historical claims not verified by inclusion."
+    },
+    {
+      "id": "Q-S04",
+      "title": "Mind the gap: Bayswater, London viewpoint",
+      "originator": "Rory Walsh / Royal Geographical Society with IBG, Discovering Britain",
+      "url": "https://www.discoveringbritain.org/activities/greater-london/viewpoints/bayswater.html",
+      "type": "institutional-self-guided-viewpoint",
+      "publicationDate": null,
+      "accessDate": "2026-09-21",
+      "readingScope": "Complete public viewpoint text.",
+      "durationMinutes": 15,
+      "distanceKm": null,
+      "start": "Leinster Gardens, opposite Craven Hill Gardens",
+      "end": null,
+      "publishedPlaces": ["23–24 Leinster Gardens front", "Porchester Terrace rear wall"],
+      "placeIds": ["leinster-false-fronts"],
+      "orderStatus": "Front explanation followed by optional rear comparison.",
+      "angle": "Visible architectural deception, steam ventilation and cut-and-cover construction.",
+      "supportingPassage": "If you can see over the top, all is revealed.",
+      "limitations": "No promise of rear visibility, train sounds or current ownership. Prank lore and simplified geology are not independently established."
+    },
+    {
+      "id": "Q-S05",
+      "title": "Central London Walks 1: A Walk around the Neighborhood—Notting Hill/Bayswater",
+      "originator": "BYU Walks / STQRY",
+      "url": "https://stqry.app/projects/808/tour/2222",
+      "previewUrl": "https://stqry.app/projects/808/tour/2222/preview",
+      "type": "app-tour-public-preview",
+      "publicationDate": null,
+      "accessDate": "2026-09-21",
+      "readingScope": "Complete title list and nearby Queensway/Westbourne preview passages; not full tour; no audio audition.",
+      "durationMinutes": 90,
+      "distanceKm": 3,
+      "start": "Bayswater to Queensway (segment title)",
+      "end": "BYU Centre",
+      "publishedStopsInOrder": ["Introduction", "Bayswater to Queensway", "Queensway to Westbourne Grove", "Westbourne Grove", "Pembridge Villas Road to Notting Hill Gate", "Notting Hill Tube Station to Notting Hill Gate Road", "Ossington Street to Moscow Road", "Return to the BYU Centre"],
+      "placeIds": ["whiteleys", "porchester-hall"],
+      "orderStatus": "Complete eight-title directory list; not every narrated place extracted.",
+      "angle": "Orientation for students: shopping, eating and local everyday services.",
+      "supportingPassage": "Focus: our neighborhood in Notting Hill",
+      "limitations": "Dated businesses and claims; Whiteleys 1912 conflicts with precise 1911 primary lead; Hitler-HQ folklore unverified."
+    },
+    {
+      "id": "Q-S06",
+      "title": "District Line: Paddington–Bayswater–Notting Hill Gate segments",
+      "originator": "I G Liddell / Lwalks",
+      "url": "https://lwalks.london/wp-content/uploads/2025/08/district.pdf",
+      "type": "published-walking-guide-pdf",
+      "publicationDate": "2025 (copyright 2023–25)",
+      "accessDate": "2026-09-21",
+      "readingScope": "Printed pp60–62 vicinity text; not whole 88-page guide or a map audit.",
+      "durationMinutes": null,
+      "distanceKm": null,
+      "publishedSegmentDistancesKm": [1.4, 1.0],
+      "start": "Paddington",
+      "end": "Notting Hill Gate",
+      "publishedPlacesInOrder": ["Paddington / Craven Road", "Devonshire Terrace", "Queen's Gardens", "Leinster Gardens / Place", "Hallfield Estate", "Porchester Gardens / Skanderbeg", "Bayswater station", "St Sophia / Moscow Road", "Pembridge Square", "Notting Hill Gate"],
+      "placeIds": ["hallfield", "skanderbeg", "st-sophia"],
+      "orderStatus": "Read segments' stated passage order; not a formal stop list.",
+      "angle": "Walking between Tube stations, modernist housing and streetscape contrasts.",
+      "supportingPassage": "Paddington to Bayswater",
+      "limitations": "Directions and building attribution need independent checks; no present access guarantee."
+    },
+    {
+      "id": "Q-S07",
+      "title": "Evening Walk in Bayswater — Marble Arch to Queensway",
+      "originator": "Dominique, report posted by Gillian / Poly Ramblers",
+      "url": "https://polyramblers.org.uk/evening-walk-in-bayswater-marble-arch-to-queensay-11-june-2025/",
+      "type": "walking-club-firsthand-outing-report",
+      "eventDate": "2025-06-11",
+      "publicationDate": "2025-06-19",
+      "accessDate": "2026-09-21",
+      "readingScope": "Whole short text; not an exact track.",
+      "durationMinutes": null,
+      "advertisedDistance": "3 miles",
+      "start": "Marble Arch",
+      "end": "Queensway Underground",
+      "publishedPlacesInOrder": ["Marble Arch", "Tyburn / convent", "10 Bayswater Road", "St John", "Bathurst Mews", "Meath / Lancaster Gate memorials", "false houses", "Skanderbeg", "Whiteleys", "St Sophia", "St Matthew's", "New West End Synagogue", "Queensway"],
+      "placeIds": ["leinster-false-fronts", "skanderbeg", "whiteleys", "st-sophia", "new-west-end-synagogue"],
+      "orderStatus": "Sequence in report, not complete turn-by-turn route.",
+      "angle": "Evening street discoveries and changed institutions.",
+      "supportingPassage": "a 3-mile linear walk",
+      "limitations": "Incorrect Leinster Terrace name for false houses; report's June light/access does not verify September dusk."
+    },
+    {
+      "id": "Q-S08",
+      "title": "Bayswater — that diamond of London place-names",
+      "originator": "David / London Walks",
+      "url": "https://www.walks.com/podcast/bayswater-that-diamond-of-london-place-names/",
+      "type": "operator-podcast-description",
+      "publicationDate": null,
+      "accessDate": "2026-09-21",
+      "readingScope": "Public description only; audio not listened to.",
+      "durationMinutes": null,
+      "distanceKm": null,
+      "start": null,
+      "end": null,
+      "publishedPlaces": [],
+      "placeIds": [],
+      "orderStatus": "No itinerary published.",
+      "angle": "Neighbourhood history through its name.",
+      "supportingPassage": "London place-names can often unlock",
+      "limitations": "No etymology or narrated claims established by this catalogue entry."
+    }
+  ],
+  "primaryLeads": [
+    {
+      "id": "Q-P01", "publisher": "Transport for London", "title": "Cycle the sights with Santander Cycles", "url": "https://londonblog.tfl.gov.uk/wp-content/uploads/2019/11/Cycle-the-sights-with-Santander-Cycles.pdf", "publicationDate": "2019 URL; document date unconfirmed", "accessDate": "2026-09-21", "scope": "Bayswater false-façades entry; not whole cycle route inspected", "supports": "23/24 Leinster Gardens false fronts dated 1868", "passage": "originally built in 1868", "limitations": "Sightseeing summary; not a pedestrian approach verification."
+    },
+    {
+      "id": "Q-P02", "publisher": "Queens London", "title": "Public skating", "url": "https://queens.london/skating/", "publicationDate": null, "accessDate": "2026-09-21", "scope": "Current public skating page", "supports": "Current operating rink; opening in 1930", "passage": "Since opening our doors in 1930", "limitations": "Operator retrospective; promotional superlatives are separate claims."
+    },
+    {
+      "id": "Q-P03", "publisher": "Queens London", "title": "Queens Christmas brochure", "url": "https://queens.london/wp-content/uploads/2025/06/Queens_Xmas-Brochure_Updated-Nov-2487-1.pdf", "publicationDate": "2025-06 URL; edition date uncertain", "accessDate": "2026-09-21", "scope": "About Queens passage, search extraction only", "supports": "Opening date given as 3 October 1930", "passage": "QUEENS Ice Club on 3rd October 1930", "limitations": "No full brochure or historic archive examination."
+    },
+    {
+      "id": "Q-P04", "publisher": "The Whiteley London", "title": "A Bold Ambition: history", "url": "https://www.thewhiteleylondon.com/history", "publicationDate": null, "accessDate": "2026-09-21", "scope": "Public timeline read", "supports": "1863 draper at 31 Westbourne Grove; purpose-built Queensway opening 2 November 1911; 2018 closure", "passage": "opened the new store on 2 November 1911", "limitations": "Developer retrospective and marketing, not independent verification of elephant folklore or current completion."
+    },
+    {
+      "id": "Q-P05", "publisher": "St Sophia Greek Orthodox Cathedral", "title": "History", "url": "https://www.stsophia.org.uk/history/", "publicationDate": null, "accessDate": "2026-09-21", "scope": "Relevant 1872–1882 and later sections read", "supports": "Merchant-family residential move; community-financed commission; first liturgy 1 June 1879; consecration 5 February 1882", "passage": "collect the voluntary contributions", "limitations": "No exterior sightline/after-dusk access evidence; no shared motive established for all migrants."
+    },
+    {
+      "id": "Q-P06", "publisher": "St Sophia Greek Orthodox Cathedral", "title": "Current welcome and services", "url": "https://www.stsophia.org.uk/", "publicationDate": null, "accessDate": "2026-09-21", "scope": "Current homepage schedule", "supports": "Ordinary Monday opening 10 am–2 pm", "passage": "10am – 2pm Mondays", "limitations": "Monthly exceptions may apply; evening interior not planned."
+    }
+  ],
+  "places": [
+    {"id":"leinster-false-fronts","names":["23–24 Leinster Gardens","false houses"],"address":"23–24 Leinster Gardens, London W2","tourIds":["Q-S03","Q-S04","Q-S07"],"role":"strong stop candidate","access":"Front public-street view to verify; rear view not guaranteed; no private forecourt access inferred."},
+    {"id":"whiteleys","names":["Whiteleys","The Whiteley"],"address":"Queensway, London W2","tourIds":["Q-S01","Q-S02","Q-S03","Q-S05","Q-S07"],"role":"strong stop candidate","access":"Exterior only pending street/standing check; old store interior not presumed public."},
+    {"id":"queens-rink","names":["Queens Ice Rink and Bowl","Queens London"],"address":"Queensway, London W2","tourIds":["Q-S03"],"role":"leisure contrast candidate","access":"Street entrance, not view of ice; no paid entry needed for exterior story."},
+    {"id":"st-sophia","names":["St Sophia Cathedral","Cathedral of the Divine Wisdom"],"address":"Moscow Road, London W2 4LQ","tourIds":["Q-S01","Q-S06","Q-S07"],"role":"community alternative","access":"Exterior; ordinary Monday interior hours finish 2 pm."},
+    {"id":"skanderbeg","names":["George Kastrioti Skanderbeg","Gjergj Kastrioti Skanderbeg"],"address":"Porchester Gardens / Inverness Terrace","tourIds":["Q-S03","Q-S06","Q-S07"],"role":"reserve pending local-purpose research","access":"Garden/view/standing area unverified."},
+    {"id":"hallfield","names":["Hallfield Estate"],"address":"Leinster Place vicinity","tourIds":["Q-S06"],"role":"architectural contrast reserve","access":"Estate edge only proposed; no private access inferred."},
+    {"id":"former-queens-cinema","names":["Queens Cinema","ABC Queensway"],"address":"Northern Queensway / Bishop's Bridge Road vicinity","tourIds":["Q-S03"],"role":"reserve; repetition and detour questions","access":"Current façade and viewing position unverified."},
+    {"id":"porchester-hall","names":["Porchester Hall","Porchester Centre"],"address":"Porchester Road vicinity","tourIds":["Q-S01","Q-S05"],"role":"nearby comparison","access":"Distinct Hall/Centre components need resolving before use."},
+    {"id":"new-west-end-synagogue","names":["New West End Synagogue"],"address":"St Petersburgh Place","tourIds":["Q-S01","Q-S07"],"role":"nearby community comparison","access":"Exterior only; no interior/opening researched."}
+  ],
+  "candidateAssemblies": [
+    {"id":"A","status":"researcher-option-not-selected","label":"Appearances and hidden activity","unorderedPlaceIds":["leinster-false-fronts","whiteleys","queens-rink"],"walkingStoryLead":"Supported local change and the appeal of urban convenience; avoid repeating stops.","uncertainty":"Actual compact route, dusk details and audio timing unknown."},
+    {"id":"B","status":"researcher-option-not-selected","label":"Making a home in Bayswater","unorderedPlaceIds":["leinster-false-fronts","whiteleys","st-sophia"],"walkingStoryLead":"Terraces and changing communities, retaining distinct actors and motives.","uncertainty":"Cross-neighbourhood distance may exceed compact dinner brief."}
+  ],
+  "coverage": {
+    "queries": ["Bayswater walking tour Leinster Gardens Whiteleys Queensway guide", "Queensway Bayswater self guided walk Whiteleys tour", "Paddington Bayswater walking tour published walk PDF Queensway", "Bayswater walking tour Westminster Guides", "site:walks.com Bayswater", "site:voicemap.me Bayswater", "site:ltmuseum.co.uk Leinster Gardens false houses", "site:tfl.gov.uk Leinster Gardens 1868", "site:queens.london history 1930 ice rink", "site:thewhiteleylondon.com history 1911 1863", "site:stsophia.org.uk history cathedral Bayswater"],
+    "familiesCovered": ["guided tour providers", "self-guided app preview", "walking blog", "institutional viewpoint", "published walking PDF", "walking-club evening report", "operator audio description", "primary current venue/operator and transport sources"],
+    "gaps": ["No paid or printed walking books read", "No audio/video audition", "No useful VoiceMap listing surfaced in bounded query; absence not established", "Kensington park and distant garden routes not fully extracted", "No current street or dusk access audit in survey", "Detailed current Whiteley trading/occupancy not resolved"],
+    "stopReason": "Varied nearby candidates across source families support a three-stop demo; next work is selected-claim and route verification, not more general searching.",
+    "notClaimed": ["exhaustive corpus", "final tour selection", "historical verification of every guide claim", "physical readiness", "owner enjoyment"]
+  }
+}

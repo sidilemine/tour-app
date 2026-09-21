@@ -202,6 +202,8 @@ These are selected unresolved items, not an additional acceptance list. The deta
 
 **Implemented authoring distinction; desk-verification limits remain.** Street cameras can sit in the carriageway; a photograph of an artwork does not establish a public pavement view. Britton Street's initial imagery faced the wrong building. A Highgate visitor point failed its route-association rule and was moved to an equivalent plausible place without weakening the rule.
 
+**Queensway application, 21 September:** a discovery-page pin was about 55 metres north of the actual 23/24 Leinster Gardens fronts. Numbered address nodes and dated imagery supplied the corrected landmark and a separate public-pavement viewpoint. Nearby coordinates alone would have passed a superficial area check. [Route research](content/authoring/queensway-2026-09-21/ROUTE-RESEARCH.md).
+
 **Carry forward:** check the view and public approach as well as numeric distance. Never put a point in the road merely to pass validation. Record approximate versus surveyed positions and dated imagery. Keats' partial view behind fence/trees is a limit, not an assured full reveal. Small trigger variations alone do not justify shrinking arrival radii; saved-position quality may be the issue. [Exterior checks](content/routes/north-finchley-review-v2/EXTERIOR-CHECKS.md), [Highgate associations](content/authoring/hampstead-2026-09-21/FINAL-NAVIGATION-CHECK.md#stops-approach-and-viewpoint), [arrival calibration](ARRIVAL-CALIBRATION.md).
 
 ### ROUTE-004 — routing output is a candidate requiring topology review
@@ -220,6 +222,8 @@ These are selected unresolved items, not an additional acceptance list. The deta
 
 **Implemented calculations/replays; physical timing still scoped separately.** Highgate imagery moved speech off Merton Lane, which lacks a continuous footway, onto the Heath. Clerkenwell's Close chapter had little spare margin after the required reserve. Long route distance alone did not make either speech window adequate.
 
+**Queensway application, 21 September:** mews and forecourt entrances broke the first proposed corridor. The replacement Leinster corridor needed its guard before the first of two Queen’s Gardens mouths, rather than the later mapped junction. A bollarded joining cycle/pedestrian path still needs awareness even without a vehicle crossing. Final geometry and measured audio, rather than the street name or apparent quietness, determine the budget. [Final route check](content/authoring/queensway-2026-09-21/FINAL-NAVIGATION-CHECK.md).
+
 **Carry forward:** retain launch interval, next navigation point, distance, brisk pace, measured voice-file duration and reserve. Count spoken directions too. Recalculate after route, text, voice or pace changes; do not carry a story through a crossing just to preserve its draft length. Current 6 km/h and 15-second checks are explicit preparation assumptions, not universal guarantees about GPS/loading. [Clerkenwell budget](content/authoring/clerkenwell-2026-09-20/FINAL-NAVIGATION-CHECK.md#geometry-and-indices), [Highgate measured files](test-results/M2-hampstead-tour.md#automated-and-desk-evidence).
 
 ### WALK-001 — manual completion is not an automatic-launch pass
@@ -233,6 +237,8 @@ These are selected unresolved items, not an additional acceptance list. The deta
 ### REVIEW-001 — verify the sentence, not just its evidence label
 
 **Errors caught and corrected before delivery.** Clerkenwell V1 assigned stock-buying to Groom when the notebook assigned it to the senior missionary; it changed separate interviews into separate interviewers and implied an unsupported local watch supply chain. These paragraphs already had valid claim IDs.
+
+**Queensway application, 21 September:** the museum’s image alternative described swimming costumes; viewing the actual party photograph showed summer clothing and skating boots. The final prose keeps the vivid seaside/ice contrast with directly observed props. Inspect a central visual detail when possible rather than treating authoritative-host alt text as visual verification; update the claim register as well as the script. [Source review and exact correction](content/authoring/queensway-2026-09-21/SOURCE-EDITORIAL-REVIEW.md).
 
 **Carry forward:** reread the actual claim's actor, action, time and relationship against the passage after writing. Correct prose and evidence together. Schema/reference checks cannot detect a newly invented implication. Retain the draft and review delta. The review was a fresh prose reading with selected source checks, not independent rediscovery of every source. [Must-fix review](content/authoring/clerkenwell-2026-09-20/REVIEW-V1.md#must-fix-before-the-narration-freeze), [final corrections](content/authoring/clerkenwell-2026-09-20/FINAL-EDIT-CHECK.md#corrections-and-additions).
 

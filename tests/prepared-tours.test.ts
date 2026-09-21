@@ -12,6 +12,7 @@ const packages = [
   { variant: 'B', path: 'content/north-finchley/packages/B.json', stops: 6, chapterIds: ['walking-neighbourhood'], mapId: 'north-finchley-abc1a7e4d563d305' },
   { variant: 'H', path: 'content/hampstead/packages/room-to-breathe.json', stops: 5, chapterIds: ['walking-conversation', 'keeping-the-heath'], mapId: 'hampstead-0abcc26a600e0718' },
   { variant: 'C', path: 'content/clerkenwell/packages/working-lives.json', stops: 8, chapterIds: ['many-hands', 'next-days-stock'], mapId: 'clerkenwell-8f45f13ad1755318' },
+  { variant: 'Q', path: 'content/queensway/packages/behind-the-fronts.json', stops: 3, chapterIds: ['bayswater-terraces'], mapId: 'queensway-105db6bcbdfce45f' },
 ];
 type PreparedPackage = typeof packages[number];
 // Read inside each test so an absent new artifact cannot prevent the existing
@@ -162,9 +163,10 @@ type ChapterWindow = {
   id: string; afterStopIndex: number; startRouteIndex: number; endRouteIndex: number;
   navigationRouteIndex: number; fastWalkingMetresPerSecond: number; marginSeconds: number;
 };
-for (const variant of ['C', 'H']) {
+for (const variant of ['C', 'H', 'Q']) {
  const definition = packages.find(p => p.variant === variant)!;
- const planPath = variant === 'C' ? 'content/clerkenwell/plan.json' : 'content/hampstead/plan.json';
+ const planPath = ({ C: 'content/clerkenwell/plan.json', H: 'content/hampstead/plan.json',
+   Q: 'content/queensway/plan.json' } as Record<string, string>)[variant];
  for (const [chapterIndex, chapterId] of definition.chapterIds.entries()) {
   test(`prepared ${variant}: latest ${chapterId} launch fits measured audio and authored navigation margin`, () => {
     const fixture = loadPackage(definition).fixture;
@@ -195,40 +197,18 @@ for (const variant of ['C', 'H']) {
 }
 }
 
-test('prepared C: brisk 6 km/h walk with two-second fixes catches both short chapter windows in the full sequence', t => {
-  const fixture = loadPackage(packages.find(p => p.variant === 'C')!).fixture;
+for (const { variant, planPath, expectedOrder } of [
+  { variant: 'C', planPath: 'content/clerkenwell/plan.json', expectedOrder: ['charterhouse', 'smithfield', 'booths', 'stjohn-gate', 'green', 'many-hands', 'flowers', 'ingersoll', 'next-days-stock', 'exmouth'] },
+  { variant: 'H', planPath: 'content/hampstead/plan.json', expectedOrder: ['highgate-station', 'pond-square', 'walking-conversation', 'highgate-ponds', 'keeping-the-heath', 'willow-road', 'keats-house'] },
+  { variant: 'Q', planPath: 'content/queensway/plan.json', expectedOrder: ['queens-rink', 'whiteleys', 'bayswater-terraces', 'leinster-gardens'] },
+]) test(`prepared ${variant}: brisk 6 km/h walk with two-second fixes catches chapters and leaves navigation quiet`, t => {
+  const fixture = loadPackage(packages.find(p => p.variant === variant)!).fixture;
   const speed = 6 / 3.6, h = simulate(fixture, { metresPerSecond: speed, fixEveryMilliseconds: 2000 });
   completeThroughStop(fixture, h, fixture.stops.length - 1);
-  assert.deepEqual(h.plays.map(p => narrationAt(fixture, p.index)!.id), [
-    'charterhouse', 'smithfield', 'booths', 'stjohn-gate', 'green', 'many-hands', 'flowers', 'ingersoll', 'next-days-stock', 'exmouth',
-  ], 'Brisk cadence must launch each chapter once in its intended place among the eight stops');
+  assert.deepEqual(h.plays.map(p => narrationAt(fixture, p.index)!.id), expectedOrder, 'Brisk cadence must launch each chapter once in its intended place among the stops');
   assert.deepEqual(h.state.stops, fixture.stops.map(() => 'completed'), 'Brisk replay completes every stop');
-  assert.deepEqual(h.state.chapters, ['completed', 'completed'], 'Brisk replay completes both chapters');
-  const plan = JSON.parse(readFileSync('content/clerkenwell/plan.json', 'utf8')) as { chapters: ChapterWindow[] };
-  const offsets = [0];
-  for (let i = 1; i < fixture.route.length; i++) offsets.push(offsets.at(-1)! + distance(fixture.route[i - 1], fixture.route[i]));
-  for (const [index, chapter] of fixture.narration!.chapters.entries()) {
-    const play = h.plays.find(p => p.index === fixture.stops.length + index)!;
-    assert.ok(play.along !== undefined && play.along >= offsets[chapter.startRouteIndex] && play.along < offsets[chapter.endRouteIndex],
-      `${chapter.id}: brisk replay launch must fall inside its actual interval`);
-    const window = plan.chapters.find(c => c.id === chapter.id)!;
-    const reserveSeconds = (offsets[window.navigationRouteIndex] - play.along) / speed - chapter.audio.durationSeconds;
-    assert.ok(reserveSeconds >= window.marginSeconds,
-      `${chapter.id}: brisk replay leaves only ${reserveSeconds.toFixed(2)} seconds after audio before the navigation decision`);
-    t.diagnostic(`${chapter.id}: launch ${(play.along - offsets[chapter.startRouteIndex]).toFixed(2)} m into interval; ${reserveSeconds.toFixed(2)} s remain after narration before navigation`);
-  }
-});
-
-test('prepared H: brisk 6 km/h crossing catches both chapters and leaves navigation quiet', t => {
-  const fixture = loadPackage(packages.find(p => p.variant === 'H')!).fixture;
-  const speed = 6 / 3.6, h = simulate(fixture, { metresPerSecond: speed, fixEveryMilliseconds: 2000 });
-  completeThroughStop(fixture, h, fixture.stops.length - 1);
-  assert.deepEqual(h.plays.map(p => narrationAt(fixture, p.index)!.id), [
-    'highgate-station', 'pond-square', 'walking-conversation', 'highgate-ponds', 'keeping-the-heath', 'willow-road', 'keats-house',
-  ], 'Brisk cadence must launch each chapter once in its intended place among the five stops');
-  assert.deepEqual(h.state.stops, fixture.stops.map(() => 'completed'), 'Brisk replay completes every stop');
-  assert.deepEqual(h.state.chapters, ['completed', 'completed'], 'Brisk replay completes both chapters');
-  const plan = JSON.parse(readFileSync('content/hampstead/plan.json', 'utf8')) as { chapters: ChapterWindow[] };
+  assert.deepEqual(h.state.chapters, fixture.narration!.chapters.map(() => 'completed'), 'Brisk replay completes every chapter');
+  const plan = JSON.parse(readFileSync(planPath, 'utf8')) as { chapters: ChapterWindow[] };
   const offsets = [0];
   for (let i = 1; i < fixture.route.length; i++) offsets.push(offsets.at(-1)! + distance(fixture.route[i - 1], fixture.route[i]));
   for (const [index, chapter] of fixture.narration!.chapters.entries()) {

@@ -359,6 +359,16 @@ Guidance revision 14 and writing brief v4 carry this direction forward. The exis
 
 **Reuse and scope:** startup instructions, role briefs, the playbook and M4/M5 roadmap now point to applicable log entries. This documentation task did not change the app, installed tours, phone or milestone acceptance; it did not initiate a database, automation framework, fresh transcription or more physical testing.
 
+### 33 Short Queensway demonstration
+
+**21 September 2026. Owner brief:** a dinner-time demonstration for a friend near 46 Queensborough Terrace, three stops or four at most, with one walking story. Asked about duration, Sidi selected 20–25 minutes. George remains the chosen voice. No dinner time was supplied, and the route does not rely on admission or park opening.
+
+**Application:** [Behind the façades](QUEENSWAY-TAKE-THE-TOUR.md) uses QUEENS, Whiteleys and Leinster Gardens, with one brief architecture passage and a return near the dinner address. The actual route is about 1.21 km; 16.5 minutes of movement plus 3m45.5s of stationary speech leaves a little looking/crossing time. The 30.5-second chapter runs concurrently with walking. The cathedral alternative required 23 minutes of movement before speech and was dropped on route cost; no fourth filler was added.
+
+**Separate handoffs changed the result:** survey preceded selection; research and writing were separate. Source review visually checked the party photo and corrected the museum-alt-text-based costume claim without losing its memorable detail. Route review corrected a discovery pin, moved speech away from small crossings and caught the first of two Queen’s Gardens mouths when setting the chapter guard. Final review read the assembled plan and script; preserved writer drafts let us compare what changed. [Complete authoring record](authoring/queensway-2026-09-21/README.md).
+
+**Delivery/evidence:** local George files are fully decoded and timed, and all 166 tests pass. [Build and phone status](../test-results/M2-queensway-tour.md) is maintained separately. This is a social outing: no per-stop recording requirement, extra listening battery or technical field test. Reuse prior unchanged native/headset evidence. The bounded checks, corrections and limits are added to the general issues log; a successful build is not enjoyment, current route clearance or an automatic-launch result. M2 closure and E1 remain separate work.
+
 ## Questions to carry into a later systematic review
 
 - Does context before anecdote usually improve the story, and when can an immediate intriguing detail work better?

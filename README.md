@@ -2,6 +2,8 @@
 
 An offline walking-tour app for Sidi's Pixel, built with React Native, Expo and TypeScript. M1 and the first M2 map slice have accepted physical evidence. The two authored North Finchley tours, numbered route map, walking chapter and local story reviews are now implemented. See the [tour guide](docs/content/NORTH-FINCHLEY-TAKE-THE-TOURS.md), [implementation](docs/content/M2-PLAYER-IMPLEMENTATION.md) and [current build/device evidence](docs/test-results/M2-tour-build.md). First Tour B feedback is recorded in the [recovery review](docs/content/FIRST-TOUR-FEEDBACK-RECOVERY.md); the [second Tour A outing](docs/content/SECOND-TOUR-FEEDBACK-RECOVERY.md) is also recorded; do not infer M2 acceptance from a build.
 
+**New demo prepared, 21 September:** [Queensway — Behind the façades](docs/content/QUEENSWAY-TAKE-THE-TOUR.md) is a 20–25-minute route near 46 Queensborough Terrace: three stops, one short walking story and George throughout. All 166 tests, both APKs and exact embedded content/map checks pass. [Source `056c32524c6280bf`](docs/test-results/M2-queensway-tour.md) is ready; the silent Pixel installation and offline opening-view check are pending.
+
 **Latest installed build, 21 September:** [Highgate to Hampstead — Room to breathe](docs/content/HAMPSTEAD-TAKE-THE-TOUR.md) adds five stops, two walking passages and a third offline map, all in George. The owner selected Highgate Underground station as the start. Both APKs and all 161 tests pass; [guide 13/source `1bd3e861342b27e4`](docs/test-results/M2-hampstead-tour.md) passed the silent offline handoff. The map now opens on the complete route; Highgate is selected, unstarted, with automatic narration on and tracking stopped. [Research and review](docs/content/authoring/hampstead-2026-09-21/README.md) retain selection and provisional lessons. The existing tours and progress remain available.
 
 **Previous handoff, 20 September:** the complete [Clerkenwell tour](docs/content/CLERKENWELL-TAKE-THE-TOUR.md) is prepared with George, eight stops, two walking passages and its own offline map. Both APKs and 153 automated checks pass; [guide 12/source `9505427915e2d1df`](docs/test-results/M2-clerkenwell-tour.md) passed the [combined phone handoff](docs/test-results/M2-clerkenwell-phone-handoff.md): cold offline map/reader, one clear headset capture with Spotify stopping, and audible review-close continuation. Clerkenwell is selected and unstarted; the earlier headset field failure remains unexplained. Research, selection and all review outcomes are collated in the [authoring record](docs/content/authoring/clerkenwell-2026-09-20/README.md).
@@ -23,7 +25,7 @@ Current `walking-tour-*` outputs include the M2 preview. The accepted M1 APKs ar
 | File | Purpose |
 | --- | --- |
 | `artifacts/walking-tour-development.apk` | Installed Expo development client; load JavaScript from Metro before the walk |
-| `artifacts/walking-tour-offline.apk` | Self-contained release with four authored tours, three offline maps and retained test fixtures; no Metro needed |
+| `artifacts/walking-tour-offline.apk` | Self-contained release with five authored tours, four offline maps and retained test fixtures; no Metro needed |
 | `artifacts/walking-tour-m1a-development.apk` | Earlier vertical-slice checkpoint; prefer the final development build |
 
 The APKs target ARM64 Android, minimum API 24, target/compile API 36. USB installation and development-app launch are verified on Sidi's Pixel 6 (Android 17/API 37, ARM64). The repeated locked-screen walking and planned failure-path matrix have passed within their recorded device/build scopes. See the result record. Both final APKs use the same package ID (`uk.sidi.walkingtourlab`) and development signing certificate. Installing one replaces the other without needing to uninstall; never clear app data during recovery testing.
@@ -166,6 +168,7 @@ node --import tsx tools/render-listening-samples.ts
 - `tests/`, `fixtures/`: automated cases and synthetic input data.
 - `tools/`: scoped build/setup, guarded audio patch, source identity, replay and local content preflight/listening tools.
 - `content/finchley/`: public-source editorial inputs; separate from the private device route.
+- `content/north-finchley/`, `content/clerkenwell/`, `content/hampstead/`, `content/queensway/`: versioned authored inputs, evidence, measured media metadata and offline packages.
 - `assets/audio/`: three short local clips; [provenance/transcripts](assets/audio/README.md).
 
 The Expo blank template's license is retained in [TEMPLATE-LICENSE](TEMPLATE-LICENSE). The project is private and no distribution license has been granted.
@@ -199,14 +202,17 @@ On the pinned Android stack, the React Native developer menu’s **Disable Fast 
 
 ## Prepare the authored tours
 
-The self-contained build embeds the authored tour transports and explicit map bundles. **Prepare bundled tours offline** verifies media and the selected map before publishing each library entry. The three authored transports are Finchley A/B and [Clerkenwell Working lives](content/clerkenwell/README.md), with eight stops and two walking chapters. **Import tour package** accepts version-1 transports referencing one of the two bundled map IDs, with matching route/standing coverage; it is not an arbitrary map downloader. Each tour keeps its own progress, and existing Finchley versions/assets remain unchanged. Reviews pause narration while open; saving and closing resumes an active tour; private GPS diagnostics default off in the tour home.
+The self-contained build embeds the authored tour transports and explicit map bundles. **Prepare bundled tours offline** verifies media and the selected map before publishing each library entry. The five authored transports are Finchley A/B, [Clerkenwell Working lives](content/clerkenwell/README.md), [Highgate to Hampstead](content/hampstead/README.md) and [Queensway](content/queensway/README.md). **Import tour package** accepts version-1 transports referencing one of the four bundled map IDs, with matching route/standing coverage; it is not an arbitrary map downloader. Each tour keeps its own progress, and prior versions/assets remain unchanged. Reviews pause narration while open; saving and closing resumes an active tour; private GPS diagnostics default off in the tour home.
 
 ```sh
 npm ci --prefix tools/voice-samples
 # First-time model caching: npm run samples --prefix tools/voice-samples
 node --import tsx tools/prepare-finchley-tours.ts
+node --import tsx tools/prepare-clerkenwell.ts
+node --import tsx tools/prepare-hampstead.ts
+node --import tsx tools/prepare-queensway.ts
 node --import tsx --test tests/prepared-tours.test.ts
 python3 tools/verify-tour-apk.py artifacts/walking-tour-offline.apk
 ```
 
-`content/north-finchley/packages/` is included in the build identity. The generator uses the owner-selected local Kokoro George voice (install its isolated tooling with `npm ci --prefix tools/voice-samples`) and cached authored inputs; it is not the later automated authoring factory. Preserve content versions once imported. Source scripts, evidence, route requests and measured durations remain reviewable in the repository.
+All four authored package directories under `content/` are included in the build identity. The bounded generators use the owner-selected local Kokoro George voice (install its isolated tooling with `npm ci --prefix tools/voice-samples`) and cached authored inputs; they are not the later automated authoring factory. Preserve content versions once imported. Source scripts, evidence, route requests and measured durations remain reviewable in the repository.

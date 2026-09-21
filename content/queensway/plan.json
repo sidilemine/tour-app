@@ -1,0 +1,351 @@
+{
+  "fixture": {
+    "schemaVersion": 1,
+    "id": "queensway-behind-fronts",
+    "version": 1,
+    "title": "Queensway — Behind the façades",
+    "verification": {
+      "status": "unverified",
+      "note": "Public street route desk reviewed 21 September 2026 using pedestrian routing, mapped addresses and dated street imagery. Exact visitor points and crossing connectors are approximate authored positions, not surveyed pavement traces. Current works, evening visibility and crowds remain unobserved. Follow the written crossing instructions and physical signs."
+    },
+    "route": [
+      {
+        "latitude": 51.510945,
+        "longitude": -0.187255
+      },
+      {
+        "latitude": 51.511025,
+        "longitude": -0.187175
+      },
+      {
+        "latitude": 51.511481,
+        "longitude": -0.187343
+      },
+      {
+        "latitude": 51.511617,
+        "longitude": -0.187393
+      },
+      {
+        "latitude": 51.511745,
+        "longitude": -0.187438
+      },
+      {
+        "latitude": 51.511911,
+        "longitude": -0.187482
+      },
+      {
+        "latitude": 51.512127,
+        "longitude": -0.187509
+      },
+      {
+        "latitude": 51.512353,
+        "longitude": -0.187548
+      },
+      {
+        "latitude": 51.512748,
+        "longitude": -0.187618
+      },
+      {
+        "latitude": 51.513615,
+        "longitude": -0.187761
+      },
+      {
+        "latitude": 51.513662,
+        "longitude": -0.187768
+      },
+      {
+        "latitude": 51.513711,
+        "longitude": -0.18786
+      },
+      {
+        "latitude": 51.513711,
+        "longitude": -0.187773
+      },
+      {
+        "latitude": 51.513711,
+        "longitude": -0.18768
+      },
+      {
+        "latitude": 51.513727,
+        "longitude": -0.187635
+      },
+      {
+        "latitude": 51.513819,
+        "longitude": -0.187641
+      },
+      {
+        "latitude": 51.51393,
+        "longitude": -0.18767
+      },
+      {
+        "latitude": 51.51384,
+        "longitude": -0.187641
+      },
+      {
+        "latitude": 51.51377,
+        "longitude": -0.187639
+      },
+      {
+        "latitude": 51.513776,
+        "longitude": -0.187588
+      },
+      {
+        "latitude": 51.513775,
+        "longitude": -0.187515
+      },
+      {
+        "latitude": 51.513791,
+        "longitude": -0.187349
+      },
+      {
+        "latitude": 51.513834,
+        "longitude": -0.187033
+      },
+      {
+        "latitude": 51.513838,
+        "longitude": -0.18699
+      },
+      {
+        "latitude": 51.513845,
+        "longitude": -0.186957
+      },
+      {
+        "latitude": 51.513851,
+        "longitude": -0.186902
+      },
+      {
+        "latitude": 51.513862,
+        "longitude": -0.186789
+      },
+      {
+        "latitude": 51.513914,
+        "longitude": -0.186366
+      },
+      {
+        "latitude": 51.513953,
+        "longitude": -0.186034
+      },
+      {
+        "latitude": 51.513964,
+        "longitude": -0.185943
+      },
+      {
+        "latitude": 51.51398,
+        "longitude": -0.185814
+      },
+      {
+        "latitude": 51.513995,
+        "longitude": -0.185693
+      },
+      {
+        "latitude": 51.514013,
+        "longitude": -0.185543
+      },
+      {
+        "latitude": 51.514021,
+        "longitude": -0.185478
+      },
+      {
+        "latitude": 51.514028,
+        "longitude": -0.185416
+      },
+      {
+        "latitude": 51.514075,
+        "longitude": -0.185028
+      },
+      {
+        "latitude": 51.51414,
+        "longitude": -0.185054
+      },
+      {
+        "latitude": 51.514202,
+        "longitude": -0.185082
+      },
+      {
+        "latitude": 51.514215,
+        "longitude": -0.185
+      },
+      {
+        "latitude": 51.514388,
+        "longitude": -0.183952
+      },
+      {
+        "latitude": 51.51431,
+        "longitude": -0.1839275
+      },
+      {
+        "latitude": 51.5142,
+        "longitude": -0.183893
+      },
+      {
+        "latitude": 51.513856,
+        "longitude": -0.183785
+      },
+      {
+        "latitude": 51.51337,
+        "longitude": -0.1836325
+      },
+      {
+        "latitude": 51.513311,
+        "longitude": -0.183614
+      },
+      {
+        "latitude": 51.513125,
+        "longitude": -0.183556
+      },
+      {
+        "latitude": 51.5127,
+        "longitude": -0.18331
+      },
+      {
+        "latitude": 51.51269,
+        "longitude": -0.1835
+      },
+      {
+        "latitude": 51.51228,
+        "longitude": -0.18339
+      },
+      {
+        "latitude": 51.512262,
+        "longitude": -0.183338
+      },
+      {
+        "latitude": 51.512257,
+        "longitude": -0.183365
+      },
+      {
+        "latitude": 51.512215,
+        "longitude": -0.1838
+      },
+      {
+        "latitude": 51.512223,
+        "longitude": -0.183867
+      },
+      {
+        "latitude": 51.512195,
+        "longitude": -0.18412
+      },
+      {
+        "latitude": 51.512193,
+        "longitude": -0.184136
+      },
+      {
+        "latitude": 51.512185,
+        "longitude": -0.184198
+      },
+      {
+        "latitude": 51.512589,
+        "longitude": -0.184381
+      },
+      {
+        "latitude": 51.5128,
+        "longitude": -0.184473
+      },
+      {
+        "latitude": 51.512671,
+        "longitude": -0.185396
+      },
+      {
+        "latitude": 51.512653,
+        "longitude": -0.185548
+      },
+      {
+        "latitude": 51.511794,
+        "longitude": -0.18526
+      }
+    ],
+    "stops": [
+      {
+        "id": "queens-rink",
+        "title": "QUEENS",
+        "standing": {
+          "latitude": 51.510945,
+          "longitude": -0.187255
+        },
+        "landmark": {
+          "latitude": 51.5108972,
+          "longitude": -0.1873387
+        },
+        "routeIndex": 0,
+        "approach": "From Queensway station’s Queensway-side exit, turn left away from Bayswater Road and walk north along the west pavement for about60metres to QUEENS at17 Queensway. If you emerge onto Bayswater Road, turn around the corner onto Queensway first. Start beside the entrance, clear of doors and bus-stop space.",
+        "viewpoint": "The street-level QUEENS entrance; the rink itself is below ground and cannot be seen from this stop.",
+        "access": "Public west pavement beside the QUEENS entrance at 17 Queensway; keep the doorway, bus stop and walking line clear. No basement entry."
+      },
+      {
+        "id": "whiteleys",
+        "title": "Whiteleys",
+        "standing": {
+          "latitude": 51.51393,
+          "longitude": -0.18767
+        },
+        "landmark": {
+          "latitude": 51.5142258,
+          "longitude": -0.1880114
+        },
+        "routeIndex": 16,
+        "approach": "Follow Queensway north from QUEENS. At Porchester Gardens use the two pedestrian-signal crossings, then continue briefly north on the east pavement.",
+        "viewpoint": "Look across Queensway towards the long pale-stone Whiteleys frontage.",
+        "access": "Public east pavement on Queensway just north of Porchester Gardens, looking across Queensway to the long Whiteleys frontage. Stand clear of the junction/crossing and shop doors. No hotel or retail entry."
+      },
+      {
+        "id": "leinster-gardens",
+        "title": "Leinster Gardens",
+        "standing": {
+          "latitude": 51.5127,
+          "longitude": -0.18331
+        },
+        "landmark": {
+          "latitude": 51.5126154,
+          "longitude": -0.1836324
+        },
+        "routeIndex": 46,
+        "approach": "Via Porchester Gardens, Porchester Terrace and Leinster Place, turn south along Leinster Gardens’ east pavement. Cross Queen’s Gardens, then stop before Craven Hill Gardens.",
+        "viewpoint": "Across the road, look for the two neighbouring doorways numbered 23 and 24, in the white terrace between the hotels. Trees and parked cars may partly screen the view.",
+        "access": "Public east pavement of Leinster Gardens immediately north of Craven Hill Gardens; stand back from the corner, facing southwest across the road towards numbers 23 and 24. Keep to the pavement. Do not enter hotel forecourts or approach doors."
+      }
+    ]
+  },
+  "narration": {
+    "description": "A 20–25-minute George demo near Queensborough Terrace: three surprising places, one short walking story and about 1.2 km on public streets.",
+    "introduction": "Start beside the QUEENS entrance at 17 Queensway, about a minute north of Queensway station on the same side of the street. Press Start there: the welcome plays immediately. Three stops and one short walking story lead via Whiteleys and Leinster Gardens, finishing near 46 Queensborough Terrace. Allow 20–25 minutes for about 1.2 km, with time to look; crossing waits or a leisurely pace may add a few minutes. The route uses public streets and passageways: no tickets or park opening hours are needed. Keep automatic narration on, and use Read / directions for the turns. Original AI-assisted writing from published evidence, with local AI narration in George’s voice; sources and reconstruction notes are available in the reader.",
+    "finishInstructions": "The last narrated stop is Leinster Gardens. Tap End tour / stop location. The saved route continues about five minutes via Craven Hill Gardens, Porchester Terrace and Queensborough Passage to the public pavement near 46 Queensborough Terrace. At the passage exit turn left; number 46 is about 100 metres along on the same side. Read / directions retains the detailed return. If the passage is unexpectedly closed, stay on public pavements and use the map via Porchester Gardens to Queensborough Terrace; allow a few extra minutes.",
+    "reviewNote": "Enjoy the demo with your friend; no test checklist or notes at every stop are needed. If something catches your attention or a direction is confusing, a short note afterward is enough. Review pauses narration; Save review and resume tour continues an active walk. Keep Review visible while recording: locking or leaving it stops and saves the voice note.",
+    "rightsNote": "Original AI-assisted prose from public museum, archive, conservation and operator sources; local Kokoro bm_george synthesis from the pinned model. Map data © OpenStreetMap contributors (ODbL), Protomaps basemap and shared Noto Sans glyphs under bundled notices. Routing uses Valhalla/OpenStreetMap. No source photographs, Street View imagery, third-party tour scripts or music are packaged. Prepared 21 September 2026 for the owner’s private demonstration; no external publication is implied."
+  },
+  "chapters": [
+    {
+      "id": "bayswater-terraces",
+      "afterStopIndex": 1,
+      "startRouteIndex": 40,
+      "endRouteIndex": 41,
+      "navigationRouteIndex": 43,
+      "fastWalkingMetresPerSecond": 1.6666666666666665,
+      "marginSeconds": 15,
+      "maximumAudioSeconds": 40
+    }
+  ],
+  "routeEvidence": "docs/content/authoring/queensway-2026-09-21/ROUTE-RESEARCH.md",
+  "authoring": {
+    "selection": "docs/content/authoring/queensway-2026-09-21/SELECTION.md",
+    "routeInput": "docs/content/authoring/queensway-2026-09-21/route-selected.json",
+    "routeInputSha256": "eb6513e1291a6531ce8fa37c22f32538c458c4bbf7151e46eb03d784b38bfb21",
+    "metrics": {
+      "providerMetres": 1208,
+      "providerSeconds": 990.241,
+      "measuredGeometryMetres": 1213.66,
+      "plannedOutingMinutes": [
+        20,
+        25
+      ],
+      "planningBasis": "About 16.5 minutes of provider movement at 4.5 km/h plus short stationary narration and looking/crossing waits. Starting at Queensway station adds about 1 minute to QUEENS; actual pacing may exceed 25 minutes."
+    },
+    "limits": [
+      "Dated imagery establishes street layout, not today’s works clearance, evening lighting, parked vehicles or crowds.",
+      "The Whiteleys northern public-realm scheme was approved January 2026; inspect/obey any local barriers and pause/manual-play if a small adjustment is necessary.",
+      "Queensborough Passage is a public connection with no gate in reviewed imagery; eastern section carries access vehicles and has no separate footway. Keep it silent.",
+      "Some literal pavement/crossing choices are represented by approximate authored connectors; retain raw responses and correction notes.",
+      "The apparent building coordinate from an initial discovery site was wrong for the front-facing visitor stop; corrected to actual 23/24 address nodes and October 2025 street view.",
+      "Do not require the hotel, QUEENS basement, Whiteleys interior, private gardens or rear railway wall view."
+    ]
+  }
+}

@@ -5,7 +5,7 @@ import sys
 import zipfile
 from pathlib import Path
 
-catalogs = [json.loads(Path(path).read_text()) for path in ('src/map/catalog.json', 'src/map/clerkenwell.json', 'src/map/hampstead.json')]
+catalogs = [json.loads(Path(path).read_text()) for path in ('src/map/catalog.json', 'src/map/clerkenwell.json', 'src/map/hampstead.json', 'src/map/queensway.json')]
 for path in sys.argv[1:]:
     with zipfile.ZipFile(path) as apk:
         names = apk.namelist()

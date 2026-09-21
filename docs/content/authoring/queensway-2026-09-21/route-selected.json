@@ -1,0 +1,584 @@
+{
+  "schema": "authoring-route-input-v1",
+  "researchedAt": "2026-09-21",
+  "researcher": "hampstead_route",
+  "selection": "QUEENS to Whiteleys to 23/24 Leinster Gardens, ending on the public pavement near 46 Queensborough Terrace",
+  "coordinateFormat": "latitude/longitude WGS84 objects; zero-based route indices",
+  "verificationStatus": "Valhalla pedestrian geometry with explicitly authored crossing/standing corrections and collinear chapter-window points; reviewed against OSM and dated Street View. Most street segments are provider centrelines, not surveyed sidewalk traces. Literal directions control pavement choice. Not a current field-clearance certificate.",
+  "sources": [
+    {
+      "id": "valhalla",
+      "url": "https://valhalla1.openstreetmap.de/route",
+      "accessedAt": "2026-09-21"
+    },
+    {
+      "id": "osm",
+      "url": "https://www.openstreetmap.org/copyright",
+      "accessedAt": "2026-09-21",
+      "license": "© OpenStreetMap contributors, ODbL"
+    }
+  ],
+  "authoredGeometryCorrections": [
+    {
+      "id": "queens-public-standing",
+      "basis": "Replace the first snapped road-centre endpoint with the reviewed west-pavement standing coordinate. Approximate authored standing point, not a surveyed door coordinate."
+    },
+    {
+      "id": "whiteleys-signalled-approach",
+      "basis": "Replace final Queensway centreline points with an authored sequence representing west-to-east Queensway pedestrian signals, then south-to-north Porchester Gardens signals, and the east-pavement stop. Crossings are OSM nodes 7330198938 and 7330165052; September/August street imagery supports public pavements. Coordinates at landings are authored approximations, not surveyed. Onward connector returns to Porchester Gardens from the east pavement instead of routing back through Queensway carriageway centre."
+    },
+    {
+      "id": "leinster-window-interpolations",
+      "basis": "Insert collinear points at latitudes 51.51431,51.51420 and 51.51337 on raw Leinster Gardens geometry. They define launch/guard timing; no provider network change."
+    },
+    {
+      "id": "front-viewpoint-and-return",
+      "basis": "Remove the raw endpoint dogleg into Craven Hill Gardens. Finish the approach on the reviewed east pavement north of the corner. Begin the return with an authored crossing west over Leinster Gardens and west-pavement connector to the southern Craven Hill Gardens corner. Road-centre geometry resumes for the named public street. This agrees with the chosen viewpoint and avoids narrating a stop from the middle of the side-road mouth."
+    },
+    {
+      "id": "finish-standing",
+      "basis": "Replace snapped Queensborough Terrace endpoint with approximate east-pavement point beside the 46 address vicinity. No private entrance included."
+    }
+  ],
+  "route": [
+    {
+      "latitude": 51.510945,
+      "longitude": -0.187255
+    },
+    {
+      "latitude": 51.511025,
+      "longitude": -0.187175
+    },
+    {
+      "latitude": 51.511481,
+      "longitude": -0.187343
+    },
+    {
+      "latitude": 51.511617,
+      "longitude": -0.187393
+    },
+    {
+      "latitude": 51.511745,
+      "longitude": -0.187438
+    },
+    {
+      "latitude": 51.511911,
+      "longitude": -0.187482
+    },
+    {
+      "latitude": 51.512127,
+      "longitude": -0.187509
+    },
+    {
+      "latitude": 51.512353,
+      "longitude": -0.187548
+    },
+    {
+      "latitude": 51.512748,
+      "longitude": -0.187618
+    },
+    {
+      "latitude": 51.513615,
+      "longitude": -0.187761
+    },
+    {
+      "latitude": 51.513662,
+      "longitude": -0.187768
+    },
+    {
+      "latitude": 51.513711,
+      "longitude": -0.18786
+    },
+    {
+      "latitude": 51.513711,
+      "longitude": -0.187773
+    },
+    {
+      "latitude": 51.513711,
+      "longitude": -0.18768
+    },
+    {
+      "latitude": 51.513727,
+      "longitude": -0.187635
+    },
+    {
+      "latitude": 51.513819,
+      "longitude": -0.187641
+    },
+    {
+      "latitude": 51.51393,
+      "longitude": -0.18767
+    },
+    {
+      "latitude": 51.51384,
+      "longitude": -0.187641
+    },
+    {
+      "latitude": 51.51377,
+      "longitude": -0.187639
+    },
+    {
+      "latitude": 51.513776,
+      "longitude": -0.187588
+    },
+    {
+      "latitude": 51.513775,
+      "longitude": -0.187515
+    },
+    {
+      "latitude": 51.513791,
+      "longitude": -0.187349
+    },
+    {
+      "latitude": 51.513834,
+      "longitude": -0.187033
+    },
+    {
+      "latitude": 51.513838,
+      "longitude": -0.18699
+    },
+    {
+      "latitude": 51.513845,
+      "longitude": -0.186957
+    },
+    {
+      "latitude": 51.513851,
+      "longitude": -0.186902
+    },
+    {
+      "latitude": 51.513862,
+      "longitude": -0.186789
+    },
+    {
+      "latitude": 51.513914,
+      "longitude": -0.186366
+    },
+    {
+      "latitude": 51.513953,
+      "longitude": -0.186034
+    },
+    {
+      "latitude": 51.513964,
+      "longitude": -0.185943
+    },
+    {
+      "latitude": 51.51398,
+      "longitude": -0.185814
+    },
+    {
+      "latitude": 51.513995,
+      "longitude": -0.185693
+    },
+    {
+      "latitude": 51.514013,
+      "longitude": -0.185543
+    },
+    {
+      "latitude": 51.514021,
+      "longitude": -0.185478
+    },
+    {
+      "latitude": 51.514028,
+      "longitude": -0.185416
+    },
+    {
+      "latitude": 51.514075,
+      "longitude": -0.185028
+    },
+    {
+      "latitude": 51.51414,
+      "longitude": -0.185054
+    },
+    {
+      "latitude": 51.514202,
+      "longitude": -0.185082
+    },
+    {
+      "latitude": 51.514215,
+      "longitude": -0.185
+    },
+    {
+      "latitude": 51.514388,
+      "longitude": -0.183952
+    },
+    {
+      "latitude": 51.51431,
+      "longitude": -0.1839275
+    },
+    {
+      "latitude": 51.5142,
+      "longitude": -0.183893
+    },
+    {
+      "latitude": 51.513856,
+      "longitude": -0.183785
+    },
+    {
+      "latitude": 51.51337,
+      "longitude": -0.1836325
+    },
+    {
+      "latitude": 51.513311,
+      "longitude": -0.183614
+    },
+    {
+      "latitude": 51.513125,
+      "longitude": -0.183556
+    },
+    {
+      "latitude": 51.5127,
+      "longitude": -0.18331
+    },
+    {
+      "latitude": 51.51269,
+      "longitude": -0.1835
+    },
+    {
+      "latitude": 51.51228,
+      "longitude": -0.18339
+    },
+    {
+      "latitude": 51.512262,
+      "longitude": -0.183338
+    },
+    {
+      "latitude": 51.512257,
+      "longitude": -0.183365
+    },
+    {
+      "latitude": 51.512215,
+      "longitude": -0.1838
+    },
+    {
+      "latitude": 51.512223,
+      "longitude": -0.183867
+    },
+    {
+      "latitude": 51.512195,
+      "longitude": -0.18412
+    },
+    {
+      "latitude": 51.512193,
+      "longitude": -0.184136
+    },
+    {
+      "latitude": 51.512185,
+      "longitude": -0.184198
+    },
+    {
+      "latitude": 51.512589,
+      "longitude": -0.184381
+    },
+    {
+      "latitude": 51.5128,
+      "longitude": -0.184473
+    },
+    {
+      "latitude": 51.512671,
+      "longitude": -0.185396
+    },
+    {
+      "latitude": 51.512653,
+      "longitude": -0.185548
+    },
+    {
+      "latitude": 51.511794,
+      "longitude": -0.18526
+    }
+  ],
+  "stops": [
+    {
+      "id": "queens-rink",
+      "title": "QUEENS",
+      "landmarkCoordinate": {
+        "latitude": 51.5108972,
+        "longitude": -0.1873387
+      },
+      "standingCoordinate": {
+        "latitude": 51.510945,
+        "longitude": -0.187255
+      },
+      "routeIndex": 0,
+      "access": "Public west pavement beside the QUEENS entrance at 17 Queensway; keep the doorway, bus stop and walking line clear. No basement entry.",
+      "viewpointEvidence": "September 2024 Google street imagery shows the street-level frontage/entrance in the Queens Court shopping parade; interior and rink are not visible from outside.",
+      "verificationStatus": "desk-reviewed; not field-observed"
+    },
+    {
+      "id": "whiteleys",
+      "title": "Whiteleys",
+      "landmarkCoordinate": {
+        "latitude": 51.5142258,
+        "longitude": -0.1880114
+      },
+      "standingCoordinate": {
+        "latitude": 51.51393,
+        "longitude": -0.18767
+      },
+      "routeIndex": 16,
+      "access": "Public east pavement on Queensway just north of Porchester Gardens, looking across Queensway to the long Whiteleys frontage. Stand clear of the junction/crossing and shop doors. No hotel or retail entry.",
+      "viewpointEvidence": "August 2025 panorama rrZT 4 dTOHTndm 4 qTfKphmA shows the restored corner/long facade and public pavements. Northern public-realm works were approved January 2026; this is not a current works all-clear.",
+      "verificationStatus": "desk-reviewed; not field-observed"
+    },
+    {
+      "id": "leinster-gardens",
+      "title": "Leinster Gardens",
+      "landmarkCoordinate": {
+        "latitude": 51.5126154,
+        "longitude": -0.1836324
+      },
+      "standingCoordinate": {
+        "latitude": 51.5127,
+        "longitude": -0.18331
+      },
+      "routeIndex": 46,
+      "access": "Public east pavement of Leinster Gardens immediately north of Craven Hill Gardens; stand back from the corner, facing southwest across the road towards numbers 23 and 24. Keep to the pavement. Do not enter hotel forecourts or approach doors.",
+      "viewpointEvidence": "October 2025 panorama OLGrZZFkF 2 rKRoEd-rdUXA confirms the white facade opposite the Craven Hill Gardens junction. Trees and parked vehicles partly screen it; direct visibility of every small detail is not promised.",
+      "verificationStatus": "desk-reviewed; not field-observed"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "bayswater-terraces",
+      "afterStopIndex": 1,
+      "startRouteIndex": 40,
+      "endRouteIndex": 41,
+      "navigationRouteIndex": 43,
+      "fastWalkingMetresPerSecond": 1.6666666666666665,
+      "marginSeconds": 15,
+      "maximumAudioSeconds": 40,
+      "metresAfterLatestLaunch": 94.04,
+      "secondsAfterLatestLaunchAt6Kmh": 56.42,
+      "marginAtAudioCapSeconds": 16.42,
+      "launchWindowMetres": 12.46,
+      "basis": "East pavement of Leinster Gardens, after completing the crossing/right turn from Leinster Place. Launch about 9–21 metres south of that junction. Navigation boundary is about 7 metres before the first Queen’s Gardens side-road mouth, which is crossed only after narration ends. No required turn or vehicle side-road crossing within the launch-to-guard corridor. Pass the small pedestrian/cycle opening to Cleveland Square without turning; keep aware of anyone joining it. Normal hotel doors/loading activity still require awareness."
+    }
+  ],
+  "legs": [
+    {
+      "from": "queens-rink",
+      "to": "whiteleys",
+      "startRouteIndex": 0,
+      "endRouteIndex": 16,
+      "providerMetres": 333,
+      "providerSeconds": 261.387,
+      "rawProviderFile": "route-response-final.json",
+      "rawProviderSha256": "b9825561f0d50029803d3db2898f845861a4ea55e4003949787b498fec2fbc63",
+      "rawProviderLegIndex": 0,
+      "originalManeuvers": [
+        {
+          "begin_shape_index": 0,
+          "end_shape_index": 15,
+          "instruction": "Walk north on Queensway/B411."
+        },
+        {
+          "begin_shape_index": 15,
+          "end_shape_index": 15,
+          "instruction": "Your destination is on the right."
+        }
+      ]
+    },
+    {
+      "from": "whiteleys",
+      "to": "leinster-gardens",
+      "startRouteIndex": 16,
+      "endRouteIndex": 46,
+      "providerMetres": 514,
+      "providerSeconds": 417.919,
+      "rawProviderFile": "route-response-final.json",
+      "rawProviderSha256": "b9825561f0d50029803d3db2898f845861a4ea55e4003949787b498fec2fbc63",
+      "rawProviderLegIndex": 1,
+      "originalManeuvers": [
+        {
+          "begin_shape_index": 0,
+          "end_shape_index": 3,
+          "instruction": "Walk south on Queensway/B411."
+        },
+        {
+          "begin_shape_index": 3,
+          "end_shape_index": 21,
+          "instruction": "Turn left onto Porchester Gardens."
+        },
+        {
+          "begin_shape_index": 21,
+          "end_shape_index": 23,
+          "instruction": "Turn left onto Porchester Terrace."
+        },
+        {
+          "begin_shape_index": 23,
+          "end_shape_index": 25,
+          "instruction": "Turn right onto Leinster Place."
+        },
+        {
+          "begin_shape_index": 25,
+          "end_shape_index": 29,
+          "instruction": "Turn right onto Leinster Gardens."
+        },
+        {
+          "begin_shape_index": 29,
+          "end_shape_index": 30,
+          "instruction": "Turn left onto Craven Hill Gardens."
+        },
+        {
+          "begin_shape_index": 30,
+          "end_shape_index": 30,
+          "instruction": "Your destination is on the left."
+        }
+      ]
+    },
+    {
+      "from": "leinster-gardens",
+      "to": "queensborough-terrace",
+      "startRouteIndex": 46,
+      "endRouteIndex": 60,
+      "providerMetres": 360,
+      "providerSeconds": 310.935,
+      "rawProviderFile": "route-response-final.json",
+      "rawProviderSha256": "b9825561f0d50029803d3db2898f845861a4ea55e4003949787b498fec2fbc63",
+      "rawProviderLegIndex": 2,
+      "originalManeuvers": [
+        {
+          "begin_shape_index": 0,
+          "end_shape_index": 1,
+          "instruction": "Walk southwest on Craven Hill Gardens."
+        },
+        {
+          "begin_shape_index": 1,
+          "end_shape_index": 2,
+          "instruction": "Turn left onto Leinster Gardens."
+        },
+        {
+          "begin_shape_index": 2,
+          "end_shape_index": 9,
+          "instruction": "Turn right onto Craven Hill Gardens."
+        },
+        {
+          "begin_shape_index": 9,
+          "end_shape_index": 11,
+          "instruction": "Turn right onto Porchester Terrace."
+        },
+        {
+          "begin_shape_index": 11,
+          "end_shape_index": 12,
+          "instruction": "Turn left onto Queensborough Passage."
+        },
+        {
+          "begin_shape_index": 12,
+          "end_shape_index": 13,
+          "instruction": "Continue on the walkway."
+        },
+        {
+          "begin_shape_index": 13,
+          "end_shape_index": 14,
+          "instruction": "Turn left onto Queensborough Terrace."
+        },
+        {
+          "begin_shape_index": 14,
+          "end_shape_index": 14,
+          "instruction": "You have arrived at your destination."
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "providerMetres": 1208,
+    "providerSeconds": 990.241,
+    "measuredGeometryMetres": 1213.66,
+    "plannedOutingMinutes": [
+      20,
+      25
+    ],
+    "planningBasis": "About 16.5 minutes of provider movement at 4.5 km/h plus short stationary narration and looking/crossing waits. Starting at Queensway station adds about 1 minute to QUEENS; actual pacing may exceed 25 minutes."
+  },
+  "finish": {
+    "id": "queensborough-terrace",
+    "label": "Public pavement near46 Queensborough Terrace",
+    "coordinate": {
+      "latitude": 51.511794,
+      "longitude": -0.18526
+    },
+    "routeIndex": 60,
+    "addressEvidence": "Google Maps listing Queens Park Premier, Hyde Park,46 Queensborough Terrace,W 2 3 SH resolves to building 51.5117939,-0.1851326; standing point stays on the public east pavement."
+  },
+  "onwardDirections": [
+    {
+      "afterStopId": "queens-rink",
+      "text": "With the QUEENS entrance on your left, walk north along Queensway on the same pavement. Continue past Bayswater station and cross the mouth of Moscow Road when clear. At Porchester Gardens, use the pedestrian signals across Queensway to the opposite side, then the signals across Porchester Gardens. Stay on Queensway briefly and pause clear of the corner, facing the long Whiteleys building across the road.",
+      "spokenSummary": "Continue north along Queensway, keeping the shops on your left. At Porchester Gardens, use the pedestrian crossings to reach the opposite corner; our next stop looks across the road at Whiteleys."
+    },
+    {
+      "afterStopId": "whiteleys",
+      "text": "Return a few steps to the corner and turn left into Porchester Gardens, keeping to its north pavement with the gardens and flats on your left. Cross Inverness Terrace at the junction when clear. Continue along Porchester Gardens, crossing the mews/driveway entrances with care. At the T-junction with Porchester Terrace, turn left. Use the small refuge crossing to reach the opposite pavement, then turn right into Leinster Place. At its end, cross Leinster Gardens when clear and turn right along the east pavement. The walking story belongs to this straight stretch; finish it before the side road Queen’s Gardens. Cross the two mouths of Queen’s Gardens when clear and continue to the pavement just before the next junction, Craven Hill Gardens. Across Leinster Gardens are numbers 23 and 24.",
+      "spokenSummary": "Our next stop is in Leinster Gardens. Turn into Porchester Gardens and follow the map via Porchester Terrace and Leinster Place. Once you have crossed into Leinster Gardens, turn right onto its east pavement; the short walking story starts along that straight stretch."
+    },
+    {
+      "afterStopId": "leinster-gardens",
+      "text": "When you are ready to leave, cross Leinster Gardens to the pavement beside the white terrace, watching for traffic. Turn left and continue past the hotel to the next corner. Turn right into Craven Hill Gardens. At Porchester Terrace, cross when clear to its west pavement and turn right. After about 70 metres, turn left into the signed Queensborough Passage. Follow the public passage straight through to Queensborough Terrace, staying alert for vehicles in its eastern section. Do not turn into Queensborough Mews. At Queensborough Terrace, turn left; stay on this pavement for about 100 metres to number 46. The tour finishes outside on the public pavement.",
+      "spokenSummary": "For 46 Queensborough Terrace, the map follows Craven Hill Gardens, Porchester Terrace and the public Queensborough Passage. At the far end of the passage, turn left; number 46 is about 100 metres along on the same side."
+    }
+  ],
+  "stationApproach": "From Queensway station’s Queensway-side exit, turn left away from Bayswater Road and walk north along the west pavement for about 60 metres to QUEENS at 17 Queensway. If you emerge onto Bayswater Road, turn around the corner onto Queensway first. Start beside the entrance, clear of doors and bus-stop space.",
+  "crossings": [
+    {
+      "name": "Queensway at Porchester Gardens, southern arm",
+      "kind": "pedestrian signals",
+      "coordinate": {
+        "latitude": 51.5137111,
+        "longitude": -0.1877733
+      },
+      "evidence": "OSM node 7330198938; dated street imagery."
+    },
+    {
+      "name": "Porchester Gardens immediately east of Queensway",
+      "kind": "pedestrian signals",
+      "coordinate": {
+        "latitude": 51.5137703,
+        "longitude": -0.1876388
+      },
+      "evidence": "OSM node 7330165052; dated street imagery."
+    },
+    {
+      "name": "Inverness Terrace / Porchester Gardens",
+      "kind": "junction crossing; obey facilities/signals provided and check turning traffic",
+      "coordinate": {
+        "latitude": 51.5139363,
+        "longitude": -0.1868108
+      },
+      "evidence": "OSM junction plus July 2024 panorama 1 v_Qcb 9 tBhdWfkEPAWXWLQ; do not claim a zebra."
+    },
+    {
+      "name": "Porchester Terrace between Porchester Gardens and Leinster Place",
+      "kind": "uncontrolled refuge",
+      "coordinate": {
+        "latitude": 51.5141395,
+        "longitude": -0.1850542
+      },
+      "evidence": "OSM node 1116225142, unmarked crossing with island; no pedestrian priority assumed."
+    },
+    {
+      "name": "Leinster Gardens at Leinster Place",
+      "kind": "unmarked crossing",
+      "coordinate": {
+        "latitude": 51.51437,
+        "longitude": -0.183945
+      },
+      "evidence": "OSM public street junction and April 2022 corridor imagery; wait for clear traffic."
+    },
+    {
+      "name": "Leinster Gardens by Craven Hill Gardens, after final stop",
+      "kind": "unmarked crossing",
+      "coordinate": {
+        "latitude": 51.51269,
+        "longitude": -0.18341
+      },
+      "evidence": "October 2025 street imagery; no priority assumed."
+    }
+  ],
+  "knownLimitations": [
+    "Dated imagery establishes street layout, not today’s works clearance, evening lighting, parked vehicles or crowds.",
+    "The Whiteleys northern public-realm scheme was approved January 2026; inspect/obey any local barriers and pause/manual-play if a small adjustment is necessary.",
+    "Queensborough Passage is a public connection with no gate in reviewed imagery; eastern section carries access vehicles and has no separate footway. Keep it silent.",
+    "Some literal pavement/crossing choices are represented by approximate authored connectors; retain raw responses and correction notes.",
+    "The apparent building coordinate from an initial discovery site was wrong for the front-facing visitor stop; corrected to actual 23/24 address nodes and October 2025 street view.",
+    "Do not require the hotel, QUEENS basement, Whiteleys interior, private gardens or rear railway wall view."
+  ]
+}

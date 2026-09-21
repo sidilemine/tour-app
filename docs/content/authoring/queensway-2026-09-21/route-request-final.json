@@ -1,0 +1,33 @@
+{
+  "costing": "pedestrian",
+  "costing_options": {
+    "pedestrian": {
+      "walking_speed": 4.5
+    }
+  },
+  "units": "kilometers",
+  "language": "en-GB",
+  "id": "queensway-final",
+  "locations": [
+    {
+      "lat": 51.510945,
+      "lon": -0.187255,
+      "type": "break"
+    },
+    {
+      "lat": 51.51393,
+      "lon": -0.18767,
+      "type": "break"
+    },
+    {
+      "lat": 51.5127,
+      "lon": -0.18331,
+      "type": "break"
+    },
+    {
+      "lat": 51.511794,
+      "lon": -0.18526,
+      "type": "break"
+    }
+  ]
+}

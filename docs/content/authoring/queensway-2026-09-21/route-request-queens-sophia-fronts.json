@@ -1,0 +1,33 @@
+{
+  "costing": "pedestrian",
+  "costing_options": {
+    "pedestrian": {
+      "walking_speed": 4.5
+    }
+  },
+  "units": "kilometers",
+  "language": "en-GB",
+  "id": "queensway-queens-sophia-fronts",
+  "locations": [
+    {
+      "lat": 51.510895,
+      "lon": -0.1873,
+      "type": "break"
+    },
+    {
+      "lat": 51.5123,
+      "lon": -0.19147,
+      "type": "break"
+    },
+    {
+      "lat": 51.5131,
+      "lon": -0.18353,
+      "type": "break"
+    },
+    {
+      "lat": 51.511794,
+      "lon": -0.18526,
+      "type": "break"
+    }
+  ]
+}

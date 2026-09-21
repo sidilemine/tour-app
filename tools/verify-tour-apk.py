@@ -1,4 +1,4 @@
-"""Verify all four authored tours and their exact audio are in the offline APK."""
+"""Verify all five authored tours and their exact audio are in the offline APK."""
 import base64
 import binascii
 import hashlib
@@ -11,11 +11,13 @@ ROOT = Path(__file__).resolve().parent.parent
 FINCHLEY_MAP = 'north-finchley-abc1a7e4d563d305'
 CLERKENWELL_MAP = 'clerkenwell-8f45f13ad1755318'
 HAMPSTEAD_MAP = 'hampstead-0abcc26a600e0718'
+QUEENSWAY_MAP = 'queensway-105db6bcbdfce45f'
 PACKAGE_SPECS = (
     ('A', 'content/north-finchley/packages/A.json', 5, 0, FINCHLEY_MAP),
     ('B', 'content/north-finchley/packages/B.json', 6, 1, FINCHLEY_MAP),
     ('Clerkenwell', 'content/clerkenwell/packages/working-lives.json', 8, 2, CLERKENWELL_MAP),
     ('Highgate–Hampstead', 'content/hampstead/packages/room-to-breathe.json', 5, 2, HAMPSTEAD_MAP),
+    ('Queensway', 'content/queensway/packages/behind-the-fronts.json', 3, 1, QUEENSWAY_MAP),
 )
 
 
@@ -49,10 +51,10 @@ def load_packages():
         packages.append((label, package))
     ids = [package['fixture']['id'] for _, package in packages]
     if len(set(ids)) != len(ids):
-        raise SystemExit('Authored packages must have four distinct tour IDs')
+        raise SystemExit('Authored packages must have five distinct tour IDs')
     clip_count = sum(len(package['assets']) for _, package in packages)
-    if clip_count != 29:
-        raise SystemExit(f'Expected 29 authored clips across four tours, got {clip_count}')
+    if clip_count != 33:
+        raise SystemExit(f'Expected 33 authored clips across five tours, got {clip_count}')
     return packages
 
 
@@ -83,10 +85,10 @@ def main(paths):
                     if not embedded(asset['base64']) or not embedded(asset['key']):
                         raise SystemExit(f'{path}: {label} audio not embedded byte-for-byte: {asset["key"]}')
                     clips += 1
-            for marker in ('walking-feedback.db', 'Record voice note', FINCHLEY_MAP, CLERKENWELL_MAP, HAMPSTEAD_MAP):
+            for marker in ('walking-feedback.db', 'Record voice note', FINCHLEY_MAP, CLERKENWELL_MAP, HAMPSTEAD_MAP, QUEENSWAY_MAP):
                 if not embedded(marker):
                     raise SystemExit(f'{path}: missing feature/map marker: {marker}')
-            print(f'{path}: exact source {source_id}, four tours / {clips} audio entries, feedback and all three pinned map IDs embedded')
+            print(f'{path}: exact source {source_id}, five tours / {clips} audio entries, feedback and all four pinned map IDs embedded')
 
 
 if __name__ == '__main__':

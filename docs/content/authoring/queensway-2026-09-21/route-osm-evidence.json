@@ -1,0 +1,944 @@
+{
+  "sourceUrl": "https://www.openstreetmap.org/api/0.6/map.json?bbox=-0.195,51.509,-0.180,51.5175",
+  "retrievedAt": "2026-09-21",
+  "completeResponseSha256": "19f6737cf681bae3d4a5175730fd250a0bc00269a06e567852756b582fe3dff6",
+  "selection": "Exact original elements relevant to stop/crossing/corridor topology; not the complete response.",
+  "copyright": "OpenStreetMap and contributors",
+  "license": "http://opendatacommons.org/licenses/odbl/1-0/",
+  "elements": [
+    {
+      "type": "node",
+      "id": 255470133,
+      "lat": 51.5108972,
+      "lon": -0.1873387,
+      "timestamp": "2023-02-07T15:54:51Z",
+      "version": 13,
+      "changeset": 132213055,
+      "user": "lzambarda",
+      "uid": 11847182,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "17",
+        "addr:postcode": "W2 4QP",
+        "addr:street": "Queensway",
+        "email": "info@queens.london",
+        "leisure": "sports_centre",
+        "level": "-1",
+        "name": "Queens Skate Dine Bowl",
+        "opening_hours": "Su-Th 10:00-23:00; Fr-Sa 10:00-24:00",
+        "phone": "+44 20 7229 0172",
+        "sport": "10pin;ice_skating",
+        "website": "https://queens.london/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 600826221,
+      "lat": 51.5125862,
+      "lon": -0.1836246,
+      "timestamp": "2026-01-11T09:06:07Z",
+      "version": 6,
+      "changeset": 177088073,
+      "user": "rskedgell",
+      "uid": 3951648,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "23",
+        "addr:street": "Leinster Gardens"
+      }
+    },
+    {
+      "type": "node",
+      "id": 600826224,
+      "lat": 51.5126446,
+      "lon": -0.1836401,
+      "timestamp": "2026-01-11T09:06:07Z",
+      "version": 5,
+      "changeset": 177088073,
+      "user": "rskedgell",
+      "uid": 3951648,
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "24",
+        "addr:street": "Leinster Gardens"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1116225142,
+      "lat": 51.5141395,
+      "lon": -0.1850542,
+      "timestamp": "2026-03-30T22:13:27Z",
+      "version": 10,
+      "changeset": 180649262,
+      "user": "AlexF999",
+      "uid": 20827911,
+      "tags": {
+        "crossing": "unmarked",
+        "crossing:island": "yes",
+        "crossing:markings": "no",
+        "highway": "crossing",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7330165052,
+      "lat": 51.5137703,
+      "lon": -0.1876388,
+      "timestamp": "2025-10-20T09:07:35Z",
+      "version": 5,
+      "changeset": 173525176,
+      "user": "smolag",
+      "uid": 2066053,
+      "tags": {
+        "button_operated": "yes",
+        "crossing": "traffic_signals",
+        "crossing_ref": "pelican",
+        "highway": "crossing",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7330198938,
+      "lat": 51.5137111,
+      "lon": -0.1877733,
+      "timestamp": "2025-06-23T22:07:18Z",
+      "version": 6,
+      "changeset": 168023447,
+      "user": "ohaeger",
+      "uid": 8639922,
+      "tags": {
+        "button_operated": "yes",
+        "crossing": "traffic_signals",
+        "crossing_ref": "pelican",
+        "highway": "crossing",
+        "kerb": "flush",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4779895,
+      "timestamp": "2025-08-10T19:05:28Z",
+      "version": 24,
+      "changeset": 170260764,
+      "user": "rskedgell",
+      "uid": 3951648,
+      "nodes": [
+        9801933856,
+        856374103,
+        26373323,
+        30585314,
+        856374113,
+        1356415643,
+        7028990982,
+        9801933855
+      ],
+      "tags": {
+        "cycleway:right": "lane",
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "20 mph",
+        "name": "Porchester Gardens",
+        "parking:left": "no",
+        "parking:right": "lane",
+        "parking:right:orientation": "parallel",
+        "ref:GB:usrn": "8400191",
+        "surface": "asphalt",
+        "wikidata": "Q117289799"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4779906,
+      "timestamp": "2025-08-10T19:05:28Z",
+      "version": 11,
+      "changeset": 170260764,
+      "user": "rskedgell",
+      "uid": 3951648,
+      "nodes": [
+        26373352,
+        13062197910,
+        26373346
+      ],
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "20 mph",
+        "maxspeed:type": "GB:zone20",
+        "name": "Leinster Place",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4779907,
+      "timestamp": "2024-02-04T13:26:53Z",
+      "version": 13,
+      "changeset": 147053976,
+      "user": "KasperSFranz",
+      "uid": 16586381,
+      "nodes": [
+        255601880,
+        300970921,
+        26373346,
+        26373345,
+        26373351,
+        30591869,
+        360318583
+      ],
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "20 mph",
+        "maxspeed:type": "GB:zone20",
+        "name": "Leinster Gardens",
+        "wikidata": "Q3229195",
+        "wikipedia": "en:Leinster Gardens"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4779908,
+      "timestamp": "2025-08-10T19:05:28Z",
+      "version": 6,
+      "changeset": 170260764,
+      "user": "rskedgell",
+      "uid": 3951648,
+      "nodes": [
+        1691112954,
+        26373330
+      ],
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lanes": "1",
+        "lit": "yes",
+        "maxheight": "3.1",
+        "name": "Queensborough Passage",
+        "oneway": "no",
+        "postal_code": "W2",
+        "ref:GB:usrn": "8401510",
+        "sidewalk": "no",
+        "smoothness": "intermediate",
+        "surface": "asphalt",
+        "wikidata": "Q126655317"
+      }
+    },
+    {
+      "type": "way",
+      "id": 4780408,
+      "timestamp": "2012-02-01T21:26:56Z",
+      "version": 4,
+      "changeset": 10562624,
+      "user": "Jon Clarke",
+      "uid": 220998,
+      "nodes": [
+        26373345,
+        30591875
+      ],
+      "tags": {
+        "bicycle": "yes",
+        "highway": "footway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 8152797,
+      "timestamp": "2020-07-27T11:10:20Z",
+      "version": 9,
+      "changeset": 88561466,
+      "user": "Welshie",
+      "uid": 508,
+      "nodes": [
+        26373351,
+        1691113013,
+        1691113033,
+        26373343
+      ],
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "20 mph",
+        "maxspeed:type": "GB:zone20",
+        "name": "Queen's Gardens",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 32562314,
+      "timestamp": "2025-06-10T11:35:15Z",
+      "version": 23,
+      "changeset": 167440223,
+      "user": "honapak",
+      "uid": 22134934,
+      "nodes": [
+        26373344,
+        366235141,
+        6988035676,
+        366235142,
+        366902659,
+        366873893,
+        12901980223,
+        1691113039,
+        30591875
+      ],
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "maxspeed": "20 mph",
+        "maxspeed:type": "GB:zone20",
+        "name": "Cleveland Square",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 41657430,
+      "timestamp": "2026-07-22T17:53:18Z",
+      "version": 21,
+      "changeset": 186191868,
+      "user": "MelJ_1",
+      "uid": 23354696,
+      "nodes": [
+        511993283,
+        5111092819,
+        511993285,
+        511993292,
+        1230908746,
+        511993295,
+        5111097835,
+        5111097840,
+        511993283
+      ],
+      "tags": {
+        "addr:city": "London",
+        "addr:housenumber": "149",
+        "addr:postcode": "W2 4YN",
+        "addr:street": "Queensway",
+        "building": "yes",
+        "name": "Whiteleys",
+        "old_name": "Whiteleys Shopping Centre",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.thewhiteleylondon.com",
+        "wikidata": "Q7996145",
+        "wikipedia": "en:Whiteleys"
+      }
+    },
+    {
+      "type": "way",
+      "id": 72034470,
+      "timestamp": "2024-11-20T22:24:29Z",
+      "version": 8,
+      "changeset": 159387097,
+      "user": "peregrination",
+      "uid": 486343,
+      "nodes": [
+        856374107,
+        6986280461,
+        856374103
+      ],
+      "tags": {
+        "access": "private",
+        "cycleway:both": "no",
+        "highway": "unclassified",
+        "lane_markings": "no",
+        "maxspeed": "20 mph",
+        "maxspeed:type": "GB:zone20",
+        "name": "Porchester Gardens Mews",
+        "source": "OS",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 72034472,
+      "timestamp": "2022-11-22T15:42:29Z",
+      "version": 6,
+      "changeset": 129229474,
+      "user": "scai",
+      "uid": 118134,
+      "nodes": [
+        856374113,
+        6986280460,
+        1356414249,
+        1356414982,
+        6986280457,
+        1356414366,
+        1356414636,
+        1356416239,
+        6986280459,
+        1356415643
+      ],
+      "tags": {
+        "highway": "service",
+        "source": "OS;survey",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "node",
+      "id": 26373323,
+      "lat": 51.5139645,
+      "lon": -0.1859429,
+      "timestamp": "2019-12-03T14:42:31Z",
+      "version": 5,
+      "changeset": 77885182,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 26373330,
+      "lat": 51.5128004,
+      "lon": -0.1844726,
+      "timestamp": "2019-12-02T15:49:09Z",
+      "version": 14,
+      "changeset": 77832285,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 26373343,
+      "lat": 51.5142459,
+      "lon": -0.180587,
+      "timestamp": "2019-11-27T04:21:57Z",
+      "version": 17,
+      "changeset": 77604963,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 26373344,
+      "lat": 51.5145866,
+      "lon": -0.1810151,
+      "timestamp": "2019-11-18T18:48:13Z",
+      "version": 22,
+      "changeset": 77243239,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 26373345,
+      "lat": 51.5138555,
+      "lon": -0.1837847,
+      "timestamp": "2019-11-27T04:21:57Z",
+      "version": 9,
+      "changeset": 77604963,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 26373346,
+      "lat": 51.5143885,
+      "lon": -0.1839516,
+      "timestamp": "2019-11-27T04:21:57Z",
+      "version": 8,
+      "changeset": 77604963,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 26373351,
+      "lat": 51.5133111,
+      "lon": -0.1836142,
+      "timestamp": "2019-11-27T04:21:57Z",
+      "version": 9,
+      "changeset": 77604963,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 26373352,
+      "lat": 51.5142019,
+      "lon": -0.1850823,
+      "timestamp": "2019-11-18T04:15:18Z",
+      "version": 6,
+      "changeset": 77205986,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 30585314,
+      "lat": 51.51398,
+      "lon": -0.1858144,
+      "timestamp": "2019-12-03T14:42:31Z",
+      "version": 5,
+      "changeset": 77885182,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 30591869,
+      "lat": 51.5131245,
+      "lon": -0.1835558,
+      "timestamp": "2019-11-27T04:21:57Z",
+      "version": 7,
+      "changeset": 77604963,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 30591875,
+      "lat": 51.5138746,
+      "lon": -0.1836719,
+      "timestamp": "2025-01-19T13:02:04Z",
+      "version": 19,
+      "changeset": 161523469,
+      "user": "Derick Rethans",
+      "uid": 37137,
+      "tags": {
+        "barrier": "bollard",
+        "bicycle": "yes",
+        "bollard": "fixed",
+        "foot": "yes",
+        "material": "metal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 255601880,
+      "lat": 51.5149233,
+      "lon": -0.1841172,
+      "timestamp": "2024-11-20T23:30:36Z",
+      "version": 12,
+      "changeset": 159389009,
+      "user": "\u03a3\u03b5\u03c1\u03b1\u03c6\u03b5\u03b9\u03bc",
+      "uid": 2230609
+    },
+    {
+      "type": "node",
+      "id": 300970921,
+      "lat": 51.5148464,
+      "lon": -0.184095,
+      "timestamp": "2019-11-27T04:21:57Z",
+      "version": 8,
+      "changeset": 77604963,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 360318583,
+      "lat": 51.5126212,
+      "lon": -0.1833968,
+      "timestamp": "2019-11-27T04:21:57Z",
+      "version": 12,
+      "changeset": 77604963,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 366235141,
+      "lat": 51.514614,
+      "lon": -0.181112,
+      "timestamp": "2019-11-18T18:48:13Z",
+      "version": 13,
+      "changeset": 77243239,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 366235142,
+      "lat": 51.5146156,
+      "lon": -0.1812314,
+      "timestamp": "2019-11-18T18:48:13Z",
+      "version": 29,
+      "changeset": 77243239,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 366873893,
+      "lat": 51.5145868,
+      "lon": -0.1813635,
+      "timestamp": "2019-11-18T18:48:13Z",
+      "version": 7,
+      "changeset": 77243239,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 366902659,
+      "lat": 51.5146055,
+      "lon": -0.181295,
+      "timestamp": "2019-11-18T18:48:13Z",
+      "version": 5,
+      "changeset": 77243239,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 511993283,
+      "lat": 51.5153718,
+      "lon": -0.188329,
+      "timestamp": "2020-01-01T13:39:03Z",
+      "version": 4,
+      "changeset": 79081480,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 511993285,
+      "lat": 51.5138643,
+      "lon": -0.1878937,
+      "timestamp": "2020-01-01T13:39:03Z",
+      "version": 4,
+      "changeset": 79081480,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 511993292,
+      "lat": 51.5138128,
+      "lon": -0.1886091,
+      "timestamp": "2020-01-01T14:41:03Z",
+      "version": 5,
+      "changeset": 79083116,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 511993295,
+      "lat": 51.5139302,
+      "lon": -0.1891888,
+      "timestamp": "2020-01-01T14:41:03Z",
+      "version": 6,
+      "changeset": 79083116,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 856374103,
+      "lat": 51.5139534,
+      "lon": -0.1860342,
+      "timestamp": "2025-07-30T12:22:31Z",
+      "version": 7,
+      "changeset": 169717961,
+      "user": "honapak",
+      "uid": 22134934
+    },
+    {
+      "type": "node",
+      "id": 856374107,
+      "lat": 51.5143046,
+      "lon": -0.1861634,
+      "timestamp": "2019-11-18T04:15:18Z",
+      "version": 4,
+      "changeset": 77205986,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 856374113,
+      "lat": 51.5139946,
+      "lon": -0.1856929,
+      "timestamp": "2019-12-03T14:42:31Z",
+      "version": 6,
+      "changeset": 77885182,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 1230908746,
+      "lat": 51.5139746,
+      "lon": -0.1886431,
+      "timestamp": "2020-01-01T14:41:03Z",
+      "version": 3,
+      "changeset": 79083116,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 1356414249,
+      "lat": 51.5140865,
+      "lon": -0.1857155,
+      "timestamp": "2019-11-18T04:37:08Z",
+      "version": 2,
+      "changeset": 77206334,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 1356414366,
+      "lat": 51.5141419,
+      "lon": -0.1856388,
+      "timestamp": "2019-11-18T04:37:08Z",
+      "version": 2,
+      "changeset": 77206334,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 1356414636,
+      "lat": 51.5141318,
+      "lon": -0.185594,
+      "timestamp": "2019-11-18T04:37:08Z",
+      "version": 2,
+      "changeset": 77206334,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 1356414982,
+      "lat": 51.5141164,
+      "lon": -0.185713,
+      "timestamp": "2019-11-18T04:37:08Z",
+      "version": 2,
+      "changeset": 77206334,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 1356415643,
+      "lat": 51.5140127,
+      "lon": -0.1855431,
+      "timestamp": "2019-12-03T14:42:31Z",
+      "version": 4,
+      "changeset": 77885182,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 1356416239,
+      "lat": 51.5141005,
+      "lon": -0.1855723,
+      "timestamp": "2019-11-18T04:37:08Z",
+      "version": 2,
+      "changeset": 77206334,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 1691112954,
+      "lat": 51.5126709,
+      "lon": -0.1853958,
+      "timestamp": "2019-12-03T14:42:31Z",
+      "version": 4,
+      "changeset": 77885182,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 1691113013,
+      "lat": 51.5136076,
+      "lon": -0.1826258,
+      "timestamp": "2019-11-28T16:22:46Z",
+      "version": 2,
+      "changeset": 77692433,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 1691113033,
+      "lat": 51.5139388,
+      "lon": -0.1815689,
+      "timestamp": "2019-11-28T16:22:46Z",
+      "version": 2,
+      "changeset": 77692433,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 1691113039,
+      "lat": 51.5140924,
+      "lon": -0.1829449,
+      "timestamp": "2012-10-11T17:44:29Z",
+      "version": 2,
+      "changeset": 13457341,
+      "user": "user_900987",
+      "uid": 900987
+    },
+    {
+      "type": "node",
+      "id": 5111092819,
+      "lat": 51.5142258,
+      "lon": -0.1880114,
+      "timestamp": "2017-09-17T14:22:07Z",
+      "version": 1,
+      "changeset": 52118578,
+      "user": "yourealwaysbe",
+      "uid": 1878856
+    },
+    {
+      "type": "node",
+      "id": 5111097835,
+      "lat": 51.5144759,
+      "lon": -0.1893809,
+      "timestamp": "2017-09-17T14:22:08Z",
+      "version": 1,
+      "changeset": 52118578,
+      "user": "yourealwaysbe",
+      "uid": 1878856
+    },
+    {
+      "type": "node",
+      "id": 5111097840,
+      "lat": 51.5152074,
+      "lon": -0.1895972,
+      "timestamp": "2020-01-01T13:39:03Z",
+      "version": 2,
+      "changeset": 79081480,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 6986280457,
+      "lat": 51.5141382,
+      "lon": -0.1856798,
+      "timestamp": "2019-11-18T04:37:08Z",
+      "version": 1,
+      "changeset": 77206334,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 6986280459,
+      "lat": 51.5140698,
+      "lon": -0.1855623,
+      "timestamp": "2025-07-30T12:22:31Z",
+      "version": 2,
+      "changeset": 169717961,
+      "user": "honapak",
+      "uid": 22134934,
+      "tags": {
+        "barrier": "gate"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6986280460,
+      "lat": 51.514051,
+      "lon": -0.1857073,
+      "timestamp": "2025-07-30T12:22:31Z",
+      "version": 2,
+      "changeset": 169717961,
+      "user": "honapak",
+      "uid": 22134934,
+      "tags": {
+        "barrier": "gate"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6986280461,
+      "lat": 51.5140079,
+      "lon": -0.1860541,
+      "timestamp": "2025-07-30T12:22:31Z",
+      "version": 2,
+      "changeset": 169717961,
+      "user": "honapak",
+      "uid": 22134934,
+      "tags": {
+        "barrier": "gate"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6988035676,
+      "lat": 51.5146201,
+      "lon": -0.1811774,
+      "timestamp": "2019-11-18T18:48:13Z",
+      "version": 1,
+      "changeset": 77243239,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 7028990982,
+      "lat": 51.5140206,
+      "lon": -0.1854778,
+      "timestamp": "2019-12-03T14:42:31Z",
+      "version": 1,
+      "changeset": 77885182,
+      "user": "Mikhail1412",
+      "uid": 2055614
+    },
+    {
+      "type": "node",
+      "id": 9801933855,
+      "lat": 51.5140281,
+      "lon": -0.1854159,
+      "timestamp": "2022-06-07T15:21:24Z",
+      "version": 1,
+      "changeset": 122077775,
+      "user": "AyushS183",
+      "uid": 15976978
+    },
+    {
+      "type": "node",
+      "id": 9801933856,
+      "lat": 51.5139135,
+      "lon": -0.1863656,
+      "timestamp": "2022-06-07T15:21:24Z",
+      "version": 1,
+      "changeset": 122077775,
+      "user": "AyushS183",
+      "uid": 15976978
+    },
+    {
+      "type": "node",
+      "id": 12901980223,
+      "lat": 51.514342,
+      "lon": -0.1821465,
+      "timestamp": "2025-06-10T11:35:15Z",
+      "version": 1,
+      "changeset": 167440223,
+      "user": "honapak",
+      "uid": 22134934
+    },
+    {
+      "type": "node",
+      "id": 13062197910,
+      "lat": 51.5142154,
+      "lon": -0.1850003,
+      "timestamp": "2025-08-10T19:05:28Z",
+      "version": 1,
+      "changeset": 170260764,
+      "user": "rskedgell",
+      "uid": 3951648,
+      "tags": {
+        "direction": "backward",
+        "highway": "give_way"
+      }
+    }
+  ]
+}

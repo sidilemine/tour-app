@@ -1,0 +1,247 @@
+{
+  "stories": [
+    {
+      "id": "queens-rink",
+      "title": "An unlikely season",
+      "transcript": "Welcome to Queensway. This short guide was made with AI, using published research. We'll start at Queens.\n\nBehind the Queens entrance is an ice rink that opened in nineteen thirty, when London was falling for skating indoors. No waiting for a pond to freeze, no hoping a cold spell would last: winter could be booked into an ordinary day on Queensway.\n\nOne surviving photograph of a children's party at the club takes that freedom with the seasons a little further. Children in summer clothes and skating boots gather around a beach umbrella, wicker chairs and a boat. They've brought the seaside to an ice club.\n\nThe party is long over, but the rink remains in use, with public skating and lessons. That modest entrance still opens onto a rather unlikely piece of London: a place where a trip to the high street can end with a turn round the ice.\n\nContinue north along Queensway, keeping the shops on your left. At Porchester Gardens, use the pedestrian crossings to reach the opposite corner; our next stop looks across the road at Whiteleys.",
+      "sources": [
+        {
+          "title": "London Museum — Skating through history: London's ice rinks",
+          "url": "https://www.londonmuseum.org.uk/collections/london-stories/skating-through-history-londons-ice-rinks/"
+        },
+        {
+          "title": "QUEENS — Ice skating at QUEENS",
+          "url": "https://queens.london/skating/"
+        },
+        {
+          "title": "QUEENS — About QUEENS",
+          "url": "https://queens.london/about/"
+        }
+      ],
+      "evidence": [
+        {
+          "paragraph": "Welcome to Queensway. This short guide was made with AI, using published research. We'll start at Queens.",
+          "kind": "editorial",
+          "basis": "Brief and selected first stop; upfront AI provenance. Welcome is 18 words and separate from historical word budget. No access promise.",
+          "sourceUrls": []
+        },
+        {
+          "paragraph": "Behind the Queens entrance is an ice rink that opened in nineteen thirty, when London was falling for skating indoors. No waiting for a pond to freeze, no hoping a cold spell would last: winter could be booked into an ordinary day on Queensway.",
+          "kind": "source_checked",
+          "basis": "qe-queens-1930 and qe-skating-season: museum history supplies the interwar boom and year-round-versus-frozen-water comparison. The contemporary venue confirms continued skating. Booking winter is editorial phrasing, not a claim of a particular historical ticketing system. Entrance orientation remains subject to route integration.",
+          "sourceUrls": [
+            "https://www.londonmuseum.org.uk/collections/london-stories/skating-through-history-londons-ice-rinks/",
+            "https://queens.london/skating/"
+          ]
+        },
+        {
+          "paragraph": "One surviving photograph of a children's party at the club takes that freedom with the seasons a little further. Children in summer clothes and skating boots gather around a beach umbrella, wicker chairs and a boat. They've brought the seaside to an ice club.",
+          "kind": "source_checked",
+          "basis": "qe-queens-beach-photo, corrected after direct browser image inspection on 21 September 2026: visible summer clothes, skating boots, umbrella, wicker chairs and boat support the scene. Museum caption identifies the party and venue. This supersedes V1's misleading alt-text-based swimming-costume assertion. No party date, music, organisation or universal costume claim. SOURCE-EDITORIAL-REVIEW.md retains the visual check and original limitation.",
+          "sourceUrls": [
+            "https://www.londonmuseum.org.uk/collections/london-stories/skating-through-history-londons-ice-rinks/"
+          ]
+        },
+        {
+          "paragraph": "The party is long over, but the rink remains in use, with public skating and lessons. That modest entrance still opens onto a rather unlikely piece of London: a place where a trip to the high street can end with a turn round the ice.",
+          "kind": "source_checked",
+          "basis": "qe-queens-now: current operator offers public sessions and lessons, checked 21 September 2026. The invitation is general, not an instruction to enter, a free-entry claim or a guarantee of available sessions. Modest entrance is the selected exterior premise, to be confirmed against the final route view.",
+          "sourceUrls": [
+            "https://queens.london/skating/",
+            "https://queens.london/about/"
+          ]
+        },
+        {
+          "paragraph": "Continue north along Queensway, keeping the shops on your left. At Porchester Gardens, use the pedestrian crossings to reach the opposite corner; our next stop looks across the road at Whiteleys.",
+          "kind": "editorial",
+          "basis": "Literal onward summary from the route reviewer’s dated maps/imagery and authored public-pavement route. Full crossing instructions are retained in directions and the route research; no current field clearance implied.",
+          "sourceUrls": []
+        }
+      ],
+      "directions": [
+        "With the QUEENS entrance on your left, walk north along Queensway on the same pavement. Continue past Bayswater station and cross the mouth of Moscow Road when clear. At Porchester Gardens, use the pedestrian signals across Queensway to the opposite side, then the signals across Porchester Gardens. Stay on Queensway briefly and pause clear of the corner, facing the long Whiteleys building across the road."
+      ]
+    },
+    {
+      "id": "whiteleys",
+      "title": "The universal provider",
+      "transcript": "Whiteleys gives shopping the frontage of a palace: tall columns, pale stone, a whole stretch of street claimed by one enormous shop. The business began much more modestly. In eighteen sixty-three, William Whiteley opened a small cloth shop on nearby Westbourne Grove.\n\nHe expanded into a universal provider. You could buy clothing and food, arrange decorating, even look for a house. A surviving nineteenth-century catalogue adds croquet, archery and polo equipment. Imagine furnishing your leisure time as carefully as your home: a new pastime arriving with the shopping.\n\nThe business moved into this Queensway building in nineteen eleven. Behind the old frontage today are homes, commercial spaces and the newly opened Six Senses hotel. The shopping palace has acquired bedrooms.\n\nOur next stop is in Leinster Gardens. Turn into Porchester Gardens and follow the map via Porchester Terrace and Leinster Place. Once you have crossed into Leinster Gardens, turn right onto its east pavement; the short walking story starts along that straight stretch.",
+      "sources": [
+        {
+          "title": "Historic England — Whiteleys Department Store",
+          "url": "https://historicengland.org.uk/listing/the-list/list-entry/1227450"
+        },
+        {
+          "title": "The Whiteley Homes Trust — On this day in 1907",
+          "url": "https://www.thewhiteleyhomestrust.org.uk/about-us/latest-news/on-this-day-in-1907"
+        },
+        {
+          "title": "City of Westminster Archives Centre — William Whiteley, Universal Provider: catalogue advertisement",
+          "url": "https://archives.westminster.gov.uk/CalmView/Record.aspx?id=WCA00308&pos=16&src=CalmView.Catalog"
+        },
+        {
+          "title": "The Metropolitan Museum of Art — William Whiteley's catalogue of toys, games and sporting equipment",
+          "url": "https://www.metmuseum.org/art/collection/search/818700"
+        },
+        {
+          "title": "City of Westminster Archives Centre — The new Whiteley's store in Queen's Road, Paddington",
+          "url": "https://archives.westminster.gov.uk/CalmView/Record.aspx?id=WCA00034&pos=15&src=CalmView.Catalog"
+        },
+        {
+          "title": "Six Senses — Six Senses London opens at The Whiteley",
+          "url": "https://www.sixsenses.com/en/corporate/media-center/press-releases/2026/six-senses-london-opens-at-the-whiteley/"
+        }
+      ],
+      "evidence": [
+        {
+          "paragraph": "Whiteleys gives shopping the frontage of a palace: tall columns, pale stone, a whole stretch of street claimed by one enormous shop. The business began much more modestly. In eighteen sixty-three, William Whiteley opened a small cloth shop on nearby Westbourne Grove.",
+          "kind": "source_checked",
+          "basis": "qe-whiteleys-building and qe-whiteley-origins: giant classical orders and Portland stone support the architectural description; palace is a simile, not former use. Original business location is explicitly Westbourne Grove, not this later Queensway building. Exterior appearance will be checked by route reviewer.",
+          "sourceUrls": [
+            "https://historicengland.org.uk/listing/the-list/list-entry/1227450",
+            "https://www.thewhiteleyhomestrust.org.uk/about-us/latest-news/on-this-day-in-1907"
+          ]
+        },
+        {
+          "paragraph": "He expanded into a universal provider. You could buy clothing and food, arrange decorating, even look for a house. A surviving nineteenth-century catalogue adds croquet, archery and polo equipment. Imagine furnishing your leisure time as carefully as your home: a new pastime arriving with the shopping.",
+          "kind": "supported_reconstruction",
+          "basis": "qe-whiteley-range and qe-whiteley-catalogue: business identity and documented departments; Met object title supports the three sporting categories. The invitation to imagine is a bounded reconstruction of what that advertised range makes possible, not an actual customer, order or delivery. No prices, shop-floor arrangement, date-specific transaction or catalogue pages claimed seen. The catalogue predates the move described next.",
+          "sourceUrls": [
+            "https://archives.westminster.gov.uk/CalmView/Record.aspx?id=WCA00308&pos=16&src=CalmView.Catalog",
+            "https://www.thewhiteleyhomestrust.org.uk/about-us/latest-news/on-this-day-in-1907",
+            "https://www.metmuseum.org/art/collection/search/818700"
+          ]
+        },
+        {
+          "paragraph": "The business moved into this Queensway building in nineteen eleven. Behind the old frontage today are homes, commercial spaces and the newly opened Six Senses hotel. The shopping palace has acquired bedrooms.",
+          "kind": "source_checked",
+          "basis": "qe-whiteleys-move and qe-whiteleys-now: archive move date is 1911; operator 2026 opening release confirms homes/commercial development plus operating hotel while retaining frontage. No claim all shops are open or original interior survives intact. Bedroom ending is a restrained interpretation of residential/hotel reuse.",
+          "sourceUrls": [
+            "https://archives.westminster.gov.uk/CalmView/Record.aspx?id=WCA00034&pos=15&src=CalmView.Catalog",
+            "https://www.sixsenses.com/en/corporate/media-center/press-releases/2026/six-senses-london-opens-at-the-whiteley/"
+          ]
+        },
+        {
+          "paragraph": "Our next stop is in Leinster Gardens. Turn into Porchester Gardens and follow the map via Porchester Terrace and Leinster Place. Once you have crossed into Leinster Gardens, turn right onto its east pavement; the short walking story starts along that straight stretch.",
+          "kind": "editorial",
+          "basis": "Literal onward summary from the route reviewer’s dated maps/imagery and authored public-pavement route. Full crossing instructions are retained in directions and the route research; no current field clearance implied.",
+          "sourceUrls": []
+        }
+      ],
+      "directions": [
+        "Return a few steps to the corner and turn left into Porchester Gardens, keeping to its north pavement with the gardens and flats on your left. Cross Inverness Terrace at the junction when clear. Continue along Porchester Gardens, crossing the mews/driveway entrances with care. At the T-junction with Porchester Terrace, turn left. Use the small refuge crossing to reach the opposite pavement, then turn right into Leinster Place. At its end, cross Leinster Gardens when clear and turn right along the east pavement. The walking story belongs to this straight stretch; finish it before the side road Queen’s Gardens. Cross the two mouths of Queen’s Gardens when clear and continue to the pavement just before the next junction, Craven Hill Gardens. Across Leinster Gardens are numbers 23 and 24."
+      ]
+    },
+    {
+      "id": "leinster-gardens",
+      "title": "Leinster Gardens",
+      "transcript": "Across the road, look for the neighbouring doorways numbered twenty-three and twenty-four, in the white terrace between the hotels. Take a moment to look at them.\n\nTwo of these convincing houses have no rooms at all. Numbers twenty-three and twenty-four are fronts: the street face of a building, with the building missing.\n\nWhen the Underground was built through here in the eighteen sixties, two houses were demolished. The replacement screen preserved the appearance of the row, but behind it the railway remained open to the sky.\n\nThe trains then were hauled by steam locomotives. Underground railways needed places to breathe, and this gap provided ventilation without leaving a hole in the street's grand architecture.\n\nSo the houses on either side could keep their respectable neighbours, even though the new occupants were passing trains. The fronts have outlasted the steam engines. A solution to a nineteenth-century engineering problem is still playing its part in the scenery of an ordinary London street.\n\nFor 46 Queensborough Terrace, the map follows Craven Hill Gardens, Porchester Terrace and the public Queensborough Passage. At the far end of the passage, turn left; number 46 is about 100 metres along on the same side.",
+      "sources": [
+        {
+          "title": "Historic England — 19–22 Leinster Gardens and screen wall equivalent to numbers 23 and 24",
+          "url": "https://historicengland.org.uk/listing/the-list/list-entry/1221942"
+        },
+        {
+          "title": "London Museum — The construction of the Metropolitan District Railway",
+          "url": "https://www.londonmuseum.org.uk/collections/v/object-720928/the-construction-of-the-metropolitan-district-railway/"
+        },
+        {
+          "title": "Go Jauntly — Jubilee Greenway Section 1",
+          "url": "https://cdn.gojauntly.com/walks/pdfguide/0a6e438f-c317-49a4-b9ef-726fa0ab940d.pdf"
+        },
+        {
+          "title": "London Transport Museum via Google Arts & Culture — Metropolitan Railway A class steam locomotive No. 23",
+          "url": "https://artsandculture.google.com/asset/metropolitan-railway-a-class-4-4-0t-steam-locomotive-no-23-beyer-peacock-manchester/TQGhYyhLbuPmwg"
+        }
+      ],
+      "evidence": [
+        {
+          "paragraph": "Across the road, look for the neighbouring doorways numbered twenty-three and twenty-four, in the white terrace between the hotels. Take a moment to look at them.",
+          "kind": "editorial",
+          "basis": "Route-reviewed east-pavement viewpoint facing the numbered 23/24 fronts across Leinster Gardens, confirmed in October 2025 imagery. Trees and parked cars may partly screen the frontage; no rear view or small window detail is required. Locator precedes the reveal; no private entry.",
+          "sourceUrls": []
+        },
+        {
+          "paragraph": "Two of these convincing houses have no rooms at all. Numbers twenty-three and twenty-four are fronts: the street face of a building, with the building missing.",
+          "kind": "source_checked",
+          "basis": "qe-leinster-screen and qe-leinster-demolition: statutory screen wall and museum account establish the replacement fronts, not functioning houses. Most convincing is descriptive judgement. No windows, letterboxes or rear sightline are required. Final integration must supply the verified front-facing standing point and a locator.",
+          "sourceUrls": [
+            "https://historicengland.org.uk/listing/the-list/list-entry/1221942",
+            "https://www.londonmuseum.org.uk/collections/v/object-720928/the-construction-of-the-metropolitan-district-railway/"
+          ]
+        },
+        {
+          "paragraph": "When the Underground was built through here in the eighteen sixties, two houses were demolished. The replacement screen preserved the appearance of the row, but behind it the railway remained open to the sky.",
+          "kind": "source_checked",
+          "basis": "qe-leinster-demolition and qe-leinster-ventilation: 1866–68 construction photograph description supports demolition and replacement screen; route guide supports the open railway gap. No precise operating-company claim or invented residents' negotiations.",
+          "sourceUrls": [
+            "https://www.londonmuseum.org.uk/collections/v/object-720928/the-construction-of-the-metropolitan-district-railway/",
+            "https://cdn.gojauntly.com/walks/pdfguide/0a6e438f-c317-49a4-b9ef-726fa0ab940d.pdf"
+          ]
+        },
+        {
+          "paragraph": "The trains then were hauled by steam locomotives. Underground railways needed places to breathe, and this gap provided ventilation without leaving a hole in the street's grand architecture.",
+          "kind": "source_checked",
+          "basis": "qe-leinster-steam and qe-leinster-ventilation: museum engine record supports steam-era Inner Circle use; supplementary published guide supports local open-air venting. Breathe is a metaphor for ventilation, not a claim about condensers removing coal smoke. No precise engineering specification or smoke quantity.",
+          "sourceUrls": [
+            "https://artsandculture.google.com/asset/metropolitan-railway-a-class-4-4-0t-steam-locomotive-no-23-beyer-peacock-manchester/TQGhYyhLbuPmwg",
+            "https://cdn.gojauntly.com/walks/pdfguide/0a6e438f-c317-49a4-b9ef-726fa0ab940d.pdf"
+          ]
+        },
+        {
+          "paragraph": "So the houses on either side could keep their respectable neighbours, even though the new occupants were passing trains. The fronts have outlasted the steam engines. A solution to a nineteenth-century engineering problem is still playing its part in the scenery of an ordinary London street.",
+          "kind": "editorial",
+          "basis": "Interpretation of the documented preservation of the terrace appearance and surviving listed screen. Respectable neighbours and occupants are personification, not residents' documented reactions or literal railway tenancy. Steam-engine comparison is the local early railway context, not a claim that all Underground steam work ended at one date. Ending stays with this site rather than a universal hidden-secrets moral.",
+          "sourceUrls": [
+            "https://www.londonmuseum.org.uk/collections/v/object-720928/the-construction-of-the-metropolitan-district-railway/",
+            "https://historicengland.org.uk/listing/the-list/list-entry/1221942",
+            "https://artsandculture.google.com/asset/metropolitan-railway-a-class-4-4-0t-steam-locomotive-no-23-beyer-peacock-manchester/TQGhYyhLbuPmwg"
+          ]
+        },
+        {
+          "paragraph": "For 46 Queensborough Terrace, the map follows Craven Hill Gardens, Porchester Terrace and the public Queensborough Passage. At the far end of the passage, turn left; number 46 is about 100 metres along on the same side.",
+          "kind": "editorial",
+          "basis": "Literal onward summary from the route reviewer’s dated maps/imagery and authored public-pavement route. Full crossing instructions are retained in directions and the route research; no current field clearance implied.",
+          "sourceUrls": []
+        }
+      ],
+      "directions": [
+        "When you are ready to leave, cross Leinster Gardens to the pavement beside the white terrace, watching for traffic. Turn left and continue past the hotel to the next corner. Turn right into Craven Hill Gardens. At Porchester Terrace, cross when clear to its west pavement and turn right. After about 70 metres, turn left into the signed Queensborough Passage. Follow the public passage straight through to Queensborough Terrace, staying alert for vehicles in its eastern section. Do not turn into Queensborough Mews. At Queensborough Terrace, turn left; stay on this pavement for about 100 metres to number 46. The tour finishes outside on the public pavement."
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": "bayswater-terraces",
+      "title": "A street of grand houses",
+      "transcript": "On these quieter streets, the houses seem to belong to one another. Bayswater grew westwards during the nineteenth century as a fashionable residential district. Classical columns and repeated windows gave its terraces a grandeur that extended beyond any one front door.\n\nLater, many of the larger houses were divided into flats. One substantial house could become several homes, while the street outside kept much of its original shape.",
+      "sources": [
+        {
+          "title": "Westminster City Council, Development Planning Services — Bayswater conservation area mini guide",
+          "url": "https://www.westminster.gov.uk/sites/default/files/media/documents/06%20Bayswater.pdf"
+        }
+      ],
+      "evidence": [
+        {
+          "paragraph": "On these quieter streets, the houses seem to belong to one another. Bayswater grew westwards during the nineteenth century as a fashionable residential district. Classical columns and repeated windows gave its terraces a grandeur that extended beyond any one front door.",
+          "kind": "source_checked",
+          "basis": "qe-bayswater-development and qe-bayswater-terraces: council conservation guide supports westward growth and grand classical terrace/street unity. The front-door phrasing is architectural interpretation. No 1827 date applied to this corridor, one-developer claim, stone-imitation mechanism or identical-house claim. Opening is an area-level visual cue; final route review must confirm it suits the Leinster Gardens east-pavement corridor.",
+          "sourceUrls": [
+            "https://www.westminster.gov.uk/sites/default/files/media/documents/06%20Bayswater.pdf"
+          ]
+        },
+        {
+          "paragraph": "Later, many of the larger houses were divided into flats. One substantial house could become several homes, while the street outside kept much of its original shape.",
+          "kind": "source_checked",
+          "basis": "qe-bayswater-conversion: 2004 council guide reports larger-house conversions and preservation of the street pattern. Spoken later is a historical transition, not a current survey of each building or a claim that all houses visible are flats. Several homes explains conversion without invented occupants or floor allocations.",
+          "sourceUrls": [
+            "https://www.westminster.gov.uk/sites/default/files/media/documents/06%20Bayswater.pdf"
+          ]
+        }
+      ],
+      "directions": [
+        "After crossing Leinster Gardens at the end of Leinster Place, turn right onto its east pavement. The walking story starts along this straight stretch. Continue straight past the bollarded opening to Cleveland Square, watching for joining cyclists. Finish before Queen’s Gardens; its two side-road mouths lie farther along on your left. Pause if traffic or an entrance needs your attention. A missed chapter can be played manually while stopped; there is no need to retrace."
+      ]
+    }
+  ]
+}

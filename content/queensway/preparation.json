@@ -1,0 +1,189 @@
+{
+  "preparedAt": "2026-09-21T15:29:29.502Z",
+  "inputs": [
+    {
+      "path": "content/queensway/stories.json",
+      "sha256": "60482b5b442fcdbd7c025030cf59daed495f4f6f13733c4c37cf349fc40f72c8"
+    },
+    {
+      "path": "content/queensway/plan.json",
+      "sha256": "8486487a1ecdb659b052e1a255367eb9b2b50fdda692f9d832df46667d33b6f6"
+    }
+  ],
+  "mapId": "queensway-105db6bcbdfce45f",
+  "routeEvidence": "docs/content/authoring/queensway-2026-09-21/ROUTE-RESEARCH.md",
+  "synthesis": {
+    "provider": "Kokoro",
+    "voice": "bm_george",
+    "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+    "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+    "dtype": "fp32",
+    "device": "cpu",
+    "speed": 1,
+    "kokoroJs": "1.2.1",
+    "paragraphGapSeconds": 0.25,
+    "loudnessLufs": -19,
+    "encoding": "AAC mono 24 kHz 64 kb/s",
+    "rendererRevision": 2
+  },
+  "stationaryAudioSeconds": 225.5,
+  "walkingAudioSeconds": 30.5,
+  "budgets": [
+    {
+      "id": "bayswater-terraces",
+      "afterStopIndex": 1,
+      "startRouteIndex": 40,
+      "endRouteIndex": 41,
+      "navigationRouteIndex": 43,
+      "fastWalkingMetresPerSecond": 1.6666666666666665,
+      "marginSeconds": 15,
+      "maximumAudioSeconds": 40,
+      "metresAfterLatestLaunch": 94.03584381746113,
+      "availableSeconds": 56.421506290476685,
+      "audioSeconds": 30.5
+    }
+  ],
+  "recordings": [
+    {
+      "id": "queens-rink",
+      "key": "queensway-behind-fronts-queens-rink",
+      "bytes": 606974,
+      "md5": "e96bc028b8f5aa275fbf77f5c5c3c858",
+      "durationSeconds": 71,
+      "sha256": "8a81729b8b02f8543db024b5ace36c016609da3d1d4c9e842eca62bbfc2bc1e5",
+      "textSha256": "97f3440ff7be69248b0e7335ad2a443ac14e0e945846df8c783a00749fe9cdb4",
+      "cache": "artifacts/queensway-audio/1d7ceac9cd24a2cb3f4a1d6be51c608121c697628918981330792d32b65b046b",
+      "words": 181,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "Welcome to Queensway. This short guide was made with AI, using published research. We'll start at Queens.",
+          "durationSeconds": 7.725
+        },
+        {
+          "paragraph": 1,
+          "text": "Behind the Queens entrance is an ice rink that opened in nineteen thirty, when London was falling for skating indoors. No waiting for a pond to freeze, no hoping a cold spell would last: winter could be booked into an ordinary day on Queensway.",
+          "durationSeconds": 16.025
+        },
+        {
+          "paragraph": 2,
+          "text": "One surviving photograph of a children's party at the club takes that freedom with the seasons a little further. Children in summer clothes and skating boots gather around a beach umbrella, wicker chairs and a boat. They've brought the seaside to an ice club.",
+          "durationSeconds": 16.875
+        },
+        {
+          "paragraph": 3,
+          "text": "The party is long over, but the rink remains in use, with public skating and lessons. That modest entrance still opens onto a rather unlikely piece of London: a place where a trip to the high street can end with a turn round the ice.",
+          "durationSeconds": 16.125
+        },
+        {
+          "paragraph": 4,
+          "text": "Continue north along Queensway, keeping the shops on your left. At Porchester Gardens, use the pedestrian crossings to reach the opposite corner; our next stop looks across the road at Whiteleys.",
+          "durationSeconds": 13.25
+        }
+      ],
+      "verification": "Complete text/chunks, mono 24 kHz, duration and full decode checked; subjective listening separate."
+    },
+    {
+      "id": "whiteleys",
+      "key": "queensway-behind-fronts-whiteleys",
+      "bytes": 604636,
+      "md5": "4ff8529445f3554c1922969c75775a93",
+      "durationSeconds": 70.7,
+      "sha256": "947a066818742908dbaa54dbc558360741292ba1c7115f4260d583965fe50257",
+      "textSha256": "5078d1ccf25016296ef4ff1f5bead5803b83ea8359dceb29188a63d8af7879ac",
+      "cache": "artifacts/queensway-audio/d778c9891c4e9e4993b909c926bf0556e3f7cfa8859213233cec614acf3780e9",
+      "words": 163,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "Whiteleys gives shopping the frontage of a palace: tall columns, pale stone, a whole stretch of street claimed by one enormous shop. The business began much more modestly. In eighteen sixty-three, William Whiteley opened a small cloth shop on nearby Westbourne Grove.",
+          "durationSeconds": 17.8
+        },
+        {
+          "paragraph": 1,
+          "text": "He expanded into a universal provider. You could buy clothing and food, arrange decorating, even look for a house. A surviving nineteenth-century catalogue adds croquet, archery and polo equipment. Imagine furnishing your leisure time as carefully as your home: a new pastime arriving with the shopping.",
+          "durationSeconds": 20.3
+        },
+        {
+          "paragraph": 2,
+          "text": "The business moved into this Queensway building in nineteen eleven. Behind the old frontage today are homes, commercial spaces and the newly opened Six Senses hotel. The shopping palace has acquired bedrooms.",
+          "durationSeconds": 14.575
+        },
+        {
+          "paragraph": 3,
+          "text": "Our next stop is in Leinster Gardens. Turn into Porchester Gardens and follow the map via Porchester Terrace and Leinster Place. Once you have crossed into Leinster Gardens, turn right onto its east pavement; the short walking story starts along that straight stretch.",
+          "durationSeconds": 17.225
+        }
+      ],
+      "verification": "Complete text/chunks, mono 24 kHz, duration and full decode checked; subjective listening separate."
+    },
+    {
+      "id": "leinster-gardens",
+      "key": "queensway-behind-fronts-leinster-gardens",
+      "bytes": 716871,
+      "md5": "f81225e3d5aedf2b2777c51b44cfd057",
+      "durationSeconds": 83.8,
+      "sha256": "c2955007898c439519edb25452a61ac566b29b870c42868080c83eb3a26126e9",
+      "textSha256": "09b4141691cfb00d61f00dcde761a24167f39271b6db6335f8e3db55f3658434",
+      "cache": "artifacts/queensway-audio/4d4f026721941855e71c12d959734427d1243dfa3476b77f11713ad719aeb49e",
+      "words": 197,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "Across the road, look for the neighbouring doorways numbered twenty-three and twenty-four, in the white terrace between the hotels. Take a moment to look at them.",
+          "durationSeconds": 9.9
+        },
+        {
+          "paragraph": 1,
+          "text": "Two of these convincing houses have no rooms at all. Numbers twenty-three and twenty-four are fronts: the street face of a building, with the building missing.",
+          "durationSeconds": 10.5
+        },
+        {
+          "paragraph": 2,
+          "text": "When the Underground was built through here in the eighteen sixties, two houses were demolished. The replacement screen preserved the appearance of the row, but behind it the railway remained open to the sky.",
+          "durationSeconds": 13.675
+        },
+        {
+          "paragraph": 3,
+          "text": "The trains then were hauled by steam locomotives. Underground railways needed places to breathe, and this gap provided ventilation without leaving a hole in the street's grand architecture.",
+          "durationSeconds": 13.05
+        },
+        {
+          "paragraph": 4,
+          "text": "So the houses on either side could keep their respectable neighbours, even though the new occupants were passing trains. The fronts have outlasted the steam engines. A solution to a nineteenth-century engineering problem is still playing its part in the scenery of an ordinary London street.",
+          "durationSeconds": 18.975
+        },
+        {
+          "paragraph": 5,
+          "text": "For 46 Queensborough Terrace, the map follows Craven Hill Gardens, Porchester Terrace and the public Queensborough Passage. At the far end of the passage, turn left; number 46 is about 100 metres along on the same side.",
+          "durationSeconds": 16.375
+        }
+      ],
+      "verification": "Complete text/chunks, mono 24 kHz, duration and full decode checked; subjective listening separate."
+    },
+    {
+      "id": "bayswater-terraces",
+      "key": "queensway-behind-fronts-bayswater-terraces",
+      "bytes": 261924,
+      "md5": "93c09f3445067c69e95627b0008d7851",
+      "durationSeconds": 30.5,
+      "sha256": "24dcdfa2992bc99818227d53b48c44b535c73a9cac6493d26b90ad22b91aa687",
+      "textSha256": "abf9efff3c55a358b16b04c72fd444f46200852b116bcf76c3a2118290024cdd",
+      "cache": "artifacts/queensway-audio/a6e07a4522578d38e9c42293cc187ceccfbae8015182283f7ba43e5338f6a073",
+      "words": 68,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "On these quieter streets, the houses seem to belong to one another. Bayswater grew westwards during the nineteenth century as a fashionable residential district. Classical columns and repeated windows gave its terraces a grandeur that extended beyond any one front door.",
+          "durationSeconds": 18.425
+        },
+        {
+          "paragraph": 1,
+          "text": "Later, many of the larger houses were divided into flats. One substantial house could become several homes, while the street outside kept much of its original shape.",
+          "durationSeconds": 11.775
+        }
+      ],
+      "verification": "Complete text/chunks, mono 24 kHz, duration and full decode checked; subjective listening separate."
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "checkedOn": "2026-09-21",
+  "statusVocabulary": {
+    "supported": "Source directly supports the bounded statement; physical visibility and route safety remain separate.",
+    "qualified": "Usable with the stated qualification; source type or inference limits matter."
+  },
+  "claims": [
+    {
+      "id": "qe-queens-1930",
+      "claim": "Queen's Ice Club in Bayswater opened in 1930.",
+      "sources": [
+        "qes-museum-skating",
+        "qes-queens-skating"
+      ],
+      "status": "supported",
+      "support": "Museum interwar section and current venue history agree.",
+      "quote": null,
+      "limits": "Use year; no need for opening-day, founder or oldest-rink claims."
+    },
+    {
+      "id": "qe-skating-season",
+      "claim": "London's indoor-rink expansion in the late 1920s and 1930s made skating a year-round participatory and spectator pastime instead of depending on frozen outdoor water.",
+      "sources": [
+        "qes-museum-skating"
+      ],
+      "status": "supported",
+      "support": "Article links interwar rink proliferation with year-round skating.",
+      "quote": null,
+      "limits": "Context for Queens, not a claim it invented indoor or artificial ice."
+    },
+    {
+      "id": "qe-queens-beach-photo",
+      "claim": "The museum identifies a children's party at Queen's Ice Club. Direct image inspection shows children in summer clothing and skating boots, with an umbrella, wicker furniture and a boat with oars.",
+      "sources": [
+        "qes-museum-skating"
+      ],
+      "status": "supported",
+      "support": "Museum caption identifies event and venue; live browser image directly inspected at approximately 2026-09-21 15:21 UTC. See SOURCE-EDITORIAL-REVIEW.md.",
+      "quote": "Children's party held at Queen's Ice Club in Bayswater, London.",
+      "limits": "Exact date remains unconfirmed. Do not classify every costume as swimwear, infer a particular performance or music, or describe the mechanics of the staged scene.",
+      "verificationHistory": [
+        {
+          "stage": "initial text-only research",
+          "claim": "The museum identifies a children's party at Queen's Ice Club; its image description shows children in swimsuits amid indoor beach props, including an umbrella and makeshift boat.",
+          "status": "qualified",
+          "support": "Caption and descriptive image alternative; underlying image not independently visually inspected in this pass.",
+          "limits": "Undated here. Do not claim children skated in swimsuits or that the set stood on the rink's ice.",
+          "outcome": "Superseded after direct image inspection found the swimwear classification unreliable."
+        }
+      ]
+    },
+    {
+      "id": "qe-queens-now",
+      "claim": "QUEENS remains an operating skating venue at 17 Queensway, with public sessions and lessons.",
+      "sources": [
+        "qes-queens-skating",
+        "qes-queens-hours"
+      ],
+      "status": "supported",
+      "support": "Current activity and contact pages checked 21 September 2026.",
+      "quote": null,
+      "limits": "No promise of a session being available without booking."
+    },
+    {
+      "id": "qe-queens-access",
+      "claim": "The official hours list Monday 10:00–23:00; the FAQ lists a £1 spectator/non-diner entrance charge.",
+      "sources": [
+        "qes-queens-hours",
+        "qes-queens-faq"
+      ],
+      "status": "supported",
+      "support": "Dated operational check for evening planning.",
+      "quote": null,
+      "limits": "Not essential narration. Keep stop exterior; do not direct a free interior visit."
+    },
+    {
+      "id": "qe-whiteley-origins",
+      "claim": "William Whiteley began his drapery business in Westbourne Grove in 1863; it expanded to seventeen departments by 1867.",
+      "sources": [
+        "qes-whiteley-trust",
+        "qes-whiteley-1885"
+      ],
+      "status": "supported",
+      "support": "Trust history provides chronology; archive locates the original shop and later row of premises.",
+      "quote": null,
+      "limits": "Not the surviving Queensway building."
+    },
+    {
+      "id": "qe-whiteley-range",
+      "claim": "Whiteley marketed himself as a universal provider; the expanding business included house agency, decorating and food as well as clothing.",
+      "sources": [
+        "qes-whiteley-1885",
+        "qes-whiteley-trust"
+      ],
+      "status": "supported",
+      "support": "Contemporary catalogue identity and custodian account of business expansion.",
+      "quote": "Universal Provider",
+      "limits": "Slogan is not proof he could literally supply anything."
+    },
+    {
+      "id": "qe-whiteley-catalogue",
+      "claim": "A surviving late-nineteenth-century Whiteley catalogue advertised toys and games alongside equipment for archery, croquet, lawn tennis, golf, polo and fishing.",
+      "sources": [
+        "qes-whiteley-met"
+      ],
+      "status": "supported",
+      "support": "Object title, issuer and date range 1875–1900 identify these categories.",
+      "quote": "Archery, Croquet, La Crosse, Cricket, Golf, Polo, Fishing Tackle",
+      "limits": "Select a few categories in narration. No actual catalogue pages, prices or transaction observed."
+    },
+    {
+      "id": "qe-whiteleys-building",
+      "claim": "The surviving department-store building dates from 1908–12, was designed by Belcher and Joass, and has a steel frame faced in Portland stone with giant classical orders.",
+      "sources": [
+        "qes-whiteleys-he"
+      ],
+      "status": "supported",
+      "support": "Statutory architectural description.",
+      "quote": "Steel framed with Portland stone facing.",
+      "limits": "Use accessible descriptions of visible columns; not Art Deco. No need to name architects unless explained."
+    },
+    {
+      "id": "qe-whiteleys-move",
+      "claim": "The business moved from Westbourne Grove to the new Queen's Road store, now Queensway, in 1911.",
+      "sources": [
+        "qes-whiteleys-1911",
+        "qes-whiteley-trust"
+      ],
+      "status": "supported",
+      "support": "Archive's 15 November 1911 image record explicitly describes the move.",
+      "quote": null,
+      "limits": "Do not transfer original shop scenes or 1907 death to this site."
+    },
+    {
+      "id": "qe-whiteleys-now",
+      "claim": "Six Senses announced its London hotel open at The Whiteley in 2026; the wider redevelopment combines homes and commercial uses while retaining the listed frontage.",
+      "sources": [
+        "qes-whiteleys-2026"
+      ],
+      "status": "supported",
+      "support": "Official opening announcement, not an earlier proposed-opening release.",
+      "quote": null,
+      "limits": "No claim every shop is open, entry is unrestricted or regeneration benefits are proven."
+    },
+    {
+      "id": "qe-whiteley-staff",
+      "claim": "The Trust's history says the business employed around 6,000 staff at its height and most lived in company dormitories.",
+      "sources": [
+        "qes-whiteley-trust"
+      ],
+      "status": "qualified",
+      "support": "Custodian historical summary, credited to a 1992 history.",
+      "quote": null,
+      "limits": "Reserve fact; do not locate all dormitories at the later Queensway store or invent individual workers' experience."
+    },
+    {
+      "id": "qe-whiteley-legacy",
+      "claim": "Whiteley's will left £1 million towards homes for older people of limited means, leading to Whiteley Village in Surrey.",
+      "sources": [
+        "qes-whiteley-trust"
+      ],
+      "status": "supported",
+      "support": "Institution's account of its founder and purpose.",
+      "quote": null,
+      "limits": "Reserve; remote-site digression is probably unnecessary in this short stop."
+    },
+    {
+      "id": "qe-leinster-demolition",
+      "claim": "During 1860s Underground construction, numbers 23 and 24 Leinster Gardens were demolished and a façade was erected to preserve the street's appearance.",
+      "sources": [
+        "qes-leinster-photo"
+      ],
+      "status": "supported",
+      "support": "Henry Flather construction photograph, dated 1866–68, with museum description of the demolition and replacement façade.",
+      "quote": "a facade was erected to preserve the appearance of the street",
+      "limits": "Do not invent residents' demands, negotiations or a contemporary reaction."
+    },
+    {
+      "id": "qe-leinster-screen",
+      "claim": "Historic England lists the surviving terrace group and the screen wall equivalent to numbers 23 and 24; the group uses stucco and classical decorative forms.",
+      "sources": [
+        "qes-leinster-he"
+      ],
+      "status": "supported",
+      "support": "Listing names screen explicitly and describes terrace architecture.",
+      "quote": "screen wall forming equivalent of Nos 23 and 24",
+      "limits": "Listing's circa-1855 terrace date is not the screen's date. Visibility of fine details needs route check."
+    },
+    {
+      "id": "qe-leinster-steam",
+      "claim": "The early Underground used steam locomotives; the museum's 1866 Metropolitan Railway locomotive worked the Inner Circle until electrification in 1905.",
+      "sources": [
+        "qes-ltm-steam"
+      ],
+      "status": "supported",
+      "support": "Museum-supplied vehicle history.",
+      "quote": "until electrification in 1905",
+      "limits": "Do not generalise that all London Underground steam operations ended in 1905."
+    },
+    {
+      "id": "qe-leinster-ventilation",
+      "claim": "The open-air railway section behind the façades provided a place for steam-era trains to vent and for the underground route to obtain ventilation.",
+      "sources": [
+        "qes-greenway",
+        "qes-leinster-photo"
+      ],
+      "status": "qualified",
+      "support": "Published route guide explicitly connects the false fronts with open-air venting; construction photograph independently supports the gap and screen.",
+      "quote": null,
+      "limits": "Secondary technical explanation, not original engineering specification. Avoid claim that condensers remove coal smoke, exact wall thickness or every supposed design motive."
+    },
+    {
+      "id": "qe-bayswater-development",
+      "claim": "The council dates the start of fashionable residential development in the eastern Bayswater sector to 1827 and describes subsequent expansion westward during the nineteenth century.",
+      "sources": [
+        "qes-bayswater-guide"
+      ],
+      "status": "supported",
+      "support": "Historical Background, page 2; original sector bounded by Praed Street, Edgware Road and Bayswater Road.",
+      "quote": "development extended westwards as the century progressed",
+      "limits": "Not a date or single-master-planner claim for Queensborough Terrace or the whole route."
+    },
+    {
+      "id": "qe-bayswater-terraces",
+      "claim": "The council identifies large areas of nineteenth-century stuccoed residential terraces, classical architecture on a grand scale, and street patterns that give the neighbourhood visual unity.",
+      "sources": [
+        "qes-bayswater-guide"
+      ],
+      "status": "supported",
+      "support": "Key Features, page 2.",
+      "quote": null,
+      "limits": "Area-level architectural context. Do not invent servant-floor arrangements or claim every façade is identical."
+    },
+    {
+      "id": "qe-bayswater-conversion",
+      "claim": "The council's 2004 guide describes many larger houses converted into flats within a still predominantly residential conservation area.",
+      "sources": [
+        "qes-bayswater-guide"
+      ],
+      "status": "supported",
+      "support": "Key Features, page 2, dated guide.",
+      "quote": null,
+      "limits": "Historical area description, not proof of every building's current use. Hotel claims need separate observed or documented support."
+    }
+  ]
+}
