@@ -1,0 +1,1828 @@
+{
+  "schema": "authoring-route-input-v1",
+  "researchedAt": "2026-09-21",
+  "researcher": "hampstead_route",
+  "selection": "Highgate Underground exit 3 to Hampstead Heath station, via five exterior/public stops",
+  "coordinateFormat": "latitude/longitude WGS84 objects; zero-based route indices",
+  "verificationStatus": "Valhalla pedestrian geometry with an explicitly recorded short authored pavement correction, visually reviewed against OSM/City map and dated street imagery; not a surveyed sidewalk trace or current field-clearance certificate. Street centreline segments represent named public streets; literal directions specify pavements and crossings.",
+  "sources": [
+    {
+      "id": "valhalla",
+      "url": "https://valhalla1.openstreetmap.de/",
+      "accessedAt": "2026-09-21",
+      "license": "Valhalla pedestrian routing based on OpenStreetMap"
+    },
+    {
+      "id": "osm",
+      "url": "https://www.openstreetmap.org/copyright",
+      "accessedAt": "2026-09-21",
+      "license": "\u00a9 OpenStreetMap contributors, ODbL"
+    },
+    {
+      "id": "city-heath-map",
+      "url": "https://www.cityoflondon.gov.uk/assets/Green-Spaces/hampstead-heath-map.pdf",
+      "accessedAt": "2026-09-21"
+    }
+  ],
+  "authoredGeometryCorrections": [
+    {
+      "id": "east-heath-south-pavement",
+      "rawProviderFile": "ready-heath-response.json",
+      "originalLocalShapeIndices": [
+        65,
+        66
+      ],
+      "originalCoordinates": [
+        {
+          "latitude": 51.557604,
+          "longitude": -0.168024
+        },
+        {
+          "latitude": 51.55749,
+          "longitude": -0.16783
+        }
+      ],
+      "replacementCoordinates": [
+        {
+          "latitude": 51.5575805,
+          "longitude": -0.1680591
+        },
+        {
+          "latitude": 51.557475,
+          "longitude": -0.16794
+        }
+      ],
+      "basis": "Replace the duplicate zebra-centre point with OSM south landing node5753011376; replace the road-centre junction point with an approximate public pavement connector towards Downshire Hill, supported by September2025 panorama t1F28ShzvJljTyMBSVpxYA. The landing is mapped; the connector coordinate is authored from observed layout, not surveyed. Original response/hash preserved. Provider distance/time summaries remain the original estimates; measuredGeometryMetres describes this corrected line."
+    }
+  ],
+  "route": [
+    {
+      "latitude": 51.577585,
+      "longitude": -0.146819
+    },
+    {
+      "latitude": 51.577693,
+      "longitude": -0.147064
+    },
+    {
+      "latitude": 51.577683,
+      "longitude": -0.147075
+    },
+    {
+      "latitude": 51.57764,
+      "longitude": -0.147121
+    },
+    {
+      "latitude": 51.577596,
+      "longitude": -0.147168
+    },
+    {
+      "latitude": 51.577585,
+      "longitude": -0.147181
+    },
+    {
+      "latitude": 51.577605,
+      "longitude": -0.147229
+    },
+    {
+      "latitude": 51.577604,
+      "longitude": -0.147255
+    },
+    {
+      "latitude": 51.577599,
+      "longitude": -0.147274
+    },
+    {
+      "latitude": 51.577603,
+      "longitude": -0.147283
+    },
+    {
+      "latitude": 51.577634,
+      "longitude": -0.147355
+    },
+    {
+      "latitude": 51.577612,
+      "longitude": -0.147361
+    },
+    {
+      "latitude": 51.577571,
+      "longitude": -0.147377
+    },
+    {
+      "latitude": 51.577543,
+      "longitude": -0.147389
+    },
+    {
+      "latitude": 51.577444,
+      "longitude": -0.147428
+    },
+    {
+      "latitude": 51.576938,
+      "longitude": -0.147634
+    },
+    {
+      "latitude": 51.576484,
+      "longitude": -0.147828
+    },
+    {
+      "latitude": 51.576471,
+      "longitude": -0.147862
+    },
+    {
+      "latitude": 51.576442,
+      "longitude": -0.147876
+    },
+    {
+      "latitude": 51.576405,
+      "longitude": -0.147861
+    },
+    {
+      "latitude": 51.576329,
+      "longitude": -0.147894
+    },
+    {
+      "latitude": 51.576265,
+      "longitude": -0.147923
+    },
+    {
+      "latitude": 51.576191,
+      "longitude": -0.147948
+    },
+    {
+      "latitude": 51.57614,
+      "longitude": -0.147958
+    },
+    {
+      "latitude": 51.576088,
+      "longitude": -0.14797
+    },
+    {
+      "latitude": 51.575936,
+      "longitude": -0.148026
+    },
+    {
+      "latitude": 51.575221,
+      "longitude": -0.148313
+    },
+    {
+      "latitude": 51.575177,
+      "longitude": -0.148329
+    },
+    {
+      "latitude": 51.574956,
+      "longitude": -0.14837
+    },
+    {
+      "latitude": 51.574726,
+      "longitude": -0.148429
+    },
+    {
+      "latitude": 51.574664,
+      "longitude": -0.14845
+    },
+    {
+      "latitude": 51.574162,
+      "longitude": -0.148619
+    },
+    {
+      "latitude": 51.57397,
+      "longitude": -0.148665
+    },
+    {
+      "latitude": 51.573882,
+      "longitude": -0.148683
+    },
+    {
+      "latitude": 51.573631,
+      "longitude": -0.148714
+    },
+    {
+      "latitude": 51.573483,
+      "longitude": -0.148732
+    },
+    {
+      "latitude": 51.573264,
+      "longitude": -0.148743
+    },
+    {
+      "latitude": 51.573094,
+      "longitude": -0.148765
+    },
+    {
+      "latitude": 51.572745,
+      "longitude": -0.14881
+    },
+    {
+      "latitude": 51.572501,
+      "longitude": -0.148837
+    },
+    {
+      "latitude": 51.572373,
+      "longitude": -0.148875
+    },
+    {
+      "latitude": 51.571945,
+      "longitude": -0.148997
+    },
+    {
+      "latitude": 51.571705,
+      "longitude": -0.149066
+    },
+    {
+      "latitude": 51.571684,
+      "longitude": -0.149069
+    },
+    {
+      "latitude": 51.571501,
+      "longitude": -0.14909
+    },
+    {
+      "latitude": 51.571258,
+      "longitude": -0.149118
+    },
+    {
+      "latitude": 51.571258,
+      "longitude": -0.149051
+    },
+    {
+      "latitude": 51.571257,
+      "longitude": -0.149008
+    },
+    {
+      "latitude": 51.571154,
+      "longitude": -0.149007
+    },
+    {
+      "latitude": 51.57112,
+      "longitude": -0.148936
+    },
+    {
+      "latitude": 51.571101,
+      "longitude": -0.148956
+    },
+    {
+      "latitude": 51.571061,
+      "longitude": -0.148991
+    },
+    {
+      "latitude": 51.57105,
+      "longitude": -0.149
+    },
+    {
+      "latitude": 51.571048,
+      "longitude": -0.149002
+    },
+    {
+      "latitude": 51.571001,
+      "longitude": -0.149043
+    },
+    {
+      "latitude": 51.570993,
+      "longitude": -0.14905
+    },
+    {
+      "latitude": 51.571121,
+      "longitude": -0.149402
+    },
+    {
+      "latitude": 51.571029,
+      "longitude": -0.149492
+    },
+    {
+      "latitude": 51.570993,
+      "longitude": -0.149542
+    },
+    {
+      "latitude": 51.571001,
+      "longitude": -0.149583
+    },
+    {
+      "latitude": 51.570917,
+      "longitude": -0.149669
+    },
+    {
+      "latitude": 51.570781,
+      "longitude": -0.149816
+    },
+    {
+      "latitude": 51.570501,
+      "longitude": -0.149543
+    },
+    {
+      "latitude": 51.570283,
+      "longitude": -0.149646
+    },
+    {
+      "latitude": 51.570237,
+      "longitude": -0.149635
+    },
+    {
+      "latitude": 51.570153,
+      "longitude": -0.149616
+    },
+    {
+      "latitude": 51.570041,
+      "longitude": -0.149909
+    },
+    {
+      "latitude": 51.569935,
+      "longitude": -0.150156
+    },
+    {
+      "latitude": 51.569588,
+      "longitude": -0.150833
+    },
+    {
+      "latitude": 51.569578,
+      "longitude": -0.150851
+    },
+    {
+      "latitude": 51.56944,
+      "longitude": -0.151064
+    },
+    {
+      "latitude": 51.569359,
+      "longitude": -0.151269
+    },
+    {
+      "latitude": 51.569356,
+      "longitude": -0.151382
+    },
+    {
+      "latitude": 51.569301,
+      "longitude": -0.151412
+    },
+    {
+      "latitude": 51.569266,
+      "longitude": -0.151431
+    },
+    {
+      "latitude": 51.569252,
+      "longitude": -0.151439
+    },
+    {
+      "latitude": 51.56914,
+      "longitude": -0.151501
+    },
+    {
+      "latitude": 51.569117,
+      "longitude": -0.15153
+    },
+    {
+      "latitude": 51.569085,
+      "longitude": -0.151571
+    },
+    {
+      "latitude": 51.56903,
+      "longitude": -0.151673
+    },
+    {
+      "latitude": 51.568907,
+      "longitude": -0.151952
+    },
+    {
+      "latitude": 51.5688,
+      "longitude": -0.152197
+    },
+    {
+      "latitude": 51.568723,
+      "longitude": -0.152328
+    },
+    {
+      "latitude": 51.568635,
+      "longitude": -0.152454
+    },
+    {
+      "latitude": 51.568506,
+      "longitude": -0.152651
+    },
+    {
+      "latitude": 51.568389,
+      "longitude": -0.152828
+    },
+    {
+      "latitude": 51.568285,
+      "longitude": -0.152993
+    },
+    {
+      "latitude": 51.568064,
+      "longitude": -0.153496
+    },
+    {
+      "latitude": 51.567992,
+      "longitude": -0.153657
+    },
+    {
+      "latitude": 51.567911,
+      "longitude": -0.153801
+    },
+    {
+      "latitude": 51.567743,
+      "longitude": -0.15388
+    },
+    {
+      "latitude": 51.567667,
+      "longitude": -0.153887
+    },
+    {
+      "latitude": 51.567622,
+      "longitude": -0.153888
+    },
+    {
+      "latitude": 51.567379,
+      "longitude": -0.153852
+    },
+    {
+      "latitude": 51.567225,
+      "longitude": -0.153827
+    },
+    {
+      "latitude": 51.567379,
+      "longitude": -0.153852
+    },
+    {
+      "latitude": 51.567361,
+      "longitude": -0.1542
+    },
+    {
+      "latitude": 51.567336,
+      "longitude": -0.154398
+    },
+    {
+      "latitude": 51.567287,
+      "longitude": -0.154572
+    },
+    {
+      "latitude": 51.567106,
+      "longitude": -0.154929
+    },
+    {
+      "latitude": 51.567064,
+      "longitude": -0.154997
+    },
+    {
+      "latitude": 51.566949,
+      "longitude": -0.155203
+    },
+    {
+      "latitude": 51.566853,
+      "longitude": -0.155419
+    },
+    {
+      "latitude": 51.566769,
+      "longitude": -0.155532
+    },
+    {
+      "latitude": 51.566437,
+      "longitude": -0.155949
+    },
+    {
+      "latitude": 51.566056,
+      "longitude": -0.156458
+    },
+    {
+      "latitude": 51.56586,
+      "longitude": -0.156755
+    },
+    {
+      "latitude": 51.565704,
+      "longitude": -0.156578
+    },
+    {
+      "latitude": 51.565462,
+      "longitude": -0.156187
+    },
+    {
+      "latitude": 51.565354,
+      "longitude": -0.156023
+    },
+    {
+      "latitude": 51.565273,
+      "longitude": -0.155902
+    },
+    {
+      "latitude": 51.565178,
+      "longitude": -0.155833
+    },
+    {
+      "latitude": 51.565094,
+      "longitude": -0.155826
+    },
+    {
+      "latitude": 51.564993,
+      "longitude": -0.155871
+    },
+    {
+      "latitude": 51.564939,
+      "longitude": -0.155895
+    },
+    {
+      "latitude": 51.564756,
+      "longitude": -0.156025
+    },
+    {
+      "latitude": 51.564693,
+      "longitude": -0.156045
+    },
+    {
+      "latitude": 51.564629,
+      "longitude": -0.156054
+    },
+    {
+      "latitude": 51.564503,
+      "longitude": -0.156042
+    },
+    {
+      "latitude": 51.564343,
+      "longitude": -0.15601
+    },
+    {
+      "latitude": 51.56431,
+      "longitude": -0.156093
+    },
+    {
+      "latitude": 51.564278,
+      "longitude": -0.15618
+    },
+    {
+      "latitude": 51.564159,
+      "longitude": -0.156491
+    },
+    {
+      "latitude": 51.564105,
+      "longitude": -0.156632
+    },
+    {
+      "latitude": 51.564068,
+      "longitude": -0.156738
+    },
+    {
+      "latitude": 51.564038,
+      "longitude": -0.156822
+    },
+    {
+      "latitude": 51.563992,
+      "longitude": -0.156895
+    },
+    {
+      "latitude": 51.56398,
+      "longitude": -0.156942
+    },
+    {
+      "latitude": 51.563875,
+      "longitude": -0.157328
+    },
+    {
+      "latitude": 51.563736,
+      "longitude": -0.157933
+    },
+    {
+      "latitude": 51.563675,
+      "longitude": -0.158174
+    },
+    {
+      "latitude": 51.56365,
+      "longitude": -0.158271
+    },
+    {
+      "latitude": 51.56352,
+      "longitude": -0.158727
+    },
+    {
+      "latitude": 51.563435,
+      "longitude": -0.159005
+    },
+    {
+      "latitude": 51.563381,
+      "longitude": -0.1592
+    },
+    {
+      "latitude": 51.56336,
+      "longitude": -0.159294
+    },
+    {
+      "latitude": 51.563334,
+      "longitude": -0.159391
+    },
+    {
+      "latitude": 51.563245,
+      "longitude": -0.159703
+    },
+    {
+      "latitude": 51.563127,
+      "longitude": -0.160123
+    },
+    {
+      "latitude": 51.563002,
+      "longitude": -0.160584
+    },
+    {
+      "latitude": 51.56286,
+      "longitude": -0.161051
+    },
+    {
+      "latitude": 51.562702,
+      "longitude": -0.161502
+    },
+    {
+      "latitude": 51.562614,
+      "longitude": -0.16168
+    },
+    {
+      "latitude": 51.562514,
+      "longitude": -0.16187
+    },
+    {
+      "latitude": 51.562423,
+      "longitude": -0.162039
+    },
+    {
+      "latitude": 51.562151,
+      "longitude": -0.162475
+    },
+    {
+      "latitude": 51.562047,
+      "longitude": -0.162662
+    },
+    {
+      "latitude": 51.56198,
+      "longitude": -0.162779
+    },
+    {
+      "latitude": 51.561854,
+      "longitude": -0.163072
+    },
+    {
+      "latitude": 51.561671,
+      "longitude": -0.163604
+    },
+    {
+      "latitude": 51.561657,
+      "longitude": -0.163639
+    },
+    {
+      "latitude": 51.561555,
+      "longitude": -0.163913
+    },
+    {
+      "latitude": 51.561429,
+      "longitude": -0.164173
+    },
+    {
+      "latitude": 51.561381,
+      "longitude": -0.164134
+    },
+    {
+      "latitude": 51.561343,
+      "longitude": -0.164076
+    },
+    {
+      "latitude": 51.561255,
+      "longitude": -0.163936
+    },
+    {
+      "latitude": 51.561097,
+      "longitude": -0.163721
+    },
+    {
+      "latitude": 51.561032,
+      "longitude": -0.16357
+    },
+    {
+      "latitude": 51.560964,
+      "longitude": -0.163457
+    },
+    {
+      "latitude": 51.560826,
+      "longitude": -0.163205
+    },
+    {
+      "latitude": 51.560633,
+      "longitude": -0.163025
+    },
+    {
+      "latitude": 51.560506,
+      "longitude": -0.163525
+    },
+    {
+      "latitude": 51.560317,
+      "longitude": -0.16388
+    },
+    {
+      "latitude": 51.560249,
+      "longitude": -0.164102
+    },
+    {
+      "latitude": 51.560272,
+      "longitude": -0.164457
+    },
+    {
+      "latitude": 51.560205,
+      "longitude": -0.164629
+    },
+    {
+      "latitude": 51.560137,
+      "longitude": -0.164731
+    },
+    {
+      "latitude": 51.56007,
+      "longitude": -0.164807
+    },
+    {
+      "latitude": 51.559996,
+      "longitude": -0.164935
+    },
+    {
+      "latitude": 51.559944,
+      "longitude": -0.165082
+    },
+    {
+      "latitude": 51.559886,
+      "longitude": -0.165239
+    },
+    {
+      "latitude": 51.559836,
+      "longitude": -0.165308
+    },
+    {
+      "latitude": 51.559808,
+      "longitude": -0.165333
+    },
+    {
+      "latitude": 51.559791,
+      "longitude": -0.165316
+    },
+    {
+      "latitude": 51.559764,
+      "longitude": -0.165289
+    },
+    {
+      "latitude": 51.559706,
+      "longitude": -0.165517
+    },
+    {
+      "latitude": 51.559545,
+      "longitude": -0.166133
+    },
+    {
+      "latitude": 51.559524,
+      "longitude": -0.166231
+    },
+    {
+      "latitude": 51.559486,
+      "longitude": -0.166272
+    },
+    {
+      "latitude": 51.559417,
+      "longitude": -0.166291
+    },
+    {
+      "latitude": 51.559281,
+      "longitude": -0.166368
+    },
+    {
+      "latitude": 51.559096,
+      "longitude": -0.166503
+    },
+    {
+      "latitude": 51.558456,
+      "longitude": -0.166415
+    },
+    {
+      "latitude": 51.55836,
+      "longitude": -0.166422
+    },
+    {
+      "latitude": 51.558192,
+      "longitude": -0.166438
+    },
+    {
+      "latitude": 51.557773,
+      "longitude": -0.167264
+    },
+    {
+      "latitude": 51.557611,
+      "longitude": -0.167583
+    },
+    {
+      "latitude": 51.557582,
+      "longitude": -0.167643
+    },
+    {
+      "latitude": 51.557607,
+      "longitude": -0.167683
+    },
+    {
+      "latitude": 51.557614,
+      "longitude": -0.167736
+    },
+    {
+      "latitude": 51.557613,
+      "longitude": -0.167826
+    },
+    {
+      "latitude": 51.557606,
+      "longitude": -0.167885
+    },
+    {
+      "latitude": 51.557591,
+      "longitude": -0.167917
+    },
+    {
+      "latitude": 51.557632,
+      "longitude": -0.167982
+    },
+    {
+      "latitude": 51.557604,
+      "longitude": -0.168024
+    },
+    {
+      "latitude": 51.5575805,
+      "longitude": -0.1680591
+    },
+    {
+      "latitude": 51.557475,
+      "longitude": -0.16794
+    },
+    {
+      "latitude": 51.557215,
+      "longitude": -0.168205
+    },
+    {
+      "latitude": 51.557256,
+      "longitude": -0.168371
+    },
+    {
+      "latitude": 51.557283,
+      "longitude": -0.168571
+    },
+    {
+      "latitude": 51.557313,
+      "longitude": -0.168941
+    },
+    {
+      "latitude": 51.557321,
+      "longitude": -0.169048
+    },
+    {
+      "latitude": 51.557313,
+      "longitude": -0.168941
+    },
+    {
+      "latitude": 51.557283,
+      "longitude": -0.168571
+    },
+    {
+      "latitude": 51.557256,
+      "longitude": -0.168371
+    },
+    {
+      "latitude": 51.557215,
+      "longitude": -0.168205
+    },
+    {
+      "latitude": 51.556561,
+      "longitude": -0.169069
+    },
+    {
+      "latitude": 51.556465,
+      "longitude": -0.169201
+    },
+    {
+      "latitude": 51.556401,
+      "longitude": -0.16929
+    },
+    {
+      "latitude": 51.555662,
+      "longitude": -0.170294
+    },
+    {
+      "latitude": 51.55563,
+      "longitude": -0.170208
+    },
+    {
+      "latitude": 51.555626,
+      "longitude": -0.170069
+    },
+    {
+      "latitude": 51.55575,
+      "longitude": -0.168602
+    },
+    {
+      "latitude": 51.555775,
+      "longitude": -0.168311
+    },
+    {
+      "latitude": 51.555791,
+      "longitude": -0.168113
+    },
+    {
+      "latitude": 51.555809,
+      "longitude": -0.1679
+    },
+    {
+      "latitude": 51.555821,
+      "longitude": -0.167758
+    },
+    {
+      "latitude": 51.555845,
+      "longitude": -0.16747
+    },
+    {
+      "latitude": 51.55585,
+      "longitude": -0.167409
+    },
+    {
+      "latitude": 51.555858,
+      "longitude": -0.16732
+    },
+    {
+      "latitude": 51.555879,
+      "longitude": -0.167089
+    },
+    {
+      "latitude": 51.555958,
+      "longitude": -0.166651
+    },
+    {
+      "latitude": 51.555696,
+      "longitude": -0.166591
+    },
+    {
+      "latitude": 51.555685,
+      "longitude": -0.166587
+    },
+    {
+      "latitude": 51.555542,
+      "longitude": -0.166492
+    },
+    {
+      "latitude": 51.555273,
+      "longitude": -0.166265
+    },
+    {
+      "latitude": 51.555244,
+      "longitude": -0.16624
+    },
+    {
+      "latitude": 51.555173,
+      "longitude": -0.166189
+    },
+    {
+      "latitude": 51.555198,
+      "longitude": -0.166104
+    },
+    {
+      "latitude": 51.555209,
+      "longitude": -0.166037
+    },
+    {
+      "latitude": 51.555228,
+      "longitude": -0.165933
+    },
+    {
+      "latitude": 51.555252,
+      "longitude": -0.165872
+    },
+    {
+      "latitude": 51.555239,
+      "longitude": -0.165864
+    },
+    {
+      "latitude": 51.555212,
+      "longitude": -0.165847
+    },
+    {
+      "latitude": 51.555229,
+      "longitude": -0.165762
+    },
+    {
+      "latitude": 51.555234,
+      "longitude": -0.165737
+    },
+    {
+      "latitude": 51.555238,
+      "longitude": -0.165721
+    },
+    {
+      "latitude": 51.555224,
+      "longitude": -0.165713
+    },
+    {
+      "latitude": 51.555189,
+      "longitude": -0.165692
+    }
+  ],
+  "stops": [
+    {
+      "id": "highgate-station",
+      "title": "Highgate Underground station",
+      "landmarkCoordinate": {
+        "latitude": 51.5776027,
+        "longitude": -0.1468003
+      },
+      "standingCoordinate": {
+        "latitude": 51.577601,
+        "longitude": -0.146852
+      },
+      "routeIndex": 0,
+      "access": "Archway Road exit 3. Stand on the public pavement to the side of the station exit, clear of doors and crossing approaches; begin before crossing Archway Road. Short welcome on a busy main-road frontage.",
+      "viewpointEvidence": "Station frontage and street setting seen in September 2025 imagery; not the underground railway pin.",
+      "verificationStatus": "desk-reviewed; not field-observed"
+    },
+    {
+      "id": "pond-square",
+      "title": "Pond Square",
+      "landmarkCoordinate": {
+        "latitude": 51.570781,
+        "longitude": -0.149815
+      },
+      "standingCoordinate": {
+        "latitude": 51.57081,
+        "longitude": -0.149715
+      },
+      "routeIndex": 61,
+      "access": "Use the open public square, clear of the through-path and tree roots. The mapped northern approach includes a short public stepped connection.",
+      "viewpointEvidence": "Open gravel/tree/bench square seen in June 2022 imagery. No pond survives to be pointed out.",
+      "verificationStatus": "desk-reviewed; not field-observed"
+    },
+    {
+      "id": "highgate-ponds",
+      "title": "Between the Highgate ponds",
+      "landmarkCoordinate": {
+        "latitude": 51.56458,
+        "longitude": -0.15745
+      },
+      "standingCoordinate": {
+        "latitude": 51.563675,
+        "longitude": -0.158174
+      },
+      "routeIndex": 130,
+      "access": "Public shared Heath path between Model Boating and Mens ponds, approximately 168m after Millfield Lane. Pause at a clear edge before the side-path junction; keep cyclists and walkers through. Do not enter bathing gates or approach the water edge.",
+      "viewpointEvidence": "Public path and adjacent pond geography confirmed on OSM and City map. Exact clear standing width and island visibility unverified; no direct island look cue.",
+      "verificationStatus": "desk-reviewed; not field-observed"
+    },
+    {
+      "id": "willow-road",
+      "title": "2 Willow Road",
+      "landmarkCoordinate": {
+        "latitude": 51.557196,
+        "longitude": -0.1691445
+      },
+      "standingCoordinate": {
+        "latitude": 51.557262,
+        "longitude": -0.169112
+      },
+      "routeIndex": 201,
+      "access": "Building-side public pavement outside the front wall. Keep driveways and entrances clear. Interior entry is not part of the tour and Monday opening is not assumed.",
+      "viewpointEvidence": "Facade and building-side pavement seen in September 2025 imagery. The optional opposite Heath bench is not the mandatory standing point.",
+      "verificationStatus": "desk-reviewed; not field-observed"
+    },
+    {
+      "id": "keats-house",
+      "title": "Keats House",
+      "landmarkCoordinate": {
+        "latitude": 51.555515,
+        "longitude": -0.16794
+      },
+      "standingCoordinate": {
+        "latitude": 51.55579,
+        "longitude": -0.16808
+      },
+      "routeIndex": 214,
+      "access": "Public pavement outside the garden gate on Keats Grove. Keep the gate clear. Do not require the garden or house to be open.",
+      "viewpointEvidence": "September 2025 imagery shows upper house through/above the frontage; tall fencing and trees screen the lower facade. Story must work from the street.",
+      "verificationStatus": "desk-reviewed; not field-observed"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "walking-conversation",
+      "afterStopIndex": 1,
+      "startRouteIndex": 121,
+      "endRouteIndex": 122,
+      "navigationRouteIndex": 130,
+      "fastWalkingMetresPerSecond": 1.6666666666666665,
+      "marginSeconds": 15,
+      "maximumAudioSeconds": 60,
+      "metresAfterLatestLaunch": 128.94,
+      "secondsAfterLatestLaunchAt6Kmh": 77.36,
+      "marginAtAudioCapSeconds": 17.36,
+      "launchWindowMetres": 25.24,
+      "basis": "After the right turn off Millfield Lane onto the shared Heath path, launch 14\u201339m after entry. Stay on the main path through bends and side-path joins. Navigation boundary is the pond pause before the next branch. Merton Lane and Millfield Lane remain silent."
+    },
+    {
+      "id": "keeping-the-heath",
+      "afterStopIndex": 2,
+      "startRouteIndex": 138,
+      "endRouteIndex": 140,
+      "navigationRouteIndex": 152,
+      "fastWalkingMetresPerSecond": 1.6666666666666665,
+      "marginSeconds": 15,
+      "maximumAudioSeconds": 90,
+      "metresAfterLatestLaunch": 269.61,
+      "secondsAfterLatestLaunchAt6Kmh": 161.76,
+      "marginAtAudioCapSeconds": 71.76,
+      "launchWindowMetres": 70.7,
+      "basis": "Continue west on the same main shared path past the path intersection 78m after the pond pause. Launch about 148\u2013219m after the pause; end before the first required left turn at about 489m. No road crossings in the corridor."
+    }
+  ],
+  "legs": [
+    {
+      "from": "highgate-station",
+      "to": "pond-square",
+      "startRouteIndex": 0,
+      "endRouteIndex": 61,
+      "providerMetres": 892,
+      "providerSeconds": 820.52,
+      "rawProviderFile": "chosen-east-response.json",
+      "rawProviderSha256": "474fa30569781ac4033bafed004340aeaee4b3f3e4054e203cccb4adb22291e1",
+      "request": {
+        "locations": [
+          {
+            "lat": 51.577601,
+            "lon": -0.146852,
+            "type": "break",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          },
+          {
+            "lat": 51.5776827,
+            "lon": -0.1470746,
+            "type": "via",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          },
+          {
+            "lat": 51.5775961,
+            "lon": -0.1471681,
+            "type": "via",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          },
+          {
+            "lat": 51.574647,
+            "lon": -0.148317,
+            "type": "via",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          },
+          {
+            "lat": 51.571082,
+            "lon": -0.148965,
+            "type": "via",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          },
+          {
+            "lat": 51.571016,
+            "lon": -0.149038,
+            "type": "via",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          },
+          {
+            "lat": 51.571001,
+            "lon": -0.149583,
+            "type": "via",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          },
+          {
+            "lat": 51.570781,
+            "lon": -0.149815,
+            "type": "break",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          }
+        ],
+        "costing": "pedestrian",
+        "costing_options": {
+          "pedestrian": {
+            "walking_speed": 4.5
+          }
+        },
+        "units": "kilometers",
+        "language": "en-GB",
+        "id": "hampstead-chosen-east"
+      },
+      "maneuvers": [
+        {
+          "startRouteIndex": 0,
+          "endRouteIndex": 1,
+          "originalInstruction": "Walk northwest on Archway Road.",
+          "providerMetres": 21
+        },
+        {
+          "startRouteIndex": 1,
+          "endRouteIndex": 5,
+          "originalInstruction": "Turn left onto the walkway.",
+          "providerMetres": 15
+        },
+        {
+          "startRouteIndex": 5,
+          "endRouteIndex": 10,
+          "originalInstruction": "Turn right onto the walkway.",
+          "providerMetres": 14
+        },
+        {
+          "startRouteIndex": 10,
+          "endRouteIndex": 45,
+          "originalInstruction": "Turn left onto Southwood Lane/B550.",
+          "providerMetres": 722
+        },
+        {
+          "startRouteIndex": 45,
+          "endRouteIndex": 47,
+          "originalInstruction": "Turn left onto the walkway.",
+          "providerMetres": 8
+        },
+        {
+          "startRouteIndex": 47,
+          "endRouteIndex": 49,
+          "originalInstruction": "Turn right onto the walkway.",
+          "providerMetres": 18
+        },
+        {
+          "startRouteIndex": 49,
+          "endRouteIndex": 55,
+          "originalInstruction": "Turn right onto the walkway.",
+          "providerMetres": 17
+        },
+        {
+          "startRouteIndex": 55,
+          "endRouteIndex": 56,
+          "originalInstruction": "Turn right onto the walkway.",
+          "providerMetres": 28
+        },
+        {
+          "startRouteIndex": 56,
+          "endRouteIndex": 57,
+          "originalInstruction": "Take the stairs.",
+          "providerMetres": 12
+        },
+        {
+          "startRouteIndex": 57,
+          "endRouteIndex": 58,
+          "originalInstruction": "Continue on the walkway.",
+          "providerMetres": 5
+        },
+        {
+          "startRouteIndex": 58,
+          "endRouteIndex": 59,
+          "originalInstruction": "Turn right onto Pond Square.",
+          "providerMetres": 3
+        },
+        {
+          "startRouteIndex": 59,
+          "endRouteIndex": 61,
+          "originalInstruction": "Turn left to stay on Pond Square.",
+          "providerMetres": 29
+        },
+        {
+          "startRouteIndex": 61,
+          "endRouteIndex": 61,
+          "originalInstruction": "You have arrived at your destination.",
+          "providerMetres": 0
+        }
+      ]
+    },
+    {
+      "from": "pond-square",
+      "to": "highgate-ponds",
+      "startRouteIndex": 61,
+      "endRouteIndex": 130,
+      "providerMetres": 1198,
+      "providerSeconds": 984.074,
+      "rawProviderFile": "ready-merton-response.json",
+      "rawProviderSha256": "94a4457bb8a796b88fcf82593ccc60489f6eed4ee40e596bdfbe2024f1890520",
+      "request": {
+        "locations": [
+          {
+            "lat": 51.570781,
+            "lon": -0.149815,
+            "type": "break",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          },
+          {
+            "lat": 51.570153,
+            "lon": -0.149616,
+            "type": "via",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          },
+          {
+            "lat": 51.567225,
+            "lon": -0.153827,
+            "type": "via",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          },
+          {
+            "lat": 51.567379,
+            "lon": -0.153852,
+            "type": "via",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          },
+          {
+            "lat": 51.56586,
+            "lon": -0.15676,
+            "type": "via",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          },
+          {
+            "lat": 51.5643426,
+            "lon": -0.1560102,
+            "type": "via",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          },
+          {
+            "lat": 51.563675,
+            "lon": -0.158174,
+            "type": "break",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          }
+        ],
+        "costing": "pedestrian",
+        "costing_options": {
+          "pedestrian": {
+            "walking_speed": 4.5
+          }
+        },
+        "units": "kilometers",
+        "language": "en-GB",
+        "id": "ready-merton"
+      },
+      "maneuvers": [
+        {
+          "startRouteIndex": 61,
+          "endRouteIndex": 65,
+          "originalInstruction": "Walk southeast on Pond Square.",
+          "providerMetres": 76
+        },
+        {
+          "startRouteIndex": 65,
+          "endRouteIndex": 72,
+          "originalInstruction": "Turn right onto South Grove.",
+          "providerMetres": 154
+        },
+        {
+          "startRouteIndex": 72,
+          "endRouteIndex": 94,
+          "originalInstruction": "Turn left onto Highgate West Hill.",
+          "providerMetres": 314
+        },
+        {
+          "startRouteIndex": 94,
+          "endRouteIndex": 95,
+          "originalInstruction": "Make a right U-turn to stay on Highgate West Hill.",
+          "providerMetres": 17
+        },
+        {
+          "startRouteIndex": 95,
+          "endRouteIndex": 106,
+          "originalInstruction": "Turn left onto Merton Lane.",
+          "providerMetres": 272
+        },
+        {
+          "startRouteIndex": 106,
+          "endRouteIndex": 119,
+          "originalInstruction": "Turn left onto Millfield Lane.",
+          "providerMetres": 196
+        },
+        {
+          "startRouteIndex": 119,
+          "endRouteIndex": 130,
+          "originalInstruction": "Turn right.",
+          "providerMetres": 168
+        },
+        {
+          "startRouteIndex": 130,
+          "endRouteIndex": 130,
+          "originalInstruction": "You have arrived at your destination.",
+          "providerMetres": 0
+        }
+      ]
+    },
+    {
+      "from": "highgate-ponds",
+      "to": "willow-road",
+      "startRouteIndex": 130,
+      "endRouteIndex": 201,
+      "providerMetres": 1307,
+      "providerSeconds": 1144.512,
+      "rawProviderFile": "ready-heath-response.json",
+      "rawProviderSha256": "a897aef069ed24fa509129621c91f946694a464848c842e29b50caaa7a7f9f0c",
+      "request": {
+        "locations": [
+          {
+            "lat": 51.563675,
+            "lon": -0.158174,
+            "type": "break",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          },
+          {
+            "lat": 51.5633813,
+            "lon": -0.1591996,
+            "type": "via",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          },
+          {
+            "lat": 51.5616707,
+            "lon": -0.1636035,
+            "type": "via",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          },
+          {
+            "lat": 51.5576318,
+            "lon": -0.1679821,
+            "type": "via"
+          },
+          {
+            "lat": 51.5576039,
+            "lon": -0.1680239,
+            "type": "via"
+          },
+          {
+            "lat": 51.55731,
+            "lon": -0.16905,
+            "type": "break",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          }
+        ],
+        "costing": "pedestrian",
+        "costing_options": {
+          "pedestrian": {
+            "walking_speed": 4.5
+          }
+        },
+        "units": "kilometers",
+        "language": "en-GB",
+        "id": "ready-heath"
+      },
+      "maneuvers": [
+        {
+          "startRouteIndex": 130,
+          "endRouteIndex": 152,
+          "originalInstruction": "Walk west.",
+          "providerMetres": 490
+        },
+        {
+          "startRouteIndex": 152,
+          "endRouteIndex": 160,
+          "originalInstruction": "Turn left onto the walkway.",
+          "providerMetres": 120
+        },
+        {
+          "startRouteIndex": 160,
+          "endRouteIndex": 161,
+          "originalInstruction": "Turn right onto the walkway.",
+          "providerMetres": 37
+        },
+        {
+          "startRouteIndex": 161,
+          "endRouteIndex": 172,
+          "originalInstruction": "Keep left to take the walkway.",
+          "providerMetres": 155
+        },
+        {
+          "startRouteIndex": 172,
+          "endRouteIndex": 174,
+          "originalInstruction": "Turn left onto the walkway.",
+          "providerMetres": 6
+        },
+        {
+          "startRouteIndex": 174,
+          "endRouteIndex": 179,
+          "originalInstruction": "Turn right.",
+          "providerMetres": 84
+        },
+        {
+          "startRouteIndex": 179,
+          "endRouteIndex": 184,
+          "originalInstruction": "Keep right at the fork.",
+          "providerMetres": 140
+        },
+        {
+          "startRouteIndex": 184,
+          "endRouteIndex": 187,
+          "originalInstruction": "Turn right.",
+          "providerMetres": 107
+        },
+        {
+          "startRouteIndex": 187,
+          "endRouteIndex": 194,
+          "originalInstruction": "Turn right onto the walkway.",
+          "providerMetres": 32
+        },
+        {
+          "startRouteIndex": 194,
+          "endRouteIndex": 195,
+          "originalInstruction": "Turn right onto East Heath Road.",
+          "providerMetres": 18
+        },
+        {
+          "startRouteIndex": 195,
+          "endRouteIndex": 196,
+          "originalInstruction": "Make a sharp right to stay on East Heath Road.",
+          "providerMetres": 18
+        },
+        {
+          "startRouteIndex": 196,
+          "endRouteIndex": 197,
+          "originalInstruction": "Turn right onto Downshire Hill.",
+          "providerMetres": 40
+        },
+        {
+          "startRouteIndex": 197,
+          "endRouteIndex": 201,
+          "originalInstruction": "Turn right onto Willow Road.",
+          "providerMetres": 60
+        },
+        {
+          "startRouteIndex": 201,
+          "endRouteIndex": 201,
+          "originalInstruction": "You have arrived at your destination.",
+          "providerMetres": 0
+        }
+      ]
+    },
+    {
+      "from": "willow-road",
+      "to": "keats-house",
+      "startRouteIndex": 201,
+      "endRouteIndex": 214,
+      "providerMetres": 439,
+      "providerSeconds": 352.673,
+      "rawProviderFile": "chosen-keats-response.json",
+      "rawProviderSha256": "2842b1253b4a85445095c9d9040683e98c7f1ebcd099460e0fb399ed77eab133",
+      "request": {
+        "locations": [
+          {
+            "lat": 51.55731,
+            "lon": -0.16905,
+            "type": "break",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          },
+          {
+            "lat": 51.557215,
+            "lon": -0.168205,
+            "type": "via",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          },
+          {
+            "lat": 51.55647,
+            "lon": -0.16921,
+            "type": "via",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          },
+          {
+            "lat": 51.555662,
+            "lon": -0.170294,
+            "type": "via",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          },
+          {
+            "lat": 51.5558,
+            "lon": -0.16811,
+            "type": "break",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          }
+        ],
+        "costing": "pedestrian",
+        "costing_options": {
+          "pedestrian": {
+            "walking_speed": 4.5
+          }
+        },
+        "units": "kilometers",
+        "language": "en-GB",
+        "id": "hampstead-chosen-keats"
+      },
+      "maneuvers": [
+        {
+          "startRouteIndex": 201,
+          "endRouteIndex": 205,
+          "originalInstruction": "Walk east on Willow Road.",
+          "providerMetres": 60
+        },
+        {
+          "startRouteIndex": 205,
+          "endRouteIndex": 209,
+          "originalInstruction": "Turn right onto Downshire Hill.",
+          "providerMetres": 226
+        },
+        {
+          "startRouteIndex": 209,
+          "endRouteIndex": 214,
+          "originalInstruction": "Turn left onto Keats Grove.",
+          "providerMetres": 152
+        },
+        {
+          "startRouteIndex": 214,
+          "endRouteIndex": 214,
+          "originalInstruction": "You have arrived at your destination.",
+          "providerMetres": 0
+        }
+      ]
+    },
+    {
+      "from": "keats-house",
+      "to": "hampstead-heath-station",
+      "startRouteIndex": 214,
+      "endRouteIndex": 238,
+      "providerMetres": 242,
+      "providerSeconds": 196.916,
+      "rawProviderFile": "return-heath-final-response.json",
+      "rawProviderSha256": "0b580c337b5faf75a9e2dbc56afe15ed72c7f4216e3b18afe281d9cdfc329e95",
+      "request": {
+        "locations": [
+          {
+            "lat": 51.5558,
+            "lon": -0.16811,
+            "type": "break",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          },
+          {
+            "lat": 51.55518,
+            "lon": -0.16573,
+            "type": "break",
+            "search_filter": {
+              "exclude_tunnel": true
+            }
+          }
+        ],
+        "costing": "pedestrian",
+        "costing_options": {
+          "pedestrian": {
+            "walking_speed": 4.5
+          }
+        },
+        "units": "kilometers",
+        "language": "en-GB",
+        "id": "return-heath-final"
+      },
+      "maneuvers": [
+        {
+          "startRouteIndex": 214,
+          "endRouteIndex": 221,
+          "originalInstruction": "Walk east on Keats Grove.",
+          "providerMetres": 103
+        },
+        {
+          "startRouteIndex": 221,
+          "endRouteIndex": 227,
+          "originalInstruction": "Turn right onto South End Road.",
+          "providerMetres": 94
+        },
+        {
+          "startRouteIndex": 227,
+          "endRouteIndex": 236,
+          "originalInstruction": "Turn left onto the walkway.",
+          "providerMetres": 38
+        },
+        {
+          "startRouteIndex": 236,
+          "endRouteIndex": 238,
+          "originalInstruction": "Turn right onto the walkway.",
+          "providerMetres": 6
+        },
+        {
+          "startRouteIndex": 238,
+          "endRouteIndex": 238,
+          "originalInstruction": "You have arrived at your destination.",
+          "providerMetres": 0
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "providerMetresToKeats": 3836,
+    "providerSecondsToKeats": 3301.779,
+    "providerMetresToHeathStation": 4078,
+    "providerSecondsToHeathStation": 3498.6949999999997,
+    "measuredGeometryMetres": 4043.46,
+    "plannedOutingMinutes": [
+      85,
+      100
+    ],
+    "planningBasis": "About 59 minutes of provider movement, then stationary narration, looking and crossing waits; ordinary hills/footing may lengthen the outing. No indoor visits."
+  },
+  "finish": {
+    "id": "hampstead-heath-station",
+    "coordinate": {
+      "latitude": 51.555189,
+      "longitude": -0.165692
+    },
+    "routeIndex": 238,
+    "label": "Hampstead Heath station, South End Green",
+    "optionalHampsteadUnderground": {
+      "providerMetresFromKeats": 822,
+      "providerSecondsFromKeats": 811.972,
+      "extraMetresVersusHeathStation": 580,
+      "extraMinutesVersusHeathStation": 10.25,
+      "route": "Return west along Keats Grove, left down Downshire Hill, then right along Rosslyn Hill/Hampstead High Street to Hampstead Underground. Use public pavements and marked crossings; station option is written, not the selected mapped finish."
+    }
+  },
+  "crossings": [
+    {
+      "name": "Archway Road by Highgate exit 3",
+      "kind": "pedestrian signals",
+      "osmWay": 1154807181,
+      "landingCoordinates": [
+        {
+          "latitude": 51.5776827,
+          "longitude": -0.1470746
+        },
+        {
+          "latitude": 51.5775961,
+          "longitude": -0.1471681
+        }
+      ],
+      "evidence": "OSM crossing plus September 2025 imagery."
+    },
+    {
+      "name": "Highgate High Street by Southwood Lane",
+      "kind": "zebra",
+      "coordinate": {
+        "latitude": 51.5710481,
+        "longitude": -0.1490019
+      },
+      "evidence": "OSM crossing and 2025 North London Hospice route."
+    },
+    {
+      "name": "Highgate West Hill just south of Merton Lane",
+      "kind": "uncontrolled refuge",
+      "coordinate": {
+        "latitude": 51.567225,
+        "longitude": -0.153827
+      },
+      "evidence": "September 2025 imagery plus 2025 event route. No pedestrian priority; east-side descent avoids the narrow west pavement. Provider backtrack is the short return from refuge to lane mouth, not a direction to turn around in traffic."
+    },
+    {
+      "name": "East Heath Road just west of Downshire Hill",
+      "kind": "zebra",
+      "coordinate": {
+        "latitude": 51.5576039,
+        "longitude": -0.1680239
+      },
+      "landingCoordinates": [
+        {
+          "latitude": 51.5576318,
+          "longitude": -0.1679821
+        },
+        {
+          "latitude": 51.5575805,
+          "longitude": -0.1680591
+        }
+      ],
+      "evidence": "September 2025 imagery and OSM way606898976. Router follows the mapped north approach to crossing centre; south-side pavement connector is absent from OSM. Selected geometry adds the mapped south landing and an explicitly authored pavement connector supported by imagery. Complete the zebra then use the pavement to Downshire Hill."
+    }
+  ],
+  "knownLimitations": [
+    "Heath path/pond-view standing area has map evidence but no Street View at the pause; omit precision island cues.",
+    "No live all-clear for temporary works. Obey physical closure signs, pause and use manual playback/map if a small local adjustment is needed.",
+    "Merton Lane has no continuous footway; it is deliberately silent. Heath surfaces include asphalt, gravel and uneven areas, with gradients and shared cyclists.",
+    "The original provider instructions are retained only for audit. Use ROUTE-DIRECTIONS.md for reviewed visitor directions."
+  ]
+}

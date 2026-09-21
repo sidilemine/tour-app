@@ -5,7 +5,7 @@ import sys
 import zipfile
 from pathlib import Path
 
-catalogs = [json.loads(Path(path).read_text()) for path in ('src/map/catalog.json', 'src/map/clerkenwell.json')]
+catalogs = [json.loads(Path(path).read_text()) for path in ('src/map/catalog.json', 'src/map/clerkenwell.json', 'src/map/hampstead.json')]
 for path in sys.argv[1:]:
     with zipfile.ZipFile(path) as apk:
         names = apk.namelist()
@@ -18,6 +18,6 @@ for path in sys.argv[1:]:
             if missing:
                 raise SystemExit(f'{path}: {len(missing)} missing/changed embedded map files; first: {missing[:3]}')
             count = len({f['sha256'] for catalog in catalogs for f in catalog['files']})
-            print(f'{path}: both areas, all {count} distinct map/font resources embedded byte-for-byte; native drawing still unverified')
+            print(f'{path}: {len(catalogs)} areas, all {count} distinct map/font resources embedded byte-for-byte; native drawing still unverified')
         else:
             print(f'{path}: native map library present; development assets require Metro preparation')

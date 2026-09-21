@@ -1,0 +1,3943 @@
+{
+  "schemaVersion": 1,
+  "area": "Highgate Underground to Hampstead across the Heath",
+  "retrievedOn": "2026-09-21",
+  "status": "Public-source discovery complete before own selection; desk research only",
+  "handoffs": [
+    {
+      "path": "operators-guides.json",
+      "sha256": "75c35ff1ad11c0b9a6a4fd2f607613b099f2766d95775fd035a7a65499c5bfce"
+    },
+    {
+      "path": "heritage-current.json",
+      "sha256": "c8997ef2687520d03f7cd6b75393e6c02398aab4dbcaf9a4459772067832fa02"
+    }
+  ],
+  "counts": {
+    "sourceRecords": 67,
+    "distinctSourceUrls": 66,
+    "resourceRecords": 38,
+    "rawPlaceRecords": 171,
+    "consolidatedDiscoveryEntries": 148,
+    "clearIdentityMerges": 23
+  },
+  "duplicateSourceGroups": [
+    {
+      "url": "https://programme.openhouse.org.uk/listings/13711",
+      "sourceIds": [
+        "H-OG-S-openhouse",
+        "HA-HC-S05"
+      ],
+      "relationship": "Same page inspected in two discovery lanes; one source, not corroboration."
+    }
+  ],
+  "places": [
+    {
+      "id": "H-OG-P-hampstead-underground",
+      "names": [
+        "Hampstead Underground",
+        "Hampstead tube"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-hampstead-underground",
+        "ha-hampstead-tube"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-holly-bush-hill",
+      "names": [
+        "Holly Bush Hill"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-holly-bush-hill",
+        "ha-holly-bush-hill"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-fenton-house",
+      "names": [
+        "Fenton House"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-fenton-house",
+        "ha-fenton-house"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-hampstead-observatory",
+      "names": [
+        "Hampstead Observatory"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-hampstead-observatory",
+        "ha-hampstead-observatory"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-viaduct-pond",
+      "names": [
+        "Viaduct Pond"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-viaduct-pond",
+        "ha-viaduct-pond"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-keats-house",
+      "names": [
+        "Keats House"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-keats-house",
+        "ha-keats-house"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-2-willow-road",
+      "names": [
+        "2 Willow Road"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-2-willow-road",
+        "ha-2-willow-road"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-burgh-house",
+      "names": [
+        "Burgh House"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-burgh-house",
+        "ha-burgh-house"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-flask-walk",
+      "names": [
+        "Flask Walk"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-flask-walk",
+        "ha-flask-walk"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-highgate-ponds",
+      "names": [
+        "Highgate Ponds"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-highgate-ponds",
+        "ha-highgate-ponds"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-highgate-men-s-pond",
+      "names": [
+        "Highgate Mens Bathing Pond",
+        "Highgate Men’s Pond"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-highgate-men-s-pond",
+        "ha-highgate-mens-bathing-pond"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-tumulus",
+      "names": [
+        "Tumulus"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-tumulus",
+        "ha-tumulus"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-parliament-hill",
+      "names": [
+        "Parliament Hill"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-parliament-hill",
+        "ha-parliament-hill"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-millfield-lane",
+      "names": [
+        "Millfield Lane"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-millfield-lane",
+        "ha-millfield-lane"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-kenwood-house",
+      "names": [
+        "Kenwood House"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-kenwood-house",
+        "ha-kenwood-house"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-golders-hill-park",
+      "names": [
+        "Golders Hill Park"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-golders-hill-park",
+        "ha-golders-hill-park"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-whitestone-pond",
+      "names": [
+        "Whitestone Pond"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-whitestone-pond",
+        "ha-whitestone-pond"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-hill-garden-and-pergola",
+      "names": [
+        "Hill Garden and Pergola"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-hill-garden-and-pergola",
+        "ha-hill-garden-and-pergola"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-church-row",
+      "names": [
+        "Church Row"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-church-row",
+        "ha-church-row"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-hampstead-garden-suburb",
+      "names": [
+        "Hampstead Garden Suburb"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-hampstead-garden-suburb",
+        "ha-hampstead-garden-suburb"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-holly-bush",
+      "names": [
+        "Holly Bush",
+        "Holly Bush pub"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-holly-bush",
+        "ha-holly-bush-pub"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-waterlow-park",
+      "names": [
+        "Waterlow Park"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-waterlow-park",
+        "ha-waterlow-park"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-pond-square",
+      "names": [
+        "Pond Square"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-pond-square",
+        "ha-pond-square"
+      ],
+      "relationship": "Clear cross-handoff identity; no standing coordinate implied."
+    },
+    {
+      "id": "H-OG-P-admiral-s-house",
+      "names": [
+        "Admiral’s House"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-admiral-s-house"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-well-walk",
+      "names": [
+        "Well Walk"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-well-walk"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-hampstead-heath",
+      "names": [
+        "Hampstead Heath"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-hampstead-heath"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-st-john-at-hampstead",
+      "names": [
+        "St John-at-Hampstead"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-st-john-at-hampstead"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-benham-s-place",
+      "names": [
+        "Benham’s Place"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-benham-s-place"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-watch-house-holly-place",
+      "names": [
+        "Watch House, Holly Place"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-watch-house-holly-place"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-stevenson-house-mount-vernon",
+      "names": [
+        "Stevenson house, Mount Vernon"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-stevenson-house-mount-vernon"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-admiral-s-walk",
+      "names": [
+        "Admiral’s Walk"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-admiral-s-walk"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-judges-walk",
+      "names": [
+        "Judges’ Walk"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-judges-walk"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-vale-of-health",
+      "names": [
+        "Vale of Health"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-vale-of-health"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-byron-villas",
+      "names": [
+        "Byron Villas"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-byron-villas"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-cannon-lane-lock-up",
+      "names": [
+        "Cannon Lane lock-up"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-cannon-lane-lock-up"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-marie-stopes-house",
+      "names": [
+        "Marie Stopes house"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-marie-stopes-house"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-mount-vernon-hospital",
+      "names": [
+        "Mount Vernon hospital"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-mount-vernon-hospital"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-the-flask",
+      "names": [
+        "The Flask"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-the-flask"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-86-hampstead-high-street",
+      "names": [
+        "86 Hampstead High Street"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-86-hampstead-high-street"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-40-well-walk",
+      "names": [
+        "40 Well Walk"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-40-well-walk"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-chalybeate-well",
+      "names": [
+        "Chalybeate Well"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-chalybeate-well"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-leigh-hunt-cottage-site",
+      "names": [
+        "Leigh Hunt cottage site"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-leigh-hunt-cottage-site"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-jack-straw-s-castle",
+      "names": [
+        "Jack Straw’s Castle"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-jack-straw-s-castle"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-john-gurney-hoare-plaque",
+      "names": [
+        "John Gurney Hoare plaque"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-john-gurney-hoare-plaque"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-old-wyldes",
+      "names": [
+        "Old Wyldes"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-old-wyldes"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-spaniards-inn",
+      "names": [
+        "Spaniards Inn"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-spaniards-inn"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-hampstead-square",
+      "names": [
+        "Hampstead Square"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-hampstead-square"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-elm-row",
+      "names": [
+        "Elm Row"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-elm-row"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-new-end",
+      "names": [
+        "New End"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-new-end"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-back-lane",
+      "names": [
+        "Back Lane"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-back-lane"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-streatley-place",
+      "names": [
+        "Streatley Place"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-streatley-place"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-mansfield-place",
+      "names": [
+        "Mansfield Place"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-mansfield-place"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-boades-mews",
+      "names": [
+        "Boades Mews"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-boades-mews"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-gainsborough-gardens",
+      "names": [
+        "Gainsborough Gardens"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-gainsborough-gardens"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-shepherds-walk",
+      "names": [
+        "Shepherds Walk"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-shepherds-walk"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-spring-path",
+      "names": [
+        "Spring Path"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-spring-path"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-prince-arthur-road",
+      "names": [
+        "Prince Arthur Road"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-prince-arthur-road"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-perrin-s-court",
+      "names": [
+        "Perrin’s Court"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-perrin-s-court"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-oriel-place",
+      "names": [
+        "Oriel Place"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-oriel-place"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-st-mary-s-holly-walk",
+      "names": [
+        "St Mary’s, Holly Walk"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-st-mary-s-holly-walk"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-mount-vernon",
+      "names": [
+        "Mount Vernon"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-mount-vernon"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-everyman-hampstead",
+      "names": [
+        "Everyman Hampstead"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-everyman-hampstead"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-constable-tomb",
+      "names": [
+        "Constable tomb"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-constable-tomb"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-church-row-st-john-at-hampstead",
+      "names": [
+        "Church Row / St John-at-Hampstead"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-church-row-st-john-at-hampstead"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-dido-elizabeth-belle-at-kenwood",
+      "names": [
+        "Dido Elizabeth Belle at Kenwood"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-dido-elizabeth-belle-at-kenwood"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-kenwood-ladies-pond",
+      "names": [
+        "Kenwood Ladies’ Pond"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-kenwood-ladies-pond"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-parliament-hill-lido",
+      "names": [
+        "Parliament Hill Lido"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-parliament-hill-lido"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-hampstead-ponds-river-fleet",
+      "names": [
+        "Hampstead Ponds / River Fleet"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-hampstead-ponds-river-fleet"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-well-walk-burgh-house",
+      "names": [
+        "Well Walk / Burgh House"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-well-walk-burgh-house"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-145-north-end-road",
+      "names": [
+        "145 North End Road"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-145-north-end-road"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-17-east-heath-road",
+      "names": [
+        "17 East Heath Road"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-17-east-heath-road"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-cannon-hall",
+      "names": [
+        "Cannon Hall"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-cannon-hall"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-77-parliament-hill",
+      "names": [
+        "77 Parliament Hill"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-77-parliament-hill"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-bolton-house",
+      "names": [
+        "Bolton House"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-bolton-house"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-7-mount-vernon",
+      "names": [
+        "7 Mount Vernon"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-7-mount-vernon"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-17-church-row",
+      "names": [
+        "17 Church Row"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-17-church-row"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-26-church-row",
+      "names": [
+        "26 Church Row"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-26-church-row"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-16-bracknell-gardens",
+      "names": [
+        "16 Bracknell Gardens"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-16-bracknell-gardens"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-freud-museum",
+      "names": [
+        "Freud Museum"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-freud-museum"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-fairhurst-compayne-gardens",
+      "names": [
+        "Fairhurst, Compayne Gardens"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-fairhurst-compayne-gardens"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-mall-studios",
+      "names": [
+        "Mall Studios"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-mall-studios"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-isokon-building",
+      "names": [
+        "Isokon Building"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-isokon-building"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-upper-park-road",
+      "names": [
+        "Upper Park Road"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-upper-park-road"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-booklovers-corner-site",
+      "names": [
+        "Booklovers’ Corner site"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-booklovers-corner-site"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-downshire-hill-uhlman-house",
+      "names": [
+        "Downshire Hill Uhlman house"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-downshire-hill-uhlman-house"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-coffee-cup",
+      "names": [
+        "Coffee Cup"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-coffee-cup"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-kenwood",
+      "names": [
+        "Kenwood"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-kenwood"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-ladies-pond",
+      "names": [
+        "Ladies’ Pond"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-ladies-pond"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-pergola",
+      "names": [
+        "Pergola"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-pergola"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-dickens-lodging-north-road",
+      "names": [
+        "Dickens lodging, North Road"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-dickens-lodging-north-road"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-church-house-10-south-grove",
+      "names": [
+        "Church House,10 South Grove"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-church-house-10-south-grove"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-highgate-literary-and-scientific-institution",
+      "names": [
+        "Highgate Literary and Scientific Institution"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-highgate-literary-and-scientific-institution"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-st-michael-s-highgate",
+      "names": [
+        "St Michael’s, Highgate"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-st-michael-s-highgate"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-the-flask-highgate",
+      "names": [
+        "The Flask, Highgate"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-the-flask-highgate"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-highgate-reservoir",
+      "names": [
+        "Highgate reservoir"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-highgate-reservoir"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-3-the-grove",
+      "names": [
+        "3 The Grove"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-3-the-grove"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-witanhurst",
+      "names": [
+        "Witanhurst"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-witanhurst"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-40-highgate-west-hill",
+      "names": [
+        "40 Highgate West Hill"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-40-highgate-west-hill"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-merton-lane",
+      "names": [
+        "Merton Lane"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-merton-lane"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-millfield-lane-ivy-cottage-site",
+      "names": [
+        "Millfield Lane / Ivy Cottage site"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-millfield-lane-ivy-cottage-site"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-holly-lodge-estate",
+      "names": [
+        "Holly Lodge Estate"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-holly-lodge-estate"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-holly-village",
+      "names": [
+        "Holly Village"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-holly-village"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-highgate-cemetery-exterior",
+      "names": [
+        "Highgate Cemetery exterior"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-highgate-cemetery-exterior"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-ivy-house-highgate-hill",
+      "names": [
+        "Ivy House, Highgate Hill"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-ivy-house-highgate-hill"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-whittington-stone",
+      "names": [
+        "Whittington Stone"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-whittington-stone"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-highgate-wood",
+      "names": [
+        "Highgate Wood"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-highgate-wood"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-park-house-passage",
+      "names": [
+        "Park House Passage"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-park-house-passage"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-the-wrestlers",
+      "names": [
+        "The Wrestlers"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-the-wrestlers"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-cholmeley-park",
+      "names": [
+        "Cholmeley Park"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-cholmeley-park"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-waterlow-park-lauderdale-house",
+      "names": [
+        "Waterlow Park / Lauderdale House"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-waterlow-park-lauderdale-house"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-highgate-high-street",
+      "names": [
+        "Highgate High Street"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-highgate-high-street"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-hampstead-village",
+      "names": [
+        "Hampstead village"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-hampstead-village"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-frognal-way",
+      "names": [
+        "Frognal Way"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-frognal-way"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-camden-art-centre",
+      "names": [
+        "Camden Art Centre"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-camden-art-centre"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "H-OG-P-billy-fury-way",
+      "names": [
+        "Billy Fury Way"
+      ],
+      "rawPlaceIds": [
+        "H-OG-P-billy-fury-way"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-holly-hill",
+      "names": [
+        "Holly Hill"
+      ],
+      "rawPlaceIds": [
+        "ha-holly-hill"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-whitestone-garden",
+      "names": [
+        "Whitestone Garden"
+      ],
+      "rawPlaceIds": [
+        "ha-whitestone-garden"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-lime-avenue",
+      "names": [
+        "Lime Avenue"
+      ],
+      "rawPlaceIds": [
+        "ha-lime-avenue"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-mixed-bathing-pond",
+      "names": [
+        "Mixed Bathing Pond"
+      ],
+      "rawPlaceIds": [
+        "ha-mixed-bathing-pond"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-hampstead-no.-2-pond",
+      "names": [
+        "Hampstead No. 2 Pond"
+      ],
+      "rawPlaceIds": [
+        "ha-hampstead-no.-2-pond"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-hampstead-no.-1-pond",
+      "names": [
+        "Hampstead No. 1 Pond"
+      ],
+      "rawPlaceIds": [
+        "ha-hampstead-no.-1-pond"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-parliament-hill-cafe",
+      "names": [
+        "Parliament Hill Cafe"
+      ],
+      "rawPlaceIds": [
+        "ha-parliament-hill-cafe"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-saxon-ditch",
+      "names": [
+        "Saxon Ditch"
+      ],
+      "rawPlaceIds": [
+        "ha-saxon-ditch"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-stock-pond",
+      "names": [
+        "Stock Pond"
+      ],
+      "rawPlaceIds": [
+        "ha-stock-pond"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-goodison-fountain",
+      "names": [
+        "Goodison Fountain"
+      ],
+      "rawPlaceIds": [
+        "ha-goodison-fountain"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-vale-of-health-estate-road",
+      "names": [
+        "Vale of Health estate road"
+      ],
+      "rawPlaceIds": [
+        "ha-vale-of-health-estate-road"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-sandy-heath",
+      "names": [
+        "Sandy Heath"
+      ],
+      "rawPlaceIds": [
+        "ha-sandy-heath"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-heath-extension",
+      "names": [
+        "Heath Extension"
+      ],
+      "rawPlaceIds": [
+        "ha-heath-extension"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-seven-sisters-ponds",
+      "names": [
+        "Seven Sisters Ponds"
+      ],
+      "rawPlaceIds": [
+        "ha-seven-sisters-ponds"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-pryors-field",
+      "names": [
+        "Pryors Field"
+      ],
+      "rawPlaceIds": [
+        "ha-pryors-field"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-golders-hill-cafe",
+      "names": [
+        "Golders Hill Cafe"
+      ],
+      "rawPlaceIds": [
+        "ha-golders-hill-cafe"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-west-heath",
+      "names": [
+        "West Heath"
+      ],
+      "rawPlaceIds": [
+        "ha-west-heath"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-pitts-garden",
+      "names": [
+        "Pitts Garden"
+      ],
+      "rawPlaceIds": [
+        "ha-pitts-garden"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-parliament-hill-bandstand",
+      "names": [
+        "Parliament Hill Bandstand"
+      ],
+      "rawPlaceIds": [
+        "ha-parliament-hill-bandstand"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-hampstead-heath-station",
+      "names": [
+        "Hampstead Heath station"
+      ],
+      "rawPlaceIds": [
+        "ha-hampstead-heath-station"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-st-johns-churchyard",
+      "names": [
+        "St Johns Churchyard"
+      ],
+      "rawPlaceIds": [
+        "ha-st-johns-churchyard"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-north-end",
+      "names": [
+        "North End"
+      ],
+      "rawPlaceIds": [
+        "ha-north-end"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-highpoint",
+      "names": [
+        "Highpoint"
+      ],
+      "rawPlaceIds": [
+        "ha-highpoint"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-41-north-hill",
+      "names": [
+        "41 North Hill"
+      ],
+      "rawPlaceIds": [
+        "ha-41-north-hill"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-60-north-hill",
+      "names": [
+        "60 North Hill"
+      ],
+      "rawPlaceIds": [
+        "ha-60-north-hill"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-57-north-hill",
+      "names": [
+        "57 North Hill"
+      ],
+      "rawPlaceIds": [
+        "ha-57-north-hill"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-47–49-north-hill",
+      "names": [
+        "47–49 North Hill"
+      ],
+      "rawPlaceIds": [
+        "ha-47–49-north-hill"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-18-north-hill",
+      "names": [
+        "18 North Hill"
+      ],
+      "rawPlaceIds": [
+        "ha-18-north-hill"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-82-north-hill",
+      "names": [
+        "82 North Hill"
+      ],
+      "rawPlaceIds": [
+        "ha-82-north-hill"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-well-walk-fountain",
+      "names": [
+        "Well Walk fountain"
+      ],
+      "rawPlaceIds": [
+        "ha-well-walk-fountain"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-romneys-house",
+      "names": [
+        "Romneys House"
+      ],
+      "rawPlaceIds": [
+        "ha-romneys-house"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-keats-community-library",
+      "names": [
+        "Keats Community Library"
+      ],
+      "rawPlaceIds": [
+        "ha-keats-community-library"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    },
+    {
+      "id": "ha-lauderdale-house",
+      "names": [
+        "Lauderdale House"
+      ],
+      "rawPlaceIds": [
+        "ha-lauderdale-house"
+      ],
+      "relationship": "Retained at source specificity; related streets, buildings, whole areas and named events are not forcibly merged."
+    }
+  ],
+  "rawPlaces": [
+    {
+      "id": "H-OG-P-church-row",
+      "names": [
+        "Church Row"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-londonwalks",
+        "H-OG-S-jones-guided",
+        "H-OG-S-english",
+        "H-OG-S-lady",
+        "H-OG-S-voicemap"
+      ],
+      "tourIds": [
+        "H-OG-T-londonwalks",
+        "H-OG-T-jones-guided",
+        "H-OG-T-english",
+        "H-OG-T-lady",
+        "H-OG-T-voicemap"
+      ]
+    },
+    {
+      "id": "H-OG-P-fenton-house",
+      "names": [
+        "Fenton House"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-londonwalks",
+        "H-OG-S-english",
+        "H-OG-S-lady",
+        "H-OG-S-wiki",
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-londonwalks",
+        "H-OG-T-english",
+        "H-OG-T-lady",
+        "H-OG-T-wiki",
+        "H-OG-T-highgate-ring"
+      ]
+    },
+    {
+      "id": "H-OG-P-admiral-s-house",
+      "names": [
+        "Admiral’s House"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-londonwalks",
+        "H-OG-S-jones-guided",
+        "H-OG-S-english",
+        "H-OG-S-lady",
+        "H-OG-S-voicemap",
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-londonwalks",
+        "H-OG-T-jones-guided",
+        "H-OG-T-english",
+        "H-OG-T-lady",
+        "H-OG-T-voicemap",
+        "H-OG-T-wiki"
+      ]
+    },
+    {
+      "id": "H-OG-P-well-walk",
+      "names": [
+        "Well Walk"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-londonwalks",
+        "H-OG-S-jones-guided",
+        "H-OG-S-lady",
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-londonwalks",
+        "H-OG-T-jones-guided",
+        "H-OG-T-lady",
+        "H-OG-T-highgate-ring"
+      ]
+    },
+    {
+      "id": "H-OG-P-flask-walk",
+      "names": [
+        "Flask Walk"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-londonwalks",
+        "H-OG-S-lady",
+        "H-OG-S-voicemap"
+      ],
+      "tourIds": [
+        "H-OG-T-londonwalks",
+        "H-OG-T-lady",
+        "H-OG-T-voicemap"
+      ]
+    },
+    {
+      "id": "H-OG-P-hampstead-heath",
+      "names": [
+        "Hampstead Heath"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-londonwalks"
+      ],
+      "tourIds": [
+        "H-OG-T-londonwalks"
+      ]
+    },
+    {
+      "id": "H-OG-P-st-john-at-hampstead",
+      "names": [
+        "St John-at-Hampstead"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-jones-guided",
+        "H-OG-S-english",
+        "H-OG-S-voicemap",
+        "H-OG-S-foot-literary",
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided",
+        "H-OG-T-english",
+        "H-OG-T-voicemap",
+        "H-OG-T-foot-literary",
+        "H-OG-T-highgate-ring"
+      ]
+    },
+    {
+      "id": "H-OG-P-benham-s-place",
+      "names": [
+        "Benham’s Place"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-jones-guided"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided"
+      ]
+    },
+    {
+      "id": "H-OG-P-watch-house-holly-place",
+      "names": [
+        "Watch House, Holly Place"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-jones-guided",
+        "H-OG-S-voicemap"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided",
+        "H-OG-T-voicemap"
+      ]
+    },
+    {
+      "id": "H-OG-P-stevenson-house-mount-vernon",
+      "names": [
+        "Stevenson house, Mount Vernon"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-jones-guided"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided"
+      ]
+    },
+    {
+      "id": "H-OG-P-holly-bush",
+      "names": [
+        "Holly Bush"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-jones-guided",
+        "H-OG-S-english",
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided",
+        "H-OG-T-english",
+        "H-OG-T-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-admiral-s-walk",
+      "names": [
+        "Admiral’s Walk"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-jones-guided",
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided",
+        "H-OG-T-foot-literary"
+      ]
+    },
+    {
+      "id": "H-OG-P-judges-walk",
+      "names": [
+        "Judges’ Walk"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-jones-guided"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided"
+      ]
+    },
+    {
+      "id": "H-OG-P-whitestone-pond",
+      "names": [
+        "Whitestone Pond"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-jones-guided",
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided",
+        "H-OG-T-wiki"
+      ]
+    },
+    {
+      "id": "H-OG-P-vale-of-health",
+      "names": [
+        "Vale of Health"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-jones-guided",
+        "H-OG-S-jones-free",
+        "H-OG-S-wiki",
+        "H-OG-S-davies"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided",
+        "H-OG-T-jones-free",
+        "H-OG-T-wiki",
+        "H-OG-T-davies"
+      ]
+    },
+    {
+      "id": "H-OG-P-byron-villas",
+      "names": [
+        "Byron Villas"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-jones-guided",
+        "H-OG-S-jones-free"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided",
+        "H-OG-T-jones-free"
+      ]
+    },
+    {
+      "id": "H-OG-P-cannon-lane-lock-up",
+      "names": [
+        "Cannon Lane lock-up"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-jones-guided",
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided",
+        "H-OG-T-wiki"
+      ]
+    },
+    {
+      "id": "H-OG-P-marie-stopes-house",
+      "names": [
+        "Marie Stopes house"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-jones-guided"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided"
+      ]
+    },
+    {
+      "id": "H-OG-P-mount-vernon-hospital",
+      "names": [
+        "Mount Vernon hospital"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-english"
+      ],
+      "tourIds": [
+        "H-OG-T-english"
+      ]
+    },
+    {
+      "id": "H-OG-P-hampstead-observatory",
+      "names": [
+        "Hampstead Observatory"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-english",
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-english",
+        "H-OG-T-wiki"
+      ]
+    },
+    {
+      "id": "H-OG-P-the-flask",
+      "names": [
+        "The Flask"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-english"
+      ],
+      "tourIds": [
+        "H-OG-T-english"
+      ]
+    },
+    {
+      "id": "H-OG-P-burgh-house",
+      "names": [
+        "Burgh House"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-english",
+        "H-OG-S-lady",
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-english",
+        "H-OG-T-lady",
+        "H-OG-T-highgate-ring"
+      ]
+    },
+    {
+      "id": "H-OG-P-keats-house",
+      "names": [
+        "Keats House"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-english",
+        "H-OG-S-lady",
+        "H-OG-S-wiki",
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-english",
+        "H-OG-T-lady",
+        "H-OG-T-wiki",
+        "H-OG-T-foot-literary"
+      ]
+    },
+    {
+      "id": "H-OG-P-86-hampstead-high-street",
+      "names": [
+        "86 Hampstead High Street"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-jones-free"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-free"
+      ]
+    },
+    {
+      "id": "H-OG-P-40-well-walk",
+      "names": [
+        "40 Well Walk"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-jones-free"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-free"
+      ]
+    },
+    {
+      "id": "H-OG-P-chalybeate-well",
+      "names": [
+        "Chalybeate Well"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-jones-free",
+        "H-OG-S-voicemap"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-free",
+        "H-OG-T-voicemap"
+      ]
+    },
+    {
+      "id": "H-OG-P-viaduct-pond",
+      "names": [
+        "Viaduct Pond"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-jones-free",
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-free",
+        "H-OG-T-highgate-ring"
+      ]
+    },
+    {
+      "id": "H-OG-P-leigh-hunt-cottage-site",
+      "names": [
+        "Leigh Hunt cottage site"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-jones-free"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-free"
+      ]
+    },
+    {
+      "id": "H-OG-P-jack-straw-s-castle",
+      "names": [
+        "Jack Straw’s Castle"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-jones-free",
+        "H-OG-S-wiki",
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-free",
+        "H-OG-T-wiki",
+        "H-OG-T-foot-literary"
+      ]
+    },
+    {
+      "id": "H-OG-P-john-gurney-hoare-plaque",
+      "names": [
+        "John Gurney Hoare plaque"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-jones-free"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-free"
+      ]
+    },
+    {
+      "id": "H-OG-P-old-wyldes",
+      "names": [
+        "Old Wyldes"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-jones-free",
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-free",
+        "H-OG-T-foot-literary"
+      ]
+    },
+    {
+      "id": "H-OG-P-spaniards-inn",
+      "names": [
+        "Spaniards Inn"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-jones-free",
+        "H-OG-S-wiki",
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-free",
+        "H-OG-T-wiki",
+        "H-OG-T-foot-literary"
+      ]
+    },
+    {
+      "id": "H-OG-P-hampstead-square",
+      "names": [
+        "Hampstead Square"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-elm-row",
+      "names": [
+        "Elm Row"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-new-end",
+      "names": [
+        "New End"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-back-lane",
+      "names": [
+        "Back Lane"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-streatley-place",
+      "names": [
+        "Streatley Place"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-mansfield-place",
+      "names": [
+        "Mansfield Place"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-boades-mews",
+      "names": [
+        "Boades Mews"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-gainsborough-gardens",
+      "names": [
+        "Gainsborough Gardens"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-shepherds-walk",
+      "names": [
+        "Shepherds Walk"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-spring-path",
+      "names": [
+        "Spring Path"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-prince-arthur-road",
+      "names": [
+        "Prince Arthur Road"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-perrin-s-court",
+      "names": [
+        "Perrin’s Court"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-oriel-place",
+      "names": [
+        "Oriel Place"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-st-mary-s-holly-walk",
+      "names": [
+        "St Mary’s, Holly Walk"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-lady",
+        "H-OG-S-voicemap",
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-lady",
+        "H-OG-T-voicemap",
+        "H-OG-T-wiki"
+      ]
+    },
+    {
+      "id": "H-OG-P-mount-vernon",
+      "names": [
+        "Mount Vernon"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-everyman-hampstead",
+      "names": [
+        "Everyman Hampstead"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-voicemap"
+      ],
+      "tourIds": [
+        "H-OG-T-voicemap"
+      ]
+    },
+    {
+      "id": "H-OG-P-constable-tomb",
+      "names": [
+        "Constable tomb"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-voicemap"
+      ],
+      "tourIds": [
+        "H-OG-T-voicemap"
+      ]
+    },
+    {
+      "id": "H-OG-P-hampstead-underground",
+      "names": [
+        "Hampstead Underground"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-wiki",
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki",
+        "H-OG-T-highgate-ring"
+      ]
+    },
+    {
+      "id": "H-OG-P-church-row-st-john-at-hampstead",
+      "names": [
+        "Church Row / St John-at-Hampstead"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki"
+      ]
+    },
+    {
+      "id": "H-OG-P-holly-bush-hill",
+      "names": [
+        "Holly Bush Hill"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki"
+      ]
+    },
+    {
+      "id": "H-OG-P-hill-garden-and-pergola",
+      "names": [
+        "Hill Garden and Pergola"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-wiki",
+        "H-OG-S-highgate-swc"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki",
+        "H-OG-T-highgate-swc"
+      ]
+    },
+    {
+      "id": "H-OG-P-golders-hill-park",
+      "names": [
+        "Golders Hill Park"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-wiki",
+        "H-OG-S-highgate-swc"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki",
+        "H-OG-T-highgate-swc"
+      ]
+    },
+    {
+      "id": "H-OG-P-kenwood-house",
+      "names": [
+        "Kenwood House"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki"
+      ]
+    },
+    {
+      "id": "H-OG-P-dido-elizabeth-belle-at-kenwood",
+      "names": [
+        "Dido Elizabeth Belle at Kenwood"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki"
+      ]
+    },
+    {
+      "id": "H-OG-P-kenwood-ladies-pond",
+      "names": [
+        "Kenwood Ladies’ Pond"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki"
+      ]
+    },
+    {
+      "id": "H-OG-P-highgate-men-s-pond",
+      "names": [
+        "Highgate Men’s Pond"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki"
+      ]
+    },
+    {
+      "id": "H-OG-P-tumulus",
+      "names": [
+        "Tumulus"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-wiki",
+        "H-OG-S-davies"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki",
+        "H-OG-T-davies"
+      ]
+    },
+    {
+      "id": "H-OG-P-parliament-hill",
+      "names": [
+        "Parliament Hill"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-wiki",
+        "H-OG-S-davies",
+        "H-OG-S-highgate-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki",
+        "H-OG-T-davies",
+        "H-OG-T-highgate-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-parliament-hill-lido",
+      "names": [
+        "Parliament Hill Lido"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki"
+      ]
+    },
+    {
+      "id": "H-OG-P-hampstead-ponds-river-fleet",
+      "names": [
+        "Hampstead Ponds / River Fleet"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki"
+      ]
+    },
+    {
+      "id": "H-OG-P-well-walk-burgh-house",
+      "names": [
+        "Well Walk / Burgh House"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki"
+      ]
+    },
+    {
+      "id": "H-OG-P-145-north-end-road",
+      "names": [
+        "145 North End Road"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ]
+    },
+    {
+      "id": "H-OG-P-17-east-heath-road",
+      "names": [
+        "17 East Heath Road"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ]
+    },
+    {
+      "id": "H-OG-P-cannon-hall",
+      "names": [
+        "Cannon Hall"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ]
+    },
+    {
+      "id": "H-OG-P-2-willow-road",
+      "names": [
+        "2 Willow Road"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-foot-literary",
+        "H-OG-S-modernist"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary",
+        "H-OG-T-modernist"
+      ]
+    },
+    {
+      "id": "H-OG-P-77-parliament-hill",
+      "names": [
+        "77 Parliament Hill"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ]
+    },
+    {
+      "id": "H-OG-P-bolton-house",
+      "names": [
+        "Bolton House"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ]
+    },
+    {
+      "id": "H-OG-P-7-mount-vernon",
+      "names": [
+        "7 Mount Vernon"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ]
+    },
+    {
+      "id": "H-OG-P-17-church-row",
+      "names": [
+        "17 Church Row"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ]
+    },
+    {
+      "id": "H-OG-P-26-church-row",
+      "names": [
+        "26 Church Row"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ]
+    },
+    {
+      "id": "H-OG-P-16-bracknell-gardens",
+      "names": [
+        "16 Bracknell Gardens"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ]
+    },
+    {
+      "id": "H-OG-P-freud-museum",
+      "names": [
+        "Freud Museum"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ]
+    },
+    {
+      "id": "H-OG-P-fairhurst-compayne-gardens",
+      "names": [
+        "Fairhurst, Compayne Gardens"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ]
+    },
+    {
+      "id": "H-OG-P-mall-studios",
+      "names": [
+        "Mall Studios"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-artists-audio",
+        "H-OG-S-modernist"
+      ],
+      "tourIds": [
+        "H-OG-T-artists-audio",
+        "H-OG-T-modernist"
+      ]
+    },
+    {
+      "id": "H-OG-P-isokon-building",
+      "names": [
+        "Isokon Building"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-artists-audio",
+        "H-OG-S-modernist"
+      ],
+      "tourIds": [
+        "H-OG-T-artists-audio",
+        "H-OG-T-modernist"
+      ]
+    },
+    {
+      "id": "H-OG-P-upper-park-road",
+      "names": [
+        "Upper Park Road"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-artists-audio"
+      ],
+      "tourIds": [
+        "H-OG-T-artists-audio"
+      ]
+    },
+    {
+      "id": "H-OG-P-booklovers-corner-site",
+      "names": [
+        "Booklovers’ Corner site"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-artists-audio"
+      ],
+      "tourIds": [
+        "H-OG-T-artists-audio"
+      ]
+    },
+    {
+      "id": "H-OG-P-downshire-hill-uhlman-house",
+      "names": [
+        "Downshire Hill Uhlman house"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-uhlman"
+      ],
+      "tourIds": [
+        "H-OG-T-uhlman"
+      ]
+    },
+    {
+      "id": "H-OG-P-coffee-cup",
+      "names": [
+        "Coffee Cup"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-uhlman"
+      ],
+      "tourIds": [
+        "H-OG-T-uhlman"
+      ]
+    },
+    {
+      "id": "H-OG-P-kenwood",
+      "names": [
+        "Kenwood"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-davies",
+        "H-OG-S-highgate-swc",
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-davies",
+        "H-OG-T-highgate-swc",
+        "H-OG-T-highgate-ring"
+      ]
+    },
+    {
+      "id": "H-OG-P-ladies-pond",
+      "names": [
+        "Ladies’ Pond"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-davies"
+      ],
+      "tourIds": [
+        "H-OG-T-davies"
+      ]
+    },
+    {
+      "id": "H-OG-P-pergola",
+      "names": [
+        "Pergola"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-davies"
+      ],
+      "tourIds": [
+        "H-OG-T-davies"
+      ]
+    },
+    {
+      "id": "H-OG-P-dickens-lodging-north-road",
+      "names": [
+        "Dickens lodging, North Road"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ]
+    },
+    {
+      "id": "H-OG-P-pond-square",
+      "names": [
+        "Pond Square"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-jones",
+        "H-OG-S-highgate-lady",
+        "H-OG-S-highgate-londonwalks"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones",
+        "H-OG-T-highgate-lady",
+        "H-OG-T-highgate-londonwalks"
+      ]
+    },
+    {
+      "id": "H-OG-P-church-house-10-south-grove",
+      "names": [
+        "Church House,10 South Grove"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ]
+    },
+    {
+      "id": "H-OG-P-highgate-literary-and-scientific-institution",
+      "names": [
+        "Highgate Literary and Scientific Institution"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ]
+    },
+    {
+      "id": "H-OG-P-st-michael-s-highgate",
+      "names": [
+        "St Michael’s, Highgate"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ]
+    },
+    {
+      "id": "H-OG-P-the-flask-highgate",
+      "names": [
+        "The Flask, Highgate"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ]
+    },
+    {
+      "id": "H-OG-P-highgate-reservoir",
+      "names": [
+        "Highgate reservoir"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ]
+    },
+    {
+      "id": "H-OG-P-3-the-grove",
+      "names": [
+        "3 The Grove"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ]
+    },
+    {
+      "id": "H-OG-P-witanhurst",
+      "names": [
+        "Witanhurst"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-jones",
+        "H-OG-S-highgate-londonwalks"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones",
+        "H-OG-T-highgate-londonwalks"
+      ]
+    },
+    {
+      "id": "H-OG-P-40-highgate-west-hill",
+      "names": [
+        "40 Highgate West Hill"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ]
+    },
+    {
+      "id": "H-OG-P-merton-lane",
+      "names": [
+        "Merton Lane"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ]
+    },
+    {
+      "id": "H-OG-P-millfield-lane-ivy-cottage-site",
+      "names": [
+        "Millfield Lane / Ivy Cottage site"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ]
+    },
+    {
+      "id": "H-OG-P-holly-lodge-estate",
+      "names": [
+        "Holly Lodge Estate"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-jones",
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones",
+        "H-OG-T-highgate-ring"
+      ]
+    },
+    {
+      "id": "H-OG-P-holly-village",
+      "names": [
+        "Holly Village"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-jones",
+        "H-OG-S-highgate-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones",
+        "H-OG-T-highgate-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-highgate-cemetery-exterior",
+      "names": [
+        "Highgate Cemetery exterior"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-jones",
+        "H-OG-S-highgate-lady",
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones",
+        "H-OG-T-highgate-lady",
+        "H-OG-T-highgate-ring"
+      ]
+    },
+    {
+      "id": "H-OG-P-waterlow-park",
+      "names": [
+        "Waterlow Park"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-jones",
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones",
+        "H-OG-T-highgate-ring"
+      ]
+    },
+    {
+      "id": "H-OG-P-ivy-house-highgate-hill",
+      "names": [
+        "Ivy House, Highgate Hill"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ]
+    },
+    {
+      "id": "H-OG-P-whittington-stone",
+      "names": [
+        "Whittington Stone"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ]
+    },
+    {
+      "id": "H-OG-P-highgate-wood",
+      "names": [
+        "Highgate Wood"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-park-house-passage",
+      "names": [
+        "Park House Passage"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-the-wrestlers",
+      "names": [
+        "The Wrestlers"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-cholmeley-park",
+      "names": [
+        "Cholmeley Park"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-waterlow-park-lauderdale-house",
+      "names": [
+        "Waterlow Park / Lauderdale House"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-highgate-high-street",
+      "names": [
+        "Highgate High Street"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-lady"
+      ]
+    },
+    {
+      "id": "H-OG-P-hampstead-garden-suburb",
+      "names": [
+        "Hampstead Garden Suburb"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-swc"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-swc"
+      ]
+    },
+    {
+      "id": "H-OG-P-hampstead-village",
+      "names": [
+        "Hampstead village"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-swc"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-swc"
+      ]
+    },
+    {
+      "id": "H-OG-P-millfield-lane",
+      "names": [
+        "Millfield Lane"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-ring"
+      ]
+    },
+    {
+      "id": "H-OG-P-highgate-ponds",
+      "names": [
+        "Highgate Ponds"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-ring"
+      ]
+    },
+    {
+      "id": "H-OG-P-frognal-way",
+      "names": [
+        "Frognal Way"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-ring"
+      ]
+    },
+    {
+      "id": "H-OG-P-camden-art-centre",
+      "names": [
+        "Camden Art Centre"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-ring"
+      ]
+    },
+    {
+      "id": "H-OG-P-billy-fury-way",
+      "names": [
+        "Billy Fury Way"
+      ],
+      "handoff": "operators-guides.json",
+      "sourceIds": [
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-ring"
+      ]
+    },
+    {
+      "id": "ha-hampstead-tube",
+      "names": [
+        "Hampstead tube"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S01",
+        "HA-HC-S05",
+        "HA-HC-S06"
+      ],
+      "tourIds": [
+        "HA-HC-T01",
+        "HA-HC-T06",
+        "HA-HC-T07"
+      ]
+    },
+    {
+      "id": "ha-holly-hill",
+      "names": [
+        "Holly Hill"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S01"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ]
+    },
+    {
+      "id": "ha-holly-bush-hill",
+      "names": [
+        "Holly Bush Hill"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S01"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ]
+    },
+    {
+      "id": "ha-fenton-house",
+      "names": [
+        "Fenton House"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S01"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ]
+    },
+    {
+      "id": "ha-hampstead-observatory",
+      "names": [
+        "Hampstead Observatory"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S01"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ]
+    },
+    {
+      "id": "ha-whitestone-garden",
+      "names": [
+        "Whitestone Garden"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S01"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ]
+    },
+    {
+      "id": "ha-viaduct-pond",
+      "names": [
+        "Viaduct Pond"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S01"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ]
+    },
+    {
+      "id": "ha-lime-avenue",
+      "names": [
+        "Lime Avenue"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S01"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ]
+    },
+    {
+      "id": "ha-mixed-bathing-pond",
+      "names": [
+        "Mixed Bathing Pond"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S01"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ]
+    },
+    {
+      "id": "ha-hampstead-no.-2-pond",
+      "names": [
+        "Hampstead No. 2 Pond"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S01"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ]
+    },
+    {
+      "id": "ha-hampstead-no.-1-pond",
+      "names": [
+        "Hampstead No. 1 Pond"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S01"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ]
+    },
+    {
+      "id": "ha-keats-house",
+      "names": [
+        "Keats House"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S01",
+        "HA-HC-S14"
+      ],
+      "tourIds": [
+        "HA-HC-T01",
+        "HA-HC-T11"
+      ]
+    },
+    {
+      "id": "ha-2-willow-road",
+      "names": [
+        "2 Willow Road"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S01"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ]
+    },
+    {
+      "id": "ha-burgh-house",
+      "names": [
+        "Burgh House"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S01",
+        "HA-HC-S04",
+        "HA-HC-S09",
+        "HA-HC-S34"
+      ],
+      "tourIds": [
+        "HA-HC-T01",
+        "HA-HC-T05",
+        "HA-HC-T10",
+        "HA-HC-T12"
+      ]
+    },
+    {
+      "id": "ha-flask-walk",
+      "names": [
+        "Flask Walk"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S01"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ]
+    },
+    {
+      "id": "ha-parliament-hill-cafe",
+      "names": [
+        "Parliament Hill Cafe"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ],
+      "tourIds": [
+        "HA-HC-T02",
+        "HA-HC-T03"
+      ]
+    },
+    {
+      "id": "ha-highgate-ponds",
+      "names": [
+        "Highgate Ponds"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ],
+      "tourIds": [
+        "HA-HC-T02",
+        "HA-HC-T03"
+      ]
+    },
+    {
+      "id": "ha-highgate-mens-bathing-pond",
+      "names": [
+        "Highgate Mens Bathing Pond"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ],
+      "tourIds": [
+        "HA-HC-T02"
+      ]
+    },
+    {
+      "id": "ha-tumulus",
+      "names": [
+        "Tumulus"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ],
+      "tourIds": [
+        "HA-HC-T02"
+      ]
+    },
+    {
+      "id": "ha-saxon-ditch",
+      "names": [
+        "Saxon Ditch"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ],
+      "tourIds": [
+        "HA-HC-T02"
+      ]
+    },
+    {
+      "id": "ha-parliament-hill",
+      "names": [
+        "Parliament Hill"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ],
+      "tourIds": [
+        "HA-HC-T02"
+      ]
+    },
+    {
+      "id": "ha-millfield-lane",
+      "names": [
+        "Millfield Lane"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ],
+      "tourIds": [
+        "HA-HC-T03"
+      ]
+    },
+    {
+      "id": "ha-stock-pond",
+      "names": [
+        "Stock Pond"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ],
+      "tourIds": [
+        "HA-HC-T03"
+      ]
+    },
+    {
+      "id": "ha-goodison-fountain",
+      "names": [
+        "Goodison Fountain"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ],
+      "tourIds": [
+        "HA-HC-T03"
+      ]
+    },
+    {
+      "id": "ha-kenwood-house",
+      "names": [
+        "Kenwood House"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ],
+      "tourIds": [
+        "HA-HC-T03"
+      ]
+    },
+    {
+      "id": "ha-vale-of-health-estate-road",
+      "names": [
+        "Vale of Health estate road"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ],
+      "tourIds": [
+        "HA-HC-T03"
+      ]
+    },
+    {
+      "id": "ha-sandy-heath",
+      "names": [
+        "Sandy Heath"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ],
+      "tourIds": [
+        "HA-HC-T03",
+        "HA-HC-T04"
+      ]
+    },
+    {
+      "id": "ha-heath-extension",
+      "names": [
+        "Heath Extension"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03",
+        "HA-HC-S08"
+      ],
+      "tourIds": [
+        "HA-HC-T03",
+        "HA-HC-T09"
+      ]
+    },
+    {
+      "id": "ha-seven-sisters-ponds",
+      "names": [
+        "Seven Sisters Ponds"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ],
+      "tourIds": [
+        "HA-HC-T03"
+      ]
+    },
+    {
+      "id": "ha-golders-hill-park",
+      "names": [
+        "Golders Hill Park"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ],
+      "tourIds": [
+        "HA-HC-T03",
+        "HA-HC-T04"
+      ]
+    },
+    {
+      "id": "ha-whitestone-pond",
+      "names": [
+        "Whitestone Pond"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03",
+        "HA-HC-S07",
+        "HA-HC-S08",
+        "HA-HC-S28"
+      ],
+      "tourIds": [
+        "HA-HC-T03",
+        "HA-HC-T08",
+        "HA-HC-T09"
+      ]
+    },
+    {
+      "id": "ha-pryors-field",
+      "names": [
+        "Pryors Field"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ],
+      "tourIds": [
+        "HA-HC-T03"
+      ]
+    },
+    {
+      "id": "ha-golders-hill-cafe",
+      "names": [
+        "Golders Hill Cafe"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ],
+      "tourIds": [
+        "HA-HC-T04"
+      ]
+    },
+    {
+      "id": "ha-west-heath",
+      "names": [
+        "West Heath"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ],
+      "tourIds": [
+        "HA-HC-T04"
+      ]
+    },
+    {
+      "id": "ha-hill-garden-and-pergola",
+      "names": [
+        "Hill Garden and Pergola"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03",
+        "HA-HC-S07",
+        "HA-HC-S28"
+      ],
+      "tourIds": [
+        "HA-HC-T04",
+        "HA-HC-T08"
+      ]
+    },
+    {
+      "id": "ha-pitts-garden",
+      "names": [
+        "Pitts Garden"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ],
+      "tourIds": [
+        "HA-HC-T04"
+      ]
+    },
+    {
+      "id": "ha-parliament-hill-bandstand",
+      "names": [
+        "Parliament Hill Bandstand"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S04"
+      ],
+      "tourIds": [
+        "HA-HC-T05"
+      ]
+    },
+    {
+      "id": "ha-hampstead-heath-station",
+      "names": [
+        "Hampstead Heath station"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S05"
+      ],
+      "tourIds": [
+        "HA-HC-T06"
+      ]
+    },
+    {
+      "id": "ha-church-row",
+      "names": [
+        "Church Row"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S06"
+      ],
+      "tourIds": [
+        "HA-HC-T07"
+      ]
+    },
+    {
+      "id": "ha-st-johns-churchyard",
+      "names": [
+        "St Johns Churchyard"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S06"
+      ],
+      "tourIds": [
+        "HA-HC-T07"
+      ]
+    },
+    {
+      "id": "ha-north-end",
+      "names": [
+        "North End"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S08"
+      ],
+      "tourIds": [
+        "HA-HC-T09"
+      ]
+    },
+    {
+      "id": "ha-hampstead-garden-suburb",
+      "names": [
+        "Hampstead Garden Suburb"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S08"
+      ],
+      "tourIds": [
+        "HA-HC-T09"
+      ]
+    },
+    {
+      "id": "ha-highpoint",
+      "names": [
+        "Highpoint"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S38"
+      ],
+      "tourIds": [
+        "HA-HC-T15"
+      ]
+    },
+    {
+      "id": "ha-41-north-hill",
+      "names": [
+        "41 North Hill"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S38"
+      ],
+      "tourIds": [
+        "HA-HC-T15"
+      ]
+    },
+    {
+      "id": "ha-60-north-hill",
+      "names": [
+        "60 North Hill"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S38"
+      ],
+      "tourIds": [
+        "HA-HC-T15"
+      ]
+    },
+    {
+      "id": "ha-57-north-hill",
+      "names": [
+        "57 North Hill"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S38"
+      ],
+      "tourIds": [
+        "HA-HC-T15"
+      ]
+    },
+    {
+      "id": "ha-47–49-north-hill",
+      "names": [
+        "47–49 North Hill"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S38"
+      ],
+      "tourIds": [
+        "HA-HC-T15"
+      ]
+    },
+    {
+      "id": "ha-18-north-hill",
+      "names": [
+        "18 North Hill"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S38"
+      ],
+      "tourIds": [
+        "HA-HC-T15"
+      ]
+    },
+    {
+      "id": "ha-82-north-hill",
+      "names": [
+        "82 North Hill"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S38"
+      ],
+      "tourIds": [
+        "HA-HC-T15"
+      ]
+    },
+    {
+      "id": "ha-well-walk-fountain",
+      "names": [
+        "Well Walk fountain"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S23",
+        "HA-HC-S24"
+      ],
+      "tourIds": []
+    },
+    {
+      "id": "ha-holly-bush-pub",
+      "names": [
+        "Holly Bush pub"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S25",
+        "HA-HC-S26"
+      ],
+      "tourIds": []
+    },
+    {
+      "id": "ha-romneys-house",
+      "names": [
+        "Romneys House"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S27"
+      ],
+      "tourIds": []
+    },
+    {
+      "id": "ha-keats-community-library",
+      "names": [
+        "Keats Community Library"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S30"
+      ],
+      "tourIds": []
+    },
+    {
+      "id": "ha-waterlow-park",
+      "names": [
+        "Waterlow Park"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S39",
+        "HA-HC-S40"
+      ],
+      "tourIds": []
+    },
+    {
+      "id": "ha-lauderdale-house",
+      "names": [
+        "Lauderdale House"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S41",
+        "HA-HC-S42",
+        "HA-HC-S43"
+      ],
+      "tourIds": []
+    },
+    {
+      "id": "ha-pond-square",
+      "names": [
+        "Pond Square"
+      ],
+      "handoff": "heritage-current.json",
+      "sourceIds": [
+        "HA-HC-S44"
+      ],
+      "tourIds": []
+    }
+  ],
+  "limits": [
+    "Resource records include public highlights, book indexes and on-site programmes, not just complete walking itineraries.",
+    "Paid scripts and inaccessible chapters remain unread; public scripts informed discovery, never copied narration.",
+    "Ambiguous composite place labels remain separate. None is a verified visitor position.",
+    "Highgate Underground start supersedes the initial Hampstead loop assumption."
+  ]
+}

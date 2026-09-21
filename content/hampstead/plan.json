@@ -1,0 +1,1107 @@
+{
+  "fixture": {
+    "schemaVersion": 1,
+    "id": "highgate-hampstead-room",
+    "version": 1,
+    "title": "Highgate to Hampstead — Room to breathe",
+    "verification": {
+      "status": "unverified",
+      "note": "Public route and visitor candidates desk reviewed 21 September 2026 using actual pedestrian routing, official maps and dated imagery. Temporary works, precise standing clearance and pond sightlines remain unobserved in the field. The short East Heath Road crossing correction is explicitly authored from mapped landings/imagery; raw provider geometry is retained separately. Start at the station exit, before the approach to Pond Square. Use public pavements and the specified crossings; the route line is not a surveyed pavement trace."
+    },
+    "route": [
+      {
+        "latitude": 51.577585,
+        "longitude": -0.146819
+      },
+      {
+        "latitude": 51.577693,
+        "longitude": -0.147064
+      },
+      {
+        "latitude": 51.577683,
+        "longitude": -0.147075
+      },
+      {
+        "latitude": 51.57764,
+        "longitude": -0.147121
+      },
+      {
+        "latitude": 51.577596,
+        "longitude": -0.147168
+      },
+      {
+        "latitude": 51.577585,
+        "longitude": -0.147181
+      },
+      {
+        "latitude": 51.577605,
+        "longitude": -0.147229
+      },
+      {
+        "latitude": 51.577604,
+        "longitude": -0.147255
+      },
+      {
+        "latitude": 51.577599,
+        "longitude": -0.147274
+      },
+      {
+        "latitude": 51.577603,
+        "longitude": -0.147283
+      },
+      {
+        "latitude": 51.577634,
+        "longitude": -0.147355
+      },
+      {
+        "latitude": 51.577612,
+        "longitude": -0.147361
+      },
+      {
+        "latitude": 51.577571,
+        "longitude": -0.147377
+      },
+      {
+        "latitude": 51.577543,
+        "longitude": -0.147389
+      },
+      {
+        "latitude": 51.577444,
+        "longitude": -0.147428
+      },
+      {
+        "latitude": 51.576938,
+        "longitude": -0.147634
+      },
+      {
+        "latitude": 51.576484,
+        "longitude": -0.147828
+      },
+      {
+        "latitude": 51.576471,
+        "longitude": -0.147862
+      },
+      {
+        "latitude": 51.576442,
+        "longitude": -0.147876
+      },
+      {
+        "latitude": 51.576405,
+        "longitude": -0.147861
+      },
+      {
+        "latitude": 51.576329,
+        "longitude": -0.147894
+      },
+      {
+        "latitude": 51.576265,
+        "longitude": -0.147923
+      },
+      {
+        "latitude": 51.576191,
+        "longitude": -0.147948
+      },
+      {
+        "latitude": 51.57614,
+        "longitude": -0.147958
+      },
+      {
+        "latitude": 51.576088,
+        "longitude": -0.14797
+      },
+      {
+        "latitude": 51.575936,
+        "longitude": -0.148026
+      },
+      {
+        "latitude": 51.575221,
+        "longitude": -0.148313
+      },
+      {
+        "latitude": 51.575177,
+        "longitude": -0.148329
+      },
+      {
+        "latitude": 51.574956,
+        "longitude": -0.14837
+      },
+      {
+        "latitude": 51.574726,
+        "longitude": -0.148429
+      },
+      {
+        "latitude": 51.574664,
+        "longitude": -0.14845
+      },
+      {
+        "latitude": 51.574162,
+        "longitude": -0.148619
+      },
+      {
+        "latitude": 51.57397,
+        "longitude": -0.148665
+      },
+      {
+        "latitude": 51.573882,
+        "longitude": -0.148683
+      },
+      {
+        "latitude": 51.573631,
+        "longitude": -0.148714
+      },
+      {
+        "latitude": 51.573483,
+        "longitude": -0.148732
+      },
+      {
+        "latitude": 51.573264,
+        "longitude": -0.148743
+      },
+      {
+        "latitude": 51.573094,
+        "longitude": -0.148765
+      },
+      {
+        "latitude": 51.572745,
+        "longitude": -0.14881
+      },
+      {
+        "latitude": 51.572501,
+        "longitude": -0.148837
+      },
+      {
+        "latitude": 51.572373,
+        "longitude": -0.148875
+      },
+      {
+        "latitude": 51.571945,
+        "longitude": -0.148997
+      },
+      {
+        "latitude": 51.571705,
+        "longitude": -0.149066
+      },
+      {
+        "latitude": 51.571684,
+        "longitude": -0.149069
+      },
+      {
+        "latitude": 51.571501,
+        "longitude": -0.14909
+      },
+      {
+        "latitude": 51.571258,
+        "longitude": -0.149118
+      },
+      {
+        "latitude": 51.571258,
+        "longitude": -0.149051
+      },
+      {
+        "latitude": 51.571257,
+        "longitude": -0.149008
+      },
+      {
+        "latitude": 51.571154,
+        "longitude": -0.149007
+      },
+      {
+        "latitude": 51.57112,
+        "longitude": -0.148936
+      },
+      {
+        "latitude": 51.571101,
+        "longitude": -0.148956
+      },
+      {
+        "latitude": 51.571061,
+        "longitude": -0.148991
+      },
+      {
+        "latitude": 51.57105,
+        "longitude": -0.149
+      },
+      {
+        "latitude": 51.571048,
+        "longitude": -0.149002
+      },
+      {
+        "latitude": 51.571001,
+        "longitude": -0.149043
+      },
+      {
+        "latitude": 51.570993,
+        "longitude": -0.14905
+      },
+      {
+        "latitude": 51.571121,
+        "longitude": -0.149402
+      },
+      {
+        "latitude": 51.571029,
+        "longitude": -0.149492
+      },
+      {
+        "latitude": 51.570993,
+        "longitude": -0.149542
+      },
+      {
+        "latitude": 51.571001,
+        "longitude": -0.149583
+      },
+      {
+        "latitude": 51.570917,
+        "longitude": -0.149669
+      },
+      {
+        "latitude": 51.570781,
+        "longitude": -0.149816
+      },
+      {
+        "latitude": 51.570501,
+        "longitude": -0.149543
+      },
+      {
+        "latitude": 51.570283,
+        "longitude": -0.149646
+      },
+      {
+        "latitude": 51.570237,
+        "longitude": -0.149635
+      },
+      {
+        "latitude": 51.570153,
+        "longitude": -0.149616
+      },
+      {
+        "latitude": 51.570041,
+        "longitude": -0.149909
+      },
+      {
+        "latitude": 51.569935,
+        "longitude": -0.150156
+      },
+      {
+        "latitude": 51.569588,
+        "longitude": -0.150833
+      },
+      {
+        "latitude": 51.569578,
+        "longitude": -0.150851
+      },
+      {
+        "latitude": 51.56944,
+        "longitude": -0.151064
+      },
+      {
+        "latitude": 51.569359,
+        "longitude": -0.151269
+      },
+      {
+        "latitude": 51.569356,
+        "longitude": -0.151382
+      },
+      {
+        "latitude": 51.569301,
+        "longitude": -0.151412
+      },
+      {
+        "latitude": 51.569266,
+        "longitude": -0.151431
+      },
+      {
+        "latitude": 51.569252,
+        "longitude": -0.151439
+      },
+      {
+        "latitude": 51.56914,
+        "longitude": -0.151501
+      },
+      {
+        "latitude": 51.569117,
+        "longitude": -0.15153
+      },
+      {
+        "latitude": 51.569085,
+        "longitude": -0.151571
+      },
+      {
+        "latitude": 51.56903,
+        "longitude": -0.151673
+      },
+      {
+        "latitude": 51.568907,
+        "longitude": -0.151952
+      },
+      {
+        "latitude": 51.5688,
+        "longitude": -0.152197
+      },
+      {
+        "latitude": 51.568723,
+        "longitude": -0.152328
+      },
+      {
+        "latitude": 51.568635,
+        "longitude": -0.152454
+      },
+      {
+        "latitude": 51.568506,
+        "longitude": -0.152651
+      },
+      {
+        "latitude": 51.568389,
+        "longitude": -0.152828
+      },
+      {
+        "latitude": 51.568285,
+        "longitude": -0.152993
+      },
+      {
+        "latitude": 51.568064,
+        "longitude": -0.153496
+      },
+      {
+        "latitude": 51.567992,
+        "longitude": -0.153657
+      },
+      {
+        "latitude": 51.567911,
+        "longitude": -0.153801
+      },
+      {
+        "latitude": 51.567743,
+        "longitude": -0.15388
+      },
+      {
+        "latitude": 51.567667,
+        "longitude": -0.153887
+      },
+      {
+        "latitude": 51.567622,
+        "longitude": -0.153888
+      },
+      {
+        "latitude": 51.567379,
+        "longitude": -0.153852
+      },
+      {
+        "latitude": 51.567225,
+        "longitude": -0.153827
+      },
+      {
+        "latitude": 51.567379,
+        "longitude": -0.153852
+      },
+      {
+        "latitude": 51.567361,
+        "longitude": -0.1542
+      },
+      {
+        "latitude": 51.567336,
+        "longitude": -0.154398
+      },
+      {
+        "latitude": 51.567287,
+        "longitude": -0.154572
+      },
+      {
+        "latitude": 51.567106,
+        "longitude": -0.154929
+      },
+      {
+        "latitude": 51.567064,
+        "longitude": -0.154997
+      },
+      {
+        "latitude": 51.566949,
+        "longitude": -0.155203
+      },
+      {
+        "latitude": 51.566853,
+        "longitude": -0.155419
+      },
+      {
+        "latitude": 51.566769,
+        "longitude": -0.155532
+      },
+      {
+        "latitude": 51.566437,
+        "longitude": -0.155949
+      },
+      {
+        "latitude": 51.566056,
+        "longitude": -0.156458
+      },
+      {
+        "latitude": 51.56586,
+        "longitude": -0.156755
+      },
+      {
+        "latitude": 51.565704,
+        "longitude": -0.156578
+      },
+      {
+        "latitude": 51.565462,
+        "longitude": -0.156187
+      },
+      {
+        "latitude": 51.565354,
+        "longitude": -0.156023
+      },
+      {
+        "latitude": 51.565273,
+        "longitude": -0.155902
+      },
+      {
+        "latitude": 51.565178,
+        "longitude": -0.155833
+      },
+      {
+        "latitude": 51.565094,
+        "longitude": -0.155826
+      },
+      {
+        "latitude": 51.564993,
+        "longitude": -0.155871
+      },
+      {
+        "latitude": 51.564939,
+        "longitude": -0.155895
+      },
+      {
+        "latitude": 51.564756,
+        "longitude": -0.156025
+      },
+      {
+        "latitude": 51.564693,
+        "longitude": -0.156045
+      },
+      {
+        "latitude": 51.564629,
+        "longitude": -0.156054
+      },
+      {
+        "latitude": 51.564503,
+        "longitude": -0.156042
+      },
+      {
+        "latitude": 51.564343,
+        "longitude": -0.15601
+      },
+      {
+        "latitude": 51.56431,
+        "longitude": -0.156093
+      },
+      {
+        "latitude": 51.564278,
+        "longitude": -0.15618
+      },
+      {
+        "latitude": 51.564159,
+        "longitude": -0.156491
+      },
+      {
+        "latitude": 51.564105,
+        "longitude": -0.156632
+      },
+      {
+        "latitude": 51.564068,
+        "longitude": -0.156738
+      },
+      {
+        "latitude": 51.564038,
+        "longitude": -0.156822
+      },
+      {
+        "latitude": 51.563992,
+        "longitude": -0.156895
+      },
+      {
+        "latitude": 51.56398,
+        "longitude": -0.156942
+      },
+      {
+        "latitude": 51.563875,
+        "longitude": -0.157328
+      },
+      {
+        "latitude": 51.563736,
+        "longitude": -0.157933
+      },
+      {
+        "latitude": 51.563675,
+        "longitude": -0.158174
+      },
+      {
+        "latitude": 51.56365,
+        "longitude": -0.158271
+      },
+      {
+        "latitude": 51.56352,
+        "longitude": -0.158727
+      },
+      {
+        "latitude": 51.563435,
+        "longitude": -0.159005
+      },
+      {
+        "latitude": 51.563381,
+        "longitude": -0.1592
+      },
+      {
+        "latitude": 51.56336,
+        "longitude": -0.159294
+      },
+      {
+        "latitude": 51.563334,
+        "longitude": -0.159391
+      },
+      {
+        "latitude": 51.563245,
+        "longitude": -0.159703
+      },
+      {
+        "latitude": 51.563127,
+        "longitude": -0.160123
+      },
+      {
+        "latitude": 51.563002,
+        "longitude": -0.160584
+      },
+      {
+        "latitude": 51.56286,
+        "longitude": -0.161051
+      },
+      {
+        "latitude": 51.562702,
+        "longitude": -0.161502
+      },
+      {
+        "latitude": 51.562614,
+        "longitude": -0.16168
+      },
+      {
+        "latitude": 51.562514,
+        "longitude": -0.16187
+      },
+      {
+        "latitude": 51.562423,
+        "longitude": -0.162039
+      },
+      {
+        "latitude": 51.562151,
+        "longitude": -0.162475
+      },
+      {
+        "latitude": 51.562047,
+        "longitude": -0.162662
+      },
+      {
+        "latitude": 51.56198,
+        "longitude": -0.162779
+      },
+      {
+        "latitude": 51.561854,
+        "longitude": -0.163072
+      },
+      {
+        "latitude": 51.561671,
+        "longitude": -0.163604
+      },
+      {
+        "latitude": 51.561657,
+        "longitude": -0.163639
+      },
+      {
+        "latitude": 51.561555,
+        "longitude": -0.163913
+      },
+      {
+        "latitude": 51.561429,
+        "longitude": -0.164173
+      },
+      {
+        "latitude": 51.561381,
+        "longitude": -0.164134
+      },
+      {
+        "latitude": 51.561343,
+        "longitude": -0.164076
+      },
+      {
+        "latitude": 51.561255,
+        "longitude": -0.163936
+      },
+      {
+        "latitude": 51.561097,
+        "longitude": -0.163721
+      },
+      {
+        "latitude": 51.561032,
+        "longitude": -0.16357
+      },
+      {
+        "latitude": 51.560964,
+        "longitude": -0.163457
+      },
+      {
+        "latitude": 51.560826,
+        "longitude": -0.163205
+      },
+      {
+        "latitude": 51.560633,
+        "longitude": -0.163025
+      },
+      {
+        "latitude": 51.560506,
+        "longitude": -0.163525
+      },
+      {
+        "latitude": 51.560317,
+        "longitude": -0.16388
+      },
+      {
+        "latitude": 51.560249,
+        "longitude": -0.164102
+      },
+      {
+        "latitude": 51.560272,
+        "longitude": -0.164457
+      },
+      {
+        "latitude": 51.560205,
+        "longitude": -0.164629
+      },
+      {
+        "latitude": 51.560137,
+        "longitude": -0.164731
+      },
+      {
+        "latitude": 51.56007,
+        "longitude": -0.164807
+      },
+      {
+        "latitude": 51.559996,
+        "longitude": -0.164935
+      },
+      {
+        "latitude": 51.559944,
+        "longitude": -0.165082
+      },
+      {
+        "latitude": 51.559886,
+        "longitude": -0.165239
+      },
+      {
+        "latitude": 51.559836,
+        "longitude": -0.165308
+      },
+      {
+        "latitude": 51.559808,
+        "longitude": -0.165333
+      },
+      {
+        "latitude": 51.559791,
+        "longitude": -0.165316
+      },
+      {
+        "latitude": 51.559764,
+        "longitude": -0.165289
+      },
+      {
+        "latitude": 51.559706,
+        "longitude": -0.165517
+      },
+      {
+        "latitude": 51.559545,
+        "longitude": -0.166133
+      },
+      {
+        "latitude": 51.559524,
+        "longitude": -0.166231
+      },
+      {
+        "latitude": 51.559486,
+        "longitude": -0.166272
+      },
+      {
+        "latitude": 51.559417,
+        "longitude": -0.166291
+      },
+      {
+        "latitude": 51.559281,
+        "longitude": -0.166368
+      },
+      {
+        "latitude": 51.559096,
+        "longitude": -0.166503
+      },
+      {
+        "latitude": 51.558456,
+        "longitude": -0.166415
+      },
+      {
+        "latitude": 51.55836,
+        "longitude": -0.166422
+      },
+      {
+        "latitude": 51.558192,
+        "longitude": -0.166438
+      },
+      {
+        "latitude": 51.557773,
+        "longitude": -0.167264
+      },
+      {
+        "latitude": 51.557611,
+        "longitude": -0.167583
+      },
+      {
+        "latitude": 51.557582,
+        "longitude": -0.167643
+      },
+      {
+        "latitude": 51.557607,
+        "longitude": -0.167683
+      },
+      {
+        "latitude": 51.557614,
+        "longitude": -0.167736
+      },
+      {
+        "latitude": 51.557613,
+        "longitude": -0.167826
+      },
+      {
+        "latitude": 51.557606,
+        "longitude": -0.167885
+      },
+      {
+        "latitude": 51.557591,
+        "longitude": -0.167917
+      },
+      {
+        "latitude": 51.557632,
+        "longitude": -0.167982
+      },
+      {
+        "latitude": 51.557604,
+        "longitude": -0.168024
+      },
+      {
+        "latitude": 51.5575805,
+        "longitude": -0.1680591
+      },
+      {
+        "latitude": 51.557475,
+        "longitude": -0.16794
+      },
+      {
+        "latitude": 51.557215,
+        "longitude": -0.168205
+      },
+      {
+        "latitude": 51.557256,
+        "longitude": -0.168371
+      },
+      {
+        "latitude": 51.557283,
+        "longitude": -0.168571
+      },
+      {
+        "latitude": 51.557313,
+        "longitude": -0.168941
+      },
+      {
+        "latitude": 51.557321,
+        "longitude": -0.169048
+      },
+      {
+        "latitude": 51.557313,
+        "longitude": -0.168941
+      },
+      {
+        "latitude": 51.557283,
+        "longitude": -0.168571
+      },
+      {
+        "latitude": 51.557256,
+        "longitude": -0.168371
+      },
+      {
+        "latitude": 51.557215,
+        "longitude": -0.168205
+      },
+      {
+        "latitude": 51.556561,
+        "longitude": -0.169069
+      },
+      {
+        "latitude": 51.556465,
+        "longitude": -0.169201
+      },
+      {
+        "latitude": 51.556401,
+        "longitude": -0.16929
+      },
+      {
+        "latitude": 51.555662,
+        "longitude": -0.170294
+      },
+      {
+        "latitude": 51.55563,
+        "longitude": -0.170208
+      },
+      {
+        "latitude": 51.555626,
+        "longitude": -0.170069
+      },
+      {
+        "latitude": 51.55575,
+        "longitude": -0.168602
+      },
+      {
+        "latitude": 51.555775,
+        "longitude": -0.168311
+      },
+      {
+        "latitude": 51.555791,
+        "longitude": -0.168113
+      },
+      {
+        "latitude": 51.555809,
+        "longitude": -0.1679
+      },
+      {
+        "latitude": 51.555821,
+        "longitude": -0.167758
+      },
+      {
+        "latitude": 51.555845,
+        "longitude": -0.16747
+      },
+      {
+        "latitude": 51.55585,
+        "longitude": -0.167409
+      },
+      {
+        "latitude": 51.555858,
+        "longitude": -0.16732
+      },
+      {
+        "latitude": 51.555879,
+        "longitude": -0.167089
+      },
+      {
+        "latitude": 51.555958,
+        "longitude": -0.166651
+      },
+      {
+        "latitude": 51.555696,
+        "longitude": -0.166591
+      },
+      {
+        "latitude": 51.555685,
+        "longitude": -0.166587
+      },
+      {
+        "latitude": 51.555542,
+        "longitude": -0.166492
+      },
+      {
+        "latitude": 51.555273,
+        "longitude": -0.166265
+      },
+      {
+        "latitude": 51.555244,
+        "longitude": -0.16624
+      },
+      {
+        "latitude": 51.555173,
+        "longitude": -0.166189
+      },
+      {
+        "latitude": 51.555198,
+        "longitude": -0.166104
+      },
+      {
+        "latitude": 51.555209,
+        "longitude": -0.166037
+      },
+      {
+        "latitude": 51.555228,
+        "longitude": -0.165933
+      },
+      {
+        "latitude": 51.555252,
+        "longitude": -0.165872
+      },
+      {
+        "latitude": 51.555239,
+        "longitude": -0.165864
+      },
+      {
+        "latitude": 51.555212,
+        "longitude": -0.165847
+      },
+      {
+        "latitude": 51.555229,
+        "longitude": -0.165762
+      },
+      {
+        "latitude": 51.555234,
+        "longitude": -0.165737
+      },
+      {
+        "latitude": 51.555238,
+        "longitude": -0.165721
+      },
+      {
+        "latitude": 51.555224,
+        "longitude": -0.165713
+      },
+      {
+        "latitude": 51.555189,
+        "longitude": -0.165692
+      }
+    ],
+    "stops": [
+      {
+        "id": "highgate-station",
+        "title": "Highgate Underground station",
+        "standing": {
+          "latitude": 51.577601,
+          "longitude": -0.146852
+        },
+        "landmark": {
+          "latitude": 51.5776027,
+          "longitude": -0.1468003
+        },
+        "routeIndex": 0,
+        "approach": "Use Highgate Underground’s Archway Road exit 3. Begin on the public pavement to the side of the exit, before crossing the main road.",
+        "viewpoint": "Station frontage and busy road setting; old platforms are not a tour viewpoint.",
+        "access": "Archway Road exit 3. Stand on the public pavement to the side of the station exit, clear of doors and crossing approaches; begin before crossing Archway Road. Short welcome on a busy main-road frontage."
+      },
+      {
+        "id": "pond-square",
+        "title": "Pond Square",
+        "standing": {
+          "latitude": 51.57081,
+          "longitude": -0.149715
+        },
+        "landmark": {
+          "latitude": 51.570781,
+          "longitude": -0.149815
+        },
+        "routeIndex": 61,
+        "approach": "Follow Southwood Lane from the station, cross Highgate High Street at the zebra, then use the northern public steps into Pond Square.",
+        "viewpoint": "The open square and surrounding houses. The historic ponds are gone; the tavern print describes a local custom, not the location of a present pub.",
+        "access": "Use the open public square, clear of the through-path and tree roots. The mapped northern approach includes a short public stepped connection."
+      },
+      {
+        "id": "highgate-ponds",
+        "title": "Between the Highgate ponds",
+        "standing": {
+          "latitude": 51.563675,
+          "longitude": -0.158174
+        },
+        "landmark": {
+          "latitude": 51.56458,
+          "longitude": -0.15745
+        },
+        "routeIndex": 130,
+        "approach": "From Merton Lane turn left on Millfield Lane, then right onto the main shared path between the ponds. Pause about 170 metres along it, before the side-path junction.",
+        "viewpoint": "The setting between Model Boating Pond and Men’s Bathing Pond. Map-reviewed geography; vegetation may screen the water. No particular island or swimmer must be visible.",
+        "access": "Public shared Heath path between Model Boating and Mens ponds, approximately 168m after Millfield Lane. Pause at a clear edge before the side-path junction; keep cyclists and walkers through. Do not enter bathing gates or approach the water edge."
+      },
+      {
+        "id": "willow-road",
+        "title": "2 Willow Road",
+        "standing": {
+          "latitude": 51.557262,
+          "longitude": -0.169112
+        },
+        "landmark": {
+          "latitude": 51.557196,
+          "longitude": -0.1691445
+        },
+        "routeIndex": 201,
+        "approach": "Use the East Heath Road zebra west of Downshire Hill, then the pavement to Downshire Hill and right into Willow Road.",
+        "viewpoint": "Long windows and red brick above the front wall, seen from the building-side pavement. The wartime exhibition is a narrated reconstruction of documented activity indoors.",
+        "access": "Building-side public pavement outside the front wall. Keep driveways and entrances clear. Interior entry is not part of the tour and Monday opening is not assumed."
+      },
+      {
+        "id": "keats-house",
+        "title": "Keats House",
+        "standing": {
+          "latitude": 51.55579,
+          "longitude": -0.16808
+        },
+        "landmark": {
+          "latitude": 51.555515,
+          "longitude": -0.16794
+        },
+        "routeIndex": 214,
+        "approach": "Return via Downshire Hill, turn left into Keats Grove and stop beside the green garden gate.",
+        "viewpoint": "The house is set back behind a garden, trees and fencing; its street view is partial. The narrative does not require garden or museum admission.",
+        "access": "Public pavement outside the garden gate on Keats Grove. Keep the gate clear. Do not require the garden or house to be open."
+      }
+    ]
+  },
+  "narration": {
+    "description": "George guides a 4.1 km walk from Highgate Underground through the village and Heath to Keats House, with a short finish at Hampstead Heath station. Five stops and two walking stories; allow about 85–100 minutes with looking.",
+    "introduction": "Start at Highgate Underground’s Archway Road exit 3, on the public pavement clear of the exit. Press Start there: it plays the welcome immediately. This walk goes up to Highgate village, across the Heath, past 2 Willow Road and on to Keats House; the map continues to Hampstead Heath station. Allow about 85–100 minutes for 4.1 km, stories and looking. There are slopes, a short flight of steps, a narrow lane without continuous pavement, and shared paths. Public exteriors make the tour usable when the houses are closed. Keep the offline map handy at unnamed Heath forks. AI-assisted original writing and local AI narration by George; source notes and reconstruction bases are available in Read / directions.",
+    "finishInstructions": "The final story is at Keats House. Tap End tour / stop location. For the mapped finish, continue along Keats Grove, right into South End Road, then follow the pavement and station signs to Hampstead Heath station (about 4 minutes). Hampstead Underground is the longer option: return along Keats Grove, left down Downshire Hill, then right along Rosslyn Hill/Hampstead High Street (about 14 minutes from Keats). Reviews and progress remain saved.",
+    "reviewNote": "Enjoy the walk first; no note is required at every stop. Useful feedback: what stayed with you, what dragged or confused you, and whether the walking stories fitted the path. Review pauses narration. Keep Review open while recording; locking or leaving it stops and saves the note. Save review and resume tour continues an active walk. EarFun recording worked in the recent desk check; Phone microphone near your mouth or text remain fallbacks if outdoor sound is poor.",
+    "rightsNote": "Original AI-assisted prose, reviewed with public primary/custodian evidence; local Kokoro bm_george synthesis from the pinned model. Public-domain Keats poem/letter excerpts are short and attributed. Map data © OpenStreetMap contributors (ODbL), Protomaps basemap and shared Noto Sans glyphs under the bundled notices. Routing uses Valhalla/OpenStreetMap. No third-party tour narration, source photographs, Street View frames or music is packaged. Prepared 21 September 2026 for private owner review; no publication rights decision is implied."
+  },
+  "chapters": [
+    {
+      "id": "walking-conversation",
+      "afterStopIndex": 1,
+      "startRouteIndex": 121,
+      "endRouteIndex": 122,
+      "navigationRouteIndex": 130,
+      "fastWalkingMetresPerSecond": 1.6666666666666665,
+      "marginSeconds": 15,
+      "maximumAudioSeconds": 60
+    },
+    {
+      "id": "keeping-the-heath",
+      "afterStopIndex": 2,
+      "startRouteIndex": 138,
+      "endRouteIndex": 140,
+      "navigationRouteIndex": 152,
+      "fastWalkingMetresPerSecond": 1.6666666666666665,
+      "marginSeconds": 15,
+      "maximumAudioSeconds": 90
+    }
+  ],
+  "routeEvidence": "docs/content/authoring/hampstead-2026-09-21/ROUTE-RECON.md",
+  "authoring": {
+    "selection": "docs/content/authoring/hampstead-2026-09-21/SELECTION.md",
+    "routeInput": "docs/content/authoring/hampstead-2026-09-21/route-selected.json",
+    "routeInputSha256": "48a46f827e5fbbb38fe32cf37cd4821bc6f6bb739ae15e8b2005b91d5d7783ca",
+    "directions": "docs/content/authoring/hampstead-2026-09-21/ROUTE-DIRECTIONS.md",
+    "directionsSha256": "406fe328cb5c338a7b5130da397828a780584de63a80a431724af70e143b46bf",
+    "metrics": {
+      "providerMetresToKeats": 3836,
+      "providerSecondsToKeats": 3301.779,
+      "providerMetresToHeathStation": 4078,
+      "providerSecondsToHeathStation": 3498.6949999999997,
+      "measuredGeometryMetres": 4043.46,
+      "plannedOutingMinutes": [
+        85,
+        100
+      ],
+      "planningBasis": "About 59 minutes of provider movement, then stationary narration, looking and crossing waits; ordinary hills/footing may lengthen the outing. No indoor visits."
+    },
+    "limits": [
+      "Heath path/pond-view standing area has map evidence but no Street View at the pause; omit precision island cues.",
+      "No live all-clear for temporary works. Obey physical closure signs, pause and use manual playback/map if a small local adjustment is needed.",
+      "Merton Lane has no continuous footway; it is deliberately silent. Heath surfaces include asphalt, gravel and uneven areas, with gradients and shared cyclists.",
+      "The original provider instructions are retained only for audit. Use ROUTE-DIRECTIONS.md for reviewed visitor directions."
+    ]
+  }
+}

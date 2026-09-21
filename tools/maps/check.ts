@@ -12,8 +12,7 @@ import { makeMapStyle } from '../../src/map/style';
 async function main() {
   const sharedRoot = 'assets/maps/north-finchley/';
   const registry = readFileSync('src/map/bundledAssets.ts', 'utf8') + readFileSync('src/map/bundledAreas.ts', 'utf8');
-  for (const { catalog } of mapAreas) {
-  const root = catalog.id.startsWith('clerkenwell-') ? 'assets/maps/clerkenwell/' : sharedRoot;
+  for (const { catalog, assetRoot: root } of mapAreas) {
   const glyphIds = new Set<number>();
   for (const file of catalog.files) {
     const assetPath = (file.path.startsWith('fonts/') ? sharedRoot : root) + file.path;

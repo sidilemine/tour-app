@@ -9,6 +9,7 @@ import { prepareMapFiles, type MapFiles } from '../src/map/files';
 import { bounds, covered, makeMapStyle, visibleFix } from '../src/map/style';
 import { mapArea, mapCentre } from '../src/map/areas';
 import clerkenwell from '../src/map/clerkenwell.json';
+import hampstead from '../src/map/hampstead.json';
 
 const data = Buffer.from('test tile bytes'), hash = createHash('md5').update(data).digest('hex');
 const inventory = [{ path: 'basemap.pmtiles', bytes: data.length, md5: hash }, { path: 'fonts/regular/0.pbf', bytes: data.length, md5: hash }];
@@ -123,6 +124,21 @@ test('repairing the second area leaves the first area and progress intact', () =
   assert.equal((await fs.info(first + inventory[0].path)).md5, hash);
   assert.equal(await readFile(new URL('progress', root), 'utf8'), 'saved Finchley offset');
 }));
+test('Highgate gateway and Hampstead finish share the third local map without changing older coverage', () => {
+  const area = mapArea(hampstead.id);
+  for (const [longitude, latitude] of [[-0.1468, 51.5776], [-0.1672, 51.5554]]) {
+    const fix = { longitude, latitude, timestamp: 1000, accuracy: 7 };
+    assert.equal(visibleFix(fix, true, 1500, area.catalog), fix);
+    assert.equal(visibleFix(fix, true, 1500), null);
+    assert.equal(visibleFix(fix, true, 1500, clerkenwell), null);
+  }
+  const style = makeMapStyle('file:///maps/hampstead/', area.catalog);
+  assert.deepEqual(validateStyleMin(style), []);
+  assert.ok(!/https?:/.test(JSON.stringify(style)));
+  const source = style.sources.basemap;
+  assert.equal(source.type, 'vector');
+  if (source.type === 'vector') assert.deepEqual(source.bounds, hampstead.bounds);
+});
 test('map position hides stale, stopped, inaccurate, future and outside-area fixes', () => {
   const fix = { longitude: -0.178, latitude: 51.613, timestamp: 1000, accuracy: 10 };
   assert.equal(visibleFix(fix, true, 16000), fix);

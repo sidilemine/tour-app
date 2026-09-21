@@ -9,9 +9,9 @@ import { Journal, guide, AttemptContext, availability } from '../src/testing/jou
 const context: AttemptContext = { sourceId: 'test-source', variant: 'offline-release', model: 'Synthetic', os: 'Test', fixtureKey: 'synthetic@1', walkStartedAt: null };
 function adapter(db: DatabaseSync): SQL { return { execSync: s => db.exec(s), runSync: (s, ...p) => db.prepare(s).run(...p), getFirstSync: <T>(s: string, ...p: (string|number|null)[]) => db.prepare(s).get(...p) as T ?? null, getAllSync: <T>(s: string, ...p: (string|number|null)[]) => db.prepare(s).all(...p) as T[] }; }
 function memory(fn: (j: Journal, db: DatabaseSync, store: Store) => void) { const db = new DatabaseSync(':memory:'), store = new Store(adapter(db)); try { fn(new Journal(store), db, store); } finally { db.close(); } }
-test('guide covers full field matrix with explicit preparation and build distinctions', () => {
-  assert.equal(new Set(guide.cases.map(c => c.id)).size, 21);
-  for (const id of ['pause-silence','pause-narration','remote-pause','development-1','development-2','development-3','offline-baseline','interruption','output-disconnect','location-permission','off-route','early-arrival','pass-pending','offline-recovery','swipe-away','development-recovery','process-kill','battery-saver','offline-map','curated-tour-feedback','headset-recording-focus']) {
+test('guide retains historical cases and explicit preparation and build distinctions', () => {
+  assert.equal(new Set(guide.cases.map(c => c.id)).size, 22);
+  for (const id of ['pause-silence','pause-narration','remote-pause','development-1','development-2','development-3','offline-baseline','interruption','output-disconnect','location-permission','off-route','early-arrival','pass-pending','offline-recovery','swipe-away','development-recovery','process-kill','battery-saver','offline-map','curated-tour-feedback','headset-recording-focus','hampstead-handoff']) {
     const item = guide.cases.find(c => c.id === id)!; assert.ok(item); assert.ok(item.steps.length >= 3 && item.expected.length > 20 && item.needs.length > 10);
   }
   assert.equal(guide.cases.find(c => c.id === 'early-arrival')!.preparation, 'engineer');

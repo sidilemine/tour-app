@@ -1,8 +1,8 @@
 # Offline phone test guide
 
-Generated from `src/testing/guide.json`; edit that source and run `npm run docs:guide`. Revision 12.
+Generated from `src/testing/guide.json`; edit that source and run `npm run docs:guide`. Revision 13.
 
-The planned M1 outdoor walks are complete. These procedures remain available for reference and targeted regression checks; do not repeat a walk unless the engineer identifies a specific need. Opening this guide never starts, pauses or ends a tour. Stop safely before using the screen. Saved results are observations: acceptance combines diagnostic review and physical feedback in the project checklist. Long A lasts 3 minutes 30 seconds and is only a test asset; desk interruption and recovery checks need just a few seconds of playback. M2 adds an engineer-prepared offline-map desk check; this does not reopen the full M1 field matrix. The tour home contains the Finchley A/B walks and the new Clerkenwell walk, with transcripts, directions and story reviews. Case 20 records one short engineer-led check of the new import/recording boundary; it does not require another baseline walk. Guide 12 includes Clerkenwell’s eight stops and two walking chapters in the combined preparation check. A new area needs a short drawing/selection check, not a repeat of the historical map matrix.
+The planned M1 outdoor walks are complete. These procedures remain available for reference and targeted regression checks; do not repeat a walk unless the engineer identifies a specific need. Opening this guide never starts, pauses or ends a tour. Stop safely before using the screen. Saved results are observations: acceptance combines diagnostic review and physical feedback in the project checklist. Long A lasts 3 minutes 30 seconds and is only a test asset; desk interruption and recovery checks need just a few seconds of playback. M2 adds an engineer-prepared offline-map desk check; this does not reopen the full M1 field matrix. The tour home contains the Finchley A/B walks, Clerkenwell, and Highgate to Hampstead, with transcripts, directions and story reviews. Case 20 records one short engineer-led check of the new import/recording boundary; it does not require another baseline walk. Guide 13 adds case 22 for the Highgate–Hampstead package and its map; guide 12’s Clerkenwell preparation remains a reference. A new area needs a short drawing/selection check, not a repeat of the historical map matrix.
 
 ## Before and after each attempt
 
@@ -287,3 +287,16 @@ Installed microphone adapter and the touring headphones. The reported EarFun/Spo
 4. Confirm saved-note or a few seconds of deliberate narration playback returns through the headphones after recording. Stop note playback, save/close review and confirm the active tour resumes. Ended tours stay stopped. Engineer inspects app-scoped errors and restores the self-contained variant with existing progress.
 
 Expected: Recording requests exclusive focus; the displayed microphone is an actual verified route, not merely a preference. Saved notes are intelligible, interrupted capture retains its file, and recording cleanup restores ordinary playback routing. Only explicit review close/resume releases the tour hold; passive background/locking does not. No baseline walk or export repeat required.
+
+## 22. Highgate–Hampstead silent handoff
+
+Case: `hampstead-handoff`. Preparation: engineer. Build: offline-release.
+
+Prepared four-tour self-contained APK; one short USB session. Existing audio, EarFun and review-close evidence is reused because those implementations are unchanged. No audible check is planned.
+
+1. Engineer installs in place, without uninstalling or clearing data, and prepares the Highgate–Hampstead package offline. Confirm five stops and two walking chapters. Preserve the other three tours, their progress and all reviews.
+2. With Metro stopped and phone networking off, cold reopen the self-contained app, open Highgate–Hampstead and inspect its complete numbered route, representative map labels and both ends of its coverage. Start is not needed for this silent check.
+3. Switch to one retained map/tour, check its saved progress, then return to Highgate–Hampstead. Read the actual Highgate Underground starting instructions and the first leg. Do not reset an existing walk merely for this check.
+4. Restore the owner’s previous network settings. Leave Highgate–Hampstead selected and unstarted with automatic narration enabled for the outing, tracking stopped, and all previous data retained. Record actual observed results; ordinary use supplies route and content feedback.
+
+Expected: The new package and third map work after a cold offline reopen; map selection remains tied to its tour and prior progress survives. No new audio or outdoor technical test is required unless a concrete failure raises a question.

@@ -1,0 +1,2142 @@
+{
+  "area": "Hampstead / Highgate / Heath",
+  "retrievedOn": "2026-09-21",
+  "scope": {
+    "role": "heritage/current-context researcher",
+    "initial": "Hampstead village and southern/western Heath margins",
+    "ownerSteering": "During survey owner requested Highgate start; bounded extension adds Highgate Society, Waterlow and Lauderdale. Exact Highgate start still for coordinator.",
+    "purpose": "Discovery before final selection or scripts",
+    "status": "frozen",
+    "limits": "No paid book/script access, no site visit, no precise standing coordinates. Primary/custodian leads are not full claim packets."
+  },
+  "sources": [
+    {
+      "id": "HA-HC-S01",
+      "title": "Hampstead circular walk",
+      "originator": "National Trust",
+      "url": "https://www.nationaltrust.org.uk/visit/london/fenton-house-and-garden/hampstead-circular-walk",
+      "kind": "complete self-guided route",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "summary": "13 stages; Hampstead tube loop; architecture and southern Heath; 4km, advertised 50–75 minutes.",
+      "notes": "Walking directions are discovery, not fresh physical verification. Companion printable PDF duplicates this route.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S02",
+      "title": "Walks and trails in Hampstead Heath",
+      "originator": "City of London Corporation",
+      "url": "https://www.cityoflondon.gov.uk/things-to-do/green-spaces/hampstead-heath/activities-at-hampstead-heath/walks-and-trails-at-hampstead-heath",
+      "kind": "official route prose",
+      "publishedDate": "2026-04-01",
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "summary": "Three trails: Parliament Hill/Tumulus; Heath Circuit; Sandy Heath/Pergola.",
+      "notes": "Its folklore remains labelled; highest-point wording should not be repeated without independent verification.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S03",
+      "title": "Hampstead Heath Trails Map",
+      "originator": "City of London Corporation",
+      "url": "https://www.cityoflondon.gov.uk/assets/Green-Spaces/hampstead-heath-trails-map.pdf",
+      "kind": "official PDF trail map",
+      "publishedDate": "2021-02-24",
+      "retrievedOn": "2026-09-21",
+      "access": "partial",
+      "summary": "Mapped routes, transport, facilities and path types.",
+      "notes": "Search extraction inspected, not page-rendered; duplicate older Haringey-hosted version not separately catalogued.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S04",
+      "title": "Heath Walks",
+      "originator": "Heath & Hampstead Society",
+      "url": "https://www.heathandhampstead.org.uk/heath/heath-walks/",
+      "kind": "community guided walk programme",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "summary": "Monthly expert walks in history, ecology and conservation; roughly two hours; most from Burgh House.",
+      "notes": "2026 examples: climate adaptation 4 October, ponds 6 December. Full routes not published; stale charged/free wording conflicts, current lower text says free.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S05",
+      "title": "Hampstead Vanished and Imagined",
+      "originator": "Open House Festival / Golden Key Academy",
+      "url": "https://programme.openhouse.org.uk/listings/13711",
+      "kind": "historical event itinerary",
+      "publishedDate": "2026-09-16",
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "summary": "16 September 2026; 90 minutes, about one mile; Hampstead tube to Heath station. Spa, railways/fairs, artists and migration.",
+      "notes": "Related to Burgh House exhibition; not identical to its July walk. Exact intermediate stops undisclosed.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S06",
+      "title": "From Peter Pan to the Time Machine",
+      "originator": "Open House Festival / Golden Key Academy",
+      "url": "https://programme.openhouse.org.uk/listings/13713",
+      "kind": "historical event itinerary",
+      "publishedDate": "2026-09-20",
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "summary": "20 September 2026; 75 minutes. Church Row/churchyard; science, literature, social reform and architecture.",
+      "notes": "Named works/topics do not establish which individual houses or graves are included.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S07",
+      "title": "Hampstead Heath Pergola",
+      "originator": "Open House Festival / City of London tour listing",
+      "url": "https://programme.openhouse.org.uk/listings/2106",
+      "kind": "historical guided walk listing",
+      "publishedDate": "2026-09",
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "summary": "Whitestone Pond flagpole to Pergola; Leverhulme/Mawson landscape.",
+      "notes": "Text says about 60 minutes while activity slots are 90; full intermediate itinerary unavailable. Related City guided-walk listing is same product family.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S08",
+      "title": "North End & Hampstead Garden Suburb Prehistory",
+      "originator": "Open House Festival / Calum Orr, Hampstead Garden Suburb Trust",
+      "url": "https://programme.openhouse.org.uk/listings/13664",
+      "kind": "specialist guided walk listing",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "summary": "Whitestone Pond towards North End, Heath Extension and Garden Suburb; planning around 1907.",
+      "notes": "Nearby comparison, beyond likely short outing. Central Square supplied as additional travel information rather than unequivocal end statement.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S09",
+      "title": "Art Walks — Hampstead Vanished and Imagined",
+      "originator": "Burgh House / Carol Seigel",
+      "url": "https://www.eventbrite.co.uk/e/art-walks-hampstead-vanished-and-imagined-tickets-1987134825756",
+      "kind": "museum-originator event listing",
+      "publishedDate": "2026-07-22",
+      "retrievedOn": "2026-09-21",
+      "access": "search-extract",
+      "summary": "July 22 walk in 2026 series: Burgh House return, 90 minutes. Series also includes women artists and painters.",
+      "notes": "Exact stops not public; related to S05 exhibition but different leader/endpoints. Reseller Mato omitted.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S10",
+      "title": "Fenton House and Garden",
+      "originator": "National Trust",
+      "url": "https://www.nationaltrust.org.uk/visit/london/fenton-house-and-garden",
+      "kind": "current venue/custodian",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "summary": "House/garden open Fridays, Sundays and bank-holiday Mondays; ordinary Monday not open. Instruments, orchard and collections are interior/garden experiences.",
+      "notes": "Opening calendar default displayed 20 Sep while today is 21 Sep; weekly rule is explicit. No pre-booking from 2026.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S11",
+      "title": "2 Willow Road",
+      "originator": "National Trust",
+      "url": "https://www.nationaltrust.org.uk/visit/london/2-willow-road",
+      "kind": "current venue/custodian",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "summary": "1939 family home. Thursday/Saturday March–October, advance booking; hour tours and later self-guided slots. No on-site toilets.",
+      "notes": "Monday interior not available; exterior works independently.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S12",
+      "title": "The construction of 2 Willow Road",
+      "originator": "National Trust",
+      "url": "https://www.nationaltrust.org.uk/visit/london/2-willow-road/the-construction-of-2-willow-road",
+      "kind": "custodian historical interpretation",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "summary": "Rejected flats proposal became three homes. Henry Brooke opposed design; Goldfinger defended its Georgian relationship. Opponent’s son later handed house to Trust.",
+      "notes": "Page gives 1993 handover; heritage record S33 gives 1994 acquisition. Preserve distinction or omit exact transfer year pending confirmation.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S13",
+      "title": "Hampstead’s creative community of the 1930s and 40s: 2 Willow Road",
+      "originator": "National Trust",
+      "url": "https://www.nationaltrust.org.uk/visit/london/2-willow-road/history-of-hampstead-and-2-willow-road",
+      "kind": "custodian historical interpretation",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "summary": "Goldfingers linked artistic groups and fundraising. Their 1942 Aid to Russia exhibition included around 70 works; some auction purchases remain.",
+      "notes": "Basis for supported domestic exhibition scene, not invented party dialogue. Claims about cheap housing are period-specific, not today.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S14",
+      "title": "Visit Keats House",
+      "originator": "City of London Corporation",
+      "url": "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/keats-house/visit-keats-house",
+      "kind": "current venue / on-site guides",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "summary": "Public room audio descriptions and volunteer ground-floor tours (most Thu/Fri/Sun, about 30 minutes); garden free when accessible.",
+      "notes": "No Monday opening claim or guarantee garden gate open. Free Bloomberg guide is linked but rooms/script not inspected.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S15",
+      "title": "History of the House",
+      "originator": "City of London Corporation / Keats House",
+      "url": "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/keats-house/history-of-the-house",
+      "kind": "custodian historical interpretation",
+      "publishedDate": "2026-05-29",
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "summary": "Two homes made to look one; Keats shared Brown’s half and loved neighbour Fanny Brawne. Alterations obscured identification; saved in 1921, museum from 1925.",
+      "notes": "Links period memoir/letters and 1920s film; those underlying works not read in this survey.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S16",
+      "title": "Keats House",
+      "originator": "City of London Family Information Service",
+      "url": "https://www.fis.cityoflondon.gov.uk/whats-on/keats-house-2",
+      "kind": "official visitor listing",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "search-extract",
+      "summary": "Published opening days Wednesday/Thursday/Friday/Sunday; no Monday opening.",
+      "notes": "Exhibition text still describes 2025 centenary; use cautiously for current details and do not promise access.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S17",
+      "title": "Visit",
+      "originator": "Burgh House",
+      "url": "https://www.burghhouse.org.uk/visit/visit",
+      "kind": "current venue",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "partial",
+      "summary": "Live page opens without readable text.",
+      "notes": "Owner’s staging page S18 and VisitLondon both list Monday closed; mark access verification basis rather than claim full live page read.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S18",
+      "title": "Visit (staging copy)",
+      "originator": "Burgh House",
+      "url": "https://staging.burghhouse.org.uk/visit/visit",
+      "kind": "venue staging page",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "search-extract",
+      "summary": "2025 weekly table: house and cafe closed Mondays.",
+      "notes": "Not fully current 2026 production confirmation; keep tour exterior-dependent.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S19",
+      "title": "About the Collection",
+      "originator": "Burgh House",
+      "url": "https://www.burghhouse.org.uk/the_collection",
+      "kind": "museum collections index",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "search-extract",
+      "summary": "Collection begun by Christopher/Diana Wade following local rescue for community use in 1979; objects, art, documents and ordinary residents.",
+      "notes": "Search extract readable; direct page extraction empty. Object-level research remains.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S20",
+      "title": "About us",
+      "originator": "Hampstead Wells and Campden Trust",
+      "url": "https://hwct.org.uk/about-us/",
+      "kind": "current charity / historical self-account",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "summary": "Older Wells/Campden charities merged; present trust from 1971 makes local poverty/health grants.",
+      "notes": "Links Christopher Wade’s history; full book not read.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S21",
+      "title": "Home",
+      "originator": "Hampstead Wells and Campden Trust",
+      "url": "https://hwct.org.uk/",
+      "kind": "current charity",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "summary": "2025–2030 strategy and ongoing organisational/individual funding.",
+      "notes": "Concrete present-day continuation; no monetary total inferred.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S22",
+      "title": "Annual reports and accounts",
+      "originator": "Hampstead Wells and Campden Trust",
+      "url": "https://hwct.org.uk/reports-and-accounts/",
+      "kind": "annual report index",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "summary": "2025 report available, alongside older reports.",
+      "notes": "2025 PDF click failed in browser; not read. 2021 extract separately retained, not represented as current accounts.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S23",
+      "title": "Trustees’ Report 2021",
+      "originator": "Hampstead Wells and Campden Trust",
+      "url": "https://hwct.org.uk/wp-content/uploads/2022/10/HWCT-2021-signed-accounts.pdf",
+      "kind": "charity report primary self-record",
+      "publishedDate": "2021",
+      "retrievedOn": "2026-09-21",
+      "access": "search-extract",
+      "summary": "1698 grant: six acres from infant Earl via mother Susanna Noel for Hampstead poor; later residential estate on land.",
+      "notes": "Old report supports origins, not current grant counts. Its commemorative-well wording needs care.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S24",
+      "title": "Hampstead Wells",
+      "originator": "Paul F. Rice / Grub Street Project",
+      "url": "https://www.grubstreetproject.net/essays/hampstead-wells/",
+      "kind": "academic public history with period sources",
+      "publishedDate": "2022-11",
+      "retrievedOn": "2026-09-21",
+      "access": "partial",
+      "summary": "1698 charitable land; trustees monetised spring by bottling water for London.",
+      "notes": "Search extract and title/authorship read; body not completely extracted. Strong follow-up lead for period advertising/music, not complete researched dossier.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S25",
+      "title": "Holly Bush, Hampstead",
+      "originator": "CAMRA North London",
+      "url": "https://camra.org.uk/pubs/holly-bush-hampstead-125290",
+      "kind": "specialist pub inventory",
+      "publishedDate": "2026-08-27",
+      "retrievedOn": "2026-09-21",
+      "access": "search-extract",
+      "summary": "Former Romney stables became assembly catering then pub; Victorian fittings survive amid later changes.",
+      "notes": "Survey reported 8 Feb 2026. Custodian/primary listing should underpin exact fabric attribution. Do not call present bar Romney’s studio.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S26",
+      "title": "The Holly Bush",
+      "originator": "Fuller’s / venue",
+      "url": "https://www.hollybushhampstead.co.uk/",
+      "kind": "current business",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "summary": "Monday published opening noon–23:00; food noon–15:30 and 18:00–22:00.",
+      "notes": "Optional paid refreshment, no booking/purchase made.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S27",
+      "title": "Holly Bush Hill, Green and Shrubbery",
+      "originator": "London Parks & Gardens",
+      "url": "https://londongardenstrust.org/conservation/inventory/site-record/?ID=CAM056",
+      "kind": "heritage inventory",
+      "publishedDate": "2002-08-01",
+      "retrievedOn": "2026-09-21",
+      "access": "search-extract",
+      "summary": "Public spaces owned/managed by Camden. Romney’s house became assembly rooms; 1829 Heath protection meeting.",
+      "notes": "Minor update 29 Mar 2026; underlying historical research older. Lecture dates require independent check if narrated.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S28",
+      "title": "The Hill Garden and Pergola",
+      "originator": "City of London Corporation",
+      "url": "https://www.cityoflondon.gov.uk/things-to-do/green-spaces/hampstead-heath/where-to-go-at-hampstead-heath/hill-garden-and-pergola",
+      "kind": "current access/custodian",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "summary": "Maintenance scaffolding and inaccessible areas; Heritage at Risk from November 2025; 14–27 Sep hours 08:30–18:00.",
+      "notes": "Exact current closures/visitor standing area unknown. Do not make this a mandatory through-route without review.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S29",
+      "title": "Origins",
+      "originator": "Heath & Hampstead Society",
+      "url": "https://www.heathandhampstead.org.uk/home/origins/",
+      "kind": "campaigning organisation historical account",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "summary": "1829–1871 protection battle; 1890s resistance to tidying/parkification helped establish Society.",
+      "notes": "Interested institutional perspective; do not inherit its emotive villain/vandalism language as neutral fact. Exact area figures conflict elsewhere.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S30",
+      "title": "Welcome to Keats Community Library",
+      "originator": "Keats Community Library",
+      "url": "https://ww2.keatscommunitylibrary.org.uk/",
+      "kind": "current community institution",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "search-extract",
+      "summary": "Volunteer/community-run since April 2012; events and donations sustain service; Monday closed.",
+      "notes": "July 2026 news present. Useful present literary culture; funding pressure is organisation’s own description.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S31",
+      "title": "Khaki Bank Holiday Topical Budget 206-1",
+      "originator": "BFI National Archive / Replay",
+      "url": "https://replay.bfi.org.uk/video/7c0e3e74-1d7b-5828-aade-c86d17233cee",
+      "kind": "archive film catalogue",
+      "publishedDate": "1915-08-04",
+      "retrievedOn": "2026-09-21",
+      "access": "search-extract",
+      "summary": "1915 Hampstead fair footage juxtaposes amusements and army recruitment.",
+      "notes": "Catalogue read, film not viewed; exact frames/atmosphere must not be invented as film observation.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S32",
+      "title": "Constable: Clouds, 5 September 1822",
+      "originator": "National Gallery of Australia exhibition / National Gallery of Victoria object",
+      "url": "https://digital.nga.gov.au/archive/exhibition/constable/detail.cfm%3Firn%3D145017%26bioartistirn%3D18283%26mnuid%3D2%26galid%3D7.html",
+      "kind": "museum object interpretation",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "search-extract",
+      "summary": "Two Hampstead cloud studies that day, with times/weather notes; offers observing practice rather than generic artistic reverie.",
+      "notes": "Location is Hampstead, not proof of a precise painting spot near our standing area.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S33",
+      "title": "2 Willow Road, MNA184741",
+      "originator": "National Trust Heritage Records",
+      "url": "https://heritagerecords.nationaltrust.org.uk/HBSMR/MonRecord.aspx?skin=printerfriendly&uid=MNA184741",
+      "kind": "heritage record",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "search-extract",
+      "summary": "Three houses appear as one; 1938–39; 1994 acquisition noted; flexible interior and brick-facing context.",
+      "notes": "Not independent from National Trust interpretation; acquisition date differs from handover wording in S12.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S34",
+      "title": "Burgh House Tours",
+      "originator": "Burgh House / Heritage Open Days",
+      "url": "https://www.heritageopendays.org.uk/submission-event/burgh-house-tours.html",
+      "kind": "historical on-site tour listing",
+      "publishedDate": "2026-09-13",
+      "retrievedOn": "2026-09-21",
+      "access": "search-extract",
+      "summary": "13 September short house introductions: haberdashers, spa doctor, council/community use, local trust lease rescue.",
+      "notes": "On-site 10 minute tours, not neighbourhood route. 1946/47 community opening distinctions need later checking.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S35",
+      "title": "Walks",
+      "originator": "Highgate Society / Northern Heights Partnership",
+      "url": "https://highgatesociety.com/people/walks/",
+      "kind": "heritage trail index",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "summary": "Five-section 9-mile circuit and five-section 15-mile Heritage Trail. North Hill Challenge is separate architectural walk.",
+      "notes": "850 advertised points across two series is publisher’s claim, not entries inspected. No books purchased.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S36",
+      "title": "Highgate & Hampstead circular walk sample",
+      "originator": "Highgate Society",
+      "url": "https://highgatesociety.com/people/walks/circular-walk/",
+      "kind": "sample-page index",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "partial",
+      "summary": "Sample image exists but extracted page has no itinerary text.",
+      "notes": "No content inferred from unread image. Full booklet unavailable in this pass.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S37",
+      "title": "Hampstead Heritage Trail sample",
+      "originator": "Highgate Society",
+      "url": "https://highgatesociety.com/people/walks/hampstead-trail/",
+      "kind": "sample-page index",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "inaccessible",
+      "summary": "Followed from trail index.",
+      "notes": "Browser cache miss; full booklet not obtained.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S38",
+      "title": "North Hill Challenge / descriptions",
+      "originator": "Highgate Society",
+      "url": "https://www.heathandhampstead.org.uk/wp-content/uploads/2018/02/North-Hill-descriptions.pdf",
+      "kind": "public architectural walking booklet",
+      "publishedDate": "2011",
+      "retrievedOn": "2026-09-21",
+      "access": "partial",
+      "summary": "800-yard route: Highpoint to North Hill/Archway Road; 34 buildings arranged by period.",
+      "notes": "18-page PDF title/introduction and first entries read; 34-stop full inventory not extracted. Separate route away from today’s likely Heath connection.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S39",
+      "title": "History",
+      "originator": "Pam Cooper / Friends of Waterlow Park",
+      "url": "https://www.waterlowpark.org.uk/the-park/history/",
+      "kind": "community heritage",
+      "publishedDate": "2006",
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "summary": "Waterlow assembled neighbouring properties; gifted estate to LCC in 1889 after failed sale; restored park reopened 2005.",
+      "notes": "Excerpt from booklet; distinguish source perspective and current management.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S40",
+      "title": "Our busiest parks — Waterlow Park",
+      "originator": "Camden Council",
+      "url": "https://www.camden.gov.uk/our-historical-parks",
+      "kind": "current council facilities",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "search-extract",
+      "summary": "Waterlow Park 07:30–dusk; slopes, views, ponds, gardens, cafe, toilets.",
+      "notes": "Current official listing; not proof exact gate/route open today.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S41",
+      "title": "Our History",
+      "originator": "Lauderdale House",
+      "url": "https://www.lauderdalehouse.org.uk/about-us/our-history",
+      "kind": "custodian historical account",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "search-extract",
+      "summary": "1582 house; Waterlow leased it to St Bart’s, gave estate to LCC in 1889; 1963 fire and charity arts reopening in 1978.",
+      "notes": "House gives own institutional history and links fuller episode pages. Nell Gwyn story explicitly legend, not established event.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S42",
+      "title": "About Us",
+      "originator": "Lauderdale House",
+      "url": "https://www.lauderdalehouse.org.uk/about-us",
+      "kind": "current charity institution",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "search-extract",
+      "summary": "Arts/education charity; classes, exhibitions, outreach; refurbished in 2016.",
+      "notes": "Building operated separately from Camden park; exact current Monday house/cafe access not checked.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S43",
+      "title": "Nell Gwynn",
+      "originator": "Lauderdale House",
+      "url": "https://www.lauderdalehouse.org.uk/about-us/our-history/nell-gwynn",
+      "kind": "custodian uncertainty account",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "search-extract",
+      "summary": "Possible stay and famous window story; custodian says residence uncertain and window tale lacks evidence.",
+      "notes": "Useful explicit folklore boundary; no colourful incident narrated as fact.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    },
+    {
+      "id": "HA-HC-S44",
+      "title": "Pond Square drinking fountain planned",
+      "originator": "Highgate Society",
+      "url": "https://highgatesociety.com/pond-square-drinking-fountain-planned/",
+      "kind": "community planning notice",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "search-extract",
+      "summary": "Society consulted on fountain design/covenants.",
+      "notes": "Undated retrieved page; proposal does not establish installed fountain. Do not give it as landmark.",
+      "rightsNotes": "Discovery metadata and original short summary only. No permission to reproduce images or scripts established."
+    }
+  ],
+  "tours": [
+    {
+      "id": "HA-HC-T01",
+      "title": "Hampstead circular walk",
+      "originator": "National Trust",
+      "sourceIds": [
+        "HA-HC-S01"
+      ],
+      "status": "current",
+      "advertisedDuration": "50–75 minutes",
+      "advertisedDistance": "4 km",
+      "start": "Hampstead tube",
+      "end": "Hampstead tube",
+      "stopListCompleteness": "all named route places; 13 numbered direction stages",
+      "sequenceStatus": "published",
+      "stops": [
+        {
+          "publishedName": "Hampstead tube",
+          "placeId": "ha-hampstead-tube"
+        },
+        {
+          "publishedName": "Holly Hill",
+          "placeId": "ha-holly-hill"
+        },
+        {
+          "publishedName": "Holly Bush Hill",
+          "placeId": "ha-holly-bush-hill"
+        },
+        {
+          "publishedName": "Fenton House",
+          "placeId": "ha-fenton-house"
+        },
+        {
+          "publishedName": "Hampstead Observatory",
+          "placeId": "ha-hampstead-observatory"
+        },
+        {
+          "publishedName": "Whitestone Garden",
+          "placeId": "ha-whitestone-garden"
+        },
+        {
+          "publishedName": "Viaduct Pond",
+          "placeId": "ha-viaduct-pond"
+        },
+        {
+          "publishedName": "Lime Avenue",
+          "placeId": "ha-lime-avenue"
+        },
+        {
+          "publishedName": "Mixed Bathing Pond",
+          "placeId": "ha-mixed-bathing-pond"
+        },
+        {
+          "publishedName": "Hampstead No. 2 Pond",
+          "placeId": "ha-hampstead-no.-2-pond"
+        },
+        {
+          "publishedName": "Hampstead No. 1 Pond",
+          "placeId": "ha-hampstead-no.-1-pond"
+        },
+        {
+          "publishedName": "Keats House",
+          "placeId": "ha-keats-house"
+        },
+        {
+          "publishedName": "2 Willow Road",
+          "placeId": "ha-2-willow-road"
+        },
+        {
+          "publishedName": "Burgh House",
+          "placeId": "ha-burgh-house"
+        },
+        {
+          "publishedName": "Flask Walk",
+          "placeId": "ha-flask-walk"
+        }
+      ],
+      "publishedAngles": [
+        "Village/Heath architecture and nature"
+      ]
+    },
+    {
+      "id": "HA-HC-T02",
+      "title": "Parliament Hill and the Tumulus",
+      "originator": "City of London",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ],
+      "status": "current",
+      "advertisedDuration": null,
+      "advertisedDistance": "2.5 km",
+      "start": "Parliament Hill Cafe",
+      "end": "Parliament Hill Cafe",
+      "stopListCompleteness": "named route places",
+      "sequenceStatus": "published",
+      "stops": [
+        {
+          "publishedName": "Parliament Hill Cafe",
+          "placeId": "ha-parliament-hill-cafe"
+        },
+        {
+          "publishedName": "Highgate Ponds",
+          "placeId": "ha-highgate-ponds"
+        },
+        {
+          "publishedName": "Highgate Mens Bathing Pond",
+          "placeId": "ha-highgate-mens-bathing-pond"
+        },
+        {
+          "publishedName": "Tumulus",
+          "placeId": "ha-tumulus"
+        },
+        {
+          "publishedName": "Saxon Ditch",
+          "placeId": "ha-saxon-ditch"
+        },
+        {
+          "publishedName": "Parliament Hill",
+          "placeId": "ha-parliament-hill"
+        }
+      ],
+      "publishedAngles": [
+        "Reservoirs, ecology, uncertain folklore, ancient boundary"
+      ]
+    },
+    {
+      "id": "HA-HC-T03",
+      "title": "Heath Circuit",
+      "originator": "City of London",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ],
+      "status": "current",
+      "advertisedDuration": null,
+      "advertisedDistance": "9.7 km",
+      "start": "Parliament Hill Cafe",
+      "end": "Parliament Hill Cafe",
+      "stopListCompleteness": "named route places",
+      "sequenceStatus": "published",
+      "stops": [
+        {
+          "publishedName": "Parliament Hill Cafe",
+          "placeId": "ha-parliament-hill-cafe"
+        },
+        {
+          "publishedName": "Highgate Ponds",
+          "placeId": "ha-highgate-ponds"
+        },
+        {
+          "publishedName": "Millfield Lane",
+          "placeId": "ha-millfield-lane"
+        },
+        {
+          "publishedName": "Stock Pond",
+          "placeId": "ha-stock-pond"
+        },
+        {
+          "publishedName": "Goodison Fountain",
+          "placeId": "ha-goodison-fountain"
+        },
+        {
+          "publishedName": "Kenwood House",
+          "placeId": "ha-kenwood-house"
+        },
+        {
+          "publishedName": "Vale of Health estate road",
+          "placeId": "ha-vale-of-health-estate-road"
+        },
+        {
+          "publishedName": "Sandy Heath",
+          "placeId": "ha-sandy-heath"
+        },
+        {
+          "publishedName": "Heath Extension",
+          "placeId": "ha-heath-extension"
+        },
+        {
+          "publishedName": "Seven Sisters Ponds",
+          "placeId": "ha-seven-sisters-ponds"
+        },
+        {
+          "publishedName": "Golders Hill Park",
+          "placeId": "ha-golders-hill-park"
+        },
+        {
+          "publishedName": "Whitestone Pond",
+          "placeId": "ha-whitestone-pond"
+        },
+        {
+          "publishedName": "Pryors Field",
+          "placeId": "ha-pryors-field"
+        }
+      ],
+      "publishedAngles": [
+        "Infrastructure, landscape protection, plants and animals"
+      ]
+    },
+    {
+      "id": "HA-HC-T04",
+      "title": "Sandy Heath and the Pergola",
+      "originator": "City of London",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ],
+      "status": "current",
+      "advertisedDuration": null,
+      "advertisedDistance": "2.7 km",
+      "start": "Golders Hill Cafe",
+      "end": "Golders Hill Cafe",
+      "stopListCompleteness": "named route places",
+      "sequenceStatus": "published",
+      "stops": [
+        {
+          "publishedName": "Golders Hill Cafe",
+          "placeId": "ha-golders-hill-cafe"
+        },
+        {
+          "publishedName": "Golders Hill Park",
+          "placeId": "ha-golders-hill-park"
+        },
+        {
+          "publishedName": "West Heath",
+          "placeId": "ha-west-heath"
+        },
+        {
+          "publishedName": "Hill Garden and Pergola",
+          "placeId": "ha-hill-garden-and-pergola"
+        },
+        {
+          "publishedName": "Pitts Garden",
+          "placeId": "ha-pitts-garden"
+        },
+        {
+          "publishedName": "Sandy Heath",
+          "placeId": "ha-sandy-heath"
+        }
+      ],
+      "publishedAngles": [
+        "Garden design, extractive landscape"
+      ]
+    },
+    {
+      "id": "HA-HC-T05",
+      "title": "Heath Walks programme",
+      "originator": "Heath & Hampstead Society",
+      "sourceIds": [
+        "HA-HC-S04"
+      ],
+      "status": "current",
+      "advertisedDuration": "about 2 hours",
+      "advertisedDistance": null,
+      "start": "varies, usually Burgh House",
+      "end": null,
+      "stopListCompleteness": "starting points and themes only",
+      "sequenceStatus": "unknown",
+      "stops": [
+        {
+          "publishedName": "Burgh House",
+          "placeId": "ha-burgh-house"
+        },
+        {
+          "publishedName": "Parliament Hill Bandstand",
+          "placeId": "ha-parliament-hill-bandstand"
+        }
+      ],
+      "publishedAngles": [
+        "Conservation, trees, birds, ponds, climate adaptation"
+      ]
+    },
+    {
+      "id": "HA-HC-T06",
+      "title": "Hampstead Vanished and Imagined",
+      "originator": "Open House / Golden Key Academy",
+      "sourceIds": [
+        "HA-HC-S05"
+      ],
+      "status": "historical event 16 Sep 2026",
+      "advertisedDuration": "90 minutes",
+      "advertisedDistance": "about 1 mile",
+      "start": "Hampstead tube",
+      "end": "Hampstead Heath station",
+      "stopListCompleteness": "endpoints and themes only",
+      "sequenceStatus": "published",
+      "stops": [
+        {
+          "publishedName": "Hampstead tube",
+          "placeId": "ha-hampstead-tube"
+        },
+        {
+          "publishedName": "Hampstead Heath station",
+          "placeId": "ha-hampstead-heath-station"
+        }
+      ],
+      "publishedAngles": [
+        "Spa, railway fair crowds, refugee artists, change and imagination"
+      ]
+    },
+    {
+      "id": "HA-HC-T07",
+      "title": "From Peter Pan to the Time Machine",
+      "originator": "Open House / Golden Key Academy",
+      "sourceIds": [
+        "HA-HC-S06"
+      ],
+      "status": "historical event 20 Sep 2026",
+      "advertisedDuration": "75 minutes",
+      "advertisedDistance": null,
+      "start": "Hampstead tube",
+      "end": null,
+      "stopListCompleteness": "area and themes only",
+      "sequenceStatus": "unknown",
+      "stops": [
+        {
+          "publishedName": "Hampstead tube",
+          "placeId": "ha-hampstead-tube"
+        },
+        {
+          "publishedName": "Church Row",
+          "placeId": "ha-church-row"
+        },
+        {
+          "publishedName": "St Johns Churchyard",
+          "placeId": "ha-st-johns-churchyard"
+        }
+      ],
+      "publishedAngles": [
+        "Hydrogen, literature, reform, architecture, tree"
+      ]
+    },
+    {
+      "id": "HA-HC-T08",
+      "title": "Pergola walking tour",
+      "originator": "City / Open House",
+      "sourceIds": [
+        "HA-HC-S07",
+        "HA-HC-S28"
+      ],
+      "status": "current product; September festival dates past",
+      "advertisedDuration": "text 60 min / event slot 90 min",
+      "advertisedDistance": null,
+      "start": "Whitestone Pond flagpole",
+      "end": "Hill Garden and Pergola",
+      "stopListCompleteness": "endpoints only",
+      "sequenceStatus": "published",
+      "stops": [
+        {
+          "publishedName": "Whitestone Pond",
+          "placeId": "ha-whitestone-pond"
+        },
+        {
+          "publishedName": "Hill Garden and Pergola",
+          "placeId": "ha-hill-garden-and-pergola"
+        }
+      ],
+      "publishedAngles": [
+        "Leverhulme, Mawson, heritage conservation"
+      ]
+    },
+    {
+      "id": "HA-HC-T09",
+      "title": "North End & Hampstead Garden Suburb Prehistory",
+      "originator": "Calum Orr / Open House",
+      "sourceIds": [
+        "HA-HC-S08"
+      ],
+      "status": "2026 listing",
+      "advertisedDuration": null,
+      "advertisedDistance": null,
+      "start": "Whitestone Pond",
+      "end": "not explicit",
+      "stopListCompleteness": "named areas only",
+      "sequenceStatus": "unknown",
+      "stops": [
+        {
+          "publishedName": "Whitestone Pond",
+          "placeId": "ha-whitestone-pond"
+        },
+        {
+          "publishedName": "North End",
+          "placeId": "ha-north-end"
+        },
+        {
+          "publishedName": "Heath Extension",
+          "placeId": "ha-heath-extension"
+        },
+        {
+          "publishedName": "Hampstead Garden Suburb",
+          "placeId": "ha-hampstead-garden-suburb"
+        }
+      ],
+      "publishedAngles": [
+        "1907 landscape and town planning"
+      ]
+    },
+    {
+      "id": "HA-HC-T10",
+      "title": "Art Walks — Vanished and Imagined",
+      "originator": "Burgh House / Carol Seigel",
+      "sourceIds": [
+        "HA-HC-S09"
+      ],
+      "status": "historical event 22 Jul 2026",
+      "advertisedDuration": "90 minutes",
+      "advertisedDistance": null,
+      "start": "Burgh House",
+      "end": "Burgh House",
+      "stopListCompleteness": "endpoints and theme only",
+      "sequenceStatus": "unknown",
+      "stops": [
+        {
+          "publishedName": "Burgh House",
+          "placeId": "ha-burgh-house"
+        }
+      ],
+      "publishedAngles": [
+        "Changing, vanished and imagined Hampstead"
+      ]
+    },
+    {
+      "id": "HA-HC-T11",
+      "title": "Keats House ground-floor tour and digital room guide",
+      "originator": "Keats House",
+      "sourceIds": [
+        "HA-HC-S14"
+      ],
+      "status": "current",
+      "advertisedDuration": "about 30 minutes guided",
+      "advertisedDistance": null,
+      "start": "Keats House",
+      "end": "Keats House",
+      "stopListCompleteness": "on-site rooms not individually extracted",
+      "sequenceStatus": "unknown",
+      "stops": [
+        {
+          "publishedName": "Keats House",
+          "placeId": "ha-keats-house"
+        }
+      ],
+      "publishedAngles": [
+        "Life, poetry, objects and house"
+      ]
+    },
+    {
+      "id": "HA-HC-T12",
+      "title": "Burgh House introductory tours",
+      "originator": "Burgh House / Heritage Open Days",
+      "sourceIds": [
+        "HA-HC-S34"
+      ],
+      "status": "historical event 13 Sep 2026",
+      "advertisedDuration": "about 10 minutes",
+      "advertisedDistance": null,
+      "start": "Burgh House",
+      "end": "Burgh House",
+      "stopListCompleteness": "on-site single building",
+      "sequenceStatus": "unknown",
+      "stops": [
+        {
+          "publishedName": "Burgh House",
+          "placeId": "ha-burgh-house"
+        }
+      ],
+      "publishedAngles": [
+        "House occupations and community rescue"
+      ]
+    },
+    {
+      "id": "HA-HC-T13",
+      "title": "Northern Heights Circuit",
+      "originator": "Northern Heights Partnership",
+      "sourceIds": [
+        "HA-HC-S35",
+        "HA-HC-S36"
+      ],
+      "status": "publication available",
+      "advertisedDuration": "unknown",
+      "advertisedDistance": "9 miles / 5 sections",
+      "start": null,
+      "end": null,
+      "stopListCompleteness": "series overview only",
+      "sequenceStatus": "unknown",
+      "stops": [],
+      "publishedAngles": [
+        "Highgate, Hampstead and Heath heritage"
+      ]
+    },
+    {
+      "id": "HA-HC-T14",
+      "title": "Hampstead Heritage Trail",
+      "originator": "Northern Heights Partnership",
+      "sourceIds": [
+        "HA-HC-S35",
+        "HA-HC-S37"
+      ],
+      "status": "publication available",
+      "advertisedDuration": "unknown",
+      "advertisedDistance": "15 miles / 5 sections",
+      "start": "Camden Town",
+      "end": "Alexandra Palace",
+      "stopListCompleteness": "endpoints only",
+      "sequenceStatus": "unknown",
+      "stops": [],
+      "publishedAngles": [
+        "Regional heritage"
+      ]
+    },
+    {
+      "id": "HA-HC-T15",
+      "title": "North Hill Challenge",
+      "originator": "Highgate Society",
+      "sourceIds": [
+        "HA-HC-S38"
+      ],
+      "status": "2011 public booklet",
+      "advertisedDuration": "unknown",
+      "advertisedDistance": "800 yards",
+      "start": "Highpoint",
+      "end": "North Hill / Archway Road",
+      "stopListCompleteness": "first entries inspected; rest not extracted",
+      "sequenceStatus": "printed chronological order; walking cross-references",
+      "stops": [
+        {
+          "publishedName": "Highpoint",
+          "placeId": "ha-highpoint"
+        },
+        {
+          "publishedName": "41 North Hill",
+          "placeId": "ha-41-north-hill"
+        },
+        {
+          "publishedName": "60 North Hill",
+          "placeId": "ha-60-north-hill"
+        },
+        {
+          "publishedName": "57 North Hill",
+          "placeId": "ha-57-north-hill"
+        },
+        {
+          "publishedName": "47–49 North Hill",
+          "placeId": "ha-47–49-north-hill"
+        },
+        {
+          "publishedName": "18 North Hill",
+          "placeId": "ha-18-north-hill"
+        },
+        {
+          "publishedName": "82 North Hill",
+          "placeId": "ha-82-north-hill"
+        }
+      ],
+      "publishedAngles": [
+        "Reading generic period architecture across 34 buildings"
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "ha-hampstead-tube",
+      "names": [
+        "Hampstead tube"
+      ],
+      "tourIds": [
+        "HA-HC-T01",
+        "HA-HC-T06",
+        "HA-HC-T07"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S01",
+        "HA-HC-S05",
+        "HA-HC-S06"
+      ]
+    },
+    {
+      "id": "ha-holly-hill",
+      "names": [
+        "Holly Hill"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S01"
+      ]
+    },
+    {
+      "id": "ha-holly-bush-hill",
+      "names": [
+        "Holly Bush Hill"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S01"
+      ]
+    },
+    {
+      "id": "ha-fenton-house",
+      "names": [
+        "Fenton House"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S01"
+      ]
+    },
+    {
+      "id": "ha-hampstead-observatory",
+      "names": [
+        "Hampstead Observatory"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S01"
+      ]
+    },
+    {
+      "id": "ha-whitestone-garden",
+      "names": [
+        "Whitestone Garden"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S01"
+      ]
+    },
+    {
+      "id": "ha-viaduct-pond",
+      "names": [
+        "Viaduct Pond"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S01"
+      ]
+    },
+    {
+      "id": "ha-lime-avenue",
+      "names": [
+        "Lime Avenue"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S01"
+      ]
+    },
+    {
+      "id": "ha-mixed-bathing-pond",
+      "names": [
+        "Mixed Bathing Pond"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S01"
+      ]
+    },
+    {
+      "id": "ha-hampstead-no.-2-pond",
+      "names": [
+        "Hampstead No. 2 Pond"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S01"
+      ]
+    },
+    {
+      "id": "ha-hampstead-no.-1-pond",
+      "names": [
+        "Hampstead No. 1 Pond"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S01"
+      ]
+    },
+    {
+      "id": "ha-keats-house",
+      "names": [
+        "Keats House"
+      ],
+      "tourIds": [
+        "HA-HC-T01",
+        "HA-HC-T11"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S01",
+        "HA-HC-S14"
+      ]
+    },
+    {
+      "id": "ha-2-willow-road",
+      "names": [
+        "2 Willow Road"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S01"
+      ]
+    },
+    {
+      "id": "ha-burgh-house",
+      "names": [
+        "Burgh House"
+      ],
+      "tourIds": [
+        "HA-HC-T01",
+        "HA-HC-T05",
+        "HA-HC-T10",
+        "HA-HC-T12"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S01",
+        "HA-HC-S04",
+        "HA-HC-S09",
+        "HA-HC-S34"
+      ]
+    },
+    {
+      "id": "ha-flask-walk",
+      "names": [
+        "Flask Walk"
+      ],
+      "tourIds": [
+        "HA-HC-T01"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S01"
+      ]
+    },
+    {
+      "id": "ha-parliament-hill-cafe",
+      "names": [
+        "Parliament Hill Cafe"
+      ],
+      "tourIds": [
+        "HA-HC-T02",
+        "HA-HC-T03"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ]
+    },
+    {
+      "id": "ha-highgate-ponds",
+      "names": [
+        "Highgate Ponds"
+      ],
+      "tourIds": [
+        "HA-HC-T02",
+        "HA-HC-T03"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ]
+    },
+    {
+      "id": "ha-highgate-mens-bathing-pond",
+      "names": [
+        "Highgate Mens Bathing Pond"
+      ],
+      "tourIds": [
+        "HA-HC-T02"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ]
+    },
+    {
+      "id": "ha-tumulus",
+      "names": [
+        "Tumulus"
+      ],
+      "tourIds": [
+        "HA-HC-T02"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ]
+    },
+    {
+      "id": "ha-saxon-ditch",
+      "names": [
+        "Saxon Ditch"
+      ],
+      "tourIds": [
+        "HA-HC-T02"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ]
+    },
+    {
+      "id": "ha-parliament-hill",
+      "names": [
+        "Parliament Hill"
+      ],
+      "tourIds": [
+        "HA-HC-T02"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ]
+    },
+    {
+      "id": "ha-millfield-lane",
+      "names": [
+        "Millfield Lane"
+      ],
+      "tourIds": [
+        "HA-HC-T03"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ]
+    },
+    {
+      "id": "ha-stock-pond",
+      "names": [
+        "Stock Pond"
+      ],
+      "tourIds": [
+        "HA-HC-T03"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ]
+    },
+    {
+      "id": "ha-goodison-fountain",
+      "names": [
+        "Goodison Fountain"
+      ],
+      "tourIds": [
+        "HA-HC-T03"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ]
+    },
+    {
+      "id": "ha-kenwood-house",
+      "names": [
+        "Kenwood House"
+      ],
+      "tourIds": [
+        "HA-HC-T03"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ]
+    },
+    {
+      "id": "ha-vale-of-health-estate-road",
+      "names": [
+        "Vale of Health estate road"
+      ],
+      "tourIds": [
+        "HA-HC-T03"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ]
+    },
+    {
+      "id": "ha-sandy-heath",
+      "names": [
+        "Sandy Heath"
+      ],
+      "tourIds": [
+        "HA-HC-T03",
+        "HA-HC-T04"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ]
+    },
+    {
+      "id": "ha-heath-extension",
+      "names": [
+        "Heath Extension"
+      ],
+      "tourIds": [
+        "HA-HC-T03",
+        "HA-HC-T09"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03",
+        "HA-HC-S08"
+      ]
+    },
+    {
+      "id": "ha-seven-sisters-ponds",
+      "names": [
+        "Seven Sisters Ponds"
+      ],
+      "tourIds": [
+        "HA-HC-T03"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ]
+    },
+    {
+      "id": "ha-golders-hill-park",
+      "names": [
+        "Golders Hill Park"
+      ],
+      "tourIds": [
+        "HA-HC-T03",
+        "HA-HC-T04"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ]
+    },
+    {
+      "id": "ha-whitestone-pond",
+      "names": [
+        "Whitestone Pond"
+      ],
+      "tourIds": [
+        "HA-HC-T03",
+        "HA-HC-T08",
+        "HA-HC-T09"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03",
+        "HA-HC-S07",
+        "HA-HC-S08",
+        "HA-HC-S28"
+      ]
+    },
+    {
+      "id": "ha-pryors-field",
+      "names": [
+        "Pryors Field"
+      ],
+      "tourIds": [
+        "HA-HC-T03"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ]
+    },
+    {
+      "id": "ha-golders-hill-cafe",
+      "names": [
+        "Golders Hill Cafe"
+      ],
+      "tourIds": [
+        "HA-HC-T04"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ]
+    },
+    {
+      "id": "ha-west-heath",
+      "names": [
+        "West Heath"
+      ],
+      "tourIds": [
+        "HA-HC-T04"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ]
+    },
+    {
+      "id": "ha-hill-garden-and-pergola",
+      "names": [
+        "Hill Garden and Pergola"
+      ],
+      "tourIds": [
+        "HA-HC-T04",
+        "HA-HC-T08"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03",
+        "HA-HC-S07",
+        "HA-HC-S28"
+      ]
+    },
+    {
+      "id": "ha-pitts-garden",
+      "names": [
+        "Pitts Garden"
+      ],
+      "tourIds": [
+        "HA-HC-T04"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S03"
+      ]
+    },
+    {
+      "id": "ha-parliament-hill-bandstand",
+      "names": [
+        "Parliament Hill Bandstand"
+      ],
+      "tourIds": [
+        "HA-HC-T05"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S04"
+      ]
+    },
+    {
+      "id": "ha-hampstead-heath-station",
+      "names": [
+        "Hampstead Heath station"
+      ],
+      "tourIds": [
+        "HA-HC-T06"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S05"
+      ]
+    },
+    {
+      "id": "ha-church-row",
+      "names": [
+        "Church Row"
+      ],
+      "tourIds": [
+        "HA-HC-T07"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S06"
+      ]
+    },
+    {
+      "id": "ha-st-johns-churchyard",
+      "names": [
+        "St Johns Churchyard"
+      ],
+      "tourIds": [
+        "HA-HC-T07"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S06"
+      ]
+    },
+    {
+      "id": "ha-north-end",
+      "names": [
+        "North End"
+      ],
+      "tourIds": [
+        "HA-HC-T09"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S08"
+      ]
+    },
+    {
+      "id": "ha-hampstead-garden-suburb",
+      "names": [
+        "Hampstead Garden Suburb"
+      ],
+      "tourIds": [
+        "HA-HC-T09"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S08"
+      ]
+    },
+    {
+      "id": "ha-highpoint",
+      "names": [
+        "Highpoint"
+      ],
+      "tourIds": [
+        "HA-HC-T15"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S38"
+      ]
+    },
+    {
+      "id": "ha-41-north-hill",
+      "names": [
+        "41 North Hill"
+      ],
+      "tourIds": [
+        "HA-HC-T15"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S38"
+      ]
+    },
+    {
+      "id": "ha-60-north-hill",
+      "names": [
+        "60 North Hill"
+      ],
+      "tourIds": [
+        "HA-HC-T15"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S38"
+      ]
+    },
+    {
+      "id": "ha-57-north-hill",
+      "names": [
+        "57 North Hill"
+      ],
+      "tourIds": [
+        "HA-HC-T15"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S38"
+      ]
+    },
+    {
+      "id": "ha-47–49-north-hill",
+      "names": [
+        "47–49 North Hill"
+      ],
+      "tourIds": [
+        "HA-HC-T15"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S38"
+      ]
+    },
+    {
+      "id": "ha-18-north-hill",
+      "names": [
+        "18 North Hill"
+      ],
+      "tourIds": [
+        "HA-HC-T15"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S38"
+      ]
+    },
+    {
+      "id": "ha-82-north-hill",
+      "names": [
+        "82 North Hill"
+      ],
+      "tourIds": [
+        "HA-HC-T15"
+      ],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S38"
+      ]
+    },
+    {
+      "id": "ha-well-walk-fountain",
+      "names": [
+        "Well Walk fountain"
+      ],
+      "tourIds": [],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S23",
+        "HA-HC-S24"
+      ]
+    },
+    {
+      "id": "ha-holly-bush-pub",
+      "names": [
+        "Holly Bush pub"
+      ],
+      "tourIds": [],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S25",
+        "HA-HC-S26"
+      ]
+    },
+    {
+      "id": "ha-romneys-house",
+      "names": [
+        "Romneys House"
+      ],
+      "tourIds": [],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S27"
+      ]
+    },
+    {
+      "id": "ha-keats-community-library",
+      "names": [
+        "Keats Community Library"
+      ],
+      "tourIds": [],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S30"
+      ]
+    },
+    {
+      "id": "ha-waterlow-park",
+      "names": [
+        "Waterlow Park"
+      ],
+      "tourIds": [],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S39",
+        "HA-HC-S40"
+      ]
+    },
+    {
+      "id": "ha-lauderdale-house",
+      "names": [
+        "Lauderdale House"
+      ],
+      "tourIds": [],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S41",
+        "HA-HC-S42",
+        "HA-HC-S43"
+      ]
+    },
+    {
+      "id": "ha-pond-square",
+      "names": [
+        "Pond Square"
+      ],
+      "tourIds": [],
+      "coordinates": null,
+      "visitorStandingAreaStatus": "not verified",
+      "sourceIds": [
+        "HA-HC-S44"
+      ]
+    }
+  ],
+  "storyLeads": [
+    {
+      "title": "Well Walk charity and spa",
+      "sourceIds": [
+        "HA-HC-S20",
+        "HA-HC-S21",
+        "HA-HC-S23",
+        "HA-HC-S24"
+      ],
+      "opportunity": "Who gave what to whom; trustees sold spring water, present charity still funds poverty/health support.",
+      "unresolved": "Research period advert/music and exact monument date; do not invite drinking fountain water."
+    },
+    {
+      "title": "Goldfinger: which modernity gets protected?",
+      "sourceIds": [
+        "HA-HC-S11",
+        "HA-HC-S12",
+        "HA-HC-S13",
+        "HA-HC-S33"
+      ],
+      "opportunity": "Visible Georgian/modernist compromise, original opposition, later protection; domestic art fundraiser provides period-specific scene.",
+      "unresolved": "Resolve handover/acquisition year if needed; no invented quotes or interior observation from pavement."
+    },
+    {
+      "title": "Keats: two households behind one facade",
+      "sourceIds": [
+        "HA-HC-S14",
+        "HA-HC-S15",
+        "HA-HC-S16",
+        "HA-HC-S30"
+      ],
+      "opportunity": "Friendship/lodging and next-door romance anchored in building arrangement; house nearly lost and literary culture continues next door.",
+      "unresolved": "Monday closed; garden standing area cannot be assumed. Avoid merely listing famous poems."
+    },
+    {
+      "title": "The Heath was fought for twice",
+      "sourceIds": [
+        "HA-HC-S02",
+        "HA-HC-S29"
+      ],
+      "opportunity": "Development fight followed by disagreement about making the saved space into a tidy municipal park.",
+      "unresolved": "Primary Act/board records still needed for exact legal mechanism, price and dates; campaign voice is interested."
+    },
+    {
+      "title": "Holly Bush assembly world",
+      "sourceIds": [
+        "HA-HC-S25",
+        "HA-HC-S26",
+        "HA-HC-S27"
+      ],
+      "opportunity": "Art/lecture/catering assembly cluster with working pub today.",
+      "unresolved": "Distinguish stable/pub from Romney house; sources vary on lecture dates and rooms."
+    },
+    {
+      "title": "Constable observing weather",
+      "sourceIds": [
+        "HA-HC-S32"
+      ],
+      "opportunity": "Timed cloud studies turn ordinary sky into an active experiment; period-specific approach to atmosphere.",
+      "unresolved": "No precise local painting point established; one artwork/inscription better than generic genius biography."
+    },
+    {
+      "title": "Fairground pleasures",
+      "sourceIds": [
+        "HA-HC-S31"
+      ],
+      "opportunity": "Surviving 1915 newsreel catalogue offers amusements beside recruiting stands.",
+      "unresolved": "Film not watched; do not describe invented frames. Could be too sombre for desired light passage; other fair material worth research."
+    },
+    {
+      "title": "Waterlow: a private estate becomes a public garden",
+      "sourceIds": [
+        "HA-HC-S39",
+        "HA-HC-S40",
+        "HA-HC-S41",
+        "HA-HC-S42"
+      ],
+      "opportunity": "Waterlow assembled property, convalescence use, 1889 gift to LCC; park and arts centre now have different operators.",
+      "unresolved": "More rewarding than undefined communal endeavour; route cost depends actual Highgate start. No promised Monday interior."
+    },
+    {
+      "title": "Lauderdale: lively domestic layers",
+      "sourceIds": [
+        "HA-HC-S41",
+        "HA-HC-S42",
+        "HA-HC-S43"
+      ],
+      "opportunity": "Royal prisoner, religious dissent, convalescence, fire and arts rescue provide distinct choices.",
+      "unresolved": "Select one coherent thread; Nell Gwyn window story is folklore, not factual reconstruction."
+    },
+    {
+      "title": "Pond Square missing ponds",
+      "sourceIds": [
+        "HA-HC-S44"
+      ],
+      "opportunity": "Potential compact orientation/arrival space for Highgate.",
+      "unresolved": "Current fountain proposal is not installed landmark; origin and infilling still need primary/local heritage source."
+    },
+    {
+      "title": "Pergola conservation now",
+      "sourceIds": [
+        "HA-HC-S07",
+        "HA-HC-S28"
+      ],
+      "opportunity": "Opulent private landscape transformed into public heritage with real present conservation work.",
+      "unresolved": "Current partial closures and detour cost argue against mandatory inclusion today without route review."
+    }
+  ],
+  "searchLog": [
+    {
+      "family": "civic/heritage/community routes",
+      "queries": [
+        "Hampstead heritage trail walking map Camden council",
+        "site.cityoflondon.gov.uk Hampstead Heath walks trails",
+        "site.heathandhampstead.org.uk walks 2026",
+        "site.burghhouse.org.uk Art Walks",
+        "Highgate Society Northern Heights"
+      ],
+      "outcome": "City’s three routes, National Trust complete route, community thematic walks, Open House variants; then Highgate partnership series and North Hill excerpt."
+    },
+    {
+      "family": "specialist archives/history",
+      "queries": [
+        "Hampstead Wells charity 1698",
+        "National Trust Goldfinger construction",
+        "Keats House history",
+        "Hampstead fair BFI",
+        "Constable Hampstead cloud 1822 museum"
+      ],
+      "outcome": "Custodian histories, charity record, academic lead, archive film metadata and museum object interpretation; no claim of watching footage or full book reading."
+    },
+    {
+      "family": "current venues and operations",
+      "queries": [
+        "Fenton House opening 2026",
+        "2 Willow Road visit",
+        "Burgh House opening Monday",
+        "Keats Community Library",
+        "Holly Bush Hampstead",
+        "Hill Garden Pergola"
+      ],
+      "outcome": "Monday closures established or conservatively excluded; scaffolding/inaccessibility at Pergola, living charity and library links, optional pub."
+    },
+    {
+      "family": "owner-driven Highgate extension",
+      "queries": [
+        "Highgate Hampstead heritage routes",
+        "Highgate Society walks",
+        "Friends Waterlow history",
+        "Camden Waterlow Park",
+        "Lauderdale House history"
+      ],
+      "outcome": "Heritage programme overview and North Hill partial catalogue; current Waterlow hours/facilities and different house operator. Gate/toll/pond specifics remain follow-up."
+    }
+  ],
+  "gaps": [
+    "Highgate toll origin/Pond Square primary records not yet researched.",
+    "Northern Heights full booklets and sample image not read; North Hill only introductory subset.",
+    "Burgh live website text often empty; production visit content not fully extracted.",
+    "Keats garden Monday gate not established; no museum access dependency.",
+    "Heath precise standing points, paths and closures require route-specific check.",
+    "No film viewing, archival image analysis or original travel-time comparison in this discovery pass.",
+    "Current everyday life beyond institutions/pub remains thinner; route choice can focus a short local-business follow-up."
+  ],
+  "rejectedSources": [
+    {
+      "domain": "hampsteadrenovations.co.uk",
+      "reason": "SEO-style heritage pages include conflicting/unsafe fountain claims and unsupported confident reconstruction; not factual basis."
+    },
+    {
+      "domain": "hampstead-village.com",
+      "reason": "Generic guide material offers little over custodians and uncertain provenance; not retained as evidence."
+    }
+  ]
+}

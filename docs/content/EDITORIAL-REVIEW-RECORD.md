@@ -1,6 +1,6 @@
 # Editorial discussion and decision record
 
-Start here when resuming tour curation or reviewing how to make systematic guidelines. Updated 20 September 2026. This is the durable history of discussion, alternatives, corrections and outcomes; [TOUR-DESIGN-GUIDANCE](TOUR-DESIGN-GUIDANCE.md) contains the current working rules. Keep evidence and owner preference distinguishable.
+Start here when resuming tour curation or reviewing how to make systematic guidelines. Updated 21 September 2026. This is the durable history of discussion, alternatives, corrections and outcomes; [TOUR-DESIGN-GUIDANCE](TOUR-DESIGN-GUIDANCE.md) contains the current working rules. Keep evidence and owner preference distinguishable.
 
 ## How to maintain this record
 
@@ -323,6 +323,18 @@ Guidance revision 14 and writing brief v4 carry this direction forward. The exis
 
 **Process lesson:** setup/tool round trips made this session longer than its estimate. Keep physical cases narrow and improve operator preparation rather than enlarge the checklist. No phone-input comparison was needed after a usable headset sample. Future authoring guidance should still be informed by the ordinary walk, not the successful installation.
 
+### 29 Highgate station to Hampstead — a second complete new-area tour
+
+**21 September 2026. Owner direction:** build the other tour because Hampstead may be easier to do today; subsequently start at Highgate, clarified explicitly as **Highgate Underground station**. George remains preferred. The [complete authoring record](authoring/hampstead-2026-09-21/README.md) links the survey, selection, evidence, writer assignment, frozen draft, independent reviews, final edits and practical guide. The initial Hampstead loop was superseded; this is not permission to pack two full village tours into one.
+
+**Application, not an additional owner decision:** Room to breathe crosses the southern Heath from Highgate station via Pond Square and the ponds to Willow Road and Keats, with two short walking passages. The mapped finish is Hampstead Heath station, with a written Northern line return alternative. About 4.1 km and 85–100 minutes reflects actual walking and narration, not a strict inherited Clerkenwell duration cap. No owner approval of this title, exact selection or final prose is implied by his start-point choice.
+
+**Research/curation:** the public survey precedes own selection and distinguishes complete routes, partial listings and unread paid material. The oath's props and beer exception, elm water pipes, Coleridge's ceaseless conversation, a specific Moore sculpture and Huxter's attempt to share birdsong supply concrete detail. The final edit gives the named Keats ode a short explained image. Broader reflection stays attached to those details. Wells/Burgh, Kenwood, the Pergola and other detours remain documented alternatives, not discarded evidence or padding to meet a stop quota.
+
+**Independent review changed the delivery:** route imagery moved walking speech off Merton Lane, which lacks a continuous footway. A provider shortcut at East Heath Road was corrected to complete the zebra before following the pavement. The pond-island view was not sufficiently established, so the prose does not direct the visitor to find it. The original writer draft and final changes remain separate, allowing comparison after owner feedback. These are useful process observations; enjoyment, warmth and the actual place value remain unobserved.
+
+**Verification and next evidence:** all 161 tests, media checks and both builds pass; the [result record](../test-results/M2-hampstead-tour.md) keeps the silent new-area handoff separate from this evidence. Prior accepted EarFun/Spotify and review-close behavior is reused. The owner can simply take the walk; no mandatory per-stop notes or extra technical outing. Afterwards discuss what worked, current orientation and how both walking passages fitted, then extract general lessons alongside Clerkenwell rather than automatically polishing this route in isolation.
+
 ## Questions to carry into a later systematic review
 
 - Does context before anecdote usually improve the story, and when can an immediate intriguing detail work better?
@@ -352,5 +364,5 @@ Guidance revision 14 and writing brief v4 carry this direction forward. The exis
 | Pilot editorial choices | Railway-led opening preferred; warmer ending conditional on better writing; revised scripts and audio ready | Owner reaction to the revised comparisons, scenes, campaign and ending |
 | Two narrated legs in the next tour | Implemented in Clerkenwell; actual George timing and deterministic replays pass | How both passages launch and fit during ordinary use |
 | Authoring workshop | Sidi takes editorial lead; engineer prepares and executes | Record consequential choices and useful revisions; no permanent agent count assumed |
-| Next complete tour | Clerkenwell Working lives; eight stops, two passages, George; installed and cold-verified | Ordinary outing: enjoyment, practical feedback and how the walking passages launch |
+| Next complete tours | Clerkenwell Working lives installed; Highgate/Hampstead Room to breathe built with silent handoff pending; both George, two passages | Ordinary outings: enjoyment, practical feedback and how the walking passages launch |
 | Editorial values and AI provenance | AI provenance visible in the Clerkenwell introduction; values still developing | Develop the outlook from actual editorial choices and feedback |

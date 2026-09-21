@@ -28,3 +28,8 @@ The broader survey supports thematic variety without requiring a wholesale chang
 Discovery coverage is sufficient to develop the retained A/B versions. Scripts still require paragraph-level evidence and original prose. Routes need desk review, explicit public-exterior limitations and useful manual fallback; the first owner walks will supply actual enjoyment and current physical observations. No survey count substitutes for that evidence.
 
 Reuse begins with these structured records and the shared story/source inputs. The planned authoring database remains a later roadmap stage. Preserve these original branch records when normalising identities further so uncertainty and discovery provenance are not lost.
+
+## Subsequent areas
+
+- [Clerkenwell / Farringdon, 20 September](clerkenwell-2026-09-20/README.md): completed discovery and alternatives before the Working lives tour.
+- [Highgate / Hampstead, 21 September](hampstead-2026-09-21/README.md): operators/guides and heritage/current context before the Highgate-station crossing. Raw handoffs and consolidation limits remain explicit.

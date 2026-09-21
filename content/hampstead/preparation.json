@@ -1,0 +1,304 @@
+{
+  "preparedAt": "2026-09-21T09:50:05.946Z",
+  "inputs": [
+    {
+      "path": "content/hampstead/stories.json",
+      "sha256": "7d363209c1bf53408019fcfef5e1125c77f8d392c3470d5c95ddca0c39a0d39f"
+    },
+    {
+      "path": "content/hampstead/plan.json",
+      "sha256": "17881fdf9bb2880db44754d3002125a55d108ae6661a8fe8730e64f9870d0f4c"
+    }
+  ],
+  "mapId": "hampstead-0abcc26a600e0718",
+  "routeEvidence": "docs/content/authoring/hampstead-2026-09-21/ROUTE-RECON.md",
+  "synthesis": {
+    "provider": "Kokoro",
+    "voice": "bm_george",
+    "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+    "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+    "dtype": "fp32",
+    "device": "cpu",
+    "speed": 1,
+    "kokoroJs": "1.2.1",
+    "paragraphGapSeconds": 0.25,
+    "loudnessLufs": -19,
+    "encoding": "AAC mono 24 kHz 64 kb/s",
+    "rendererRevision": 2
+  },
+  "stationaryAudioSeconds": 441.6,
+  "walkingAudioSeconds": 117.8,
+  "budgets": [
+    {
+      "id": "walking-conversation",
+      "afterStopIndex": 1,
+      "startRouteIndex": 121,
+      "endRouteIndex": 122,
+      "navigationRouteIndex": 130,
+      "fastWalkingMetresPerSecond": 1.6666666666666665,
+      "marginSeconds": 15,
+      "maximumAudioSeconds": 60,
+      "metresAfterLatestLaunch": 128.93986784334862,
+      "availableSeconds": 77.36392070600918,
+      "audioSeconds": 50.2
+    },
+    {
+      "id": "keeping-the-heath",
+      "afterStopIndex": 2,
+      "startRouteIndex": 138,
+      "endRouteIndex": 140,
+      "navigationRouteIndex": 152,
+      "fastWalkingMetresPerSecond": 1.6666666666666665,
+      "marginSeconds": 15,
+      "maximumAudioSeconds": 90,
+      "metresAfterLatestLaunch": 269.6084756427644,
+      "availableSeconds": 161.76508538565867,
+      "audioSeconds": 67.6
+    }
+  ],
+  "recordings": [
+    {
+      "id": "highgate-station",
+      "key": "highgate-hampstead-room-highgate-station",
+      "bytes": 444630,
+      "md5": "0ef89b9656cbc090734c6406ce6d6280",
+      "durationSeconds": 52.1,
+      "sha256": "f7a1090d5fc1f6c6135ed80be65a71543d5a59f1071e1d5109554d343e3b4d46",
+      "textSha256": "998ea2314e8a3d79f4fac05b67c563b517af007861a3be7bdc8d0498b025e42f",
+      "cache": "artifacts/hampstead-audio/26a19aaa7e8d64364ee5fc591493e7fb79dc3c4775ae3bd4eff9d51995d176ad",
+      "words": 132,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "Welcome to Highgate. Our walk takes us up into the village, across Hampstead Heath, and on to two homes where people made room for unusually creative lives. There will be stories along the way, and stretches to enjoy the Heath in peace.",
+          "durationSeconds": 15.525
+        },
+        {
+          "paragraph": 1,
+          "text": "Highgate's first railway station opened in eighteen sixty-seven, well before the Tube platforms used today. The village goes back much further, with inns that found a rather more entertaining way of welcoming visitors.",
+          "durationSeconds": 14.925
+        },
+        {
+          "paragraph": 2,
+          "text": "From the station exit, turn right to the nearby pedestrian signals and cross Archway Road. On the far side, turn right briefly, then left into Southwood Lane. Follow its pavement up to the village. At Highgate High Street, use the zebra, then enter Pond Square by the northern public steps. Our next story is in the square.",
+          "durationSeconds": 21.1
+        }
+      ],
+      "verification": "Complete text/chunks, mono 24 kHz, duration and full decode checked; subjective listening separate."
+    },
+    {
+      "id": "pond-square",
+      "key": "highgate-hampstead-room-pond-square",
+      "bytes": 902042,
+      "md5": "300ee0d4433a54476ffd9601f74ee3a6",
+      "durationSeconds": 105.7,
+      "sha256": "432c87ffcdbbc9ba9c52980e82b023a5fd60f6114146d427c4fff38818496e75",
+      "textSha256": "d5ab3b3976fe6a9289de123266245bd3bc28de844625e634dc90e9c5323ed3e1",
+      "cache": "artifacts/hampstead-audio/e584f8f4f9bdd451544ba37d42f913fe63ec4feeb112e9996cc02c60d0a1cbcc",
+      "words": 274,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "Pond Square once held the village's drinking-water ponds. They were filled in during the nineteenth century, leaving this space among the houses. Water was one practical necessity in a place that served travellers: Highgate grew around a road through the Bishop of London's land, with a toll payable to the bishop and inns catering to the passing trade.",
+          "durationSeconds": 21.75
+        },
+        {
+          "paragraph": 1,
+          "text": "The inns also offered something less essential: the Highgate oath. Picture the ceremony in a satirical print from seventeen ninety-six. Outside the Horns Tavern, a landlord holds an open book. His customer prepares to swear, while a boy raises a pole topped with horns. A woman appears with a huge foaming tankard, and the onlookers are plainly enjoying themselves.",
+          "durationSeconds": 23.425
+        },
+        {
+          "paragraph": 2,
+          "text": "The visitor must promise to choose white bread over brown, unless he likes brown better. And strong beer over weak, unless he prefers the weak. The joke was already being recorded as an old custom in the seventeen-nineties. It is an unusually considerate oath: all that formality, and you can still have the beer you wanted.",
+          "durationSeconds": 20.7
+        },
+        {
+          "paragraph": 3,
+          "text": "Leave Pond Square by its southern end, turn right along South Grove, then left down Highgate West Hill. Use the eastern pavement. At Merton Lane, continue just beyond its mouth to the central refuge. Cross when each half is clear, then return a few steps uphill to enter Merton Lane.",
+          "durationSeconds": 19.175
+        },
+        {
+          "paragraph": 4,
+          "text": "Follow the lane downhill, watching for vehicles, then turn left on Millfield Lane. After about two hundred metres, turn right onto the main Heath path between the ponds. Our next pause is roughly a hundred and seventy metres along that path. The short walking story starts after you leave the lane.",
+          "durationSeconds": 19.575
+        }
+      ],
+      "verification": "Complete text/chunks, mono 24 kHz, duration and full decode checked; subjective listening separate."
+    },
+    {
+      "id": "highgate-ponds",
+      "key": "highgate-hampstead-room-highgate-ponds",
+      "bytes": 786271,
+      "md5": "ec1f6da293fd5acadd5a939ad445c72b",
+      "durationSeconds": 91.1,
+      "sha256": "f88810ae2d122f513e500b9c3be4c8e45cbf6dd0008c20a7f4b56fc88ae8776a",
+      "textSha256": "49d433832e103abd8efd1e9f9dbe5fe648d76aeedf0404b8f16019ab46ef4d6e",
+      "cache": "artifacts/hampstead-audio/52e9c9342a758f4ebbc7eed48348805fa8fea2adafda5f83d502a809589c82ea",
+      "words": 242,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "We are between the Model Boating Pond and the Men's Bathing Pond, part of the Highgate chain. Their leafy setting can disguise a practical origin. The chain was made by damming a stream fed by springs near Kenwood, storing water for London. Each pond connects to the next through pipes or streams: a linked piece of engineering.",
+          "durationSeconds": 20.725
+        },
+        {
+          "paragraph": 1,
+          "text": "The Hampstead Water Company carried its supply into north London through wooden pipes. Imagine the work hidden inside that phrase: elm trunks with holes bored along their length, turning timber into channels for water. A tree could become part of the city's plumbing. These reservoirs belonged to a system reaching well beyond the people who lived beside them.",
+          "durationSeconds": 22.15
+        },
+        {
+          "paragraph": 2,
+          "text": "The eastern stream eventually joins its western neighbour to form the Fleet, the river now buried beneath London on its way to the Thames. Up here, its beginnings remain open to the sky. The ponds no longer supply drinking water. Some are designated for swimming; others offer wildlife habitat and the quieter pleasure of watching the water. Infrastructure has become somewhere people come for a break.",
+          "durationSeconds": 24.725
+        },
+        {
+          "paragraph": 3,
+          "text": "Continue west on this main path. After about five hundred metres, take the left-hand path towards the Hampstead ponds. Our next stop is two Willow Road, across the Heath. Several paths are unnamed, so use the saved directions and route line at the forks. At East Heath Road, use the zebra just west of Downshire Hill before continuing to Willow Road.",
+          "durationSeconds": 22.75
+        }
+      ],
+      "verification": "Complete text/chunks, mono 24 kHz, duration and full decode checked; subjective listening separate."
+    },
+    {
+      "id": "willow-road",
+      "key": "highgate-hampstead-room-willow-road",
+      "bytes": 840685,
+      "md5": "68869076020d329ddcd711dd03a24197",
+      "durationSeconds": 97.1,
+      "sha256": "0b27ec6e3ca4ae0f3c3f0f3fb1f6224c1e03eb7553f09793b9b486c69fcab72f",
+      "textSha256": "a7dfb447070b6b598ae1ab715ae93eca8cac373a9e7b1beb2700178f719fb59e",
+      "cache": "artifacts/hampstead-audio/3694af60cbbdd0ef0e71b7b716e6277df039e09a6362fa8a88d717cf1f67733c",
+      "words": 243,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "The long windows and red brick at two Willow Road belong to a home completed in nineteen thirty-nine for architect Ernő Goldfinger and his wife Ursula. It is one of three houses built around a concrete frame. Goldfinger argued that their proportions belonged in the same tradition as Hampstead's Georgian buildings. Modern construction, he thought, could be a good neighbour.",
+          "durationSeconds": 23.925
+        },
+        {
+          "paragraph": 1,
+          "text": "A local preservation campaigner, Henry Brooke, strongly disagreed. He feared the design would damage the neighbourhood's character. Only a few years later, the Goldfingers were using their new family home for wartime fundraising.",
+          "durationSeconds": 15.225
+        },
+        {
+          "paragraph": 2,
+          "text": "Picture the rooms in nineteen forty-two, given over to roughly seventy works of art, many offered at auction to help people in the Soviet Union facing the Nazi invasion. Among the works was a small head by the sculptor Henry Moore: carved elm, its hollows crossed by taut strings. The Goldfingers bought it themselves. This was a home where experimental art could be looked at, argued over, and put to practical use.",
+          "durationSeconds": 25.025
+        },
+        {
+          "paragraph": 3,
+          "text": "Eventually the house itself became something to preserve. When it passed to the National Trust, the Heritage Secretary involved was Peter Brooke, son of its most vocal opponent. Within one family, yesterday's threat to Hampstead had become part of its heritage.",
+          "durationSeconds": 17.175
+        },
+        {
+          "paragraph": 4,
+          "text": "Return along Willow Road, turn right down Downshire Hill, then left into Keats Grove. The next stop is outside Keats House's green garden gate, about a hundred and fifty metres along. We stay on the public pavement.",
+          "durationSeconds": 14.75
+        }
+      ],
+      "verification": "Complete text/chunks, mono 24 kHz, duration and full decode checked; subjective listening separate."
+    },
+    {
+      "id": "keats-house",
+      "key": "highgate-hampstead-room-keats-house",
+      "bytes": 811695,
+      "md5": "402964fcc43559f0a23c75862dba885f",
+      "durationSeconds": 95.6,
+      "sha256": "c21eb3b78228baaaf76b16d425ef0df0bc116ed47bd1141da056ed654d2393e6",
+      "textSha256": "327035f6cea3b19f0c92b6ff532182bb518a67477a5fdf5d550965fc9d51a0b2",
+      "cache": "artifacts/hampstead-audio/188d84e392b785692488a371f851e3272a21ad46453ce7d134a42261ae482275",
+      "words": 244,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "Here is the home of John Keats, the younger poet from our walking conversation. The building began as two homes designed to look like one, sharing a garden. Keats came to live with his friend Charles Brown in eighteen eighteen, and fell in love with his neighbour Fanny Brawne.",
+          "durationSeconds": 17.375
+        },
+        {
+          "paragraph": 1,
+          "text": "That garden helped inspire Ode to a Nightingale. In the poem, the speaker wants to follow the bird away from human weariness, on the 'viewless wings of Poesy': the invisible wings of poetry.",
+          "durationSeconds": 13.175
+        },
+        {
+          "paragraph": 2,
+          "text": "Nearly two centuries later, the poem helped another artist respond to a very personal problem. In nineteen ninety-seven, Martin Huxter was in France with his mother. He could hear nightingales singing. Her hearing aids could not pick them up.",
+          "durationSeconds": 15.7
+        },
+        {
+          "paragraph": 3,
+          "text": "Huxter began trying to convey the song through drawing, using materials including charcoal and ink. His work has come here as The Nightingale Suite, an exhibition running this autumn. The starting point was that small gap between two people in the same place: one hearing something wonderful, the other unable to share it.",
+          "durationSeconds": 20.9
+        },
+        {
+          "paragraph": 4,
+          "text": "It is a generous ambition for a picture, or a poem: to pass something on that another person might otherwise miss. Our walk ends here, with that wish. Thank you for coming along.",
+          "durationSeconds": 11.8
+        },
+        {
+          "paragraph": 5,
+          "text": "You can end the tour now. Hampstead Heath station is about four minutes away: continue along Keats Grove, then turn right into South End Road. The saved directions also give you the longer return to Hampstead Underground.",
+          "durationSeconds": 15.4
+        }
+      ],
+      "verification": "Complete text/chunks, mono 24 kHz, duration and full decode checked; subjective listening separate."
+    },
+    {
+      "id": "walking-conversation",
+      "key": "highgate-hampstead-room-walking-conversation",
+      "bytes": 433357,
+      "md5": "40c3d34ecc259ce310c9fa124a16d0c5",
+      "durationSeconds": 50.2,
+      "sha256": "03528e7bc0d662cf56bc3b61f4d33b9fbc11c5ce1e4000436b0bc7e072c3a5f6",
+      "textSha256": "53e3adfb29380cb6adc7161188d01384af9c02b0eb3bcfcdc4282208e331a9b6",
+      "cache": "artifacts/hampstead-audio/0bc8a937434f97c9be9d4c6e277d80123dd267435ad51e35d7c1c9db2eff23e7",
+      "words": 122,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "Elsewhere on this Heath, near Kenwood, John Keats met Samuel Taylor Coleridge by chance in April eighteen nineteen. Coleridge, the celebrated older poet who wrote The Ancient Mariner, was walking with one of Keats's former medical teachers. The young Keats joined them.",
+          "durationSeconds": 17.55
+        },
+        {
+          "paragraph": 1,
+          "text": "For nearly two miles, Coleridge walked along at what Keats called an alderman-after-dinner pace: a city dignitary taking his time, with a remarkably busy mind. The conversation ran through nightingales, poetry, dreams and consciousness, then out to the kraken, a giant sea monster, mermaids and ghosts.",
+          "durationSeconds": 20.025
+        },
+        {
+          "paragraph": 2,
+          "text": "Keats's amused report ends with a simple observation. He could hear Coleridge talking as he approached. He could hear him as he went away. And he had heard him all the time in between.",
+          "durationSeconds": 12.125
+        }
+      ],
+      "verification": "Complete text/chunks, mono 24 kHz, duration and full decode checked; subjective listening separate."
+    },
+    {
+      "id": "keeping-the-heath",
+      "key": "highgate-hampstead-room-keeping-the-heath",
+      "bytes": 573411,
+      "md5": "d9f4f962e6bf3ddb29f8b564b144a3e7",
+      "durationSeconds": 67.6,
+      "sha256": "997863dd9862afc6235c923f900fa997aec60b20a7711a75bfc0879e969391a0",
+      "textSha256": "fd9b527d4db770e72b808fd8cb95191b9a1947b8608abeb463ca252cd0988fea",
+      "cache": "artifacts/hampstead-audio/0d40b176c95707606f3ff3e020bda62fb4c130cb0231e473dbcc8e48b4594d55",
+      "words": 166,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "Keeping the Heath open has involved both buying land and looking after it. An eighteen seventy-one Act secured the original Heath for London's Metropolitan Board of Works; later purchases enlarged it. Today the City of London Corporation, the authority for the Square Mile, holds and manages the Heath as a charity. Its staff and conservation volunteers help decide how that space is kept.",
+          "durationSeconds": 25.375
+        },
+        {
+          "paragraph": 1,
+          "text": "As you walk, notice the changes between open ground, scrub and trees. Much of the woodland spread as farming and grazing declined. Keeping some areas open now means checking that growth. Elsewhere, fallen wood can stay, providing habitat as it decays. A tidy-looking landscape would lose some of what makes this one valuable.",
+          "durationSeconds": 21.4
+        },
+        {
+          "paragraph": 2,
+          "text": "A conservation experiment this September used sheep on an anthill meadow elsewhere on the Heath. The mounds make machines awkward; grazing offers a gentler way to manage the vegetation. Ecologists compare the site before and after. Even leaving room for a walk can involve deciding who should cut the grass.",
+          "durationSeconds": 20.25
+        }
+      ],
+      "verification": "Complete text/chunks, mono 24 kHz, duration and full decode checked; subjective listening separate."
+    }
+  ]
+}

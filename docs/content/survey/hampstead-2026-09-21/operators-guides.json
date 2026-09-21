@@ -1,0 +1,4814 @@
+{
+  "schemaVersion": 1,
+  "area": "Hampstead village and adjacent Heath",
+  "retrievedOn": "2026-09-21",
+  "scope": {
+    "core": "Hampstead Underground, ChurchRow/Holly/Fenton/Admiral, Well/Flask/Burgh, Keats/Downshire/Willow, southern and western Heath margins; extended 21 Sep toHighgatevillage and connecting eastern/southernHeath paths",
+    "nearby": "Belsize/Isokon/MallStudios, GoldersGreen/NorthEnd, Kenwood/eastern ponds, West Hampstead",
+    "role": "Public operators, guides, books and audio survey",
+    "status": "Complete bounded discovery handoff; route/theme not selected",
+    "limits": "No book chapter, paid script, audio listening, physical access verification, booking or purchase. Catalogue entries describe public disclosure, not historical corroboration.",
+    "sequencePolicy": "Numbers denote selected prose order unless source explicitly numbered; null is unknown. Place aliases not forcibly merged.",
+    "counts": {
+      "resources": 23,
+      "sources": 23,
+      "sourceSpecificPlaces": 115
+    },
+    "crossRoleDeduplication": [
+      "National Trust circular route and City of London Heath trails belong to heritage/current lane.",
+      "Burgh House women-artist events and current exhibitions belong to heritage/current lane."
+    ],
+    "extension": "Owner requested a Highgate start during survey. Added village/start gateways and bounded east-to-west Heath connection resources; station versus Pond Square start awaitingowner clarification at handoff. Original Hampstead station loop is superseded as an assumption; no route selected."
+  },
+  "sources": [
+    {
+      "id": "H-OG-S-londonwalks",
+      "title": "Hampstead Village Walking Tour",
+      "originator": "London Walks",
+      "url": "https://www.walks.com/our-walks/old-hampstead-village-walking-tour/",
+      "kind": "operator",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "family": "operator",
+      "relationshipNotes": "Unnumbered selected highlights, not an exact route. Kenwood, Keats House, Burgh House and Pergola appear as other places to visit; do not silently add them as guaranteed stops. Historical anecdotes require checking.",
+      "summary": "Village lanes, former residents and heath scenery. Page separates several optional further attractions from the advertised walk.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-jones-guided",
+      "title": "Hidden Hampstead highlights",
+      "originator": "Richard Jones / Discovery Tours and Events",
+      "url": "https://www.london-walking-tours.co.uk/hidden_hampstead_highlights.htm",
+      "kind": "operator",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "family": "operator",
+      "relationshipNotes": "Same originator as the distinct free route below. House identities are kept at source specificity; folklore is not corroborated.",
+      "summary": "Creative residents, police history, plague tradition, sky painting and changes from marsh to fashionable settlement.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-english",
+      "title": "Hampstead Village and Heath",
+      "originator": "English Walks",
+      "url": "https://www.english-walks.com/walk-hampstead-village-and-heath.html",
+      "kind": "operator",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "family": "operator",
+      "relationshipNotes": "Bullet display order is not explicitly promised as walking order. Page links 2019 dates; present operation unknown. Several historical/date assertions appear unreliable and must not supply narration.",
+      "summary": "Language-learning walk with coffee and a vocabulary discussion; mixes spa growth, buildings and famous residents.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-spies",
+      "title": "Hampstead Spies — Kim Philby & His Oxbridge Comrades",
+      "originator": "Stewart Purvis / London Walks",
+      "url": "https://www.walks.com/our-walks/the-hampstead-spies/",
+      "kind": "operator",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "family": "operator",
+      "relationshipNotes": "No named house addresses or complete stops disclosed. Secret garden identity unresolved. Same platform as village tour, materially different work. Nearby Belsize/West Hampstead context, not a compact route for us.",
+      "summary": "Chronological spy-home route based on declassified MI 5 files; Cambridge and Oxford recruitment links, plus writers of espionage.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-jones-free",
+      "title": "Self-guided Hampstead Walking Tour",
+      "originator": "Richard Jones / Discovery Tours and Events",
+      "url": "https://www.london-walking-tours.co.uk/free-tours/hampstead-walking-tour.htm",
+      "kind": "self-guided",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "family": "self-guided",
+      "relationshipNotes": "Full text read. Steep rough-path directions are dated discovery material, not usable access verification. Conflicting 1871/1872 protection dates and doubtful biographical dates require independent checks. Same originator as guided highlights.",
+      "summary": "Dickens-related places, landscape protection and literary retreat; pushes well north of the village.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-lady",
+      "title": "A self-guided walk in Hampstead",
+      "originator": "A Lady in London",
+      "url": "https://www.aladyinlondon.com/2017/04/self-guided-walk-hampstead-london.html",
+      "kind": "self-guided",
+      "publishedDate": "2017-04 (URL month; exact date unstated)",
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "family": "self-guided",
+      "relationshipNotes": "Full page read; its two map links not followed. Private-looking spaces and passage access need fresh checks. A scenic tour can supply rhythm without claiming each doorway deserves a story.",
+      "summary": "Visual discoveries, little lanes, gardens, independent shops and optional museum/pub pauses.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-voicemap",
+      "title": "London’s Hilltop Haven: A Hampstead Walking Tour",
+      "originator": "Brian Cookson / VoiceMap",
+      "url": "https://voicemap.me/tour/london/london-s-hilltop-haven-a-hampstead-walking-tour",
+      "kind": "audio-preview",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "partial",
+      "family": "audio-preview",
+      "relationshipNotes": "48 advertised locations; only highlights and public sample read. Locations/map link returned an error; no purchase or audio playback. Optional refreshment list is not treated as stop list. Marketing historical claims need verification.",
+      "summary": "Spa origins, wealthy residents and liberal/artistic identity. Public sample 13 centres Catholic refugees and St Mary’s, then the watch house.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-wiki",
+      "title": "Hampstead Heath, read aloud",
+      "originator": "Mike Blank",
+      "url": "https://hampstead.wiki/",
+      "kind": "self-guided-audio",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "family": "self-guided-audio",
+      "relationshipNotes": "Route downloads explicitly join stops in straight lines, not walkable geometry. No audio played; no source-level corroboration. Timings, access and historical claims not adopted. Much of route outside today’s compact scope.",
+      "summary": "Broad walking gazetteer; mixes village buildings, green-space institutions and water/leisure.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-foot-literary",
+      "title": "Literary London Self-Guided Tour — Hampstead",
+      "originator": "Stephen / Free Tours by Foot",
+      "url": "https://freetoursbyfoot.com/literary-london-self-guided-tour/",
+      "kind": "self-guided",
+      "publishedDate": "Updated 2025-01-31",
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "family": "self-guided",
+      "relationshipNotes": "Long comparison route; timing unvalidated. Several apparent factual errors and conflated house/person labels: independently check every chosen story, especially 2 Willow/Bond anecdote. Names here record locations, not endorsement of supplied biographies.",
+      "summary": "Author-house sequence with brief work introductions.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-artists-audio",
+      "title": "Historical Hampstead’s Gentle Nest of Artists: A Belsize Park Walk",
+      "originator": "Paul French / VoiceMap",
+      "url": "https://voicemap.me/tour/london/historical-hampstead-s-gentle-nest-of-artists-a-belsize-park-walk",
+      "kind": "audio-preview",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "partial",
+      "family": "audio-preview",
+      "relationshipNotes": "Nearby comparison,34 advertised locations; selected public overview only. Unnamed Moore/Mondrian/Nevinson houses not guessed; full paid route not read.",
+      "summary": "International artistic networks, inexpensive studios, displacement and a Chinese cultural community.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-modernist",
+      "title": "A Modernist Sanctuary: Hampstead in the 1930 s",
+      "originator": "Jewish Renaissance / Monica Bohm-Duchen; later Marilyn Greene",
+      "url": "https://www.jewishrenaissance.org.uk/events/hampstead-in-the-1930s-walking-tour",
+      "kind": "specialist-event",
+      "publishedDate": "Event 2026-06-10",
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "family": "specialist-event",
+      "relationshipNotes": "June 10 historical event and Sep 30 repeat have matching advertised sites, different named guides; one related programme, not independent confirmation. Stop order withheld.",
+      "summary": "Jewish refugees and British collaborators shaping art, architecture and an artistic community.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-uhlman",
+      "title": "Art and Refugees in Hampstead",
+      "originator": "Marilyn Greene / Footprints of London; Insiders/Outsiders partner",
+      "url": "https://www.eventbrite.co.uk/e/walking-tour-diverse-london-art-and-refugees-in-hampstead-tickets-1617848040039",
+      "kind": "specialist-event",
+      "publishedDate": "Event 2025-11-03",
+      "retrievedOn": "2026-09-21",
+      "access": "search-extracted",
+      "family": "specialist-event",
+      "relationshipNotes": "Eventbrite organiser listing read via search extraction; partner opening failed but its full search excerpt matched. Same event, not two tours. Exact house number not provided in this listing;47 must come from separate research.",
+      "summary": "Fred and Diana Uhlman’s efforts to help refugee artists and their local network; café appears in the guide’s image caption.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-openhouse",
+      "title": "Hampstead Vanished and Imagined",
+      "originator": "Open House / Golden Key Academy guide",
+      "url": "https://programme.openhouse.org.uk/listings/13711",
+      "kind": "specialist-event",
+      "publishedDate": "Event 2026-09-16",
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "family": "specialist-event",
+      "relationshipNotes": "No intermediate itinerary or guide name disclosed in inspected page. Historical Sep 16 event within 12–20 Sep festival; no ongoing tour inferred.",
+      "summary": "Connects spa visitors, railway-enabled bank-holiday crowds and 20 th-century refugees; responds to Burgh House exhibition.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-vam",
+      "title": "Hampstead Walking Tour with Christine Lalumia",
+      "originator": "Christine Lalumia / V&A Academy",
+      "url": "https://www.vam.ac.uk/event/oKZe998oje/p26005-hampstead-walking-tour-with-christine-lalumia",
+      "kind": "specialist-event",
+      "publishedDate": "Event 2026-04-24",
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "family": "specialist-event",
+      "relationshipNotes": "No complete site itinerary. Programme-download link failed. Named architects are not silently converted to specific building stops. Page warns of uneven/narrow pavements.",
+      "summary": "Compares homes from Regency and Victorian eras with modernism; artists and émigrés supply social context.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-duncan",
+      "title": "Walking London — Highgate to Hampstead",
+      "originator": "Andrew Duncan",
+      "url": "https://andrewduncan.co.uk/walking-london",
+      "kind": "book-listing",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "partial",
+      "family": "book-listing",
+      "relationshipNotes": "ISBN 9781913618254. Introduction/contents and product description inspected; local chapter not read. Do not infer its stops or sequence.",
+      "summary": "Author’s contents list confirms an area route within a 30-walk book; description integrates practical, historical and contemporary material.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-metro",
+      "title": "London’s Hidden Walks Volume 1 — Hampstead",
+      "originator": "Stephen Millar / Metro Publications",
+      "url": "https://metropublications.com/pages/copy-of-walking-maps",
+      "kind": "book-map-index",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "partial",
+      "family": "book-map-index",
+      "relationshipNotes": "Download link 31 returned tool error; alternate index omitted usable links. No map labels or stop numbers extracted, no chapter read. Do not count later blogs citing Millar as independent corroboration.",
+      "summary": "Publisher map index identifies a Hampstead route in Volume 1.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-fathers",
+      "title": "Green London:14 Walks Exploring London’s Green Spaces and Pathways",
+      "originator": "David Fathers / Bloomsbury Conway",
+      "url": "https://www.bloomsbury.com/uk/green-london-9781844866144/",
+      "kind": "book-listing",
+      "publishedDate": "2025-03-13",
+      "retrievedOn": "2026-09-21",
+      "access": "partial",
+      "family": "book-listing",
+      "relationshipNotes": "ISBN 9781844866144;160 pages. Product description and contents only; sample images not inspected. Potential landscape reference, not evidence for any local stop.",
+      "summary": "Illustrated guide treats linked green spaces rather than house biographies.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-davies",
+      "title": "The Heath: My Year on Hampstead Heath",
+      "originator": "Hunter Davies / Bloomsbury Apollo",
+      "url": "https://www.bloomsbury.com/uk/heath-9781838934811/",
+      "kind": "book-listing",
+      "publishedDate": "2021-11-11 (listed ebook)",
+      "retrievedOn": "2026-09-21",
+      "access": "partial",
+      "family": "book-listing",
+      "relationshipNotes": "ISBN 9781838934811; edition listed 2021-11-11. Blurb only; book not read. Listed places are advertised coverage, no prescribed order or present-day operating evidence.",
+      "summary": "Publisher describes a personal year of walks and interviews with everyday users, rather than a fixed itinerary.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-highgate-jones",
+      "title": "Highgate Village self-guided walk",
+      "originator": "Richard Jones / Discovery Tours and Events",
+      "url": "https://www.london-walking-tours.co.uk/free-tours/highgate-village-walk.htm",
+      "kind": "self-guided",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "family": "self-guided",
+      "relationshipNotes": "Old route, no present access validation. Published Merton Lane→Millfield Lane segment useful as connection lead. Cemetery tour rules are dated and not adopted; interior visit is optional, separate from public Swain’s Lane. Holly Lodge access requires fresh verification.",
+      "summary": "Dickens/Coleridge, landscape and charitable estates; public streets connect village to eastern Heath edge.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-highgate-lady",
+      "title": "Highgate walk and map",
+      "originator": "A Lady in London",
+      "url": "https://www.aladyinlondon.com/2022/09/highgate-walk.html",
+      "kind": "self-guided",
+      "publishedDate": "2022-09 (URL month)",
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "family": "self-guided",
+      "relationshipNotes": "Cemetery interior explicitly optional. Swain’s Lane reachesHeath viaHighgate Road; exact crossings and gradients need independent verification. Northern wood loop and southern station tail exceed starter segment purpose.",
+      "summary": "Woods, village streets, public park, cemetery exterior and Heath viewpoint; a possible southern crossing approach.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-highgate-londonwalks",
+      "title": "Highgate Village — a place apart",
+      "originator": "London Walks / Corinna or Matthew",
+      "url": "https://www.walks.com/our-walks/highgate-village-a-place-apart/",
+      "kind": "operator",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "search-extracted",
+      "family": "operator",
+      "relationshipNotes": "Kenwood and Highgate Cemetery are explicitly after-walk suggestions, not included visits. Names of famous residents do not establish any particular house stop. Public overview read via search extraction; no full itinerary.",
+      "summary": "Village character, views and notable inhabitants; publicly named stops sparse.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-highgate-swc",
+      "title": "Highgate to Hampstead Walk 257",
+      "originator": "Saturday Walkers Club",
+      "url": "https://www.walkingclub.org.uk/walk/highgate-to-hampstead/",
+      "kind": "walking-guide",
+      "publishedDate": null,
+      "retrievedOn": "2026-09-21",
+      "access": "partial",
+      "family": "walking-guide",
+      "relationshipNotes": "Read overview and indexed PDF excerpt; no geometry imported. Starts north via woods/East Finchley/Garden Suburb, so not a directHighgate–Hampstead crossing. End-section shortcuts described, current times not adopted.",
+      "summary": "Long Northern Heights green-space circuit; useful evidence that a title is not a suitable compact route.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    },
+    {
+      "id": "H-OG-S-highgate-ring",
+      "title": "Ring 2 Walk 3: Highgate to West Hampstead",
+      "originator": "trainwalkslondon",
+      "url": "https://trainwalkslondon.wordpress.com/2025/02/16/ring-2-walk-3-highgate-walk-to-west-hampstead/",
+      "kind": "walking-blog",
+      "publishedDate": "2025-02-16",
+      "retrievedOn": "2026-09-21",
+      "access": "opened",
+      "family": "walking-blog",
+      "relationshipNotes": "Personal value judgments and historical claims unverified. Private estate passages, gates and vague pond instructions cannot be reused as verified directions. Public cemetery exterior does not establish free grave access.",
+      "summary": "Long cross-Heath route with art and housing; useful pond→Kenwood→Viaduct→Well connection.",
+      "rightsNotes": "Discovery metadata and original short summaries only; no script, image, audio or route geometry reuse licence established."
+    }
+  ],
+  "tours": [
+    {
+      "id": "H-OG-T-londonwalks",
+      "title": "Hampstead Village Walking Tour",
+      "sourceIds": [
+        "H-OG-S-londonwalks"
+      ],
+      "originator": "London Walks",
+      "status": "Public page accessible; a particular departure is not verified",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "village",
+        "artists",
+        "landscape"
+      ],
+      "duration": "2 hours in prose; Sunday schedule 2.5 hours",
+      "distance": null,
+      "start": "Hampstead Underground",
+      "end": "Church Row",
+      "stopListCompleteness": "Selected public highlights; order unknown",
+      "stops": [
+        {
+          "name": "Church Row",
+          "placeId": "H-OG-P-church-row",
+          "sequence": null,
+          "sourceId": "H-OG-S-londonwalks",
+          "role": "published point"
+        },
+        {
+          "name": "Fenton House",
+          "placeId": "H-OG-P-fenton-house",
+          "sequence": null,
+          "sourceId": "H-OG-S-londonwalks",
+          "role": "published point"
+        },
+        {
+          "name": "Admiral’s House",
+          "placeId": "H-OG-P-admiral-s-house",
+          "sequence": null,
+          "sourceId": "H-OG-S-londonwalks",
+          "role": "published point"
+        },
+        {
+          "name": "Well Walk",
+          "placeId": "H-OG-P-well-walk",
+          "sequence": null,
+          "sourceId": "H-OG-S-londonwalks",
+          "role": "published point"
+        },
+        {
+          "name": "Flask Walk",
+          "placeId": "H-OG-P-flask-walk",
+          "sequence": null,
+          "sourceId": "H-OG-S-londonwalks",
+          "role": "published point"
+        },
+        {
+          "name": "Hampstead Heath",
+          "placeId": "H-OG-P-hampstead-heath",
+          "sequence": null,
+          "sourceId": "H-OG-S-londonwalks",
+          "role": "published point"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Village lanes, former residents and heath scenery. Page separates several optional further attractions from the advertised walk.",
+          "sourceIds": [
+            "H-OG-S-londonwalks"
+          ],
+          "placeIds": [
+            "H-OG-P-church-row",
+            "H-OG-P-fenton-house",
+            "H-OG-P-admiral-s-house",
+            "H-OG-P-well-walk",
+            "H-OG-P-flask-walk",
+            "H-OG-P-hampstead-heath"
+          ],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "Unnumbered selected highlights, not an exact route. Kenwood, Keats House, Burgh House and Pergola appear as other places to visit; do not silently add them as guaranteed stops. Historical anecdotes require checking.",
+      "relatedUrls": []
+    },
+    {
+      "id": "H-OG-T-jones-guided",
+      "title": "Hidden Hampstead highlights",
+      "sourceIds": [
+        "H-OG-S-jones-guided"
+      ],
+      "originator": "Richard Jones / Discovery Tours and Events",
+      "status": "Public page accessible; a particular departure is not verified",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "literature",
+        "art",
+        "village"
+      ],
+      "duration": null,
+      "distance": null,
+      "start": null,
+      "end": null,
+      "stopListCompleteness": "Narrative order of published highlights; not a full numbered itinerary",
+      "stops": [
+        {
+          "name": "Church Row",
+          "placeId": "H-OG-P-church-row",
+          "sequence": 1,
+          "sourceId": "H-OG-S-jones-guided",
+          "role": "published point"
+        },
+        {
+          "name": "St John-at-Hampstead",
+          "placeId": "H-OG-P-st-john-at-hampstead",
+          "sequence": 2,
+          "sourceId": "H-OG-S-jones-guided",
+          "role": "published point"
+        },
+        {
+          "name": "Benham’s Place",
+          "placeId": "H-OG-P-benham-s-place",
+          "sequence": 3,
+          "sourceId": "H-OG-S-jones-guided",
+          "role": "published point"
+        },
+        {
+          "name": "Watch House, Holly Place",
+          "placeId": "H-OG-P-watch-house-holly-place",
+          "sequence": 4,
+          "sourceId": "H-OG-S-jones-guided",
+          "role": "published point"
+        },
+        {
+          "name": "Stevenson house, Mount Vernon",
+          "placeId": "H-OG-P-stevenson-house-mount-vernon",
+          "sequence": 5,
+          "sourceId": "H-OG-S-jones-guided",
+          "role": "published point"
+        },
+        {
+          "name": "Holly Bush",
+          "placeId": "H-OG-P-holly-bush",
+          "sequence": 6,
+          "sourceId": "H-OG-S-jones-guided",
+          "role": "published point"
+        },
+        {
+          "name": "Admiral’s House",
+          "placeId": "H-OG-P-admiral-s-house",
+          "sequence": 7,
+          "sourceId": "H-OG-S-jones-guided",
+          "role": "published point"
+        },
+        {
+          "name": "Admiral’s Walk",
+          "placeId": "H-OG-P-admiral-s-walk",
+          "sequence": 8,
+          "sourceId": "H-OG-S-jones-guided",
+          "role": "published point"
+        },
+        {
+          "name": "Judges’ Walk",
+          "placeId": "H-OG-P-judges-walk",
+          "sequence": 9,
+          "sourceId": "H-OG-S-jones-guided",
+          "role": "published point"
+        },
+        {
+          "name": "Whitestone Pond",
+          "placeId": "H-OG-P-whitestone-pond",
+          "sequence": 10,
+          "sourceId": "H-OG-S-jones-guided",
+          "role": "published point"
+        },
+        {
+          "name": "Vale of Health",
+          "placeId": "H-OG-P-vale-of-health",
+          "sequence": 11,
+          "sourceId": "H-OG-S-jones-guided",
+          "role": "published point"
+        },
+        {
+          "name": "Byron Villas",
+          "placeId": "H-OG-P-byron-villas",
+          "sequence": 12,
+          "sourceId": "H-OG-S-jones-guided",
+          "role": "published point"
+        },
+        {
+          "name": "Cannon Lane lock-up",
+          "placeId": "H-OG-P-cannon-lane-lock-up",
+          "sequence": 13,
+          "sourceId": "H-OG-S-jones-guided",
+          "role": "published point"
+        },
+        {
+          "name": "Well Walk",
+          "placeId": "H-OG-P-well-walk",
+          "sequence": 14,
+          "sourceId": "H-OG-S-jones-guided",
+          "role": "published point"
+        },
+        {
+          "name": "Marie Stopes house",
+          "placeId": "H-OG-P-marie-stopes-house",
+          "sequence": 15,
+          "sourceId": "H-OG-S-jones-guided",
+          "role": "published point"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Creative residents, police history, plague tradition, sky painting and changes from marsh to fashionable settlement.",
+          "sourceIds": [
+            "H-OG-S-jones-guided"
+          ],
+          "placeIds": [
+            "H-OG-P-church-row",
+            "H-OG-P-st-john-at-hampstead",
+            "H-OG-P-benham-s-place",
+            "H-OG-P-watch-house-holly-place",
+            "H-OG-P-stevenson-house-mount-vernon",
+            "H-OG-P-holly-bush",
+            "H-OG-P-admiral-s-house",
+            "H-OG-P-admiral-s-walk",
+            "H-OG-P-judges-walk",
+            "H-OG-P-whitestone-pond",
+            "H-OG-P-vale-of-health",
+            "H-OG-P-byron-villas",
+            "H-OG-P-cannon-lane-lock-up",
+            "H-OG-P-well-walk",
+            "H-OG-P-marie-stopes-house"
+          ],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "Same originator as the distinct free route below. House identities are kept at source specificity; folklore is not corroborated.",
+      "relatedUrls": []
+    },
+    {
+      "id": "H-OG-T-english",
+      "title": "Hampstead Village and Heath",
+      "sourceIds": [
+        "H-OG-S-english"
+      ],
+      "originator": "English Walks",
+      "status": "Undated tour page with old booking navigation; current operation unknown",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "language-learning",
+        "village"
+      ],
+      "duration": null,
+      "distance": null,
+      "start": "Hampstead Underground",
+      "end": null,
+      "stopListCompleteness": "Selected public highlights; order unknown",
+      "stops": [
+        {
+          "name": "Church Row",
+          "placeId": "H-OG-P-church-row",
+          "sequence": null,
+          "sourceId": "H-OG-S-english",
+          "role": "published point"
+        },
+        {
+          "name": "St John-at-Hampstead",
+          "placeId": "H-OG-P-st-john-at-hampstead",
+          "sequence": null,
+          "sourceId": "H-OG-S-english",
+          "role": "published point"
+        },
+        {
+          "name": "Mount Vernon hospital",
+          "placeId": "H-OG-P-mount-vernon-hospital",
+          "sequence": null,
+          "sourceId": "H-OG-S-english",
+          "role": "published point"
+        },
+        {
+          "name": "Holly Bush",
+          "placeId": "H-OG-P-holly-bush",
+          "sequence": null,
+          "sourceId": "H-OG-S-english",
+          "role": "published point"
+        },
+        {
+          "name": "Fenton House",
+          "placeId": "H-OG-P-fenton-house",
+          "sequence": null,
+          "sourceId": "H-OG-S-english",
+          "role": "published point"
+        },
+        {
+          "name": "Hampstead Observatory",
+          "placeId": "H-OG-P-hampstead-observatory",
+          "sequence": null,
+          "sourceId": "H-OG-S-english",
+          "role": "published point"
+        },
+        {
+          "name": "Admiral’s House",
+          "placeId": "H-OG-P-admiral-s-house",
+          "sequence": null,
+          "sourceId": "H-OG-S-english",
+          "role": "published point"
+        },
+        {
+          "name": "The Flask",
+          "placeId": "H-OG-P-the-flask",
+          "sequence": null,
+          "sourceId": "H-OG-S-english",
+          "role": "published point"
+        },
+        {
+          "name": "Burgh House",
+          "placeId": "H-OG-P-burgh-house",
+          "sequence": null,
+          "sourceId": "H-OG-S-english",
+          "role": "published point"
+        },
+        {
+          "name": "Keats House",
+          "placeId": "H-OG-P-keats-house",
+          "sequence": null,
+          "sourceId": "H-OG-S-english",
+          "role": "published point"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Language-learning walk with coffee and a vocabulary discussion; mixes spa growth, buildings and famous residents.",
+          "sourceIds": [
+            "H-OG-S-english"
+          ],
+          "placeIds": [
+            "H-OG-P-church-row",
+            "H-OG-P-st-john-at-hampstead",
+            "H-OG-P-mount-vernon-hospital",
+            "H-OG-P-holly-bush",
+            "H-OG-P-fenton-house",
+            "H-OG-P-hampstead-observatory",
+            "H-OG-P-admiral-s-house",
+            "H-OG-P-the-flask",
+            "H-OG-P-burgh-house",
+            "H-OG-P-keats-house"
+          ],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "Bullet display order is not explicitly promised as walking order. Page links 2019 dates; present operation unknown. Several historical/date assertions appear unreliable and must not supply narration.",
+      "relatedUrls": []
+    },
+    {
+      "id": "H-OG-T-spies",
+      "title": "Hampstead Spies — Kim Philby & His Oxbridge Comrades",
+      "sourceIds": [
+        "H-OG-S-spies"
+      ],
+      "originator": "Stewart Purvis / London Walks",
+      "status": "Public page accessible; a particular departure is not verified",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "espionage",
+        "politics"
+      ],
+      "duration": "2 hours advertised",
+      "distance": null,
+      "start": "Belsize Park Underground",
+      "end": "Hampstead Underground",
+      "stopListCompleteness": "Selected public highlights; order unknown",
+      "stops": [],
+      "stories": [
+        {
+          "summary": "Chronological spy-home route based on declassified MI 5 files; Cambridge and Oxford recruitment links, plus writers of espionage.",
+          "sourceIds": [
+            "H-OG-S-spies"
+          ],
+          "placeIds": [],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "No named house addresses or complete stops disclosed. Secret garden identity unresolved. Same platform as village tour, materially different work. Nearby Belsize/West Hampstead context, not a compact route for us.",
+      "relatedUrls": []
+    },
+    {
+      "id": "H-OG-T-jones-free",
+      "title": "Self-guided Hampstead Walking Tour",
+      "sourceIds": [
+        "H-OG-S-jones-free"
+      ],
+      "originator": "Richard Jones / Discovery Tours and Events",
+      "status": "Public page accessible; a particular departure is not verified",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "literature",
+        "Heath-preservation"
+      ],
+      "duration": "2 hours advertised",
+      "distance": null,
+      "start": "Hampstead Underground",
+      "end": "Spaniards Inn; Kenwood optional",
+      "stopListCompleteness": "Complete principal narrative points in source order; minor navigation landmarks omitted",
+      "stops": [
+        {
+          "name": "86 Hampstead High Street",
+          "placeId": "H-OG-P-86-hampstead-high-street",
+          "sequence": 1,
+          "sourceId": "H-OG-S-jones-free",
+          "role": "published point"
+        },
+        {
+          "name": "40 Well Walk",
+          "placeId": "H-OG-P-40-well-walk",
+          "sequence": 2,
+          "sourceId": "H-OG-S-jones-free",
+          "role": "published point"
+        },
+        {
+          "name": "Chalybeate Well",
+          "placeId": "H-OG-P-chalybeate-well",
+          "sequence": 3,
+          "sourceId": "H-OG-S-jones-free",
+          "role": "published point"
+        },
+        {
+          "name": "Viaduct Pond",
+          "placeId": "H-OG-P-viaduct-pond",
+          "sequence": 4,
+          "sourceId": "H-OG-S-jones-free",
+          "role": "published point"
+        },
+        {
+          "name": "Vale of Health",
+          "placeId": "H-OG-P-vale-of-health",
+          "sequence": 5,
+          "sourceId": "H-OG-S-jones-free",
+          "role": "published point"
+        },
+        {
+          "name": "Byron Villas",
+          "placeId": "H-OG-P-byron-villas",
+          "sequence": 6,
+          "sourceId": "H-OG-S-jones-free",
+          "role": "published point"
+        },
+        {
+          "name": "Leigh Hunt cottage site",
+          "placeId": "H-OG-P-leigh-hunt-cottage-site",
+          "sequence": 7,
+          "sourceId": "H-OG-S-jones-free",
+          "role": "published point"
+        },
+        {
+          "name": "Jack Straw’s Castle",
+          "placeId": "H-OG-P-jack-straw-s-castle",
+          "sequence": 8,
+          "sourceId": "H-OG-S-jones-free",
+          "role": "published point"
+        },
+        {
+          "name": "John Gurney Hoare plaque",
+          "placeId": "H-OG-P-john-gurney-hoare-plaque",
+          "sequence": 9,
+          "sourceId": "H-OG-S-jones-free",
+          "role": "published point"
+        },
+        {
+          "name": "Old Wyldes",
+          "placeId": "H-OG-P-old-wyldes",
+          "sequence": 10,
+          "sourceId": "H-OG-S-jones-free",
+          "role": "published point"
+        },
+        {
+          "name": "Spaniards Inn",
+          "placeId": "H-OG-P-spaniards-inn",
+          "sequence": 11,
+          "sourceId": "H-OG-S-jones-free",
+          "role": "published point"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Dickens-related places, landscape protection and literary retreat; pushes well north of the village.",
+          "sourceIds": [
+            "H-OG-S-jones-free"
+          ],
+          "placeIds": [
+            "H-OG-P-86-hampstead-high-street",
+            "H-OG-P-40-well-walk",
+            "H-OG-P-chalybeate-well",
+            "H-OG-P-viaduct-pond",
+            "H-OG-P-vale-of-health",
+            "H-OG-P-byron-villas",
+            "H-OG-P-leigh-hunt-cottage-site",
+            "H-OG-P-jack-straw-s-castle",
+            "H-OG-P-john-gurney-hoare-plaque",
+            "H-OG-P-old-wyldes",
+            "H-OG-P-spaniards-inn"
+          ],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "Full text read. Steep rough-path directions are dated discovery material, not usable access verification. Conflicting 1871/1872 protection dates and doubtful biographical dates require independent checks. Same originator as guided highlights.",
+      "relatedUrls": []
+    },
+    {
+      "id": "H-OG-T-lady",
+      "title": "A self-guided walk in Hampstead",
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "originator": "A Lady in London",
+      "status": "Public page accessible; a particular departure is not verified",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "streetscape",
+        "food",
+        "houses"
+      ],
+      "duration": "2 hours",
+      "distance": null,
+      "start": "Hampstead Underground",
+      "end": "Hampstead Underground",
+      "stopListCompleteness": "Principal named points in full-text route order; repeated connectors and minor streets omitted",
+      "stops": [
+        {
+          "name": "Hampstead Square",
+          "placeId": "H-OG-P-hampstead-square",
+          "sequence": 1,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Elm Row",
+          "placeId": "H-OG-P-elm-row",
+          "sequence": 2,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "New End",
+          "placeId": "H-OG-P-new-end",
+          "sequence": 3,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Burgh House",
+          "placeId": "H-OG-P-burgh-house",
+          "sequence": 4,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Flask Walk",
+          "placeId": "H-OG-P-flask-walk",
+          "sequence": 5,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Back Lane",
+          "placeId": "H-OG-P-back-lane",
+          "sequence": 6,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Streatley Place",
+          "placeId": "H-OG-P-streatley-place",
+          "sequence": 7,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Mansfield Place",
+          "placeId": "H-OG-P-mansfield-place",
+          "sequence": 8,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Boades Mews",
+          "placeId": "H-OG-P-boades-mews",
+          "sequence": 9,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Well Walk",
+          "placeId": "H-OG-P-well-walk",
+          "sequence": 10,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Gainsborough Gardens",
+          "placeId": "H-OG-P-gainsborough-gardens",
+          "sequence": 11,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Keats House",
+          "placeId": "H-OG-P-keats-house",
+          "sequence": 12,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Shepherds Walk",
+          "placeId": "H-OG-P-shepherds-walk",
+          "sequence": 13,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Spring Path",
+          "placeId": "H-OG-P-spring-path",
+          "sequence": 14,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Prince Arthur Road",
+          "placeId": "H-OG-P-prince-arthur-road",
+          "sequence": 15,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Perrin’s Court",
+          "placeId": "H-OG-P-perrin-s-court",
+          "sequence": 16,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Oriel Place",
+          "placeId": "H-OG-P-oriel-place",
+          "sequence": 17,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Church Row",
+          "placeId": "H-OG-P-church-row",
+          "sequence": 18,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "St Mary’s, Holly Walk",
+          "placeId": "H-OG-P-st-mary-s-holly-walk",
+          "sequence": 19,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Mount Vernon",
+          "placeId": "H-OG-P-mount-vernon",
+          "sequence": 20,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Admiral’s House",
+          "placeId": "H-OG-P-admiral-s-house",
+          "sequence": 21,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Fenton House",
+          "placeId": "H-OG-P-fenton-house",
+          "sequence": 22,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Holly Bush",
+          "placeId": "H-OG-P-holly-bush",
+          "sequence": 23,
+          "sourceId": "H-OG-S-lady",
+          "role": "published point"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Visual discoveries, little lanes, gardens, independent shops and optional museum/pub pauses.",
+          "sourceIds": [
+            "H-OG-S-lady"
+          ],
+          "placeIds": [
+            "H-OG-P-hampstead-square",
+            "H-OG-P-elm-row",
+            "H-OG-P-new-end",
+            "H-OG-P-burgh-house",
+            "H-OG-P-flask-walk",
+            "H-OG-P-back-lane",
+            "H-OG-P-streatley-place",
+            "H-OG-P-mansfield-place",
+            "H-OG-P-boades-mews",
+            "H-OG-P-well-walk",
+            "H-OG-P-gainsborough-gardens",
+            "H-OG-P-keats-house",
+            "H-OG-P-shepherds-walk",
+            "H-OG-P-spring-path",
+            "H-OG-P-prince-arthur-road",
+            "H-OG-P-perrin-s-court",
+            "H-OG-P-oriel-place",
+            "H-OG-P-church-row",
+            "H-OG-P-st-mary-s-holly-walk",
+            "H-OG-P-mount-vernon",
+            "H-OG-P-admiral-s-house",
+            "H-OG-P-fenton-house",
+            "H-OG-P-holly-bush"
+          ],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "Full page read; its two map links not followed. Private-looking spaces and passage access need fresh checks. A scenic tour can supply rhythm without claiming each doorway deserves a story.",
+      "relatedUrls": []
+    },
+    {
+      "id": "H-OG-T-voicemap",
+      "title": "London’s Hilltop Haven: A Hampstead Walking Tour",
+      "sourceIds": [
+        "H-OG-S-voicemap"
+      ],
+      "originator": "Brian Cookson / VoiceMap",
+      "status": "Public page accessible; a particular departure is not verified",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "politics",
+        "heritage",
+        "literature"
+      ],
+      "duration": "90 minutes",
+      "distance": "1.7 mi headline /3 km route overview",
+      "start": "Hampstead Underground",
+      "end": "Flask Walk",
+      "stopListCompleteness": "Selected public highlights; order unknown",
+      "stops": [
+        {
+          "name": "Everyman Hampstead",
+          "placeId": "H-OG-P-everyman-hampstead",
+          "sequence": null,
+          "sourceId": "H-OG-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "Church Row",
+          "placeId": "H-OG-P-church-row",
+          "sequence": null,
+          "sourceId": "H-OG-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "St John-at-Hampstead",
+          "placeId": "H-OG-P-st-john-at-hampstead",
+          "sequence": null,
+          "sourceId": "H-OG-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "Constable tomb",
+          "placeId": "H-OG-P-constable-tomb",
+          "sequence": null,
+          "sourceId": "H-OG-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "St Mary’s, Holly Walk",
+          "placeId": "H-OG-P-st-mary-s-holly-walk",
+          "sequence": null,
+          "sourceId": "H-OG-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "Watch House, Holly Place",
+          "placeId": "H-OG-P-watch-house-holly-place",
+          "sequence": null,
+          "sourceId": "H-OG-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "Admiral’s House",
+          "placeId": "H-OG-P-admiral-s-house",
+          "sequence": null,
+          "sourceId": "H-OG-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "Chalybeate Well",
+          "placeId": "H-OG-P-chalybeate-well",
+          "sequence": null,
+          "sourceId": "H-OG-S-voicemap",
+          "role": "published point"
+        },
+        {
+          "name": "Flask Walk",
+          "placeId": "H-OG-P-flask-walk",
+          "sequence": null,
+          "sourceId": "H-OG-S-voicemap",
+          "role": "published point"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Spa origins, wealthy residents and liberal/artistic identity. Public sample 13 centres Catholic refugees and St Mary’s, then the watch house.",
+          "sourceIds": [
+            "H-OG-S-voicemap"
+          ],
+          "placeIds": [
+            "H-OG-P-everyman-hampstead",
+            "H-OG-P-church-row",
+            "H-OG-P-st-john-at-hampstead",
+            "H-OG-P-constable-tomb",
+            "H-OG-P-st-mary-s-holly-walk",
+            "H-OG-P-watch-house-holly-place",
+            "H-OG-P-admiral-s-house",
+            "H-OG-P-chalybeate-well",
+            "H-OG-P-flask-walk"
+          ],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "48 advertised locations; only highlights and public sample read. Locations/map link returned an error; no purchase or audio playback. Optional refreshment list is not treated as stop list. Marketing historical claims need verification.",
+      "relatedUrls": []
+    },
+    {
+      "id": "H-OG-T-wiki",
+      "title": "Hampstead Heath, read aloud",
+      "sourceIds": [
+        "H-OG-S-wiki"
+      ],
+      "originator": "Mike Blank",
+      "status": "Public page accessible; a particular departure is not verified",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "village",
+        "landscape",
+        "water"
+      ],
+      "duration": "Over 3 hours walking plus 55 minutes narration advertised",
+      "distance": null,
+      "start": "Hampstead Underground",
+      "end": "Hampstead Underground",
+      "stopListCompleteness": "All 24 numbered titles read; transcript available",
+      "stops": [
+        {
+          "name": "Hampstead Underground",
+          "placeId": "H-OG-P-hampstead-underground",
+          "sequence": 1,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Church Row / St John-at-Hampstead",
+          "placeId": "H-OG-P-church-row-st-john-at-hampstead",
+          "sequence": 2,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "St Mary’s, Holly Walk",
+          "placeId": "H-OG-P-st-mary-s-holly-walk",
+          "sequence": 3,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Holly Bush Hill",
+          "placeId": "H-OG-P-holly-bush-hill",
+          "sequence": 4,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Fenton House",
+          "placeId": "H-OG-P-fenton-house",
+          "sequence": 5,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Admiral’s House",
+          "placeId": "H-OG-P-admiral-s-house",
+          "sequence": 6,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Hampstead Observatory",
+          "placeId": "H-OG-P-hampstead-observatory",
+          "sequence": 7,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Whitestone Pond",
+          "placeId": "H-OG-P-whitestone-pond",
+          "sequence": 8,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Hill Garden and Pergola",
+          "placeId": "H-OG-P-hill-garden-and-pergola",
+          "sequence": 9,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Golders Hill Park",
+          "placeId": "H-OG-P-golders-hill-park",
+          "sequence": 10,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Jack Straw’s Castle",
+          "placeId": "H-OG-P-jack-straw-s-castle",
+          "sequence": 11,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Vale of Health",
+          "placeId": "H-OG-P-vale-of-health",
+          "sequence": 12,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Spaniards Inn",
+          "placeId": "H-OG-P-spaniards-inn",
+          "sequence": 13,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Kenwood House",
+          "placeId": "H-OG-P-kenwood-house",
+          "sequence": 14,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Dido Elizabeth Belle at Kenwood",
+          "placeId": "H-OG-P-dido-elizabeth-belle-at-kenwood",
+          "sequence": 15,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Kenwood Ladies’ Pond",
+          "placeId": "H-OG-P-kenwood-ladies-pond",
+          "sequence": 16,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Highgate Men’s Pond",
+          "placeId": "H-OG-P-highgate-men-s-pond",
+          "sequence": 17,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Tumulus",
+          "placeId": "H-OG-P-tumulus",
+          "sequence": 18,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Parliament Hill",
+          "placeId": "H-OG-P-parliament-hill",
+          "sequence": 19,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Parliament Hill Lido",
+          "placeId": "H-OG-P-parliament-hill-lido",
+          "sequence": 20,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Hampstead Ponds / River Fleet",
+          "placeId": "H-OG-P-hampstead-ponds-river-fleet",
+          "sequence": 21,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Keats House",
+          "placeId": "H-OG-P-keats-house",
+          "sequence": 22,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Cannon Lane lock-up",
+          "placeId": "H-OG-P-cannon-lane-lock-up",
+          "sequence": 23,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        },
+        {
+          "name": "Well Walk / Burgh House",
+          "placeId": "H-OG-P-well-walk-burgh-house",
+          "sequence": 24,
+          "sourceId": "H-OG-S-wiki",
+          "role": "published point"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Broad walking gazetteer; mixes village buildings, green-space institutions and water/leisure.",
+          "sourceIds": [
+            "H-OG-S-wiki"
+          ],
+          "placeIds": [
+            "H-OG-P-hampstead-underground",
+            "H-OG-P-church-row-st-john-at-hampstead",
+            "H-OG-P-st-mary-s-holly-walk",
+            "H-OG-P-holly-bush-hill",
+            "H-OG-P-fenton-house",
+            "H-OG-P-admiral-s-house",
+            "H-OG-P-hampstead-observatory",
+            "H-OG-P-whitestone-pond",
+            "H-OG-P-hill-garden-and-pergola",
+            "H-OG-P-golders-hill-park",
+            "H-OG-P-jack-straw-s-castle",
+            "H-OG-P-vale-of-health",
+            "H-OG-P-spaniards-inn",
+            "H-OG-P-kenwood-house",
+            "H-OG-P-dido-elizabeth-belle-at-kenwood",
+            "H-OG-P-kenwood-ladies-pond",
+            "H-OG-P-highgate-men-s-pond",
+            "H-OG-P-tumulus",
+            "H-OG-P-parliament-hill",
+            "H-OG-P-parliament-hill-lido",
+            "H-OG-P-hampstead-ponds-river-fleet",
+            "H-OG-P-keats-house",
+            "H-OG-P-cannon-lane-lock-up",
+            "H-OG-P-well-walk-burgh-house"
+          ],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "Route downloads explicitly join stops in straight lines, not walkable geometry. No audio played; no source-level corroboration. Timings, access and historical claims not adopted. Much of route outside today’s compact scope.",
+      "relatedUrls": []
+    },
+    {
+      "id": "H-OG-T-foot-literary",
+      "title": "Literary London Self-Guided Tour — Hampstead",
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "originator": "Stephen / Free Tours by Foot",
+      "status": "Public page accessible; a particular departure is not verified",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "literature"
+      ],
+      "duration": "2–3 hours advertised",
+      "distance": null,
+      "start": "Golders Green station",
+      "end": "West Hampstead station",
+      "stopListCompleteness": "All 18 numbered locations; stop 9 Orwell is optional",
+      "stops": [
+        {
+          "name": "145 North End Road",
+          "placeId": "H-OG-P-145-north-end-road",
+          "sequence": 1,
+          "sourceId": "H-OG-S-foot-literary",
+          "role": "published point"
+        },
+        {
+          "name": "Old Wyldes",
+          "placeId": "H-OG-P-old-wyldes",
+          "sequence": 2,
+          "sourceId": "H-OG-S-foot-literary",
+          "role": "published point"
+        },
+        {
+          "name": "Spaniards Inn",
+          "placeId": "H-OG-P-spaniards-inn",
+          "sequence": 3,
+          "sourceId": "H-OG-S-foot-literary",
+          "role": "published point"
+        },
+        {
+          "name": "Jack Straw’s Castle",
+          "placeId": "H-OG-P-jack-straw-s-castle",
+          "sequence": 4,
+          "sourceId": "H-OG-S-foot-literary",
+          "role": "published point"
+        },
+        {
+          "name": "17 East Heath Road",
+          "placeId": "H-OG-P-17-east-heath-road",
+          "sequence": 5,
+          "sourceId": "H-OG-S-foot-literary",
+          "role": "published point"
+        },
+        {
+          "name": "Cannon Hall",
+          "placeId": "H-OG-P-cannon-hall",
+          "sequence": 6,
+          "sourceId": "H-OG-S-foot-literary",
+          "role": "published point"
+        },
+        {
+          "name": "2 Willow Road",
+          "placeId": "H-OG-P-2-willow-road",
+          "sequence": 7,
+          "sourceId": "H-OG-S-foot-literary",
+          "role": "published point"
+        },
+        {
+          "name": "Keats House",
+          "placeId": "H-OG-P-keats-house",
+          "sequence": 8,
+          "sourceId": "H-OG-S-foot-literary",
+          "role": "published point"
+        },
+        {
+          "name": "77 Parliament Hill",
+          "placeId": "H-OG-P-77-parliament-hill",
+          "sequence": 9,
+          "sourceId": "H-OG-S-foot-literary",
+          "role": "published point"
+        },
+        {
+          "name": "Admiral’s Walk",
+          "placeId": "H-OG-P-admiral-s-walk",
+          "sequence": 10,
+          "sourceId": "H-OG-S-foot-literary",
+          "role": "published point"
+        },
+        {
+          "name": "Bolton House",
+          "placeId": "H-OG-P-bolton-house",
+          "sequence": 11,
+          "sourceId": "H-OG-S-foot-literary",
+          "role": "published point"
+        },
+        {
+          "name": "7 Mount Vernon",
+          "placeId": "H-OG-P-7-mount-vernon",
+          "sequence": 12,
+          "sourceId": "H-OG-S-foot-literary",
+          "role": "published point"
+        },
+        {
+          "name": "17 Church Row",
+          "placeId": "H-OG-P-17-church-row",
+          "sequence": 13,
+          "sourceId": "H-OG-S-foot-literary",
+          "role": "published point"
+        },
+        {
+          "name": "26 Church Row",
+          "placeId": "H-OG-P-26-church-row",
+          "sequence": 14,
+          "sourceId": "H-OG-S-foot-literary",
+          "role": "published point"
+        },
+        {
+          "name": "St John-at-Hampstead",
+          "placeId": "H-OG-P-st-john-at-hampstead",
+          "sequence": 15,
+          "sourceId": "H-OG-S-foot-literary",
+          "role": "published point"
+        },
+        {
+          "name": "16 Bracknell Gardens",
+          "placeId": "H-OG-P-16-bracknell-gardens",
+          "sequence": 16,
+          "sourceId": "H-OG-S-foot-literary",
+          "role": "published point"
+        },
+        {
+          "name": "Freud Museum",
+          "placeId": "H-OG-P-freud-museum",
+          "sequence": 17,
+          "sourceId": "H-OG-S-foot-literary",
+          "role": "published point"
+        },
+        {
+          "name": "Fairhurst, Compayne Gardens",
+          "placeId": "H-OG-P-fairhurst-compayne-gardens",
+          "sequence": 18,
+          "sourceId": "H-OG-S-foot-literary",
+          "role": "published point"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Author-house sequence with brief work introductions.",
+          "sourceIds": [
+            "H-OG-S-foot-literary"
+          ],
+          "placeIds": [
+            "H-OG-P-145-north-end-road",
+            "H-OG-P-old-wyldes",
+            "H-OG-P-spaniards-inn",
+            "H-OG-P-jack-straw-s-castle",
+            "H-OG-P-17-east-heath-road",
+            "H-OG-P-cannon-hall",
+            "H-OG-P-2-willow-road",
+            "H-OG-P-keats-house",
+            "H-OG-P-77-parliament-hill",
+            "H-OG-P-admiral-s-walk",
+            "H-OG-P-bolton-house",
+            "H-OG-P-7-mount-vernon",
+            "H-OG-P-17-church-row",
+            "H-OG-P-26-church-row",
+            "H-OG-P-st-john-at-hampstead",
+            "H-OG-P-16-bracknell-gardens",
+            "H-OG-P-freud-museum",
+            "H-OG-P-fairhurst-compayne-gardens"
+          ],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "Long comparison route; timing unvalidated. Several apparent factual errors and conflated house/person labels: independently check every chosen story, especially 2 Willow/Bond anecdote. Names here record locations, not endorsement of supplied biographies.",
+      "relatedUrls": []
+    },
+    {
+      "id": "H-OG-T-artists-audio",
+      "title": "Historical Hampstead’s Gentle Nest of Artists: A Belsize Park Walk",
+      "sourceIds": [
+        "H-OG-S-artists-audio"
+      ],
+      "originator": "Paul French / VoiceMap",
+      "status": "Public page accessible; a particular departure is not verified",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "modernism",
+        "refugees"
+      ],
+      "duration": "90 minutes",
+      "distance": "2 mi advertised",
+      "start": "Belsize Park Underground",
+      "end": "Belsize Park Underground",
+      "stopListCompleteness": "Selected public highlights; order unknown",
+      "stops": [
+        {
+          "name": "Mall Studios",
+          "placeId": "H-OG-P-mall-studios",
+          "sequence": null,
+          "sourceId": "H-OG-S-artists-audio",
+          "role": "published point"
+        },
+        {
+          "name": "Isokon Building",
+          "placeId": "H-OG-P-isokon-building",
+          "sequence": null,
+          "sourceId": "H-OG-S-artists-audio",
+          "role": "published point"
+        },
+        {
+          "name": "Upper Park Road",
+          "placeId": "H-OG-P-upper-park-road",
+          "sequence": null,
+          "sourceId": "H-OG-S-artists-audio",
+          "role": "published point"
+        },
+        {
+          "name": "Booklovers’ Corner site",
+          "placeId": "H-OG-P-booklovers-corner-site",
+          "sequence": null,
+          "sourceId": "H-OG-S-artists-audio",
+          "role": "published point"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "International artistic networks, inexpensive studios, displacement and a Chinese cultural community.",
+          "sourceIds": [
+            "H-OG-S-artists-audio"
+          ],
+          "placeIds": [
+            "H-OG-P-mall-studios",
+            "H-OG-P-isokon-building",
+            "H-OG-P-upper-park-road",
+            "H-OG-P-booklovers-corner-site"
+          ],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "Nearby comparison,34 advertised locations; selected public overview only. Unnamed Moore/Mondrian/Nevinson houses not guessed; full paid route not read.",
+      "relatedUrls": []
+    },
+    {
+      "id": "H-OG-T-modernist",
+      "title": "A Modernist Sanctuary: Hampstead in the 1930 s",
+      "sourceIds": [
+        "H-OG-S-modernist"
+      ],
+      "originator": "Jewish Renaissance / Monica Bohm-Duchen; later Marilyn Greene",
+      "status": "June event historical; Sep 30 repeat listed",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "modernism",
+        "refugees"
+      ],
+      "duration": "2 hours",
+      "distance": null,
+      "start": "Hampstead Underground (June listing)",
+      "end": null,
+      "stopListCompleteness": "Selected public highlights; order unknown",
+      "stops": [
+        {
+          "name": "Isokon Building",
+          "placeId": "H-OG-P-isokon-building",
+          "sequence": null,
+          "sourceId": "H-OG-S-modernist",
+          "role": "published point"
+        },
+        {
+          "name": "2 Willow Road",
+          "placeId": "H-OG-P-2-willow-road",
+          "sequence": null,
+          "sourceId": "H-OG-S-modernist",
+          "role": "published point"
+        },
+        {
+          "name": "Mall Studios",
+          "placeId": "H-OG-P-mall-studios",
+          "sequence": null,
+          "sourceId": "H-OG-S-modernist",
+          "role": "published point"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Jewish refugees and British collaborators shaping art, architecture and an artistic community.",
+          "sourceIds": [
+            "H-OG-S-modernist"
+          ],
+          "placeIds": [
+            "H-OG-P-isokon-building",
+            "H-OG-P-2-willow-road",
+            "H-OG-P-mall-studios"
+          ],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "June 10 historical event and Sep 30 repeat have matching advertised sites, different named guides; one related programme, not independent confirmation. Stop order withheld.",
+      "relatedUrls": [
+        "https://www.jewishrenaissance.org.uk/events/hampstead-in-the-1930s-walking-tour-30-sep"
+      ]
+    },
+    {
+      "id": "H-OG-T-uhlman",
+      "title": "Art and Refugees in Hampstead",
+      "sourceIds": [
+        "H-OG-S-uhlman"
+      ],
+      "originator": "Marilyn Greene / Footprints of London; Insiders/Outsiders partner",
+      "status": "Historical event",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "refugees",
+        "art",
+        "mutual-aid"
+      ],
+      "duration": "2 hours",
+      "distance": null,
+      "start": "58–62 Heath Street forecourt",
+      "end": null,
+      "stopListCompleteness": "Selected public highlights; order unknown",
+      "stops": [
+        {
+          "name": "Downshire Hill Uhlman house",
+          "placeId": "H-OG-P-downshire-hill-uhlman-house",
+          "sequence": null,
+          "sourceId": "H-OG-S-uhlman",
+          "role": "published point"
+        },
+        {
+          "name": "Coffee Cup",
+          "placeId": "H-OG-P-coffee-cup",
+          "sequence": null,
+          "sourceId": "H-OG-S-uhlman",
+          "role": "published point"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Fred and Diana Uhlman’s efforts to help refugee artists and their local network; café appears in the guide’s image caption.",
+          "sourceIds": [
+            "H-OG-S-uhlman"
+          ],
+          "placeIds": [
+            "H-OG-P-downshire-hill-uhlman-house",
+            "H-OG-P-coffee-cup"
+          ],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "Eventbrite organiser listing read via search extraction; partner opening failed but its full search excerpt matched. Same event, not two tours. Exact house number not provided in this listing;47 must come from separate research.",
+      "relatedUrls": [
+        "https://insidersoutsidersfestival.org/event/walking-tour-diverse-london-art-and-refugees-in-hampstead/",
+        "https://www.walkingtalkingculture.co.uk/copy-of-museum-tours-1"
+      ]
+    },
+    {
+      "id": "H-OG-T-openhouse",
+      "title": "Hampstead Vanished and Imagined",
+      "sourceIds": [
+        "H-OG-S-openhouse"
+      ],
+      "originator": "Open House / Golden Key Academy guide",
+      "status": "Historical event",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "spa",
+        "popular-leisure",
+        "migration",
+        "art"
+      ],
+      "duration": "90 minutes",
+      "distance": "About 1 mile",
+      "start": "Hampstead Underground",
+      "end": "Hampstead Heath station",
+      "stopListCompleteness": "Selected public highlights; order unknown",
+      "stops": [],
+      "stories": [
+        {
+          "summary": "Connects spa visitors, railway-enabled bank-holiday crowds and 20 th-century refugees; responds to Burgh House exhibition.",
+          "sourceIds": [
+            "H-OG-S-openhouse"
+          ],
+          "placeIds": [],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "No intermediate itinerary or guide name disclosed in inspected page. Historical Sep 16 event within 12–20 Sep festival; no ongoing tour inferred.",
+      "relatedUrls": []
+    },
+    {
+      "id": "H-OG-T-vam",
+      "title": "Hampstead Walking Tour with Christine Lalumia",
+      "sourceIds": [
+        "H-OG-S-vam"
+      ],
+      "originator": "Christine Lalumia / V&A Academy",
+      "status": "Historical course listing",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "architecture",
+        "home",
+        "artists",
+        "refugees"
+      ],
+      "duration": "11:15–14:45",
+      "distance": null,
+      "start": "St John-at-Hampstead, Church Row",
+      "end": null,
+      "stopListCompleteness": "Selected public highlights; order unknown",
+      "stops": [],
+      "stories": [
+        {
+          "summary": "Compares homes from Regency and Victorian eras with modernism; artists and émigrés supply social context.",
+          "sourceIds": [
+            "H-OG-S-vam"
+          ],
+          "placeIds": [],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "No complete site itinerary. Programme-download link failed. Named architects are not silently converted to specific building stops. Page warns of uneven/narrow pavements.",
+      "relatedUrls": []
+    },
+    {
+      "id": "H-OG-T-duncan",
+      "title": "Walking London — Highgate to Hampstead",
+      "sourceIds": [
+        "H-OG-S-duncan"
+      ],
+      "originator": "Andrew Duncan",
+      "status": "Author catalogue page accessible",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "general-walking"
+      ],
+      "duration": null,
+      "distance": null,
+      "start": "Highgate (chapter title)",
+      "end": "Hampstead (chapter title)",
+      "stopListCompleteness": "Contents-only: no chapter itinerary",
+      "stops": [],
+      "stories": [
+        {
+          "summary": "Author’s contents list confirms an area route within a 30-walk book; description integrates practical, historical and contemporary material.",
+          "sourceIds": [
+            "H-OG-S-duncan"
+          ],
+          "placeIds": [],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "ISBN 9781913618254. Introduction/contents and product description inspected; local chapter not read. Do not infer its stops or sequence.",
+      "relatedUrls": []
+    },
+    {
+      "id": "H-OG-T-metro",
+      "title": "London’s Hidden Walks Volume 1 — Hampstead",
+      "sourceIds": [
+        "H-OG-S-metro"
+      ],
+      "originator": "Stephen Millar / Metro Publications",
+      "status": "Publisher index accessible",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "general-walking"
+      ],
+      "duration": null,
+      "distance": null,
+      "start": null,
+      "end": null,
+      "stopListCompleteness": "Publisher index confirms Hampstead map; map and chapter not inspected",
+      "stops": [],
+      "stories": [
+        {
+          "summary": "Publisher map index identifies a Hampstead route in Volume 1.",
+          "sourceIds": [
+            "H-OG-S-metro"
+          ],
+          "placeIds": [],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "Download link 31 returned tool error; alternate index omitted usable links. No map labels or stop numbers extracted, no chapter read. Do not count later blogs citing Millar as independent corroboration.",
+      "relatedUrls": [
+        "https://metropublications.com/pages/copy-of-walking-map-downloads"
+      ]
+    },
+    {
+      "id": "H-OG-T-fathers",
+      "title": "Green London:14 Walks Exploring London’s Green Spaces and Pathways",
+      "sourceIds": [
+        "H-OG-S-fathers"
+      ],
+      "originator": "David Fathers / Bloomsbury Conway",
+      "status": "Publisher catalogue",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "landscape",
+        "green-corridors"
+      ],
+      "duration": null,
+      "distance": null,
+      "start": null,
+      "end": null,
+      "stopListCompleteness": "Contents-only Hampstead Heath chapter; no local itinerary read",
+      "stops": [],
+      "stories": [
+        {
+          "summary": "Illustrated guide treats linked green spaces rather than house biographies.",
+          "sourceIds": [
+            "H-OG-S-fathers"
+          ],
+          "placeIds": [],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "ISBN 9781844866144;160 pages. Product description and contents only; sample images not inspected. Potential landscape reference, not evidence for any local stop.",
+      "relatedUrls": []
+    },
+    {
+      "id": "H-OG-T-davies",
+      "title": "The Heath: My Year on Hampstead Heath",
+      "sourceIds": [
+        "H-OG-S-davies"
+      ],
+      "originator": "Hunter Davies / Bloomsbury Apollo",
+      "status": "Publisher catalogue",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "everyday-life",
+        "landscape",
+        "memory"
+      ],
+      "duration": null,
+      "distance": null,
+      "start": null,
+      "end": null,
+      "stopListCompleteness": "Selected public highlights; order unknown",
+      "stops": [
+        {
+          "name": "Kenwood",
+          "placeId": "H-OG-P-kenwood",
+          "sequence": null,
+          "sourceId": "H-OG-S-davies",
+          "role": "published point"
+        },
+        {
+          "name": "Vale of Health",
+          "placeId": "H-OG-P-vale-of-health",
+          "sequence": null,
+          "sourceId": "H-OG-S-davies",
+          "role": "published point"
+        },
+        {
+          "name": "Parliament Hill",
+          "placeId": "H-OG-P-parliament-hill",
+          "sequence": null,
+          "sourceId": "H-OG-S-davies",
+          "role": "published point"
+        },
+        {
+          "name": "Tumulus",
+          "placeId": "H-OG-P-tumulus",
+          "sequence": null,
+          "sourceId": "H-OG-S-davies",
+          "role": "published point"
+        },
+        {
+          "name": "Ladies’ Pond",
+          "placeId": "H-OG-P-ladies-pond",
+          "sequence": null,
+          "sourceId": "H-OG-S-davies",
+          "role": "published point"
+        },
+        {
+          "name": "Pergola",
+          "placeId": "H-OG-P-pergola",
+          "sequence": null,
+          "sourceId": "H-OG-S-davies",
+          "role": "published point"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Publisher describes a personal year of walks and interviews with everyday users, rather than a fixed itinerary.",
+          "sourceIds": [
+            "H-OG-S-davies"
+          ],
+          "placeIds": [
+            "H-OG-P-kenwood",
+            "H-OG-P-vale-of-health",
+            "H-OG-P-parliament-hill",
+            "H-OG-P-tumulus",
+            "H-OG-P-ladies-pond",
+            "H-OG-P-pergola"
+          ],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "ISBN 9781838934811; edition listed 2021-11-11. Blurb only; book not read. Listed places are advertised coverage, no prescribed order or present-day operating evidence.",
+      "relatedUrls": []
+    },
+    {
+      "id": "H-OG-T-highgate-jones",
+      "title": "Highgate Village self-guided walk",
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "originator": "Richard Jones / Discovery Tours and Events",
+      "status": "Public page accessible; a particular departure is not verified",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "literature",
+        "village",
+        "philanthropy"
+      ],
+      "duration": "2 hours",
+      "distance": null,
+      "start": "Highgate Underground",
+      "end": "Archway Underground",
+      "stopListCompleteness": "Principal narrative points in source order; connectors included where useful",
+      "stops": [
+        {
+          "name": "Dickens lodging, North Road",
+          "placeId": "H-OG-P-dickens-lodging-north-road",
+          "sequence": 1,
+          "sourceId": "H-OG-S-highgate-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Pond Square",
+          "placeId": "H-OG-P-pond-square",
+          "sequence": 2,
+          "sourceId": "H-OG-S-highgate-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Church House,10 South Grove",
+          "placeId": "H-OG-P-church-house-10-south-grove",
+          "sequence": 3,
+          "sourceId": "H-OG-S-highgate-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Highgate Literary and Scientific Institution",
+          "placeId": "H-OG-P-highgate-literary-and-scientific-institution",
+          "sequence": 4,
+          "sourceId": "H-OG-S-highgate-jones",
+          "role": "published point"
+        },
+        {
+          "name": "St Michael’s, Highgate",
+          "placeId": "H-OG-P-st-michael-s-highgate",
+          "sequence": 5,
+          "sourceId": "H-OG-S-highgate-jones",
+          "role": "published point"
+        },
+        {
+          "name": "The Flask, Highgate",
+          "placeId": "H-OG-P-the-flask-highgate",
+          "sequence": 6,
+          "sourceId": "H-OG-S-highgate-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Highgate reservoir",
+          "placeId": "H-OG-P-highgate-reservoir",
+          "sequence": 7,
+          "sourceId": "H-OG-S-highgate-jones",
+          "role": "published point"
+        },
+        {
+          "name": "3 The Grove",
+          "placeId": "H-OG-P-3-the-grove",
+          "sequence": 8,
+          "sourceId": "H-OG-S-highgate-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Witanhurst",
+          "placeId": "H-OG-P-witanhurst",
+          "sequence": 9,
+          "sourceId": "H-OG-S-highgate-jones",
+          "role": "published point"
+        },
+        {
+          "name": "40 Highgate West Hill",
+          "placeId": "H-OG-P-40-highgate-west-hill",
+          "sequence": 10,
+          "sourceId": "H-OG-S-highgate-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Merton Lane",
+          "placeId": "H-OG-P-merton-lane",
+          "sequence": 11,
+          "sourceId": "H-OG-S-highgate-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Millfield Lane / Ivy Cottage site",
+          "placeId": "H-OG-P-millfield-lane-ivy-cottage-site",
+          "sequence": 12,
+          "sourceId": "H-OG-S-highgate-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Holly Lodge Estate",
+          "placeId": "H-OG-P-holly-lodge-estate",
+          "sequence": 13,
+          "sourceId": "H-OG-S-highgate-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Holly Village",
+          "placeId": "H-OG-P-holly-village",
+          "sequence": 14,
+          "sourceId": "H-OG-S-highgate-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Highgate Cemetery exterior",
+          "placeId": "H-OG-P-highgate-cemetery-exterior",
+          "sequence": 15,
+          "sourceId": "H-OG-S-highgate-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Waterlow Park",
+          "placeId": "H-OG-P-waterlow-park",
+          "sequence": 16,
+          "sourceId": "H-OG-S-highgate-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Ivy House, Highgate Hill",
+          "placeId": "H-OG-P-ivy-house-highgate-hill",
+          "sequence": 17,
+          "sourceId": "H-OG-S-highgate-jones",
+          "role": "published point"
+        },
+        {
+          "name": "Whittington Stone",
+          "placeId": "H-OG-P-whittington-stone",
+          "sequence": 18,
+          "sourceId": "H-OG-S-highgate-jones",
+          "role": "published point"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Dickens/Coleridge, landscape and charitable estates; public streets connect village to eastern Heath edge.",
+          "sourceIds": [
+            "H-OG-S-highgate-jones"
+          ],
+          "placeIds": [
+            "H-OG-P-dickens-lodging-north-road",
+            "H-OG-P-pond-square",
+            "H-OG-P-church-house-10-south-grove",
+            "H-OG-P-highgate-literary-and-scientific-institution",
+            "H-OG-P-st-michael-s-highgate",
+            "H-OG-P-the-flask-highgate",
+            "H-OG-P-highgate-reservoir",
+            "H-OG-P-3-the-grove",
+            "H-OG-P-witanhurst",
+            "H-OG-P-40-highgate-west-hill",
+            "H-OG-P-merton-lane",
+            "H-OG-P-millfield-lane-ivy-cottage-site",
+            "H-OG-P-holly-lodge-estate",
+            "H-OG-P-holly-village",
+            "H-OG-P-highgate-cemetery-exterior",
+            "H-OG-P-waterlow-park",
+            "H-OG-P-ivy-house-highgate-hill",
+            "H-OG-P-whittington-stone"
+          ],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "Old route, no present access validation. Published Merton Lane→Millfield Lane segment useful as connection lead. Cemetery tour rules are dated and not adopted; interior visit is optional, separate from public Swain’s Lane. Holly Lodge access requires fresh verification.",
+      "relatedUrls": []
+    },
+    {
+      "id": "H-OG-T-highgate-lady",
+      "title": "Highgate walk and map",
+      "sourceIds": [
+        "H-OG-S-highgate-lady"
+      ],
+      "originator": "A Lady in London",
+      "status": "Public page accessible; a particular departure is not verified",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "streetscape",
+        "landscape"
+      ],
+      "duration": "2–3 hours",
+      "distance": null,
+      "start": "Highgate Underground",
+      "end": "Tufnell Park Underground",
+      "stopListCompleteness": "Principal points from complete text; residential turns omitted",
+      "stops": [
+        {
+          "name": "Highgate Wood",
+          "placeId": "H-OG-P-highgate-wood",
+          "sequence": 1,
+          "sourceId": "H-OG-S-highgate-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Park House Passage",
+          "placeId": "H-OG-P-park-house-passage",
+          "sequence": 2,
+          "sourceId": "H-OG-S-highgate-lady",
+          "role": "published point"
+        },
+        {
+          "name": "The Wrestlers",
+          "placeId": "H-OG-P-the-wrestlers",
+          "sequence": 3,
+          "sourceId": "H-OG-S-highgate-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Cholmeley Park",
+          "placeId": "H-OG-P-cholmeley-park",
+          "sequence": 4,
+          "sourceId": "H-OG-S-highgate-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Waterlow Park / Lauderdale House",
+          "placeId": "H-OG-P-waterlow-park-lauderdale-house",
+          "sequence": 5,
+          "sourceId": "H-OG-S-highgate-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Highgate High Street",
+          "placeId": "H-OG-P-highgate-high-street",
+          "sequence": 6,
+          "sourceId": "H-OG-S-highgate-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Pond Square",
+          "placeId": "H-OG-P-pond-square",
+          "sequence": 7,
+          "sourceId": "H-OG-S-highgate-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Highgate Cemetery exterior",
+          "placeId": "H-OG-P-highgate-cemetery-exterior",
+          "sequence": 8,
+          "sourceId": "H-OG-S-highgate-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Holly Village",
+          "placeId": "H-OG-P-holly-village",
+          "sequence": 9,
+          "sourceId": "H-OG-S-highgate-lady",
+          "role": "published point"
+        },
+        {
+          "name": "Parliament Hill",
+          "placeId": "H-OG-P-parliament-hill",
+          "sequence": 10,
+          "sourceId": "H-OG-S-highgate-lady",
+          "role": "published point"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Woods, village streets, public park, cemetery exterior and Heath viewpoint; a possible southern crossing approach.",
+          "sourceIds": [
+            "H-OG-S-highgate-lady"
+          ],
+          "placeIds": [
+            "H-OG-P-highgate-wood",
+            "H-OG-P-park-house-passage",
+            "H-OG-P-the-wrestlers",
+            "H-OG-P-cholmeley-park",
+            "H-OG-P-waterlow-park-lauderdale-house",
+            "H-OG-P-highgate-high-street",
+            "H-OG-P-pond-square",
+            "H-OG-P-highgate-cemetery-exterior",
+            "H-OG-P-holly-village",
+            "H-OG-P-parliament-hill"
+          ],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "Cemetery interior explicitly optional. Swain’s Lane reachesHeath viaHighgate Road; exact crossings and gradients need independent verification. Northern wood loop and southern station tail exceed starter segment purpose.",
+      "relatedUrls": []
+    },
+    {
+      "id": "H-OG-T-highgate-londonwalks",
+      "title": "Highgate Village — a place apart",
+      "sourceIds": [
+        "H-OG-S-highgate-londonwalks"
+      ],
+      "originator": "London Walks / Corinna or Matthew",
+      "status": "Public page accessible; a particular departure is not verified",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "village",
+        "famous-residents"
+      ],
+      "duration": "2 hours",
+      "distance": null,
+      "start": "Highgate Underground ticket hall",
+      "end": "Pond Square",
+      "stopListCompleteness": "Selected public highlights; order unknown",
+      "stops": [
+        {
+          "name": "Witanhurst",
+          "placeId": "H-OG-P-witanhurst",
+          "sequence": null,
+          "sourceId": "H-OG-S-highgate-londonwalks",
+          "role": "published point"
+        },
+        {
+          "name": "Pond Square",
+          "placeId": "H-OG-P-pond-square",
+          "sequence": null,
+          "sourceId": "H-OG-S-highgate-londonwalks",
+          "role": "published point"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Village character, views and notable inhabitants; publicly named stops sparse.",
+          "sourceIds": [
+            "H-OG-S-highgate-londonwalks"
+          ],
+          "placeIds": [
+            "H-OG-P-witanhurst",
+            "H-OG-P-pond-square"
+          ],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "Kenwood and Highgate Cemetery are explicitly after-walk suggestions, not included visits. Names of famous residents do not establish any particular house stop. Public overview read via search extraction; no full itinerary.",
+      "relatedUrls": []
+    },
+    {
+      "id": "H-OG-T-highgate-swc",
+      "title": "Highgate to Hampstead Walk 257",
+      "sourceIds": [
+        "H-OG-S-highgate-swc"
+      ],
+      "originator": "Saturday Walkers Club",
+      "status": "Public page accessible; a particular departure is not verified",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "landscape",
+        "planning"
+      ],
+      "duration": "3 h 45 m walking /at least 8 h whole excursion advertised",
+      "distance": "15.5 km main;13.25 km East Finchley variant",
+      "start": "Highgate Underground",
+      "end": "Hampstead Underground",
+      "stopListCompleteness": "Main overview clusters only; detailed 16-page PDF not fully read",
+      "stops": [
+        {
+          "name": "Hampstead Garden Suburb",
+          "placeId": "H-OG-P-hampstead-garden-suburb",
+          "sequence": 1,
+          "sourceId": "H-OG-S-highgate-swc",
+          "role": "published point"
+        },
+        {
+          "name": "Golders Hill Park",
+          "placeId": "H-OG-P-golders-hill-park",
+          "sequence": 2,
+          "sourceId": "H-OG-S-highgate-swc",
+          "role": "published point"
+        },
+        {
+          "name": "Hill Garden and Pergola",
+          "placeId": "H-OG-P-hill-garden-and-pergola",
+          "sequence": 3,
+          "sourceId": "H-OG-S-highgate-swc",
+          "role": "published point"
+        },
+        {
+          "name": "Kenwood",
+          "placeId": "H-OG-P-kenwood",
+          "sequence": 4,
+          "sourceId": "H-OG-S-highgate-swc",
+          "role": "published point"
+        },
+        {
+          "name": "Hampstead village",
+          "placeId": "H-OG-P-hampstead-village",
+          "sequence": 5,
+          "sourceId": "H-OG-S-highgate-swc",
+          "role": "published point"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Long Northern Heights green-space circuit; useful evidence that a title is not a suitable compact route.",
+          "sourceIds": [
+            "H-OG-S-highgate-swc"
+          ],
+          "placeIds": [
+            "H-OG-P-hampstead-garden-suburb",
+            "H-OG-P-golders-hill-park",
+            "H-OG-P-hill-garden-and-pergola",
+            "H-OG-P-kenwood",
+            "H-OG-P-hampstead-village"
+          ],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "Read overview and indexed PDF excerpt; no geometry imported. Starts north via woods/East Finchley/Garden Suburb, so not a directHighgate–Hampstead crossing. End-section shortcuts described, current times not adopted.",
+      "relatedUrls": []
+    },
+    {
+      "id": "H-OG-T-highgate-ring",
+      "title": "Ring 2 Walk 3: Highgate to West Hampstead",
+      "sourceIds": [
+        "H-OG-S-highgate-ring"
+      ],
+      "originator": "trainwalkslondon",
+      "status": "Public page accessible; a particular departure is not verified",
+      "areaRelation": "core and/or nearby comparison; see notes",
+      "themes": [
+        "landscape",
+        "housing",
+        "museums"
+      ],
+      "duration": null,
+      "distance": "5.4 miles",
+      "start": "Highgate Underground",
+      "end": "West Hampstead Underground",
+      "stopListCompleteness": "Principal narrative points in full text order; minor connectors omitted",
+      "stops": [
+        {
+          "name": "Waterlow Park",
+          "placeId": "H-OG-P-waterlow-park",
+          "sequence": 1,
+          "sourceId": "H-OG-S-highgate-ring",
+          "role": "published point"
+        },
+        {
+          "name": "Highgate Cemetery exterior",
+          "placeId": "H-OG-P-highgate-cemetery-exterior",
+          "sequence": 2,
+          "sourceId": "H-OG-S-highgate-ring",
+          "role": "published point"
+        },
+        {
+          "name": "Holly Lodge Estate",
+          "placeId": "H-OG-P-holly-lodge-estate",
+          "sequence": 3,
+          "sourceId": "H-OG-S-highgate-ring",
+          "role": "published point"
+        },
+        {
+          "name": "Millfield Lane",
+          "placeId": "H-OG-P-millfield-lane",
+          "sequence": 4,
+          "sourceId": "H-OG-S-highgate-ring",
+          "role": "published point"
+        },
+        {
+          "name": "Highgate Ponds",
+          "placeId": "H-OG-P-highgate-ponds",
+          "sequence": 5,
+          "sourceId": "H-OG-S-highgate-ring",
+          "role": "published point"
+        },
+        {
+          "name": "Kenwood",
+          "placeId": "H-OG-P-kenwood",
+          "sequence": 6,
+          "sourceId": "H-OG-S-highgate-ring",
+          "role": "published point"
+        },
+        {
+          "name": "Viaduct Pond",
+          "placeId": "H-OG-P-viaduct-pond",
+          "sequence": 7,
+          "sourceId": "H-OG-S-highgate-ring",
+          "role": "published point"
+        },
+        {
+          "name": "Well Walk",
+          "placeId": "H-OG-P-well-walk",
+          "sequence": 8,
+          "sourceId": "H-OG-S-highgate-ring",
+          "role": "published point"
+        },
+        {
+          "name": "Burgh House",
+          "placeId": "H-OG-P-burgh-house",
+          "sequence": 9,
+          "sourceId": "H-OG-S-highgate-ring",
+          "role": "published point"
+        },
+        {
+          "name": "Fenton House",
+          "placeId": "H-OG-P-fenton-house",
+          "sequence": 10,
+          "sourceId": "H-OG-S-highgate-ring",
+          "role": "published point"
+        },
+        {
+          "name": "Hampstead Underground",
+          "placeId": "H-OG-P-hampstead-underground",
+          "sequence": 11,
+          "sourceId": "H-OG-S-highgate-ring",
+          "role": "published point"
+        },
+        {
+          "name": "St John-at-Hampstead",
+          "placeId": "H-OG-P-st-john-at-hampstead",
+          "sequence": 12,
+          "sourceId": "H-OG-S-highgate-ring",
+          "role": "published point"
+        },
+        {
+          "name": "Frognal Way",
+          "placeId": "H-OG-P-frognal-way",
+          "sequence": 13,
+          "sourceId": "H-OG-S-highgate-ring",
+          "role": "published point"
+        },
+        {
+          "name": "Camden Art Centre",
+          "placeId": "H-OG-P-camden-art-centre",
+          "sequence": 14,
+          "sourceId": "H-OG-S-highgate-ring",
+          "role": "published point"
+        },
+        {
+          "name": "Billy Fury Way",
+          "placeId": "H-OG-P-billy-fury-way",
+          "sequence": 15,
+          "sourceId": "H-OG-S-highgate-ring",
+          "role": "published point"
+        }
+      ],
+      "stories": [
+        {
+          "summary": "Long cross-Heath route with art and housing; useful pond→Kenwood→Viaduct→Well connection.",
+          "sourceIds": [
+            "H-OG-S-highgate-ring"
+          ],
+          "placeIds": [
+            "H-OG-P-waterlow-park",
+            "H-OG-P-highgate-cemetery-exterior",
+            "H-OG-P-holly-lodge-estate",
+            "H-OG-P-millfield-lane",
+            "H-OG-P-highgate-ponds",
+            "H-OG-P-kenwood",
+            "H-OG-P-viaduct-pond",
+            "H-OG-P-well-walk",
+            "H-OG-P-burgh-house",
+            "H-OG-P-fenton-house",
+            "H-OG-P-hampstead-underground",
+            "H-OG-P-st-john-at-hampstead",
+            "H-OG-P-frognal-way",
+            "H-OG-P-camden-art-centre",
+            "H-OG-P-billy-fury-way"
+          ],
+          "availability": "Public description only; historical assertions require independent research"
+        }
+      ],
+      "notes": "Personal value judgments and historical claims unverified. Private estate passages, gates and vague pond instructions cannot be reused as verified directions. Public cemetery exterior does not establish free grave access.",
+      "relatedUrls": []
+    }
+  ],
+  "places": [
+    {
+      "id": "H-OG-P-church-row",
+      "name": "Church Row",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-londonwalks",
+        "H-OG-S-jones-guided",
+        "H-OG-S-english",
+        "H-OG-S-lady",
+        "H-OG-S-voicemap"
+      ],
+      "tourIds": [
+        "H-OG-T-londonwalks",
+        "H-OG-T-jones-guided",
+        "H-OG-T-english",
+        "H-OG-T-lady",
+        "H-OG-T-voicemap"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-fenton-house",
+      "name": "Fenton House",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-londonwalks",
+        "H-OG-S-english",
+        "H-OG-S-lady",
+        "H-OG-S-wiki",
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-londonwalks",
+        "H-OG-T-english",
+        "H-OG-T-lady",
+        "H-OG-T-wiki",
+        "H-OG-T-highgate-ring"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-admiral-s-house",
+      "name": "Admiral’s House",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-londonwalks",
+        "H-OG-S-jones-guided",
+        "H-OG-S-english",
+        "H-OG-S-lady",
+        "H-OG-S-voicemap",
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-londonwalks",
+        "H-OG-T-jones-guided",
+        "H-OG-T-english",
+        "H-OG-T-lady",
+        "H-OG-T-voicemap",
+        "H-OG-T-wiki"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-well-walk",
+      "name": "Well Walk",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-londonwalks",
+        "H-OG-S-jones-guided",
+        "H-OG-S-lady",
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-londonwalks",
+        "H-OG-T-jones-guided",
+        "H-OG-T-lady",
+        "H-OG-T-highgate-ring"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-flask-walk",
+      "name": "Flask Walk",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-londonwalks",
+        "H-OG-S-lady",
+        "H-OG-S-voicemap"
+      ],
+      "tourIds": [
+        "H-OG-T-londonwalks",
+        "H-OG-T-lady",
+        "H-OG-T-voicemap"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-hampstead-heath",
+      "name": "Hampstead Heath",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-londonwalks"
+      ],
+      "tourIds": [
+        "H-OG-T-londonwalks"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-st-john-at-hampstead",
+      "name": "St John-at-Hampstead",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-jones-guided",
+        "H-OG-S-english",
+        "H-OG-S-voicemap",
+        "H-OG-S-foot-literary",
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided",
+        "H-OG-T-english",
+        "H-OG-T-voicemap",
+        "H-OG-T-foot-literary",
+        "H-OG-T-highgate-ring"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-benham-s-place",
+      "name": "Benham’s Place",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-jones-guided"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-watch-house-holly-place",
+      "name": "Watch House, Holly Place",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-jones-guided",
+        "H-OG-S-voicemap"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided",
+        "H-OG-T-voicemap"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-stevenson-house-mount-vernon",
+      "name": "Stevenson house, Mount Vernon",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-jones-guided"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-holly-bush",
+      "name": "Holly Bush",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-jones-guided",
+        "H-OG-S-english",
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided",
+        "H-OG-T-english",
+        "H-OG-T-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-admiral-s-walk",
+      "name": "Admiral’s Walk",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-jones-guided",
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided",
+        "H-OG-T-foot-literary"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-judges-walk",
+      "name": "Judges’ Walk",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-jones-guided"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-whitestone-pond",
+      "name": "Whitestone Pond",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-jones-guided",
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided",
+        "H-OG-T-wiki"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-vale-of-health",
+      "name": "Vale of Health",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-jones-guided",
+        "H-OG-S-jones-free",
+        "H-OG-S-wiki",
+        "H-OG-S-davies"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided",
+        "H-OG-T-jones-free",
+        "H-OG-T-wiki",
+        "H-OG-T-davies"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-byron-villas",
+      "name": "Byron Villas",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-jones-guided",
+        "H-OG-S-jones-free"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided",
+        "H-OG-T-jones-free"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-cannon-lane-lock-up",
+      "name": "Cannon Lane lock-up",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-jones-guided",
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided",
+        "H-OG-T-wiki"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-marie-stopes-house",
+      "name": "Marie Stopes house",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-jones-guided"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-guided"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-mount-vernon-hospital",
+      "name": "Mount Vernon hospital",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-english"
+      ],
+      "tourIds": [
+        "H-OG-T-english"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-hampstead-observatory",
+      "name": "Hampstead Observatory",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-english",
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-english",
+        "H-OG-T-wiki"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-the-flask",
+      "name": "The Flask",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-english"
+      ],
+      "tourIds": [
+        "H-OG-T-english"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-burgh-house",
+      "name": "Burgh House",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-english",
+        "H-OG-S-lady",
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-english",
+        "H-OG-T-lady",
+        "H-OG-T-highgate-ring"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-keats-house",
+      "name": "Keats House",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-english",
+        "H-OG-S-lady",
+        "H-OG-S-wiki",
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-english",
+        "H-OG-T-lady",
+        "H-OG-T-wiki",
+        "H-OG-T-foot-literary"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-86-hampstead-high-street",
+      "name": "86 Hampstead High Street",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-jones-free"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-free"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-40-well-walk",
+      "name": "40 Well Walk",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-jones-free"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-free"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-chalybeate-well",
+      "name": "Chalybeate Well",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-jones-free",
+        "H-OG-S-voicemap"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-free",
+        "H-OG-T-voicemap"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-viaduct-pond",
+      "name": "Viaduct Pond",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-jones-free",
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-free",
+        "H-OG-T-highgate-ring"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-leigh-hunt-cottage-site",
+      "name": "Leigh Hunt cottage site",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-jones-free"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-free"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-jack-straw-s-castle",
+      "name": "Jack Straw’s Castle",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-jones-free",
+        "H-OG-S-wiki",
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-free",
+        "H-OG-T-wiki",
+        "H-OG-T-foot-literary"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-john-gurney-hoare-plaque",
+      "name": "John Gurney Hoare plaque",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-jones-free"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-free"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-old-wyldes",
+      "name": "Old Wyldes",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-jones-free",
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-free",
+        "H-OG-T-foot-literary"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-spaniards-inn",
+      "name": "Spaniards Inn",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-jones-free",
+        "H-OG-S-wiki",
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-jones-free",
+        "H-OG-T-wiki",
+        "H-OG-T-foot-literary"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-hampstead-square",
+      "name": "Hampstead Square",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-elm-row",
+      "name": "Elm Row",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-new-end",
+      "name": "New End",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-back-lane",
+      "name": "Back Lane",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-streatley-place",
+      "name": "Streatley Place",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-mansfield-place",
+      "name": "Mansfield Place",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-boades-mews",
+      "name": "Boades Mews",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-gainsborough-gardens",
+      "name": "Gainsborough Gardens",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-shepherds-walk",
+      "name": "Shepherds Walk",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-spring-path",
+      "name": "Spring Path",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-prince-arthur-road",
+      "name": "Prince Arthur Road",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-perrin-s-court",
+      "name": "Perrin’s Court",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-oriel-place",
+      "name": "Oriel Place",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-st-mary-s-holly-walk",
+      "name": "St Mary’s, Holly Walk",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-lady",
+        "H-OG-S-voicemap",
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-lady",
+        "H-OG-T-voicemap",
+        "H-OG-T-wiki"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-mount-vernon",
+      "name": "Mount Vernon",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-everyman-hampstead",
+      "name": "Everyman Hampstead",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-voicemap"
+      ],
+      "tourIds": [
+        "H-OG-T-voicemap"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-constable-tomb",
+      "name": "Constable tomb",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-voicemap"
+      ],
+      "tourIds": [
+        "H-OG-T-voicemap"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-hampstead-underground",
+      "name": "Hampstead Underground",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-wiki",
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki",
+        "H-OG-T-highgate-ring"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-church-row-st-john-at-hampstead",
+      "name": "Church Row / St John-at-Hampstead",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-holly-bush-hill",
+      "name": "Holly Bush Hill",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-hill-garden-and-pergola",
+      "name": "Hill Garden and Pergola",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-wiki",
+        "H-OG-S-highgate-swc"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki",
+        "H-OG-T-highgate-swc"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-golders-hill-park",
+      "name": "Golders Hill Park",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-wiki",
+        "H-OG-S-highgate-swc"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki",
+        "H-OG-T-highgate-swc"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-kenwood-house",
+      "name": "Kenwood House",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-dido-elizabeth-belle-at-kenwood",
+      "name": "Dido Elizabeth Belle at Kenwood",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-kenwood-ladies-pond",
+      "name": "Kenwood Ladies’ Pond",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-highgate-men-s-pond",
+      "name": "Highgate Men’s Pond",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-tumulus",
+      "name": "Tumulus",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-wiki",
+        "H-OG-S-davies"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki",
+        "H-OG-T-davies"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-parliament-hill",
+      "name": "Parliament Hill",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-wiki",
+        "H-OG-S-davies",
+        "H-OG-S-highgate-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki",
+        "H-OG-T-davies",
+        "H-OG-T-highgate-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-parliament-hill-lido",
+      "name": "Parliament Hill Lido",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-hampstead-ponds-river-fleet",
+      "name": "Hampstead Ponds / River Fleet",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-well-walk-burgh-house",
+      "name": "Well Walk / Burgh House",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-wiki"
+      ],
+      "tourIds": [
+        "H-OG-T-wiki"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-145-north-end-road",
+      "name": "145 North End Road",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-17-east-heath-road",
+      "name": "17 East Heath Road",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-cannon-hall",
+      "name": "Cannon Hall",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-2-willow-road",
+      "name": "2 Willow Road",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-foot-literary",
+        "H-OG-S-modernist"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary",
+        "H-OG-T-modernist"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-77-parliament-hill",
+      "name": "77 Parliament Hill",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-bolton-house",
+      "name": "Bolton House",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-7-mount-vernon",
+      "name": "7 Mount Vernon",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-17-church-row",
+      "name": "17 Church Row",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-26-church-row",
+      "name": "26 Church Row",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-16-bracknell-gardens",
+      "name": "16 Bracknell Gardens",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-freud-museum",
+      "name": "Freud Museum",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-fairhurst-compayne-gardens",
+      "name": "Fairhurst, Compayne Gardens",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-foot-literary"
+      ],
+      "tourIds": [
+        "H-OG-T-foot-literary"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-mall-studios",
+      "name": "Mall Studios",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-artists-audio",
+        "H-OG-S-modernist"
+      ],
+      "tourIds": [
+        "H-OG-T-artists-audio",
+        "H-OG-T-modernist"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-isokon-building",
+      "name": "Isokon Building",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-artists-audio",
+        "H-OG-S-modernist"
+      ],
+      "tourIds": [
+        "H-OG-T-artists-audio",
+        "H-OG-T-modernist"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-upper-park-road",
+      "name": "Upper Park Road",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-artists-audio"
+      ],
+      "tourIds": [
+        "H-OG-T-artists-audio"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-booklovers-corner-site",
+      "name": "Booklovers’ Corner site",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-artists-audio"
+      ],
+      "tourIds": [
+        "H-OG-T-artists-audio"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-downshire-hill-uhlman-house",
+      "name": "Downshire Hill Uhlman house",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-uhlman"
+      ],
+      "tourIds": [
+        "H-OG-T-uhlman"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-coffee-cup",
+      "name": "Coffee Cup",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-uhlman"
+      ],
+      "tourIds": [
+        "H-OG-T-uhlman"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-kenwood",
+      "name": "Kenwood",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-davies",
+        "H-OG-S-highgate-swc",
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-davies",
+        "H-OG-T-highgate-swc",
+        "H-OG-T-highgate-ring"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-ladies-pond",
+      "name": "Ladies’ Pond",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-davies"
+      ],
+      "tourIds": [
+        "H-OG-T-davies"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-pergola",
+      "name": "Pergola",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-davies"
+      ],
+      "tourIds": [
+        "H-OG-T-davies"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-dickens-lodging-north-road",
+      "name": "Dickens lodging, North Road",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-pond-square",
+      "name": "Pond Square",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-jones",
+        "H-OG-S-highgate-lady",
+        "H-OG-S-highgate-londonwalks"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones",
+        "H-OG-T-highgate-lady",
+        "H-OG-T-highgate-londonwalks"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-church-house-10-south-grove",
+      "name": "Church House,10 South Grove",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-highgate-literary-and-scientific-institution",
+      "name": "Highgate Literary and Scientific Institution",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-st-michael-s-highgate",
+      "name": "St Michael’s, Highgate",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-the-flask-highgate",
+      "name": "The Flask, Highgate",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-highgate-reservoir",
+      "name": "Highgate reservoir",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-3-the-grove",
+      "name": "3 The Grove",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-witanhurst",
+      "name": "Witanhurst",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-jones",
+        "H-OG-S-highgate-londonwalks"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones",
+        "H-OG-T-highgate-londonwalks"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-40-highgate-west-hill",
+      "name": "40 Highgate West Hill",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-merton-lane",
+      "name": "Merton Lane",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-millfield-lane-ivy-cottage-site",
+      "name": "Millfield Lane / Ivy Cottage site",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-holly-lodge-estate",
+      "name": "Holly Lodge Estate",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-jones",
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones",
+        "H-OG-T-highgate-ring"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-holly-village",
+      "name": "Holly Village",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-jones",
+        "H-OG-S-highgate-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones",
+        "H-OG-T-highgate-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-highgate-cemetery-exterior",
+      "name": "Highgate Cemetery exterior",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-jones",
+        "H-OG-S-highgate-lady",
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones",
+        "H-OG-T-highgate-lady",
+        "H-OG-T-highgate-ring"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-waterlow-park",
+      "name": "Waterlow Park",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-jones",
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones",
+        "H-OG-T-highgate-ring"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-ivy-house-highgate-hill",
+      "name": "Ivy House, Highgate Hill",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-whittington-stone",
+      "name": "Whittington Stone",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-jones"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-jones"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-highgate-wood",
+      "name": "Highgate Wood",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-park-house-passage",
+      "name": "Park House Passage",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-the-wrestlers",
+      "name": "The Wrestlers",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-cholmeley-park",
+      "name": "Cholmeley Park",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-waterlow-park-lauderdale-house",
+      "name": "Waterlow Park / Lauderdale House",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-highgate-high-street",
+      "name": "Highgate High Street",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-lady"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-lady"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-hampstead-garden-suburb",
+      "name": "Hampstead Garden Suburb",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-swc"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-swc"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-hampstead-village",
+      "name": "Hampstead village",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-swc"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-swc"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-millfield-lane",
+      "name": "Millfield Lane",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-ring"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-highgate-ponds",
+      "name": "Highgate Ponds",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-ring"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-frognal-way",
+      "name": "Frognal Way",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-ring"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-camden-art-centre",
+      "name": "Camden Art Centre",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-ring"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    },
+    {
+      "id": "H-OG-P-billy-fury-way",
+      "name": "Billy Fury Way",
+      "aliases": [],
+      "address": null,
+      "coordinates": null,
+      "sourceIds": [
+        "H-OG-S-highgate-ring"
+      ],
+      "tourIds": [
+        "H-OG-T-highgate-ring"
+      ],
+      "candidateAngles": [],
+      "tags": [],
+      "currentContext": "Not checked in this discovery lane.",
+      "verificationNotes": "A named place is not a verified standing area, safe approach or independently corroborated historical claim."
+    }
+  ],
+  "searchLog": [
+    {
+      "id": "H-OG-Q01",
+      "family": "operators",
+      "queries": [
+        "Hampstead walking tour London Walks hidden village itinerary Flask Holly Walk",
+        "site.walks.com Hampstead village Heath walk",
+        "site.walks.com Hampstead spies walk"
+      ],
+      "result": "Standard village, literary and espionage public descriptions; review pages not used as missing itinerary evidence."
+    },
+    {
+      "id": "H-OG-Q02",
+      "family": "self-guided-audio",
+      "queries": [
+        "Hampstead self guided walking tour itinerary village Keats Fenton Burgh House",
+        "Hampstead walking tour guide book VoiceMap",
+        "Hampstead walking tour literary self guided Keats Constable route",
+        "Hampstead self guided walk [aladyinlondon.com]"
+      ],
+      "result": "Full Jones/Lady/Free Tours by Foot routes; Cookson preview; free Mike Blank 24-stop guide. Full audio not played. Added long literary route to expose subjects outside village core."
+    },
+    {
+      "id": "H-OG-Q03",
+      "family": "books",
+      "queries": [
+        "Hampstead walking tour book Metro hidden walks Hampstead map",
+        "Hampstead walking guide book Andrew Duncan John Wittich self guided",
+        "Hampstead walks guide book [publisher domains]",
+        "Hampstead walking map pdf [metropublications.com]",
+        "\"cdn.shopify.com\" \"Hampstead.pdf\""
+      ],
+      "result": "Four catalogue/index resources retained with explicit chapter/map gaps. No purchase; no book contents inferred from reviews."
+    },
+    {
+      "id": "H-OG-Q04",
+      "family": "targeted-gap-art-refugees-women",
+      "queries": [
+        "Hampstead walking tour women artists refugee modernism guide",
+        "Hampstead walking tour women art refugees guided Marilyn Greene"
+      ],
+      "result": "JR modernism, Uhlman rescue walk, V&A house comparison and OpenHouse conceptual walk materially broaden standard celebrity/literary pool; women-artist Burgh House lead handed to institution lane."
+    },
+    {
+      "id": "H-OG-Q05",
+      "family": "deduplication",
+      "queries": [
+        "Hampstead walking tour VoiceMap Brian Cookson Viator GetYourGuide"
+      ],
+      "result": "Prefer creator/platform pages. Uhlman Eventbrite and Insiders/Outsiders are one event; JR repeated events one programme with different guides. Viator private walk not assumed independent of Ye Olde England until operator match verified; parked."
+    },
+    {
+      "id": "H-OG-Q06",
+      "family": "owner-steering-highgate",
+      "queries": [
+        "Highgate to Hampstead walking tour self guided Parliament Hill Waterlow Park",
+        "Highgate village walking tour London Walks stops Pond Square",
+        "Highgate Hampstead walk public route guide Waterlow Kenwood",
+        "site:walks.com \"Highgate\" \"Village\"",
+        "site:highgatecemetery.org visit admission east west self guided"
+      ],
+      "result": "Five materially useful resources extracted: village operator, two full village routes, more direct cross-Heath blog andlong SWC comparison. Cemetery officialdomain blocked by robots; delegated current access toinstitution lane. No cemetery admission or grave visit assumed."
+    }
+  ],
+  "gaps": [
+    {
+      "id": "H-OG-G01",
+      "question": "Can a compact public route combine south-village creative/refugee stories with a meaningful Heath experience?",
+      "nextEvidence": "Coordinator checks real pedestrian geometry, gradients, standing areas and today’s access, then selects.",
+      "blocking": false
+    },
+    {
+      "id": "H-OG-G02",
+      "question": "Which historical mechanisms and vivid details survive primary/institutional checks?",
+      "nextEvidence": "Focused sources for chosen spa, art, refugee or landscape stories; do not reuse questionable tour anecdotes.",
+      "blocking": false
+    },
+    {
+      "id": "H-OG-G03",
+      "question": "Would an inaccessible book chapter change selection?",
+      "nextEvidence": "Only seek legitimate chapter access if a real content gap persists; this pool already supports alternatives.",
+      "blocking": false
+    }
+  ],
+  "parked": [
+    {
+      "title": "Burgh House Women Artists in Hampstead",
+      "url": "https://www.eventbrite.co.uk/e/art-walks-women-artists-in-hampstead-tickets-1987130061506",
+      "status": "Search-only, sent to institution lane;90 minute Burgh loop, no stops disclosed in snippet"
+    },
+    {
+      "title": "London Uncovered blue-plaque walk",
+      "url": "https://nyatasha.github.io/blueplaques/walks/hampstead-village/",
+      "status": "Search-only; eight plaques, route-distance estimate uses straight-line allowance, not routing"
+    },
+    {
+      "title": "Ye Olde England private Hampstead walk",
+      "url": "https://yeoldeenglandtours.co.uk/our-tours-2/private-london-walking-tours/hampstead-walking-tour/",
+      "status": "Search-only; common village pool, no enrichment needed"
+    },
+    {
+      "title": "Viator Hampstead Village private tour",
+      "url": "https://www.viator.com/tours/London/Hampstead-Village-London-Walking-Tour/d737-8607P76",
+      "status": "Search-only reseller; operator match unverified, not counted separately"
+    },
+    {
+      "title": "Estelle Lovatt Constable walk",
+      "url": "https://estellelovatt.com/2021/09/04/constables-hampstead-walk-and-talk-tour/",
+      "status": "Search-only specialist lead; no full itinerary obtained"
+    },
+    {
+      "title": "Ian Farrington Dracula site essay",
+      "url": "https://ianfarrington.wordpress.com/2022/04/20/draculas-london-st-john-at-hampstead/",
+      "status": "Search-only follow-up; distinguishes inferred churchyard from explicit novel location"
+    },
+    {
+      "title": "Marilyn Greene wider portfolio",
+      "url": "https://footprintsoflondon.com/live/guides/marilyn-greene/",
+      "status": "Search-extracted portfolio: Slade, modernism, Constable and First World War subjects; no added route inferred"
+    },
+    {
+      "title": "Lady Heath-only extension",
+      "url": "https://www.aladyinlondon.com/2021/01/hampstead-heath-walks.html",
+      "status": "Search-extracted comparison; ParliamentHill/Kenwood/Pergola substantially enlarge outing, not separately enriched"
+    },
+    {
+      "title": "North to South London Trail, section 2",
+      "url": "https://walkingincirclesuk.com/blog/the-north-to-south-london-trail",
+      "status": "Intro read;6.5-mileHighgate→BakerStreet sectionlisted, detailed crossing not extracted. Whole trail irrelevant."
+    },
+    {
+      "title": "Highgate cemetery officialvisiting rules",
+      "url": "https://highgatecemetery.org/",
+      "status": "Search domain robots blocked. Do not adopt dated third-party guided-only rules or imply freeentry; separate paid optional visit."
+    },
+    {
+      "title": "WalkWalk Highgate village/cemetery",
+      "url": "https://walkwalk.org/london/walks/highgate-village-and-cemetery",
+      "status": "Search-only; mixes East/West graveassertions and claimsfreewalk. Excluded as unreliableforcemetery admission or route design."
+    }
+  ]
+}

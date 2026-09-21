@@ -1,12 +1,14 @@
 import finchley from './catalog.json';
 import clerkenwell from './clerkenwell.json';
+import hampstead from './hampstead.json';
 
 export type MapCatalog = typeof finchley;
 export const defaultMapId = finchley.id;
-// Two reviewed, bundled areas. Arbitrary imported map assets remain out of scope.
+// Explicit reviewed, bundled areas. Arbitrary imported map assets remain out of scope.
 export const mapAreas = [
-  { title: 'North Finchley', catalog: finchley },
-  { title: 'Clerkenwell / Farringdon', catalog: clerkenwell },
+  { title: 'North Finchley', catalog: finchley, assetRoot: 'assets/maps/north-finchley/' },
+  { title: 'Clerkenwell / Farringdon', catalog: clerkenwell, assetRoot: 'assets/maps/clerkenwell/' },
+  { title: 'Highgate / Hampstead', catalog: hampstead, assetRoot: 'assets/maps/hampstead/' },
 ] as const;
 export function mapArea(id: string = defaultMapId) {
   const area = mapAreas.find(candidate => candidate.catalog.id === id);

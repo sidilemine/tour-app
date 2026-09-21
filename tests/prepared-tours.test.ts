@@ -10,11 +10,12 @@ import { parseTourPackage } from '../src/tours/package';
 const packages = [
   { variant: 'A', path: 'content/north-finchley/packages/A.json', stops: 5, chapterIds: [] as string[], mapId: 'north-finchley-abc1a7e4d563d305' },
   { variant: 'B', path: 'content/north-finchley/packages/B.json', stops: 6, chapterIds: ['walking-neighbourhood'], mapId: 'north-finchley-abc1a7e4d563d305' },
+  { variant: 'H', path: 'content/hampstead/packages/room-to-breathe.json', stops: 5, chapterIds: ['walking-conversation', 'keeping-the-heath'], mapId: 'hampstead-0abcc26a600e0718' },
   { variant: 'C', path: 'content/clerkenwell/packages/working-lives.json', stops: 8, chapterIds: ['many-hands', 'next-days-stock'], mapId: 'clerkenwell-8f45f13ad1755318' },
 ];
 type PreparedPackage = typeof packages[number];
 // Read inside each test so an absent new artifact cannot prevent the existing
-// packages' checks from running. C remains required: its tests fail if absent.
+// packages' checks from running. Every listed authored package is required.
 function loadPackage(definition: PreparedPackage) {
   const p = parseTourPackage(JSON.parse(readFileSync(definition.path, 'utf8')));
   assert.equal(p.mapId, definition.mapId, `${definition.variant}: intended offline map`);
@@ -161,15 +162,18 @@ type ChapterWindow = {
   id: string; afterStopIndex: number; startRouteIndex: number; endRouteIndex: number;
   navigationRouteIndex: number; fastWalkingMetresPerSecond: number; marginSeconds: number;
 };
-for (const [chapterIndex, chapterId] of packages.find(p => p.variant === 'C')!.chapterIds.entries()) {
-  test(`prepared C: latest ${chapterId} launch fits measured audio and authored navigation margin`, () => {
-    const fixture = loadPackage(packages.find(p => p.variant === 'C')!).fixture;
-    const plan = JSON.parse(readFileSync('content/clerkenwell/plan.json', 'utf8')) as {
+for (const variant of ['C', 'H']) {
+ const definition = packages.find(p => p.variant === variant)!;
+ const planPath = variant === 'C' ? 'content/clerkenwell/plan.json' : 'content/hampstead/plan.json';
+ for (const [chapterIndex, chapterId] of definition.chapterIds.entries()) {
+  test(`prepared ${variant}: latest ${chapterId} launch fits measured audio and authored navigation margin`, () => {
+    const fixture = loadPackage(definition).fixture;
+    const plan = JSON.parse(readFileSync(planPath, 'utf8')) as {
       fixture: Pick<Fixture, 'route' | 'stops'>; chapters: ChapterWindow[];
     };
-    assert.deepEqual(plan.fixture.route, fixture.route, 'Clerkenwell budget plan and packaged route must agree');
-    assert.deepEqual(plan.fixture.stops.map(s => s.routeIndex), fixture.stops.map(s => s.routeIndex), 'Clerkenwell budget plan and packaged stop indices must agree');
-    assert.deepEqual(plan.chapters.map(c => c.id), fixture.narration!.chapters.map(c => c.id), 'Clerkenwell plan includes each packaged chapter in order');
+    assert.deepEqual(plan.fixture.route, fixture.route, 'Authored budget plan and packaged route must agree');
+    assert.deepEqual(plan.fixture.stops.map(s => s.routeIndex), fixture.stops.map(s => s.routeIndex), 'Authored budget plan and packaged stop indices must agree');
+    assert.deepEqual(plan.chapters.map(c => c.id), fixture.narration!.chapters.map(c => c.id), 'Authored plan includes each packaged chapter in order');
     const window = plan.chapters[chapterIndex], chapter = fixture.narration!.chapters[chapterIndex];
     for (const key of ['afterStopIndex', 'startRouteIndex', 'endRouteIndex'] as const) {
       assert.equal(window[key], chapter[key], `${chapterId}: plan/package ${key} agrees`);
@@ -189,6 +193,7 @@ for (const [chapterIndex, chapterId] of packages.find(p => p.variant === 'C')!.c
       `${chapterId}: latest launch leaves ${remainingMetres.toFixed(1)} m / ${availableSeconds.toFixed(1)} s at ${window.fastWalkingMetresPerSecond} m/s before navigation; audio needs ${chapter.audio.durationSeconds.toFixed(1)} s plus ${window.marginSeconds} s margin`);
   });
 }
+}
 
 test('prepared C: brisk 6 km/h walk with two-second fixes catches both short chapter windows in the full sequence', t => {
   const fixture = loadPackage(packages.find(p => p.variant === 'C')!).fixture;
@@ -200,6 +205,30 @@ test('prepared C: brisk 6 km/h walk with two-second fixes catches both short cha
   assert.deepEqual(h.state.stops, fixture.stops.map(() => 'completed'), 'Brisk replay completes every stop');
   assert.deepEqual(h.state.chapters, ['completed', 'completed'], 'Brisk replay completes both chapters');
   const plan = JSON.parse(readFileSync('content/clerkenwell/plan.json', 'utf8')) as { chapters: ChapterWindow[] };
+  const offsets = [0];
+  for (let i = 1; i < fixture.route.length; i++) offsets.push(offsets.at(-1)! + distance(fixture.route[i - 1], fixture.route[i]));
+  for (const [index, chapter] of fixture.narration!.chapters.entries()) {
+    const play = h.plays.find(p => p.index === fixture.stops.length + index)!;
+    assert.ok(play.along !== undefined && play.along >= offsets[chapter.startRouteIndex] && play.along < offsets[chapter.endRouteIndex],
+      `${chapter.id}: brisk replay launch must fall inside its actual interval`);
+    const window = plan.chapters.find(c => c.id === chapter.id)!;
+    const reserveSeconds = (offsets[window.navigationRouteIndex] - play.along) / speed - chapter.audio.durationSeconds;
+    assert.ok(reserveSeconds >= window.marginSeconds,
+      `${chapter.id}: brisk replay leaves only ${reserveSeconds.toFixed(2)} seconds after audio before the navigation decision`);
+    t.diagnostic(`${chapter.id}: launch ${(play.along - offsets[chapter.startRouteIndex]).toFixed(2)} m into interval; ${reserveSeconds.toFixed(2)} s remain after narration before navigation`);
+  }
+});
+
+test('prepared H: brisk 6 km/h crossing catches both chapters and leaves navigation quiet', t => {
+  const fixture = loadPackage(packages.find(p => p.variant === 'H')!).fixture;
+  const speed = 6 / 3.6, h = simulate(fixture, { metresPerSecond: speed, fixEveryMilliseconds: 2000 });
+  completeThroughStop(fixture, h, fixture.stops.length - 1);
+  assert.deepEqual(h.plays.map(p => narrationAt(fixture, p.index)!.id), [
+    'highgate-station', 'pond-square', 'walking-conversation', 'highgate-ponds', 'keeping-the-heath', 'willow-road', 'keats-house',
+  ], 'Brisk cadence must launch each chapter once in its intended place among the five stops');
+  assert.deepEqual(h.state.stops, fixture.stops.map(() => 'completed'), 'Brisk replay completes every stop');
+  assert.deepEqual(h.state.chapters, ['completed', 'completed'], 'Brisk replay completes both chapters');
+  const plan = JSON.parse(readFileSync('content/hampstead/plan.json', 'utf8')) as { chapters: ChapterWindow[] };
   const offsets = [0];
   for (let i = 1; i < fixture.route.length; i++) offsets.push(offsets.at(-1)! + distance(fixture.route[i - 1], fixture.route[i]));
   for (const [index, chapter] of fixture.narration!.chapters.entries()) {

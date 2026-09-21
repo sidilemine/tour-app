@@ -1,0 +1,505 @@
+{
+  "stories": [
+    {
+      "id": "highgate-station",
+      "title": "Welcome to Highgate",
+      "transcript": "Welcome to Highgate. Our walk takes us up into the village, across Hampstead Heath, and on to two homes where people made room for unusually creative lives. There will be stories along the way, and stretches to enjoy the Heath in peace.\n\nHighgate's first railway station opened in eighteen sixty-seven, well before the Tube platforms used today. The village goes back much further, with inns that found a rather more entertaining way of welcoming visitors.\n\nFrom the station exit, turn right to the nearby pedestrian signals and cross Archway Road. On the far side, turn right briefly, then left into Southwood Lane. Follow its pavement up to the village. At Highgate High Street, use the zebra, then enter Pond Square by the northern public steps. Our next story is in the square.",
+      "sources": [
+        {
+          "title": "Historic England — Highgate High Level Station, AA084694",
+          "url": "https://historicengland.org.uk/images-books/photos/item/AA084694"
+        },
+        {
+          "title": "Daniel Lysons — Highgate, 1795",
+          "url": "https://www.grubstreetproject.net/places/90777/"
+        },
+        {
+          "title": "Reviewed pedestrian route — Valhalla/OpenStreetMap",
+          "url": "https://valhalla1.openstreetmap.de/"
+        },
+        {
+          "title": "Reviewed pedestrian route — City of London Heath map",
+          "url": "https://www.cityoflondon.gov.uk/assets/Green-Spaces/hampstead-heath-map.pdf"
+        }
+      ],
+      "evidence": [
+        {
+          "paragraph": "Welcome to Highgate. Our walk takes us up into the village, across Hampstead Heath, and on to two homes where people made room for unusually creative lives. There will be stories along the way, and stretches to enjoy the Heath in peace.",
+          "kind": "editorial",
+          "basis": "Route premise and intended pacing from SELECTION.md; no precise duration, turn or promised sighting. Exact navigation is supplied separately.",
+          "sourceUrls": []
+        },
+        {
+          "paragraph": "Highgate's first railway station opened in eighteen sixty-seven, well before the Tube platforms used today. The village goes back much further, with inns that found a rather more entertaining way of welcoming visitors.",
+          "kind": "source_checked",
+          "basis": "STATION-WELLS-RESEARCH HG-ST01 supports the original surface station opening; HIGHGATE-PONDS HG01/HG02 establish the earlier village and documented visitor custom. The last sentence is editorial anticipation, not a claim of a ceremony operating today. Final edit: Removed narrator stage-management; retains verified original-railway versus older village distinction, without a journey-time claim.",
+          "sourceUrls": [
+            "https://historicengland.org.uk/images-books/photos/item/AA084694",
+            "https://www.grubstreetproject.net/places/90777/"
+          ]
+        },
+        {
+          "paragraph": "From the station exit, turn right to the nearby pedestrian signals and cross Archway Road. On the far side, turn right briefly, then left into Southwood Lane. Follow its pavement up to the village. At Highgate High Street, use the zebra, then enter Pond Square by the northern public steps. Our next story is in the square.",
+          "kind": "source_checked",
+          "basis": "Literal navigation: route-selected.json and ROUTE-DIRECTIONS.md, desk reviewed 21 September 2026 against pedestrian geometry, official map and dated imagery. Uses public pavements and specified crossings; standing areas and temporary works have not been field observed. Spoken route summary is supplemented by the saved step list; no live turn-by-turn routing is implied.",
+          "sourceUrls": [
+            "https://valhalla1.openstreetmap.de/",
+            "https://www.cityoflondon.gov.uk/assets/Green-Spaces/hampstead-heath-map.pdf"
+          ]
+        }
+      ],
+      "directions": [
+        "From the Archway Road station exit, turn right along the pavement to the nearby pedestrian signals by Southwood Lane. Cross Archway Road at the signals.",
+        "On the far side, turn right briefly, then left into Southwood Lane. Follow its public pavement up to Highgate village, about 720 metres.",
+        "At Highgate High Street, use the zebra to reach the Pond Square side. Enter the square by the northern public connection, which includes a short flight of steps. Stop just inside its western edge, clear of the through-path."
+      ]
+    },
+    {
+      "id": "pond-square",
+      "title": "A very accommodating oath",
+      "transcript": "Pond Square once held the village's drinking-water ponds. They were filled in during the nineteenth century, leaving this space among the houses. Water was one practical necessity in a place that served travellers: Highgate grew around a road through the Bishop of London's land, with a toll payable to the bishop and inns catering to the passing trade.\n\nThe inns also offered something less essential: the Highgate oath. Picture the ceremony in a satirical print from seventeen ninety-six. Outside the Horns Tavern, a landlord holds an open book. His customer prepares to swear, while a boy raises a pole topped with horns. A woman appears with a huge foaming tankard, and the onlookers are plainly enjoying themselves.\n\nThe visitor must promise to choose white bread over brown, unless he likes brown better. And strong beer over weak, unless he prefers the weak. The joke was already being recorded as an old custom in the seventeen-nineties. It is an unusually considerate oath: all that formality, and you can still have the beer you wanted.\n\nLeave Pond Square by its southern end, turn right along South Grove, then left down Highgate West Hill. Use the eastern pavement. At Merton Lane, continue just beyond its mouth to the central refuge. Cross when each half is clear, then return a few steps uphill to enter Merton Lane.\n\nFollow the lane downhill, watching for vehicles, then turn left on Millfield Lane. After about two hundred metres, turn right onto the main Heath path between the ponds. Our next pause is roughly a hundred and seventy metres along that path. The short walking story starts after you leave the lane.",
+      "sources": [
+        {
+          "title": "Camden — Highgate Conservation Area Appraisal",
+          "url": "https://www.camden.gov.uk/documents/20142/7610500/Highgate.pdf/6995d361-b1c5-5650-4414-9669232073e1"
+        },
+        {
+          "title": "Daniel Lysons — Highgate, 1795",
+          "url": "https://www.grubstreetproject.net/places/90777/"
+        },
+        {
+          "title": "Hornsey Historical Society — A Brief History of Highgate",
+          "url": "https://hornseyhistorical.org.uk/brief-history-highgate/"
+        },
+        {
+          "title": "British Museum — Swearing at Highgate, 1796",
+          "url": "https://www.britishmuseum.org/collection/object/P_1927-1126-1-9-1"
+        },
+        {
+          "title": "Reviewed pedestrian route — Valhalla/OpenStreetMap",
+          "url": "https://valhalla1.openstreetmap.de/"
+        },
+        {
+          "title": "Reviewed pedestrian route — City of London Heath map",
+          "url": "https://www.cityoflondon.gov.uk/assets/Green-Spaces/hampstead-heath-map.pdf"
+        }
+      ],
+      "evidence": [
+        {
+          "paragraph": "Pond Square once held the village's drinking-water ponds. They were filled in during the nineteenth century, leaving this space among the houses. Water was one practical necessity in a place that served travellers: Highgate grew around a road through the Bishop of London's land, with a toll payable to the bishop and inns catering to the passing trade.",
+          "kind": "source_checked",
+          "basis": "HG01/HG03: toll landholder and village water function. Avoids disputed exact pond-filling year and definitive name etymology. Inns/road role supported by specialist history; no precise medieval transaction date.",
+          "sourceUrls": [
+            "https://www.camden.gov.uk/documents/20142/7610500/Highgate.pdf/6995d361-b1c5-5650-4414-9669232073e1",
+            "https://www.grubstreetproject.net/places/90777/",
+            "https://hornseyhistorical.org.uk/brief-history-highgate/"
+          ]
+        },
+        {
+          "paragraph": "The inns also offered something less essential: the Highgate oath. Picture the ceremony in a satirical print from seventeen ninety-six. Outside the Horns Tavern, a landlord holds an open book. His customer prepares to swear, while a boy raises a pole topped with horns. A woman appears with a huge foaming tankard, and the onlookers are plainly enjoying themselves.",
+          "kind": "supported_reconstruction",
+          "basis": "HG02: guided evocation of the surviving 1796 print, not a recovered scene at Pond Square. The Horns Tavern is explicitly named; no identification with a present pub. Depicted actions follow the indexed British Museum catalogue, whose direct page returned 403.",
+          "sourceUrls": [
+            "https://www.britishmuseum.org/collection/object/P_1927-1126-1-9-1"
+          ]
+        },
+        {
+          "paragraph": "The visitor must promise to choose white bread over brown, unless he likes brown better. And strong beer over weak, unless he prefers the weak. The joke was already being recorded as an old custom in the seventeen-nineties. It is an unusually considerate oath: all that formality, and you can still have the beer you wanted.",
+          "kind": "source_checked",
+          "basis": "HG02: oath terms paraphrased from print; HG02/S01 supports the established custom in 1795. Considerateness is comic editorial interpretation. Omits sexual element and uncertain origins; no modern practice asserted. Final edit removes a repeated explanation while retaining the final beer joke.",
+          "sourceUrls": [
+            "https://www.britishmuseum.org/collection/object/P_1927-1126-1-9-1",
+            "https://www.grubstreetproject.net/places/90777/"
+          ]
+        },
+        {
+          "paragraph": "Leave Pond Square by its southern end, turn right along South Grove, then left down Highgate West Hill. Use the eastern pavement. At Merton Lane, continue just beyond its mouth to the central refuge. Cross when each half is clear, then return a few steps uphill to enter Merton Lane.",
+          "kind": "source_checked",
+          "basis": "Literal navigation: route-selected.json and ROUTE-DIRECTIONS.md, desk reviewed 21 September 2026 against pedestrian geometry, official map and dated imagery. Uses public pavements and specified crossings; standing areas and temporary works have not been field observed. Spoken route summary is supplemented by the saved step list; no live turn-by-turn routing is implied.",
+          "sourceUrls": [
+            "https://valhalla1.openstreetmap.de/",
+            "https://www.cityoflondon.gov.uk/assets/Green-Spaces/hampstead-heath-map.pdf"
+          ]
+        },
+        {
+          "paragraph": "Follow the lane downhill, watching for vehicles, then turn left on Millfield Lane. After about two hundred metres, turn right onto the main Heath path between the ponds. Our next pause is roughly a hundred and seventy metres along that path. The short walking story starts after you leave the lane.",
+          "kind": "source_checked",
+          "basis": "Literal navigation: route-selected.json and ROUTE-DIRECTIONS.md, desk reviewed 21 September 2026 against pedestrian geometry, official map and dated imagery. Uses public pavements and specified crossings; standing areas and temporary works have not been field observed. Spoken route summary is supplemented by the saved step list; no live turn-by-turn routing is implied.",
+          "sourceUrls": [
+            "https://valhalla1.openstreetmap.de/",
+            "https://www.cityoflondon.gov.uk/assets/Green-Spaces/hampstead-heath-map.pdf"
+          ]
+        }
+      ],
+      "directions": [
+        "Leave the southern end of Pond Square onto South Grove, turn right and follow it about 150 metres to Highgate West Hill. Turn left downhill, using the eastern pavement.",
+        "At Merton Lane, continue a few metres beyond its mouth to the central pedestrian refuge. It has no zebra or signals: cross each half when clear. Return a short distance uphill on the western pavement and enter Merton Lane.",
+        "Follow Merton Lane downhill for about 270 metres. The lane has no continuous footway; watch for vehicles. At the bottom turn left onto Millfield Lane and follow its pond-side pavement for about 200 metres.",
+        "Turn right onto the main public shared Heath path between the Model Boating and Men’s ponds, following the offline map. Stay outside bathing gates. Continue on this path through bends and side-path joins.",
+        "The walking story starts after the turn onto the Heath path. The next stop is about 170 metres from the Millfield turn, just before a side-path junction. Pause at a clear path edge, leaving room for walkers and cyclists."
+      ]
+    },
+    {
+      "id": "highgate-ponds",
+      "title": "London’s wooden plumbing",
+      "transcript": "We are between the Model Boating Pond and the Men's Bathing Pond, part of the Highgate chain. Their leafy setting can disguise a practical origin. The chain was made by damming a stream fed by springs near Kenwood, storing water for London. Each pond connects to the next through pipes or streams: a linked piece of engineering.\n\nThe Hampstead Water Company carried its supply into north London through wooden pipes. Imagine the work hidden inside that phrase: elm trunks with holes bored along their length, turning timber into channels for water. A tree could become part of the city's plumbing. These reservoirs belonged to a system reaching well beyond the people who lived beside them.\n\nThe eastern stream eventually joins its western neighbour to form the Fleet, the river now buried beneath London on its way to the Thames. Up here, its beginnings remain open to the sky. The ponds no longer supply drinking water. Some are designated for swimming; others offer wildlife habitat and the quieter pleasure of watching the water. Infrastructure has become somewhere people come for a break.\n\nContinue west on this main path. After about five hundred metres, take the left-hand path towards the Hampstead ponds. Our next stop is two Willow Road, across the Heath. Several paths are unnamed, so use the saved directions and route line at the forks. At East Heath Road, use the zebra just west of Downshire Hill before continuing to Willow Road.",
+      "sources": [
+        {
+          "title": "Hampstead Heath Ponds Project — A history of the ponds",
+          "url": "https://hampsteadheathpondsproject.wordpress.com/2015/02/12/a-history-of-the-ponds/"
+        },
+        {
+          "title": "High Court — Hampstead Heath dams judgment, 2014",
+          "url": "https://news.cityoflondon.gov.uk/hampstead-heath-dams-project-full-court-decision--part-one-of-two/"
+        },
+        {
+          "title": "City of London — Swimming at Hampstead Heath",
+          "url": "https://www.cityoflondon.gov.uk/things-to-do/green-spaces/hampstead-heath/activities-at-hampstead-heath/swimming-at-hampstead-heath"
+        },
+        {
+          "title": "Heath Hands — Habitats and Wildlife",
+          "url": "https://www.heath-hands.org.uk/habitats-and-wildlife"
+        },
+        {
+          "title": "City of London — Hampstead Heath map",
+          "url": "https://www.cityoflondon.gov.uk/assets/Green-Spaces/hampstead-heath-map.pdf"
+        },
+        {
+          "title": "Reviewed pedestrian route — Valhalla/OpenStreetMap",
+          "url": "https://valhalla1.openstreetmap.de/"
+        }
+      ],
+      "evidence": [
+        {
+          "paragraph": "We are between the Model Boating Pond and the Men's Bathing Pond, part of the Highgate chain. Their leafy setting can disguise a practical origin. The chain was made by damming a stream fed by springs near Kenwood, storing water for London. Each pond connects to the next through pipes or streams: a linked piece of engineering.",
+          "kind": "source_checked",
+          "basis": "HG04: project history and 2014 judgment §8 support spring-fed eastern chain, damming, storage and connected ponds. Descriptive opening does not label every Heath pond artificial or assert a specific pond date. Final edit: Names the actual causeway setting from the official map and route review. No precise island sightline or entry into bathing grounds is asserted.",
+          "sourceUrls": [
+            "https://hampsteadheathpondsproject.wordpress.com/2015/02/12/a-history-of-the-ponds/",
+            "https://news.cityoflondon.gov.uk/hampstead-heath-dams-project-full-court-decision--part-one-of-two/",
+            "https://www.cityoflondon.gov.uk/assets/Green-Spaces/hampstead-heath-map.pdf"
+          ]
+        },
+        {
+          "paragraph": "The Hampstead Water Company carried its supply into north London through wooden pipes. Imagine the work hidden inside that phrase: elm trunks with holes bored along their length, turning timber into channels for water. A tree could become part of the city's plumbing. These reservoirs belonged to a system reaching well beyond the people who lived beside them.",
+          "kind": "supported_reconstruction",
+          "basis": "HG04: elm-trunk pipes are directly reported by the project history; the cross-section invitation illustrates that established construction, without inventing a pipe route, pressure, household or exact method of joining.",
+          "sourceUrls": [
+            "https://hampsteadheathpondsproject.wordpress.com/2015/02/12/a-history-of-the-ponds/"
+          ]
+        },
+        {
+          "paragraph": "The eastern stream eventually joins its western neighbour to form the Fleet, the river now buried beneath London on its way to the Thames. Up here, its beginnings remain open to the sky. The ponds no longer supply drinking water. Some are designated for swimming; others offer wildlife habitat and the quieter pleasure of watching the water. Infrastructure has become somewhere people come for a break.",
+          "kind": "source_checked",
+          "basis": "HG04: main eastern/western chains feed the Fleet; no assertion about every watercourse on the Heath. Current swimming supported by City page, ecological role by Heath Hands. Ending is editorial synthesis; no swimmer or species sighting promised. Final edit: Distinguishes designated bathing ponds from this Model Boating Pond; no general swimming invitation.",
+          "sourceUrls": [
+            "https://hampsteadheathpondsproject.wordpress.com/2015/02/12/a-history-of-the-ponds/",
+            "https://www.cityoflondon.gov.uk/things-to-do/green-spaces/hampstead-heath/activities-at-hampstead-heath/swimming-at-hampstead-heath",
+            "https://www.heath-hands.org.uk/habitats-and-wildlife"
+          ]
+        },
+        {
+          "paragraph": "Continue west on this main path. After about five hundred metres, take the left-hand path towards the Hampstead ponds. Our next stop is two Willow Road, across the Heath. Several paths are unnamed, so use the saved directions and route line at the forks. At East Heath Road, use the zebra just west of Downshire Hill before continuing to Willow Road.",
+          "kind": "source_checked",
+          "basis": "Literal navigation: route-selected.json and ROUTE-DIRECTIONS.md, desk reviewed 21 September 2026 against pedestrian geometry, official map and dated imagery. Uses public pavements and specified crossings; standing areas and temporary works have not been field observed. Spoken route summary is supplemented by the saved step list; no live turn-by-turn routing is implied.",
+          "sourceUrls": [
+            "https://valhalla1.openstreetmap.de/",
+            "https://www.cityoflondon.gov.uk/assets/Green-Spaces/hampstead-heath-map.pdf"
+          ]
+        }
+      ],
+      "directions": [
+        "Continue west on the same main shared path. About 80 metres after the pause, continue across the path intersection on the route ahead. Stay on this path for about 490 metres from the pause in total. The second walking story belongs here.",
+        "At the mapped junction after about 490 metres, turn left towards the Hampstead ponds. Follow that path about 120 metres, turn right, then after about 40 metres keep left. Use the offline route line at these unnamed forks.",
+        "Near the northern approach to the Mixed Bathing Pond, take the short left connection, then right onto the westbound path. Stay outside the bathing enclosure. After about 85 metres, keep right at the fork alongside the Hampstead pond chain.",
+        "After about 140 metres, turn right onto the broad shared path towards East Heath Road and Downshire Hill. Follow the map towards the road.",
+        "Before reaching the direct road mouth, take the path right to the zebra crossing just west of Downshire Hill. Complete the crossing, turn left along the far pavement, then right into Downshire Hill.",
+        "After about 40 metres down Downshire Hill, turn right into Willow Road and continue about 60 metres to number 2. Stand on the building-side public pavement outside the front wall, clear of entrances and driveways."
+      ]
+    },
+    {
+      "id": "willow-road",
+      "title": "A home becomes an exhibition",
+      "transcript": "The long windows and red brick at two Willow Road belong to a home completed in nineteen thirty-nine for architect Ernő Goldfinger and his wife Ursula. It is one of three houses built around a concrete frame. Goldfinger argued that their proportions belonged in the same tradition as Hampstead's Georgian buildings. Modern construction, he thought, could be a good neighbour.\n\nA local preservation campaigner, Henry Brooke, strongly disagreed. He feared the design would damage the neighbourhood's character. Only a few years later, the Goldfingers were using their new family home for wartime fundraising.\n\nPicture the rooms in nineteen forty-two, given over to roughly seventy works of art, many offered at auction to help people in the Soviet Union facing the Nazi invasion. Among the works was a small head by the sculptor Henry Moore: carved elm, its hollows crossed by taut strings. The Goldfingers bought it themselves. This was a home where experimental art could be looked at, argued over, and put to practical use.\n\nEventually the house itself became something to preserve. When it passed to the National Trust, the Heritage Secretary involved was Peter Brooke, son of its most vocal opponent. Within one family, yesterday's threat to Hampstead had become part of its heritage.\n\nReturn along Willow Road, turn right down Downshire Hill, then left into Keats Grove. The next stop is outside Keats House's green garden gate, about a hundred and fifty metres along. We stay on the public pavement.",
+      "sources": [
+        {
+          "title": "National Trust — Construction of 2 Willow Road",
+          "url": "https://www.nationaltrust.org.uk/visit/london/2-willow-road/the-construction-of-2-willow-road"
+        },
+        {
+          "title": "National Trust — Hampstead’s creative community",
+          "url": "https://www.nationaltrust.org.uk/visit/london/2-willow-road/history-of-hampstead-and-2-willow-road"
+        },
+        {
+          "title": "National Trust Collections — Henry Moore, Head, 112757",
+          "url": "https://www.nationaltrustcollections.org.uk/object/112757"
+        },
+        {
+          "title": "Reviewed pedestrian route — Valhalla/OpenStreetMap",
+          "url": "https://valhalla1.openstreetmap.de/"
+        },
+        {
+          "title": "Reviewed pedestrian route — City of London Heath map",
+          "url": "https://www.cityoflondon.gov.uk/assets/Green-Spaces/hampstead-heath-map.pdf"
+        }
+      ],
+      "evidence": [
+        {
+          "paragraph": "The long windows and red brick at two Willow Road belong to a home completed in nineteen thirty-nine for architect Ernő Goldfinger and his wife Ursula. It is one of three houses built around a concrete frame. Goldfinger argued that their proportions belonged in the same tradition as Hampstead's Georgian buildings. Modern construction, he thought, could be a good neighbour.",
+          "kind": "source_checked",
+          "basis": "W1a: three houses, frame, completion date and contemporary Georgian comparison from National Trust. Exterior description requires root’s verified public view; structural frame is described, not claimed visible. No unverified origin/nationality or interior access.",
+          "sourceUrls": [
+            "https://www.nationaltrust.org.uk/visit/london/2-willow-road/the-construction-of-2-willow-road",
+            "https://www.nationaltrust.org.uk/visit/london/2-willow-road/history-of-hampstead-and-2-willow-road"
+          ]
+        },
+        {
+          "paragraph": "A local preservation campaigner, Henry Brooke, strongly disagreed. He feared the design would damage the neighbourhood's character. Only a few years later, the Goldfingers were using their new family home for wartime fundraising.",
+          "kind": "source_checked",
+          "basis": "W1b/W3: named opponent and cause, then supported transition to 1942 event. Does not imply all residents objected or all backed it. Final edit: Direct transition gives the household agency and removes commentary about what makes the story entertaining.",
+          "sourceUrls": [
+            "https://www.nationaltrust.org.uk/visit/london/2-willow-road/the-construction-of-2-willow-road",
+            "https://www.nationaltrust.org.uk/visit/london/2-willow-road/history-of-hampstead-and-2-willow-road"
+          ]
+        },
+        {
+          "paragraph": "Picture the rooms in nineteen forty-two, given over to roughly seventy works of art, many offered at auction to help people in the Soviet Union facing the Nazi invasion. Among the works was a small head by the sculptor Henry Moore: carved elm, its hollows crossed by taut strings. The Goldfingers bought it themselves. This was a home where experimental art could be looked at, argued over, and put to practical use.",
+          "kind": "supported_reconstruction",
+          "basis": "W2/W3: exhibition, approximate count and cause from National Trust; Head, 1938, elm/string and purchase provenance from object 112757. Looking and discussing are ordinary plausible exhibition activities, not a claimed witnessed exchange; exact room arrangement and guest list are not invented.",
+          "sourceUrls": [
+            "https://www.nationaltrust.org.uk/visit/london/2-willow-road/history-of-hampstead-and-2-willow-road",
+            "https://www.nationaltrustcollections.org.uk/object/112757"
+          ]
+        },
+        {
+          "paragraph": "Eventually the house itself became something to preserve. When it passed to the National Trust, the Heritage Secretary involved was Peter Brooke, son of its most vocal opponent. Within one family, yesterday's threat to Hampstead had become part of its heritage.",
+          "kind": "source_checked",
+          "basis": "W1b: National Trust records father/son reversal. Omits disputed 1993/1994 transfer dating and does not attribute a private opinion to either man. Final sentence interprets the documented public roles.",
+          "sourceUrls": [
+            "https://www.nationaltrust.org.uk/visit/london/2-willow-road/the-construction-of-2-willow-road"
+          ]
+        },
+        {
+          "paragraph": "Return along Willow Road, turn right down Downshire Hill, then left into Keats Grove. The next stop is outside Keats House's green garden gate, about a hundred and fifty metres along. We stay on the public pavement.",
+          "kind": "source_checked",
+          "basis": "Literal navigation: route-selected.json and ROUTE-DIRECTIONS.md, desk reviewed 21 September 2026 against pedestrian geometry, official map and dated imagery. Uses public pavements and specified crossings; standing areas and temporary works have not been field observed. Spoken route summary is supplemented by the saved step list; no live turn-by-turn routing is implied.",
+          "sourceUrls": [
+            "https://valhalla1.openstreetmap.de/",
+            "https://www.cityoflondon.gov.uk/assets/Green-Spaces/hampstead-heath-map.pdf"
+          ]
+        }
+      ],
+      "directions": [
+        "Return along Willow Road to Downshire Hill, turn right and follow the pavement downhill about 225 metres.",
+        "Turn left into Keats Grove. After about 150 metres, stop by the green garden gate of Keats House. Stay on the public pavement and keep the gate clear. The lower house is screened by fencing and trees; the story works with a partial street view."
+      ]
+    },
+    {
+      "id": "keats-house",
+      "title": "Something worth sharing",
+      "transcript": "Here is the home of John Keats, the younger poet from our walking conversation. The building began as two homes designed to look like one, sharing a garden. Keats came to live with his friend Charles Brown in eighteen eighteen, and fell in love with his neighbour Fanny Brawne.\n\nThat garden helped inspire Ode to a Nightingale. In the poem, the speaker wants to follow the bird away from human weariness, on the 'viewless wings of Poesy': the invisible wings of poetry.\n\nNearly two centuries later, the poem helped another artist respond to a very personal problem. In nineteen ninety-seven, Martin Huxter was in France with his mother. He could hear nightingales singing. Her hearing aids could not pick them up.\n\nHuxter began trying to convey the song through drawing, using materials including charcoal and ink. His work has come here as The Nightingale Suite, an exhibition running this autumn. The starting point was that small gap between two people in the same place: one hearing something wonderful, the other unable to share it.\n\nIt is a generous ambition for a picture, or a poem: to pass something on that another person might otherwise miss. Our walk ends here, with that wish. Thank you for coming along.\n\nYou can end the tour now. Hampstead Heath station is about four minutes away: continue along Keats Grove, then turn right into South End Road. The saved directions also give you the longer return to Hampstead Underground.",
+      "sources": [
+        {
+          "title": "Keats House — History of the House",
+          "url": "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/keats-house/history-of-the-house"
+        },
+        {
+          "title": "Keats House — Visit and current exhibition",
+          "url": "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/keats-house/visit-keats-house"
+        },
+        {
+          "title": "Keats House — The Nightingale Suite exhibition talk",
+          "url": "https://newsite.cityoflondon.gov.uk/events/the-nightingale-suite-exhibition-talk"
+        },
+        {
+          "title": "Keats House — The Nightingale Suite, organiser’s event listing",
+          "url": "https://www.eventbrite.co.uk/e/the-nightingale-suite-exhibition-talk-tickets-1993140268196"
+        },
+        {
+          "title": "John Keats — Ode to a Nightingale, Poems Published in 1820",
+          "url": "https://www.gutenberg.org/cache/epub/23684/pg23684-images.html"
+        },
+        {
+          "title": "Reviewed pedestrian route — Valhalla/OpenStreetMap",
+          "url": "https://valhalla1.openstreetmap.de/"
+        },
+        {
+          "title": "Reviewed pedestrian route — City of London Heath map",
+          "url": "https://www.cityoflondon.gov.uk/assets/Green-Spaces/hampstead-heath-map.pdf"
+        }
+      ],
+      "evidence": [
+        {
+          "paragraph": "Here is the home of John Keats, the younger poet from our walking conversation. The building began as two homes designed to look like one, sharing a garden. Keats came to live with his friend Charles Brown in eighteen eighteen, and fell in love with his neighbour Fanny Brawne.",
+          "kind": "source_checked",
+          "basis": "K1a/K1b: original paired homes/shared garden and Brown’s invitation; Fanny introduced by relationship. Last sentence is interpretation, not invented household activity. No claim that both original entrances or the garden are accessible today. Final edit: Homes, not households, were physically designed to look like one. Removes an abstract summary to make room for the named poem itself.",
+          "sourceUrls": [
+            "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/keats-house/history-of-the-house"
+          ]
+        },
+        {
+          "paragraph": "That garden helped inspire Ode to a Nightingale. In the poem, the speaker wants to follow the bird away from human weariness, on the 'viewless wings of Poesy': the invisible wings of poetry.",
+          "kind": "source_checked",
+          "basis": "K3: custodian supports garden inspiration; artist’s quoted account supports France/1997, recalled Keats poem and mother’s devices. No disputed plum-tree or scraps-of-paper scene. Current institutional newsite URL returned full indexed text but direct open cache miss; organiser Eventbrite corroborates. Final edit: K5: primary poem, stanzas 3–4, inspected 21 September. Five-word quotation and a brief interpretation explain the named work. This is the poem's speaker, not a literal biographical escape.",
+          "sourceUrls": [
+            "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/keats-house/visit-keats-house",
+            "https://newsite.cityoflondon.gov.uk/events/the-nightingale-suite-exhibition-talk",
+            "https://www.eventbrite.co.uk/e/the-nightingale-suite-exhibition-talk-tickets-1993140268196",
+            "https://www.gutenberg.org/cache/epub/23684/pg23684-images.html"
+          ]
+        },
+        {
+          "paragraph": "Nearly two centuries later, the poem helped another artist respond to a very personal problem. In nineteen ninety-seven, Martin Huxter was in France with his mother. He could hear nightingales singing. Her hearing aids could not pick them up.",
+          "kind": "source_checked",
+          "basis": "K3: Huxter's first-person account on the institutional/organiser exhibition-talk listing, corroborated by the current museum visit page. Introduces the artist and relationship; this happened in France, not at Keats House.",
+          "sourceUrls": [
+            "https://newsite.cityoflondon.gov.uk/events/the-nightingale-suite-exhibition-talk",
+            "https://www.eventbrite.co.uk/e/the-nightingale-suite-exhibition-talk-tickets-1993140268196"
+          ]
+        },
+        {
+          "paragraph": "Huxter began trying to convey the song through drawing, using materials including charcoal and ink. His work has come here as The Nightingale Suite, an exhibition running this autumn. The starting point was that small gap between two people in the same place: one hearing something wonderful, the other unable to share it.",
+          "kind": "source_checked",
+          "basis": "K3: materials, intent and current 2026 exhibition from custodian and artist account; visit page specifies through 1 November. This is an exterior story, not a promise that the exhibition is open today. Wonderfulness is an interpretation of the artist’s documented reaction.",
+          "sourceUrls": [
+            "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/keats-house/visit-keats-house",
+            "https://newsite.cityoflondon.gov.uk/events/the-nightingale-suite-exhibition-talk",
+            "https://www.eventbrite.co.uk/e/the-nightingale-suite-exhibition-talk-tickets-1993140268196"
+          ]
+        },
+        {
+          "paragraph": "It is a generous ambition for a picture, or a poem: to pass something on that another person might otherwise miss. Our walk ends here, with that wish. Thank you for coming along.",
+          "kind": "editorial",
+          "basis": "Warm thematic close drawn from the preceding supported account; does not command an emotion or claim narrator memories. Exact onward station directions remain separate and root-owned.",
+          "sourceUrls": []
+        },
+        {
+          "paragraph": "You can end the tour now. Hampstead Heath station is about four minutes away: continue along Keats Grove, then turn right into South End Road. The saved directions also give you the longer return to Hampstead Underground.",
+          "kind": "source_checked",
+          "basis": "Literal navigation: route-selected.json and ROUTE-DIRECTIONS.md, desk reviewed 21 September 2026 against pedestrian geometry, official map and dated imagery. Uses public pavements and specified crossings; standing areas and temporary works have not been field observed. Spoken route summary is supplemented by the saved step list; no live turn-by-turn routing is implied.",
+          "sourceUrls": [
+            "https://valhalla1.openstreetmap.de/",
+            "https://www.cityoflondon.gov.uk/assets/Green-Spaces/hampstead-heath-map.pdf"
+          ]
+        }
+      ],
+      "directions": [
+        "Tap End tour / stop location. For the mapped finish, continue along Keats Grove to South End Road, turn right and follow the pavement to Hampstead Heath station and its signed entrance. Allow about 4 minutes; use marked crossings if changing sides.",
+        "For Hampstead Underground instead, return west along Keats Grove, turn left down Downshire Hill, then right along Rosslyn Hill and Hampstead High Street. Allow about 14 minutes from Keats House, roughly 10 minutes extra compared with Heath station. This optional return is written here; the offline route line finishes at Heath station."
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": "walking-conversation",
+      "title": "A walk with a very talkative poet",
+      "transcript": "Elsewhere on this Heath, near Kenwood, John Keats met Samuel Taylor Coleridge by chance in April eighteen nineteen. Coleridge, the celebrated older poet who wrote The Ancient Mariner, was walking with one of Keats's former medical teachers. The young Keats joined them.\n\nFor nearly two miles, Coleridge walked along at what Keats called an alderman-after-dinner pace: a city dignitary taking his time, with a remarkably busy mind. The conversation ran through nightingales, poetry, dreams and consciousness, then out to the kraken, a giant sea monster, mermaids and ghosts.\n\nKeats's amused report ends with a simple observation. He could hear Coleridge talking as he approached. He could hear him as he went away. And he had heard him all the time in between.",
+      "sources": [
+        {
+          "title": "John Keats — Letters to His Family and Friends, April 1819",
+          "url": "https://www.gutenberg.org/files/35698/35698-h/35698-h.htm"
+        },
+        {
+          "title": "University of Victoria — Keats chronology, 11 April 1819",
+          "url": "https://johnkeats.uvic.ca/1819-04-11.html"
+        },
+        {
+          "title": "Samuel Taylor Coleridge — Poems, including The Rime of the Ancient Mariner",
+          "url": "https://www.gutenberg.org/cache/epub/8208/pg8208-images.html"
+        }
+      ],
+      "evidence": [
+        {
+          "paragraph": "Elsewhere on this Heath, near Kenwood, John Keats met Samuel Taylor Coleridge by chance in April eighteen nineteen. Coleridge, the celebrated older poet who wrote The Ancient Mariner, was walking with one of Keats's former medical teachers. The young Keats joined them.",
+          "kind": "source_checked",
+          "basis": "ADDITIONAL-RESEARCH C1, Keats letter and University of Victoria chronology. Meeting located by Kenwood, not this path. Coleridge authorship is established by the primary poetry collection; exact ages unnecessary. Final edit separates the companion relationship from the poem title for one-hearing clarity.",
+          "sourceUrls": [
+            "https://www.gutenberg.org/files/35698/35698-h/35698-h.htm",
+            "https://johnkeats.uvic.ca/1819-04-11.html",
+            "https://www.gutenberg.org/cache/epub/8208/pg8208-images.html"
+          ]
+        },
+        {
+          "paragraph": "For nearly two miles, Coleridge walked along at what Keats called an alderman-after-dinner pace: a city dignitary taking his time, with a remarkably busy mind. The conversation ran through nightingales, poetry, dreams and consciousness, then out to the kraken, a giant sea monster, mermaids and ghosts.",
+          "kind": "source_checked",
+          "basis": "C1: faithful compressed paraphrase of April 1819 journal-letter, preserving Keats’s estimate and his joke. The single short quoted phrase is explained; no invented dialogue, exact footsteps or listener reaction. Final edit: Brief glosses explain alderman and kraken, without adding a historical incident. The actual recording remains subject to the 60-second corridor cap.",
+          "sourceUrls": [
+            "https://www.gutenberg.org/files/35698/35698-h/35698-h.htm"
+          ]
+        },
+        {
+          "paragraph": "Keats's amused report ends with a simple observation. He could hear Coleridge talking as he approached. He could hear him as he went away. And he had heard him all the time in between.",
+          "kind": "source_checked",
+          "basis": "C1: faithful compressed paraphrase of April 1819 journal-letter, preserving Keats’s estimate and his joke. The single short quoted phrase is explained; no invented dialogue, exact footsteps or listener reaction. Final edit: Brief glosses explain alderman and kraken, without adding a historical incident. The actual recording remains subject to the 60-second corridor cap.",
+          "sourceUrls": [
+            "https://www.gutenberg.org/files/35698/35698-h/35698-h.htm"
+          ]
+        }
+      ],
+      "directions": [
+        "Turn right onto the main public shared Heath path between the Model Boating and Men’s ponds, following the offline map. Stay outside bathing gates. Continue on this path through bends and side-path joins.",
+        "The walking story starts after the turn onto the Heath path. The next stop is about 170 metres from the Millfield turn, just before a side-path junction. Pause at a clear path edge, leaving room for walkers and cyclists."
+      ]
+    },
+    {
+      "id": "keeping-the-heath",
+      "title": "Keeping room for the Heath",
+      "transcript": "Keeping the Heath open has involved both buying land and looking after it. An eighteen seventy-one Act secured the original Heath for London's Metropolitan Board of Works; later purchases enlarged it. Today the City of London Corporation, the authority for the Square Mile, holds and manages the Heath as a charity. Its staff and conservation volunteers help decide how that space is kept.\n\nAs you walk, notice the changes between open ground, scrub and trees. Much of the woodland spread as farming and grazing declined. Keeping some areas open now means checking that growth. Elsewhere, fallen wood can stay, providing habitat as it decays. A tidy-looking landscape would lose some of what makes this one valuable.\n\nA conservation experiment this September used sheep on an anthill meadow elsewhere on the Heath. The mounds make machines awkward; grazing offers a gentler way to manage the vegetation. Ecologists compare the site before and after. Even leaving room for a walk can involve deciding who should cut the grass.",
+      "sources": [
+        {
+          "title": "High Court — Hampstead Heath dams judgment, 2014",
+          "url": "https://news.cityoflondon.gov.uk/hampstead-heath-dams-project-full-court-decision--part-one-of-two/"
+        },
+        {
+          "title": "City of London — Thirty years managing Hampstead Heath",
+          "url": "https://news.cityoflondon.gov.uk/city-of-london-corporation-celebrates-30-years-of-managing-hampstead-heath/"
+        },
+        {
+          "title": "City of London — September 2026 conservation grazing",
+          "url": "https://news.cityoflondon.gov.uk/rare-breed-sheep-return-to-city-of-london-corporation-run-hampstead-heath-for-special-conservation-mission/"
+        },
+        {
+          "title": "Heath Hands — Habitats and Wildlife",
+          "url": "https://www.heath-hands.org.uk/habitats-and-wildlife"
+        }
+      ],
+      "evidence": [
+        {
+          "paragraph": "Keeping the Heath open has involved both buying land and looking after it. An eighteen seventy-one Act secured the original Heath for London's Metropolitan Board of Works; later purchases enlarged it. Today the City of London Corporation, the authority for the Square Mile, holds and manages the Heath as a charity. Its staff and conservation volunteers help decide how that space is kept.",
+          "kind": "source_checked",
+          "basis": "HG06: original 1871 transfer and later additions kept distinct. Modern City authority/trustee role supported by institutional sources. Does not imply all present Heath land was acquired in 1871 or that Kenwood shares its custodian. Practitioner account supports City/volunteer conservation partnership.",
+          "sourceUrls": [
+            "https://news.cityoflondon.gov.uk/hampstead-heath-dams-project-full-court-decision--part-one-of-two/",
+            "https://news.cityoflondon.gov.uk/city-of-london-corporation-celebrates-30-years-of-managing-hampstead-heath/",
+            "https://news.cityoflondon.gov.uk/rare-breed-sheep-return-to-city-of-london-corporation-run-hampstead-heath-for-special-conservation-mission/",
+            "https://www.heath-hands.org.uk/habitats-and-wildlife"
+          ]
+        },
+        {
+          "paragraph": "As you walk, notice the changes between open ground, scrub and trees. Much of the woodland spread as farming and grazing declined. Keeping some areas open now means checking that growth. Elsewhere, fallen wood can stay, providing habitat as it decays. A tidy-looking landscape would lose some of what makes this one valuable.",
+          "kind": "source_checked",
+          "basis": "HG07: broad conservation pattern from Heath Hands, not a claim that an individual tree or patch has a known age. Final comparison is editorial inference from retained deadwood and habitat needs.",
+          "sourceUrls": [
+            "https://www.heath-hands.org.uk/habitats-and-wildlife"
+          ]
+        },
+        {
+          "paragraph": "A conservation experiment this September used sheep on an anthill meadow elsewhere on the Heath. The mounds make machines awkward; grazing offers a gentler way to manage the vegetation. Ecologists compare the site before and after. Even leaving room for a walk can involve deciding who should cut the grass.",
+          "kind": "supported_reconstruction",
+          "basis": "HG08: September 2026 project, explicitly elsewhere rather than a promised route sighting. Before/after surveys by the London Natural History Society. Does not claim that results already demonstrate success or that animals remain after the scheduled end. Final edit: Past-tense account of the City-announced 9–21 September 2026 trial; its scheduled start had passed at preparation. No live sighting or completed monitoring result is claimed; wording does not promise animals remain after the trial.",
+          "sourceUrls": [
+            "https://news.cityoflondon.gov.uk/rare-breed-sheep-return-to-city-of-london-corporation-run-hampstead-heath-for-special-conservation-mission/"
+          ]
+        }
+      ],
+      "directions": [
+        "Continue west on the same main shared path. About 80 metres after the pause, continue across the path intersection on the route ahead. Stay on this path for about 490 metres from the pause in total. The second walking story belongs here.",
+        "At the mapped junction after about 490 metres, turn left towards the Hampstead ponds. Follow that path about 120 metres, turn right, then after about 40 metres keep left. Use the offline route line at these unnamed forks.",
+        "Near the northern approach to the Mixed Bathing Pond, take the short left connection, then right onto the westbound path. Stay outside the bathing enclosure. After about 85 metres, keep right at the fork alongside the Hampstead pond chain.",
+        "After about 140 metres, turn right onto the broad shared path towards East Heath Road and Downshire Hill. Follow the map towards the road.",
+        "Before reaching the direct road mouth, take the path right to the zebra crossing just west of Downshire Hill. Complete the crossing, turn left along the far pavement, then right into Downshire Hill.",
+        "After about 40 metres down Downshire Hill, turn right into Willow Road and continue about 60 metres to number 2. Stand on the building-side public pavement outside the front wall, clear of entrances and driveways."
+      ]
+    }
+  ]
+}

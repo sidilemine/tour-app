@@ -1,0 +1,350 @@
+{
+  "stories": [
+    {
+      "id": "highgate-station",
+      "title": "Welcome to Highgate",
+      "transcript": "Welcome to Highgate. Our walk takes us up into the village, across Hampstead Heath, and on to two homes where people made room for unusually creative lives. There will be stories along the way, and stretches to enjoy the Heath in peace.\n\nHighgate's first railway station opened in eighteen sixty-seven, well before the Tube platforms used today. We'll leave the transport history there: the village is older still, and has a rather more entertaining way of welcoming visitors.",
+      "sources": [
+        {
+          "title": "Historic England — Highgate High Level Station, AA084694",
+          "url": "https://historicengland.org.uk/images-books/photos/item/AA084694"
+        },
+        {
+          "title": "Daniel Lysons — Highgate, 1795",
+          "url": "https://www.grubstreetproject.net/places/90777/"
+        }
+      ],
+      "evidence": [
+        {
+          "paragraph": "Welcome to Highgate. Our walk takes us up into the village, across Hampstead Heath, and on to two homes where people made room for unusually creative lives. There will be stories along the way, and stretches to enjoy the Heath in peace.",
+          "kind": "editorial",
+          "basis": "Route premise and intended pacing from SELECTION.md; no precise duration, turn or promised sighting. Exact navigation is supplied separately.",
+          "sourceUrls": []
+        },
+        {
+          "paragraph": "Highgate's first railway station opened in eighteen sixty-seven, well before the Tube platforms used today. We'll leave the transport history there: the village is older still, and has a rather more entertaining way of welcoming visitors.",
+          "kind": "source_checked",
+          "basis": "STATION-WELLS-RESEARCH HG-ST01 supports the original surface station opening; HIGHGATE-PONDS HG01/HG02 establish the earlier village and documented visitor custom. The last sentence is editorial anticipation, not a claim of a ceremony operating today.",
+          "sourceUrls": [
+            "https://historicengland.org.uk/images-books/photos/item/AA084694",
+            "https://www.grubstreetproject.net/places/90777/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pond-square",
+      "title": "A very accommodating oath",
+      "transcript": "Pond Square once held the village's drinking-water ponds. They were filled in during the nineteenth century, leaving this space among the houses. Water was one practical necessity in a place that served travellers: Highgate grew around a road through the Bishop of London's land, with a toll payable to the bishop and inns catering to the passing trade.\n\nThe inns also offered something less essential: the Highgate oath. Picture the ceremony in a satirical print from seventeen ninety-six. Outside the Horns Tavern, a landlord holds an open book. His customer prepares to swear, while a boy raises a pole topped with horns. A woman appears with a huge foaming tankard, and the onlookers are plainly enjoying themselves.\n\nThe visitor must promise to choose white bread over brown, unless he likes brown better. And strong beer over weak, unless he prefers the weak. A solemn ceremony, with an escape clause for every taste. The joke was already being recorded as an old custom in the seventeen-nineties. It is an unusually considerate oath: all that formality, and you can still have the beer you wanted.",
+      "sources": [
+        {
+          "title": "Camden — Highgate Conservation Area Appraisal",
+          "url": "https://www.camden.gov.uk/documents/20142/7610500/Highgate.pdf/6995d361-b1c5-5650-4414-9669232073e1"
+        },
+        {
+          "title": "Daniel Lysons — Highgate, 1795",
+          "url": "https://www.grubstreetproject.net/places/90777/"
+        },
+        {
+          "title": "Hornsey Historical Society — A Brief History of Highgate",
+          "url": "https://hornseyhistorical.org.uk/brief-history-highgate/"
+        },
+        {
+          "title": "British Museum — Swearing at Highgate, 1796",
+          "url": "https://www.britishmuseum.org/collection/object/P_1927-1126-1-9-1"
+        }
+      ],
+      "evidence": [
+        {
+          "paragraph": "Pond Square once held the village's drinking-water ponds. They were filled in during the nineteenth century, leaving this space among the houses. Water was one practical necessity in a place that served travellers: Highgate grew around a road through the Bishop of London's land, with a toll payable to the bishop and inns catering to the passing trade.",
+          "kind": "source_checked",
+          "basis": "HG01/HG03: toll landholder and village water function. Avoids disputed exact pond-filling year and definitive name etymology. Inns/road role supported by specialist history; no precise medieval transaction date.",
+          "sourceUrls": [
+            "https://www.camden.gov.uk/documents/20142/7610500/Highgate.pdf/6995d361-b1c5-5650-4414-9669232073e1",
+            "https://www.grubstreetproject.net/places/90777/",
+            "https://hornseyhistorical.org.uk/brief-history-highgate/"
+          ]
+        },
+        {
+          "paragraph": "The inns also offered something less essential: the Highgate oath. Picture the ceremony in a satirical print from seventeen ninety-six. Outside the Horns Tavern, a landlord holds an open book. His customer prepares to swear, while a boy raises a pole topped with horns. A woman appears with a huge foaming tankard, and the onlookers are plainly enjoying themselves.",
+          "kind": "supported_reconstruction",
+          "basis": "HG02: guided evocation of the surviving 1796 print, not a recovered scene at Pond Square. The Horns Tavern is explicitly named; no identification with a present pub. Depicted actions follow the indexed British Museum catalogue, whose direct page returned 403.",
+          "sourceUrls": [
+            "https://www.britishmuseum.org/collection/object/P_1927-1126-1-9-1"
+          ]
+        },
+        {
+          "paragraph": "The visitor must promise to choose white bread over brown, unless he likes brown better. And strong beer over weak, unless he prefers the weak. A solemn ceremony, with an escape clause for every taste. The joke was already being recorded as an old custom in the seventeen-nineties. It is an unusually considerate oath: all that formality, and you can still have the beer you wanted.",
+          "kind": "source_checked",
+          "basis": "HG02: oath terms paraphrased from print; HG02/S01 supports the established custom in 1795. Considerateness is comic editorial interpretation. Omits sexual element and uncertain origins; no modern practice asserted.",
+          "sourceUrls": [
+            "https://www.britishmuseum.org/collection/object/P_1927-1126-1-9-1",
+            "https://www.grubstreetproject.net/places/90777/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "highgate-ponds",
+      "title": "London’s wooden plumbing",
+      "transcript": "The Highgate ponds have a practical origin that their leafy setting can disguise. This chain was made by damming a stream fed by springs near Kenwood, storing water for London. Each pond connects to the next through pipes or streams. What looks like a series of separate pools is also a linked piece of engineering.\n\nThe Hampstead Water Company carried its supply into north London through wooden pipes. Imagine the work hidden inside that phrase: elm trunks with holes bored along their length, turning timber into channels for water. A tree could become part of the city's plumbing. These reservoirs belonged to a system reaching well beyond the people who lived beside them.\n\nThe eastern stream eventually joins its western neighbour to form the Fleet, the river now buried beneath London on its way to the Thames. Up here, its beginnings remain open to the sky. The ponds no longer supply drinking water. Swimming is one of their present uses, alongside wildlife and the quieter pleasure of watching the water. Infrastructure has become somewhere people come for a break.",
+      "sources": [
+        {
+          "title": "Hampstead Heath Ponds Project — A history of the ponds",
+          "url": "https://hampsteadheathpondsproject.wordpress.com/2015/02/12/a-history-of-the-ponds/"
+        },
+        {
+          "title": "High Court — Hampstead Heath dams judgment, 2014",
+          "url": "https://news.cityoflondon.gov.uk/hampstead-heath-dams-project-full-court-decision--part-one-of-two/"
+        },
+        {
+          "title": "City of London — Swimming at Hampstead Heath",
+          "url": "https://www.cityoflondon.gov.uk/things-to-do/green-spaces/hampstead-heath/activities-at-hampstead-heath/swimming-at-hampstead-heath"
+        },
+        {
+          "title": "Heath Hands — Habitats and Wildlife",
+          "url": "https://www.heath-hands.org.uk/habitats-and-wildlife"
+        }
+      ],
+      "evidence": [
+        {
+          "paragraph": "The Highgate ponds have a practical origin that their leafy setting can disguise. This chain was made by damming a stream fed by springs near Kenwood, storing water for London. Each pond connects to the next through pipes or streams. What looks like a series of separate pools is also a linked piece of engineering.",
+          "kind": "source_checked",
+          "basis": "HG04: project history and 2014 judgment §8 support spring-fed eastern chain, damming, storage and connected ponds. Descriptive opening does not label every Heath pond artificial or assert a specific pond date.",
+          "sourceUrls": [
+            "https://hampsteadheathpondsproject.wordpress.com/2015/02/12/a-history-of-the-ponds/",
+            "https://news.cityoflondon.gov.uk/hampstead-heath-dams-project-full-court-decision--part-one-of-two/"
+          ]
+        },
+        {
+          "paragraph": "The Hampstead Water Company carried its supply into north London through wooden pipes. Imagine the work hidden inside that phrase: elm trunks with holes bored along their length, turning timber into channels for water. A tree could become part of the city's plumbing. These reservoirs belonged to a system reaching well beyond the people who lived beside them.",
+          "kind": "supported_reconstruction",
+          "basis": "HG04: elm-trunk pipes are directly reported by the project history; the cross-section invitation illustrates that established construction, without inventing a pipe route, pressure, household or exact method of joining.",
+          "sourceUrls": [
+            "https://hampsteadheathpondsproject.wordpress.com/2015/02/12/a-history-of-the-ponds/"
+          ]
+        },
+        {
+          "paragraph": "The eastern stream eventually joins its western neighbour to form the Fleet, the river now buried beneath London on its way to the Thames. Up here, its beginnings remain open to the sky. The ponds no longer supply drinking water. Swimming is one of their present uses, alongside wildlife and the quieter pleasure of watching the water. Infrastructure has become somewhere people come for a break.",
+          "kind": "source_checked",
+          "basis": "HG04: main eastern/western chains feed the Fleet; no assertion about every watercourse on the Heath. Current swimming supported by City page, ecological role by Heath Hands. Ending is editorial synthesis; no swimmer or species sighting promised.",
+          "sourceUrls": [
+            "https://hampsteadheathpondsproject.wordpress.com/2015/02/12/a-history-of-the-ponds/",
+            "https://www.cityoflondon.gov.uk/things-to-do/green-spaces/hampstead-heath/activities-at-hampstead-heath/swimming-at-hampstead-heath",
+            "https://www.heath-hands.org.uk/habitats-and-wildlife"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "willow-road",
+      "title": "A home becomes an exhibition",
+      "transcript": "The long windows and red brick at two Willow Road belong to a home completed in nineteen thirty-nine for architect Ernő Goldfinger and his wife Ursula. It is one of three houses built around a concrete frame. Goldfinger argued that their proportions belonged in the same tradition as Hampstead's Georgian buildings. Modern construction, he thought, could be a good neighbour.\n\nA local preservation campaigner, Henry Brooke, strongly disagreed. He feared the design would damage the neighbourhood's character. The argument makes an entertaining backdrop to what happened inside only a few years later, when this new family home became a venue for wartime fundraising.\n\nPicture the rooms in nineteen forty-two, given over to roughly seventy works of art, many offered at auction to help people in the Soviet Union facing the Nazi invasion. Among the works was a small head by the sculptor Henry Moore: carved elm, its hollows crossed by taut strings. The Goldfingers bought it themselves. This was a home where experimental art could be looked at, argued over, and put to practical use.\n\nEventually the house itself became something to preserve. When it passed to the National Trust, the Heritage Secretary involved was Peter Brooke, son of its most vocal opponent. Within one family, yesterday's threat to Hampstead had become part of its heritage.",
+      "sources": [
+        {
+          "title": "National Trust — Construction of 2 Willow Road",
+          "url": "https://www.nationaltrust.org.uk/visit/london/2-willow-road/the-construction-of-2-willow-road"
+        },
+        {
+          "title": "National Trust — Hampstead’s creative community",
+          "url": "https://www.nationaltrust.org.uk/visit/london/2-willow-road/history-of-hampstead-and-2-willow-road"
+        },
+        {
+          "title": "National Trust Collections — Henry Moore, Head, 112757",
+          "url": "https://www.nationaltrustcollections.org.uk/object/112757"
+        }
+      ],
+      "evidence": [
+        {
+          "paragraph": "The long windows and red brick at two Willow Road belong to a home completed in nineteen thirty-nine for architect Ernő Goldfinger and his wife Ursula. It is one of three houses built around a concrete frame. Goldfinger argued that their proportions belonged in the same tradition as Hampstead's Georgian buildings. Modern construction, he thought, could be a good neighbour.",
+          "kind": "source_checked",
+          "basis": "W1a: three houses, frame, completion date and contemporary Georgian comparison from National Trust. Exterior description requires root’s verified public view; structural frame is described, not claimed visible. No unverified origin/nationality or interior access.",
+          "sourceUrls": [
+            "https://www.nationaltrust.org.uk/visit/london/2-willow-road/the-construction-of-2-willow-road",
+            "https://www.nationaltrust.org.uk/visit/london/2-willow-road/history-of-hampstead-and-2-willow-road"
+          ]
+        },
+        {
+          "paragraph": "A local preservation campaigner, Henry Brooke, strongly disagreed. He feared the design would damage the neighbourhood's character. The argument makes an entertaining backdrop to what happened inside only a few years later, when this new family home became a venue for wartime fundraising.",
+          "kind": "source_checked",
+          "basis": "W1b/W3: named opponent and cause, then supported transition to 1942 event. Does not imply all residents objected or all backed it.",
+          "sourceUrls": [
+            "https://www.nationaltrust.org.uk/visit/london/2-willow-road/the-construction-of-2-willow-road",
+            "https://www.nationaltrust.org.uk/visit/london/2-willow-road/history-of-hampstead-and-2-willow-road"
+          ]
+        },
+        {
+          "paragraph": "Picture the rooms in nineteen forty-two, given over to roughly seventy works of art, many offered at auction to help people in the Soviet Union facing the Nazi invasion. Among the works was a small head by the sculptor Henry Moore: carved elm, its hollows crossed by taut strings. The Goldfingers bought it themselves. This was a home where experimental art could be looked at, argued over, and put to practical use.",
+          "kind": "supported_reconstruction",
+          "basis": "W2/W3: exhibition, approximate count and cause from National Trust; Head, 1938, elm/string and purchase provenance from object 112757. Looking and discussing are ordinary plausible exhibition activities, not a claimed witnessed exchange; exact room arrangement and guest list are not invented.",
+          "sourceUrls": [
+            "https://www.nationaltrust.org.uk/visit/london/2-willow-road/history-of-hampstead-and-2-willow-road",
+            "https://www.nationaltrustcollections.org.uk/object/112757"
+          ]
+        },
+        {
+          "paragraph": "Eventually the house itself became something to preserve. When it passed to the National Trust, the Heritage Secretary involved was Peter Brooke, son of its most vocal opponent. Within one family, yesterday's threat to Hampstead had become part of its heritage.",
+          "kind": "source_checked",
+          "basis": "W1b: National Trust records father/son reversal. Omits disputed 1993/1994 transfer dating and does not attribute a private opinion to either man. Final sentence interprets the documented public roles.",
+          "sourceUrls": [
+            "https://www.nationaltrust.org.uk/visit/london/2-willow-road/the-construction-of-2-willow-road"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "keats-house",
+      "title": "Something worth sharing",
+      "transcript": "Here is the home of John Keats, the younger poet from our walking conversation. The building began as two separate households designed to look like one, sharing a garden. Keats came to live with his friend Charles Brown in eighteen eighteen, and fell in love with his neighbour Fanny Brawne. The famous address was full of relationships before it became a monument to one writer.\n\nThat garden helped inspire Ode to a Nightingale. A bird's song became a poem, and, much later, the poem helped another artist respond to a very personal problem. In nineteen ninety-seven, Martin Huxter was in France with his mother. He could hear nightingales singing. Her hearing aids could not pick them up.\n\nHuxter began trying to convey the song through drawing, using materials including charcoal and ink. His work has come here as The Nightingale Suite, an exhibition running this autumn. The starting point was that small gap between two people in the same place: one hearing something wonderful, the other unable to share it.\n\nIt is a generous ambition for a picture, or a poem: to pass something on that another person might otherwise miss. Our walk ends here, with that wish. Thank you for coming along.",
+      "sources": [
+        {
+          "title": "Keats House — History of the House",
+          "url": "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/keats-house/history-of-the-house"
+        },
+        {
+          "title": "Keats House — Visit and current exhibition",
+          "url": "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/keats-house/visit-keats-house"
+        },
+        {
+          "title": "Keats House — The Nightingale Suite exhibition talk",
+          "url": "https://newsite.cityoflondon.gov.uk/events/the-nightingale-suite-exhibition-talk"
+        },
+        {
+          "title": "Keats House — The Nightingale Suite, organiser’s event listing",
+          "url": "https://www.eventbrite.co.uk/e/the-nightingale-suite-exhibition-talk-tickets-1993140268196"
+        }
+      ],
+      "evidence": [
+        {
+          "paragraph": "Here is the home of John Keats, the younger poet from our walking conversation. The building began as two separate households designed to look like one, sharing a garden. Keats came to live with his friend Charles Brown in eighteen eighteen, and fell in love with his neighbour Fanny Brawne. The famous address was full of relationships before it became a monument to one writer.",
+          "kind": "source_checked",
+          "basis": "K1a/K1b: original paired homes/shared garden and Brown’s invitation; Fanny introduced by relationship. Last sentence is interpretation, not invented household activity. No claim that both original entrances or the garden are accessible today.",
+          "sourceUrls": [
+            "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/keats-house/history-of-the-house"
+          ]
+        },
+        {
+          "paragraph": "That garden helped inspire Ode to a Nightingale. A bird's song became a poem, and, much later, the poem helped another artist respond to a very personal problem. In nineteen ninety-seven, Martin Huxter was in France with his mother. He could hear nightingales singing. Her hearing aids could not pick them up.",
+          "kind": "source_checked",
+          "basis": "K3: custodian supports garden inspiration; artist’s quoted account supports France/1997, recalled Keats poem and mother’s devices. No disputed plum-tree or scraps-of-paper scene. Current institutional newsite URL returned full indexed text but direct open cache miss; organiser Eventbrite corroborates.",
+          "sourceUrls": [
+            "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/keats-house/visit-keats-house",
+            "https://newsite.cityoflondon.gov.uk/events/the-nightingale-suite-exhibition-talk",
+            "https://www.eventbrite.co.uk/e/the-nightingale-suite-exhibition-talk-tickets-1993140268196"
+          ]
+        },
+        {
+          "paragraph": "Huxter began trying to convey the song through drawing, using materials including charcoal and ink. His work has come here as The Nightingale Suite, an exhibition running this autumn. The starting point was that small gap between two people in the same place: one hearing something wonderful, the other unable to share it.",
+          "kind": "source_checked",
+          "basis": "K3: materials, intent and current 2026 exhibition from custodian and artist account; visit page specifies through 1 November. This is an exterior story, not a promise that the exhibition is open today. Wonderfulness is an interpretation of the artist’s documented reaction.",
+          "sourceUrls": [
+            "https://www.cityoflondon.gov.uk/things-to-do/attractions-museums-entertainment/keats-house/visit-keats-house",
+            "https://newsite.cityoflondon.gov.uk/events/the-nightingale-suite-exhibition-talk",
+            "https://www.eventbrite.co.uk/e/the-nightingale-suite-exhibition-talk-tickets-1993140268196"
+          ]
+        },
+        {
+          "paragraph": "It is a generous ambition for a picture, or a poem: to pass something on that another person might otherwise miss. Our walk ends here, with that wish. Thank you for coming along.",
+          "kind": "editorial",
+          "basis": "Warm thematic close drawn from the preceding supported account; does not command an emotion or claim narrator memories. Exact onward station directions remain separate and root-owned.",
+          "sourceUrls": []
+        }
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": "walking-conversation",
+      "title": "A walk with a very talkative poet",
+      "transcript": "Elsewhere on this Heath, near Kenwood, two poets met by chance in April eighteen nineteen. The young John Keats joined the older, celebrated Samuel Taylor Coleridge, who wrote The Ancient Mariner, and one of Keats's former medical teachers.\n\nFor nearly two miles, Coleridge walked along at what Keats called an alderman-after-dinner pace: slow walking, with a remarkably busy mind. The conversation ran through nightingales, poetry, dreams and consciousness, then out to the kraken, mermaids and ghosts. Keats's amused report ends with a simple observation. He could hear Coleridge talking as he approached. He could hear him as he went away. And he had heard him all the time in between.",
+      "sources": [
+        {
+          "title": "John Keats — Letters to His Family and Friends, April 1819",
+          "url": "https://www.gutenberg.org/files/35698/35698-h/35698-h.htm"
+        },
+        {
+          "title": "University of Victoria — Keats chronology, 11 April 1819",
+          "url": "https://johnkeats.uvic.ca/1819-04-11.html"
+        },
+        {
+          "title": "Samuel Taylor Coleridge — Poems, including The Rime of the Ancient Mariner",
+          "url": "https://www.gutenberg.org/cache/epub/8208/pg8208-images.html"
+        }
+      ],
+      "evidence": [
+        {
+          "paragraph": "Elsewhere on this Heath, near Kenwood, two poets met by chance in April eighteen nineteen. The young John Keats joined the older, celebrated Samuel Taylor Coleridge, who wrote The Ancient Mariner, and one of Keats's former medical teachers.",
+          "kind": "source_checked",
+          "basis": "ADDITIONAL-RESEARCH C1, Keats letter and University of Victoria chronology. Meeting located by Kenwood, not this path. Coleridge authorship is established by the primary poetry collection; exact ages unnecessary.",
+          "sourceUrls": [
+            "https://www.gutenberg.org/files/35698/35698-h/35698-h.htm",
+            "https://johnkeats.uvic.ca/1819-04-11.html",
+            "https://www.gutenberg.org/cache/epub/8208/pg8208-images.html"
+          ]
+        },
+        {
+          "paragraph": "For nearly two miles, Coleridge walked along at what Keats called an alderman-after-dinner pace: slow walking, with a remarkably busy mind. The conversation ran through nightingales, poetry, dreams and consciousness, then out to the kraken, mermaids and ghosts. Keats's amused report ends with a simple observation. He could hear Coleridge talking as he approached. He could hear him as he went away. And he had heard him all the time in between.",
+          "kind": "source_checked",
+          "basis": "C1: faithful compressed paraphrase of April 1819 journal-letter, preserving Keats’s estimate and his joke. The single short quoted phrase is explained; no invented dialogue, exact footsteps or listener reaction.",
+          "sourceUrls": [
+            "https://www.gutenberg.org/files/35698/35698-h/35698-h.htm"
+          ]
+        }
+      ],
+      "afterStopId": "pond-square"
+    },
+    {
+      "id": "keeping-the-heath",
+      "title": "Keeping room for the Heath",
+      "transcript": "Keeping the Heath open has involved both buying land and looking after it. An eighteen seventy-one Act secured the original Heath for London's Metropolitan Board of Works; later purchases enlarged it. Today the City of London Corporation, the authority for the Square Mile, holds and manages the Heath as a charity. Its staff and conservation volunteers help decide how that space is kept.\n\nAs you walk, notice the changes between open ground, scrub and trees. Much of the woodland spread as farming and grazing declined. Keeping some areas open now means checking that growth. Elsewhere, fallen wood can stay, providing habitat as it decays. A tidy-looking landscape would lose some of what makes this one valuable.\n\nOne September experiment uses sheep on an anthill meadow elsewhere on the Heath. The mounds make machines awkward; grazing offers a gentler way to manage the vegetation. Ecologists compare the site before and after. Even leaving room for a walk can involve deciding who should cut the grass.",
+      "sources": [
+        {
+          "title": "High Court — Hampstead Heath dams judgment, 2014",
+          "url": "https://news.cityoflondon.gov.uk/hampstead-heath-dams-project-full-court-decision--part-one-of-two/"
+        },
+        {
+          "title": "City of London — Thirty years managing Hampstead Heath",
+          "url": "https://news.cityoflondon.gov.uk/city-of-london-corporation-celebrates-30-years-of-managing-hampstead-heath/"
+        },
+        {
+          "title": "City of London — September 2026 conservation grazing",
+          "url": "https://news.cityoflondon.gov.uk/rare-breed-sheep-return-to-city-of-london-corporation-run-hampstead-heath-for-special-conservation-mission/"
+        },
+        {
+          "title": "Heath Hands — Habitats and Wildlife",
+          "url": "https://www.heath-hands.org.uk/habitats-and-wildlife"
+        }
+      ],
+      "evidence": [
+        {
+          "paragraph": "Keeping the Heath open has involved both buying land and looking after it. An eighteen seventy-one Act secured the original Heath for London's Metropolitan Board of Works; later purchases enlarged it. Today the City of London Corporation, the authority for the Square Mile, holds and manages the Heath as a charity. Its staff and conservation volunteers help decide how that space is kept.",
+          "kind": "source_checked",
+          "basis": "HG06: original 1871 transfer and later additions kept distinct. Modern City authority/trustee role supported by institutional sources. Does not imply all present Heath land was acquired in 1871 or that Kenwood shares its custodian. Practitioner account supports City/volunteer conservation partnership.",
+          "sourceUrls": [
+            "https://news.cityoflondon.gov.uk/hampstead-heath-dams-project-full-court-decision--part-one-of-two/",
+            "https://news.cityoflondon.gov.uk/city-of-london-corporation-celebrates-30-years-of-managing-hampstead-heath/",
+            "https://news.cityoflondon.gov.uk/rare-breed-sheep-return-to-city-of-london-corporation-run-hampstead-heath-for-special-conservation-mission/",
+            "https://www.heath-hands.org.uk/habitats-and-wildlife"
+          ]
+        },
+        {
+          "paragraph": "As you walk, notice the changes between open ground, scrub and trees. Much of the woodland spread as farming and grazing declined. Keeping some areas open now means checking that growth. Elsewhere, fallen wood can stay, providing habitat as it decays. A tidy-looking landscape would lose some of what makes this one valuable.",
+          "kind": "source_checked",
+          "basis": "HG07: broad conservation pattern from Heath Hands, not a claim that an individual tree or patch has a known age. Final comparison is editorial inference from retained deadwood and habitat needs.",
+          "sourceUrls": [
+            "https://www.heath-hands.org.uk/habitats-and-wildlife"
+          ]
+        },
+        {
+          "paragraph": "One September experiment uses sheep on an anthill meadow elsewhere on the Heath. The mounds make machines awkward; grazing offers a gentler way to manage the vegetation. Ecologists compare the site before and after. Even leaving room for a walk can involve deciding who should cut the grass.",
+          "kind": "source_checked",
+          "basis": "HG08: September 2026 project, explicitly elsewhere rather than a promised route sighting. Before/after surveys by the London Natural History Society. Does not claim that results already demonstrate success or that animals remain after the scheduled end.",
+          "sourceUrls": [
+            "https://news.cityoflondon.gov.uk/rare-breed-sheep-return-to-city-of-london-corporation-run-hampstead-heath-for-special-conservation-mission/"
+          ]
+        }
+      ],
+      "afterStopId": "highgate-ponds"
+    }
+  ]
+}
