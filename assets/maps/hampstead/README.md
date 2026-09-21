@@ -13,4 +13,4 @@ node tools/maps/catalog-hampstead.cjs
 npm run check:map
 ```
 
-Structural verification passes; all 75 tiles and coverage, local style dependencies and label glyphs are checked by the map preflight. Native drawing remains for the single prepared phone handoff. The earlier narrower village-only candidate extract is retained privately and is not bundled.
+Structural verification passes; all 75 tiles and coverage, local style dependencies and label glyphs are checked by the map preflight. The 21 September silent phone handoff observed native drawing offline, all five stops and the complete route, with a 0.6-second first complete frame. The camera opening view was corrected separately; map bytes are unchanged. The earlier narrower village-only candidate extract is retained privately and is not bundled.

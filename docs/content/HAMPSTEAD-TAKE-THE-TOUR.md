@@ -2,7 +2,7 @@
 
 **Room to breathe** · George · five stops and two short walking stories.
 
-**Prepared, 21 September:** the complete tour and offline map are built. The silent phone installation/check is pending; see the [handoff record](../test-results/M2-hampstead-tour.md).
+**Ready on your phone, 21 September:** installed, selected and unstarted. The offline map opens on the complete route, and the starting directions passed the silent check. Your other tours and reviews remain available. [Handoff record](../test-results/M2-hampstead-tour.md).
 
 ## The outing
 

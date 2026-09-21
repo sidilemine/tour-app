@@ -15,7 +15,15 @@ export function OfflineMap(props: Props) {
 function AreaOfflineMap({ state, fixture, mapId = defaultMapId, onClose }: Props) {
   const area = mapAreas.find(candidate => candidate.catalog.id === mapId);
   const catalog = area?.catalog;
-  const initialViewState = React.useMemo(() => catalog ? { center: mapCentre(catalog), zoom: 15.5 } : undefined, [catalog]);
+  const initialViewState = React.useMemo(() => {
+    if (!catalog) return undefined;
+    if (fixture?.narration && fixture.route.length > 1) {
+      const longitudes = fixture.route.map(p => p.longitude), latitudes = fixture.route.map(p => p.latitude);
+      return { bounds: [Math.min(...longitudes), Math.min(...latitudes), Math.max(...longitudes), Math.max(...latitudes)] as LngLatBounds,
+        padding: { top: 24, right: 24, bottom: 24, left: 24 } };
+    }
+    return { center: mapCentre(catalog), zoom: 15.5 };
+  }, [catalog, fixture]);
   const [directory, setDirectory] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const failure = catalog ? error : 'This tour’s offline map is unavailable in this app.';
@@ -62,7 +70,7 @@ function AreaOfflineMap({ state, fixture, mapId = defaultMapId, onClose }: Props
         {catalog && <Pressable accessibilityRole="button" style={styles.button} onPress={() => { setDirectory(null); setError(null); setRenderMs(null); setAttempt(n => n + 1); }}><Text style={styles.link}>Rebuild local map copy</Text></Pressable>}
       </View> : style ? <Map style={styles.map} mapStyle={style} attribution={false} logo={false} compass={false} touchRotate={false} touchPitch={false} preferredFramesPerSecond={30}
         onDidFinishRenderingMapFully={didRender} onDidFailLoadingMap={() => setError('The local map could not be loaded.')}>
-        <Camera initialViewState={initialViewState} minZoom={14} maxZoom={18} maxBounds={catalog!.bounds as LngLatBounds} />
+        <Camera initialViewState={initialViewState} minZoom={fixture?.narration ? 13 : 14} maxZoom={18} maxBounds={catalog!.bounds as LngLatBounds} />
         {fixture?.narration && <>
           <GeoJSONSource id="planned-route" data={{ type: 'Feature', properties: {}, geometry: { type: 'LineString', coordinates: fixture.route.map(p => [p.longitude, p.latitude]) } }}>
             <Layer id="planned-route-line" type="line" paint={{ 'line-color': '#216846', 'line-width': 4, 'line-opacity': 0.8 }} />

@@ -335,6 +335,12 @@ Guidance revision 14 and writing brief v4 carry this direction forward. The exis
 
 **Verification and next evidence:** all 161 tests, media checks and both builds pass; the [result record](../test-results/M2-hampstead-tour.md) keeps the silent new-area handoff separate from this evidence. Prior accepted EarFun/Spotify and review-close behavior is reused. The owner can simply take the walk; no mandatory per-stop notes or extra technical outing. Afterwards discuss what worked, current orientation and how both walking passages fitted, then extract general lessons alongside Clerkenwell rather than automatically polishing this route in isolation.
 
+### 30 Highgate/Hampstead silent handoff and map opening
+
+**21 September 2026. Owner connected the phone for delivery.** The [handoff](../test-results/M2-hampstead-tour.md) installed and checked the new tour offline, preserving the existing catalogue/progress. The larger area revealed that centring the map on the extract could show no route at all. A small correction makes authored maps open on the whole route; the corrected Highgate and retained Finchley views were observed on the phone. The planned short session overran because that concrete issue needed a rebuild, not because another audio or field-test matrix was added.
+
+**Final state:** Highgate selected/unstarted, automatic narration on, tracking stopped; original network settings restored and the phone released. No new listening/content reaction is implied. The useful process lesson is to inspect the actual opening view, not treat a “map rendered” flag as evidence that the screen helps orientation. Ordinary walking feedback remains the next content/route evidence.
+
 ## Questions to carry into a later systematic review
 
 - Does context before anecdote usually improve the story, and when can an immediate intriguing detail work better?
@@ -364,5 +370,5 @@ Guidance revision 14 and writing brief v4 carry this direction forward. The exis
 | Pilot editorial choices | Railway-led opening preferred; warmer ending conditional on better writing; revised scripts and audio ready | Owner reaction to the revised comparisons, scenes, campaign and ending |
 | Two narrated legs in the next tour | Implemented in Clerkenwell; actual George timing and deterministic replays pass | How both passages launch and fit during ordinary use |
 | Authoring workshop | Sidi takes editorial lead; engineer prepares and executes | Record consequential choices and useful revisions; no permanent agent count assumed |
-| Next complete tours | Clerkenwell Working lives installed; Highgate/Hampstead Room to breathe built with silent handoff pending; both George, two passages | Ordinary outings: enjoyment, practical feedback and how the walking passages launch |
+| Next complete tours | Clerkenwell Working lives installed; Highgate/Hampstead Room to breathe installed and cold-verified; both George, two passages | Ordinary outings: enjoyment, practical feedback and how the walking passages launch |
 | Editorial values and AI provenance | AI provenance visible in the Clerkenwell introduction; values still developing | Develop the outlook from actual editorial choices and feedback |

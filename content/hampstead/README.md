@@ -34,6 +34,6 @@ The first passage begins only after leaving Millfield Lane for the Heath. Merton
 
 [Owner guide](../../docs/content/HAMPSTEAD-TAKE-THE-TOUR.md) · [build/device evidence](../../docs/test-results/M2-hampstead-tour.md).
 
-Both APKs build, 161 automated tests pass, and the self-contained APK contains all four tours/29 recordings and three maps. The new-area silent phone handoff is recorded separately from build success. Previous Finchley and Clerkenwell content versions are unchanged; preserve all progress and reviews during installation/import.
+Both APKs build, 161 automated tests pass, and the self-contained APK contains all four tours/29 recordings and three maps. The silent phone handoff passed on final source `1bd3e861342b27e4`, with Highgate selected/unstarted. An observed opening-view issue was corrected so authored maps initially fit their complete route; Highgate and retained Finchley A were checked offline. Previous Finchley and Clerkenwell content versions are unchanged; preserve all progress and reviews during installation/import.
 
 Original AI-assisted prose and local George synthesis; provenance is visible in the tour introduction. Claim excerpts, reconstruction bases and rights are stored per story. OpenStreetMap attribution and map/font notices are retained. No photographs, Street View imagery, music or third-party narration are bundled. Subjective pronunciation/listening quality and ordinary outing feedback remain unobserved for these new recordings.

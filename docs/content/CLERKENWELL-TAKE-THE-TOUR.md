@@ -2,7 +2,7 @@
 
 **Working lives, hidden in plain sight** · George · eight stops and two short walking stories.
 
-**Ready on your phone, 20 September:** Clerkenwell is installed, selected and unstarted. Its offline map and directions passed the cold-launch check. A short EarFun recording was clear, Spotify stopped during capture, and saving Review resumed narration correctly. [Handoff record](../test-results/M2-clerkenwell-phone-handoff.md).
+**Installed on your phone, 20 September:** Clerkenwell remains available under **Your tours**. The 21 September handoff leaves Highgate selected; choose Clerkenwell when you want this walk. Its offline map and directions passed the cold-launch check. A short EarFun recording was clear, Spotify stopped during capture, and saving Review resumed narration correctly. [Handoff record](../test-results/M2-clerkenwell-phone-handoff.md).
 
 ## The outing
 
