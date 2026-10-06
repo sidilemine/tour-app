@@ -406,3 +406,11 @@ Guidance revision 14 and writing brief v4 carry this direction forward. The exis
 | Authoring workshop | Sidi takes editorial lead; engineer prepares and executes | Record consequential choices and useful revisions; no permanent agent count assumed |
 | Next complete tours | Clerkenwell Working lives installed; Highgate/Hampstead Room to breathe installed and cold-verified; both George, two passages | Ordinary outings: enjoyment, practical feedback and how the walking passages launch |
 | Editorial values and AI provenance | AI provenance visible in the Clerkenwell introduction; values still developing | Develop the outlook from actual editorial choices and feedback |
+
+## 6 October 2026 — first local generation prototype
+
+**Owner direction:** build a bounded local workflow and a proposed daytime, 60-minute Farringdon-to-Farringdon Clerkenwell loop for a visitor with little neighbourhood knowledge and an interest in ordinary lives. Routine theme/route choices were delegated; endpoints, time envelope, evidence and the US$0 direct ceiling remain binding. This selects reversible handoff defaults, not validation of the process or permission for the wider factory.
+
+**Applied candidate:** the [six-stop plan and recordings](generation/PILOT.md) use station/Smithfield, Booth panels, Johnson at the Gate, cooperation at the Green and flower-making at Woodbridge Chapel. Shortening the earlier open route earns the return within the hour. Quiet legs are a calibration choice rather than the older two-chapter experiment; no enjoyment result selects that choice for future tours. Research begins with the existing Clerkenwell public-tour survey.
+
+**Review correction:** independent retained-source review caught physical directions labelled editorial and a too-narrow flower-process excerpt. [Repairs and limits](../../content/generation-pilot/REVIEW.md) preserve the script’s qualifications and distinguish real supporting passages from source links. The current candidate remains blocked for exact exterior positions, final acceptance and listening. No distinctive anecdote was invented to meet the requested style; no walk, listener judgment, live subscription generation or matched comparison is claimed. See [actual results](generation/RESULTS.md).

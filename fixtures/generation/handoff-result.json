@@ -1,0 +1,579 @@
+{
+  "schemaVersion": 1,
+  "id": "minimal-handoff",
+  "revision": 21,
+  "createdAt": "2026-10-06T20:10:35.677Z",
+  "updatedAt": "2026-10-06T20:10:35.971Z",
+  "deadline": "2026-10-06T20:30:35.677Z",
+  "status": "blocked",
+  "reason": "Fixture completed; synthetic evidence and unknown encounter are not a real tour.",
+  "profile": "Balanced",
+  "records": [
+    {
+      "id": "brief",
+      "revision": 1,
+      "owner": "fixture",
+      "createdAt": "2026-10-06T12:00:00.000Z",
+      "updatedAt": "2026-10-06T12:00:00.000Z",
+      "dependsOn": [],
+      "kind": "brief",
+      "data": {
+        "originalRequest": "Synthetic handoff only, not actual school facts",
+        "requirements": [
+          "Keep endpoints and qualified evidence"
+        ],
+        "preferences": [
+          "Ordinary lives"
+        ],
+        "assumptions": [
+          "Daytime"
+        ],
+        "delegation": [
+          "Routine selection"
+        ],
+        "endpoints": [
+          "Farringdon Cowcross entrance",
+          "Farringdon Cowcross entrance"
+        ],
+        "area": "Clerkenwell",
+        "researchExtent": "Clerkenwell and bordering evidence",
+        "routeExtent": "Clerkenwell public streets",
+        "durationSeconds": 3600,
+        "audience": {
+          "reason": "An ordinary livelihood behind an overlooked exterior",
+          "assumedKnowledge": "Little neighbourhood knowledge; familiar with buying flowers",
+          "intendedDiscovery": "Charitable sales had a documented qualification",
+          "presentAnchor": "Public exterior; interior not promised"
+        },
+        "access": "Public exterior only",
+        "date": "Daytime; date unspecified"
+      }
+    },
+    {
+      "id": "source",
+      "revision": 1,
+      "owner": "fixture",
+      "createdAt": "2026-10-06T12:00:00.000Z",
+      "updatedAt": "2026-10-06T12:00:00.000Z",
+      "dependsOn": [],
+      "kind": "source",
+      "data": {
+        "url": "https://example.org/fixture",
+        "title": "Synthetic qualified evidence",
+        "origin": "Fixture, not historical evidence",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T12:00:00.000Z",
+        "passage": "The account says some workers received support.",
+        "locator": "Fixture sentence 1",
+        "retention": "minimal-passage",
+        "attribution": "Synthetic fixture",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "claim",
+      "revision": 1,
+      "owner": "fixture",
+      "createdAt": "2026-10-06T12:00:00.000Z",
+      "updatedAt": "2026-10-06T12:00:00.000Z",
+      "dependsOn": [
+        {
+          "id": "source",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "Some workers received support, according to the account.",
+        "qualifications": [
+          "according to the account"
+        ],
+        "sourceRefs": [
+          {
+            "id": "source",
+            "revision": 1
+          }
+        ],
+        "status": "supported-with-qualification",
+        "scope": "Synthetic account, not universal provision"
+      }
+    },
+    {
+      "id": "encounter",
+      "revision": 1,
+      "owner": "fixture",
+      "createdAt": "2026-10-06T12:00:00.000Z",
+      "updatedAt": "2026-10-06T12:00:00.000Z",
+      "dependsOn": [],
+      "kind": "encounter",
+      "data": {
+        "landmark": {
+          "value": {
+            "latitude": 51.52,
+            "longitude": -0.1
+          },
+          "reason": null
+        },
+        "visitor": {
+          "value": null,
+          "reason": "Pavement view has not been established"
+        },
+        "camera": {
+          "value": null,
+          "reason": "No imagery supplied"
+        },
+        "approach": "Unverified",
+        "intendedView": "Exterior only",
+        "captureDate": null,
+        "checkedAt": "2026-10-06T12:00:00.000Z",
+        "state": "unverified",
+        "observations": [],
+        "interpretations": [],
+        "conditions": [],
+        "unknowns": [
+          "Visitor position"
+        ],
+        "evidenceRefs": []
+      }
+    },
+    {
+      "id": "candidate",
+      "revision": 1,
+      "owner": "fixture",
+      "createdAt": "2026-10-06T12:00:00.000Z",
+      "updatedAt": "2026-10-06T12:00:00.000Z",
+      "dependsOn": [
+        {
+          "id": "brief",
+          "revision": 1
+        },
+        {
+          "id": "claim",
+          "revision": 1
+        }
+      ],
+      "kind": "candidate",
+      "data": {
+        "name": "Synthetic stop",
+        "landmark": {
+          "value": {
+            "latitude": 51.52,
+            "longitude": -0.1
+          },
+          "reason": null
+        },
+        "audience": {
+          "reason": "An ordinary livelihood behind an overlooked exterior",
+          "assumedKnowledge": "Little neighbourhood knowledge; familiar with buying flowers",
+          "intendedDiscovery": "Charitable sales had a documented qualification",
+          "presentAnchor": "Public exterior; interior not promised"
+        },
+        "disposition": "proposed",
+        "rationale": "Tests rationale continuity",
+        "alternatives": []
+      }
+    },
+    {
+      "id": "script",
+      "revision": 1,
+      "owner": "fixture",
+      "createdAt": "2026-10-06T12:00:00.000Z",
+      "updatedAt": "2026-10-06T12:00:00.000Z",
+      "dependsOn": [
+        {
+          "id": "brief",
+          "revision": 1
+        },
+        {
+          "id": "claim",
+          "revision": 1
+        },
+        {
+          "id": "candidate",
+          "revision": 1
+        }
+      ],
+      "kind": "script",
+      "data": {
+        "audience": {
+          "reason": "An ordinary livelihood behind an overlooked exterior",
+          "assumedKnowledge": "Little neighbourhood knowledge; familiar with buying flowers",
+          "intendedDiscovery": "Charitable sales had a documented qualification",
+          "presentAnchor": "Public exterior; interior not promised"
+        },
+        "transcript": "Some workers received support, according to the account.",
+        "narrationWindowSeconds": 90,
+        "assertions": [
+          {
+            "text": "Some workers received support, according to the account.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "claim",
+                "revision": 1
+              }
+            ],
+            "qualifications": [
+              "according to the account"
+            ]
+          }
+        ],
+        "pronunciation": [],
+        "delivery": "Warm documentary; no fictitious memory"
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "taskId": "research-initial",
+      "role": "research",
+      "purpose": "Return the existing qualified claim with its evidence; do not invent the missing scene.",
+      "scope": "Only named records",
+      "inputRefs": [
+        {
+          "id": "brief",
+          "revision": 1
+        },
+        {
+          "id": "source",
+          "revision": 1
+        },
+        {
+          "id": "claim",
+          "revision": 1
+        }
+      ],
+      "audienceContext": {
+        "reason": "An ordinary livelihood behind an overlooked exterior",
+        "assumedKnowledge": "Little neighbourhood knowledge; familiar with buying flowers",
+        "intendedDiscovery": "Charitable sales had a documented qualification",
+        "presentAnchor": "Public exterior; interior not promised"
+      },
+      "allowedDecisions": [
+        "Propose scoped output"
+      ],
+      "toolPermissions": [],
+      "limits": {
+        "seconds": 60
+      },
+      "expectedOutput": "Typed records, unresolved questions and next action",
+      "completionCondition": "Return evidence-supported findings or explicit gap",
+      "recipient": "planner-producer",
+      "contextId": "context-research-initial",
+      "execution": "returned",
+      "operationId": "operation-1",
+      "result": {
+        "records": [],
+        "unresolvedQuestions": [],
+        "failedAttempts": [],
+        "recommendedNextAction": "Producer reviews returned work separately",
+        "usage": {
+          "inputTokens": null,
+          "outputTokens": null,
+          "subscription": false,
+          "apiEquivalentUsd": null,
+          "priceDate": null,
+          "uncertainty": "Deterministic fixture; no model dispatched"
+        },
+        "usableOutputRefs": []
+      }
+    },
+    {
+      "taskId": "scout-initial",
+      "role": "scout",
+      "purpose": "Return the missing visitor-position question; do not replace it with the landmark.",
+      "scope": "Only named records",
+      "inputRefs": [
+        {
+          "id": "brief",
+          "revision": 1
+        },
+        {
+          "id": "encounter",
+          "revision": 1
+        }
+      ],
+      "audienceContext": {
+        "reason": "An ordinary livelihood behind an overlooked exterior",
+        "assumedKnowledge": "Little neighbourhood knowledge; familiar with buying flowers",
+        "intendedDiscovery": "Charitable sales had a documented qualification",
+        "presentAnchor": "Public exterior; interior not promised"
+      },
+      "allowedDecisions": [
+        "Propose scoped output"
+      ],
+      "toolPermissions": [],
+      "limits": {
+        "seconds": 60
+      },
+      "expectedOutput": "Typed records, unresolved questions and next action",
+      "completionCondition": "Return evidence-supported findings or explicit gap",
+      "recipient": "planner-producer",
+      "contextId": "context-scout-initial",
+      "execution": "returned",
+      "operationId": "operation-2",
+      "result": {
+        "records": [],
+        "unresolvedQuestions": [
+          "Visitor position remains unknown"
+        ],
+        "failedAttempts": [],
+        "recommendedNextAction": "Obtain physical evidence before directions",
+        "usage": {
+          "inputTokens": null,
+          "outputTokens": null,
+          "subscription": false,
+          "apiEquivalentUsd": null,
+          "priceDate": null,
+          "uncertainty": "Deterministic fixture; no model dispatched"
+        },
+        "usableOutputRefs": []
+      }
+    },
+    {
+      "taskId": "editor-initial",
+      "role": "editor",
+      "purpose": "Assess this frozen synthetic passage; retain its qualifier.",
+      "scope": "Only named records",
+      "inputRefs": [
+        {
+          "id": "brief",
+          "revision": 1
+        },
+        {
+          "id": "script",
+          "revision": 1
+        }
+      ],
+      "audienceContext": {
+        "reason": "An ordinary livelihood behind an overlooked exterior",
+        "assumedKnowledge": "Little neighbourhood knowledge; familiar with buying flowers",
+        "intendedDiscovery": "Charitable sales had a documented qualification",
+        "presentAnchor": "Public exterior; interior not promised"
+      },
+      "allowedDecisions": [
+        "Propose scoped output"
+      ],
+      "toolPermissions": [],
+      "limits": {
+        "seconds": 60
+      },
+      "expectedOutput": "Typed records, unresolved questions and next action",
+      "completionCondition": "Return evidence-supported findings or explicit gap",
+      "recipient": "planner-producer",
+      "contextId": "context-editor-initial",
+      "execution": "returned",
+      "operationId": "operation-3",
+      "result": {
+        "records": [],
+        "unresolvedQuestions": [],
+        "failedAttempts": [],
+        "recommendedNextAction": "Producer reviews returned work separately",
+        "usage": {
+          "inputTokens": null,
+          "outputTokens": null,
+          "subscription": false,
+          "apiEquivalentUsd": null,
+          "priceDate": null,
+          "uncertainty": "Deterministic fixture; no model dispatched"
+        },
+        "usableOutputRefs": []
+      }
+    }
+  ],
+  "reviews": [],
+  "decisions": [],
+  "issues": [],
+  "counters": {
+    "candidates": [],
+    "research": 0,
+    "route": 0,
+    "correction": 0,
+    "render": {}
+  },
+  "costLedger": {
+    "currency": "USD",
+    "ceilingUsd": 0,
+    "completionReserveUsd": 0,
+    "quoteDate": "2026-10-06",
+    "operations": [
+      {
+        "id": "operation-1",
+        "taskId": "research-initial",
+        "stage": "research",
+        "state": "settled",
+        "reservedUsd": 0,
+        "chargedUsd": 0,
+        "startedAt": "2026-10-06T20:10:35.919Z",
+        "usage": {
+          "inputTokens": null,
+          "outputTokens": null,
+          "subscription": false,
+          "apiEquivalentUsd": null,
+          "priceDate": null,
+          "uncertainty": "Deterministic fixture; no model dispatched"
+        },
+        "endedAt": "2026-10-06T20:10:35.926Z",
+        "activeSeconds": 0.007
+      },
+      {
+        "id": "operation-2",
+        "taskId": "scout-initial",
+        "stage": "scout",
+        "state": "settled",
+        "reservedUsd": 0,
+        "chargedUsd": 0,
+        "startedAt": "2026-10-06T20:10:35.936Z",
+        "usage": {
+          "inputTokens": null,
+          "outputTokens": null,
+          "subscription": false,
+          "apiEquivalentUsd": null,
+          "priceDate": null,
+          "uncertainty": "Deterministic fixture; no model dispatched"
+        },
+        "endedAt": "2026-10-06T20:10:35.942Z",
+        "activeSeconds": 0.006
+      },
+      {
+        "id": "operation-3",
+        "taskId": "editor-initial",
+        "stage": "editor",
+        "state": "settled",
+        "reservedUsd": 0,
+        "chargedUsd": 0,
+        "startedAt": "2026-10-06T20:10:35.954Z",
+        "usage": {
+          "inputTokens": null,
+          "outputTokens": null,
+          "subscription": false,
+          "apiEquivalentUsd": null,
+          "priceDate": null,
+          "uncertainty": "Deterministic fixture; no model dispatched"
+        },
+        "endedAt": "2026-10-06T20:10:35.961Z",
+        "activeSeconds": 0.007
+      }
+    ]
+  },
+  "events": [
+    {
+      "at": "2026-10-06T12:00:00.000Z",
+      "type": "record",
+      "detail": "brief@1"
+    },
+    {
+      "at": "2026-10-06T12:00:00.000Z",
+      "type": "record",
+      "detail": "source@1"
+    },
+    {
+      "at": "2026-10-06T12:00:00.000Z",
+      "type": "record",
+      "detail": "claim@1"
+    },
+    {
+      "at": "2026-10-06T12:00:00.000Z",
+      "type": "record",
+      "detail": "encounter@1"
+    },
+    {
+      "at": "2026-10-06T12:00:00.000Z",
+      "type": "record",
+      "detail": "candidate@1"
+    },
+    {
+      "at": "2026-10-06T12:00:00.000Z",
+      "type": "record",
+      "detail": "script@1"
+    },
+    {
+      "at": "2026-10-06T12:00:00.000Z",
+      "type": "task-queued",
+      "detail": "research-initial"
+    },
+    {
+      "at": "2026-10-06T12:00:00.000Z",
+      "type": "task-queued",
+      "detail": "scout-initial"
+    },
+    {
+      "at": "2026-10-06T12:00:00.000Z",
+      "type": "task-queued",
+      "detail": "editor-initial"
+    },
+    {
+      "at": "2026-10-06T20:10:35.919Z",
+      "type": "dispatch",
+      "detail": "operation-1"
+    },
+    {
+      "at": "2026-10-06T20:10:35.926Z",
+      "type": "settled",
+      "detail": "operation-1"
+    },
+    {
+      "at": "2026-10-06T20:10:35.931Z",
+      "type": "returned",
+      "detail": "research-initial"
+    },
+    {
+      "at": "2026-10-06T20:10:35.936Z",
+      "type": "dispatch",
+      "detail": "operation-2"
+    },
+    {
+      "at": "2026-10-06T20:10:35.942Z",
+      "type": "settled",
+      "detail": "operation-2"
+    },
+    {
+      "at": "2026-10-06T20:10:35.948Z",
+      "type": "returned",
+      "detail": "scout-initial"
+    },
+    {
+      "at": "2026-10-06T20:10:35.954Z",
+      "type": "dispatch",
+      "detail": "operation-3"
+    },
+    {
+      "at": "2026-10-06T20:10:35.961Z",
+      "type": "settled",
+      "detail": "operation-3"
+    },
+    {
+      "at": "2026-10-06T20:10:35.966Z",
+      "type": "returned",
+      "detail": "editor-initial"
+    },
+    {
+      "at": "2026-10-06T20:10:35.971Z",
+      "type": "terminal",
+      "detail": "blocked"
+    },
+    {
+      "at": "2026-10-06T20:10:35.971Z",
+      "type": "cli",
+      "detail": "run"
+    }
+  ],
+  "waiting": {
+    "quotaSeconds": 0,
+    "ownerSeconds": 0
+  },
+  "conditions": {
+    "model": "gpt-6.1-sol",
+    "effort": "medium",
+    "promptHashes": {
+      "research": "f56f7f4907854c95fe949f6af1450363fa5b71f66f38e655f82dd5ffe0980b58",
+      "scout": "01e1f5573e0544d12a714391bd8f33b0aef0df03af5f7b8b337ef343216ff97e",
+      "editor": "3ac59761705f9600c696a189da0400b0da467387198775b5343b6803b882140a"
+    },
+    "tools": [],
+    "startingEvidence": "explicit records only",
+    "voice": "local Kokoro George",
+    "qualityFloor": "Current evidence, essential physical access, worthwhile interpretation, listening and actual offline package checks",
+    "mode": "fixture"
+  }
+}

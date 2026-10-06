@@ -1,5 +1,9 @@
 # Product
 
+## Bounded generation prototype — 6 October 2026
+
+The owner authorized the first local file-driven generation workflow and one supervised 60-minute Farringdon loop, selecting reversible proposal defaults under US$0 direct paid usage. [Implementation and actual outcomes](docs/content/generation/RESULTS.md) distinguish drafted content, validated package, account access and real experience. This explicit local slice does not accept E1 or authorize a production factory. Offline playback, privacy and progress contracts remain unchanged.
+
 ## Intended experience
 
 Sidi can download a walking tour, start it on an Android phone and put the phone in a pocket. The guide uses the surroundings to tell engaging, sourced stories, gives usable directions, and leaves intentional silence. Arrival at the next appropriate stop can start narration even after several quiet minutes with the screen locked. iOS follows after the Android walking experience is proven.

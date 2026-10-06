@@ -1,0 +1,1652 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "dependsOn": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "revision": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "id",
+              "revision"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "kind": {
+          "type": "string",
+          "const": "brief"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "originalRequest": {
+              "type": "string",
+              "minLength": 1
+            },
+            "requirements": {
+              "minItems": 1,
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "preferences": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "assumptions": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "delegation": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "endpoints": {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "string",
+                  "minLength": 1
+                }
+              ],
+              "items": false,
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "area": {
+              "type": "string",
+              "minLength": 1
+            },
+            "researchExtent": {
+              "type": "string",
+              "minLength": 1
+            },
+            "routeExtent": {
+              "type": "string",
+              "minLength": 1
+            },
+            "durationSeconds": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "audience": {
+              "type": "object",
+              "properties": {
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "assumedKnowledge": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "intendedDiscovery": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "presentAnchor": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "reason",
+                "assumedKnowledge",
+                "intendedDiscovery",
+                "presentAnchor"
+              ],
+              "additionalProperties": false
+            },
+            "access": {
+              "type": "string",
+              "minLength": 1
+            },
+            "date": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "originalRequest",
+            "requirements",
+            "preferences",
+            "assumptions",
+            "delegation",
+            "endpoints",
+            "area",
+            "researchExtent",
+            "routeExtent",
+            "durationSeconds",
+            "audience",
+            "access",
+            "date"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "owner",
+        "createdAt",
+        "updatedAt",
+        "dependsOn",
+        "kind",
+        "data"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "dependsOn": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "revision": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "id",
+              "revision"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "kind": {
+          "type": "string",
+          "const": "source"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1
+            },
+            "origin": {
+              "type": "string",
+              "minLength": 1
+            },
+            "publishedOn": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "retrievedAt": {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+            },
+            "passage": {
+              "type": "string",
+              "minLength": 1
+            },
+            "locator": {
+              "type": "string",
+              "minLength": 1
+            },
+            "retention": {
+              "type": "string",
+              "enum": [
+                "minimal-passage",
+                "reference-only",
+                "unknown"
+              ]
+            },
+            "attribution": {
+              "type": "string",
+              "minLength": 1
+            },
+            "exportAllowed": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "url",
+            "title",
+            "origin",
+            "publishedOn",
+            "retrievedAt",
+            "passage",
+            "locator",
+            "retention",
+            "attribution",
+            "exportAllowed"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "owner",
+        "createdAt",
+        "updatedAt",
+        "dependsOn",
+        "kind",
+        "data"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "dependsOn": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "revision": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "id",
+              "revision"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "kind": {
+          "type": "string",
+          "const": "claim"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "proposition": {
+              "type": "string",
+              "minLength": 1
+            },
+            "qualifications": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "sourceRefs": {
+              "minItems": 1,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "revision": {
+                    "type": "integer",
+                    "exclusiveMinimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "id",
+                  "revision"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "proposed",
+                "reviewed-supported",
+                "supported-with-qualification",
+                "disputed",
+                "unsupported"
+              ]
+            },
+            "scope": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "proposition",
+            "qualifications",
+            "sourceRefs",
+            "status",
+            "scope"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "owner",
+        "createdAt",
+        "updatedAt",
+        "dependsOn",
+        "kind",
+        "data"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "dependsOn": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "revision": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "id",
+              "revision"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "kind": {
+          "type": "string",
+          "const": "candidate"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "landmark": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "latitude": {
+                          "type": "number",
+                          "minimum": -90,
+                          "maximum": 90
+                        },
+                        "longitude": {
+                          "type": "number",
+                          "minimum": -180,
+                          "maximum": 180
+                        }
+                      },
+                      "required": [
+                        "latitude",
+                        "longitude"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "reason": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "value",
+                "reason"
+              ],
+              "additionalProperties": false
+            },
+            "audience": {
+              "type": "object",
+              "properties": {
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "assumedKnowledge": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "intendedDiscovery": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "presentAnchor": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "reason",
+                "assumedKnowledge",
+                "intendedDiscovery",
+                "presentAnchor"
+              ],
+              "additionalProperties": false
+            },
+            "disposition": {
+              "type": "string",
+              "enum": [
+                "proposed",
+                "selected",
+                "rejected"
+              ]
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 1
+            },
+            "alternatives": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "name",
+            "landmark",
+            "audience",
+            "disposition",
+            "rationale",
+            "alternatives"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "owner",
+        "createdAt",
+        "updatedAt",
+        "dependsOn",
+        "kind",
+        "data"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "dependsOn": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "revision": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "id",
+              "revision"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "kind": {
+          "type": "string",
+          "const": "encounter"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "landmark": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "latitude": {
+                          "type": "number",
+                          "minimum": -90,
+                          "maximum": 90
+                        },
+                        "longitude": {
+                          "type": "number",
+                          "minimum": -180,
+                          "maximum": 180
+                        }
+                      },
+                      "required": [
+                        "latitude",
+                        "longitude"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "reason": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "value",
+                "reason"
+              ],
+              "additionalProperties": false
+            },
+            "visitor": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "latitude": {
+                          "type": "number",
+                          "minimum": -90,
+                          "maximum": 90
+                        },
+                        "longitude": {
+                          "type": "number",
+                          "minimum": -180,
+                          "maximum": 180
+                        }
+                      },
+                      "required": [
+                        "latitude",
+                        "longitude"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "reason": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "value",
+                "reason"
+              ],
+              "additionalProperties": false
+            },
+            "camera": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "latitude": {
+                          "type": "number",
+                          "minimum": -90,
+                          "maximum": 90
+                        },
+                        "longitude": {
+                          "type": "number",
+                          "minimum": -180,
+                          "maximum": 180
+                        }
+                      },
+                      "required": [
+                        "latitude",
+                        "longitude"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "reason": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "value",
+                "reason"
+              ],
+              "additionalProperties": false
+            },
+            "approach": {
+              "type": "string",
+              "minLength": 1
+            },
+            "intendedView": {
+              "type": "string",
+              "minLength": 1
+            },
+            "captureDate": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "checkedAt": {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+            },
+            "state": {
+              "type": "string",
+              "enum": [
+                "unverified",
+                "desk-checked",
+                "field-checked",
+                "stale",
+                "blocked"
+              ]
+            },
+            "observations": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "interpretations": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "conditions": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "unknowns": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "evidenceRefs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "revision": {
+                    "type": "integer",
+                    "exclusiveMinimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "id",
+                  "revision"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "landmark",
+            "visitor",
+            "camera",
+            "approach",
+            "intendedView",
+            "captureDate",
+            "checkedAt",
+            "state",
+            "observations",
+            "interpretations",
+            "conditions",
+            "unknowns",
+            "evidenceRefs"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "owner",
+        "createdAt",
+        "updatedAt",
+        "dependsOn",
+        "kind",
+        "data"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "dependsOn": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "revision": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "id",
+              "revision"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "kind": {
+          "type": "string",
+          "const": "route"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "stops": {
+              "minItems": 1,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "revision": {
+                    "type": "integer",
+                    "exclusiveMinimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "id",
+                  "revision"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "encounterRefs": {
+              "minItems": 1,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "revision": {
+                    "type": "integer",
+                    "exclusiveMinimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "id",
+                  "revision"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "legs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "from": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "to": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "geometry": {
+                    "minItems": 2,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "latitude": {
+                          "type": "number",
+                          "minimum": -90,
+                          "maximum": 90
+                        },
+                        "longitude": {
+                          "type": "number",
+                          "minimum": -180,
+                          "maximum": 180
+                        }
+                      },
+                      "required": [
+                        "latitude",
+                        "longitude"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "distanceMetres": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "durationSeconds": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "maneuvers": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "provider": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "retrievedAt": {
+                    "type": "string",
+                    "format": "date-time",
+                    "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+                  },
+                  "evidenceRefs": {
+                    "minItems": 1,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "revision": {
+                          "type": "integer",
+                          "exclusiveMinimum": 0,
+                          "maximum": 9007199254740991
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "revision"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "from",
+                  "to",
+                  "geometry",
+                  "distanceMetres",
+                  "durationSeconds",
+                  "maneuvers",
+                  "provider",
+                  "retrievedAt",
+                  "evidenceRefs"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "walkingSeconds": {
+              "type": "number",
+              "minimum": 0
+            },
+            "speechSeconds": {
+              "type": "number",
+              "minimum": 0
+            },
+            "overlapSeconds": {
+              "type": "number",
+              "minimum": 0
+            },
+            "lookingSeconds": {
+              "type": "number",
+              "minimum": 0
+            },
+            "practicalSeconds": {
+              "type": "number",
+              "minimum": 0
+            },
+            "allowanceSeconds": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "assumptions": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "required": [
+            "stops",
+            "encounterRefs",
+            "legs",
+            "walkingSeconds",
+            "speechSeconds",
+            "overlapSeconds",
+            "lookingSeconds",
+            "practicalSeconds",
+            "allowanceSeconds",
+            "assumptions"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "owner",
+        "createdAt",
+        "updatedAt",
+        "dependsOn",
+        "kind",
+        "data"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "dependsOn": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "revision": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "id",
+              "revision"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "kind": {
+          "type": "string",
+          "const": "script"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "audience": {
+              "type": "object",
+              "properties": {
+                "reason": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "assumedKnowledge": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "intendedDiscovery": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "presentAnchor": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "reason",
+                "assumedKnowledge",
+                "intendedDiscovery",
+                "presentAnchor"
+              ],
+              "additionalProperties": false
+            },
+            "transcript": {
+              "type": "string",
+              "minLength": 1
+            },
+            "narrationWindowSeconds": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "assertions": {
+              "minItems": 1,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "factual",
+                      "physical",
+                      "editorial"
+                    ]
+                  },
+                  "evidenceRefs": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "revision": {
+                          "type": "integer",
+                          "exclusiveMinimum": 0,
+                          "maximum": 9007199254740991
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "revision"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "qualifications": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                },
+                "required": [
+                  "text",
+                  "kind",
+                  "evidenceRefs",
+                  "qualifications"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "pronunciation": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "delivery": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "audience",
+            "transcript",
+            "narrationWindowSeconds",
+            "assertions",
+            "pronunciation",
+            "delivery"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "owner",
+        "createdAt",
+        "updatedAt",
+        "dependsOn",
+        "kind",
+        "data"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "dependsOn": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "revision": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "id",
+              "revision"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "kind": {
+          "type": "string",
+          "const": "asset"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "clipId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "bytes": {
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            },
+            "measuredSeconds": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "voice": {
+              "type": "string",
+              "minLength": 1
+            },
+            "settings": {
+              "type": "object",
+              "propertyNames": {
+                "type": "string"
+              },
+              "additionalProperties": {}
+            },
+            "rights": {
+              "type": "string",
+              "minLength": 1
+            },
+            "exportAllowed": {
+              "type": "boolean"
+            },
+            "listening": {
+              "type": "string",
+              "enum": [
+                "pending",
+                "passed",
+                "failed"
+              ]
+            }
+          },
+          "required": [
+            "clipId",
+            "path",
+            "sha256",
+            "bytes",
+            "measuredSeconds",
+            "voice",
+            "settings",
+            "rights",
+            "exportAllowed",
+            "listening"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "owner",
+        "createdAt",
+        "updatedAt",
+        "dependsOn",
+        "kind",
+        "data"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+        },
+        "dependsOn": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "revision": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "id",
+              "revision"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "kind": {
+          "type": "string",
+          "const": "package"
+        },
+        "data": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            "importer": {
+              "type": "string",
+              "const": "walking-tour-package-v1"
+            },
+            "structuralChecks": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "assetRefs": {
+              "minItems": 3,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "revision": {
+                    "type": "integer",
+                    "exclusiveMinimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "id",
+                  "revision"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "device": {
+              "type": "string",
+              "enum": [
+                "pending",
+                "observed"
+              ]
+            },
+            "outdoors": {
+              "type": "string",
+              "enum": [
+                "pending",
+                "observed"
+              ]
+            }
+          },
+          "required": [
+            "path",
+            "sha256",
+            "importer",
+            "structuralChecks",
+            "assetRefs",
+            "device",
+            "outdoors"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "id",
+        "revision",
+        "owner",
+        "createdAt",
+        "updatedAt",
+        "dependsOn",
+        "kind",
+        "data"
+      ],
+      "additionalProperties": false
+    }
+  ]
+}

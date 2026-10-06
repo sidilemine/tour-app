@@ -1,0 +1,50 @@
+{
+  "id": "pilot-brief",
+  "revision": 1,
+  "owner": "manual-pilot-integrator",
+  "createdAt": "2026-10-06T20:16:57.334Z",
+  "updatedAt": "2026-10-06T20:16:57.334Z",
+  "dependsOn": [],
+  "kind": "brief",
+  "data": {
+    "originalRequest": "Balanced proposed 60-minute daytime Clerkenwell loop, Farringdon start/end, public exterior, low familiarity, ordinary lives and less obvious stories.",
+    "requirements": [
+      "Farringdon Cowcross Street start and end",
+      "60-minute planning envelope",
+      "Public exterior stops",
+      "No invented distinctive claim",
+      "At least three actual narration samples"
+    ],
+    "preferences": [
+      "Ordinary lives",
+      "Warm documentary narration",
+      "Low assumed neighbourhood knowledge"
+    ],
+    "assumptions": [
+      "4.5 km/h walking estimate",
+      "Daytime; specific outing date unknown",
+      "Quiet walking legs in this calibration"
+    ],
+    "delegation": [
+      "Routine theme/route selection",
+      "Adapt existing evidence and scripts",
+      "Local free George synthesis"
+    ],
+    "endpoints": [
+      "Farringdon Cowcross Street entrance",
+      "Farringdon Cowcross Street entrance"
+    ],
+    "area": "Clerkenwell, London",
+    "researchExtent": "Reused September Clerkenwell survey and research with bounded October current-use refresh",
+    "routeExtent": "2.245 km southern Clerkenwell public-street loop",
+    "durationSeconds": 3600,
+    "audience": {
+      "reason": "Find ordinary skilled work behind public Clerkenwell exteriors",
+      "assumedKnowledge": "Little neighbourhood familiarity",
+      "intendedDiscovery": "Meat carrying, reused architecture, working writers, practical cooperation and handmade flowers",
+      "presentAnchor": "Five public exterior story stops on a Farringdon loop"
+    },
+    "access": "Exterior only; exact current station/Smithfield standing clearance unresolved",
+    "date": "Proposed daytime; no outing date selected"
+  }
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "finishedAt": "2026-10-06T20:10:34.420Z",
+    "elapsedSeconds": 168.766,
+    "directChargesUsd": 0,
+    "cacheHits": 0,
+    "recordings": 6,
+    "note": "Initial full rendering; retained before validation-only/cached reruns."
+  },
+  {
+    "startedAt": "2026-10-06T20:11:47.210Z",
+    "finishedAt": "2026-10-06T20:11:48.378Z",
+    "elapsedSeconds": 1.168,
+    "directChargesUsd": 0,
+    "cacheHits": 6,
+    "recordings": 6
+  },
+  {
+    "startedAt": "2026-10-06T20:15:14.058Z",
+    "finishedAt": "2026-10-06T20:15:15.164Z",
+    "elapsedSeconds": 1.106,
+    "directChargesUsd": 0,
+    "cacheHits": 6,
+    "recordings": 6
+  },
+  {
+    "startedAt": "2026-10-06T20:16:30.554Z",
+    "finishedAt": "2026-10-06T20:16:31.591Z",
+    "elapsedSeconds": 1.037,
+    "directChargesUsd": 0,
+    "cacheHits": 6,
+    "recordings": 6
+  }
+]

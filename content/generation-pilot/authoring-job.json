@@ -1,0 +1,4915 @@
+{
+  "schemaVersion": 1,
+  "id": "clerkenwell-balanced-manual-calibration",
+  "revision": 89,
+  "createdAt": "2026-10-06T20:16:57.334Z",
+  "updatedAt": "2026-10-06T20:16:57.334Z",
+  "deadline": "2026-10-06T20:36:57.334Z",
+  "status": "blocked",
+  "reason": "Manual calibration artifacts retained; independent review, listening and unresolved exterior encounters prevent acceptance. Requested subscription pipeline remains a separate access gate.",
+  "profile": "Balanced",
+  "records": [
+    {
+      "id": "pilot-brief",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [],
+      "kind": "brief",
+      "data": {
+        "originalRequest": "Balanced proposed 60-minute daytime Clerkenwell loop, Farringdon start/end, public exterior, low familiarity, ordinary lives and less obvious stories.",
+        "requirements": [
+          "Farringdon Cowcross Street start and end",
+          "60-minute planning envelope",
+          "Public exterior stops",
+          "No invented distinctive claim",
+          "At least three actual narration samples"
+        ],
+        "preferences": [
+          "Ordinary lives",
+          "Warm documentary narration",
+          "Low assumed neighbourhood knowledge"
+        ],
+        "assumptions": [
+          "4.5 km/h walking estimate",
+          "Daytime; specific outing date unknown",
+          "Quiet walking legs in this calibration"
+        ],
+        "delegation": [
+          "Routine theme/route selection",
+          "Adapt existing evidence and scripts",
+          "Local free George synthesis"
+        ],
+        "endpoints": [
+          "Farringdon Cowcross Street entrance",
+          "Farringdon Cowcross Street entrance"
+        ],
+        "area": "Clerkenwell, London",
+        "researchExtent": "Reused September Clerkenwell survey and research with bounded October current-use refresh",
+        "routeExtent": "2.245 km southern Clerkenwell public-street loop",
+        "durationSeconds": 3600,
+        "audience": {
+          "reason": "Find ordinary skilled work behind public Clerkenwell exteriors",
+          "assumedKnowledge": "Little neighbourhood familiarity",
+          "intendedDiscovery": "Meat carrying, reused architecture, working writers, practical cooperation and handmade flowers",
+          "presentAnchor": "Five public exterior story stops on a Farringdon loop"
+        },
+        "access": "Exterior only; exact current station/Smithfield standing clearance unresolved",
+        "date": "Proposed daytime; no outing date selected"
+      }
+    },
+    {
+      "id": "pilot-source-2",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [],
+      "kind": "source",
+      "data": {
+        "url": "https://smithfieldmarket.com/contact/",
+        "title": "Smithfield Market Tenants’ Association — Contact and opening hours",
+        "origin": "October web-text refresh",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T00:00:00.000Z",
+        "passage": "Mon-Fri: Midnight-7am",
+        "locator": "OPENING HOURS",
+        "retention": "minimal-passage",
+        "attribution": "Smithfield Market Tenants’ Association — Contact and opening hours",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "pilot-source-3",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [],
+      "kind": "source",
+      "data": {
+        "url": "https://www.londonmuseum.org.uk/collections/london-stories/history-smithfield-market/",
+        "title": "London Museum — The history of Smithfield Market",
+        "origin": "September retained researcher record, not independently rediscovered",
+        "publishedOn": null,
+        "retrievedAt": "2026-09-20T00:00:00.000Z",
+        "passage": "To give customers time to buy and prepare their meat for sale the same day",
+        "locator": "Same-day trade explanation",
+        "retention": "minimal-passage",
+        "attribution": "London Museum — The history of Smithfield Market",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "pilot-source-4",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [],
+      "kind": "source",
+      "data": {
+        "url": "https://www.londonmuseum.org.uk/collections/v/object-45167/porters-badge-from-smithfield-meat-market/",
+        "title": "London Museum — Porter’s Badge from Smithfield Meat Market, 1977",
+        "origin": "October web-text refresh",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T00:00:00.000Z",
+        "passage": "self-employed porters, who were paid according to how much they carried",
+        "locator": "Object 78.75/2, description paragraph 3",
+        "retention": "minimal-passage",
+        "attribution": "London Museum — Porter’s Badge from Smithfield Meat Market, 1977",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "pilot-source-5",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [],
+      "kind": "source",
+      "data": {
+        "url": "https://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?resourceID=7&uid=1414903",
+        "title": "Historic England designation decision — Mountford House, reference 1414903",
+        "origin": "October web-text refresh",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T00:00:00.000Z",
+        "passage": "five Portland stone panels carved in low relief",
+        "locator": "History, paragraph beginning The provision of flats; Details",
+        "retention": "minimal-passage",
+        "attribution": "Historic England designation decision — Mountford House, reference 1414903",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "pilot-source-6",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [],
+      "kind": "source",
+      "data": {
+        "url": "https://victorianweb.org/art/architecture/mountford/2.html",
+        "title": "Victorian Web — Mountford’s New Premises in Cowcross Street",
+        "origin": "September retained researcher record, not independently rediscovered",
+        "publishedOn": null,
+        "retrievedAt": "2026-09-20T00:00:00.000Z",
+        "passage": "from reaping corn to tapping the oak",
+        "locator": "Caption and quoted Zwart interpretation",
+        "retention": "minimal-passage",
+        "attribution": "Victorian Web — Mountford’s New Premises in Cowcross Street",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "pilot-source-7",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [],
+      "kind": "source",
+      "data": {
+        "url": "https://www.theginguild.com/guidance-for-members/gin-navigator/",
+        "title": "The Gin Guild — Gin Navigator: Gin Explained",
+        "origin": "September retained researcher record, not independently rediscovered",
+        "publishedOn": null,
+        "retrievedAt": "2026-09-20T00:00:00.000Z",
+        "passage": "essential oils in botanicals varies from one harvest to another",
+        "locator": "Section 2 Botanicals",
+        "retention": "minimal-passage",
+        "attribution": "The Gin Guild — Gin Navigator: Gin Explained",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "pilot-source-8",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [],
+      "kind": "source",
+      "data": {
+        "url": "https://discovery.ucl.ac.uk/10198364/1/Chapter%205%20St%20John%27s%20Gate%20and%20St%20John%27s%20Lane.pdf",
+        "title": "Survey of London — St John’s Gate and St John’s Lane",
+        "origin": "September retained researcher record, not independently rediscovered",
+        "publishedOn": null,
+        "retrievedAt": "2026-09-20T00:00:00.000Z",
+        "passage": "an engraved view appearing on the title-page",
+        "locator": "Survey of London vol 46; PDF p19 / printing-house section",
+        "retention": "minimal-passage",
+        "attribution": "Survey of London — St John’s Gate and St John’s Lane",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "pilot-source-10",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [],
+      "kind": "source",
+      "data": {
+        "url": "https://www.cambridge.org/core/books/abs/literary-authors-parliamentary-reporters/samuel-johnson-beyond-lilliput/B989325EA048E795B97830B91F5518BD",
+        "title": "Nikki Hessell — Samuel Johnson: beyond Lilliput, chapter summary",
+        "origin": "September retained researcher record, not independently rediscovered",
+        "publishedOn": null,
+        "retrievedAt": "2026-09-20T00:00:00.000Z",
+        "passage": "notorious breach of the Privilege",
+        "locator": "Publisher chapter summary; full paid chapter not accessed",
+        "retention": "minimal-passage",
+        "attribution": "Nikki Hessell — Samuel Johnson: beyond Lilliput, chapter summary",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "pilot-source-11",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [],
+      "kind": "source",
+      "data": {
+        "url": "https://www.gutenberg.org/files/1564/1564-h/1564-h.htm",
+        "title": "James Boswell — Life of Johnson, Gentleman’s Magazine account",
+        "origin": "September retained researcher record, not independently rediscovered",
+        "publishedOn": null,
+        "retrievedAt": "2026-09-20T00:00:00.000Z",
+        "passage": "from the scanty notes furnished by persons employed to attend",
+        "locator": "Boswell, early London / Gentleman’s Magazine, This important article",
+        "retention": "minimal-passage",
+        "attribution": "James Boswell — Life of Johnson, Gentleman’s Magazine account",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "pilot-source-12",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [],
+      "kind": "source",
+      "data": {
+        "url": "https://www.samueljohnson.com/debates/174107.html",
+        "title": "The Gentleman’s Magazine, July 1741 — Debate on removing Walpole, modern transcription",
+        "origin": "September retained researcher record, not independently rediscovered",
+        "publishedOn": null,
+        "retrievedAt": "2026-09-20T00:00:00.000Z",
+        "passage": "a parallel debate in the British Parliament",
+        "locator": "July 1741, opening heading and introduction",
+        "retention": "minimal-passage",
+        "attribution": "The Gentleman’s Magazine, July 1741 — Debate on removing Walpole, modern transcription",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "pilot-source-13",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [],
+      "kind": "source",
+      "data": {
+        "url": "https://discovery.ucl.ac.uk/id/eprint/10198342/1/Chapter%203%20Clerkenwell%20Green.pdf",
+        "title": "Survey of London — Clerkenwell Green",
+        "origin": "September retained researcher record, not independently rediscovered",
+        "publishedOn": null,
+        "retrievedAt": "2026-09-20T00:00:00.000Z",
+        "passage": "seventeen issues were printed here in 1902–3.",
+        "locator": "Survey of London vol 46, PDF pp51–52 and 56–57",
+        "retention": "minimal-passage",
+        "attribution": "Survey of London — Clerkenwell Green",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "pilot-source-14",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [],
+      "kind": "source",
+      "data": {
+        "url": "https://www.marx-memorial-library.org.uk/education/current-and-forthcoming-courses",
+        "title": "Marx Memorial Library — Current and forthcoming courses",
+        "origin": "October web-text refresh",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T00:00:00.000Z",
+        "passage": "Trade Unions, Class & Power | Oct-Dec 2026.",
+        "locator": "Online Courses, NEXT AVAILABLE COURSE(S)",
+        "retention": "minimal-passage",
+        "attribution": "Marx Memorial Library — Current and forthcoming courses",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "pilot-source-15",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [],
+      "kind": "source",
+      "data": {
+        "url": "https://www.marxists.org/archive/lenin/works/1913/sep/12.htm",
+        "title": "V. I. Lenin — Harry Quelch, 1913; Marxists Internet Archive",
+        "origin": "September retained researcher record, not independently rediscovered",
+        "publishedOn": null,
+        "retrievedAt": "2026-09-20T00:00:00.000Z",
+        "passage": "there was no room for another chair",
+        "locator": "Lenin, Harry Quelch, 1913, final two paragraphs",
+        "retention": "minimal-passage",
+        "attribution": "V. I. Lenin — Harry Quelch, 1913; Marxists Internet Archive",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "pilot-source-16",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [],
+      "kind": "source",
+      "data": {
+        "url": "https://booth.lse.ac.uk/iiif_page/BOOTH%2FB%2F237",
+        "title": "LSE, Charles Booth inquiry — Notebook BOOTH/B/237, selected 1898 interviews and observations",
+        "origin": "September retained researcher record, not independently rediscovered",
+        "publishedOn": null,
+        "retrievedAt": "2026-09-20T00:00:00.000Z",
+        "passage": "After two years they become efficient. / roses, daisies and cornflowers.",
+        "locator": "Notebook B/237 p131 (canvas123); p207 (canvas161)",
+        "retention": "minimal-passage",
+        "attribution": "LSE, Charles Booth inquiry — Notebook BOOTH/B/237, selected 1898 interviews and observations",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "pilot-source-17",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [],
+      "kind": "source",
+      "data": {
+        "url": "https://atom.aim25.com/index.php/john-grooms-association-for-disabled-people",
+        "title": "London Archives via AIM25 — John Groom’s Association for Disabled People",
+        "origin": "September retained researcher record, not independently rediscovered",
+        "publishedOn": null,
+        "retrievedAt": "2026-09-20T00:00:00.000Z",
+        "passage": "Woodbridge Street and Haywards Place.",
+        "locator": "Collection GB 0074 LMA/4305, institutional history",
+        "retention": "minimal-passage",
+        "attribution": "London Archives via AIM25 — John Groom’s Association for Disabled People",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "pilot-source-18",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [],
+      "kind": "source",
+      "data": {
+        "url": "https://www.londonmuseum.org.uk/blog/rediscover-londons-lost-art-of-flower-making/",
+        "title": "London Museum — Rediscover London’s lost art of flower-making",
+        "origin": "October web-text refresh",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T00:00:00.000Z",
+        "passage": "“cutting tools”; “dye the fabric”; “special moulds”; “heat it over a spirit lamp”; “around the ball”; “twisted wire”; “paper or silk”; “sprays or wreaths”",
+        "locator": "Noncontiguous minimal excerpts: How were these flowers created? (Natasha, two paragraphs) and The incredibly complex process of flower making (Beatrice, assembly paragraph); page reopened 6 October 2026.",
+        "retention": "minimal-passage",
+        "attribution": "London Museum — Rediscover London’s lost art of flower-making",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "pilot-source-19",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [],
+      "kind": "source",
+      "data": {
+        "url": "https://www.gracelifelondon.org/",
+        "title": "GraceLife London — current church at Woodbridge Chapel",
+        "origin": "October web-text refresh",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T00:00:00.000Z",
+        "passage": "GraceLife London, Woodbridge Chapel, Woodbridge Street, London",
+        "locator": "Footer address",
+        "retention": "minimal-passage",
+        "attribution": "GraceLife London — current church at Woodbridge Chapel",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "pilot-route-evidence",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [],
+      "kind": "source",
+      "data": {
+        "url": "https://valhalla.github.io/valhalla/start/introduction/",
+        "title": "Retained Valhalla responses and archived selected geometry",
+        "origin": "Actual saved public router responses; raw coordinates and metadata retained under routes/",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T20:16:57.334Z",
+        "passage": "{\"start\":{\"has_time_restrictions\":false,\"has_toll\":false,\"has_highway\":false,\"has_ferry\":false,\"min_lat\":51.519838,\"min_lon\":-0.104963,\"max_lat\":51.52037,\"max_lon\":-0.101859,\"time\":217.736,\"length\":0.256,\"cost\":233.533},\"return\":{\"has_time_restrictions\":false,\"has_toll\":false,\"has_highway\":false,\"has_ferry\":false,\"min_lat\":51.520258,\"min_lon\":-0.106236,\"max_lat\":51.524394,\"max_lon\":-0.104034,\"time\":551.735,\"length\":0.67,\"cost\":577.17},\"archivedCore\":\"content/clerkenwell/plan.json vertices 92–246\",\"archivedSha256\":\"28c1f3758e8d8010ef0ba03bf77e85fe4bb8724404ccd32242b8a3bf580b49a2\"}",
+        "locator": "content/generation-pilot/routes/*-response.json and ROUTE.md; © OpenStreetMap contributors ODbL",
+        "retention": "minimal-passage",
+        "attribution": "FOSSGIS Valhalla; © OpenStreetMap contributors ODbL",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "pilot-encounter-farringdon",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-route-evidence",
+          "revision": 1
+        }
+      ],
+      "kind": "encounter",
+      "data": {
+        "landmark": {
+          "value": null,
+          "reason": "Farringdon station, Cowcross Street entrance; do not substitute camera/visitor position"
+        },
+        "visitor": {
+          "value": {
+            "latitude": 51.520286,
+            "longitude": -0.104959
+          },
+          "reason": "Desk candidate only"
+        },
+        "camera": {
+          "value": null,
+          "reason": "No satisfactory exterior imagery"
+        },
+        "approach": "Use the Cowcross Street / Farringdon end of the station. Do not begin at the remote Barbican-side Elizabeth line exit.",
+        "intendedView": "Choose a clear public pavement spot outside the Cowcross Street entrance, away from the doorway and moving pedestrians. This coordinate is a desk candidate.",
+        "captureDate": null,
+        "checkedAt": "2026-10-06T20:16:57.334Z",
+        "state": "unverified",
+        "observations": [
+          "No satisfactory exterior standing-position imagery"
+        ],
+        "interpretations": [
+          "Archived facade identity can inform the candidate but cannot prove present clearance"
+        ],
+        "conditions": [
+          "Public exterior. Start here: the first clip begins immediately. No station entry, ticket or building admission is required for the walk."
+        ],
+        "unknowns": [
+          "Landmark coordinate not independently resolved",
+          "Current pedestrian clearance and works not observed",
+          "No satisfactory exterior standing-position imagery"
+        ],
+        "evidenceRefs": [
+          {
+            "id": "pilot-route-evidence",
+            "revision": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "pilot-candidate-farringdon",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-brief",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-farringdon",
+          "revision": 1
+        }
+      ],
+      "kind": "candidate",
+      "data": {
+        "name": "Farringdon station",
+        "landmark": {
+          "value": null,
+          "reason": "Named/addressed place; exact landmark point unresolved"
+        },
+        "audience": {
+          "reason": "Find ordinary skilled work behind public Clerkenwell exteriors",
+          "assumedKnowledge": "Little neighbourhood familiarity",
+          "intendedDiscovery": "Meat carrying, reused architecture, working writers, practical cooperation and handmade flowers",
+          "presentAnchor": "Choose a clear public pavement spot outside the Cowcross Street entrance, away from the doorway and moving pedestrians. This coordinate is a desk candidate."
+        },
+        "disposition": "selected",
+        "rationale": "Selected by delegated integrator for manual draft; no output acceptance or owner enjoyment implied",
+        "alternatives": [
+          "Charterhouse, Ingersoll and Exmouth omitted to retain station return within hour"
+        ]
+      }
+    },
+    {
+      "id": "pilot-encounter-smithfield",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-route-evidence",
+          "revision": 1
+        }
+      ],
+      "kind": "encounter",
+      "data": {
+        "landmark": {
+          "value": null,
+          "reason": "Smithfield East/West Meat Market, Charterhouse Street near Grand Avenue; do not substitute camera/visitor position"
+        },
+        "visitor": {
+          "value": {
+            "latitude": 51.51983,
+            "longitude": -0.1019
+          },
+          "reason": "Desk candidate only"
+        },
+        "camera": {
+          "value": null,
+          "reason": "No satisfactory exterior imagery"
+        },
+        "approach": "From the Cowcross Street station entrance, follow Cowcross Street east to the St John Street / Charterhouse Street market junction. Use the pedestrian route to the north pavement view of the market halls, clear of loading entrances.",
+        "intendedView": "Use the north pavement of Charterhouse Street, looking across towards the East/West Meat Market frontage near Grand Avenue. Stay clear of crossings and loading entrances.",
+        "captureDate": null,
+        "checkedAt": "2026-10-06T20:16:57.334Z",
+        "state": "unverified",
+        "observations": [
+          "No satisfactory exterior standing-position imagery"
+        ],
+        "interpretations": [
+          "Archived facade identity can inform the candidate but cannot prove present clearance"
+        ],
+        "conditions": [
+          "The tour stays outside. Trading is principally overnight on weekdays. Follow current works signs; the proposed point is a desk candidate, not a claim about today’s barriers."
+        ],
+        "unknowns": [
+          "Landmark coordinate not independently resolved",
+          "Current pedestrian clearance and works not observed",
+          "No satisfactory exterior standing-position imagery"
+        ],
+        "evidenceRefs": [
+          {
+            "id": "pilot-route-evidence",
+            "revision": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "pilot-candidate-smithfield",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-brief",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-smithfield",
+          "revision": 1
+        }
+      ],
+      "kind": "candidate",
+      "data": {
+        "name": "Smithfield East/West Meat Market",
+        "landmark": {
+          "value": null,
+          "reason": "Named/addressed place; exact landmark point unresolved"
+        },
+        "audience": {
+          "reason": "Find ordinary skilled work behind public Clerkenwell exteriors",
+          "assumedKnowledge": "Little neighbourhood familiarity",
+          "intendedDiscovery": "Meat carrying, reused architecture, working writers, practical cooperation and handmade flowers",
+          "presentAnchor": "Use the north pavement of Charterhouse Street, looking across towards the East/West Meat Market frontage near Grand Avenue. Stay clear of crossings and loading entrances."
+        },
+        "disposition": "selected",
+        "rationale": "Selected by delegated integrator for manual draft; no output acceptance or owner enjoyment implied",
+        "alternatives": [
+          "Charterhouse, Ingersoll and Exmouth omitted to retain station return within hour"
+        ]
+      }
+    },
+    {
+      "id": "pilot-encounter-booths",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-route-evidence",
+          "revision": 1
+        }
+      ],
+      "kind": "encounter",
+      "data": {
+        "landmark": {
+          "value": null,
+          "reason": "Mountford House, 25 Britton Street; do not substitute camera/visitor position"
+        },
+        "visitor": {
+          "value": {
+            "latitude": 51.52154,
+            "longitude": -0.10388
+          },
+          "reason": "Desk candidate only"
+        },
+        "camera": {
+          "value": {
+            "latitude": 51.5215499,
+            "longitude": -0.1039455
+          },
+          "reason": "Archived camera, never visitor position"
+        },
+        "approach": "From Smithfield take St John Street north, then St John’s Lane towards the Gate. Turn west into Briset Street just before the Gate, then north into Britton Street.",
+        "intendedView": "On the east pavement opposite number 25, look high below the cornice for five pale reliefs among the brick and stone. Trees may hide some; adjust along the same pavement without stepping into the road.",
+        "captureDate": "2022-07",
+        "checkedAt": "2026-10-06T20:16:57.334Z",
+        "state": "unverified",
+        "observations": [
+          "Archived researcher observation reused; not newly viewed"
+        ],
+        "interpretations": [
+          "Archived facade identity can inform the candidate but cannot prove present clearance"
+        ],
+        "conditions": [
+          "No entry required. The opposite pavement is narrow: keep doors and passing space clear."
+        ],
+        "unknowns": [
+          "Landmark coordinate not independently resolved",
+          "Current pedestrian clearance and works not observed"
+        ],
+        "evidenceRefs": [
+          {
+            "id": "pilot-route-evidence",
+            "revision": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "pilot-candidate-booths",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-brief",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-booths",
+          "revision": 1
+        }
+      ],
+      "kind": "candidate",
+      "data": {
+        "name": "Mountford House",
+        "landmark": {
+          "value": null,
+          "reason": "Named/addressed place; exact landmark point unresolved"
+        },
+        "audience": {
+          "reason": "Find ordinary skilled work behind public Clerkenwell exteriors",
+          "assumedKnowledge": "Little neighbourhood familiarity",
+          "intendedDiscovery": "Meat carrying, reused architecture, working writers, practical cooperation and handmade flowers",
+          "presentAnchor": "On the east pavement opposite number 25, look high below the cornice for five pale reliefs among the brick and stone. Trees may hide some; adjust along the same pavement without stepping into the road."
+        },
+        "disposition": "selected",
+        "rationale": "Selected by delegated integrator for manual draft; no output acceptance or owner enjoyment implied",
+        "alternatives": [
+          "Charterhouse, Ingersoll and Exmouth omitted to retain station return within hour"
+        ]
+      }
+    },
+    {
+      "id": "pilot-encounter-stjohn-gate",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-route-evidence",
+          "revision": 1
+        }
+      ],
+      "kind": "encounter",
+      "data": {
+        "landmark": {
+          "value": null,
+          "reason": "St John’s Gate, St John’s Lane; do not substitute camera/visitor position"
+        },
+        "visitor": {
+          "value": {
+            "latitude": 51.52185,
+            "longitude": -0.10266
+          },
+          "reason": "Desk candidate only"
+        },
+        "camera": {
+          "value": {
+            "latitude": 51.5217538,
+            "longitude": -0.1025932
+          },
+          "reason": "Archived camera, never visitor position"
+        },
+        "approach": "Retrace Britton Street to Briset Street, turn east along Briset, then towards the Gate on St John’s Lane.",
+        "intendedView": "Stand to one side of the southern paved approach and look towards the arch. Keep its through-route and museum door clear.",
+        "captureDate": "2022-07",
+        "checkedAt": "2026-10-06T20:16:57.334Z",
+        "state": "unverified",
+        "observations": [
+          "Archived researcher observation reused; not newly viewed"
+        ],
+        "interpretations": [
+          "Archived facade identity can inform the candidate but cannot prove present clearance"
+        ],
+        "conditions": [
+          "Exterior story. Museum and guided rooms have separate hours. Use current signs if roof works affect the approach."
+        ],
+        "unknowns": [
+          "Landmark coordinate not independently resolved",
+          "Current pedestrian clearance and works not observed"
+        ],
+        "evidenceRefs": [
+          {
+            "id": "pilot-route-evidence",
+            "revision": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "pilot-candidate-stjohn-gate",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-brief",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-stjohn-gate",
+          "revision": 1
+        }
+      ],
+      "kind": "candidate",
+      "data": {
+        "name": "St John’s Gate",
+        "landmark": {
+          "value": null,
+          "reason": "Named/addressed place; exact landmark point unresolved"
+        },
+        "audience": {
+          "reason": "Find ordinary skilled work behind public Clerkenwell exteriors",
+          "assumedKnowledge": "Little neighbourhood familiarity",
+          "intendedDiscovery": "Meat carrying, reused architecture, working writers, practical cooperation and handmade flowers",
+          "presentAnchor": "Stand to one side of the southern paved approach and look towards the arch. Keep its through-route and museum door clear."
+        },
+        "disposition": "selected",
+        "rationale": "Selected by delegated integrator for manual draft; no output acceptance or owner enjoyment implied",
+        "alternatives": [
+          "Charterhouse, Ingersoll and Exmouth omitted to retain station return within hour"
+        ]
+      }
+    },
+    {
+      "id": "pilot-encounter-green",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-route-evidence",
+          "revision": 1
+        }
+      ],
+      "kind": "encounter",
+      "data": {
+        "landmark": {
+          "value": null,
+          "reason": "Marx Memorial Library, 37a Clerkenwell Green; do not substitute camera/visitor position"
+        },
+        "visitor": {
+          "value": {
+            "latitude": 51.52291,
+            "longitude": -0.10559
+          },
+          "reason": "Desk candidate only"
+        },
+        "camera": {
+          "value": {
+            "latitude": 51.5228942,
+            "longitude": -0.1056014
+          },
+          "reason": "Archived camera, never visitor position"
+        },
+        "approach": "Pass through the Gate, turn west through St John’s Square and St John’s Path to Britton Street, then north. Follow the south pavement of Clerkenwell Road west to the pedestrian signals beside Old Sessions House. Cross at those signals, then go around the Sessions House towards the Green.",
+        "intendedView": "From public space on the Green, face the white frontage and red door of the Marx Memorial Library at 37a. Stop clear of café tables and through-routes.",
+        "captureDate": "2022-07",
+        "checkedAt": "2026-10-06T20:16:57.334Z",
+        "state": "unverified",
+        "observations": [
+          "Archived researcher observation reused; not newly viewed"
+        ],
+        "interpretations": [
+          "Archived facade identity can inform the candidate but cannot prove present clearance"
+        ],
+        "conditions": [
+          "The 2024 layout differs from old imagery. Follow current paving and works signs; there is no need to enter the library."
+        ],
+        "unknowns": [
+          "Landmark coordinate not independently resolved",
+          "Current pedestrian clearance and works not observed"
+        ],
+        "evidenceRefs": [
+          {
+            "id": "pilot-route-evidence",
+            "revision": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "pilot-candidate-green",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-brief",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-green",
+          "revision": 1
+        }
+      ],
+      "kind": "candidate",
+      "data": {
+        "name": "Marx Memorial Library",
+        "landmark": {
+          "value": null,
+          "reason": "Named/addressed place; exact landmark point unresolved"
+        },
+        "audience": {
+          "reason": "Find ordinary skilled work behind public Clerkenwell exteriors",
+          "assumedKnowledge": "Little neighbourhood familiarity",
+          "intendedDiscovery": "Meat carrying, reused architecture, working writers, practical cooperation and handmade flowers",
+          "presentAnchor": "From public space on the Green, face the white frontage and red door of the Marx Memorial Library at 37a. Stop clear of café tables and through-routes."
+        },
+        "disposition": "selected",
+        "rationale": "Selected by delegated integrator for manual draft; no output acceptance or owner enjoyment implied",
+        "alternatives": [
+          "Charterhouse, Ingersoll and Exmouth omitted to retain station return within hour"
+        ]
+      }
+    },
+    {
+      "id": "pilot-encounter-flowers",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-route-evidence",
+          "revision": 1
+        }
+      ],
+      "kind": "encounter",
+      "data": {
+        "landmark": {
+          "value": null,
+          "reason": "Woodbridge Chapel, Woodbridge Street; do not substitute camera/visitor position"
+        },
+        "visitor": {
+          "value": {
+            "latitude": 51.52408,
+            "longitude": -0.10404
+          },
+          "reason": "Desk candidate only"
+        },
+        "camera": {
+          "value": {
+            "latitude": 51.5240594,
+            "longitude": -0.1039649
+          },
+          "reason": "Archived camera, never visitor position"
+        },
+        "approach": "Leave the Green by Clerkenwell Close. Follow the Close around the churchyard. At the Three Kings, follow Clerkenwell Close as it bends right, leaving the branch to the left. Turn right into Sans Walk. Follow Sans Walk to Woodbridge Street and turn right. At the Sekforde Street junction, continue down Woodbridge Street to the chapel.",
+        "intendedView": "Use a clear place on the opposite/northeast pavement. Look across for the brick chapel and white CLERKENWELL MEDICAL MISSION fascia.",
+        "captureDate": "2022-07",
+        "checkedAt": "2026-10-06T20:16:57.334Z",
+        "state": "unverified",
+        "observations": [
+          "Archived researcher observation reused; not newly viewed"
+        ],
+        "interpretations": [
+          "Archived facade identity can inform the candidate but cannot prove present clearance"
+        ],
+        "conditions": [
+          "Both pavements are narrow; keep doors and driveways clear. Current church use does not imply access to the former workroom."
+        ],
+        "unknowns": [
+          "Landmark coordinate not independently resolved",
+          "Current pedestrian clearance and works not observed"
+        ],
+        "evidenceRefs": [
+          {
+            "id": "pilot-route-evidence",
+            "revision": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "pilot-candidate-flowers",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-brief",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-flowers",
+          "revision": 1
+        }
+      ],
+      "kind": "candidate",
+      "data": {
+        "name": "Woodbridge Chapel",
+        "landmark": {
+          "value": null,
+          "reason": "Named/addressed place; exact landmark point unresolved"
+        },
+        "audience": {
+          "reason": "Find ordinary skilled work behind public Clerkenwell exteriors",
+          "assumedKnowledge": "Little neighbourhood familiarity",
+          "intendedDiscovery": "Meat carrying, reused architecture, working writers, practical cooperation and handmade flowers",
+          "presentAnchor": "Use a clear place on the opposite/northeast pavement. Look across for the brick chapel and white CLERKENWELL MEDICAL MISSION fascia."
+        },
+        "disposition": "selected",
+        "rationale": "Selected by delegated integrator for manual draft; no output acceptance or owner enjoyment implied",
+        "alternatives": [
+          "Charterhouse, Ingersoll and Exmouth omitted to retain station return within hour"
+        ]
+      }
+    },
+    {
+      "id": "pilot-smithfield-claim-1",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-2",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-3",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "Smithfield keeps a different clock. The meat market’s advertised weekday hours run from midnight to seven in the morning. A daytime visitor arrives after much of the business has happened. These great covered halls make more sense when you picture them at the other end of the night.",
+        "qualifications": [
+          "advertised"
+        ],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-2",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-3",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C05/S-S04: current advertised hours, checked 20 September 2026. S-C01/S-S01 supplies covered meat-market context. The visitor comparison is an inference from those hours; it promises neither current bustle nor access inside. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-smithfield-claim-2",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-4",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "Imagine a delivery here in the nineteen-seventies. Porters in blue overalls and white caps unload the lorry. Other porters, called pitchers, carry the meat into the market. Once a buyer has made a purchase, another worker, a bummaree, is paid to take it out again. One load passes through a sequence of jobs.",
+        "qualifications": [
+          "Imagine a delivery"
+        ],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-4",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C02/S-S02: dated reconstruction from the museum’s 1977 badge record. Clothing, distinct carrying jobs and buyers paying bummarees are documented. No named person, dialogue, individual delivery or exact pace is invented. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-smithfield-claim-3",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-4",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "The porters were self-employed, licensed by the City, and paid according to how much they carried. Their arm badges identified them. Moving meat was a livelihood with its own rules and rights; even the market’s tenants had to employ the porters to shift it.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-4",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C02/S-S02: the historical licensed porter system, paid by quantity, with tenants forbidden to move goods themselves. This paragraph continues the clearly dated scene; it is not a statement of present rules. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-smithfield-claim-4",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-3",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "The night shift gave customers time to get their purchases ready for sale that same day. Some nearby pubs served workers finishing their shift. For someone finishing work here, a drink early in the morning could be the end of the day.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-3",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C03/S-S01: same-day preparation explains overnight trade; early pubs served workers after their shift. The final sentence is a natural interpretation, with no claim about a named pub’s current licence or an individual worker’s habits. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-smithfield-claim-5",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-4",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "In the nineteen-nineties, overhead rails changed the handling of carcasses, and a settlement ended the porters’ exclusive right to move the meat. The work has kept changing. So has the future of the buildings.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-4",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C02/S-S02: 1990s modernisation and settlement. Closing transition is editorial. No suggestion that porter work vanished altogether. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-booths-claim-1",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-5",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "At number twenty-five Britton Street, look for the pale carved panels high among the windows, above the bands of brick and stone. There are five, though foliage may hide part of the sequence. They came from the offices of Booth’s gin distillery, and their subject is work.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-5",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C09/S-S08: address, materials, panel number/location, office origin and gin-making subject. Foliage limitation is the coordinator’s dated route-imagery finding supplied to the writer on 20 September 2026; it avoids promising all five are legible. The root will integrate the reviewed standing position. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-booths-claim-2",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-6",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-7",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "The carvings turn gin into a chain of labour, from harvesting grain to drawing drink from a cask. Grain supplies the alcohol; the characteristic flavour comes from botanicals, especially juniper. Making a consistent drink involves judgement, because those botanical oils vary from harvest to harvest.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-6",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-7",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C12/S-S10 supports the broad depicted chain; no precise panel order or gesture is identified. S-C13/S-S11 supplies general gin-making context, not a recovered Booth recipe or proof that all manufacturing stages happened in these offices. The scientific explanation is deliberately brief. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-booths-claim-3",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-5",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "The wall itself has had a second career. It originally stood in Turnmill Street. In the nineteen-seventies, the architects developing this site realised the salvaged frontage was just the right width for their new building. The height was trickier: split-level flats helped make the rooms behind fit the old elevation.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-5",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C09/S-C10/S-S08: relocated frontage and 1975–76 redevelopment, width match and split-level flats. No claim that every stone survived unchanged or the whole distillery moved. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-booths-claim-4",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-5",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "Some decayed stone had to be replaced, but the carved workers came along. A frontage designed to advertise a distillery became the face of flats and offices. Once you have found the panels, take in the whole wall again. The people in stone are still making gin above rooms built for quite different lives.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-5",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C09/S-C10/S-S08: partial renewal, retained Portland-stone reliefs and residential/office redevelopment. The workers “still making gin” is an explicitly visual interpretation of the carvings, not a present manufacturing claim. No interior inspection is implied. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-stjohn-gate-claim-1",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-8",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "St John’s Gate was completed in 1504 as the entrance to a religious house. Today it houses the Museum of the Order of St John. In the seventeen-thirties, it became the address of a publishing enterprise. Edward Cave, a printer and publisher, ran the Gentleman’s Magazine here. Among the writers he employed was Samuel Johnson, long before Johnson’s dictionary made his name.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-8",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C14/S-C15: priory entrance, completion, Cave’s enterprise and Johnson’s early work. The architectural source distinguishes the original gate from its later-restored exterior; no unchanged interior or precise room is asserted. Current museum identity/address is confirmed by the already-surveyed official tours page, reopened by the writer on 20 September 2026; no opening or interior access promise. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-stjohn-gate-claim-2",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-10",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-11",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-12",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "Readers wanted to know what Parliament was saying. Parliament was less keen to have it printed. In 1738, the Commons reaffirmed that publishing its proceedings breached its privileges. The magazine found a literary way round the problem: it sent its readers to Lilliput, the imaginary country in Gulliver’s Travels.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-10",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-11",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-12",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C16/S-C17: Commons’ 1738 assertion of privilege and the magazine’s Lilliput device. This does not recast privilege as a modern blanket criminal statute or claim the disguise guaranteed immunity. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-stjohn-gate-claim-3",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-12",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "A debate published in 1741 takes place in the Senate of Lilliput. One speaker appears as the Hurgo Quadrert. Then the introduction rather helpfully mentions a parallel debate in the British Parliament, which readers have been asking for. It is a disguise with a very large wink.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-12",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C17/S-S15: actual heading, speaker and explicit parallel-British-debate reference in the inspected transcription. The wink is interpretation of the publication’s own device. The modern editor’s identification of Quadrert is not presented as original text. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-stjohn-gate-claim-4",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-11",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "Producing these speeches took more than changing the names. Johnson worked from other people’s reports and sparse notes. His biographer, James Boswell, records him saying that sometimes he received little more than the speakers’ names and which side they had taken. From that, the working writer had to supply the arguments and the language.",
+        "qualifications": [
+          "sometimes"
+        ],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-11",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C18/S-S14: later biographical testimony, partly recalling Johnson’s own account. “Sometimes” is retained; no claim that every debate was invented or that these were verbatim transcripts. The last sentence explains the composition described in that account. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-stjohn-gate-claim-5",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-11",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "A reader settling down to a substantial parliamentary speech was also reading the work of a hired writer. Here in Clerkenwell, political eloquence was being made on its way into print.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-11",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C18/S-S14 supports the expansion from notes to speeches; the reader is an unnamed generic imagined reading situation, not a composite character or recovered incident. This paragraph makes the production mechanism intelligible without adding a reported individual response. V2 shortens the notes-to-speech explanation and removes a generic instruction to picture it; the original source/reconstruction boundary remains. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-stjohn-gate-claim-6",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-8",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "Cave put an image of the Gate on the magazine’s title-page, making this old entrance the face of his business. He even used it on the doors of his coach in place of a coat of arms. The building we are looking at was good enough to serve as his personal emblem.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-8",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C15/S-S12: title-page image and coach doors in the Survey of London. Final present-view connection is interpretation, with no claim that Cave’s coach or an unchanged eighteenth-century façade survives here. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-green-claim-1",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-13",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-14",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "At thirty-seven A Clerkenwell Green, the Marx Memorial Library remembers a great deal of political history. One story here concerns a very small office. In 1902, this building housed a printing business managed by Harry Quelch, who also edited the socialist newspaper Justice.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-13",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-14",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "CW-N-C01/C04; CW-N-S02/S03: address, publishing use, Quelch’s role and present library. The small-office introduction is editorial framing of the documented episode. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-green-claim-2",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-13",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-15",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "The Russian revolutionary Lenin was then an editor in exile, years before the revolution of 1917. His newspaper, Iskra, needed somewhere to be printed. Quelch and his fellow British socialists made their equipment available. Seventeen issues came out of this building in 1902 and 1903.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-13",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-15",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "CW-N-C01/C02 and CW-N-S01/S02: Iskra, London printing and seventeen issues. Brief identity context locates Lenin before 1917. The practical cooperation does not imply uniform agreement among every printer or an endorsement of later politics. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-green-claim-3",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-15",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "The extra enterprise took up room. Writing after Quelch’s death, Lenin remembered his host squeezing into a corner screened off by a thin partition. There was a small writing table, a bookshelf above it, and one chair. When Lenin visited, there was no space for a second chair.",
+        "qualifications": [
+          "Writing after Quelch’s death"
+        ],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-15",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "CW-N-C02/C03; CW-N-S01: attributed retrospective participant recollection, written in a partisan obituary in 1913. Furniture and space follow that account; this is not identified with the surviving memorial room. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-green-claim-4",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-15",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "It is a wonderfully awkward picture: two editors, a newspaper to discuss, and nowhere to put the visitor. Quelch had made international cooperation fit into a corner.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-15",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "CW-N-C02/S01: the two editors’ documented visit and cramped workspace support the imagined practical encounter. Discussion of their newspaper is ordinary inference, not recovered dialogue; no gestures, emotional reaction or exact visitor position is invented. The last sentence is an interpretation of the material accommodation. V2 trims repeated explanation while preserving the warm interpretation of the remembered room. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-green-claim-5",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-14",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-13",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-15",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "The library still offers education in politics, including online courses in trade unions and Marxism. That is a present-day continuation of the building’s connection with ideas, without requiring you to enter or find a class taking place here.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-14",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-13",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-15",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "Official online course listing reopened 6 October 2026: October–December 2026 courses; explicitly online. Historical relation is editorial interpretation, not in-person class evidence. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-flowers-claim-1",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-16",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "Woodbridge Chapel once sheltered a workroom full of flowers: roses, daisies and cornflowers, all being made by hand. In 1898, an investigator working on Charles Booth’s great inquiry into London life came here and found about thirty girls and women making artificial flowers in the schoolroom beneath the chapel.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-16",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "CW-N-C05/CW-N-S06: directly observed notebook p207, in the 1898 inquiry context. The investigator is not identified as Charles Booth himself. Flower types and approximate headcount are documented; no invented colour or named worker. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-flowers-claim-2",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-16",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-17",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "Their usual workroom was being enlarged. They belonged to the flower-making work of John Groom’s mission, which trained disabled women. The visitor caught the work in temporary quarters, giving us a glimpse of an activity that the chapel’s exterior cannot explain by itself.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-16",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-17",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "CW-N-C05/C06; CW-N-S05/S06, notebook pp131 and 207, and S04’s institutional description. The “glimpse” and exterior comparison are editorial framing. No current interior use or recovered floor plan is asserted. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-flowers-claim-3",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-18",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "To picture the skill, follow a petal through the trade. Fabric was cut into shapes and dyed. Moulds pressed veins and texture into it. Then came the curve: a metal tool with a ball on the end was heated over a spirit lamp, and the petal shaped around it. A flat scrap began to resemble something that had grown.",
+        "qualifications": [
+          "To picture the skill"
+        ],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-18",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "CW-N-C07/CW-N-S08: broader period process from museum curators, expressly introduced as the trade. This does not claim the investigator inventoried these tools or watched all these stages in the chapel. No object is assigned to a particular maker. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-flowers-claim-4",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-18",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "That was still only a petal. The pieces had to be assembled into a flower, held on a wire stem and arranged into sprays. The stem itself could be covered with paper or silk. Each stage helped the finished thing conceal the small operations that had made it.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-18",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "CW-N-C07/S08: wire assembly, stem covering and sprays. Final sentence interprets the effect of the documented process. No local output quantity or individual task division is inferred. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-flowers-claim-5",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-16",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-18",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "A mission assistant reported that training took two years. That gives the little flowers a different weight. Their lightness and delicacy depended on skills learnt over time, before a customer ever pinned them to a hat or dress.",
+        "qualifications": [
+          "A mission assistant reported"
+        ],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-16",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-18",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "CW-N-C06/S05, p131: the assistant’s estimate, not a guaranteed two-year qualification. S08 supports contemporary use on hats, bonnets and dresses; the imagined customer is generic and does not establish the destination of a specific local flower. V2 removes the unsupported claim that a different interviewer took this account. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-flowers-claim-6",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-16",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-18",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-19",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "Today the chapel is home to GraceLife London, a church congregation. Hold the earlier picture beside it for a moment: a room beneath the chapel, thirty people at work, and the beginnings of roses and cornflowers passing through their hands.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-16",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-18",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-19",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "CW-N-C05/C07: returns to the observed temporary workroom through a bounded imagined scene. “Passing through their hands” follows the documented handcraft; no private feelings or invented incident. The present connection is to the chapel’s exterior, without claiming the workroom survives. V2 adds current church identity from the operator website, read 20 September 2026. This does not imply the flower workroom survives or invite entry. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment."
+      }
+    },
+    {
+      "id": "pilot-route",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-brief",
+          "revision": 1
+        },
+        {
+          "id": "pilot-candidate-farringdon",
+          "revision": 1
+        },
+        {
+          "id": "pilot-candidate-smithfield",
+          "revision": 1
+        },
+        {
+          "id": "pilot-candidate-booths",
+          "revision": 1
+        },
+        {
+          "id": "pilot-candidate-stjohn-gate",
+          "revision": 1
+        },
+        {
+          "id": "pilot-candidate-green",
+          "revision": 1
+        },
+        {
+          "id": "pilot-candidate-flowers",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-farringdon",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-smithfield",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-booths",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-stjohn-gate",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-green",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-flowers",
+          "revision": 1
+        },
+        {
+          "id": "pilot-route-evidence",
+          "revision": 1
+        }
+      ],
+      "kind": "route",
+      "data": {
+        "stops": [
+          {
+            "id": "pilot-candidate-farringdon",
+            "revision": 1
+          },
+          {
+            "id": "pilot-candidate-smithfield",
+            "revision": 1
+          },
+          {
+            "id": "pilot-candidate-booths",
+            "revision": 1
+          },
+          {
+            "id": "pilot-candidate-stjohn-gate",
+            "revision": 1
+          },
+          {
+            "id": "pilot-candidate-green",
+            "revision": 1
+          },
+          {
+            "id": "pilot-candidate-flowers",
+            "revision": 1
+          },
+          {
+            "id": "pilot-candidate-farringdon",
+            "revision": 1
+          }
+        ],
+        "encounterRefs": [
+          {
+            "id": "pilot-encounter-farringdon",
+            "revision": 1
+          },
+          {
+            "id": "pilot-encounter-smithfield",
+            "revision": 1
+          },
+          {
+            "id": "pilot-encounter-booths",
+            "revision": 1
+          },
+          {
+            "id": "pilot-encounter-stjohn-gate",
+            "revision": 1
+          },
+          {
+            "id": "pilot-encounter-green",
+            "revision": 1
+          },
+          {
+            "id": "pilot-encounter-flowers",
+            "revision": 1
+          }
+        ],
+        "legs": [
+          {
+            "from": "pilot-candidate-farringdon",
+            "to": "pilot-candidate-smithfield",
+            "geometry": [
+              {
+                "latitude": 51.520286,
+                "longitude": -0.104959
+              },
+              {
+                "latitude": 51.520268,
+                "longitude": -0.104963
+              },
+              {
+                "latitude": 51.520258,
+                "longitude": -0.104853
+              },
+              {
+                "latitude": 51.520312,
+                "longitude": -0.10468
+              },
+              {
+                "latitude": 51.520355,
+                "longitude": -0.104714
+              },
+              {
+                "latitude": 51.520364,
+                "longitude": -0.104684
+              },
+              {
+                "latitude": 51.52037,
+                "longitude": -0.104666
+              },
+              {
+                "latitude": 51.520341,
+                "longitude": -0.104633
+              },
+              {
+                "latitude": 51.520343,
+                "longitude": -0.104625
+              },
+              {
+                "latitude": 51.520344,
+                "longitude": -0.104619
+              },
+              {
+                "latitude": 51.520285,
+                "longitude": -0.104566
+              },
+              {
+                "latitude": 51.520204,
+                "longitude": -0.104472
+              },
+              {
+                "latitude": 51.52016,
+                "longitude": -0.104408
+              },
+              {
+                "latitude": 51.520172,
+                "longitude": -0.104388
+              },
+              {
+                "latitude": 51.520159,
+                "longitude": -0.104331
+              },
+              {
+                "latitude": 51.520141,
+                "longitude": -0.104184
+              },
+              {
+                "latitude": 51.520138,
+                "longitude": -0.104
+              },
+              {
+                "latitude": 51.520143,
+                "longitude": -0.103559
+              },
+              {
+                "latitude": 51.520145,
+                "longitude": -0.103348
+              },
+              {
+                "latitude": 51.520146,
+                "longitude": -0.103254
+              },
+              {
+                "latitude": 51.520146,
+                "longitude": -0.103189
+              },
+              {
+                "latitude": 51.520144,
+                "longitude": -0.103131
+              },
+              {
+                "latitude": 51.52013,
+                "longitude": -0.102937
+              },
+              {
+                "latitude": 51.520118,
+                "longitude": -0.102769
+              },
+              {
+                "latitude": 51.520101,
+                "longitude": -0.102504
+              },
+              {
+                "latitude": 51.520092,
+                "longitude": -0.102436
+              },
+              {
+                "latitude": 51.520087,
+                "longitude": -0.102392
+              },
+              {
+                "latitude": 51.520022,
+                "longitude": -0.10222
+              },
+              {
+                "latitude": 51.519908,
+                "longitude": -0.102097
+              },
+              {
+                "latitude": 51.519897,
+                "longitude": -0.102078
+              },
+              {
+                "latitude": 51.51988,
+                "longitude": -0.102028
+              },
+              {
+                "latitude": 51.51988,
+                "longitude": -0.101967
+              },
+              {
+                "latitude": 51.519885,
+                "longitude": -0.10186
+              },
+              {
+                "latitude": 51.519858,
+                "longitude": -0.101866
+              },
+              {
+                "latitude": 51.519839,
+                "longitude": -0.101871
+              }
+            ],
+            "distanceMetres": 255.01181284583163,
+            "durationSeconds": 204.0094502766653,
+            "maneuvers": [
+              "From the Cowcross Street station entrance, follow Cowcross Street east to the St John Street / Charterhouse Street market junction. Use the pedestrian route to the north pavement view of the market halls, clear of loading entrances."
+            ],
+            "provider": "FOSSGIS public Valhalla, fresh 6 October",
+            "retrievedAt": "2026-10-06T20:16:57.334Z",
+            "evidenceRefs": [
+              {
+                "id": "pilot-route-evidence",
+                "revision": 1
+              }
+            ]
+          },
+          {
+            "from": "pilot-candidate-smithfield",
+            "to": "pilot-candidate-booths",
+            "geometry": [
+              {
+                "latitude": 51.519839,
+                "longitude": -0.101871
+              },
+              {
+                "latitude": 51.519858,
+                "longitude": -0.101866
+              },
+              {
+                "latitude": 51.519885,
+                "longitude": -0.10186
+              },
+              {
+                "latitude": 51.519932,
+                "longitude": -0.101848
+              },
+              {
+                "latitude": 51.519936,
+                "longitude": -0.101848
+              },
+              {
+                "latitude": 51.519939,
+                "longitude": -0.101847
+              },
+              {
+                "latitude": 51.519991,
+                "longitude": -0.101839
+              },
+              {
+                "latitude": 51.520009,
+                "longitude": -0.101837
+              },
+              {
+                "latitude": 51.520238,
+                "longitude": -0.101831
+              },
+              {
+                "latitude": 51.520631,
+                "longitude": -0.101858
+              },
+              {
+                "latitude": 51.520654,
+                "longitude": -0.10186
+              },
+              {
+                "latitude": 51.52067,
+                "longitude": -0.101868
+              },
+              {
+                "latitude": 51.520697,
+                "longitude": -0.101886
+              },
+              {
+                "latitude": 51.520908,
+                "longitude": -0.102055
+              },
+              {
+                "latitude": 51.521052,
+                "longitude": -0.10217
+              },
+              {
+                "latitude": 51.521059,
+                "longitude": -0.102176
+              },
+              {
+                "latitude": 51.521071,
+                "longitude": -0.102186
+              },
+              {
+                "latitude": 51.52115,
+                "longitude": -0.102249
+              },
+              {
+                "latitude": 51.521291,
+                "longitude": -0.102332
+              },
+              {
+                "latitude": 51.521303,
+                "longitude": -0.102356
+              },
+              {
+                "latitude": 51.521319,
+                "longitude": -0.102348
+              },
+              {
+                "latitude": 51.521338,
+                "longitude": -0.102365
+              },
+              {
+                "latitude": 51.521364,
+                "longitude": -0.102387
+              },
+              {
+                "latitude": 51.521372,
+                "longitude": -0.10241
+              },
+              {
+                "latitude": 51.521397,
+                "longitude": -0.102404
+              },
+              {
+                "latitude": 51.521538,
+                "longitude": -0.102492
+              },
+              {
+                "latitude": 51.521581,
+                "longitude": -0.102532
+              },
+              {
+                "latitude": 51.521693,
+                "longitude": -0.102616
+              },
+              {
+                "latitude": 51.521714,
+                "longitude": -0.102641
+              },
+              {
+                "latitude": 51.521723,
+                "longitude": -0.102658
+              },
+              {
+                "latitude": 51.521726,
+                "longitude": -0.102694
+              },
+              {
+                "latitude": 51.521722,
+                "longitude": -0.102726
+              },
+              {
+                "latitude": 51.521655,
+                "longitude": -0.102995
+              },
+              {
+                "latitude": 51.521648,
+                "longitude": -0.103024
+              },
+              {
+                "latitude": 51.521623,
+                "longitude": -0.103107
+              },
+              {
+                "latitude": 51.521615,
+                "longitude": -0.103149
+              },
+              {
+                "latitude": 51.521569,
+                "longitude": -0.103363
+              },
+              {
+                "latitude": 51.521524,
+                "longitude": -0.103497
+              },
+              {
+                "latitude": 51.521501,
+                "longitude": -0.103549
+              },
+              {
+                "latitude": 51.52144,
+                "longitude": -0.103697
+              },
+              {
+                "latitude": 51.52142,
+                "longitude": -0.103742
+              },
+              {
+                "latitude": 51.521423,
+                "longitude": -0.103756
+              },
+              {
+                "latitude": 51.521441,
+                "longitude": -0.103778
+              },
+              {
+                "latitude": 51.521464,
+                "longitude": -0.103802
+              },
+              {
+                "latitude": 51.521471,
+                "longitude": -0.103801
+              },
+              {
+                "latitude": 51.521471,
+                "longitude": -0.103805
+              },
+              {
+                "latitude": 51.521474,
+                "longitude": -0.103823
+              },
+              {
+                "latitude": 51.521546,
+                "longitude": -0.103906
+              }
+            ],
+            "distanceMetres": 325.6788614245203,
+            "durationSeconds": 260.5430891396162,
+            "maneuvers": [
+              "From Smithfield take St John Street north, then St John’s Lane towards the Gate. Turn west into Briset Street just before the Gate, then north into Britton Street."
+            ],
+            "provider": "Retained 20 September Valhalla selected geometry",
+            "retrievedAt": "2026-09-20T00:00:00.000Z",
+            "evidenceRefs": [
+              {
+                "id": "pilot-route-evidence",
+                "revision": 1
+              }
+            ]
+          },
+          {
+            "from": "pilot-candidate-booths",
+            "to": "pilot-candidate-stjohn-gate",
+            "geometry": [
+              {
+                "latitude": 51.521546,
+                "longitude": -0.103906
+              },
+              {
+                "latitude": 51.521474,
+                "longitude": -0.103823
+              },
+              {
+                "latitude": 51.521471,
+                "longitude": -0.103805
+              },
+              {
+                "latitude": 51.521471,
+                "longitude": -0.103801
+              },
+              {
+                "latitude": 51.521472,
+                "longitude": -0.103776
+              },
+              {
+                "latitude": 51.521552,
+                "longitude": -0.103528
+              },
+              {
+                "latitude": 51.521727,
+                "longitude": -0.102979
+              },
+              {
+                "latitude": 51.521813,
+                "longitude": -0.102679
+              },
+              {
+                "latitude": 51.52181,
+                "longitude": -0.102673
+              },
+              {
+                "latitude": 51.521783,
+                "longitude": -0.102652
+              },
+              {
+                "latitude": 51.521793,
+                "longitude": -0.10262
+              },
+              {
+                "latitude": 51.521914,
+                "longitude": -0.102701
+              }
+            ],
+            "distanceMetres": 118.93140021460059,
+            "durationSeconds": 95.14512017168047,
+            "maneuvers": [
+              "Retrace Britton Street to Briset Street, turn east along Briset, then towards the Gate on St John’s Lane."
+            ],
+            "provider": "Retained 20 September Valhalla selected geometry",
+            "retrievedAt": "2026-09-20T00:00:00.000Z",
+            "evidenceRefs": [
+              {
+                "id": "pilot-route-evidence",
+                "revision": 1
+              }
+            ]
+          },
+          {
+            "from": "pilot-candidate-stjohn-gate",
+            "to": "pilot-candidate-green",
+            "geometry": [
+              {
+                "latitude": 51.521914,
+                "longitude": -0.102701
+              },
+              {
+                "latitude": 51.521936,
+                "longitude": -0.102713
+              },
+              {
+                "latitude": 51.521972,
+                "longitude": -0.102736
+              },
+              {
+                "latitude": 51.522038,
+                "longitude": -0.10278
+              },
+              {
+                "latitude": 51.522075,
+                "longitude": -0.102808
+              },
+              {
+                "latitude": 51.522112,
+                "longitude": -0.102848
+              },
+              {
+                "latitude": 51.522178,
+                "longitude": -0.10292
+              },
+              {
+                "latitude": 51.521978,
+                "longitude": -0.103609
+              },
+              {
+                "latitude": 51.521951,
+                "longitude": -0.103701
+              },
+              {
+                "latitude": 51.52192,
+                "longitude": -0.103753
+              },
+              {
+                "latitude": 51.521917,
+                "longitude": -0.10376
+              },
+              {
+                "latitude": 51.521817,
+                "longitude": -0.104007
+              },
+              {
+                "latitude": 51.521766,
+                "longitude": -0.104125
+              },
+              {
+                "latitude": 51.521757,
+                "longitude": -0.104145
+              },
+              {
+                "latitude": 51.52178,
+                "longitude": -0.104171
+              },
+              {
+                "latitude": 51.521991,
+                "longitude": -0.1044
+              },
+              {
+                "latitude": 51.522094,
+                "longitude": -0.104522
+              },
+              {
+                "latitude": 51.522158,
+                "longitude": -0.104613
+              },
+              {
+                "latitude": 51.522207,
+                "longitude": -0.104682
+              },
+              {
+                "latitude": 51.522281,
+                "longitude": -0.104761
+              },
+              {
+                "latitude": 51.522318,
+                "longitude": -0.104795
+              },
+              {
+                "latitude": 51.522357,
+                "longitude": -0.104811
+              },
+              {
+                "latitude": 51.522354,
+                "longitude": -0.104833
+              },
+              {
+                "latitude": 51.522341,
+                "longitude": -0.104927
+              },
+              {
+                "latitude": 51.52233,
+                "longitude": -0.105014
+              },
+              {
+                "latitude": 51.522326,
+                "longitude": -0.105042
+              },
+              {
+                "latitude": 51.522197,
+                "longitude": -0.105963
+              },
+              {
+                "latitude": 51.522208,
+                "longitude": -0.105967
+              },
+              {
+                "latitude": 51.522262,
+                "longitude": -0.105983
+              },
+              {
+                "latitude": 51.52231,
+                "longitude": -0.105996
+              },
+              {
+                "latitude": 51.522328,
+                "longitude": -0.106004
+              },
+              {
+                "latitude": 51.522315,
+                "longitude": -0.1061
+              },
+              {
+                "latitude": 51.522318,
+                "longitude": -0.106149
+              },
+              {
+                "latitude": 51.522388,
+                "longitude": -0.10617
+              },
+              {
+                "latitude": 51.522544,
+                "longitude": -0.106317
+              },
+              {
+                "latitude": 51.522559,
+                "longitude": -0.106326
+              },
+              {
+                "latitude": 51.522572,
+                "longitude": -0.106337
+              },
+              {
+                "latitude": 51.522593,
+                "longitude": -0.106348
+              },
+              {
+                "latitude": 51.522701,
+                "longitude": -0.106355
+              },
+              {
+                "latitude": 51.522706,
+                "longitude": -0.106338
+              },
+              {
+                "latitude": 51.522842,
+                "longitude": -0.105895
+              },
+              {
+                "latitude": 51.522939,
+                "longitude": -0.105639
+              }
+            ],
+            "distanceMetres": 420.8122528714139,
+            "durationSeconds": 336.6498022971311,
+            "maneuvers": [
+              "Pass through the Gate, turn west through St John’s Square and St John’s Path to Britton Street, then north. Follow the south pavement of Clerkenwell Road west to the pedestrian signals beside Old Sessions House. Cross at those signals, then go around the Sessions House towards the Green."
+            ],
+            "provider": "Retained 20 September Valhalla selected geometry",
+            "retrievedAt": "2026-09-20T00:00:00.000Z",
+            "evidenceRefs": [
+              {
+                "id": "pilot-route-evidence",
+                "revision": 1
+              }
+            ]
+          },
+          {
+            "from": "pilot-candidate-green",
+            "to": "pilot-candidate-flowers",
+            "geometry": [
+              {
+                "latitude": 51.522939,
+                "longitude": -0.105639
+              },
+              {
+                "latitude": 51.522941,
+                "longitude": -0.105635
+              },
+              {
+                "latitude": 51.523034,
+                "longitude": -0.10541
+              },
+              {
+                "latitude": 51.523043,
+                "longitude": -0.105391
+              },
+              {
+                "latitude": 51.52308,
+                "longitude": -0.105311
+              },
+              {
+                "latitude": 51.523091,
+                "longitude": -0.105269
+              },
+              {
+                "latitude": 51.523096,
+                "longitude": -0.10525
+              },
+              {
+                "latitude": 51.523197,
+                "longitude": -0.105348
+              },
+              {
+                "latitude": 51.523312,
+                "longitude": -0.105488
+              },
+              {
+                "latitude": 51.52337,
+                "longitude": -0.105588
+              },
+              {
+                "latitude": 51.523383,
+                "longitude": -0.105666
+              },
+              {
+                "latitude": 51.52338,
+                "longitude": -0.10571
+              },
+              {
+                "latitude": 51.52338,
+                "longitude": -0.105716
+              },
+              {
+                "latitude": 51.523382,
+                "longitude": -0.105804
+              },
+              {
+                "latitude": 51.523375,
+                "longitude": -0.105922
+              },
+              {
+                "latitude": 51.523349,
+                "longitude": -0.106052
+              },
+              {
+                "latitude": 51.52333,
+                "longitude": -0.106117
+              },
+              {
+                "latitude": 51.523329,
+                "longitude": -0.106183
+              },
+              {
+                "latitude": 51.52334,
+                "longitude": -0.106224
+              },
+              {
+                "latitude": 51.523521,
+                "longitude": -0.106435
+              },
+              {
+                "latitude": 51.523658,
+                "longitude": -0.106594
+              },
+              {
+                "latitude": 51.523689,
+                "longitude": -0.10663
+              },
+              {
+                "latitude": 51.523743,
+                "longitude": -0.106677
+              },
+              {
+                "latitude": 51.523782,
+                "longitude": -0.106676
+              },
+              {
+                "latitude": 51.523806,
+                "longitude": -0.10665
+              },
+              {
+                "latitude": 51.52383,
+                "longitude": -0.106622
+              },
+              {
+                "latitude": 51.52388,
+                "longitude": -0.106547
+              },
+              {
+                "latitude": 51.523925,
+                "longitude": -0.106499
+              },
+              {
+                "latitude": 51.524033,
+                "longitude": -0.106401
+              },
+              {
+                "latitude": 51.524118,
+                "longitude": -0.106296
+              },
+              {
+                "latitude": 51.524126,
+                "longitude": -0.106216
+              },
+              {
+                "latitude": 51.524136,
+                "longitude": -0.106226
+              },
+              {
+                "latitude": 51.524144,
+                "longitude": -0.106206
+              },
+              {
+                "latitude": 51.524155,
+                "longitude": -0.106216
+              },
+              {
+                "latitude": 51.524159,
+                "longitude": -0.10622
+              },
+              {
+                "latitude": 51.52423,
+                "longitude": -0.106055
+              },
+              {
+                "latitude": 51.524292,
+                "longitude": -0.10591
+              },
+              {
+                "latitude": 51.52438,
+                "longitude": -0.105701
+              },
+              {
+                "latitude": 51.524414,
+                "longitude": -0.105619
+              },
+              {
+                "latitude": 51.524403,
+                "longitude": -0.105522
+              },
+              {
+                "latitude": 51.524757,
+                "longitude": -0.104804
+              },
+              {
+                "latitude": 51.524751,
+                "longitude": -0.104793
+              },
+              {
+                "latitude": 51.524736,
+                "longitude": -0.104772
+              },
+              {
+                "latitude": 51.524753,
+                "longitude": -0.104737
+              },
+              {
+                "latitude": 51.524574,
+                "longitude": -0.104526
+              },
+              {
+                "latitude": 51.524451,
+                "longitude": -0.104553
+              },
+              {
+                "latitude": 51.524446,
+                "longitude": -0.104492
+              },
+              {
+                "latitude": 51.524436,
+                "longitude": -0.104428
+              },
+              {
+                "latitude": 51.524432,
+                "longitude": -0.10442
+              },
+              {
+                "latitude": 51.52441,
+                "longitude": -0.10444
+              },
+              {
+                "latitude": 51.524391,
+                "longitude": -0.104454
+              },
+              {
+                "latitude": 51.524395,
+                "longitude": -0.10442
+              },
+              {
+                "latitude": 51.524383,
+                "longitude": -0.104385
+              },
+              {
+                "latitude": 51.524349,
+                "longitude": -0.104348
+              },
+              {
+                "latitude": 51.524136,
+                "longitude": -0.104096
+              },
+              {
+                "latitude": 51.524088,
+                "longitude": -0.104042
+              }
+            ],
+            "distanceMetres": 457.246234821207,
+            "durationSeconds": 365.7969878569656,
+            "maneuvers": [
+              "Leave the Green by Clerkenwell Close. Follow the Close around the churchyard. At the Three Kings, follow Clerkenwell Close as it bends right, leaving the branch to the left. Turn right into Sans Walk. Follow Sans Walk to Woodbridge Street and turn right. At the Sekforde Street junction, continue down Woodbridge Street to the chapel."
+            ],
+            "provider": "Retained 20 September Valhalla selected geometry",
+            "retrievedAt": "2026-09-20T00:00:00.000Z",
+            "evidenceRefs": [
+              {
+                "id": "pilot-route-evidence",
+                "revision": 1
+              }
+            ]
+          },
+          {
+            "from": "pilot-candidate-flowers",
+            "to": "pilot-candidate-farringdon",
+            "geometry": [
+              {
+                "latitude": 51.524088,
+                "longitude": -0.104042
+              },
+              {
+                "latitude": 51.524082,
+                "longitude": -0.104035
+              },
+              {
+                "latitude": 51.524136,
+                "longitude": -0.104096
+              },
+              {
+                "latitude": 51.524349,
+                "longitude": -0.104348
+              },
+              {
+                "latitude": 51.524383,
+                "longitude": -0.104385
+              },
+              {
+                "latitude": 51.524395,
+                "longitude": -0.10442
+              },
+              {
+                "latitude": 51.524391,
+                "longitude": -0.104454
+              },
+              {
+                "latitude": 51.524389,
+                "longitude": -0.104473
+              },
+              {
+                "latitude": 51.524371,
+                "longitude": -0.104499
+              },
+              {
+                "latitude": 51.524114,
+                "longitude": -0.104557
+              },
+              {
+                "latitude": 51.523696,
+                "longitude": -0.10463
+              },
+              {
+                "latitude": 51.523677,
+                "longitude": -0.104634
+              },
+              {
+                "latitude": 51.523661,
+                "longitude": -0.104613
+              },
+              {
+                "latitude": 51.523647,
+                "longitude": -0.104626
+              },
+              {
+                "latitude": 51.523632,
+                "longitude": -0.104629
+              },
+              {
+                "latitude": 51.523617,
+                "longitude": -0.104624
+              },
+              {
+                "latitude": 51.523593,
+                "longitude": -0.104616
+              },
+              {
+                "latitude": 51.523586,
+                "longitude": -0.104603
+              },
+              {
+                "latitude": 51.523574,
+                "longitude": -0.104604
+              },
+              {
+                "latitude": 51.523541,
+                "longitude": -0.104606
+              },
+              {
+                "latitude": 51.52343,
+                "longitude": -0.104587
+              },
+              {
+                "latitude": 51.523367,
+                "longitude": -0.104562
+              },
+              {
+                "latitude": 51.52335,
+                "longitude": -0.104551
+              },
+              {
+                "latitude": 51.523343,
+                "longitude": -0.104541
+              },
+              {
+                "latitude": 51.523334,
+                "longitude": -0.104547
+              },
+              {
+                "latitude": 51.523316,
+                "longitude": -0.104606
+              },
+              {
+                "latitude": 51.523302,
+                "longitude": -0.10465
+              },
+              {
+                "latitude": 51.523299,
+                "longitude": -0.104658
+              },
+              {
+                "latitude": 51.523269,
+                "longitude": -0.10474
+              },
+              {
+                "latitude": 51.52322,
+                "longitude": -0.104871
+              },
+              {
+                "latitude": 51.523136,
+                "longitude": -0.105096
+              },
+              {
+                "latitude": 51.523099,
+                "longitude": -0.10524
+              },
+              {
+                "latitude": 51.523096,
+                "longitude": -0.10525
+              },
+              {
+                "latitude": 51.523091,
+                "longitude": -0.105269
+              },
+              {
+                "latitude": 51.52308,
+                "longitude": -0.105311
+              },
+              {
+                "latitude": 51.523043,
+                "longitude": -0.105391
+              },
+              {
+                "latitude": 51.523034,
+                "longitude": -0.10541
+              },
+              {
+                "latitude": 51.523012,
+                "longitude": -0.105388
+              },
+              {
+                "latitude": 51.52299,
+                "longitude": -0.105365
+              },
+              {
+                "latitude": 51.522904,
+                "longitude": -0.105584
+              },
+              {
+                "latitude": 51.522853,
+                "longitude": -0.105715
+              },
+              {
+                "latitude": 51.522835,
+                "longitude": -0.105757
+              },
+              {
+                "latitude": 51.522788,
+                "longitude": -0.105885
+              },
+              {
+                "latitude": 51.522746,
+                "longitude": -0.105842
+              },
+              {
+                "latitude": 51.522578,
+                "longitude": -0.105672
+              },
+              {
+                "latitude": 51.522498,
+                "longitude": -0.105634
+              },
+              {
+                "latitude": 51.522459,
+                "longitude": -0.105621
+              },
+              {
+                "latitude": 51.522384,
+                "longitude": -0.105587
+              },
+              {
+                "latitude": 51.522328,
+                "longitude": -0.106004
+              },
+              {
+                "latitude": 51.52231,
+                "longitude": -0.105996
+              },
+              {
+                "latitude": 51.522262,
+                "longitude": -0.105983
+              },
+              {
+                "latitude": 51.522208,
+                "longitude": -0.105967
+              },
+              {
+                "latitude": 51.522197,
+                "longitude": -0.105963
+              },
+              {
+                "latitude": 51.522184,
+                "longitude": -0.106092
+              },
+              {
+                "latitude": 51.522177,
+                "longitude": -0.106105
+              },
+              {
+                "latitude": 51.522171,
+                "longitude": -0.106116
+              },
+              {
+                "latitude": 51.522168,
+                "longitude": -0.106172
+              },
+              {
+                "latitude": 51.522167,
+                "longitude": -0.106219
+              },
+              {
+                "latitude": 51.52217,
+                "longitude": -0.106236
+              },
+              {
+                "latitude": 51.522066,
+                "longitude": -0.106183
+              },
+              {
+                "latitude": 51.521966,
+                "longitude": -0.106116
+              },
+              {
+                "latitude": 51.521884,
+                "longitude": -0.106061
+              },
+              {
+                "latitude": 51.521716,
+                "longitude": -0.105941
+              },
+              {
+                "latitude": 51.521578,
+                "longitude": -0.105811
+              },
+              {
+                "latitude": 51.521519,
+                "longitude": -0.105741
+              },
+              {
+                "latitude": 51.521375,
+                "longitude": -0.105577
+              },
+              {
+                "latitude": 51.52126,
+                "longitude": -0.105406
+              },
+              {
+                "latitude": 51.521227,
+                "longitude": -0.105349
+              },
+              {
+                "latitude": 51.521158,
+                "longitude": -0.105266
+              },
+              {
+                "latitude": 51.52112,
+                "longitude": -0.105214
+              },
+              {
+                "latitude": 51.521113,
+                "longitude": -0.105232
+              },
+              {
+                "latitude": 51.52111,
+                "longitude": -0.10524
+              },
+              {
+                "latitude": 51.521095,
+                "longitude": -0.105273
+              },
+              {
+                "latitude": 51.52097,
+                "longitude": -0.105172
+              },
+              {
+                "latitude": 51.52094,
+                "longitude": -0.105112
+              },
+              {
+                "latitude": 51.520922,
+                "longitude": -0.105075
+              },
+              {
+                "latitude": 51.520832,
+                "longitude": -0.105007
+              },
+              {
+                "latitude": 51.520726,
+                "longitude": -0.104926
+              },
+              {
+                "latitude": 51.520589,
+                "longitude": -0.104823
+              },
+              {
+                "latitude": 51.520396,
+                "longitude": -0.104676
+              },
+              {
+                "latitude": 51.52037,
+                "longitude": -0.104666
+              },
+              {
+                "latitude": 51.520364,
+                "longitude": -0.104684
+              },
+              {
+                "latitude": 51.520355,
+                "longitude": -0.104714
+              },
+              {
+                "latitude": 51.520312,
+                "longitude": -0.10468
+              },
+              {
+                "latitude": 51.520258,
+                "longitude": -0.104853
+              },
+              {
+                "latitude": 51.520268,
+                "longitude": -0.104963
+              },
+              {
+                "latitude": 51.520286,
+                "longitude": -0.104959
+              }
+            ],
+            "distanceMetres": 666.9085946664283,
+            "durationSeconds": 533.5268757331426,
+            "maneuvers": [
+              "Return northwest along Woodbridge Street to Sekforde Street. Turn southwest down Sekforde towards Aylesbury Street and the Green, using the public pavement rather than Hayward’s Place. Continue around the west side of Old Sessions House to the pedestrian signals on Clerkenwell Road. Cross at the signals, then follow Turnmill Street south to the Cowcross Street station entrance. Keep the return quiet and use the saved map. End the tour when you arrive back at Farringdon."
+            ],
+            "provider": "FOSSGIS public Valhalla, fresh 6 October",
+            "retrievedAt": "2026-10-06T20:16:57.334Z",
+            "evidenceRefs": [
+              {
+                "id": "pilot-route-evidence",
+                "revision": 1
+              }
+            ]
+          }
+        ],
+        "walkingSeconds": 1795.6713571768425,
+        "speechSeconds": 635.2,
+        "overlapSeconds": 0,
+        "lookingSeconds": 989.1286428231574,
+        "practicalSeconds": 180,
+        "allowanceSeconds": 3600,
+        "assumptions": [
+          "Movement estimated at 4.5 km/h; no field timing",
+          "Three minutes crossing/settling assigned within total remainder, not observed",
+          "No walking speech; all recorded audio counted once",
+          "Return endpoint is a route waypoint, not a seventh narration stop"
+        ]
+      }
+    },
+    {
+      "id": "pilot-script-farringdon",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-brief",
+          "revision": 1
+        },
+        {
+          "id": "pilot-route",
+          "revision": 1
+        },
+        {
+          "id": "pilot-candidate-farringdon",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-farringdon",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-smithfield",
+          "revision": 1
+        }
+      ],
+      "kind": "script",
+      "data": {
+        "audience": {
+          "reason": "Find ordinary skilled work behind public Clerkenwell exteriors",
+          "assumedKnowledge": "Little neighbourhood familiarity",
+          "intendedDiscovery": "Meat carrying, reused architecture, working writers, practical cooperation and handmade flowers",
+          "presentAnchor": "Choose a clear public pavement spot outside the Cowcross Street entrance, away from the doorway and moving pedestrians. This coordinate is a desk candidate."
+        },
+        "transcript": "We begin outside Farringdon station, at the Cowcross Street entrance. This is a one-hour loop through Clerkenwell, staying outside the buildings. We will meet work that is easy to miss: carrying meat, moving a whole frontage, printing speeches and shaping artificial flowers. You do not need to know the neighbourhood already.\n\nThere are five main stories after this introduction. Between them, leave space for the street and for conversation. Stop somewhere clear before listening; pause whenever a crossing or a busy pavement needs your attention. The way back to this station is included in the hour.\n\nFirst, follow Cowcross Street east towards the market junction. Find a clear place on the north pavement of Charterhouse Street to look across at Smithfield’s halls. The route and written directions are saved with the tour. These are desk-reviewed directions, so follow current pedestrian signs if anything has changed.",
+        "narrationWindowSeconds": 58.9,
+        "assertions": [
+          {
+            "text": "We begin outside Farringdon station, at the Cowcross Street entrance. This is a one-hour loop through Clerkenwell, staying outside the buildings. We will meet work that is easy to miss: carrying meat, moving a whole frontage, printing speeches and shaping artificial flowers. You do not need to know the neighbourhood already.",
+            "kind": "physical",
+            "evidenceRefs": [
+              {
+                "id": "pilot-encounter-farringdon",
+                "revision": 1
+              },
+              {
+                "id": "pilot-encounter-smithfield",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "There are five main stories after this introduction. Between them, leave space for the street and for conversation. Stop somewhere clear before listening; pause whenever a crossing or a busy pavement needs your attention. The way back to this station is included in the hour.",
+            "kind": "physical",
+            "evidenceRefs": [
+              {
+                "id": "pilot-encounter-farringdon",
+                "revision": 1
+              },
+              {
+                "id": "pilot-encounter-smithfield",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "First, follow Cowcross Street east towards the market junction. Find a clear place on the north pavement of Charterhouse Street to look across at Smithfield’s halls. The route and written directions are saved with the tour. These are desk-reviewed directions, so follow current pedestrian signs if anything has changed.",
+            "kind": "physical",
+            "evidenceRefs": [
+              {
+                "id": "pilot-encounter-farringdon",
+                "revision": 1
+              },
+              {
+                "id": "pilot-encounter-smithfield",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          }
+        ],
+        "pronunciation": [
+          "Human listening pending; no pronunciation pass inferred from decode"
+        ],
+        "delivery": "Local George, warm documentary; stationary. Historical prose adapted, not newly generated by subscription adapter."
+      }
+    },
+    {
+      "id": "pilot-script-smithfield",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-brief",
+          "revision": 1
+        },
+        {
+          "id": "pilot-route",
+          "revision": 1
+        },
+        {
+          "id": "pilot-candidate-smithfield",
+          "revision": 1
+        },
+        {
+          "id": "pilot-smithfield-claim-1",
+          "revision": 1
+        },
+        {
+          "id": "pilot-smithfield-claim-2",
+          "revision": 1
+        },
+        {
+          "id": "pilot-smithfield-claim-3",
+          "revision": 1
+        },
+        {
+          "id": "pilot-smithfield-claim-4",
+          "revision": 1
+        },
+        {
+          "id": "pilot-smithfield-claim-5",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-smithfield",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-booths",
+          "revision": 1
+        }
+      ],
+      "kind": "script",
+      "data": {
+        "audience": {
+          "reason": "Find ordinary skilled work behind public Clerkenwell exteriors",
+          "assumedKnowledge": "Little neighbourhood familiarity",
+          "intendedDiscovery": "Meat carrying, reused architecture, working writers, practical cooperation and handmade flowers",
+          "presentAnchor": "Use the north pavement of Charterhouse Street, looking across towards the East/West Meat Market frontage near Grand Avenue. Stay clear of crossings and loading entrances."
+        },
+        "transcript": "Smithfield keeps a different clock. The meat market’s advertised weekday hours run from midnight to seven in the morning. A daytime visitor arrives after much of the business has happened. These great covered halls make more sense when you picture them at the other end of the night.\n\nImagine a delivery here in the nineteen-seventies. Porters in blue overalls and white caps unload the lorry. Other porters, called pitchers, carry the meat into the market. Once a buyer has made a purchase, another worker, a bummaree, is paid to take it out again. One load passes through a sequence of jobs.\n\nThe porters were self-employed, licensed by the City, and paid according to how much they carried. Their arm badges identified them. Moving meat was a livelihood with its own rules and rights; even the market’s tenants had to employ the porters to shift it.\n\nThe night shift gave customers time to get their purchases ready for sale that same day. Some nearby pubs served workers finishing their shift. For someone finishing work here, a drink early in the morning could be the end of the day.\n\nIn the nineteen-nineties, overhead rails changed the handling of carcasses, and a settlement ended the porters’ exclusive right to move the meat. The work has kept changing. So has the future of the buildings.\n\nNext are carved panels in Britton Street. Take St John Street north, then St John’s Lane towards the Gate. Just before the Gate, turn left into Briset Street, then right into Britton Street. Look across towards number twenty-five.",
+        "narrationWindowSeconds": 101.1,
+        "assertions": [
+          {
+            "text": "Smithfield keeps a different clock. The meat market’s advertised weekday hours run from midnight to seven in the morning. A daytime visitor arrives after much of the business has happened. These great covered halls make more sense when you picture them at the other end of the night.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-smithfield-claim-1",
+                "revision": 1
+              }
+            ],
+            "qualifications": [
+              "advertised"
+            ]
+          },
+          {
+            "text": "Imagine a delivery here in the nineteen-seventies. Porters in blue overalls and white caps unload the lorry. Other porters, called pitchers, carry the meat into the market. Once a buyer has made a purchase, another worker, a bummaree, is paid to take it out again. One load passes through a sequence of jobs.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-smithfield-claim-2",
+                "revision": 1
+              }
+            ],
+            "qualifications": [
+              "Imagine a delivery"
+            ]
+          },
+          {
+            "text": "The porters were self-employed, licensed by the City, and paid according to how much they carried. Their arm badges identified them. Moving meat was a livelihood with its own rules and rights; even the market’s tenants had to employ the porters to shift it.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-smithfield-claim-3",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "The night shift gave customers time to get their purchases ready for sale that same day. Some nearby pubs served workers finishing their shift. For someone finishing work here, a drink early in the morning could be the end of the day.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-smithfield-claim-4",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "In the nineteen-nineties, overhead rails changed the handling of carcasses, and a settlement ended the porters’ exclusive right to move the meat. The work has kept changing. So has the future of the buildings.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-smithfield-claim-5",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "Next are carved panels in Britton Street. Take St John Street north, then St John’s Lane towards the Gate. Just before the Gate, turn left into Briset Street, then right into Britton Street. Look across towards number twenty-five.",
+            "kind": "physical",
+            "evidenceRefs": [
+              {
+                "id": "pilot-encounter-smithfield",
+                "revision": 1
+              },
+              {
+                "id": "pilot-encounter-booths",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          }
+        ],
+        "pronunciation": [
+          "Human listening pending; no pronunciation pass inferred from decode"
+        ],
+        "delivery": "Local George, warm documentary; stationary. Historical prose adapted, not newly generated by subscription adapter."
+      }
+    },
+    {
+      "id": "pilot-script-booths",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-brief",
+          "revision": 1
+        },
+        {
+          "id": "pilot-route",
+          "revision": 1
+        },
+        {
+          "id": "pilot-candidate-booths",
+          "revision": 1
+        },
+        {
+          "id": "pilot-booths-claim-1",
+          "revision": 1
+        },
+        {
+          "id": "pilot-booths-claim-2",
+          "revision": 1
+        },
+        {
+          "id": "pilot-booths-claim-3",
+          "revision": 1
+        },
+        {
+          "id": "pilot-booths-claim-4",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-booths",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-stjohn-gate",
+          "revision": 1
+        }
+      ],
+      "kind": "script",
+      "data": {
+        "audience": {
+          "reason": "Find ordinary skilled work behind public Clerkenwell exteriors",
+          "assumedKnowledge": "Little neighbourhood familiarity",
+          "intendedDiscovery": "Meat carrying, reused architecture, working writers, practical cooperation and handmade flowers",
+          "presentAnchor": "On the east pavement opposite number 25, look high below the cornice for five pale reliefs among the brick and stone. Trees may hide some; adjust along the same pavement without stepping into the road."
+        },
+        "transcript": "At number twenty-five Britton Street, look for the pale carved panels high among the windows, above the bands of brick and stone. There are five, though foliage may hide part of the sequence. They came from the offices of Booth’s gin distillery, and their subject is work.\n\nThe carvings turn gin into a chain of labour, from harvesting grain to drawing drink from a cask. Grain supplies the alcohol; the characteristic flavour comes from botanicals, especially juniper. Making a consistent drink involves judgement, because those botanical oils vary from harvest to harvest.\n\nThe wall itself has had a second career. It originally stood in Turnmill Street. In the nineteen-seventies, the architects developing this site realised the salvaged frontage was just the right width for their new building. The height was trickier: split-level flats helped make the rooms behind fit the old elevation.\n\nSome decayed stone had to be replaced, but the carved workers came along. A frontage designed to advertise a distillery became the face of flats and offices. Once you have found the panels, take in the whole wall again. The people in stone are still making gin above rooms built for quite different lives.\n\nNow retrace your steps to Briset Street and turn towards St John’s Gate. Find a place to one side of its southern approach, leaving the archway clear.",
+        "narrationWindowSeconds": 89.5,
+        "assertions": [
+          {
+            "text": "At number twenty-five Britton Street, look for the pale carved panels high among the windows, above the bands of brick and stone. There are five, though foliage may hide part of the sequence. They came from the offices of Booth’s gin distillery, and their subject is work.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-booths-claim-1",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "The carvings turn gin into a chain of labour, from harvesting grain to drawing drink from a cask. Grain supplies the alcohol; the characteristic flavour comes from botanicals, especially juniper. Making a consistent drink involves judgement, because those botanical oils vary from harvest to harvest.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-booths-claim-2",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "The wall itself has had a second career. It originally stood in Turnmill Street. In the nineteen-seventies, the architects developing this site realised the salvaged frontage was just the right width for their new building. The height was trickier: split-level flats helped make the rooms behind fit the old elevation.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-booths-claim-3",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "Some decayed stone had to be replaced, but the carved workers came along. A frontage designed to advertise a distillery became the face of flats and offices. Once you have found the panels, take in the whole wall again. The people in stone are still making gin above rooms built for quite different lives.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-booths-claim-4",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "Now retrace your steps to Briset Street and turn towards St John’s Gate. Find a place to one side of its southern approach, leaving the archway clear.",
+            "kind": "physical",
+            "evidenceRefs": [
+              {
+                "id": "pilot-encounter-booths",
+                "revision": 1
+              },
+              {
+                "id": "pilot-encounter-stjohn-gate",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          }
+        ],
+        "pronunciation": [
+          "Human listening pending; no pronunciation pass inferred from decode"
+        ],
+        "delivery": "Local George, warm documentary; stationary. Historical prose adapted, not newly generated by subscription adapter."
+      }
+    },
+    {
+      "id": "pilot-script-stjohn-gate",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-brief",
+          "revision": 1
+        },
+        {
+          "id": "pilot-route",
+          "revision": 1
+        },
+        {
+          "id": "pilot-candidate-stjohn-gate",
+          "revision": 1
+        },
+        {
+          "id": "pilot-stjohn-gate-claim-1",
+          "revision": 1
+        },
+        {
+          "id": "pilot-stjohn-gate-claim-2",
+          "revision": 1
+        },
+        {
+          "id": "pilot-stjohn-gate-claim-3",
+          "revision": 1
+        },
+        {
+          "id": "pilot-stjohn-gate-claim-4",
+          "revision": 1
+        },
+        {
+          "id": "pilot-stjohn-gate-claim-5",
+          "revision": 1
+        },
+        {
+          "id": "pilot-stjohn-gate-claim-6",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-stjohn-gate",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-green",
+          "revision": 1
+        }
+      ],
+      "kind": "script",
+      "data": {
+        "audience": {
+          "reason": "Find ordinary skilled work behind public Clerkenwell exteriors",
+          "assumedKnowledge": "Little neighbourhood familiarity",
+          "intendedDiscovery": "Meat carrying, reused architecture, working writers, practical cooperation and handmade flowers",
+          "presentAnchor": "Stand to one side of the southern paved approach and look towards the arch. Keep its through-route and museum door clear."
+        },
+        "transcript": "St John’s Gate was completed in 1504 as the entrance to a religious house. Today it houses the Museum of the Order of St John. In the seventeen-thirties, it became the address of a publishing enterprise. Edward Cave, a printer and publisher, ran the Gentleman’s Magazine here. Among the writers he employed was Samuel Johnson, long before Johnson’s dictionary made his name.\n\nReaders wanted to know what Parliament was saying. Parliament was less keen to have it printed. In 1738, the Commons reaffirmed that publishing its proceedings breached its privileges. The magazine found a literary way round the problem: it sent its readers to Lilliput, the imaginary country in Gulliver’s Travels.\n\nA debate published in 1741 takes place in the Senate of Lilliput. One speaker appears as the Hurgo Quadrert. Then the introduction rather helpfully mentions a parallel debate in the British Parliament, which readers have been asking for. It is a disguise with a very large wink.\n\nProducing these speeches took more than changing the names. Johnson worked from other people’s reports and sparse notes. His biographer, James Boswell, records him saying that sometimes he received little more than the speakers’ names and which side they had taken. From that, the working writer had to supply the arguments and the language.\n\nA reader settling down to a substantial parliamentary speech was also reading the work of a hired writer. Here in Clerkenwell, political eloquence was being made on its way into print.\n\nCave put an image of the Gate on the magazine’s title-page, making this old entrance the face of his business. He even used it on the doors of his coach in place of a coat of arms. The building we are looking at was good enough to serve as his personal emblem.\n\nGo through the arch and turn west through St John’s Square and St John’s Path to Britton Street. Turn right, then follow Clerkenwell Road’s south pavement left towards Old Sessions House. Use the pedestrian signals there to cross, then head around the Sessions House to the Green. The map shows this approach.",
+        "narrationWindowSeconds": 137.5,
+        "assertions": [
+          {
+            "text": "St John’s Gate was completed in 1504 as the entrance to a religious house. Today it houses the Museum of the Order of St John. In the seventeen-thirties, it became the address of a publishing enterprise. Edward Cave, a printer and publisher, ran the Gentleman’s Magazine here. Among the writers he employed was Samuel Johnson, long before Johnson’s dictionary made his name.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-stjohn-gate-claim-1",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "Readers wanted to know what Parliament was saying. Parliament was less keen to have it printed. In 1738, the Commons reaffirmed that publishing its proceedings breached its privileges. The magazine found a literary way round the problem: it sent its readers to Lilliput, the imaginary country in Gulliver’s Travels.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-stjohn-gate-claim-2",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "A debate published in 1741 takes place in the Senate of Lilliput. One speaker appears as the Hurgo Quadrert. Then the introduction rather helpfully mentions a parallel debate in the British Parliament, which readers have been asking for. It is a disguise with a very large wink.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-stjohn-gate-claim-3",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "Producing these speeches took more than changing the names. Johnson worked from other people’s reports and sparse notes. His biographer, James Boswell, records him saying that sometimes he received little more than the speakers’ names and which side they had taken. From that, the working writer had to supply the arguments and the language.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-stjohn-gate-claim-4",
+                "revision": 1
+              }
+            ],
+            "qualifications": [
+              "sometimes"
+            ]
+          },
+          {
+            "text": "A reader settling down to a substantial parliamentary speech was also reading the work of a hired writer. Here in Clerkenwell, political eloquence was being made on its way into print.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-stjohn-gate-claim-5",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "Cave put an image of the Gate on the magazine’s title-page, making this old entrance the face of his business. He even used it on the doors of his coach in place of a coat of arms. The building we are looking at was good enough to serve as his personal emblem.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-stjohn-gate-claim-6",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "Go through the arch and turn west through St John’s Square and St John’s Path to Britton Street. Turn right, then follow Clerkenwell Road’s south pavement left towards Old Sessions House. Use the pedestrian signals there to cross, then head around the Sessions House to the Green. The map shows this approach.",
+            "kind": "physical",
+            "evidenceRefs": [
+              {
+                "id": "pilot-encounter-stjohn-gate",
+                "revision": 1
+              },
+              {
+                "id": "pilot-encounter-green",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          }
+        ],
+        "pronunciation": [
+          "Human listening pending; no pronunciation pass inferred from decode"
+        ],
+        "delivery": "Local George, warm documentary; stationary. Historical prose adapted, not newly generated by subscription adapter."
+      }
+    },
+    {
+      "id": "pilot-script-green",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-brief",
+          "revision": 1
+        },
+        {
+          "id": "pilot-route",
+          "revision": 1
+        },
+        {
+          "id": "pilot-candidate-green",
+          "revision": 1
+        },
+        {
+          "id": "pilot-green-claim-1",
+          "revision": 1
+        },
+        {
+          "id": "pilot-green-claim-2",
+          "revision": 1
+        },
+        {
+          "id": "pilot-green-claim-3",
+          "revision": 1
+        },
+        {
+          "id": "pilot-green-claim-4",
+          "revision": 1
+        },
+        {
+          "id": "pilot-green-claim-5",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-green",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-flowers",
+          "revision": 1
+        }
+      ],
+      "kind": "script",
+      "data": {
+        "audience": {
+          "reason": "Find ordinary skilled work behind public Clerkenwell exteriors",
+          "assumedKnowledge": "Little neighbourhood familiarity",
+          "intendedDiscovery": "Meat carrying, reused architecture, working writers, practical cooperation and handmade flowers",
+          "presentAnchor": "From public space on the Green, face the white frontage and red door of the Marx Memorial Library at 37a. Stop clear of café tables and through-routes."
+        },
+        "transcript": "At thirty-seven A Clerkenwell Green, the Marx Memorial Library remembers a great deal of political history. One story here concerns a very small office. In 1902, this building housed a printing business managed by Harry Quelch, who also edited the socialist newspaper Justice.\n\nThe Russian revolutionary Lenin was then an editor in exile, years before the revolution of 1917. His newspaper, Iskra, needed somewhere to be printed. Quelch and his fellow British socialists made their equipment available. Seventeen issues came out of this building in 1902 and 1903.\n\nThe extra enterprise took up room. Writing after Quelch’s death, Lenin remembered his host squeezing into a corner screened off by a thin partition. There was a small writing table, a bookshelf above it, and one chair. When Lenin visited, there was no space for a second chair.\n\nIt is a wonderfully awkward picture: two editors, a newspaper to discuss, and nowhere to put the visitor. Quelch had made international cooperation fit into a corner.\n\nThe library still offers education in politics, including online courses in trade unions and Marxism. That is a present-day continuation of the building’s connection with ideas, without requiring you to enter or find a class taking place here.\n\nOur next stretch follows Clerkenwell Close around the churchyard. At the Three Kings, keep on the Close as it bends right, then turn right into Sans Walk. Follow Sans Walk to Woodbridge Street, turn right, and continue down Woodbridge past the Sekforde junction. Keep this stretch quiet; the map and written directions remain available.",
+        "narrationWindowSeconds": 111,
+        "assertions": [
+          {
+            "text": "At thirty-seven A Clerkenwell Green, the Marx Memorial Library remembers a great deal of political history. One story here concerns a very small office. In 1902, this building housed a printing business managed by Harry Quelch, who also edited the socialist newspaper Justice.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-green-claim-1",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "The Russian revolutionary Lenin was then an editor in exile, years before the revolution of 1917. His newspaper, Iskra, needed somewhere to be printed. Quelch and his fellow British socialists made their equipment available. Seventeen issues came out of this building in 1902 and 1903.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-green-claim-2",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "The extra enterprise took up room. Writing after Quelch’s death, Lenin remembered his host squeezing into a corner screened off by a thin partition. There was a small writing table, a bookshelf above it, and one chair. When Lenin visited, there was no space for a second chair.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-green-claim-3",
+                "revision": 1
+              }
+            ],
+            "qualifications": [
+              "Writing after Quelch’s death"
+            ]
+          },
+          {
+            "text": "It is a wonderfully awkward picture: two editors, a newspaper to discuss, and nowhere to put the visitor. Quelch had made international cooperation fit into a corner.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-green-claim-4",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "The library still offers education in politics, including online courses in trade unions and Marxism. That is a present-day continuation of the building’s connection with ideas, without requiring you to enter or find a class taking place here.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-green-claim-5",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "Our next stretch follows Clerkenwell Close around the churchyard. At the Three Kings, keep on the Close as it bends right, then turn right into Sans Walk. Follow Sans Walk to Woodbridge Street, turn right, and continue down Woodbridge past the Sekforde junction. Keep this stretch quiet; the map and written directions remain available.",
+            "kind": "physical",
+            "evidenceRefs": [
+              {
+                "id": "pilot-encounter-green",
+                "revision": 1
+              },
+              {
+                "id": "pilot-encounter-flowers",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          }
+        ],
+        "pronunciation": [
+          "Human listening pending; no pronunciation pass inferred from decode"
+        ],
+        "delivery": "Local George, warm documentary; stationary. Historical prose adapted, not newly generated by subscription adapter."
+      }
+    },
+    {
+      "id": "pilot-script-flowers",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-brief",
+          "revision": 1
+        },
+        {
+          "id": "pilot-route",
+          "revision": 1
+        },
+        {
+          "id": "pilot-candidate-flowers",
+          "revision": 1
+        },
+        {
+          "id": "pilot-flowers-claim-1",
+          "revision": 1
+        },
+        {
+          "id": "pilot-flowers-claim-2",
+          "revision": 1
+        },
+        {
+          "id": "pilot-flowers-claim-3",
+          "revision": 1
+        },
+        {
+          "id": "pilot-flowers-claim-4",
+          "revision": 1
+        },
+        {
+          "id": "pilot-flowers-claim-5",
+          "revision": 1
+        },
+        {
+          "id": "pilot-flowers-claim-6",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-flowers",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-farringdon",
+          "revision": 1
+        }
+      ],
+      "kind": "script",
+      "data": {
+        "audience": {
+          "reason": "Find ordinary skilled work behind public Clerkenwell exteriors",
+          "assumedKnowledge": "Little neighbourhood familiarity",
+          "intendedDiscovery": "Meat carrying, reused architecture, working writers, practical cooperation and handmade flowers",
+          "presentAnchor": "Use a clear place on the opposite/northeast pavement. Look across for the brick chapel and white CLERKENWELL MEDICAL MISSION fascia."
+        },
+        "transcript": "Woodbridge Chapel once sheltered a workroom full of flowers: roses, daisies and cornflowers, all being made by hand. In 1898, an investigator working on Charles Booth’s great inquiry into London life came here and found about thirty girls and women making artificial flowers in the schoolroom beneath the chapel.\n\nTheir usual workroom was being enlarged. They belonged to the flower-making work of John Groom’s mission, which trained disabled women. The visitor caught the work in temporary quarters, giving us a glimpse of an activity that the chapel’s exterior cannot explain by itself.\n\nTo picture the skill, follow a petal through the trade. Fabric was cut into shapes and dyed. Moulds pressed veins and texture into it. Then came the curve: a metal tool with a ball on the end was heated over a spirit lamp, and the petal shaped around it. A flat scrap began to resemble something that had grown.\n\nThat was still only a petal. The pieces had to be assembled into a flower, held on a wire stem and arranged into sprays. The stem itself could be covered with paper or silk. Each stage helped the finished thing conceal the small operations that had made it.\n\nA mission assistant reported that training took two years. That gives the little flowers a different weight. Their lightness and delicacy depended on skills learnt over time, before a customer ever pinned them to a hat or dress.\n\nToday the chapel is home to GraceLife London, a church congregation. Hold the earlier picture beside it for a moment: a room beneath the chapel, thirty people at work, and the beginnings of roses and cornflowers passing through their hands.\n\nReturn northwest along Woodbridge Street to Sekforde Street. Turn southwest down Sekforde towards Aylesbury Street and the Green, using the public pavement rather than Hayward’s Place. Continue around the west side of Old Sessions House to the pedestrian signals on Clerkenwell Road. Cross at the signals, then follow Turnmill Street south to the Cowcross Street station entrance. Keep the return quiet and use the saved map. End the tour when you arrive back at Farringdon.",
+        "narrationWindowSeconds": 137.2,
+        "assertions": [
+          {
+            "text": "Woodbridge Chapel once sheltered a workroom full of flowers: roses, daisies and cornflowers, all being made by hand. In 1898, an investigator working on Charles Booth’s great inquiry into London life came here and found about thirty girls and women making artificial flowers in the schoolroom beneath the chapel.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-flowers-claim-1",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "Their usual workroom was being enlarged. They belonged to the flower-making work of John Groom’s mission, which trained disabled women. The visitor caught the work in temporary quarters, giving us a glimpse of an activity that the chapel’s exterior cannot explain by itself.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-flowers-claim-2",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "To picture the skill, follow a petal through the trade. Fabric was cut into shapes and dyed. Moulds pressed veins and texture into it. Then came the curve: a metal tool with a ball on the end was heated over a spirit lamp, and the petal shaped around it. A flat scrap began to resemble something that had grown.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-flowers-claim-3",
+                "revision": 1
+              }
+            ],
+            "qualifications": [
+              "To picture the skill"
+            ]
+          },
+          {
+            "text": "That was still only a petal. The pieces had to be assembled into a flower, held on a wire stem and arranged into sprays. The stem itself could be covered with paper or silk. Each stage helped the finished thing conceal the small operations that had made it.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-flowers-claim-4",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "A mission assistant reported that training took two years. That gives the little flowers a different weight. Their lightness and delicacy depended on skills learnt over time, before a customer ever pinned them to a hat or dress.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-flowers-claim-5",
+                "revision": 1
+              }
+            ],
+            "qualifications": [
+              "A mission assistant reported"
+            ]
+          },
+          {
+            "text": "Today the chapel is home to GraceLife London, a church congregation. Hold the earlier picture beside it for a moment: a room beneath the chapel, thirty people at work, and the beginnings of roses and cornflowers passing through their hands.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-flowers-claim-6",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "Return northwest along Woodbridge Street to Sekforde Street. Turn southwest down Sekforde towards Aylesbury Street and the Green, using the public pavement rather than Hayward’s Place. Continue around the west side of Old Sessions House to the pedestrian signals on Clerkenwell Road. Cross at the signals, then follow Turnmill Street south to the Cowcross Street station entrance. Keep the return quiet and use the saved map. End the tour when you arrive back at Farringdon.",
+            "kind": "physical",
+            "evidenceRefs": [
+              {
+                "id": "pilot-encounter-flowers",
+                "revision": 1
+              },
+              {
+                "id": "pilot-encounter-farringdon",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          }
+        ],
+        "pronunciation": [
+          "Human listening pending; no pronunciation pass inferred from decode"
+        ],
+        "delivery": "Local George, warm documentary; stationary. Historical prose adapted, not newly generated by subscription adapter."
+      }
+    },
+    {
+      "id": "pilot-audio-farringdon",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-script-farringdon",
+          "revision": 1
+        }
+      ],
+      "kind": "asset",
+      "data": {
+        "clipId": "farringdon",
+        "path": "content/generation-pilot/audio/farringdon.m4a",
+        "sha256": "89c0414928577b7cd86c8d500fe7e73d80db80d49ada132cd85424750cc4e09b",
+        "bytes": 511173,
+        "measuredSeconds": 58.9,
+        "voice": "Kokoro bm_george",
+        "settings": {
+          "provider": "Kokoro",
+          "voice": "bm_george",
+          "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+          "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+          "dtype": "fp32",
+          "device": "cpu",
+          "speed": 1,
+          "kokoroJs": "1.2.1",
+          "paragraphGapSeconds": 0.25,
+          "loudnessLufs": -19,
+          "encoding": "AAC mono 24 kHz 64 kb/s",
+          "rendererRevision": 2
+        },
+        "rights": "Original AI-assisted script adaptation, local cached Kokoro; Apache-2.0 model. Private review; no third-party images.",
+        "exportAllowed": true,
+        "listening": "pending"
+      }
+    },
+    {
+      "id": "pilot-audio-smithfield",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-script-smithfield",
+          "revision": 1
+        }
+      ],
+      "kind": "asset",
+      "data": {
+        "clipId": "smithfield",
+        "path": "content/generation-pilot/audio/smithfield.m4a",
+        "sha256": "c411fcc1289d54ea94c3ad30b330e3486d5b60b82960250c8b8790bc5dd72299",
+        "bytes": 865698,
+        "measuredSeconds": 101.1,
+        "voice": "Kokoro bm_george",
+        "settings": {
+          "provider": "Kokoro",
+          "voice": "bm_george",
+          "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+          "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+          "dtype": "fp32",
+          "device": "cpu",
+          "speed": 1,
+          "kokoroJs": "1.2.1",
+          "paragraphGapSeconds": 0.25,
+          "loudnessLufs": -19,
+          "encoding": "AAC mono 24 kHz 64 kb/s",
+          "rendererRevision": 2
+        },
+        "rights": "Original AI-assisted script adaptation, local cached Kokoro; Apache-2.0 model. Private review; no third-party images.",
+        "exportAllowed": true,
+        "listening": "pending"
+      }
+    },
+    {
+      "id": "pilot-audio-booths",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-script-booths",
+          "revision": 1
+        }
+      ],
+      "kind": "asset",
+      "data": {
+        "clipId": "booths",
+        "path": "content/generation-pilot/audio/booths.m4a",
+        "sha256": "00eb227036765af6b79d25b32cc821e689faa5c1e9bb8f35fef491dbaab7dcb6",
+        "bytes": 765117,
+        "measuredSeconds": 89.5,
+        "voice": "Kokoro bm_george",
+        "settings": {
+          "provider": "Kokoro",
+          "voice": "bm_george",
+          "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+          "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+          "dtype": "fp32",
+          "device": "cpu",
+          "speed": 1,
+          "kokoroJs": "1.2.1",
+          "paragraphGapSeconds": 0.25,
+          "loudnessLufs": -19,
+          "encoding": "AAC mono 24 kHz 64 kb/s",
+          "rendererRevision": 2
+        },
+        "rights": "Original AI-assisted script adaptation, local cached Kokoro; Apache-2.0 model. Private review; no third-party images.",
+        "exportAllowed": true,
+        "listening": "pending"
+      }
+    },
+    {
+      "id": "pilot-audio-stjohn-gate",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-script-stjohn-gate",
+          "revision": 1
+        }
+      ],
+      "kind": "asset",
+      "data": {
+        "clipId": "stjohn-gate",
+        "path": "content/generation-pilot/audio/stjohn-gate.m4a",
+        "sha256": "433b9894888be8d03f5f35412b081fbbee853f961b72f5bef9947c58ac6bd59a",
+        "bytes": 1171334,
+        "measuredSeconds": 137.5,
+        "voice": "Kokoro bm_george",
+        "settings": {
+          "provider": "Kokoro",
+          "voice": "bm_george",
+          "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+          "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+          "dtype": "fp32",
+          "device": "cpu",
+          "speed": 1,
+          "kokoroJs": "1.2.1",
+          "paragraphGapSeconds": 0.25,
+          "loudnessLufs": -19,
+          "encoding": "AAC mono 24 kHz 64 kb/s",
+          "rendererRevision": 2
+        },
+        "rights": "Original AI-assisted script adaptation, local cached Kokoro; Apache-2.0 model. Private review; no third-party images.",
+        "exportAllowed": true,
+        "listening": "pending"
+      }
+    },
+    {
+      "id": "pilot-audio-green",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-script-green",
+          "revision": 1
+        }
+      ],
+      "kind": "asset",
+      "data": {
+        "clipId": "green",
+        "path": "content/generation-pilot/audio/green.m4a",
+        "sha256": "1d093370553f0e02d5c57e76266137a04424fc712d906d52aaa5d0be55c63a99",
+        "bytes": 951277,
+        "measuredSeconds": 111,
+        "voice": "Kokoro bm_george",
+        "settings": {
+          "provider": "Kokoro",
+          "voice": "bm_george",
+          "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+          "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+          "dtype": "fp32",
+          "device": "cpu",
+          "speed": 1,
+          "kokoroJs": "1.2.1",
+          "paragraphGapSeconds": 0.25,
+          "loudnessLufs": -19,
+          "encoding": "AAC mono 24 kHz 64 kb/s",
+          "rendererRevision": 2
+        },
+        "rights": "Original AI-assisted script adaptation, local cached Kokoro; Apache-2.0 model. Private review; no third-party images.",
+        "exportAllowed": true,
+        "listening": "pending"
+      }
+    },
+    {
+      "id": "pilot-audio-flowers",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-script-flowers",
+          "revision": 1
+        }
+      ],
+      "kind": "asset",
+      "data": {
+        "clipId": "flowers",
+        "path": "content/generation-pilot/audio/flowers.m4a",
+        "sha256": "e3072bb771585cf92ee2b60c01ad7f9f74f70f2b4bb393f0ab69416a013be5a6",
+        "bytes": 1167235,
+        "measuredSeconds": 137.2,
+        "voice": "Kokoro bm_george",
+        "settings": {
+          "provider": "Kokoro",
+          "voice": "bm_george",
+          "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+          "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+          "dtype": "fp32",
+          "device": "cpu",
+          "speed": 1,
+          "kokoroJs": "1.2.1",
+          "paragraphGapSeconds": 0.25,
+          "loudnessLufs": -19,
+          "encoding": "AAC mono 24 kHz 64 kb/s",
+          "rendererRevision": 2
+        },
+        "rights": "Original AI-assisted script adaptation, local cached Kokoro; Apache-2.0 model. Private review; no third-party images.",
+        "exportAllowed": true,
+        "listening": "pending"
+      }
+    },
+    {
+      "id": "pilot-package",
+      "revision": 1,
+      "owner": "manual-pilot-integrator",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T20:16:57.334Z",
+      "dependsOn": [
+        {
+          "id": "pilot-route",
+          "revision": 1
+        },
+        {
+          "id": "pilot-script-farringdon",
+          "revision": 1
+        },
+        {
+          "id": "pilot-script-smithfield",
+          "revision": 1
+        },
+        {
+          "id": "pilot-script-booths",
+          "revision": 1
+        },
+        {
+          "id": "pilot-script-stjohn-gate",
+          "revision": 1
+        },
+        {
+          "id": "pilot-script-green",
+          "revision": 1
+        },
+        {
+          "id": "pilot-script-flowers",
+          "revision": 1
+        },
+        {
+          "id": "pilot-audio-farringdon",
+          "revision": 1
+        },
+        {
+          "id": "pilot-audio-smithfield",
+          "revision": 1
+        },
+        {
+          "id": "pilot-audio-booths",
+          "revision": 1
+        },
+        {
+          "id": "pilot-audio-stjohn-gate",
+          "revision": 1
+        },
+        {
+          "id": "pilot-audio-green",
+          "revision": 1
+        },
+        {
+          "id": "pilot-audio-flowers",
+          "revision": 1
+        }
+      ],
+      "kind": "package",
+      "data": {
+        "path": "content/generation-pilot/package.json",
+        "sha256": "62f698c8295a58206f53d9e933cc5fadc3cc952bfc35a5c4db9029b662c83eff",
+        "importer": "walking-tour-package-v1",
+        "structuralChecks": [
+          "parseTourPackage passed with 6 complete audio assets and bundled map coverage",
+          "ffprobe mono 24 kHz, complete paragraph PCM/encoded duration, ffmpeg full decode passed",
+          "Transport MD5s and sample identities passed"
+        ],
+        "assetRefs": [
+          {
+            "id": "pilot-audio-farringdon",
+            "revision": 1
+          },
+          {
+            "id": "pilot-audio-smithfield",
+            "revision": 1
+          },
+          {
+            "id": "pilot-audio-booths",
+            "revision": 1
+          },
+          {
+            "id": "pilot-audio-stjohn-gate",
+            "revision": 1
+          },
+          {
+            "id": "pilot-audio-green",
+            "revision": 1
+          },
+          {
+            "id": "pilot-audio-flowers",
+            "revision": 1
+          }
+        ],
+        "device": "pending",
+        "outdoors": "pending"
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "taskId": "manual-pilot-artifact-import",
+      "role": "planner-producer",
+      "purpose": "Retain already-completed manual calibration artifacts without implying workflow equivalence",
+      "scope": "Frozen local pilot artifacts only",
+      "inputRefs": [
+        {
+          "id": "pilot-brief",
+          "revision": 1
+        }
+      ],
+      "audienceContext": {
+        "reason": "Find ordinary skilled work behind public Clerkenwell exteriors",
+        "assumedKnowledge": "Little neighbourhood familiarity",
+        "intendedDiscovery": "Meat carrying, reused architecture, working writers, practical cooperation and handmade flowers",
+        "presentAnchor": "Five public exterior story stops on a Farringdon loop"
+      },
+      "allowedDecisions": [
+        "Select reversible draft content"
+      ],
+      "toolPermissions": [
+        "Observed local tools and free public-coordinate router only"
+      ],
+      "limits": {
+        "seconds": 1200
+      },
+      "expectedOutput": "Inspectable draft, source gaps, measured media and actual transport",
+      "completionCondition": "Returned useful artifacts; acceptance remains separate",
+      "recipient": "planner-producer",
+      "contextId": "manual-context-not-independent-review",
+      "execution": "returned",
+      "result": {
+        "usableOutputRefs": [
+          {
+            "id": "pilot-package",
+            "revision": 1
+          }
+        ],
+        "unresolvedQuestions": [
+          "Route exterior positions",
+          "Independent current-version review",
+          "Actual listening",
+          "Outdoor duration/enjoyment"
+        ],
+        "failedAttempts": [
+          "Sandbox DNS failure",
+          "Two formatted-JSON HTTP400 errors",
+          "Rejected Peter’s Lane waypoint",
+          "Raw-vs-parsed key-order rerun guard corrected in tooling"
+        ],
+        "usage": {
+          "inputTokens": null,
+          "outputTokens": null,
+          "subscription": false,
+          "apiEquivalentUsd": null,
+          "priceDate": null,
+          "uncertainty": "Manual Codex assistance; model usage/active research time not observed. No subscription-stage request or paid API call."
+        },
+        "recommendedNextAction": "Complete independent review and retain blocked state pending precise physical/listening evidence"
+      }
+    }
+  ],
+  "reviews": [],
+  "decisions": [],
+  "issues": [
+    {
+      "itemId": "pilot-encounter-farringdon",
+      "category": "exterior-position",
+      "owner": "scout",
+      "required": true,
+      "description": "Exact current exterior standing clearance unresolved; no satisfactory current imagery/field observation",
+      "resolution": "Review suitable exterior evidence or one targeted ordinary-use observation; revise candidate if needed",
+      "refs": [
+        {
+          "id": "pilot-encounter-farringdon",
+          "revision": 1
+        }
+      ],
+      "id": "issue-1",
+      "key": "pilot-encounter-farringdon:exterior-position",
+      "state": "open",
+      "attempts": [],
+      "arbitration": false
+    },
+    {
+      "itemId": "pilot-encounter-smithfield",
+      "category": "exterior-position",
+      "owner": "scout",
+      "required": true,
+      "description": "Exact current exterior standing clearance unresolved; no satisfactory current imagery/field observation",
+      "resolution": "Review suitable exterior evidence or one targeted ordinary-use observation; revise candidate if needed",
+      "refs": [
+        {
+          "id": "pilot-encounter-smithfield",
+          "revision": 1
+        }
+      ],
+      "id": "issue-2",
+      "key": "pilot-encounter-smithfield:exterior-position",
+      "state": "open",
+      "attempts": [],
+      "arbitration": false
+    },
+    {
+      "itemId": "pilot-package",
+      "category": "current-review-and-listening",
+      "owner": "planner-producer",
+      "required": true,
+      "description": "Independent current-version source/editorial review and human listening pending; recordings/parse are not acceptance",
+      "resolution": "Review frozen inputs and actual recordings, retain qualifications, resolve practical route issues before package acceptance",
+      "refs": [
+        {
+          "id": "pilot-package",
+          "revision": 1
+        }
+      ],
+      "id": "issue-3",
+      "key": "pilot-package:current-review-and-listening",
+      "state": "open",
+      "attempts": [],
+      "arbitration": false
+    }
+  ],
+  "counters": {
+    "candidates": [
+      "pilot-candidate-farringdon",
+      "pilot-candidate-smithfield",
+      "pilot-candidate-booths",
+      "pilot-candidate-stjohn-gate",
+      "pilot-candidate-green",
+      "pilot-candidate-flowers"
+    ],
+    "research": 1,
+    "route": 3,
+    "correction": 1,
+    "render": {}
+  },
+  "costLedger": {
+    "currency": "USD",
+    "ceilingUsd": 0,
+    "completionReserveUsd": 0,
+    "quoteDate": "2026-10-06",
+    "operations": [
+      {
+        "id": "manual-calibration-tools",
+        "taskId": "manual-pilot-artifact-import",
+        "stage": "retrospective-manual-calibration",
+        "state": "settled",
+        "reservedUsd": 0,
+        "chargedUsd": 0,
+        "startedAt": "2026-10-06T20:16:57.334Z",
+        "endedAt": "2026-10-06T20:16:57.334Z",
+        "usage": {
+          "inputTokens": null,
+          "outputTokens": null,
+          "subscription": false,
+          "apiEquivalentUsd": null,
+          "priceDate": null,
+          "uncertainty": "Manual Codex assistance; model usage/active research time not observed. No subscription-stage request or paid API call."
+        }
+      }
+    ]
+  },
+  "events": [
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-brief@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "source-gap",
+      "detail": "pilot-source-1: reference retained in evidence.json; no supporting passage invented or imported"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-source-2@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-source-3@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-source-4@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-source-5@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-source-6@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-source-7@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-source-8@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "source-gap",
+      "detail": "pilot-source-9: reference retained in evidence.json; no supporting passage invented or imported"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-source-10@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-source-11@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-source-12@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-source-13@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-source-14@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-source-15@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-source-16@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-source-17@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-source-18@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-source-19@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-route-evidence@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-encounter-farringdon@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "counter",
+      "detail": "candidates:pilot-candidate-farringdon"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-candidate-farringdon@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-encounter-smithfield@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "counter",
+      "detail": "candidates:pilot-candidate-smithfield"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-candidate-smithfield@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-encounter-booths@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "counter",
+      "detail": "candidates:pilot-candidate-booths"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-candidate-booths@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-encounter-stjohn-gate@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "counter",
+      "detail": "candidates:pilot-candidate-stjohn-gate"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-candidate-stjohn-gate@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-encounter-green@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "counter",
+      "detail": "candidates:pilot-candidate-green"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-candidate-green@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-encounter-flowers@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "counter",
+      "detail": "candidates:pilot-candidate-flowers"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-candidate-flowers@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-smithfield-claim-1@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-smithfield-claim-2@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-smithfield-claim-3@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-smithfield-claim-4@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-smithfield-claim-5@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-booths-claim-1@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-booths-claim-2@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-booths-claim-3@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-booths-claim-4@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-stjohn-gate-claim-1@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-stjohn-gate-claim-2@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-stjohn-gate-claim-3@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-stjohn-gate-claim-4@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-stjohn-gate-claim-5@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-stjohn-gate-claim-6@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-green-claim-1@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-green-claim-2@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-green-claim-3@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-green-claim-4@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-green-claim-5@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-flowers-claim-1@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-flowers-claim-2@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-flowers-claim-3@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-flowers-claim-4@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-flowers-claim-5@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-flowers-claim-6@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "counter",
+      "detail": "route:"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-route@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-script-farringdon@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-script-smithfield@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-script-booths@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-script-stjohn-gate@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-script-green@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-script-flowers@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-audio-farringdon@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-audio-smithfield@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-audio-booths@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-audio-stjohn-gate@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-audio-green@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-audio-flowers@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "record",
+      "detail": "pilot-package@1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "issue-opened",
+      "detail": "issue-1"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "issue-opened",
+      "detail": "issue-2"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "issue-opened",
+      "detail": "issue-3"
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "observed-render-duration",
+      "detail": "168.766s initial rendering/validation; active research and overall pre-import elapsed unknown. Initial recording completion: 2026-10-06T20:10:34.420Z."
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "usage-boundary",
+      "detail": "Five public router dispatches (two parse errors, three responses, one response rejected); one prior DNS nondispatch. No account/paid overflow path. Costs US$0. Import is not a timed Balanced workflow run."
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "counter-basis",
+      "detail": "Research=1 consolidated current-context/source refresh in one manual context, reusing archived survey rather than recounting it. Route=3 completed public solutions: rejected start via Peter’s Lane, selected direct start, selected return; historical core reuse not dispatched. Correction=1 consolidated evidence/metadata correction batch after independent review: classify physical paragraphs with encounter dependencies and strengthen the flower passage. JSON request repairs are technical failures; the removed waypoint belongs to the counted route proposals. Implementation fixes/import/check-only reruns do not count as content corrections. These retrospective manual counts are not a matched timed workflow run."
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "render-count",
+      "detail": "Six initial local recordings; zero corrective audio renders; cached validation runs retained separately in render-runs.json."
+    },
+    {
+      "at": "2026-10-06T20:16:57.334Z",
+      "type": "terminal",
+      "detail": "blocked"
+    }
+  ],
+  "waiting": {
+    "quotaSeconds": 0,
+    "ownerSeconds": 0
+  },
+  "conditions": {
+    "model": "Codex implementation assistance; exact runtime usage unavailable; NOT gpt-6.1-sol subscription trial",
+    "effort": "unknown; not a controlled comparison",
+    "promptHashes": {},
+    "tools": [
+      "built-in web research",
+      "public account-free Valhalla",
+      "cached local Kokoro George",
+      "actual app parseTourPackage",
+      "ffprobe/ffmpeg"
+    ],
+    "startingEvidence": "plan.json:287d9b25c6970edb04432973ab7d59adb93505e7dfa4fed3ea529cd0b907bed5\nstories.json:a7bbf4b4826017ac99f220276b9833d4dd0face0cb7bab73b1d4272ee2a7edfc\nevidence.json:06845007282bedde75714522f1360d2ce9b8e72d491b66d96db3ea764d91e893\nencounters.json:53bd7ae4ca0591cbd9f7e7974ebbadd9e4ae14d23796bbd0fd189eb89c9c45f3\npreparation.json:844295f1c812aa256edfdaffd04330267e148f7ee178c1a0a94d566a147dafca\npackage.json:62f698c8295a58206f53d9e933cc5fadc3cc952bfc35a5c4db9029b662c83eff",
+    "voice": "local Kokoro George",
+    "qualityFloor": "Current evidence, essential physical access, worthwhile interpretation, listening and actual offline package checks",
+    "mode": "manual-calibration"
+  }
+}

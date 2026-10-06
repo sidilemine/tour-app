@@ -1,0 +1,18 @@
+# Local generation implementation checkpoint
+
+Assignment: 6 October 2026 owner launch; branch `codex/local-tour-generation`, based on `c582f0a`. Preserve the five pre-existing untracked Word documents. The pasted request is authority; the ZIP is supporting design material. Its proposed reversible defaults are selected by this launch; its proposed $40 budget is superseded by **US$0 direct charges**. This bounded prototype is an explicit exception to the older M4/M5 sequencing, not acceptance of E1 or permission for a production factory.
+
+1. Reconcile actual importer, tools and evidence; retain one canonical [register](IMPLEMENTATION-REGISTER.md). Done: current importer is `src/tours/package.ts`, version 1, 3–16 local M4A assets, explicit bundled map identity. Clerkenwell map, Valhalla responses, public survey, dated exterior checks and local Kokoro George exist.
+2. Implement inspectable JSON authoring/job records, serialized decisions, selective dependency invalidation, bounded task/issue/cost state and run/resume CLI. Implemented and exercised; see RESULTS.md.
+3. Completed: exercise meaningful fixtures before live reasoning: qualification, uncertain encounter, stale return/review, missing evidence/instruction coverage, duplicate/no-progress issues, reservations and interrupted resume.
+4. Implement official SIWC adapter and T43 fixture preflight; prepare app-specific sign-in and verify account/overflow/capabilities before any live dispatch. Implemented and exercised; see RESULTS.md. No Codex credential reuse or API fallback.
+5. Prepare separate 60-minute Farringdon loop plan and ≥3 local George samples from retained and rechecked public evidence. Manual preparation is calibration, never a subscription workflow result. Implemented and exercised; see RESULTS.md.
+6. Complete: type/lint and all 201 tests, package/media/map checks, guide parity, local links and staged whitespace/privacy review passed. Outcome/cost/blocker records are retained; the completed slice is staged for its authorized local commit.
+
+Completion checks: reproducible fixture run/resume; durable exact-version acceptance and issue/cost history; actual importer integration tested; CLI can stop blocked with useful drafts; live results only after T43; package readiness never inferred from valid JSON or media existence; final report separates content, package validation, listening, device and outdoors.
+
+Relevant lessons: LEAD-002/003/004 (responsibilities, reuse, decisions), RES-001/006 (survey and evidence-bounded discovery), CUR-001/002 (duration and route value), ROUTE-001/003/004/005/006 (literal approaches, camera vs visitor, topology, dated access, speech windows), REVIEW-001/002 (actual propositions/frozen versions), VOICE-001/002 (George and complete chunks), PKG-001/002 (immutable versions and import), QA-001/004/007 (proportionate testing, exact artifacts, replay cadence). Existing phone evidence is reused only for unchanged player behavior.
+
+Resume here after interruption. Runtime jobs live under ignored `local-data/generation/`; curated fixtures and sanitized evidence are committed separately. No pending provider operation may be repeated merely because a process restarted. No published service, remote, device installation or paid call is part of the current checkpoint.
+
+Current continuation: implementation and manual candidate complete; live T43 blocked by missing completed app sign-in, overflow observation and account capability evidence. Candidate acceptance blocked by current exterior positions, final current-version review and listening. No provider request is pending. Final check/commit evidence is in [RESULTS](RESULTS.md).

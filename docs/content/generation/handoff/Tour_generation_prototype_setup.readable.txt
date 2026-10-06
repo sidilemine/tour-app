@@ -1,0 +1,190 @@
+Readable copy of Tour_generation_prototype_setup.docx
+Proposed trial configuration; internal proposal 0.1.
+Original Word document included. Body order and table rows preserved; headers, footers and pagination omitted.
+
+Tour generation prototype setup
+
+Minimum records acceptance criteria and trial configuration
+
+Proposal 0.1  |  6 October 2026
+
+We propose a small supervised London prototype with explicit handoffs, fresh reviews and one model baseline. It should show whether the workflow produces worthwhile, supported tours before we optimise staffing or automate the whole process. The maintained workflow remains authoritative; these detailed choices are proposals for the first trial.
+
+Initial staffing
+
+| Function | Starting arrangement |
+| Planner and Producer | One organising context; distinguish user decisions, task dispatch and acceptance in the record. |
+| Research Lead and researchers | One context initially; a second worker only for a named independent question. Lead coordination stays with the first. |
+| Route Designer | Separate route and timeline context, supplied with actual routing results. |
+| Virtual Scout | Separate inspection context, supplied with route, visitor positions and actual imagery. |
+| Writer | Separate context with the accepted outline, evidence and audience rationale. |
+| Editor | Fresh context for whole tour value, structure and listening comprehension. |
+| Verification reviewer | Fresh context with actual source passages and physical evidence for the edited version. |
+| Builder and Tester | Assembly and integrity checks use deterministic tools. A fresh Tester context examines actual results and journey scenarios. |
+
+These are responsibility and context boundaries, not eight agents running continuously. Start with at most two concurrent reasoning tasks and serialise consequential record acceptance. Extra workers share the existing allowance. Reviews may use the same model; their independence comes from a fresh assessment and evidence inspection, not votes between models.
+
+What we keep flexible
+
+Use short readable explanations alongside structured essentials. Add fields when a real handoff needs them. Keep the authoring record separate from the current player package, and adapt to the actual importer after inspecting the development repository. This workspace contains project documents, not the current running app.
+
+Minimum shared records
+
+Use one job record, with related collections stored locally. JSON is the proposed exchange format; separate files or a small local store can implement it. The names below describe a minimum contract, not a new universal database or a replacement player schema.
+
+| Record | Required information when the record is used |
+| Job and brief | Original request; requirements, preferences, assumptions and delegation; geographic boundaries; endpoints; audience familiarity, place preference, depth and discovery; dates, access, duration; effort limits and current stage. |
+| Candidate and stop | Identity; source references; landmark location; selection disposition; why it matters to this audience; assumed baseline; intended discovery; present place anchor; narrative role; relevant alternatives. |
+| Claim and source | Exact proposition; source URL or archive locator; minimal supporting passage and location; source origin, date and retrieval date; scope, qualifications, dispute and review status; retention and attribution conditions. |
+| Encounter and access | Separate landmark, visitor and camera positions; approach and intended view or action; physical assertions linked to evidence; capture date or unknown; check date; practical conditions and unresolved dependencies. |
+| Route and timeline | Ordered stop references; actual leg geometry, maneuvers, distance and time; provider and retrieval details; walking assumptions; speech, looking and practical windows; overlap counted once; deadline assessment. |
+| Script and assets | Current spoken text and transcript; assertion and instruction links; delivery and pronunciation notes; logical clip identity; text revision, voice settings, files, checksums, rights and measured duration. |
+| Tasks issues and reviews | Question, owner, input revisions and effort allowance; partial returns and failures; exact affected item; required resolution and attempts; review scope, checked revisions and closure evidence. |
+
+Every substantive record has an id, revision, owner, createdAt, updatedAt and dependsOn references containing both id and revision. Stable identity survives renaming. Acceptance is recorded separately through a review or Producer decision referencing the exact revisions assessed.
+
+The job also holds a costLedger with currency, quote date, incurred and pending charges, completion reserves and global stage counters. Distinguish estimated usage from settled charges; all workers draw on the same allowance.
+
+Use WGS84 points with explicit latitude and longitude names; metres for distances and seconds for durations. Distinguish a date from a timestamp with timezone. An unavailable value is null with a reason or open question; an empty list explicitly means none found or none applicable. Avoid default values that disguise missing evidence.
+
+Assignments and context passed between functions
+
+Task contract
+
+Each task contains taskId, role, purpose, scope, inputRefs, audienceContext, allowedDecisions, toolPermissions, limits, expectedOutput, completionCondition and recipient. Its result contains usableOutputRefs, unresolvedQuestions, failedAttempts, usage and recommendedNextAction. Execution is queued, working, returned, blocked or cancelled; returning work does not accept its output.
+
+A claim is proposed, reviewed supported, supported with qualification, disputed or unsupported. Physical evidence separately records unverified, desk checked, field checked, stale or blocked. Decisions record proposed, accepted or needs revision. These states describe evidence and authority; they are not calibrated confidence percentages.
+
+Context for the Writer
+
+| Input | Purpose |
+| Audience reason | Why this stop and this particular story earn attention for the brief. |
+| Assumed baseline | What the visitor is likely to recognise or know, with any uncertainty in that judgment. |
+| Intended discovery | The less obvious idea or difference the passage should help them understand. |
+| Present place anchor | The checked thing to notice, view or do here, including limits when a feature has vanished. |
+| Evidence and time | Exact supported claims and qualifications, source passages, checked instructions and narration window. |
+
+For the nineteenth century girls school example, a research question should identify supported differences in that institution or period that challenge familiar assumptions. A generic school day cannot substitute for those findings. If the relevant difference remains unknown, the Writer returns that gap instead of inventing a scene.
+
+Context size and updates
+
+Pass the brief, relevant records and exact evidence needed for the assignment, with fetchable references to the rest. Reviewers receive source material as well as the edited text. Task results propose changes against their input revisions; the Producer or delegated lead accepts compatible changes. A stale return may retain useful evidence without replacing the current route or brief.
+
+One issue queue groups equivalent findings under the same logical passage, claim or connection. Record whether a change invalidates evidence, encounter, route, script, audio or package review. Closed issues reopen only for a relevant change or new defect evidence. The full process draft supplies the global round limits and arbitration rules.
+
+Acceptance criteria for the first prototype
+
+The Producer records the commitment, assessed revisions, reviewer, evidence, unresolved conditions and decision. A required issue is one that prevents the brief, evidence, practical use, comprehension or package contract being fulfilled. An optional suggestion improves an already acceptable experience. Significant filler or a missing audience discovery can be a required editorial issue.
+
+| Commitment | Minimum evidence before acceptance |
+| Brief accepted | No unanswered essential that prevents the next decision. Required endpoints, area, access and duration are recorded; assumptions and delegation are explicit. Researchable uncertainties have owners. |
+| Route and outline accepted | Every selected stop and leg is accounted for. Real routing connects checked visitor positions. Essential physical uncertainties are evidenced or removed through permitted redesign. The timeline meets the applicable brief under stated assumptions. Each substantial stop has supported interpretive potential. |
+| Content accepted | Every factual assertion and physical or practical instruction in the current edited text has evidence review coverage. Qualifications survive. Fresh editorial review finds the script coherent and worthwhile for the audience. No required content issue is open; taste differences receive a recorded decision. |
+| Package ready | Final recordings have listening review and measured durations. All required local resources, rights, references and revisions agree. Actual package and relevant player or harness checks pass. No required issue is open. Evidence states distinguish desk, device and outdoor checks. |
+
+Listener assessment
+
+Assess representative passages after one listen without the script. The listener should explain the intended discoveries in their own words, connect them to the place, understand the physical instructions and identify no essential missing context. Record what was misunderstood or repetitive, and whether the walk is worth choosing. These are qualitative judgments with examples, not a formula for every passage.
+
+For the first three stop samples, propose that at least two intended discoveries can be explained and connected to their present anchors, with no consequential direction or comprehension failure. This is a trial criterion for discussion and calibration; all substantial passages still need editorial justification. Liking a sample does not resolve an evidence or access defect.
+
+The baseline reasoning model does not receive audio. Owner listening supplies the initial spoken review; a future audio capable reviewer needs its own verified capability and comparison. Automated transcripts and durations can assist but cannot claim that an actual recording was listened to.
+
+Model and provider baseline
+
+One reasoning baseline
+
+Propose OpenAI gpt-6.1-sol through the Responses API, with medium reasoning effort held constant across the first Lean, Balanced and Deep comparisons. Official documentation confirms text and image input, function calling and structured outputs; audio input is unsupported [S1]. Validate account access, actual tools and output handling before a run.
+
+Astra is the later stronger-model comparison, and Luna is the later candidate for bounded extraction or normalization. Change model or staffing separately from effort profile. Fresh reviewers still inspect source evidence; model agreement is not factual corroboration. Record exact model, settings, prompts and tool versions, and use a snapshot when available.
+
+Initial provider choices
+
+| Function | Proposed starting choice |
+| Search and page reading | Responses web search for discovery; actual source-page reading through an authorised reader or fetch tool for supporting passages. Capture source locations and failures. Search references alone do not satisfy evidence review [S2]. |
+| Broad place discovery | Google Places is a trial candidate, alongside the accepted London source directory. Keep provider IDs and permitted lookup records separate from authored stops and offline data. Establish permitted retention and display before persistence [S3]. |
+| Walking route and map | Reuse the working app provider if it fulfils the contract. If none exists, evaluate Mapbox walking Directions and its offline map capabilities first. Existing renderer compatibility, data retention, account terms and actual offline import remain checks [S5, S6]. |
+| Virtual imagery | Street View is a candidate inspection source. Record camera geometry and dates where supplied. Its storage restrictions mean images cannot automatically enter evidence archives or downloaded packages; verify permitted treatment before use [S4]. |
+| Narration | Reuse an acceptable existing voice. Otherwise propose ElevenLabs eleven_multilingual_v2 for an English sample, then one consistent voice and local clips. Its documentation describes stable long-form output. Select the actual voice after a short comparison and verify access and rights [S7, S8]. |
+
+Google Places map display and content retention restrictions are material to the offline package [S3]. Independently sourced information needs its own provenance and permitted use. An adapter must state which data is transient, retainable, displayable or exportable; an unknown rule does not imply permission. These candidates are researched options, not completed integrations.
+
+Proposed experiment budget and measurement
+
+Propose a total first experiment ceiling of US$40, including any new account charges, taxes, failed calls and discarded audio. Allocate at most $5 to initial calibration. Trial C is $3, giving Lean $3, Balanced $6 and Deep $12; $14 of the total remains for setup and specifically justified repeats. These are proposed maximum spends, not approved expenditure or predicted tour costs.
+
+Before dispatch, check real account prices and reserve unfinished mandatory work. If calibration shows the minimum coherent package cannot fit C, return a revised experiment proposal before comparing profiles. A subscription or account charge is assigned once in the experiment ledger and reported separately from variable tour cost. Existing prepaid credits still have attributable usage; they do not make production cost zero.
+
+Illustrative variable cost arithmetic
+
+On 6 October 2026, published Standard short-context prices for Sol are $2 input and $10 output per million tokens; web search costs $10 per 1,000 calls plus search content tokens [S9]. ElevenLabs lists Multilingual v2 at $0.08 per 1,000 characters before taxes in its public API pricing [S8]. Recheck the actual plan and any change before use.
+
+| Assumed usage | Illustrative charge |
+| 200,000 billed input and 20,000 billed output tokens | $0.60 |
+| 40 search calls, with their content already included above | $0.40 |
+| 20,000 speech characters | $1.60 |
+| Subtotal for those assumed components | $2.60 |
+
+This is arithmetic, not a measured tour estimate. It excludes unlisted mapping, routing, imagery, retries, fixed fees and taxes. Include billed reasoning tokens, image usage, cache writes and applicable pricing tiers in actual results. Each model request in the example assumes short-context Standard pricing; no cache discount is assumed.
+
+Time and effort
+
+Retain the proposed 10, 20 and 40 minute job cutoffs and stage caps from the full process draft. They are experiment limits rather than promises. Use a fully specified delegated request for the first comparison; record total elapsed, active preparation, user waiting and critical path separately. A cutoff exit without a ready package is a failure or retained draft.
+
+Start with the proposed 25 percent completion reserve and increase it to cover conservative estimates of remaining review, audio and tests. At most two concurrent reasoning tasks share one ledger and global counters. Pending charged operations remain reserved; unknown production outcomes are checked before repetition. Report both successful job cost and total spend divided by ready tours, retaining failures.
+
+First fixtures and exact test expectations
+
+Begin with the shared record and a supervised request
+
+First exercise a minimal handoff without generation calls: a provisional brief, one proposed candidate, one qualified claim, one uncertain encounter, a route revision, a draft passage and an issue. Confirm that the audience rationale and qualifications survive, the uncertainty blocks only dependent work and an old review cannot approve changed text. This is a proposed fixture, not an executed result.
+
+| Fixture | Expected result before recording a pass |
+| Minimal records and revisions | All required values and references are inspectable. Units and unknowns remain explicit. Round trip loses no audience or evidence context. Changing an input reopens affected acceptance and stale returns cannot replace current decisions. T03, T19, T33, T34, T40. |
+| Sparse Clerkenwell request | Planner resolves ordinary geography and records permitted route extent; asks only consequential questions. Fixed time or endpoints cannot silently change. T04 to T07. |
+| Unsupported school scene | Reviewer identifies the unsupported implication from the sources. Writer supplies a supported specific interpretation or returns the evidence gap. The generic familiar scene does not displace the intended discovery. T30, T34. |
+| Closure and duplicate issues | Dependent work pauses; compatible findings survive. Aliases and reopened stages do not reset counts. Two attempts without progress or unexplained oscillation cause bounded arbitration; essential defects remain blockers. T14, T16, T31, T38. |
+| Restricted provider data | Provider payloads, images and authored records retain separate provenance. Missing permission or attribution prevents forbidden persistence or export, while permitted references remain usable. Actual offline resources are checked. T20, T21, T41. |
+| Budget or production failure | Outstanding charges and required completion work are reserved before dispatch. Failures consume allowance; unknown writes are checked; interrupted work resumes without redoing accepted work. T22, T35, T39. |
+
+Then compare experience and effort
+
+Propose a 60 minute Clerkenwell loop starting and ending at Farringdon station, daytime, public exterior stops and little assumed knowledge of the neighbourhood. This is a request fixture; the Planner still resolves actual entrances and boundaries, and research establishes feasibility. First run Balanced under supervision. Then compare effort profiles on the same brief, retaining equivalent starting knowledge and recording cold or warm reuse.
+
+Count the pilot as the Balanced comparison only if its inputs and settings were fixed. Otherwise treat it as calibration and fund a fresh matched run within the remaining total ceiling.
+
+For the E1 content contrast, use engineering and architecture versus ordinary lives and unusual stories under comparable constraints. Before listening, predict at least two substantive differences. Each variant needs a complete walk plan and at least three narrated samples; the owner should be able to describe substantive differences afterwards. Owner walking evidence is recorded separately when available. T01, T29, T32 and T37 apply. Hold the effort comparison apart from the theme comparison.
+
+Source notes and implementation handoff
+
+Official provider documentation was checked on 6 October 2026. Published capabilities and prices do not establish account access, app compatibility, permitted storage for a particular integration or experienced quality. Recheck the relevant configuration when implementing it.
+
+S1 OpenAI GPT 6 1 Sol model capabilities (https://developers.openai.com/api/docs/models/gpt-6.1-sol)
+
+S2 OpenAI web search and source retrieval (https://developers.openai.com/api/docs/guides/tools-web-search)
+
+S3 Google Places policies and attribution (https://developers.google.com/maps/documentation/places/web-service/policies)
+
+S4 Google Street View Static policies (https://developers.google.com/maps/documentation/streetview/policies)
+
+S5 Mapbox walking Directions API (https://docs.mapbox.com/api/navigation/directions/)
+
+S6 Mapbox offline maps (https://docs.mapbox.com/help/dive-deeper/mobile-offline/)
+
+S7 ElevenLabs model documentation (https://elevenlabs.io/docs/overview/models)
+
+S8 ElevenLabs API pricing (https://elevenlabs.io/pricing/api)
+
+S9 OpenAI API pricing (https://developers.openai.com/api/docs/pricing)
+
+What Codex needs before implementation
+
+Inspect the current development repository and importer, then map these authoring records to its actual package contract. Confirm provider accounts, tool availability, applicable retention and export rules, voice access, actual pricing and the chosen experiment allowance. Keep direct deterministic checks outside model judgment. No model or tool integration has been validated by this setup document.
+
+Implement the smallest record checks and one supervised handoff first. Preserve accepted playback, privacy and evidence obligations. Use the existing roadmap E1 procedure when running the content experiment; do not replace its physical or listener evidence with desk agreement. Evaluate the relevant cases and append actual results to the maintained register.
+
+Choices still needing discussion or evidence
+
+The combined organiser, review contexts, initial concurrency, record fields, listener criterion, model baseline, conditional provider choices and monetary ceilings remain proposals. Fine tuning, role specific cheaper models, more researchers, numerical interest scoring and a production orchestration framework are not needed to learn from the first request. Record schema changes and settings explicitly so later comparisons remain interpretable.
+
+Register references: G01 to G09 for staffing, records, acceptance, budgets and convergence; R01 and R07 for provider use and audience focus; B01, B02 and B06 for the package, testing and audio. New T40 and T41 cover the minimum record handoff and provider data treatment. All generation, integration and experience tests remain unrecorded.

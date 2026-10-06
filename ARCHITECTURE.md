@@ -1,5 +1,9 @@
 # Architecture
 
+## Local generation boundary — 6 October 2026
+
+`tools/generation/` adds a supervised TypeScript CLI outside the mobile runtime. Versioned records form exact dependency graphs; atomic JSON job snapshots and a per-job process lock serialize durable dispatch, issue history, budgets and acceptance. Scoped role prompts receive actual retained evidence; task return never commits review acceptance. App-specific SIWC OAuth/streaming uses ignored local credentials, fresh overflow evidence and live capability gates; no API-key dispatch is implemented. The manual pilot assembles through the actual offline package parser, bundled Clerkenwell map and cached local George. [Run/resume and limitations](docs/content/generation/README.md), [demonstrated results](docs/content/generation/RESULTS.md). No backend, mobile account state or normal-tour network dependency is introduced.
+
 Status: updated 21 September 2026. M1 complete on the tested Pixel 6 / Android 17; see [final acceptance](docs/test-results/M1-closure.md) and the linked field records for build/condition limits. [PRODUCT.md](PRODUCT.md) defines the experience; [ROADMAP.md](ROADMAP.md) defines the evidence required before advancing. The owner's revisions override the original brief's mixed state machine, numerical claim-confidence examples, lifecycle milestone ordering and early backend/knowledge-base recommendations.
 
 Testing policy updated 16 September: apply the [personal-use policy](AGENTS.md#testing-policy-for-the-personal-prototype) to verification and hardening. Preserve the behavioral design below, reuse accepted evidence and target material gaps. Rare recoverable issues can be deferred to normal-use feedback; lists of possible scenarios do not mandate separate physical tests or speculative implementation.

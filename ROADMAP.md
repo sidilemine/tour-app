@@ -1,5 +1,9 @@
 # Roadmap
 
+## Authorized local generation slice — 6 October 2026
+
+**Implemented and locally exercised; live workflow and pilot acceptance blocked.** The owner explicitly authorized this bounded prototype alongside existing milestones: records/task contracts, deterministic coordinator, fixtures, official subscription adapter and one Balanced Farringdon-loop candidate. [Results and continuation](docs/content/generation/RESULTS.md), [canonical register](docs/content/generation/IMPLEMENTATION-REGISTER.md). The candidate has six measured recordings and a structurally valid package; official app sign-in/overflow/T43, current exterior evidence, final review and listening remain unresolved. This is not E1 acceptance, a measured workflow comparison or permission for production M5. Existing milestones and historical phone evidence remain as recorded below. No new physical test is requested for unchanged playback code.
+
 Status: 17 September 2026. M0 and M1 are complete; M1 acceptance is scoped to the recorded Pixel 6 / Android 17 results. This roadmap supersedes the original brief's ordering: lifecycle reliability comes first, and the supervised AI experiment runs alongside early curation. Each implementation assignment ends in appropriate tests/debugging, updated documents and a coherent local commit.
 
 “Implemented; awaiting physical test” is a valid intermediate status, not a passed milestone. Only actual result records can establish device behavior or enjoyable content. Do not treat the whole roadmap as authorization to implement all future work.

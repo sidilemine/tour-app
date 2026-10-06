@@ -48,7 +48,8 @@
     "check:package": "node --import tsx tools/check-package.ts",
     "check:map": "node --import tsx tools/maps/check.ts",
     "docs:guide": "node --import tsx tools/guide-docs.ts",
-    "docs:check": "node --import tsx tools/guide-docs.ts --check"
+    "docs:check": "node --import tsx tools/guide-docs.ts --check",
+    "generation": "node --import tsx tools/generation/cli.ts"
   },
   "private": true,
   "expo": {

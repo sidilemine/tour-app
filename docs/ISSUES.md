@@ -1,6 +1,6 @@
 # Known issues, fixes and reusable lessons
 
-Updated 21 September 2026. Maintained by the technical lead. This is the general log to consult when preparing another tour, assigning agents, fixing the player or building the M4/M5 authoring tools. It includes mistakes, demonstrated fixes, successful choices worth preserving and unresolved questions. Detailed evidence remains in the linked records.
+Updated 6 October 2026. Maintained by the technical lead. This is the general log to consult when preparing another tour, assigning agents, fixing the player or building the M4/M5 authoring tools. It includes mistakes, demonstrated fixes, successful choices worth preserving and unresolved questions. Detailed evidence remains in the linked records.
 
 ## Scope and use
 
@@ -242,6 +242,8 @@ These are selected unresolved items, not an additional acceptance list. The deta
 
 **Carry forward:** reread the actual claim's actor, action, time and relationship against the passage after writing. Correct prose and evidence together. Schema/reference checks cannot detect a newly invented implication. Retain the draft and review delta. The review was a fresh prose reading with selected source checks, not independent rediscovery of every source. [Must-fix review](content/authoring/clerkenwell-2026-09-20/REVIEW-V1.md#must-fix-before-the-narration-freeze), [final corrections](content/authoring/clerkenwell-2026-09-20/FINAL-EDIT-CHECK.md#corrections-and-additions).
 
+**6 October prototype application:** independent retained-source review found six physical transition groups labelled editorial and a narrow flower snippet that did not cover the whole process. The [manual pilot repair](../content/generation-pilot/REVIEW.md) reclassifies them with exact encounter dependencies and strengthens minimal passages. Code validates partitions and references; it cannot establish assertion classification or entailment. The pilot remains unaccepted pending current physical/final/listening review.
+
 ### REVIEW-002 — review complete alternatives against frozen inputs
 
 **Pilot integration failure corrected.** Substituting the railway opening removed Moss Hall's introduction, leaving “its estate” without an antecedent. One review also encountered a draft still changing.
@@ -427,6 +429,14 @@ These are selected unresolved items, not an additional acceptance list. The deta
 **Replay portability/intake errors corrected.** Real exports initially diverged because JSON omitted an undefined fix and Hermes/V8 geometry calculations differed at negligible precision. A later closure replay also mixed fixtures. These were not demonstrated changes in phone decisions.
 
 **Carry forward:** compare the persisted representation, filter the correct fixture/version and keep raw coordinates, timing, intent and effects exact. The implemented tolerance is limited to three derived metre fields, with tests that still reject meaningful differences. Do not loosen all assertions or rewrite product logic to match a bad reconstruction. Separate historical-policy segments and cumulative exports from new evidence. [Original replay corrections](test-results/M1.md), [closure intake](test-results/M1-closure.md#preserved-data-and-conditions), [regressions](../tests/replay.test.ts).
+
+### GEN-001 — returned work and old reviews must not grant current readiness
+
+**Fixed with focused deterministic evidence, 6 October.** The first local generator separates task return, current-version review and Producer acceptance. Review found that a later rejection of a script could leave its previously accepted package valid. Package acceptance now recursively requires current route/content/listening commitments; a later positive review requires a new decision, too. Fourteen lifecycle regressions cover this boundary alongside selective invalidation, interrupted operations, cumulative reservations, issue arbitration and deadline limits. Scope is the local CLI, not proof of semantic truth. [Results](content/generation/RESULTS.md), [regressions](../tests/generation.test.ts). Revisit on changes to dependencies, reviews or orchestration.
+
+### GEN-002 — document eligibility is not observed account access
+
+**Implemented with limits; live access blocked.** Official app-specific SIWC sign-in reached the account chooser and timed out. Actual preflight blocks before inference; no unrelated token reuse or API billing fallback. Provider fixtures exercise authentication/stream/error/capability handling, but cannot establish this account’s model grant or disabled credit overflow. Retain the durable ledger and resume only after owner consent and an observed Usage setting. [Access/results](content/generation/RESULTS.md). Runtime research/imagery dispatch is still supplied evidence, not demonstrated tool parity.
 
 ## Before generalising the builder
 

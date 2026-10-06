@@ -1,0 +1,159 @@
+{
+  "revision": 1,
+  "encounters": [
+    {
+      "id": "pilot-encounter-farringdon",
+      "revision": 1,
+      "landmark": {
+        "name": "Farringdon station",
+        "address": "Cowcross Street entrance",
+        "coordinates": null,
+        "coordinateStatus": "not resolved; do not substitute visitor/camera coordinates"
+      },
+      "visitorCandidate": {
+        "latitude": 51.520286,
+        "longitude": -0.104959
+      },
+      "routeIndex": 0,
+      "approach": "Use the Cowcross Street / Farringdon end of the station. Do not begin at the remote Barbican-side Elizabeth line exit.",
+      "viewpoint": "Choose a clear public pavement spot outside the Cowcross Street entrance, away from the doorway and moving pedestrians. This coordinate is a desk candidate.",
+      "access": "Public exterior. Start here: the first clip begins immediately. No station entry, ticket or building admission is required for the walk.",
+      "camera": null,
+      "imageryStatus": "No satisfactory exterior standing-position imagery",
+      "fieldVisit": null,
+      "verification": "desk candidate; current clearance unknown",
+      "evidence": "docs/content/authoring/clerkenwell-2026-09-20/ROUTE-RESEARCH.md"
+    },
+    {
+      "id": "pilot-encounter-smithfield",
+      "revision": 1,
+      "landmark": {
+        "name": "Smithfield East/West Meat Market",
+        "address": "Charterhouse Street near Grand Avenue",
+        "coordinates": null,
+        "coordinateStatus": "not resolved; do not substitute visitor/camera coordinates"
+      },
+      "visitorCandidate": {
+        "latitude": 51.51983,
+        "longitude": -0.1019
+      },
+      "routeIndex": 34,
+      "approach": "From the Cowcross Street station entrance, follow Cowcross Street east to the St John Street / Charterhouse Street market junction. Use the pedestrian route to the north pavement view of the market halls, clear of loading entrances.",
+      "viewpoint": "Use the north pavement of Charterhouse Street, looking across towards the East/West Meat Market frontage near Grand Avenue. Stay clear of crossings and loading entrances.",
+      "access": "The tour stays outside. Trading is principally overnight on weekdays. Follow current works signs; the proposed point is a desk candidate, not a claim about today’s barriers.",
+      "camera": null,
+      "imageryStatus": "No satisfactory exterior standing-position imagery",
+      "fieldVisit": null,
+      "verification": "desk candidate; current clearance unknown",
+      "evidence": "docs/content/authoring/clerkenwell-2026-09-20/ROUTE-RESEARCH.md"
+    },
+    {
+      "id": "pilot-encounter-booths",
+      "revision": 1,
+      "landmark": {
+        "name": "Mountford House",
+        "address": "25 Britton Street",
+        "coordinates": null,
+        "coordinateStatus": "not resolved; do not substitute visitor/camera coordinates"
+      },
+      "visitorCandidate": {
+        "latitude": 51.52154,
+        "longitude": -0.10388
+      },
+      "routeIndex": 81,
+      "approach": "From Smithfield take St John Street north, then St John’s Lane towards the Gate. Turn west into Briset Street just before the Gate, then north into Britton Street.",
+      "viewpoint": "On the east pavement opposite number 25, look high below the cornice for five pale reliefs among the brick and stone. Trees may hide some; adjust along the same pavement without stepping into the road.",
+      "access": "No entry required. The opposite pavement is narrow: keep doors and passing space clear.",
+      "camera": {
+        "latitude": 51.5215499,
+        "longitude": -0.1039455,
+        "captureDate": "2022-07"
+      },
+      "imageryStatus": "Archived researcher observation reused; not newly viewed",
+      "fieldVisit": null,
+      "verification": "desk candidate; current clearance unknown",
+      "evidence": "docs/content/authoring/clerkenwell-2026-09-20/ROUTE-RESEARCH.md"
+    },
+    {
+      "id": "pilot-encounter-stjohn-gate",
+      "revision": 1,
+      "landmark": {
+        "name": "St John’s Gate",
+        "address": "St John’s Lane",
+        "coordinates": null,
+        "coordinateStatus": "not resolved; do not substitute visitor/camera coordinates"
+      },
+      "visitorCandidate": {
+        "latitude": 51.52185,
+        "longitude": -0.10266
+      },
+      "routeIndex": 92,
+      "approach": "Retrace Britton Street to Briset Street, turn east along Briset, then towards the Gate on St John’s Lane.",
+      "viewpoint": "Stand to one side of the southern paved approach and look towards the arch. Keep its through-route and museum door clear.",
+      "access": "Exterior story. Museum and guided rooms have separate hours. Use current signs if roof works affect the approach.",
+      "camera": {
+        "latitude": 51.5217538,
+        "longitude": -0.1025932,
+        "captureDate": "2022-07"
+      },
+      "imageryStatus": "Archived researcher observation reused; not newly viewed",
+      "fieldVisit": null,
+      "verification": "desk candidate; current clearance unknown",
+      "evidence": "docs/content/authoring/clerkenwell-2026-09-20/ROUTE-RESEARCH.md"
+    },
+    {
+      "id": "pilot-encounter-green",
+      "revision": 1,
+      "landmark": {
+        "name": "Marx Memorial Library",
+        "address": "37a Clerkenwell Green",
+        "coordinates": null,
+        "coordinateStatus": "not resolved; do not substitute visitor/camera coordinates"
+      },
+      "visitorCandidate": {
+        "latitude": 51.52291,
+        "longitude": -0.10559
+      },
+      "routeIndex": 133,
+      "approach": "Pass through the Gate, turn west through St John’s Square and St John’s Path to Britton Street, then north. Follow the south pavement of Clerkenwell Road west to the pedestrian signals beside Old Sessions House. Cross at those signals, then go around the Sessions House towards the Green.",
+      "viewpoint": "From public space on the Green, face the white frontage and red door of the Marx Memorial Library at 37a. Stop clear of café tables and through-routes.",
+      "access": "The 2024 layout differs from old imagery. Follow current paving and works signs; there is no need to enter the library.",
+      "camera": {
+        "latitude": 51.5228942,
+        "longitude": -0.1056014,
+        "captureDate": "2022-07"
+      },
+      "imageryStatus": "Archived researcher observation reused; not newly viewed",
+      "fieldVisit": null,
+      "verification": "desk candidate; current clearance unknown",
+      "evidence": "docs/content/authoring/clerkenwell-2026-09-20/ROUTE-RESEARCH.md"
+    },
+    {
+      "id": "pilot-encounter-flowers",
+      "revision": 1,
+      "landmark": {
+        "name": "Woodbridge Chapel",
+        "address": "Woodbridge Street",
+        "coordinates": null,
+        "coordinateStatus": "not resolved; do not substitute visitor/camera coordinates"
+      },
+      "visitorCandidate": {
+        "latitude": 51.52408,
+        "longitude": -0.10404
+      },
+      "routeIndex": 188,
+      "approach": "Leave the Green by Clerkenwell Close. Follow the Close around the churchyard. At the Three Kings, follow Clerkenwell Close as it bends right, leaving the branch to the left. Turn right into Sans Walk. Follow Sans Walk to Woodbridge Street and turn right. At the Sekforde Street junction, continue down Woodbridge Street to the chapel.",
+      "viewpoint": "Use a clear place on the opposite/northeast pavement. Look across for the brick chapel and white CLERKENWELL MEDICAL MISSION fascia.",
+      "access": "Both pavements are narrow; keep doors and driveways clear. Current church use does not imply access to the former workroom.",
+      "camera": {
+        "latitude": 51.5240594,
+        "longitude": -0.1039649,
+        "captureDate": "2022-07"
+      },
+      "imageryStatus": "Archived researcher observation reused; not newly viewed",
+      "fieldVisit": null,
+      "verification": "desk candidate; current clearance unknown",
+      "evidence": "docs/content/authoring/clerkenwell-2026-09-20/ROUTE-RESEARCH.md"
+    }
+  ]
+}

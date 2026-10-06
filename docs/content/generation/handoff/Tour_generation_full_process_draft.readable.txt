@@ -1,0 +1,321 @@
+Readable copy of Tour_generation_full_process_draft.docx
+Proposed connected process; internal draft 0.1.
+Original Word document included. Body order and table rows preserved; headers, footers and pagination omitted.
+
+Tour generation operating process
+
+Complete process and bounded effort options
+
+Draft 0.1  |  6 October 2026
+
+We propose a complete process for creating a prepared walking tour, from the first user request to delivery and subsequent corrections. It connects the desk team responsibilities already discussed and makes assignments, acceptance, revisions and stopping decisions explicit. The first prototype is London; no routine field team is assumed.
+
+Our recommendation is a balanced process with extra effort directed at consequential weaknesses. We should compare it with a lean process and a deeper process. All three must meet the same essential standard. Extra effort buys wider discovery, stronger alternatives and refinement; it never substitutes for evidence or establishes that a route has been walked.
+
+Status and scope
+
+The maintained Tour_generation_workflow_v1.docx records accepted principles. This document proposes the detailed connections, numerical limits and test configurations. It incorporates wider editorial proposals as draft behavior; those proposals and the new connecting details remain subject to agreement. The implementation register preserves accepted, proposed and tested statuses separately. This drafting exercise runs no generation or device trials.
+
+Standard required in every effort profile
+
+Meet the brief, essential endpoints, area, access requirements and applicable duration constraint. Resolve important physical dependencies through appropriate evidence or an accepted redesign.
+
+Support every factual assertion and physical or practical instruction in the delivered content. Preserve qualifications, source passages and review coverage for the current wording.
+
+Give each substantial passage a worthwhile contribution for this audience and a meaningful connection to the present place. Preserve clear orientation, listening comprehension and time to look.
+
+Deliver consistent final audio, maps, directions, transcripts and other required local resources. Preserve the actual player contract, manual controls and versioned recovery.
+
+Main commitments
+
+| Commitment | Producer must establish |
+| Brief accepted | Enough direction and delegation to commission generation; open questions have owners. |
+| Route and outline accepted | An experience fitting the brief, with essential route dependencies addressed and a coherent timeline. |
+| Content accepted | The current script passes editorial, evidence and physical instruction review. |
+| Package ready | The actual final assets agree and required package and integration checks pass. |
+
+A job ends ready, awaiting a consequential user decision, blocked within its constraints, or cancelled. Retained partial work is a draft, not a ready tour. Device and outdoor observations retain their actual scope; current repository evidence must be inspected before claiming a capability is proven.
+
+Effort profiles and experimental limits
+
+These experimental limits apply to comparable 60 to 90 minute London requests, with variable stop count. They are unmeasured hypotheses. Larger or unusually difficult requests need their own envelope.
+
+| Control | Lean | Balanced | Deep |
+| Distinct candidates seriously screened | Up to 8 | Up to 16 | Up to 24 |
+| Targeted research rounds after the initial passes | 1 | 2 | 3 |
+| Substantive route proposals including the first | Up to 2 | Up to 3 | Up to 5 |
+| Batched content correction passes after initial review | Up to 1 | Up to 2 | Up to 3 |
+| Corrective final renders per affected clip | Up to 1 | Up to 1 | Up to 2 |
+| Optional quality challenge | Required review only | One focused challenge | Challenge plus comparison |
+| First job elapsed time cutoff | 10 minutes | 20 minutes | 40 minutes |
+| Total authorized cost ceiling | C | 2C | 4C |
+
+Set C before paid tests from actual provider prices, required production and an approved budget. No pound amount or provider is selected here. Include all model and tool calls, failures, audio and charged operations. Time cutoffs include final production and tests; they are experiment limits, not turnaround promises. Retain total elapsed time and report human waiting separately.
+
+What changes between the profiles
+
+Lean accepts a supported coherent tour fulfilling the brief. Balanced examines consequential weaknesses and one meaningful challenge. Deep explores more candidates and alternatives. All profiles account for selected stops and legs, check all delivered assertions and review final recordings. If a profile cannot meet the standard, record the failure and a blocked outcome or consequential choice. No compulsory source count or interest score is selected.
+
+A round is one consolidated batch of related questions or corrections followed by a decision. Splitting a batch into more agents or renaming a task does not create a fresh allowance. Candidate screening counts rejected distinct candidates too; duplicates merge. Route and correction counts survive later changes within the job. Technical retries still consume time and money.
+
+Recommended middle ground
+
+Start with Balanced and concentrate effort on important weak stories, uncertain connections or difficult viewpoints. Alternatively, test Lean with a preauthorized reserve for named consequential problems. Record why extra work was selected. Raising the overall envelope requires an explicit authorized decision.
+
+Shared records and task handoffs
+
+Use one versioned tour record with structured essentials and readable explanations. Functions receive a relevant view and references to the actual evidence. A summary helps orientation but cannot replace supporting passages, physical observations or qualifications. Stable identities link the pieces and make affected work discoverable.
+
+| Record | Minimum content for the handoff |
+| Job and brief | Original request; essential requirements, preferences, defaults and delegation; area; audience; dates; duration; profile; budget; current version. |
+| Candidate and stop | Identity and location; selection status; audience rationale; assumed knowledge; intended discovery; present place connection; narrative role and alternatives. |
+| Claim and evidence | Exact usable assertion; source location and supporting passage; scope and qualifications; date context; dispute and verification status. |
+| Encounter and access | Separate landmark, camera and visitor positions; approach, intended view or action; practical conditions; observations, interpretations, unknowns and dates. |
+| Route and timeline | Ordered stops; real route geometry; connections; travel assumptions; speaking and looking windows; overlap counted once; duration and deadline assessment. |
+| Script and assets | Current text and assertion links; directions; delivery and pronunciation notes; clips and actual durations; asset dependencies, rights and versions. |
+| Issue and review | Exact affected item and version; problem, significance and evidence; owner; required resolution; attempts; closure basis and affected dependencies. |
+
+Every assignment
+
+State task identity and owner; the decision or question; scope; relevant brief and input versions; audience context; permitted decisions and limits; authorized tools and effort; required outputs; completion and stopping conditions; and the expected next recipient. The Producer sets the envelope; a function lead can partition work within it without multiplying the allowance.
+
+Task return and acceptance
+
+Execution states are queued, working, returned, blocked and cancelled. Output status separately records proposed, accepted or needs revision. A return names what is usable, what remains open, unsuccessful searches and the next action. Returning an attempt does not establish that its question is resolved. Partial findings remain usable where their evidence and scope permit.
+
+The designated lead or reviewer assesses routine work within its authority. The Producer accepts consequential commitments, resolves cross function tradeoffs and returns choices beyond delegation to the Planner. Proposed work may support clearly marked exploration or a sample; accepted commitments require appropriate review. A missing dependency blocks the work relying on it, while independent tasks continue.
+
+Opening the job and agreeing the brief
+
+S00 Open and bound the job
+
+Owner and trigger Producer when a new request arrives. Inputs are the original request, available service and app capabilities, existing preferences, authorized tools and a preparation envelope.
+
+Create the job and provisional record. Set the profile, hard cost and time limits, stage and correction allowances, concurrency limit and required completion reserve. Identify whether preparation is immediate or for a future date. Current code and evidence determine supported package behavior; older engineering status text is not an implementation result. Reuse compatible reviewed material with provenance.
+
+Exit and next handoff A bounded job with an owner, usable capability context and a Planner assignment. If paid usage is unapproved or essential capabilities are unavailable, retain a concrete blocker and use independently useful authorized work. This stage does not authorize infrastructure or public distribution.
+
+S01 Make the provisional brief
+
+Owner and trigger Planner receives the request and capability context. It preserves what the user actually said and separates requirements, preferences, assumptions and delegation.
+
+Resolve ordinary geography through maps and judgment, including a core area, research extent and permitted route extent. Record endpoints or endpoint delegation; familiarity, famous versus less familiar places, commentary depth and desired discovery separately; pace, access needs, dates and the duration constraint. Local residency alone does not establish neighbourhood knowledge. Begin with one consolidated round of consequential questions when needed. Another round needs a new material choice or genuine unresolved essential; do not repeat unanswered prompts. Optional preferences do not become an intake questionnaire.
+
+Exit and next handoff Enough scope and audience direction to commission bounded discovery or proceed under a precise request. Missing essentials that materially change this decision return to the user through the Planner. Research can resolve factual gaps later; the brief need not contain a finished itinerary.
+
+S02 Discover and establish the direction
+
+Owner and trigger Producer assigns bounded discovery to the Research Lead from the provisional brief. Early Route Designer input checks consequential endpoint travel or geographic feasibility.
+
+Use relevant reviewed knowledge and broad source entry points selectively. Find promising material and clusters, audience reasons, obvious practical restrictions and consequential uncertainties. Return a recommended experience direction with supporting leads and only meaningfully different alternatives. A source directory is not an exhaustive checklist. The discovery task ends when the next concept decision is supported or its limit is reached.
+
+The Planner explains the recommendation, choices and assumptions in ordinary language. Record the selected or delegated direction. A precise request can bypass another concept discussion. A concept offers an experience, without promising unchecked stops. The Producer records brief acceptance and commissions deeper research, route development and consequential early scouting.
+
+Failure and stopping If no promising direction emerges, one targeted recovery round must name what changes in scope, source or question. It uses the existing allowance. Otherwise offer a concrete permitted alternative, return a consequential choice or stop blocked; never repeat broad discovery indefinitely.
+
+Research route development and scouting
+
+S03 Build the candidate and feasibility picture
+
+Owner and trigger Research Lead and Route Designer receive the accepted brief, discovery findings, shared evidence and actual tool capabilities.
+
+The Research Lead assigns question led history, interpretation and practical tasks. Prioritize material likely to change selection or interpretation. Search beyond place listings for street features, vanished sites and stories with a usable present place anchor. Keep exact assertions and passages, disputed accounts, source failures and negative findings. Deeper research serves distinctive supported insights, rather than accumulating generic facts.
+
+The Route Designer uses real routing outputs to test required endpoints and plausible clusters, then develops a provisional sequence, narrative roles and whole experience timeline. Every candidate is judged for what the visitor encounters, audience value, connection cost, repetition and uncertainty. Stop count is variable. The Scout first checks consequential anchors and connections that could undermine this proposal.
+
+Exit and next handoff A coherent initial route and outline proposal, candidate dispositions, usable claims and specific questions for development. If baseline travel consumes the requested time, the Producer returns the actual endpoint, duration or experience tradeoff through the Planner. Do not quietly relax fixed requirements.
+
+S04 Converge on the route and outline
+
+Owner and trigger Route Designer coordinates current research and scouting returns through the Producer. Each round has a short list of decisions that could change the route, encounter or story.
+
+Deepen selected stories and the most useful alternatives. The Scout accounts for every selected stop and leg, inspecting actual imagery with scene and map context, and deepening consequential uncertainties. Retain separate camera and visitor positions, capture or unknown dates, check dates, interpretations and practical conditions. Missing imagery alone is not rejection; a map line alone is not access evidence.
+
+Revise route, viewpoints, timing, directions and narrative roles together. Explicitly count walking speech overlap once and preserve looking, navigation and silence. Start with substantial stories at stops and selective short passages on simple legs. Distinguish approximate duration from a hard finish; buffers are calibrated rather than assumed universally. Supply the Writer with each stop's audience rationale, baseline, discovery, present anchor and narration budget.
+
+Exit and acceptance Producer accepts the current route and outline when it fits the brief, essential dependencies are addressed, substantial stops have supported interpretive potential and the timeline is credible. Record remaining manageable conditions and optional visits. Evidence must justify how an essential uncertainty is resolved or dependence removed.
+
+Stopping rule Once this commitment is accepted, ordinary new candidate discovery stops. Later optional improvements enter a backlog. A new blocker or material brief mismatch may reopen affected design, using the remaining global allowances. One attractive weak story cannot keep the whole route in research indefinitely.
+
+Writing editing and assertion review
+
+S05 Prepare and write the tour
+
+Owner and trigger Writer receives the accepted brief, route and outline, evidence, checked encounters, audience rationale, time budgets and playback context.
+
+Make a short whole tour narrative plan: the intended discoveries, progression, repeated ideas to avoid and what the present places contribute. Resolve a representative voice sample early where useful. Draft substantial stop passages, necessary transitions and directions with claim references, pronunciation notes and a separate spoken transcript. Creative explanation and questions remain within evidence; invented scenes, dialogue, anecdotes and eyewitness experience cannot supply missing research.
+
+Use explicit, revisable assumptions about what the listener recognises or knows. Give context needed to understand the less obvious material. Surprise, significance, human stakes, noticing and pleasure can earn time; a hook should repay attention. The school example calls for supported differences in that school and period, rather than a generic school day. A worthwhile passage need not follow a compulsory dramatic structure.
+
+Exit and next handoff A complete internally annotated draft with a coherent spoken version and identified gaps. New factual additions return as targeted research questions. Structural proposals affecting the route or budget return to their owners; the Writer cannot silently reorder the physical walk.
+
+S06 Edit verify and close content issues
+
+Owner and trigger Editor first assesses the whole draft, then wording. A fresh Verification reviewer receives the final edited version with actual evidence and encounter records.
+
+Edit for audience value, comprehension, repetition, transitions, location connection and pacing. Preserve useful orientation and necessary context after a skip. Then review every factual assertion and physical or practical instruction, including causal framing, implications, quotations and superlatives. Reuse support that remains valid for current wording; a claim ID or earlier approval cannot cover a changed proposition. Model agreement is not corroborating evidence.
+
+Consolidate findings into one issue list per pass. Each issue identifies the exact passage and version, evidence, significance, owner and closure requirement. The Writer and relevant specialists correct the batch. Check changed assertions and affected context after correction; do not automatically re-research unchanged supported material. New evidence of a defect still requires action.
+
+Exit and acceptance Producer accepts content once the script meets the brief and all required editorial, factual and physical reviews cover its current version. Essential unsupported material is evidenced, accurately qualified where support permits, removed or replaced within the brief. Optional polish can remain explicitly deferred.
+
+Stopping rule The profile bounds correction passes across this stage and later production. Reviewer disagreement about taste goes to a Producer decision. Factual disagreement returns to evidence or a conservative supported treatment. Budget or repetition never closes an unresolved defect by itself.
+
+Rehearsal and final production
+
+S07 Rehearse the provisional experience
+
+Owner and trigger Builder assembles accepted route and content with temporary narration. Editor and Tester inspect the provisional experience, with Route Designer support for timing and orientation.
+
+Rehearse the whole script in the intended delivery and inspect representative audio for difficult pronunciation, dense explanation and physical instructions. Temporary audio or a paced spoken read through can expose problems before final production. Tools must actually support audio inspection for claims about listening review; a transcript or word count alone does not establish what is heard. Owner listening provides calibration during supervised prototypes.
+
+Run journey scenarios using actual planned positions and timing: early arrival while another story continues, slow travel, looking pauses, skip or replay, interruption and weak location. Check whether directions and essential context remain useful within the supported player behavior. Preserve manual pause; avoid overlapping narration or stale instructions behind the listener. Silence is part of the planned experience.
+
+Exit and next handoff A provisional package and closed rehearsal findings, with content acceptance renewed for any changed text. The timeline and reviewed route agree. Relevant defects use the existing correction allowance; optional discoveries do not trigger a fresh concept search.
+
+S08 Produce final audio and assemble
+
+Owner and trigger Builder's audio production responsibility receives current accepted spoken text, pronunciation and delivery notes, voice configuration and authorized production resources.
+
+Start with one clear voice and no soundtrack. Render clips with stable references. Permitted reuse requires compatible spoken text, pronunciation, voice and delivery settings, format and rights. Check intended meaning, pronunciation, completeness, pacing and technical usability against final recordings. Automated comparisons assist review and can miss or mishear errors. Corrective renders count against the same logical passage even if a file is renamed.
+
+Measure every final clip and update the whole experience timeline. Longer narration may require a delivery change, a supported edit or timing redesign; do not silently strip qualifications or compress speech beyond comprehension. Reopen affected reviews, geometry or directions where necessary. Produce package metadata, transcripts and final asset references from the same versioned record, retaining rights and attribution.
+
+Exit and next handoff A candidate final package with reviewed recordings, actual durations, compatible required assets and current content acceptance. Source an alternative recording or stop blocked if production remains defective beyond the allowance. New paid requests remain within the budget; an unknown result is not permission to generate duplicates.
+
+Testing readiness delivery and maintenance
+
+S09 Test the actual package and decide readiness
+
+Owner and trigger Tester receives the candidate package, current brief and accepted records, asset and review references, and the target player version. Assessment is separate from assembly.
+
+Run deterministic checks on every candidate: required fields, coordinate validity, connected planned legs, resource presence, references, rights records, review coverage, checksums, audio duration and version consistency. Offline maps require their actual renderer resources and coverage, alongside the stored route and directions. Test relevant integrated scenarios through the actual player or compatible harness; a written simulation alone misses assembly errors.
+
+Exercise import, missing or corrupted resources, interrupted installation, offline cold start, manual controls and recovery. Reuse applicable platform validation for unchanged capabilities; new relevant behavior or observed failures require broader checks under the roadmap. Record exact package and player versions and whether evidence is automated, physical device or outdoor. A desk reviewed tour cannot be described as having been walked.
+
+Exit and acceptance Tester reports named findings and closure evidence. Producer assesses the exact final package against the brief and required results. Unsupported assertions or instructions, unresolved critical access, missing required assets and failed required playback behavior block readiness. Optional suggestions can be deferred with a reason. A necessary application capability missing from current evidence remains a capability blocker, rather than being silently removed from the promise.
+
+S10 Deliver refresh and learn
+
+Owner and trigger Producer delivers a ready package; Planner handles a consequential user choice when needed. Delivery uses the tested content version.
+
+Give the visitor the intended start and end, duration expectation, distance, physical demands, relevant access conditions, optional visits and starting instructions. Explain material limitations or preparation needs in useful language. Delegated routine choices need no redundant approval. Local delivery is distinct from public publication. Preserve the accepted package as an identifiable version.
+
+For advance tours, record which changing dependencies need rechecking and the intended refresh window. A separately activated departure refresh has its own bounded task and existing authorization; this draft does not create a scheduled automation. Reuse stable history, recheck consequential practical information and redesign if a closure breaks the route. Without a supported refresh, state the actual check dates and limits rather than implying live verification.
+
+Offer accepted updates as coherent new versions. Active walks keep their content version and compatible progress; do not silently swap clips or route data mid session. Visitor reports initiate investigation, retain date and context, and identify affected tours. Confirmed improvements update relevant records with provenance. Ordinary reports do not restart finished jobs indefinitely.
+
+Terminal record Record ready, awaiting a consequential user decision, blocked or cancelled, with the delivered version or retained drafts, reason, unresolved obligations and next action. Maintenance is a new bounded task; it does not reset the original job's counters or rewrite its measured costs.
+
+Rules that prevent endless loops
+
+The Producer manages one issue queue and one finite envelope for the job. Stage completion is based on named obligations and evidence. More iterations are useful only when they can change a decision, remove an important defect or materially improve the experience within the remaining allowance.
+
+Every followup names the unresolved question, what will differ from the previous attempt and the evidence or change that would finish it. A repeated general request for more research or better writing is rejected as an assignment.
+
+Group related findings into a correction pass. Preserve the meaning and identity of an issue across paraphrases, task splits and renamed records. Duplicate reports share one owner and one resolution; they do not create independent retry allowances.
+
+Count substantive route proposals, targeted research rounds, content correction passes and corrective audio renders across the whole job. Returning to an earlier stage consumes the remaining allowance; it never starts the counter again.
+
+Stop for Producer arbitration after two consecutive substantive attempts neither add decision changing evidence nor resolve a required issue. Lean may reach its smaller limit earlier. If a proposal oscillates A to B to A, stop immediately unless new external evidence or an actual requirement change explains the return.
+
+A closed issue reopens when its supporting input, meaning, physical dependency or relevant requirement changes, or when new evidence identifies a defect. Another unsupported opinion about unchanged material is not enough to restart review.
+
+After route acceptance, freeze ordinary candidate discovery. After content acceptance, freeze optional stylistic improvement. New blockers and material brief failures still require action; improvements without a consequential benefit go into a future version backlog.
+
+Do not hold the whole tour for a weak optional anecdote. Within delegation, remove it, choose a supported treatment or replace the stop, then repair affected timing and connections. A user required stop or essential access condition cannot be waived by this rule.
+
+Producer arbitration chooses a specific bounded repair, a compatible previously accepted version, a permitted redesign, a consequential user decision, or a blocked outcome. An older version is reusable only if still compatible with current evidence and constraints.
+
+Stopping means no new optional work. It never means that unsupported claims, inaccessible essential connections or missing resources become acceptable. The essential standard and the effort envelope can jointly produce a blocked result.
+
+Review disagreement and diminishing returns
+
+Editorial preferences receive a reasoned Producer decision. Factual and physical disagreements receive evidence, supported qualification or removal. Preserve unresolved disputes when relevant instead of inventing a consensus. A request for another independent opinion must state what uncertainty it could settle; repeated agent votes cannot replace source inspection.
+
+Before optional refinement, the Producer records the specific weakness, expected listener benefit, proposed action and its cost in remaining time and budget. If required work is complete and no affordable improvement has a clear benefit, accept. This judgment remains qualitative: do not introduce a numerical interest score or a compulsory hook to manufacture a stopping rule.
+
+Budget failure and change control
+
+Budget enforcement before dispatch
+
+Track incurred usage, estimated outstanding commitments and conservative reservations for unfinished required work. Do not launch another optional task if the cost ceiling, elapsed deadline, stage limit or correction allowance would be exceeded. Start with a proposed 25 percent completion reserve and increase it when estimated mandatory review, audio or testing requires more. This reserve is not guaranteed sufficient and is tested with real costs.
+
+Reserve concurrent tasks before dispatch, using one ledger. Completion releases unused estimates and records actual usage; failed or cancelled work may still incur provider costs. Set per task deadlines within the overall deadline. Configure a small concurrency limit after inspecting available tools and staffing, and measure elapsed time and total agent work separately. As the cutoff approaches, cancel optional work where supported and assess whether required work can still finish. Do not promise that cancellation erases cost or instantly stops a provider operation.
+
+Failure recovery
+
+Allow at most one automatic technical retry for a transient tool failure, within the same task allowance. It must be safe to repeat. An uncertain paid production or write outcome is checked before retrying; do not blindly duplicate it. Persist successful findings, source failures, input versions and partial outputs so an interrupted task resumes required work instead of recreating completed work.
+
+User waiting suspends dependent work. Independently useful tasks may continue within the envelope, but waiting does not authorize new spending or a budget reset. Record total elapsed time, active preparation and user waiting separately. If an essential answer is still absent at the applicable deadline, retain an awaiting decision or blocked outcome; silence is not agreement.
+
+What a change reopens
+
+| Change | Assess and reopen affected work |
+| Audience or experience direction | Brief priorities, candidate selection, outline, commentary and acceptance. Reuse facts only where their support remains valid. |
+| Stop closure or visitor position | Encounter and access, route geometry, connections, directions, timeline, location wording and package resources. |
+| Claim or wording | Evidence scope, affected assertions and editorial context; audio and transcript if delivered speech changes. |
+| Voice or audio rendition | Pronunciation, intelligibility, actual duration, sequencing and affected asset checks; unchanged historical evidence remains reusable. |
+| Package format or player behavior | Compatibility and relevant integration or physical checks; do not claim old device results cover a changed capability. |
+
+A user change creates a new brief version and a deliberate reassessment of remaining work and envelope. Explain a material consequence rather than asking about every routine edit. A new epoch or replacement task retains total incurred usage; fresh budget exists only when explicitly authorized. Shared writes reject or reconcile stale results, retaining useful evidence without promoting an obsolete decision.
+
+Comparing quality time and cost
+
+A small supervised comparison first
+
+Begin with one bounded calibration run using current available tools to price required research, review and production and choose C. Reconcile actual app capabilities and prepare the result record. Then compare Lean, Balanced and Deep on the same straightforward London brief. Only expand to further matched requests after inspecting those results and confirming the experiment budget. No paid trial is authorized by this draft.
+
+Use at least two contrasting followup briefs when the first comparison is useful: classic sightseeing with an accessible introduction; and unusual discovery for someone familiar with the area. Add a demanding fixture with fixed endpoints, a hard finish, an access requirement or a closed connection. These test whether the cheapest configuration succeeds only on easy requests. Briefs hold time and essential constraints comparable; selected stops may differ.
+
+Make the comparison interpretable
+
+Hold models, tools, source access, player version and voice comparable. Keep new findings from one run out of another unless deliberately testing reuse. Label cold and warm runs, cache hits and order; counterbalance listening where possible. A changed cache, provider or staffing configuration cannot be attributed to the effort profile.
+
+Set the essential acceptance criteria before each trial. Listen without knowing the profile where practical. Record brief fit, discoveries understood, present place connection, comprehension, orientation, pacing, repetition, trust and willingness to take or recommend the walk, with examples. Record the minimum quality judgment separately from preference between two acceptable tours. Numerical feedback ratings may supplement examples; they are not factual confidence or an interest scoring rule.
+
+Report the complete economics
+
+Total elapsed time, active preparation, user waiting and critical path; total agent work and time by stage. Report cutoff exits as failures or partial drafts, not fast completions.
+
+Total charged cost by stage, including failures, retries and discarded audio; total experiment cost per ready tour and successful job costs. If none are ready, report spend and zero successes.
+
+Candidate screening, source and routing calls, evidence reuse, required and optional issue counts, correction passes, reopened stages, duplicate work and final asset reuse.
+
+Readiness rate, missed seeded defects, unsupported assertions, unresolved dependencies, required corrections, listener experience and separate outdoor or device observations.
+
+Decision after the comparison
+
+Choose the cheapest configuration meeting the standard and providing a worthwhile experience for the relevant brief class. Repeated failures can make apparently cheap runs costly per ready tour. Identify benefits bought by extra work and whether Balanced or targeted refinement retains them.
+
+This comparison is exploratory. Repeat when variability or failures affect the decision. Revise cutoffs, C multipliers and round caps from evidence. Preserve factual coverage, access requirements and honest readiness criteria.
+
+Worked handoffs and prototype choices
+
+Example assignment for initial discovery
+
+Illustrative request: a one hour Clerkenwell walk seeking less familiar places. The Planner records the working extent, applicable time constraint, audience assumptions, endpoint delegation and any access requirements. No actual places or historical facts are asserted by this example.
+
+Decision Identify one promising experience direction with enough support to proceed to route development, and materially different alternatives only if useful.
+
+Inputs and authority Use the current provisional brief and reviewed reusable findings. Discover within the research extent; preserve the permitted route boundary. Suggest endpoints only if delegated. Do not promise an unchecked stop or relax the hour.
+
+Return A recommendation with audience rationale, geographic cluster, supporting candidate and source references, obvious dependencies, failed leads and next research questions. Each concept records why it should reveal something beyond the assumed audience baseline.
+
+Stop Return when the decision is supported or the assigned discovery limit is reached. If unsuccessful, name the changed question or source for one permitted recovery batch, or the concrete choice required. The Producer and Planner decide the next step.
+
+Example route change after acceptance
+
+A supported new closure invalidates an essential connection. Record one issue against the connection and affected route version. The Producer pauses dependent directions, writing or production and assigns a bounded redesign to the Route Designer. Research and Scout inspect the replacement where needed. Reuse historical claims only where valid; rebuild affected geometry, timeline, orientation, passages and resources. Check the current proposal and accept it only after the dependency is addressed.
+
+If no compliant connection remains within the current allowance, the Planner presents a real endpoint, duration or inclusion tradeoff when it could solve the problem. Otherwise stop blocked with useful drafts retained. The closure does not restart discovery, research and editorial counters or make the previously accepted route usable.
+
+Example editorial oscillation
+
+An Editor asks for more atmosphere; the Reviewer finds that the revision implies an unsupported school day scene; another edit restores the original scene. Consolidate the reports around the same passage. The Producer chooses a supported interpretive treatment tied to the present place and this audience's discovery. Ask one specific research question if it can settle an important gap within the remaining allowance. Do not alternate evocative and factual versions indefinitely.
+
+Implementation handoff and tests
+
+Prototype records, handoffs, version dependencies, issues, counters, budget reservations and logging locally, using the actual package interface. Keep orchestration small. Infrastructure and expanded modes remain separate choices; supervised E1 and the current roadmap govern progression to automation.
+
+The register adds G08 and G09 for effort profiles and convergence, and T37 to T39 for comparison, oscillation and budget failures. Existing tests cover content and playback. Detailed connections and limits remain proposed; this draft records no test result.

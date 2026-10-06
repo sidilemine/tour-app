@@ -1,0 +1,43 @@
+# First local generation prototype — 6 October 2026
+
+**Implemented and locally exercised; live subscription workflow and pilot acceptance blocked.** The owner’s pasted launch request selects reversible proposal defaults with US$0 direct paid usage. This is a bounded local prototype, not M2/E1 acceptance, a production M5 factory, or a controlled model comparison. The [working register](IMPLEMENTATION-REGISTER.md), [run/resume instructions](README.md) and [pilot](PILOT.md) are the continuation record.
+
+## Delivered and checked
+
+The TypeScript CLI retains append-only authoring revisions, exact dependencies, explicit unknowns, scoped role inputs, independent execution/acceptance, shared issues, bounded correction/arbitration, a cumulative operation ledger and atomic restart checkpoints. Planner/Producer decisions are serialized. Changed inputs invalidate affected work; later negative reviews revoke dependent package acceptance. Returning a fresh positive review still requires a new Producer decision. Role outputs cannot overwrite another responsibility’s records. Semantic truth and editorial judgment remain reviewed judgments.
+
+`npm run typecheck`, `npm run lint` and `npm test` pass: **201 tests**, including 14 generation lifecycle tests, 17 provider tests, four actual-pilot tests and the 166 existing app tests. The final readiness correction is covered in the lifecycle suite. `npm run docs:check` and `npm run check:map` pass; all four bundled map resource sets remain valid. `pilot.ts --check` passes the actual mobile parser and all six audio hashes; re-running `import-pilot.ts` validates the existing 71-record manual job without creating operations or losing history. All six recordings were fully decoded, measured and matched to exact inputs.
+
+The CLI fixture was initialized, run, resumed and reported. It retains three settled zero-cost operations and terminates **blocked**, as designed, because synthetic evidence and an unknown encounter cannot become a real tour. [Retained fixture snapshot](../../../fixtures/generation/handoff-result.json). Failure coverage includes unsupported/qualified text, missing physical evidence, stale route/script reviews, duplicate issues, no-progress/oscillation, role/context isolation, pending charges, concurrent writes, interrupted execution/reconciliation, superseded reviews, corrupt package audio and immutable package versions. Provider fixtures cover OAuth state/PKCE/nonce/signature, explicit contexts/history, namespaced function dispatch, schema/image requests, safe errors, quota and incomplete streams. These are deterministic results, not live account grants or listening passes.
+
+There are no dependency, native, mobile runtime, bundled map, installed-tour or guide-content changes. Existing physical player evidence is reused within that unchanged scope. No APK build, installation, audible phone test or outdoor check was performed or needed to validate these tooling changes. The pilot reducer regression checks manual hold on its candidate geometry; it does not establish new native GPS behavior.
+
+## Actual access and spending
+
+The first loopback sign-in attempt was denied by the sandbox before authentication. The authorized retry opened the official **Use ChatGPT to sign in to Tour app local generation** account chooser, then timed out after 180 seconds without creating an app credential. No owner confirmation of completed consent or disabled overflow arrived. Actual T43 preflight stops before inference with `app_sign_in_required`; its durable local ledger is settled at US$0, with token usage unavailable. No successful live capability or generation request is claimed. No unrelated credentials, private ChatGPT endpoints, SDK harness or paid API fallback were used.
+
+| Activity | Actual result | Direct charges | Usage/time limits |
+| --- | --- | --- | --- |
+| Generation fixture | Three operations; run/resume preserved | US$0 | Synthetic; no tokens or model comparison |
+| App SIWC/T43 | Official chooser opened; timed out; preflight blocked | US$0 | Zero inference dispatch; account grant/overflow/model remain unverified |
+| Public Valhalla route preparation | Five requests: two JSON parse failures; three completed solutions, one rejected | US$0 | Accountless public demo; retained public coordinates/responses; no private trace |
+| Cached local Kokoro George | Six complete recordings, 635.2 seconds total | US$0 | Actual renderer elapsed and per-file timings in preparation metadata; no cloud voice request |
+| Manual research/adaptation/review | Retained sources refreshed and narrow independent review repaired metadata | US$0 external charges | Codex implementation assistance is not measured runtime usage; active time/API-equivalent unknown |
+
+There is no production cost, latency or capacity estimate. API-equivalent calculations exist only where actual model usage and dated prices are present; unavailable usage stays null. The manual calibration was retrospective and outside a timed model job: its research/route/correction counters document work, not compliance with a matched 20-minute run. The 20-minute cap applies to live generation dispatch, not this implementation assignment. All direct paid usage observed is **US$0**.
+
+## Pilot evidence and remaining gates
+
+The distinct `clerkenwell-balanced-pilot@1` package contains six George narratives, the current Clerkenwell local map identity and a 2.245 km Farringdon loop. Measured stationary narration is 10.59 minutes; estimated movement is 29.93 minutes at 4.5 km/h, leaving 19.49 minutes for looking/crossing/settling. This is a desk-plausible hour, not an observed walk. The six complete recordings exceed the three-sample target. Quiet walking legs are an explicit pilot choice, not an inference that the owner rejected the earlier two-chapter experiment.
+
+A fresh retained-source review found physical paragraphs misclassified as editorial and an insufficiently narrow flower-making excerpt. The physical groups now depend on actual encounter records; the reopened source supports the flower process with minimal qualified fragments. See [exact review/repair limits](../../../content/generation-pilot/REVIEW.md). The package remains structurally valid and deliberately unaccepted. General tests do not establish factual entailment, comfort, pronunciation or safety of a proposed position.
+
+Station and Smithfield standing positions remain unresolved. Supplemental official pages confirm the [Cowcross Street station address](https://tfl.gov.uk/hub/stop/HUBZFD/farringdon/) and [Smithfield public-realm works planning](https://www.cityoflondon.gov.uk/services/streets/projects-and-proposals/smithfield-area-public-realm-and-transportation-project); neither proves the proposed pavement position is clear today. Older imagery is explicitly dated and not represented as a fresh field inspection. The 71-record candidate retains three required open issues and **zero acceptance decisions**: exact-version final content review, physical access and listening. No installed tour or earlier progress was changed.
+
+## Smallest continuation
+
+1. For live reasoning, complete the app’s official sign-in and explicit plan-use consent, then actually check that its credit overflow is disabled in ChatGPT Usage. The engineer records that observation and runs the small T43 probe before generation. Instructions are in [README](README.md#official-subscription-access). Failed probes never authorize API billing or retries with unknown outcomes. A new bounded calibration needs separately named retained files if the old envelope has expired.
+2. For subjective feedback, the three representative samples take **5 minutes 28 seconds**: Smithfield, Booth panels and Woodbridge Chapel. The [pilot procedure](PILOT.md#review-and-smallest-useful-owner-procedure) asks what stayed with the listener, what confused/dragged and how George sounded. Nothing plays automatically.
+3. The engineer finishes current-version evidence review and resolves exact exterior-position evidence before preparing a candidate for ordinary use. No full walk, phone connection or endurance campaign is requested now. A later ordinary loop can answer pacing/access questions after those gates are resolved.
+
+Runtime search/imagery tool dispatch is not integrated or verified; this slice receives retained permitted source records. Automatic credential refresh, a generic media builder for arbitrary areas, unrestricted maps, paid API execution and T42/T44/profile/theme comparisons remain outside the demonstrated slice. Changed tool access/voices/starting knowledge must be recorded before comparing workflows.

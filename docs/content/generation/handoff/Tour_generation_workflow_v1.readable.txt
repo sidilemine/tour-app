@@ -1,0 +1,407 @@
+Readable copy of Tour_generation_workflow_v1.docx
+Accepted operating principles; internal version 1.7.
+Original Word document included. Body order and table rows preserved; headers, footers and pagination omitted.
+
+Tour generation workflow
+
+Agreed process and operating decisions
+
+Version 1.7  |  Decisions updated 6 October 2026
+
+We will use a desk based team of AI agents to create tours, with one Producer responsible for the finished result and a shared tour record connecting the work. The process combines collaborative planning, research, route design, remote inspection, writing, review and testing.
+
+This document records our agreed process and operating defaults. Pages 1 to 5 describe the baseline. Pages 6 and 7 record Planner, Producer, shared record and lifecycle decisions. Page 8 identifies remaining specification work. Pages 9 to 11 cover the London pilot, audience, geographic scope, research and sources. Pages 12 and 13 record accepted Route Designer and Scout responsibilities. Page 14 records accepted building, testing and release responsibilities.
+
+Scope and limits
+
+London is the initial test city before generalising to other cities. The workflow can support walking, driving and bus tours, with mode specific logistics and checks. We assume access to desk research, maps, imagery and available routing tools. There is no field team to walk or drive a proposed route before release.
+
+Remote evidence can support particular observations and practical decisions. A desk simulation can check the package and its expected behaviour. Neither establishes current street conditions or proves the outdoor experience. The tour must account for what remains uncertain.
+
+Principles already agreed
+
+The user helps establish the brief and direction. Routine choices can be delegated to the team through clear defaults.
+
+Research and route design develop together. Interesting material must earn its place through both its story and the experience of reaching it.
+
+Historical claims, physical observations and operational information have separate evidence records and review needs.
+
+Consequential uncertainties are resolved before full writing and expensive audio production. Optional experiences can sit around a dependable core.
+
+Writing, editing and verification have distinct responsibilities. Review checks the actual evidence and the finished script.
+
+Changes flow through the shared record so affected directions, timing, commentary and assets are reviewed again.
+
+Workflow at a glance
+
+Agree the brief and concept. Research the material while designing and remotely inspecting the route. Agree a feasible route and story outline. Write, edit and verify. Build and simulate the tour, then produce and check final assets. Deliver with practical information and refresh changing details when needed.
+
+Functions in the team
+
+These are responsibilities to define. Several may be performed by one agent, and specialists are called when their work is needed. The staffing pattern can change while the responsibility for each output stays clear.
+
+| Function | Responsibility | Main output |
+| Producer | Coordinate the work, resolve conflicts, manage dependencies and determine whether the tour meets the agreed release criteria. | Current plan, decisions and release assessment |
+| Planner | Work with the user to establish the experience, constraints, priorities and level of delegated choice. | Brief and selected concept |
+| Research lead and researchers | Discover relevant material, investigate selected questions, retain usable claims and record evidence and unresolved questions. | Research dossier and evidence records |
+| Route designer | Choose stops, connections, order, timing and alternatives while developing the narrative outline. | Route and timing model |
+| Virtual scout | Inspect remote imagery and practical information for stops and route segments; record exactly what the evidence shows. | Physical observations and practical issues |
+| Writer | Turn the agreed outline and supported material into clear, engaging commentary and transitions. | Script linked to stops and claims |
+| Editor | Review structure, comprehension, voice, pacing and fit with the audience and brief. | Editorial issues and revised script |
+| Verification reviewer | Check factual claims and physical instructions against their sources, with appropriate scope and qualifications. | Verification findings and unresolved issues |
+| Builder and tester | Assemble the tour in the app format and check assets, navigation, playback, timing and expected recovery behaviour. | Validated tour package and test results |
+
+Responsibility across handoffs
+
+The Producer owns the finished experience. Each specialist supplies findings or changes that another function can inspect and use. Open issues need an owner and a proposed resolution; producing a plausible document is not enough to complete a task.
+
+Review findings can return work to research or route design. Removing a stop may require a new connection, a timing adjustment and a rewrite of the story sequence. Small corrections should trigger only the work they actually affect.
+
+Planning research and route design
+
+1 Establish the brief
+
+Collect the information that materially changes the tour: area and starting point, date or time, transport mode, available duration, interests, companions, pace and access requirements. Establish familiarity with the area, preferences for well known or less familiar places and desired commentary depth. Separate essential constraints from preferences. Present a concise brief with visible assumptions and sensible defaults for delegated choices.
+
+Output An agreed brief with constraints, priorities and the information still needed.
+
+2 Explore and choose a direction
+
+Do a bounded discovery pass to identify promising material, geographic clusters and obvious practical constraints. Use existing place knowledge where it is relevant and sufficiently current. Offer two or three concepts only when the differences would meaningfully change the experience. Explain likely duration, physical demands and inclusions. A precise request may already select the concept.
+
+Output A selected direction, provisional scope and a list of questions for deeper research. User collaboration happens before substantial writing.
+
+3 Research broadly then deepen selected material
+
+The Research lead assigns questions by theme, geography or uncertainty. Retain claims and story possibilities with their sources, including credible local and local language material. Treat reviews as discovery leads where stronger evidence is needed. Record rejected candidates and their reasons so the team does not repeatedly investigate the same dead ends.
+
+Keep historical and cultural evidence separate from physical observations and operational information such as access, opening hours, restrictions and bookings. Deepen promising candidates as the route takes shape, while preserving enough breadth to find a better stop or story.
+
+Output A research dossier, candidate stops, supported material and explicit unresolved questions.
+
+4 Develop the route and story outline together
+
+For each stop, establish what the visitor encounters, why it matters, how it connects to the story and what it costs in travel and attention. Estimate the actual journey and add commentary, observation time, breaks and plausible delays. Record the location of the object separately from the visitor position and any playback position.
+
+The Virtual scout examines proposed stops and connections. For a physical instruction, record where the visitor stands, which way they face, what they are expected to perceive and what evidence supports that expectation. The outline and route can change as research and inspection reveal constraints.
+
+Output A proposed route and narrative outline, timing assumptions, alternatives and dependencies requiring a decision.
+
+Review production and delivery
+
+5 Resolve consequential uncertainty
+
+Record what remote evidence shows, its location, when it was checked and the imagery capture date when available. A mapped connection alone does not establish that a route is usable for the intended visitor. Essential access requirements need adequate evidence.
+
+The Producer can redesign around an unresolved dependency, reduce dependence on it by making a visit optional, or qualify a manageable uncertainty that matters to the visitor. Assess history, physical conditions and operational details separately. The result should have a dependable core and explicit remaining limitations.
+
+Output An agreed route and outline with essential dependencies resolved and remaining uncertainty recorded.
+
+6 Write edit and verify
+
+Give the Writer the brief, route, outline, evidence and timing budget. Allow creativity in explanation, transitions, questions and voice. Any new factual addition goes back to research. Do not invent eyewitness experience, personal memories or local testimony.
+
+Review the actual script for editorial quality, factual support, physical instructions and fit with the audience. Verification consults the relevant sources; agreement between agents is insufficient evidence. Assign each issue to an owner and assess how its correction affects the route and other content.
+
+Output A reviewed script matched to the current route and evidence.
+
+7 Build simulate and produce final assets
+
+Assemble the tour in the actual app format. Use temporary audio before expensive production. Check plausible fast and slow travel, pauses, interruptions, skipped stops and location uncertainty, within the app capabilities actually available.
+
+Use deterministic checks for missing fields, invalid coordinates, disconnected legs, asset references, clip duration and version consistency. Simulate whether instructions arrive in time, narration fits and the story remains coherent. Produce final narration after this pass and check its measured duration again. Localised versions need their own review.
+
+Output A complete tour package that passes the defined checks. Simulation establishes package consistency and expected behaviour, with outdoor conditions still unverified.
+
+8 Deliver refresh and learn
+
+Show the concept, map, estimated duration range, distance, physical demands, starting instructions, inclusions and optional visits. Allow useful adjustments before final production without imposing a long approval process on every request.
+
+Refresh changing operational information near departure when the trip is in the future. A changed opening time may need a narrow update; a closure that breaks the route requires redesign. Use visitor reports to investigate directions, access, visibility and pacing. Preserve confirmed improvements in shared place knowledge.
+
+Output The delivered tour, its practical information, refresh needs and a record of subsequent corrections.
+
+Shared records and governing rules
+
+All functions use the same current tour record. It contains enough evidence and decisions to explain why the tour has its present form and to identify what must change when an assumption fails.
+
+| Record | What it must preserve |
+| Brief and decisions | User requirements, preferences, assumptions, chosen concept and reasons for consequential choices. |
+| Candidates and stops | Place identity, role in the experience, selection or rejection reason, and any optional status. |
+| Claims and sources | Exact usable claim, source location, scope, qualifications and unresolved disagreement. |
+| Physical and operational evidence | Observation or practical assertion, source, location, checked date and capture or effective date where known. |
+| Route and timing | Order, visitor and object positions, connections, transport mode, time assumptions and alternatives. |
+| Outline script and assets | Story structure, commentary and directions matched to stops, playback settings and final asset references. |
+| Issues reviews and versions | Issue owner and resolution, review results, current versions and changes that invalidate earlier checks. |
+
+Evidence and uncertainty
+
+Keep the claim within what its source establishes. Preserve disputed interpretations and qualifications where they affect the story.
+
+Separate historical support, physical observations and operational freshness. One overall confidence score must not hide a weak essential dependency.
+
+A physical observation needs a location and time context. Record unknown capture dates as unknown.
+
+Resolve an essential unknown through evidence or redesign. Carrying it forward requires a defensible change to the experience, such as an optional visit.
+
+Change and release rules
+
+Changing a stop flags its directions, commentary, route connections, timing and assets for review. Changes to wording, routing and audio have different consequences. Completed reviews must refer to the version they checked.
+
+Release requires the agreed brief, feasible route assumptions, supported commentary, resolved essential issues and a consistent tested package. The Producer controls progression and consequential decisions. Detailed acceptance criteria for each function remain to be specified.
+
+Efficiency and maintenance
+
+Reuse place knowledge with provenance and review dates. Refresh changing details separately from stable historical material. Research consequential uncertainties first, revise affected components and delay expensive production. Measure cost, elapsed time, causes of revision and confirmed visitor problems so the process can improve.
+
+Agreed operating decisions
+
+On 6 October 2026 we accepted the following defaults for the Planner, Producer, shared record and lifecycle. These decisions replace the earlier proposals for those responsibilities.
+
+Default planning combines a brief intake, bounded exploratory research and an informed concept discussion before substantial generation. Users can delegate choices. A precise request can bypass concept discussion, and alternatives are offered only when they meaningfully change the experience.
+
+The Producer plans tasks flexibly within defined obligations and budgets. It evaluates the whole experience, including interest, coherence, feasibility and fit with the brief, and controls stage progression and consequential decisions.
+
+Specialists write their assigned records and drafts with sources, uncertainties and version references. Every routine update need not pass through the Producer. Consequential changes and acceptance remain under Producer control.
+
+Keep essential requirements separate from preferences, delegated choices and assumptions. The team cannot silently relax an essential requirement. Later choices return to the user when existing delegation does not cover them.
+
+The shared record combines structured information and readable explanations. Preserve the original request, use explicit proposed and accepted statuses, and give agents the relevant records for their assignments.
+
+Reviews identify the version and scope checked. Important decisions need recorded support. A change reopens affected work; a change in area, mode or experience direction warrants broader reassessment.
+
+Lifecycle commitments
+
+| Commitment | What it establishes |
+| Brief accepted | Requirements are understood and the team knows which choices are delegated. |
+| Route and outline accepted | The experience fits the brief and its essential dependencies are addressed. |
+| Content accepted | Commentary and physical instructions pass the required reviews. |
+| Package ready | The current route, script and assets agree and pass the release checks. |
+
+These commitments allow controlled revision. Research and route design can develop together. A sample passage can establish voice early; full narration waits until content is sufficiently stable.
+
+Choices still open
+
+Planner and Producer responsibilities are distinct; whether they run as separate agents remains open for testing. Preparation time, detailed record structure, tools, budgets and function specific acceptance criteria still need to be defined. The process must account explicitly for an advance request and a request made at the starting location.
+
+Agreed Producer and Planner responsibilities
+
+These responsibilities implement the agreed defaults. Detailed contracts, permissions and measurable completion criteria remain to be specified.
+
+Producer
+
+Purpose Deliver a tour that meets the agreed brief, with evidence, route, narrative and assets that agree with one another.
+
+Inputs The request, current tour record, available tools and app capabilities, specialist outputs, review findings and an agreed operating budget.
+
+Process Establish the current stage, identify the next decision and its prerequisites, assign bounded tasks and inspect returned work. Resolve dependencies, request targeted revisions, accept consequential changes and advance only when the stage criteria are met.
+
+Outputs The current work plan, task briefs, recorded decisions, issue assignments, accepted record changes and a release assessment tied to the final version.
+
+Authority Choose routine research and production tactics within the brief. Specialists write their assigned records; the Producer controls acceptance and progression. Return consequential choices outside existing delegation to the Planner. Essential constraints remain binding; unsupported claims need evidence, qualification or removal.
+
+Completion The package and delivery information pass release checks, with limitations and refresh needs recorded. Failed prerequisites return affected work to earlier stages.
+
+Planner
+
+Purpose Turn the request into a brief the user understands and the team can use.
+
+Inputs The request, preferences already supplied, known service and app limits, essential intake fields and any bounded discovery findings needed to offer a direction.
+
+Process Extract what is known, define the working geographic scope, distinguish requirements from preferences and ask the smallest useful set of questions. Offer defaults, commission bounded exploration through the Producer and discuss a direction when needed. Record the chosen concept and delegated decisions.
+
+Outputs A brief containing area, mode, date or time, duration, starting assumptions, interests, audience, familiarity, landmark preferences, commentary depth, pace, access needs, concept, exclusions and unresolved questions. Material choices record whether they were explicitly agreed, delegated or assumed.
+
+Authority Suggest defaults and explain tradeoffs. Request a discovery task through the Producer when factual information is needed to frame a useful choice. Do not promise a particular stop before feasibility work supports it.
+
+Completion Essential planning inputs are sufficient, the experience direction is selected or delegated, and unresolved questions have owners. A later change that materially affects the experience returns to the Planner.
+
+Handoff
+
+The Planner supplies the brief, direction, delegation, assumptions and open questions. The Producer checks readiness for the next work. Consequential changes outside the brief or delegation return to the Planner for discussion with the user.
+
+Remaining specification work
+
+Research defaults are recorded on pages 10 and 11, accepted Route Designer and Scout responsibilities on pages 12 and 13, and accepted building and release responsibilities on page 14. Audience focus and qualitative airtime guidance are accepted; wider Writer, Editor and Verification reviewer proposals remain in the register. The next round defines connecting processes, precise handoffs and revision rules, then examines a supervised London request.
+
+Tour_generation_implementation_register.md maintains unresolved choices, proposed defaults and prototype tests. Accepted designs remain distinct from implementation selections and validated behavior.
+
+| Order | Functions | Specification needed |
+| 1 | Research lead and researchers | Question planning, discovery and depth passes, evidence requirements, source handling, task outputs and stopping rules. |
+| 2 | Route designer and Virtual scout | Candidate assessment, mode specific logistics, timing, remote inspection and uncertainty decisions. |
+| 3 | Writer Editor and Verification reviewer | Writing brief, claim traceability, separate review passes, issue severity and revision rules. |
+| 4 | Builder Tester and release | Accepted responsibilities; package interface, audio tools, check coverage, delivery and refresh implementation remain open. |
+
+A common specification for every function
+
+Each function needs a purpose, trigger, required inputs, permitted tools and record access, ordered tasks, required outputs, completion criteria, failure handling and handoff. Specify what it can decide independently and what it must return to the Producer or user.
+
+For research, include budgets and stopping rules. For review, include the evidence required to close an issue. For production, include repeatable checks and the changes that invalidate them. Written instructions should allow judgment while making essential obligations testable.
+
+First review exercise
+
+Use a request such as a two hour walking tour of an unfamiliar city centre, with a history interest and a fixed start. Produce the brief, identify missing information and show the first tasks the Producer assigns. Then introduce a closed key stop and check how the record, route and user conversation change.
+
+Follow the request through subsequent functions. Include a disputed claim and a user change, then repeat with access requirements or another mode. Use the resulting gaps to revise the specification before committing to the full agent implementation.
+
+London pilot and audience preferences
+
+On 6 October 2026 we established London as the initial test city before generalising the tour generation process to other cities. The brief must accommodate both users seeking classic sights and users seeking less familiar, unusual places or stories. It must also establish the desired depth of the experience.
+
+Responsibility for the brief
+
+The Planner elicits and records these preferences. The Producer ensures they govern research assignments, route selection, writing and acceptance. The Research Lead translates them into discovery and investigation priorities; the Route Designer and Writer use them to shape the experience.
+
+Familiarity with a city is useful context, but should not determine the tour by itself. A first time visitor may want unusual places, while a resident may want a fresh interpretation of familiar sights. Record specific places already visited, requested inclusions and exclusions when relevant.
+
+Carry each selected stop's audience rationale through research, route design and writing: why it matters to this user, what they likely know or recognise already, the intended discovery, and its connection to the present place. Make these assumptions explicit and revisable. Description and evocation must help orientation, noticing or understanding.
+
+Agreed brief dimensions
+
+Record these dimensions separately. They make the audience requirement actionable: less familiar places can support an accessible introduction, while famous sights can support sustained exploration. Use supplied preferences and visible defaults to keep intake concise.
+
+| Dimension | Information to capture |
+| Familiarity | Experience of London and the proposed area, including places or stories already known. |
+| Place preferences | Famous sights, a mixture or predominantly less familiar places; specific inclusions and exclusions. |
+| Commentary depth | An accessible overview, richer explanation or sustained exploration of a specific subject. |
+| Desired discovery | New places, new stories about familiar places, a different perspective or a mixture. |
+
+Source approach
+
+Start with broad place discovery and citywide or cross city sources. Consult specialist local material when relevant questions arise. The source strategy and initial directory candidates are recorded on page 11.
+
+Suggested evaluation cases
+
+Test a first time visitor seeking classic sights, a first time visitor seeking unusual places, a resident seeking new stories about familiar places, and a resident seeking deeper exploration of a less familiar subject. Compare the research priorities and proposed experiences under similar duration and access constraints.
+
+Geographic scope and research defaults
+
+The Planner defines a usable geographic scope before commissioning substantial discovery. Research and route design can refine it within the brief and the choices already delegated. London provides the context for the first tests.
+
+Interpreting an area request
+
+For a neighbourhood request such as Clerkenwell, use maps, ordinary usage and the requested experience to choose a working extent. Record the core area, a usable search boundary and whether nearby places may be considered. An administrative boundary is one input; the working extent should reflect what the user means by the area. Make routine judgments internally and ask the user when ambiguity would materially change the experience.
+
+Keep the area used to discover candidates separate from the area permitted for the route. A slightly wider search can reveal useful neighbouring material while preserving a firm user boundary. Record endpoint requirements, inclusions, exclusions and whether unresolved choices are delegated or assumed.
+
+Interpreting a timed journey
+
+For a one hour tour from X to Y, resolve the endpoints and treat the hour as the total experience, including travel, stops and commentary. The Route Designer estimates baseline travel and a feasible corridor, then reserves time for the experience. If required travel leaves insufficient time, the Producer returns the consequential tradeoff to the Planner. Preserve the requested endpoints and duration until a change is agreed or already covered by delegation.
+
+Research responsibilities and cycle
+
+The Research Lead turns the brief into questions and bounded assignments. Researchers can cover discovery, historical or cultural material and practical information as needed. Begin with relevant reviewed knowledge and broad discovery; deepen promising candidates as the concept and route develop. Consolidate coverage and request targeted followups. Continue enough exploration to identify better alternatives.
+
+Assignments specify the question, scope, intended use, existing evidence, budget and completion condition. Findings return source locations, usable claims, context, uncertainties and unsuccessful searches. Distinguish supported facts, attributed accounts, interpretations and unanswered questions. Use evidence suited to the claim, checking whether apparent corroboration is independent.
+
+Completion and remaining details
+
+The Research Lead recommends when coverage is sufficient for the next decision; the Producer accepts progression. Essential unresolved dependencies need further evidence or redesign. Exact budgets, provider access, task schemas and measurable criteria remain implementation and testing work. They do not prevent moving to route and scouting design.
+
+Source strategy and starting directory
+
+Use a small initial directory of broad sources, question led research beyond it, and reusable reviewed place knowledge accumulated from actual tours. Source selection follows the brief, geography and current research questions. Membership in the directory does not make every statement authoritative.
+
+Initial source families
+
+| Purpose | Starting candidates |
+| Broad place discovery | Google Places as a candidate geographic index for places, categories and location data. Provider selection and access remain to be tested. |
+| London history and interpretation | The London Archives and London Museum for available online historical material, collections and stories. |
+| Place based historical discovery | Layers of London for historic map layers and geographic connections. |
+| Unusual place discovery | Atlas Obscura as a starting point for less familiar places and story leads requiring appropriate investigation. |
+
+Using the directory selectively
+
+Choose the relevant sources for each assignment. A directory is a set of entry points rather than a list every tour must exhaust. Assess subject and geographic coverage, access limits, provenance and whether the available evidence supports the proposed use. A catalogue description can identify material without providing access to its contents.
+
+A geographic index helps identify candidates and resolve locations. Historical evidence and narrative interest require further investigation. Candidates can also emerge from a story, map, street feature or historic site before they have a matching place listing. Provider rankings and completeness are not tour quality criteria.
+
+Local sources and reusable knowledge
+
+Spitalfields Life and other neighbourhood or subject specialists belong in targeted research beyond the initial directory. Add useful sources and supported place knowledge as real assignments reveal them. The first research pass should not attempt to consult every local specialist across London.
+
+Distinguish discovery leads, evidence for particular claims and current practical information. Record their sources and relevant dates. Preserve reviewed knowledge with provenance; refresh changing conditions separately. Detailed access, attribution and permitted reuse must be checked when selecting integrations.
+
+Google Places reference
+
+Official documentation confirms location and type searches and selectable place fields. These capabilities support the proposed discovery role; the integration has not yet been selected or implemented.
+
+https://developers.google.com/maps/documentation/places/web-service/nearby-searchhttps://developers.google.com/maps/documentation/places/web-service/data-fields
+
+Agreed Route Designer responsibilities
+
+On 6 October 2026 the owner accepted the Route Designer responsibilities, working cycle and starting defaults. Empirical calibration and implementation choices remain in the implementation register; acceptance does not establish that a route has passed its checks.
+
+Purpose and inputs
+
+Select stops, connect them and shape their sequence into a coherent timed experience, including the narrative outline for the Writer. Use the brief, geographic scope, candidate stories and evidence, practical constraints, routing tools, remote observations and actual player capabilities.
+
+Selection and working cycle
+
+Check feasibility, including required endpoints and baseline travel. Assess candidates for what the visitor encounters, story value, brief fit, connections, time demand and uncertainty. Consider their combined effect, including repetition. Sketch the route and narrative roles together, then allocate time before full writing. Request targeted research and early checks of consequential bottlenecks. Revise route, timing and outline as findings arrive, and submit the current proposal to the Producer.
+
+Use agent judgment for selection and sequence, and routing tools for connected geometry and journey estimates. A historic feature that has disappeared can support a stop when its relationship to the present surroundings is accurately framed. Stop count emerges from the experience. Produce one reasoned route by default and challenge weak choices internally.
+
+Timing and narration defaults
+
+The duration covers travel, narration, looking, directions, breaks and reasonable allowances. Represent overlap explicitly and count it once. Preserve navigation time and intentional silence. Begin with substantial stories at stops and selective short passages on simple legs. Distinguish an approximate duration from a hard finish time; pace allowances and buffers require prototype evidence.
+
+Outputs and authority
+
+Return ordered stops and their narrative roles, proposed visitor positions, connected route geometry, a timing model, narration budgets, necessary directions, evidence references and outstanding questions. Alternatives address consequential dependencies. Revise within the brief and existing delegation. The Producer accepts consequential changes and sends choices beyond delegation to the Planner.
+
+Completion and tests remaining
+
+The proposed experience fits the brief and its essential dependencies are addressed before route and outline acceptance. Detailed scouting covers the chosen stops and connections. Test density, speech mix, timing allowances, selection methods and revision behavior. Accepted defaults remain subject to evidence based revision through the agreed decision process.
+
+Agreed Virtual Scout responsibilities
+
+On 6 October 2026 the owner accepted the Scout responsibilities, two pass working cycle and recommended defaults. Tools, evidence criteria and empirical calibration remain in the implementation register. Remote inspection supports particular findings; it does not establish the outdoor experience.
+
+Purpose and inputs
+
+Establish what the visitor can physically encounter, identify practical problems and improve the proposed experience using remote evidence. Receive the brief, proposed stops and connections, intended visitor positions, existing evidence and consequential questions. Distinguish landmark, camera and visitor positions.
+
+Working cycle
+
+First inspect consequential anchors and connections that could change the route before full writing. Then account for every chosen stop and leg, deepening checks where access, visibility, orientation or continuity is uncertain. Inspect actual imagery with maps and source context; check scene identity before interpreting it. Give practical research questions an owner through the shared record. Recheck affected instructions after changes or script review.
+
+Assess arrival areas, approaches, sightlines, recognisable anchors, places to pause and navigation attention demands. Suggest better viewpoints, approaches or connections with evidence. The Route Designer revises route, timing and narrative together; the Producer accepts consequential changes.
+
+Evidence and uncertainty
+
+Keep observations, interpretations, conditions and unknowns separate. Retain source, location, capture date or unknown date, and check date. Reconcile dated imagery with current practical information. Apply freshness suited to each assertion; no universal image age or numerical confidence cutoff is selected. A still image does not establish noise or future crowds. Missing imagery alone does not reject a place. Essential uncertainty needs evidence or a change to the experience.
+
+Outputs and completion
+
+For each inspected stop or connection, return the approach, camera and proposed visitor position, intended view or action, supported findings, dates, conditions, unresolved questions and a recommended disposition. Use a usable arrival area with explicit visual anchors. Frame vanished historic features accurately through present surroundings. Complete coverage of the selected route, resolve essential dependencies and retain remaining limitations for Producer assessment.
+
+Tests remaining
+
+Test scene matching, imagery navigation, visitor sightlines, incomplete dates, conflicting access information and changes propagating into route and script. Compare missed problems, unnecessary rejection and inspection effort against a reviewed reference set; desk agreement is not a field result.
+
+Agreed building testing and release responsibilities
+
+On 6 October 2026 the owner accepted the Builder, Tester, audio production and Producer release recommendations. Package interfaces, providers, review tools and calibration remain open. Acceptance of this design does not establish package, device or outdoor results.
+
+Builder and audio production
+
+Build from the current accepted route, script, directions, evidence links and required assets. Derive delivered content and package metadata from the same record. Include the maps, directions, narration, transcripts and attribution needed offline. Formatting and approved pronunciation instructions are production work; substantive changes return to their owners.
+
+Make audio production an explicit responsibility within building. Begin with one clear voice and no soundtrack. Use a representative sample and temporary narration for rehearsal before final production. Review finished audio for intended words and meaning, pronunciation, audible completeness and pacing. Measure duration against the whole tour timeline; clip boundaries fit supported pause, replay and skip behavior. Revisit content or timing if final delivery exposes a problem.
+
+Tester and the working cycle
+
+Assess the actual package independently from assembly. Deterministic checks cover required fields, resources, references, rights, checksums, review coverage and player compatibility. Journey scenarios and listening assess integration: early arrivals, slower travel, pauses, skips, weak location, offline cold start, failed import and reopening. Retain the tested package and player versions.
+
+Build provisionally, rehearse and simulate, resolve findings, produce final narration, review measured duration and validate the final package. Revisions return to affected owners. Reuse valid unchanged work and repeat package integrity checks. Real phone checks follow the roadmap; simulation and indoor listening do not establish outdoor experience. Repeat broader device checks when relevant changes or failures justify them.
+
+Producer release and learning
+
+Accept the exact final package against the brief, current evidence and results. Unsupported assertions or physical guidance, critical unresolved access, missing required assets and failed required playback behavior block readiness. Optional editorial polish may remain as a recorded tradeoff. Give the visitor useful start, end, duration, distance and access information, with material limits of checks.
+
+Recheck consequential changing details for advance tours. Revise and accept affected content before an update; active walks retain their content version. Visitor reports initiate investigation and confirmed improvements retain provenance. Routine delegated delivery needs no redundant approval. Budget exhaustion does not resolve a blocker.
+
+Tests and connecting details remaining
+
+Test narration integrity, clip structure, listening review, duration feedback, actual offline resources, selective rebuilds and release assessment. Define task inputs, outputs, decision authority, failure returns and the changes that reopen reviews. These connecting processes are the next design topic.

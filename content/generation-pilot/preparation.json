@@ -1,0 +1,356 @@
+{
+  "preparedAt": "2026-10-06T20:16:31.594Z",
+  "mode": "supervised manual calibration, not subscription workflow baseline",
+  "inputs": [
+    {
+      "path": "content/generation-pilot/plan.json",
+      "sha256": "287d9b25c6970edb04432973ab7d59adb93505e7dfa4fed3ea529cd0b907bed5"
+    },
+    {
+      "path": "content/generation-pilot/stories.json",
+      "sha256": "a7bbf4b4826017ac99f220276b9833d4dd0face0cb7bab73b1d4272ee2a7edfc"
+    },
+    {
+      "path": "content/generation-pilot/evidence.json",
+      "sha256": "06845007282bedde75714522f1360d2ce9b8e72d491b66d96db3ea764d91e893"
+    },
+    {
+      "path": "content/generation-pilot/encounters.json",
+      "sha256": "53bd7ae4ca0591cbd9f7e7974ebbadd9e4ae14d23796bbd0fd189eb89c9c45f3"
+    }
+  ],
+  "mapId": "clerkenwell-8f45f13ad1755318",
+  "packageSha256": "62f698c8295a58206f53d9e933cc5fadc3cc952bfc35a5c4db9029b662c83eff",
+  "synthesis": {
+    "provider": "Kokoro",
+    "voice": "bm_george",
+    "model": "onnx-community/Kokoro-82M-v1.0-ONNX",
+    "revision": "1939ad2a8e416c0acfeecc08a694d14ef25f2231",
+    "dtype": "fp32",
+    "device": "cpu",
+    "speed": 1,
+    "kokoroJs": "1.2.1",
+    "paragraphGapSeconds": 0.25,
+    "loudnessLufs": -19,
+    "encoding": "AAC mono 24 kHz 64 kb/s",
+    "rendererRevision": 2
+  },
+  "modelHashReference": "docs/content/voice-samples/metadata.json",
+  "directChargesUsd": 0,
+  "subscriptionModelUsage": null,
+  "renderAndValidateElapsedSeconds": 1.044,
+  "recordings": [
+    {
+      "id": "farringdon",
+      "path": "content/generation-pilot/audio/farringdon.m4a",
+      "key": "clerkenwell-balanced-pilot-farringdon",
+      "bytes": 511173,
+      "md5": "caa054371f92fbb35aa38dd7a52c86b3",
+      "durationSeconds": 58.9,
+      "sha256": "89c0414928577b7cd86c8d500fe7e73d80db80d49ada132cd85424750cc4e09b",
+      "textSha256": "3c1d2077c91328884bd5949c4e4ad88281083328648fd0ce7b69c01a0a5ffa69",
+      "words": 145,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "We begin outside Farringdon station, at the Cowcross Street entrance. This is a one-hour loop through Clerkenwell, staying outside the buildings. We will meet work that is easy to miss: carrying meat, moving a whole frontage, printing speeches and shaping artificial flowers. You do not need to know the neighbourhood already.",
+          "durationSeconds": 20
+        },
+        {
+          "paragraph": 1,
+          "text": "There are five main stories after this introduction. Between them, leave space for the street and for conversation. Stop somewhere clear before listening; pause whenever a crossing or a busy pavement needs your attention. The way back to this station is included in the hour.",
+          "durationSeconds": 18.175
+        },
+        {
+          "paragraph": 2,
+          "text": "First, follow Cowcross Street east towards the market junction. Find a clear place on the north pavement of Charterhouse Street to look across at Smithfield’s halls. The route and written directions are saved with the tour. These are desk-reviewed directions, so follow current pedestrian signs if anything has changed.",
+          "durationSeconds": 20.2
+        }
+      ],
+      "cacheHit": true,
+      "checks": [
+        "all paragraphs retained",
+        "full decode",
+        "mono 24 kHz",
+        "encoded duration vs PCM"
+      ],
+      "listening": "not performed"
+    },
+    {
+      "id": "smithfield",
+      "path": "content/generation-pilot/audio/smithfield.m4a",
+      "key": "clerkenwell-balanced-pilot-smithfield",
+      "bytes": 865698,
+      "md5": "78141a67e7e412f4c17849a9ec209a5c",
+      "durationSeconds": 101.1,
+      "sha256": "c411fcc1289d54ea94c3ad30b330e3486d5b60b82960250c8b8790bc5dd72299",
+      "textSha256": "14905f592c427cd52ca8af3eff50046ced6e2289f72119fb19731dd49dec09a3",
+      "words": 259,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "Smithfield keeps a different clock. The meat market’s advertised weekday hours run from midnight to seven in the morning. A daytime visitor arrives after much of the business has happened. These great covered halls make more sense when you picture them at the other end of the night.",
+          "durationSeconds": 17.925
+        },
+        {
+          "paragraph": 1,
+          "text": "Imagine a delivery here in the nineteen-seventies. Porters in blue overalls and white caps unload the lorry. Other porters, called pitchers, carry the meat into the market. Once a buyer has made a purchase, another worker, a bummaree, is paid to take it out again. One load passes through a sequence of jobs.",
+          "durationSeconds": 20.4
+        },
+        {
+          "paragraph": 2,
+          "text": "The porters were self-employed, licensed by the City, and paid according to how much they carried. Their arm badges identified them. Moving meat was a livelihood with its own rules and rights; even the market’s tenants had to employ the porters to shift it.",
+          "durationSeconds": 17.15
+        },
+        {
+          "paragraph": 3,
+          "text": "The night shift gave customers time to get their purchases ready for sale that same day. Some nearby pubs served workers finishing their shift. For someone finishing work here, a drink early in the morning could be the end of the day.",
+          "durationSeconds": 14.9
+        },
+        {
+          "paragraph": 4,
+          "text": "In the nineteen-nineties, overhead rails changed the handling of carcasses, and a settlement ended the porters’ exclusive right to move the meat. The work has kept changing. So has the future of the buildings.",
+          "durationSeconds": 13.9
+        },
+        {
+          "paragraph": 5,
+          "text": "Next are carved panels in Britton Street. Take St John Street north, then St John’s Lane towards the Gate. Just before the Gate, turn left into Briset Street, then right into Britton Street. Look across towards number twenty-five.",
+          "durationSeconds": 15.575
+        }
+      ],
+      "cacheHit": true,
+      "checks": [
+        "all paragraphs retained",
+        "full decode",
+        "mono 24 kHz",
+        "encoded duration vs PCM"
+      ],
+      "listening": "not performed"
+    },
+    {
+      "id": "booths",
+      "path": "content/generation-pilot/audio/booths.m4a",
+      "key": "clerkenwell-balanced-pilot-booths",
+      "bytes": 765117,
+      "md5": "c6ecc6f92dae035e263449380c2fcd08",
+      "durationSeconds": 89.5,
+      "sha256": "00eb227036765af6b79d25b32cc821e689faa5c1e9bb8f35fef491dbaab7dcb6",
+      "textSha256": "127ab310969c268a8ab18aff3bee17f82801c9c075f32098ae3f8595d37ae38f",
+      "words": 223,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "At number twenty-five Britton Street, look for the pale carved panels high among the windows, above the bands of brick and stone. There are five, though foliage may hide part of the sequence. They came from the offices of Booth’s gin distillery, and their subject is work.",
+          "durationSeconds": 17.325
+        },
+        {
+          "paragraph": 1,
+          "text": "The carvings turn gin into a chain of labour, from harvesting grain to drawing drink from a cask. Grain supplies the alcohol; the characteristic flavour comes from botanicals, especially juniper. Making a consistent drink involves judgement, because those botanical oils vary from harvest to harvest.",
+          "durationSeconds": 20.675
+        },
+        {
+          "paragraph": 2,
+          "text": "The wall itself has had a second career. It originally stood in Turnmill Street. In the nineteen-seventies, the architects developing this site realised the salvaged frontage was just the right width for their new building. The height was trickier: split-level flats helped make the rooms behind fit the old elevation.",
+          "durationSeconds": 20.2
+        },
+        {
+          "paragraph": 3,
+          "text": "Some decayed stone had to be replaced, but the carved workers came along. A frontage designed to advertise a distillery became the face of flats and offices. Once you have found the panels, take in the whole wall again. The people in stone are still making gin above rooms built for quite different lives.",
+          "durationSeconds": 19.9
+        },
+        {
+          "paragraph": 4,
+          "text": "Now retrace your steps to Briset Street and turn towards St John’s Gate. Find a place to one side of its southern approach, leaving the archway clear.",
+          "durationSeconds": 10.375
+        }
+      ],
+      "cacheHit": true,
+      "checks": [
+        "all paragraphs retained",
+        "full decode",
+        "mono 24 kHz",
+        "encoded duration vs PCM"
+      ],
+      "listening": "not performed"
+    },
+    {
+      "id": "stjohn-gate",
+      "path": "content/generation-pilot/audio/stjohn-gate.m4a",
+      "key": "clerkenwell-balanced-pilot-stjohn-gate",
+      "bytes": 1171334,
+      "md5": "adc982aa48c22e28cd1950237e644157",
+      "durationSeconds": 137.5,
+      "sha256": "433b9894888be8d03f5f35412b081fbbee853f961b72f5bef9947c58ac6bd59a",
+      "textSha256": "f636f3a2e6b68734b1de26c665e86d151ce66178e2da7fd4d3d9124860da57a5",
+      "words": 347,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "St John’s Gate was completed in 1504 as the entrance to a religious house. Today it houses the Museum of the Order of St John. In the seventeen-thirties, it became the address of a publishing enterprise. Edward Cave, a printer and publisher, ran the Gentleman’s Magazine here. Among the writers he employed was Samuel Johnson, long before Johnson’s dictionary made his name.",
+          "durationSeconds": 24.45
+        },
+        {
+          "paragraph": 1,
+          "text": "Readers wanted to know what Parliament was saying. Parliament was less keen to have it printed. In 1738, the Commons reaffirmed that publishing its proceedings breached its privileges. The magazine found a literary way round the problem: it sent its readers to Lilliput, the imaginary country in Gulliver’s Travels.",
+          "durationSeconds": 20.95
+        },
+        {
+          "paragraph": 2,
+          "text": "A debate published in 1741 takes place in the Senate of Lilliput. One speaker appears as the Hurgo Quadrert. Then the introduction rather helpfully mentions a parallel debate in the British Parliament, which readers have been asking for. It is a disguise with a very large wink.",
+          "durationSeconds": 19.25
+        },
+        {
+          "paragraph": 3,
+          "text": "Producing these speeches took more than changing the names. Johnson worked from other people’s reports and sparse notes. His biographer, James Boswell, records him saying that sometimes he received little more than the speakers’ names and which side they had taken. From that, the working writer had to supply the arguments and the language.",
+          "durationSeconds": 21.5
+        },
+        {
+          "paragraph": 4,
+          "text": "A reader settling down to a substantial parliamentary speech was also reading the work of a hired writer. Here in Clerkenwell, political eloquence was being made on its way into print.",
+          "durationSeconds": 12.925
+        },
+        {
+          "paragraph": 5,
+          "text": "Cave put an image of the Gate on the magazine’s title-page, making this old entrance the face of his business. He even used it on the doors of his coach in place of a coat of arms. The building we are looking at was good enough to serve as his personal emblem.",
+          "durationSeconds": 17.15
+        },
+        {
+          "paragraph": 6,
+          "text": "Go through the arch and turn west through St John’s Square and St John’s Path to Britton Street. Turn right, then follow Clerkenwell Road’s south pavement left towards Old Sessions House. Use the pedestrian signals there to cross, then head around the Sessions House to the Green. The map shows this approach.",
+          "durationSeconds": 19.7
+        }
+      ],
+      "cacheHit": true,
+      "checks": [
+        "all paragraphs retained",
+        "full decode",
+        "mono 24 kHz",
+        "encoded duration vs PCM"
+      ],
+      "listening": "not performed"
+    },
+    {
+      "id": "green",
+      "path": "content/generation-pilot/audio/green.m4a",
+      "key": "clerkenwell-balanced-pilot-green",
+      "bytes": 951277,
+      "md5": "528cffd7b46d75b39956b50805301068",
+      "durationSeconds": 111,
+      "sha256": "1d093370553f0e02d5c57e76266137a04424fc712d906d52aaa5d0be55c63a99",
+      "textSha256": "60e456f3863f6ba6ede721b14d3a2a00af843a0ae14b701e16e62599044a2e15",
+      "words": 255,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "At thirty-seven A Clerkenwell Green, the Marx Memorial Library remembers a great deal of political history. One story here concerns a very small office. In 1902, this building housed a printing business managed by Harry Quelch, who also edited the socialist newspaper Justice.",
+          "durationSeconds": 19.825
+        },
+        {
+          "paragraph": 1,
+          "text": "The Russian revolutionary Lenin was then an editor in exile, years before the revolution of 1917. His newspaper, Iskra, needed somewhere to be printed. Quelch and his fellow British socialists made their equipment available. Seventeen issues came out of this building in 1902 and 1903.",
+          "durationSeconds": 21.1
+        },
+        {
+          "paragraph": 2,
+          "text": "The extra enterprise took up room. Writing after Quelch’s death, Lenin remembered his host squeezing into a corner screened off by a thin partition. There was a small writing table, a bookshelf above it, and one chair. When Lenin visited, there was no space for a second chair.",
+          "durationSeconds": 18.075
+        },
+        {
+          "paragraph": 3,
+          "text": "It is a wonderfully awkward picture: two editors, a newspaper to discuss, and nowhere to put the visitor. Quelch had made international cooperation fit into a corner.",
+          "durationSeconds": 11.75
+        },
+        {
+          "paragraph": 4,
+          "text": "The library still offers education in politics, including online courses in trade unions and Marxism. That is a present-day continuation of the building’s connection with ideas, without requiring you to enter or find a class taking place here.",
+          "durationSeconds": 17.775
+        },
+        {
+          "paragraph": 5,
+          "text": "Our next stretch follows Clerkenwell Close around the churchyard. At the Three Kings, keep on the Close as it bends right, then turn right into Sans Walk. Follow Sans Walk to Woodbridge Street, turn right, and continue down Woodbridge past the Sekforde junction. Keep this stretch quiet; the map and written directions remain available.",
+          "durationSeconds": 21.175
+        }
+      ],
+      "cacheHit": true,
+      "checks": [
+        "all paragraphs retained",
+        "full decode",
+        "mono 24 kHz",
+        "encoded duration vs PCM"
+      ],
+      "listening": "not performed"
+    },
+    {
+      "id": "flowers",
+      "path": "content/generation-pilot/audio/flowers.m4a",
+      "key": "clerkenwell-balanced-pilot-flowers",
+      "bytes": 1167235,
+      "md5": "7a56869c23756874dbaad61836b72195",
+      "durationSeconds": 137.2,
+      "sha256": "e3072bb771585cf92ee2b60c01ad7f9f74f70f2b4bb393f0ab69416a013be5a6",
+      "textSha256": "a8685bf00039ee1705c7b13342a6a9a383e842cabcc8f04cdcc127d3351dba15",
+      "words": 352,
+      "chunks": [
+        {
+          "paragraph": 0,
+          "text": "Woodbridge Chapel once sheltered a workroom full of flowers: roses, daisies and cornflowers, all being made by hand. In 1898, an investigator working on Charles Booth’s great inquiry into London life came here and found about thirty girls and women making artificial flowers in the schoolroom beneath the chapel.",
+          "durationSeconds": 22.05
+        },
+        {
+          "paragraph": 1,
+          "text": "Their usual workroom was being enlarged. They belonged to the flower-making work of John Groom’s mission, which trained disabled women. The visitor caught the work in temporary quarters, giving us a glimpse of an activity that the chapel’s exterior cannot explain by itself.",
+          "durationSeconds": 17.975
+        },
+        {
+          "paragraph": 2,
+          "text": "To picture the skill, follow a petal through the trade. Fabric was cut into shapes and dyed. Moulds pressed veins and texture into it. Then came the curve: a metal tool with a ball on the end was heated over a spirit lamp, and the petal shaped around it. A flat scrap began to resemble something that had grown.",
+          "durationSeconds": 20.05
+        },
+        {
+          "paragraph": 3,
+          "text": "That was still only a petal. The pieces had to be assembled into a flower, held on a wire stem and arranged into sprays. The stem itself could be covered with paper or silk. Each stage helped the finished thing conceal the small operations that had made it.",
+          "durationSeconds": 17.175
+        },
+        {
+          "paragraph": 4,
+          "text": "A mission assistant reported that training took two years. That gives the little flowers a different weight. Their lightness and delicacy depended on skills learnt over time, before a customer ever pinned them to a hat or dress.",
+          "durationSeconds": 15.2
+        },
+        {
+          "paragraph": 5,
+          "text": "Today the chapel is home to GraceLife London, a church congregation. Hold the earlier picture beside it for a moment: a room beneath the chapel, thirty people at work, and the beginnings of roses and cornflowers passing through their hands.",
+          "durationSeconds": 15.975
+        },
+        {
+          "paragraph": 6,
+          "text": "Return northwest along Woodbridge Street to Sekforde Street. Turn southwest down Sekforde towards Aylesbury Street and the Green, using the public pavement rather than Hayward’s Place. Continue around the west side of Old Sessions House to the pedestrian signals on Clerkenwell Road. Cross at the signals, then follow Turnmill Street south to the Cowcross Street station entrance. Keep the return quiet and use the saved map. End the tour when you arrive back at Farringdon.",
+          "durationSeconds": 27.2
+        }
+      ],
+      "cacheHit": true,
+      "checks": [
+        "all paragraphs retained",
+        "full decode",
+        "mono 24 kHz",
+        "encoded duration vs PCM"
+      ],
+      "listening": "not performed"
+    }
+  ],
+  "timing": {
+    "targetMinutes": 60,
+    "routeMetres": 2244.589196471053,
+    "walkingMinutesAt4_5KmH": 29.927855952947375,
+    "stationaryAudioMinutes": 10.586666666666668,
+    "lookingSettlingCrossingAllowanceMinutes": 19.48547738038596,
+    "measuredWalk": false
+  },
+  "acceptance": {
+    "packageParse": "passed",
+    "audioDecode": "passed",
+    "field": "not performed",
+    "listening": "not performed",
+    "independentCurrentReview": "pending",
+    "readyForOrdinaryUse": false
+  }
+}
