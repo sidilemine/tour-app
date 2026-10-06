@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "model": "gpt-6-astra",
+  "effort": "medium",
+  "checks": {
+    "instructions-and-text": {
+      "status": "failed",
+      "evidenceKind": "live",
+      "code": "expected_event_stream"
+    }
+  },
+  "results": [
+    {
+      "status": "failed",
+      "contextId": "preflight-instructions-and-text",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "text": "",
+      "output": [],
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null,
+        "totalTokens": null,
+        "source": "unavailable",
+        "cachedInputTokens": null
+      },
+      "elapsedMs": 1930,
+      "evidenceKind": "live",
+      "diagnostic": {
+        "code": "expected_event_stream",
+        "httpStatus": 200,
+        "retryable": false,
+        "automaticRetries": 0,
+        "bodyShape": {},
+        "contentType": "other-or-missing"
+      },
+      "directChargeUsd": 0,
+      "estimatedApiEquivalentUsd": null,
+      "apiEquivalentEstimate": {
+        "lowerUsd": null,
+        "upperUsd": null,
+        "reason": "Observed token usage and a dated model price quote are required; no production cost inferred."
+      }
+    }
+  ],
+  "faithfulWorkflowReady": false,
+  "checkedAt": "2026-10-06T22:33:14.046Z",
+  "conditions": {
+    "search": "No runtime search dispatch verified; retained source records only",
+    "imagery": "Synthetic color input only; scouting evidence must be independently supplied",
+    "voice": "local Kokoro George"
+  },
+  "ownerSelection": "gpt-6-astra at medium effort approved after the live account catalog omitted gpt-6.1-sol",
+  "retry": "One deliberate diagnostic retry within the original ledger/deadline; explicit Accept header, no automatic retries",
+  "remainingBlocker": "HTTP 200 without text/event-stream; other-or-missing media type. No completed inference or usage observed."
+}

@@ -40,6 +40,10 @@ async function main(){
      if(old.costLedger.operations.some(o=>o.state!=='settled'))throw Error('Reconcile interrupted preflight ledger before another probe');
    }
    const ledger=existsSync(ledgerPath)?loadJob(ledgerPath):createJob('capability-preflight',now(),'subscription');
+   const selectedModel=process.env.TOUR_GENERATION_MODEL??'gpt-6.1-sol';
+   const selectedEffort=process.env.TOUR_GENERATION_EFFORT??'medium';
+   if(existsSync(ledgerPath)&&(ledger.conditions.model!==selectedModel||ledger.conditions.effort!==selectedEffort))throw Error('Preflight model/effort changed; preserve this ledger and explicitly start a separately named calibration');
+   ledger.conditions.model=selectedModel;ledger.conditions.effort=selectedEffort;
    if(ledger.status!=='running'||Date.now()>=Date.parse(ledger.deadline))throw Error('Preflight envelope ended; retain its ledger and start a separately named calibration after review');
    const credentials=await loadCredentials('.');
    const measured:ReasoningProvider={async request(request){

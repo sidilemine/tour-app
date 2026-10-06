@@ -4,6 +4,8 @@ import { mkdtemp, mkdir, writeFile, chmod, rm } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import test from 'node:test';
+import { spawnSync } from 'node:child_process';
+import { readFileSync } from 'node:fs';
 import { DEFAULT_MODEL, GatedApiKeyProvider, RESPONSES_URL, SubscriptionProvider, runCapabilityPreflight, type InferenceRequest } from '../tools/generation/provider';
 import { createAuthorization, createHostId, exchangeAuthorization, loadCredentials, validateCallback, validateIdToken, type AppCredentials, type OverflowEvidence } from '../tools/generation/signin';
 
@@ -235,4 +237,31 @@ test('dated API-equivalent range preserves cache uncertainty and does not invent
   assert.ok(Math.abs(result.apiEquivalentEstimate!.upperUsd! - (10 * 2.5 + 4 * 10) / 1_000_000) < 1e-12);
   assert.equal(result.estimatedApiEquivalentUsd, null);
   assert.equal(result.directChargeUsd, 0);
+});
+
+ test('non-stream diagnostic retains safe shape and observed usage but never accepts a completed JSON response', async () => {
+  const result=await fixture(async (url,init)=>{
+    if(String(url).endsWith('/models'))return catalog();
+    assert.equal((init?.headers as Record<string,string>).Accept,'text/event-stream');
+    return Response.json({object:'response',status:'completed',output:[],usage:{input_tokens:12,output_tokens:3},secret:credentials.accessToken});
+  }).request(request);
+  assert.equal(result.status,'failed');assert.equal(result.diagnostic.code,'expected_event_stream');
+  assert.equal(result.diagnostic.contentType,'application/json');assert.equal(result.diagnostic.responseStatus,'completed');
+  assert.equal(result.diagnostic.bodyShape?.output,'array');assert.equal(result.usage.inputTokens,12);
+  assert(!JSON.stringify(result).includes(credentials.accessToken));
+ });
+
+test('preflight CLI records selected model and effort and rejects changing them in the same ledger', async () => {
+ const directory=await mkdtemp(path.join(os.tmpdir(),'tour-preflight-'));
+ try {
+  const cli=path.resolve('tools/generation/cli.ts'),loader=path.resolve('node_modules/tsx/dist/loader.mjs');
+  const env={...process.env,TOUR_GENERATION_MODEL:'gpt-6-astra',TOUR_GENERATION_EFFORT:'medium'};
+  const run=spawnSync(process.execPath,['--import',loader,cli,'preflight','report.json'],{cwd:directory,env,encoding:'utf8'});
+  assert.equal(run.status,0,run.stderr);
+  const ledger=JSON.parse(readFileSync(path.join(directory,'report.json.ledger.json'),'utf8'));
+  assert.equal(ledger.conditions.model,'gpt-6-astra');assert.equal(ledger.conditions.effort,'medium');
+  assert.equal(JSON.parse(readFileSync(path.join(directory,'report.json'),'utf8')).results[0].diagnostic.code,'app_sign_in_required');
+  const change=spawnSync(process.execPath,['--import',loader,cli,'preflight','report.json'],{cwd:directory,env:{...env,TOUR_GENERATION_MODEL:'gpt-5.6-sol'},encoding:'utf8'});
+  assert.notEqual(change.status,0);assert.match(change.stderr,/model\/effort changed/);
+ } finally {await rm(directory,{recursive:true,force:true});}
 });

@@ -31,7 +31,7 @@ export interface ProviderResult {
 }
 export interface ProviderDiagnostic {
   code: string; httpStatus?: number; retryable: boolean; automaticRetries: 0;
-  param?: string; requestId?: string; bodyShape?: Record<string, string>;
+  param?: string; requestId?: string; bodyShape?: Record<string, string>; contentType?: string; responseStatus?: string;
 }
 export interface ApiPriceQuote {
   model: string; date: string; sourceUrl: string; inputPerMillionUsd: number; cachedInputPerMillionUsd: number; outputPerMillionUsd: number;
@@ -124,9 +124,9 @@ export class SubscriptionProvider implements ReasoningProvider {
     const param = safe(error.param, /^(model|reasoning|input|tools|text|stream|store|instructions|service_tier|previous_response_id)([.\[\]a-zA-Z_0-9-]*)$/) ? error.param : undefined;
     const requestId = response.headers.get('x-request-id');
     const bodyShape: Record<string, string> = {};
-    for (const key of ['error', 'detail', 'type', 'status']) if (key in body) bodyShape[key] = Array.isArray(body[key]) ? 'array' : body[key] === null ? 'null' : typeof body[key];
+    for (const key of ['error', 'detail', 'type', 'status', 'object', 'output', 'usage']) if (key in body) bodyShape[key] = Array.isArray(body[key]) ? 'array' : body[key] === null ? 'null' : typeof body[key];
     for (const key of ['code', 'param', 'message', 'type']) if (key in error) bodyShape[`error.${key}`] = error[key] === null ? 'null' : typeof error[key];
-    if (Object.keys(body).some(key => !['error', 'detail', 'type', 'status'].includes(key))) bodyShape.otherFields = 'present';
+    if (Object.keys(body).some(key => !['error', 'detail', 'type', 'status', 'object', 'output', 'usage'].includes(key))) bodyShape.otherFields = 'present';
     return { code, httpStatus: response.status, retryable: false, automaticRetries: 0, ...(param ? { param } : {}), ...(safe(requestId, /^[A-Za-z0-9_-]{1,128}$/) ? { requestId } : {}), bodyShape };
   }
   async listModels(): Promise<ModelCatalogResult> {
@@ -197,7 +197,7 @@ export class SubscriptionProvider implements ReasoningProvider {
     const signal = request.signal ? AbortSignal.any([request.signal, AbortSignal.timeout(this.options.timeoutMs ?? 60_000)]) : AbortSignal.timeout(this.options.timeoutMs ?? 60_000);
     try {
       const response = await this.fetcher(RESPONSES_URL, {
-        method: 'POST', headers: { Authorization: `Bearer ${this.options.credentials!.accessToken}`, 'Content-Type': 'application/json' },
+        method: 'POST', headers: { Authorization: `Bearer ${this.options.credentials!.accessToken}`, 'Content-Type': 'application/json', Accept: 'text/event-stream' },
         redirect: 'error', signal,
         body: JSON.stringify({ model: result.model, reasoning: { effort: result.effort }, instructions: request.instructions,
           input: request.input, store: false, stream: true,
@@ -212,7 +212,23 @@ export class SubscriptionProvider implements ReasoningProvider {
         return finish('failed', result.diagnostic.code, response.status);
       }
       result.diagnostic = this.diagnostics(null, response, 'stream_opened');
-      if (!response.body || !response.headers.get('content-type')?.includes('text/event-stream')) return finish('failed', 'expected_event_stream');
+      if (!response.body || !response.headers.get('content-type')?.includes('text/event-stream')) {
+        // Retain bounded shape/usage diagnostics, never an arbitrary server body or a success claim.
+        const contentType=response.headers.get('content-type')?.split(';')[0].trim().toLowerCase();
+        result.diagnostic.contentType=['application/json','text/html','text/plain'].includes(contentType??'')?contentType:'other-or-missing';
+        if(response.body&&contentType==='application/json') {
+          const reader=response.body.getReader();let bytes=0;let body='';const decoder=new TextDecoder();
+          try {
+            while(true){const chunk=await reader.read();if(chunk.done)break;bytes+=chunk.value.byteLength;if(bytes>65536){body='';break;}body+=decoder.decode(chunk.value,{stream:true});}
+            if(body){const payload=record(JSON.parse(body));result.diagnostic={...result.diagnostic,...this.diagnostics(payload,response,'expected_event_stream')};
+              if(['completed','failed','incomplete','queued','in_progress'].includes(String(payload.status)))result.diagnostic.responseStatus=String(payload.status);
+              result.usage=usage(payload.usage,'terminal-response');
+            }
+          } catch { /* Keep only the safe transport diagnosis. */ }
+          finally {await reader.cancel().catch(()=>undefined);reader.releaseLock();}
+        } else await response.body?.cancel().catch(()=>undefined);
+        return finish('failed',result.diagnostic.code==='stream_opened'?'expected_event_stream':result.diagnostic.code);
+      }
       const reader = response.body.getReader();
       const decoder = new TextDecoder();
       let buffer = '';
