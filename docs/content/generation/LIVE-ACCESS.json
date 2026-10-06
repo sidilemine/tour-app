@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "model": "gpt-6.1-sol",
+  "effort": "medium",
+  "checks": {
+    "instructions-and-text": {
+      "status": "failed",
+      "evidenceKind": "live",
+      "code": "requested_model_unavailable"
+    }
+  },
+  "results": [
+    {
+      "status": "blocked",
+      "contextId": "preflight-instructions-and-text",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "text": "",
+      "output": [],
+      "usage": {
+        "inputTokens": null,
+        "outputTokens": null,
+        "totalTokens": null,
+        "source": "unavailable",
+        "cachedInputTokens": null
+      },
+      "elapsedMs": 1435,
+      "evidenceKind": "live",
+      "diagnostic": {
+        "code": "requested_model_unavailable",
+        "retryable": false,
+        "automaticRetries": 0
+      },
+      "directChargeUsd": 0,
+      "estimatedApiEquivalentUsd": null,
+      "apiEquivalentEstimate": {
+        "lowerUsd": null,
+        "upperUsd": null,
+        "reason": "Observed token usage and a dated model price quote are required; no production cost inferred."
+      }
+    }
+  ],
+  "faithfulWorkflowReady": false,
+  "checkedAt": "2026-10-06T22:30:04.034Z",
+  "conditions": {
+    "search": "No runtime search dispatch verified; retained source records only",
+    "imagery": "Synthetic color input only; scouting evidence must be independently supplied",
+    "voice": "local Kokoro George"
+  },
+  "accountAccess": {
+    "signIn": "validated",
+    "planUseConsent": "validated",
+    "creditOverflow": "owner-confirmed-disabled",
+    "catalogStatus": "completed",
+    "visibleModelSlugs": [
+      "gpt-6-astra",
+      "gpt-5.6-sol",
+      "gpt-5.6-terra",
+      "gpt-5.6-luna"
+    ],
+    "inferenceDispatched": false,
+    "modelDecision": "pending; requested gpt-6.1-sol unavailable"
+  }
+}
