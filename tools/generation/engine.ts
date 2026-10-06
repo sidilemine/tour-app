@@ -29,15 +29,15 @@ function refsIn(r: RecordItem): Ref[] {
     default: return [];
   }
 }
-export function putRecord(j: Job, value: unknown, now: string): RecordItem {
+export function putRecord(j: Job, value: unknown, now: string, countWork = true): RecordItem {
   const r = recordSchema.parse(value);
   const prior = current(j,r.id);
   if (r.revision !== (prior?.revision ?? 0)+1 || (prior && (r.kind!==prior.kind || r.createdAt!==prior.createdAt))) throw Error('Record identity/revision conflict');
   for (const d of r.dependsOn) { if(d.id===r.id) throw Error('Self dependency'); exact(j,d); }
   for (const d of refsIn(r)) if (!r.dependsOn.some(x=>x.id===d.id && x.revision===d.revision)) throw Error(`Undeclared input ${d.id}`);
   if(r.kind==='source' && r.data.retention!=='minimal-passage') throw Error('Cannot persist restricted or unknown source payload; keep a permitted reference outside evidence records');
-  if(r.kind==='candidate'&&!prior)count(j,'candidates',now,r.id);
-  if(r.kind==='route')count(j,'route',now);
+  if(countWork&&r.kind==='candidate'&&!prior)count(j,'candidates',now,r.id);
+  if(countWork&&r.kind==='route')count(j,'route',now);
   j.records.push(r);
   for(const issue of j.issues) if(issue.state==='closed' && issue.closure?.refs.some(d=>!fresh(j,d))) {
     issue.state='open'; event(j,now,'issue-reopened',issue.id);
@@ -56,7 +56,14 @@ export function usable(j: Job, r: Ref): string[] {
   if(x.kind==='encounter' && (!['desk-checked','field-checked'].includes(x.data.state) || !x.data.visitor.value || !x.data.evidenceRefs.length || x.data.unknowns.length)) errors.push(`Unresolved encounter ${x.id}`);
   if(x.kind==='route') {
     if(x.data.overlapSeconds>Math.min(x.data.walkingSeconds,x.data.speechSeconds)) errors.push('Impossible overlap');
-    if(x.data.walkingSeconds+x.data.speechSeconds-x.data.overlapSeconds+x.data.lookingSeconds+x.data.practicalSeconds>x.data.allowanceSeconds) errors.push('Duration exceeds brief');
+    const totalSeconds=x.data.walkingSeconds+x.data.speechSeconds-x.data.overlapSeconds+x.data.lookingSeconds+x.data.practicalSeconds;
+    if(totalSeconds>x.data.allowanceSeconds) errors.push('Duration exceeds route allowance');
+    const briefs=contextRecords(j,x.dependsOn).filter(record=>record.kind==='brief');
+    if(!briefs.length)errors.push('Route needs a declared brief dependency');
+    for(const brief of briefs)if(brief.kind==='brief'&&(totalSeconds>brief.data.durationSeconds||x.data.allowanceSeconds>brief.data.durationSeconds))errors.push('Duration exceeds brief');
+    const legSeconds=x.data.legs.reduce((sum,leg)=>sum+leg.durationSeconds,0);
+    // Permit at most one second of aggregate rounding; speech overlap remains separate.
+    if(Math.abs(x.data.walkingSeconds-legSeconds)>1)errors.push('Walking duration does not match route legs');
     if(x.data.legs.length!==x.data.stops.length-1) errors.push('Route leg coverage');
     x.data.legs.forEach((l,i)=> { if(l.from!==x.data.stops[i]?.id || l.to!==x.data.stops[i+1]?.id) errors.push('Route sequence mismatch'); });
   }
@@ -213,4 +220,28 @@ export function reconcile(j:Job,operationId:string,charge:number,usage:Usage,evi
    t.execution='queued';delete t.operationId;
    if(!j.costLedger.operations.some(x=>x.state!=='settled')){j.status='running';j.reason='Checked failed operation may retry once within original envelope';}
  }
+}
+
+/** Explicit recovery after a known failed return; never clears prior usage or repeats accepted work. */
+export function retrySettledTask(j:Job,operationId:string,evidence:string,now:string):Task {
+ const operation=j.costLedger.operations.find(o=>o.id===operationId);
+ if(!operation||operation.state!=='settled'||!evidence.trim())throw Error('Settled failed operation and checked retry evidence required');
+ const task=j.tasks.find(t=>t.taskId===operation.taskId);
+ if(!task||task.execution!=='blocked'||task.result)throw Error('Only a blocked task without a returned result may retry');
+ const attempts=j.costLedger.operations.filter(o=>o.taskId===task.taskId);
+ if(attempts.at(-1)?.id!==operationId||task.operationId!==operationId)throw Error('Retry must refer to the task’s latest failed operation');
+ if(attempts.length>=2)throw Error('One technical retry already consumed');
+ if(j.status==='ready'||j.status==='cancelled')throw Error('A completed or cancelled job cannot be reopened by a retry');
+ const timestamp=Date.parse(now),deadline=Date.parse(j.deadline);
+ if(!Number.isFinite(timestamp)||!Number.isFinite(deadline)||timestamp>=deadline)throw Error('Deadline exhausted or invalid; retain draft rather than resetting job');
+ if(task.inputRefs.some(r=>!fresh(j,r)))throw Error('Settled task inputs are stale');
+ if(j.costLedger.operations.some(o=>o.state!=='settled'))throw Error('Reconcile all pending outcomes before retry');
+ if(j.issues.some(i=>i.arbitration&&i.state==='open'))throw Error('Producer arbitration required');
+ const committed=j.costLedger.operations.reduce((sum,o)=>sum+(o.chargedUsd??NaN),0);
+ const completionReserve=Math.max(j.costLedger.completionReserveUsd,j.costLedger.ceilingUsd*0.25);
+ if(!Number.isFinite(committed)||committed+completionReserve>j.costLedger.ceilingUsd||j.costLedger.operations.some(o=>o.chargedUsd!>o.reservedUsd))throw Error('Settled charges or completion reserve prevent retry');
+ task.execution='queued';delete task.operationId;
+ j.status='running';j.reason='Checked settled failure may retry once within the original envelope';
+ event(j,now,'technical-retry-queued',`${operationId}: ${evidence}`);
+ return task;
 }

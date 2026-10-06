@@ -1,0 +1,23 @@
+job,operationId,taskId,role,stage,state,failure,directChargedUsd,activeSeconds,inputTokens,outputTokens,cachedInputTokens,reasoningTokens,totalTokens,apiEquivalentLowerUsd,apiEquivalentUpperUsd
+preflight.json.ledger.json,operation-1,probe-1,tester,preflight,settled,app_sign_in_required,0,0.007,,,,,,,
+preflight-consented-20261006.json.ledger.json,operation-1,probe-1,tester,preflight,settled,requested_model_unavailable,0,1.441,,,,,,,
+preflight-astra-20261006.json.ledger.json,operation-1,probe-1,tester,preflight,settled,expected_event_stream,0,2.116,,,,,,,
+preflight-astra-20261006.json.ledger.json,operation-2,probe-2,tester,preflight,settled,expected_event_stream,0,1.938,,,,,,,
+preflight-transport-continuation.json.ledger.json,operation-1,probe-1,tester,preflight,settled,expected_event_stream,0,3.321,,,,,,,
+preflight-transport-continuation.json.ledger.json,operation-2,probe-2,tester,preflight,settled,,0,3.596,20,8,,,28,0.00042,0.00065
+preflight-transport-continuation.json.ledger.json,operation-3,probe-3,tester,preflight,settled,,0,3.475,72,21,,,93,0.001122,0.00195
+preflight-transport-continuation.json.ledger.json,operation-4,probe-4,tester,preflight,settled,,0,3.373,20,8,,,28,0.00042,0.00065
+preflight-transport-continuation.json.ledger.json,operation-5,probe-5,tester,preflight,settled,,0,4.889,72,21,,,93,0.001122,0.00195
+preflight-transport-continuation.json.ledger.json,operation-6,probe-6,tester,preflight,settled,,0,2.949,116,8,,,124,0.000516,0.0018499999999999999
+preflight-transport-continuation.json.ledger.json,operation-7,probe-7,tester,preflight,settled,,0,4.455,44,13,,,57,0.000694,0.0012000000000000001
+preflight-transport-continuation.json.ledger.json,operation-8,probe-8,tester,preflight,settled,,0,3.064,30,34,,,64,0.00173,0.002075
+live-pilot/job.json,manual-calibration-tools,manual-pilot-artifact-import,planner-producer,retrospective-manual-calibration,settled,,0,,,,,,,,
+live-pilot/job.json,operation-2,stage-research-1,research,research,settled,,0,216.415,24353,2854,0,,27207,0.38622999999999996,0.44711249999999997
+live-pilot/job.json,operation-3,stage-route-1,route,route,settled,,0,70.288,29914,2844,0,33,32758,0.44134,0.516125
+live-pilot/job.json,operation-4,stage-scout-1,scout,scout,settled,,0,70.984,22525,3135,0,0,25660,0.382,0.4383125
+live-pilot/job.json,operation-5,draft-audit-writer-1,writer,writer,settled,Known provider return rejected; inspect saved response,0,0.03,,,,,,,
+live-pilot/job.json,operation-6,draft-audit-writer-1,writer,writer,settled,,0,85.378,37299,3555,0,84,40854,0.55074,0.6439875
+live-pilot/job.json,operation-7,draft-audit-editor-1,editor,editor,settled,,0,71.382,37264,3007,0,46,40271,0.5229900000000001,0.61615
+live-pilot/job.json,operation-8,draft-audit-verification-1,verification,verification,settled,,0,89.252,37292,4086,0,100,41378,0.57722,0.67045
+live-pilot/job.json,operation-9,draft-audit-tester-1,tester,tester,settled,,0,69.385,38980,2927,0,283,41907,0.53615,0.6336
+live-pilot/job.json,operation-10,draft-audit-verification-2,verification,verification,settled,,0,73.015,44845,3355,0,82,48200,0.6162000000000001,0.7283124999999999

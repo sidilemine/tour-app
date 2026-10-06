@@ -1,0 +1,2192 @@
+{
+  "createdAt": "2026-10-06T22:56:39.709Z",
+  "status": "applied-as-unaccepted-drafts",
+  "researchBatch": 2,
+  "correctionBatch": 2,
+  "records": [
+    {
+      "id": "repair-smithfield-badge",
+      "revision": 1,
+      "kind": "source",
+      "owner": "source-repair-helper",
+      "createdAt": "2026-10-06T22:56:39.709Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [],
+      "data": {
+        "url": "https://www.londonmuseum.org.uk/collections/v/object-45167/porters-badge-from-smithfield-meat-market/",
+        "title": "London Museum: Porter’s Badge from Smithfield Meat Market",
+        "origin": "museum-object-catalogue",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T22:56:39.709Z",
+        "passage": "Exact excerpt (Description: tenants and porters): self-employed porters, who were paid according to how much they carried\nExact excerpt (Description: licensed porters): blue overalls and white caps\nExact excerpt (Description: mid-1990s modernisation): automated steel rails\nResearcher paraphrase of read context (not a quotation): The catalogue describes a green identification armband issued for 1977–78. Tenants were required to employ porters to move meat. Pullers back unloaded lorries, pitchers carried meat into the market, and a retailer paid a bummaree to remove a purchase. The City Corporation licensed porters. Modernisation in the mid-1990s moved carcasses on rails between climate-controlled storage and outside vehicles; a settlement ended the porters’ monopoly.",
+        "locator": "Object 78.75/2; description paragraphs on work roles, clothing and 1990s modernisation; limits: Historical catalogue synthesis, not an observed individual delivery. The adjective overhead is not supplied by this reopened passage.",
+        "retention": "minimal-passage",
+        "attribution": "London Museum: Porter’s Badge from Smithfield Meat Market",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "repair-smithfield-history",
+      "revision": 1,
+      "kind": "source",
+      "owner": "source-repair-helper",
+      "createdAt": "2026-10-06T22:56:39.709Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [],
+      "data": {
+        "url": "https://www.londonmuseum.org.uk/collections/london-stories/history-smithfield-market/",
+        "title": "London Museum: The history of Smithfield Market",
+        "origin": "museum-history",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T22:56:39.709Z",
+        "passage": "Exact excerpt (A world of its own): To give customers time to buy and prepare their meat for sale the same day\nExact excerpt (A world of its own): early houses\nResearcher paraphrase of read context (not a quotation): The history explains why trade occurred at night: buyers needed time to prepare meat for sale that day. Workers finishing in the early morning could use pubs in or near the market that opened early for them. It also describes the nineteenth-century covered market. The end-of-day meaning of a morning drink in the script is an interpretive explanation of those hours.",
+        "locator": "Sections on the covered market and A world of its own; limits: Does not establish present-day relative quiet or a current safe listening position.",
+        "retention": "minimal-passage",
+        "attribution": "London Museum: The history of Smithfield Market",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "repair-mountford",
+      "revision": 1,
+      "kind": "source",
+      "owner": "source-repair-helper",
+      "createdAt": "2026-10-06T22:56:39.709Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [],
+      "data": {
+        "url": "https://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?resourceID=7&uid=1414903",
+        "title": "Heritage Gateway: Mountford House, 25 Britton Street",
+        "origin": "official-designation-assessment",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T22:56:39.709Z",
+        "passage": "Exact excerpt (Details): five Portland stone panels carved in low relief\nExact excerpt (History: facade reuse): just the right width for re-use there\nExact excerpt (History: accommodation): split-level studio flats\nExact excerpt (History: original stonework): too decayed to use\nResearcher paraphrase of read context (not a quotation): The 1975–76 YRM building combined flats and offices and reused the 1901–03 E. W. Mountford facade of Booth’s Distillery offices from Turnmill Street. The assessment names Victor Kite and Brian Henderson. The facade matched the available width. First-floor studio flats were split level to accommodate its height. Decayed upper-floor and parapet Bath stone was renewed. F. W. Pomeroy’s five Portland-stone reliefs sit between second-floor windows. The building was assessed but not added to the national list.",
+        "locator": "Decision 18 April 2013; Summary, History and Details; limits: No current foliage, sightline, pavement or individual panel-gesture inspection was made.",
+        "retention": "minimal-passage",
+        "attribution": "Heritage Gateway: Mountford House, 25 Britton Street",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "repair-gate-survey",
+      "revision": 1,
+      "kind": "source",
+      "owner": "source-repair-helper",
+      "createdAt": "2026-10-06T22:56:39.709Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [],
+      "data": {
+        "url": "https://discovery.ucl.ac.uk/10198364/1/Chapter%205%20St%20John%27s%20Gate%20and%20St%20John%27s%20Lane.pdf",
+        "title": "Survey of London, Volume 46: St John’s Gate and St John’s Lane",
+        "origin": "scholarly-building-history",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T22:56:39.709Z",
+        "passage": "Exact excerpt (PDF page 3: Great Gate): completed in 1504\nExact excerpt (PDF page 19: Cave): an engraved view appearing on the title-page\nExact excerpt (PDF page 19: Cave): painted on the doors of his coach\nResearcher paraphrase of read context (not a quotation): The gate was completed in 1504 as the main entrance to the priory’s inner precinct. Cave had settled there by August 1730; the first Gentleman’s Magazine issue appeared in February 1731. Johnson worked for the magazine as contributor, translator and editor in the 1730s and 1740s. Cave used an image of the Gate on the magazine title page and on his coach doors in place of a coat of arms. The chapter also records earlier printing or publishing uses before Cave.",
+        "locator": "Original 2008 chapter pp.142–163; PDF viewer pages 3 and 19 (zero-based 2 and 18); BHO capture saved 9 October 2024; limits: Historical scholarship and text reading only; present museum operation was not independently checked in this batch. Cave’s activity was not the Gate’s first publishing use.",
+        "retention": "minimal-passage",
+        "attribution": "Survey of London, Volume 46: St John’s Gate and St John’s Lane",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "repair-boswell",
+      "revision": 1,
+      "kind": "source",
+      "owner": "source-repair-helper",
+      "createdAt": "2026-10-06T22:56:39.709Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [],
+      "data": {
+        "url": "https://www.gutenberg.org/files/1564/1564-h/1564-h.htm",
+        "title": "James Boswell: Life of Johnson, volume I",
+        "origin": "historical-biography-transcription",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T22:56:39.709Z",
+        "passage": "Exact excerpt (Johnson taking over composition): from the scanty notes furnished by persons employed to attend\nExact excerpt (Following paragraph): Sometimes, however, as he himself told me\nExact excerpt (Following paragraph): the part which they had taken\nResearcher paraphrase of read context (not a quotation): Boswell says the disguised names could be deciphered. He attributes the earlier debate reports to Guthrie, who prepared remembered material before Johnson revised it. Later, Johnson composed reports from limited notes made by people attending both Houses. Boswell explicitly attributes to Johnson the recollection that, sometimes, he received only the speakers’ names and the side each took. This is a retrospective biographical account, not a claim that every report had no notes.",
+        "locator": "Early London account: Senate of Lilliput, Guthrie and Johnson’s debate reports; paragraphs beginning The debates in Parliament and These debates; limits: Preserve sometimes and the attributed recollection. Do not treat later editorial footnotes as contemporary testimony.",
+        "retention": "minimal-passage",
+        "attribution": "James Boswell: Life of Johnson, volume I",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "repair-parliament",
+      "revision": 1,
+      "kind": "source",
+      "owner": "source-repair-helper",
+      "createdAt": "2026-10-06T22:56:39.709Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [],
+      "data": {
+        "url": "https://www.parliament.uk/about/living-heritage/evolutionofparliament/parliamentwork/communicating/overview/breachofprivilege/",
+        "title": "UK Parliament: A breach of privilege",
+        "origin": "official-historical-overview",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T22:56:39.709Z",
+        "passage": "Exact excerpt (1738 declaration): high indignity and a notorious breach of privilege\nResearcher paraphrase of read context (not a quotation): The parliamentary history says the Commons declared reporting its proceedings, including during recess, a breach of privilege in 1738. It describes subsequent efforts to enforce the prohibition and ways writers evaded it, including Johnson’s parodies. This supplies institutional historical context independently of the failed Cambridge chapter retrieval.",
+        "locator": "Paragraph on 1738 Commons declaration and following paragraph on enforcement; limits: Official retrospective history; the original Commons Journal was not opened in this batch.",
+        "retention": "minimal-passage",
+        "attribution": "UK Parliament: A breach of privilege",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "repair-lilliput",
+      "revision": 1,
+      "kind": "source",
+      "owner": "source-repair-helper",
+      "createdAt": "2026-10-06T22:56:39.709Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [],
+      "data": {
+        "url": "https://www.samueljohnson.com/debates/174107.html",
+        "title": "Samuel Johnson: Debates in the Senate of Lilliput, July 1741",
+        "origin": "historical-text-modern-transcription",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T22:56:39.709Z",
+        "passage": "Exact excerpt (Heading): DEBATES in the SENATE of LILLIPUT\nExact excerpt (Introductory paragraph): a parallel debate in the British Parliament\nExact excerpt (Introductory paragraph): much desired by our readers\nExact excerpt (First speaker): Hurgo Quadrert\nResearcher paraphrase of read context (not a quotation): The transcription presents the July 1741 Gentleman’s Magazine text under its Lilliput heading. Its introduction explicitly connects the forthcoming report with readers’ desire for a parallel British parliamentary debate. The first speaker is Hurgo Quadrert. Modern bracketed identifications on the web page are editorial additions, not words attributed here to the original magazine.",
+        "locator": "Opening heading, introductory paragraph and first speaker; limits: Text transcription read; no original magazine scan inspected. The narrator’s interpretation of the disguise as a wink is interpretation.",
+        "retention": "minimal-passage",
+        "attribution": "Samuel Johnson: Debates in the Senate of Lilliput, July 1741",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "repair-green-survey",
+      "revision": 1,
+      "kind": "source",
+      "owner": "source-repair-helper",
+      "createdAt": "2026-10-06T22:56:39.709Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [],
+      "data": {
+        "url": "https://discovery.ucl.ac.uk/id/eprint/10198342/1/Chapter%203%20Clerkenwell%20Green.pdf",
+        "title": "Survey of London, Volume 46: Clerkenwell Green",
+        "origin": "scholarly-building-history",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T22:56:39.709Z",
+        "passage": "Exact excerpt (Twentieth Century Press paragraph): Under the management of Harry Quelch, editor of Justice\nExact excerpt (Same paragraph): seventeen issues were printed here in 1902–3\nResearcher paraphrase of read context (not a quotation): Twentieth Century Press occupied 37A from 1893 to publish Justice for the Social Democratic Federation. Quelch managed the press and edited Justice. Lenin was allowed to print Iskra there, and seventeen issues appeared in 1902–03. The press later expanded into adjacent premises. This locates the publishing operation and establishes the issue count and period.",
+        "locator": "Original 2008 chapter pp.86–114; PDF viewer page 51 (zero-based 50), paragraphs on 37A and Twentieth Century Press; limits: Does not establish an unchanged modern office, furniture or visitor access.",
+        "retention": "minimal-passage",
+        "attribution": "Survey of London, Volume 46: Clerkenwell Green",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "repair-lenin",
+      "revision": 1,
+      "kind": "source",
+      "owner": "source-repair-helper",
+      "createdAt": "2026-10-06T22:56:39.709Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [],
+      "data": {
+        "url": "https://www.marxists.org/archive/lenin/works/1913/sep/12.htm",
+        "title": "V. I. Lenin: Harry Quelch",
+        "origin": "retrospective-participant-account-translated",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T22:56:39.709Z",
+        "passage": "Exact excerpt (Office recollection): there was no room for another chair\nExact excerpt (Office recollection): by a thin partition\nExact excerpt (Office recollection): a very small writing-table, a bookshelf above it, and a chair\nResearcher paraphrase of read context (not a quotation): Writing after Quelch’s death, Lenin recalls British Social Democrats headed by Quelch making their printing plant available to Iskra eleven years earlier. Quelch then occupied a partitioned corner. Lenin lists its small table, shelf and chair and says there was no space for a second chair when he visited. The story’s awkward visitor picture is an imaginative response to this recollection; no dialogue is documented.",
+        "locator": "1913 obituary; paragraphs beginning Eleven years ago and Harry Quelch had; Collected Works vol.19 pp.369–371, George Hanna translation; limits: Retrospective translated account, not a contemporaneous room survey. No claim of unchanged furniture.",
+        "retention": "minimal-passage",
+        "attribution": "V. I. Lenin: Harry Quelch",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "repair-flower-process",
+      "revision": 1,
+      "kind": "source",
+      "owner": "source-repair-helper",
+      "createdAt": "2026-10-06T22:56:39.709Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [],
+      "data": {
+        "url": "https://www.londonmuseum.org.uk/blog/rediscover-londons-lost-art-of-flower-making/",
+        "title": "London Museum: Rediscover London’s lost art of flower making",
+        "origin": "museum-curatorial-interview",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T22:56:39.709Z",
+        "passage": "Exact excerpt (Fabric preparation): cutting tools\nExact excerpt (Fabric preparation): dye the fabric\nExact excerpt (Shaping petals): special moulds\nExact excerpt (Shaping petals): heat it over a spirit lamp\nExact excerpt (Shaping petals): around the ball\nExact excerpt (Assembly): twisted wire\nExact excerpt (Assembly): paper or silk\nExact excerpt (Assembly): sprays or wreaths\nResearcher paraphrase of read context (not a quotation): The curator describes cutting fabric into petals with mallet-driven tools, dyeing it and drying it on porous paper. Moulds added veins. A rounded metal tool was heated over a spirit lamp and used to curve petals. Petals were assembled into flowers; twisted-wire stalks could be covered with paper or silk and combined into sprays or wreaths. The article connects artificial flowers to hats, bonnets and dresses and separately discusses John Groom’s work with disabled women. These are general trade processes, not an inventory observed at Woodbridge Chapel.",
+        "locator": "3 March 2016; Natasha Fenner / Beatrice Behlen interview; preparation, shaping and assembly paragraphs; limits: RES-006 applies: general technique must remain explicitly wider trade context. No evidence here that each named tool was in the chapel workroom.",
+        "retention": "minimal-passage",
+        "attribution": "London Museum: Rediscover London’s lost art of flower making",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "repair-booth-b237",
+      "revision": 1,
+      "kind": "source",
+      "owner": "source-repair-helper",
+      "createdAt": "2026-10-06T22:56:39.709Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [],
+      "data": {
+        "url": "https://iiif.humap.site/iiif/booth/b237/manifest",
+        "title": "Charles Booth inquiry notebook B237: mission interviews and Woodbridge visit",
+        "origin": "historical-manuscript-images",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T22:56:39.709Z",
+        "passage": "Exact excerpt (Canvas 161, manuscript p.207): some 30 girls and women at work\nExact excerpt (Canvas 161, p.207): schoolroom under the chapel\nExact excerpt (Canvas 161, p.207): in process of enlargement\nExact excerpt (Canvas 161, p.207): roses, daisies and cornflowers\nExact excerpt (Canvas 123, p.131): After two years they become efficient\nResearcher paraphrase of read context (not a quotation): Page 117 heads the Watercress and Flower Girls Christian Mission interview, names secretary John A. Groom and bears 11/5/98. The investigator says an assistant supplied information with Groom’s authority. Page 131 reports the training estimate. Page 207 records a later visit with Mr G. to Woodbridge Street: flower makers temporarily occupied the schoolroom while their usual room was enlarged. The count is approximate. The actual handwritten pages support the flowers named in the script. Page 207 itself was not assigned the earlier interview’s exact date.",
+        "locator": "Actual pixels inspected: canvas 116 manuscript p.117; canvas 123 p.131; canvas 161 p.207. Manifest retrieval failed; direct public image URLs succeeded.; limits: Investigator identity not established. The two-year statement is an assistant’s reported estimate, not independently measured duration. No present-day imagery or physical access evidence.",
+        "retention": "minimal-passage",
+        "attribution": "Charles Booth inquiry notebook B237: mission interviews and Woodbridge visit",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "repair-groom-catalogue",
+      "revision": 1,
+      "kind": "source",
+      "owner": "source-repair-helper",
+      "createdAt": "2026-10-06T22:56:39.709Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [],
+      "data": {
+        "url": "https://atom.aim25.com/index.php/john-grooms-association-for-disabled-people",
+        "title": "London Metropolitan Archives catalogue: John Groom’s Association for Disabled People",
+        "origin": "archive-collection-catalogue",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T22:56:39.709Z",
+        "passage": "Exact excerpt (Biographical history): where disabled girls could work at making artificial flowers\nResearcher paraphrase of read context (not a quotation): The collection history links Groom’s mission to flower sellers and its later premises at Woodbridge Street. It describes a Sekforde Street factory for disabled girls making artificial flowers, with further factories in Woodbridge Street and Haywards Place. This supports the mission and trade context, while the specific temporary schoolroom scene comes from the notebook.",
+        "locator": "GB 0074 LMA/4305; biographical history, catalogue updated January 2013; limits: Collection-level catalogue read; underlying payrolls, factory records and training outcomes were not inspected.",
+        "retention": "minimal-passage",
+        "attribution": "London Metropolitan Archives catalogue: John Groom’s Association for Disabled People",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "repair-panels-caption",
+      "revision": 1,
+      "kind": "source",
+      "owner": "source-repair-helper",
+      "createdAt": "2026-10-06T22:56:39.709Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [],
+      "data": {
+        "url": "https://victorianweb.org/art/architecture/mountford/2.html",
+        "title": "The Victorian Web: Mountford’s Booth’s Distillery offices",
+        "origin": "scholarly-caption",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T22:56:39.709Z",
+        "passage": "Exact excerpt (Caption quoting Zwart): from reaping corn to tapping the oak\nResearcher paraphrase of read context (not a quotation): The caption describes Mountford’s distillery offices and Pomeroy’s reliefs as a sequence through gin production, then notes the facade’s later reuse in Britton Street. This supports the overall reaping-to-cask sequence. It does not independently substantiate every botanical production detail in the story.",
+        "locator": "Jacqueline Banerjee; modified 4 January 2013; facade and relief caption citing Zwart p.70; limits: Modern scholarly caption, not a newly inspected original design or a fresh on-site view.",
+        "retention": "minimal-passage",
+        "attribution": "The Victorian Web: Mountford’s Booth’s Distillery offices",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "repair-market-hours",
+      "revision": 1,
+      "kind": "source",
+      "owner": "source-repair-helper",
+      "createdAt": "2026-10-06T22:56:39.709Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [],
+      "data": {
+        "url": "https://smithfieldmarket.com/contact/",
+        "title": "Smithfield Market Tenants’ Association: Contact",
+        "origin": "current-operator-page",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T22:56:39.709Z",
+        "passage": "Exact excerpt (OPENING HOURS): Mon-Fri: Midnight-7am\nResearcher paraphrase of read context (not a quotation): The operator currently advertises weekday midnight-to-seven opening and closure on weekends and bank holidays.",
+        "locator": "OPENING HOURS; limits: Opening-hour publication does not establish current pavement access or actual daytime sound conditions.",
+        "retention": "minimal-passage",
+        "attribution": "Smithfield Market Tenants’ Association: Contact",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "repair-gracelife",
+      "revision": 1,
+      "kind": "source",
+      "owner": "source-repair-helper",
+      "createdAt": "2026-10-06T22:56:39.709Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [],
+      "data": {
+        "url": "https://www.gracelifelondon.org/",
+        "title": "GraceLife London homepage",
+        "origin": "current-occupier-page",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T22:56:39.709Z",
+        "passage": "Exact excerpt (Footer): GraceLife London, Woodbridge Chapel, Woodbridge Street, London\nResearcher paraphrase of read context (not a quotation): The congregation identifies its address as Woodbridge Chapel and publishes worship services.",
+        "locator": "Footer address and worship information; limits: No entry, outside standing area or current visibility inferred.",
+        "retention": "minimal-passage",
+        "attribution": "GraceLife London homepage",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "repair-current-courses",
+      "revision": 1,
+      "kind": "source",
+      "owner": "source-repair-helper",
+      "createdAt": "2026-10-06T22:56:39.709Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [],
+      "data": {
+        "url": "https://www.marx-memorial-library.org.uk/education/current-and-forthcoming-courses",
+        "title": "Marx Memorial Library: Online Courses",
+        "origin": "current-institution-page",
+        "publishedOn": null,
+        "retrievedAt": "2026-10-06T22:56:39.709Z",
+        "passage": "Exact excerpt (Heading): Online Courses\nExact excerpt (Delivery description): combine Zoom classes\nResearcher paraphrase of read context (not a quotation): The page advertises October–December 2026 courses on trade unions and Marxism, with Moodle facilities and Zoom classes. The script correctly presents these as online education.",
+        "locator": "NEXT AVAILABLE COURSE(S), October–December 2026; limits: Does not establish that a class is taking place inside the building during the walk.",
+        "retention": "minimal-passage",
+        "attribution": "Marx Memorial Library: Online Courses",
+        "exportAllowed": true
+      }
+    },
+    {
+      "id": "pilot-smithfield-claim-1",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-2",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-3",
+          "revision": 1
+        },
+        {
+          "id": "repair-smithfield-history",
+          "revision": 1
+        },
+        {
+          "id": "repair-market-hours",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "Smithfield keeps a different clock. The meat market’s advertised weekday hours run from midnight to seven in the morning. A daytime visitor arrives after much of the business has happened. These great covered halls make more sense when you picture them at the other end of the night.",
+        "qualifications": [
+          "advertised"
+        ],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-2",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-3",
+            "revision": 1
+          },
+          {
+            "id": "repair-smithfield-history",
+            "revision": 1
+          },
+          {
+            "id": "repair-market-hours",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C05/S-S04: current advertised hours, checked 20 September 2026. S-C01/S-S01 supplies covered meat-market context. The visitor comparison is an inference from those hours; it promises neither current bustle nor access inside. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-smithfield-claim-2",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-4",
+          "revision": 1
+        },
+        {
+          "id": "repair-smithfield-badge",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "Imagine a delivery here in the nineteen-seventies. Porters in blue overalls and white caps unload the lorry. Other porters, called pitchers, carry the meat into the market. Once a buyer has made a purchase, another worker, a bummaree, is paid to take it out again. One load passes through a sequence of jobs.",
+        "qualifications": [
+          "Imagine a delivery"
+        ],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-4",
+            "revision": 1
+          },
+          {
+            "id": "repair-smithfield-badge",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C02/S-S02: dated reconstruction from the museum’s 1977 badge record. Clothing, distinct carrying jobs and buyers paying bummarees are documented. No named person, dialogue, individual delivery or exact pace is invented. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-smithfield-claim-3",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-4",
+          "revision": 1
+        },
+        {
+          "id": "repair-smithfield-badge",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "The porters were self-employed, licensed by the City, and paid according to how much they carried. Their arm badges identified them. Moving meat was a livelihood with its own rules and rights; even the market’s tenants had to employ the porters to shift it.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-4",
+            "revision": 1
+          },
+          {
+            "id": "repair-smithfield-badge",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C02/S-S02: the historical licensed porter system, paid by quantity, with tenants forbidden to move goods themselves. This paragraph continues the clearly dated scene; it is not a statement of present rules. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-smithfield-claim-4",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-3",
+          "revision": 1
+        },
+        {
+          "id": "repair-smithfield-history",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "The night shift gave customers time to get their purchases ready for sale that same day. Some nearby pubs served workers finishing their shift. For someone finishing work here, a drink early in the morning could be the end of the day.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-3",
+            "revision": 1
+          },
+          {
+            "id": "repair-smithfield-history",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C03/S-S01: same-day preparation explains overnight trade; early pubs served workers after their shift. The final sentence is a natural interpretation, with no claim about a named pub’s current licence or an individual worker’s habits. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-smithfield-claim-5",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-4",
+          "revision": 1
+        },
+        {
+          "id": "repair-smithfield-badge",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "In the nineteen-nineties, automated steel rails changed the handling of carcasses, and a settlement ended the porters’ exclusive right to move the meat. The work has kept changing. So has the future of the buildings.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-4",
+            "revision": 1
+          },
+          {
+            "id": "repair-smithfield-badge",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C02/S-S02: 1990s modernisation and settlement. Closing transition is editorial. No suggestion that porter work vanished altogether. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-booths-claim-1",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-5",
+          "revision": 1
+        },
+        {
+          "id": "repair-mountford",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "At number twenty-five Britton Street, look for the pale carved panels high among the windows, above the bands of brick and stone. There are five, though foliage may hide part of the sequence. They came from the offices of Booth’s gin distillery, and their subject is work.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-5",
+            "revision": 1
+          },
+          {
+            "id": "repair-mountford",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C09/S-S08: address, materials, panel number/location, office origin and gin-making subject. Foliage limitation is the coordinator’s dated route-imagery finding supplied to the writer on 20 September 2026; it avoids promising all five are legible. The root will integrate the reviewed standing position. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-booths-claim-2",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-6",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-7",
+          "revision": 1
+        },
+        {
+          "id": "repair-panels-caption",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "The carvings turn gin into a chain of labour, from harvesting grain to drawing drink from a cask. Grain supplies the alcohol; the characteristic flavour comes from botanicals, especially juniper. Making a consistent drink involves judgement, because those botanical oils vary from harvest to harvest.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-6",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-7",
+            "revision": 1
+          },
+          {
+            "id": "repair-panels-caption",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C12/S-S10 supports the broad depicted chain; no precise panel order or gesture is identified. S-C13/S-S11 supplies general gin-making context, not a recovered Booth recipe or proof that all manufacturing stages happened in these offices. The scientific explanation is deliberately brief. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-booths-claim-3",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-5",
+          "revision": 1
+        },
+        {
+          "id": "repair-mountford",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "The wall itself has had a second career. It originally stood in Turnmill Street. In the nineteen-seventies, the architects developing this site realised the salvaged frontage was just the right width for their new building. The height was trickier: split-level flats helped make the rooms behind fit the old elevation.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-5",
+            "revision": 1
+          },
+          {
+            "id": "repair-mountford",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C09/S-C10/S-S08: relocated frontage and 1975–76 redevelopment, width match and split-level flats. No claim that every stone survived unchanged or the whole distillery moved. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-booths-claim-4",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-5",
+          "revision": 1
+        },
+        {
+          "id": "repair-mountford",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "Some decayed stone had to be replaced, but the carved workers came along. A frontage designed to advertise a distillery became the face of flats and offices. Once you have found the panels, take in the whole wall again. The people in stone are still making gin above rooms built for quite different lives.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-5",
+            "revision": 1
+          },
+          {
+            "id": "repair-mountford",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C09/S-C10/S-S08: partial renewal, retained Portland-stone reliefs and residential/office redevelopment. The workers “still making gin” is an explicitly visual interpretation of the carvings, not a present manufacturing claim. No interior inspection is implied. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-stjohn-gate-claim-1",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-8",
+          "revision": 1
+        },
+        {
+          "id": "repair-gate-survey",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "St John’s Gate was completed in 1504 as the entrance to a religious house. Today it houses the Museum of the Order of St John. In the seventeen-thirties, it became the address of a publishing enterprise. Edward Cave, a printer and publisher, ran the Gentleman’s Magazine here. Among the writers he employed was Samuel Johnson, long before Johnson’s dictionary made his name.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-8",
+            "revision": 1
+          },
+          {
+            "id": "repair-gate-survey",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C14/S-C15: priory entrance, completion, Cave’s enterprise and Johnson’s early work. The architectural source distinguishes the original gate from its later-restored exterior; no unchanged interior or precise room is asserted. Current museum identity/address is confirmed by the already-surveyed official tours page, reopened by the writer on 20 September 2026; no opening or interior access promise. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-stjohn-gate-claim-2",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-10",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-11",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-12",
+          "revision": 1
+        },
+        {
+          "id": "repair-boswell",
+          "revision": 1
+        },
+        {
+          "id": "repair-parliament",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "Readers wanted to know what Parliament was saying. Parliament was less keen to have it printed. In 1738, the Commons reaffirmed that publishing its proceedings breached its privileges. The magazine found a literary way round the problem: it sent its readers to Lilliput, the imaginary country in Gulliver’s Travels.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-10",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-11",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-12",
+            "revision": 1
+          },
+          {
+            "id": "repair-boswell",
+            "revision": 1
+          },
+          {
+            "id": "repair-parliament",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C16/S-C17: Commons’ 1738 assertion of privilege and the magazine’s Lilliput device. This does not recast privilege as a modern blanket criminal statute or claim the disguise guaranteed immunity. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-stjohn-gate-claim-3",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-12",
+          "revision": 1
+        },
+        {
+          "id": "repair-lilliput",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "A debate published in 1741 takes place in the Senate of Lilliput. One speaker appears as the Hurgo Quadrert. Then the introduction rather helpfully mentions a parallel debate in the British Parliament, which readers have been asking for. It is a disguise with a very large wink.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-12",
+            "revision": 1
+          },
+          {
+            "id": "repair-lilliput",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C17/S-S15: actual heading, speaker and explicit parallel-British-debate reference in the inspected transcription. The wink is interpretation of the publication’s own device. The modern editor’s identification of Quadrert is not presented as original text. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-stjohn-gate-claim-4",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-11",
+          "revision": 1
+        },
+        {
+          "id": "repair-boswell",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "Producing these speeches took more than changing the names. Johnson worked from other people’s reports and sparse notes. His biographer, James Boswell, records him saying that sometimes he received little more than the speakers’ names and which side they had taken. From that, the working writer had to supply the arguments and the language.",
+        "qualifications": [
+          "sometimes"
+        ],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-11",
+            "revision": 1
+          },
+          {
+            "id": "repair-boswell",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C18/S-S14: later biographical testimony, partly recalling Johnson’s own account. “Sometimes” is retained; no claim that every debate was invented or that these were verbatim transcripts. The last sentence explains the composition described in that account. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-stjohn-gate-claim-5",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-11",
+          "revision": 1
+        },
+        {
+          "id": "repair-boswell",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "A reader settling down to a substantial parliamentary speech was also reading the work of a hired writer. Here in Clerkenwell, political eloquence was being made on its way into print.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-11",
+            "revision": 1
+          },
+          {
+            "id": "repair-boswell",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C18/S-S14 supports the expansion from notes to speeches; the reader is an unnamed generic imagined reading situation, not a composite character or recovered incident. This paragraph makes the production mechanism intelligible without adding a reported individual response. V2 shortens the notes-to-speech explanation and removes a generic instruction to picture it; the original source/reconstruction boundary remains. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-stjohn-gate-claim-6",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-8",
+          "revision": 1
+        },
+        {
+          "id": "repair-gate-survey",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "Cave put an image of the Gate on the magazine’s title-page, making this old entrance the face of his business. He even used it on the doors of his coach in place of a coat of arms. The building we are looking at was good enough to serve as his personal emblem.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-8",
+            "revision": 1
+          },
+          {
+            "id": "repair-gate-survey",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "S-C15/S-S12: title-page image and coach doors in the Survey of London. Final present-view connection is interpretation, with no claim that Cave’s coach or an unchanged eighteenth-century façade survives here. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-green-claim-1",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-13",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-14",
+          "revision": 1
+        },
+        {
+          "id": "repair-green-survey",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "At thirty-seven A Clerkenwell Green, the Marx Memorial Library remembers a great deal of political history. One story here concerns a very small office. In 1902, this building housed a printing business managed by Harry Quelch, who also edited the socialist newspaper Justice.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-13",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-14",
+            "revision": 1
+          },
+          {
+            "id": "repair-green-survey",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "CW-N-C01/C04; CW-N-S02/S03: address, publishing use, Quelch’s role and present library. The small-office introduction is editorial framing of the documented episode. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-green-claim-2",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-13",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-15",
+          "revision": 1
+        },
+        {
+          "id": "repair-green-survey",
+          "revision": 1
+        },
+        {
+          "id": "repair-lenin",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "The Russian revolutionary Lenin was then an editor in exile, years before the revolution of 1917. His newspaper, Iskra, needed somewhere to be printed. Quelch and his fellow British socialists made their equipment available. Seventeen issues came out of this building in 1902 and 1903.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-13",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-15",
+            "revision": 1
+          },
+          {
+            "id": "repair-green-survey",
+            "revision": 1
+          },
+          {
+            "id": "repair-lenin",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "CW-N-C01/C02 and CW-N-S01/S02: Iskra, London printing and seventeen issues. Brief identity context locates Lenin before 1917. The practical cooperation does not imply uniform agreement among every printer or an endorsement of later politics. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-green-claim-3",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-15",
+          "revision": 1
+        },
+        {
+          "id": "repair-lenin",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "The extra enterprise took up room. Writing after Quelch’s death, Lenin remembered his host squeezing into a corner screened off by a thin partition. There was a small writing table, a bookshelf above it, and one chair. When Lenin visited, there was no space for a second chair.",
+        "qualifications": [
+          "Writing after Quelch’s death"
+        ],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-15",
+            "revision": 1
+          },
+          {
+            "id": "repair-lenin",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "CW-N-C02/C03; CW-N-S01: attributed retrospective participant recollection, written in a partisan obituary in 1913. Furniture and space follow that account; this is not identified with the surviving memorial room. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-green-claim-4",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-15",
+          "revision": 1
+        },
+        {
+          "id": "repair-lenin",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "It is a wonderfully awkward picture: two editors, a newspaper to discuss, and nowhere to put the visitor. Quelch had made international cooperation fit into a corner.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-15",
+            "revision": 1
+          },
+          {
+            "id": "repair-lenin",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "CW-N-C02/S01: the two editors’ documented visit and cramped workspace support the imagined practical encounter. Discussion of their newspaper is ordinary inference, not recovered dialogue; no gestures, emotional reaction or exact visitor position is invented. The last sentence is an interpretation of the material accommodation. V2 trims repeated explanation while preserving the warm interpretation of the remembered room. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-green-claim-5",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-14",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-13",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-15",
+          "revision": 1
+        },
+        {
+          "id": "repair-current-courses",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "The library still offers education in politics, including online courses in trade unions and Marxism. That is a present-day continuation of the building’s connection with ideas, without requiring you to enter or find a class taking place here.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-14",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-13",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-15",
+            "revision": 1
+          },
+          {
+            "id": "repair-current-courses",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "Official online course listing reopened 6 October 2026: October–December 2026 courses; explicitly online. Historical relation is editorial interpretation, not in-person class evidence. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-flowers-claim-1",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-16",
+          "revision": 1
+        },
+        {
+          "id": "repair-booth-b237",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "Woodbridge Chapel once sheltered a workroom full of flowers: roses, daisies and cornflowers, all being made by hand. In 1898, an investigator working on Charles Booth’s great inquiry into London life came here and found about thirty girls and women making artificial flowers in the schoolroom beneath the chapel.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-16",
+            "revision": 1
+          },
+          {
+            "id": "repair-booth-b237",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "CW-N-C05/CW-N-S06: directly observed notebook p207, in the 1898 inquiry context. The investigator is not identified as Charles Booth himself. Flower types and approximate headcount are documented; no invented colour or named worker. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-flowers-claim-2",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-16",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-17",
+          "revision": 1
+        },
+        {
+          "id": "repair-booth-b237",
+          "revision": 1
+        },
+        {
+          "id": "repair-groom-catalogue",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "Their usual workroom was being enlarged. They belonged to the flower-making work of John Groom’s mission, which trained disabled women. The visitor caught the work in temporary quarters, giving us a glimpse of an activity that the chapel’s exterior cannot explain by itself.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-16",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-17",
+            "revision": 1
+          },
+          {
+            "id": "repair-booth-b237",
+            "revision": 1
+          },
+          {
+            "id": "repair-groom-catalogue",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "CW-N-C05/C06; CW-N-S05/S06, notebook pp131 and 207, and S04’s institutional description. The “glimpse” and exterior comparison are editorial framing. No current interior use or recovered floor plan is asserted. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-flowers-claim-3",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-18",
+          "revision": 1
+        },
+        {
+          "id": "repair-flower-process",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "To picture the skill, follow a petal through the trade. Fabric was cut into shapes and dyed. Moulds pressed veins and texture into it. Then came the curve: a metal tool with a ball on the end was heated over a spirit lamp, and the petal shaped around it. A flat scrap began to resemble something that had grown.",
+        "qualifications": [
+          "To picture the skill"
+        ],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-18",
+            "revision": 1
+          },
+          {
+            "id": "repair-flower-process",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "CW-N-C07/CW-N-S08: broader period process from museum curators, expressly introduced as the trade. This does not claim the investigator inventoried these tools or watched all these stages in the chapel. No object is assigned to a particular maker. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-flowers-claim-4",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-18",
+          "revision": 1
+        },
+        {
+          "id": "repair-flower-process",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "That was still only a petal. The pieces had to be assembled into a flower, held on a wire stem and arranged into sprays. The stem itself could be covered with paper or silk. Each stage helped the finished thing conceal the small operations that had made it.",
+        "qualifications": [],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-18",
+            "revision": 1
+          },
+          {
+            "id": "repair-flower-process",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "CW-N-C07/S08: wire assembly, stem covering and sprays. Final sentence interprets the effect of the documented process. No local output quantity or individual task division is inferred. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-flowers-claim-5",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-16",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-18",
+          "revision": 1
+        },
+        {
+          "id": "repair-flower-process",
+          "revision": 1
+        },
+        {
+          "id": "repair-booth-b237",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "A mission assistant reported that it took two years to become proficient. That gives the little flowers a different weight. Their lightness and delicacy depended on skills learnt over time, before a customer ever pinned them to a hat or dress.",
+        "qualifications": [
+          "A mission assistant reported"
+        ],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-16",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-18",
+            "revision": 1
+          },
+          {
+            "id": "repair-flower-process",
+            "revision": 1
+          },
+          {
+            "id": "repair-booth-b237",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "CW-N-C06/S05, p131: the assistant’s estimate, not a guaranteed two-year qualification. S08 supports contemporary use on hats, bonnets and dresses; the imagined customer is generic and does not establish the destination of a specific local flower. V2 removes the unsupported claim that a different interviewer took this account. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-flowers-claim-6",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-source-16",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-18",
+          "revision": 1
+        },
+        {
+          "id": "pilot-source-19",
+          "revision": 1
+        },
+        {
+          "id": "repair-booth-b237",
+          "revision": 1
+        },
+        {
+          "id": "repair-gracelife",
+          "revision": 1
+        }
+      ],
+      "kind": "claim",
+      "data": {
+        "proposition": "Today the chapel is home to GraceLife London, a church congregation. Hold the earlier picture beside it for a moment: a room beneath the chapel, about thirty people at work, and the beginnings of roses and cornflowers passing through their hands.",
+        "qualifications": [
+          "about thirty"
+        ],
+        "sourceRefs": [
+          {
+            "id": "pilot-source-16",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-18",
+            "revision": 1
+          },
+          {
+            "id": "pilot-source-19",
+            "revision": 1
+          },
+          {
+            "id": "repair-booth-b237",
+            "revision": 1
+          },
+          {
+            "id": "repair-gracelife",
+            "revision": 1
+          }
+        ],
+        "status": "proposed",
+        "scope": "CW-N-C05/C07: returns to the observed temporary workroom through a bounded imagined scene. “Passing through their hands” follows the documented handcraft; no private feelings or invented incident. The present connection is to the chapel’s exterior, without claiming the workroom survives. V2 adds current church identity from the operator website, read 20 September 2026. This does not imply the flower workroom survives or invite entry. Historical source-check status inherited from the 20 September research unless evidence.json records a 6 October refresh; no new field observation. Independent current-version sentence review remains pending; related minimal excerpts are not blanket entailment. Supplemental dated evidence: content/generation-pilot/review-evidence/source-repair-2026-10-06.json. Remaining source-specific limitations still apply; no blanket acceptance."
+      }
+    },
+    {
+      "id": "pilot-script-farringdon",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-brief",
+          "revision": 1
+        },
+        {
+          "id": "pilot-route",
+          "revision": 1
+        },
+        {
+          "id": "pilot-candidate-farringdon",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-farringdon",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-smithfield",
+          "revision": 1
+        }
+      ],
+      "kind": "script",
+      "data": {
+        "audience": {
+          "reason": "Find ordinary skilled work behind public Clerkenwell exteriors",
+          "assumedKnowledge": "Little neighbourhood familiarity",
+          "intendedDiscovery": "Meat carrying, reused architecture, working writers, practical cooperation and handmade flowers",
+          "presentAnchor": "Choose a clear public pavement spot outside the Cowcross Street entrance, away from the doorway and moving pedestrians. This coordinate is a desk candidate."
+        },
+        "transcript": "We begin outside Farringdon station, at the Cowcross Street entrance. This loop through Clerkenwell is planned for about an hour, staying outside the buildings. We will meet work that is easy to miss: carrying meat, moving a whole frontage, printing speeches and shaping artificial flowers. You do not need to know the neighbourhood already.\n\nThere are five main stories after this introduction. Between them, leave space for the street and for conversation. Stop somewhere clear before listening; pause whenever a crossing or a busy pavement needs your attention. The way back to this station is included in that estimate.\n\nFirst, follow Cowcross Street east towards the market junction. Find a clear place on the north pavement of Charterhouse Street to look across at Smithfield’s halls. The route and written directions are saved with the tour. These are desk-reviewed directions, so follow current pedestrian signs if anything has changed.",
+        "narrationWindowSeconds": 58.9,
+        "assertions": [
+          {
+            "text": "We begin outside Farringdon station, at the Cowcross Street entrance. This loop through Clerkenwell is planned for about an hour, staying outside the buildings. We will meet work that is easy to miss: carrying meat, moving a whole frontage, printing speeches and shaping artificial flowers. You do not need to know the neighbourhood already.",
+            "kind": "physical",
+            "evidenceRefs": [
+              {
+                "id": "pilot-encounter-farringdon",
+                "revision": 1
+              },
+              {
+                "id": "pilot-encounter-smithfield",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "There are five main stories after this introduction. Between them, leave space for the street and for conversation. Stop somewhere clear before listening; pause whenever a crossing or a busy pavement needs your attention. The way back to this station is included in that estimate.",
+            "kind": "physical",
+            "evidenceRefs": [
+              {
+                "id": "pilot-encounter-farringdon",
+                "revision": 1
+              },
+              {
+                "id": "pilot-encounter-smithfield",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "First, follow Cowcross Street east towards the market junction. Find a clear place on the north pavement of Charterhouse Street to look across at Smithfield’s halls. The route and written directions are saved with the tour. These are desk-reviewed directions, so follow current pedestrian signs if anything has changed.",
+            "kind": "physical",
+            "evidenceRefs": [
+              {
+                "id": "pilot-encounter-farringdon",
+                "revision": 1
+              },
+              {
+                "id": "pilot-encounter-smithfield",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          }
+        ],
+        "pronunciation": [
+          "Human listening pending; no pronunciation pass inferred from decode"
+        ],
+        "delivery": "Local George, warm documentary; stationary. Historical prose adapted, not newly generated by subscription adapter. Revision 2 is an unrendered correction draft; old measured audio/window applies only to revision 1. Route prose including Old Sessions House remains blocked and is not approved."
+      }
+    },
+    {
+      "id": "pilot-script-smithfield",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-brief",
+          "revision": 1
+        },
+        {
+          "id": "pilot-route",
+          "revision": 1
+        },
+        {
+          "id": "pilot-candidate-smithfield",
+          "revision": 1
+        },
+        {
+          "id": "pilot-smithfield-claim-1",
+          "revision": 2
+        },
+        {
+          "id": "pilot-smithfield-claim-2",
+          "revision": 2
+        },
+        {
+          "id": "pilot-smithfield-claim-3",
+          "revision": 2
+        },
+        {
+          "id": "pilot-smithfield-claim-4",
+          "revision": 2
+        },
+        {
+          "id": "pilot-smithfield-claim-5",
+          "revision": 2
+        },
+        {
+          "id": "pilot-encounter-smithfield",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-booths",
+          "revision": 1
+        }
+      ],
+      "kind": "script",
+      "data": {
+        "audience": {
+          "reason": "Find ordinary skilled work behind public Clerkenwell exteriors",
+          "assumedKnowledge": "Little neighbourhood familiarity",
+          "intendedDiscovery": "Meat carrying, reused architecture, working writers, practical cooperation and handmade flowers",
+          "presentAnchor": "Use the north pavement of Charterhouse Street, looking across towards the East/West Meat Market frontage near Grand Avenue. Stay clear of crossings and loading entrances."
+        },
+        "transcript": "Smithfield keeps a different clock. The meat market’s advertised weekday hours run from midnight to seven in the morning. A daytime visitor arrives after much of the business has happened. These great covered halls make more sense when you picture them at the other end of the night.\n\nImagine a delivery here in the nineteen-seventies. Porters in blue overalls and white caps unload the lorry. Other porters, called pitchers, carry the meat into the market. Once a buyer has made a purchase, another worker, a bummaree, is paid to take it out again. One load passes through a sequence of jobs.\n\nThe porters were self-employed, licensed by the City, and paid according to how much they carried. Their arm badges identified them. Moving meat was a livelihood with its own rules and rights; even the market’s tenants had to employ the porters to shift it.\n\nThe night shift gave customers time to get their purchases ready for sale that same day. Some nearby pubs served workers finishing their shift. For someone finishing work here, a drink early in the morning could be the end of the day.\n\nIn the nineteen-nineties, automated steel rails changed the handling of carcasses, and a settlement ended the porters’ exclusive right to move the meat. The work has kept changing. So has the future of the buildings.\n\nNext are carved panels in Britton Street. Take St John Street north, then St John’s Lane towards the Gate. Just before the Gate, turn left into Briset Street, then right into Britton Street. Look across towards number twenty-five.",
+        "narrationWindowSeconds": 101.1,
+        "assertions": [
+          {
+            "text": "Smithfield keeps a different clock. The meat market’s advertised weekday hours run from midnight to seven in the morning. A daytime visitor arrives after much of the business has happened. These great covered halls make more sense when you picture them at the other end of the night.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-smithfield-claim-1",
+                "revision": 2
+              }
+            ],
+            "qualifications": [
+              "advertised"
+            ]
+          },
+          {
+            "text": "Imagine a delivery here in the nineteen-seventies. Porters in blue overalls and white caps unload the lorry. Other porters, called pitchers, carry the meat into the market. Once a buyer has made a purchase, another worker, a bummaree, is paid to take it out again. One load passes through a sequence of jobs.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-smithfield-claim-2",
+                "revision": 2
+              }
+            ],
+            "qualifications": [
+              "Imagine a delivery"
+            ]
+          },
+          {
+            "text": "The porters were self-employed, licensed by the City, and paid according to how much they carried. Their arm badges identified them. Moving meat was a livelihood with its own rules and rights; even the market’s tenants had to employ the porters to shift it.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-smithfield-claim-3",
+                "revision": 2
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "The night shift gave customers time to get their purchases ready for sale that same day. Some nearby pubs served workers finishing their shift. For someone finishing work here, a drink early in the morning could be the end of the day.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-smithfield-claim-4",
+                "revision": 2
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "In the nineteen-nineties, automated steel rails changed the handling of carcasses, and a settlement ended the porters’ exclusive right to move the meat. The work has kept changing. So has the future of the buildings.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-smithfield-claim-5",
+                "revision": 2
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "Next are carved panels in Britton Street. Take St John Street north, then St John’s Lane towards the Gate. Just before the Gate, turn left into Briset Street, then right into Britton Street. Look across towards number twenty-five.",
+            "kind": "physical",
+            "evidenceRefs": [
+              {
+                "id": "pilot-encounter-smithfield",
+                "revision": 1
+              },
+              {
+                "id": "pilot-encounter-booths",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          }
+        ],
+        "pronunciation": [
+          "Human listening pending; no pronunciation pass inferred from decode"
+        ],
+        "delivery": "Local George, warm documentary; stationary. Historical prose adapted, not newly generated by subscription adapter. Revision 2 is an unrendered correction draft; old measured audio/window applies only to revision 1. Route prose including Old Sessions House remains blocked and is not approved."
+      }
+    },
+    {
+      "id": "pilot-script-booths",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-brief",
+          "revision": 1
+        },
+        {
+          "id": "pilot-route",
+          "revision": 1
+        },
+        {
+          "id": "pilot-candidate-booths",
+          "revision": 1
+        },
+        {
+          "id": "pilot-booths-claim-1",
+          "revision": 2
+        },
+        {
+          "id": "pilot-booths-claim-2",
+          "revision": 2
+        },
+        {
+          "id": "pilot-booths-claim-3",
+          "revision": 2
+        },
+        {
+          "id": "pilot-booths-claim-4",
+          "revision": 2
+        },
+        {
+          "id": "pilot-encounter-booths",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-stjohn-gate",
+          "revision": 1
+        }
+      ],
+      "kind": "script",
+      "data": {
+        "audience": {
+          "reason": "Find ordinary skilled work behind public Clerkenwell exteriors",
+          "assumedKnowledge": "Little neighbourhood familiarity",
+          "intendedDiscovery": "Meat carrying, reused architecture, working writers, practical cooperation and handmade flowers",
+          "presentAnchor": "On the east pavement opposite number 25, look high below the cornice for five pale reliefs among the brick and stone. Trees may hide some; adjust along the same pavement without stepping into the road."
+        },
+        "transcript": "At number twenty-five Britton Street, look for the pale carved panels high among the windows, above the bands of brick and stone. There are five, though foliage may hide part of the sequence. They came from the offices of Booth’s gin distillery, and their subject is work.\n\nThe carvings turn gin into a chain of labour, from harvesting grain to drawing drink from a cask. Grain supplies the alcohol; the characteristic flavour comes from botanicals, especially juniper. Making a consistent drink involves judgement, because those botanical oils vary from harvest to harvest.\n\nThe wall itself has had a second career. It originally stood in Turnmill Street. In the nineteen-seventies, the architects developing this site realised the salvaged frontage was just the right width for their new building. The height was trickier: split-level flats helped make the rooms behind fit the old elevation.\n\nSome decayed stone had to be replaced, but the carved workers came along. A frontage designed to advertise a distillery became the face of flats and offices. Once you have found the panels, take in the whole wall again. The people in stone are still making gin above rooms built for quite different lives.\n\nNow retrace your steps to Briset Street and turn towards St John’s Gate. Find a place to one side of its southern approach, leaving the archway clear.",
+        "narrationWindowSeconds": 89.5,
+        "assertions": [
+          {
+            "text": "At number twenty-five Britton Street, look for the pale carved panels high among the windows, above the bands of brick and stone. There are five, though foliage may hide part of the sequence. They came from the offices of Booth’s gin distillery, and their subject is work.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-booths-claim-1",
+                "revision": 2
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "The carvings turn gin into a chain of labour, from harvesting grain to drawing drink from a cask. Grain supplies the alcohol; the characteristic flavour comes from botanicals, especially juniper. Making a consistent drink involves judgement, because those botanical oils vary from harvest to harvest.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-booths-claim-2",
+                "revision": 2
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "The wall itself has had a second career. It originally stood in Turnmill Street. In the nineteen-seventies, the architects developing this site realised the salvaged frontage was just the right width for their new building. The height was trickier: split-level flats helped make the rooms behind fit the old elevation.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-booths-claim-3",
+                "revision": 2
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "Some decayed stone had to be replaced, but the carved workers came along. A frontage designed to advertise a distillery became the face of flats and offices. Once you have found the panels, take in the whole wall again. The people in stone are still making gin above rooms built for quite different lives.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-booths-claim-4",
+                "revision": 2
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "Now retrace your steps to Briset Street and turn towards St John’s Gate. Find a place to one side of its southern approach, leaving the archway clear.",
+            "kind": "physical",
+            "evidenceRefs": [
+              {
+                "id": "pilot-encounter-booths",
+                "revision": 1
+              },
+              {
+                "id": "pilot-encounter-stjohn-gate",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          }
+        ],
+        "pronunciation": [
+          "Human listening pending; no pronunciation pass inferred from decode"
+        ],
+        "delivery": "Local George, warm documentary; stationary. Historical prose adapted, not newly generated by subscription adapter. Revision 2 is an unrendered correction draft; old measured audio/window applies only to revision 1. Route prose including Old Sessions House remains blocked and is not approved."
+      }
+    },
+    {
+      "id": "pilot-script-stjohn-gate",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-brief",
+          "revision": 1
+        },
+        {
+          "id": "pilot-route",
+          "revision": 1
+        },
+        {
+          "id": "pilot-candidate-stjohn-gate",
+          "revision": 1
+        },
+        {
+          "id": "pilot-stjohn-gate-claim-1",
+          "revision": 2
+        },
+        {
+          "id": "pilot-stjohn-gate-claim-2",
+          "revision": 2
+        },
+        {
+          "id": "pilot-stjohn-gate-claim-3",
+          "revision": 2
+        },
+        {
+          "id": "pilot-stjohn-gate-claim-4",
+          "revision": 2
+        },
+        {
+          "id": "pilot-stjohn-gate-claim-5",
+          "revision": 2
+        },
+        {
+          "id": "pilot-stjohn-gate-claim-6",
+          "revision": 2
+        },
+        {
+          "id": "pilot-encounter-stjohn-gate",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-green",
+          "revision": 1
+        }
+      ],
+      "kind": "script",
+      "data": {
+        "audience": {
+          "reason": "Find ordinary skilled work behind public Clerkenwell exteriors",
+          "assumedKnowledge": "Little neighbourhood familiarity",
+          "intendedDiscovery": "Meat carrying, reused architecture, working writers, practical cooperation and handmade flowers",
+          "presentAnchor": "Stand to one side of the southern paved approach and look towards the arch. Keep its through-route and museum door clear."
+        },
+        "transcript": "St John’s Gate was completed in 1504 as the entrance to a religious house. Today it houses the Museum of the Order of St John. In the seventeen-thirties, it became the address of a publishing enterprise. Edward Cave, a printer and publisher, ran the Gentleman’s Magazine here. Among the writers he employed was Samuel Johnson, long before Johnson’s dictionary made his name.\n\nReaders wanted to know what Parliament was saying. Parliament was less keen to have it printed. In 1738, the Commons reaffirmed that publishing its proceedings breached its privileges. The magazine found a literary way round the problem: it sent its readers to Lilliput, the imaginary country in Gulliver’s Travels.\n\nA debate published in 1741 takes place in the Senate of Lilliput. One speaker appears as the Hurgo Quadrert. Then the introduction rather helpfully mentions a parallel debate in the British Parliament, which readers have been asking for. It is a disguise with a very large wink.\n\nProducing these speeches took more than changing the names. Johnson worked from other people’s reports and sparse notes. His biographer, James Boswell, records him saying that sometimes he received little more than the speakers’ names and which side they had taken. From that, the working writer had to supply the arguments and the language.\n\nA reader settling down to a substantial parliamentary speech was also reading the work of a hired writer. Here in Clerkenwell, political eloquence was being made on its way into print.\n\nCave put an image of the Gate on the magazine’s title-page, making this old entrance the face of his business. He even used it on the doors of his coach in place of a coat of arms. The building we are looking at was good enough to serve as his personal emblem.\n\nGo through the arch and turn west through St John’s Square and St John’s Path to Britton Street. Turn right, then follow Clerkenwell Road’s south pavement left towards Old Sessions House. Use the pedestrian signals there to cross, then head around the Sessions House to the Green. The map shows this approach.",
+        "narrationWindowSeconds": 137.5,
+        "assertions": [
+          {
+            "text": "St John’s Gate was completed in 1504 as the entrance to a religious house. Today it houses the Museum of the Order of St John. In the seventeen-thirties, it became the address of a publishing enterprise. Edward Cave, a printer and publisher, ran the Gentleman’s Magazine here. Among the writers he employed was Samuel Johnson, long before Johnson’s dictionary made his name.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-stjohn-gate-claim-1",
+                "revision": 2
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "Readers wanted to know what Parliament was saying. Parliament was less keen to have it printed. In 1738, the Commons reaffirmed that publishing its proceedings breached its privileges. The magazine found a literary way round the problem: it sent its readers to Lilliput, the imaginary country in Gulliver’s Travels.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-stjohn-gate-claim-2",
+                "revision": 2
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "A debate published in 1741 takes place in the Senate of Lilliput. One speaker appears as the Hurgo Quadrert. Then the introduction rather helpfully mentions a parallel debate in the British Parliament, which readers have been asking for. It is a disguise with a very large wink.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-stjohn-gate-claim-3",
+                "revision": 2
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "Producing these speeches took more than changing the names. Johnson worked from other people’s reports and sparse notes. His biographer, James Boswell, records him saying that sometimes he received little more than the speakers’ names and which side they had taken. From that, the working writer had to supply the arguments and the language.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-stjohn-gate-claim-4",
+                "revision": 2
+              }
+            ],
+            "qualifications": [
+              "sometimes"
+            ]
+          },
+          {
+            "text": "A reader settling down to a substantial parliamentary speech was also reading the work of a hired writer. Here in Clerkenwell, political eloquence was being made on its way into print.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-stjohn-gate-claim-5",
+                "revision": 2
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "Cave put an image of the Gate on the magazine’s title-page, making this old entrance the face of his business. He even used it on the doors of his coach in place of a coat of arms. The building we are looking at was good enough to serve as his personal emblem.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-stjohn-gate-claim-6",
+                "revision": 2
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "Go through the arch and turn west through St John’s Square and St John’s Path to Britton Street. Turn right, then follow Clerkenwell Road’s south pavement left towards Old Sessions House. Use the pedestrian signals there to cross, then head around the Sessions House to the Green. The map shows this approach.",
+            "kind": "physical",
+            "evidenceRefs": [
+              {
+                "id": "pilot-encounter-stjohn-gate",
+                "revision": 1
+              },
+              {
+                "id": "pilot-encounter-green",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          }
+        ],
+        "pronunciation": [
+          "Human listening pending; no pronunciation pass inferred from decode"
+        ],
+        "delivery": "Local George, warm documentary; stationary. Historical prose adapted, not newly generated by subscription adapter. Revision 2 is an unrendered correction draft; old measured audio/window applies only to revision 1. Route prose including Old Sessions House remains blocked and is not approved."
+      }
+    },
+    {
+      "id": "pilot-script-green",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-brief",
+          "revision": 1
+        },
+        {
+          "id": "pilot-route",
+          "revision": 1
+        },
+        {
+          "id": "pilot-candidate-green",
+          "revision": 1
+        },
+        {
+          "id": "pilot-green-claim-1",
+          "revision": 2
+        },
+        {
+          "id": "pilot-green-claim-2",
+          "revision": 2
+        },
+        {
+          "id": "pilot-green-claim-3",
+          "revision": 2
+        },
+        {
+          "id": "pilot-green-claim-4",
+          "revision": 2
+        },
+        {
+          "id": "pilot-green-claim-5",
+          "revision": 2
+        },
+        {
+          "id": "pilot-encounter-green",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-flowers",
+          "revision": 1
+        }
+      ],
+      "kind": "script",
+      "data": {
+        "audience": {
+          "reason": "Find ordinary skilled work behind public Clerkenwell exteriors",
+          "assumedKnowledge": "Little neighbourhood familiarity",
+          "intendedDiscovery": "Meat carrying, reused architecture, working writers, practical cooperation and handmade flowers",
+          "presentAnchor": "From public space on the Green, face the white frontage and red door of the Marx Memorial Library at 37a. Stop clear of café tables and through-routes."
+        },
+        "transcript": "At thirty-seven A Clerkenwell Green, the Marx Memorial Library remembers a great deal of political history. One story here concerns a very small office. In 1902, this building housed a printing business managed by Harry Quelch, who also edited the socialist newspaper Justice.\n\nThe Russian revolutionary Lenin was then an editor in exile, years before the revolution of 1917. His newspaper, Iskra, needed somewhere to be printed. Quelch and his fellow British socialists made their equipment available. Seventeen issues came out of this building in 1902 and 1903.\n\nThe extra enterprise took up room. Writing after Quelch’s death, Lenin remembered his host squeezing into a corner screened off by a thin partition. There was a small writing table, a bookshelf above it, and one chair. When Lenin visited, there was no space for a second chair.\n\nIt is a wonderfully awkward picture: two editors, a newspaper to discuss, and nowhere to put the visitor. Quelch had made international cooperation fit into a corner.\n\nThe library still offers education in politics, including online courses in trade unions and Marxism. That is a present-day continuation of the building’s connection with ideas, without requiring you to enter or find a class taking place here.\n\nOur next stretch follows Clerkenwell Close around the churchyard. At the Three Kings, keep on the Close as it bends right, then turn right into Sans Walk. Follow Sans Walk to Woodbridge Street, turn right, and continue down Woodbridge past the Sekforde junction. Keep this stretch quiet; the map and written directions remain available.",
+        "narrationWindowSeconds": 111,
+        "assertions": [
+          {
+            "text": "At thirty-seven A Clerkenwell Green, the Marx Memorial Library remembers a great deal of political history. One story here concerns a very small office. In 1902, this building housed a printing business managed by Harry Quelch, who also edited the socialist newspaper Justice.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-green-claim-1",
+                "revision": 2
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "The Russian revolutionary Lenin was then an editor in exile, years before the revolution of 1917. His newspaper, Iskra, needed somewhere to be printed. Quelch and his fellow British socialists made their equipment available. Seventeen issues came out of this building in 1902 and 1903.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-green-claim-2",
+                "revision": 2
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "The extra enterprise took up room. Writing after Quelch’s death, Lenin remembered his host squeezing into a corner screened off by a thin partition. There was a small writing table, a bookshelf above it, and one chair. When Lenin visited, there was no space for a second chair.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-green-claim-3",
+                "revision": 2
+              }
+            ],
+            "qualifications": [
+              "Writing after Quelch’s death"
+            ]
+          },
+          {
+            "text": "It is a wonderfully awkward picture: two editors, a newspaper to discuss, and nowhere to put the visitor. Quelch had made international cooperation fit into a corner.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-green-claim-4",
+                "revision": 2
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "The library still offers education in politics, including online courses in trade unions and Marxism. That is a present-day continuation of the building’s connection with ideas, without requiring you to enter or find a class taking place here.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-green-claim-5",
+                "revision": 2
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "Our next stretch follows Clerkenwell Close around the churchyard. At the Three Kings, keep on the Close as it bends right, then turn right into Sans Walk. Follow Sans Walk to Woodbridge Street, turn right, and continue down Woodbridge past the Sekforde junction. Keep this stretch quiet; the map and written directions remain available.",
+            "kind": "physical",
+            "evidenceRefs": [
+              {
+                "id": "pilot-encounter-green",
+                "revision": 1
+              },
+              {
+                "id": "pilot-encounter-flowers",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          }
+        ],
+        "pronunciation": [
+          "Human listening pending; no pronunciation pass inferred from decode"
+        ],
+        "delivery": "Local George, warm documentary; stationary. Historical prose adapted, not newly generated by subscription adapter. Revision 2 is an unrendered correction draft; old measured audio/window applies only to revision 1. Route prose including Old Sessions House remains blocked and is not approved."
+      }
+    },
+    {
+      "id": "pilot-script-flowers",
+      "revision": 2,
+      "owner": "planner-producer-correction",
+      "createdAt": "2026-10-06T20:16:57.334Z",
+      "updatedAt": "2026-10-06T22:56:39.709Z",
+      "dependsOn": [
+        {
+          "id": "pilot-brief",
+          "revision": 1
+        },
+        {
+          "id": "pilot-route",
+          "revision": 1
+        },
+        {
+          "id": "pilot-candidate-flowers",
+          "revision": 1
+        },
+        {
+          "id": "pilot-flowers-claim-1",
+          "revision": 2
+        },
+        {
+          "id": "pilot-flowers-claim-2",
+          "revision": 2
+        },
+        {
+          "id": "pilot-flowers-claim-3",
+          "revision": 2
+        },
+        {
+          "id": "pilot-flowers-claim-4",
+          "revision": 2
+        },
+        {
+          "id": "pilot-flowers-claim-5",
+          "revision": 2
+        },
+        {
+          "id": "pilot-flowers-claim-6",
+          "revision": 2
+        },
+        {
+          "id": "pilot-encounter-flowers",
+          "revision": 1
+        },
+        {
+          "id": "pilot-encounter-farringdon",
+          "revision": 1
+        }
+      ],
+      "kind": "script",
+      "data": {
+        "audience": {
+          "reason": "Find ordinary skilled work behind public Clerkenwell exteriors",
+          "assumedKnowledge": "Little neighbourhood familiarity",
+          "intendedDiscovery": "Meat carrying, reused architecture, working writers, practical cooperation and handmade flowers",
+          "presentAnchor": "Use a clear place on the opposite/northeast pavement. Look across for the brick chapel and white CLERKENWELL MEDICAL MISSION fascia."
+        },
+        "transcript": "Woodbridge Chapel once sheltered a workroom full of flowers: roses, daisies and cornflowers, all being made by hand. In 1898, an investigator working on Charles Booth’s great inquiry into London life came here and found about thirty girls and women making artificial flowers in the schoolroom beneath the chapel.\n\nTheir usual workroom was being enlarged. They belonged to the flower-making work of John Groom’s mission, which trained disabled women. The visitor caught the work in temporary quarters, giving us a glimpse of an activity that the chapel’s exterior cannot explain by itself.\n\nTo picture the skill, follow a petal through the trade. Fabric was cut into shapes and dyed. Moulds pressed veins and texture into it. Then came the curve: a metal tool with a ball on the end was heated over a spirit lamp, and the petal shaped around it. A flat scrap began to resemble something that had grown.\n\nThat was still only a petal. The pieces had to be assembled into a flower, held on a wire stem and arranged into sprays. The stem itself could be covered with paper or silk. Each stage helped the finished thing conceal the small operations that had made it.\n\nA mission assistant reported that it took two years to become proficient. That gives the little flowers a different weight. Their lightness and delicacy depended on skills learnt over time, before a customer ever pinned them to a hat or dress.\n\nToday the chapel is home to GraceLife London, a church congregation. Hold the earlier picture beside it for a moment: a room beneath the chapel, about thirty people at work, and the beginnings of roses and cornflowers passing through their hands.\n\nReturn northwest along Woodbridge Street to Sekforde Street. Turn southwest down Sekforde towards Aylesbury Street and the Green, using the public pavement rather than Hayward’s Place. Continue around the west side of Old Sessions House to the pedestrian signals on Clerkenwell Road. Cross at the signals, then follow Turnmill Street south to the Cowcross Street station entrance. Keep the return quiet and use the saved map. End the tour when you arrive back at Farringdon.",
+        "narrationWindowSeconds": 137.2,
+        "assertions": [
+          {
+            "text": "Woodbridge Chapel once sheltered a workroom full of flowers: roses, daisies and cornflowers, all being made by hand. In 1898, an investigator working on Charles Booth’s great inquiry into London life came here and found about thirty girls and women making artificial flowers in the schoolroom beneath the chapel.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-flowers-claim-1",
+                "revision": 2
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "Their usual workroom was being enlarged. They belonged to the flower-making work of John Groom’s mission, which trained disabled women. The visitor caught the work in temporary quarters, giving us a glimpse of an activity that the chapel’s exterior cannot explain by itself.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-flowers-claim-2",
+                "revision": 2
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "To picture the skill, follow a petal through the trade. Fabric was cut into shapes and dyed. Moulds pressed veins and texture into it. Then came the curve: a metal tool with a ball on the end was heated over a spirit lamp, and the petal shaped around it. A flat scrap began to resemble something that had grown.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-flowers-claim-3",
+                "revision": 2
+              }
+            ],
+            "qualifications": [
+              "To picture the skill"
+            ]
+          },
+          {
+            "text": "That was still only a petal. The pieces had to be assembled into a flower, held on a wire stem and arranged into sprays. The stem itself could be covered with paper or silk. Each stage helped the finished thing conceal the small operations that had made it.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-flowers-claim-4",
+                "revision": 2
+              }
+            ],
+            "qualifications": []
+          },
+          {
+            "text": "A mission assistant reported that it took two years to become proficient. That gives the little flowers a different weight. Their lightness and delicacy depended on skills learnt over time, before a customer ever pinned them to a hat or dress.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-flowers-claim-5",
+                "revision": 2
+              }
+            ],
+            "qualifications": [
+              "A mission assistant reported"
+            ]
+          },
+          {
+            "text": "Today the chapel is home to GraceLife London, a church congregation. Hold the earlier picture beside it for a moment: a room beneath the chapel, about thirty people at work, and the beginnings of roses and cornflowers passing through their hands.",
+            "kind": "factual",
+            "evidenceRefs": [
+              {
+                "id": "pilot-flowers-claim-6",
+                "revision": 2
+              }
+            ],
+            "qualifications": [
+              "about thirty"
+            ]
+          },
+          {
+            "text": "Return northwest along Woodbridge Street to Sekforde Street. Turn southwest down Sekforde towards Aylesbury Street and the Green, using the public pavement rather than Hayward’s Place. Continue around the west side of Old Sessions House to the pedestrian signals on Clerkenwell Road. Cross at the signals, then follow Turnmill Street south to the Cowcross Street station entrance. Keep the return quiet and use the saved map. End the tour when you arrive back at Farringdon.",
+            "kind": "physical",
+            "evidenceRefs": [
+              {
+                "id": "pilot-encounter-flowers",
+                "revision": 1
+              },
+              {
+                "id": "pilot-encounter-farringdon",
+                "revision": 1
+              }
+            ],
+            "qualifications": []
+          }
+        ],
+        "pronunciation": [
+          "Human listening pending; no pronunciation pass inferred from decode"
+        ],
+        "delivery": "Local George, warm documentary; stationary. Historical prose adapted, not newly generated by subscription adapter. Revision 2 is an unrendered correction draft; old measured audio/window applies only to revision 1. Route prose including Old Sessions House remains blocked and is not approved."
+      }
+    }
+  ],
+  "limitations": [
+    "No route proposal or clearance acceptance. Old Sessions House wording remains a required correction alongside the route record; route-proposal cap exhausted.",
+    "No audio re-render; version-1 audio/package remains immutable and is not the revised script package.",
+    "Claims remain proposed; exact revised text requires fresh verification."
+  ],
+  "appliedAt": "2026-10-06T22:58:01.059Z"
+}

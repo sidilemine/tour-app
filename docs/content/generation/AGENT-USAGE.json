@@ -1,0 +1,806 @@
+{
+  "generatedAt": "2026-10-06T23:01:12.044Z",
+  "directPaidUsd": 0,
+  "jobs": [
+    {
+      "name": "preflight.json.ledger.json",
+      "report": {
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "rows": [
+          {
+            "operationId": "operation-1",
+            "taskId": "probe-1",
+            "role": "tester",
+            "stage": "preflight",
+            "state": "settled",
+            "failure": "app_sign_in_required",
+            "directChargedUsd": 0,
+            "activeSeconds": 0.007,
+            "inputTokens": null,
+            "outputTokens": null,
+            "cachedInputTokens": null,
+            "reasoningTokens": null,
+            "totalTokens": null,
+            "apiEquivalentRangeUsd": null,
+            "usageUncertainty": "Observed token usage and a dated model price quote are required; no production cost inferred."
+          }
+        ],
+        "byRole": [
+          {
+            "role": "tester",
+            "operations": 1,
+            "operationsWithUnknownTokens": 1,
+            "observedInputTokens": 0,
+            "operationsWithUnknownInput": 1,
+            "observedOutputTokens": 0,
+            "operationsWithUnknownOutput": 1,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 1,
+            "observedReasoningTokens": 0,
+            "operationsWithUnknownReasoning": 1,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 0,
+              "upper": 0
+            },
+            "operationsWithoutEstimate": 1
+          }
+        ],
+        "estimateBasis": {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+          "inputPerMillionUsd": 2,
+          "cachedInputPerMillionUsd": 0.1,
+          "outputPerMillionUsd": 10,
+          "cacheWritePerMillionUsd": 2.5,
+          "longContextThreshold": 272000,
+          "longContextInputMultiplier": 2,
+          "longContextOutputMultiplier": 1.5
+        },
+        "limitations": "Reasoning tokens are included in output, never added again. Standard token-only API-equivalent range; cache writes, tools, taxes and subscription/API parity are uncertain. Unknown requests are excluded from observed subtotals, never treated as free or zero-token."
+      }
+    },
+    {
+      "name": "preflight-consented-20261006.json.ledger.json",
+      "report": {
+        "model": "gpt-6.1-sol",
+        "effort": "medium",
+        "rows": [
+          {
+            "operationId": "operation-1",
+            "taskId": "probe-1",
+            "role": "tester",
+            "stage": "preflight",
+            "state": "settled",
+            "failure": "requested_model_unavailable",
+            "directChargedUsd": 0,
+            "activeSeconds": 1.441,
+            "inputTokens": null,
+            "outputTokens": null,
+            "cachedInputTokens": null,
+            "reasoningTokens": null,
+            "totalTokens": null,
+            "apiEquivalentRangeUsd": null,
+            "usageUncertainty": "Observed token usage and a dated model price quote are required; no production cost inferred."
+          }
+        ],
+        "byRole": [
+          {
+            "role": "tester",
+            "operations": 1,
+            "operationsWithUnknownTokens": 1,
+            "observedInputTokens": 0,
+            "operationsWithUnknownInput": 1,
+            "observedOutputTokens": 0,
+            "operationsWithUnknownOutput": 1,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 1,
+            "observedReasoningTokens": 0,
+            "operationsWithUnknownReasoning": 1,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 0,
+              "upper": 0
+            },
+            "operationsWithoutEstimate": 1
+          }
+        ],
+        "estimateBasis": {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+          "inputPerMillionUsd": 2,
+          "cachedInputPerMillionUsd": 0.1,
+          "outputPerMillionUsd": 10,
+          "cacheWritePerMillionUsd": 2.5,
+          "longContextThreshold": 272000,
+          "longContextInputMultiplier": 2,
+          "longContextOutputMultiplier": 1.5
+        },
+        "limitations": "Reasoning tokens are included in output, never added again. Standard token-only API-equivalent range; cache writes, tools, taxes and subscription/API parity are uncertain. Unknown requests are excluded from observed subtotals, never treated as free or zero-token."
+      }
+    },
+    {
+      "name": "preflight-astra-20261006.json.ledger.json",
+      "report": {
+        "model": "gpt-6-astra",
+        "effort": "medium",
+        "rows": [
+          {
+            "operationId": "operation-1",
+            "taskId": "probe-1",
+            "role": "tester",
+            "stage": "preflight",
+            "state": "settled",
+            "failure": "expected_event_stream",
+            "directChargedUsd": 0,
+            "activeSeconds": 2.116,
+            "inputTokens": null,
+            "outputTokens": null,
+            "cachedInputTokens": null,
+            "reasoningTokens": null,
+            "totalTokens": null,
+            "apiEquivalentRangeUsd": null,
+            "usageUncertainty": "Observed token usage and a dated model price quote are required; no production cost inferred."
+          },
+          {
+            "operationId": "operation-2",
+            "taskId": "probe-2",
+            "role": "tester",
+            "stage": "preflight",
+            "state": "settled",
+            "failure": "expected_event_stream",
+            "directChargedUsd": 0,
+            "activeSeconds": 1.938,
+            "inputTokens": null,
+            "outputTokens": null,
+            "cachedInputTokens": null,
+            "reasoningTokens": null,
+            "totalTokens": null,
+            "apiEquivalentRangeUsd": null,
+            "usageUncertainty": "Observed token usage and a dated model price quote are required; no production cost inferred."
+          }
+        ],
+        "byRole": [
+          {
+            "role": "tester",
+            "operations": 2,
+            "operationsWithUnknownTokens": 2,
+            "observedInputTokens": 0,
+            "operationsWithUnknownInput": 2,
+            "observedOutputTokens": 0,
+            "operationsWithUnknownOutput": 2,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 2,
+            "observedReasoningTokens": 0,
+            "operationsWithUnknownReasoning": 2,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 0,
+              "upper": 0
+            },
+            "operationsWithoutEstimate": 2
+          }
+        ],
+        "estimateBasis": {
+          "model": "gpt-6-astra",
+          "date": "2026-10-06",
+          "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+          "inputPerMillionUsd": 10,
+          "cachedInputPerMillionUsd": 1,
+          "cacheWritePerMillionUsd": 12.5,
+          "outputPerMillionUsd": 50,
+          "longContextThreshold": 272000,
+          "longContextInputMultiplier": 2,
+          "longContextOutputMultiplier": 1.5
+        },
+        "limitations": "Reasoning tokens are included in output, never added again. Standard token-only API-equivalent range; cache writes, tools, taxes and subscription/API parity are uncertain. Unknown requests are excluded from observed subtotals, never treated as free or zero-token."
+      }
+    },
+    {
+      "name": "preflight-transport-continuation.json.ledger.json",
+      "report": {
+        "model": "gpt-6-astra",
+        "effort": "medium",
+        "rows": [
+          {
+            "operationId": "operation-1",
+            "taskId": "probe-1",
+            "role": "tester",
+            "stage": "preflight",
+            "state": "settled",
+            "failure": "expected_event_stream",
+            "directChargedUsd": 0,
+            "activeSeconds": 3.321,
+            "inputTokens": null,
+            "outputTokens": null,
+            "cachedInputTokens": null,
+            "reasoningTokens": null,
+            "totalTokens": null,
+            "apiEquivalentRangeUsd": null,
+            "usageUncertainty": "Observed token usage and a dated model price quote are required; no production cost inferred."
+          },
+          {
+            "operationId": "operation-2",
+            "taskId": "probe-2",
+            "role": "tester",
+            "stage": "preflight",
+            "state": "settled",
+            "failure": null,
+            "directChargedUsd": 0,
+            "activeSeconds": 3.596,
+            "inputTokens": 20,
+            "outputTokens": 8,
+            "cachedInputTokens": null,
+            "reasoningTokens": null,
+            "totalTokens": 28,
+            "apiEquivalentRangeUsd": {
+              "lower": 0.00042,
+              "upper": 0.00065
+            },
+            "usageUncertainty": "Observed token usage and a dated model price quote are required; no production cost inferred."
+          },
+          {
+            "operationId": "operation-3",
+            "taskId": "probe-3",
+            "role": "tester",
+            "stage": "preflight",
+            "state": "settled",
+            "failure": null,
+            "directChargedUsd": 0,
+            "activeSeconds": 3.475,
+            "inputTokens": 72,
+            "outputTokens": 21,
+            "cachedInputTokens": null,
+            "reasoningTokens": null,
+            "totalTokens": 93,
+            "apiEquivalentRangeUsd": {
+              "lower": 0.001122,
+              "upper": 0.00195
+            },
+            "usageUncertainty": "Observed token usage and a dated model price quote are required; no production cost inferred."
+          },
+          {
+            "operationId": "operation-4",
+            "taskId": "probe-4",
+            "role": "tester",
+            "stage": "preflight",
+            "state": "settled",
+            "failure": null,
+            "directChargedUsd": 0,
+            "activeSeconds": 3.373,
+            "inputTokens": 20,
+            "outputTokens": 8,
+            "cachedInputTokens": null,
+            "reasoningTokens": null,
+            "totalTokens": 28,
+            "apiEquivalentRangeUsd": {
+              "lower": 0.00042,
+              "upper": 0.00065
+            },
+            "usageUncertainty": "Observed token usage and a dated model price quote are required; no production cost inferred."
+          },
+          {
+            "operationId": "operation-5",
+            "taskId": "probe-5",
+            "role": "tester",
+            "stage": "preflight",
+            "state": "settled",
+            "failure": null,
+            "directChargedUsd": 0,
+            "activeSeconds": 4.889,
+            "inputTokens": 72,
+            "outputTokens": 21,
+            "cachedInputTokens": null,
+            "reasoningTokens": null,
+            "totalTokens": 93,
+            "apiEquivalentRangeUsd": {
+              "lower": 0.001122,
+              "upper": 0.00195
+            },
+            "usageUncertainty": "Observed token usage and a dated model price quote are required; no production cost inferred."
+          },
+          {
+            "operationId": "operation-6",
+            "taskId": "probe-6",
+            "role": "tester",
+            "stage": "preflight",
+            "state": "settled",
+            "failure": null,
+            "directChargedUsd": 0,
+            "activeSeconds": 2.949,
+            "inputTokens": 116,
+            "outputTokens": 8,
+            "cachedInputTokens": null,
+            "reasoningTokens": null,
+            "totalTokens": 124,
+            "apiEquivalentRangeUsd": {
+              "lower": 0.000516,
+              "upper": 0.0018499999999999999
+            },
+            "usageUncertainty": "Observed token usage and a dated model price quote are required; no production cost inferred."
+          },
+          {
+            "operationId": "operation-7",
+            "taskId": "probe-7",
+            "role": "tester",
+            "stage": "preflight",
+            "state": "settled",
+            "failure": null,
+            "directChargedUsd": 0,
+            "activeSeconds": 4.455,
+            "inputTokens": 44,
+            "outputTokens": 13,
+            "cachedInputTokens": null,
+            "reasoningTokens": null,
+            "totalTokens": 57,
+            "apiEquivalentRangeUsd": {
+              "lower": 0.000694,
+              "upper": 0.0012000000000000001
+            },
+            "usageUncertainty": "Observed token usage and a dated model price quote are required; no production cost inferred."
+          },
+          {
+            "operationId": "operation-8",
+            "taskId": "probe-8",
+            "role": "tester",
+            "stage": "preflight",
+            "state": "settled",
+            "failure": null,
+            "directChargedUsd": 0,
+            "activeSeconds": 3.064,
+            "inputTokens": 30,
+            "outputTokens": 34,
+            "cachedInputTokens": null,
+            "reasoningTokens": null,
+            "totalTokens": 64,
+            "apiEquivalentRangeUsd": {
+              "lower": 0.00173,
+              "upper": 0.002075
+            },
+            "usageUncertainty": "Observed token usage and a dated model price quote are required; no production cost inferred."
+          }
+        ],
+        "byRole": [
+          {
+            "role": "tester",
+            "operations": 8,
+            "operationsWithUnknownTokens": 1,
+            "observedInputTokens": 374,
+            "operationsWithUnknownInput": 1,
+            "observedOutputTokens": 113,
+            "operationsWithUnknownOutput": 1,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 8,
+            "observedReasoningTokens": 0,
+            "operationsWithUnknownReasoning": 8,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 0.006024,
+              "upper": 0.010325
+            },
+            "operationsWithoutEstimate": 1
+          }
+        ],
+        "estimateBasis": {
+          "model": "gpt-6-astra",
+          "date": "2026-10-06",
+          "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+          "inputPerMillionUsd": 10,
+          "cachedInputPerMillionUsd": 1,
+          "cacheWritePerMillionUsd": 12.5,
+          "outputPerMillionUsd": 50,
+          "longContextThreshold": 272000,
+          "longContextInputMultiplier": 2,
+          "longContextOutputMultiplier": 1.5
+        },
+        "limitations": "Reasoning tokens are included in output, never added again. Standard token-only API-equivalent range; cache writes, tools, taxes and subscription/API parity are uncertain. Unknown requests are excluded from observed subtotals, never treated as free or zero-token."
+      }
+    },
+    {
+      "name": "live-pilot/job.json",
+      "report": {
+        "model": "gpt-6-astra",
+        "effort": "medium",
+        "rows": [
+          {
+            "operationId": "manual-calibration-tools",
+            "taskId": "manual-pilot-artifact-import",
+            "role": "planner-producer",
+            "stage": "retrospective-manual-calibration",
+            "state": "settled",
+            "failure": null,
+            "directChargedUsd": 0,
+            "activeSeconds": null,
+            "inputTokens": null,
+            "outputTokens": null,
+            "cachedInputTokens": null,
+            "reasoningTokens": null,
+            "totalTokens": null,
+            "apiEquivalentRangeUsd": null,
+            "usageUncertainty": "Manual Codex assistance; model usage/active research time not observed. No subscription-stage request or paid API call."
+          },
+          {
+            "operationId": "operation-2",
+            "taskId": "stage-research-1",
+            "role": "research",
+            "stage": "research",
+            "state": "settled",
+            "failure": null,
+            "directChargedUsd": 0,
+            "activeSeconds": 216.415,
+            "inputTokens": 24353,
+            "outputTokens": 2854,
+            "cachedInputTokens": 0,
+            "reasoningTokens": null,
+            "totalTokens": 27207,
+            "apiEquivalentRangeUsd": {
+              "lower": 0.38622999999999996,
+              "upper": 0.44711249999999997
+            },
+            "usageUncertainty": "Observed token usage and a dated model price quote are required; no production cost inferred."
+          },
+          {
+            "operationId": "operation-3",
+            "taskId": "stage-route-1",
+            "role": "route",
+            "stage": "route",
+            "state": "settled",
+            "failure": null,
+            "directChargedUsd": 0,
+            "activeSeconds": 70.288,
+            "inputTokens": 29914,
+            "outputTokens": 2844,
+            "cachedInputTokens": 0,
+            "reasoningTokens": 33,
+            "totalTokens": 32758,
+            "apiEquivalentRangeUsd": {
+              "lower": 0.44134,
+              "upper": 0.516125
+            },
+            "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+          },
+          {
+            "operationId": "operation-4",
+            "taskId": "stage-scout-1",
+            "role": "scout",
+            "stage": "scout",
+            "state": "settled",
+            "failure": null,
+            "directChargedUsd": 0,
+            "activeSeconds": 70.984,
+            "inputTokens": 22525,
+            "outputTokens": 3135,
+            "cachedInputTokens": 0,
+            "reasoningTokens": 0,
+            "totalTokens": 25660,
+            "apiEquivalentRangeUsd": {
+              "lower": 0.382,
+              "upper": 0.4383125
+            },
+            "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+          },
+          {
+            "operationId": "operation-5",
+            "taskId": "draft-audit-writer-1",
+            "role": "writer",
+            "stage": "writer",
+            "state": "settled",
+            "failure": "Known provider return rejected; inspect saved response",
+            "directChargedUsd": 0,
+            "activeSeconds": 0.03,
+            "inputTokens": null,
+            "outputTokens": null,
+            "cachedInputTokens": null,
+            "reasoningTokens": null,
+            "totalTokens": null,
+            "apiEquivalentRangeUsd": null,
+            "usageUncertainty": "Observed token usage and a dated model price quote are required; no production cost inferred."
+          },
+          {
+            "operationId": "operation-6",
+            "taskId": "draft-audit-writer-1",
+            "role": "writer",
+            "stage": "writer",
+            "state": "settled",
+            "failure": null,
+            "directChargedUsd": 0,
+            "activeSeconds": 85.378,
+            "inputTokens": 37299,
+            "outputTokens": 3555,
+            "cachedInputTokens": 0,
+            "reasoningTokens": 84,
+            "totalTokens": 40854,
+            "apiEquivalentRangeUsd": {
+              "lower": 0.55074,
+              "upper": 0.6439875
+            },
+            "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+          },
+          {
+            "operationId": "operation-7",
+            "taskId": "draft-audit-editor-1",
+            "role": "editor",
+            "stage": "editor",
+            "state": "settled",
+            "failure": null,
+            "directChargedUsd": 0,
+            "activeSeconds": 71.382,
+            "inputTokens": 37264,
+            "outputTokens": 3007,
+            "cachedInputTokens": 0,
+            "reasoningTokens": 46,
+            "totalTokens": 40271,
+            "apiEquivalentRangeUsd": {
+              "lower": 0.5229900000000001,
+              "upper": 0.61615
+            },
+            "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+          },
+          {
+            "operationId": "operation-8",
+            "taskId": "draft-audit-verification-1",
+            "role": "verification",
+            "stage": "verification",
+            "state": "settled",
+            "failure": null,
+            "directChargedUsd": 0,
+            "activeSeconds": 89.252,
+            "inputTokens": 37292,
+            "outputTokens": 4086,
+            "cachedInputTokens": 0,
+            "reasoningTokens": 100,
+            "totalTokens": 41378,
+            "apiEquivalentRangeUsd": {
+              "lower": 0.57722,
+              "upper": 0.67045
+            },
+            "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+          },
+          {
+            "operationId": "operation-9",
+            "taskId": "draft-audit-tester-1",
+            "role": "tester",
+            "stage": "tester",
+            "state": "settled",
+            "failure": null,
+            "directChargedUsd": 0,
+            "activeSeconds": 69.385,
+            "inputTokens": 38980,
+            "outputTokens": 2927,
+            "cachedInputTokens": 0,
+            "reasoningTokens": 283,
+            "totalTokens": 41907,
+            "apiEquivalentRangeUsd": {
+              "lower": 0.53615,
+              "upper": 0.6336
+            },
+            "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+          },
+          {
+            "operationId": "operation-10",
+            "taskId": "draft-audit-verification-2",
+            "role": "verification",
+            "stage": "verification",
+            "state": "settled",
+            "failure": null,
+            "directChargedUsd": 0,
+            "activeSeconds": 73.015,
+            "inputTokens": 44845,
+            "outputTokens": 3355,
+            "cachedInputTokens": 0,
+            "reasoningTokens": 82,
+            "totalTokens": 48200,
+            "apiEquivalentRangeUsd": {
+              "lower": 0.6162000000000001,
+              "upper": 0.7283124999999999
+            },
+            "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+          }
+        ],
+        "byRole": [
+          {
+            "role": "planner-producer",
+            "operations": 1,
+            "operationsWithUnknownTokens": 1,
+            "observedInputTokens": 0,
+            "operationsWithUnknownInput": 1,
+            "observedOutputTokens": 0,
+            "operationsWithUnknownOutput": 1,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 1,
+            "observedReasoningTokens": 0,
+            "operationsWithUnknownReasoning": 1,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 0,
+              "upper": 0
+            },
+            "operationsWithoutEstimate": 1
+          },
+          {
+            "role": "research",
+            "operations": 1,
+            "operationsWithUnknownTokens": 0,
+            "observedInputTokens": 24353,
+            "operationsWithUnknownInput": 0,
+            "observedOutputTokens": 2854,
+            "operationsWithUnknownOutput": 0,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 0,
+            "observedReasoningTokens": 0,
+            "operationsWithUnknownReasoning": 1,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 0.38622999999999996,
+              "upper": 0.44711249999999997
+            },
+            "operationsWithoutEstimate": 0
+          },
+          {
+            "role": "route",
+            "operations": 1,
+            "operationsWithUnknownTokens": 0,
+            "observedInputTokens": 29914,
+            "operationsWithUnknownInput": 0,
+            "observedOutputTokens": 2844,
+            "operationsWithUnknownOutput": 0,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 0,
+            "observedReasoningTokens": 33,
+            "operationsWithUnknownReasoning": 0,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 0.44134,
+              "upper": 0.516125
+            },
+            "operationsWithoutEstimate": 0
+          },
+          {
+            "role": "scout",
+            "operations": 1,
+            "operationsWithUnknownTokens": 0,
+            "observedInputTokens": 22525,
+            "operationsWithUnknownInput": 0,
+            "observedOutputTokens": 3135,
+            "operationsWithUnknownOutput": 0,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 0,
+            "observedReasoningTokens": 0,
+            "operationsWithUnknownReasoning": 0,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 0.382,
+              "upper": 0.4383125
+            },
+            "operationsWithoutEstimate": 0
+          },
+          {
+            "role": "writer",
+            "operations": 2,
+            "operationsWithUnknownTokens": 1,
+            "observedInputTokens": 37299,
+            "operationsWithUnknownInput": 1,
+            "observedOutputTokens": 3555,
+            "operationsWithUnknownOutput": 1,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 1,
+            "observedReasoningTokens": 84,
+            "operationsWithUnknownReasoning": 1,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 0.55074,
+              "upper": 0.6439875
+            },
+            "operationsWithoutEstimate": 1
+          },
+          {
+            "role": "editor",
+            "operations": 1,
+            "operationsWithUnknownTokens": 0,
+            "observedInputTokens": 37264,
+            "operationsWithUnknownInput": 0,
+            "observedOutputTokens": 3007,
+            "operationsWithUnknownOutput": 0,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 0,
+            "observedReasoningTokens": 46,
+            "operationsWithUnknownReasoning": 0,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 0.5229900000000001,
+              "upper": 0.61615
+            },
+            "operationsWithoutEstimate": 0
+          },
+          {
+            "role": "verification",
+            "operations": 2,
+            "operationsWithUnknownTokens": 0,
+            "observedInputTokens": 82137,
+            "operationsWithUnknownInput": 0,
+            "observedOutputTokens": 7441,
+            "operationsWithUnknownOutput": 0,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 0,
+            "observedReasoningTokens": 182,
+            "operationsWithUnknownReasoning": 0,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 1.1934200000000001,
+              "upper": 1.3987625
+            },
+            "operationsWithoutEstimate": 0
+          },
+          {
+            "role": "tester",
+            "operations": 1,
+            "operationsWithUnknownTokens": 0,
+            "observedInputTokens": 38980,
+            "operationsWithUnknownInput": 0,
+            "observedOutputTokens": 2927,
+            "operationsWithUnknownOutput": 0,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 0,
+            "observedReasoningTokens": 283,
+            "operationsWithUnknownReasoning": 0,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 0.53615,
+              "upper": 0.6336
+            },
+            "operationsWithoutEstimate": 0
+          }
+        ],
+        "estimateBasis": {
+          "model": "gpt-6-astra",
+          "date": "2026-10-06",
+          "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+          "inputPerMillionUsd": 10,
+          "cachedInputPerMillionUsd": 1,
+          "cacheWritePerMillionUsd": 12.5,
+          "outputPerMillionUsd": 50,
+          "longContextThreshold": 272000,
+          "longContextInputMultiplier": 2,
+          "longContextOutputMultiplier": 1.5
+        },
+        "limitations": "Reasoning tokens are included in output, never added again. Standard token-only API-equivalent range; cache writes, tools, taxes and subscription/API parity are uncertain. Unknown requests are excluded from observed subtotals, never treated as free or zero-token."
+      }
+    }
+  ],
+  "implementationHelpers": [
+    {
+      "agent": "/root/provider",
+      "inputTokens": null,
+      "outputTokens": null,
+      "reason": "Implementation/review helper usage not exposed by collaboration interface"
+    },
+    {
+      "agent": "/root/pilot",
+      "inputTokens": null,
+      "outputTokens": null,
+      "reason": "Source repair helper usage not exposed by collaboration interface"
+    },
+    {
+      "agent": "/root",
+      "inputTokens": null,
+      "outputTokens": null,
+      "reason": "Implementation/Producer assistance usage unavailable; not subscription runtime usage"
+    }
+  ],
+  "limits": "Known subtotals only; unknown dispatched inference attempts excluded, not free. No API invoice or parity claim."
+}

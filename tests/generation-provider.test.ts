@@ -265,3 +265,25 @@ test('preflight CLI records selected model and effort and rejects changing them 
   assert.notEqual(change.status,0);assert.match(change.stderr,/model\/effort changed/);
  } finally {await rm(directory,{recursive:true,force:true});}
 });
+
+test('observed headerless Responses SSE completes only with valid terminal event; JSON and truncated bodies fail', async () => {
+ for(const [body,expected] of [
+  [`event: response.completed\ndata: ${JSON.stringify(completed('PREFLIGHT_OK'))}\n\n`,'completed'],
+  [JSON.stringify(completed('PREFLIGHT_OK')),'interrupted'],
+  [`event: response.completed\ndata: ${JSON.stringify(completed('PREFLIGHT_OK'))}`,'interrupted'],
+  ['event: response.created\ndata: {"type":"response.created"}\n\n','interrupted'],
+ ] as const){
+  const result=await fixture(async url=>String(url).endsWith('/models')?catalog():new Response(new TextEncoder().encode(body))).request(request);
+  assert.equal(result.status,expected);assert.equal(result.diagnostic.contentType,'missing');
+  if(expected==='completed'){assert.equal(result.text,'PREFLIGHT_OK');assert.equal(result.usage.totalTokens,14);}
+ }
+});
+
+test('done output items preserve function history when the completed response omits its output array',async()=>{
+ const item={type:'function_call',id:'fc-fixture',namespace:'preflight',name:'echo',call_id:'call-fixture',arguments:'{"value":"history-token-47"}'};
+ const events=[{type:'response.output_item.done',output_index:0,item},{type:'response.completed',response:{status:'completed',output:[],usage:{input_tokens:72,output_tokens:21}}}];
+ const result=await fixture(async url=>String(url).endsWith('/models')?catalog():sse(events)).request(request);
+ assert.equal(result.status,'completed');assert.deepEqual(result.output,[item]);
+ const interrupted=await fixture(async url=>String(url).endsWith('/models')?catalog():sse(events.slice(0,1))).request(request);
+ assert.equal(interrupted.status,'interrupted','an item done event is not response completion');
+});

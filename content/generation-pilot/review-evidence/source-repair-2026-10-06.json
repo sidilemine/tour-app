@@ -1,0 +1,639 @@
+{
+  "schemaVersion": 1,
+  "id": "clerkenwell-pilot-source-repair-2026-10-06",
+  "createdAt": "2026-10-06T22:52:41.795923+00:00",
+  "status": "integrated-into-unaccepted-revision-2-drafts",
+  "scope": "One bounded evidence repair batch on distinctive historical stories and three existing current institutional claims. Not a full tour review or an acceptance decision.",
+  "inputHashes": {
+    "stories.json": "a7bbf4b4826017ac99f220276b9833d4dd0face0cb7bab73b1d4272ee2a7edfc",
+    "evidence.json": "06845007282bedde75714522f1360d2ce9b8e72d491b66d96db3ea764d91e893",
+    "package.json": "62f698c8295a58206f53d9e933cc5fadc3cc952bfc35a5c4db9029b662c83eff",
+    "authoring-job.json": "0eb5c2e153b375ca3ef2dddfc53ca3fd2990670615e17f3e4ba026e95050b5cb"
+  },
+  "method": {
+    "guidance": [
+      "RES-006",
+      "REVIEW-001",
+      "REVIEW-002"
+    ],
+    "priorResearch": [
+      "docs/content/authoring/clerkenwell-2026-09-20/SOUTH-RESEARCH.md",
+      "docs/content/authoring/clerkenwell-2026-09-20/NORTH-RESEARCH.md"
+    ],
+    "readDistinction": "Sources below were reopened and their relevant text read in this batch; notebook pages were visually read as historical images. Prior research guided locators, not substituted for the listed fresh reads. Quotes are exact short fragments; contextParaphrase fields are assistant paraphrases of actually read context. Source type labels distinguish primary historical texts, object catalogues, current operator pages and later scholarship.",
+    "frozenArtifactsEdited": false,
+    "fieldVisit": false,
+    "freshPhysicalStreetImagery": false,
+    "audioListening": false,
+    "runtimeModelDispatches": 0,
+    "externalPublication": false
+  },
+  "sources": [
+    {
+      "id": "repair-smithfield-badge",
+      "title": "London Museum: Porter’s Badge from Smithfield Meat Market",
+      "url": "https://www.londonmuseum.org.uk/collections/v/object-45167/porters-badge-from-smithfield-meat-market/",
+      "sourceType": "museum-object-catalogue",
+      "retrievedAt": "2026-10-06",
+      "readScope": "Object 78.75/2; description paragraphs on work roles, clothing and 1990s modernisation",
+      "excerpts": [
+        {
+          "text": "self-employed porters, who were paid according to how much they carried",
+          "locator": "Description: tenants and porters"
+        },
+        {
+          "text": "blue overalls and white caps",
+          "locator": "Description: licensed porters"
+        },
+        {
+          "text": "automated steel rails",
+          "locator": "Description: mid-1990s modernisation"
+        }
+      ],
+      "quotedWordCount": 19,
+      "contextParaphrase": "The catalogue describes a green identification armband issued for 1977–78. Tenants were required to employ porters to move meat. Pullers back unloaded lorries, pitchers carried meat into the market, and a retailer paid a bummaree to remove a purchase. The City Corporation licensed porters. Modernisation in the mid-1990s moved carcasses on rails between climate-controlled storage and outside vehicles; a settlement ended the porters’ monopoly.",
+      "claimIds": [
+        "pilot-smithfield-claim-2",
+        "pilot-smithfield-claim-3",
+        "pilot-smithfield-claim-5"
+      ],
+      "limits": "Historical catalogue synthesis, not an observed individual delivery. The adjective overhead is not supplied by this reopened passage.",
+      "rights": "Copyright not cleared for republication; short research excerpts and paraphrase only. No page or image bundled."
+    },
+    {
+      "id": "repair-smithfield-history",
+      "title": "London Museum: The history of Smithfield Market",
+      "url": "https://www.londonmuseum.org.uk/collections/london-stories/history-smithfield-market/",
+      "sourceType": "museum-history",
+      "retrievedAt": "2026-10-06",
+      "readScope": "Sections on the covered market and A world of its own",
+      "excerpts": [
+        {
+          "text": "To give customers time to buy and prepare their meat for sale the same day",
+          "locator": "A world of its own"
+        },
+        {
+          "text": "early houses",
+          "locator": "A world of its own"
+        }
+      ],
+      "quotedWordCount": 17,
+      "contextParaphrase": "The history explains why trade occurred at night: buyers needed time to prepare meat for sale that day. Workers finishing in the early morning could use pubs in or near the market that opened early for them. It also describes the nineteenth-century covered market. The end-of-day meaning of a morning drink in the script is an interpretive explanation of those hours.",
+      "claimIds": [
+        "pilot-smithfield-claim-1",
+        "pilot-smithfield-claim-4"
+      ],
+      "limits": "Does not establish present-day relative quiet or a current safe listening position.",
+      "rights": "Copyright not cleared for republication; short research excerpts and paraphrase only. No page or image bundled."
+    },
+    {
+      "id": "repair-mountford",
+      "title": "Heritage Gateway: Mountford House, 25 Britton Street",
+      "url": "https://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?resourceID=7&uid=1414903",
+      "sourceType": "official-designation-assessment",
+      "retrievedAt": "2026-10-06",
+      "readScope": "Decision 18 April 2013; Summary, History and Details",
+      "excerpts": [
+        {
+          "text": "five Portland stone panels carved in low relief",
+          "locator": "Details"
+        },
+        {
+          "text": "just the right width for re-use there",
+          "locator": "History: facade reuse"
+        },
+        {
+          "text": "split-level studio flats",
+          "locator": "History: accommodation"
+        },
+        {
+          "text": "too decayed to use",
+          "locator": "History: original stonework"
+        }
+      ],
+      "quotedWordCount": 22,
+      "contextParaphrase": "The 1975–76 YRM building combined flats and offices and reused the 1901–03 E. W. Mountford facade of Booth’s Distillery offices from Turnmill Street. The assessment names Victor Kite and Brian Henderson. The facade matched the available width. First-floor studio flats were split level to accommodate its height. Decayed upper-floor and parapet Bath stone was renewed. F. W. Pomeroy’s five Portland-stone reliefs sit between second-floor windows. The building was assessed but not added to the national list.",
+      "claimIds": [
+        "pilot-booths-claim-1",
+        "pilot-booths-claim-3",
+        "pilot-booths-claim-4"
+      ],
+      "limits": "No current foliage, sightline, pavement or individual panel-gesture inspection was made.",
+      "rights": "Copyright not cleared for republication; short research excerpts and paraphrase only. No page or image bundled."
+    },
+    {
+      "id": "repair-gate-survey",
+      "title": "Survey of London, Volume 46: St John’s Gate and St John’s Lane",
+      "url": "https://discovery.ucl.ac.uk/10198364/1/Chapter%205%20St%20John%27s%20Gate%20and%20St%20John%27s%20Lane.pdf",
+      "sourceType": "scholarly-building-history",
+      "retrievedAt": "2026-10-06",
+      "readScope": "Original 2008 chapter pp.142–163; PDF viewer pages 3 and 19 (zero-based 2 and 18); BHO capture saved 9 October 2024",
+      "excerpts": [
+        {
+          "text": "completed in 1504",
+          "locator": "PDF page 3: Great Gate"
+        },
+        {
+          "text": "an engraved view appearing on the title-page",
+          "locator": "PDF page 19: Cave"
+        },
+        {
+          "text": "painted on the doors of his coach",
+          "locator": "PDF page 19: Cave"
+        }
+      ],
+      "quotedWordCount": 17,
+      "contextParaphrase": "The gate was completed in 1504 as the main entrance to the priory’s inner precinct. Cave had settled there by August 1730; the first Gentleman’s Magazine issue appeared in February 1731. Johnson worked for the magazine as contributor, translator and editor in the 1730s and 1740s. Cave used an image of the Gate on the magazine title page and on his coach doors in place of a coat of arms. The chapter also records earlier printing or publishing uses before Cave.",
+      "claimIds": [
+        "pilot-stjohn-gate-claim-1",
+        "pilot-stjohn-gate-claim-6"
+      ],
+      "limits": "Historical scholarship and text reading only; present museum operation was not independently checked in this batch. Cave’s activity was not the Gate’s first publishing use.",
+      "rights": "Copyright not cleared for republication; short research excerpts and paraphrase only. No page or image bundled."
+    },
+    {
+      "id": "repair-boswell",
+      "title": "James Boswell: Life of Johnson, volume I",
+      "url": "https://www.gutenberg.org/files/1564/1564-h/1564-h.htm",
+      "sourceType": "historical-biography-transcription",
+      "retrievedAt": "2026-10-06",
+      "readScope": "Early London account: Senate of Lilliput, Guthrie and Johnson’s debate reports; paragraphs beginning The debates in Parliament and These debates",
+      "excerpts": [
+        {
+          "text": "from the scanty notes furnished by persons employed to attend",
+          "locator": "Johnson taking over composition"
+        },
+        {
+          "text": "Sometimes, however, as he himself told me",
+          "locator": "Following paragraph"
+        },
+        {
+          "text": "the part which they had taken",
+          "locator": "Following paragraph"
+        }
+      ],
+      "quotedWordCount": 23,
+      "contextParaphrase": "Boswell says the disguised names could be deciphered. He attributes the earlier debate reports to Guthrie, who prepared remembered material before Johnson revised it. Later, Johnson composed reports from limited notes made by people attending both Houses. Boswell explicitly attributes to Johnson the recollection that, sometimes, he received only the speakers’ names and the side each took. This is a retrospective biographical account, not a claim that every report had no notes.",
+      "claimIds": [
+        "pilot-stjohn-gate-claim-2",
+        "pilot-stjohn-gate-claim-4",
+        "pilot-stjohn-gate-claim-5"
+      ],
+      "limits": "Preserve sometimes and the attributed recollection. Do not treat later editorial footnotes as contemporary testimony.",
+      "rights": "Historic text is public domain in many jurisdictions; this artifact still retains only short excerpts from the modern transcription."
+    },
+    {
+      "id": "repair-parliament",
+      "title": "UK Parliament: A breach of privilege",
+      "url": "https://www.parliament.uk/about/living-heritage/evolutionofparliament/parliamentwork/communicating/overview/breachofprivilege/",
+      "sourceType": "official-historical-overview",
+      "retrievedAt": "2026-10-06",
+      "readScope": "Paragraph on 1738 Commons declaration and following paragraph on enforcement",
+      "excerpts": [
+        {
+          "text": "high indignity and a notorious breach of privilege",
+          "locator": "1738 declaration"
+        }
+      ],
+      "quotedWordCount": 8,
+      "contextParaphrase": "The parliamentary history says the Commons declared reporting its proceedings, including during recess, a breach of privilege in 1738. It describes subsequent efforts to enforce the prohibition and ways writers evaded it, including Johnson’s parodies. This supplies institutional historical context independently of the failed Cambridge chapter retrieval.",
+      "claimIds": [
+        "pilot-stjohn-gate-claim-2"
+      ],
+      "limits": "Official retrospective history; the original Commons Journal was not opened in this batch.",
+      "rights": "Copyright not cleared for republication; short research excerpts and paraphrase only. No page or image bundled."
+    },
+    {
+      "id": "repair-lilliput",
+      "title": "Samuel Johnson: Debates in the Senate of Lilliput, July 1741",
+      "url": "https://www.samueljohnson.com/debates/174107.html",
+      "sourceType": "historical-text-modern-transcription",
+      "retrievedAt": "2026-10-06",
+      "readScope": "Opening heading, introductory paragraph and first speaker",
+      "excerpts": [
+        {
+          "text": "DEBATES in the SENATE of LILLIPUT",
+          "locator": "Heading"
+        },
+        {
+          "text": "a parallel debate in the British Parliament",
+          "locator": "Introductory paragraph"
+        },
+        {
+          "text": "much desired by our readers",
+          "locator": "Introductory paragraph"
+        },
+        {
+          "text": "Hurgo Quadrert",
+          "locator": "First speaker"
+        }
+      ],
+      "quotedWordCount": 20,
+      "contextParaphrase": "The transcription presents the July 1741 Gentleman’s Magazine text under its Lilliput heading. Its introduction explicitly connects the forthcoming report with readers’ desire for a parallel British parliamentary debate. The first speaker is Hurgo Quadrert. Modern bracketed identifications on the web page are editorial additions, not words attributed here to the original magazine.",
+      "claimIds": [
+        "pilot-stjohn-gate-claim-3"
+      ],
+      "limits": "Text transcription read; no original magazine scan inspected. The narrator’s interpretation of the disguise as a wink is interpretation.",
+      "rights": "Copyright not cleared for republication; short research excerpts and paraphrase only. No page or image bundled."
+    },
+    {
+      "id": "repair-green-survey",
+      "title": "Survey of London, Volume 46: Clerkenwell Green",
+      "url": "https://discovery.ucl.ac.uk/id/eprint/10198342/1/Chapter%203%20Clerkenwell%20Green.pdf",
+      "sourceType": "scholarly-building-history",
+      "retrievedAt": "2026-10-06",
+      "readScope": "Original 2008 chapter pp.86–114; PDF viewer page 51 (zero-based 50), paragraphs on 37A and Twentieth Century Press",
+      "excerpts": [
+        {
+          "text": "Under the management of Harry Quelch, editor of Justice",
+          "locator": "Twentieth Century Press paragraph"
+        },
+        {
+          "text": "seventeen issues were printed here in 1902–3",
+          "locator": "Same paragraph"
+        }
+      ],
+      "quotedWordCount": 16,
+      "contextParaphrase": "Twentieth Century Press occupied 37A from 1893 to publish Justice for the Social Democratic Federation. Quelch managed the press and edited Justice. Lenin was allowed to print Iskra there, and seventeen issues appeared in 1902–03. The press later expanded into adjacent premises. This locates the publishing operation and establishes the issue count and period.",
+      "claimIds": [
+        "pilot-green-claim-1",
+        "pilot-green-claim-2"
+      ],
+      "limits": "Does not establish an unchanged modern office, furniture or visitor access.",
+      "rights": "Copyright not cleared for republication; short research excerpts and paraphrase only. No page or image bundled."
+    },
+    {
+      "id": "repair-lenin",
+      "title": "V. I. Lenin: Harry Quelch",
+      "url": "https://www.marxists.org/archive/lenin/works/1913/sep/12.htm",
+      "sourceType": "retrospective-participant-account-translated",
+      "retrievedAt": "2026-10-06",
+      "readScope": "1913 obituary; paragraphs beginning Eleven years ago and Harry Quelch had; Collected Works vol.19 pp.369–371, George Hanna translation",
+      "excerpts": [
+        {
+          "text": "there was no room for another chair",
+          "locator": "Office recollection"
+        },
+        {
+          "text": "by a thin partition",
+          "locator": "Office recollection"
+        },
+        {
+          "text": "a very small writing-table, a bookshelf above it, and a chair",
+          "locator": "Office recollection"
+        }
+      ],
+      "quotedWordCount": 22,
+      "contextParaphrase": "Writing after Quelch’s death, Lenin recalls British Social Democrats headed by Quelch making their printing plant available to Iskra eleven years earlier. Quelch then occupied a partitioned corner. Lenin lists its small table, shelf and chair and says there was no space for a second chair when he visited. The story’s awkward visitor picture is an imaginative response to this recollection; no dialogue is documented.",
+      "claimIds": [
+        "pilot-green-claim-2",
+        "pilot-green-claim-3",
+        "pilot-green-claim-4"
+      ],
+      "limits": "Retrospective translated account, not a contemporaneous room survey. No claim of unchanged furniture.",
+      "rights": "Page states public domain, Marxists Internet Archive 2004; attribution retained. No image reproduced."
+    },
+    {
+      "id": "repair-flower-process",
+      "title": "London Museum: Rediscover London’s lost art of flower making",
+      "url": "https://www.londonmuseum.org.uk/blog/rediscover-londons-lost-art-of-flower-making/",
+      "sourceType": "museum-curatorial-interview",
+      "retrievedAt": "2026-10-06",
+      "readScope": "3 March 2016; Natasha Fenner / Beatrice Behlen interview; preparation, shaping and assembly paragraphs",
+      "excerpts": [
+        {
+          "text": "cutting tools",
+          "locator": "Fabric preparation"
+        },
+        {
+          "text": "dye the fabric",
+          "locator": "Fabric preparation"
+        },
+        {
+          "text": "special moulds",
+          "locator": "Shaping petals"
+        },
+        {
+          "text": "heat it over a spirit lamp",
+          "locator": "Shaping petals"
+        },
+        {
+          "text": "around the ball",
+          "locator": "Shaping petals"
+        },
+        {
+          "text": "twisted wire",
+          "locator": "Assembly"
+        },
+        {
+          "text": "paper or silk",
+          "locator": "Assembly"
+        },
+        {
+          "text": "sprays or wreaths",
+          "locator": "Assembly"
+        }
+      ],
+      "quotedWordCount": 24,
+      "contextParaphrase": "The curator describes cutting fabric into petals with mallet-driven tools, dyeing it and drying it on porous paper. Moulds added veins. A rounded metal tool was heated over a spirit lamp and used to curve petals. Petals were assembled into flowers; twisted-wire stalks could be covered with paper or silk and combined into sprays or wreaths. The article connects artificial flowers to hats, bonnets and dresses and separately discusses John Groom’s work with disabled women. These are general trade processes, not an inventory observed at Woodbridge Chapel.",
+      "claimIds": [
+        "pilot-flowers-claim-3",
+        "pilot-flowers-claim-4",
+        "pilot-flowers-claim-5"
+      ],
+      "limits": "RES-006 applies: general technique must remain explicitly wider trade context. No evidence here that each named tool was in the chapel workroom.",
+      "rights": "Copyright not cleared for republication; short research excerpts and paraphrase only. No page or image bundled."
+    },
+    {
+      "id": "repair-booth-b237",
+      "title": "Charles Booth inquiry notebook B237: mission interviews and Woodbridge visit",
+      "url": "https://iiif.humap.site/iiif/booth/b237/manifest",
+      "sourceType": "historical-manuscript-images",
+      "retrievedAt": "2026-10-06",
+      "readScope": "Actual pixels inspected: canvas 116 manuscript p.117; canvas 123 p.131; canvas 161 p.207. Manifest retrieval failed; direct public image URLs succeeded.",
+      "excerpts": [
+        {
+          "text": "some 30 girls and women at work",
+          "locator": "Canvas 161, manuscript p.207"
+        },
+        {
+          "text": "schoolroom under the chapel",
+          "locator": "Canvas 161, p.207"
+        },
+        {
+          "text": "in process of enlargement",
+          "locator": "Canvas 161, p.207"
+        },
+        {
+          "text": "roses, daisies and cornflowers",
+          "locator": "Canvas 161, p.207"
+        },
+        {
+          "text": "After two years they become efficient",
+          "locator": "Canvas 123, p.131"
+        }
+      ],
+      "quotedWordCount": 25,
+      "contextParaphrase": "Page 117 heads the Watercress and Flower Girls Christian Mission interview, names secretary John A. Groom and bears 11/5/98. The investigator says an assistant supplied information with Groom’s authority. Page 131 reports the training estimate. Page 207 records a later visit with Mr G. to Woodbridge Street: flower makers temporarily occupied the schoolroom while their usual room was enlarged. The count is approximate. The actual handwritten pages support the flowers named in the script. Page 207 itself was not assigned the earlier interview’s exact date.",
+      "claimIds": [
+        "pilot-flowers-claim-1",
+        "pilot-flowers-claim-2",
+        "pilot-flowers-claim-5",
+        "pilot-flowers-claim-6"
+      ],
+      "limits": "Investigator identity not established. The two-year statement is an assistant’s reported estimate, not independently measured duration. No present-day imagery or physical access evidence.",
+      "rights": "Original historical manuscript; digital reproduction rights not determined. Only 25 words transcribed across all three pages; no images bundled.",
+      "imageReads": [
+        {
+          "url": "https://iiif.humap.site/iiif/booth/images/b237/116.tif/full/2200,/0/default.jpg",
+          "canvas": 116,
+          "manuscriptPage": 117,
+          "retrievalMethod": "Public HTTPS GET using curl, followed by view_image; actual pixels read",
+          "sha256": "9a28e85b2534be00de67900ead25dd78e441b0a98ea2edab305d33267eeb7940",
+          "retainedInRepository": false
+        },
+        {
+          "url": "https://iiif.humap.site/iiif/booth/images/b237/123.tif/full/2200,/0/default.jpg",
+          "canvas": 123,
+          "manuscriptPage": 131,
+          "retrievalMethod": "Public HTTPS GET using curl, followed by view_image; actual pixels read",
+          "sha256": "faad4563882091453ec9fd2d4a3a1039c6961740d5d496809654c378d1569649",
+          "retainedInRepository": false
+        },
+        {
+          "url": "https://iiif.humap.site/iiif/booth/images/b237/161.tif/full/2200,/0/default.jpg",
+          "canvas": 161,
+          "manuscriptPage": 207,
+          "retrievalMethod": "Public HTTPS GET using curl, followed by view_image; actual pixels read",
+          "sha256": "a118e69c24eb77ee129cceef6148102bab019bf5bad3273a44a2125250a958fd",
+          "retainedInRepository": false
+        }
+      ]
+    },
+    {
+      "id": "repair-groom-catalogue",
+      "title": "London Metropolitan Archives catalogue: John Groom’s Association for Disabled People",
+      "url": "https://atom.aim25.com/index.php/john-grooms-association-for-disabled-people",
+      "sourceType": "archive-collection-catalogue",
+      "retrievedAt": "2026-10-06",
+      "readScope": "GB 0074 LMA/4305; biographical history, catalogue updated January 2013",
+      "excerpts": [
+        {
+          "text": "where disabled girls could work at making artificial flowers",
+          "locator": "Biographical history"
+        }
+      ],
+      "quotedWordCount": 9,
+      "contextParaphrase": "The collection history links Groom’s mission to flower sellers and its later premises at Woodbridge Street. It describes a Sekforde Street factory for disabled girls making artificial flowers, with further factories in Woodbridge Street and Haywards Place. This supports the mission and trade context, while the specific temporary schoolroom scene comes from the notebook.",
+      "claimIds": [
+        "pilot-flowers-claim-2"
+      ],
+      "limits": "Collection-level catalogue read; underlying payrolls, factory records and training outcomes were not inspected.",
+      "rights": "Copyright not cleared for republication; short research excerpts and paraphrase only. No page or image bundled."
+    },
+    {
+      "id": "repair-panels-caption",
+      "title": "The Victorian Web: Mountford’s Booth’s Distillery offices",
+      "url": "https://victorianweb.org/art/architecture/mountford/2.html",
+      "sourceType": "scholarly-caption",
+      "retrievedAt": "2026-10-06",
+      "readScope": "Jacqueline Banerjee; modified 4 January 2013; facade and relief caption citing Zwart p.70",
+      "excerpts": [
+        {
+          "text": "from reaping corn to tapping the oak",
+          "locator": "Caption quoting Zwart"
+        }
+      ],
+      "quotedWordCount": 7,
+      "contextParaphrase": "The caption describes Mountford’s distillery offices and Pomeroy’s reliefs as a sequence through gin production, then notes the facade’s later reuse in Britton Street. This supports the overall reaping-to-cask sequence. It does not independently substantiate every botanical production detail in the story.",
+      "claimIds": [
+        "pilot-booths-claim-2"
+      ],
+      "limits": "Modern scholarly caption, not a newly inspected original design or a fresh on-site view.",
+      "rights": "Copyright not cleared for republication; short research excerpts and paraphrase only. No page or image bundled."
+    },
+    {
+      "id": "repair-market-hours",
+      "title": "Smithfield Market Tenants’ Association: Contact",
+      "url": "https://smithfieldmarket.com/contact/",
+      "sourceType": "current-operator-page",
+      "retrievedAt": "2026-10-06",
+      "readScope": "OPENING HOURS",
+      "excerpts": [
+        {
+          "text": "Mon-Fri: Midnight-7am",
+          "locator": "OPENING HOURS"
+        }
+      ],
+      "quotedWordCount": 2,
+      "contextParaphrase": "The operator currently advertises weekday midnight-to-seven opening and closure on weekends and bank holidays.",
+      "claimIds": [
+        "pilot-smithfield-claim-1"
+      ],
+      "limits": "Opening-hour publication does not establish current pavement access or actual daytime sound conditions.",
+      "rights": "Copyright not cleared for republication; short research excerpts and paraphrase only. No page or image bundled."
+    },
+    {
+      "id": "repair-gracelife",
+      "title": "GraceLife London homepage",
+      "url": "https://www.gracelifelondon.org/",
+      "sourceType": "current-occupier-page",
+      "retrievedAt": "2026-10-06",
+      "readScope": "Footer address and worship information",
+      "excerpts": [
+        {
+          "text": "GraceLife London, Woodbridge Chapel, Woodbridge Street, London",
+          "locator": "Footer"
+        }
+      ],
+      "quotedWordCount": 7,
+      "contextParaphrase": "The congregation identifies its address as Woodbridge Chapel and publishes worship services.",
+      "claimIds": [
+        "pilot-flowers-claim-6"
+      ],
+      "limits": "No entry, outside standing area or current visibility inferred.",
+      "rights": "Copyright not cleared for republication; short research excerpts and paraphrase only. No page or image bundled."
+    },
+    {
+      "id": "repair-current-courses",
+      "title": "Marx Memorial Library: Online Courses",
+      "url": "https://www.marx-memorial-library.org.uk/education/current-and-forthcoming-courses",
+      "sourceType": "current-institution-page",
+      "retrievedAt": "2026-10-06",
+      "readScope": "NEXT AVAILABLE COURSE(S), October–December 2026",
+      "excerpts": [
+        {
+          "text": "Online Courses",
+          "locator": "Heading"
+        },
+        {
+          "text": "combine Zoom classes",
+          "locator": "Delivery description"
+        }
+      ],
+      "quotedWordCount": 5,
+      "contextParaphrase": "The page advertises October–December 2026 courses on trade unions and Marxism, with Moodle facilities and Zoom classes. The script correctly presents these as online education.",
+      "claimIds": [
+        "pilot-green-claim-5"
+      ],
+      "limits": "Does not establish that a class is taking place inside the building during the walk.",
+      "rights": "Copyright not cleared for republication; short research excerpts and paraphrase only. No page or image bundled."
+    }
+  ],
+  "corrections": [
+    {
+      "id": "repair-correction-1",
+      "claimId": "pilot-flowers-claim-6",
+      "classification": "proven-qualification-loss",
+      "problem": "The closing gives an exact thirty although the manuscript count is approximate. The opening already preserves about thirty.",
+      "replacementFragment": "about thirty people at work",
+      "sourceIds": [
+        "repair-booth-b237"
+      ],
+      "mustPreserve": "Investigator attribution, temporary quarters, approximate count; no exact date inferred for p.207."
+    },
+    {
+      "id": "repair-correction-2",
+      "claimId": "pilot-smithfield-claim-5",
+      "classification": "unsupported-specificity-in-reopened-evidence",
+      "problem": "The reopened museum description supports automated steel rails, but does not establish overhead. This is an evidential repair, not proof that the rails were not overhead.",
+      "replacementFragment": "automated steel rails changed the handling of carcasses",
+      "sourceIds": [
+        "repair-smithfield-badge"
+      ]
+    },
+    {
+      "id": "repair-precision-3",
+      "claimId": "pilot-stjohn-gate-claim-1",
+      "classification": "optional-actor-precision",
+      "problem": "The Gate had earlier printing and publishing uses. Tie the 1730s sentence specifically to Cave to avoid suggesting that publishing began there then.",
+      "replacementFragment": "In the seventeen-thirties, Edward Cave ran a publishing enterprise here.",
+      "sourceIds": [
+        "repair-gate-survey"
+      ]
+    }
+  ],
+  "failedRetrievals": [
+    {
+      "url": "https://iiif.humap.site/iiif/booth/b237/manifest",
+      "failure": "web.open Internal Error",
+      "resolution": "Used already identified direct public image URLs; three images retrieved and visually read."
+    },
+    {
+      "url": "https://iiif.humap.site/iiif/booth/images/b237/161.tif/full/2200,/0/default.jpg",
+      "failure": "web.open could not access image URL (comma encoding)",
+      "resolution": "Public HTTPS GET via curl succeeded; image inspected with view_image."
+    },
+    {
+      "url": "https://iiif.humap.site/iiif/booth/images/b237/123.tif/full/2200,/0/default.jpg",
+      "failure": "web.open could not access image URL (comma encoding)",
+      "resolution": "Public HTTPS GET via curl succeeded; image inspected with view_image."
+    },
+    {
+      "url": "https://www.cambridge.org/core/books/abs/literary-authors-parliamentary-reporters/samuel-johnson-beyond-lilliput/B989325EA048E795B97830B91F5518BD",
+      "failure": "web.open Internal Error",
+      "resolution": "No fresh full chapter read claimed. UK Parliament overview, Boswell and July 1741 transcription cover the scoped historical claims."
+    },
+    {
+      "url": "https://www.theginguild.com/guidance-for-members/gin-navigator/",
+      "failure": "web.open Internal Error; targeted search did not recover relevant supporting content",
+      "resolution": "Gin botanical/harvest-oil details remain inherited-only in this repair; no new confirmation."
+    }
+  ],
+  "remainingGaps": [
+    {
+      "claimIds": [
+        "pilot-booths-claim-2"
+      ],
+      "gap": "General gin grain/botanical/juniper/harvest-oil details were not freshly confirmed because Gin Guild retrieval failed. Relief sequence is supported separately. Parent should retain inherited-check status, seek evidence, or omit unsupported detail in its single correction batch."
+    },
+    {
+      "claimIds": [
+        "pilot-stjohn-gate-claim-1"
+      ],
+      "gap": "Current museum status not refreshed here; Survey describes it historically."
+    },
+    {
+      "claimIds": [
+        "pilot-flowers-claim-5"
+      ],
+      "gap": "Two-year training claim is a mission assistant’s report; wording should retain that attribution and avoid making it a universal measured completion time."
+    },
+    {
+      "claimIds": [],
+      "gap": "No physical navigation clause, access, safe standing area, foliage, sightline, construction condition, real walking duration, audible quality or subjective enjoyment accepted by this source-only batch."
+    }
+  ],
+  "usage": {
+    "accountingScope": "This delegated helper evidence repair only; separate from parent metered runtime roles and earlier manual pilot construction.",
+    "helperModel": "inherited session model; no independent API dispatch",
+    "inputTokens": null,
+    "outputTokens": null,
+    "reason": "Helper model usage is not exposed to this task. Do not estimate or add it to runtime model totals.",
+    "directExternalCharges": 0,
+    "currency": "GBP",
+    "paidAccountsUsed": false,
+    "elapsedSeconds": null,
+    "elapsedReason": "Reliable bounded-task start timestamp was not retained; do not fabricate elapsed duration.",
+    "researchBatches": 1,
+    "batchDefinition": "Single consolidated source repair request; all listed source reads, fallbacks and supplemental artifact belong to it.",
+    "webToolCalls": 9,
+    "webOpenOperations": 29,
+    "webFindOperations": 3,
+    "webSearchQueries": 2,
+    "uniqueWebOpenUrls": 20,
+    "successfulUniqueWebTextResources": 15,
+    "failedUniqueWebOpenUrls": 5,
+    "directPublicImageGets": 3,
+    "imageVisualInspections": 3,
+    "countsNote": "Web counts include repeated opens and the three final current-page refreshes. Successful text resources comprise 13 HTML pages and 2 PDFs. Two web image failures were recovered by curl; a third historical image was read directly. Local filesystem reads/writes and artifact verification commands are not model/tool spend metrics.",
+    "globalBatchAccounting": "Parent records this as the second targeted research batch globally. The local researchBatches value of 1 counts only this delegated repair assignment; do not add it as a third global batch."
+  },
+  "gapDistinction": {
+    "suppliedPacketGapsRepaired": "The earlier retained excerpts did not themselves cover the actor chains, remounted facade details, reporting process, complete small-office description or petal-to-spray operations. Reopening the listed sources supplied that context; these were packet deficiencies, not proven false stories.",
+    "verifiedWordingDefect": "The approximate notebook count becomes exact in the flower closing.",
+    "unresolvedEvidenceSpecificity": "Overhead is absent from the reopened rails passage; this does not demonstrate factual falsity. The proposed automated-steel wording follows the actual source.",
+    "notFreshlyVerified": "Gin technical details and current Gate museum status remain outside successful fresh verification, as do all physical directions and safe positions."
+  },
+  "integration": "See correction-batch-2.json and docs/content/generation/LIVE-PILOT-REVIEW.json; exact source gaps remain, no tour acceptance."
+}

@@ -1,0 +1,146 @@
+{
+  "checkedAt": "2026-10-06T22:41:44.702Z",
+  "model": "gpt-6-astra",
+  "effort": "medium",
+  "checks": {
+    "instructions-and-text": {
+      "status": "passed",
+      "evidenceKind": "live",
+      "code": "response_completed"
+    },
+    "function-call": {
+      "status": "passed",
+      "evidenceKind": "live",
+      "code": "response_completed"
+    },
+    "explicit-tool-history": {
+      "status": "passed",
+      "evidenceKind": "live",
+      "code": "response_completed"
+    },
+    "structured-output": {
+      "status": "passed",
+      "evidenceKind": "live",
+      "code": "response_completed"
+    },
+    "image-input": {
+      "status": "passed",
+      "evidenceKind": "live",
+      "code": "response_completed"
+    }
+  },
+  "faithfulWorkflowReady": true,
+  "conditions": {
+    "search": "No runtime search dispatch verified; retained source records only",
+    "imagery": "Synthetic color input only; scouting evidence must be independently supplied",
+    "voice": "local Kokoro George"
+  },
+  "results": [
+    {
+      "contextId": "preflight-instructions-and-text",
+      "status": "completed",
+      "usage": {
+        "inputTokens": 20,
+        "outputTokens": 8,
+        "totalTokens": 28,
+        "source": "response.completed",
+        "cachedInputTokens": 0
+      },
+      "elapsedMs": 3360,
+      "diagnostic": {
+        "code": "response_completed",
+        "httpStatus": 200,
+        "retryable": false,
+        "automaticRetries": 0,
+        "bodyShape": {},
+        "contentType": "missing"
+      },
+      "directChargeUsd": 0
+    },
+    {
+      "contextId": "preflight-function-call",
+      "status": "completed",
+      "usage": {
+        "inputTokens": 72,
+        "outputTokens": 21,
+        "totalTokens": 93,
+        "source": "response.completed",
+        "cachedInputTokens": 0
+      },
+      "elapsedMs": 4882,
+      "diagnostic": {
+        "code": "response_completed",
+        "httpStatus": 200,
+        "retryable": false,
+        "automaticRetries": 0,
+        "bodyShape": {},
+        "contentType": "missing"
+      },
+      "directChargeUsd": 0
+    },
+    {
+      "contextId": "preflight-explicit-tool-history",
+      "status": "completed",
+      "usage": {
+        "inputTokens": 116,
+        "outputTokens": 8,
+        "totalTokens": 124,
+        "source": "response.completed",
+        "cachedInputTokens": 0
+      },
+      "elapsedMs": 2942,
+      "diagnostic": {
+        "code": "response_completed",
+        "httpStatus": 200,
+        "retryable": false,
+        "automaticRetries": 0,
+        "bodyShape": {},
+        "contentType": "missing"
+      },
+      "directChargeUsd": 0
+    },
+    {
+      "contextId": "preflight-structured-output",
+      "status": "completed",
+      "usage": {
+        "inputTokens": 44,
+        "outputTokens": 13,
+        "totalTokens": 57,
+        "source": "response.completed",
+        "cachedInputTokens": 0
+      },
+      "elapsedMs": 4447,
+      "diagnostic": {
+        "code": "response_completed",
+        "httpStatus": 200,
+        "retryable": false,
+        "automaticRetries": 0,
+        "bodyShape": {},
+        "contentType": "missing"
+      },
+      "directChargeUsd": 0
+    },
+    {
+      "contextId": "preflight-image-input",
+      "status": "completed",
+      "usage": {
+        "inputTokens": 30,
+        "outputTokens": 34,
+        "totalTokens": 64,
+        "source": "response.completed",
+        "cachedInputTokens": 0
+      },
+      "elapsedMs": 3056,
+      "diagnostic": {
+        "code": "response_completed",
+        "httpStatus": 200,
+        "retryable": false,
+        "automaticRetries": 0,
+        "bodyShape": {},
+        "contentType": "missing"
+      },
+      "directChargeUsd": 0
+    }
+  ],
+  "note": "Account binding, server response IDs and encrypted reasoning omitted. Final five probes only; all earlier operations retained in AGENT-USAGE.json."
+}

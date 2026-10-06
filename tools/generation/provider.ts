@@ -12,6 +12,7 @@ export interface ObservedUsage {
   totalTokens: number | null;
   source: 'response.completed' | 'terminal-response' | 'unavailable';
   cachedInputTokens?: number | null;
+  reasoningTokens?: number | null;
 }
 export interface ProviderResult {
   status: ProviderStatus;
@@ -42,6 +43,7 @@ export const DEFAULT_API_PRICE_QUOTE: ApiPriceQuote = {
   inputPerMillionUsd: 2, cachedInputPerMillionUsd: 0.1, outputPerMillionUsd: 10, cacheWritePerMillionUsd: 2.5,
   longContextThreshold: 272_000, longContextInputMultiplier: 2, longContextOutputMultiplier: 1.5,
 };
+export const ASTRA_API_PRICE_QUOTE: ApiPriceQuote = {model:'gpt-6-astra',date:'2026-10-06',sourceUrl:'https://developers.openai.com/api/docs/models/gpt-6-astra',inputPerMillionUsd:10,cachedInputPerMillionUsd:1,cacheWritePerMillionUsd:12.5,outputPerMillionUsd:50,longContextThreshold:272_000,longContextInputMultiplier:2,longContextOutputMultiplier:1.5};
 export interface InferenceRequest {
   contextId: string;
   instructions: string;
@@ -74,7 +76,7 @@ const record = (value: unknown): JsonRecord => value && typeof value === 'object
 const finiteCount = (value: unknown): number | null => typeof value === 'number' && Number.isFinite(value) && value >= 0 ? value : null;
 function usage(value: unknown, source: ObservedUsage['source']): ObservedUsage {
   const data = record(value);
-  return { inputTokens: finiteCount(data.input_tokens), outputTokens: finiteCount(data.output_tokens), totalTokens: finiteCount(data.total_tokens), source: Object.keys(data).length ? source : 'unavailable', cachedInputTokens: finiteCount(record(data.input_tokens_details).cached_tokens) };
+  return { inputTokens: finiteCount(data.input_tokens), outputTokens: finiteCount(data.output_tokens), totalTokens: finiteCount(data.total_tokens), source: Object.keys(data).length ? source : 'unavailable', cachedInputTokens: finiteCount(record(data.input_tokens_details).cached_tokens), reasoningTokens: finiteCount(record(data.output_tokens_details).reasoning_tokens) };
 }
 function errorCode(value: unknown, fallback: string): string {
   const code = record(value).code;
@@ -164,7 +166,7 @@ export class SubscriptionProvider implements ReasoningProvider {
       result.status = status;
       result.elapsedMs = Math.max(0, this.now() - started);
       result.diagnostic = { ...result.diagnostic, code, ...(httpStatus ? { httpStatus } : {}), retryable: ['rate_limit_exceeded', 'server_error', 'subscription_sharing_usage_unavailable', 'subscription_sharing_user_unavailable'].includes(code), automaticRetries: 0 };
-      const quote = this.options.apiPriceQuote ?? (result.model === DEFAULT_MODEL ? DEFAULT_API_PRICE_QUOTE : undefined);
+      const quote = this.options.apiPriceQuote ?? (result.model === DEFAULT_MODEL ? DEFAULT_API_PRICE_QUOTE : result.model===ASTRA_API_PRICE_QUOTE.model?ASTRA_API_PRICE_QUOTE:undefined);
       const u = result.usage;
       if (quote && quote.model === result.model && /^\d{4}-\d{2}-\d{2}$/.test(quote.date) && /^https:\/\/(developers|platform)\.openai\.com\//.test(quote.sourceUrl) && [quote.inputPerMillionUsd, quote.cachedInputPerMillionUsd, quote.outputPerMillionUsd].every(n => Number.isFinite(n) && n >= 0) && u.inputTokens !== null && u.outputTokens !== null) {
         const longContext = u.inputTokens > (quote.longContextThreshold ?? Infinity);
@@ -212,7 +214,11 @@ export class SubscriptionProvider implements ReasoningProvider {
         return finish('failed', result.diagnostic.code, response.status);
       }
       result.diagnostic = this.diagnostics(null, response, 'stream_opened');
-      if (!response.body || !response.headers.get('content-type')?.includes('text/event-stream')) {
+      const mediaType=response.headers.get('content-type')?.split(';')[0].trim().toLowerCase();
+      // Observed official plan route can omit Content-Type while delivering valid SSE.
+      // Validate actual complete events in that case; an HTTP status alone never accepts output.
+      if(!mediaType)result.diagnostic.contentType='missing';
+      if (!response.body || (mediaType && mediaType!=='text/event-stream')) {
         // Retain bounded shape/usage diagnostics, never an arbitrary server body or a success claim.
         const contentType=response.headers.get('content-type')?.split(';')[0].trim().toLowerCase();
         result.diagnostic.contentType=['application/json','text/html','text/plain'].includes(contentType??'')?contentType:'other-or-missing';
@@ -233,14 +239,17 @@ export class SubscriptionProvider implements ReasoningProvider {
       const decoder = new TextDecoder();
       let buffer = '';
       let receivedBytes = 0;
+      const completedItems=new Map<number,JsonRecord>();
       const consume = (frame: string): ProviderResult | undefined => {
         const data = frame.split('\n').filter(line => line.startsWith('data:')).map(line => line.slice(5).trimStart()).join('\n');
         if (!data || data === '[DONE]') return;
         const event = record(JSON.parse(data));
         if (event.type === 'response.output_text.delta' && typeof event.delta === 'string') result.text += event.delta;
+        if(event.type==='response.output_item.done'&&Number.isInteger(event.output_index)&&Number(event.output_index)>=0&&typeof record(event.item).type==='string')completedItems.set(Number(event.output_index),record(event.item));
         const terminal = record(event.response);
         if (['response.completed', 'response.failed', 'response.incomplete'].includes(String(event.type))) {
-          result.output = (Array.isArray(terminal.output) ? terminal.output : []).map(record);
+          const terminalItems=(Array.isArray(terminal.output)?terminal.output:[]).map(record);
+          result.output=terminalItems.length?terminalItems:[...completedItems.entries()].sort((a,b)=>a[0]-b[0]).map(([,item])=>item);
           result.usage = usage(terminal.usage, event.type === 'response.completed' ? 'response.completed' : 'terminal-response');
           if (event.type === 'response.completed' && terminal.status === 'completed') {
             result.text = textFromOutput(result.output) || result.text;
