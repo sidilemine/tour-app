@@ -3,7 +3,7 @@ import { audienceSchema } from '../records';
 
 const text=z.string().min(1), id=z.string().regex(/^[a-z0-9][a-z0-9-]{0,59}$/);
 export const pointSchema=z.object({latitude:z.number().min(-90).max(90),longitude:z.number().min(-180).max(180)}).strict();
-export const briefSchema=z.object({schemaVersion:z.literal(1),id,area:text,start:text,end:text,durationSeconds:z.number().positive(),generationMinutes:z.number().int().min(5).max(90).optional(),access:text,audience:audienceSchema,voice:z.literal('local Kokoro George'),model:z.enum(['gpt-6-astra','gpt-6-sol','gpt-6.1-sol']),effort:z.literal('medium'),directPaidCeilingUsd:z.literal(0),mapId:text,freshContentOnly:z.literal(true),requirements:z.array(text)}).strict();
+export const briefSchema=z.object({schemaVersion:z.literal(1),id,area:text,start:text,end:text,durationSeconds:z.number().positive(),mapEvidence:z.object({path:text,sha256:z.string().regex(/^[a-f0-9]{64}$/)}).strict().optional(),generationMinutes:z.number().int().min(5).max(90).optional(),access:text,audience:audienceSchema,voice:z.literal('local Kokoro George'),model:z.enum(['gpt-6-astra','gpt-6-sol','gpt-6.1-sol']),effort:z.literal('medium'),directPaidCeilingUsd:z.literal(0),mapId:text,freshContentOnly:z.literal(true),requirements:z.array(text)}).strict();
 export type FactoryBrief=z.infer<typeof briefSchema>;
 export const surveySchema=z.object({publishedWalks:z.array(z.object({title:text,url:z.url(),stops:z.array(text),themes:z.array(text),stories:z.array(text)}).strict()).min(3).max(8),candidates:z.array(z.object({id,name:text,why:text,leadUrls:z.array(z.url()).min(1)}).strict()).min(5).max(16),gaps:z.array(text)}).strict();
 export const researchSchema=z.object({

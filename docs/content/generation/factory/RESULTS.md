@@ -2,7 +2,7 @@
 
 **Current implementation:** fresh jobs use the owner-selected Sol6.1 medium on the existing app grant, with overflow off and US$0 direct paid ceiling. Duration feasibility is enforced before writing and actual audio plus estimated walking/allowances must meet55–65minutes for the60-minute brief. Proportionate crossing review and complete canonical directions are implemented. Both Sol models pass capability checks; Sol6.1 also passed hosted search and is running the full factory. [Model evidence](../SOL-ACCESS-2026-10-07.json), [search calibration](../SOL61-SEARCH-2026-10-07.json).
 
-**Latest live checkpoint:** the third fresh Sol6.1 run produced four fully validated George recordings and a structurally valid package, but the50m45 estimate failed the55–65minute gate. It took56m31 and3,129,164known tokens plus two unknown requests. The route and final content/navigation reviews passed; its provisional narration allowance proved too optimistic after proper editorial cuts. A fourth entirely fresh run now starts at`4ca21c7` with all fixes, a conservative route reserve, revised writing guidance and the unchanged player’s complete direction layout. Its final result is pending; earlier jobs remain closed.
+**Latest live checkpoint:** Sol6.1 v3 produced four validated George recordings and a structurally valid package, but its50m45 estimate failed the55–65minute gate (56m31 elapsed,3,129,164known tokens plus two unknown requests). Fresh v4 then stopped after17calls/538,964known tokens with three short proposals, unavailable map service and an unused research handoff. Both remain closed failures. A fresh v5 uses the conservative duration policy, a bounded dated local map extract and the duration-to-research handoff fix. Its final outcome remains pending.
 
 **Implemented underfill correction:** policy3 accepts route feasibility only when walking/allowance plus80seconds per stop reaches the lower bound. It does not assume three-minute stories everywhere. Writer budgets use an approximately2.3word/sec George infrastructure estimate; final audio is still measured. This directly rejects the third run’s2.617km geometry before writing. No narration padding, slower playback, inflated allowance or old source material is used.
 
@@ -17,7 +17,9 @@ The following four-job table is the historical Astra baseline. Its immutable rec
 
 Those four historical runs used consented Astra medium and **US$0 direct paid usage**. The four jobs total131requests and5,811,165known tokens, with five additional requests of unknown usage. The final run's token-only API-equivalent estimate isUS$20.8745–25.4507; that is not a charge. Per-role figures, failed work and exclusions are in[COSTS](COSTS.md);[BENCHMARK.json](BENCHMARK.json) retains exact timings, versions and completion stages. Cross-area elapsed differences cannot establish causal improvement.
 
-## Final fresh Highgate verification — historical Astra baseline
+## Final fresh Highgate verification
+
+This section records the historical Astra baseline.
 
 Implementation commit `1b06692`; empty authored inputs; fresh sources and geometry. Started **02:21:53.020UTC**, ended **02:46:15.017UTC**: **1,461.997seconds**, with **1,317.32seconds summed provider activity** (not wall time). All37provider requests completed with known usage. No technical retry, manual content replacement, time extension or in-run implementation intervention occurred. The final software metadata/navigation corrections recorded below were made after this run; its artifact hashes and implementation identity remain unchanged.
 

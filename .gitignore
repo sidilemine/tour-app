@@ -57,3 +57,7 @@ GoogleService-Info.plist
 
 # Do not blanket-ignore JSON, audio, maps, lockfiles or fixtures:
 # small owned tour assets and approved replay data belong in version control.
+
+# Python authoring-tool bytecode
+__pycache__/
+*.pyc

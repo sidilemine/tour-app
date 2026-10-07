@@ -66,3 +66,18 @@ Rerunning a blocked job does not extend its limits. Do not use a technical retry
 
 
 Direction preparation protocol3 permits up to20 lines, matching the existing player. The compiler preserves approved wording while splitting long lines at sentence boundaries. If the complete return exceeds the duplicate finish field, that field explicitly directs the visitor to the final story’s existing Read / directions control, which retains every return step. Review protocol4 describes that actual layout; a historical null projection caused by a compiler error requires a separate exact integration review after the local fix. It cannot approve changed content or erase prior findings. New writer protocol3 keeps research-audit disclaimers out of speech and distributes the word budget according to supported substance.
+
+
+## Dated local map evidence
+
+A fresh brief may bind `mapEvidence.path` (inside ignored `local-data`) and its SHA-256. Map queries then use that immutable snapshot, retain source and query identities, and reject queries outside its declared extent. This is reusable geographic infrastructure; each job still obtains its own tool receipts and fresh editorial research. It avoids the observed Overpass outage, while page reads and Valhalla routing remain online. It is currently scoped to dated Greater London Geofabrik extracts, not a global map backend.
+
+Prepare the isolated parser with `python3 -m venv local-data/generation-map-env` and `local-data/generation-map-env/bin/pip install --index-url https://pypi.org/simple -r tools/generation/factory/map-requirements.txt`. Download the dated PBF and matching MD5 from the [official Geofabrik London directory](https://download.geofabrik.de/europe/united-kingdom/england/greater-london.html), then run:
+
+```sh
+local-data/generation-map-env/bin/python tools/generation/factory/extract-map.py local-data/generation-map-data/greater-london-261006.osm.pbf local-data/generation-map-data/highgate-261006.json --bounds=-0.165,51.552,-0.125,51.585 --source-url https://download.geofabrik.de/europe/united-kingdom/england/greater-london-261006.osm.pbf --md5 local-data/generation-map-data/greater-london-261006.osm.pbf.md5
+```
+
+Use the emitted snapshot SHA-256 in a new brief. Never overwrite a bound snapshot or change a resumed brief. The extractor validates the downloaded checksum and retains the original data timestamp. This example has data through 6 October 2026, 20:21:06 UTC. Refresh explicitly for future work; there is no claim of live closure information. Tagged nodes/ways are retained; relations are omitted and extent-edge geometry has explicit gaps. Query truncation and access uncertainty stay visible. Do not infer absence from a limited result.
+
+For a route rejected as too short, new jobs can now use still-available physical research on existing unresolved candidates before the next proposal. No research/route limit is increased and genuine final underfill still fails.

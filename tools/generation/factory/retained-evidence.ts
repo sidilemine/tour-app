@@ -7,6 +7,7 @@ import { z } from 'zod';
 import { loadJob } from '../store';
 import type { JsonRecord } from '../provider';
 import type { Research } from './contracts';
+import { isMapEvidenceResource } from './local-map';
 import { collectObservedImages, type LocalTool } from './runtime';
 
 export interface RouteTextEvidence {url:string;text:string;hash:string;operationId:string;callId:string;phaseId:string;toolName:string}
@@ -59,7 +60,7 @@ export function createRetainedEvidenceTools(options:{
   if(retained)return {...retained,evidence:'Frozen route text from this job; untrusted source material',cacheHit:true};
   if(page&&typeof page.text==='string'&&page.text.trim())return {url,text:page.text,evidence:'Retained text from this job; untrusted source material',cacheHit:true};
   const identity=new URL(url);
-  const mapIdentity=identity.hostname==='overpass-api.de'&&identity.pathname==='/api/interpreter'&&identity.hash.startsWith('#query-');
+  const mapIdentity=isMapEvidenceResource(identity);
   assert.ok(!mapIdentity&&sources.get(url)!.passage!==''&&options.fallbackReadPage,'Retained map/image text unavailable; use retained image reader for pixels');
   return options.fallbackReadPage.run(options.fallbackReadPage.parse({url}));
  }};

@@ -144,7 +144,7 @@ function providerResult(request: InferenceRequest, value: unknown, calls: Provid
     ...(request.webSearch ? { webSearchCalls: [{ id: 'synthetic-search', status: 'completed', action: { type: 'search', queries: ['synthetic fixture'] }, sources: [] }] } : {}),
     usage: { inputTokens: 20, outputTokens: 10, totalTokens: 30, source: 'response.completed' }, elapsedMs: 1, evidenceKind: 'fixture', diagnostic: { code: 'fixture', retryable: false, automaticRetries: 0 }, directChargeUsd: 0, estimatedApiEquivalentUsd: null };
 }
-async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = false, failTester = false, evidenceRepair:'valid'|'invalid'|false=false, stationaryBudget?:number, invalidFirstThrough=false, readiness:'all'|'selected'|'unrepaired'|false=false,experience:'legacy'|'short'|'fit'|'correct'='legacy',rejectDirections:boolean|'ambiguous'=false) {
+async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = false, failTester = false, evidenceRepair:'valid'|'invalid'|false=false, stationaryBudget?:number, invalidFirstThrough=false, readiness:'all'|'selected'|'unrepaired'|'duration'|false=false,experience:'legacy'|'short'|'fit'|'correct'='legacy',rejectDirections:boolean|'ambiguous'=false) {
   const f = fixture(); if(stationaryBudget!==undefined)f.brief.durationSeconds=f.prepared.walkingSeconds+f.plan.allowanceSeconds+stationaryBudget; await mkdir('local-data', { recursive: true }); const directory = await mkdtemp(resolve('local-data/factory-pipeline-test-'));
   t.after(() => rm(directory, { recursive: true, force: true }));
   if(experience==='fit'||experience==='correct')f.brief.durationSeconds=f.prepared.walkingSeconds+f.plan.allowanceSeconds+480;
@@ -181,10 +181,11 @@ async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = 
       assert.ok(request.input.some(i=>Array.isArray(i.content)&&i.content.some(p=>p.type==='input_image'&&p.image_url==='data:image/png;base64,'+imageBytes.toString('base64'))));
       const repaired=structuredClone(f.research);if(evidenceRepair==='invalid')repaired.sources.find(s=>s.id==='map-source')!.passage='';return providerResult(request,repaired);
     }
-    if(readiness&&(name==='research'||name==='physical_readiness'||name.startsWith('route_research_'))){
+    if(readiness&&(name==='research'||name==='physical_readiness'||name.startsWith('route_research_')||name.startsWith('duration_research_'))){
       const value=structuredClone(f.research);
       if(name==='research'||readiness==='unrepaired'){
-        if(readiness==='selected'){
+        if(readiness==='duration'){value.places.push({...structuredClone(value.places[1]),candidateId:'place-4',essentialUnknowns:['Synthetic missing public gate for a meaningful extension']});}
+        else if(readiness==='selected'){
           value.places[0].essentialUnknowns=['Synthetic unknown public approach'];
           value.places.push({...structuredClone(value.places[1]),candidateId:'place-4'});
         }else value.places.forEach(p=>{p.essentialUnknowns=['Synthetic unknown public approach'];});
@@ -556,4 +557,14 @@ test('conservative duration planning does not rely on three-minute stories to re
  assert.equal(suitable.routeFeasible,true);assert.equal(durationFits(2700+480+400,suitable),true);
  assert.equal(suitable.routeNarrationReserveSeconds,320);assert.equal(suitable.estimatedWordsPerSecond,2.3);
  assert.ok(suitable.targetWordsPerStory>durationBudget(3600,2700,480,4).targetWordsPerStory);
+});
+
+
+test('duration failure uses remaining physical research before consuming the next short proposal',async t=>{
+ const r=await replay(t,false,false,false,false,undefined,false,'duration','short');
+ await assert.rejects(runFactory(r.runtime,r.tools,r.options),/three proposals/);
+ assert.ok(r.requests.indexOf('duration_research_1')>r.requests.indexOf('route_plan_1'));
+ assert.ok(r.requests.indexOf('duration_research_1')<r.requests.indexOf('route_plan_2'));
+ assert.equal(r.runtime.job.counters.research,1);assert.equal(r.runtime.job.counters.route,3);
+ assert.equal(r.buildCalls(),0);assert.ok(!r.requests.includes('writing'));
 });

@@ -98,3 +98,15 @@ The run took **56m30.891s** (11:09:58.860–12:06:29.751UTC), including two chec
 | verification | 10 | 0 | 580,923 | 11,151 | 592,074 | 1.2734–1.5638 |
 
 [Third-run record](SOL61-V3-RUN.json) and [Sol-inclusive benchmark](SOL61-BENCHMARK.json) retain all failures and the unpromoted build receipt. Local George synthesis and the separate actual-package software checks have no model tokens. Implementation-assistant usage remains unknown and excluded. No listening or walking duration was observed.
+
+
+## Sol6.1 fourth trial — conservative gate and map outage
+
+Elapsed11m01.597s (12:08:20.627–12:19:22.224UTC);17inference requests,538,964known tokens, no unknown usage, US$0direct. Known token-only API-equivalentUS$1.1800–1.4291. No technical retry, deadline extension or manual content replacement. The new duration gate rejected three short routes; no Scout, writer or audio stage was reached. Map service failure and an unused duration-to-research handoff are retained in[SOL61-V4-RUN.json](SOL61-V4-RUN.json).
+
+| Runtime role | Requests | Unknown usage | Known input | Known output | Known total | Token-only API-equivalentUSD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| research | 6 | 0 | 377,336 | 11,978 | 389,314 | 0.8314–1.0087 |
+| route | 11 | 0 | 143,484 | 6,166 | 149,650 | 0.3486–0.4204 |
+
+Map extraction and local regression checks used no model calls. Implementation-assistant usage remains unavailable and excluded.

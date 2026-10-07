@@ -7,6 +7,7 @@ import { BlockList, isIP } from 'node:net';
 import { mkdir, readFile, writeFile, rename } from 'node:fs/promises';
 import { resolve, relative, join } from 'node:path';
 import { z } from 'zod';
+import { loadLocalMap, localMapQuery, type LocalMapReference, type LocalMapSnapshot } from './local-map';
 import { distance, type Coordinate } from '../../../src/domain/fixture';
 
 export const publicRoutingPolicy = {
@@ -38,6 +39,7 @@ export async function tryPinnedAddresses<T>(addresses:Address[],method:string,si
 }
 export interface PublicToolsOptions {
   directory: string;
+  mapEvidence?:LocalMapReference;
   /** Trusted test transport only; production defaults to DNS-pinned native HTTPS. */
   fetch?: typeof globalThis.fetch;
   /** Deterministic DNS seam for tests. Every result is still checked. */
@@ -219,6 +221,7 @@ function verifyThroughPoints(legs:RouteLeg[],throughByLeg:Coordinate[][]):NonNul
 
 export class PublicTools {
   private directory: string;
+  private localMap?:LocalMapSnapshot;
   private maxBytes: number;
   private timeoutMs: number;
   private connectionAttempts=new WeakMap<Response,ConnectionAttempt[]>();
@@ -366,6 +369,7 @@ export class PublicTools {
   }
   private async mapSnapshot(center: Coordinate, radius: number, transport: boolean, crossing = false) {
     coordinate.parse(center); assert.ok(Number.isFinite(radius) && radius > 0 && radius <= 250, 'Map feature radius must be within 250 metres');
+    if(this.options.mapEvidence){this.localMap??=loadLocalMap(this.options.mapEvidence);return localMapQuery(this.localMap,this.options.mapEvidence,center,radius,transport,crossing);}
     const around = `(around:${radius},${center.latitude},${center.longitude})`;
     // Never expand relations: a named relation touching this radius can contain
     // an entire district or park. Clip long way geometry to the local box too.

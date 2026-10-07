@@ -14,6 +14,7 @@ import { withJobLock } from '../store';
 import { briefSchema, constrainedRoutePlanSchema, draftSchema, excludeUnusedEmptySources, physicalResearchSchema, researchSchema, reviewPasses, reviewSchema, routePlanSchema, surveySchema, validateDraft, validateResearch, type Draft, type FactoryBrief, type Research, type RoutePlan } from './contracts';
 import { FactoryRuntime, FACTORY_REQUEST_TIMEOUT_MS, collectObservedImages, digest, writeJSON, type LocalTool } from './runtime';
 import { PublicTools } from './public-tools';
+import { isMapEvidenceIdentity, isMapEvidenceResource } from './local-map';
 import { durationBudget, durationFits, PRACTICAL_ACCESS_POLICY, REVIEW_CONTRACT } from './experience-policy';
 import { inspectBundledMap } from './software-evidence';
 import { checkPackageForHandoff } from './package-checks';
@@ -29,7 +30,7 @@ export function routingOptionsForPlan(plan:RoutePlan,pages:Map<string,{text:stri
   assert.ok(Number.isInteger(index)&&index>=0&&index<throughByLeg.length,'Unknown constrained leg');
   for(const item of leg.points){
    const url=new URL(item.sourceUrl),page=pages.get(item.sourceUrl);
-   assert.ok(url.origin==='https://overpass-api.de'&&url.pathname==='/api/interpreter'&&/^#query-[a-f0-9]{64}$/.test(url.hash)&&page,'Through point requires exact retained map evidence');
+   assert.ok(isMapEvidenceIdentity(url)&&page,'Through point requires exact retained map evidence');
    assert.ok(page.text.startsWith('OpenStreetMap mapped features only;'),'Through evidence must be a map snapshot');
    const features=JSON.parse(page.text.slice(page.text.indexOf('['))) as {lat?:number;lon?:number;geometry?:({lat:number;lon:number}|null)[]}[];
    const coordinates=features.flatMap(f=>[...(typeof f.lat==='number'&&typeof f.lon==='number'?[{latitude:f.lat,longitude:f.lon}]:[]),...(f.geometry??[]).filter(p=>p!==null).map(p=>({latitude:p.lat,longitude:p.lon}))]);
@@ -199,6 +200,7 @@ export function retainPackageReviewInput(runtime:FactoryRuntime,phase:'tester'|'
 export async function runFactory(runtime:FactoryRuntime,tools:PublicTools,options:{build?:typeof buildTour}={}){
  const {brief}=runtime,pages=new Map<string,{text:string}>();
  const experienceVersion=runtime.phaseProtocol('experience-policy',runtime.job.tasks.length?1:3),experiencePolicy=experienceVersion>=2;
+ const durationRepairProtocol=runtime.phaseProtocol('duration-research-repair',runtime.job.tasks.some(t=>t.role==='route')?1:2);
  const tourBudget=(walking:number,allowance:number,stops:number)=>durationBudget(brief.durationSeconds,walking,allowance,stops,experienceVersion>=3);
  const accessPolicy=experiencePolicy?PRACTICAL_ACCESS_POLICY:'';
  const softwareChecksPath=join(runtime.directory,'software-checks.json');
@@ -212,7 +214,7 @@ export async function runFactory(runtime:FactoryRuntime,tools:PublicTools,option
   const identity=new URL(args.url);assert.ok(identity.protocol==='https:'&&!identity.username&&!identity.password,'Public HTTPS source required');
   const retained=pages.get(args.url);
   if(retained){const text=retained.text.slice(0,28000);return {...retained,url:args.url,text,hash:createHash('sha256').update(text).digest('hex'),fullHash:createHash('sha256').update(retained.text).digest('hex'),truncated:text.length<retained.text.length,cacheHit:true,evidence:'Retained text from this job, bounded to 28000 characters; untrusted source material'};}
-  assert.ok(!(identity.pathname==='/api/interpreter'&&identity.hash.startsWith('#query-')),'Retained map text unavailable; read_map is required');
+  assert.ok(!isMapEvidenceResource(identity),'Retained map text unavailable; read_map is required');
   const page=await tools.readPage(args.url);pages.set(args.url,page);pages.set(page.finalUrl,page);writeJSON(pagesPath,Object.fromEntries(pages));const text=page.text.slice(0,28000);return {...page,text,hash:createHash('sha256').update(text).digest('hex'),fullHash:page.hash,truncated:text.length<page.text.length};
  }};
  const mapTool:LocalTool={name:'read_map',description:'Inspect actual public OpenStreetMap named features and paths near a supplied approximate point. Radius at most250m; coordinates and tags are evidence, not proof of safe or current access.',parameters:{type:'object',properties:{latitude:{type:'number'},longitude:{type:'number'},radius:{type:'number'}},required:['latitude','longitude','radius'],additionalProperties:false},parse:args=>z.object({latitude:z.number().min(-85).max(85),longitude:z.number().min(-180).max(180),radius:z.number().min(1).max(250)}).strict().parse(args),async run(args){const result=await tools.mapFeatures({latitude:Number(args.latitude),longitude:Number(args.longitude)},Number(args.radius));pages.set(result.url,{text:result.text});writeJSON(pagesPath,Object.fromEntries(pages));return result;}};
@@ -308,7 +310,12 @@ export async function runFactory(runtime:FactoryRuntime,tools:PublicTools,option
    writeJSON(join(runtime.directory,`${planId}-duration-budget.json`),budget);
    if(!budget.routeFeasible){
     routeReview={verdict:'needs-revision',summary:'Actual route cannot meet the requested experience range with substantive80–180second stories. Revise stop selection/order within the existing candidates; do not pad narration, looking time or alter speed to hide the mismatch.',budget};
-    writeJSON(join(runtime.directory,`${planId}-timing-error.json`),routeReview);prepared=undefined;continue;
+    writeJSON(join(runtime.directory,`${planId}-timing-error.json`),routeReview);
+    const repairId=`duration-research-${attempt+1}`;
+    if(durationRepairProtocol===2&&attempt<2&&canRepairPhysical(repairId)&&research.places.some(p=>p.essentialUnknowns.length)){
+     research=await physicalRepair(repairId,research,survey,{durationFeedback:routeReview,instruction:'The eligible selection cannot provide the requested meaningful walking duration. Resolve access/standing evidence for existing geographically useful candidates that remain excluded or have essentialUnknowns, so the next proposal has a genuine alternative. Preserve existing good facts and candidate IDs; do not pad narration or distance.'});
+    }
+    prepared=undefined;continue;
    }
   }
   const preparationProtocol=runtime.phaseProtocol(`route-preparation-${attempt+1}`,runtime.job.tasks.some(t=>t.scope===`scout-${attempt+1}`)?1:3);
@@ -489,7 +496,7 @@ async function main(){
   else if(retryFlag==='--complete-tools')runtime.resumeToolCompletion(retryId,retryEvidence);
   else if(retryFlag==='--recover-output')runtime.recoverRetainedOutput(retryId,retryEvidence);
   if(runtime.job.status==='awaiting-decision'&&existsSync(join(output,'handoff.json'))){process.stdout.write(readFileSync(join(output,'handoff.json'),'utf8'));return;}
-  try{const result=await runFactory(runtime,new PublicTools({directory:join(output,'public-tools'),beforeRequest:()=>runtime.assertRunning()}));process.stdout.write(JSON.stringify(result,null,2)+'\n');}
+  try{const result=await runFactory(runtime,new PublicTools({directory:join(output,'public-tools'),mapEvidence:brief.mapEvidence,beforeRequest:()=>runtime.assertRunning()}));process.stdout.write(JSON.stringify(result,null,2)+'\n');}
   catch(error){finish(runtime.job,'blocked',error instanceof Error?error.message:'Factory failed',runtime.now());runtime.save();process.stderr.write(JSON.stringify({status:'blocked',reason:runtime.job.reason,directory:output})+'\n');process.exitCode=1;}
  });
 }
