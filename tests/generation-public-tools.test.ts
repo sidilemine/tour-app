@@ -181,3 +181,60 @@ test('Overpass result cap remains explicit even when the private full response h
   const saved = JSON.parse(await readFile(result.cachePath, 'utf8'));
   assert.equal(JSON.parse(Buffer.from(saved.bodyBase64, 'base64').toString()).elements.length, 200);
 });
+
+test('transport snapshot excludes ordinary doorways and retains actual station names, entrance level, tunnel and access tags', async t => {
+  const queries: string[] = [];
+  const tools = await setup(t, async url => {
+    queries.push(new URL(String(url)).searchParams.get('data')!);
+    return Response.json({ elements: [
+      ...Array.from({ length: 60 }, (_, i) => ({ type: 'node', id: i + 1, lat: 51.55, lon: -0.17, tags: { entrance: 'yes' } })),
+      { type: 'node', id: 61, lat: 51.5502, lon: -0.1702, tags: { railway: 'subway_entrance', entrance: 'main', level: '0', tunnel: 'no', access: 'yes' } },
+      { type: 'way', id: 62, tags: { building: 'train_station', name: 'Synthetic Station Building', access: 'customers' }, center: { lat: 51.5501, lon: -0.1701 }, geometry: [{ lat: 51.55, lon: -0.17 }, { lat: 51.5502, lon: -0.1702 }] },
+      { type: 'node', id: 63, lat: 51.55, lon: -0.17, tags: { railway: 'station', name: 'Synthetic Underground Station', station: 'subway', level: '-1', tunnel: 'yes' } },
+    ] });
+  });
+  const ordinary = await tools.mapFeatures({ latitude: 51.55, longitude: -0.17 }, 100);
+  assert.deepEqual(ordinary.elements.map(e => e.id), Array.from({ length: 60 }, (_, i) => i + 1), 'Existing default ordering is unchanged');
+  assert.match(queries[0], /node\(around:[^)]+\)\[entrance\]/);
+  const station = await tools.transportFeatures({ latitude: 51.55, longitude: -0.17 }, 100);
+  assert.notEqual(station.url, ordinary.url, 'Transport evidence has separate exact-query identity/cache');
+  assert.match(queries[1], /railway~"\^\(station\|subway_entrance\)\$"/);
+  assert.match(queries[1], /building=train_station/);
+  assert.doesNotMatch(queries[1], /nwr|relation|\[entrance\]|\[name\]/);
+  assert.match(queries[1], /out body center geom\([^)]+\) 200/);
+  assert.deepEqual(station.elements.map(e => e.id), [63, 62, 61]);
+  assert.equal(station.elements[0].tags?.name, 'Synthetic Underground Station');
+  assert.equal(station.elements[0].tags?.level, '-1'); assert.equal(station.elements[0].tags?.tunnel, 'yes');
+  assert.equal(station.elements[2].tags?.access, 'yes'); assert.equal(station.elements[2].tags?.level, '0');
+  assert.equal(station.excludedNonTransportCount, 60); assert.equal(station.focus, 'transport');
+  assert.equal(station.physicalClearance, 'unverified'); assert.equal(station.geometryClippedToQueryBox, true);
+  assert.equal((await tools.transportFeatures({ latitude: 51.55, longitude: -0.17 }, 100)).cacheHit, true);
+  assert.equal(queries.length, 2);
+  await assert.rejects(tools.transportFeatures({ latitude: 51.55, longitude: -0.17 }, 251), /250/);
+});
+
+test('crossing snapshot prioritizes explicit crossings over anonymous entrances while retaining footway and road evidence', async t => {
+  let query = '', calls = 0;
+  const tools = await setup(t, async url => {
+    calls++; query = new URL(String(url)).searchParams.get('data')!;
+    return Response.json({ elements: [
+      ...Array.from({ length: 60 }, (_, i) => ({ type: 'node', id: i + 1, lat: 51.55, lon: -0.17, tags: { entrance: 'yes' } })),
+      { type: 'way', id: 61, tags: { highway: 'primary', name: 'Synthetic Road' }, geometry: [{ lat: 51.55, lon: -0.17 }, { lat: 51.5501, lon: -0.17 }] },
+      { type: 'way', id: 62, tags: { highway: 'footway', access: 'yes' }, geometry: [{ lat: 51.55, lon: -0.17 }, { lat: 51.5501, lon: -0.17 }] },
+      { type: 'way', id: 63, tags: { highway: 'footway', footway: 'crossing', crossing: 'marked' }, geometry: [{ lat: 51.55, lon: -0.17 }, { lat: 51.55, lon: -0.1701 }] },
+      { type: 'node', id: 64, lat: 51.55, lon: -0.17, tags: { highway: 'crossing', crossing: 'traffic_signals', tactile_paving: 'yes', kerb: 'lowered' } },
+    ] });
+  });
+  const result = await tools.crossingFeatures({ latitude: 51.55, longitude: -0.17 }, 100);
+  assert.match(query, /node\(around:[^)]+\)\[highway=crossing\]/);
+  assert.match(query, /way\(around:[^)]+\)\[footway=crossing\]/);
+  assert.match(query, /way\(around:[^)]+\)\[highway=footway\]/);
+  assert.match(query, /primary\|secondary/); assert.match(query, /out body center geom\([^)]+\) 200/);
+  assert.doesNotMatch(query, /nwr|relation|\[entrance\]|\[name\]/);
+  assert.deepEqual(result.elements.map(e => e.id), [64, 63, 62, 61]);
+  assert.equal(result.elements[0].tags?.crossing, 'traffic_signals'); assert.equal(result.elements[0].tags?.tactile_paving, 'yes');
+  assert.equal(result.elements[0].tags?.kerb, 'lowered'); assert.equal(result.elements[2].tags?.access, 'yes');
+  assert.equal(result.focus, 'crossing'); assert.equal(result.excludedUnrelatedCount, 60); assert.equal(result.physicalClearance, 'unverified');
+  assert.equal((await tools.crossingFeatures({ latitude: 51.55, longitude: -0.17 }, 100)).cacheHit, true); assert.equal(calls, 1);
+  await assert.rejects(tools.crossingFeatures({ latitude: 51.55, longitude: -0.17 }, 251), /250/);
+});

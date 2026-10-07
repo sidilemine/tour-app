@@ -5,9 +5,9 @@ import { resolve, join } from 'node:path';
 import { distance, type Coordinate } from '../src/domain/fixture';
 import { parseTourPackage } from '../src/tours/package';
 import { buildTour, validateBuilderInput, type BuilderAudioTools } from '../tools/generation/builder';
-import { prepareRoute, assemble, runFactory, type Routed } from '../tools/generation/factory/pipeline';
-import { briefSchema, surveySchema, researchSchema, routePlanSchema, draftSchema, validateDraft, validateResearch, type Draft, type FactoryReview } from '../tools/generation/factory/contracts';
-import { FactoryRuntime } from '../tools/generation/factory/runtime';
+import { prepareRoute, assemble, runFactory, applyRouteDisposition, applyPhysicalCoverage, retainReviewContext, retainPackageReviewInput, type Routed } from '../tools/generation/factory/pipeline';
+import { briefSchema, surveySchema, researchSchema, routePlanSchema, draftSchema, excludeUnusedEmptySources, validateDraft, validateResearch, type Draft, type FactoryReview } from '../tools/generation/factory/contracts';
+import { FactoryRuntime, digest } from '../tools/generation/factory/runtime';
 import { PublicTools } from '../tools/generation/factory/public-tools';
 import type { ProviderResult, InferenceRequest } from '../tools/generation/provider';
 
@@ -90,6 +90,33 @@ test('assembly preserves exact paragraph/source references and rejects missing c
   assert.throws(() => validateResearch(f.research, f.survey, pages), /not present/);
 });
 
+test('built player package exposes every canonical leg even when model directions omit crossings and return',async t=>{
+ const f=fixture();
+ f.prepared.legs.forEach((leg,i)=>{leg.directions=[`Canonical leg ${i+1}: use its evidenced crossing.`,`Canonical leg ${i+1}: remain on its public approach.`];});
+ f.draft.stories.forEach(story=>{story.directions=['Model direction omits the crossing.'];});f.draft.finishInstructions='Model finish omits the complete return.';
+ const originalDraft=structuredClone(f.draft),input=assemble(f.brief,f.plan,f.research,f.prepared,f.draft);
+ const directory=await mkdtemp(join((await import('node:os')).tmpdir(),'tour-canonical-navigation-'));t.after(()=>rm(directory,{recursive:true,force:true}));
+ const built=await buildTour(input,{outputDirectory:join(directory,'package'),cacheDirectory:join(directory,'audio-cache'),audioTools:syntheticAudio()});
+ const parsed=parseTourPackage(JSON.parse(await readFile(built.packagePath,'utf8'))),narration=parsed.fixture.narration!;
+ assert.ok(narration.introduction.startsWith(`Welcome to ${f.brief.area}.`));
+ assert.ok(!narration.introduction.includes(f.draft.introduction),'Writer status prose does not override current producer status');
+ for(const line of f.prepared.legs[0].directions)assert.ok(narration.introduction.includes(line),'First leg available before starting');
+ for(const [i,story] of narration.stories.entries()){
+  assert.deepEqual(story.directions,f.prepared.legs[i+1].directions,'Next directions must be the exact onward leg');
+  assert.equal(story.transcript,f.draft.stories[i].paragraphs.map(p=>p.text).join('\n\n'),'Visual navigation projection does not change rendered transcript');
+ }
+ for(const line of f.prepared.legs.at(-1)!.directions)assert.ok(narration.finishInstructions.includes(line),'Complete return remains visible when all stops finish');
+ assert.ok(!narration.finishInstructions.includes('Model finish'));assert.deepEqual(narration.chapters.map(c=>c.directions),f.draft.chapters.map(c=>c.directions));
+ assert.deepEqual(f.draft,originalDraft,'Frozen model artifact remains unchanged');
+ input.stories[0].directions[0]='Local output mutation';assert.notEqual(f.prepared.legs[1].directions[0],'Local output mutation');
+});
+
+test('canonical navigation projection refuses missing legs or player field overflow rather than dropping instructions',()=>{
+ const missing=fixture();missing.prepared.legs.pop();assert.throws(()=>assemble(missing.brief,missing.plan,missing.research,missing.prepared,missing.draft),/full return/);
+ const longIntro=fixture();longIntro.prepared.legs[0].directions=['x'.repeat(4000)];assert.throws(()=>assemble(longIntro.brief,longIntro.plan,longIntro.research,longIntro.prepared,longIntro.draft));
+ const longReturn=fixture();longReturn.prepared.legs.at(-1)!.directions=['a'.repeat(1100),'b'.repeat(1100)];assert.throws(()=>assemble(longReturn.brief,longReturn.plan,longReturn.research,longReturn.prepared,longReturn.draft));
+});
+
 function encode(points: Coordinate[]) {
   let lat = 0, lon = 0, result = '';
   for (const p of points) for (const [key, old] of [['latitude', lat], ['longitude', lon]] as const) {
@@ -115,18 +142,23 @@ function providerResult(request: InferenceRequest, value: unknown, calls: Provid
     ...(request.webSearch ? { webSearchCalls: [{ id: 'synthetic-search', status: 'completed', action: { type: 'search', queries: ['synthetic fixture'] }, sources: [] }] } : {}),
     usage: { inputTokens: 20, outputTokens: 10, totalTokens: 30, source: 'response.completed' }, elapsedMs: 1, evidenceKind: 'fixture', diagnostic: { code: 'fixture', retryable: false, automaticRetries: 0 }, directChargeUsd: 0, estimatedApiEquivalentUsd: null };
 }
-async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = false) {
+async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = false, failTester = false) {
   const f = fixture(); await mkdir('local-data', { recursive: true }); const directory = await mkdtemp(resolve('local-data/factory-pipeline-test-'));
   t.after(() => rm(directory, { recursive: true, force: true }));
-  const requests: string[] = []; let buildCalls = 0;
+  const requests: string[] = [], testerInputs: unknown[] = []; let buildCalls = 0;
   const accepted: FactoryReview = { verdict: 'accepted', summary: 'Synthetic desk review', issues: [], checks: ['Synthetic exact-input check'] };
-  const provider = { async request(request: InferenceRequest) {
+  const provider = { async request(request: InferenceRequest):Promise<ProviderResult> {
     const name = request.jsonSchema!.name; requests.push(name);
-    if (name === 'survey') return providerResult(request, f.survey);
+    if (name === 'survey') { assert.ok(request.instructions.includes(f.brief.area)); return providerResult(request, f.survey); }
     if (name === 'research' && requests.filter(n => n === name).length === 1) return providerResult(request, null, f.research.sources.map((s, i) => ({ type: 'function_call', namespace: 'factory', name: 'read_page', call_id: `page-${i}`, arguments: JSON.stringify({ url: s.url }) })));
     if (name === 'research' || name === 'research_repair') return providerResult(request, f.research);
     if (name.startsWith('route_plan_')) return providerResult(request, f.plan);
-    if (name.startsWith('scout_') || name === 'tester') return providerResult(request, accepted);
+    if(name === 'tester'){
+      testerInputs.push(structuredClone(request.input));
+      if(failTester&&testerInputs.length===1)return {...providerResult(request,null),status:'failed',diagnostic:{code:'fixture_settled_failure',retryable:false,automaticRetries:0}};
+      return providerResult(request,accepted);
+    }
+    if (name.startsWith('scout_')) return providerResult(request, accepted);
     if (name === 'writing' || name.startsWith('correction_')) {
       const context = JSON.parse(String(request.input[0].content)) as { prepared: { chapterIds: string[] } };
       const draft: Draft = structuredClone(f.draft); draft.chapters = context.prepared.chapterIds.map((id, i) => ({ ...draft.chapters[i], id }));
@@ -143,8 +175,37 @@ async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = 
     return new Response(`<title>${source.title}</title><p>${source.passage}</p>`, { headers: { 'content-type': 'text/html' } });
   } });
   const options = { build: async (...args: Parameters<typeof buildTour>) => { buildCalls++; return buildTour(args[0], { ...args[1], audioTools: syntheticAudio(measuredOverrun) }); } };
-  return { runtime, tools, options, requests, buildCalls: () => buildCalls, directory };
+  return { runtime, tools, options, requests, testerInputs, buildCalls: () => buildCalls, directory };
 }
+
+test('settled tester failure retries its exact frozen receipt input after actual build rechecks',async t=>{
+ const r=await replay(t,false,false,true);
+ await assert.rejects(runFactory(r.runtime,r.tools,r.options),/fixture_settled_failure/);
+ const failed=r.runtime.job.costLedger.operations.at(-1)!;
+ assert.equal(failed.state,'settled');assert.equal(failed.failure,'fixture_settled_failure');
+ const before=r.requests.length,deadline=r.runtime.job.deadline;
+ await rm(join(r.directory,'review-inputs','tester.json')); // Migrate an already-dispatched phase without a new snapshot.
+ r.runtime.recoverKnownFailure(failed.id,'Synthetic checked transport repair');
+ const handoff=await runFactory(r.runtime,r.tools,r.options);
+ assert.equal(handoff.status,'awaiting-listening');assert.equal(r.buildCalls(),2);
+ assert.equal(r.requests.length,before+1,'Only the failed tester is dispatched again');
+ assert.deepEqual(r.testerInputs[1],r.testerInputs[0],'Recomputed check times never alter dispatched binding');
+ assert.equal(r.runtime.job.deadline,deadline);assert.equal(r.runtime.job.counters.correction,0);
+ assert.equal(r.runtime.job.costLedger.operations.at(-2)!.id,failed.id,'Original settled failure remains in ledger');
+});
+
+test('package review input permits only check timestamps to change and preserves source/check identity',async t=>{
+ const r=await replay(t,false);
+ const current={acceptedDraftSha256:'draft',preparation:{inputSha256:'input',packageSha256:'package'},packagedNavigation:{introduction:'First leg'},research:{passage:'Retained evidence'},build:{validation:{checkedAt:'first',inputSha256:'input',packageSha256:'package',checks:['Decode passed']}},packageChecks:{checkedAt:'first',checks:['Parser passed']},currentProductionManifest:{validation:{checkedAt:'first'},packageChecks:{checkedAt:'first'}}};
+ for(const phase of ['tester','package-check-review'] as const){
+  assert.deepEqual(retainPackageReviewInput(r.runtime,phase,current),current);
+  const later=structuredClone(current);later.build.validation.checkedAt='later';later.packageChecks.checkedAt='later';later.currentProductionManifest.validation.checkedAt='later';later.currentProductionManifest.packageChecks.checkedAt='later';
+  assert.deepEqual(retainPackageReviewInput(r.runtime,phase,later),current);
+  for(const mutate of [(v:typeof later)=>{v.preparation.inputSha256='changed';},(v:typeof later)=>{v.preparation.packageSha256='changed';},(v:typeof later)=>{v.packagedNavigation.introduction='Different approach';},(v:typeof later)=>{v.research.passage='Changed evidence';},(v:typeof later)=>{v.build.validation.checks=[];}]){
+   const changed=structuredClone(later);mutate(changed);assert.throws(()=>retainPackageReviewInput(r.runtime,phase,changed),/beyond receipt timestamps/);
+  }
+ }
+});
 
 test('complete synthetic factory performs fresh tools, independent reviews and actual package build with usage retained', async t => {
   const r = await replay(t, false), handoff = await runFactory(r.runtime, r.tools, r.options);
@@ -178,4 +239,54 @@ test('measured overrun gets one changed-clip render after renewed exact-draft re
   assert.equal(before.timing.withinTarget, false); assert.equal(after.timing.withinTarget, true);
   assert.equal(after.recordings.filter((r: { cacheHit: boolean }) => !r.cacheHit).length, 1);
   assert.equal(parseTourPackage(JSON.parse(await readFile(handoff.packagePath, 'utf8'))).fixture.version, 2);
+});
+
+
+test('failed unused empty map lead can be retained separately without altering depended-on evidence',()=>{
+ const f=fixture();const failed={...f.research.sources[0],id:'failed-lead',url:'https://example.org/invalid-map-identity',passage:''};f.research.sources.push(failed);
+ const original=structuredClone(f.research),cleaned=excludeUnusedEmptySources(f.research,new Map());
+ assert.deepEqual(cleaned.excludedSources,[failed]);assert.equal(cleaned.research.sources.length,5);assert.deepEqual(f.research,original);
+ const depended=structuredClone(f.research);depended.claims[0].sourceIds.push(failed.id);
+ assert.equal(excludeUnusedEmptySources(depended,new Map()).excludedSources.length,0);
+ assert.throws(()=>validateResearch(depended,f.survey,new Map(f.research.sources.map(s=>[s.url,{text:s.passage}]))));
+ assert.equal(excludeUnusedEmptySources(f.research,new Map([[failed.url,{sha256:'a'.repeat(64)}]])).excludedSources.length,0);
+});
+
+test('semantic review mode preserves research constraints without forcing researcher metadata into narration',()=>{
+ const f=fixture();f.research.claims[0].qualifications.push('Candidate place-0; first-party institutional history.','Preserve uncertainty; do not invent a precise count.');
+ const before=structuredClone(f.research);
+ assert.throws(()=>validateDraft(f.draft,f.research,f.plan,f.prepared.chapterIds),/qualification/);
+ assert.doesNotThrow(()=>validateDraft(f.draft,f.research,f.plan,f.prepared.chapterIds,'semantic-review'));
+ assert.deepEqual(f.research,before,'All material qualifications remain available to writer and independent reviewer');
+ const missing=structuredClone(f.draft);missing.stories[0].paragraphs[0].claimIds=['invented'];
+ assert.throws(()=>validateDraft(missing,f.research,f.plan,f.prepared.chapterIds,'semantic-review'),/Missing claim/);
+});
+
+ test('frozen-route disposition requires explicit acceptance and every unchanged leg; never moves standing points', () => {
+ const f=fixture(), review:FactoryReview={verdict:'accepted',summary:'Synthetic resolved crossing',issues:[],checks:['Synthetic evidence']};
+ const legDirections=f.prepared.legs.map(l=>({legId:l.id,directions:['Synthetic complete pedestrian approach']}));
+ const out=applyRouteDisposition(f.prepared,{review,legDirections});
+ assert.deepEqual(out.geometry,f.prepared.geometry);assert.deepEqual(out.stops,f.prepared.stops);assert.equal(out.legs[0].directions[0],legDirections[0].directions[0]);
+ assert.throws(()=>applyRouteDisposition(f.prepared,{review:{...review,verdict:'needs-revision'},legDirections}),/explicitly accept/);
+ assert.throws(()=>applyRouteDisposition(f.prepared,{review,legDirections:legDirections.slice(1)}),/every unchanged leg/);
+ assert.throws(()=>applyRouteDisposition(f.prepared,{review:{...review,issues:[{id:'crossing',scope:'leg-4',required:true,problem:'Missing evidence',repair:'Inspect',evidence:'None'}]},legDirections}),/explicitly accept/);
+ });
+
+test('physical instruction repair preserves geometry and standing coordinates and requires exact baseline and retained evidence',()=>{
+ const f=fixture(),source={url:'https://example.com/map',text:'Actual synthetic mapping',hash:'test',operationId:'operation-1',callId:'call-1',phaseId:'scout-1',toolName:'read_map'};
+ const coverage={schemaVersion:1,baselinePlanSha256:digest(f.plan),baselinePreparedSha256:digest(f.prepared),legDirections:f.prepared.legs.map(l=>({legId:l.id,directions:['Synthetic complete revised crossing instruction']})),findings:[{issueId:'junction',status:'resolved',basis:'Synthetic mapped side road',sourceUrls:[source.url]}],remainingEssentialUnknowns:[],note:'Synthetic repair; review still required'};
+ const result=applyPhysicalCoverage(f.plan,f.prepared,coverage,[source]);
+ assert.deepEqual(result.prepared.geometry,f.prepared.geometry);assert.deepEqual(result.prepared.stops,f.prepared.stops);
+ assert.equal(result.prepared.legs[0].directions[0],coverage.legDirections[0].directions[0]);
+ assert.throws(()=>applyPhysicalCoverage(f.plan,f.prepared,{...coverage,baselinePreparedSha256:'stale'},[source]),/exact prepared/);
+ assert.throws(()=>applyPhysicalCoverage(f.plan,f.prepared,coverage,[]),/retained route text/);
+ assert.throws(()=>applyPhysicalCoverage(f.plan,f.prepared,{...coverage,legDirections:coverage.legDirections.slice(1)},[source]),/every leg/);
+});
+
+test('review replay permits only a compiler status introduction change and rejects stale spoken or navigation evidence',()=>{
+ const old={draft:{stories:['unchanged transcript']},draftSha256:'same',projectedNavigation:{introduction:'old status',finishInstructions:'return',stories:[{directions:['cross at zebra']}]},physicalCoverage:{source:'same'}};
+ const current={...structuredClone(old),producerMetadata:{spokenContent:'stories only'}};current.projectedNavigation.introduction='corrected status';
+ assert.deepEqual(retainReviewContext(old,current),old);
+ const changed=structuredClone(current);changed.draft.stories[0]='changed fact';assert.throws(()=>retainReviewContext(old,changed),/cannot be reused/);
+ const moved=structuredClone(current);moved.projectedNavigation.stories[0].directions=['cross elsewhere'];assert.throws(()=>retainReviewContext(old,moved),/cannot be reused/);
 });

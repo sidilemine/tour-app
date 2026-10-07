@@ -59,7 +59,9 @@ export interface BuildTiming {
   measuredWalk: false;
   chapters: { id: string; availableSeconds: number; audioSeconds: number; marginSeconds: number }[];
 }
+export interface BuildValidation {schemaVersion:1;checkedAt:string;inputSha256:string;packageSha256:string;recordingCount:number;audioCheckMode:'local-ffmpeg-ffprobe'|'injected-test-tools';checks:string[]}
 export interface BuildResult {
+ validation:BuildValidation;
   packagePath: string; preparationPath: string; timing: BuildTiming;
   structuralValid: true; listening: 'pending'; field: 'unverified'; readyForOrdinaryUse: false;
 }
@@ -231,19 +233,19 @@ export async function buildTour(inputValue: BuilderInput, options: BuilderOption
     await writeFile(join(stage, 'package.json'), packageBytes);
     await writeFile(join(stage, 'preparation.json'), serialise(preparation));
     // Verify staged copies, not only cached originals, before atomic promotion.
-    await checkContents(stage, tools, options.previousPackages ?? []);
+    const checked=await checkContents(stage, tools, options.previousPackages ?? [],options.audioTools?'injected-test-tools':'local-ffmpeg-ffprobe');
     await mkdir(dirname(output), { recursive: true });
     await rename(stage, output);
-    return result(output, timing);
+    return result(output, timing,checked.validation);
   } finally {
     await rm(stage, { recursive: true, force: true }); await tools.close();
   }
 }
-function result(output: string, timing: BuildTiming): BuildResult {
-  return { packagePath: join(output, 'package.json'), preparationPath: join(output, 'preparation.json'), timing,
+function result(output: string, timing: BuildTiming,validation:BuildValidation): BuildResult {
+  return { packagePath: join(output, 'package.json'), preparationPath: join(output, 'preparation.json'), timing, validation,
     structuralValid: true, listening: 'pending', field: 'unverified', readyForOrdinaryUse: false };
 }
-async function checkContents(output: string, tools: BuilderAudioTools, previousPackages: string[]) {
+async function checkContents(output: string, tools: BuilderAudioTools, previousPackages: string[],audioCheckMode:BuildValidation['audioCheckMode']) {
   const inputBytes = await readFile(join(output, 'input.json'), 'utf8');
   const input = JSON.parse(inputBytes) as BuilderInput; validateBuilderInput(input);
   const packageBytes = await readFile(join(output, 'package.json'), 'utf8');
@@ -282,11 +284,11 @@ async function checkContents(output: string, tools: BuilderAudioTools, previousP
   await versionCheck(previousPackages, p.fixture, p.mapId);
   const timing = measureTiming(input, p.fixture.narration!.stories, p.fixture.narration!.chapters);
   assert.deepEqual(preparation.timing, timing, 'Whole-tour timing matches actual audio and route');
-  return result(output, timing);
+  return result(output, timing,{schemaVersion:1,checkedAt:new Date().toISOString(),inputSha256:hash(inputBytes),packageSha256:hash(packageBytes),recordingCount:packaged.length,audioCheckMode,checks:['Actual media-bearing package parsed by the player parser','Frozen input and package SHA256 verified','Every packaged/copy/cache-receipt audio byte count, MD5 and SHA256 verified','Every encoded recording fully decoded and its duration, mono channel and24kHz sample rate checked','Every rendered paragraph/chunk matches accepted text in order','Container timing reconciled with PCM chunks and configured gaps within0.2seconds','All route legs including return and chapter timing validated','Immutable version and exact written package contents checked']});
 }
 /** Rechecks frozen inputs, actual parser, all hashes, encoded duration and full decode. */
 export async function checkBuiltTour(outputDirectory: string, options: Pick<BuilderOptions, 'audioTools' | 'previousPackages'> = {}): Promise<BuildResult> {
   const tools = options.audioTools ?? await localAudioTools();
-  try { return await checkContents(resolve(outputDirectory), tools, options.previousPackages ?? []); }
+  try { return await checkContents(resolve(outputDirectory), tools, options.previousPackages ?? [],options.audioTools?'injected-test-tools':'local-ffmpeg-ffprobe'); }
   finally { await tools.close(); }
 }

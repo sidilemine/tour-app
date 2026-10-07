@@ -74,7 +74,11 @@ test('builder caches identical text/voice across IDs, checks draft independently
   assert.equal(built.structuralValid, true); assert.equal(built.readyForOrdinaryUse, false);
   assert.equal(built.timing.stationaryAudioSeconds, 6);
   assert.equal(built.timing.totalSeconds, built.timing.walkingSeconds + 6 + 30);
-  assert.deepEqual(await checkBuiltTour(paths.outputDirectory, { audioTools: fake.tools }), built);
+  const checked=await checkBuiltTour(paths.outputDirectory, { audioTools: fake.tools });
+  assert.ok(Date.parse(checked.validation.checkedAt)>=Date.parse(built.validation.checkedAt));
+  assert.equal(checked.validation.audioCheckMode,'injected-test-tools');
+  assert.equal(checked.validation.recordingCount,3);
+  assert.deepEqual({...checked,validation:{...checked.validation,checkedAt:built.validation.checkedAt}},built,'Recheck preserves every result except its actual check timestamp');
   await buildTour(value, { ...paths, audioTools: fake.tools });
   assert.equal(fake.renders(), 2, 'Recheck never re-renders');
   const frozen = await readFile(built.packagePath);

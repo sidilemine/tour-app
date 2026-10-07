@@ -1,17 +1,22 @@
 # Fresh factory token accounting — 7 October 2026
 
-Actual generation uses consented `gpt-6-astra`, medium, through the overflow-disabled ChatGPT plan route. **Direct paid charges: US$0.** The table measures observed runtime usage, including failed work; it does not estimate a completed tour's full cost.
+Actual generation uses consented Astra medium with credit overflow off. **Direct paid charges: US$0.** Counts include failed work where the provider reported usage. API-equivalent estimates are a token-only comparison, not subscription charges.
 
-| Runtime responsibility | Requests | Known input | Known output | Cached input (included) | Reasoning (included in output) | Token-only API-equivalent USD |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Research, including survey and physical research | 16 | 882,790 | 16,728 | 44,928 | 809 | 9.259948–11.354603 |
-| Route planner | 2 | 20,022 | 2,571 | 0 | 102 | 0.328770–0.378825 |
-| **Fresh job known subtotal** | **18** | **902,812** | **19,299** | **44,928** | **911** | **9.588718–11.733428** |
-| Separate hosted-search calibration | 1 | 13,774 | 184 | 4,224 | 107 | 0.108924–0.132799 |
-| **Known job + calibration** | **19** | **916,586** | **19,483** | **49,152** | **1,018** | **9.697642–11.866227** |
+| Hampstead role | Requests | Unknown requests | Known input | Known output | API-equivalent USD |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| research | 17 | 2 | 943,631 | 24,767 | 10.2703–12.5171 |
+| route | 6 | 0 | 96,278 | 4,475 | 1.1865–1.4272 |
+| scout | 6 | 0 | 231,356 | 6,735 | 2.6503–3.2287 |
+| writer | 4 | 1 | 83,373 | 16,849 | 1.6762–1.8846 |
+| editor | 4 | 0 | 108,896 | 7,533 | 1.4656–1.7379 |
+| verification | 8 | 0 | 393,755 | 9,631 | 4.4191–5.4035 |
+| tester | 2 | 0 | 90,682 | 4,815 | 1.1476–1.3743 |
+| **Known subtotal** | **47** | **3** | **1,947,971** | **74,805** | **22.8156–27.5732** |
 
-The job's known token total is **922,111**; including calibration it is **936,069**. Two research requests have unknown token counts: the original schema rejection and the final interrupted synthesis. Both are included in request counts but excluded from known token/estimate subtotals, never represented as zero usage. The approved continuation added 132,838 known tokens plus that unquantified synthesis; known token-only API-equivalent increment US$1.300716–1.600436. Writer, editor, verifier, scout review, tester and audio production have not run on this live job. The producer's deterministic orchestration has no separate inference operation.
+Known total: **2,022,776 tokens**. Three requests have unknown usage (schema rejection and two deadline interruptions); those tokens are additional and unknown, never zero. Cached input44,928 is included in input; reasoning1,958 is included in output. Deterministic producer orchestration and local George synthesis have no separate model inference operations.
 
-[RUN.json](RUN.json) retains every operation ID, role, task, failure, partial/unknown fields, active seconds and estimate. [SEARCH-CALIBRATION.json](SEARCH-CALIBRATION.json) keeps calibration separate. Prior Clerkenwell work is excluded. Implementation parent/helper token counts are unavailable through this runtime ledger and are **unknown**, not zero or folded into these totals.
+Hampstead took **1h46m38.7s** from creation to final handoff, including engineering/recovery and owner pauses. It produced a structurally tested31m28 inspection draft, with listening/field and requested duration acceptance separate.47requests, three provider failures/interrupted outcomes,26 recovery journal events and three time amendments are retained. Journal events are not unique human interventions.
 
-The retained price quote is dated 6 October 2026: [official Astra model page](https://developers.openai.com/api/docs/models/gpt-6-astra), US$10 input, US$1 cached input, US$12.50 cache write and US$50 output per million tokens. The range covers unobserved cache writes. Cached input and reasoning are subsets, not additional tokens. Hosted-tool fees, subscription/API parity, taxes, production capacity and full failed-run amortization are not established. These numbers are a token-only comparison basis, **not an invoice or a production price promise**.
+[RUN.json](RUN.json) retains request-level usage and failures; [BENCHMARK.json](BENCHMARK.json) separates wall time, summed provider activity, tool outcomes, interventions and completion stage. The fresh Highgate comparison is pending. The separate [hosted-search calibration](SEARCH-CALIBRATION.json) used13,958 known tokens and an API-equivalent US$0.108924–0.132799; it is excluded from the job totals. Earlier Clerkenwell work is excluded.
+
+Implementation assistant/helper tokens are unavailable through this ledger and remain **unknown**. Cached input and reasoning are subsets, not added again. The retained6October quote uses US$10 input,US$1 cached input,US$12.50 cache write andUS$50 output per million tokens, with context multipliers recorded in the report. [Official Astra model reference](https://developers.openai.com/api/docs/models/gpt-6-astra). Hosted-tool fees, cache-write details, subscription/API parity, taxes and production throughput are not established.

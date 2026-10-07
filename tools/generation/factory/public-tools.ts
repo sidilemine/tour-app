@@ -265,6 +265,17 @@ export class PublicTools {
   }
   /** Small read-only OSM snapshot, never a public-access or safe-standing certification. */
   async mapFeatures(center: Coordinate, radius: number) {
+    return this.mapSnapshot(center, radius, false);
+  }
+  /** Separate route-phase tool: station identity/entrances, not ordinary doorway discovery. */
+  async transportFeatures(center: Coordinate, radius: number) {
+    return this.mapSnapshot(center, radius, true);
+  }
+  /** Separate route-phase tool for crossing evidence, retaining current-access uncertainty. */
+  async crossingFeatures(center: Coordinate, radius: number) {
+    return this.mapSnapshot(center, radius, false, true);
+  }
+  private async mapSnapshot(center: Coordinate, radius: number, transport: boolean, crossing = false) {
     coordinate.parse(center); assert.ok(Number.isFinite(radius) && radius > 0 && radius <= 250, 'Map feature radius must be within 250 metres');
     const around = `(around:${radius},${center.latitude},${center.longitude})`;
     // Never expand relations: a named relation touching this radius can contain
@@ -273,7 +284,12 @@ export class PublicTools {
     const longitudeSpan = radius / (111195 * Math.cos(center.latitude * Math.PI / 180));
     const geometryBox = [center.latitude - latitudeSpan, center.longitude - longitudeSpan,
       center.latitude + latitudeSpan, center.longitude + longitudeSpan].join(',');
-    const query = `[out:json][timeout:12];(node${around}[name];way${around}[name];way${around}[highway];node${around}[entrance];node${around}[barrier];way${around}[barrier];way${around}[building];node${around}[access];way${around}[access];);out body center geom(${geometryBox}) 200;`;
+    const roadTypes = ['trunk', 'primary', 'secondary', 'tertiary', 'residential', 'unclassified', 'service', 'living_street', 'pedestrian'];
+    const query = transport
+      ? `[out:json][timeout:12];(node${around}[railway~"^(station|subway_entrance)$"];way${around}[railway~"^(station|subway_entrance)$"];node${around}[building=train_station];way${around}[building=train_station];);out body center geom(${geometryBox}) 200;`
+      : crossing
+        ? `[out:json][timeout:12];(node${around}[highway=crossing];way${around}[footway=crossing];way${around}[highway=footway];way${around}[highway~"^(${roadTypes.join('|')})$"];);out body center geom(${geometryBox}) 200;`
+        : `[out:json][timeout:12];(node${around}[name];way${around}[name];way${around}[highway];node${around}[entrance];node${around}[barrier];way${around}[barrier];way${around}[building];node${around}[access];way${around}[access];);out body center geom(${geometryBox}) 200;`;
     const requestUrl = 'https://overpass-api.de/api/interpreter?data=' + encodeURIComponent(query);
     const { saved, cachePath, cacheHit } = await this.retrieve(requestUrl, 'GET', '', false, true);
     const point = z.object({ lat: z.number().min(-90).max(90), lon: z.number().min(-180).max(180) });
@@ -282,8 +298,14 @@ export class PublicTools {
       lat: z.number().optional(), lon: z.number().optional(), center: point.optional(), geometry: z.array(point.nullable()).optional(),
     })).max(200) }).parse(JSON.parse(Buffer.from(saved.bodyBase64, 'base64').toString('utf8')));
     assert.ok(!parsed.remark, `Overpass returned an incomplete/error response: ${parsed.remark}`);
-    const priority = (e: typeof parsed.elements[number]) => e.tags?.entrance ? 0 : e.tags?.highway ? 1 : e.tags?.name ? 2 : e.tags?.barrier ? 3 : e.tags?.access ? 4 : 5;
-    const candidates = parsed.elements.sort((a, b) => priority(a) - priority(b)).slice(0, 60).map(e => ({ ...e,
+    const eligible = transport ? parsed.elements.filter(e => e.tags?.railway === 'station' || e.tags?.railway === 'subway_entrance' || e.tags?.building === 'train_station')
+      : crossing ? parsed.elements.filter(e => e.tags?.highway === 'crossing' || e.tags?.footway === 'crossing' || e.tags?.highway === 'footway' || (e.type === 'way' && roadTypes.includes(e.tags?.highway ?? '')))
+        : parsed.elements;
+    const priority = (e: typeof parsed.elements[number]) => transport
+      ? e.tags?.railway === 'station' ? 0 : e.tags?.building === 'train_station' ? 1 : 2
+      : crossing ? e.tags?.highway === 'crossing' ? 0 : e.tags?.footway === 'crossing' ? 1 : e.tags?.highway === 'footway' ? 2 : 3
+        : e.tags?.entrance ? 0 : e.tags?.highway ? 1 : e.tags?.name ? 2 : e.tags?.barrier ? 3 : e.tags?.access ? 4 : 5;
+    const candidates = eligible.sort((a, b) => priority(a) - priority(b)).slice(0, 60).map(e => ({ ...e,
       ...(e.geometry ? { geometry: e.geometry.slice(0, 100), geometryTruncated: e.geometry.length > 100 } : {}) }));
     const elements: typeof candidates = [];
     for (const feature of candidates) {
@@ -294,6 +316,8 @@ export class PublicTools {
     return { url: 'https://overpass-api.de/api/interpreter#query-' + sha(query), requestUrl, text, elements,
       hash: sha(text), bodyHash: saved.bodyHash, retrievedAt: saved.retrievedAt, mapDataAt: parsed.osm3s?.timestamp_osm_base ?? null,
       cachePath, cacheHit, query, queryLimit: 200, queryLimitReached: parsed.elements.length === 200,
+      ...(transport ? { focus: 'transport' as const, excludedNonTransportCount: parsed.elements.length - eligible.length } : {}),
+      ...(crossing ? { focus: 'crossing' as const, excludedUnrelatedCount: parsed.elements.length - eligible.length } : {}),
       returnedCount: parsed.elements.length, selectedCount: elements.length,
       geometryClippedToQueryBox: true, truncated: parsed.elements.length === 200 || parsed.elements.length > elements.length || elements.some(e => e.geometryTruncated),
       attribution: '© OpenStreetMap contributors, ODbL; Overpass API', physicalClearance: 'unverified' as const };

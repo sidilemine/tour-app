@@ -3,7 +3,7 @@ import { audienceSchema } from '../records';
 
 const text=z.string().min(1), id=z.string().regex(/^[a-z0-9][a-z0-9-]{0,59}$/);
 export const pointSchema=z.object({latitude:z.number().min(-90).max(90),longitude:z.number().min(-180).max(180)}).strict();
-export const briefSchema=z.object({schemaVersion:z.literal(1),id,area:text,start:text,end:text,durationSeconds:z.number().positive(),access:text,audience:audienceSchema,voice:z.literal('local Kokoro George'),model:z.literal('gpt-6-astra'),effort:z.literal('medium'),directPaidCeilingUsd:z.literal(0),mapId:text,freshContentOnly:z.literal(true),requirements:z.array(text)}).strict();
+export const briefSchema=z.object({schemaVersion:z.literal(1),id,area:text,start:text,end:text,durationSeconds:z.number().positive(),generationMinutes:z.number().int().min(5).max(90).optional(),access:text,audience:audienceSchema,voice:z.literal('local Kokoro George'),model:z.literal('gpt-6-astra'),effort:z.literal('medium'),directPaidCeilingUsd:z.literal(0),mapId:text,freshContentOnly:z.literal(true),requirements:z.array(text)}).strict();
 export type FactoryBrief=z.infer<typeof briefSchema>;
 export const surveySchema=z.object({publishedWalks:z.array(z.object({title:text,url:z.url(),stops:z.array(text),themes:z.array(text),stories:z.array(text)}).strict()).min(3).max(8),candidates:z.array(z.object({id,name:text,why:text,leadUrls:z.array(z.url()).min(1)}).strict()).min(5).max(16),gaps:z.array(text)}).strict();
 export const researchSchema=z.object({
@@ -46,14 +46,22 @@ export function validateResearch(research:Research,survey:z.infer<typeof surveyS
   places.add(p.candidateId);
  }
 }
-export function validateDraft(draft:Draft,research:Research,plan:RoutePlan,chapterIds:string[]) {
+/** Legacy fixtures may declare literal strings; factory research carries semantic review instructions. */
+export function validateDraft(draft:Draft,research:Research,plan:RoutePlan,chapterIds:string[],qualificationMode:'literal'|'semantic-review'='literal') {
  if(JSON.stringify(draft.stories.map(s=>s.id))!==JSON.stringify(plan.stopIds))throw Error('Story order must match selected stops');
  if(JSON.stringify(draft.chapters.map(s=>s.id))!==JSON.stringify(chapterIds))throw Error('Chapter identities must match supplied safe windows');
  const claims=new Map(research.claims.map(c=>[c.id,c]));
  for(const s of [...draft.stories,...draft.chapters])for(const p of s.paragraphs){
   if(p.text.trim()!==p.text||/\n\s*\n/.test(p.text))throw Error('Each paragraph must be one clean paragraph');
   if(p.kind!=='editorial'&&!p.claimIds.length)throw Error(`Unlinked factual paragraph: ${s.id}`);
-  for(const id of p.claimIds){const c=claims.get(id);if(!c)throw Error(`Missing claim ${id}`);for(const q of c.qualifications)if(!p.text.includes(q))throw Error(`Dropped exact qualification: ${q}`);}
+  for(const id of p.claimIds){const c=claims.get(id);if(!c)throw Error(`Missing claim ${id}`);if(qualificationMode==='literal')for(const q of c.qualifications)if(!p.text.includes(q))throw Error(`Dropped exact qualification: ${q}`);}
  }
+}
+/** Keep failed discovery leads outside successful evidence, without removing a depended-on source. */
+export function excludeUnusedEmptySources(research:Research,observedImages:Map<string,{sha256:string}>) {
+ const referenced=new Set([...research.claims.flatMap(c=>c.sourceIds),...research.places.flatMap(p=>p.sourceIds)]);
+ const excludedSources=research.sources.filter(s=>s.passage===''&&!observedImages.has(s.url)&&!referenced.has(s.id));
+ const excludedIds=new Set(excludedSources.map(s=>s.id));
+ return {research:{...research,sources:research.sources.filter(s=>!excludedIds.has(s.id))},excludedSources};
 }
 export function reviewPasses(review:FactoryReview){return review.verdict==='accepted'&&!review.issues.some(i=>i.required);}

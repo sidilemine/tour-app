@@ -92,14 +92,23 @@ export class FactoryRuntime {
    if(this.job.conditions.startingEvidence!==digest(brief))throw Error('Brief changed; refusing to rewrite existing job');
   }else{
    this.job=createJob(brief.id,this.now(),'subscription');this.job.conditions.model=brief.model;
+   if(brief.generationMinutes!==undefined){this.job.deadline=new Date(Date.parse(this.job.createdAt)+brief.generationMinutes*60000).toISOString();event(this.job,this.now(),'factory-declared-time-allowance',JSON.stringify({minutes:brief.generationMinutes,basis:'Explicit fresh-job brief; no prior job reset',deadline:this.job.deadline}));}
    this.job.conditions.startingEvidence=digest(brief);this.job.conditions.tools=['hosted web_search','bounded public read_page','Valhalla pedestrian','local George'];
-   putRecord(this.job,{id:'brief',revision:1,owner:'owner',createdAt:this.now(),updatedAt:this.now(),dependsOn:[],kind:'brief',data:{originalRequest:'Fresh automated Hampstead tour; 60 minutes, no constraints, no prior material.',requirements:brief.requirements,preferences:[],assumptions:['Daytime public exterior loop; no admission'],delegation:['Generate, inspect and correct locally within the Balanced envelope'],endpoints:[brief.start,brief.end],area:brief.area,researchExtent:brief.area,routeExtent:brief.mapId,durationSeconds:brief.durationSeconds,audience:brief.audience,access:brief.access,date:this.now().slice(0,10)}},this.now());
-   const implementationSha256=Object.fromEntries(['runtime.ts','pipeline.ts','contracts.ts','public-tools.ts','../builder.ts','../provider.ts'].map(file=>[file,createHash('sha256').update(readFileSync(new URL(file,import.meta.url))).digest('hex')]));
+   putRecord(this.job,{id:'brief',revision:1,owner:'owner',createdAt:this.now(),updatedAt:this.now(),dependsOn:[],kind:'brief',data:{originalRequest:`Fresh automated ${brief.area} tour; ${brief.durationSeconds/60} minutes; ${brief.access}; no prior authored material.`,requirements:brief.requirements,preferences:[],assumptions:['Daytime public exterior loop; no admission'],delegation:['Generate, inspect and correct locally within the Balanced envelope'],endpoints:[brief.start,brief.end],area:brief.area,researchExtent:brief.area,routeExtent:brief.mapId,durationSeconds:brief.durationSeconds,audience:brief.audience,access:brief.access,date:this.now().slice(0,10)}},this.now());
+   const implementationSha256=Object.fromEntries(['runtime.ts','pipeline.ts','contracts.ts','public-tools.ts','retained-evidence.ts','software-evidence.ts','package-checks.ts','../builder.ts','../provider.ts'].map(file=>[file,createHash('sha256').update(readFileSync(new URL(file,import.meta.url))).digest('hex')]));
    writeJSON(join(directory,'starting-inputs.json'),{brief,briefSha256:digest(brief),authoredInputs:[],reuse:['player','bundled map','George renderer','generic editorial guidance'],implementationSha256,freshContentOnly:true});
   }
   this.save();
  }
  save(){saveJob(this.jobPath,this.job);writeJSON(join(this.directory,'usage.json'),roleUsage(this.job));}
+ /** Freeze new phase protocols without silently changing already dispatched prompt/tool bindings. */
+ phaseProtocol(phase:string,current:1|2|3):1|2|3 {
+  const path=join(this.directory,'phase-protocols.json');
+  const versions:Record<string,number>=existsSync(path)?JSON.parse(readFileSync(path,'utf8')):{};
+  if(versions[phase]!==undefined){if(versions[phase]!==1&&versions[phase]!==2&&versions[phase]!==3)throw Error('Unsupported saved phase protocol');return versions[phase];}
+  const version=this.job.tasks.some(t=>t.scope===phase)||existsSync(join(this.directory,'phases',phase+'.json'))?1:current;
+  versions[phase]=version;writeJSON(path,versions);event(this.job,this.now(),'factory-phase-protocol',JSON.stringify({phase,version,reason:version===1?'Preserve dispatched legacy binding':'New undispatched phase protocol'}));this.save();return version;
+ }
  remainingMs(){return Date.parse(this.job.deadline)-Date.parse(this.now());}
  assertRunning(){
   if(this.remainingMs()<=0)throw Error('Generation deadline reached');
@@ -123,6 +132,14 @@ export class FactoryRuntime {
   const result=JSON.parse(readFileSync(join(this.directory,'requests',last.operationId+'-result.json'),'utf8'));
   if(result.status!=='completed'||!result.output.some((o:JsonRecord)=>o.type==='function_call'))throw Error('Retained tool return required');
   event(this.job,this.now(),'factory-finalization-permit',phase);event(this.job,this.now(),'factory-local-fix',evidence);this.job.status='running';this.job.reason='One tool-free synthesis of already retrieved evidence; no extra research or reset';this.save();
+ }
+ /** Complete already requested read-only tools after a checked local validation repair. */
+ resumeToolCompletion(phase:string,evidence:string){
+  const tasks=this.job.tasks.filter(t=>t.scope===phase),last=tasks.at(-1);
+  if(!evidence.trim()||this.job.status!=='blocked'||this.remainingMs()<=0||!last||last.execution!=='blocked'||tasks.slice(0,-1).some(t=>t.execution!=='returned')||this.job.costLedger.operations.some(o=>o.state!=='settled')||existsSync(join(this.directory,'phases',phase+'.json'))||this.job.events.some(e=>e.type==='factory-finalization-permit'&&e.detail===phase))throw Error('Only checked settled tool-validation failures may resume once');
+  const result=JSON.parse(readFileSync(join(this.directory,'requests',last.operationId+'-result.json'),'utf8'));
+  if(result.status!=='completed'||!result.output.some((o:JsonRecord)=>o.type==='function_call'))throw Error('Completed retained tool requests required');
+  event(this.job,this.now(),'factory-finalization-permit',phase);event(this.job,this.now(),'factory-tool-completion-permit',phase);event(this.job,this.now(),'factory-local-fix',evidence);this.job.status='running';this.job.reason='Complete retained read-only tool requests once, then remaining tool-free synthesis; no new proposal or reset';this.save();
  }
  /** Explicit checked recovery only; preserves original limits, failure files and task history. */
  recoverKnownFailure(operationId:string,evidence:string){
@@ -170,6 +187,23 @@ export class FactoryRuntime {
   const history:JsonRecord[]=retryAllowed||finalizeOnly?JSON.parse(readFileSync(join(this.directory,'requests',`${finalizeOnly?lastOperation:permit!.operationId}-context.json`),'utf8')).input:[{role:'user',content:JSON.stringify(input)}];
   if(finalizeOnly){
    const output=JSON.parse(readFileSync(join(this.directory,'requests',lastOperation+'-result.json'),'utf8')).output as JsonRecord[];history.push(...output);const images:JsonRecord[]=[];
+   const completeTools=this.job.events.some(e=>e.type==='factory-tool-completion-permit'&&e.detail===id);
+   if(completeTools){
+    if(previousTasks.length>=(options.maxRequests??5)||this.job.events.some(e=>e.type==='factory-tool-completion-used'&&e.detail===id))throw Error('No unused tool completion or final synthesis slot remains');
+    const calls=output.filter(o=>o.type==='function_call');if(calls.length>12)throw Error('Local tool-call cap reached');
+    const ids=new Set<string>();
+    const dispatches=calls.map(call=>{
+     if(call.namespace!=='factory'||typeof call.call_id!=='string'||!/^[a-zA-Z0-9_-]{1,128}$/.test(call.call_id)||ids.has(call.call_id)||typeof call.arguments!=='string')throw Error('Invalid archived tool identity');ids.add(call.call_id);
+     const tool=options.tools?.find(t=>t.name===call.name);if(!tool)throw Error('Unknown or forbidden archived tool');
+     return {call,tool,args:tool.parse(JSON.parse(call.arguments))};
+    });
+    event(this.job,this.now(),'factory-tool-completion-used',id);this.save();
+    for(const {call,tool,args} of dispatches){
+     const receipt=join(this.directory,'requests',`${lastOperation}-${call.call_id}.json`);if(existsSync(receipt))continue;
+     this.assertRunning();let value:unknown;try{value=await tool.run(args);}catch(e){value={error:e instanceof Error?e.message:'Retained tool failed'};}
+     writeJSON(receipt,{name:tool.name,arguments:args,result:value,recovery:'Explicit completion after checked local validation repair'});this.assertRunning();
+    }
+   }
    for(const call of output.filter(o=>o.type==='function_call')){
     if(call.namespace!=='factory'||typeof call.call_id!=='string'||!/^[a-zA-Z0-9_-]{1,128}$/.test(call.call_id))throw Error('Invalid archived tool identity');
     const saved=JSON.parse(readFileSync(join(this.directory,'requests',`${lastOperation}-${call.call_id}.json`),'utf8'));
@@ -187,7 +221,7 @@ export class FactoryRuntime {
    const operationId=reserve(this.job,taskId,`factory-${id}`,0,this.now());this.save();
    if(retryAllowed&&attempt===previousTasks.length){event(this.job,this.now(),'factory-technical-retry-used',permit.operationId);this.save();}
    if(finalizeOnly){event(this.job,this.now(),'factory-finalization-used',id);this.save();}
-   const effectiveInstructions=fullInstructions+`\nRequest ${attempt+1}/${requestLimit}. ${finalRequest?'This is the final, tool-free synthesis. Return the complete requested JSON now using retained evidence; preserve unresolved gaps honestly.':'Finish with complete JSON as soon as sufficient evidence is available; keep tool use bounded.'}`;
+   const effectiveInstructions=fullInstructions+`\nRequest ${attempt+1}/${requestLimit}. ${finalRequest?'This CURRENT request is the final, tool-free synthesis. Earlier recorded tool requests were authorized by their own request instructions; this final-only restriction does not apply retroactively to them. Return the complete requested JSON now using retained evidence; preserve unresolved gaps honestly.':'Finish with complete JSON as soon as sufficient evidence is available; keep tool use bounded.'}`;
    writeJSON(join(this.directory,'requests',operationId+'-context.json'),{instructions:effectiveInstructions,input:history,binding,providerSchema:providerSchema(schema)});
    let result;
    try{

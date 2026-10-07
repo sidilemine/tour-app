@@ -333,3 +333,44 @@ test('retained-output recovery cannot promote after original deadline or use an 
  assert.throws(()=>r.recoverRetainedOutput('recovery-guard','Checked'));
  }finally{cleanup();}}
 });
+
+test('new phase protocols preserve dispatched legacy bindings and stay frozen across reopen',async()=>{
+ const {directory,cleanup}=sandbox();try{
+ const r=runtime(directory,async()=>result());
+ await r.phase('legacy-plan','route','Legacy instruction',{},schema);
+ assert.equal(r.phaseProtocol('legacy-plan',2),1);
+ assert.equal(r.phaseProtocol('new-plan',2),2);
+ await r.phase('new-plan','route','New instruction',{},schema);
+ const resumed=runtime(directory,async()=>{throw Error('No replay allowed');});
+ assert.equal(resumed.phaseProtocol('legacy-plan',2),1);assert.equal(resumed.phaseProtocol('new-plan',1),2);
+ assert.deepEqual(await resumed.phase('legacy-plan','route','Legacy instruction',{},schema),{answer:'done'});
+ assert.deepEqual(await resumed.phase('new-plan','route','New instruction',{},schema),{answer:'done'});
+ }finally{cleanup();}
+});
+
+test('checked tool-argument repair completes retained request without model replay and uses only remaining synthesis slot',async()=>{
+ const {directory,cleanup}=sandbox();try{
+ let toolRuns=0,requests=0,fixed=false;
+ const tool={...readTool(()=>{toolRuns++;}),parse:(args:unknown)=>{if(!fixed)throw Error('Incorrect local validator');return {url:z.object({url:z.string()}).parse(args).url};}};
+ const r=runtime(directory,async request=>{requests++;if(requests===1)return result('',[call]);assert.equal(request.tools,undefined);assert.equal(request.input.filter(x=>x.type==='function_call_output').length,1);return result();});
+ await assert.rejects(r.phase('fixed-tool','route','Inspect fixture',{},schema,{tools:[tool],maxRequests:2}),/Incorrect local/);
+ r.job.status='blocked';r.job.reason='Incorrect local validator';r.save();const deadline=r.job.deadline;
+ assert.throws(()=>r.resumeToolCompletion('fixed-tool',''));
+ fixed=true;r.resumeToolCompletion('fixed-tool','Checked local validator bug; same saved tool arguments are valid.');
+ await r.phase('fixed-tool','route','Inspect fixture',{},schema,{tools:[tool],maxRequests:2});
+ assert.equal(requests,2);assert.equal(toolRuns,1);assert.equal(r.job.deadline,deadline);assert.equal(r.job.costLedger.operations.length,2);
+ assert.throws(()=>r.resumeToolCompletion('fixed-tool','A duplicate completion must not run.'));
+ }finally{cleanup();}
+});
+
+test('declared fresh-job runtime is bounded and immutable on resume while brief area is preserved',()=>{
+ const {directory,cleanup}=sandbox();try{
+ const highgate={...brief,area:'Highgate, London',generationMinutes:45};const provider=async()=>({request:async()=>result()});
+ const r=new FactoryRuntime(directory,highgate,provider,()=>at);
+ assert.equal(r.job.deadline,'2026-10-07T10:45:00.000Z');
+ assert.ok(JSON.stringify(r.job.records).includes('Fresh automated Highgate, London tour'));
+ const resumed=new FactoryRuntime(directory,highgate,provider,()=> '2026-10-07T10:05:00.000Z');assert.equal(resumed.job.deadline,r.job.deadline);
+ assert.throws(()=>new FactoryRuntime(directory,{...highgate,generationMinutes:60},provider,()=>at),/Brief changed/);
+ assert.throws(()=>briefSchema.parse({...brief,generationMinutes:91}));
+ }finally{cleanup();}
+});

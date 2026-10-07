@@ -1,0 +1,432 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-07T01:24:59.473Z",
+  "jobs": [
+    {
+      "id": "hampstead-fresh-factory",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "status": "awaiting-decision",
+      "successStage": "offline-draft-tested",
+      "result": "reviewable-draft; duration/listening/field acceptance separate",
+      "elapsed": {
+        "createdAt": "2026-10-06T23:37:41.168Z",
+        "firstDispatchAt": "2026-10-06T23:37:41.179Z",
+        "terminalAt": "2026-10-07T01:24:19.858Z",
+        "snapshotUpdatedAt": "2026-10-07T01:24:19.858Z",
+        "createdToTerminalSeconds": 6398.69,
+        "firstDispatchToTerminalSeconds": 6398.679,
+        "createdToSnapshotSeconds": 6398.69,
+        "includesPauses": true,
+        "terminalTimestampKnown": true
+      },
+      "providerActivity": {
+        "observedSummedSeconds": 1855.4710000000002,
+        "requestsWithoutDuration": 0,
+        "completeSummedSeconds": 1855.4710000000002,
+        "note": "Sum of provider-result elapsedMs; overlapping requests count separately. Not elapsed wall time or local-tool time."
+      },
+      "requests": {
+        "count": 47,
+        "archivedProviderResults": 47,
+        "byProviderStatus": {
+          "failed": 1,
+          "completed": 44,
+          "interrupted": 2
+        },
+        "pending": 0,
+        "unknownOutcome": 0,
+        "recordedOperationFailures": 3,
+        "blockedTasks": 6
+      },
+      "usage": {
+        "byRole": [
+          {
+            "role": "research",
+            "operations": 17,
+            "operationsWithUnknownTokens": 2,
+            "observedInputTokens": 943631,
+            "operationsWithUnknownInput": 2,
+            "observedOutputTokens": 24767,
+            "operationsWithUnknownOutput": 2,
+            "observedCachedInputTokens": 44928,
+            "operationsWithUnknownCache": 2,
+            "observedReasoningTokens": 809,
+            "operationsWithUnknownReasoning": 2,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 10.270307999999998,
+              "upper": 12.5170655
+            },
+            "operationsWithoutEstimate": 2
+          },
+          {
+            "role": "route",
+            "operations": 6,
+            "operationsWithUnknownTokens": 0,
+            "observedInputTokens": 96278,
+            "operationsWithUnknownInput": 0,
+            "observedOutputTokens": 4475,
+            "operationsWithUnknownOutput": 0,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 0,
+            "observedReasoningTokens": 143,
+            "operationsWithUnknownReasoning": 0,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 1.18653,
+              "upper": 1.427225
+            },
+            "operationsWithoutEstimate": 0
+          },
+          {
+            "role": "scout",
+            "operations": 6,
+            "operationsWithUnknownTokens": 0,
+            "observedInputTokens": 231356,
+            "operationsWithUnknownInput": 0,
+            "observedOutputTokens": 6735,
+            "operationsWithUnknownOutput": 0,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 0,
+            "observedReasoningTokens": 120,
+            "operationsWithUnknownReasoning": 0,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 2.65031,
+              "upper": 3.2287
+            },
+            "operationsWithoutEstimate": 0
+          },
+          {
+            "role": "writer",
+            "operations": 4,
+            "operationsWithUnknownTokens": 1,
+            "observedInputTokens": 83373,
+            "operationsWithUnknownInput": 1,
+            "observedOutputTokens": 16849,
+            "operationsWithUnknownOutput": 1,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 1,
+            "observedReasoningTokens": 206,
+            "operationsWithUnknownReasoning": 1,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 1.67618,
+              "upper": 1.8846125
+            },
+            "operationsWithoutEstimate": 1
+          },
+          {
+            "role": "editor",
+            "operations": 4,
+            "operationsWithUnknownTokens": 0,
+            "observedInputTokens": 108896,
+            "operationsWithUnknownInput": 0,
+            "observedOutputTokens": 7533,
+            "operationsWithUnknownOutput": 0,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 0,
+            "observedReasoningTokens": 275,
+            "operationsWithUnknownReasoning": 0,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 1.46561,
+              "upper": 1.7378500000000001
+            },
+            "operationsWithoutEstimate": 0
+          },
+          {
+            "role": "verification",
+            "operations": 8,
+            "operationsWithUnknownTokens": 0,
+            "observedInputTokens": 393755,
+            "operationsWithUnknownInput": 0,
+            "observedOutputTokens": 9631,
+            "operationsWithUnknownOutput": 0,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 0,
+            "observedReasoningTokens": 244,
+            "operationsWithUnknownReasoning": 0,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 4.4191,
+              "upper": 5.4034875
+            },
+            "operationsWithoutEstimate": 0
+          },
+          {
+            "role": "tester",
+            "operations": 2,
+            "operationsWithUnknownTokens": 0,
+            "observedInputTokens": 90682,
+            "operationsWithUnknownInput": 0,
+            "observedOutputTokens": 4815,
+            "operationsWithUnknownOutput": 0,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 0,
+            "observedReasoningTokens": 161,
+            "operationsWithUnknownReasoning": 0,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 1.14757,
+              "upper": 1.374275
+            },
+            "operationsWithoutEstimate": 0
+          }
+        ],
+        "estimateBasis": {
+          "model": "gpt-6-astra",
+          "date": "2026-10-06",
+          "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+          "inputPerMillionUsd": 10,
+          "cachedInputPerMillionUsd": 1,
+          "cacheWritePerMillionUsd": 12.5,
+          "outputPerMillionUsd": 50,
+          "longContextThreshold": 272000,
+          "longContextInputMultiplier": 2,
+          "longContextOutputMultiplier": 1.5
+        },
+        "limitations": "Reasoning tokens are included in output, never added again. Standard token-only API-equivalent range; cache writes, tools, taxes and subscription/API parity are uncertain. Unknown requests are excluded from observed subtotals, never treated as free or zero-token."
+      },
+      "localTools": {
+        "read_page": {
+          "requested": 42,
+          "executedReceipts": 42,
+          "succeeded": 41,
+          "failed": 1,
+          "receiptOutcomeUnknown": 0,
+          "withoutExecutionReceipt": 0
+        },
+        "read_map": {
+          "requested": 22,
+          "executedReceipts": 22,
+          "succeeded": 14,
+          "failed": 8,
+          "receiptOutcomeUnknown": 0,
+          "withoutExecutionReceipt": 0
+        },
+        "read_image": {
+          "requested": 13,
+          "executedReceipts": 13,
+          "succeeded": 12,
+          "failed": 1,
+          "receiptOutcomeUnknown": 0,
+          "withoutExecutionReceipt": 0
+        },
+        "read_station_map": {
+          "requested": 1,
+          "executedReceipts": 1,
+          "succeeded": 1,
+          "failed": 0,
+          "receiptOutcomeUnknown": 0,
+          "withoutExecutionReceipt": 0
+        },
+        "read_crossing_map": {
+          "requested": 1,
+          "executedReceipts": 1,
+          "succeeded": 1,
+          "failed": 0,
+          "receiptOutcomeUnknown": 0,
+          "withoutExecutionReceipt": 0
+        }
+      },
+      "interventions": {
+        "eventCounts": {
+          "factory-technical-retry-permit": 3,
+          "factory-technical-retry-used": 3,
+          "factory-local-fix-resume": 5,
+          "factory-finalization-permit": 3,
+          "factory-local-fix": 3,
+          "factory-finalization-used": 3,
+          "owner-time-allowance-amendment": 3,
+          "factory-retained-output-permit": 1,
+          "factory-retained-output-used": 1,
+          "factory-tool-completion-permit": 2,
+          "factory-tool-completion-used": 2
+        },
+        "recoveryEventCount": 26,
+        "timeAmendments": 3,
+        "note": "Counts events, not unique human actions; permit/use pairs remain distinct. Unrecorded interventions are unknown."
+      },
+      "automaticAllowances": {
+        "research": 2,
+        "route": 3,
+        "correction": 2,
+        "correctiveRenders": 0
+      },
+      "recordingCounts": {
+        "initial": 4,
+        "final": 4,
+        "initialEvidenceFile": "build-result-2.json",
+        "note": "Initial means the earliest retained successful build receipt; counts recordings in a package, not synthesis calls or cache misses. Missing validation remains unknown."
+      },
+      "phases": {
+        "completed": [
+          {
+            "phase": "survey",
+            "completedAt": "2026-10-06T23:41:58.764Z",
+            "operationId": "operation-2"
+          },
+          {
+            "phase": "research",
+            "completedAt": "2026-10-06T23:43:47.453Z",
+            "operationId": "operation-6"
+          },
+          {
+            "phase": "route-plan-1",
+            "completedAt": "2026-10-06T23:44:20.225Z",
+            "operationId": "operation-7"
+          },
+          {
+            "phase": "physical-research-1",
+            "completedAt": "2026-10-07T00:20:09.228Z",
+            "operationId": "operation-13"
+          },
+          {
+            "phase": "route-plan-2",
+            "completedAt": "2026-10-07T00:20:47.774Z",
+            "operationId": "operation-14"
+          },
+          {
+            "phase": "physical-research-2",
+            "completedAt": "2026-10-07T00:30:41.127Z",
+            "operationId": "operation-19"
+          },
+          {
+            "phase": "route-plan-3",
+            "completedAt": "2026-10-07T00:39:16.190Z",
+            "operationId": "operation-23"
+          },
+          {
+            "phase": "scout-3",
+            "completedAt": "2026-10-07T00:41:01.476Z",
+            "operationId": "operation-26"
+          },
+          {
+            "phase": "route-disposition",
+            "completedAt": "2026-10-07T00:49:15.666Z",
+            "operationId": "operation-29"
+          },
+          {
+            "phase": "writing",
+            "completedAt": "2026-10-07T00:51:02.197Z",
+            "operationId": "operation-30"
+          },
+          {
+            "phase": "editor-0",
+            "completedAt": "2026-10-07T00:52:05.218Z",
+            "operationId": "operation-31"
+          },
+          {
+            "phase": "verification-0",
+            "completedAt": "2026-10-07T00:54:39.447Z",
+            "operationId": "operation-33"
+          },
+          {
+            "phase": "correction-1",
+            "completedAt": "2026-10-07T00:56:39.552Z",
+            "operationId": "operation-34"
+          },
+          {
+            "phase": "editor-1",
+            "completedAt": "2026-10-07T00:57:29.393Z",
+            "operationId": "operation-35"
+          },
+          {
+            "phase": "verification-1",
+            "completedAt": "2026-10-07T00:58:08.829Z",
+            "operationId": "operation-38"
+          },
+          {
+            "phase": "correction-2",
+            "completedAt": "2026-10-07T01:07:21.315Z",
+            "operationId": "operation-40"
+          },
+          {
+            "phase": "editor-2",
+            "completedAt": "2026-10-07T01:08:24.590Z",
+            "operationId": "operation-41"
+          },
+          {
+            "phase": "verification-2",
+            "completedAt": "2026-10-07T01:08:50.047Z",
+            "operationId": "operation-44"
+          },
+          {
+            "phase": "production-review",
+            "completedAt": "2026-10-07T01:13:33.700Z",
+            "operationId": "operation-45"
+          },
+          {
+            "phase": "tester",
+            "completedAt": "2026-10-07T01:15:52.386Z",
+            "operationId": "operation-46"
+          },
+          {
+            "phase": "package-check-review",
+            "completedAt": "2026-10-07T01:24:19.847Z",
+            "operationId": "operation-47"
+          }
+        ],
+        "count": 21
+      },
+      "package": {
+        "structurallyValid": true,
+        "testerCompleted": true,
+        "timing": {
+          "targetSeconds": 3600,
+          "routeMetres": 1295.6697112006052,
+          "walkingMetresPerSecond": 1.2,
+          "walkingSeconds": 1079.7247593338377,
+          "stationaryAudioSeconds": 328.1,
+          "walkingAudioSeconds": 0,
+          "allowanceSeconds": 480,
+          "totalSeconds": 1887.8247593338378,
+          "remainingSeconds": 1712.1752406661622
+        },
+        "durationAcceptance": "unconfirmed",
+        "shortfallSeconds": 1712.1752406661622,
+        "withinMaximum": true,
+        "walkingMeasured": false,
+        "listening": "pending",
+        "field": "unverified",
+        "readyForOrdinaryUse": false
+      },
+      "freshness": {
+        "declaredFreshContentOnly": true,
+        "authoredInputsCount": 0,
+        "authoredInputsEmpty": true,
+        "startingEvidenceSha256": "d248be2057549b81908ed4ff667ea2e992e6215ba87ce60ca05da9b3a8b5e9d8",
+        "briefSha256": "d248be2057549b81908ed4ff667ea2e992e6215ba87ce60ca05da9b3a8b5e9d8",
+        "implementationSha256": {
+          "runtime.ts": "a484f6ed6b725acb109bcafa6c522f318103c1d3b174098a0a1c2c972e6996b6",
+          "pipeline.ts": "7a3961e32ab6449ee85d71fc42e749a8db33a4d2e1baf858caa478e9871f13b8",
+          "contracts.ts": "00cd957efafc308899e7a2abdd833bb33bc87b2f3907760cf7dcd227c8788f32",
+          "public-tools.ts": "59819a62900cf3bd95daa2816a6578baae4698dcb041a7128a99db93c601fc03",
+          "..:builder.ts": "425c840c9595f4e30fdfb9cdb3826194a4ff7458a24b847643cbf87e29436182",
+          "..:provider.ts": "1d11797adb8eb40e1699ad8abfae50647ca570d679bdd8f15240cf137c4b0f29"
+        },
+        "note": "Recorded input provenance; an empty authored-input list alone does not prove every generated claim is fresh."
+      },
+      "benchmarkContext": "supervised run with recorded intervention; elapsed includes engineering/owner pauses"
+    }
+  ],
+  "comparisons": [],
+  "limitations": [
+    "Different neighbourhoods, evidence availability, route complexity and implementation revisions confound causal speed comparisons.",
+    "Hampstead supervised engineering elapsed and a fresh Highgate run are distinct conditions; report interventions and completion stage alongside any deltas.",
+    "Known token subtotals exclude unknown usage; reasoning tokens are included in output tokens, never added twice.",
+    "Implementation assistant/helper usage is unavailable and excluded, never zero.",
+    "Direct subscription charges and token-only API-equivalent estimates are distinct; hosted-tool fees/parity are not measured.",
+    "No credentials, provider/context text, fetched page bodies, image data or private file paths are exported.",
+    "A tested structural draft does not prove target-duration acceptance, human listening or physical access."
+  ]
+}
