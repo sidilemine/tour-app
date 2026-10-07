@@ -133,7 +133,7 @@ test('mapFeatures sends small read-only query, retains mapped coordinates/tags a
   let calls = 0;
   const tools = await setup(t, async url => {
     calls++; const query = new URL(String(url)).searchParams.get('data')!;
-    assert.match(query, /around:200,51.55,-0.17/); assert.match(query, /out body center geom\([^)]+\) 200/); assert.ok(!/nwr|relation/.test(query));
+    assert.match(query, /\[maxsize:33554432\]/); assert.match(query, /around:200,51.55,-0.17/); assert.match(query, /out body center geom\([^)]+\) 200/); assert.ok(!/nwr|relation/.test(query));
     assert.match(query, /node\(around:[^)]+\)\[entrance\]/);
     return Response.json({ osm3s: { timestamp_osm_base: '2026-10-07T10:00:00Z' }, elements: [
       { type: 'way', id: 1, tags: { highway: 'footway', access: 'yes', name: 'Synthetic path' }, center: { lat: 51.55, lon: -0.17 }, geometry: [{ lat: 51.55, lon: -0.17 }, { lat: 51.551, lon: -0.17 }] },

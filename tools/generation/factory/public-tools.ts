@@ -205,7 +205,7 @@ export class PublicTools {
           assert.ok(method === 'GET', 'Route redirects rejected; no coordinate forwarding');
           url = publicUrl(new URL(response.headers.get('location')!, url).href); continue;
         }
-        assert.ok(response.ok, `Public HTTP ${response.status}`);
+        if(!response.ok){await response.body?.cancel();throw Error(`Public HTTP ${response.status}`);}
         assert.ok(!response.headers.get('content-encoding') || response.headers.get('content-encoding') === 'identity', 'Compressed response unsupported');
         assert.ok(Number(response.headers.get('content-length') ?? 0) <= this.maxBytes, 'Response exceeds byte limit');
         const reader = response.body?.getReader(), chunks: Uint8Array[] = []; let size = 0;
@@ -285,11 +285,13 @@ export class PublicTools {
     const geometryBox = [center.latitude - latitudeSpan, center.longitude - longitudeSpan,
       center.latitude + latitudeSpan, center.longitude + longitudeSpan].join(',');
     const roadTypes = ['trunk', 'primary', 'secondary', 'tertiary', 'residential', 'unclassified', 'service', 'living_street', 'pedestrian'];
+    // Declare a small resource envelope: Overpass otherwise reserves its512MiB default,
+    // which can cause504 admission failures even for these bounded local queries.
     const query = transport
-      ? `[out:json][timeout:12];(node${around}[railway~"^(station|subway_entrance)$"];way${around}[railway~"^(station|subway_entrance)$"];node${around}[building=train_station];way${around}[building=train_station];);out body center geom(${geometryBox}) 200;`
+      ? `[out:json][timeout:12][maxsize:33554432];(node${around}[railway~"^(station|subway_entrance)$"];way${around}[railway~"^(station|subway_entrance)$"];node${around}[building=train_station];way${around}[building=train_station];);out body center geom(${geometryBox}) 200;`
       : crossing
-        ? `[out:json][timeout:12];(node${around}[highway=crossing];way${around}[footway=crossing];way${around}[highway=footway];way${around}[highway~"^(${roadTypes.join('|')})$"];);out body center geom(${geometryBox}) 200;`
-        : `[out:json][timeout:12];(node${around}[name];way${around}[name];way${around}[highway];node${around}[entrance];node${around}[barrier];way${around}[barrier];way${around}[building];node${around}[access];way${around}[access];);out body center geom(${geometryBox}) 200;`;
+        ? `[out:json][timeout:12][maxsize:33554432];(node${around}[highway=crossing];way${around}[footway=crossing];way${around}[highway=footway];way${around}[highway~"^(${roadTypes.join('|')})$"];);out body center geom(${geometryBox}) 200;`
+        : `[out:json][timeout:12][maxsize:33554432];(node${around}[name];way${around}[name];way${around}[highway];node${around}[entrance];node${around}[barrier];way${around}[barrier];way${around}[building];node${around}[access];way${around}[access];);out body center geom(${geometryBox}) 200;`;
     const requestUrl = 'https://overpass-api.de/api/interpreter?data=' + encodeURIComponent(query);
     const { saved, cachePath, cacheHit } = await this.retrieve(requestUrl, 'GET', '', false, true);
     const point = z.object({ lat: z.number().min(-90).max(90), lon: z.number().min(-180).max(180) });

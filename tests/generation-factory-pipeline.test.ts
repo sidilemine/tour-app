@@ -1,5 +1,6 @@
 import test, { type TestContext } from 'node:test';
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import { mkdir, mkdtemp, readFile, writeFile, rm } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { distance, type Coordinate } from '../src/domain/fixture';
@@ -142,15 +143,42 @@ function providerResult(request: InferenceRequest, value: unknown, calls: Provid
     ...(request.webSearch ? { webSearchCalls: [{ id: 'synthetic-search', status: 'completed', action: { type: 'search', queries: ['synthetic fixture'] }, sources: [] }] } : {}),
     usage: { inputTokens: 20, outputTokens: 10, totalTokens: 30, source: 'response.completed' }, elapsedMs: 1, evidenceKind: 'fixture', diagnostic: { code: 'fixture', retryable: false, automaticRetries: 0 }, directChargeUsd: 0, estimatedApiEquivalentUsd: null };
 }
-async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = false, failTester = false) {
+async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = false, failTester = false, evidenceRepair:'valid'|'invalid'|false=false) {
   const f = fixture(); await mkdir('local-data', { recursive: true }); const directory = await mkdtemp(resolve('local-data/factory-pipeline-test-'));
   t.after(() => rm(directory, { recursive: true, force: true }));
   const requests: string[] = [], testerInputs: unknown[] = []; let buildCalls = 0;
+  const evidenceRequests:InferenceRequest[]=[],network={map:0,image:0};
+  const imageUrl='https://example.com/retained.png',imageBytes=Buffer.from('89504e470d0a1a0a0000000d49484452000000010000000108060000001f15c489','hex');
+  let mapText='',mapUrl='';
   const accepted: FactoryReview = { verdict: 'accepted', summary: 'Synthetic desk review', issues: [], checks: ['Synthetic exact-input check'] };
   const provider = { async request(request: InferenceRequest):Promise<ProviderResult> {
     const name = request.jsonSchema!.name; requests.push(name);
     if (name === 'survey') { assert.ok(request.instructions.includes(f.brief.area)); return providerResult(request, f.survey); }
-    if (name === 'research' && requests.filter(n => n === name).length === 1) return providerResult(request, null, f.research.sources.map((s, i) => ({ type: 'function_call', namespace: 'factory', name: 'read_page', call_id: `page-${i}`, arguments: JSON.stringify({ url: s.url }) })));
+    if (name === 'research' && requests.filter(n => n === name).length === 1) return providerResult(request, null, [...f.research.sources.map((s, i) => ({ type: 'function_call', namespace: 'factory', name: 'read_page', call_id: `page-${i}`, arguments: JSON.stringify({ url: s.url }) })),...(evidenceRepair?[
+      {type:'function_call',namespace:'factory',name:'read_map',call_id:'map-original',arguments:JSON.stringify({latitude:51.55,longitude:-0.17,radius:100})},
+      {type:'function_call',namespace:'factory',name:'read_image',call_id:'image-original',arguments:JSON.stringify({url:imageUrl})}]:[])]);
+    if(evidenceRepair&&name==='research'){
+      const map=JSON.parse(String(request.input.find(i=>i.type==='function_call_output'&&i.call_id==='map-original')!.output));mapText=map.text;mapUrl=map.url;
+      f.research.sources.push({id:'map-source',url:mapUrl,title:'Mapped path',origin:'Synthetic OSM response',passage:'OpenStreetMap mapped features only;',locator:'Map'},{id:'image-source',url:imageUrl,title:'Exterior',origin:'Synthetic pixels',passage:'',locator:'Image'});
+      f.research.places[0].sourceIds.push('map-source','image-source');
+      const invalid=structuredClone(f.research);invalid.places.push({...invalid.places[0],candidateId:'station-not-a-candidate'});invalid.places[0].essentialUnknowns=['Synthetic standing approach needs evidence'];
+      return providerResult(request,invalid);
+    }
+    if(evidenceRepair&&name==='research_repair'){
+      assert.ok(!JSON.stringify(request.tools).includes('"name":"read_image"'),'Previously dispatched protocol keeps its original tools');
+      const invalid=structuredClone(f.research);invalid.sources.find(s=>s.id==='map-source')!.passage='';invalid.places[0].essentialUnknowns=['Synthetic standing approach needs evidence'];return providerResult(request,invalid);
+    }
+    if(evidenceRepair&&name==='research_evidence_repair'){
+      evidenceRequests.push(structuredClone({...request,signal:undefined}));
+      if(evidenceRequests.length===1){
+        const input=JSON.parse(String(request.input[0].content));assert.equal(input.problem.originalResearch.sources.find((s:{id:string})=>s.id==='map-source').passage,'OpenStreetMap mapped features only;');
+        return providerResult(request,null,[{type:'function_call',namespace:'factory',name:'read_page',call_id:'map-reopen',arguments:JSON.stringify({url:mapUrl})},{type:'function_call',namespace:'factory',name:'read_page',call_id:'page-reopen',arguments:JSON.stringify({url:f.research.sources[0].url})},{type:'function_call',namespace:'factory',name:'read_image',call_id:'image-reopen',arguments:JSON.stringify({url:imageUrl})}]);
+      }
+      const map=JSON.parse(String(request.input.find(i=>i.type==='function_call_output'&&i.call_id==='map-reopen')!.output));assert.equal(map.text,mapText);assert.equal(map.url,mapUrl);assert.equal(map.cacheHit,true);
+      const page=JSON.parse(String(request.input.find(i=>i.type==='function_call_output'&&i.call_id==='page-reopen')!.output));assert.equal(page.text.length,28000);assert.equal(page.truncated,true);assert.equal(page.cacheHit,true);assert.equal(page.hash,createHash('sha256').update(page.text).digest('hex'));assert.notEqual(page.hash,page.fullHash);
+      assert.ok(request.input.some(i=>Array.isArray(i.content)&&i.content.some(p=>p.type==='input_image'&&p.image_url==='data:image/png;base64,'+imageBytes.toString('base64'))));
+      const repaired=structuredClone(f.research);if(evidenceRepair==='invalid')repaired.sources.find(s=>s.id==='map-source')!.passage='';return providerResult(request,repaired);
+    }
     if (name === 'research' || name === 'research_repair') return providerResult(request, f.research);
     if (name.startsWith('route_plan_')) return providerResult(request, f.plan);
     if(name === 'tester'){
@@ -169,14 +197,38 @@ async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = 
     throw Error(`Unexpected synthetic phase ${name}`);
   } };
   const runtime = new FactoryRuntime(directory, f.brief, async () => provider, () => '2026-10-07T10:00:00.000Z');
+  if(evidenceRepair)await writeFile(join(directory,'phase-protocols.json'),JSON.stringify({'research-repair':1}));
   const tools = new PublicTools({ directory: join(directory, 'public-tools'), lookup: async () => [{ address: '93.184.216.34', family: 4 }], fetch: async url => {
+    if(String(url).startsWith('https://overpass-api.de/')){network.map++;assert.equal(network.map,1,'Retained map must not be fetched again');return Response.json({elements:[{type:'way',id:123,tags:{highway:'footway',access:'yes'},geometry:[{lat:51.55,lon:-0.17},{lat:51.5501,lon:-0.17}]}]});}
+    if(String(url)===imageUrl){network.image++;assert.equal(network.image,1,'Retained pixels must not be fetched again');return new Response(imageBytes,{headers:{'content-type':'image/png'}});}
     if (String(url).includes('valhalla1.openstreetmap.de')) return Response.json({ trip: { status: 0, units: 'kilometers', summary: { length: f.routed.legs.reduce((n, l) => n + l.distanceMetres, 0) / 1000, time: f.routed.legs.reduce((n, l) => n + l.durationSeconds, 0) }, legs: f.routed.legs.map(l => ({ shape: encode(l.geometry), summary: { length: l.distanceMetres / 1000, time: l.durationSeconds }, maneuvers: l.maneuvers.map(m => ({ instruction: m.instruction, begin_shape_index: m.beginShapeIndex, end_shape_index: m.endShapeIndex, type: m.type })) })) } });
     const source = f.research.sources.find(s => s.url === String(url)); assert.ok(source);
-    return new Response(`<title>${source.title}</title><p>${source.passage}</p>`, { headers: { 'content-type': 'text/html' } });
+    return new Response(`<title>${source.title}</title><p>${source.passage}${evidenceRepair&&source===f.research.sources[0]?' Longer retained source context.'.repeat(1500):''}</p>`, { headers: { 'content-type': 'text/html' } });
   } });
   const options = { build: async (...args: Parameters<typeof buildTour>) => { buildCalls++; return buildTour(args[0], { ...args[1], audioTools: syntheticAudio(measuredOverrun) }); } };
-  return { runtime, tools, options, requests, testerInputs, buildCalls: () => buildCalls, directory };
+  return { runtime, tools, options, requests, testerInputs, evidenceRequests, network, buildCalls: () => buildCalls, directory };
 }
+
+test('completed legacy research repair uses one bounded evidence recovery with exact retained map and pixels',async t=>{
+ const r=await replay(t,false,false,false,'valid'),handoff=await runFactory(r.runtime,r.tools,r.options);
+ assert.equal(handoff.status,'awaiting-listening');assert.equal(r.runtime.job.counters.research,2);assert.deepEqual(r.network,{map:1,image:1});
+ const original=JSON.parse(await readFile(join(r.directory,'phases/research.json'),'utf8')).result;
+ const failed=JSON.parse(await readFile(join(r.directory,'phases/research-repair.json'),'utf8')).result;
+ const repaired=JSON.parse(await readFile(join(r.directory,'research-validated.json'),'utf8'));
+ assert.ok(original.places.some((p:{candidateId:string})=>p.candidateId==='station-not-a-candidate'));
+ assert.equal(failed.sources.find((s:{id:string})=>s.id==='map-source').passage,'');assert.equal(failed.places[0].essentialUnknowns.length,1);
+ assert.equal(repaired.sources.find((s:{id:string})=>s.id==='map-source').passage,'OpenStreetMap mapped features only;');assert.equal(repaired.sources.find((s:{id:string})=>s.id==='image-source').passage,'');assert.equal(repaired.places[0].essentialUnknowns.length,0);
+ assert.deepEqual(repaired.claims,original.claims);assert.ok(r.runtime.job.events.some(e=>e.type==='factory-allowance'&&e.detail==='research-evidence-repair'));
+ const count=r.requests.length;await assert.rejects(runFactory(r.runtime,r.tools,r.options));assert.equal(r.requests.length,count);assert.equal(r.runtime.job.counters.research,2);
+});
+
+test('failed bounded evidence recovery preserves artifacts and cannot silently consume another research round',async t=>{
+ const r=await replay(t,false,false,false,'invalid');
+ await assert.rejects(runFactory(r.runtime,r.tools,r.options),/Supporting passage not present/);
+ const count=r.requests.length;assert.equal(r.runtime.job.counters.research,2);assert.equal(r.runtime.job.counters.route,0);
+ await assert.rejects(runFactory(r.runtime,r.tools,r.options),/Supporting passage not present/);assert.equal(r.requests.length,count);assert.equal(r.runtime.job.counters.research,2);
+ assert.equal(r.buildCalls(),0);assert.equal(JSON.parse(await readFile(join(r.directory,'phases/research-evidence-repair.json'),'utf8')).result.sources.find((s:{id:string})=>s.id==='map-source').passage,'');
+});
 
 test('settled tester failure retries its exact frozen receipt input after actual build rechecks',async t=>{
  const r=await replay(t,false,false,true);
