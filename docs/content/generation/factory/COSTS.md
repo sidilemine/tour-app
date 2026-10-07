@@ -1,6 +1,6 @@
 # Fresh factory token accounting — 7 October 2026
 
-Actual generation uses consented Astra medium with credit overflow off. **Direct paid charges: US$0.** Counts include failed work where the provider reported usage. API-equivalent estimates are a token-only comparison, not subscription charges.
+Historical jobs use Astra medium; current owner-selected jobs use Sol6.1 medium. Both use the existing consented grant with credit overflow off. **Direct paid charges: US$0.** Counts include failed work where the provider reported usage. API-equivalent estimates are a token-only comparison, not subscription charges.
 
 | Hampstead role | Requests | Unknown requests | Known input | Known output | API-equivalent USD |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -82,3 +82,19 @@ Sol6.1 uses the retained official quote ofUS$2input,US$0.10cached input,US$2.50c
 ## Sol6.1 second trial — map transport unavailable
 
 Elapsed10m23.065s;10inference requests, all research;242,895known tokens with no unknown usage;US$0direct, token-only API-equivalentUS$0.6159–0.7106. The client selected a refusing public map backend and never tried the healthy second DNS address. With no evidenced standing coordinates, the job correctly stopped before routing; no script or audio was produced. Source quotation repair and the original two research rounds are retained in[SOL61-MAP-FAILURE-RUN.json](SOL61-MAP-FAILURE-RUN.json). The separate native transport diagnostic used no model calls and is retained in[Overpass failover evidence](../OVERPASS-FAILOVER-2026-10-07.json).
+
+
+## Sol6.1 third trial — complete recordings, duration rejected
+
+The run took **56m30.891s** (11:09:58.860–12:06:29.751UTC), including two checked stream retries, one compiler-fix resumption and one time amendment. It retained57inference attempts, **3,129,164known tokens plus two requests of unknown usage**, US$0direct, and known token-only API-equivalent **US$6.7337–8.1879**. Summed provider activity was2800.858seconds, distinct from wall time. All four recordings fully decode, but their383.9seconds plus walking/allowance produces50m45, below55–65minutes. The package was not promoted to final acceptance and the final tester was not dispatched.
+
+| Runtime role | Requests | Unknown usage | Known input | Known output | Known total | Token-only API-equivalentUSD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| research | 14 | 2 | 944,218 | 28,872 | 973,090 | 2.0988–2.5503 |
+| route | 10 | 0 | 254,379 | 13,037 | 267,416 | 0.6391–0.7663 |
+| scout | 17 | 0 | 1,050,687 | 15,606 | 1,066,293 | 2.0882–2.5690 |
+| writer | 3 | 0 | 104,949 | 15,962 | 120,911 | 0.3695–0.4220 |
+| editor | 3 | 0 | 103,641 | 5,739 | 109,380 | 0.2647–0.3165 |
+| verification | 10 | 0 | 580,923 | 11,151 | 592,074 | 1.2734–1.5638 |
+
+[Third-run record](SOL61-V3-RUN.json) and [Sol-inclusive benchmark](SOL61-BENCHMARK.json) retain all failures and the unpromoted build receipt. Local George synthesis and the separate actual-package software checks have no model tokens. Implementation-assistant usage remains unknown and excluded. No listening or walking duration was observed.

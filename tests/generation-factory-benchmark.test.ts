@@ -143,3 +143,16 @@ test('confirmed local setup failure is zero provider activity, not a missing inf
   assert.equal(r.requests.byProviderStatus.not_dispatched,1);
  }finally{f.cleanup();}
 });
+
+
+test('underlength rendered draft remains visible without being promoted to a final accepted build',()=>{
+ const f=fixture();try{
+  terminate(f.job);f.save();
+  write(f.directory,'build-result-2.json',{structuralValid:true,packagePath:'/private/SECRET',timing:{targetSeconds:3600,totalSeconds:3045.12,withinTarget:true},validation:{recordingCount:4,packageSha256:'b'.repeat(64)}});
+  const benchmark=benchmarkJob(f.directory),report=factoryReport(f.directory,join(f.directory,'report.json'));
+  assert.equal(benchmark.successStage,'offline-draft-built');assert.equal(benchmark.package.promotedToFinalBuild,false);assert.equal(benchmark.package.testerCompleted,false);
+  assert.equal(benchmark.package.timing?.totalSeconds,3045.12);assert.equal(benchmark.recordingCounts.final,4);
+  assert.equal(report.observed.build?.promotedToFinalBuild,false);assert.equal(report.observed.build?.evidenceFile,'build-result-2.json');assert.equal(report.observed.build?.validation?.recordingCount,4);
+  assert.equal(report.observed.durationAcceptance,null);assert.doesNotMatch(JSON.stringify([benchmark,report]),/SECRET|packagePath/);
+ }finally{f.cleanup();}
+});
