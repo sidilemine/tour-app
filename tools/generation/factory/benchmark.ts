@@ -20,6 +20,7 @@ export function benchmarkJob(directory: string) {
   const initialBuildFile = readdirSync(directory).filter(name => /^build-result-\d+\.json$/.test(name)).sort((a, b) => Number(a.match(/\d+/)![0]) - Number(b.match(/\d+/)![0]))[0];
   const initialBuild = initialBuildFile ? read(join(directory, initialBuildFile)) : null;
   const operations = job.costLedger.operations;
+  const notDispatchedConfirmed=operations.filter(o=>o.failure==='provider_initialization_not_dispatched'&&o.usage?.totalTokens===0&&read(join(directory,'requests',safeId(o.id)+'-not-dispatched.json'))?.inferenceDispatched===false).length;
   const firstDispatchAt = operations.map(o => o.startedAt).sort()[0] ?? null;
   const latestDispatch = operations.map(o => o.startedAt).sort().at(-1) ?? job.createdAt;
   const terminal = job.events.filter(e => e.type === 'terminal' && e.detail === job.status && e.at >= latestDispatch).sort((a, b) => a.at.localeCompare(b.at)).at(-1);
@@ -67,7 +68,7 @@ export function benchmarkJob(directory: string) {
     status: job.status, successStage, result: successStage === 'offline-draft-tested' ? 'reviewable-draft; duration/listening/field acceptance separate' : 'partial',
     elapsed: { createdAt: job.createdAt, firstDispatchAt, terminalAt, snapshotUpdatedAt: job.updatedAt, createdToTerminalSeconds: seconds(job.createdAt, terminalAt), firstDispatchToTerminalSeconds: seconds(firstDispatchAt, terminalAt), createdToSnapshotSeconds: seconds(job.createdAt, job.updatedAt), includesPauses: true, terminalTimestampKnown: terminalAt !== null },
     providerActivity: { observedSummedSeconds: providerSeconds, requestsWithoutDuration: missingProviderDuration, completeSummedSeconds: missingProviderDuration === 0 ? providerSeconds : null, note: 'Sum of provider-result elapsedMs; overlapping requests count separately. Not elapsed wall time or local-tool time.' },
-    requests: { count: operations.length, archivedProviderResults, byProviderStatus: providerStatuses, pending: operations.filter(o => o.state === 'pending').length, unknownOutcome: operations.filter(o => o.state === 'unknown').length, recordedOperationFailures: operations.filter(o => o.failure).length, blockedTasks: job.tasks.filter(t => t.execution === 'blocked').length },
+    requests: { count: operations.length, notDispatchedConfirmed, inferenceAttempts:operations.length-notDispatchedConfirmed, archivedProviderResults, byProviderStatus: providerStatuses, pending: operations.filter(o => o.state === 'pending').length, unknownOutcome: operations.filter(o => o.state === 'unknown').length, recordedOperationFailures: operations.filter(o => o.failure).length, blockedTasks: job.tasks.filter(t => t.execution === 'blocked').length },
     usage: { byRole: usage.byRole, estimateBasis: usage.estimateBasis, limitations: usage.limitations },
     localTools: tools,
     interventions: { eventCounts, recoveryEventCount, timeAmendments: eventCounts['owner-time-allowance-amendment'] ?? 0, note: 'Counts events, not unique human actions; permit/use pairs remain distinct. Unrecorded interventions are unknown.' },

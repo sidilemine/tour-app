@@ -401,3 +401,22 @@ test('large research synthesis gets six minutes but cannot extend the original j
   }finally{cleanup();}
  }
 });
+
+test('provider initialization failure keeps a zero-dispatch receipt and the remaining inference slot',async()=>{
+ const {directory,cleanup}=sandbox();try{
+  let initialized=0,calls=0;
+  const r=new FactoryRuntime(directory,brief,async()=>{
+   initialized++;if(initialized===2)throw Error('Fixture local initialization failure');
+   return {async request(){calls++;return calls===1?{...result(),status:'interrupted' as const,diagnostic:{code:'request_aborted_or_timed_out',retryable:false,automaticRetries:0 as const}}:result();}};
+  },()=>at);
+  await assert.rejects(r.phase('setup','research','Return fixture',{},schema,{maxRequests:2}),/timed_out/);
+  r.recoverKnownFailure('operation-1','Checked timeout');
+  await assert.rejects(r.phase('setup','research','Return fixture',{},schema,{maxRequests:2}),/initialization/);
+  assert.equal(calls,1);assert.equal(r.job.costLedger.operations[1].usage?.totalTokens,0);
+  assert.equal(r.job.costLedger.operations[1].failure,'provider_initialization_not_dispatched');
+  r.recoverKnownFailure('operation-2','Checked local setup fix');
+  assert.deepEqual(await r.phase('setup','research','Return fixture',{},schema,{maxRequests:2}),{answer:'done'});
+  assert.equal(calls,2);assert.equal(r.job.costLedger.operations.length,3);
+  assert.equal(r.job.tasks[0].execution,'blocked');assert.equal(r.job.tasks[1].execution,'blocked');
+ }finally{cleanup();}
+});

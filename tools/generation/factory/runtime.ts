@@ -142,6 +142,12 @@ export class FactoryRuntime {
   if(result.status!=='completed'||!result.output.some((o:JsonRecord)=>o.type==='function_call'))throw Error('Completed retained tool requests required');
   event(this.job,this.now(),'factory-finalization-permit',phase);event(this.job,this.now(),'factory-tool-completion-permit',phase);event(this.job,this.now(),'factory-local-fix',evidence);this.job.status='running';this.job.reason='Complete retained read-only tool requests once, then remaining tool-free synthesis; no new proposal or reset';this.save();
  }
+ /** A local provider-construction failure is not an inference dispatch. */
+ private notDispatched(operationId:string){
+  const o=this.job.costLedger.operations.find(o=>o.id===operationId),path=join(this.directory,'requests',operationId+'-not-dispatched.json');
+  if(!o||o.state!=='settled'||o.failure!=='provider_initialization_not_dispatched'||o.chargedUsd!==0||o.usage?.totalTokens!==0||!existsSync(path)||existsSync(join(this.directory,'requests',operationId+'-result.json')))return false;
+  const receipt=JSON.parse(readFileSync(path,'utf8'));return receipt.inferenceDispatched===false&&receipt.stage==='provider-initialization';
+ }
  /** Explicit checked recovery only; preserves original limits, failure files and task history. */
  recoverKnownFailure(operationId:string,evidence:string){
   const operation=this.job.costLedger.operations.find(o=>o.id===operationId);
@@ -150,7 +156,9 @@ export class FactoryRuntime {
   if(!evidence.trim()||!Number.isFinite(this.remainingMs())||this.remainingMs()<=0||['ready','cancelled','awaiting-decision'].includes(this.job.status))throw Error('Checked evidence and original active deadline required');
   if(this.job.costLedger.operations.some(o=>o.state!=='settled')||this.job.costLedger.operations.some(o=>o.chargedUsd!==0)||this.job.issues.some(i=>i.arbitration&&i.state==='open'))throw Error('Resolve pending outcomes, charges or arbitration before technical retry');
   if(task.inputRefs.some(r=>!fresh(this.job,r))||existsSync(join(this.directory,'phases',task.scope+'.json')))throw Error('Phase has stale inputs or an existing output artifact');
-  if(this.job.events.some(e=>e.type==='factory-technical-retry-permit'&&(JSON.parse(e.detail) as TechnicalRetryPermit).phase===task.scope))throw Error('One technical retry per phase maximum');
+  const priorPermit=this.job.events.some(e=>e.type==='factory-technical-retry-permit'&&(JSON.parse(e.detail) as TechnicalRetryPermit).phase===task.scope);
+  if(priorPermit&&(!this.notDispatched(operationId)||this.job.events.some(e=>e.type==='factory-initialization-recovery'&&e.detail===task.scope)))throw Error('One technical retry per phase maximum');
+  if(this.notDispatched(operationId))event(this.job,this.now(),'factory-initialization-recovery',task.scope);
   const binding=this.job.conditions.promptHashes[task.taskId];
   const context=JSON.parse(readFileSync(join(this.directory,'requests',`${operationId}-context.json`),'utf8'));
   if(!binding||context.binding!==binding||!Array.isArray(context.input))throw Error('Retained phase context is unavailable or changed');
@@ -177,7 +185,7 @@ export class FactoryRuntime {
    event(this.job,this.now(),'factory-retained-output-used',id);this.save();return parsed;
   }
   const previousTasks=this.job.tasks.filter(t=>t.scope===id);
-  const permitEvent=this.job.events.find(e=>e.type==='factory-technical-retry-permit'&&(JSON.parse(e.detail) as TechnicalRetryPermit).phase===id);
+  const permitEvent=this.job.events.filter(e=>e.type==='factory-technical-retry-permit'&&(JSON.parse(e.detail) as TechnicalRetryPermit).phase===id).at(-1);
   const permit=permitEvent?JSON.parse(permitEvent.detail) as TechnicalRetryPermit:undefined;
   const retryAllowed=permit&&permit.binding===binding&&previousTasks.at(-1)?.operationId===permit.operationId&&!this.job.events.some(e=>e.type==='factory-technical-retry-used'&&e.detail===permit.operationId);
   const finalizeOnly=this.job.events.some(e=>e.type==='factory-finalization-permit'&&e.detail===id)&&!this.job.events.some(e=>e.type==='factory-finalization-used'&&e.detail===id);
@@ -212,7 +220,8 @@ export class FactoryRuntime {
    }history.push(...images);
   }
   const usedCallIds=new Set<string>(history.filter(item=>item.type==='function_call'&&typeof item.call_id==='string').map(item=>String(item.call_id)));
-  const requestLimit=finalizeOnly?previousTasks.length+1:(options.maxRequests??5);
+  const notDispatchedCount=previousTasks.filter(t=>t.operationId&&this.notDispatched(t.operationId)).length;
+  const requestLimit=finalizeOnly?previousTasks.length+1:(options.maxRequests??5)+notDispatchedCount;
   for(let attempt=previousTasks.length;attempt<requestLimit;attempt++){
    const finalRequest=finalizeOnly||attempt===requestLimit-1;
    this.assertRunning();const taskId=`${id}-${attempt+1}`,contextId=`${this.job.id}:${taskId}:${binding.slice(0,12)}`;
@@ -224,9 +233,9 @@ export class FactoryRuntime {
    if(finalizeOnly){event(this.job,this.now(),'factory-finalization-used',id);this.save();}
    const effectiveInstructions=fullInstructions+`\nRequest ${attempt+1}/${requestLimit}. ${finalRequest?'This CURRENT request is the final, tool-free synthesis. Earlier recorded tool requests were authorized by their own request instructions; this final-only restriction does not apply retroactively to them. Return the complete requested JSON now using retained evidence; preserve unresolved gaps honestly.':'Finish with complete JSON as soon as sufficient evidence is available; keep tool use bounded.'}`;
    writeJSON(join(this.directory,'requests',operationId+'-context.json'),{instructions:effectiveInstructions,input:history,binding,providerSchema:providerSchema(schema)});
-   let result;
+   let result,providerConstructed=false;
    try{
-    const provider=await this.provider();
+    const provider=await this.provider();providerConstructed=true;
     result=await provider.request({contextId,instructions:effectiveInstructions,input:history,model:this.brief.model,effort:this.brief.effort,signal:AbortSignal.timeout(seconds*1000),...(options.web&&!finalRequest?{webSearch:{searchContextSize:'high' as const}}:{}),...(options.tools?.length&&!finalRequest?{tools:[{type:'namespace',name:'factory',description:'Read bounded public evidence',tools:options.tools.map(t=>({type:'function',name:t.name,description:t.description,parameters:t.parameters,strict:true}))}]}:{}),jsonSchema:{name:id.replace(/-/g,'_'),schema:providerSchema(schema)}});
     // Observed usage is settled before archival/validation, which can fail independently.
     settle(this.job,operationId,0,measuredUsage(result),this.now(),result.status==='completed'?undefined:result.diagnostic.code);this.save();
@@ -274,6 +283,10 @@ export class FactoryRuntime {
     returnTask(this.job,taskId,{usableOutputRefs:[],unresolvedQuestions:[],failedAttempts:[],usage:measuredUsage(result),recommendedNextAction:'Continue explicit tool history'},this.now());this.save();
    }catch(error){
     const operation=this.job.costLedger.operations.find(o=>o.id===operationId)!;
+    if(operation.state==='pending'&&!providerConstructed){
+     writeJSON(join(this.directory,'requests',operationId+'-not-dispatched.json'),{stage:'provider-initialization',inferenceDispatched:false,checkedAt:this.now(),reason:'Provider construction failed before request() could be invoked'});
+     settle(this.job,operationId,0,{inputTokens:0,outputTokens:0,totalTokens:0,cachedInputTokens:0,reasoningTokens:0,subscription:false,apiEquivalentUsd:0,apiEquivalentRangeUsd:{lower:0,upper:0},priceDate:null,uncertainty:'No inference dispatch: provider construction failed locally'},this.now(),'provider_initialization_not_dispatched');
+    }
     if(operation.state==='pending'){operation.state='unknown';this.job.status='blocked';this.job.reason='Interrupted operation needs reconciliation; no further dispatch';}
     this.job.tasks.find(t=>t.taskId===taskId)!.execution='blocked';this.save();throw error;
    }

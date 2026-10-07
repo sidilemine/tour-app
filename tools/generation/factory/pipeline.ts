@@ -420,7 +420,7 @@ async function main(){
  const root=process.cwd(),output=resolve(directory);assert.ok(output.startsWith(resolve(root,'local-data')+'/'),'Factory raw research/output must remain in ignored local-data');
  const brief=briefSchema.parse(JSON.parse(readFileSync(briefPath,'utf8')));
  await withJobLock(join(output,'job.json'),async()=>{
-  const runtime=new FactoryRuntime(output,brief,async()=>new SubscriptionProvider({credentials:await renewCredentials(root,{minimumValidityMs:FACTORY_REQUEST_TIMEOUT_MS+60000}),overflowEvidence:await loadOverflowEvidence(root),timeoutMs:FACTORY_REQUEST_TIMEOUT_MS}));
+  const runtime=new FactoryRuntime(output,brief,async()=>new SubscriptionProvider({credentials:await renewCredentials(root,{minimumValidityMs:300000}),overflowEvidence:await loadOverflowEvidence(root),timeoutMs:FACTORY_REQUEST_TIMEOUT_MS}));
   if(retryFlag==='--retry-known')runtime.recoverKnownFailure(retryId,retryEvidence);
   else if(retryFlag==='--resume-checked')resumeAfterLocalFix(runtime,retryId);
   else if(retryFlag==='--finalize-retained')runtime.resumeToolFinalization(retryId,retryEvidence);
