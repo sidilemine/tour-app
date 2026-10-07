@@ -1,6 +1,6 @@
 # Walking tour design guidance
 
-Living editorial reference, revision 14, 20 September 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
+Living editorial reference, revision 15, 7 October 2026. Maintained for Sidi and the engineer preparing tours, and eventually for supervised automation. Update it as conversations and ordinary-use feedback reveal what works; retain the reason for substantial changes.
 
 **Our aim:** make an enjoyable, relaxing walk reveal the non-obvious stories and meaning beneath the surroundings, giving the listener a deeper connection to a place, whether new or familiar. Being there should contribute something that reading at home cannot.
 
@@ -169,6 +169,16 @@ Enjoyment can include speculation, folklore and material beyond an encyclopaedic
 Keep a repertoire of endings and choose what suits the tour. A climax and a reflective finish are both valid. Ending style could eventually be a preference alongside theme and duration. Comment 12.
 
 ## Working interpretations to apply and refine
+
+### Keep crossing verification proportionate
+
+**Owner challenge, 7 October:** Sidi considers the Highgate factory's scouting/verification overzealous and asks whether an existing crossing should be sufficient to say “cross here”. This sets a practical direction for review; it is not a report that the generated route has been walked or accepted.
+
+**Working application:** reliable evidence of the relevant pedestrian crossing, a plausible public approach and an intelligible onward direction can support “Use the pedestrian crossing to cross North Road.” Do not require a route polyline to trace each kerb, island or pavement exactly. A road-centre line or a partial mapped connector is not alone evidence that the instruction sends the visitor into traffic; interpret the map's separate-path and road-sidewalk representations. Do not invent precise pavement coordinates to make the line look convincing.
+
+Require a concrete consequence for the walker before making a crossing issue a release blocker: the wrong road/crossing, conflicting onward directions, an inaccessible/private approach, or evidence of a real missing connection. Resolve ordinary mapping imprecision with clear directions and the saved map. Retain material uncertainty and known contradictions; the existence of a crossing is not a promise of current traffic clearance. Imagery is useful when it resolves a specific ambiguity, not a compulsory audit of every metre.
+
+Apply this criterion to a targeted new review of the retained Highgate evidence before undertaking a custom pedestrian network or another full generation. Earlier rejected runs remain historical results under their original criteria; changing the standard does not retroactively create an accepted route or a field observation. [Discussion and example](EDITORIAL-REVIEW-RECORD.md#7-october-2026--proportionate-crossing-verification).
 
 ### Structure and pacing
 
