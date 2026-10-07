@@ -102,10 +102,10 @@ export class FactoryRuntime {
  }
  save(){saveJob(this.jobPath,this.job);writeJSON(join(this.directory,'usage.json'),roleUsage(this.job));}
  /** Freeze new phase protocols without silently changing already dispatched prompt/tool bindings. */
- phaseProtocol(phase:string,current:1|2|3):1|2|3 {
+ phaseProtocol(phase:string,current:1|2|3|4):1|2|3|4 {
   const path=join(this.directory,'phase-protocols.json');
   const versions:Record<string,number>=existsSync(path)?JSON.parse(readFileSync(path,'utf8')):{};
-  if(versions[phase]!==undefined){if(versions[phase]!==1&&versions[phase]!==2&&versions[phase]!==3)throw Error('Unsupported saved phase protocol');return versions[phase];}
+  if(versions[phase]!==undefined){if(versions[phase]!==1&&versions[phase]!==2&&versions[phase]!==3&&versions[phase]!==4)throw Error('Unsupported saved phase protocol');return versions[phase];}
   const version=this.job.tasks.some(t=>t.scope===phase)||existsSync(join(this.directory,'phases',phase+'.json'))?1:current;
   versions[phase]=version;writeJSON(path,versions);event(this.job,this.now(),'factory-phase-protocol',JSON.stringify({phase,version,reason:version===1?'Preserve dispatched legacy binding':'New undispatched phase protocol'}));this.save();return version;
  }

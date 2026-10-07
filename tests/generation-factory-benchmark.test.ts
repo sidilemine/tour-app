@@ -99,6 +99,26 @@ test('corrective render counters are distinct from initial/final package recordi
   } finally { f.cleanup(); }
 });
 
+test('every subsequent run compares to the first baseline even after an intermediate different-stage failure', () => {
+  const baseline = fixture('hampstead-baseline'), middle = fixture('highgate-blocked'), final = fixture('highgate-fresh-v2');
+  try {
+    for (const [i, f] of [baseline, middle, final].entries()) {
+      f.job.costLedger.operations = [operation('operation-1', { failure: i === 1 ? 'route-safety' : undefined })];
+      f.job.events.push({ at: at(30), type: 'factory-local-fix', detail: 'Synthetic retained intervention' });
+      terminate(f.job, [80, 70, 60][i]); f.save();
+      write(f.directory, 'requests/operation-1-result.json', { elapsedMs: [10000, 8000, 5000][i], output: [], status: i === 1 ? 'failed' : 'completed' });
+    }
+    write(middle.directory, 'research-validated.json', {});
+    const report = benchmarkRuns([baseline.directory, middle.directory, final.directory]);
+    assert.equal(report.jobs.length, 3);
+    assert.deepEqual(report.comparisons.map(c => [c.before, c.after]), [['hampstead-baseline', 'highgate-blocked'], ['hampstead-baseline', 'highgate-fresh-v2']]);
+    assert.equal(report.comparisons[0].sameSuccessStage, false); assert.equal(report.comparisons[0].createdToTerminalSecondsDelta, null);
+    assert.equal(report.comparisons[1].sameSuccessStage, true); assert.equal(report.comparisons[1].createdToTerminalSecondsDelta, -20); assert.equal(report.comparisons[1].providerSummedSecondsDelta, -5);
+    assert.equal(report.jobs[1].requests.recordedOperationFailures, 1); assert.equal(report.jobs[1].usage.byRole[0].observedInputTokens, 100); assert.equal(report.jobs[1].interventions.recoveryEventCount, 1);
+    assert.deepEqual(report.jobs.map(j => j.requests.count), [1, 1, 1]);
+  } finally { baseline.cleanup(); middle.cleanup(); final.cleanup(); }
+});
+
 test('redacted factory report retains allowlisted build validation and final package-check review outcome', () => {
   const f = fixture(); try {
     f.save();

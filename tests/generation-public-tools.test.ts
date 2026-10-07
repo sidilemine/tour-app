@@ -2,7 +2,8 @@ import test, { type TestContext } from 'node:test';
 import assert from 'node:assert/strict';
 import { mkdir, mkdtemp, readFile, writeFile, rm, stat } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
-import { PublicTools, decodePolyline6, normalizeSourceText, publicRoutingPolicy, type PublicToolsOptions } from '../tools/generation/factory/public-tools';
+import { PublicTools, PublicToolHttpError, decodePolyline6, normalizeSourceText, publicRoutingPolicy, type PublicToolsOptions, type PedestrianRouteOptions } from '../tools/generation/factory/public-tools';
+import type { Coordinate } from '../src/domain/fixture';
 
 async function setup(t: TestContext, fetch: typeof globalThis.fetch, extra: Partial<PublicToolsOptions> = {}) {
   await mkdir('local-data', { recursive: true });
@@ -80,6 +81,23 @@ test('byte limits, timeout, HTTP failure and unsupported PDF are explicit failur
   await assert.rejects(pdf.readPage('https://example.com/doc.pdf'), /Unsupported page type/);
 });
 
+test('public HTTP errors preserve bounded JSON diagnostics, discard HTML/oversized bodies and cancel unread streams',async t=>{
+ const tools=await setup(t,async()=>Response.json({error_code:150,error:'Exceeded max locations\nfor pedestrian',ignored:'Never export other fields'},{status:400}));
+ await assert.rejects(tools.readPage('https://example.com/json-error'),(error:unknown)=>{
+  assert.ok(error instanceof PublicToolHttpError);assert.equal(error.status,400);assert.equal(error.providerCode,150);assert.equal(error.providerMessage,'Exceeded max locations for pedestrian');assert.match(error.message,/Public HTTP 400/);assert.ok(!error.message.includes('Never export'));return true;
+ });
+ for(const contentType of ['text/html','application/json']){
+  let cancelled=false;
+  const body=contentType==='text/html'?'<html>Upstream secret debug body</html>':JSON.stringify({error_code:151,error:'x'.repeat(3000)});
+  const bounded=await setup(t,async()=>new Response(new ReadableStream({start(controller){controller.enqueue(Buffer.from(body));},cancel(){cancelled=true;}}),{status:400,headers:{'content-type':contentType}}));
+  await assert.rejects(bounded.readPage('https://example.com/bounded-error'),(error:unknown)=>{
+   assert.ok(error instanceof PublicToolHttpError);assert.equal(error.message,'Public HTTP 400');assert.equal(error.providerMessage,undefined);assert.equal(error.providerCode,undefined);return true;
+  });assert.equal(cancelled,true);
+ }
+ const malformed=await setup(t,async()=>new Response('not JSON',{status:429,headers:{'content-type':'application/json'}}));
+ await assert.rejects(malformed.readPage('https://example.com/malformed-error'),(error:unknown)=>error instanceof PublicToolHttpError&&error.message==='Public HTTP 429');
+});
+
 const shape = 'e~epoA|jfpOiDaK'; // Official Valhalla polyline6 decoder example, not an authored tour.
 const points = [{ latitude: 42.225139, longitude: -8.670911 }, { latitude: 42.225224, longitude: -8.670718 }];
 function routeBody() {
@@ -92,6 +110,7 @@ test('pedestrian route retains actual polyline6, maneuver indices, request and p
   const tools = await setup(t, async (url, options) => {
     calls++; assert.equal(String(url), publicRoutingPolicy.endpoint); assert.equal(options?.method, 'POST'); assert.equal(options?.redirect, 'manual');
     const payload = JSON.parse(String(options?.body)); assert.equal(payload.costing, 'pedestrian'); assert.equal(payload.units, 'kilometers');
+    assert.deepEqual(payload,{locations:points.map(p=>({lat:p.latitude,lon:p.longitude,type:'break'})),costing:'pedestrian',costing_options:{pedestrian:{walking_speed:4.5}},units:'kilometers',language:'en-GB',shape_format:'polyline6'},'Default request remains byte-equivalent in structure and property order');
     assert.deepEqual(payload.locations.map((p: { lat: number; lon: number }) => ({ latitude: p.lat, longitude: p.lon })), points);
     assert.ok(new Headers(options?.headers).get('user-agent')); assert.ok(new Headers(options?.headers).get('x-client-id'));
     return response(JSON.stringify(routeBody()), 'application/json');
@@ -101,6 +120,100 @@ test('pedestrian route retains actual polyline6, maneuver indices, request and p
   assert.deepEqual(route.legs[0].maneuvers[0], { instruction: 'Walk on the path.', beginShapeIndex: 0, endShapeIndex: 1, type: 1 });
   assert.equal(route.physicalClearance, 'unverified'); assert.equal(route.provenance.fixMapUrl, 'https://www.openstreetmap.org/fixthemap');
   assert.equal((await tools.pedestrianRoute(points)).cacheHit, true); assert.equal(calls, 1);
+});
+
+function encodeRoute(points:Coordinate[]){
+ let lat=0,lon=0,result='';
+ for(const p of points)for(const [key,old]of [['latitude',lat],['longitude',lon]] as const){
+  const value=Math.round(p[key]*1e6),change=value-old;let n=change<0?-change*2-1:change*2;
+  while(n>=32){result+=String.fromCharCode((n%32)+95);n=Math.floor(n/32);}result+=String.fromCharCode(n+63);
+  if(key==='latitude')lat=value;else lon=value;
+ }
+ return result;
+}
+function routedGeometry(legs:Coordinate[][]){return {trip:{status:0,units:'kilometers',summary:{length:1,time:800},legs:legs.map(geometry=>({shape:encodeRoute(geometry),summary:{length:1/legs.length,time:800/legs.length},maneuvers:[{instruction:'Synthetic complete path.',begin_shape_index:0,end_shape_index:geometry.length-1}]}))}};}
+
+test('through constraints preserve tour legs, constrain ordered real segments and have separate request cache identity',async t=>{
+ const a={latitude:51.55,longitude:-0.17},b={latitude:51.55,longitude:-0.169},c={latitude:51.55,longitude:-0.168};
+ const nearA={latitude:51.55,longitude:-0.1698},nearB={latitude:51.55,longitude:-0.1692},secondLeg={latitude:51.55,longitude:-0.1685};
+ const payloads:Record<string,unknown>[]=[];
+ const tools=await setup(t,async(_url,request)=>{payloads.push(JSON.parse(String(request?.body)));return Response.json(routedGeometry([[a,b],[b,c]]));});
+ const baseline=await tools.pedestrianRoute([a,b,c]);assert.equal(baseline.routingOptions,undefined);
+ const options={throughByLeg:[[nearA,nearB],[secondLeg]],preferMappedWalkways:true};
+ const route=await tools.pedestrianRoute([a,b,c],options);
+ assert.equal(route.legs.length,2);assert.deepEqual(route.requestedPoints,[a,b,c]);assert.deepEqual(route.geometry,[a,b,c],'No inserted through vertices or fabricated geometry');
+ assert.deepEqual(payloads[1].locations,[{lat:a.latitude,lon:a.longitude,type:'break'},{lat:nearA.latitude,lon:nearA.longitude,type:'through',node_snap_tolerance:1},{lat:nearB.latitude,lon:nearB.longitude,type:'through',node_snap_tolerance:1},{lat:b.latitude,lon:b.longitude,type:'break'},{lat:secondLeg.latitude,lon:secondLeg.longitude,type:'through',node_snap_tolerance:1},{lat:c.latitude,lon:c.longitude,type:'break'}]);
+ assert.deepEqual(payloads[1].costing_options,{pedestrian:{walking_speed:4.5,walkway_factor:0.3,sidewalk_factor:0.3}});
+ assert.deepEqual(route.routingOptions,options);assert.notEqual(route.cachePath,baseline.cachePath);assert.equal(route.throughValidation!.checks.length,3);assert.ok(route.throughValidation!.checks.every(c=>c.distanceMetres<0.01));assert.equal(route.throughValidation!.toleranceMetres,3);
+ assert.ok(route.throughValidation!.checks[1].shapePosition>route.throughValidation!.checks[0].shapePosition);
+ assert.equal((await tools.pedestrianRoute([a,b,c],options)).cacheHit,true);assert.equal(payloads.length,2);
+ const changed=await tools.pedestrianRoute([a,b,c],{...options,throughByLeg:[[nearA],[secondLeg]]});assert.notEqual(changed.cachePath,route.cachePath);assert.equal(payloads.length,3);
+});
+
+test('routing rejects skipped and reordered through points and providers that create extra legs',async t=>{
+ const a={latitude:51.55,longitude:-0.17},b={latitude:51.55,longitude:-0.169},c={latitude:51.55,longitude:-0.168};
+ const first={latitude:51.55,longitude:-0.1698},second={latitude:51.55,longitude:-0.1692};
+ const tools=await setup(t,async()=>Response.json(routedGeometry([[a,b]])));
+ await assert.rejects(tools.pedestrianRoute([a,b],{throughByLeg:[[{latitude:51.5501,longitude:-0.1695}]]}),/missed by returned geometry/);
+ await assert.rejects(tools.pedestrianRoute([a,b],{throughByLeg:[[second,first]]}),/out of order/);
+ const extra=await setup(t,async()=>Response.json(routedGeometry([[a,b],[b,c]])));
+ await assert.rejects(extra.pedestrianRoute([a,c],{throughByLeg:[[b]]}),/One returned leg/);
+});
+
+test('routing validates through bounds and finite coordinates before dispatch, with no cap reset',async t=>{
+ let calls=0;const tools=await setup(t,async()=>{calls++;return Response.json(routeBody());});
+ const options:PedestrianRouteOptions[]=[{throughByLeg:[]},{throughByLeg:[[],[]]},{throughByLeg:[Array(9).fill(points[0])]},{throughByLeg:[[{latitude:NaN,longitude:0}]]},{throughByLeg:[[{latitude:Infinity,longitude:0}]]},{throughByLeg:[[{latitude:51,longitude:181}]]}];
+ for(const option of options)await assert.rejects(tools.pedestrianRoute(points,option));
+ await assert.rejects(tools.pedestrianRoute(Array(6).fill(points[0]),{throughByLeg:Array.from({length:5},()=>Array(7).fill(points[0]))}),/At most32/);
+ await assert.rejects(tools.pedestrianRoute(Array(9).fill(points[0]),{throughByLeg:Array.from({length:8},()=>[points[0]])}),/At most7/);
+ assert.equal(calls,0);
+});
+
+test('public ten-location limit splits bounded tour legs sequentially and preserves every constraint and response provenance',async t=>{
+ const stops=[{latitude:51.55,longitude:-0.17},{latitude:51.55,longitude:-0.169},{latitude:51.55,longitude:-0.168}];
+ const through=Array.from({length:8},(_,i)=>({latitude:51.55,longitude:-0.17+(i+1)*0.0001}));
+ const starts:number[]=[],payloads:{locations:{lat:number;lon:number;type:string;node_snap_tolerance?:number}[]}[]=[];
+ const tools=await setup(t,async(_url,request)=>{
+  starts.push(Date.now());const payload=JSON.parse(String(request?.body));payloads.push(payload);assert.ok(payload.locations.length<=10);
+  return Response.json(routedGeometry([[payload.locations[0],payload.locations.at(-1)].map(p=>({latitude:p.lat,longitude:p.lon}))]));
+ });
+ const options={throughByLeg:[through,[]],preferMappedWalkways:true};
+ const route=await tools.pedestrianRoute(stops,options);
+ assert.equal(payloads.length,2);assert.ok(starts[1]-starts[0]>=1090,'Split requests obey the existing public rate envelope');
+ assert.deepEqual(payloads[0].locations.filter(p=>p.type==='through').map(p=>({latitude:p.lat,longitude:p.lon})),through);
+ assert.equal(payloads[0].locations.length,10);assert.equal(payloads[1].locations.length,2);assert.equal(route.legs.length,2);assert.deepEqual(route.requestedPoints,stops);
+ assert.equal(route.throughValidation!.checks.length,8);assert.equal(route.distanceMetres,2000);assert.equal(route.durationSeconds,1600);
+ assert.equal(route.composition?.segments.length,2);assert.equal(route.composition?.hashBasis,'ordered-provider-response-hashes');assert.equal(route.composition?.maxLocationsPerRequest,10);
+ const manifest=JSON.parse(await readFile(route.cachePath,'utf8'));assert.deepEqual(manifest.routingOptions,options);assert.equal(manifest.hash,route.hash);assert.equal((await stat(route.cachePath)).mode&0o777,0o600);
+ assert.equal((await tools.pedestrianRoute(stops,options)).cacheHit,true);assert.equal(payloads.length,2);
+});
+
+test('split routing retains completed component cache after failure and refuses disconnected provider legs',async t=>{
+ const stops=[{latitude:51.55,longitude:-0.17},{latitude:51.55,longitude:-0.169},{latitude:51.55,longitude:-0.168}];
+ const through=Array.from({length:8},(_,i)=>({latitude:51.55,longitude:-0.17+(i+1)*0.0001}));
+ let calls=0;
+ const tools=await setup(t,async(_url,request)=>{
+  calls++;if(calls===2)return Response.json({error_code:171,error:'No path'},{status:400});
+  const payload=JSON.parse(String(request?.body));return Response.json(routedGeometry([[payload.locations[0],payload.locations.at(-1)].map(p=>({latitude:p.lat,longitude:p.lon}))]));
+ });
+ const options={throughByLeg:[through,[]]};await assert.rejects(tools.pedestrianRoute(stops,options),/Public HTTP 400 \[171\]/);
+ const route=await tools.pedestrianRoute(stops,options);assert.equal(calls,3,'Completed first leg is read from its exact cache');assert.equal(route.legs.length,2);
+ let index=0;const disconnected=await setup(t,async()=>{const i=index++;return Response.json(routedGeometry([[i?{...stops[1],latitude:51.551}:stops[0],stops[i+1]]]));});
+ await assert.rejects(disconnected.pedestrianRoute(stops,options),/Disconnected split routed legs/);
+});
+
+test('deadline expiry after one split response prevents the next outbound request and preserves completed cache',async t=>{
+ const stops=[{latitude:51.55,longitude:-0.17},{latitude:51.55,longitude:-0.169},{latitude:51.55,longitude:-0.168}];
+ const through=Array.from({length:8},(_,i)=>({latitude:51.55,longitude:-0.17+(i+1)*0.0001}));
+ let now=0,calls=0,guards=0;const deadline=1,expired=Error('Generation deadline reached');
+ const tools=await setup(t,async(_url,request)=>{
+  calls++;const payload=JSON.parse(String(request?.body));now=deadline;
+  return Response.json(routedGeometry([[payload.locations[0],payload.locations.at(-1)].map(p=>({latitude:p.lat,longitude:p.lon}))]));
+ },{beforeRequest:()=>{guards++;if(now>=deadline)throw expired;}});
+ await assert.rejects(tools.pedestrianRoute(stops,{throughByLeg:[through,[]]}),error=>error===expired,'Original deadline error is not replaced or retried');
+ assert.equal(calls,1,'No second split-leg transport begins after expiry');assert.equal(guards,2);
+ const retained=await tools.pedestrianRoute(stops.slice(0,2),{throughByLeg:[through]});
+ assert.equal(retained.cacheHit,true);assert.equal(calls,1);assert.equal(guards,2,'Reading a completed private cache is not an outbound request');
 });
 
 test('route input and malformed polyline/response fail without fabricated geometry', async t => {

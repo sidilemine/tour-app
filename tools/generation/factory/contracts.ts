@@ -16,7 +16,9 @@ export type Research=z.infer<typeof researchSchema>;
 /** Images have observations, not textual quotations. Empty passages need runtime pixel proof. */
 export const physicalResearchSchema=researchSchema.extend({sources:z.array(researchSchema.shape.sources.element.extend({passage:z.string().max(650)})).min(5).max(24)}).strict();
 export const routePlanSchema=z.object({title:text,stopIds:z.array(id).min(4).max(6),start:pointSchema,end:pointSchema,selectionReason:text,rejectedAlternatives:z.array(text),allowanceSeconds:z.number().min(240).max(900),walkingMetresPerSecond:z.number().min(0.9).max(1.3)}).strict();
-export type RoutePlan=z.infer<typeof routePlanSchema>;
+export const routingConstraintsSchema=z.object({preferMappedWalkways:z.boolean(),throughByLeg:z.array(z.object({legId:id,points:z.array(z.object({point:pointSchema,sourceUrl:z.url(),basis:text}).strict()).min(1).max(8)}).strict()).max(7)}).strict();
+export const constrainedRoutePlanSchema=routePlanSchema.extend({routing:routingConstraintsSchema,walkingNarration:z.enum(['stationary-only','eligible-windows'])});
+export type RoutePlan=z.infer<typeof routePlanSchema>&{routing?:z.infer<typeof routingConstraintsSchema>;walkingNarration?:'stationary-only'|'eligible-windows'};
 const paragraph=z.object({text,kind:z.enum(['factual','supported_reconstruction','editorial']),claimIds:z.array(id),basis:text}).strict();
 const story=z.object({id,title:text,paragraphs:z.array(paragraph).min(2).max(7),directions:z.array(text).min(1).max(8)}).strict();
 export const draftSchema=z.object({description:text,introduction:text,finishInstructions:text,stories:z.array(story).min(4).max(6),chapters:z.array(story).max(2),editorialIntent:text}).strict();

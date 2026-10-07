@@ -20,3 +20,16 @@ Hampstead took **1h46m38.7s** from creation to final handoff, including engineer
 [RUN.json](RUN.json) retains request-level usage and failures; [BENCHMARK.json](BENCHMARK.json) separates wall time, summed provider activity, tool outcomes, interventions and completion stage. The fresh Highgate comparison is pending. The separate [hosted-search calibration](SEARCH-CALIBRATION.json) used13,958 known tokens and an API-equivalent US$0.108924–0.132799; it is excluded from the job totals. Earlier Clerkenwell work is excluded.
 
 Implementation assistant/helper tokens are unavailable through this ledger and remain **unknown**. Cached input and reasoning are subsets, not added again. The retained6October quote uses US$10 input,US$1 cached input,US$12.50 cache write andUS$50 output per million tokens, with context multipliers recorded in the report. [Official Astra model reference](https://developers.openai.com/api/docs/models/gpt-6-astra). Hosted-tool fees, cache-write details, subscription/API parity, taxes and production throughput are not established.
+
+
+## First Highgate trial — stopped before writing
+
+The incomplete trial took24m57.832s, including the recorded repair pause. It used32requests and **1,260,232known tokens**, plus one transport-interrupted request with unknown usage. Directpaid charges remainedUS$0. It did not produce audio/package, so lower elapsed time or tokens cannot be described as completed-tour improvement.
+
+| Role | Requests | Unknown requests | Known input | Known output | Token-only API-equivalentUSD |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| research | 11 | 0 | 518,253 | 24,255 | 6.0912–7.3023 |
+| route | 10 | 1 | 169,139 | 5,288 | 1.9558–2.3786 |
+| scout | 11 | 0 | 530,895 | 12,402 | 5.9291–7.2563 |
+
+All failures remain in[HIGHGATE-RUN.json](HIGHGATE-RUN.json). Engineer-run public routing diagnostics have no runtime model requests; they remain separately documented, not silently included as successful tour generation. Implementation/helper tokens remain unknown. A separate fresh Highgate run after the routing fix is pending.

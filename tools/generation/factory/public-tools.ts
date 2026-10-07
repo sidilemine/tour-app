@@ -7,7 +7,7 @@ import { BlockList, isIP } from 'node:net';
 import { mkdir, readFile, writeFile, rename } from 'node:fs/promises';
 import { resolve, relative, join } from 'node:path';
 import { z } from 'zod';
-import type { Coordinate } from '../../../src/domain/fixture';
+import { distance, type Coordinate } from '../../../src/domain/fixture';
 
 export const publicRoutingPolicy = {
   checkedAt: '2026-10-07', endpoint: 'https://valhalla1.openstreetmap.de/route',
@@ -28,6 +28,8 @@ export interface PublicToolsOptions {
   fetch?: typeof globalThis.fetch;
   /** Deterministic DNS seam for tests. Every result is still checked. */
   lookup?: (hostname: string) => Promise<Address[]>;
+  /** Synchronous caller deadline/status guard, after rate waits and before each outbound fetch. Cache reads do not dispatch. */
+  beforeRequest?: () => void;
   maxBytes?: number;
   timeoutMs?: number;
 }
@@ -45,6 +47,45 @@ export interface RouteResult {
   legs: RouteLeg[]; geometry: Coordinate[]; distanceMetres: number; durationSeconds: number;
   provider: string; retrievedAt: string; url: string; hash: string; cachePath: string; cacheHit: boolean;
   requestedPoints: Coordinate[]; provenance: typeof publicRoutingPolicy; physicalClearance: 'unverified';
+  routingOptions?: PedestrianRouteOptions;
+  throughValidation?: { toleranceMetres: 3; checks: { legIndex: number; throughIndex: number; distanceMetres: number; shapePosition: number }[]; limitation: string };
+  composition?: { mode: 'per-tour-leg'; maxLocationsPerRequest: 10; hashBasis: 'ordered-provider-response-hashes'; segments: { legIndex: number; hash: string; cachePath: string; retrievedAt: string }[] };
+}
+export interface PedestrianRouteOptions {
+  /** Exact ordered shaping coordinates per tour leg; they never add story stops or legs. */
+  throughByLeg?: Coordinate[][];
+  /** Cost preference only: independently verify crossings, access and resulting geometry. */
+  preferMappedWalkways?: boolean;
+}
+export class PublicToolHttpError extends Error {
+  constructor(public readonly status:number,public readonly providerCode?:string|number,public readonly providerMessage?:string){
+    super(`Public HTTP ${status}${providerCode===undefined?'':` [${providerCode}]`}${providerMessage?`: ${providerMessage}`:''}`);
+    this.name='PublicToolHttpError';
+  }
+}
+/** Retain only small structured error fields, never HTML or an unbounded provider body. */
+async function publicHttpError(response:Response):Promise<PublicToolHttpError>{
+ const mediaType=(response.headers.get('content-type')??'').split(';')[0].trim().toLowerCase();
+ if(mediaType!=='application/json'&&!/^application\/[a-z0-9.-]+\+json$/.test(mediaType)){
+  await response.body?.cancel();return new PublicToolHttpError(response.status);
+ }
+ const reader=response.body?.getReader();if(!reader)return new PublicToolHttpError(response.status);
+ let code:string|number|undefined,message:string|undefined;
+ try{
+  const chunks:Uint8Array[]=[];let bytes=0,complete=false;
+  for(;;){const chunk=await reader.read();if(chunk.done){complete=true;break;}bytes+=chunk.value.length;if(bytes>2048)break;chunks.push(chunk.value);}
+  if(complete){
+   const value:unknown=JSON.parse(Buffer.concat(chunks).toString('utf8'));
+   if(value&&typeof value==='object'&&!Array.isArray(value)){
+    const fields=value as Record<string,unknown>,rawCode=fields.error_code??fields.code,rawMessage=fields.error??fields.message;
+    if(typeof rawCode==='number'&&Number.isFinite(rawCode))code=rawCode;
+    else if(typeof rawCode==='string'&&/^[a-zA-Z0-9_-]{1,80}$/.test(rawCode))code=rawCode;
+    if(typeof rawMessage==='string')message=rawMessage.replace(/[\u0000-\u001f\u007f]/g,' ').replace(/\s+/g,' ').trim().slice(0,512)||undefined;
+   }
+  }
+ }catch{/* Unparseable error bodies do not hide the known HTTP status. */}
+ finally{try{await reader.cancel();}catch{/* Response may already be closed. */}reader.releaseLock();}
+ return new PublicToolHttpError(response.status,code,message);
 }
 interface ResponseRecord {
   requestUrl: string; method: string; requestBody: string; finalUrl: string;
@@ -107,6 +148,7 @@ async function mapRequest<T>(action: () => Promise<T>): Promise<T> {
   mapQueue = next.catch(() => {}); return next;
 }
 const coordinate = z.object({ latitude: z.number().min(-85).max(85), longitude: z.number().min(-180).max(180) }).strict();
+const pedestrianRouteOptions=z.object({throughByLeg:z.array(z.array(coordinate).max(8)).max(15).optional(),preferMappedWalkways:z.boolean().optional()}).strict();
 const summary = z.object({ length: z.number().nonnegative(), time: z.number().nonnegative() });
 const routeResponse = z.object({ trip: z.object({ status: z.literal(0), units: z.enum(['kilometers', 'km']), summary,
   legs: z.array(z.object({ shape: z.string().min(2).max(1000000), summary,
@@ -131,6 +173,33 @@ export function decodePolyline6(shape: string): Coordinate[] {
     assert.ok(points.length <= 10000, 'Route geometry exceeds local limit');
   }
   assert.ok(points.length >= 2, 'Route leg needs at least two points'); return points;
+}
+
+/** Test actual returned segments, never insert or move geometry to satisfy a constraint. */
+function verifyThroughPoints(legs:RouteLeg[],throughByLeg:Coordinate[][]):NonNullable<RouteResult['throughValidation']>{
+ const checks:NonNullable<RouteResult['throughValidation']>['checks']=[];
+ const longitudeDelta=(a:number,b:number)=>((b-a+540)%360)-180;
+ for(const [legIndex,points]of throughByLeg.entries()){
+  let previous=-1;
+  for(const [throughIndex,point]of points.entries()){
+   const projections=legs[legIndex].geometry.slice(1).map((b,index)=>{
+    const a=legs[legIndex].geometry[index],scale=Math.cos(point.latitude*Math.PI/180);
+    const dx=longitudeDelta(a.longitude,b.longitude)*scale,dy=b.latitude-a.latitude;
+    const px=longitudeDelta(a.longitude,point.longitude)*scale,py=point.latitude-a.latitude;
+    const t=dx*dx+dy*dy?Math.max(0,Math.min(1,(px*dx+py*dy)/(dx*dx+dy*dy))):0;
+    const longitude=((a.longitude+longitudeDelta(a.longitude,b.longitude)*t+540)%360)-180;
+    return {shapePosition:index+t,distanceMetres:distance(point,{latitude:a.latitude+dy*t,longitude})};
+   });
+   const minimum=Math.min(...projections.map(p=>p.distanceMetres));
+   assert.ok(minimum<=3,`Through point ${throughIndex} on leg ${legIndex} missed by returned geometry (${minimum.toFixed(2)}m)`);
+   // A loop may visit a coordinate repeatedly. Preserve the earliest nearest
+   // visit after the preceding constraint, not a merely nearby earlier segment.
+   const match=projections.find(p=>p.distanceMetres<=minimum+1e-6&&p.shapePosition>=previous);
+   assert.ok(match,`Through points out of order on leg ${legIndex}`);
+   previous=match.shapePosition;checks.push({legIndex,throughIndex,...match});
+  }
+ }
+ return {toleranceMetres:3,checks,limitation:'Ordered proximity to returned route geometry only; does not establish public access, crossing safety or current clearance.'};
 }
 
 export class PublicTools {
@@ -197,6 +266,7 @@ export class PublicTools {
         const addresses = await this.addresses(url);
         if (route) await routeSlot();
         controller.signal.throwIfAborted();
+        this.options.beforeRequest?.();
         const response = await this.fetchPinned(url, addresses, method, body, controller.signal);
         assert.ok(!response.redirected, 'Transport followed an unchecked redirect');
         if (response.status >= 300 && response.status < 400) {
@@ -205,7 +275,7 @@ export class PublicTools {
           assert.ok(method === 'GET', 'Route redirects rejected; no coordinate forwarding');
           url = publicUrl(new URL(response.headers.get('location')!, url).href); continue;
         }
-        if(!response.ok){await response.body?.cancel();throw Error(`Public HTTP ${response.status}`);}
+        if(!response.ok)throw await publicHttpError(response);
         assert.ok(!response.headers.get('content-encoding') || response.headers.get('content-encoding') === 'identity', 'Compressed response unsupported');
         assert.ok(Number(response.headers.get('content-length') ?? 0) <= this.maxBytes, 'Response exceeds byte limit');
         const reader = response.body?.getReader(), chunks: Uint8Array[] = []; let size = 0;
@@ -324,10 +394,43 @@ export class PublicTools {
       geometryClippedToQueryBox: true, truncated: parsed.elements.length === 200 || parsed.elements.length > elements.length || elements.some(e => e.geometryTruncated),
       attribution: '© OpenStreetMap contributors, ODbL; Overpass API', physicalClearance: 'unverified' as const };
   }
-  async pedestrianRoute(points: Coordinate[]): Promise<RouteResult> {
+  async pedestrianRoute(points: Coordinate[], options?: PedestrianRouteOptions): Promise<RouteResult> {
     const requestedPoints = z.array(coordinate).min(2).max(16).parse(points);
-    const body = JSON.stringify({ locations: requestedPoints.map(p => ({ lat: p.latitude, lon: p.longitude, type: 'break' })),
-      costing: 'pedestrian', costing_options: { pedestrian: { walking_speed: 4.5 } }, units: 'kilometers', language: 'en-GB', shape_format: 'polyline6' });
+    const routingOptions=options===undefined?undefined:pedestrianRouteOptions.parse(options);
+    if(routingOptions?.throughByLeg){
+      assert.equal(routingOptions.throughByLeg.length,requestedPoints.length-1,'One through-point list per tour leg');
+      assert.ok(routingOptions.throughByLeg.reduce((n,leg)=>n+leg.length,0)<=32,'At most32 through points per route');
+    }
+    const locations=requestedPoints.flatMap((p,index)=>[
+      {lat:p.latitude,lon:p.longitude,type:'break'},
+      ...(routingOptions?.throughByLeg?.[index]??[]).map(through=>({lat:through.latitude,lon:through.longitude,type:'through',node_snap_tolerance:1})),
+    ]);
+    const body = JSON.stringify({ locations,
+      costing: 'pedestrian', costing_options: { pedestrian: { walking_speed: 4.5,...(routingOptions?.preferMappedWalkways?{walkway_factor:0.3,sidewalk_factor:0.3}:{}) } }, units: 'kilometers', language: 'en-GB', shape_format: 'polyline6' });
+    // Observed FOSSGIS error150 limits each request to10 locations. Preserve
+    // tour legs and constraints by routing each leg sequentially, never dropping
+    // waypoints. Each component uses the normal shared rate limit and cache.
+    if(locations.length>10){
+      assert.ok(requestedPoints.length-1<=7,'At most7 tour legs may use split public routing');
+      const parts:RouteResult[]=[];
+      for(let index=0;index<requestedPoints.length-1;index++)parts.push(await this.pedestrianRoute(requestedPoints.slice(index,index+2),{
+        ...(routingOptions?.throughByLeg?{throughByLeg:[routingOptions.throughByLeg[index]]}:{}),
+        ...(routingOptions?.preferMappedWalkways===undefined?{}:{preferMappedWalkways:routingOptions.preferMappedWalkways}),
+      }));
+      const legs=parts.map(part=>part.legs[0]);
+      for(let index=1;index<legs.length;index++)assert.deepEqual(legs[index-1].geometry.at(-1),legs[index].geometry[0],'Disconnected split routed legs');
+      const throughValidation=routingOptions?.throughByLeg?verifyThroughPoints(legs,routingOptions.throughByLeg):undefined;
+      const segments=parts.map((part,legIndex)=>({legIndex,hash:part.hash,cachePath:part.cachePath,retrievedAt:part.retrievedAt}));
+      const hash=sha(JSON.stringify(parts.map(part=>part.hash))),cachePath=join(this.directory,`route-composition-${sha(body)}.json`);
+      const composition:NonNullable<RouteResult['composition']>={mode:'per-tour-leg',maxLocationsPerRequest:10,hashBasis:'ordered-provider-response-hashes',segments};
+      const manifest={schemaVersion:1,requestedPoints,routingOptions:routingOptions??{},hash,composition};
+      try{assert.deepEqual(JSON.parse(await readFile(cachePath,'utf8')),manifest,'Combined route manifest integrity');}
+      catch(error){
+        if((error as NodeJS.ErrnoException).code!=='ENOENT')throw error;
+        await mkdir(this.directory,{recursive:true,mode:0o700});const temporary=cachePath+'.'+randomUUID()+'.tmp';await writeFile(temporary,JSON.stringify(manifest,null,2)+'\n',{mode:0o600});await rename(temporary,cachePath);
+      }
+      return {legs,geometry:legs.flatMap((leg,index)=>index?leg.geometry.slice(1):leg.geometry),distanceMetres:parts.reduce((n,part)=>n+part.distanceMetres,0),durationSeconds:parts.reduce((n,part)=>n+part.durationSeconds,0),provider:'FOSSGIS public Valhalla',retrievedAt:parts.at(-1)!.retrievedAt,url:publicRoutingPolicy.endpoint,hash,cachePath,cacheHit:parts.every(part=>part.cacheHit),requestedPoints,provenance:publicRoutingPolicy,physicalClearance:'unverified',...(routingOptions?{routingOptions}:{}),...(throughValidation?{throughValidation}:{}),composition};
+    }
     const { saved, cachePath, cacheHit } = await this.retrieve(publicRoutingPolicy.endpoint, 'POST', body, true);
     const response = routeResponse.parse(JSON.parse(Buffer.from(saved.bodyBase64, 'base64').toString('utf8')));
     assert.equal(response.trip.legs.length, requestedPoints.length - 1, 'One returned leg per waypoint pair');
@@ -341,8 +444,9 @@ export class PublicTools {
     });
     const geometry = legs.flatMap((leg, i) => i ? leg.geometry.slice(1) : leg.geometry);
     for (let i = 1; i < legs.length; i++) assert.deepEqual(legs[i - 1].geometry.at(-1), legs[i].geometry[0], 'Disconnected routed legs');
+    const throughValidation=routingOptions?.throughByLeg?verifyThroughPoints(legs,routingOptions.throughByLeg):undefined;
     return { legs, geometry, distanceMetres: response.trip.summary.length * 1000, durationSeconds: response.trip.summary.time,
       provider: 'FOSSGIS public Valhalla', retrievedAt: saved.retrievedAt, url: saved.finalUrl, hash: saved.bodyHash, cachePath, cacheHit,
-      requestedPoints, provenance: publicRoutingPolicy, physicalClearance: 'unverified' };
+      requestedPoints, provenance: publicRoutingPolicy, physicalClearance: 'unverified',...(routingOptions?{routingOptions}:{}),...(throughValidation?{throughValidation}:{}) };
   }
 }

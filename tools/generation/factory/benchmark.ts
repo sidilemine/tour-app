@@ -82,8 +82,8 @@ export function benchmarkJob(directory: string) {
 
 export function benchmarkRuns(directories: string[]) {
   const jobs = directories.map(benchmarkJob);
-  const comparisons = jobs.slice(1).map((after, i) => {
-    const before = jobs[i], sameStage = before.successStage === after.successStage;
+  const comparisons = jobs.slice(1).map(after => {
+    const before = jobs[0], sameStage = before.successStage === after.successStage;
     const delta = (a: number | null, b: number | null) => sameStage && a !== null && b !== null ? b - a : null;
     return { before: before.id, after: after.id, sameSuccessStage: sameStage, createdToTerminalSecondsDelta: delta(before.elapsed.createdToTerminalSeconds, after.elapsed.createdToTerminalSeconds), providerSummedSecondsDelta: delta(before.providerActivity.completeSummedSeconds, after.providerActivity.completeSummedSeconds), requestCountDelta: sameStage ? after.requests.count - before.requests.count : null, causalImprovementEstablished: false };
   });

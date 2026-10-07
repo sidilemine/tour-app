@@ -6,7 +6,7 @@ import { resolve, join } from 'node:path';
 import { distance, type Coordinate } from '../src/domain/fixture';
 import { parseTourPackage } from '../src/tours/package';
 import { buildTour, validateBuilderInput, type BuilderAudioTools } from '../tools/generation/builder';
-import { prepareRoute, assemble, runFactory, applyRouteDisposition, applyPhysicalCoverage, retainReviewContext, retainPackageReviewInput, type Routed } from '../tools/generation/factory/pipeline';
+import { prepareRoute, routingOptionsForPlan, assemble, runFactory, applyRouteDisposition, applyPhysicalCoverage, retainReviewContext, retainPackageReviewInput, type Routed } from '../tools/generation/factory/pipeline';
 import { briefSchema, surveySchema, researchSchema, routePlanSchema, draftSchema, excludeUnusedEmptySources, validateDraft, validateResearch, type Draft, type FactoryReview } from '../tools/generation/factory/contracts';
 import { FactoryRuntime, digest } from '../tools/generation/factory/runtime';
 import { PublicTools } from '../tools/generation/factory/public-tools';
@@ -143,8 +143,8 @@ function providerResult(request: InferenceRequest, value: unknown, calls: Provid
     ...(request.webSearch ? { webSearchCalls: [{ id: 'synthetic-search', status: 'completed', action: { type: 'search', queries: ['synthetic fixture'] }, sources: [] }] } : {}),
     usage: { inputTokens: 20, outputTokens: 10, totalTokens: 30, source: 'response.completed' }, elapsedMs: 1, evidenceKind: 'fixture', diagnostic: { code: 'fixture', retryable: false, automaticRetries: 0 }, directChargeUsd: 0, estimatedApiEquivalentUsd: null };
 }
-async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = false, failTester = false, evidenceRepair:'valid'|'invalid'|false=false) {
-  const f = fixture(); await mkdir('local-data', { recursive: true }); const directory = await mkdtemp(resolve('local-data/factory-pipeline-test-'));
+async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = false, failTester = false, evidenceRepair:'valid'|'invalid'|false=false, stationaryBudget?:number, invalidFirstThrough=false) {
+  const f = fixture(); if(stationaryBudget!==undefined)f.brief.durationSeconds=f.prepared.walkingSeconds+f.plan.allowanceSeconds+stationaryBudget; await mkdir('local-data', { recursive: true }); const directory = await mkdtemp(resolve('local-data/factory-pipeline-test-'));
   t.after(() => rm(directory, { recursive: true, force: true }));
   const requests: string[] = [], testerInputs: unknown[] = []; let buildCalls = 0;
   const evidenceRequests:InferenceRequest[]=[],network={map:0,image:0};
@@ -180,7 +180,7 @@ async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = 
       const repaired=structuredClone(f.research);if(evidenceRepair==='invalid')repaired.sources.find(s=>s.id==='map-source')!.passage='';return providerResult(request,repaired);
     }
     if (name === 'research' || name === 'research_repair') return providerResult(request, f.research);
-    if (name.startsWith('route_plan_')) return providerResult(request, f.plan);
+    if (name.startsWith('route_plan_')) return providerResult(request, {...f.plan,walkingNarration:'eligible-windows',routing:{preferMappedWalkways:false,throughByLeg:invalidFirstThrough&&name==='route_plan_1'?[{legId:'leg-1',points:[{point:f.prepared.geometry[1],sourceUrl:'https://overpass-api.de/api/interpreter#query-'+'b'.repeat(64),basis:'Synthetic missing evidence'}]}]:[]}});
     if(name === 'tester'){
       testerInputs.push(structuredClone(request.input));
       if(failTester&&testerInputs.length===1)return {...providerResult(request,null),status:'failed',diagnostic:{code:'fixture_settled_failure',retryable:false,automaticRetries:0}};
@@ -341,4 +341,37 @@ test('review replay permits only a compiler status introduction change and rejec
  assert.deepEqual(retainReviewContext(old,current),old);
  const changed=structuredClone(current);changed.draft.stories[0]='changed fact';assert.throws(()=>retainReviewContext(old,changed),/cannot be reused/);
  const moved=structuredClone(current);moved.projectedNavigation.stories[0].directions=['cross elsewhere'];assert.throws(()=>retainReviewContext(old,moved),/cannot be reused/);
+});
+
+
+test('route shaping requires actual same-job map vertices and keeps leg order distinct from stops',()=>{
+ const f=fixture(),url='https://overpass-api.de/api/interpreter#query-'+'a'.repeat(64),point=f.prepared.geometry[1];
+ const pages=new Map([[url,{text:'OpenStreetMap mapped features only; '+JSON.stringify([{type:'way',id:1,tags:{highway:'footway'},geometry:[{lat:point.latitude,lon:point.longitude}]}])}]]);
+ const plan={...f.plan,routing:{preferMappedWalkways:true,throughByLeg:[{legId:'leg-1',points:[{point,sourceUrl:url,basis:'Synthetic mapped footway vertex'}]}]}};
+ const options=routingOptionsForPlan(plan,pages)!;assert.equal(options.throughByLeg.length,f.plan.stopIds.length+1);assert.deepEqual(options.throughByLeg[0],[point]);assert.deepEqual(options.throughByLeg[1],[]);
+ const wrongPoint=structuredClone(plan);wrongPoint.routing.throughByLeg[0].points[0].point.latitude+=0.001;assert.throws(()=>routingOptionsForPlan(wrongPoint,pages),/absent/);
+ assert.throws(()=>routingOptionsForPlan(plan,new Map()),/exact retained map/);
+ const wrongLeg=structuredClone(plan);wrongLeg.routing.throughByLeg[0].legId='leg-7';assert.throws(()=>routingOptionsForPlan(wrongLeg,pages),/Unknown constrained leg/);
+ const duplicate=structuredClone(plan);duplicate.routing.throughByLeg.push(duplicate.routing.throughByLeg[0]);assert.throws(()=>routingOptionsForPlan(duplicate,pages),/Duplicate/);
+});
+
+test('complete factory permits a useful four-story budget below the old fixed twelve-minute reserve, then checks actual audio',async t=>{
+ const r=await replay(t,false,false,false,false,400),handoff=await runFactory(r.runtime,r.tools,r.options);
+ assert.equal(r.runtime.job.counters.route,1);assert.ok(handoff.timing.withinTarget);assert.ok(handoff.timing.totalSeconds<=handoff.timing.targetSeconds);
+ assert.ok(Math.abs(handoff.timing.targetSeconds-handoff.timing.walkingSeconds-handoff.timing.allowanceSeconds-400)<1e-9);
+ assert.ok(r.requests.includes('writing')&&r.requests.includes('tester'));assert.equal(r.buildCalls(),1);
+});
+
+
+test('unverified through point consumes one proposal without routing and reaches a reviewed replacement within the cap',async t=>{
+ const r=await replay(t,false,false,false,false,undefined,true);await runFactory(r.runtime,r.tools,r.options);
+ assert.equal(r.runtime.job.counters.route,2);assert.ok(r.requests.includes('route_plan_2'));assert.ok(!r.requests.includes('scout_1'));assert.ok(r.requests.includes('scout_2'));
+ assert.match(JSON.parse(await readFile(join(r.directory,'route-plan-1-routing-error.json'),'utf8')).summary,/exact retained map evidence/);
+});
+
+test('stationary-only route keeps real route and stops while declining otherwise eligible walking windows',()=>{
+ const f=fixture();assert.ok(f.prepared.chapterWindows.length>0);
+ const quiet=prepareRoute({...f.plan,walkingNarration:'stationary-only'},f.research,f.routed);
+ assert.deepEqual(quiet.geometry,f.prepared.geometry);assert.deepEqual(quiet.stops,f.prepared.stops);assert.deepEqual(quiet.legs,f.prepared.legs);
+ assert.deepEqual(quiet.chapterIds,[]);assert.deepEqual(quiet.chapterWindows,[]);
 });

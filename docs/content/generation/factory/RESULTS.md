@@ -48,3 +48,15 @@ The player labels story directions as **Next directions**. The deterministic com
 Writer audit prose had stale claims about disconnected paths and missing introduction audio. Producer-owned visual status/provenance replaces those claims; only story/chapter paragraph collections are spoken. The original editorial rejection remains recorded, followed by a narrow production review of the corrected fields. Final factual review accepted the same story text and source-linked physical directions.
 
 The first tester lacked explicit final check receipts and therefore requested revision. Actual builder and package-specific receipts now link the accepted draft, input, package and review hashes; the supplemental tester accepted those checks without overriding the duration/listening/field limits. Listening, physical access and requested duration remain separate.
+
+
+## First fresh Highgate trial
+
+The fresh Highgate job started at01:28:40.699UTC and ended blocked at01:53:38.531UTC: **24m57.832s**,32requests,1,260,232known tokens plus one request with unavailable usage. It obtained a new four-walk survey, ten candidates and validated16-source/16-claim research. It did not reach writing or audio: all three route proposals retained crossing-midpoint/carriageway errors, and the final route disposition did not accept them. A faster failed run is not a completed-tour speed improvement. [Exact run](HIGHGATE-RUN.json), [comparable-stage benchmark](BENCHMARK.json).
+
+One implementation repair enabled the research repairer to reopen exact retained map/image evidence. A subsequent18-second route-planner transport interruption received its single checked technical retry; unknown usage remains unknown. The original45-minute deadline and non-time counters were never reset. Map requests after the32MiB resource declaration succeeded in the observed continuation; general reliability is not established.
+
+The remaining routing defect is a contract gap: planner prose could ask for a complete crossing or specific gate, but the router received only stop points. Separate public diagnostics found footway preference alone unchanged, combined footway/sidewalk preference improved some crossings but left others wrong, and evidence-backed intermediate points hit the server's actual10-location cap. These are engineering diagnostics, not generated/reviewed tour outputs, and are excluded from runtime model counts. A further entirely fresh Highgate job will exercise the completed through-point/segmented-request fix rather than reset this failed job or reuse its authored material.
+
+
+**Final pre-run software verification, 7 October:** all335tests, full TypeScript, ESLint, offline-guide parity and whitespace checks passed. Independent helper review found no remaining actionable acceptance/resume defect in the new routing/protocol changes. The deadline regression prevents the second split transport after expiry. No app/native code changed, and no phone or listening observation is claimed. The next live generation uses the separate final Highgate brief and empty authored inputs.
