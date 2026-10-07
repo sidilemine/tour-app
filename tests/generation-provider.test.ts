@@ -54,11 +54,38 @@ test('faithful request uses public route, medium model, explicit isolated histor
   assert.equal(first.usage.totalTokens, 14);
 });
 
-test('requested model unavailable never dispatches inference or substitutes another model', async () => {
-  let requests = 0;
-  const result = await fixture(async () => { requests++; return Response.json({ models: [{ slug: 'other', visibility: 'list' }] }); }).request(request);
-  assert.equal(requests, 1);
-  assert.equal(result.diagnostic.code, 'requested_model_unavailable');
+test('catalog omission does not reject an exact configured model that completes inference', async () => {
+  for (const model of ['gpt-6-sol', 'gpt-6.1-sol']) {
+    const sent: string[] = [];
+    const provider = fixture(async (url, init) => {
+      if (String(url).endsWith('/models')) return Response.json({ models: [{ slug: 'gpt-6-astra', visibility: 'list' }] });
+      assert.equal(url, RESPONSES_URL);
+      sent.push(JSON.parse(String(init?.body)).model);
+      return sse([completed('OK')]);
+    });
+    assert.deepEqual((await provider.listModels()).models, ['gpt-6-astra']);
+    const result = await provider.request({ ...request, model });
+    assert.equal(result.status, 'completed');
+    assert.equal(result.model, model);
+    assert.equal(result.text, 'OK');
+    assert.equal(result.usage.totalTokens, 14);
+    assert.deepEqual(sent, [model]);
+  }
+});
+
+test('server model rejection is retained without substitution, fallback or retry', async () => {
+  const sent: string[] = [];
+  const result = await fixture(async (url, init) => {
+    assert.equal(url, RESPONSES_URL);
+    sent.push(JSON.parse(String(init?.body)).model);
+    return Response.json({ error: { code: 'model_not_found', param: 'model' } }, { status: 404 });
+  }).request({ ...request, model: 'unavailable-model' });
+  assert.deepEqual(sent, ['unavailable-model']);
+  assert.equal(result.status, 'failed');
+  assert.equal(result.diagnostic.httpStatus, 404);
+  assert.equal(result.diagnostic.code, 'model_not_found');
+  assert.equal(result.diagnostic.automaticRetries, 0);
+  assert.equal(result.usage.totalTokens, null);
 });
 
 test('interrupted, incomplete and failed streams retain drafts and never report success or retry', async () => {

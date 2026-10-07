@@ -146,7 +146,6 @@ export class SubscriptionProvider implements ReasoningProvider {
   private readonly fetcher: typeof fetch;
   private readonly now: () => number;
   private readonly evidenceKind: 'live' | 'fixture';
-  private catalog: { models: string[]; at: number } | undefined;
   constructor(private readonly options: {
     credentials: AppCredentials | null;
     overflowEvidence: OverflowEvidence | null;
@@ -202,7 +201,6 @@ export class SubscriptionProvider implements ReasoningProvider {
       const data = record(await response.json());
       const models = (Array.isArray(data.models) ? data.models : []).map(record)
         .filter(model => model.visibility === 'list' && typeof model.slug === 'string').map(model => model.slug as string);
-      this.catalog = { models, at: this.now() };
       return { status: 'completed', models, code: 'models_listed', evidenceKind: this.evidenceKind };
     } catch {
       return { status: 'failed', models: [], code: 'models_transport_error', evidenceKind: this.evidenceKind };
@@ -250,14 +248,10 @@ export class SubscriptionProvider implements ReasoningProvider {
     if (request.webSearch && request.tools?.some(tool => tool.type === 'web_search')) return finish('blocked', 'duplicate_web_search_tool');
     const tools = request.webSearch ? [...(request.tools ?? []), { type: 'web_search', ...(request.webSearch.searchContextSize ? { search_context_size: request.webSearch.searchContextSize } : {}), ...(request.webSearch.allowedDomains ? { filters: { allowed_domains: request.webSearch.allowedDomains } } : {}) }] : request.tools;
     const usesWebSearch = tools?.some(tool => tool.type === 'web_search');
-    if (!this.catalog || this.now() - this.catalog.at > 300_000) {
-      const catalog = await this.listModels();
-      if (catalog.status !== 'completed') {
-        if (catalog.diagnostic) result.diagnostic = catalog.diagnostic;
-        return finish(catalog.status, catalog.code);
-      }
-    }
-    if (!this.catalog!.models.includes(result.model)) return finish('blocked', 'requested_model_unavailable');
+    // The catalog is discovery metadata, not an exhaustive access check: both Sol
+    // 6 and 6.1 completed live requests while absent from this app's catalog.
+    // Send only the configured model; the authenticated Responses endpoint decides
+    // access. Never substitute another model or retry a server rejection here.
     const signal = request.signal ? AbortSignal.any([request.signal, AbortSignal.timeout(this.options.timeoutMs ?? 60_000)]) : AbortSignal.timeout(this.options.timeoutMs ?? 60_000);
     try {
       const response = await this.fetcher(RESPONSES_URL, {

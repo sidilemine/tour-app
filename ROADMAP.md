@@ -2,6 +2,8 @@
 
 ## Local factory verification — 7 October 2026
 
+**Latest diagnostic:** Sol6 and Sol6.1 both pass actual inference and all five capability checks using the existing Tour app grant and overflow off. The incorrect local catalog-membership gate is fixed;344tests, typecheck/lint and guide parity pass. [Evidence](docs/content/generation/SOL-ACCESS-2026-10-07.json). Factory work still outstanding: implement underlength repair, apply proportionate crossing review in runtime prompts, then complete a fresh requested-duration generation. The recent duration/scouting documentation changes did not implement those repairs. Historical jobs below remain unchanged.
+
 The owner authorized fresh Hampstead and Highgate generation with no reused authored material. The bounded factory is implemented; production readiness is **blocked**, not accepted. Hampstead has an actual independently reviewed offline inspection package with four George recordings (328.1seconds), a1,295.67m route and31m28estimated experience, short of the requested60minutes. Its47requests/1h46m39s include engineering and owner pauses. Listening/field acceptance remains pending.
 
 Three separate fresh Highgate trials retained all failures and costs. The final verification at `1b06692` ran24m22, completed37requests and used1,936,810tokens with no manual recovery or time extension. The readiness fix and actual routed through points worked, but three proposals and a frozen-route disposition could not establish complete North Road pavement/crossing connections. No script, audio or package was produced. This is no completed-tour speed claim. Two subsequent small metadata/arrival-text fixes are separately regression-tested; the live run's immutable identity is retained.

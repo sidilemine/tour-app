@@ -22,6 +22,21 @@ function runtime(directory:string,request:ReasoningProvider['request'],clock=()=
 function readTool(onRun:(args:Record<string,unknown>)=>void):LocalTool{return {name:'read_page',description:'Fixture only',parameters:{type:'object',properties:{url:{type:'string'}},required:['url'],additionalProperties:false},parse:args=>z.object({url:z.url()}).strict().parse(args),async run(args){onRun(args);return {url:args.url,text:'Fixture public supporting passage'};}};}
 const call={type:'function_call',namespace:'factory',name:'read_page',call_id:'call_fixture',arguments:'{"url":"https://example.org/"}'};
 
+test('factory Sol selection reaches dispatch and ledger without changing a resumed job model',async()=>{
+ for(const model of ['gpt-6-sol','gpt-6.1-sol'] as const){
+  const {directory,cleanup}=sandbox();try{
+   const selected=briefSchema.parse({...brief,model}),sent:string[]=[];
+   const provider=async(request:InferenceRequest)=>{sent.push(request.model!);return {...result(),model};};
+   const r=new FactoryRuntime(directory,selected,async()=>({request:provider}),()=>at);
+   assert.deepEqual(await r.phase('sol-selection','tester','Return fixture',{},schema),{answer:'done'});
+   assert.deepEqual(sent,[model]);
+   assert.equal(loadJob(join(directory,'job.json')).conditions.model,model);
+   assert.equal(loadJob(join(directory,'job.json')).costLedger.operations[0].usage?.totalTokens,120);
+   assert.throws(()=>new FactoryRuntime(directory,{...selected,model:'gpt-6-astra'},async()=>({request:provider}),()=>at),/Brief changed/);
+  }finally{cleanup();}
+ }
+});
+
 test('factory tool rounds send exact prior output and local result as explicit history with isolated context IDs',async()=>{
  const {directory,cleanup}=sandbox();try{
  const requests:InferenceRequest[]=[],seenArgs:Record<string,unknown>[]=[];

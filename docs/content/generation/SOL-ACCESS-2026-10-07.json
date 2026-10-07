@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-10-07T09:43:27.653Z",
+  "finishedAt": "2026-10-07T09:46:14.478Z",
+  "role": "tester",
+  "route": "Existing Tour app OAuth grant to public https://api.openai.com/v1/responses",
+  "settings": "Existing medium effort and owner-observed credit overflow disabled; no API key, alternate sign-in or paid fallback",
+  "catalogListedModels": [
+    "gpt-6-astra",
+    "gpt-5.6-sol",
+    "gpt-5.6-terra",
+    "gpt-5.6-luna"
+  ],
+  "models": [
+    {
+      "model": "gpt-6-sol",
+      "effort": "medium",
+      "listedInCatalog": false,
+      "capabilityCheckedAt": "2026-10-07T09:46:14.478Z",
+      "checks": {
+        "instructions-and-text": {
+          "status": "passed",
+          "evidenceKind": "live",
+          "code": "response_completed"
+        },
+        "function-call": {
+          "status": "passed",
+          "evidenceKind": "live",
+          "code": "response_completed"
+        },
+        "explicit-tool-history": {
+          "status": "passed",
+          "evidenceKind": "live",
+          "code": "response_completed"
+        },
+        "structured-output": {
+          "status": "passed",
+          "evidenceKind": "live",
+          "code": "response_completed"
+        },
+        "image-input": {
+          "status": "passed",
+          "evidenceKind": "live",
+          "code": "response_completed"
+        }
+      },
+      "capabilityPreflightPassed": true,
+      "requestCount": 6,
+      "inputTokens": 293,
+      "outputTokens": 85,
+      "totalTokens": 378,
+      "requests": [
+        {
+          "purpose": "direct exact-model probe",
+          "state": "response.completed",
+          "httpStatus": 200,
+          "returnedModel": "gpt-6-sol",
+          "elapsedMs": 2162,
+          "inputTokens": 11,
+          "outputTokens": 5,
+          "totalTokens": 16
+        },
+        {
+          "purpose": "preflight-instructions-and-text",
+          "state": "completed",
+          "httpStatus": 200,
+          "elapsedMs": 3157,
+          "inputTokens": 20,
+          "outputTokens": 8,
+          "totalTokens": 28,
+          "cachedInputTokens": 0,
+          "reasoningTokens": 0
+        },
+        {
+          "purpose": "preflight-function-call",
+          "state": "completed",
+          "httpStatus": 200,
+          "elapsedMs": 3445,
+          "inputTokens": 72,
+          "outputTokens": 21,
+          "totalTokens": 93,
+          "cachedInputTokens": 0,
+          "reasoningTokens": 0
+        },
+        {
+          "purpose": "preflight-explicit-tool-history",
+          "state": "completed",
+          "httpStatus": 200,
+          "elapsedMs": 3220,
+          "inputTokens": 116,
+          "outputTokens": 8,
+          "totalTokens": 124,
+          "cachedInputTokens": 0,
+          "reasoningTokens": 0
+        },
+        {
+          "purpose": "preflight-structured-output",
+          "state": "completed",
+          "httpStatus": 200,
+          "elapsedMs": 2872,
+          "inputTokens": 44,
+          "outputTokens": 13,
+          "totalTokens": 57,
+          "cachedInputTokens": 0,
+          "reasoningTokens": 0
+        },
+        {
+          "purpose": "preflight-image-input",
+          "state": "completed",
+          "httpStatus": 200,
+          "elapsedMs": 2858,
+          "inputTokens": 30,
+          "outputTokens": 30,
+          "totalTokens": 60,
+          "cachedInputTokens": 0,
+          "reasoningTokens": 23
+        }
+      ]
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "listedInCatalog": false,
+      "capabilityCheckedAt": "2026-10-07T09:45:40.437Z",
+      "checks": {
+        "instructions-and-text": {
+          "status": "passed",
+          "evidenceKind": "live",
+          "code": "response_completed"
+        },
+        "function-call": {
+          "status": "passed",
+          "evidenceKind": "live",
+          "code": "response_completed"
+        },
+        "explicit-tool-history": {
+          "status": "passed",
+          "evidenceKind": "live",
+          "code": "response_completed"
+        },
+        "structured-output": {
+          "status": "passed",
+          "evidenceKind": "live",
+          "code": "response_completed"
+        },
+        "image-input": {
+          "status": "passed",
+          "evidenceKind": "live",
+          "code": "response_completed"
+        }
+      },
+      "capabilityPreflightPassed": true,
+      "requestCount": 6,
+      "inputTokens": 293,
+      "outputTokens": 82,
+      "totalTokens": 375,
+      "requests": [
+        {
+          "purpose": "direct exact-model probe",
+          "state": "response.completed",
+          "httpStatus": 200,
+          "returnedModel": "gpt-6.1-sol",
+          "elapsedMs": 3098,
+          "inputTokens": 11,
+          "outputTokens": 5,
+          "totalTokens": 16
+        },
+        {
+          "purpose": "preflight-instructions-and-text",
+          "state": "completed",
+          "httpStatus": 200,
+          "elapsedMs": 3159,
+          "inputTokens": 20,
+          "outputTokens": 8,
+          "totalTokens": 28,
+          "cachedInputTokens": 0,
+          "reasoningTokens": 0
+        },
+        {
+          "purpose": "preflight-function-call",
+          "state": "completed",
+          "httpStatus": 200,
+          "elapsedMs": 3537,
+          "inputTokens": 72,
+          "outputTokens": 21,
+          "totalTokens": 93,
+          "cachedInputTokens": 0,
+          "reasoningTokens": 0
+        },
+        {
+          "purpose": "preflight-explicit-tool-history",
+          "state": "completed",
+          "httpStatus": 200,
+          "elapsedMs": 3590,
+          "inputTokens": 116,
+          "outputTokens": 8,
+          "totalTokens": 124,
+          "cachedInputTokens": 0,
+          "reasoningTokens": 0
+        },
+        {
+          "purpose": "preflight-structured-output",
+          "state": "completed",
+          "httpStatus": 200,
+          "elapsedMs": 3178,
+          "inputTokens": 44,
+          "outputTokens": 13,
+          "totalTokens": 57,
+          "cachedInputTokens": 0,
+          "reasoningTokens": 0
+        },
+        {
+          "purpose": "preflight-image-input",
+          "state": "completed",
+          "httpStatus": 200,
+          "elapsedMs": 4368,
+          "inputTokens": 30,
+          "outputTokens": 27,
+          "totalTokens": 57,
+          "cachedInputTokens": 0,
+          "reasoningTokens": 20
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "requestCount": 12,
+    "inputTokens": 586,
+    "outputTokens": 167,
+    "totalTokens": 753
+  },
+  "directChargedUsd": 0,
+  "unknownUsageRequests": 0,
+  "limitations": [
+    "Separate model-access calibration; excluded from historical tour benchmark totals.",
+    "No hosted web-search calibration or full tour was run on either Sol model.",
+    "Known usage includes reasoning within output, never added twice.",
+    "Implementation-assistant usage is unavailable and separate."
+  ],
+  "finding": "Both exact Sol model IDs completed inference despite catalog omission; local catalog-membership rejection was incorrect. Adapter and Astra-only factory brief schema corrected; 344 tests, typecheck, lint and guide parity pass.",
+  "officialDocumentation": [
+    "https://developers.openai.com/siwc/token-sharing-open-source/models-and-inference",
+    "https://developers.openai.com/siwc/token-sharing-open-source/codex-app-server"
+  ]
+}

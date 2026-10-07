@@ -2,6 +2,8 @@
 
 **Current assessment: the local factory is implemented and its complete software flow is tested, but unattended production of a usable requested-hour tour is not demonstrated.** Hampstead produced a tested31m28 inspection draft with substantial intervention. The final fresh Highgate run completed its bounded research/route process without manual intervention, then correctly stopped at unresolved North Road pedestrian connections before writing or rendering. It is not a completed-tour speed improvement.
 
+**Current unresolved work after the 7 October diagnostic:** underlength repair is not implemented; the planner prompt and honest shortfall reporting are insufficient. The proportionate crossing criterion is recorded in editorial guidance but not yet applied to runtime Scout/verification prompts or a new review of Highgate. After those corrections, a complete fresh generation remains necessary to demonstrate requested-duration delivery through narration and package checks. Source/transport/readiness fixes already described below remain implemented. Model access is now resolved for Sol6 and Sol6.1 through the existing grant; both pass live capability checks, but neither has run hosted search or a whole factory job. [Model evidence](../SOL-ACCESS-2026-10-07.json). No listening or physical outing is needed to implement these remaining engineering changes.
+
 | Live job | Wall elapsed | Requests | Known tokens | Usage-unknown requests | Outcome |
 | --- | ---: | ---: | ---: | ---: | --- |
 | Hampstead | 1h46m39s | 47 | 2,022,776 | 3 | Tested offline inspection draft;31m28 rather than60m |

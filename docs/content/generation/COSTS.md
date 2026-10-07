@@ -1,5 +1,7 @@
 # Observed agent tokens and cost estimates
 
+**Separate 7 October model-access calibration:** tester made six requests per model (one exact-model probe plus five capability checks). Sol6 used293input +85output =378tokens; Sol6.1 used293input +82output =375tokens. Total753known tokens, zero unknown-usage requests andUS$0direct charges. Both use the existing subscription grant with overflow off. These are additional calibration observations, excluded from the historical tables and factory benchmark. Implementation-assistant usage remains unavailable. [Per-request evidence](SOL-ACCESS-2026-10-07.json).
+
 Recorded 2026-10-06T23:01:12.044Z. Actual direct paid charges: **US$0**. [Per-operation CSV](AGENT-USAGE.csv), [full JSON ledgers](AGENT-USAGE.json). Runtime model: **gpt-6-astra, medium**; historical pre-inference Sol failures remain distinct in JSON.
 
 | Role | Observed input | Observed output | Unknown-token operations | API-equivalent known subtotal |
