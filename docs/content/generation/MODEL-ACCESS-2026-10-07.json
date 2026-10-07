@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-07T09:19:03.534Z",
+  "endpoint": "https://api.openai.com/v1/models",
+  "authentication": "Existing Tour app Sign in with ChatGPT grant",
+  "status": "completed",
+  "models": [
+    {
+      "slug": "gpt-6-astra",
+      "displayName": "GPT-6-Astra",
+      "visibility": "list"
+    },
+    {
+      "slug": "gpt-5.6-sol",
+      "displayName": "GPT-5.6-Sol",
+      "visibility": "list"
+    },
+    {
+      "slug": "gpt-5.6-terra",
+      "displayName": "GPT-5.6-Terra",
+      "visibility": "list"
+    },
+    {
+      "slug": "gpt-5.6-luna",
+      "displayName": "GPT-5.6-Luna",
+      "visibility": "list"
+    }
+  ],
+  "requestedModel": "gpt-6.1-sol",
+  "listed": false,
+  "presentAtAnyVisibility": false,
+  "inferenceRequests": 0,
+  "inferenceTokens": 0,
+  "directChargedUsd": 0,
+  "catalogNote": "Only listed model names retained here; requested model presence was checked against the complete response.",
+  "historicalFailure": {
+    "checkedAt": "2026-10-06T22:30:04.034Z",
+    "model": "gpt-6.1-sol",
+    "status": "blocked",
+    "code": "requested_model_unavailable",
+    "inferenceDispatched": false
+  },
+  "interpretation": "The app adapter rejected catalog absence before inference. No server-side Sol Responses failure or intrinsic capability incompatibility was demonstrated. Account-specific omission reason is unknown.",
+  "officialDocumentation": "https://developers.openai.com/siwc/token-sharing-open-source/models-and-inference"
+}
