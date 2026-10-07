@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-07T11:07:11.423Z",
+  "url": "https://overpass-api.de/api/interpreter#query-5d7aa0a0fa2c60ae53462c2d62e062ae0f742aad4776949f82ffc999edf6edc1",
+  "retrievedAt": "2026-10-07T11:07:11.415Z",
+  "mapDataAt": "2026-10-07T11:06:05Z",
+  "selectedCount": 17,
+  "bodyHash": "ce7f683e972db31d134c90f0745d24fe6b24415121e3fed4c6d24c294d5f6bbe",
+  "connectionAttempts": [
+    {
+      "address": "162.55.144.139",
+      "family": 4,
+      "outcome": "failed",
+      "code": "ECONNREFUSED"
+    },
+    {
+      "address": "65.109.112.52",
+      "family": 4,
+      "outcome": "connected"
+    }
+  ],
+  "scope": "Separate read-only transport diagnostic; do not import this evidence into a fresh tour job"
+}

@@ -22,6 +22,20 @@ export const publicRoutingPolicy = {
   copyrightUrl: 'https://www.openstreetmap.org/copyright', fixMapUrl: 'https://www.openstreetmap.org/fixthemap',
 };
 interface Address { address: string; family: number }
+interface ConnectionAttempt extends Address { outcome:'connected'|'failed'; code?:string }
+/** Retry a refused/unreachable GET connection once, only on already validated DNS answers. */
+export async function tryPinnedAddresses<T>(addresses:Address[],method:string,signal:AbortSignal,connect:(address:Address)=>Promise<T>){
+ const choices=addresses.filter((a,i)=>addresses.findIndex(b=>b.address===a.address&&b.family===a.family)===i).slice(0,method==='GET'?2:1);
+ assert.ok(choices.length,'Validated address required');const attempts:ConnectionAttempt[]=[];
+ for(const [index,address] of choices.entries()){
+  signal.throwIfAborted();
+  try{const value=await connect(address);attempts.push({...address,outcome:'connected'});return {value,attempts};}
+  catch(error){const code=(error as NodeJS.ErrnoException).code;attempts.push({...address,outcome:'failed',...(typeof code==='string'?{code}:{})});
+   if(index===choices.length-1||!['ECONNREFUSED','EHOSTUNREACH','ENETUNREACH','ENETDOWN'].includes(code??''))throw error;
+  }
+ }
+ throw Error('No public connection established');
+}
 export interface PublicToolsOptions {
   directory: string;
   /** Trusted test transport only; production defaults to DNS-pinned native HTTPS. */
@@ -89,6 +103,7 @@ async function publicHttpError(response:Response):Promise<PublicToolHttpError>{
 }
 interface ResponseRecord {
   requestUrl: string; method: string; requestBody: string; finalUrl: string;
+  connectionAttempts?:ConnectionAttempt[];
   status: number; contentType: string; retrievedAt: string; bodyBase64: string; bodyHash: string;
 }
 const sha = (s: string | Buffer) => createHash('sha256').update(s).digest('hex');
@@ -206,6 +221,7 @@ export class PublicTools {
   private directory: string;
   private maxBytes: number;
   private timeoutMs: number;
+  private connectionAttempts=new WeakMap<Response,ConnectionAttempt[]>();
   constructor(private options: PublicToolsOptions) {
     const base = resolve('local-data'); this.directory = resolve(options.directory);
     const rel = relative(base, this.directory);
@@ -226,8 +242,9 @@ export class PublicTools {
     if (this.options.fetch) return this.options.fetch(url.href, { method, body: body || undefined, headers, redirect: 'manual', signal, credentials: 'omit' });
     // Pin the already validated address in the actual TLS connection, preserving
     // hostname/certificate validation; DNS rebinding cannot target the LAN.
-    return new Promise((done, reject) => {
-      const selected = addresses[0];
+    const connected=await tryPinnedAddresses(addresses,method,signal,selected=>{
+     this.options.beforeRequest?.();
+     return new Promise<Response>((done,reject)=>{
       const req = httpsRequest(url, { method, headers, signal, family: selected.family,
         lookup: (_host, _opts, callback) => callback(null, selected.address, selected.family) }, response => {
         const chunks: Buffer[] = []; let bytes = 0;
@@ -245,7 +262,9 @@ export class PublicTools {
         });
       });
       req.on('error', reject); req.end(body || undefined);
+     });
     });
+    this.connectionAttempts.set(connected.value,connected.attempts);return connected.value;
   }
   private async retrieve(value: string, method = 'GET', body = '', route = false, map = false) {
     const initial = publicUrl(value), key = sha(JSON.stringify([initial.href, method, body]));
@@ -286,7 +305,7 @@ export class PublicTools {
           chunks.push(chunk.value);
         }
         const bytes = Buffer.concat(chunks);
-        const saved: ResponseRecord = { requestUrl: initial.href, method, requestBody: body, finalUrl: url.href, status: response.status,
+        const saved: ResponseRecord = { ...(this.connectionAttempts.has(response)?{connectionAttempts:this.connectionAttempts.get(response)}:{}),requestUrl: initial.href, method, requestBody: body, finalUrl: url.href, status: response.status,
           contentType: response.headers.get('content-type') ?? '', retrievedAt: new Date().toISOString(), bodyBase64: bytes.toString('base64'), bodyHash: sha(bytes) };
         return saved;
       }
@@ -386,7 +405,7 @@ export class PublicTools {
     }
     const text = normalizeSourceText('OpenStreetMap mapped features only; current public access, safe standing and visibility are unverified. ' + JSON.stringify(elements));
     return { url: 'https://overpass-api.de/api/interpreter#query-' + sha(query), requestUrl, text, elements,
-      hash: sha(text), bodyHash: saved.bodyHash, retrievedAt: saved.retrievedAt, mapDataAt: parsed.osm3s?.timestamp_osm_base ?? null,
+      ...(saved.connectionAttempts?{connectionAttempts:saved.connectionAttempts}:{}),hash: sha(text), bodyHash: saved.bodyHash, retrievedAt: saved.retrievedAt, mapDataAt: parsed.osm3s?.timestamp_osm_base ?? null,
       cachePath, cacheHit, query, queryLimit: 200, queryLimitReached: parsed.elements.length === 200,
       ...(transport ? { focus: 'transport' as const, excludedNonTransportCount: parsed.elements.length - eligible.length } : {}),
       ...(crossing ? { focus: 'crossing' as const, excludedUnrelatedCount: parsed.elements.length - eligible.length } : {}),

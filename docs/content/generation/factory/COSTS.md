@@ -62,3 +62,23 @@ Started02:21:53.020UTC; ended02:46:15.017UTC. Elapsed **24m21.997s**; summed pro
 Cached input56,064 and reasoning1,126 are included in those totals. No token fields are missing in this run. [Final per-request record](HIGHGATE-FINAL-RUN.json) and[comparison](BENCHMARK.json) retain outcomes and actual implementation identity. The final run used code at `1b06692`; small timestamp/arrival-text corrections made after its final review are tested separately and never retroactively claimed as live-tested.
 
 Across **Hampstead plus all three Highgate trials**:131requests, **5,811,165known tokens**, five requests with unknown usage, **US$0 direct paid**, and known token-only API-equivalent **US$63.9319–77.6241**. Calibration13,958tokens is separate; earlier Clerkenwell and implementation/helper usage are excluded. The latter is unavailable, not zero. No completed-tour speed or cost improvement is established: the Highgate jobs stopped earlier in the workflow than Hampstead, which itself fell short of the requested duration.
+
+
+## Sol6.1 engineering run — coordination failures retained
+
+The first Sol6.1 job ran42m06.818s, including local debugging, and stopped before writing. It retained38operations:37inference attempts and one proven local provider-initialization failure with no dispatch. Known usage is2,110,593tokens plus one timed-out inference with unknown usage. Direct paid usageUS$0; known token-only API-equivalentUS$4.1995–5.0862. The route itself was supported; generic-direction sequencing, stale provisional timing and contradictory accepted/required review flags prevented promotion. The closed run is not a completed-tour result.
+
+| Runtime role | Operations | Unknown-usage operations | Known input | Known output | Known total | Token-only API-equivalentUSD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| research | 15 | 1 | 898,996 | 33,756 | 932,752 | 1.6139–1.9261 |
+| route | 12 | 0 | 415,233 | 16,418 | 431,651 | 0.9946–1.2023 |
+| scout | 11 | 0 | 733,870 | 12,320 | 746,190 | 1.5909–1.9579 |
+
+Research includes the one zero-inference setup operation, separately reconciled from the actual timeout; it is not an extra model call. [Full engineering record](SOL61-ENGINEERING-RUN.json). The separate Sol6.1 hosted-search calibration used14,033tokens andUS$0direct (US$0.02158–0.02638 token-only API equivalent); [calibration](../SOL61-SEARCH-2026-10-07.json). Model access probes remain separately reported in[Sol access](../SOL-ACCESS-2026-10-07.json).
+
+Sol6.1 uses the retained official quote ofUS$2input,US$0.10cached input,US$2.50cache write andUS$10output per million tokens, with the recorded long-context multipliers when applicable. [Official model reference](https://developers.openai.com/api/docs/models/gpt-6.1-sol). Unknown timeout usage and implementation-assistant tokens are excluded, never treated as zero.
+
+
+## Sol6.1 second trial — map transport unavailable
+
+Elapsed10m23.065s;10inference requests, all research;242,895known tokens with no unknown usage;US$0direct, token-only API-equivalentUS$0.6159–0.7106. The client selected a refusing public map backend and never tried the healthy second DNS address. With no evidenced standing coordinates, the job correctly stopped before routing; no script or audio was produced. Source quotation repair and the original two research rounds are retained in[SOL61-MAP-FAILURE-RUN.json](SOL61-MAP-FAILURE-RUN.json). The separate native transport diagnostic used no model calls and is retained in[Overpass failover evidence](../OVERPASS-FAILOVER-2026-10-07.json).

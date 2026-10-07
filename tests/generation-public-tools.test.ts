@@ -1,3 +1,4 @@
+import { tryPinnedAddresses } from '../tools/generation/factory/public-tools';
 import test, { type TestContext } from 'node:test';
 import assert from 'node:assert/strict';
 import { mkdir, mkdtemp, readFile, writeFile, rm, stat } from 'node:fs/promises';
@@ -377,4 +378,19 @@ test('crossing snapshot prioritizes explicit crossings over anonymous entrances 
   assert.equal(result.focus, 'crossing'); assert.equal(result.excludedUnrelatedCount, 60); assert.equal(result.physicalClearance, 'unverified');
   assert.equal((await tools.crossingFeatures({ latitude: 51.55, longitude: -0.17 }, 100)).cacheHit, true); assert.equal(calls, 1);
   await assert.rejects(tools.crossingFeatures({ latitude: 51.55, longitude: -0.17 }, 251), /250/);
+});
+
+test('pinned GET retries a refused connection on one validated alternate and records both outcomes',async()=>{
+ const addresses=[{address:'93.184.216.34',family:4},{address:'1.1.1.1',family:4},{address:'8.8.8.8',family:4}],seen:string[]=[];
+ const result=await tryPinnedAddresses(addresses,'GET',new AbortController().signal,async a=>{seen.push(a.address);if(seen.length===1)throw Object.assign(Error('refused'),{code:'ECONNREFUSED'});return 'fixture response';});
+ assert.deepEqual(seen,addresses.slice(0,2).map(a=>a.address));assert.equal(result.value,'fixture response');
+ assert.deepEqual(result.attempts.map(a=>a.outcome),['failed','connected']);
+});
+test('pinned failover never retries TLS/body errors or POST and respects the shared abort signal',async()=>{
+ const addresses=[{address:'93.184.216.34',family:4},{address:'1.1.1.1',family:4}];
+ for(const [method,code,abort] of [['GET','CERT_HAS_EXPIRED',false],['GET','ECONNRESET',false],['POST','ECONNREFUSED',false],['GET','ECONNREFUSED',true]] as const){
+  let calls=0;const controller=new AbortController();
+  await assert.rejects(tryPinnedAddresses(addresses,method,controller.signal,async()=>{calls++;if(abort)controller.abort();throw Object.assign(Error('fixture transport'),{code});}));
+  assert.equal(calls,1);
+ }
 });

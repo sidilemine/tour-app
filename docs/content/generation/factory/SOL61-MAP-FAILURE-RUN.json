@@ -1,0 +1,972 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-07T11:08:37.443Z",
+  "job": {
+    "id": "highgate-sol61-final",
+    "createdAt": "2026-10-07T10:55:18.394Z",
+    "updatedAt": "2026-10-07T11:05:41.459Z",
+    "deadline": "2026-10-07T11:55:18.394Z",
+    "status": "blocked",
+    "reason": "Physical readiness repair did not establish four eligible places; no route requested",
+    "counters": {
+      "candidates": [
+        "highgate-sol61-final-c01",
+        "highgate-sol61-final-c02",
+        "highgate-sol61-final-c03",
+        "highgate-sol61-final-c04",
+        "highgate-sol61-final-c05",
+        "highgate-sol61-final-c06",
+        "highgate-sol61-final-c07",
+        "highgate-sol61-final-c08",
+        "highgate-sol61-final-c09",
+        "highgate-sol61-final-c10"
+      ],
+      "research": 2,
+      "route": 0,
+      "correction": 0,
+      "render": {}
+    },
+    "conditions": {
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "promptHashes": {
+        "survey-1": "db9fc9747fc2dae0b92555f496198e6dabce063846c4ed428d25a9bbf7c0a382",
+        "research-1": "31d821d8b98dc7c735a3be2d2165b5ed77ec5f9974b8aae40b56efb24d0056b9",
+        "research-2": "31d821d8b98dc7c735a3be2d2165b5ed77ec5f9974b8aae40b56efb24d0056b9",
+        "research-3": "31d821d8b98dc7c735a3be2d2165b5ed77ec5f9974b8aae40b56efb24d0056b9",
+        "research-4": "31d821d8b98dc7c735a3be2d2165b5ed77ec5f9974b8aae40b56efb24d0056b9",
+        "research-repair-1": "efcec810b02ed3debbbf3f0ba14dfda68df85b2fe883caa31dc1270f9044a481",
+        "research-repair-2": "efcec810b02ed3debbbf3f0ba14dfda68df85b2fe883caa31dc1270f9044a481",
+        "physical-readiness-1": "161457a76aa13c24eea9e4a5a284cbec37cac287c28521de2dd815ee9cf63d81",
+        "physical-readiness-2": "161457a76aa13c24eea9e4a5a284cbec37cac287c28521de2dd815ee9cf63d81",
+        "physical-readiness-3": "161457a76aa13c24eea9e4a5a284cbec37cac287c28521de2dd815ee9cf63d81"
+      },
+      "tools": [
+        "hosted web_search",
+        "bounded public read_page",
+        "Valhalla pedestrian",
+        "local George"
+      ],
+      "startingEvidence": "42da617b5a729af2306d39edaeaf0782e0c62d0443146d14d99aadcdc8699eab",
+      "voice": "local Kokoro George",
+      "qualityFloor": "Current evidence, essential physical access, worthwhile interpretation, listening and actual offline package checks",
+      "mode": "subscription"
+    },
+    "events": [
+      {
+        "at": "2026-10-07T10:55:18.395Z",
+        "type": "factory-declared-time-allowance",
+        "detail": "{\"minutes\":60,\"basis\":\"Explicit fresh-job brief; no prior job reset\",\"deadline\":\"2026-10-07T11:55:18.394Z\"}"
+      },
+      {
+        "at": "2026-10-07T10:55:18.395Z",
+        "type": "record",
+        "detail": "brief@1"
+      },
+      {
+        "at": "2026-10-07T10:55:18.406Z",
+        "type": "factory-phase-protocol",
+        "detail": "{\"phase\":\"experience-policy\",\"version\":2,\"reason\":\"New undispatched phase protocol\"}"
+      },
+      {
+        "at": "2026-10-07T10:55:18.441Z",
+        "type": "factory-phase-protocol",
+        "detail": "{\"phase\":\"survey\",\"version\":2,\"reason\":\"New undispatched phase protocol\"}"
+      },
+      {
+        "at": "2026-10-07T10:55:18.449Z",
+        "type": "task-queued",
+        "detail": "survey-1"
+      },
+      {
+        "at": "2026-10-07T10:55:18.449Z",
+        "type": "dispatch",
+        "detail": "operation-1"
+      },
+      {
+        "at": "2026-10-07T10:57:22.120Z",
+        "type": "settled",
+        "detail": "operation-1"
+      },
+      {
+        "at": "2026-10-07T10:57:22.137Z",
+        "type": "returned",
+        "detail": "survey-1"
+      },
+      {
+        "at": "2026-10-07T10:57:22.146Z",
+        "type": "counter",
+        "detail": "candidates:highgate-sol61-final-c01"
+      },
+      {
+        "at": "2026-10-07T10:57:22.146Z",
+        "type": "counter",
+        "detail": "candidates:highgate-sol61-final-c02"
+      },
+      {
+        "at": "2026-10-07T10:57:22.146Z",
+        "type": "counter",
+        "detail": "candidates:highgate-sol61-final-c03"
+      },
+      {
+        "at": "2026-10-07T10:57:22.146Z",
+        "type": "counter",
+        "detail": "candidates:highgate-sol61-final-c04"
+      },
+      {
+        "at": "2026-10-07T10:57:22.146Z",
+        "type": "counter",
+        "detail": "candidates:highgate-sol61-final-c05"
+      },
+      {
+        "at": "2026-10-07T10:57:22.146Z",
+        "type": "counter",
+        "detail": "candidates:highgate-sol61-final-c06"
+      },
+      {
+        "at": "2026-10-07T10:57:22.146Z",
+        "type": "counter",
+        "detail": "candidates:highgate-sol61-final-c07"
+      },
+      {
+        "at": "2026-10-07T10:57:22.146Z",
+        "type": "counter",
+        "detail": "candidates:highgate-sol61-final-c08"
+      },
+      {
+        "at": "2026-10-07T10:57:22.146Z",
+        "type": "counter",
+        "detail": "candidates:highgate-sol61-final-c09"
+      },
+      {
+        "at": "2026-10-07T10:57:22.146Z",
+        "type": "counter",
+        "detail": "candidates:highgate-sol61-final-c10"
+      },
+      {
+        "at": "2026-10-07T10:57:22.152Z",
+        "type": "factory-phase-protocol",
+        "detail": "{\"phase\":\"research\",\"version\":4,\"reason\":\"New undispatched phase protocol\"}"
+      },
+      {
+        "at": "2026-10-07T10:57:22.162Z",
+        "type": "task-queued",
+        "detail": "research-1"
+      },
+      {
+        "at": "2026-10-07T10:57:22.162Z",
+        "type": "dispatch",
+        "detail": "operation-2"
+      },
+      {
+        "at": "2026-10-07T10:57:33.230Z",
+        "type": "settled",
+        "detail": "operation-2"
+      },
+      {
+        "at": "2026-10-07T10:57:34.753Z",
+        "type": "returned",
+        "detail": "research-1"
+      },
+      {
+        "at": "2026-10-07T10:57:34.761Z",
+        "type": "task-queued",
+        "detail": "research-2"
+      },
+      {
+        "at": "2026-10-07T10:57:34.761Z",
+        "type": "dispatch",
+        "detail": "operation-3"
+      },
+      {
+        "at": "2026-10-07T10:57:47.625Z",
+        "type": "settled",
+        "detail": "operation-3"
+      },
+      {
+        "at": "2026-10-07T10:57:48.684Z",
+        "type": "returned",
+        "detail": "research-2"
+      },
+      {
+        "at": "2026-10-07T10:57:48.694Z",
+        "type": "task-queued",
+        "detail": "research-3"
+      },
+      {
+        "at": "2026-10-07T10:57:48.694Z",
+        "type": "dispatch",
+        "detail": "operation-4"
+      },
+      {
+        "at": "2026-10-07T10:58:00.288Z",
+        "type": "settled",
+        "detail": "operation-4"
+      },
+      {
+        "at": "2026-10-07T10:58:01.412Z",
+        "type": "returned",
+        "detail": "research-3"
+      },
+      {
+        "at": "2026-10-07T10:58:01.423Z",
+        "type": "task-queued",
+        "detail": "research-4"
+      },
+      {
+        "at": "2026-10-07T10:58:01.423Z",
+        "type": "dispatch",
+        "detail": "operation-5"
+      },
+      {
+        "at": "2026-10-07T11:00:52.218Z",
+        "type": "settled",
+        "detail": "operation-5"
+      },
+      {
+        "at": "2026-10-07T11:00:52.240Z",
+        "type": "returned",
+        "detail": "research-4"
+      },
+      {
+        "at": "2026-10-07T11:00:52.265Z",
+        "type": "factory-phase-protocol",
+        "detail": "{\"phase\":\"research-repair\",\"version\":2,\"reason\":\"New undispatched phase protocol\"}"
+      },
+      {
+        "at": "2026-10-07T11:00:52.272Z",
+        "type": "counter",
+        "detail": "research:"
+      },
+      {
+        "at": "2026-10-07T11:00:52.272Z",
+        "type": "factory-allowance",
+        "detail": "research-repair"
+      },
+      {
+        "at": "2026-10-07T11:00:52.280Z",
+        "type": "task-queued",
+        "detail": "research-repair-1"
+      },
+      {
+        "at": "2026-10-07T11:00:52.280Z",
+        "type": "dispatch",
+        "detail": "operation-6"
+      },
+      {
+        "at": "2026-10-07T11:00:56.036Z",
+        "type": "settled",
+        "detail": "operation-6"
+      },
+      {
+        "at": "2026-10-07T11:00:56.048Z",
+        "type": "returned",
+        "detail": "research-repair-1"
+      },
+      {
+        "at": "2026-10-07T11:00:56.057Z",
+        "type": "task-queued",
+        "detail": "research-repair-2"
+      },
+      {
+        "at": "2026-10-07T11:00:56.057Z",
+        "type": "dispatch",
+        "detail": "operation-7"
+      },
+      {
+        "at": "2026-10-07T11:02:54.295Z",
+        "type": "settled",
+        "detail": "operation-7"
+      },
+      {
+        "at": "2026-10-07T11:02:54.311Z",
+        "type": "returned",
+        "detail": "research-repair-2"
+      },
+      {
+        "at": "2026-10-07T11:02:54.336Z",
+        "type": "factory-phase-protocol",
+        "detail": "{\"phase\":\"physical-readiness\",\"version\":2,\"reason\":\"New undispatched phase protocol\"}"
+      },
+      {
+        "at": "2026-10-07T11:02:54.344Z",
+        "type": "factory-phase-protocol",
+        "detail": "{\"phase\":\"coincident-final-leg\",\"version\":2,\"reason\":\"New undispatched phase protocol\"}"
+      },
+      {
+        "at": "2026-10-07T11:02:54.352Z",
+        "type": "counter",
+        "detail": "research:"
+      },
+      {
+        "at": "2026-10-07T11:02:54.352Z",
+        "type": "factory-allowance",
+        "detail": "physical-readiness"
+      },
+      {
+        "at": "2026-10-07T11:02:54.360Z",
+        "type": "task-queued",
+        "detail": "physical-readiness-1"
+      },
+      {
+        "at": "2026-10-07T11:02:54.360Z",
+        "type": "dispatch",
+        "detail": "operation-8"
+      },
+      {
+        "at": "2026-10-07T11:03:01.776Z",
+        "type": "settled",
+        "detail": "operation-8"
+      },
+      {
+        "at": "2026-10-07T11:03:05.891Z",
+        "type": "returned",
+        "detail": "physical-readiness-1"
+      },
+      {
+        "at": "2026-10-07T11:03:05.902Z",
+        "type": "task-queued",
+        "detail": "physical-readiness-2"
+      },
+      {
+        "at": "2026-10-07T11:03:05.903Z",
+        "type": "dispatch",
+        "detail": "operation-9"
+      },
+      {
+        "at": "2026-10-07T11:03:19.483Z",
+        "type": "settled",
+        "detail": "operation-9"
+      },
+      {
+        "at": "2026-10-07T11:03:19.522Z",
+        "type": "returned",
+        "detail": "physical-readiness-2"
+      },
+      {
+        "at": "2026-10-07T11:03:19.531Z",
+        "type": "task-queued",
+        "detail": "physical-readiness-3"
+      },
+      {
+        "at": "2026-10-07T11:03:19.531Z",
+        "type": "dispatch",
+        "detail": "operation-10"
+      },
+      {
+        "at": "2026-10-07T11:05:41.413Z",
+        "type": "settled",
+        "detail": "operation-10"
+      },
+      {
+        "at": "2026-10-07T11:05:41.429Z",
+        "type": "returned",
+        "detail": "physical-readiness-3"
+      },
+      {
+        "at": "2026-10-07T11:05:41.459Z",
+        "type": "terminal",
+        "detail": "blocked"
+      }
+    ]
+  },
+  "startingInputs": {
+    "brief": {
+      "schemaVersion": 1,
+      "id": "highgate-sol61-final",
+      "area": "Highgate, London",
+      "start": "Highgate Underground station, public exterior",
+      "end": "Highgate Underground station, public exterior",
+      "durationSeconds": 3600,
+      "generationMinutes": 60,
+      "access": "Daytime, public exterior stops; ordinary hills and public steps allowed; no additional accessibility constraints; no paid admission required",
+      "audience": {
+        "reason": "Discover worthwhile, less obvious stories and understand the places we encounter",
+        "assumedKnowledge": "Little neighbourhood knowledge",
+        "intendedDiscovery": "Determined through fresh area research; warm documentary narration with revealing supported detail",
+        "presentAnchor": "Actual exterior places and public viewpoints on the selected loop"
+      },
+      "voice": "local Kokoro George",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "directPaidCeilingUsd": 0,
+      "mapId": "hampstead-0abcc26a600e0718",
+      "freshContentOnly": true,
+      "requirements": [
+        "Use a fresh survey of published Highgate walks before our own selection and scripting",
+        "Do not use previous project tour research, candidates, routes, source evidence or authored scripts, including previous Hampstead or Highgate material",
+        "Reuse generation roles, tools, the local voice renderer and the bundled map only as infrastructure; obtain fresh source evidence and route geometry for this job",
+        "Write original narration from read source evidence, preserving material qualifications",
+        "Public accessible exterior standing points are distinct from landmarks and camera locations",
+        "Include the return to Highgate Underground station and actual measured narration in the hour estimate",
+        "Retain AI provenance, saved map, planned directions and manual playback/navigation fallback",
+        "Do not claim human listening or an outdoor visit from desktop checks",
+        "Independent final fresh verification after the bounded synthesis timeout, provider setup accounting and pre-Scout directions/timing fixes. Do not reuse any content or evidence from prior jobs, including the first Sol6.1 engineering run. Aim for60minutes with an estimated55–65minute range; preserve actual audio, walking and allowance accounting."
+      ]
+    },
+    "briefSha256": "42da617b5a729af2306d39edaeaf0782e0c62d0443146d14d99aadcdc8699eab",
+    "authoredInputs": [],
+    "reuse": [
+      "player",
+      "bundled map",
+      "George renderer",
+      "generic editorial guidance"
+    ],
+    "implementationSha256": {
+      "runtime.ts": "54de3b74aa528e0954fb19d8a980a204b71ae8c1a95fbad48e2ed0256ef53de8",
+      "pipeline.ts": "0a462c92478f292fb8ae4c0e3f729529039c15e06d79c98aa6977dd63e4daca0",
+      "experience-policy.ts": "2f6af29834233de94d2b3bcf296bde5762ab097924212704fad8210a7aa7b296",
+      "contracts.ts": "d05c54520fb641bf65621cca937118420696432f6e2cd690f5152e7b472d8c14",
+      "public-tools.ts": "86eadd74b9496bd97bc5dc181c2df9a05ea558a9faa83266a6c847807c99a981",
+      "retained-evidence.ts": "68b5ff0a94d58b9124ab08db7fb75431d40423ee4f3b0ba0f8fdb428efd6eb38",
+      "software-evidence.ts": "fbc33019a4ab41df5b44744865cd51441e7c3d7e9b1cd59c032c574b17a9ed29",
+      "package-checks.ts": "3bbf29ec41a88b5d02354b82babdb9a59bc8d2f4767a8803a488185e1fae8470",
+      "../builder.ts": "2c51fe0e0071ad821e2bfce5a6144cd367c30acef48b9e19abfa8bbdf80ce56f",
+      "../provider.ts": "8944565101a589bf212470b6cf787fcf8bb4283e79136b12507a6f4db7c549c5"
+    },
+    "freshContentOnly": true
+  },
+  "observed": {
+    "survey": {
+      "binding": "db9fc9747fc2dae0b92555f496198e6dabce063846c4ed428d25a9bbf7c0a382",
+      "result": {
+        "publishedWalks": [
+          {
+            "title": "Highgate Village – “a place apart” — London Walks",
+            "url": "https://www.walks.com/our-walks/highgate-village-a-place-apart",
+            "stops": [
+              "Highgate Underground ticket hall: advertised meeting point, not the requested public-exterior anchor",
+              "Witanhurst: advertised attraction; complete intermediate itinerary not published",
+              "Pond Square: advertised endpoint",
+              "Highgate Cemetery and Kenwood House: explicitly suggested after-walk visits, not confirmed tour stops"
+            ],
+            "themes": [
+              "Village lanes, cottages, Georgian houses and London views",
+              "Literary and famous-resident associations"
+            ],
+            "stories": [
+              "Advertises associations with Coleridge, Dickens, Betjeman and Dick Whittington, among others, without publishing the individual stories. Origin: commercial tour operator; publication date unknown. Locator: page lines 78–92. Treat as advertised coverage, not historical corroboration. ([walks.com](https://www.walks.com/our-walks/highgate-village-a-place-apart))"
+            ]
+          },
+          {
+            "title": "The Highgate Village Self-Guided Walk — Richard Jones",
+            "url": "https://www.london-walking-tours.co.uk/free-tours/highgate-village-walk.htm",
+            "stops": [
+              "Highgate station",
+              "Park Walk and North Road",
+              "Highgate School",
+              "The Gatehouse",
+              "Pond Square",
+              "Church House and Highgate Literary and Scientific Institute",
+              "St Michael’s Church",
+              "The Flask",
+              "Reservoir and 3 The Grove",
+              "Witanhurst",
+              "Holly Lodge Estate and Holly Village",
+              "Highgate Cemetery exterior",
+              "Waterlow Park",
+              "Ivy House",
+              "Whittington Stone",
+              "Archway station"
+            ],
+            "themes": [
+              "Dickens and literary geography",
+              "Inns, infrastructure and philanthropy"
+            ],
+            "stories": [
+              "Includes Dickens family lodging, horn-swearing, Coleridge and Gillman, and Whittington tradition. Distinguishes some conjectural literary identifications and pub traditions from firmer claims. Advertised duration: two hours; not a Highgate-station loop. Origin: Richard Jones/commercial publisher; publication date unknown. Locators: lines 51–200. Historical claims require independent verification. ([london-walking-tours.co.uk](https://www.london-walking-tours.co.uk/free-tours/highgate-village-walk.htm))"
+            ]
+          },
+          {
+            "title": "Lady’s Beautiful Highgate Walk and Map — A Lady in London",
+            "url": "https://www.aladyinlondon.com/2022/09/highgate-walk.html",
+            "stops": [
+              "Highgate station",
+              "Highgate Wood",
+              "Church Road, Talbot Road and Park House Passage",
+              "North Hill and passage beside The Wrestlers",
+              "Southwood residential streets and Cholmeley Park",
+              "Highgate High Street and The Bank",
+              "Waterlow Park by Lauderdale House",
+              "Pond Square",
+              "Swain’s Lane and Highgate Cemetery exterior",
+              "Holly Village",
+              "Hampstead Heath and Parliament Hill",
+              "Tufnell Park station"
+            ],
+            "themes": [
+              "Residential architecture and neighbourhood atmosphere",
+              "Woods, parks, viewpoints, shops and pubs"
+            ],
+            "stories": [
+              "Primarily an observational itinerary rather than detailed historical storytelling. Cemetery admission and swimming are optional excursions, not necessary components. Advertises two to three hours and finishes at Tufnell Park. Origin: travel blog; September 2022 URL, exact publication day not established. Locators: lines 26–91. ([aladyinlondon.com](https://www.aladyinlondon.com/2022/09/highgate-walk.html))"
+            ]
+          },
+          {
+            "title": "North Hill Challenge — Highgate Society",
+            "url": "https://www.highgatesociety.com/media/docs/North%20Hill%20descriptions.pdf",
+            "stops": [
+              "Highpoint at North Hill/North Road: start",
+              "41 North Hill",
+              "60 North Hill",
+              "North Hill House",
+              "Springfield Cottages",
+              "121 North Hill",
+              "99 North Hill",
+              "Rowlands Close",
+              "Highcroft",
+              "Broadlands and North Hill Court",
+              "Montgomery House, Hillcrest Estate",
+              "North Hill/Archway Road area: finish"
+            ],
+            "themes": [
+              "Comparison of domestic architectural styles",
+              "Changing housing provision and building technology"
+            ],
+            "stories": [
+              "An approximately 800-yard architectural walk covering 34 buildings; chronological numbering differs from walking order. Includes remodelled older fabric, council housing and modernist flats. Origin: local civic society; document date unknown. Locators: PDF pages 1–2, 10–15. Interpretive social explanations and superlatives are not independently verified. ([highgatesociety.com](https://www.highgatesociety.com/media/docs/North%20Hill%20descriptions.pdf))"
+            ]
+          }
+        ],
+        "candidates": [
+          {
+            "id": "highgate-sol61-final-c01",
+            "name": "Highpoint, 1 North Hill",
+            "why": "Proposed discovery: modernist housing beyond the village stereotype. The Society identifies Lubetkin and Tecton and contrasting buildings. Anchor proposal: public North Hill pavement, not private entrance or gardens. Locator: PDF page 14, lines 853–896; verify architectural history independently. ([highgatesociety.com](https://www.highgatesociety.com/media/docs/North%20Hill%20descriptions.pdf))",
+            "leadUrls": [
+              "https://www.highgatesociety.com/media/docs/North%20Hill%20descriptions.pdf"
+            ]
+          },
+          {
+            "id": "highgate-sol61-final-c02",
+            "name": "41 North Hill",
+            "why": "Proposed discovery: old fabric versus a later-looking exterior. The Society attributes sixteenth-century origins to a plaque while qualifying subsequent remodelling. Anchor proposal: public pavement opposite the facade. Locator: PDF page 2, lines 75–87; plaque and dates unverified. ([highgatesociety.com](https://www.highgatesociety.com/media/docs/North%20Hill%20descriptions.pdf))",
+            "leadUrls": [
+              "https://www.highgatesociety.com/media/docs/North%20Hill%20descriptions.pdf"
+            ]
+          },
+          {
+            "id": "highgate-sol61-final-c03",
+            "name": "99 North Hill",
+            "why": "Proposed discovery: early municipal housing in an affluent-looking district. The Society attributes this house to Hornsey Council around 1902. Anchor proposal: public pavement, preserving residents’ privacy. Locator: PDF page 11, lines 653–681; legal generalisations need separate checking. ([highgatesociety.com](https://www.highgatesociety.com/media/docs/North%20Hill%20descriptions.pdf))",
+            "leadUrls": [
+              "https://www.highgatesociety.com/media/docs/North%20Hill%20descriptions.pdf"
+            ]
+          },
+          {
+            "id": "highgate-sol61-final-c04",
+            "name": "Montgomery House, Hillcrest Estate",
+            "why": "Proposed discovery: post-war municipal rebuilding. The Society attributes the block to Thomas Bennett for Hornsey Council. Anchor proposal: a verified public boundary viewpoint, not assumed estate access. Locator: PDF pages 15–16, lines 931–953; public sightline remains unresolved. ([highgatesociety.com](https://www.highgatesociety.com/media/docs/North%20Hill%20descriptions.pdf))",
+            "leadUrls": [
+              "https://www.highgatesociety.com/media/docs/North%20Hill%20descriptions.pdf"
+            ]
+          },
+          {
+            "id": "highgate-sol61-final-c05",
+            "name": "Rowlands Close, North Hill",
+            "why": "Proposed discovery: interpreting interwar flats from their exterior. The Society offers alternative explanations for balconies rather than a settled purpose. Anchor proposal: public North Hill pavement. Locator: PDF page 12, lines 735–759; retain that uncertainty. ([highgatesociety.com](https://www.highgatesociety.com/media/docs/North%20Hill%20descriptions.pdf))",
+            "leadUrls": [
+              "https://www.highgatesociety.com/media/docs/North%20Hill%20descriptions.pdf"
+            ]
+          },
+          {
+            "id": "highgate-sol61-final-c06",
+            "name": "Pond Square",
+            "why": "Proposed discovery: an absent landscape feature behind a familiar place-name. Advertised by multiple surveyed walks; historical infilling needs corroboration. Anchor proposal: unobstructed public square edge. Locator: Jones lines 84–87 and London Walks line 92. ([london-walking-tours.co.uk](https://www.london-walking-tours.co.uk/free-tours/highgate-village-walk.htm))",
+            "leadUrls": [
+              "https://www.london-walking-tours.co.uk/free-tours/highgate-village-walk.htm",
+              "https://www.walks.com/our-walks/highgate-village-a-place-apart"
+            ]
+          },
+          {
+            "id": "highgate-sol61-final-c07",
+            "name": "Highgate Literary and Scientific Institute, 11 South Grove",
+            "why": "Proposed discovery: neighbourhood institutions of shared learning. Jones dates its foundation to 1839. Anchor proposal: public South Grove pavement; interior access unnecessary. Locator: lines 93–97; institutional records needed. ([london-walking-tours.co.uk](https://www.london-walking-tours.co.uk/free-tours/highgate-village-walk.htm))",
+            "leadUrls": [
+              "https://www.london-walking-tours.co.uk/free-tours/highgate-village-walk.htm"
+            ]
+          },
+          {
+            "id": "highgate-sol61-final-c08",
+            "name": "The Flask exterior",
+            "why": "Proposed discovery: separating an displayed date from building history. Jones explicitly qualifies the pub’s dating. Anchor proposal: public pavement, not customer seating. Locator: line 111; avoid promoting alleged patron anecdotes to fact. ([london-walking-tours.co.uk](https://www.london-walking-tours.co.uk/free-tours/highgate-village-walk.htm))",
+            "leadUrls": [
+              "https://www.london-walking-tours.co.uk/free-tours/highgate-village-walk.htm",
+              "https://www.theflaskhighgate.com/"
+            ]
+          },
+          {
+            "id": "highgate-sol61-final-c09",
+            "name": "3 The Grove, Coleridge-associated exterior",
+            "why": "Proposed discovery: literary residence and care rather than celebrity enumeration. Jones links Coleridge with the Gillman household. Anchor proposal: public street viewpoint respecting the private home. Locator: lines 122–124; chronology and medical framing require stronger evidence. ([london-walking-tours.co.uk](https://www.london-walking-tours.co.uk/free-tours/highgate-village-walk.htm))",
+            "leadUrls": [
+              "https://www.london-walking-tours.co.uk/free-tours/highgate-village-walk.htm"
+            ]
+          },
+          {
+            "id": "highgate-sol61-final-c10",
+            "name": "Waterlow Park and Lauderdale House exterior",
+            "why": "Proposed discovery: philanthropic public landscape, with a present-day hillside view. Friends of Waterlow Park describes Waterlow’s gift and the 1891 opening. Anchor proposal: verified public park path near the house, no interior visit. Locator: lines 37–40; gates close at dusk and exact viewpoint remains unverified. ([waterlowpark.org.uk](https://www.waterlowpark.org.uk/the-park/))",
+            "leadUrls": [
+              "https://www.waterlowpark.org.uk/the-park/",
+              "https://www.aladyinlondon.com/2022/09/highgate-walk.html"
+            ]
+          }
+        ],
+        "gaps": [
+          "Input identity retained: brief schemaVersion 1; id highgate-sol61-final; freshContentOnly true; mapId hampstead-0abcc26a600e0718. No separate revision identifier was supplied. This is request 1/5: proposed survey records only, not accepted route or finished tour.",
+          "Audience retained exactly: reason 'Discover worthwhile, less obvious stories and understand the places we encounter'; assumedKnowledge 'Little neighbourhood knowledge'; intendedDiscovery 'Determined through fresh area research; warm documentary narration with revealing supported detail'; presentAnchor 'Actual exterior places and public viewpoints on the selected loop'. Candidate discovery suggestions are proposals, not replacements for this brief.",
+          "Fresh research only: no retained survey or earlier project material was available or reused. One research context was used. No scripts, voice rendering, paid services, accounts, field visits or human listening were undertaken.",
+          "Evidence limitation: hosted web open outputs were read, but no read_page tool is available. Exact source passages are therefore not reproduced or claimed as read_page evidence. Locators and qualified paraphrases are retained; candidates remain leads pending compliant evidence capture. Source reuse licences were not established; no permission to copy narration or images is inferred.",
+          "Failed attempt: the historical Highgate Wood leaflet linked from the City of London page returned an Internal Error. The landing page establishes an approximately two-hour self-guided walk starting at the Information Hut, but its actual historical stops and stories could not be catalogued; excluded from the four-walk catalogue. ([cityoflondon.gov.uk](https://www.cityoflondon.gov.uk/things-to-do/green-spaces/highgate-wood/historic-walk-in-highgate-wood))",
+          "Negative finding: none of the four catalogued routes establishes the requested approximately one-hour public-exterior loop returning to Highgate station. Their itineraries cannot be adopted as measured geometry.",
+          "Question affecting selection: should the loop prioritise North Hill housing and architectural change, or the village institutions and Waterlow landscape? These are competing provisional emphases; all ten candidates are alternatives, not compulsory stops.",
+          "Question affecting route interpretation: which public exterior station exit should be the precise shared start/end anchor? No exit geometry or safe standing area has been verified.",
+          "Route blockers: coordinates, pavement standing areas, crossings, permitted estate-boundary views, park gates, actual route distance, gradients and return directions remain unverified. Landmark names are not standing-point coordinates or camera locations.",
+          "Timing remains unknown because no route or audio exists. Preserve the 3,600-second target and requested estimated 55–65-minute range; later accounting must include actual measured narration, walking, crossings, pauses and return to the station. Published-tour durations are not measurements for this job.",
+          "Several source dates are unknown; source retrieval occurred for this fresh survey, not as eyewitness observation. Period social explanations must not become distinctive local anecdotes without local supporting evidence.",
+          "Usage: 5 hosted-web calls containing 6 search queries, 13 open requests and 1 click request; the click failed. Direct paid spending: USD 0. No paid provider setup was attempted. Elapsed generation time and provider-internal accounting are unavailable rather than estimated.",
+          "Infrastructure blockers: docs/ISSUES.md, bundled map access, local renderer and Scout tools were not provided. Their checks cannot be claimed complete. AI provenance, saved map, planned directions, manual playback/navigation fallback and independent final fresh verification remain later-stage requirements.",
+          "Recommended next action: retain these stable candidate IDs, resolve the station anchor and thematic selection, then undertake bounded primary-source verification and fresh route geometry for the shortlisted loop. Fix directions and timing before Scout or synthesis; do not begin broad additional research after route acceptance without a named blocker."
+        ]
+      },
+      "completedAt": "2026-10-07T10:57:22.137Z",
+      "operationId": "operation-1"
+    },
+    "sourceCount": 16,
+    "claimCount": 15,
+    "sourceReferences": [
+      {
+        "id": "highgate-sol61-final-s01",
+        "title": "Our History — HLSI",
+        "url": "https://hlsi.org.uk/about/our-history/"
+      },
+      {
+        "id": "highgate-sol61-final-s02",
+        "title": "Our History — permanent premises",
+        "url": "https://hlsi.org.uk/about/our-history/"
+      },
+      {
+        "id": "highgate-sol61-final-s03",
+        "title": "Our History — early library restrictions",
+        "url": "https://hlsi.org.uk/about/our-history/"
+      },
+      {
+        "id": "highgate-sol61-final-s04",
+        "title": "About Us — HLSI",
+        "url": "https://hlsi.org.uk/about/"
+      },
+      {
+        "id": "highgate-sol61-final-s05",
+        "title": "Waterlow Park — National Heritage List entry 1000849",
+        "url": "https://historicengland.org.uk/listing/the-list/list-entry/1000849"
+      },
+      {
+        "id": "highgate-sol61-final-s06",
+        "title": "Waterlow Park — hospital use",
+        "url": "https://historicengland.org.uk/listing/the-list/list-entry/1000849"
+      },
+      {
+        "id": "highgate-sol61-final-s07",
+        "title": "Waterlow Park — entrance identity",
+        "url": "https://historicengland.org.uk/listing/the-list/list-entry/1000849"
+      },
+      {
+        "id": "highgate-sol61-final-s08",
+        "title": "History — Friends of Waterlow Park",
+        "url": "https://www.waterlowpark.org.uk/the-park/history/"
+      },
+      {
+        "id": "highgate-sol61-final-s09",
+        "title": "History — park restoration",
+        "url": "https://www.waterlowpark.org.uk/the-park/history/"
+      },
+      {
+        "id": "highgate-sol61-final-s10",
+        "title": "The Park — Friends of Waterlow Park",
+        "url": "https://www.waterlowpark.org.uk/the-park/"
+      },
+      {
+        "id": "highgate-sol61-final-s11",
+        "title": "Number 3 and Attached Railings, Wall and Lamp — NHLE",
+        "url": "https://historicengland.org.uk/listing/the-list/list-entry/1378978"
+      },
+      {
+        "id": "highgate-sol61-final-s12",
+        "title": "3 The Grove — subsequent literary residence",
+        "url": "https://historicengland.org.uk/listing/the-list/list-entry/1378978"
+      },
+      {
+        "id": "highgate-sol61-final-s13",
+        "title": "3 The Grove — architectural alteration",
+        "url": "https://historicengland.org.uk/listing/the-list/list-entry/1378978"
+      },
+      {
+        "id": "highgate-sol61-final-s14",
+        "title": "About The Flask Pub and Restaurant",
+        "url": "https://www.theflaskhighgate.com/about"
+      },
+      {
+        "id": "highgate-sol61-final-s15",
+        "title": "The Flask — oldest component",
+        "url": "https://www.theflaskhighgate.com/about"
+      },
+      {
+        "id": "highgate-sol61-final-s16",
+        "title": "HLSI exterior photograph linked from Our History",
+        "url": "https://hlsi.org.uk/wp-content/uploads/2019/10/HLSIcraftfair-157-1024x683.jpg"
+      }
+    ],
+    "route": null,
+    "build": null,
+    "durationAcceptance": null,
+    "phaseOutcomes": []
+  },
+  "usage": {
+    "model": "gpt-6.1-sol",
+    "effort": "medium",
+    "rows": [
+      {
+        "operationId": "operation-1",
+        "taskId": "survey-1",
+        "role": "research",
+        "stage": "factory-survey",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 123.671,
+        "inputTokens": 48398,
+        "outputTokens": 3762,
+        "cachedInputTokens": 4096,
+        "reasoningTokens": 466,
+        "totalTokens": 52160,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.1266336,
+          "upper": 0.1487846
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-2",
+        "taskId": "research-1",
+        "role": "research",
+        "stage": "factory-research",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 11.068,
+        "inputTokens": 13576,
+        "outputTokens": 187,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 62,
+        "totalTokens": 13763,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.0219692,
+          "upper": 0.0269012
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-3",
+        "taskId": "research-2",
+        "role": "research",
+        "stage": "factory-research",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 12.864,
+        "inputTokens": 25649,
+        "outputTokens": 245,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 89,
+        "totalTokens": 25894,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.0466952,
+          "upper": 0.0576637
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-4",
+        "taskId": "research-3",
+        "role": "research",
+        "stage": "factory-research",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 11.594,
+        "inputTokens": 24575,
+        "outputTokens": 251,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 75,
+        "totalTokens": 24826,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.04460719999999999,
+          "upper": 0.055038699999999996
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-5",
+        "taskId": "research-4",
+        "role": "research",
+        "stage": "factory-research",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 170.795,
+        "inputTokens": 31620,
+        "outputTokens": 6208,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 207,
+        "totalTokens": 37828,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.1182672,
+          "upper": 0.1322212
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-6",
+        "taskId": "research-repair-1",
+        "role": "research",
+        "stage": "factory-research-repair",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 3.756,
+        "inputTokens": 9472,
+        "outputTokens": 27,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 9499,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.019214,
+          "upper": 0.02395
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-7",
+        "taskId": "research-repair-2",
+        "role": "research",
+        "stage": "factory-research-repair",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 118.238,
+        "inputTokens": 11642,
+        "outputTokens": 6378,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 43,
+        "totalTokens": 18020,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.087064,
+          "upper": 0.092885
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-8",
+        "taskId": "physical-readiness-1",
+        "role": "research",
+        "stage": "factory-physical-readiness",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 7.416,
+        "inputTokens": 14778,
+        "outputTokens": 131,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 0,
+        "totalTokens": 14909,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.0238132,
+          "upper": 0.0293462
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-9",
+        "taskId": "physical-readiness-2",
+        "role": "research",
+        "stage": "factory-physical-readiness",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 13.58,
+        "inputTokens": 21208,
+        "outputTokens": 80,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 36,
+        "totalTokens": 21288,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.0361632,
+          "upper": 0.0449112
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-10",
+        "taskId": "physical-readiness-3",
+        "role": "research",
+        "stage": "factory-physical-readiness",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 141.882,
+        "inputTokens": 18570,
+        "outputTokens": 6138,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 62,
+        "totalTokens": 24708,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.0914672,
+          "upper": 0.09889619999999999
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      }
+    ],
+    "byRole": [
+      {
+        "role": "research",
+        "operations": 10,
+        "operationsWithUnknownTokens": 0,
+        "observedInputTokens": 219488,
+        "operationsWithUnknownInput": 0,
+        "observedOutputTokens": 23407,
+        "operationsWithUnknownOutput": 0,
+        "observedCachedInputTokens": 30080,
+        "operationsWithUnknownCache": 0,
+        "observedReasoningTokens": 1040,
+        "operationsWithUnknownReasoning": 0,
+        "operationsWithUnknownCharge": 0,
+        "directChargedUsd": 0,
+        "observedApiEquivalentRangeUsd": {
+          "lower": 0.6158939999999999,
+          "upper": 0.7105980000000001
+        },
+        "operationsWithoutEstimate": 0
+      }
+    ],
+    "estimateBasis": {
+      "model": "gpt-6.1-sol",
+      "date": "2026-10-06",
+      "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "inputPerMillionUsd": 2,
+      "cachedInputPerMillionUsd": 0.1,
+      "outputPerMillionUsd": 10,
+      "cacheWritePerMillionUsd": 2.5,
+      "longContextThreshold": 272000,
+      "longContextInputMultiplier": 2,
+      "longContextOutputMultiplier": 1.5
+    },
+    "limitations": "Reasoning tokens are included in output, never added again. Standard token-only API-equivalent range; cache writes, tools, taxes and subscription/API parity are uncertain. Unknown requests are excluded from observed subtotals, never treated as free or zero-token."
+  },
+  "limitations": [
+    "Implementation assistant/helper tokens are unavailable and excluded from runtime totals.",
+    "Token-only API-equivalent estimates are not paid subscription charges. Hosted tool fees/parity are not measured.",
+    "No human listening or field visit is inferred from software checks.",
+    "This report excludes credentials, encrypted provider history and complete fetched page text."
+  ]
+}
