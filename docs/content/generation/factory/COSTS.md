@@ -135,3 +135,15 @@ Elapsed17m34.195s;20inferences,1,475,960known tokens, none unknown, US$0direct. 
 | scout | 6 | 0 | 559,387 | 6,127 | 565,514 | 1.1800–1.4597 |
 
 Later schema and correction-dispatch changes are tested separately; this run is not claimed to have exercised them. Implementation-assistant usage remains unavailable and excluded.
+
+
+## Sol6.1 seventh trial — outside the chosen duration range
+
+Elapsed17m06.938s;18inferences,1,219,532known tokens, none unknown, US$0direct. Known token-only API-equivalentUS$2.2138–2.7125. All proposals reached real routing; no malformed leg IDs, offline-map extent failure, manual retry or deadline extension. Geometry reduced from roughly4.34km to3.82km, but the last conservative total was3979.0357seconds (66m19), exceeding the engineering65-minute upper limit. No Scout/content/audio stage was reached. [Seventh-run record](SOL61-V7-RUN.json). Research operation7 completed in543.189seconds despite a360-second transport timer; actual elapsed and usage are retained, and strict per-request wall-time enforcement is unproven.
+
+| Runtime role | Requests | Unknown usage | Known input | Known output | Known total | Token-only API-equivalentUSD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| research | 7 | 0 | 733,123 | 13,418 | 746,541 | 1.2159–1.4813 |
+| route | 11 | 0 | 466,500 | 6,491 | 472,991 | 0.9979–1.2312 |
+
+This is a shorter failed route-selection run, not evidence of a faster completed tour. Implementation-assistant usage remains unavailable and excluded.
