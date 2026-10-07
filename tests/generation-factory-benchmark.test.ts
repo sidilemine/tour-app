@@ -132,3 +132,14 @@ test('redacted factory report retains allowlisted build validation and final pac
     assert.doesNotMatch(JSON.stringify(report), /SECRET|privateTrace|rawContext|packagePath/);
   } finally { f.cleanup(); }
 });
+
+
+test('confirmed local setup failure is zero provider activity, not a missing inference duration',()=>{
+ const f=fixture();try{
+  f.job.costLedger.operations=[operation('operation-1',{failure:'provider_initialization_not_dispatched',usage:{...knownUsage,inputTokens:0,outputTokens:0,totalTokens:0,cachedInputTokens:0,reasoningTokens:0,subscription:false,apiEquivalentRangeUsd:{lower:0,upper:0}}})];terminate(f.job);f.save();
+  write(f.directory,'requests/operation-1-not-dispatched.json',{stage:'provider-initialization',inferenceDispatched:false});
+  const r=benchmarkJob(f.directory);assert.equal(r.requests.count,1);assert.equal(r.requests.inferenceAttempts,0);assert.equal(r.requests.notDispatchedConfirmed,1);
+  assert.equal(r.providerActivity.completeSummedSeconds,0);assert.equal(r.providerActivity.requestsWithoutDuration,0);
+  assert.equal(r.requests.byProviderStatus.not_dispatched,1);
+ }finally{f.cleanup();}
+});

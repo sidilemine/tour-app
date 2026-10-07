@@ -20,7 +20,8 @@ export function benchmarkJob(directory: string) {
   const initialBuildFile = readdirSync(directory).filter(name => /^build-result-\d+\.json$/.test(name)).sort((a, b) => Number(a.match(/\d+/)![0]) - Number(b.match(/\d+/)![0]))[0];
   const initialBuild = initialBuildFile ? read(join(directory, initialBuildFile)) : null;
   const operations = job.costLedger.operations;
-  const notDispatchedConfirmed=operations.filter(o=>o.failure==='provider_initialization_not_dispatched'&&o.usage?.totalTokens===0&&read(join(directory,'requests',safeId(o.id)+'-not-dispatched.json'))?.inferenceDispatched===false).length;
+  const notDispatchedIds=new Set(operations.filter(o=>o.state==='settled'&&o.chargedUsd===0&&o.failure==='provider_initialization_not_dispatched'&&o.usage?.totalTokens===0&&!existsSync(join(directory,'requests',safeId(o.id)+'-result.json'))&&read(join(directory,'requests',safeId(o.id)+'-not-dispatched.json'))?.inferenceDispatched===false).map(o=>o.id));
+  const notDispatchedConfirmed=notDispatchedIds.size;
   const firstDispatchAt = operations.map(o => o.startedAt).sort()[0] ?? null;
   const latestDispatch = operations.map(o => o.startedAt).sort().at(-1) ?? job.createdAt;
   const terminal = job.events.filter(e => e.type === 'terminal' && e.detail === job.status && e.at >= latestDispatch).sort((a, b) => a.at.localeCompare(b.at)).at(-1);
@@ -29,6 +30,7 @@ export function benchmarkJob(directory: string) {
   const providerStatuses: Record<string, number> = {};
   const tools: Record<string, { requested: number; executedReceipts: number; succeeded: number; failed: number; receiptOutcomeUnknown: number; withoutExecutionReceipt: number }> = {};
   for (const operation of operations) {
+    if(notDispatchedIds.has(operation.id)){providerStatuses.not_dispatched=(providerStatuses.not_dispatched??0)+1;continue;}
     const result = read(join(directory, 'requests', safeId(operation.id) + '-result.json'));
     if (result) archivedProviderResults++;
     const elapsedMs = number(result?.elapsedMs);

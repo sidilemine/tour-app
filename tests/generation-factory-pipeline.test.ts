@@ -6,7 +6,7 @@ import { resolve, join } from 'node:path';
 import { distance, type Coordinate } from '../src/domain/fixture';
 import { parseTourPackage } from '../src/tours/package';
 import { buildTour, validateBuilderInput, type BuilderAudioTools } from '../tools/generation/builder';
-import { prepareRoute, routingOptionsForPlan, assemble, runFactory, applyRouteDisposition, applyPhysicalCoverage, retainReviewContext, retainPackageReviewInput, type Routed } from '../tools/generation/factory/pipeline';
+import { playerDirectionLines, retainInvalidNavigationReview, completeRouteDirectionsSchema, routeDispositionSchema, prepareRoute, routingOptionsForPlan, assemble, runFactory, applyRouteDisposition, applyPhysicalCoverage, retainReviewContext, retainPackageReviewInput, type Routed } from '../tools/generation/factory/pipeline';
 import { briefSchema, surveySchema, researchSchema, routePlanSchema, draftSchema, excludeUnusedEmptySources, validateDraft, validateResearch, type Draft, type FactoryReview } from '../tools/generation/factory/contracts';
 import { durationBudget, durationFits, PRACTICAL_ACCESS_POLICY } from '../tools/generation/factory/experience-policy';
 import { FactoryRuntime, digest } from '../tools/generation/factory/runtime';
@@ -113,10 +113,10 @@ test('built player package exposes every canonical leg even when model direction
  input.stories[0].directions[0]='Local output mutation';assert.notEqual(f.prepared.legs[1].directions[0],'Local output mutation');
 });
 
-test('canonical navigation projection refuses missing legs or player field overflow rather than dropping instructions',()=>{
+test('canonical navigation projection rejects missing legs and retains long returns through the existing directions view',()=>{
  const missing=fixture();missing.prepared.legs.pop();assert.throws(()=>assemble(missing.brief,missing.plan,missing.research,missing.prepared,missing.draft),/full return/);
  const longIntro=fixture();longIntro.prepared.legs[0].directions=['x'.repeat(4000)];assert.throws(()=>assemble(longIntro.brief,longIntro.plan,longIntro.research,longIntro.prepared,longIntro.draft));
- const longReturn=fixture();longReturn.prepared.legs.at(-1)!.directions=['a'.repeat(1100),'b'.repeat(1100)];assert.throws(()=>assemble(longReturn.brief,longReturn.plan,longReturn.research,longReturn.prepared,longReturn.draft));
+ const longReturn=fixture();longReturn.prepared.legs.at(-1)!.directions=['a'.repeat(1100),'b'.repeat(1100)];const compiled=assemble(longReturn.brief,longReturn.plan,longReturn.research,longReturn.prepared,longReturn.draft);assert.deepEqual(compiled.stories.at(-1)!.directions,longReturn.prepared.legs.at(-1)!.directions);assert.match(compiled.narration.finishInstructions,/Read \/ directions/);
 });
 
 function encode(points: Coordinate[]) {
@@ -507,4 +507,42 @@ test('accepted direction review with contradictory required flags uses one froze
  const original=JSON.parse(await readFile(join(r.directory,'phases/route-directions-1.json'),'utf8')).result;
  assert.equal(original.review.issues[0].required,true);assert.equal(original.review.verdict,'accepted');
  assert.equal(r.runtime.job.counters.route,1);
+});
+
+test('new direction contract preserves a ninth terminal crossing through the actual player package',async t=>{
+ const f=fixture(),directory=await mkdtemp(join('/tmp','tour-nine-directions-'));t.after(()=>rm(directory,{recursive:true,force:true}));
+ const directions=Array.from({length:8},(_,i)=>`Synthetic retained approach instruction ${i+1}.`);
+ directions.push('Cross at the station signals, follow the station-side pavement and finish at the original exterior endpoint.');
+ f.prepared.legs.at(-1)!.directions=directions;
+ const value={review:{verdict:'accepted',summary:'Synthetic complete navigation',issues:[],checks:['Synthetic fixture']},legDirections:f.prepared.legs.map(l=>({legId:l.id,directions:l.directions}))};
+ assert.equal(completeRouteDirectionsSchema.safeParse(value).success,true);assert.equal(routeDispositionSchema.safeParse(value).success,false);
+ const input=assemble(f.brief,f.plan,f.research,f.prepared,f.draft);
+ const built=await buildTour(input,{outputDirectory:join(directory,'package'),cacheDirectory:join(directory,'audio-cache'),audioTools:syntheticAudio()});
+ const saved=parseTourPackage(JSON.parse(await readFile(built.packagePath,'utf8')));
+ assert.deepEqual(saved.fixture.narration!.stories.at(-1)!.directions,directions);
+ assert.ok(saved.fixture.narration!.finishInstructions.includes(directions.at(-1)!));
+});
+
+
+test('oversized retained navigation is losslessly split and complete return remains in the last story',async t=>{
+ const f=fixture(),directory=await mkdtemp(join('/tmp','tour-long-directions-'));t.after(()=>rm(directory,{recursive:true,force:true}));
+ const long=Array.from({length:35},(_,i)=>`Continue along the public pavement to synthetic marker ${i+1}, then check the named crossing.`).join(' ');
+ f.prepared.legs.at(-1)!.directions=[long];
+ const original=structuredClone(f.prepared);
+ const input=assemble(f.brief,f.plan,f.research,f.prepared,f.draft);
+ assert.deepEqual(f.prepared,original);assert.equal(input.stories.at(-1)!.directions.join(' '),long);
+ assert.ok(input.stories.at(-1)!.directions.every(d=>d.length<=1500));
+ assert.match(input.narration.finishInstructions,/Read \/ directions/);assert.ok(input.narration.finishInstructions.includes(f.draft.stories.at(-1)!.title));
+ const built=await buildTour(input,{outputDirectory:join(directory,'package'),cacheDirectory:join(directory,'audio-cache'),audioTools:syntheticAudio()});
+ const saved=parseTourPackage(JSON.parse(await readFile(built.packagePath,'utf8')));
+ assert.equal(saved.fixture.narration!.stories.at(-1)!.directions.join(' '),long);
+ assert.throws(()=>playerDirectionLines(['X'.repeat(1501)]),/sentence exceeds/);
+});
+
+test('compiler review recovery retains invalid historical review only for unchanged factual inputs',()=>{
+ const old={draft:{stories:['same']},prepared:{directions:['same crossing']},projectedNavigation:null,mechanicalValidation:'finishInstructions exceeds limit',mechanicalValidationStatus:'finishInstructions exceeds limit'};
+ const current={...old,projectedNavigation:{stories:['same crossing']},mechanicalValidation:'passed pre-render structural validation',mechanicalValidationStatus:'passed'};
+ assert.deepEqual(retainInvalidNavigationReview(old,current),old);
+ assert.throws(()=>retainInvalidNavigationReview(old,{...current,draft:{stories:['changed fact']}}),/exact source/);
+ assert.throws(()=>retainInvalidNavigationReview({...old,mechanicalValidation:'unsupported fact'},current),/navigation field/);
 });
