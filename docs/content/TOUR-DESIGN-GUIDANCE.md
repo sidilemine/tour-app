@@ -4,6 +4,10 @@ Living editorial reference, revision 15, 7 October 2026. Maintained for Sidi and
 
 **Our aim:** make an enjoyable, relaxing walk reveal the non-obvious stories and meaning beneath the surroundings, giving the listener a deeper connection to a place, whether new or familiar. Being there should contribute something that reading at home cannot.
 
+## Personal-beta completion policy — 7 October2026
+
+Sidi has selected delivering a useful personal beta despite tolerable imperfections, and tightening later where ordinary use finds problems. Requested duration is an approximate authoring preference with an honest reported estimate. It does not impose per-stop word quotas, minimum story lengths, extra weak stops or padded walking. Editorial improvements are advice; a concrete unsupported material assertion or contradictory physical instruction needs correction or omission. Research should support the stories used, without numerical source quotas or compulsory imagery for ordinary public exteriors. Practical public crossings and intelligible approaches suffice without exact kerb geometry. Keep useful work through local repairs. This changes generation acceptance, while retaining evidence, offline playback/privacy contracts and the distinction between desk review and actual enjoyment. [Selected changes and examples](generation/factory/README.md#personal-beta-simplifications--7-october), [discussion](EDITORIAL-REVIEW-RECORD.md#7-october-2026--beta-completion-and-proportionate-rejection).
+
 ## Authority and use
 
 The [authoring playbook](TOUR-AUTHORING-PLAYBOOK.md), [role briefs](authoring/AGENT-BRIEFS.md) and [source map](authoring/SOURCE-MAP.md) turn these preferences into a proposed working method. The [second craft pass](TOUR-STORY-CRAFT-SECOND-PASS.md) remains a dated discussion paper; the [19 September response](SECOND-PASS-REVIEW-RESPONSE.md) and [writing brief](authoring/WRITING-BRIEF.md) incorporate its 55 owner comments and the follow-up choice of reconstruction and atmosphere. This guidance remains the authority for preferences; the search budgets and assembly method remain proposals for use.

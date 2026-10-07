@@ -10,9 +10,142 @@ import { buildTour, validateBuilderInput, type BuilderAudioTools } from '../tool
 import { routePlanningEvidence, playerDirectionLines, retainInvalidNavigationReview, completeRouteDirectionsSchema, routeDispositionSchema, prepareRoute, routingOptionsForPlan, assemble, runFactory, applyRouteDisposition, applyPhysicalCoverage, retainReviewContext, retainPackageReviewInput, type Routed } from '../tools/generation/factory/pipeline';
 import { ordinalRoutePlanSchema, constrainedRoutePlanSchema, briefSchema, surveySchema, researchSchema, routePlanSchema, draftSchema, excludeUnusedEmptySources, validateDraft, validateResearch, type Draft, type FactoryReview } from '../tools/generation/factory/contracts';
 import { durationBudget, durationFits, PRACTICAL_ACCESS_POLICY } from '../tools/generation/factory/experience-policy';
+import { betaReviewDisposition, formatBetaNarration, type BetaReview } from '../tools/generation/factory/beta-policy';
 import { FactoryRuntime, digest } from '../tools/generation/factory/runtime';
 import { PublicTools } from '../tools/generation/factory/public-tools';
 import type { ProviderResult, InferenceRequest } from '../tools/generation/provider';
+
+type BetaCase = { advisory?: boolean; wrongCrossing?: boolean; factual?: 'repair' | 'unresolved'; corruptPackage?: boolean; longAudio?: boolean; longChapter?: boolean; directionRepair?: boolean };
+async function betaReplay(t: TestContext, scenario: BetaCase = {}) {
+  const f = fixture();
+  f.survey.publishedWalks = f.survey.publishedWalks.slice(0, scenario.longAudio ? 0 : 1);
+  if(scenario.longAudio)f.survey.gaps=['No published itinerary was readable in this synthetic survey.'];
+  f.research.sources = f.research.sources.slice(0, 3);
+  f.research.claims.forEach((claim, i) => { claim.sourceIds = ['source-' + i % 3]; });
+  f.research.places = f.research.places.slice(0, 3);
+  f.plan.stopIds = f.plan.stopIds.slice(0, 3);
+  const points = [f.plan.start, ...f.research.places.map(p => p.standing), f.plan.end];
+  f.routed.legs = points.slice(1).map((point, i) => ({ geometry: [points[i], point], distanceMetres: distance(points[i], point), durationSeconds: distance(points[i], point) / 1.25,
+    maneuvers: [{ instruction: 'Follow synthetic public leg ' + (i + 1), beginShapeIndex: 0, endShapeIndex: 1, type: 1 }] }));
+  f.prepared = prepareRoute(f.plan, f.research, f.routed);
+  f.draft.stories = f.draft.stories.slice(0, 3);
+  f.draft.chapters = scenario.longChapter ? f.prepared.chapterIds.map((id, i) => ({ ...f.draft.stories[0], id, title: 'Synthetic chapter ' + i, paragraphs: [{...f.draft.stories[0].paragraphs[0]}, {...f.draft.stories[0].paragraphs[1], text:'Synthetic chapter reflection.'}] })) : [];
+  const directory = await mkdtemp(resolve('local-data/factory-beta-test-')); t.after(() => rm(directory, { recursive: true, force: true }));
+  const requests: string[] = []; let builds = 0, routeCalls = 0, renders = 0;
+  const accepted: BetaReview = { verdict: 'accepted', summary: 'Synthetic beta review', issues: [], checks: ['Synthetic evidence checked'] };
+  const issue = (category: BetaReview['issues'][number]['category'], problem: string): BetaReview => ({ ...accepted, verdict: 'blocked',
+    issues: [{ id: 'test-issue', scope: category === 'directions' ? 'leg-1' : 'place-0', required: true, category, problem, repair: 'Correct the affected element only', evidence: 'Synthetic retained evidence' }] });
+  const provider = { async request(request: InferenceRequest) {
+    const name = request.jsonSchema!.name; requests.push(name);
+    if (name === 'survey') return providerResult(request, f.survey);
+    if (name === 'research') {
+      const response = requests.filter(n => n === name).length === 1 ? providerResult(request, null, [
+        ...f.research.sources.map((source, i) => ({ type: 'function_call', namespace: 'factory', name: 'read_page', call_id: 'beta-page-' + i, arguments: JSON.stringify({ url: source.url }) })),
+        { type: 'function_call', namespace: 'factory', name: 'read_map', call_id: 'beta-map', arguments: JSON.stringify({ latitude: 51.55, longitude: -0.17, radius: 50 }) },
+      ]) : providerResult(request, f.research);
+      delete response.webSearchCalls; // Actual page reads suffice; no artificial search obligation.
+      if (requests.filter(n => n === name).length > 1) {
+        const map = JSON.parse(String(request.input.find(x => x.type === 'function_call_output' && x.call_id === 'beta-map')!.output));
+        assert.equal(map.elements, undefined); assert.equal(map.query, undefined); assert.match(map.text, /footway/);
+      }
+      return response;
+    }
+    if (name.startsWith('route_plan_')) return providerResult(request, { ...f.plan, walkingNarration: scenario.longChapter ? 'eligible-windows' : 'stationary-only', routing: { preferMappedWalkways: false, throughByLeg: [] } });
+    if (name.startsWith('route_directions_')) return providerResult(request, { review: scenario.wrongCrossing ? issue('directions', 'Crossing is on the wrong road arm') : accepted,
+      legDirections: f.prepared.legs.map(l => ({ legId: l.id, directions: scenario.directionRepair && l.id==='leg-1'?['Turn left at the synthetic station.']:l.directions })) });
+    if (name === 'writing') { const draft=structuredClone(f.draft); if(scenario.factual)draft.stories[0].paragraphs[0].text+=' They secretly built a palace.'; return providerResult(request, draft); }
+    if (name.startsWith('beta_review_')) { const input=JSON.parse(String(request.input[0].content)); return providerResult(request, scenario.directionRepair && input.prepared.legs[0].directions[0].startsWith('Turn left') ? issue('directions','Station left turn conflicts with retained route') : input.draft.stories[0].paragraphs[0].text.includes('secretly built a palace') ? issue('factual', 'Unsupported central historical assertion') : scenario.advisory ? issue('editorial', 'A paragraph could be more elegant') : accepted); }
+    if (name === 'correction_1') { const revised=structuredClone(f.draft);if(scenario.factual==='unresolved')revised.stories[0].paragraphs[0].text+=' They secretly built a palace.';return providerResult(request, { ...revised, legDirections: f.prepared.legs.map(l => ({ legId: l.id, directions: l.directions })) }); }
+    throw Error('Unexpected beta phase ' + name);
+  } };
+  const runtime = new FactoryRuntime(directory, f.brief, async () => provider, () => '2026-10-07T10:00:00.000Z');
+  const tools = new PublicTools({ directory: join(directory, 'public-tools'), lookup: async () => [{ address: '93.184.216.34', family: 4 }], fetch: async url => {
+    if (String(url).includes('overpass-api.de')) return Response.json({ elements: [{ type: 'way', id: 1, tags: { highway: 'footway', access: 'yes' }, geometry: [{ lat: 51.55, lon: -0.17 }, { lat: 51.5501, lon: -0.17 }] }] });
+    if (String(url).includes('valhalla1.openstreetmap.de')) { routeCalls++; return Response.json({ trip: { status: 0, units: 'kilometers', summary: { length: 2, time: 1600 },
+      legs: f.routed.legs.map(l => ({ shape: encode(l.geometry), summary: { length: l.distanceMetres / 1000, time: l.durationSeconds }, maneuvers: l.maneuvers.map(m => ({ instruction: m.instruction, begin_shape_index: m.beginShapeIndex, end_shape_index: m.endShapeIndex, type: m.type })) })) } }); }
+    const source = f.research.sources.find(s => s.url === String(url)); assert.ok(source);
+    return new Response('<title>' + source.title + '</title><p>' + source.passage + '</p>', { headers: { 'content-type': 'text/html' } });
+  } });
+  const options = { build: async (...args: Parameters<typeof buildTour>) => {
+    builds++; const audio = syntheticAudio(false, scenario.longAudio ? 800 : undefined), original = audio.render;
+    audio.render = async (text, path) => {
+      renders++; await original(text, path);
+      if (scenario.longChapter && text.includes('Synthetic chapter reflection.')) {
+        const metadata = JSON.parse(await readFile(path + '.render.json', 'utf8')); metadata.chunks[0].durationSeconds = 900;
+        await writeFile(path + '.render.json', JSON.stringify(metadata));
+      }
+    };
+    const result = await buildTour(args[0], { ...args[1], audioTools: audio });
+    if (scenario.corruptPackage) { const p = JSON.parse(await readFile(result.packagePath, 'utf8')); p.assets[0].base64 = '!!!!'; await writeFile(result.packagePath, JSON.stringify(p)); }
+    return result;
+  } };
+  return { runtime, tools, options, directory, requests, builds: () => builds, routeCalls: () => routeCalls, renders: () => renders };
+}
+
+test('personal beta completes short and long tours with three stops and advisory review findings', async t => {
+  for (const longAudio of [false, true]) {
+    const r = await betaReplay(t, { advisory: true, longAudio });
+    const handoff = await runFactory(r.runtime, r.tools, r.options);
+    assert.equal(handoff.status, 'beta-draft'); assert.equal(handoff.durationAcceptance.status, 'reported-estimate');
+    assert.equal(r.routeCalls(), 1); assert.equal(r.builds(), 1); assert.equal(r.runtime.job.counters.correction, 0);
+    assert.equal(r.requests.filter(n => n.startsWith('beta_review_')).length, 1);
+    assert.ok(!r.requests.some(n => n.startsWith('scout_') || n.startsWith('editor_') || n.startsWith('verification_') || n === 'tester'));
+    assert.ok(handoff.limitations.includes('A paragraph could be more elegant'));
+    const actual = parseTourPackage(JSON.parse(await readFile(handoff.packagePath, 'utf8'))); assert.equal(actual.fixture.stops.length, 3);
+    const research = JSON.parse(await readFile(join(r.directory, 'research-validated.json'), 'utf8')); assert.equal(research.sources.length, 3);
+    assert.ok(longAudio ? handoff.timing.totalSeconds > 3900 : handoff.timing.totalSeconds < 3300);
+  }
+});
+
+test('personal beta repairs material factual findings once without rediscovering or rerouting', async t => {
+  const r = await betaReplay(t, { factual: 'repair' }); const handoff = await runFactory(r.runtime, r.tools, r.options);
+  assert.equal(handoff.status, 'beta-draft'); assert.equal(r.routeCalls(), 1); assert.equal(r.runtime.job.counters.research, 0);
+  assert.equal(r.runtime.job.counters.correction, 1); assert.equal(r.requests.filter(n => n.startsWith('beta_review_')).length, 2);
+  const p=parseTourPackage(JSON.parse(await readFile(handoff.packagePath,'utf8')));assert.ok(!p.fixture.narration!.stories[0].transcript.includes('secretly built a palace'));
+});
+
+test('personal beta keeps real wrong-crossing, unresolved factual and corrupt-package failures', async t => {
+  const crossing = await betaReplay(t, { wrongCrossing: true });
+  await assert.rejects(runFactory(crossing.runtime, crossing.tools, crossing.options), /three proposals/); assert.equal(crossing.builds(), 0);
+  const factual = await betaReplay(t, { factual: 'unresolved' });
+  await assert.rejects(runFactory(factual.runtime, factual.tools, factual.options), /Concrete beta content/); assert.equal(factual.builds(), 0);
+  const corrupt = await betaReplay(t, { corruptPackage: true });
+  await assert.rejects(runFactory(corrupt.runtime, corrupt.tools, corrupt.options));
+  await assert.rejects(readFile(join(corrupt.directory, 'handoff.json')));
+});
+
+test('beta issue categories make duration/editorial advice non-vetoing while retaining access defects', () => {
+  const review: BetaReview = { verdict: 'blocked', summary: 'Synthetic', checks: ['Synthetic'], issues: ['duration', 'editorial', 'access'].map(category => ({
+    category: category as BetaReview['issues'][number]['category'], id: category, scope: 'test', required: true, problem: category, repair: 'Repair', evidence: 'Evidence',
+  })) };
+  const result = betaReviewDisposition(review); assert.deepEqual(result.issues.map(i => i.required), [false, false, true]); assert.equal(result.verdict, 'needs-revision');
+  assert.ok(review.issues.every(i => i.required), 'Original reviewer record remains intact');
+});
+
+test('beta direction repair changes the saved leg locally without new research or routing', async t => {
+  const r=await betaReplay(t,{directionRepair:true});const handoff=await runFactory(r.runtime,r.tools,r.options);
+  const p=parseTourPackage(JSON.parse(await readFile(handoff.packagePath,'utf8')));
+  assert.ok(!p.fixture.narration!.introduction.includes('Turn left at the synthetic station.'));
+  assert.ok(p.fixture.narration!.introduction.includes('Follow synthetic public leg 1'));
+  assert.equal(r.routeCalls(),1);assert.equal(r.runtime.job.counters.research,0);assert.equal(r.runtime.job.counters.correction,1);
+});
+
+test('an overlong optional chapter is omitted while retaining the cached stationary audio and full route', async t => {
+  const r=await betaReplay(t,{longChapter:true});const handoff=await runFactory(r.runtime,r.tools,r.options);
+  const p=parseTourPackage(JSON.parse(await readFile(handoff.packagePath,'utf8')));
+  assert.equal(p.fixture.narration!.chapters.length,0);assert.equal(p.fixture.stops.length,3);
+  assert.equal(r.builds(),2);assert.equal(r.routeCalls(),1);assert.equal(r.runtime.job.counters.correction,0);
+  assert.equal(r.renders(),4,'Three stationary recordings remain cached after one overlong chapter');
+  const omission=JSON.parse(await readFile(join(r.directory,'optional-chapter-omission.json'),'utf8'));assert.ok(omission.omittedIds.length);
+});
+
+test('beta narration formatting preserves words and evidence while fitting the actual renderer limit', () => {
+  const f=fixture();const paragraph=f.draft.stories[0].paragraphs[0];paragraph.text='A supported synthetic sentence about five makers. '.repeat(25).trim();
+  const before=structuredClone(f.draft),formatted=formatBetaNarration(f.draft),paragraphs=formatted.stories[0].paragraphs;
+  assert.equal(paragraphs.slice(0,-1).map(p=>p.text).join(' '),paragraph.text);
+  assert.ok(paragraphs.every(p=>p.text.length<=512));assert.ok(paragraphs.slice(0,-1).every(p=>JSON.stringify(p.claimIds)===JSON.stringify(paragraph.claimIds)));
+  assert.deepEqual(f.draft,before);assert.deepEqual(formatBetaNarration(formatted),formatted);
+});
 
 // Entirely synthetic content and coordinates, constructed here rather than read
 // from an authored tour. Bundled map identity is infrastructure, not content.
@@ -476,19 +609,19 @@ test('duration policy rejects the actual compact Hampstead estimate and uses a b
  assert.equal(durationFits(3300,budget),true);assert.equal(durationFits(3900,budget),true);
  assert.equal(durationFits(3299,budget),false);assert.equal(durationFits(3901,budget),false);
 });
-test('new factory rejects an underfilled route before scouting, writing or rendering within three proposals',async t=>{
+test('historical duration policy rejects an underfilled route before scouting, writing or rendering within three proposals',async t=>{
  const r=await replay(t,false,false,false,false,undefined,false,false,'short');
  await assert.rejects(runFactory(r.runtime,r.tools,r.options),/three proposals/);
  assert.equal(r.runtime.job.counters.route,3);assert.equal(r.buildCalls(),0);
  assert.ok(!r.requests.some(n=>n.startsWith('scout_')||n==='writing'));
 });
-test('new factory accepts actual measured duration in range with practical canonical directions',async t=>{
+test('historical duration policy accepts actual measured duration in range with practical canonical directions',async t=>{
  const r=await replay(t,false,false,false,false,undefined,false,false,'fit');
  const handoff=await runFactory(r.runtime,r.tools,r.options);
  assert.equal(handoff.durationAcceptance.status,'estimate-within-range');
  assert.equal(r.buildCalls(),1);assert.ok(r.requests.includes('route_directions_1'));assert.ok(r.requests.indexOf('route_directions_1')<r.requests.indexOf('scout_1'));
 });
-test('new factory corrects measured underfill instead of accepting an upper-bound-only pass',async t=>{
+test('historical duration policy corrects measured underfill instead of accepting an upper-bound-only pass',async t=>{
  const r=await replay(t,false,false,false,false,undefined,false,false,'correct');
  const handoff=await runFactory(r.runtime,r.tools,r.options);
  assert.equal(handoff.durationAcceptance.status,'estimate-within-range');assert.equal(r.buildCalls(),2);
