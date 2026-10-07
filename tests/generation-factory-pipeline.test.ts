@@ -1,5 +1,6 @@
 import test, { type TestContext } from 'node:test';
 import assert from 'node:assert/strict';
+import { z } from 'zod';
 import { createHash } from 'node:crypto';
 import { mkdir, mkdtemp, readFile, writeFile, rm } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
@@ -7,7 +8,7 @@ import { distance, type Coordinate } from '../src/domain/fixture';
 import { parseTourPackage } from '../src/tours/package';
 import { buildTour, validateBuilderInput, type BuilderAudioTools } from '../tools/generation/builder';
 import { routePlanningEvidence, playerDirectionLines, retainInvalidNavigationReview, completeRouteDirectionsSchema, routeDispositionSchema, prepareRoute, routingOptionsForPlan, assemble, runFactory, applyRouteDisposition, applyPhysicalCoverage, retainReviewContext, retainPackageReviewInput, type Routed } from '../tools/generation/factory/pipeline';
-import { briefSchema, surveySchema, researchSchema, routePlanSchema, draftSchema, excludeUnusedEmptySources, validateDraft, validateResearch, type Draft, type FactoryReview } from '../tools/generation/factory/contracts';
+import { ordinalRoutePlanSchema, constrainedRoutePlanSchema, briefSchema, surveySchema, researchSchema, routePlanSchema, draftSchema, excludeUnusedEmptySources, validateDraft, validateResearch, type Draft, type FactoryReview } from '../tools/generation/factory/contracts';
 import { durationBudget, durationFits, PRACTICAL_ACCESS_POLICY } from '../tools/generation/factory/experience-policy';
 import { FactoryRuntime, digest } from '../tools/generation/factory/runtime';
 import { PublicTools } from '../tools/generation/factory/public-tools';
@@ -144,7 +145,7 @@ function providerResult(request: InferenceRequest, value: unknown, calls: Provid
     ...(request.webSearch ? { webSearchCalls: [{ id: 'synthetic-search', status: 'completed', action: { type: 'search', queries: ['synthetic fixture'] }, sources: [] }] } : {}),
     usage: { inputTokens: 20, outputTokens: 10, totalTokens: 30, source: 'response.completed' }, elapsedMs: 1, evidenceKind: 'fixture', diagnostic: { code: 'fixture', retryable: false, automaticRetries: 0 }, directChargeUsd: 0, estimatedApiEquivalentUsd: null };
 }
-async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = false, failTester = false, evidenceRepair:'valid'|'invalid'|false=false, stationaryBudget?:number, invalidFirstThrough=false, readiness:'all'|'selected'|'unrepaired'|'duration'|false=false,experience:'legacy'|'short'|'fit'|'correct'='legacy',rejectDirections:boolean|'ambiguous'=false) {
+async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = false, failTester = false, evidenceRepair:'valid'|'invalid'|false=false, stationaryBudget?:number, invalidFirstThrough=false, readiness:'all'|'selected'|'unrepaired'|'duration'|false=false,experience:'legacy'|'short'|'fit'|'correct'='legacy',rejectDirections:boolean|'ambiguous'=false,scoutRepair:false|'directions'|'blocked'=false) {
   const f = fixture(); if(stationaryBudget!==undefined)f.brief.durationSeconds=f.prepared.walkingSeconds+f.plan.allowanceSeconds+stationaryBudget; await mkdir('local-data', { recursive: true }); const directory = await mkdtemp(resolve('local-data/factory-pipeline-test-'));
   t.after(() => rm(directory, { recursive: true, force: true }));
   if(experience==='fit'||experience==='correct')f.brief.durationSeconds=f.prepared.walkingSeconds+f.plan.allowanceSeconds+480;
@@ -192,7 +193,7 @@ async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = 
       }
       return providerResult(request,value);
     }
-    if (name === 'research' || name === 'research_repair') return providerResult(request, f.research);
+    if (name === 'research' || name === 'research_repair'||(scoutRepair&&name.startsWith('route_research_'))) return providerResult(request, f.research);
     if (name.startsWith('route_plan_')) return providerResult(request, {...f.plan,walkingNarration:'eligible-windows',routing:{preferMappedWalkways:false,throughByLeg:invalidFirstThrough&&name==='route_plan_1'?[{legId:'leg-1',points:[{point:f.prepared.geometry[1],sourceUrl:'https://overpass-api.de/api/interpreter#query-'+'b'.repeat(64),basis:'Synthetic missing evidence'}]}]:[]}});
     if(name === 'tester'){
       testerInputs.push(structuredClone(request.input));
@@ -201,7 +202,9 @@ async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = 
     }
     if(name.endsWith('_closure'))return providerResult(request,accepted);
     if(name==='route_directions'||name.startsWith('route_directions_')){assert.ok(request.instructions.includes(PRACTICAL_ACCESS_POLICY));return providerResult(request,{review:rejectDirections?{...accepted,verdict:rejectDirections==='ambiguous'?'accepted':'blocked',issues:[{id:'wrong-crossing',scope:'leg-1',required:true,problem:rejectDirections==='ambiguous'?'Returned corrected directions still await compilation':'Crossing belongs to another road arm',repair:rejectDirections==='ambiguous'?'Compile these unchanged proposed directions':'Resolve the actual crossing identity',evidence:rejectDirections==='ambiguous'?'Synthetic returned directions close the original finding':'Synthetic contradictory map evidence'}]}:accepted,legDirections:f.prepared.legs.map(l=>({legId:l.id,directions:l.directions}))});}
-    if (name.startsWith('scout_')) return providerResult(request, accepted);
+    const scoutIssue={...accepted,verdict:'needs-revision',issues:[{id:'station-orientation',scope:'leg-1',required:true,problem:scoutRepair==='blocked'?'Essential public access still unknown':'Left turn assumes unknown station facing',repair:scoutRepair==='blocked'?'Establish public access':'Use the named street direction',evidence:'Synthetic retained map evidence'}]};
+    if(name==='route_disposition'){assert.ok(JSON.parse(String(request.input[0].content)).experienceBudget);return providerResult(request,{review:scoutRepair==='blocked'?scoutIssue:accepted,legDirections:f.prepared.legs.map((l,i)=>({legId:l.id,directions:i===0?['Follow the named street towards the station crossing.']:l.directions}))});}
+    if (name.startsWith('scout_')) return providerResult(request, scoutRepair?scoutIssue:accepted);
     if (name === 'writing' || name.startsWith('correction_')) {
       const context = JSON.parse(String(request.input[0].content)) as { prepared: { chapterIds: string[] } };
       const draft: Draft = structuredClone(f.draft); draft.chapters = context.prepared.chapterIds.map((id, i) => ({ ...draft.chapters[i], id }));
@@ -587,4 +590,34 @@ test('route revision receives actual per-leg measurements and offline bounds, wi
   else{assert.equal(input.previousRouting.legs.length,5);assert.ok(input.previousRouting.legs.every((leg:{geometryMetres:number})=>leg.geometryMetres>0));}
  }
  assert.equal(r.runtime.job.counters.route,3);assert.equal(r.buildCalls(),0);
+});
+
+
+test('new structured route output requires actual ordinal leg IDs, while old protocol schema remains frozen',()=>{
+ const plan={...fixture().plan,routing:{preferMappedWalkways:false,throughByLeg:[{legId:'start-to-place-0',points:[{point:fixture().plan.start,sourceUrl:'https://example.org/map',basis:'Synthetic source'}]}]},walkingNarration:'stationary-only'};
+ const wireSchema=JSON.parse(JSON.stringify(z.toJSONSchema(ordinalRoutePlanSchema)));
+ assert.deepEqual(wireSchema.properties.routing.properties.throughByLeg.items.properties.legId.enum,['leg-1','leg-2','leg-3','leg-4','leg-5','leg-6','leg-7']);
+ assert.equal(constrainedRoutePlanSchema.safeParse(plan).success,true);
+ assert.equal(ordinalRoutePlanSchema.safeParse(plan).success,false);
+ plan.routing.throughByLeg[0].legId='leg-1';assert.equal(ordinalRoutePlanSchema.safeParse(plan).success,true);
+ for(const id of ['leg-0','leg-8','start-to-place-0']){plan.routing.throughByLeg[0].legId=id;assert.equal(ordinalRoutePlanSchema.safeParse(plan).success,false);}
+});
+
+
+test('Scout direction repair uses the one frozen correction before research or a new route and reaches package checks',async t=>{
+ const r=await replay(t,false,false,false,false,undefined,false,false,'fit',false,'directions');
+ const handoff=await runFactory(r.runtime,r.tools,r.options);assert.equal(handoff.status,'awaiting-listening');
+ assert.equal(r.runtime.job.counters.route,1);assert.equal(r.runtime.job.counters.research,0);
+ assert.equal(r.requests.filter(n=>n==='route_disposition').length,1);assert.ok(!r.requests.some(n=>n.startsWith('route_research_')));
+ const record=JSON.parse(await readFile(join(r.directory,'route-disposition-record.json'),'utf8'));assert.equal(record.originalReview.verdict,'needs-revision');assert.equal(record.disposition.review.verdict,'accepted');
+ const route=JSON.parse(await readFile(join(r.directory,'route-accepted.json'),'utf8'));assert.deepEqual(route.prepared.legs[0].directions,['Follow the named street towards the station crossing.']);
+ assert.ok(r.requests.includes('tester'));assert.equal(r.buildCalls(),1);
+});
+
+test('a genuine access blocker cannot gain repeated frozen corrections or bypass original route and research caps',async t=>{
+ const r=await replay(t,false,false,false,false,undefined,false,false,'fit',false,'blocked');
+ await assert.rejects(runFactory(r.runtime,r.tools,r.options),/three proposals/);
+ assert.equal(r.requests.filter(n=>n==='route_disposition').length,1);
+ assert.equal(r.runtime.job.counters.route,3);assert.equal(r.runtime.job.counters.research,2);
+ assert.equal(r.buildCalls(),0);assert.ok(!r.requests.includes('writing'));
 });

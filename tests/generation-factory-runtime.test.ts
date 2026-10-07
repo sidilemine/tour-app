@@ -355,10 +355,10 @@ test('new phase protocols preserve dispatched legacy bindings and stay frozen ac
  await r.phase('legacy-plan','route','Legacy instruction',{},schema);
  assert.equal(r.phaseProtocol('legacy-plan',2),1);
  assert.equal(r.phaseProtocol('new-plan',2),2);
- assert.equal(r.phaseProtocol('constrained-plan',4),4);assert.equal(r.phaseProtocol('measured-plan',5),5);
+ assert.equal(r.phaseProtocol('constrained-plan',4),4);assert.equal(r.phaseProtocol('measured-plan',5),5);assert.equal(r.phaseProtocol('ordinal-plan',6),6);
  await r.phase('new-plan','route','New instruction',{},schema);
  const resumed=runtime(directory,async()=>{throw Error('No replay allowed');});
- assert.equal(resumed.phaseProtocol('legacy-plan',2),1);assert.equal(resumed.phaseProtocol('new-plan',1),2);assert.equal(resumed.phaseProtocol('constrained-plan',3),4);assert.equal(resumed.phaseProtocol('measured-plan',4),5);
+ assert.equal(resumed.phaseProtocol('legacy-plan',2),1);assert.equal(resumed.phaseProtocol('new-plan',1),2);assert.equal(resumed.phaseProtocol('constrained-plan',3),4);assert.equal(resumed.phaseProtocol('measured-plan',4),5);assert.equal(resumed.phaseProtocol('ordinal-plan',5),6);
  assert.deepEqual(await resumed.phase('legacy-plan','route','Legacy instruction',{},schema),{answer:'done'});
  assert.deepEqual(await resumed.phase('new-plan','route','New instruction',{},schema),{answer:'done'});
  }finally{cleanup();}

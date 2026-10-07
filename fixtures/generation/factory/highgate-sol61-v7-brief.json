@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "highgate-sol61-v7",
+  "area": "Highgate, London",
+  "start": "Highgate Underground station, public exterior",
+  "end": "Highgate Underground station, public exterior",
+  "durationSeconds": 3600,
+  "access": "Daytime, public exterior stops; ordinary hills and public steps allowed; no additional accessibility constraints; no paid admission required",
+  "audience": {
+    "reason": "Discover worthwhile, less obvious stories and understand the places we encounter",
+    "assumedKnowledge": "Little neighbourhood knowledge",
+    "intendedDiscovery": "Determined through fresh area research; warm documentary narration with revealing supported detail",
+    "presentAnchor": "Actual exterior places and public viewpoints on the selected loop"
+  },
+  "voice": "local Kokoro George",
+  "model": "gpt-6.1-sol",
+  "effort": "medium",
+  "directPaidCeilingUsd": 0,
+  "mapId": "hampstead-0abcc26a600e0718",
+  "freshContentOnly": true,
+  "requirements": [
+    "Use a fresh survey of published Highgate walks before our own selection and scripting",
+    "Do not use previous project tour research, candidates, routes, source evidence or authored scripts, including previous Hampstead or Highgate material",
+    "Reuse generation roles, tools, the local voice renderer and the bundled map only as infrastructure; obtain fresh source evidence and route geometry for this job",
+    "Write original narration from read source evidence, preserving material qualifications",
+    "Public accessible exterior standing points are distinct from landmarks and camera locations",
+    "Include the return to Highgate Underground station and actual measured narration in the hour estimate",
+    "Retain AI provenance, saved map, planned directions and manual playback/navigation fallback",
+    "Do not claim human listening or an outdoor visit from desktop checks",
+    "Fresh full verification after the direction-display, narration-style and conservative-duration fixes. Do not reuse any earlier job sources, candidates, route geometry or scripts. Reuse only generation/player/map/voice infrastructure. Plan a coherent walk whose real walking and allowance plus only80seconds per stop reach the55-minute lower bound; do not rely on three-minute stories at every stop. Preserve meaningful selection and avoid arbitrary backtracking or narration filler. Actual rendered audio decides the final55\u201365minute estimate. Retain all elapsed time, requests, unknown usage and explicit interventions.",
+    "Map tools query a fresh dated public OSM extract as infrastructure, with map data timestamp 2026-10-06T20:21:06Z. Its bounded extent is longitude -0.165 to -0.125, latitude 51.552 to 51.585; every requested query radius must fit inside that extent. Obtain new per-job map receipts and fresh source research. No former job findings or authored inputs are supplied. Map features do not alone prove current access.",
+    "Use the producer-supplied offlineMap bounds for playback coverage and actual previousRouting leg measurements for any proposal repair. Prior authored tour sources, selections, geometry and stories remain excluded."
+  ],
+  "generationMinutes": 90,
+  "mapEvidence": {
+    "path": "local-data/generation-map-data/highgate-261006.json",
+    "sha256": "25ff2e0466dbe4a8250c2dcc8cebde297cb752c3415675ea547a73315c732275"
+  }
+}

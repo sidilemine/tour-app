@@ -84,3 +84,6 @@ For a route rejected as too short, new jobs can now use still-available physical
 
 
 Planning protocol5 supplies the real bundled playback-map bounds from the first proposal and measured per-leg routing diagnostics after a rejected proposal. Research-map query coverage is separate. Revisions must examine the oversized actual legs and their optional shaping constraints, rather than infer a fix from the total duration alone. Direct endpoint distance is not a routed alternative. Exhaustive pavement shaping is no longer encouraged; independently reviewed public access and correct directions remain required.
+
+
+Planning protocol6 exposes ordinal `leg-1` through `leg-7` identifiers in the model's structured-output schema; existing plans retain their old bindings. New disposition-timing protocol2 spends the existing single frozen-route correction allowance at the first failed Scout before research or another proposal, rather than reserving it for proposal3. This can fix directions from retained evidence without mandatory new search. It is still one correction per job, at most three requests shared with its contradiction closure. A failed correction cannot be repeated on later routes; genuine unresolved access still goes through the original research/proposal limits.

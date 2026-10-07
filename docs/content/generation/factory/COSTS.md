@@ -122,3 +122,16 @@ Elapsed14m48.322s;19inference requests,1,491,120known tokens, no unknown usage, 
 | route | 12 | 0 | 572,272 | 15,147 | 587,419 | 1.2960–1.5822 |
 
 The separate three-query routing diagnostic used no model tokens or direct charge. Implementation-assistant usage remains unavailable and excluded.
+
+
+## Sol6.1 sixth trial — wording correction sent to research
+
+Elapsed17m34.195s;20inferences,1,475,960known tokens, none unknown, US$0direct. Known token-only API-equivalentUS$3.1685–3.8767. The first malformed leg-ID proposal was automatically replaced; the second route met duration planning and passed the Scout's physical-route assessment except an unsupported starting “left”. The coordinator sent that wording repair to research, whose unnecessary mandatory-search check then blocked. No writing/audio/package; no manual runtime intervention, retry or extension. [Sixth-run record](SOL61-V6-RUN.json).
+
+| Runtime role | Requests | Unknown usage | Known input | Known output | Known total | Token-only API-equivalentUSD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| research | 7 | 0 | 659,910 | 21,719 | 681,629 | 1.4869–1.8037 |
+| route | 7 | 0 | 223,323 | 5,494 | 228,817 | 0.5016–0.6132 |
+| scout | 6 | 0 | 559,387 | 6,127 | 565,514 | 1.1800–1.4597 |
+
+Later schema and correction-dispatch changes are tested separately; this run is not claimed to have exercised them. Implementation-assistant usage remains unavailable and excluded.

@@ -18,6 +18,9 @@ export const physicalResearchSchema=researchSchema.extend({sources:z.array(resea
 export const routePlanSchema=z.object({title:text,stopIds:z.array(id).min(4).max(6),start:pointSchema,end:pointSchema,selectionReason:text,rejectedAlternatives:z.array(text),allowanceSeconds:z.number().min(240).max(900),walkingMetresPerSecond:z.number().min(0.9).max(1.3)}).strict();
 export const routingConstraintsSchema=z.object({preferMappedWalkways:z.boolean(),throughByLeg:z.array(z.object({legId:id,points:z.array(z.object({point:pointSchema,sourceUrl:z.url(),basis:text}).strict()).min(1).max(8)}).strict()).max(7)}).strict();
 export const constrainedRoutePlanSchema=routePlanSchema.extend({routing:routingConstraintsSchema,walkingNarration:z.enum(['stationary-only','eligible-windows'])});
+// New undispatched planning phases expose the router's ordinal contract to structured output.
+const ordinalRoutingConstraintsSchema=routingConstraintsSchema.extend({throughByLeg:z.array(routingConstraintsSchema.shape.throughByLeg.element.extend({legId:z.enum(['leg-1','leg-2','leg-3','leg-4','leg-5','leg-6','leg-7']).describe('Ordinal tour leg: leg-1 is station to first stop; final leg is last stop to station. Use only legs present in this plan.')})).max(7)});
+export const ordinalRoutePlanSchema=constrainedRoutePlanSchema.extend({routing:ordinalRoutingConstraintsSchema});
 export type RoutePlan=z.infer<typeof routePlanSchema>&{routing?:z.infer<typeof routingConstraintsSchema>;walkingNarration?:'stationary-only'|'eligible-windows'};
 const paragraph=z.object({text,kind:z.enum(['factual','supported_reconstruction','editorial']),claimIds:z.array(id),basis:text}).strict();
 const story=z.object({id,title:text,paragraphs:z.array(paragraph).min(2).max(7),directions:z.array(text).min(1).max(8)}).strict();
