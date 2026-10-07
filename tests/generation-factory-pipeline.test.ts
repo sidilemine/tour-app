@@ -546,3 +546,14 @@ test('compiler review recovery retains invalid historical review only for unchan
  assert.throws(()=>retainInvalidNavigationReview(old,{...current,draft:{stories:['changed fact']}}),/exact source/);
  assert.throws(()=>retainInvalidNavigationReview({...old,mechanicalValidation:'unsupported fact'},current),/navigation field/);
 });
+
+
+test('conservative duration planning does not rely on three-minute stories to rescue a short route',()=>{
+ const old=durationBudget(3600,2181.2195898749005,480,4);
+ const current=durationBudget(3600,2181.2195898749005,480,4,true);
+ assert.equal(old.routeFeasible,true);assert.equal(current.routeFeasible,false);
+ const suitable=durationBudget(3600,2700,480,4,true);
+ assert.equal(suitable.routeFeasible,true);assert.equal(durationFits(2700+480+400,suitable),true);
+ assert.equal(suitable.routeNarrationReserveSeconds,320);assert.equal(suitable.estimatedWordsPerSecond,2.3);
+ assert.ok(suitable.targetWordsPerStory>durationBudget(3600,2700,480,4).targetWordsPerStory);
+});
