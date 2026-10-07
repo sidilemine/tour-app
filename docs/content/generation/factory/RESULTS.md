@@ -2,7 +2,7 @@
 
 **Current implementation:** fresh jobs use the owner-selected Sol6.1 medium on the existing app grant, with overflow off and US$0 direct paid ceiling. Duration feasibility is enforced before writing and actual audio plus estimated walking/allowances must meet55–65minutes for the60-minute brief. Proportionate crossing review and complete canonical directions are implemented. Both Sol models pass capability checks; Sol6.1 also passed hosted search and is running the full factory. [Model evidence](../SOL-ACCESS-2026-10-07.json), [search calibration](../SOL61-SEARCH-2026-10-07.json).
 
-**Latest live checkpoint:** Sol6.1 v3 produced four validated George recordings and a structurally valid package, but its50m45 estimate failed the55–65minute gate (56m31 elapsed,3,129,164known tokens plus two unknown requests). Fresh v4 then stopped after17calls/538,964known tokens with three short proposals, unavailable map service and an unused research handoff. Both remain closed failures. A fresh v5 uses the conservative duration policy, a bounded dated local map extract and the duration-to-research handoff fix. Its final outcome remains pending.
+**Latest live checkpoint:** Sol6.1 v3 built a50m45draft, correctly below55–65minutes. V4 exposed unavailable Overpass and an unused research handoff. V5 successfully used fresh local map evidence, but failed route coverage/duration after14m48.322s and1,491,120known tokens (19requests, none unknown). The planner repeatedly changed the return without seeing actual per-leg distance feedback. All remain closed failures. Shared planning protocol5 now supplies measured leg feedback and playback-map bounds and removes contradictory exhaustive-shaping instructions. Fresh v6 verification is next; no completed hour or unattended-factory success is claimed.
 
 **Implemented underfill correction:** policy3 accepts route feasibility only when walking/allowance plus80seconds per stop reaches the lower bound. It does not assume three-minute stories everywhere. Writer budgets use an approximately2.3word/sec George infrastructure estimate; final audio is still measured. This directly rejects the third run’s2.617km geometry before writing. No narration padding, slower playback, inflated allowance or old source material is used.
 
@@ -122,3 +122,20 @@ The readiness correction below resolved eligible-place readiness before dispatch
 - Fourth run: starts entirely fresh at`4ca21c7`, Sol6.1medium,90-minute generation allowance under the owner’s extension authorization. Uses policy3 conservative timing, direction-preparation3, writing3 and review4. All360tests, typecheck/lint and focused duration/package regressions pass before dispatch. Final outcome is pending.
 
 All direct paid charges areUS$0. Failed work and unknown usage are retained in[COSTS](COSTS.md). None of these incomplete results proves unattended completed-tour speed or enjoyment.
+
+
+## What the fixes establish
+
+Owner question, 7 October: are these temporary patches or genuine corrections for future runs? The classification matters; passing the automated suite is not a universal guarantee.
+
+| Change | Nature and evidence | Remaining limit |
+| --- | --- | --- |
+| Enforce final duration and plan conservatively | Shared coordinator checks; regressions reject the actual compact Hampstead and Sol v3 route cases; live v3/v4 were honestly rejected | Enforces rejection, not successful selection; fresh integration still required |
+| Research before retrying a short route | Shared control-flow repair, regression proves research precedes the next proposal within original caps | Depends on useful existing candidates and resolvable access |
+| Preserve complete directions and station return | Shared compiler/schema correction; actual package/player-parser regressions preserve the ninth direction and split long text losslessly | Correct wording/access still requires review; no outdoor result implied |
+| Practical crossing criteria, less repetitive narration, clearer reviewer verdicts | Versioned role instructions plus deterministic acceptance checks; wrong-crossing regression still blocks | Model compliance and editorial quality are probabilistic; prompt changes cannot guarantee future behaviour |
+| Try a second advertised public address | Shared transport correction with refusal/abort/TLS/POST regressions; live fallback observed | Cannot fix an outage on both servers or HTTP429 |
+| Dated local OSM map queries | Bounded operational alternative, checksum/extent/retained-evidence regressions and real parser/query checks | Requires a fresh suitable extract; relations/current closures absent; online routing/page dependencies remain |
+| Explicit interrupted-request recovery and accounting | Bounded supervised recovery, immutable failures and unknown usage retained | A manual recovery is not unattended reliability |
+
+The current local-map version passed363automated tests, typecheck, lint, guide parity and the separate actual Pyosmium extraction regression. Tests establish those cases only. Closed failed runs, partial packages and their costs remain preserved. New generation runs begin with empty authored inputs; no manual story substitution or relaxed duration gate is used to force acceptance.

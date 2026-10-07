@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-07T12:09:39.490Z",
+  "recordedAt": "2026-10-07T13:02:45.535Z",
   "jobs": [
     {
       "id": "hampstead-fresh-factory",
@@ -2041,6 +2041,439 @@
         "note": "Recorded input provenance; an empty authored-input list alone does not prove every generated claim is fresh."
       },
       "benchmarkContext": "supervised run with recorded intervention; elapsed includes engineering/owner pauses"
+    },
+    {
+      "id": "highgate-sol61-v4",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "status": "blocked",
+      "successStage": "research-validated",
+      "result": "partial",
+      "elapsed": {
+        "createdAt": "2026-10-07T12:08:20.627Z",
+        "firstDispatchAt": "2026-10-07T12:08:20.667Z",
+        "terminalAt": "2026-10-07T12:19:22.224Z",
+        "snapshotUpdatedAt": "2026-10-07T12:19:22.224Z",
+        "createdToTerminalSeconds": 661.597,
+        "firstDispatchToTerminalSeconds": 661.557,
+        "createdToSnapshotSeconds": 661.597,
+        "includesPauses": true,
+        "terminalTimestampKnown": true
+      },
+      "providerActivity": {
+        "observedSummedSeconds": 595.5439999999999,
+        "requestsWithoutDuration": 0,
+        "completeSummedSeconds": 595.5439999999999,
+        "note": "Sum of provider-result elapsedMs; overlapping requests count separately. Not elapsed wall time or local-tool time."
+      },
+      "requests": {
+        "count": 17,
+        "notDispatchedConfirmed": 0,
+        "inferenceAttempts": 17,
+        "archivedProviderResults": 17,
+        "byProviderStatus": {
+          "completed": 17
+        },
+        "pending": 0,
+        "unknownOutcome": 0,
+        "recordedOperationFailures": 0,
+        "blockedTasks": 0
+      },
+      "usage": {
+        "byRole": [
+          {
+            "role": "research",
+            "operations": 6,
+            "operationsWithUnknownTokens": 0,
+            "observedInputTokens": 377336,
+            "operationsWithUnknownInput": 0,
+            "observedOutputTokens": 11978,
+            "operationsWithUnknownOutput": 0,
+            "observedCachedInputTokens": 22656,
+            "operationsWithUnknownCache": 0,
+            "observedReasoningTokens": 594,
+            "operationsWithUnknownReasoning": 0,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 0.8314056,
+              "upper": 1.0087456000000001
+            },
+            "operationsWithoutEstimate": 0
+          },
+          {
+            "role": "route",
+            "operations": 11,
+            "operationsWithUnknownTokens": 0,
+            "observedInputTokens": 143484,
+            "operationsWithUnknownInput": 0,
+            "observedOutputTokens": 6166,
+            "operationsWithUnknownOutput": 0,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 0,
+            "observedReasoningTokens": 739,
+            "operationsWithUnknownReasoning": 0,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 0.348628,
+              "upper": 0.42037
+            },
+            "operationsWithoutEstimate": 0
+          }
+        ],
+        "estimateBasis": {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+          "inputPerMillionUsd": 2,
+          "cachedInputPerMillionUsd": 0.1,
+          "outputPerMillionUsd": 10,
+          "cacheWritePerMillionUsd": 2.5,
+          "longContextThreshold": 272000,
+          "longContextInputMultiplier": 2,
+          "longContextOutputMultiplier": 1.5
+        },
+        "limitations": "Reasoning tokens are included in output, never added again. Standard token-only API-equivalent range; cache writes, tools, taxes and subscription/API parity are uncertain. Unknown requests are excluded from observed subtotals, never treated as free or zero-token."
+      },
+      "localTools": {
+        "read_page": {
+          "requested": 8,
+          "executedReceipts": 8,
+          "succeeded": 7,
+          "failed": 1,
+          "receiptOutcomeUnknown": 0,
+          "withoutExecutionReceipt": 0
+        },
+        "read_station_map": {
+          "requested": 6,
+          "executedReceipts": 6,
+          "succeeded": 1,
+          "failed": 5,
+          "receiptOutcomeUnknown": 0,
+          "withoutExecutionReceipt": 0
+        },
+        "read_map": {
+          "requested": 14,
+          "executedReceipts": 14,
+          "succeeded": 4,
+          "failed": 10,
+          "receiptOutcomeUnknown": 0,
+          "withoutExecutionReceipt": 0
+        },
+        "read_image": {
+          "requested": 1,
+          "executedReceipts": 1,
+          "succeeded": 1,
+          "failed": 0,
+          "receiptOutcomeUnknown": 0,
+          "withoutExecutionReceipt": 0
+        }
+      },
+      "interventions": {
+        "eventCounts": {},
+        "recoveryEventCount": 0,
+        "timeAmendments": 0,
+        "note": "Counts events, not unique human actions; permit/use pairs remain distinct. Unrecorded interventions are unknown."
+      },
+      "automaticAllowances": {
+        "research": 0,
+        "route": 3,
+        "correction": 0,
+        "correctiveRenders": 0
+      },
+      "recordingCounts": {
+        "initial": null,
+        "final": null,
+        "initialEvidenceFile": null,
+        "note": "Initial means the earliest retained successful build receipt; counts recordings in a package, not synthesis calls or cache misses. Missing validation remains unknown."
+      },
+      "phases": {
+        "completed": [
+          {
+            "phase": "survey",
+            "completedAt": "2026-10-07T12:10:18.139Z",
+            "operationId": "operation-1"
+          },
+          {
+            "phase": "research",
+            "completedAt": "2026-10-07T12:15:35.844Z",
+            "operationId": "operation-6"
+          },
+          {
+            "phase": "route-plan-1",
+            "completedAt": "2026-10-07T12:16:48.834Z",
+            "operationId": "operation-10"
+          },
+          {
+            "phase": "route-plan-2",
+            "completedAt": "2026-10-07T12:18:08.947Z",
+            "operationId": "operation-14"
+          },
+          {
+            "phase": "route-plan-3",
+            "completedAt": "2026-10-07T12:19:19.957Z",
+            "operationId": "operation-17"
+          }
+        ],
+        "count": 5
+      },
+      "package": {
+        "evidenceFile": null,
+        "promotedToFinalBuild": false,
+        "structurallyValid": false,
+        "testerCompleted": false,
+        "timing": null,
+        "durationAcceptance": "unavailable",
+        "shortfallSeconds": null,
+        "withinMaximum": null,
+        "walkingMeasured": false,
+        "listening": "unavailable",
+        "field": "unavailable",
+        "readyForOrdinaryUse": false
+      },
+      "freshness": {
+        "declaredFreshContentOnly": true,
+        "authoredInputsCount": 0,
+        "authoredInputsEmpty": true,
+        "startingEvidenceSha256": "e2281c74af95ed3fba46b69440793cb85c1f550f7856abc029e030f30bb031e4",
+        "briefSha256": "e2281c74af95ed3fba46b69440793cb85c1f550f7856abc029e030f30bb031e4",
+        "implementationSha256": {
+          "runtime.ts": "54de3b74aa528e0954fb19d8a980a204b71ae8c1a95fbad48e2ed0256ef53de8",
+          "pipeline.ts": "482c7392fb0417781040998f74a660467dfc812ceb33198ae1789e31c6cab1c3",
+          "experience-policy.ts": "8900c378872ccc6713456f09af19e36d4fa400cdc4951a498b383f4051d8e05d",
+          "contracts.ts": "d05c54520fb641bf65621cca937118420696432f6e2cd690f5152e7b472d8c14",
+          "public-tools.ts": "878a4a9812dcffa7c0844a871dc75a85b77568749203ed86f7f672327c2ec5b6",
+          "retained-evidence.ts": "68b5ff0a94d58b9124ab08db7fb75431d40423ee4f3b0ba0f8fdb428efd6eb38",
+          "software-evidence.ts": "fbc33019a4ab41df5b44744865cd51441e7c3d7e9b1cd59c032c574b17a9ed29",
+          "package-checks.ts": "3bbf29ec41a88b5d02354b82babdb9a59bc8d2f4767a8803a488185e1fae8470",
+          "..:builder.ts": "2c51fe0e0071ad821e2bfce5a6144cd367c30acef48b9e19abfa8bbdf80ce56f",
+          "..:provider.ts": "9ab37699fa5fccd2d03640d3e1a10c53e24710f4fd8e79b75ba847ab317a9fd9"
+        },
+        "note": "Recorded input provenance; an empty authored-input list alone does not prove every generated claim is fresh."
+      },
+      "benchmarkContext": "fresh-run candidate; no recovery/time-amendment events recorded, unrecorded intervention unknown"
+    },
+    {
+      "id": "highgate-sol61-v5",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "status": "blocked",
+      "successStage": "research-validated",
+      "result": "partial",
+      "elapsed": {
+        "createdAt": "2026-10-07T12:41:36.606Z",
+        "firstDispatchAt": "2026-10-07T12:41:36.644Z",
+        "terminalAt": "2026-10-07T12:56:24.928Z",
+        "snapshotUpdatedAt": "2026-10-07T12:56:24.928Z",
+        "createdToTerminalSeconds": 888.322,
+        "firstDispatchToTerminalSeconds": 888.284,
+        "createdToSnapshotSeconds": 888.322,
+        "includesPauses": true,
+        "terminalTimestampKnown": true
+      },
+      "providerActivity": {
+        "observedSummedSeconds": 876.7919999999998,
+        "requestsWithoutDuration": 0,
+        "completeSummedSeconds": 876.7919999999998,
+        "note": "Sum of provider-result elapsedMs; overlapping requests count separately. Not elapsed wall time or local-tool time."
+      },
+      "requests": {
+        "count": 19,
+        "notDispatchedConfirmed": 0,
+        "inferenceAttempts": 19,
+        "archivedProviderResults": 19,
+        "byProviderStatus": {
+          "completed": 19
+        },
+        "pending": 0,
+        "unknownOutcome": 0,
+        "recordedOperationFailures": 0,
+        "blockedTasks": 0
+      },
+      "usage": {
+        "byRole": [
+          {
+            "role": "research",
+            "operations": 7,
+            "operationsWithUnknownTokens": 0,
+            "observedInputTokens": 890092,
+            "operationsWithUnknownInput": 0,
+            "observedOutputTokens": 13609,
+            "operationsWithUnknownOutput": 0,
+            "observedCachedInputTokens": 27136,
+            "operationsWithUnknownCache": 0,
+            "observedReasoningTokens": 702,
+            "operationsWithUnknownReasoning": 0,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 1.8647156,
+              "upper": 2.2961936
+            },
+            "operationsWithoutEstimate": 0
+          },
+          {
+            "role": "route",
+            "operations": 12,
+            "operationsWithUnknownTokens": 0,
+            "observedInputTokens": 572272,
+            "operationsWithUnknownInput": 0,
+            "observedOutputTokens": 15147,
+            "operationsWithUnknownOutput": 0,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 0,
+            "observedReasoningTokens": 1593,
+            "operationsWithUnknownReasoning": 0,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 1.296014,
+              "upper": 1.58215
+            },
+            "operationsWithoutEstimate": 0
+          }
+        ],
+        "estimateBasis": {
+          "model": "gpt-6.1-sol",
+          "date": "2026-10-06",
+          "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+          "inputPerMillionUsd": 2,
+          "cachedInputPerMillionUsd": 0.1,
+          "outputPerMillionUsd": 10,
+          "cacheWritePerMillionUsd": 2.5,
+          "longContextThreshold": 272000,
+          "longContextInputMultiplier": 2,
+          "longContextOutputMultiplier": 1.5
+        },
+        "limitations": "Reasoning tokens are included in output, never added again. Standard token-only API-equivalent range; cache writes, tools, taxes and subscription/API parity are uncertain. Unknown requests are excluded from observed subtotals, never treated as free or zero-token."
+      },
+      "localTools": {
+        "read_page": {
+          "requested": 13,
+          "executedReceipts": 13,
+          "succeeded": 10,
+          "failed": 3,
+          "receiptOutcomeUnknown": 0,
+          "withoutExecutionReceipt": 0
+        },
+        "read_station_map": {
+          "requested": 4,
+          "executedReceipts": 4,
+          "succeeded": 4,
+          "failed": 0,
+          "receiptOutcomeUnknown": 0,
+          "withoutExecutionReceipt": 0
+        },
+        "read_map": {
+          "requested": 17,
+          "executedReceipts": 17,
+          "succeeded": 17,
+          "failed": 0,
+          "receiptOutcomeUnknown": 0,
+          "withoutExecutionReceipt": 0
+        },
+        "read_image": {
+          "requested": 1,
+          "executedReceipts": 1,
+          "succeeded": 1,
+          "failed": 0,
+          "receiptOutcomeUnknown": 0,
+          "withoutExecutionReceipt": 0
+        },
+        "read_crossing_map": {
+          "requested": 9,
+          "executedReceipts": 9,
+          "succeeded": 9,
+          "failed": 0,
+          "receiptOutcomeUnknown": 0,
+          "withoutExecutionReceipt": 0
+        }
+      },
+      "interventions": {
+        "eventCounts": {},
+        "recoveryEventCount": 0,
+        "timeAmendments": 0,
+        "note": "Counts events, not unique human actions; permit/use pairs remain distinct. Unrecorded interventions are unknown."
+      },
+      "automaticAllowances": {
+        "research": 0,
+        "route": 3,
+        "correction": 0,
+        "correctiveRenders": 0
+      },
+      "recordingCounts": {
+        "initial": null,
+        "final": null,
+        "initialEvidenceFile": null,
+        "note": "Initial means the earliest retained successful build receipt; counts recordings in a package, not synthesis calls or cache misses. Missing validation remains unknown."
+      },
+      "phases": {
+        "completed": [
+          {
+            "phase": "survey",
+            "completedAt": "2026-10-07T12:44:02.611Z",
+            "operationId": "operation-1"
+          },
+          {
+            "phase": "research",
+            "completedAt": "2026-10-07T12:48:51.569Z",
+            "operationId": "operation-7"
+          },
+          {
+            "phase": "route-plan-1",
+            "completedAt": "2026-10-07T12:51:11.443Z",
+            "operationId": "operation-11"
+          },
+          {
+            "phase": "route-plan-2",
+            "completedAt": "2026-10-07T12:54:02.979Z",
+            "operationId": "operation-15"
+          },
+          {
+            "phase": "route-plan-3",
+            "completedAt": "2026-10-07T12:56:24.774Z",
+            "operationId": "operation-19"
+          }
+        ],
+        "count": 5
+      },
+      "package": {
+        "evidenceFile": null,
+        "promotedToFinalBuild": false,
+        "structurallyValid": false,
+        "testerCompleted": false,
+        "timing": null,
+        "durationAcceptance": "unavailable",
+        "shortfallSeconds": null,
+        "withinMaximum": null,
+        "walkingMeasured": false,
+        "listening": "unavailable",
+        "field": "unavailable",
+        "readyForOrdinaryUse": false
+      },
+      "freshness": {
+        "declaredFreshContentOnly": true,
+        "authoredInputsCount": 0,
+        "authoredInputsEmpty": true,
+        "startingEvidenceSha256": "2663a43a1d933d8b8db0e11ead64b660a22360ba81991a6f14353f72ab430754",
+        "briefSha256": "2663a43a1d933d8b8db0e11ead64b660a22360ba81991a6f14353f72ab430754",
+        "implementationSha256": {
+          "runtime.ts": "13b4092b1e80e04ad2aa0d43b66dc99e1adeaeb385f2e8f0460d51073a5304c6",
+          "pipeline.ts": "3a0e58633975f873622cbb3235702d5ba1d99482db9510ce6ffff6b13d094bcf",
+          "experience-policy.ts": "8900c378872ccc6713456f09af19e36d4fa400cdc4951a498b383f4051d8e05d",
+          "contracts.ts": "8c06bf232b2b086de7ab98155a8b8a38890584e29cbdab3d5ce3dc2209be17aa",
+          "public-tools.ts": "4099e99a0f07eacf1960c819a5798d575bea15debb43bdabc21f1cfa8b1c4cf4",
+          "local-map.ts": "19dafcdca76e0bfdb3aa4cdb30ec5d2439e5f0edb610c30ce9e454f3ba1e7398",
+          "retained-evidence.ts": "bc7d66dbb9bf16d5850145ed99d026ca3c17ea8381b26c3c9c384c26951690ee",
+          "software-evidence.ts": "fbc33019a4ab41df5b44744865cd51441e7c3d7e9b1cd59c032c574b17a9ed29",
+          "package-checks.ts": "3bbf29ec41a88b5d02354b82babdb9a59bc8d2f4767a8803a488185e1fae8470",
+          "..:builder.ts": "2c51fe0e0071ad821e2bfce5a6144cd367c30acef48b9e19abfa8bbdf80ce56f",
+          "..:provider.ts": "9ab37699fa5fccd2d03640d3e1a10c53e24710f4fd8e79b75ba847ab317a9fd9"
+        },
+        "note": "Recorded input provenance; an empty authored-input list alone does not prove every generated claim is fresh."
+      },
+      "benchmarkContext": "fresh-run candidate; no recovery/time-amendment events recorded, unrecorded intervention unknown"
     }
   ],
   "comparisons": [
@@ -2092,6 +2525,24 @@
     {
       "before": "hampstead-fresh-factory",
       "after": "highgate-sol61-v3",
+      "sameSuccessStage": false,
+      "createdToTerminalSecondsDelta": null,
+      "providerSummedSecondsDelta": null,
+      "requestCountDelta": null,
+      "causalImprovementEstablished": false
+    },
+    {
+      "before": "hampstead-fresh-factory",
+      "after": "highgate-sol61-v4",
+      "sameSuccessStage": false,
+      "createdToTerminalSecondsDelta": null,
+      "providerSummedSecondsDelta": null,
+      "requestCountDelta": null,
+      "causalImprovementEstablished": false
+    },
+    {
+      "before": "hampstead-fresh-factory",
+      "after": "highgate-sol61-v5",
       "sameSuccessStage": false,
       "createdToTerminalSecondsDelta": null,
       "providerSummedSecondsDelta": null,

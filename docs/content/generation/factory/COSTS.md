@@ -110,3 +110,15 @@ Elapsed11m01.597s (12:08:20.627–12:19:22.224UTC);17inference requests,538,964k
 | route | 11 | 0 | 143,484 | 6,166 | 149,650 | 0.3486–0.4204 |
 
 Map extraction and local regression checks used no model calls. Implementation-assistant usage remains unavailable and excluded.
+
+
+## Sol6.1 fifth trial — route correction feedback missing
+
+Elapsed14m48.322s;19inference requests,1,491,120known tokens, no unknown usage, US$0direct. Known token-only API-equivalentUS$3.1607–3.8783. No retry, extension or in-run implementation changes. Fresh map evidence succeeded; three routes failed coverage/duration before Scout or content production. [Full fifth-run record](SOL61-V5-RUN.json).
+
+| Runtime role | Requests | Unknown usage | Known input | Known output | Known total | Token-only API-equivalentUSD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| research | 7 | 0 | 890,092 | 13,609 | 903,701 | 1.8647–2.2962 |
+| route | 12 | 0 | 572,272 | 15,147 | 587,419 | 1.2960–1.5822 |
+
+The separate three-query routing diagnostic used no model tokens or direct charge. Implementation-assistant usage remains unavailable and excluded.

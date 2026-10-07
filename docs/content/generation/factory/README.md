@@ -81,3 +81,6 @@ local-data/generation-map-env/bin/python tools/generation/factory/extract-map.py
 Use the emitted snapshot SHA-256 in a new brief. Never overwrite a bound snapshot or change a resumed brief. The extractor validates the downloaded checksum and retains the original data timestamp. This example has data through 6 October 2026, 20:21:06 UTC. Refresh explicitly for future work; there is no claim of live closure information. Tagged nodes/ways are retained; relations are omitted and extent-edge geometry has explicit gaps. Query truncation and access uncertainty stay visible. Do not infer absence from a limited result.
 
 For a route rejected as too short, new jobs can now use still-available physical research on existing unresolved candidates before the next proposal. No research/route limit is increased and genuine final underfill still fails.
+
+
+Planning protocol5 supplies the real bundled playback-map bounds from the first proposal and measured per-leg routing diagnostics after a rejected proposal. Research-map query coverage is separate. Revisions must examine the oversized actual legs and their optional shaping constraints, rather than infer a fix from the total duration alone. Direct endpoint distance is not a routed alternative. Exhaustive pavement shaping is no longer encouraged; independently reviewed public access and correct directions remain required.

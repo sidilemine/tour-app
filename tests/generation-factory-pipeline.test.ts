@@ -6,7 +6,7 @@ import { resolve, join } from 'node:path';
 import { distance, type Coordinate } from '../src/domain/fixture';
 import { parseTourPackage } from '../src/tours/package';
 import { buildTour, validateBuilderInput, type BuilderAudioTools } from '../tools/generation/builder';
-import { playerDirectionLines, retainInvalidNavigationReview, completeRouteDirectionsSchema, routeDispositionSchema, prepareRoute, routingOptionsForPlan, assemble, runFactory, applyRouteDisposition, applyPhysicalCoverage, retainReviewContext, retainPackageReviewInput, type Routed } from '../tools/generation/factory/pipeline';
+import { routePlanningEvidence, playerDirectionLines, retainInvalidNavigationReview, completeRouteDirectionsSchema, routeDispositionSchema, prepareRoute, routingOptionsForPlan, assemble, runFactory, applyRouteDisposition, applyPhysicalCoverage, retainReviewContext, retainPackageReviewInput, type Routed } from '../tools/generation/factory/pipeline';
 import { briefSchema, surveySchema, researchSchema, routePlanSchema, draftSchema, excludeUnusedEmptySources, validateDraft, validateResearch, type Draft, type FactoryReview } from '../tools/generation/factory/contracts';
 import { durationBudget, durationFits, PRACTICAL_ACCESS_POLICY } from '../tools/generation/factory/experience-policy';
 import { FactoryRuntime, digest } from '../tools/generation/factory/runtime';
@@ -567,4 +567,24 @@ test('duration failure uses remaining physical research before consuming the nex
  assert.ok(r.requests.indexOf('duration_research_1')<r.requests.indexOf('route_plan_2'));
  assert.equal(r.runtime.job.counters.research,1);assert.equal(r.runtime.job.counters.route,3);
  assert.equal(r.buildCalls(),0);assert.ok(!r.requests.includes('writing'));
+});
+
+
+test('route revision receives actual per-leg measurements and offline bounds, without accepting direct-line shortcuts',async t=>{
+ const f=fixture(),changed=structuredClone(f.routed);changed.legs[1].geometry.splice(1,0,{latitude:51.558,longitude:-.18});changed.legs[1].distanceMetres=1900;
+ const evidence=routePlanningEvidence(f.plan,changed);
+ assert.equal(evidence.legs[1].providerMetres,1900);assert.ok(evidence.legs[1].geometryMetres>evidence.legs[1].directEndpointMetres);
+ assert.equal(evidence.legs[1].from,'place-0');assert.equal(evidence.legs[1].to,'place-1');assert.deepEqual(evidence.legs[0].start,changed.legs[0].geometry[0]);
+ assert.match(evidence.limitation,/not a walkable shortcut/);
+ const r=await replay(t,false,false,false,false,undefined,false,undefined,'short');
+ await assert.rejects(runFactory(r.runtime,r.tools,r.options),/three proposals/);
+ for(const phase of ['route-plan-1','route-plan-2']){
+  const task=r.runtime.job.tasks.find(t=>t.scope===phase)!;
+  const context=JSON.parse(await readFile(join(r.directory,'requests',task.operationId+'-context.json'),'utf8'));
+  const input=JSON.parse(context.input[0].content);
+  assert.deepEqual(input.offlineMap.bounds,[-.191,51.548,-.136,51.585]);
+  if(phase==='route-plan-1')assert.equal(input.previousRouting,null);
+  else{assert.equal(input.previousRouting.legs.length,5);assert.ok(input.previousRouting.legs.every((leg:{geometryMetres:number})=>leg.geometryMetres>0));}
+ }
+ assert.equal(r.runtime.job.counters.route,3);assert.equal(r.buildCalls(),0);
 });
