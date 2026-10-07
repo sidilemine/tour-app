@@ -1,5 +1,9 @@
 # Product
 
+## Local automated factory — 7 October 2026
+
+Sidi explicitly authorized completing and testing a local automated factory with a fresh 60-minute Hampstead loop, no walking constraints and no previous authored material. This supersedes the earlier requirement to wait for an E1 factory decision for this local assignment only. The US$0 direct paid ceiling, existing consented Astra medium route, offline playback and physical-evidence boundaries remain. [Actual outcome and acceptance limits](docs/content/generation/factory/RESULTS.md). The first live run is blocked before route approval; no completed fresh tour is claimed.
+
 ## Bounded generation prototype — 6 October 2026
 
 The owner authorized the first local file-driven generation workflow and one supervised 60-minute Farringdon loop, selecting reversible proposal defaults under US$0 direct paid usage. [Implementation and actual outcomes](docs/content/generation/RESULTS.md) distinguish drafted content, validated package, account access and real experience. This explicit local slice does not accept E1 or authorize a production factory. Offline playback, privacy and progress contracts remain unchanged.

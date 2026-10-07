@@ -1,0 +1,1033 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-06T23:57:06.762Z",
+  "job": {
+    "id": "hampstead-fresh-factory",
+    "createdAt": "2026-10-06T23:37:41.168Z",
+    "updatedAt": "2026-10-06T23:54:41.210Z",
+    "deadline": "2026-10-06T23:57:41.168Z",
+    "status": "blocked",
+    "reason": "[\n  {\n    \"origin\": \"string\",\n    \"code\": \"too_small\",\n    \"minimum\": 1,\n    \"inclusive\": true,\n    \"path\": [\n      \"sources\",\n      12,\n      \"passage\"\n    ],\n    \"message\": \"Too small: expected string to have >=1 characters\"\n  },\n  {\n    \"origin\": \"string\",\n    \"code\": \"too_small\",\n    \"minimum\": 1,\n    \"inclusive\": true,\n    \"path\": [\n      \"sources\",\n      13,\n      \"passage\"\n    ],\n    \"message\": \"Too small: expected string to have >=1 characters\"\n  },\n  {\n    \"origin\": \"string\",\n    \"code\": \"too_small\",\n    \"minimum\": 1,\n    \"inclusive\": true,\n    \"path\": [\n      \"sources\",\n      14,\n      \"passage\"\n    ],\n    \"message\": \"Too small: expected string to have >=1 characters\"\n  },\n  {\n    \"origin\": \"string\",\n    \"code\": \"too_small\",\n    \"minimum\": 1,\n    \"inclusive\": true,\n    \"path\": [\n      \"sources\",\n      15,\n      \"passage\"\n    ],\n    \"message\": \"Too small: expected string to have >=1 characters\"\n  }\n]",
+    "counters": {
+      "candidates": [
+        "hampstead-fresh-factory-c01",
+        "hampstead-fresh-factory-c02",
+        "hampstead-fresh-factory-c03",
+        "hampstead-fresh-factory-c04",
+        "hampstead-fresh-factory-c05",
+        "hampstead-fresh-factory-c06",
+        "hampstead-fresh-factory-c07",
+        "hampstead-fresh-factory-c08",
+        "hampstead-fresh-factory-c09",
+        "hampstead-fresh-factory-c10"
+      ],
+      "research": 1,
+      "route": 1,
+      "correction": 0,
+      "render": {}
+    },
+    "conditions": {
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "promptHashes": {
+        "survey-1": "0d7083167972a8b9a4ef78f88f366ac2a2979814e9fe2cec9253fd65cad30f0a",
+        "survey-2": "0d7083167972a8b9a4ef78f88f366ac2a2979814e9fe2cec9253fd65cad30f0a",
+        "research-1": "c7c43755e24056feba42f38ea50ed25754a0ea4c5016ede8d787e92d52f7d4f1",
+        "research-2": "c7c43755e24056feba42f38ea50ed25754a0ea4c5016ede8d787e92d52f7d4f1",
+        "research-3": "c7c43755e24056feba42f38ea50ed25754a0ea4c5016ede8d787e92d52f7d4f1",
+        "research-4": "c7c43755e24056feba42f38ea50ed25754a0ea4c5016ede8d787e92d52f7d4f1",
+        "route-plan-1-1": "96387d9521e516b05d493ba4e34d337d7b438ae69aa0cd7743642b6d11c5f7fe",
+        "physical-research-1-1": "cf51350e9f5da2704bd982da5ea29a3a4c79eef3ba4a35ab428c4d26140acde0",
+        "physical-research-1-2": "cf51350e9f5da2704bd982da5ea29a3a4c79eef3ba4a35ab428c4d26140acde0",
+        "physical-research-1-3": "cf51350e9f5da2704bd982da5ea29a3a4c79eef3ba4a35ab428c4d26140acde0",
+        "physical-research-1-4": "cf51350e9f5da2704bd982da5ea29a3a4c79eef3ba4a35ab428c4d26140acde0",
+        "physical-research-1-5": "cf51350e9f5da2704bd982da5ea29a3a4c79eef3ba4a35ab428c4d26140acde0",
+        "physical-research-1-6": "cf51350e9f5da2704bd982da5ea29a3a4c79eef3ba4a35ab428c4d26140acde0"
+      },
+      "tools": [
+        "hosted web_search",
+        "bounded public read_page",
+        "Valhalla pedestrian",
+        "local George"
+      ],
+      "startingEvidence": "d248be2057549b81908ed4ff667ea2e992e6215ba87ce60ca05da9b3a8b5e9d8",
+      "voice": "local Kokoro George",
+      "qualityFloor": "Current evidence, essential physical access, worthwhile interpretation, listening and actual offline package checks",
+      "mode": "subscription"
+    },
+    "events": [
+      {
+        "at": "2026-10-06T23:37:41.168Z",
+        "type": "record",
+        "detail": "brief@1"
+      },
+      {
+        "at": "2026-10-06T23:37:41.179Z",
+        "type": "task-queued",
+        "detail": "survey-1"
+      },
+      {
+        "at": "2026-10-06T23:37:41.179Z",
+        "type": "dispatch",
+        "detail": "operation-1"
+      },
+      {
+        "at": "2026-10-06T23:37:42.892Z",
+        "type": "settled",
+        "detail": "operation-1"
+      },
+      {
+        "at": "2026-10-06T23:37:42.913Z",
+        "type": "terminal",
+        "detail": "blocked"
+      },
+      {
+        "at": "2026-10-06T23:40:29.317Z",
+        "type": "factory-technical-retry-permit",
+        "detail": "{\"phase\":\"survey\",\"operationId\":\"operation-1\",\"binding\":\"0d7083167972a8b9a4ef78f88f366ac2a2979814e9fe2cec9253fd65cad30f0a\",\"evidence\":\"Checked HTTP 400 invalid_json_schema at text.format.schema; removed unsupported uri format and string length keywords from wire schema only; local Zod validation and original deadline retained.\"}"
+      },
+      {
+        "at": "2026-10-06T23:40:29.326Z",
+        "type": "task-queued",
+        "detail": "survey-2"
+      },
+      {
+        "at": "2026-10-06T23:40:29.327Z",
+        "type": "dispatch",
+        "detail": "operation-2"
+      },
+      {
+        "at": "2026-10-06T23:40:29.334Z",
+        "type": "factory-technical-retry-used",
+        "detail": "operation-1"
+      },
+      {
+        "at": "2026-10-06T23:41:58.751Z",
+        "type": "settled",
+        "detail": "operation-2"
+      },
+      {
+        "at": "2026-10-06T23:41:58.765Z",
+        "type": "returned",
+        "detail": "survey-2"
+      },
+      {
+        "at": "2026-10-06T23:41:58.771Z",
+        "type": "counter",
+        "detail": "candidates:hampstead-fresh-factory-c01"
+      },
+      {
+        "at": "2026-10-06T23:41:58.771Z",
+        "type": "counter",
+        "detail": "candidates:hampstead-fresh-factory-c02"
+      },
+      {
+        "at": "2026-10-06T23:41:58.771Z",
+        "type": "counter",
+        "detail": "candidates:hampstead-fresh-factory-c03"
+      },
+      {
+        "at": "2026-10-06T23:41:58.771Z",
+        "type": "counter",
+        "detail": "candidates:hampstead-fresh-factory-c04"
+      },
+      {
+        "at": "2026-10-06T23:41:58.771Z",
+        "type": "counter",
+        "detail": "candidates:hampstead-fresh-factory-c05"
+      },
+      {
+        "at": "2026-10-06T23:41:58.771Z",
+        "type": "counter",
+        "detail": "candidates:hampstead-fresh-factory-c06"
+      },
+      {
+        "at": "2026-10-06T23:41:58.771Z",
+        "type": "counter",
+        "detail": "candidates:hampstead-fresh-factory-c07"
+      },
+      {
+        "at": "2026-10-06T23:41:58.771Z",
+        "type": "counter",
+        "detail": "candidates:hampstead-fresh-factory-c08"
+      },
+      {
+        "at": "2026-10-06T23:41:58.771Z",
+        "type": "counter",
+        "detail": "candidates:hampstead-fresh-factory-c09"
+      },
+      {
+        "at": "2026-10-06T23:41:58.771Z",
+        "type": "counter",
+        "detail": "candidates:hampstead-fresh-factory-c10"
+      },
+      {
+        "at": "2026-10-06T23:41:58.778Z",
+        "type": "task-queued",
+        "detail": "research-1"
+      },
+      {
+        "at": "2026-10-06T23:41:58.778Z",
+        "type": "dispatch",
+        "detail": "operation-3"
+      },
+      {
+        "at": "2026-10-06T23:42:09.373Z",
+        "type": "settled",
+        "detail": "operation-3"
+      },
+      {
+        "at": "2026-10-06T23:42:10.699Z",
+        "type": "returned",
+        "detail": "research-1"
+      },
+      {
+        "at": "2026-10-06T23:42:10.710Z",
+        "type": "task-queued",
+        "detail": "research-2"
+      },
+      {
+        "at": "2026-10-06T23:42:10.710Z",
+        "type": "dispatch",
+        "detail": "operation-4"
+      },
+      {
+        "at": "2026-10-06T23:42:19.355Z",
+        "type": "settled",
+        "detail": "operation-4"
+      },
+      {
+        "at": "2026-10-06T23:42:19.419Z",
+        "type": "returned",
+        "detail": "research-2"
+      },
+      {
+        "at": "2026-10-06T23:42:19.426Z",
+        "type": "task-queued",
+        "detail": "research-3"
+      },
+      {
+        "at": "2026-10-06T23:42:19.426Z",
+        "type": "dispatch",
+        "detail": "operation-5"
+      },
+      {
+        "at": "2026-10-06T23:42:25.123Z",
+        "type": "settled",
+        "detail": "operation-5"
+      },
+      {
+        "at": "2026-10-06T23:42:25.296Z",
+        "type": "returned",
+        "detail": "research-3"
+      },
+      {
+        "at": "2026-10-06T23:42:25.305Z",
+        "type": "task-queued",
+        "detail": "research-4"
+      },
+      {
+        "at": "2026-10-06T23:42:25.305Z",
+        "type": "dispatch",
+        "detail": "operation-6"
+      },
+      {
+        "at": "2026-10-06T23:43:47.435Z",
+        "type": "settled",
+        "detail": "operation-6"
+      },
+      {
+        "at": "2026-10-06T23:43:47.454Z",
+        "type": "returned",
+        "detail": "research-4"
+      },
+      {
+        "at": "2026-10-06T23:43:47.464Z",
+        "type": "counter",
+        "detail": "route:"
+      },
+      {
+        "at": "2026-10-06T23:43:47.464Z",
+        "type": "factory-allowance",
+        "detail": "route-plan-1"
+      },
+      {
+        "at": "2026-10-06T23:43:47.474Z",
+        "type": "task-queued",
+        "detail": "route-plan-1-1"
+      },
+      {
+        "at": "2026-10-06T23:43:47.474Z",
+        "type": "dispatch",
+        "detail": "operation-7"
+      },
+      {
+        "at": "2026-10-06T23:44:20.212Z",
+        "type": "settled",
+        "detail": "operation-7"
+      },
+      {
+        "at": "2026-10-06T23:44:20.226Z",
+        "type": "returned",
+        "detail": "route-plan-1-1"
+      },
+      {
+        "at": "2026-10-06T23:44:20.234Z",
+        "type": "terminal",
+        "detail": "blocked"
+      },
+      {
+        "at": "2026-10-06T23:47:42.005Z",
+        "type": "factory-local-fix-resume",
+        "detail": "Checked local failure Unknown stop: route refusal was represented by invalid IDs. Producer now rejects that proposal without routing and requests targeted actual map/image research within the original research and route caps; old phases retained."
+      },
+      {
+        "at": "2026-10-06T23:47:42.028Z",
+        "type": "counter",
+        "detail": "research:"
+      },
+      {
+        "at": "2026-10-06T23:47:42.028Z",
+        "type": "factory-allowance",
+        "detail": "physical-research-1"
+      },
+      {
+        "at": "2026-10-06T23:47:42.035Z",
+        "type": "task-queued",
+        "detail": "physical-research-1-1"
+      },
+      {
+        "at": "2026-10-06T23:47:42.035Z",
+        "type": "dispatch",
+        "detail": "operation-8"
+      },
+      {
+        "at": "2026-10-06T23:47:49.011Z",
+        "type": "settled",
+        "detail": "operation-8"
+      },
+      {
+        "at": "2026-10-06T23:48:00.368Z",
+        "type": "returned",
+        "detail": "physical-research-1-1"
+      },
+      {
+        "at": "2026-10-06T23:48:00.375Z",
+        "type": "task-queued",
+        "detail": "physical-research-1-2"
+      },
+      {
+        "at": "2026-10-06T23:48:00.375Z",
+        "type": "dispatch",
+        "detail": "operation-9"
+      },
+      {
+        "at": "2026-10-06T23:48:13.208Z",
+        "type": "settled",
+        "detail": "operation-9"
+      },
+      {
+        "at": "2026-10-06T23:48:50.569Z",
+        "type": "returned",
+        "detail": "physical-research-1-2"
+      },
+      {
+        "at": "2026-10-06T23:48:50.579Z",
+        "type": "task-queued",
+        "detail": "physical-research-1-3"
+      },
+      {
+        "at": "2026-10-06T23:48:50.579Z",
+        "type": "dispatch",
+        "detail": "operation-10"
+      },
+      {
+        "at": "2026-10-06T23:48:59.469Z",
+        "type": "settled",
+        "detail": "operation-10"
+      },
+      {
+        "at": "2026-10-06T23:49:16.661Z",
+        "type": "returned",
+        "detail": "physical-research-1-3"
+      },
+      {
+        "at": "2026-10-06T23:49:16.669Z",
+        "type": "task-queued",
+        "detail": "physical-research-1-4"
+      },
+      {
+        "at": "2026-10-06T23:49:16.669Z",
+        "type": "dispatch",
+        "detail": "operation-11"
+      },
+      {
+        "at": "2026-10-06T23:49:23.794Z",
+        "type": "settled",
+        "detail": "operation-11"
+      },
+      {
+        "at": "2026-10-06T23:49:32.609Z",
+        "type": "returned",
+        "detail": "physical-research-1-4"
+      },
+      {
+        "at": "2026-10-06T23:49:32.620Z",
+        "type": "task-queued",
+        "detail": "physical-research-1-5"
+      },
+      {
+        "at": "2026-10-06T23:49:32.620Z",
+        "type": "dispatch",
+        "detail": "operation-12"
+      },
+      {
+        "at": "2026-10-06T23:49:41.338Z",
+        "type": "settled",
+        "detail": "operation-12"
+      },
+      {
+        "at": "2026-10-06T23:49:54.426Z",
+        "type": "returned",
+        "detail": "physical-research-1-5"
+      },
+      {
+        "at": "2026-10-06T23:49:54.434Z",
+        "type": "terminal",
+        "detail": "blocked"
+      },
+      {
+        "at": "2026-10-06T23:52:20.955Z",
+        "type": "factory-finalization-permit",
+        "detail": "physical-research-1"
+      },
+      {
+        "at": "2026-10-06T23:52:20.955Z",
+        "type": "factory-local-fix",
+        "detail": "Checked completed tool-loop cap: all five tool rounds and outputs are retained. Final slot did not require synthesis. Recover once with tools/search disabled to summarize already retrieved map/image evidence; preserve deadline and work counters."
+      },
+      {
+        "at": "2026-10-06T23:52:20.987Z",
+        "type": "task-queued",
+        "detail": "physical-research-1-6"
+      },
+      {
+        "at": "2026-10-06T23:52:20.987Z",
+        "type": "dispatch",
+        "detail": "operation-13"
+      },
+      {
+        "at": "2026-10-06T23:52:20.993Z",
+        "type": "factory-finalization-used",
+        "detail": "physical-research-1"
+      },
+      {
+        "at": "2026-10-06T23:54:41.192Z",
+        "type": "settled",
+        "detail": "operation-13"
+      },
+      {
+        "at": "2026-10-06T23:54:41.210Z",
+        "type": "terminal",
+        "detail": "blocked"
+      }
+    ]
+  },
+  "startingInputs": {
+    "brief": {
+      "schemaVersion": 1,
+      "id": "hampstead-fresh-factory",
+      "area": "Hampstead, London",
+      "start": "Hampstead Underground station, public exterior",
+      "end": "Hampstead Underground station, public exterior",
+      "durationSeconds": 3600,
+      "access": "Daytime, public exterior stops; ordinary hills and public steps allowed; no paid admission required",
+      "audience": {
+        "reason": "Discover worthwhile, less obvious stories and understand the places we encounter",
+        "assumedKnowledge": "Little neighbourhood knowledge",
+        "intendedDiscovery": "Determined through fresh area research; warm documentary narration with revealing supported detail",
+        "presentAnchor": "Actual exterior places and public viewpoints on the selected loop"
+      },
+      "voice": "local Kokoro George",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "directPaidCeilingUsd": 0,
+      "mapId": "hampstead-0abcc26a600e0718",
+      "freshContentOnly": true,
+      "requirements": [
+        "Use a fresh survey of published walks before our own selection and scripting",
+        "Do not use previous project tour research, candidates, routes or scripts",
+        "Write original narration from read source evidence, preserving material qualifications",
+        "Public accessible exterior standing points are distinct from landmarks and camera locations",
+        "Include return walking and actual measured narration in the hour estimate",
+        "Retain AI provenance, saved map, planned directions and manual playback/navigation fallback",
+        "Do not claim human listening or an outdoor visit from desktop checks"
+      ]
+    },
+    "briefSha256": "d248be2057549b81908ed4ff667ea2e992e6215ba87ce60ca05da9b3a8b5e9d8",
+    "authoredInputs": [],
+    "reuse": [
+      "player",
+      "bundled map",
+      "George renderer",
+      "generic editorial guidance"
+    ],
+    "implementationSha256": {
+      "runtime.ts": "a484f6ed6b725acb109bcafa6c522f318103c1d3b174098a0a1c2c972e6996b6",
+      "pipeline.ts": "7a3961e32ab6449ee85d71fc42e749a8db33a4d2e1baf858caa478e9871f13b8",
+      "contracts.ts": "00cd957efafc308899e7a2abdd833bb33bc87b2f3907760cf7dcd227c8788f32",
+      "public-tools.ts": "59819a62900cf3bd95daa2816a6578baae4698dcb041a7128a99db93c601fc03",
+      "../builder.ts": "425c840c9595f4e30fdfb9cdb3826194a4ff7458a24b847643cbf87e29436182",
+      "../provider.ts": "1d11797adb8eb40e1699ad8abfae50647ca570d679bdd8f15240cf137c4b0f29"
+    },
+    "freshContentOnly": true
+  },
+  "observed": {
+    "survey": {
+      "binding": "0d7083167972a8b9a4ef78f88f366ac2a2979814e9fe2cec9253fd65cad30f0a",
+      "result": {
+        "publishedWalks": [
+          {
+            "title": "Hampstead circular walk — National Trust",
+            "url": "https://static.nationaltrust.org.uk/trails/visit/london/fenton-house-and-garden/hampstead-circular-walk-walking.pdf",
+            "stops": [
+              "Hampstead Underground station",
+              "Holly Hill and Holly Bush Hill",
+              "Fenton House",
+              "Hampstead Observatory",
+              "Whitestone Garden",
+              "Hampstead Heath and Viaduct Pond",
+              "Hampstead bathing ponds",
+              "Keats House",
+              "2 Willow Road",
+              "Burgh House",
+              "Flask Walk",
+              "Return to Hampstead Underground station"
+            ],
+            "themes": [
+              "Architectural variety and Heath landscapes; publisher's route, not our proposed loop. PDF pages 1–2, stages 1–13. ([static.nationaltrust.org.uk](https://static.nationaltrust.org.uk/trails/visit/london/fenton-house-and-garden/hampstead-circular-walk-walking.pdf))"
+            ],
+            "stories": [
+              "Identifies 2 Willow Road as the Goldfinger family home and Burgh House as the local museum. This is primarily a directions guide rather than an anecdotal tour. Publication date unspecified. ([static.nationaltrust.org.uk](https://static.nationaltrust.org.uk/trails/visit/london/fenton-house-and-garden/hampstead-circular-walk-walking.pdf))"
+            ]
+          },
+          {
+            "title": "A history walk in Hampstead, the quaintest of urban villages — Camden Guides",
+            "url": "https://camdenguides.com/camden-at-60-join-camden-guide-elena-on-a-walk-around-historic-spa-town-hampstead/",
+            "stops": [
+              "Well Walk",
+              "Holly Bush",
+              "Fenton House",
+              "Burgh House",
+              "Church Row",
+              "Wells and Campden Baths",
+              "New End former workhouse and infirmary",
+              "St John's graveyard"
+            ],
+            "themes": [
+              "Spa culture, health, class differences and campaigning women; featured places, not a complete ordered itinerary. ([camdenguides.com](https://camdenguides.com/camden-at-60-join-camden-guide-elena-on-a-walk-around-historic-spa-town-hampstead/))"
+            ],
+            "stories": [
+              "Elena Paolini's April 20, 2025 article advertises medicinal-water beliefs, working households behind wealthy streets, New End's institutional past, and Eva Gore-Booth and Esther Roper. Lines 88–124. ([camdenguides.com](https://camdenguides.com/camden-at-60-join-camden-guide-elena-on-a-walk-around-historic-spa-town-hampstead/))",
+              "Laundresses' sheets resembling snow is explicitly presented as legend, not established observation. Lines 85–86. ([camdenguides.com](https://camdenguides.com/camden-at-60-join-camden-guide-elena-on-a-walk-around-historic-spa-town-hampstead/))"
+            ]
+          },
+          {
+            "title": "Hampstead Village and Heath — English Walks",
+            "url": "https://www.english-walks.com/walk-hampstead-village-and-heath.html",
+            "stops": [
+              "Hampstead tube station",
+              "Church Row",
+              "St John's church and churchyard",
+              "Mount Vernon",
+              "Holly Bush",
+              "Fenton House",
+              "Hampstead Observatory and reservoir",
+              "Admiral's House",
+              "Flask pub",
+              "Burgh House",
+              "Keats House"
+            ],
+            "themes": [
+              "English-language learning through village history, hidden alleys, architecture and literary associations. Explicit itinerary at lines 76–87; publication date unspecified. ([english-walks.com](https://www.english-walks.com/walk-hampstead-village-and-heath.html))"
+            ],
+            "stories": [
+              "Advertises Mount Vernon's hospital past, Admiral's House's nautical appearance, spa-water bottling at the Flask, and Keats's final English home. These are provider claims requiring historical verification before narration. ([english-walks.com](https://www.english-walks.com/walk-hampstead-village-and-heath.html))",
+              "Also advertises Marx's Heath picnics and a Dracula–churchyard association; neither establishes a precise outdoor storytelling location. Lines 74–75 and 118–125. ([english-walks.com](https://www.english-walks.com/walk-hampstead-village-and-heath.html))"
+            ]
+          },
+          {
+            "title": "Hampstead Village Walk — London Guided Walks",
+            "url": "https://londonguidedwalks.co.uk/guidedwalk/hampstead-village/",
+            "stops": [],
+            "themes": [
+              "Artistic and intellectual residents, historical plaques, village streets and the Heath; advertises a 90-minute circular walk that is not step-free. No explicit ordered stop list found in the provider description. Lines 126–144. ([londonguidedwalks.co.uk](https://londonguidedwalks.co.uk/guidedwalk/hampstead-village/))"
+            ],
+            "stories": [
+              "Advertises Keats and Ode to a Nightingale, Romney's portraiture, Constable's Heath paintings and inspiration for Stoker's Dracula. These describe advertised content, not verified historical propositions for our narration. Publication date unspecified. ([londonguidedwalks.co.uk](https://londonguidedwalks.co.uk/guidedwalk/hampstead-village/))",
+              "A customer review mentions Admiral's House and a film-character connection. This is testimonial evidence, not a guaranteed advertised stop or corroborated anecdote. Lines 231–233. ([londonguidedwalks.co.uk](https://londonguidedwalks.co.uk/guidedwalk/hampstead-village/))"
+            ]
+          }
+        ],
+        "candidates": [
+          {
+            "id": "hampstead-fresh-factory-c01",
+            "name": "Church Row — reading social status in the street",
+            "why": "Proposed anchor: public pavement, not a house entrance. Investigate how the architecture expresses wealth; intended discovery is social history rather than celebrity spotting. Lead: Camden Guides, lines 106–111. Exact standing point unverified. ([camdenguides.com](https://camdenguides.com/camden-at-60-join-camden-guide-elena-on-a-walk-around-historic-spa-town-hampstead/))",
+            "leadUrls": [
+              "https://camdenguides.com/camden-at-60-join-camden-guide-elena-on-a-walk-around-historic-spa-town-hampstead/"
+            ]
+          },
+          {
+            "id": "hampstead-fresh-factory-c02",
+            "name": "St John's boundary — Eva Gore-Booth and Esther Roper",
+            "why": "Proposed anchor: public exterior by the churchyard. Investigate the campaigning pair advertised by Camden Guides, lines 124–125. Offers a less familiar human story; grave visibility and any gate-dependent access remain unresolved. ([camdenguides.com](https://camdenguides.com/camden-at-60-join-camden-guide-elena-on-a-walk-around-historic-spa-town-hampstead/))",
+            "leadUrls": [
+              "https://camdenguides.com/camden-at-60-join-camden-guide-elena-on-a-walk-around-historic-spa-town-hampstead/"
+            ]
+          },
+          {
+            "id": "hampstead-fresh-factory-c03",
+            "name": "Mount Vernon — health-seeking Hampstead",
+            "why": "English Walks identifies a former infectious-disease hospital, lines 79–80. Investigate the actual surviving building and institution before selection. Proposed anchor: public street exterior; discovery would contrast picturesque surroundings with medical history. ([english-walks.com](https://www.english-walks.com/walk-hampstead-village-and-heath.html))",
+            "leadUrls": [
+              "https://www.english-walks.com/walk-hampstead-village-and-heath.html"
+            ]
+          },
+          {
+            "id": "hampstead-fresh-factory-c04",
+            "name": "Holly Bush Hill — work behind the picturesque village",
+            "why": "Proposed anchor: public lane near the pub, without entering. Investigate the laundress association; retain the snow-like sheets only as attributed legend, if useful. Avoid turning occupational context into an invented individual story. ([camdenguides.com](https://camdenguides.com/camden-at-60-join-camden-guide-elena-on-a-walk-around-historic-spa-town-hampstead/))",
+            "leadUrls": [
+              "https://camdenguides.com/camden-at-60-join-camden-guide-elena-on-a-walk-around-historic-spa-town-hampstead/"
+            ]
+          },
+          {
+            "id": "hampstead-fresh-factory-c05",
+            "name": "Fenton House gates — domestic wealth made visible",
+            "why": "Proposed anchor: public pavement facing the gates, explicitly noticed in National Trust stages 2–3. Research ownership and wealth rather than require paid interiors. Exterior sightline and safe stopping space remain unverified. ([static.nationaltrust.org.uk](https://static.nationaltrust.org.uk/trails/visit/london/fenton-house-and-garden/hampstead-circular-walk-walking.pdf))",
+            "leadUrls": [
+              "https://static.nationaltrust.org.uk/trails/visit/london/fenton-house-and-garden/hampstead-circular-walk-walking.pdf"
+            ]
+          },
+          {
+            "id": "hampstead-fresh-factory-c06",
+            "name": "Hampstead Observatory — neighbourhood science",
+            "why": "National Trust stage 4 supplies the location lead. Proposed anchor: nearby public street, not observatory grounds. Investigate who established and used it; offers science beyond the survey's recurrent literary themes. No observing session required. ([static.nationaltrust.org.uk](https://static.nationaltrust.org.uk/trails/visit/london/fenton-house-and-garden/hampstead-circular-walk-walking.pdf))",
+            "leadUrls": [
+              "https://static.nationaltrust.org.uk/trails/visit/london/fenton-house-and-garden/hampstead-circular-walk-walking.pdf"
+            ]
+          },
+          {
+            "id": "hampstead-fresh-factory-c07",
+            "name": "Admiral's House — architecture and accumulated stories",
+            "why": "English Walks advertises nautical features and an eccentric naval owner, lines 82–83. Treat ownership and inspiration stories as unverified leads. Proposed anchor: public lane viewpoint; discovery would distinguish visible architecture from later storytelling. ([english-walks.com](https://www.english-walks.com/walk-hampstead-village-and-heath.html))",
+            "leadUrls": [
+              "https://www.english-walks.com/walk-hampstead-village-and-heath.html"
+            ]
+          },
+          {
+            "id": "hampstead-fresh-factory-c08",
+            "name": "New End — former workhouse and infirmary",
+            "why": "Investigate the institutional history advertised by Camden Guides, line 112. Proposed anchor: public pavement facing the identified surviving building. Strong counterpoint to affluent streets; exact address and building phases require verification. ([camdenguides.com](https://camdenguides.com/camden-at-60-join-camden-guide-elena-on-a-walk-around-historic-spa-town-hampstead/))",
+            "leadUrls": [
+              "https://camdenguides.com/camden-at-60-join-camden-guide-elena-on-a-walk-around-historic-spa-town-hampstead/"
+            ]
+          },
+          {
+            "id": "hampstead-fresh-factory-c09",
+            "name": "Well Walk — water sold as health",
+            "why": "Investigate the spa advertised in Camden Guides, lines 88–89. Proposed anchor: public pavement beside a verified surviving marker. Explain historical medicinal beliefs without endorsing efficacy; distinguish commemorative fabric from original infrastructure. ([camdenguides.com](https://camdenguides.com/camden-at-60-join-camden-guide-elena-on-a-walk-around-historic-spa-town-hampstead/))",
+            "leadUrls": [
+              "https://camdenguides.com/camden-at-60-join-camden-guide-elena-on-a-walk-around-historic-spa-town-hampstead/"
+            ]
+          },
+          {
+            "id": "hampstead-fresh-factory-c10",
+            "name": "2 Willow Road — a different idea of home",
+            "why": "National Trust stage 11 identifies Goldfinger's modernist family home. Proposed anchor: public pavement opposite, not museum admission. Architectural contrast could reward beginners; this is an alternative candidate pending loop timing, not a committed detour. ([static.nationaltrust.org.uk](https://static.nationaltrust.org.uk/trails/visit/london/fenton-house-and-garden/hampstead-circular-walk-walking.pdf))",
+            "leadUrls": [
+              "https://static.nationaltrust.org.uk/trails/visit/london/fenton-house-and-garden/hampstead-circular-walk-walking.pdf"
+            ]
+          }
+        ],
+        "gaps": [
+          "Status: fresh survey and proposed candidate pool only; no accepted route, script, publication, saved-map update or audio. Candidate numbering is a stable identifier sequence, not walking order.",
+          "Input retained: brief schemaVersion 1; id hampstead-fresh-factory; mapId hampstead-0abcc26a600e0718; freshContentOnly true; durationSeconds 3600; directPaidCeilingUsd 0. No separate input revision was supplied; none has been invented.",
+          "Audience retained exactly: reason = Discover worthwhile, less obvious stories and understand the places we encounter; assumedKnowledge = Little neighbourhood knowledge; intendedDiscovery = Determined through fresh area research; warm documentary narration with revealing supported detail; presentAnchor = Actual exterior places and public viewpoints on the selected loop.",
+          "Constraints retained: Hampstead Underground station, public exterior, for both start and end; daytime public exterior stops; ordinary hills and public steps allowed; no paid admission required. Requested production settings remain local Kokoro George, gpt-6-astra and medium effort; none was invoked or verified.",
+          "Evidence status: the four opened publishers support what their walks advertise, not independent validation of every historical claim. Source families are one heritage organisation and three walking-tour providers. Search snippets were used only for discovery. Provider testimonials were kept distinct from provider descriptions.",
+          "Exact-passage blocker: no read_page tool was available. Hosted web open supplied readable pages and line locators, but no verbatim evidentiary passages have been returned as read_page extracts. Passage-level evidence retention remains incomplete.",
+          "Reuse: no source licence was established. Retain links, locators and original factual paraphrases for research; do not copy tour scripts, photographs, audio or route graphics. Historical narration requires independently read supporting evidence and preserved qualifications.",
+          "Freshness: research context dated October 6, 2026. The Camden article is dated April 20, 2025 and advertises an April 25, 2025 event, not a current departure. The other surveyed documents do not establish publication dates in the read material. No tour availability is asserted.",
+          "Failed attempt: the Footprints of London Alleys and Lanes of Hampstead result returned HTTP 404 when opened. It was excluded from the published-walk catalogue rather than reconstructed from its snippet.",
+          "Negative finding: London Guided Walks did not provide an explicit ordered stop list in the read description. Its stops array is intentionally empty; reviews and image captions were not promoted into a guaranteed itinerary.",
+          "Timing blocker: the National Trust advertises 4 km and 50–75 minutes for its own route; that cannot establish a one-hour narrated loop for this job. Our walking, crossings, return leg, pauses and actual rendered narration remain unmeasured. ([static.nationaltrust.org.uk](https://static.nationaltrust.org.uk/trails/visit/london/fenton-house-and-garden/hampstead-circular-walk-walking.pdf))",
+          "Access blocker: all candidate standing places are proposals, distinct from landmark locations and photographic viewpoints. Pavement width, crossings, steps, sightlines, gates and temporary restrictions have not been checked. No field visit or human listening is claimed.",
+          "Selection question: should the loop prioritise social and institutional history over an observatory/modernist-architecture extension if both cannot fit the hour? Recommendation: test the compact social-history option first, retaining the architectural extension as an alternative.",
+          "Interpretation question: is a churchyard-related story acceptable when told entirely from a public boundary without seeing the named grave? If not, c02 needs verified exterior visibility or replacement.",
+          "Unavailable project guidance: docs/ISSUES.md and the referenced LEAD, RES, ROUTE, REVIEW, VOICE and PKG issue texts were not supplied or accessible. Their specific acceptance requirements have not been checked.",
+          "Usage: one fresh research context; three hosted web calls containing two search queries and seven open requests, including repeat page reads and one failed fetch. No paid service, purchase, booking, synthesis or external write was initiated; direct paid spend was $0.",
+          "Recommended next action: retain this survey, resolve the two selection questions, then perform bounded historical and standing-point checks on the preferred subset. Measure a station-to-station route before acceptance. After acceptance, research only named blockers; subsequently measure rendered narration, retain AI provenance, save the authorised map and planned directions, and supply manual playback/navigation fallback. Returning these proposals does not constitute acceptance."
+        ]
+      },
+      "completedAt": "2026-10-06T23:41:58.764Z",
+      "operationId": "operation-2"
+    },
+    "sourceCount": 5,
+    "claimCount": 13,
+    "sourceReferences": [
+      {
+        "id": "hff-src-01",
+        "title": "History of Fenton House",
+        "url": "https://www.nationaltrust.org.uk/visit/london/fenton-house-and-garden/history-of-fenton-house"
+      },
+      {
+        "id": "hff-src-02",
+        "title": "New End Hospital (formerly Hampstead Union Workhouse and Infirmary)",
+        "url": "https://historicengland.org.uk/research/results/reports/95-1992"
+      },
+      {
+        "id": "hff-src-03",
+        "title": "Admiral's House — List Entry 1378582",
+        "url": "https://historicengland.org.uk/listing/the-list/list-entry/1378582"
+      },
+      {
+        "id": "hff-src-04",
+        "title": "Hampstead Scientific Society — History",
+        "url": "https://www.hampsteadscience.ac.uk/history.html"
+      },
+      {
+        "id": "hff-src-05",
+        "title": "Hampstead Scientific Society — Access to lectures and observatory",
+        "url": "https://www.hampsteadscience.ac.uk/findus.html"
+      }
+    ],
+    "route": null,
+    "build": null
+  },
+  "usage": {
+    "model": "gpt-6-astra",
+    "effort": "medium",
+    "rows": [
+      {
+        "operationId": "operation-1",
+        "taskId": "survey-1",
+        "role": "research",
+        "stage": "factory-survey",
+        "state": "settled",
+        "failure": "invalid_json_schema",
+        "directChargedUsd": 0,
+        "activeSeconds": 1.713,
+        "inputTokens": null,
+        "outputTokens": null,
+        "cachedInputTokens": null,
+        "reasoningTokens": null,
+        "totalTokens": null,
+        "apiEquivalentRangeUsd": null,
+        "usageUncertainty": "Observed token usage and a dated model price quote are required; no production cost inferred."
+      },
+      {
+        "operationId": "operation-2",
+        "taskId": "survey-2",
+        "role": "research",
+        "stage": "factory-survey",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 89.424,
+        "inputTokens": 28254,
+        "outputTokens": 3625,
+        "cachedInputTokens": 4096,
+        "reasoningTokens": 191,
+        "totalTokens": 31879,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.426926,
+          "upper": 0.487321
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-3",
+        "taskId": "research-1",
+        "role": "research",
+        "stage": "factory-research",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 10.595,
+        "inputTokens": 17475,
+        "outputTokens": 248,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 83,
+        "totalTokens": 17723,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.153742,
+          "upper": 0.1881495
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-4",
+        "taskId": "research-2",
+        "role": "research",
+        "stage": "factory-research",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 8.645,
+        "inputTokens": 24897,
+        "outputTokens": 94,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 60,
+        "totalTokens": 24991,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.220262,
+          "upper": 0.2732245
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-5",
+        "taskId": "research-3",
+        "role": "research",
+        "stage": "factory-research",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 5.697,
+        "inputTokens": 20797,
+        "outputTokens": 102,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 13,
+        "totalTokens": 20899,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.179662,
+          "upper": 0.2223745
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-6",
+        "taskId": "research-4",
+        "role": "research",
+        "stage": "factory-research",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 82.13,
+        "inputTokens": 21450,
+        "outputTokens": 4467,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 140,
+        "totalTokens": 25917,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.40444199999999997,
+          "upper": 0.448787
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-7",
+        "taskId": "route-plan-1-1",
+        "role": "route",
+        "stage": "factory-route-plan-1",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 32.738,
+        "inputTokens": 8047,
+        "outputTokens": 1167,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 69,
+        "totalTokens": 9214,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.13882,
+          "upper": 0.1589375
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-8",
+        "taskId": "physical-research-1-1",
+        "role": "research",
+        "stage": "factory-physical-research-1",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 6.976,
+        "inputTokens": 13450,
+        "outputTokens": 226,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 13676,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.1458,
+          "upper": 0.179425
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-9",
+        "taskId": "physical-research-1-2",
+        "role": "research",
+        "stage": "factory-physical-research-1",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 12.833,
+        "inputTokens": 88931,
+        "outputTokens": 251,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 41,
+        "totalTokens": 89182,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.868452,
+          "upper": 1.0814995
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-10",
+        "taskId": "physical-research-1-3",
+        "role": "research",
+        "stage": "factory-physical-research-1",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 8.89,
+        "inputTokens": 127586,
+        "outputTokens": 241,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 0,
+        "totalTokens": 127827,
+        "apiEquivalentRangeUsd": {
+          "lower": 1.2545019999999998,
+          "upper": 1.564187
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-11",
+        "taskId": "physical-research-1-4",
+        "role": "research",
+        "stage": "factory-physical-research-1",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 7.125,
+        "inputTokens": 135535,
+        "outputTokens": 53,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 18,
+        "totalTokens": 135588,
+        "apiEquivalentRangeUsd": {
+          "lower": 1.324592,
+          "upper": 1.6541495
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-12",
+        "taskId": "physical-research-1-5",
+        "role": "research",
+        "stage": "factory-physical-research-1",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 8.718,
+        "inputTokens": 135607,
+        "outputTokens": 92,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 57,
+        "totalTokens": 135699,
+        "apiEquivalentRangeUsd": {
+          "lower": 1.327262,
+          "upper": 1.6569995
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-13",
+        "taskId": "physical-research-1-6",
+        "role": "research",
+        "stage": "factory-physical-research-1",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 140.205,
+        "inputTokens": 149759,
+        "outputTokens": 6919,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 121,
+        "totalTokens": 156678,
+        "apiEquivalentRangeUsd": {
+          "lower": 1.84354,
+          "upper": 2.2179374999999997
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      }
+    ],
+    "byRole": [
+      {
+        "role": "research",
+        "operations": 12,
+        "operationsWithUnknownTokens": 1,
+        "observedInputTokens": 763741,
+        "operationsWithUnknownInput": 1,
+        "observedOutputTokens": 16318,
+        "operationsWithUnknownOutput": 1,
+        "observedCachedInputTokens": 33792,
+        "operationsWithUnknownCache": 1,
+        "observedReasoningTokens": 724,
+        "operationsWithUnknownReasoning": 1,
+        "operationsWithUnknownCharge": 0,
+        "directChargedUsd": 0,
+        "observedApiEquivalentRangeUsd": {
+          "lower": 8.149182,
+          "upper": 9.9740545
+        },
+        "operationsWithoutEstimate": 1
+      },
+      {
+        "role": "route",
+        "operations": 1,
+        "operationsWithUnknownTokens": 0,
+        "observedInputTokens": 8047,
+        "operationsWithUnknownInput": 0,
+        "observedOutputTokens": 1167,
+        "operationsWithUnknownOutput": 0,
+        "observedCachedInputTokens": 0,
+        "operationsWithUnknownCache": 0,
+        "observedReasoningTokens": 69,
+        "operationsWithUnknownReasoning": 0,
+        "operationsWithUnknownCharge": 0,
+        "directChargedUsd": 0,
+        "observedApiEquivalentRangeUsd": {
+          "lower": 0.13882,
+          "upper": 0.1589375
+        },
+        "operationsWithoutEstimate": 0
+      }
+    ],
+    "estimateBasis": {
+      "model": "gpt-6-astra",
+      "date": "2026-10-06",
+      "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "inputPerMillionUsd": 10,
+      "cachedInputPerMillionUsd": 1,
+      "cacheWritePerMillionUsd": 12.5,
+      "outputPerMillionUsd": 50,
+      "longContextThreshold": 272000,
+      "longContextInputMultiplier": 2,
+      "longContextOutputMultiplier": 1.5
+    },
+    "limitations": "Reasoning tokens are included in output, never added again. Standard token-only API-equivalent range; cache writes, tools, taxes and subscription/API parity are uncertain. Unknown requests are excluded from observed subtotals, never treated as free or zero-token."
+  },
+  "limitations": [
+    "Implementation assistant/helper tokens are unavailable and excluded from runtime totals.",
+    "Token-only API-equivalent estimates are not paid subscription charges. Hosted tool fees/parity are not measured.",
+    "No human listening or field visit is inferred from software checks.",
+    "This report excludes credentials, encrypted provider history and complete fetched page text."
+  ]
+}

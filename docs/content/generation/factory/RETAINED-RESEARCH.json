@@ -1,0 +1,468 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-07T00:01:47.518Z",
+  "originalOperationId": "operation-13",
+  "status": "retained-output-valid-under-repaired-visual-contract",
+  "promotedToJob": false,
+  "reason": "Original generation deadline expired; no additional inference or acceptance",
+  "claimsStatus": "Proposed; independent tour-content verification not run",
+  "observedImageReceipts": {
+    "https://s0.geograph.org.uk/geophotos/05/80/25/5802584_0ffa076d.jpg": {
+      "sha256": "21947d9aec70261503fbf02f88d54d63a6e22b8570cf9fee81cd2d74b87c306e"
+    },
+    "https://ezitis.myzen.co.uk/newend17.jpg": {
+      "sha256": "e4dd33ede916347d073d513e3672c57f4b883c97514b669d5859009abeb2eaad"
+    },
+    "https://www.hampsteadscience.ac.uk/images/observatory_main.jpg": {
+      "sha256": "89987b5213f6c853640c80ec050999bae21e4ebc201f215239954e5bb7ae690d"
+    },
+    "https://nt.global.ssl.fastly.net/binaries/content/gallery/website/national/regions/london/places/fenton-house-and-garden/library/summer/exterior-summer-fenton-house-london-1083410.jpg?auto=webp&width=1200&crop=16:9": {
+      "sha256": "d94e7c5ae7863eb3ed18772688185d5e95d53e2fadc34423b007aca80651f1ed"
+    }
+  },
+  "research": {
+    "sources": [
+      {
+        "id": "hff-src-01",
+        "url": "https://www.nationaltrust.org.uk/visit/london/fenton-house-and-garden/history-of-fenton-house",
+        "title": "History of Fenton House",
+        "origin": "National Trust, property custodian; heritage-organisation family. Publication date unspecified. read_page retrieval October 6, 2026, subsequently returned from cache. No reuse licence established; factual paraphrase and minimal quotation only.",
+        "passage": "It was a speculative investment which he intended to sell on completion.",
+        "locator": "The house as a home, opening paragraph; gate cipher in paragraph beginning 'From the outside'; Gee connections in The garden."
+      },
+      {
+        "id": "hff-src-02",
+        "url": "https://historicengland.org.uk/research/results/reports/95-1992",
+        "title": "New End Hospital (formerly Hampstead Union Workhouse and Infirmary)",
+        "origin": "Historic England; Colin Thom, RCHME report 95/1992. Web record published October 19, 2023; read_page retrieval October 6, 2026. Official heritage-research family. Reuse licence not established for this page.",
+        "passage": "It provided three floors of wards, each 50 feet in diameter, and each capable of holding 24 beds positioned radially against the outer wall.",
+        "locator": "HTML report abstract, following Charles Bell's circular ward tower; preceding sentences cover Kendall, Giles and planning reform. PDF not read."
+      },
+      {
+        "id": "hff-src-03",
+        "url": "https://historicengland.org.uk/listing/the-list/list-entry/1378582",
+        "title": "Admiral's House — List Entry 1378582",
+        "origin": "Historic England, official heritage-register family; amended February 11, 2016; read_page retrieval October 6, 2026. Official text available under OGL v3.0 except where stated; maps and contributed photographs have separate rights.",
+        "passage": "It was North who constructed the quarterdeck on the roof of the house, from which he is said to have fired cannons",
+        "locator": "History, paragraph beginning 'From circa 1775 to 1811'; subsequent paragraphs cover naming; Details, Exterior describes decks."
+      },
+      {
+        "id": "hff-src-04",
+        "url": "https://www.hampsteadscience.ac.uk/history.html",
+        "title": "Hampstead Scientific Society — History",
+        "origin": "Observatory operator; first-party institutional family. Publication date unspecified; read_page retrieval October 6, 2026. No reuse licence established.",
+        "passage": "in 1910 the Observatory, as we know it today, was established, built on top of the newly constructed underground reservoir",
+        "locator": "History — Observatory, opening paragraph; telescope offer and Society formation precede this passage; Halley's Comet follows."
+      },
+      {
+        "id": "hff-src-05",
+        "url": "https://www.hampsteadscience.ac.uk/findus.html",
+        "title": "Hampstead Scientific Society — Access to lectures and observatory",
+        "origin": "Observatory operator; same family as hff-src-04. Publication date unspecified; read_page retrieval October 6, 2026. No reuse licence established.",
+        "passage": "Go through the gap, onto Hampstead Grove Turn right, going away from Fenton House The Observatory is on the left.",
+        "locator": "Observatory, final pedestrian directions."
+      },
+      {
+        "id": "hff-src-06",
+        "url": "https://www.hampsteadscience.ac.uk/observatory.html",
+        "title": "Hampstead Scientific Society — Observatory",
+        "origin": "Observatory operator; same institutional family as hff-src-04. read_page retrieval October 6, 2026; page includes 2026/27 information and older reports. No reuse licence established.",
+        "passage": "entry is only possible by booking a (free) ticket from eventbrite",
+        "locator": "2026/27 season; How to find us and Telescopes sections provide site and dome descriptions."
+      },
+      {
+        "id": "hff-src-07",
+        "url": "https://www.geograph.org.uk/photo/5802584",
+        "title": "Admiral's House, Hampstead — Jim Osley",
+        "origin": "Geograph, contributor photography family; submitted June 10, 2018; read_page retrieval October 6, 2026. Photograph credited to Jim Osley, CC BY-SA 2.0.",
+        "passage": "Date Taken Friday, 8 June, 2018",
+        "locator": "Photograph metadata: subject WGS84 51:33.5811N 0:10.8049W; camera OSGB36 TQ 2628 8606; view northwest."
+      },
+      {
+        "id": "hff-src-08",
+        "url": "https://ezitis.myzen.co.uk/newend.html",
+        "title": "Lost Hospitals of London — New End Hospital",
+        "origin": "Independent hospital-history website; secondary local-history family. Present-status section dated December 2007, update January 2012, references accessed June 8, 2019. read_page retrieval October 6, 2026. No reuse licence established.",
+        "passage": "The site is now a gated estate. The old ward blocks were converted and refurbished for residential use in 1996-1998.",
+        "locator": "Present status (December 2007); photograph captions identify former buildings and views. Historical dates differ from Historic England in places."
+      },
+      {
+        "id": "hff-map-01",
+        "url": "https://overpass-api.de/api/interpreter#query-67297501425b475223d077838a26c63d12426a66001048104c961a84c6a26196",
+        "title": "Mapped streets and footways around Hampstead Grove",
+        "origin": "Actual read_map result; OpenStreetMap contributors via Overpass, ODbL. Retrieved October 6, 2026, 23:47:52Z; map data 23:46:36Z. Truncated response.",
+        "passage": "current public access, safe standing and visibility are unverified.",
+        "locator": "Way 29155571, public footway east of reservoir; way 29077291, footway south of Admiral's Walk; street geometry and steps."
+      },
+      {
+        "id": "hff-map-02",
+        "url": "https://overpass-api.de/api/interpreter#query-bc4d22cb33983a6737b672ecbcf7ec1984ebfff58fa268053965865a1fa34c41",
+        "title": "Admiral's Walk and reservoir boundary",
+        "origin": "Actual read_map result; OpenStreetMap contributors via Overpass, ODbL. Retrieved October 6, 2026, 23:48:41Z; map data 23:47:35Z. Truncated response.",
+        "passage": "Hampstead Reservoir",
+        "locator": "Reservoir polygon way 29624267; footway 29077291; Admiral's Walk way 29155791; Scott plaque node 7976357378."
+      },
+      {
+        "id": "hff-map-03",
+        "url": "https://overpass-api.de/api/interpreter#query-8f19e17ac7c08c4fac52c79aae639d865f380a1ceddfbe23036bb72525eefa01",
+        "title": "New End surviving buildings, private estate and public approaches",
+        "origin": "Actual read_map result; OpenStreetMap contributors via Overpass, ODbL. Retrieved October 6, 2026, 23:48:49Z; map data 23:47:35Z. Truncated response.",
+        "passage": "Kendall's Hall",
+        "locator": "Building way 105554803; Rotunda way 105554804; public footway 29217600; New End way 754767528; private Upper Hampstead Walk ways 157005638 and 964037259."
+      },
+      {
+        "id": "hff-map-04",
+        "url": "https://overpass-api.de/api/interpreter#query-89532f23d41c750159de1f0513bb14bfdefc6087471bce2135de5b1ad8d3a5b4",
+        "title": "Fenton House building, gate and Hampstead Grove",
+        "origin": "Actual read_map result; OpenStreetMap contributors via Overpass, ODbL. Retrieved October 6, 2026, 23:49:54Z; map data 23:48:35Z. Truncated response.",
+        "passage": "Fenton House",
+        "locator": "Building way 110388485; gate node 1260776785; road way 67601588 with right-side pavement; customer-only paths inside."
+      },
+      {
+        "id": "hff-img-01",
+        "url": "https://s0.geograph.org.uk/geophotos/05/80/25/5802584_0ffa076d.jpg",
+        "title": "Admiral's House exterior photograph",
+        "origin": "Actual read_image result, subsequently visually inspected from returned image. Jim Osley/Geograph, CC BY-SA 2.0; same source family as hff-src-07. Retrieved October 6, 2026. Tool captureDate unknown; hosting page explicitly dates photograph June 8, 2018.",
+        "passage": "",
+        "locator": "Image shows pale rendered elevations, roof railings, projecting upper bay, glazed extension and entrance steps; observations are not a textual quotation."
+      },
+      {
+        "id": "hff-img-02",
+        "url": "https://ezitis.myzen.co.uk/newend17.jpg",
+        "title": "Former New End Hospital street frontage",
+        "origin": "Actual read_image result, subsequently visually inspected. Lost Hospitals of London; same family as hff-src-08. Retrieved October 6, 2026. Capture date and exact camera position unknown; reuse licence not established.",
+        "passage": "",
+        "locator": "Image shows a long red-brick frontage with pale dressings, railings and an adjoining pavement; no circular tower visible in this image."
+      },
+      {
+        "id": "hff-img-03",
+        "url": "https://www.hampsteadscience.ac.uk/images/observatory_main.jpg",
+        "title": "Observatory entrance and dome",
+        "origin": "Actual read_image result, subsequently visually inspected. Society page credits Andrew Rennie; operator family. Retrieved October 6, 2026. Capture date unknown; reuse licence not established.",
+        "passage": "",
+        "locator": "Image shows railings and entrance sign in foreground, steps beyond and a dome behind. Camera coordinates unknown; not evidence of an identical view from the proposed standing point."
+      },
+      {
+        "id": "hff-img-04",
+        "url": "https://nt.global.ssl.fastly.net/binaries/content/gallery/website/national/regions/london/places/fenton-house-and-garden/library/summer/exterior-summer-fenton-house-london-1083410.jpg?auto=webp&width=1200&crop=16:9",
+        "title": "Fenton House from its garden",
+        "origin": "Actual read_image result, subsequently visually inspected. National Trust Images/Arnhel de Serra; custodian family. Retrieved October 6, 2026. Capture date unknown; photograph reuse not authorised.",
+        "passage": "",
+        "locator": "Garden-side image shows red brick, pale-framed windows, tiled roof and dormers. Interior garden camera viewpoint is not the proposed public viewpoint."
+      }
+    ],
+    "claims": [
+      {
+        "id": "hff-cl-01",
+        "text": "Fenton House began as a speculative development: William Eades built it in the 1680s intending to sell it on completion.",
+        "sourceIds": [
+          "hff-src-01"
+        ],
+        "qualifications": [
+          "Candidate hampstead-fresh-factory-c05.",
+          "Do not imply its present appearance is wholly original."
+        ]
+      },
+      {
+        "id": "hff-cl-02",
+        "text": "Fenton House's golden gates carry the cipher of Joshua and Anna Gee, residents from 1706 to 1730.",
+        "sourceIds": [
+          "hff-src-01"
+        ],
+        "qualifications": [
+          "Candidate hampstead-fresh-factory-c05.",
+          "Supported in The house as a home; cipher legibility is not required for this stop.",
+          "The mapped entrance gate has not independently been identified as the particular golden gate."
+        ]
+      },
+      {
+        "id": "hff-cl-03",
+        "text": "The Gees created Fenton House's extensive walled garden in the early eighteenth century; the National Trust identifies Joshua as a Quaker with American trade connections and links to William Penn.",
+        "sourceIds": [
+          "hff-src-01"
+        ],
+        "qualifications": [
+          "Candidate hampstead-fresh-factory-c05; source locator The garden.",
+          "No precise commodity, transaction or exploitation story attributable to the gate or garden is established here."
+        ]
+      },
+      {
+        "id": "hff-cl-04",
+        "text": "The New End complex included a workhouse built in 1849–50 and designed by H. E. Kendall, before its later hospital identity.",
+        "sourceIds": [
+          "hff-src-02"
+        ],
+        "qualifications": [
+          "Candidate hampstead-fresh-factory-c08.",
+          "Different building phases must remain distinct.",
+          "The independent hospital-history page gives different early dates; use the official report's chronology with attribution rather than silently harmonising them."
+        ]
+      },
+      {
+        "id": "hff-cl-05",
+        "text": "Historic England interprets New End's 1869 dispensary and infirmary as a shift from provision for destitution towards provision for sickness, and links their planning to contemporary reform.",
+        "sourceIds": [
+          "hff-src-02"
+        ],
+        "qualifications": [
+          "Candidate hampstead-fresh-factory-c08.",
+          "Institutional interpretation, not a named patient's testimony.",
+          "The report associates narrow wards and tall windows with Nightingale's ideas; it does not say she designed the buildings."
+        ]
+      },
+      {
+        "id": "hff-cl-06",
+        "text": "Charles Bell's 1884–85 circular ward tower at New End had three ward floors, each 50 feet across, accommodating 24 beds arranged radially against the outer wall.",
+        "sourceIds": [
+          "hff-src-02"
+        ],
+        "qualifications": [
+          "Candidate hampstead-fresh-factory-c08.",
+          "The Rotunda is mapped behind the frontage, within the private estate.",
+          "Do not promise tower visibility or describe the street frontage as circular; this detail is optional contextual history, not the required visible anchor."
+        ]
+      },
+      {
+        "id": "hff-cl-07",
+        "text": "Admiral's House's rooftop quarterdeck was added by Fountain North, whom the official history describes as a former naval captain rather than an admiral.",
+        "sourceIds": [
+          "hff-src-03"
+        ],
+        "qualifications": [
+          "Candidate hampstead-fresh-factory-c07.",
+          "North lived there approximately 1775–1811; the property's name is not evidence of his rank."
+        ]
+      },
+      {
+        "id": "hff-cl-08",
+        "text": "The claim that North fired rooftop cannons to celebrate naval victories is explicitly qualified as something he is said to have done.",
+        "sourceIds": [
+          "hff-src-03"
+        ],
+        "qualifications": [
+          "Candidate hampstead-fresh-factory-c07.",
+          "Retain attribution and uncertainty; no invented witnessed firing or dialogue."
+        ]
+      },
+      {
+        "id": "hff-cl-09",
+        "text": "The official history connects a print titled Admiral Barton's Hampstead with confusion over the house's identity, and says the Fortescues renamed it Admiral's House during their 1917–26 occupancy.",
+        "sourceIds": [
+          "hff-src-03"
+        ],
+        "qualifications": [
+          "Candidate hampstead-fresh-factory-c07.",
+          "Distinguish earlier informal association from later renaming."
+        ]
+      },
+      {
+        "id": "hff-cl-10",
+        "text": "The Society traces its beginnings to an offer of a telescope on condition that it be made available to the public; the Society formed in July 1899.",
+        "sourceIds": [
+          "hff-src-04"
+        ],
+        "qualifications": [
+          "Candidate hampstead-fresh-factory-c06.",
+          "First-party institutional history.",
+          "The offered 10.5-inch reflector was not the later Cooke refractor."
+        ]
+      },
+      {
+        "id": "hff-cl-11",
+        "text": "The observatory was established in 1910 above a newly constructed underground reservoir.",
+        "sourceIds": [
+          "hff-src-04"
+        ],
+        "qualifications": [
+          "Candidate hampstead-fresh-factory-c06.",
+          "The history page gives this chronology; the current observatory page loosely calls the reservoir Victorian.",
+          "Do not repeat the unverified highest-point-in-London superlative."
+        ]
+      },
+      {
+        "id": "hff-cl-12",
+        "text": "The Society reports observations of Halley's Comet from the observatory in both 1910 and 1986, with more than 1,000 public visitors on the latter return.",
+        "sourceIds": [
+          "hff-src-04"
+        ],
+        "qualifications": [
+          "Candidate hampstead-fresh-factory-c06.",
+          "The number describes the 1986 return, not one night or current attendance.",
+          "No observing session is required or promised."
+        ]
+      },
+      {
+        "id": "hff-cl-13",
+        "text": "The operator's pedestrian directions approach the observatory via a pedestrian gap near the south side of Whitestone Pond onto Hampstead Grove.",
+        "sourceIds": [
+          "hff-src-05"
+        ],
+        "qualifications": [
+          "Candidate hampstead-fresh-factory-c06.",
+          "Approach guidance does not grant daytime entry; current observing sessions require free booking and suitable weather."
+        ]
+      },
+      {
+        "id": "hff-cl-14",
+        "text": "The inspected Admiral's House photograph shows pale rendered elevations and railed roof levels; the observatory photograph shows its dome behind a railed entrance.",
+        "sourceIds": [
+          "hff-img-01",
+          "hff-img-03"
+        ],
+        "qualifications": [
+          "Photographic observations, not a field visit or a guarantee of present visibility.",
+          "Visitor standing points are independently proposed from map geometry, not copied from camera locations."
+        ]
+      },
+      {
+        "id": "hff-cl-15",
+        "text": "The New End photograph supports a general street-frontage anchor, while mapping distinguishes the frontage buildings from the Rotunda and private estate access.",
+        "sourceIds": [
+          "hff-img-02",
+          "hff-map-03",
+          "hff-src-08"
+        ],
+        "qualifications": [
+          "Use the former institutional frontage rather than require a view through a gate.",
+          "The photograph's capture date is unknown; the website's residential-conversion statement is explicitly dated historical status, not a live access report."
+        ]
+      }
+    ],
+    "places": [
+      {
+        "candidateId": "hampstead-fresh-factory-c05",
+        "landmark": {
+          "latitude": 51.5588875,
+          "longitude": -0.1795843
+        },
+        "standing": {
+          "latitude": 51.55889,
+          "longitude": -0.17941
+        },
+        "approach": "Use the public pavement on Hampstead Grove. Landmark is a returned vertex on Fenton House's entrance elevation, way 110388485. Standing position is a desktop offset east of road vertex 51.5588874,-0.1794462 onto its mapped right-side pavement, opposite the mapped gate; it is not a surveyed point.",
+        "viewpoint": "Face west towards the house entrance and boundary. The general house-and-gate setting anchors speculative development and successive wealthy residents. Do not require cipher recognition or promise the garden-side composition shown in the National Trust image.",
+        "access": "Public exterior only; no admission or passage through the gate. Keep entrances and pedestrian passage clear; if locally obstructed, move along the same pavement rather than into the carriageway or customer-only grounds. Surface and temporary-clearance contingencies remain on-the-day conditions.",
+        "sourceIds": [
+          "hff-src-01",
+          "hff-map-04",
+          "hff-img-04"
+        ],
+        "essentialUnknowns": []
+      },
+      {
+        "candidateId": "hampstead-fresh-factory-c06",
+        "landmark": {
+          "latitude": 51.5608371,
+          "longitude": -0.1796451
+        },
+        "standing": {
+          "latitude": 51.5608051,
+          "longitude": -0.1794126
+        },
+        "approach": "Use the mapped public footway east of the reservoir, way 29155571, approached from the Whitestone Pond pedestrian connection. Standing is an exact returned footway vertex. Landmark is an exact reservoir-boundary vertex, not an invented dome coordinate.",
+        "viewpoint": "Look west towards the fenced reservoir/observatory site. Water infrastructure supporting public astronomy is the general anchor. The inspected entrance image establishes a dome behind railings but does not establish dome visibility from this particular footway vertex.",
+        "access": "Remain outside the reservoir fence and observatory entrance. Daytime grounds entry is neither established nor needed. No ticket, telescope use or observing session is part of this proposal. Keep the path passable and respond to local works or closures.",
+        "sourceIds": [
+          "hff-src-04",
+          "hff-src-05",
+          "hff-src-06",
+          "hff-map-01",
+          "hff-map-02",
+          "hff-img-03"
+        ],
+        "essentialUnknowns": [
+          "If selection requires seeing the dome rather than the supported reservoir-site exterior anchor, an exact entrance-side public viewpoint still needs verification."
+        ]
+      },
+      {
+        "candidateId": "hampstead-fresh-factory-c07",
+        "landmark": {
+          "latitude": 51.559685,
+          "longitude": -0.1800817
+        },
+        "standing": {
+          "latitude": 51.55951,
+          "longitude": -0.18017
+        },
+        "approach": "Use the public footway south of Admiral's Walk, way 29077291. Standing is interpolated just south of its returned northern endpoint 51.5595326,-0.180168, not in the road. Landmark converts the Geograph subject coordinates from degrees and decimal minutes; it is not the camera location.",
+        "viewpoint": "Look north towards Admiral's House's general upper exterior. The inspected photograph supports pale elevations and roof railings. Tell the distinction between North's rank, architectural additions and accumulated naming stories without requiring plaque reading.",
+        "access": "Private residence: do not use entrance steps, driveway or adjoining private spur. Keep the public footway clear; pause elsewhere on that path if someone needs to pass. The photograph does not certify future clearance or stopping capacity.",
+        "sourceIds": [
+          "hff-src-03",
+          "hff-src-07",
+          "hff-map-01",
+          "hff-map-02",
+          "hff-img-01"
+        ],
+        "essentialUnknowns": []
+      },
+      {
+        "candidateId": "hampstead-fresh-factory-c08",
+        "landmark": {
+          "latitude": 51.5586888,
+          "longitude": -0.177228
+        },
+        "standing": {
+          "latitude": 51.55878,
+          "longitude": -0.177607
+        },
+        "approach": "Use the public footway connecting Elm Row to New End, way 29217600. Standing is interpolated on its returned geometry north of New End, outside the private Upper Hampstead Walk entrance. Landmark is a returned street-facing vertex of mapped Kendall's Hall, way 105554803.",
+        "viewpoint": "Look southeast along the former institutional frontage. The inspected image supports a red-brick and pale-dressed street exterior, not a tower view. Interpret the complex's changing provision for poverty and sickness; do not identify every frontage element as the original workhouse.",
+        "access": "Public exterior only. Do not enter the gated estate or private tunnel/paths to obtain a Rotunda view. Steps connect the footway to Elm Row and are allowed by the brief. Keep the junction and pedestrian passage clear; school activity, deliveries and temporary obstructions are ordinary contingencies.",
+        "sourceIds": [
+          "hff-src-02",
+          "hff-src-08",
+          "hff-map-03",
+          "hff-img-02"
+        ],
+        "essentialUnknowns": []
+      }
+    ],
+    "rejected": [
+      {
+        "candidateId": "hampstead-fresh-factory-c01",
+        "reason": "Not selected for this four-place research subset; remains a survey lead without independently retained historical evidence."
+      },
+      {
+        "candidateId": "hampstead-fresh-factory-c02",
+        "reason": "Deferred: campaigning biography and precise exterior anchor remain unresolved. Grave visibility is not assumed."
+      },
+      {
+        "candidateId": "hampstead-fresh-factory-c03",
+        "reason": "Not selected: surviving hospital identification and the provider's infectious-disease characterisation were not independently resolved."
+      },
+      {
+        "candidateId": "hampstead-fresh-factory-c04",
+        "reason": "Not selected: laundress association remains a provider lead; the snow-like sheets story remains explicitly legendary."
+      },
+      {
+        "candidateId": "hampstead-fresh-factory-c09",
+        "reason": "Not selected: spa history and distinction between original infrastructure and commemorative fabric remain unresearched leads."
+      },
+      {
+        "candidateId": "hampstead-fresh-factory-c10",
+        "reason": "Remove from the proposed physical subset. National Trust reads previously returned browser verification; historical and standing-point evidence remain incomplete. The previous association with hff-src-01 was erroneous and is withdrawn."
+      }
+    ],
+    "gaps": [
+      "Status: four researched exterior proposals, not an ordered route, accepted output, publication or field visit. General anchors replace unnecessary demands to read a cipher, see a telescope or look through a private gate. Returning this artifact does not constitute acceptance.",
+      "Input preserved: brief schemaVersion 1; id hampstead-fresh-factory; area Hampstead, London; mapId hampstead-0abcc26a600e0718; durationSeconds 3600; freshContentOnly true; directPaidCeilingUsd 0. No separate input revision was supplied.",
+      "Audience preserved exactly: reason = Discover worthwhile, less obvious stories and understand the places we encounter; assumedKnowledge = Little neighbourhood knowledge; intendedDiscovery = Determined through fresh area research; warm documentary narration with revealing supported detail; presentAnchor = Actual exterior places and public viewpoints on the selected loop.",
+      "Constraints preserved: start and end Hampstead Underground station, public exterior; daytime public exterior stops; ordinary hills and public steps allowed; no paid admission required. Requested local Kokoro George, gpt-6-astra and medium effort were not invoked or verified.",
+      "Retained survey was used first: National Trust Hampstead circular walk; Camden Guides history walk; English Walks Hampstead Village and Heath; London Guided Walks Hampstead Village Walk. Their advertised themes and stops are discovery evidence, not independent corroboration of historical anecdotes. No previous-project route or script was used.",
+      "All former coarse place coordinates are withdrawn. Returned place coordinates now derive from identified map geometry or published subject coordinates, with interpolation and pavement offsets explicitly labelled. Map precision is not survey accuracy. The observatory landmark coordinate intentionally denotes its reservoir boundary, not the dome.",
+      "Station endpoint blocker remains: returned broad station-area mapping included bus stops and indoor lifts but did not establish an exact Underground-exterior standing point. Neither bus-stop coordinates nor indoor lift coordinates have been substituted for the required endpoint.",
+      "Route work remains: measure actual connecting pedestrian geometry, crossings, hills, return walking and pauses before route acceptance. The earlier 480-second practical allowance and suggested distance range were proposals, not measurements. Actual rendered narration must be measured and overlapping walking/audio time counted only once within 3600 seconds.",
+      "Selection question that changes interpretation: is the reservoir-site exterior sufficient for c06 if the dome is obscured? This artifact recommends yes; requiring the dome creates the specific viewpoint blocker retained in essentialUnknowns.",
+      "Image evidence limits: four actual read_image results were visually inspected. Fenton's garden photograph cannot establish a public-street garden view. Observatory and New End capture dates remain unknown. Geograph's page explicitly dates Admiral's House to June 8, 2018, although read_image metadata itself has a null capture date. No camera position was treated as a lawful visitor position.",
+      "Historical qualification: New End sources disagree over early building dates and tower chronology. Retain Historic England's report chronology with attribution. Its 1992 statement about awaiting redevelopment is not current. The map and older residential-conversion account support avoiding private estate access, not a live occupancy audit.",
+      "Passage retention: page quotations above are actual read_page substrings, with no more than 25 quoted words per source URL. Additional preserved historical propositions have section locators but not individual retained quotations; this remains a passage-level audit limitation. Image-source passage strings are empty because visual observations are not verbatim page passages.",
+      "Map limitations and negative findings: successful results were marked truncated; absence of a gate, pavement or restriction is not proof of absence. Private paths were explicitly found at New End and inside Fenton's grounds. Broad mapping did not independently resolve exact observatory entrance geometry.",
+      "Failed attempts retained: two focused Fenton map requests returned HTTP 429; one observatory-area request exceeded the byte limit and another returned HTTP 504. A later Fenton request succeeded. Hosted search in the physical pass returned no usable visible results. Earlier retained failures include Historic England entry 1379173 HTTP 403, two National Trust Willow Road browser challenges and the survey's Footprints of London HTTP 404.",
+      "Usage visible in the physical-research history: 10 read_map requests, six successful and four failed; eight read_page requests, including five cached retained pages and three newly retrieved pages; four read_image requests; one hosted-search call containing two queries with no usable results. Final synthesis uses retained evidence only. Earlier survey and historical-pass usage remains as supplied rather than being silently merged into an unverifiable lifetime total. Direct paid spend $0; no purchase, booking, audio synthesis or map write.",
+      "Rights and provenance: OpenStreetMap data require ODbL attribution; the Geograph photograph carries CC BY-SA 2.0; Historic England official listing text carries stated OGL terms. Other image reuse is not authorised. Use original factual narration, not copied provider scripts, photographs or route graphics. This is AI-generated desktop research; no human listening or outdoor visit is claimed.",
+      "docs/ISSUES.md and the named issue texts were not supplied or accessible, so their detailed acceptance requirements remain unchecked.",
+      "Recommended next action: review these four general exterior anchors, then resolve the station-exterior endpoint and measure the complete station-to-station walking proposal. Check the c06 viewpoint only if a dome view is required. After route acceptance, research only named blockers. Subsequently measure rendered narration, retain AI provenance, update the authorised saved map, provide planned directions and manual playback/navigation fallback."
+    ]
+  }
+}

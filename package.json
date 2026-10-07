@@ -49,7 +49,8 @@
     "check:map": "node --import tsx tools/maps/check.ts",
     "docs:guide": "node --import tsx tools/guide-docs.ts",
     "docs:check": "node --import tsx tools/guide-docs.ts --check",
-    "generation": "node --import tsx tools/generation/cli.ts"
+    "generation": "node --import tsx tools/generation/cli.ts",
+    "generation:factory": "node --import tsx tools/generation/factory/pipeline.ts"
   },
   "private": true,
   "expo": {

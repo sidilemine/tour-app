@@ -1,0 +1,27 @@
+# Local tour factory
+
+The current assignment is a fresh 60-minute Hampstead station loop. [Actual results and blockers](RESULTS.md), [per-agent usage](COSTS.md), [plan and boundaries](PLAN.md), [typed starting brief](../../../../fixtures/generation/factory/hampstead-brief.json). Previous authored content is excluded. Existing offline map/player and George model files are infrastructure. Software integration passes synthetic complete-flow checks; the first live job is blocked before route approval and has no completed tour package.
+
+```sh
+npm run generation:factory -- fixtures/generation/factory/hampstead-brief.json local-data/generation/hampstead-fresh-factory
+```
+
+Use the existing app-specific sign-in and owner-observed overflow-off evidence. Renewal rotates only that grant. The factory has no API-key or paid fallback. A live search calibration is separately available as `npx tsx tools/generation/factory/preflight.ts <new-ignored-directory>`; it consumes one authorized plan request and retains its actual usage. Do not repeat it routinely.
+
+The command creates an original 20-minute Balanced job. Limits are 16 candidates, two targeted research rounds, three route proposals, two consolidated correction batches and one corrective render per changed clip. Failed work consumes the same allowance. A blocked job is not reset by rerunning the command. Completed phases may be reused only with identical input/prompt/schema bindings; uncertain interrupted requests need inspection rather than automatic replay. Existing complete handoffs print without regenerating. A checked settled provider failure can receive one explicit technical retry per phase with `--retry-known operation-id "checked failure and fix"`; this retains the original deadline, failed round, files and input binding. Unknown dispatches cannot use this shortcut.
+
+`starting-inputs.json` proves the brief and empty authored-input list. `requests/` retains explicit context and observed returns per operation. `phases/` contains typed artifacts bound to exact inputs. Retrieved passages must match actual `read_page` responses; semantic entailment remains an independent review, not a substring test. Source pages are untrusted data. Full source text, provider history and local paths stay private in ignored `local-data/`; retained supporting quotations are minimal.
+
+Physical research can request bounded OSM features and actual JPEG/PNG images. Image sources may have no textual quotation only when matching archived bytes and tool closure prove that the image was supplied to a completed model request. This establishes transport and source identity, not correct visual interpretation or equivalence between camera and visitor positions. Map retrieval is serialized, spatially clipped and capped; imagery dates remain unknown unless sourced. The verifier may reopen retained source URLs to judge a claim in context rather than mistaking a short quotation for the whole source.
+
+The final request in each phase disables tools and requires synthesis from retained evidence. Explicit recovery commands cover checked local integration failures (`--resume-checked`), the old missing-synthesis defect (`--finalize-retained`) and schema revalidation of completed retained text (`--recover-output`). Each needs documented evidence and preserves the original deadline, counters and operations. They do not authorize extra time or overwrite an accepted artifact. `amend-budget.ts` exists for an explicitly approved total elapsed allowance; it records old/new deadlines from the original start and never resumes automatically. It has not been applied to the current job.
+
+`job.json` and `usage.json` retain requests, role, input/output/cache/reasoning tokens, failures, direct charges and dated token-only API-equivalent ranges. Reasoning is already in output tokens. Unknown usage is never zero. These figures measure the generated-tour runtime; implementation-assistant token usage is not available through this ledger. Hosted-tool accounting and subscription/API equivalence remain uncertain; the estimate is not an invoice.
+
+`package-v*/` contains the immutable real player package, review transcripts, complete decoded audio and measured preparation record. Public routing includes the station return. Walking chapters require a launch interval clear of both stops and sufficient time from the latest launch to the next navigation decision. Their audio overlaps walking; stationary audio and looking/crossing allowance are added separately. Public FOSSGIS routing is for bounded personal authoring and is not a production service dependency.
+
+A successful automated handoff is **awaiting listening**, not physically accepted. `handoff.json` states the actual package, timing and remaining observations. No mobile code is changed by factory generation, so the earlier phone acceptance evidence is reused; no new APK or full regression walk is required just to test these authoring tools. A generated tour can be imported through the existing package flow after its required review.
+
+## Verification
+
+Run `npm run typecheck`, `npm run lint`, `npm test` and `npm run docs:check`. Focused factory tests use synthetic evidence and audio transport to exercise the complete flow, correction/failure paths, actual parser, usage preservation, source validation, safe HTTP boundaries, deadlines, immutable cache and no-replay behavior. Synthetic evidence establishes software behavior only; the separate live Hampstead result is required to assess cold-start authoring quality.

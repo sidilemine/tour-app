@@ -287,3 +287,58 @@ test('done output items preserve function history when the completed response om
  const interrupted=await fixture(async url=>String(url).endsWith('/models')?catalog():sse(events.slice(0,1))).request(request);
  assert.equal(interrupted.status,'interrupted','an item done event is not response completion');
 });
+
+test('hosted web search is opt-in on the same zero-direct route with requested source metadata', async () => {
+  const bodies: Record<string, unknown>[] = [];
+  const provider = fixture(async (url, init) => {
+    if (String(url).endsWith('/models')) return catalog();
+    assert.equal(url, RESPONSES_URL);
+    assert.equal((init?.headers as Record<string,string>).Authorization, `Bearer ${credentials.accessToken}`);
+    bodies.push(JSON.parse(String(init?.body)));return sse([completed()]);
+  });
+  const result = await provider.request({...request,webSearch:{allowedDomains:['historicengland.org.uk'],searchContextSize:'low'}});
+  assert.equal(result.status,'completed');assert.equal(result.directChargeUsd,0);
+  assert.deepEqual(bodies[0].tools,[{type:'web_search',search_context_size:'low',filters:{allowed_domains:['historicengland.org.uk']}}]);
+  assert.deepEqual(bodies[0].include,['web_search_call.action.sources']);assert.equal(bodies[0].store,false);assert.equal(bodies[0].stream,true);
+  assert.equal('max_tool_calls' in bodies[0],false);
+  await provider.request(request);assert.equal('tools' in bodies[1],false);assert.equal('include' in bodies[1],false);
+  let calls=0;
+  const denied=await fixture(async()=>{calls++;return catalog();},{overflowEvidence:null}).request({...request,webSearch:{}});
+  assert.equal(denied.status,'blocked');assert.equal(calls,0);
+});
+
+test('search extracts observed tool actions, consulted sources and citation positions from done items', async () => {
+ const search={type:'web_search_call',id:'ws_search',status:'completed',action:{type:'search',queries:['Hampstead published walks'],sources:[{type:'url',url:'https://example.org/walk',title:'Published walk'},{url:'javascript:alert(1)'}]}};
+ const opened={type:'web_search_call',id:'ws_open',status:'completed',action:{type:'open_page',url:'https://example.org/walk'}};
+ const found={type:'web_search_call',id:'ws_find',status:'completed',action:{type:'find_in_page',url:'https://example.org/walk',pattern:'entrance'}};
+ const message={type:'message',id:'msg_research',content:[{type:'output_text',text:'A published walk.',annotations:[{type:'url_citation',url:'https://example.org/walk',title:'Published walk',start_index:0,end_index:16},{type:'url_citation',url:'https://user:pass@example.org/private'}]}]};
+ const events=[{type:'response.web_search_call.in_progress',item_id:'ws_search',output_index:0},{type:'response.web_search_call.searching',item_id:'ws_search',output_index:0},{type:'response.web_search_call.completed',item_id:'ws_search',output_index:0},...[search,opened,found,message].map((item,output_index)=>({type:'response.output_item.done',output_index,item})),{type:'response.completed',response:{status:'completed',output:[],usage:{input_tokens:100,output_tokens:20,total_tokens:120}}}];
+ const result=await fixture(async url=>String(url).endsWith('/models')?catalog():sse(events)).request({...request,webSearch:{}});
+ assert.equal(result.status,'completed');assert.equal(result.text,'A published walk.');assert.equal(result.evidenceKind,'fixture');
+ assert.deepEqual(result.webSearchCalls?.map(call=>call.action.type),['search','open_page','find_in_page']);
+ assert.deepEqual(result.webSearchCalls?.[0].action.queries,['Hampstead published walks']);assert.equal(result.webSearchCalls?.[2].action.pattern,'entrance');
+ assert.deepEqual(result.sources?.map(source=>source.origin),['search-source','opened-page','citation']);
+ assert.deepEqual(result.sources?.at(-1),{url:'https://example.org/walk',origin:'citation',itemId:'msg_research',title:'Published walk',startIndex:0,endIndex:16});
+ assert.equal(result.toolEvents?.length,3);assert.equal(result.usage.totalTokens,120);
+});
+
+test('observed search metadata on interrupted output remains draft evidence, without invented sources from prose', async () => {
+ const events=[{type:'response.output_item.done',output_index:0,item:{type:'web_search_call',id:'ws_draft',status:'completed',action:{type:'search',query:'Hampstead',sources:[{url:'https://example.org/'}]}}},{type:'response.output_text.delta',delta:'Source: https://unobserved.example/'}];
+ const result=await fixture(async url=>String(url).endsWith('/models')?catalog():sse(events)).request({...request,webSearch:{}});
+ assert.equal(result.status,'interrupted');assert.deepEqual(result.output,[]);assert.equal(result.sources?.length,1);assert.equal(result.sources?.[0].url,'https://example.org/');assert.equal(result.webSearchCalls?.[0].id,'ws_draft');
+});
+
+test('web-search policy rejection preserves exact safe diagnosis and does not retry or change billing', async () => {
+ let calls=0;
+ const result=await fixture(async url=>{
+  if(String(url).endsWith('/models'))return catalog();calls++;
+  return Response.json({error:{code:'subscription_sharing_unsupported_capability',param:'tools[0].type',message:'account-specific server text'}},{status:400});
+ }).request({...request,webSearch:{}});
+ assert.equal(result.status,'failed');assert.equal(result.diagnostic.code,'subscription_sharing_unsupported_capability');assert.equal(result.diagnostic.param,'tools[0].type');assert.equal(calls,1);assert.equal(result.directChargeUsd,0);assert.deepEqual(result.sources,[]);
+});
+
+test('invalid search configuration blocks before network',async()=>{
+ let calls=0;const provider=fixture(async()=>{calls++;return catalog();});
+ for(const domains of [[],['https://example.org'],['example.org/path'],['localhost'],Array(101).fill('example.org')])assert.equal((await provider.request({...request,webSearch:{allowedDomains:domains}})).diagnostic.code,'invalid_web_search_options');
+ assert.equal((await provider.request({...request,webSearch:{},tools:[{type:'web_search'}]})).diagnostic.code,'duplicate_web_search_tool');assert.equal(calls,0);
+});

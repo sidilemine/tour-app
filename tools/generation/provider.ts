@@ -21,6 +21,10 @@ export interface ProviderResult {
   effort: string;
   text: string;
   output: JsonRecord[];
+  /** Discovery metadata is not a supporting passage or a factual verification. */
+  sources?: WebSource[];
+  webSearchCalls?: WebSearchCall[];
+  toolEvents?: WebSearchEvent[];
   usage: ObservedUsage;
   elapsedMs: number;
   evidenceKind: 'live' | 'fixture';
@@ -30,6 +34,21 @@ export interface ProviderResult {
   estimatedApiEquivalentUsd: number | null;
   apiEquivalentEstimate?: { lowerUsd: number | null; upperUsd: number | null; reason: string; priceDate?: string; sourceUrl?: string };
 }
+export interface WebSource {
+  url: string;
+  title?: string;
+  origin: 'search-source' | 'citation' | 'opened-page';
+  itemId?: string;
+  startIndex?: number;
+  endIndex?: number;
+}
+export interface WebSearchCall {
+  id: string;
+  status: string;
+  action: { type: string; queries?: string[]; url?: string; pattern?: string };
+  sources: WebSource[];
+}
+export interface WebSearchEvent { type: string; itemId: string; outputIndex?: number }
 export interface ProviderDiagnostic {
   code: string; httpStatus?: number; retryable: boolean; automaticRetries: 0;
   param?: string; requestId?: string; bodyShape?: Record<string, string>; contentType?: string; responseStatus?: string;
@@ -51,6 +70,8 @@ export interface InferenceRequest {
   model?: string;
   effort?: string;
   tools?: JsonRecord[];
+  /** Explicit opt-in on the same overflow-gated plan route; availability is account policy. */
+  webSearch?: { allowedDomains?: string[]; searchContextSize?: 'low' | 'medium' | 'high' };
   jsonSchema?: { name: string; schema: JsonRecord };
   signal?: AbortSignal;
 }
@@ -86,6 +107,39 @@ function textFromOutput(output: JsonRecord[]): string {
   return output.flatMap(item => Array.isArray(item.content) ? item.content : [])
     .map(item => record(item)).filter(item => item.type === 'output_text' && typeof item.text === 'string')
     .map(item => item.text).join('');
+}
+function sourceUrl(value: unknown): string | undefined {
+  if (typeof value !== 'string') return;
+  try { const url = new URL(value); if (['http:', 'https:'].includes(url.protocol) && !url.username && !url.password) return url.href; } catch { /* Not a usable citation URL. */ }
+}
+/** Extract only explicit provider provenance. Model prose mentioning URLs is not tool evidence. */
+export function extractWebSearchEvidence(output: JsonRecord[]): { sources: WebSource[]; webSearchCalls: WebSearchCall[] } {
+  const sources: WebSource[] = [], webSearchCalls: WebSearchCall[] = [];
+  for (const item of output) {
+    const itemId = typeof item.id === 'string' ? item.id : undefined;
+    if (item.type === 'web_search_call') {
+      const action = record(item.action);
+      const callSources: WebSource[] = [];
+      for (const value of Array.isArray(action.sources) ? action.sources : []) {
+        const valueRecord = record(value), url = sourceUrl(valueRecord.url);
+        if (url) callSources.push({ url, origin: 'search-source', ...(itemId ? { itemId } : {}), ...(typeof valueRecord.title === 'string' ? { title: valueRecord.title } : {}) });
+      }
+      const url = sourceUrl(action.url);
+      if (action.type === 'open_page' && url) callSources.push({ url, origin: 'opened-page', ...(itemId ? { itemId } : {}) });
+      const queries = Array.isArray(action.queries) ? action.queries.filter((q): q is string => typeof q === 'string') : typeof action.query === 'string' ? [action.query] : undefined;
+      webSearchCalls.push({ id: itemId ?? '', status: typeof item.status === 'string' ? item.status : 'unknown', action: { type: typeof action.type === 'string' ? action.type : 'unknown', ...(queries ? { queries } : {}), ...(url ? { url } : {}), ...(typeof action.pattern === 'string' ? { pattern: action.pattern } : {}) }, sources: callSources });
+      sources.push(...callSources);
+    }
+    if (item.type === 'message') for (const content of Array.isArray(item.content) ? item.content : []) {
+      const part = record(content);
+      for (const annotation of Array.isArray(part.annotations) ? part.annotations : []) {
+        const citation = record(annotation), url = sourceUrl(citation.url);
+        if (citation.type !== 'url_citation' || !url) continue;
+        sources.push({ url, origin: 'citation', ...(itemId ? { itemId } : {}), ...(typeof citation.title === 'string' ? { title: citation.title } : {}), ...(Number.isInteger(citation.start_index) && Number(citation.start_index) >= 0 ? { startIndex: Number(citation.start_index) } : {}), ...(Number.isInteger(citation.end_index) && Number(citation.end_index) >= 0 ? { endIndex: Number(citation.end_index) } : {}) });
+      }
+    }
+  }
+  return { sources, webSearchCalls };
 }
 
 export class SubscriptionProvider implements ReasoningProvider {
@@ -161,11 +215,15 @@ export class SubscriptionProvider implements ReasoningProvider {
       text: '', output: [], usage: usage(null, 'unavailable'), elapsedMs: 0, evidenceKind: this.evidenceKind,
       diagnostic: { code: 'not_dispatched', retryable: false, automaticRetries: 0 }, directChargeUsd: 0, estimatedApiEquivalentUsd: null,
       apiEquivalentEstimate: { lowerUsd: null, upperUsd: null, reason: 'Observed token usage and a dated model price quote are required; no production cost inferred.' },
+      sources: [], webSearchCalls: [], toolEvents: [],
     };
+    const observedItems = new Map<number, JsonRecord>();
     const finish = (status: ProviderStatus, code: string, httpStatus?: number): ProviderResult => {
       result.status = status;
       result.elapsedMs = Math.max(0, this.now() - started);
       result.diagnostic = { ...result.diagnostic, code, ...(httpStatus ? { httpStatus } : {}), retryable: ['rate_limit_exceeded', 'server_error', 'subscription_sharing_usage_unavailable', 'subscription_sharing_user_unavailable'].includes(code), automaticRetries: 0 };
+      // Partial/failed calls retain provenance for diagnosis, but status still gates use.
+      Object.assign(result, extractWebSearchEvidence(result.output.length ? result.output : [...observedItems.entries()].sort((a,b) => a[0]-b[0]).map(([,item]) => item)));
       const quote = this.options.apiPriceQuote ?? (result.model === DEFAULT_MODEL ? DEFAULT_API_PRICE_QUOTE : result.model===ASTRA_API_PRICE_QUOTE.model?ASTRA_API_PRICE_QUOTE:undefined);
       const u = result.usage;
       if (quote && quote.model === result.model && /^\d{4}-\d{2}-\d{2}$/.test(quote.date) && /^https:\/\/(developers|platform)\.openai\.com\//.test(quote.sourceUrl) && [quote.inputPerMillionUsd, quote.cachedInputPerMillionUsd, quote.outputPerMillionUsd].every(n => Number.isFinite(n) && n >= 0) && u.inputTokens !== null && u.outputTokens !== null) {
@@ -188,6 +246,10 @@ export class SubscriptionProvider implements ReasoningProvider {
     if (blocked) return finish('blocked', blocked);
     if (!request.contextId || !request.instructions || !Array.isArray(request.input) || request.input.some(item => item.role === 'system')) return finish('blocked', 'invalid_explicit_context');
     if (request.tools?.some(tool => !['namespace', 'web_search'].includes(String(tool.type)))) return finish('blocked', 'unsupported_tool_shape');
+    if (request.webSearch && (Object.keys(request.webSearch).some(key => !['allowedDomains', 'searchContextSize'].includes(key)) || (request.webSearch.searchContextSize !== undefined && !['low', 'medium', 'high'].includes(request.webSearch.searchContextSize)) || (request.webSearch.allowedDomains !== undefined && (!Array.isArray(request.webSearch.allowedDomains) || !request.webSearch.allowedDomains.length || request.webSearch.allowedDomains.length > 100 || request.webSearch.allowedDomains.some(domain => typeof domain !== 'string' || !/^(?=.{1,253}$)([a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,63}$/.test(domain)))))) return finish('blocked', 'invalid_web_search_options');
+    if (request.webSearch && request.tools?.some(tool => tool.type === 'web_search')) return finish('blocked', 'duplicate_web_search_tool');
+    const tools = request.webSearch ? [...(request.tools ?? []), { type: 'web_search', ...(request.webSearch.searchContextSize ? { search_context_size: request.webSearch.searchContextSize } : {}), ...(request.webSearch.allowedDomains ? { filters: { allowed_domains: request.webSearch.allowedDomains } } : {}) }] : request.tools;
+    const usesWebSearch = tools?.some(tool => tool.type === 'web_search');
     if (!this.catalog || this.now() - this.catalog.at > 300_000) {
       const catalog = await this.listModels();
       if (catalog.status !== 'completed') {
@@ -203,7 +265,8 @@ export class SubscriptionProvider implements ReasoningProvider {
         redirect: 'error', signal,
         body: JSON.stringify({ model: result.model, reasoning: { effort: result.effort }, instructions: request.instructions,
           input: request.input, store: false, stream: true,
-          ...(request.tools ? { tools: request.tools } : {}),
+          ...(tools ? { tools } : {}),
+          ...(usesWebSearch ? { include: ['web_search_call.action.sources'] } : {}),
           ...(request.jsonSchema ? { text: { format: { type: 'json_schema', name: request.jsonSchema.name, schema: request.jsonSchema.schema, strict: true } } } : {}),
         }),
       });
@@ -239,12 +302,13 @@ export class SubscriptionProvider implements ReasoningProvider {
       const decoder = new TextDecoder();
       let buffer = '';
       let receivedBytes = 0;
-      const completedItems=new Map<number,JsonRecord>();
+      const completedItems=observedItems;
       const consume = (frame: string): ProviderResult | undefined => {
         const data = frame.split('\n').filter(line => line.startsWith('data:')).map(line => line.slice(5).trimStart()).join('\n');
         if (!data || data === '[DONE]') return;
         const event = record(JSON.parse(data));
         if (event.type === 'response.output_text.delta' && typeof event.delta === 'string') result.text += event.delta;
+        if (['response.web_search_call.in_progress', 'response.web_search_call.searching', 'response.web_search_call.completed'].includes(String(event.type)) && typeof event.item_id === 'string') result.toolEvents!.push({ type: String(event.type), itemId: event.item_id, ...(Number.isInteger(event.output_index) && Number(event.output_index) >= 0 ? { outputIndex: Number(event.output_index) } : {}) });
         if(event.type==='response.output_item.done'&&Number.isInteger(event.output_index)&&Number(event.output_index)>=0&&typeof record(event.item).type==='string')completedItems.set(Number(event.output_index),record(event.item));
         const terminal = record(event.response);
         if (['response.completed', 'response.failed', 'response.incomplete'].includes(String(event.type))) {

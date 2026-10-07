@@ -1,5 +1,9 @@
 # Architecture
 
+## Automated local factory — 7 October 2026
+
+`tools/generation/factory/` orchestrates a fresh brief through survey, evidence, route/scout, writing, independent editorial/verification, bounded repairs, local George and the actual player package parser. Phase artifacts bind exact input/prompt/schema hashes; full research/provider history stays in ignored `local-data/`. The existing Job ledger durably records every model request by role before dispatch and preserves measured usage on malformed output. Factory phase acceptance is retained separately from record-graph acceptance: it can produce an independently reviewed desktop draft but never marks the original engine ready or claims human listening. Public requests are read-only, HTTPS/DNS checked, bounded and cached. OAuth renewal keeps the existing application grant and overflow gate. [Operating instructions](docs/content/generation/factory/README.md).
+
 ## Local generation boundary — 6 October 2026
 
 `tools/generation/` adds a supervised TypeScript CLI outside the mobile runtime. Versioned records form exact dependency graphs; atomic JSON job snapshots and a per-job process lock serialize durable dispatch, issue history, budgets and acceptance. Scoped role prompts receive actual retained evidence; task return never commits review acceptance. App-specific SIWC OAuth/streaming uses ignored local credentials, fresh overflow evidence and live capability gates; no API-key dispatch is implemented. The manual pilot assembles through the actual offline package parser, bundled Clerkenwell map and cached local George. [Run/resume and limitations](docs/content/generation/README.md), [demonstrated results](docs/content/generation/RESULTS.md). No backend, mobile account state or normal-tour network dependency is introduced.
