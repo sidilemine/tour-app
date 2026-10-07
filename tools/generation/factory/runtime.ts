@@ -101,7 +101,10 @@ export class FactoryRuntime {
  }
  save(){saveJob(this.jobPath,this.job);writeJSON(join(this.directory,'usage.json'),roleUsage(this.job));}
  remainingMs(){return Date.parse(this.job.deadline)-Date.parse(this.now());}
- assertRunning(){if(this.job.status!=='running'||this.remainingMs()<=0)throw Error(this.job.reason==='Work in progress; no output accepted by execution alone.'?'Generation deadline reached':this.job.reason);}
+ assertRunning(){
+  if(this.remainingMs()<=0)throw Error('Generation deadline reached');
+  if(this.job.status!=='running')throw Error(this.job.reason);
+ }
  /** Revalidate a completed retained return locally after an explicit schema repair, never replay inference. */
  recoverRetainedOutput(phase:string,evidence:string){
   const task=this.job.tasks.filter(t=>t.scope===phase).at(-1),operation=this.job.costLedger.operations.find(o=>o.id===task?.operationId);

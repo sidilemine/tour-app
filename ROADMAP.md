@@ -2,7 +2,7 @@
 
 ## Authorized fresh factory assignment — 7 October 2026
 
-The owner now explicitly authorizes the local factory and a fresh 60-minute Hampstead test, using no previous tour material. This advances the local generation work without asserting E1 enjoyment/comparison acceptance or authorizing a backend, publication or paid usage. Implementation includes supported hosted search, bounded public evidence retrieval, real pedestrian routing, scoped AI roles, independent exact-draft reviews, bounded corrections and measured offline packaging. [Actual outcome and blockers](docs/content/generation/factory/RESULTS.md). Implementation and synthetic complete-flow tests pass; the first live run is blocked before route approval, with fresh research retained and its original time allowance expired. A proposed extension awaits owner approval.
+The owner now explicitly authorizes the local factory and a fresh 60-minute Hampstead test, using no previous tour material. This advances the local generation work without asserting E1 enjoyment/comparison acceptance or authorizing a backend, publication or paid usage. Implementation includes supported hosted search, bounded public evidence retrieval, real pedestrian routing, scoped AI roles, independent exact-draft reviews, bounded corrections and measured offline packaging. [Actual outcome and blockers](docs/content/generation/factory/RESULTS.md). Implementation and synthetic complete-flow tests pass; the first live run is blocked before route approval, with fresh research retained and its original time allowance expired. The owner approved a 45-minute total extension; its continuation retains the original start, all usage and non-time counters.
 
 ## Authorized local generation slice — 6 October 2026
 

@@ -16,8 +16,20 @@ export function amendTimeAllowance(job:Job,totalMinutes:number,ownerDecision:str
  event(job,now,'owner-time-allowance-amendment',JSON.stringify({previousDeadline:job.deadline,deadline,totalMinutes,ownerDecision:ownerDecision.trim(),countersPreserved:true,directPaidCeilingUsd:job.costLedger.ceilingUsd}));
  job.deadline=deadline;
 }
+/** A separately approved continuation starts now; owner waiting cannot consume it before dispatch. */
+export function amendRemainingTimeAllowance(job:Job,minutes:number,ownerDecision:string,now:string){
+ assert.ok(Number.isInteger(minutes)&&minutes>0&&minutes<=60,'Bounded continuation of at most 60 minutes required');
+ assert.ok(ownerDecision.trim().length>=20,'Record explicit approval for time from resumption');
+ assert.ok(!['ready','cancelled','awaiting-decision'].includes(job.status),'Completed jobs cannot be extended');
+ assert.ok(job.costLedger.operations.every(o=>o.state==='settled'),'Reconcile all pending outcomes before an amendment');
+ const deadline=new Date(Date.parse(now)+minutes*60000).toISOString();
+ assert.ok(Date.parse(deadline)>Date.parse(job.deadline),'Continuation must add time, not silently shorten existing allowance');
+ event(job,now,'owner-time-allowance-amendment',JSON.stringify({basis:'from-explicit-resumption',previousDeadline:job.deadline,deadline,additionalMinutesFromNow:minutes,ownerDecision:ownerDecision.trim(),countersPreserved:true,directPaidCeilingUsd:job.costLedger.ceilingUsd}));
+ job.deadline=deadline;
+}
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
- const [directory,minutes,evidence]=process.argv.slice(2);if(!directory||!minutes||!evidence)throw Error('Usage: amend-budget <job directory> <TOTAL minutes> <explicit owner approval>');
+ const [directory,value,third,fourth]=process.argv.slice(2),fromNow=value==='--from-now',minutes=fromNow?third:value,evidence=fromNow?fourth:third;
+ if(!directory||!minutes||!evidence)throw Error('Usage: amend-budget <job directory> [--from-now] <minutes> <explicit owner approval>');
  const path=join(directory,'job.json');
- withJobLock(path,async()=>{const job=loadJob(path);amendTimeAllowance(job,Number(minutes),evidence,new Date().toISOString());saveJob(path,job);process.stdout.write(JSON.stringify({deadline:job.deadline,status:job.status,counters:job.counters})+'\n');}).catch(error=>{process.stderr.write(String(error)+'\n');process.exitCode=1;});
+ withJobLock(path,async()=>{const job=loadJob(path);(fromNow?amendRemainingTimeAllowance:amendTimeAllowance)(job,Number(minutes),evidence,new Date().toISOString());saveJob(path,job);process.stdout.write(JSON.stringify({deadline:job.deadline,status:job.status,counters:job.counters})+'\n');}).catch(error=>{process.stderr.write(String(error)+'\n');process.exitCode=1;});
 }

@@ -3,8 +3,8 @@
   "checkedAt": "2026-10-07T00:01:47.518Z",
   "originalOperationId": "operation-13",
   "status": "retained-output-valid-under-repaired-visual-contract",
-  "promotedToJob": false,
-  "reason": "Original generation deadline expired; no additional inference or acceptance",
+  "promotedToJob": true,
+  "reason": "Read-only validation preceded approval. The same completed output was subsequently recovered and revalidated within the explicitly amended deadline.",
   "claimsStatus": "Proposed; independent tour-content verification not run",
   "observedImageReceipts": {
     "https://s0.geograph.org.uk/geophotos/05/80/25/5802584_0ffa076d.jpg": {
@@ -464,5 +464,11 @@
       "docs/ISSUES.md and the named issue texts were not supplied or accessible, so their detailed acceptance requirements remain unchecked.",
       "Recommended next action: review these four general exterior anchors, then resolve the station-exterior endpoint and measure the complete station-to-station walking proposal. Check the c06 viewpoint only if a dome view is required. After route acceptance, research only named blockers. Subsequently measure rendered narration, retain AI provenance, update the authorised saved map, provide planned directions and manual playback/navigation fallback."
     ]
+  },
+  "promotion": {
+    "at": "2026-10-07T00:20:09Z",
+    "basis": "Owner-approved 45-minute total allowance; explicit retained-output recovery; no inference replay",
+    "artifact": "phases/physical-research-1.json",
+    "independentVerification": "not run"
   }
 }

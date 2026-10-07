@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-06T23:57:06.762Z",
+  "recordedAt": "2026-10-07T00:23:41.180Z",
   "job": {
     "id": "hampstead-fresh-factory",
     "createdAt": "2026-10-06T23:37:41.168Z",
-    "updatedAt": "2026-10-06T23:54:41.210Z",
-    "deadline": "2026-10-06T23:57:41.168Z",
+    "updatedAt": "2026-10-07T00:22:41.083Z",
+    "deadline": "2026-10-07T00:22:41.168Z",
     "status": "blocked",
-    "reason": "[\n  {\n    \"origin\": \"string\",\n    \"code\": \"too_small\",\n    \"minimum\": 1,\n    \"inclusive\": true,\n    \"path\": [\n      \"sources\",\n      12,\n      \"passage\"\n    ],\n    \"message\": \"Too small: expected string to have >=1 characters\"\n  },\n  {\n    \"origin\": \"string\",\n    \"code\": \"too_small\",\n    \"minimum\": 1,\n    \"inclusive\": true,\n    \"path\": [\n      \"sources\",\n      13,\n      \"passage\"\n    ],\n    \"message\": \"Too small: expected string to have >=1 characters\"\n  },\n  {\n    \"origin\": \"string\",\n    \"code\": \"too_small\",\n    \"minimum\": 1,\n    \"inclusive\": true,\n    \"path\": [\n      \"sources\",\n      14,\n      \"passage\"\n    ],\n    \"message\": \"Too small: expected string to have >=1 characters\"\n  },\n  {\n    \"origin\": \"string\",\n    \"code\": \"too_small\",\n    \"minimum\": 1,\n    \"inclusive\": true,\n    \"path\": [\n      \"sources\",\n      15,\n      \"passage\"\n    ],\n    \"message\": \"Too small: expected string to have >=1 characters\"\n  }\n]",
+    "reason": "Provider interrupted: request_aborted_or_timed_out",
     "counters": {
       "candidates": [
         "hampstead-fresh-factory-c01",
@@ -21,8 +21,8 @@
         "hampstead-fresh-factory-c09",
         "hampstead-fresh-factory-c10"
       ],
-      "research": 1,
-      "route": 1,
+      "research": 2,
+      "route": 2,
       "correction": 0,
       "render": {}
     },
@@ -42,7 +42,12 @@
         "physical-research-1-3": "cf51350e9f5da2704bd982da5ea29a3a4c79eef3ba4a35ab428c4d26140acde0",
         "physical-research-1-4": "cf51350e9f5da2704bd982da5ea29a3a4c79eef3ba4a35ab428c4d26140acde0",
         "physical-research-1-5": "cf51350e9f5da2704bd982da5ea29a3a4c79eef3ba4a35ab428c4d26140acde0",
-        "physical-research-1-6": "cf51350e9f5da2704bd982da5ea29a3a4c79eef3ba4a35ab428c4d26140acde0"
+        "physical-research-1-6": "cf51350e9f5da2704bd982da5ea29a3a4c79eef3ba4a35ab428c4d26140acde0",
+        "route-plan-2-1": "5351a54711171bda49533425fcd5b644b1e0c983412aebb9918f2f6007c6339d",
+        "physical-research-2-1": "ebc3cc78064dac0a1bb58d5421c3fecc197dd2b764ba13827fa5cc9fc48f8a4a",
+        "physical-research-2-2": "ebc3cc78064dac0a1bb58d5421c3fecc197dd2b764ba13827fa5cc9fc48f8a4a",
+        "physical-research-2-3": "ebc3cc78064dac0a1bb58d5421c3fecc197dd2b764ba13827fa5cc9fc48f8a4a",
+        "physical-research-2-4": "ebc3cc78064dac0a1bb58d5421c3fecc197dd2b764ba13827fa5cc9fc48f8a4a"
       },
       "tools": [
         "hosted web_search",
@@ -430,6 +435,141 @@
         "at": "2026-10-06T23:54:41.210Z",
         "type": "terminal",
         "detail": "blocked"
+      },
+      {
+        "at": "2026-10-07T00:20:06.478Z",
+        "type": "owner-time-allowance-amendment",
+        "detail": "{\"previousDeadline\":\"2026-10-06T23:57:41.168Z\",\"deadline\":\"2026-10-07T00:22:41.168Z\",\"totalMinutes\":45,\"ownerDecision\":\"Owner explicitly approved increasing this generation test from 20 to 45 minutes total in this task: Yes go ahead. Preserve original start, all counters, usage and US$0 direct paid ceiling.\",\"countersPreserved\":true,\"directPaidCeilingUsd\":0}"
+      },
+      {
+        "at": "2026-10-07T00:20:09.200Z",
+        "type": "factory-retained-output-permit",
+        "detail": "{\"phase\":\"physical-research-1\",\"operationId\":\"operation-13\",\"binding\":\"cf51350e9f5da2704bd982da5ea29a3a4c79eef3ba4a35ab428c4d26140acde0\",\"evidence\":\"Checked archived operation-13 completed. Four image sources legitimately have no text quotation; repaired visual-source contract and completed image-input receipts validate retained text without replay. Preserve old and new bindings and all work counters.\"}"
+      },
+      {
+        "at": "2026-10-07T00:20:09.228Z",
+        "type": "factory-retained-output-used",
+        "detail": "physical-research-1"
+      },
+      {
+        "at": "2026-10-07T00:20:09.268Z",
+        "type": "counter",
+        "detail": "route:"
+      },
+      {
+        "at": "2026-10-07T00:20:09.268Z",
+        "type": "factory-allowance",
+        "detail": "route-plan-2"
+      },
+      {
+        "at": "2026-10-07T00:20:09.275Z",
+        "type": "task-queued",
+        "detail": "route-plan-2-1"
+      },
+      {
+        "at": "2026-10-07T00:20:09.275Z",
+        "type": "dispatch",
+        "detail": "operation-14"
+      },
+      {
+        "at": "2026-10-07T00:20:47.762Z",
+        "type": "settled",
+        "detail": "operation-14"
+      },
+      {
+        "at": "2026-10-07T00:20:47.774Z",
+        "type": "returned",
+        "detail": "route-plan-2-1"
+      },
+      {
+        "at": "2026-10-07T00:20:47.784Z",
+        "type": "counter",
+        "detail": "research:"
+      },
+      {
+        "at": "2026-10-07T00:20:47.784Z",
+        "type": "factory-allowance",
+        "detail": "physical-research-2"
+      },
+      {
+        "at": "2026-10-07T00:20:47.791Z",
+        "type": "task-queued",
+        "detail": "physical-research-2-1"
+      },
+      {
+        "at": "2026-10-07T00:20:47.791Z",
+        "type": "dispatch",
+        "detail": "operation-15"
+      },
+      {
+        "at": "2026-10-07T00:20:57.065Z",
+        "type": "settled",
+        "detail": "operation-15"
+      },
+      {
+        "at": "2026-10-07T00:21:02.653Z",
+        "type": "returned",
+        "detail": "physical-research-2-1"
+      },
+      {
+        "at": "2026-10-07T00:21:02.660Z",
+        "type": "task-queued",
+        "detail": "physical-research-2-2"
+      },
+      {
+        "at": "2026-10-07T00:21:02.660Z",
+        "type": "dispatch",
+        "detail": "operation-16"
+      },
+      {
+        "at": "2026-10-07T00:21:07.927Z",
+        "type": "settled",
+        "detail": "operation-16"
+      },
+      {
+        "at": "2026-10-07T00:21:19.670Z",
+        "type": "returned",
+        "detail": "physical-research-2-2"
+      },
+      {
+        "at": "2026-10-07T00:21:19.677Z",
+        "type": "task-queued",
+        "detail": "physical-research-2-3"
+      },
+      {
+        "at": "2026-10-07T00:21:19.677Z",
+        "type": "dispatch",
+        "detail": "operation-17"
+      },
+      {
+        "at": "2026-10-07T00:21:33.173Z",
+        "type": "settled",
+        "detail": "operation-17"
+      },
+      {
+        "at": "2026-10-07T00:21:35.025Z",
+        "type": "returned",
+        "detail": "physical-research-2-3"
+      },
+      {
+        "at": "2026-10-07T00:21:35.034Z",
+        "type": "task-queued",
+        "detail": "physical-research-2-4"
+      },
+      {
+        "at": "2026-10-07T00:21:35.034Z",
+        "type": "dispatch",
+        "detail": "operation-18"
+      },
+      {
+        "at": "2026-10-07T00:22:41.062Z",
+        "type": "settled",
+        "detail": "operation-18"
+      },
+      {
+        "at": "2026-10-07T00:22:41.083Z",
+        "type": "terminal",
+        "detail": "blocked"
       }
     ]
   },
@@ -674,8 +814,8 @@
       "completedAt": "2026-10-06T23:41:58.764Z",
       "operationId": "operation-2"
     },
-    "sourceCount": 5,
-    "claimCount": 13,
+    "sourceCount": 16,
+    "claimCount": 15,
     "sourceReferences": [
       {
         "id": "hff-src-01",
@@ -701,6 +841,61 @@
         "id": "hff-src-05",
         "title": "Hampstead Scientific Society — Access to lectures and observatory",
         "url": "https://www.hampsteadscience.ac.uk/findus.html"
+      },
+      {
+        "id": "hff-src-06",
+        "title": "Hampstead Scientific Society — Observatory",
+        "url": "https://www.hampsteadscience.ac.uk/observatory.html"
+      },
+      {
+        "id": "hff-src-07",
+        "title": "Admiral's House, Hampstead — Jim Osley",
+        "url": "https://www.geograph.org.uk/photo/5802584"
+      },
+      {
+        "id": "hff-src-08",
+        "title": "Lost Hospitals of London — New End Hospital",
+        "url": "https://ezitis.myzen.co.uk/newend.html"
+      },
+      {
+        "id": "hff-map-01",
+        "title": "Mapped streets and footways around Hampstead Grove",
+        "url": "https://overpass-api.de/api/interpreter#query-67297501425b475223d077838a26c63d12426a66001048104c961a84c6a26196"
+      },
+      {
+        "id": "hff-map-02",
+        "title": "Admiral's Walk and reservoir boundary",
+        "url": "https://overpass-api.de/api/interpreter#query-bc4d22cb33983a6737b672ecbcf7ec1984ebfff58fa268053965865a1fa34c41"
+      },
+      {
+        "id": "hff-map-03",
+        "title": "New End surviving buildings, private estate and public approaches",
+        "url": "https://overpass-api.de/api/interpreter#query-8f19e17ac7c08c4fac52c79aae639d865f380a1ceddfbe23036bb72525eefa01"
+      },
+      {
+        "id": "hff-map-04",
+        "title": "Fenton House building, gate and Hampstead Grove",
+        "url": "https://overpass-api.de/api/interpreter#query-89532f23d41c750159de1f0513bb14bfdefc6087471bce2135de5b1ad8d3a5b4"
+      },
+      {
+        "id": "hff-img-01",
+        "title": "Admiral's House exterior photograph",
+        "url": "https://s0.geograph.org.uk/geophotos/05/80/25/5802584_0ffa076d.jpg"
+      },
+      {
+        "id": "hff-img-02",
+        "title": "Former New End Hospital street frontage",
+        "url": "https://ezitis.myzen.co.uk/newend17.jpg"
+      },
+      {
+        "id": "hff-img-03",
+        "title": "Observatory entrance and dome",
+        "url": "https://www.hampsteadscience.ac.uk/images/observatory_main.jpg"
+      },
+      {
+        "id": "hff-img-04",
+        "title": "Fenton House from its garden",
+        "url": "https://nt.global.ssl.fastly.net/binaries/content/gallery/website/national/regions/london/places/fenton-house-and-garden/library/summer/exterior-summer-fenton-house-london-1083410.jpg?auto=webp&width=1200&crop=16:9"
       }
     ],
     "route": null,
@@ -966,46 +1161,143 @@
           "upper": 2.2179374999999997
         },
         "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-14",
+        "taskId": "route-plan-2-1",
+        "role": "route",
+        "stage": "factory-route-plan-2",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 38.487,
+        "inputTokens": 11975,
+        "outputTokens": 1404,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 33,
+        "totalTokens": 13379,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.18995,
+          "upper": 0.2198875
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-15",
+        "taskId": "physical-research-2-1",
+        "role": "research",
+        "stage": "factory-physical-research-2",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 9.274,
+        "inputTokens": 20327,
+        "outputTokens": 175,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 43,
+        "totalTokens": 20502,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.17861200000000002,
+          "upper": 0.2201495
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-16",
+        "taskId": "physical-research-2-2",
+        "role": "research",
+        "stage": "factory-physical-research-2",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 5.267,
+        "inputTokens": 47557,
+        "outputTokens": 109,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 0,
+        "totalTokens": 47666,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.447612,
+          "upper": 0.5572244999999999
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-17",
+        "taskId": "physical-research-2-3",
+        "role": "research",
+        "stage": "factory-physical-research-2",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 13.496,
+        "inputTokens": 51165,
+        "outputTokens": 126,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 42,
+        "totalTokens": 51291,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.48454200000000003,
+          "upper": 0.6031745
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-18",
+        "taskId": "physical-research-2-4",
+        "role": "research",
+        "stage": "factory-physical-research-2",
+        "state": "settled",
+        "failure": "request_aborted_or_timed_out",
+        "directChargedUsd": 0,
+        "activeSeconds": 66.028,
+        "inputTokens": null,
+        "outputTokens": null,
+        "cachedInputTokens": null,
+        "reasoningTokens": null,
+        "totalTokens": null,
+        "apiEquivalentRangeUsd": null,
+        "usageUncertainty": "Observed token usage and a dated model price quote are required; no production cost inferred."
       }
     ],
     "byRole": [
       {
         "role": "research",
-        "operations": 12,
-        "operationsWithUnknownTokens": 1,
-        "observedInputTokens": 763741,
-        "operationsWithUnknownInput": 1,
-        "observedOutputTokens": 16318,
-        "operationsWithUnknownOutput": 1,
-        "observedCachedInputTokens": 33792,
-        "operationsWithUnknownCache": 1,
-        "observedReasoningTokens": 724,
-        "operationsWithUnknownReasoning": 1,
+        "operations": 16,
+        "operationsWithUnknownTokens": 2,
+        "observedInputTokens": 882790,
+        "operationsWithUnknownInput": 2,
+        "observedOutputTokens": 16728,
+        "operationsWithUnknownOutput": 2,
+        "observedCachedInputTokens": 44928,
+        "operationsWithUnknownCache": 2,
+        "observedReasoningTokens": 809,
+        "operationsWithUnknownReasoning": 2,
         "operationsWithUnknownCharge": 0,
         "directChargedUsd": 0,
         "observedApiEquivalentRangeUsd": {
-          "lower": 8.149182,
-          "upper": 9.9740545
+          "lower": 9.259947999999998,
+          "upper": 11.354603
         },
-        "operationsWithoutEstimate": 1
+        "operationsWithoutEstimate": 2
       },
       {
         "role": "route",
-        "operations": 1,
+        "operations": 2,
         "operationsWithUnknownTokens": 0,
-        "observedInputTokens": 8047,
+        "observedInputTokens": 20022,
         "operationsWithUnknownInput": 0,
-        "observedOutputTokens": 1167,
+        "observedOutputTokens": 2571,
         "operationsWithUnknownOutput": 0,
         "observedCachedInputTokens": 0,
         "operationsWithUnknownCache": 0,
-        "observedReasoningTokens": 69,
+        "observedReasoningTokens": 102,
         "operationsWithUnknownReasoning": 0,
         "operationsWithUnknownCharge": 0,
         "directChargedUsd": 0,
         "observedApiEquivalentRangeUsd": {
-          "lower": 0.13882,
-          "upper": 0.1589375
+          "lower": 0.32877,
+          "upper": 0.378825
         },
         "operationsWithoutEstimate": 0
       }

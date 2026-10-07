@@ -72,9 +72,9 @@ test('completed phases resume without replay and changed prompt, input, schema o
 test('an exhausted original deadline blocks new phase dispatch and remains exhausted after reopening',async()=>{
  const {directory,cleanup}=sandbox();try{
  let time=at,calls=0;const provider=async()=>{calls++;return result();};
- const r=runtime(directory,provider,()=>time);const deadline=r.job.deadline;time=new Date(Date.parse(deadline)+1).toISOString();
- await assert.rejects(r.phase('late','writer','Produce fixture',{},schema));assert.equal(calls,0);
- const resumed=runtime(directory,provider,()=>time);assert.equal(resumed.job.deadline,deadline);await assert.rejects(resumed.phase('late','writer','Produce fixture',{},schema));assert.equal(calls,0);
+ const r=runtime(directory,provider,()=>time);const deadline=r.job.deadline;r.job.reason='Explicit local revalidation of retained model output; no inference or acceptance';r.save();time=new Date(Date.parse(deadline)+1).toISOString();
+ await assert.rejects(r.phase('late','writer','Produce fixture',{},schema),/Generation deadline reached/);assert.equal(calls,0);
+ const resumed=runtime(directory,provider,()=>time);assert.equal(resumed.job.deadline,deadline);await assert.rejects(resumed.phase('late','writer','Produce fixture',{},schema),/Generation deadline reached/);assert.equal(calls,0);
  }finally{cleanup();}
 });
 
