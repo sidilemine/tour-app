@@ -10,6 +10,7 @@ import type { Job, Role } from '../records';
 import type { JsonRecord, ReasoningProvider } from '../provider';
 import type { FactoryBrief } from './contracts';
 
+export const FACTORY_REQUEST_TIMEOUT_MS=360_000;
 export const digest=(value:unknown)=>createHash('sha256').update(JSON.stringify(value)).digest('hex');
 /** Provider-only subset. The original Zod schema still binds inputs and validates returns. */
 export function providerSchema(schema:z.ZodType):JsonRecord {
@@ -215,7 +216,7 @@ export class FactoryRuntime {
   for(let attempt=previousTasks.length;attempt<requestLimit;attempt++){
    const finalRequest=finalizeOnly||attempt===requestLimit-1;
    this.assertRunning();const taskId=`${id}-${attempt+1}`,contextId=`${this.job.id}:${taskId}:${binding.slice(0,12)}`;
-   const seconds=Math.max(1,Math.min(180,Math.floor(this.remainingMs()/1000)));
+   const seconds=Math.max(1,Math.min(FACTORY_REQUEST_TIMEOUT_MS/1000,Math.floor(this.remainingMs()/1000)));
    addTask(this.job,{taskId,role,purpose:instructions,scope:id,inputRefs:[{id:'brief',revision:1}],audienceContext:this.brief.audience,allowedDecisions:['Propose phase artifact; producer validates before use'],toolPermissions:finalRequest?[]:[...(options.web?['web_search']:[]),...(options.tools??[]).map(t=>t.name)],limits:{seconds},expectedOutput:'Typed phase artifact',completionCondition:'Completed provider return and valid schema',recipient:'planner-producer',contextId,execution:'queued'},this.now());
    this.job.conditions.promptHashes[taskId]=binding;
    const operationId=reserve(this.job,taskId,`factory-${id}`,0,this.now());this.save();

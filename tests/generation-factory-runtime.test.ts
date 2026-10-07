@@ -390,3 +390,14 @@ test('declared fresh-job runtime is bounded and immutable on resume while brief 
  assert.throws(()=>briefSchema.parse({...brief,generationMinutes:91}));
  }finally{cleanup();}
 });
+
+test('large research synthesis gets six minutes but cannot extend the original job deadline',async()=>{
+ for(const remaining of [1200,17]){
+  const {directory,cleanup}=sandbox();try{
+   const r=runtime(directory,async()=>result());r.job.deadline=new Date(Date.parse(at)+remaining*1000).toISOString();r.save();
+   const deadline=r.job.deadline;
+   await r.phase('bounded-synthesis','research','Return fixture',{},schema);
+   assert.equal(r.job.tasks[0].limits.seconds,Math.min(360,remaining));assert.equal(r.job.deadline,deadline);
+  }finally{cleanup();}
+ }
+});

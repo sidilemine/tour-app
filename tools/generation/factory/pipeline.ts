@@ -12,7 +12,7 @@ import { SubscriptionProvider } from '../provider';
 import { loadOverflowEvidence, renewCredentials } from '../signin';
 import { withJobLock } from '../store';
 import { briefSchema, constrainedRoutePlanSchema, draftSchema, excludeUnusedEmptySources, physicalResearchSchema, researchSchema, reviewPasses, reviewSchema, routePlanSchema, surveySchema, validateDraft, validateResearch, type Draft, type FactoryBrief, type Research, type RoutePlan } from './contracts';
-import { FactoryRuntime, collectObservedImages, digest, writeJSON, type LocalTool } from './runtime';
+import { FactoryRuntime, FACTORY_REQUEST_TIMEOUT_MS, collectObservedImages, digest, writeJSON, type LocalTool } from './runtime';
 import { PublicTools } from './public-tools';
 import { durationBudget, durationFits, PRACTICAL_ACCESS_POLICY } from './experience-policy';
 import { inspectBundledMap } from './software-evidence';
@@ -420,7 +420,7 @@ async function main(){
  const root=process.cwd(),output=resolve(directory);assert.ok(output.startsWith(resolve(root,'local-data')+'/'),'Factory raw research/output must remain in ignored local-data');
  const brief=briefSchema.parse(JSON.parse(readFileSync(briefPath,'utf8')));
  await withJobLock(join(output,'job.json'),async()=>{
-  const runtime=new FactoryRuntime(output,brief,async()=>new SubscriptionProvider({credentials:await renewCredentials(root,{minimumValidityMs:240000}),overflowEvidence:await loadOverflowEvidence(root),timeoutMs:180000}));
+  const runtime=new FactoryRuntime(output,brief,async()=>new SubscriptionProvider({credentials:await renewCredentials(root,{minimumValidityMs:FACTORY_REQUEST_TIMEOUT_MS+60000}),overflowEvidence:await loadOverflowEvidence(root),timeoutMs:FACTORY_REQUEST_TIMEOUT_MS}));
   if(retryFlag==='--retry-known')runtime.recoverKnownFailure(retryId,retryEvidence);
   else if(retryFlag==='--resume-checked')resumeAfterLocalFix(runtime,retryId);
   else if(retryFlag==='--finalize-retained')runtime.resumeToolFinalization(retryId,retryEvidence);
