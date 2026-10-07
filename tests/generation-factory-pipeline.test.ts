@@ -143,10 +143,10 @@ function providerResult(request: InferenceRequest, value: unknown, calls: Provid
     ...(request.webSearch ? { webSearchCalls: [{ id: 'synthetic-search', status: 'completed', action: { type: 'search', queries: ['synthetic fixture'] }, sources: [] }] } : {}),
     usage: { inputTokens: 20, outputTokens: 10, totalTokens: 30, source: 'response.completed' }, elapsedMs: 1, evidenceKind: 'fixture', diagnostic: { code: 'fixture', retryable: false, automaticRetries: 0 }, directChargeUsd: 0, estimatedApiEquivalentUsd: null };
 }
-async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = false, failTester = false, evidenceRepair:'valid'|'invalid'|false=false, stationaryBudget?:number, invalidFirstThrough=false) {
+async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = false, failTester = false, evidenceRepair:'valid'|'invalid'|false=false, stationaryBudget?:number, invalidFirstThrough=false, readiness:'all'|'selected'|'unrepaired'|false=false) {
   const f = fixture(); if(stationaryBudget!==undefined)f.brief.durationSeconds=f.prepared.walkingSeconds+f.plan.allowanceSeconds+stationaryBudget; await mkdir('local-data', { recursive: true }); const directory = await mkdtemp(resolve('local-data/factory-pipeline-test-'));
   t.after(() => rm(directory, { recursive: true, force: true }));
-  const requests: string[] = [], testerInputs: unknown[] = []; let buildCalls = 0;
+  const requests: string[] = [], testerInputs: unknown[] = []; let buildCalls = 0, routeCalls = 0;
   const evidenceRequests:InferenceRequest[]=[],network={map:0,image:0};
   const imageUrl='https://example.com/retained.png',imageBytes=Buffer.from('89504e470d0a1a0a0000000d49484452000000010000000108060000001f15c489','hex');
   let mapText='',mapUrl='';
@@ -179,6 +179,16 @@ async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = 
       assert.ok(request.input.some(i=>Array.isArray(i.content)&&i.content.some(p=>p.type==='input_image'&&p.image_url==='data:image/png;base64,'+imageBytes.toString('base64'))));
       const repaired=structuredClone(f.research);if(evidenceRepair==='invalid')repaired.sources.find(s=>s.id==='map-source')!.passage='';return providerResult(request,repaired);
     }
+    if(readiness&&(name==='research'||name==='physical_readiness'||name.startsWith('route_research_'))){
+      const value=structuredClone(f.research);
+      if(name==='research'||readiness==='unrepaired'){
+        if(readiness==='selected'){
+          value.places[0].essentialUnknowns=['Synthetic unknown public approach'];
+          value.places.push({...structuredClone(value.places[1]),candidateId:'place-4'});
+        }else value.places.forEach(p=>{p.essentialUnknowns=['Synthetic unknown public approach'];});
+      }
+      return providerResult(request,value);
+    }
     if (name === 'research' || name === 'research_repair') return providerResult(request, f.research);
     if (name.startsWith('route_plan_')) return providerResult(request, {...f.plan,walkingNarration:'eligible-windows',routing:{preferMappedWalkways:false,throughByLeg:invalidFirstThrough&&name==='route_plan_1'?[{legId:'leg-1',points:[{point:f.prepared.geometry[1],sourceUrl:'https://overpass-api.de/api/interpreter#query-'+'b'.repeat(64),basis:'Synthetic missing evidence'}]}]:[]}});
     if(name === 'tester'){
@@ -201,12 +211,12 @@ async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = 
   const tools = new PublicTools({ directory: join(directory, 'public-tools'), lookup: async () => [{ address: '93.184.216.34', family: 4 }], fetch: async url => {
     if(String(url).startsWith('https://overpass-api.de/')){network.map++;assert.equal(network.map,1,'Retained map must not be fetched again');return Response.json({elements:[{type:'way',id:123,tags:{highway:'footway',access:'yes'},geometry:[{lat:51.55,lon:-0.17},{lat:51.5501,lon:-0.17}]}]});}
     if(String(url)===imageUrl){network.image++;assert.equal(network.image,1,'Retained pixels must not be fetched again');return new Response(imageBytes,{headers:{'content-type':'image/png'}});}
-    if (String(url).includes('valhalla1.openstreetmap.de')) return Response.json({ trip: { status: 0, units: 'kilometers', summary: { length: f.routed.legs.reduce((n, l) => n + l.distanceMetres, 0) / 1000, time: f.routed.legs.reduce((n, l) => n + l.durationSeconds, 0) }, legs: f.routed.legs.map(l => ({ shape: encode(l.geometry), summary: { length: l.distanceMetres / 1000, time: l.durationSeconds }, maneuvers: l.maneuvers.map(m => ({ instruction: m.instruction, begin_shape_index: m.beginShapeIndex, end_shape_index: m.endShapeIndex, type: m.type })) })) } });
+    if (String(url).includes('valhalla1.openstreetmap.de')) {routeCalls++;return Response.json({ trip: { status: 0, units: 'kilometers', summary: { length: f.routed.legs.reduce((n, l) => n + l.distanceMetres, 0) / 1000, time: f.routed.legs.reduce((n, l) => n + l.durationSeconds, 0) }, legs: f.routed.legs.map(l => ({ shape: encode(l.geometry), summary: { length: l.distanceMetres / 1000, time: l.durationSeconds }, maneuvers: l.maneuvers.map(m => ({ instruction: m.instruction, begin_shape_index: m.beginShapeIndex, end_shape_index: m.endShapeIndex, type: m.type })) })) } });}
     const source = f.research.sources.find(s => s.url === String(url)); assert.ok(source);
     return new Response(`<title>${source.title}</title><p>${source.passage}${evidenceRepair&&source===f.research.sources[0]?' Longer retained source context.'.repeat(1500):''}</p>`, { headers: { 'content-type': 'text/html' } });
   } });
   const options = { build: async (...args: Parameters<typeof buildTour>) => { buildCalls++; return buildTour(args[0], { ...args[1], audioTools: syntheticAudio(measuredOverrun) }); } };
-  return { runtime, tools, options, requests, testerInputs, evidenceRequests, network, buildCalls: () => buildCalls, directory };
+  return { runtime, tools, options, requests, testerInputs, evidenceRequests, network, routeCalls:()=>routeCalls, buildCalls: () => buildCalls, directory };
 }
 
 test('completed legacy research repair uses one bounded evidence recovery with exact retained map and pixels',async t=>{
@@ -231,11 +241,11 @@ test('failed bounded evidence recovery preserves artifacts and cannot silently c
 });
 
 test('settled tester failure retries its exact frozen receipt input after actual build rechecks',async t=>{
- const r=await replay(t,false,false,true);
+ const r=await replay(t,false,false,true,false,undefined,false,'all');
  await assert.rejects(runFactory(r.runtime,r.tools,r.options),/fixture_settled_failure/);
  const failed=r.runtime.job.costLedger.operations.at(-1)!;
  assert.equal(failed.state,'settled');assert.equal(failed.failure,'fixture_settled_failure');
- const before=r.requests.length,deadline=r.runtime.job.deadline;
+ const before=r.requests.length,deadline=r.runtime.job.deadline,counters=structuredClone(r.runtime.job.counters);
  await rm(join(r.directory,'review-inputs','tester.json')); // Migrate an already-dispatched phase without a new snapshot.
  r.runtime.recoverKnownFailure(failed.id,'Synthetic checked transport repair');
  const handoff=await runFactory(r.runtime,r.tools,r.options);
@@ -243,6 +253,7 @@ test('settled tester failure retries its exact frozen receipt input after actual
  assert.equal(r.requests.length,before+1,'Only the failed tester is dispatched again');
  assert.deepEqual(r.testerInputs[1],r.testerInputs[0],'Recomputed check times never alter dispatched binding');
  assert.equal(r.runtime.job.deadline,deadline);assert.equal(r.runtime.job.counters.correction,0);
+ assert.deepEqual(r.runtime.job.counters,counters,'Readiness replay consumes no allowance again');assert.equal(r.requests.filter(name=>name==='physical_readiness').length,1);assert.equal(r.routeCalls(),1);
  assert.equal(r.runtime.job.costLedger.operations.at(-2)!.id,failed.id,'Original settled failure remains in ledger');
 });
 
@@ -374,4 +385,41 @@ test('stationary-only route keeps real route and stops while declining otherwise
  const quiet=prepareRoute({...f.plan,walkingNarration:'stationary-only'},f.research,f.routed);
  assert.deepEqual(quiet.geometry,f.prepared.geometry);assert.deepEqual(quiet.stops,f.prepared.stops);assert.deepEqual(quiet.legs,f.prepared.legs);
  assert.deepEqual(quiet.chapterIds,[]);assert.deepEqual(quiet.chapterWindows,[]);
+});
+
+test('fresh all-unknown research uses physical readiness once before first route and reaches a checked package',async t=>{
+ const r=await replay(t,false,false,false,false,undefined,false,'all');const handoff=await runFactory(r.runtime,r.tools,r.options);
+ assert.equal(handoff.status,'awaiting-listening');assert.equal(r.runtime.job.counters.research,1);assert.equal(r.runtime.job.counters.route,1);assert.equal(r.routeCalls(),1);
+ assert.ok(r.requests.indexOf('physical_readiness')<r.requests.indexOf('route_plan_1'));assert.ok(!r.requests.includes('route_plan_2'));
+ const protocol=JSON.parse(await readFile(join(r.directory,'phase-protocols.json'),'utf8'));assert.equal(protocol['physical-readiness'],2);
+ const before=r.requests.length;
+ // Directly replay retained phases up to the terminal-state guard; the CLI returns
+ // an existing completed handoff without entering runFactory a second time.
+ await assert.rejects(runFactory(r.runtime,r.tools,r.options),/Offline review draft built/);
+ assert.equal(r.requests.length,before,'Completed readiness/route retain exact bindings on replay');assert.equal(r.runtime.job.counters.research,1);
+});
+
+test('exhausted research or still-unknown readiness blocks before any phantom route request',async t=>{
+ for(const mode of ['exhausted','unrepaired'] as const){
+  const r=await replay(t,false,false,false,false,undefined,false,mode==='exhausted'?'all':'unrepaired');
+  if(mode==='exhausted')r.runtime.job.counters.research=2;
+  await assert.rejects(runFactory(r.runtime,r.tools,r.options),mode==='exhausted'?/research allowance exhausted before routing/:/did not establish four eligible/);
+  assert.equal(r.runtime.job.counters.route,0);assert.equal(r.routeCalls(),0);assert.ok(!r.requests.some(name=>name.startsWith('route_plan_')));assert.equal(r.buildCalls(),0);
+  assert.equal(r.runtime.job.counters.research,mode==='exhausted'?2:1);
+ }
+});
+
+test('selected real IDs with physical unknowns use remaining research before a replacement route, not a failed router call',async t=>{
+ const r=await replay(t,false,false,false,false,undefined,false,'selected');await runFactory(r.runtime,r.tools,r.options);
+ assert.ok(!r.requests.includes('physical_readiness'),'Four other eligible places bypass proactive repair');
+ assert.ok(r.requests.indexOf('route_plan_1')<r.requests.indexOf('route_research_1'));assert.ok(r.requests.indexOf('route_research_1')<r.requests.indexOf('route_plan_2'));
+ assert.equal(r.runtime.job.counters.research,1);assert.equal(r.runtime.job.counters.route,2);assert.equal(r.routeCalls(),1);assert.ok(!r.requests.includes('scout_1'));
+});
+
+test('previously dispatched route jobs freeze the legacy readiness path without injecting a repair',async t=>{
+ const r=await replay(t,false,false,false,false,undefined,false,'all');
+ r.runtime.job.tasks.push({taskId:'legacy-route-task',role:'route',scope:'route-plan-1',purpose:'Retained dispatched fixture',inputRefs:[],audienceContext:r.runtime.brief.audience,allowedDecisions:[],toolPermissions:[],limits:{seconds:1},expectedOutput:'Fixture',completionCondition:'Fixture',recipient:'producer',contextId:'legacy',execution:'returned',operationId:'legacy-operation'});
+ await assert.rejects(runFactory(r.runtime,r.tools,r.options),/Incomplete phase route-plan-1/);
+ assert.equal(JSON.parse(await readFile(join(r.directory,'phase-protocols.json'),'utf8'))['physical-readiness'],1);
+ assert.ok(!r.requests.includes('physical_readiness'));assert.equal(r.runtime.job.counters.research,0);assert.equal(r.routeCalls(),0);
 });

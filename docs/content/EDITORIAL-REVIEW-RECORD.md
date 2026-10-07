@@ -439,3 +439,6 @@ Hampstead now has four actual George recordings and accepted factual/production-
 
 
 **7October first fresh Highgate trial:** fresh survey/research produced four researched candidate places, but all three route proposals failed independent review. Different prose directions had not changed the actual router constraints, so crossings and park exits remained unresolved. No narration or audio was written. The engineering correction permits mapped through points and checks the actual returned geometry; a separate fresh run will reuse tools only. This failure does not select or reject the researched stories on enjoyment grounds. [Measured trial](generation/factory/RESULTS.md).
+
+
+**7October second Highgate trial:** the new survey and evidence report passed structural checks, but all places retained essential physical unknowns. The producer failed to route that evidence gap into its unused research allowance; two plans named valid candidates while explicitly withholding their eligibility, then failed preparation. No stories were written. This is an orchestration failure, not an editorial judgment or observed enjoyment. The next fresh verification follows a tested readiness handoff repair and retains all trial accounting.

@@ -60,3 +60,13 @@ The remaining routing defect is a contract gap: planner prose could ask for a co
 
 
 **Final pre-run software verification, 7 October:** all335tests, full TypeScript, ESLint, offline-guide parity and whitespace checks passed. Independent helper review found no remaining actionable acceptance/resume defect in the new routing/protocol changes. The deadline regression prevents the second split transport after expiry. No app/native code changed, and no phone or listening observation is claimed. The next live generation uses the separate final Highgate brief and empty authored inputs.
+
+
+## Second fresh Highgate trial — readiness handoff defect
+
+The run at implementation commit `fdc62f2` started02:10:02.977UTC and ended02:18:10.706UTC: **487.729seconds (8m07.729s)**,15requests, **591,347known tokens**, one incomplete stream with unknown usage, direct paidUS$0. It began from an empty authored-input list and independently retrieved its survey/evidence. Research passed structural validation with16sources and18claims, but all researched places retained essential physical unknowns. The producer repeatedly consumed route proposals rather than invoking its unused physical-research allowance after valid candidate IDs failed preparation. Two complete route proposals were rejected; the third response was interrupted before completion. No Scout acceptance, scripts, audio or package resulted. The provider interruption is distinct from the underlying coordination defect. No recovery or time extension was applied; this failed run and its original counters remain closed. [Redacted record](HIGHGATE-SECOND-RUN.json).
+
+The next correction must resolve eligible-place readiness before dispatching route selection, retain the same two-round research cap and stop honestly if fewer than four supported stops remain. It must not retroactively alter this trial's frozen phases or turn its low elapsed time into a completed-tour improvement. A separate final verification run will start from new evidence after that software fix and regressions, preserving all prior failure costs.
+
+
+**Readiness repair verification:**339tests, full TypeScript/ESLint, guide parity and whitespace checks pass. Complete synthetic execution covers all-unknown research becoming eligible before route1, selected-stop repair, exhausted/unresolved research with zero router calls, exact cached replay and legacy bindings. Independent review confirmed the observed missed branch and found no binding/cap blocker. A first readiness repair that still yields fewer than four eligible places stops honestly instead of automatically spending another round; no access assertion is weakened.

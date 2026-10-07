@@ -211,6 +211,16 @@ export async function runFactory(runtime:FactoryRuntime,tools:PublicTools,option
   }
  }
  writeJSON(join(runtime.directory,'research-validated.json'),research);
+ // This producer gate is frozen separately: never inject research ahead of an
+ // already dispatched legacy route plan and invalidate its retained context.
+ const priorRouteDispatch=runtime.job.tasks.some(t=>/^route-plan-\d+$/.test(t.scope))||[1,2,3].some(n=>existsSync(join(runtime.directory,'phases',`route-plan-${n}.json`)));
+ const physicalReadinessProtocol=runtime.phaseProtocol('physical-readiness',priorRouteDispatch?1:2);
+ const canRepairPhysical=(id:string)=>runtime.job.counters.research<2||runtime.job.events.some(e=>e.type==='factory-allowance'&&e.detail===id);
+ if(physicalReadinessProtocol===2&&research.places.filter(p=>p.essentialUnknowns.length===0).length<4){
+  assert.ok(canRepairPhysical('physical-readiness'),'Fewer than four physically eligible places; research allowance exhausted before routing');
+  research=await physicalRepair('physical-readiness',research,survey,{reason:'Fewer than four researched places have resolved essential physical access',places:research.places.map(p=>({candidateId:p.candidateId,essentialUnknowns:p.essentialUnknowns}))});
+  assert.ok(research.places.filter(p=>p.essentialUnknowns.length===0).length>=4,'Physical readiness repair did not establish four eligible places; no route requested');
+ }
  let plan:RoutePlan|undefined,prepared:PreparedRoute|undefined,routeReview;
  for(let attempt=0;attempt<3;attempt++){
   const planId=`route-plan-${attempt+1}`;
@@ -220,6 +230,16 @@ export async function runFactory(runtime:FactoryRuntime,tools:PublicTools,option
   plan=await runtime.phase(planId,'route',proposalInstructions+(planProtocol>=2?' This phase proposes the stop order BEFORE the router runs. Complete measured route geometry is deliberately not supplied yet: the next deterministic step requests pedestrian geometry, then an independent Scout checks it. Missing future geometry is not a reason to refuse a provisional order. Never claim route acceptance here. Resolve only the station endpoint using read_station_map for named station/entrance identification, then read_map for adjacent public pavement and read_image/read_page when useful. Earlier broad map output was crowded by unrelated anonymous doors; do not treat its missing station as proof none is mapped. Inspect tags to exclude underground platforms and indoor passageways from the exterior standing point. Use the retained station-photo URL if needed. Keep source/evidence details concise in selectionReason; no history research or new candidate expansion. Return only actual existing stop IDs, no placeholders.':'') +(planProtocol===4?' In addition to the endpoint checks above, inspect route crossings, sidewalks and gate connections as needed, without new historical research. You can now constrain actual routing: populate routing.throughByLeg with ordered, evidence-backed through points for complete pavement-to-pavement crossings, the correct sidewalk continuation and public gate entrances/exits. Each legId is leg-1 through the full return leg; these points do not create new stops or narration. Coordinates must match actual vertices in cited read_map/read_crossing_map sourceUrl snapshots from this job; explain each point basis. Use crossing ENDPOINTS and a continuation point, never a carriageway midpoint as a turn. Route instructions written only in selectionReason do NOT change router geometry. At most8 points per leg and32 total. Prefer mapped walkways where available; this is a routing preference, not a safety guarantee. If no shaping is needed return an empty throughByLeg array. Set walkingNarration to stationary-only on decision-dense corridors or when prior review found unsafe chapter windows; eligible-windows only proposes windows for independent checking and measured audio. Narration time is an estimate: preserve a useful roughly80seconds minimum per stop but permit real rendered duration to decide final whole-tour fit.':''),{brief,survey,research,previous:plan??null,feedback:routeReview??null},planProtocol===4?constrainedRoutePlanSchema:routePlanSchema,planProtocol>=2?{tools:planProtocol===4?[stationTool,mapTool,crossingTool,imageTool,readTool]:[stationTool,mapTool,imageTool,readTool],maxRequests:4}:{});
   const routedPath=join(runtime.directory,`${planId}-routed.json`),routingErrorPath=join(runtime.directory,`${planId}-routing-error.json`);
   if(existsSync(routingErrorPath)){routeReview=JSON.parse(readFileSync(routingErrorPath,'utf8'));prepared=undefined;continue;}
+  const selectedUnknowns:Research['places']=plan.stopIds.map(id=>research.places.find(p=>p.candidateId===id)).filter((p):p is Research['places'][number]=>!!p&&p.essentialUnknowns.length>0);
+  if(physicalReadinessProtocol===2&&selectedUnknowns.length){
+   routeReview={verdict:'needs-revision',summary:'Selected researched places still have essential physical unknowns; no route request was sent.',places:selectedUnknowns.map(p=>({candidateId:p.candidateId,essentialUnknowns:p.essentialUnknowns}))};
+   writeJSON(join(runtime.directory,`${planId}-physical-error.json`),routeReview);prepared=undefined;
+   const repairId=`route-research-${attempt+1}`;
+   assert.ok(attempt<2&&canRepairPhysical(repairId),'Selected places have essential physical unknowns; remaining research/route allowance exhausted');
+   research=await physicalRepair(repairId,research,survey,routeReview);
+   assert.ok(research.places.filter(p=>p.essentialUnknowns.length===0).length>=4,'Selected-place repair did not establish four eligible places; no route requested');
+   continue;
+  }
   let routed:Routed;
   if(existsSync(routedPath))routed=JSON.parse(readFileSync(routedPath,'utf8'));
   else{

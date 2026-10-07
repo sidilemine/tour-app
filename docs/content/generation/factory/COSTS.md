@@ -33,3 +33,16 @@ The incomplete trial took24m57.832s, including the recorded repair pause. It use
 | scout | 11 | 0 | 530,895 | 12,402 | 5.9291–7.2563 |
 
 All failures remain in[HIGHGATE-RUN.json](HIGHGATE-RUN.json). Engineer-run public routing diagnostics have no runtime model requests; they remain separately documented, not silently included as successful tour generation. Implementation/helper tokens remain unknown. A separate fresh Highgate run after the routing fix is pending.
+
+
+## Second Highgate trial — readiness failure retained
+
+Elapsed8m07.729s;15requests;591,347known tokens plus one interrupted request with unknown usage; direct paidUS$0. No audio/package and no completion-speed claim.
+
+| Role | Requests | Unknown requests | Known input | Known output | Token-only API-equivalentUSD |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| research | 6 | 0 | 452,954 | 10,972 | 4.9042–5.9883 |
+| route | 9 | 1 | 125,236 | 2,185 | 1.3616–1.6747 |
+| **Known subtotal** | **15** | **1** | **578,190** | **13,157** | **6.2658–7.6630** |
+
+The unchanged job contains no recovery or extension events. Its closed evidence remains in[HIGHGATE-SECOND-RUN.json](HIGHGATE-SECOND-RUN.json); the subsequent coordination repair is implementation work whose helper token counts remain unavailable.

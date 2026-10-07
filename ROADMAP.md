@@ -200,3 +200,6 @@ Acceptance: when iOS is assigned, establish ordinary locked arrival, controls, o
 ## Later, only when needed
 
 Private sharing/download hosting, accounts/sync, wider generation UI and a hosted city knowledge service need concrete demand and separate infrastructure/cost/publication decisions. The local reusable research catalogue above is now planned explicitly; its implementation does not authorise those services. Driving, live AI, optional branches, dynamic closures and arbitrary offline rerouting each require explicit scope. Do not add their code to earlier milestones for hypothetical reuse.
+
+
+The subsequent `highgate-fresh-factory-v2` trial also stopped before writing: unresolved physical places did not enter the remaining research allowance, and its third route response was interrupted. The original15requests and591,347known tokens remain recorded. The [fresh verification brief](fixtures/generation/factory/highgate-verification-brief.json) exercises the readiness repair after automated review. Prior trials remain closed; no counters or authored inputs are reused.
