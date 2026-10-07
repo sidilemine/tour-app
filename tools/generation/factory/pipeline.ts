@@ -50,7 +50,7 @@ export function resumeAfterLocalFix(runtime:FactoryRuntime,evidence:string){
  assert.ok(j.tasks.every(t=>t.execution!=='working'&&existsSync(join(runtime.directory,'phases',t.scope+'.json'))),'Incomplete provider phases need their explicit recovery path');
  event(j,runtime.now(),'factory-local-fix-resume',evidence);j.status='running';j.reason='Checked local implementation fix; completed phases and original limits retained';runtime.save();
 }
-export function prepareRoute(plan:RoutePlan,research:Research,routed:Routed):PreparedRoute {
+export function prepareRoute(plan:RoutePlan,research:Research,routed:Routed,options:{normalizeCoincidentFinalLeg?:boolean}={}):PreparedRoute {
  assert.ok(distance(plan.start,plan.end)<=20,'Loop must return to its public starting point');
  assert.equal(new Set(plan.stopIds).size,plan.stopIds.length,'Unique selected stops');
  const places=plan.stopIds.map(id=>{const p=research.places.find(p=>p.candidateId===id);assert.ok(p,`Unknown place ${id}`);assert.equal(p.essentialUnknowns.length,0,`Essential unknowns at ${id}`);return p;});
@@ -73,7 +73,11 @@ export function prepareRoute(plan:RoutePlan,research:Research,routed:Routed):Pre
   if(geometry.length)assert.ok(distance(geometry.at(-1)!,leg.geometry[0])<3,'Connected route legs');
   geometry.push(...leg.geometry.slice(geometry.length?1:0));
   const endRouteIndex=geometry.length-1;
-  legs.push({id:`leg-${i+1}`,startRouteIndex,endRouteIndex,directions:leg.maneuvers.map(m=>m.instruction).filter(Boolean),evidence:`${routed.provider}; ${routed.url}; retrieved ${routed.retrievedAt}; public OSM pedestrian route, not an access inspection`});
+  const samePoint=(a:Coordinate,b:Coordinate)=>a.latitude===b.latitude&&a.longitude===b.longitude;
+  const coincidentFinal=options.normalizeCoincidentFinalLeg===true&&i===places.length
+   &&rawLeg.distanceMetres===0&&rawLeg.durationSeconds===0&&samePoint(places.at(-1)!.standing,plan.end)
+   &&rawLeg.geometry.every(p=>samePoint(p,rawLeg.geometry[0]));
+  legs.push({id:`leg-${i+1}`,startRouteIndex,endRouteIndex,directions:coincidentFinal?['You are already at the tour endpoint. No further walking is needed.']:leg.maneuvers.map(m=>m.instruction).filter(Boolean),evidence:`${routed.provider}; ${routed.url}; retrieved ${routed.retrievedAt}; public OSM pedestrian route, not an access inspection`+(coincidentFinal?'; final standing point equals the endpoint and returned geometry is stationary with zero metres/seconds; canonical directions replace the raw departure maneuver with stationary arrival':'' )});
   if(i<places.length){assert.ok(distance(places[i].standing,geometry[endRouteIndex])<=10,`Router snapped beyond standing tolerance: ${places[i].candidateId}`);stops.push({id:plan.stopIds[i],routeIndex:endRouteIndex,standing:places[i].standing});}
   if(i>0&&i<places.length)for(const m of leg.maneuvers){
    const begin=startRouteIndex+m.beginShapeIndex,end=startRouteIndex+m.endShapeIndex;
@@ -215,6 +219,7 @@ export async function runFactory(runtime:FactoryRuntime,tools:PublicTools,option
  // already dispatched legacy route plan and invalidate its retained context.
  const priorRouteDispatch=runtime.job.tasks.some(t=>/^route-plan-\d+$/.test(t.scope))||[1,2,3].some(n=>existsSync(join(runtime.directory,'phases',`route-plan-${n}.json`)));
  const physicalReadinessProtocol=runtime.phaseProtocol('physical-readiness',priorRouteDispatch?1:2);
+ const coincidentFinalLegProtocol=runtime.phaseProtocol('coincident-final-leg',priorRouteDispatch?1:2);
  const canRepairPhysical=(id:string)=>runtime.job.counters.research<2||runtime.job.events.some(e=>e.type==='factory-allowance'&&e.detail===id);
  if(physicalReadinessProtocol===2&&research.places.filter(p=>p.essentialUnknowns.length===0).length<4){
   assert.ok(canRepairPhysical('physical-readiness'),'Fewer than four physically eligible places; research allowance exhausted before routing');
@@ -256,7 +261,7 @@ export async function runFactory(runtime:FactoryRuntime,tools:PublicTools,option
     writeJSON(join(runtime.directory,`${planId}-routing-error.json`),routeReview);prepared=undefined;continue;
    }
   }
-  try{prepared=prepareRoute(plan,research,routed);}catch(error){routeReview={verdict:'needs-revision',summary:String(error)};writeJSON(join(runtime.directory,`${planId}-preparation-error.json`),routeReview);continue;}
+  try{prepared=prepareRoute(plan,research,routed,{normalizeCoincidentFinalLeg:coincidentFinalLegProtocol===2});}catch(error){routeReview={verdict:'needs-revision',summary:String(error)};writeJSON(join(runtime.directory,`${planId}-preparation-error.json`),routeReview);continue;}
   const [west,south,east,north]=mapArea(brief.mapId).catalog.bounds;
   if(prepared.geometry.some(p=>p.longitude<west||p.longitude>east||p.latitude<south||p.latitude>north)){routeReview={verdict:'needs-revision',summary:'Route exceeds available offline map bounds'};prepared=undefined;continue;}
   const scoutProtocol=runtime.phaseProtocol(`scout-${attempt+1}`,2);

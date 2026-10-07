@@ -1,6 +1,6 @@
 # Tour generation implementation choices and prototype tests
 
-Updated 7 October 2026, working revision 14. Canonical repository register; the supplied version-10 snapshot remains in the original handoff ZIP.  This is the maintained register for implementing the agreed tour creation workflow. Read it alongside [Tour_generation_workflow_v1 readable copy](handoff/Tour_generation_workflow_v1.readable.txt), [AGENTS.md](../../../AGENTS.md), [PRODUCT.md](../../../PRODUCT.md), [ARCHITECTURE.md](../../../ARCHITECTURE.md) and [ROADMAP.md](../../../ROADMAP.md).
+Updated 7 October 2026, working revision 15. Canonical repository register; the supplied version-10 snapshot remains in the original handoff ZIP.  This is the maintained register for implementing the agreed tour creation workflow. Read it alongside [Tour_generation_workflow_v1 readable copy](handoff/Tour_generation_workflow_v1.readable.txt), [AGENTS.md](../../../AGENTS.md), [PRODUCT.md](../../../PRODUCT.md), [ARCHITECTURE.md](../../../ARCHITECTURE.md) and [ROADMAP.md](../../../ROADMAP.md).
 
 The workflow records accepted operating principles. This register tracks unresolved choices, proposed defaults and the evidence needed to implement them. It covers the decisions raised so far and topics awaiting their function design discussion. Add new items as that discussion and prototyping expose them. Registration does not authorize every feature or milestone.
 
@@ -336,3 +336,10 @@ A separate final Highgate brief will test these fixes from empty authored inputs
 
 
 **Further observed G02/G09 handoff defect:** `highgate-fresh-factory-v2` used15requests and591,347known tokens in487.729seconds without producing a route or content. Valid source records still contained essential physical unknowns; repeated route preparation failures bypassed unused physical-research rounds. The versioned readiness repair must run before route proposals and preserve closed trials/bindings. Third-route incomplete-stream usage remains unknown, direct paidUS$0. A fresh verification run follows the focused complete/failure regressions, with all trial costs retained.
+
+
+### Final bounded factory evaluation — working revision 15
+
+The final fresh Highgate verification completed37requests over1,461.997seconds with1,936,810known tokens, zero missing usage, no recovery/time extension and US$0 direct paid. New readiness and routing constraints worked in the live run; independent reviews still rejected exact North Road pavement/crossing continuity. Two research rounds, three route proposals and one frozen disposition remain exhausted/closed. No Highgate writing, rendering or package result is claimed. Source access, consent and local voice setup were not the final blocker.
+
+G02/G05/G07/G09 and applicable T03/T12/T14/T18/T22 software invariants have focused regressions. Final review additionally corrected combined-route retrieval time and future-job zero-length arrival directions, preserving closed-run hashes and legacy contexts. These post-run fixes are tested separately, not retroactively included in the live benchmark. No matched API comparison, completed-tour efficiency gain, enjoyment or physical acceptance is established. The four factory jobs retain131requests/5,811,165known tokens plus five unknown requests; known token-only API-equivalentUS$63.9319–77.6241, direct paidUS$0, helper usage unavailable. See[final evidence](factory/RESULTS.md) and[per-role costs](factory/COSTS.md).

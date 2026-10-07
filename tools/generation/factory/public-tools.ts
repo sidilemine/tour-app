@@ -421,6 +421,9 @@ export class PublicTools {
       for(let index=1;index<legs.length;index++)assert.deepEqual(legs[index-1].geometry.at(-1),legs[index].geometry[0],'Disconnected split routed legs');
       const throughValidation=routingOptions?.throughByLeg?verifyThroughPoints(legs,routingOptions.throughByLeg):undefined;
       const segments=parts.map((part,legIndex)=>({legIndex,hash:part.hash,cachePath:part.cachePath,retrievedAt:part.retrievedAt}));
+      // The last leg may come from an older cache than a revised middle leg.
+      // Keep retrieval provenance stable on recomposition; it is not assembly time.
+      const retrievedAt=parts.reduce((latest,part)=>Date.parse(part.retrievedAt)>Date.parse(latest)?part.retrievedAt:latest,parts[0].retrievedAt);
       const hash=sha(JSON.stringify(parts.map(part=>part.hash))),cachePath=join(this.directory,`route-composition-${sha(body)}.json`);
       const composition:NonNullable<RouteResult['composition']>={mode:'per-tour-leg',maxLocationsPerRequest:10,hashBasis:'ordered-provider-response-hashes',segments};
       const manifest={schemaVersion:1,requestedPoints,routingOptions:routingOptions??{},hash,composition};
@@ -429,7 +432,7 @@ export class PublicTools {
         if((error as NodeJS.ErrnoException).code!=='ENOENT')throw error;
         await mkdir(this.directory,{recursive:true,mode:0o700});const temporary=cachePath+'.'+randomUUID()+'.tmp';await writeFile(temporary,JSON.stringify(manifest,null,2)+'\n',{mode:0o600});await rename(temporary,cachePath);
       }
-      return {legs,geometry:legs.flatMap((leg,index)=>index?leg.geometry.slice(1):leg.geometry),distanceMetres:parts.reduce((n,part)=>n+part.distanceMetres,0),durationSeconds:parts.reduce((n,part)=>n+part.durationSeconds,0),provider:'FOSSGIS public Valhalla',retrievedAt:parts.at(-1)!.retrievedAt,url:publicRoutingPolicy.endpoint,hash,cachePath,cacheHit:parts.every(part=>part.cacheHit),requestedPoints,provenance:publicRoutingPolicy,physicalClearance:'unverified',...(routingOptions?{routingOptions}:{}),...(throughValidation?{throughValidation}:{}),composition};
+      return {legs,geometry:legs.flatMap((leg,index)=>index?leg.geometry.slice(1):leg.geometry),distanceMetres:parts.reduce((n,part)=>n+part.distanceMetres,0),durationSeconds:parts.reduce((n,part)=>n+part.durationSeconds,0),provider:'FOSSGIS public Valhalla',retrievedAt,url:publicRoutingPolicy.endpoint,hash,cachePath,cacheHit:parts.every(part=>part.cacheHit),requestedPoints,provenance:publicRoutingPolicy,physicalClearance:'unverified',...(routingOptions?{routingOptions}:{}),...(throughValidation?{throughValidation}:{}),composition};
     }
     const { saved, cachePath, cacheHit } = await this.retrieve(publicRoutingPolicy.endpoint, 'POST', body, true);
     const response = routeResponse.parse(JSON.parse(Buffer.from(saved.bodyBase64, 'base64').toString('utf8')));

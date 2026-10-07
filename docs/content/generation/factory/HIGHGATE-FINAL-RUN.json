@@ -1,0 +1,2201 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-07T02:48:03.856Z",
+  "job": {
+    "id": "highgate-fresh-factory-v3",
+    "createdAt": "2026-10-07T02:21:53.020Z",
+    "updatedAt": "2026-10-07T02:46:15.017Z",
+    "deadline": "2026-10-07T03:06:53.020Z",
+    "status": "blocked",
+    "reason": "Route/scout acceptance not achieved within three proposals",
+    "counters": {
+      "candidates": [
+        "highgate-fresh-factory-v3-c01",
+        "highgate-fresh-factory-v3-c02",
+        "highgate-fresh-factory-v3-c03",
+        "highgate-fresh-factory-v3-c04",
+        "highgate-fresh-factory-v3-c05",
+        "highgate-fresh-factory-v3-c06",
+        "highgate-fresh-factory-v3-c07",
+        "highgate-fresh-factory-v3-c08",
+        "highgate-fresh-factory-v3-c09",
+        "highgate-fresh-factory-v3-c10"
+      ],
+      "research": 2,
+      "route": 3,
+      "correction": 0,
+      "render": {}
+    },
+    "conditions": {
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "promptHashes": {
+        "survey-1": "d314305dd033a710a8acb1ba7eab8c272ab4011099783510770266234477e040",
+        "research-1": "811adb05e9d9fe2f7c15d331fcffb5968b82533771d5825a14f879ec0fd68e1f",
+        "research-2": "811adb05e9d9fe2f7c15d331fcffb5968b82533771d5825a14f879ec0fd68e1f",
+        "research-3": "811adb05e9d9fe2f7c15d331fcffb5968b82533771d5825a14f879ec0fd68e1f",
+        "research-4": "811adb05e9d9fe2f7c15d331fcffb5968b82533771d5825a14f879ec0fd68e1f",
+        "research-5": "811adb05e9d9fe2f7c15d331fcffb5968b82533771d5825a14f879ec0fd68e1f",
+        "research-6": "811adb05e9d9fe2f7c15d331fcffb5968b82533771d5825a14f879ec0fd68e1f",
+        "physical-readiness-1": "116297f92510b504efb9b3f58d089177dffe8b4fb1542d5e6b683228bc259d37",
+        "physical-readiness-2": "116297f92510b504efb9b3f58d089177dffe8b4fb1542d5e6b683228bc259d37",
+        "physical-readiness-3": "116297f92510b504efb9b3f58d089177dffe8b4fb1542d5e6b683228bc259d37",
+        "physical-readiness-4": "116297f92510b504efb9b3f58d089177dffe8b4fb1542d5e6b683228bc259d37",
+        "route-plan-1-1": "327b1de2c6ad1dedb863bf38c34250828d9843b51c34ab74e0ac185fccc4f427",
+        "route-plan-1-2": "327b1de2c6ad1dedb863bf38c34250828d9843b51c34ab74e0ac185fccc4f427",
+        "route-plan-1-3": "327b1de2c6ad1dedb863bf38c34250828d9843b51c34ab74e0ac185fccc4f427",
+        "route-plan-1-4": "327b1de2c6ad1dedb863bf38c34250828d9843b51c34ab74e0ac185fccc4f427",
+        "scout-1-1": "f3aa2da39e32e22d0114a027c6366c5acdf36e5ba0612aa3b4e0e7156c4a00db",
+        "scout-1-2": "f3aa2da39e32e22d0114a027c6366c5acdf36e5ba0612aa3b4e0e7156c4a00db",
+        "scout-1-3": "f3aa2da39e32e22d0114a027c6366c5acdf36e5ba0612aa3b4e0e7156c4a00db",
+        "route-research-1-1": "3cadc1802bc169c84ce34f3841c729032823dd0631395afc645b58c0f1f85d0f",
+        "route-research-1-2": "3cadc1802bc169c84ce34f3841c729032823dd0631395afc645b58c0f1f85d0f",
+        "route-research-1-3": "3cadc1802bc169c84ce34f3841c729032823dd0631395afc645b58c0f1f85d0f",
+        "route-research-1-4": "3cadc1802bc169c84ce34f3841c729032823dd0631395afc645b58c0f1f85d0f",
+        "route-plan-2-1": "9bd2c4899a0244d3bdc272f308bbabaa4b69fc487192ad84208bd366ea23f81b",
+        "route-plan-2-2": "9bd2c4899a0244d3bdc272f308bbabaa4b69fc487192ad84208bd366ea23f81b",
+        "route-plan-2-3": "9bd2c4899a0244d3bdc272f308bbabaa4b69fc487192ad84208bd366ea23f81b",
+        "scout-2-1": "77e835e4563b805b4d45c8e52d57f8b4741cfb0d97dd36be5b95f91259690060",
+        "scout-2-2": "77e835e4563b805b4d45c8e52d57f8b4741cfb0d97dd36be5b95f91259690060",
+        "scout-2-3": "77e835e4563b805b4d45c8e52d57f8b4741cfb0d97dd36be5b95f91259690060",
+        "route-plan-3-1": "f5e6b634742eb06c67e66a5904e680a6ddc9c41d0a949fc5e805dca3aa687d33",
+        "route-plan-3-2": "f5e6b634742eb06c67e66a5904e680a6ddc9c41d0a949fc5e805dca3aa687d33",
+        "route-plan-3-3": "f5e6b634742eb06c67e66a5904e680a6ddc9c41d0a949fc5e805dca3aa687d33",
+        "route-plan-3-4": "f5e6b634742eb06c67e66a5904e680a6ddc9c41d0a949fc5e805dca3aa687d33",
+        "scout-3-1": "b824e411be5bbd9dbc676d691d6c979594239a9e282e03757974ea91c488b3e4",
+        "scout-3-2": "b824e411be5bbd9dbc676d691d6c979594239a9e282e03757974ea91c488b3e4",
+        "scout-3-3": "b824e411be5bbd9dbc676d691d6c979594239a9e282e03757974ea91c488b3e4",
+        "route-disposition-1": "a921be481987550c64f9748f0941c5eaffd91dadab370bcfb326985aeeba455f",
+        "route-disposition-2": "a921be481987550c64f9748f0941c5eaffd91dadab370bcfb326985aeeba455f"
+      },
+      "tools": [
+        "hosted web_search",
+        "bounded public read_page",
+        "Valhalla pedestrian",
+        "local George"
+      ],
+      "startingEvidence": "abe55c72cf7e08554fbaea42317470552927dea7a849c724d0573a25c4998e63",
+      "voice": "local Kokoro George",
+      "qualityFloor": "Current evidence, essential physical access, worthwhile interpretation, listening and actual offline package checks",
+      "mode": "subscription"
+    },
+    "events": [
+      {
+        "at": "2026-10-07T02:21:53.021Z",
+        "type": "factory-declared-time-allowance",
+        "detail": "{\"minutes\":45,\"basis\":\"Explicit fresh-job brief; no prior job reset\",\"deadline\":\"2026-10-07T03:06:53.020Z\"}"
+      },
+      {
+        "at": "2026-10-07T02:21:53.021Z",
+        "type": "record",
+        "detail": "brief@1"
+      },
+      {
+        "at": "2026-10-07T02:21:53.061Z",
+        "type": "factory-phase-protocol",
+        "detail": "{\"phase\":\"survey\",\"version\":2,\"reason\":\"New undispatched phase protocol\"}"
+      },
+      {
+        "at": "2026-10-07T02:21:53.069Z",
+        "type": "task-queued",
+        "detail": "survey-1"
+      },
+      {
+        "at": "2026-10-07T02:21:53.069Z",
+        "type": "dispatch",
+        "detail": "operation-1"
+      },
+      {
+        "at": "2026-10-07T02:23:41.399Z",
+        "type": "settled",
+        "detail": "operation-1"
+      },
+      {
+        "at": "2026-10-07T02:23:41.414Z",
+        "type": "returned",
+        "detail": "survey-1"
+      },
+      {
+        "at": "2026-10-07T02:23:41.423Z",
+        "type": "counter",
+        "detail": "candidates:highgate-fresh-factory-v3-c01"
+      },
+      {
+        "at": "2026-10-07T02:23:41.423Z",
+        "type": "counter",
+        "detail": "candidates:highgate-fresh-factory-v3-c02"
+      },
+      {
+        "at": "2026-10-07T02:23:41.423Z",
+        "type": "counter",
+        "detail": "candidates:highgate-fresh-factory-v3-c03"
+      },
+      {
+        "at": "2026-10-07T02:23:41.423Z",
+        "type": "counter",
+        "detail": "candidates:highgate-fresh-factory-v3-c04"
+      },
+      {
+        "at": "2026-10-07T02:23:41.423Z",
+        "type": "counter",
+        "detail": "candidates:highgate-fresh-factory-v3-c05"
+      },
+      {
+        "at": "2026-10-07T02:23:41.423Z",
+        "type": "counter",
+        "detail": "candidates:highgate-fresh-factory-v3-c06"
+      },
+      {
+        "at": "2026-10-07T02:23:41.423Z",
+        "type": "counter",
+        "detail": "candidates:highgate-fresh-factory-v3-c07"
+      },
+      {
+        "at": "2026-10-07T02:23:41.423Z",
+        "type": "counter",
+        "detail": "candidates:highgate-fresh-factory-v3-c08"
+      },
+      {
+        "at": "2026-10-07T02:23:41.423Z",
+        "type": "counter",
+        "detail": "candidates:highgate-fresh-factory-v3-c09"
+      },
+      {
+        "at": "2026-10-07T02:23:41.423Z",
+        "type": "counter",
+        "detail": "candidates:highgate-fresh-factory-v3-c10"
+      },
+      {
+        "at": "2026-10-07T02:23:41.429Z",
+        "type": "factory-phase-protocol",
+        "detail": "{\"phase\":\"research\",\"version\":3,\"reason\":\"New undispatched phase protocol\"}"
+      },
+      {
+        "at": "2026-10-07T02:23:41.438Z",
+        "type": "task-queued",
+        "detail": "research-1"
+      },
+      {
+        "at": "2026-10-07T02:23:41.438Z",
+        "type": "dispatch",
+        "detail": "operation-2"
+      },
+      {
+        "at": "2026-10-07T02:23:51.246Z",
+        "type": "settled",
+        "detail": "operation-2"
+      },
+      {
+        "at": "2026-10-07T02:23:51.983Z",
+        "type": "returned",
+        "detail": "research-1"
+      },
+      {
+        "at": "2026-10-07T02:23:51.990Z",
+        "type": "task-queued",
+        "detail": "research-2"
+      },
+      {
+        "at": "2026-10-07T02:23:51.990Z",
+        "type": "dispatch",
+        "detail": "operation-3"
+      },
+      {
+        "at": "2026-10-07T02:24:04.575Z",
+        "type": "settled",
+        "detail": "operation-3"
+      },
+      {
+        "at": "2026-10-07T02:24:19.603Z",
+        "type": "returned",
+        "detail": "research-2"
+      },
+      {
+        "at": "2026-10-07T02:24:19.611Z",
+        "type": "task-queued",
+        "detail": "research-3"
+      },
+      {
+        "at": "2026-10-07T02:24:19.611Z",
+        "type": "dispatch",
+        "detail": "operation-4"
+      },
+      {
+        "at": "2026-10-07T02:24:29.263Z",
+        "type": "settled",
+        "detail": "operation-4"
+      },
+      {
+        "at": "2026-10-07T02:24:49.083Z",
+        "type": "returned",
+        "detail": "research-3"
+      },
+      {
+        "at": "2026-10-07T02:24:49.092Z",
+        "type": "task-queued",
+        "detail": "research-4"
+      },
+      {
+        "at": "2026-10-07T02:24:49.092Z",
+        "type": "dispatch",
+        "detail": "operation-5"
+      },
+      {
+        "at": "2026-10-07T02:24:57.836Z",
+        "type": "settled",
+        "detail": "operation-5"
+      },
+      {
+        "at": "2026-10-07T02:25:01.558Z",
+        "type": "returned",
+        "detail": "research-4"
+      },
+      {
+        "at": "2026-10-07T02:25:01.564Z",
+        "type": "task-queued",
+        "detail": "research-5"
+      },
+      {
+        "at": "2026-10-07T02:25:01.564Z",
+        "type": "dispatch",
+        "detail": "operation-6"
+      },
+      {
+        "at": "2026-10-07T02:25:10.471Z",
+        "type": "settled",
+        "detail": "operation-6"
+      },
+      {
+        "at": "2026-10-07T02:25:12.038Z",
+        "type": "returned",
+        "detail": "research-5"
+      },
+      {
+        "at": "2026-10-07T02:25:12.045Z",
+        "type": "task-queued",
+        "detail": "research-6"
+      },
+      {
+        "at": "2026-10-07T02:25:12.045Z",
+        "type": "dispatch",
+        "detail": "operation-7"
+      },
+      {
+        "at": "2026-10-07T02:27:40.383Z",
+        "type": "settled",
+        "detail": "operation-7"
+      },
+      {
+        "at": "2026-10-07T02:27:40.402Z",
+        "type": "returned",
+        "detail": "research-6"
+      },
+      {
+        "at": "2026-10-07T02:27:40.442Z",
+        "type": "factory-phase-protocol",
+        "detail": "{\"phase\":\"physical-readiness\",\"version\":2,\"reason\":\"New undispatched phase protocol\"}"
+      },
+      {
+        "at": "2026-10-07T02:27:40.448Z",
+        "type": "counter",
+        "detail": "research:"
+      },
+      {
+        "at": "2026-10-07T02:27:40.448Z",
+        "type": "factory-allowance",
+        "detail": "physical-readiness"
+      },
+      {
+        "at": "2026-10-07T02:27:40.455Z",
+        "type": "task-queued",
+        "detail": "physical-readiness-1"
+      },
+      {
+        "at": "2026-10-07T02:27:40.455Z",
+        "type": "dispatch",
+        "detail": "operation-8"
+      },
+      {
+        "at": "2026-10-07T02:27:48.021Z",
+        "type": "settled",
+        "detail": "operation-8"
+      },
+      {
+        "at": "2026-10-07T02:27:53.058Z",
+        "type": "returned",
+        "detail": "physical-readiness-1"
+      },
+      {
+        "at": "2026-10-07T02:27:53.066Z",
+        "type": "task-queued",
+        "detail": "physical-readiness-2"
+      },
+      {
+        "at": "2026-10-07T02:27:53.066Z",
+        "type": "dispatch",
+        "detail": "operation-9"
+      },
+      {
+        "at": "2026-10-07T02:28:07.443Z",
+        "type": "settled",
+        "detail": "operation-9"
+      },
+      {
+        "at": "2026-10-07T02:28:16.215Z",
+        "type": "returned",
+        "detail": "physical-readiness-2"
+      },
+      {
+        "at": "2026-10-07T02:28:16.221Z",
+        "type": "task-queued",
+        "detail": "physical-readiness-3"
+      },
+      {
+        "at": "2026-10-07T02:28:16.221Z",
+        "type": "dispatch",
+        "detail": "operation-10"
+      },
+      {
+        "at": "2026-10-07T02:28:23.872Z",
+        "type": "settled",
+        "detail": "operation-10"
+      },
+      {
+        "at": "2026-10-07T02:28:24.228Z",
+        "type": "returned",
+        "detail": "physical-readiness-3"
+      },
+      {
+        "at": "2026-10-07T02:28:24.238Z",
+        "type": "task-queued",
+        "detail": "physical-readiness-4"
+      },
+      {
+        "at": "2026-10-07T02:28:24.238Z",
+        "type": "dispatch",
+        "detail": "operation-11"
+      },
+      {
+        "at": "2026-10-07T02:30:56.527Z",
+        "type": "settled",
+        "detail": "operation-11"
+      },
+      {
+        "at": "2026-10-07T02:30:56.541Z",
+        "type": "returned",
+        "detail": "physical-readiness-4"
+      },
+      {
+        "at": "2026-10-07T02:30:56.585Z",
+        "type": "factory-phase-protocol",
+        "detail": "{\"phase\":\"route-plan-1\",\"version\":4,\"reason\":\"New undispatched phase protocol\"}"
+      },
+      {
+        "at": "2026-10-07T02:30:56.594Z",
+        "type": "counter",
+        "detail": "route:"
+      },
+      {
+        "at": "2026-10-07T02:30:56.594Z",
+        "type": "factory-allowance",
+        "detail": "route-plan-1"
+      },
+      {
+        "at": "2026-10-07T02:30:56.604Z",
+        "type": "task-queued",
+        "detail": "route-plan-1-1"
+      },
+      {
+        "at": "2026-10-07T02:30:56.604Z",
+        "type": "dispatch",
+        "detail": "operation-12"
+      },
+      {
+        "at": "2026-10-07T02:31:00.479Z",
+        "type": "settled",
+        "detail": "operation-12"
+      },
+      {
+        "at": "2026-10-07T02:31:01.196Z",
+        "type": "returned",
+        "detail": "route-plan-1-1"
+      },
+      {
+        "at": "2026-10-07T02:31:01.204Z",
+        "type": "task-queued",
+        "detail": "route-plan-1-2"
+      },
+      {
+        "at": "2026-10-07T02:31:01.204Z",
+        "type": "dispatch",
+        "detail": "operation-13"
+      },
+      {
+        "at": "2026-10-07T02:31:05.177Z",
+        "type": "settled",
+        "detail": "operation-13"
+      },
+      {
+        "at": "2026-10-07T02:31:06.256Z",
+        "type": "returned",
+        "detail": "route-plan-1-2"
+      },
+      {
+        "at": "2026-10-07T02:31:06.263Z",
+        "type": "task-queued",
+        "detail": "route-plan-1-3"
+      },
+      {
+        "at": "2026-10-07T02:31:06.263Z",
+        "type": "dispatch",
+        "detail": "operation-14"
+      },
+      {
+        "at": "2026-10-07T02:31:13.981Z",
+        "type": "settled",
+        "detail": "operation-14"
+      },
+      {
+        "at": "2026-10-07T02:31:15.230Z",
+        "type": "returned",
+        "detail": "route-plan-1-3"
+      },
+      {
+        "at": "2026-10-07T02:31:15.239Z",
+        "type": "task-queued",
+        "detail": "route-plan-1-4"
+      },
+      {
+        "at": "2026-10-07T02:31:15.239Z",
+        "type": "dispatch",
+        "detail": "operation-15"
+      },
+      {
+        "at": "2026-10-07T02:32:41.690Z",
+        "type": "settled",
+        "detail": "operation-15"
+      },
+      {
+        "at": "2026-10-07T02:32:41.701Z",
+        "type": "returned",
+        "detail": "route-plan-1-4"
+      },
+      {
+        "at": "2026-10-07T02:32:46.173Z",
+        "type": "factory-phase-protocol",
+        "detail": "{\"phase\":\"scout-1\",\"version\":2,\"reason\":\"New undispatched phase protocol\"}"
+      },
+      {
+        "at": "2026-10-07T02:32:46.184Z",
+        "type": "task-queued",
+        "detail": "scout-1-1"
+      },
+      {
+        "at": "2026-10-07T02:32:46.184Z",
+        "type": "dispatch",
+        "detail": "operation-16"
+      },
+      {
+        "at": "2026-10-07T02:32:54.743Z",
+        "type": "settled",
+        "detail": "operation-16"
+      },
+      {
+        "at": "2026-10-07T02:33:22.486Z",
+        "type": "returned",
+        "detail": "scout-1-1"
+      },
+      {
+        "at": "2026-10-07T02:33:22.494Z",
+        "type": "task-queued",
+        "detail": "scout-1-2"
+      },
+      {
+        "at": "2026-10-07T02:33:22.494Z",
+        "type": "dispatch",
+        "detail": "operation-17"
+      },
+      {
+        "at": "2026-10-07T02:33:28.296Z",
+        "type": "settled",
+        "detail": "operation-17"
+      },
+      {
+        "at": "2026-10-07T02:33:41.414Z",
+        "type": "returned",
+        "detail": "scout-1-2"
+      },
+      {
+        "at": "2026-10-07T02:33:41.421Z",
+        "type": "task-queued",
+        "detail": "scout-1-3"
+      },
+      {
+        "at": "2026-10-07T02:33:41.421Z",
+        "type": "dispatch",
+        "detail": "operation-18"
+      },
+      {
+        "at": "2026-10-07T02:34:58.399Z",
+        "type": "settled",
+        "detail": "operation-18"
+      },
+      {
+        "at": "2026-10-07T02:34:58.414Z",
+        "type": "returned",
+        "detail": "scout-1-3"
+      },
+      {
+        "at": "2026-10-07T02:34:58.423Z",
+        "type": "counter",
+        "detail": "research:"
+      },
+      {
+        "at": "2026-10-07T02:34:58.423Z",
+        "type": "factory-allowance",
+        "detail": "route-research-1"
+      },
+      {
+        "at": "2026-10-07T02:34:58.435Z",
+        "type": "task-queued",
+        "detail": "route-research-1-1"
+      },
+      {
+        "at": "2026-10-07T02:34:58.435Z",
+        "type": "dispatch",
+        "detail": "operation-19"
+      },
+      {
+        "at": "2026-10-07T02:35:02.471Z",
+        "type": "settled",
+        "detail": "operation-19"
+      },
+      {
+        "at": "2026-10-07T02:35:04.027Z",
+        "type": "returned",
+        "detail": "route-research-1-1"
+      },
+      {
+        "at": "2026-10-07T02:35:04.033Z",
+        "type": "task-queued",
+        "detail": "route-research-1-2"
+      },
+      {
+        "at": "2026-10-07T02:35:04.033Z",
+        "type": "dispatch",
+        "detail": "operation-20"
+      },
+      {
+        "at": "2026-10-07T02:35:09.952Z",
+        "type": "settled",
+        "detail": "operation-20"
+      },
+      {
+        "at": "2026-10-07T02:35:11.662Z",
+        "type": "returned",
+        "detail": "route-research-1-2"
+      },
+      {
+        "at": "2026-10-07T02:35:11.670Z",
+        "type": "task-queued",
+        "detail": "route-research-1-3"
+      },
+      {
+        "at": "2026-10-07T02:35:11.670Z",
+        "type": "dispatch",
+        "detail": "operation-21"
+      },
+      {
+        "at": "2026-10-07T02:35:23.389Z",
+        "type": "settled",
+        "detail": "operation-21"
+      },
+      {
+        "at": "2026-10-07T02:35:23.468Z",
+        "type": "returned",
+        "detail": "route-research-1-3"
+      },
+      {
+        "at": "2026-10-07T02:35:23.478Z",
+        "type": "task-queued",
+        "detail": "route-research-1-4"
+      },
+      {
+        "at": "2026-10-07T02:35:23.478Z",
+        "type": "dispatch",
+        "detail": "operation-22"
+      },
+      {
+        "at": "2026-10-07T02:37:48.032Z",
+        "type": "settled",
+        "detail": "operation-22"
+      },
+      {
+        "at": "2026-10-07T02:37:48.047Z",
+        "type": "returned",
+        "detail": "route-research-1-4"
+      },
+      {
+        "at": "2026-10-07T02:37:48.099Z",
+        "type": "factory-phase-protocol",
+        "detail": "{\"phase\":\"route-plan-2\",\"version\":4,\"reason\":\"New undispatched phase protocol\"}"
+      },
+      {
+        "at": "2026-10-07T02:37:48.105Z",
+        "type": "counter",
+        "detail": "route:"
+      },
+      {
+        "at": "2026-10-07T02:37:48.105Z",
+        "type": "factory-allowance",
+        "detail": "route-plan-2"
+      },
+      {
+        "at": "2026-10-07T02:37:48.113Z",
+        "type": "task-queued",
+        "detail": "route-plan-2-1"
+      },
+      {
+        "at": "2026-10-07T02:37:48.113Z",
+        "type": "dispatch",
+        "detail": "operation-23"
+      },
+      {
+        "at": "2026-10-07T02:37:51.720Z",
+        "type": "settled",
+        "detail": "operation-23"
+      },
+      {
+        "at": "2026-10-07T02:37:51.743Z",
+        "type": "returned",
+        "detail": "route-plan-2-1"
+      },
+      {
+        "at": "2026-10-07T02:37:51.750Z",
+        "type": "task-queued",
+        "detail": "route-plan-2-2"
+      },
+      {
+        "at": "2026-10-07T02:37:51.750Z",
+        "type": "dispatch",
+        "detail": "operation-24"
+      },
+      {
+        "at": "2026-10-07T02:37:56.296Z",
+        "type": "settled",
+        "detail": "operation-24"
+      },
+      {
+        "at": "2026-10-07T02:38:01.131Z",
+        "type": "returned",
+        "detail": "route-plan-2-2"
+      },
+      {
+        "at": "2026-10-07T02:38:01.140Z",
+        "type": "task-queued",
+        "detail": "route-plan-2-3"
+      },
+      {
+        "at": "2026-10-07T02:38:01.140Z",
+        "type": "dispatch",
+        "detail": "operation-25"
+      },
+      {
+        "at": "2026-10-07T02:39:40.520Z",
+        "type": "settled",
+        "detail": "operation-25"
+      },
+      {
+        "at": "2026-10-07T02:39:40.538Z",
+        "type": "returned",
+        "detail": "route-plan-2-3"
+      },
+      {
+        "at": "2026-10-07T02:39:42.864Z",
+        "type": "factory-phase-protocol",
+        "detail": "{\"phase\":\"scout-2\",\"version\":2,\"reason\":\"New undispatched phase protocol\"}"
+      },
+      {
+        "at": "2026-10-07T02:39:42.875Z",
+        "type": "task-queued",
+        "detail": "scout-2-1"
+      },
+      {
+        "at": "2026-10-07T02:39:42.875Z",
+        "type": "dispatch",
+        "detail": "operation-26"
+      },
+      {
+        "at": "2026-10-07T02:39:47.397Z",
+        "type": "settled",
+        "detail": "operation-26"
+      },
+      {
+        "at": "2026-10-07T02:39:48.788Z",
+        "type": "returned",
+        "detail": "scout-2-1"
+      },
+      {
+        "at": "2026-10-07T02:39:48.797Z",
+        "type": "task-queued",
+        "detail": "scout-2-2"
+      },
+      {
+        "at": "2026-10-07T02:39:48.797Z",
+        "type": "dispatch",
+        "detail": "operation-27"
+      },
+      {
+        "at": "2026-10-07T02:39:57.113Z",
+        "type": "settled",
+        "detail": "operation-27"
+      },
+      {
+        "at": "2026-10-07T02:39:57.123Z",
+        "type": "returned",
+        "detail": "scout-2-2"
+      },
+      {
+        "at": "2026-10-07T02:39:57.133Z",
+        "type": "task-queued",
+        "detail": "scout-2-3"
+      },
+      {
+        "at": "2026-10-07T02:39:57.133Z",
+        "type": "dispatch",
+        "detail": "operation-28"
+      },
+      {
+        "at": "2026-10-07T02:41:10.100Z",
+        "type": "settled",
+        "detail": "operation-28"
+      },
+      {
+        "at": "2026-10-07T02:41:10.113Z",
+        "type": "returned",
+        "detail": "scout-2-3"
+      },
+      {
+        "at": "2026-10-07T02:41:10.125Z",
+        "type": "factory-phase-protocol",
+        "detail": "{\"phase\":\"route-plan-3\",\"version\":4,\"reason\":\"New undispatched phase protocol\"}"
+      },
+      {
+        "at": "2026-10-07T02:41:10.136Z",
+        "type": "counter",
+        "detail": "route:"
+      },
+      {
+        "at": "2026-10-07T02:41:10.136Z",
+        "type": "factory-allowance",
+        "detail": "route-plan-3"
+      },
+      {
+        "at": "2026-10-07T02:41:10.147Z",
+        "type": "task-queued",
+        "detail": "route-plan-3-1"
+      },
+      {
+        "at": "2026-10-07T02:41:10.147Z",
+        "type": "dispatch",
+        "detail": "operation-29"
+      },
+      {
+        "at": "2026-10-07T02:41:13.757Z",
+        "type": "settled",
+        "detail": "operation-29"
+      },
+      {
+        "at": "2026-10-07T02:41:14.432Z",
+        "type": "returned",
+        "detail": "route-plan-3-1"
+      },
+      {
+        "at": "2026-10-07T02:41:14.444Z",
+        "type": "task-queued",
+        "detail": "route-plan-3-2"
+      },
+      {
+        "at": "2026-10-07T02:41:14.444Z",
+        "type": "dispatch",
+        "detail": "operation-30"
+      },
+      {
+        "at": "2026-10-07T02:41:19.685Z",
+        "type": "settled",
+        "detail": "operation-30"
+      },
+      {
+        "at": "2026-10-07T02:41:28.973Z",
+        "type": "returned",
+        "detail": "route-plan-3-2"
+      },
+      {
+        "at": "2026-10-07T02:41:28.982Z",
+        "type": "task-queued",
+        "detail": "route-plan-3-3"
+      },
+      {
+        "at": "2026-10-07T02:41:28.982Z",
+        "type": "dispatch",
+        "detail": "operation-31"
+      },
+      {
+        "at": "2026-10-07T02:41:32.970Z",
+        "type": "settled",
+        "detail": "operation-31"
+      },
+      {
+        "at": "2026-10-07T02:41:46.263Z",
+        "type": "returned",
+        "detail": "route-plan-3-3"
+      },
+      {
+        "at": "2026-10-07T02:41:46.274Z",
+        "type": "task-queued",
+        "detail": "route-plan-3-4"
+      },
+      {
+        "at": "2026-10-07T02:41:46.274Z",
+        "type": "dispatch",
+        "detail": "operation-32"
+      },
+      {
+        "at": "2026-10-07T02:43:27.220Z",
+        "type": "settled",
+        "detail": "operation-32"
+      },
+      {
+        "at": "2026-10-07T02:43:27.234Z",
+        "type": "returned",
+        "detail": "route-plan-3-4"
+      },
+      {
+        "at": "2026-10-07T02:43:28.432Z",
+        "type": "factory-phase-protocol",
+        "detail": "{\"phase\":\"scout-3\",\"version\":2,\"reason\":\"New undispatched phase protocol\"}"
+      },
+      {
+        "at": "2026-10-07T02:43:28.444Z",
+        "type": "task-queued",
+        "detail": "scout-3-1"
+      },
+      {
+        "at": "2026-10-07T02:43:28.444Z",
+        "type": "dispatch",
+        "detail": "operation-33"
+      },
+      {
+        "at": "2026-10-07T02:43:32.811Z",
+        "type": "settled",
+        "detail": "operation-33"
+      },
+      {
+        "at": "2026-10-07T02:43:33.864Z",
+        "type": "returned",
+        "detail": "scout-3-1"
+      },
+      {
+        "at": "2026-10-07T02:43:33.873Z",
+        "type": "task-queued",
+        "detail": "scout-3-2"
+      },
+      {
+        "at": "2026-10-07T02:43:33.873Z",
+        "type": "dispatch",
+        "detail": "operation-34"
+      },
+      {
+        "at": "2026-10-07T02:43:39.683Z",
+        "type": "settled",
+        "detail": "operation-34"
+      },
+      {
+        "at": "2026-10-07T02:43:39.771Z",
+        "type": "returned",
+        "detail": "scout-3-2"
+      },
+      {
+        "at": "2026-10-07T02:43:39.779Z",
+        "type": "task-queued",
+        "detail": "scout-3-3"
+      },
+      {
+        "at": "2026-10-07T02:43:39.779Z",
+        "type": "dispatch",
+        "detail": "operation-35"
+      },
+      {
+        "at": "2026-10-07T02:45:04.477Z",
+        "type": "settled",
+        "detail": "operation-35"
+      },
+      {
+        "at": "2026-10-07T02:45:04.492Z",
+        "type": "returned",
+        "detail": "scout-3-3"
+      },
+      {
+        "at": "2026-10-07T02:45:04.504Z",
+        "type": "factory-phase-protocol",
+        "detail": "{\"phase\":\"route-disposition\",\"version\":2,\"reason\":\"New undispatched phase protocol\"}"
+      },
+      {
+        "at": "2026-10-07T02:45:04.520Z",
+        "type": "task-queued",
+        "detail": "route-disposition-1"
+      },
+      {
+        "at": "2026-10-07T02:45:04.520Z",
+        "type": "dispatch",
+        "detail": "operation-36"
+      },
+      {
+        "at": "2026-10-07T02:45:08.935Z",
+        "type": "settled",
+        "detail": "operation-36"
+      },
+      {
+        "at": "2026-10-07T02:45:10.100Z",
+        "type": "returned",
+        "detail": "route-disposition-1"
+      },
+      {
+        "at": "2026-10-07T02:45:10.111Z",
+        "type": "task-queued",
+        "detail": "route-disposition-2"
+      },
+      {
+        "at": "2026-10-07T02:45:10.111Z",
+        "type": "dispatch",
+        "detail": "operation-37"
+      },
+      {
+        "at": "2026-10-07T02:46:14.991Z",
+        "type": "settled",
+        "detail": "operation-37"
+      },
+      {
+        "at": "2026-10-07T02:46:15.004Z",
+        "type": "returned",
+        "detail": "route-disposition-2"
+      },
+      {
+        "at": "2026-10-07T02:46:15.017Z",
+        "type": "terminal",
+        "detail": "blocked"
+      }
+    ]
+  },
+  "startingInputs": {
+    "brief": {
+      "schemaVersion": 1,
+      "id": "highgate-fresh-factory-v3",
+      "area": "Highgate, London",
+      "start": "Highgate Underground station, public exterior",
+      "end": "Highgate Underground station, public exterior",
+      "durationSeconds": 3600,
+      "generationMinutes": 45,
+      "access": "Daytime, public exterior stops; ordinary hills and public steps allowed; no additional accessibility constraints; no paid admission required",
+      "audience": {
+        "reason": "Discover worthwhile, less obvious stories and understand the places we encounter",
+        "assumedKnowledge": "Little neighbourhood knowledge",
+        "intendedDiscovery": "Determined through fresh area research; warm documentary narration with revealing supported detail",
+        "presentAnchor": "Actual exterior places and public viewpoints on the selected loop"
+      },
+      "voice": "local Kokoro George",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "directPaidCeilingUsd": 0,
+      "mapId": "hampstead-0abcc26a600e0718",
+      "freshContentOnly": true,
+      "requirements": [
+        "Use a fresh survey of published Highgate walks before our own selection and scripting",
+        "Do not use previous project tour research, candidates, routes, source evidence or authored scripts, including previous Hampstead or Highgate material",
+        "Reuse generation roles, tools, the local voice renderer and the bundled map only as infrastructure; obtain fresh source evidence and route geometry for this job",
+        "Write original narration from read source evidence, preserving material qualifications",
+        "Public accessible exterior standing points are distinct from landmarks and camera locations",
+        "Include the return to Highgate Underground station and actual measured narration in the hour estimate",
+        "Retain AI provenance, saved map, planned directions and manual playback/navigation fallback",
+        "Do not claim human listening or an outdoor visit from desktop checks",
+        "This is a separate fresh verification generation after routing and physical-readiness fixes. Do not reuse content, selected places, evidence, route geometry or scripts from any earlier Highgate trial; obtain all tour material anew."
+      ]
+    },
+    "briefSha256": "abe55c72cf7e08554fbaea42317470552927dea7a849c724d0573a25c4998e63",
+    "authoredInputs": [],
+    "reuse": [
+      "player",
+      "bundled map",
+      "George renderer",
+      "generic editorial guidance"
+    ],
+    "implementationSha256": {
+      "runtime.ts": "28627cf4279cb745803a9d6d2e9b27556693e34dc666b9be5900cf7aaa03cf4f",
+      "pipeline.ts": "de4d7a55a9cafff3517e0a2cfc057e3ee82180bc4cfe6a1b06fd135b6c652796",
+      "contracts.ts": "ebc84dc6da42299c8bf33ede187929795c53b8009a69253e00eda0fdf3874f23",
+      "public-tools.ts": "5ede0fbaa84b6fe5b8e68253088f26cbe11257724fbdcd4be0a6600f6d89e8c6",
+      "retained-evidence.ts": "68b5ff0a94d58b9124ab08db7fb75431d40423ee4f3b0ba0f8fdb428efd6eb38",
+      "software-evidence.ts": "fbc33019a4ab41df5b44744865cd51441e7c3d7e9b1cd59c032c574b17a9ed29",
+      "package-checks.ts": "3bbf29ec41a88b5d02354b82babdb9a59bc8d2f4767a8803a488185e1fae8470",
+      "../builder.ts": "2c51fe0e0071ad821e2bfce5a6144cd367c30acef48b9e19abfa8bbdf80ce56f",
+      "../provider.ts": "1d11797adb8eb40e1699ad8abfae50647ca570d679bdd8f15240cf137c4b0f29"
+    },
+    "freshContentOnly": true
+  },
+  "observed": {
+    "survey": {
+      "binding": "d314305dd033a710a8acb1ba7eab8c272ab4011099783510770266234477e040",
+      "result": {
+        "publishedWalks": [
+          {
+            "title": "Highgate Walk in London — A Lady in London",
+            "url": "https://www.aladyinlondon.com/2022/09/highgate-walk.html",
+            "stops": [
+              "Highgate station",
+              "Highgate Wood",
+              "North Hill and residential passages",
+              "Waterlow Park beside Lauderdale House",
+              "Highgate High Street",
+              "Pond Square",
+              "Swain’s Lane and Highgate Cemetery, with optional entry",
+              "Holly Village",
+              "Hampstead Heath and Parliament Hill",
+              "Tufnell Park station"
+            ],
+            "themes": [
+              "Residential architecture, green spaces, independent shops and pubs",
+              "Advertised as a two-to-three-hour linear walk, not a one-hour Highgate station loop"
+            ],
+            "stories": [
+              "Primarily a place-discovery itinerary rather than a historical narrative; advertises cemetery notables including Karl Marx and views from Parliament Hill. Locator: route and details, lines 26–95. Publisher-owned travel blog; URL indicates September 2022, but revision date is unverified. ([aladyinlondon.com](https://www.aladyinlondon.com/2022/09/highgate-walk.html))"
+            ]
+          },
+          {
+            "title": "The Highgate Village Self-Guided Walk — Richard Jones",
+            "url": "https://www.london-walking-tours.co.uk/free-tours/highgate-village-walk.htm",
+            "stops": [
+              "Highgate station and Park Walk",
+              "North Road Dickens lodging location",
+              "Highgate School",
+              "The Gatehouse",
+              "Pond Square",
+              "South Grove and St Michael’s Church",
+              "The Flask and The Grove",
+              "Holly Lodge Estate",
+              "Holly Village",
+              "Highgate Cemetery",
+              "Waterlow Park",
+              "Ivy House",
+              "Whittington Stone",
+              "Archway station"
+            ],
+            "themes": [
+              "Dickens and literary Highgate",
+              "Inns, customs and village history",
+              "Advertised two-hour linear route"
+            ],
+            "stories": [
+              "Advertises Dickens family lodgings in 1832, the inn custom of swearing on horns, Coleridge’s residence and treatment, and Dickens connections at Ivy House and the Whittington Stone. These remain the guide’s claims, not independently verified narration evidence. Locator: lines 51–200; publication date not established. ([london-walking-tours.co.uk](https://www.london-walking-tours.co.uk/free-tours/highgate-village-walk.htm))"
+            ]
+          },
+          {
+            "title": "Highgate Village and Cemetery London Walk — Joolz Guides",
+            "url": "https://joolzguides.com/videos/highgate-village-cemetery-walk/",
+            "stops": [
+              "Swain’s Lane",
+              "Highgate Cemetery",
+              "Waterlow Park",
+              "Pond Square",
+              "The Flask",
+              "The Prince of Wales",
+              "Highgate School",
+              "The Gatehouse",
+              "The Wrestlers",
+              "Highpoint"
+            ],
+            "themes": [
+              "Ghost folklore and celebrity associations",
+              "Village inns and customs",
+              "Architecture and screen locations"
+            ],
+            "stories": [
+              "The accompanying webpage advertises the Highgate vampire, Pond Square’s ghost chicken, Flask ghost and highwayman tales, swearing on horns, and Highpoint’s television associations. Catalogue only: supernatural and celebrity claims are not accepted as historical fact. Locator: lines 37–59; publication date unknown. Video not played. ([joolzguides.com](https://joolzguides.com/videos/highgate-village-cemetery-walk/))"
+            ]
+          },
+          {
+            "title": "Waterlow Park — sylviaszekely, Go Jauntly",
+            "url": "https://walks.gojauntly.com/walks/waterlow-park-14806895149008687591?cId=172",
+            "stops": [
+              "Archway station",
+              "Highgate Hill",
+              "Advertised farmers’ market at St Joseph’s Catholic Primary School",
+              "Waterlow Park"
+            ],
+            "themes": [
+              "Sunday leisure, food and park exploration",
+              "Advertised 45 minutes and 1.9 kilometres"
+            ],
+            "stories": [
+              "Advertises market shopping, a park stroll and a roast rather than historical stories. Only six preview steps are public on the opened page; the complete route requires the app. Current market operation and the final meal location were not verified. Locator: lines 15–49; publication date unknown. ([walks.gojauntly.com](https://walks.gojauntly.com/walks/waterlow-park-14806895149008687591?cId=172))"
+            ]
+          },
+          {
+            "title": "North Hill, Highgate — architectural walk",
+            "url": "https://www.haringey.gov.uk/sites/haringeygovuk/files/attachment_north_hill_architectural_walk_20_may_2020.pdf",
+            "stops": [
+              "Highpoint, 1 North Hill",
+              "94–96 North Road",
+              "Morven House, 6 North Hill",
+              "Walter Segal’s house, 9 North Hill",
+              "41 North Hill",
+              "Veranda Cottages, 61–83 North Hill",
+              "Highcroft",
+              "Springfield Cottages",
+              "193 North Hill"
+            ],
+            "themes": [
+              "Domestic architecture across periods",
+              "Housing design, light, materials and charitable provision",
+              "North Hill corridor rather than a station loop"
+            ],
+            "stories": [
+              "Highlights Highpoint’s modernism, Segal’s deliberately understated house, and separate household entrances at Veranda Cottages. Selected advertised stops, not the complete inventory. Locator: PDF page 1, numbered building entries; filename carries 20 May 2020, not a verified publication date. Council-hosted interpretive leaflet. ([haringey.gov.uk](https://www.haringey.gov.uk/sites/haringeygovuk/files/attachment_north_hill_architectural_walk_20_may_2020.pdf))"
+            ]
+          }
+        ],
+        "candidates": [
+          {
+            "id": "highgate-fresh-factory-v3-c01",
+            "name": "Highgate Underground station — public exterior bookend",
+            "why": "Required start and finish. Proposed discovery: the everyday station as wartime refuge. Lauderdale House’s institutional history reports local people sleeping in Highgate tube during the Blitz; use as an attributed research proposition, not proof of which platforms or entrance were involved. Locator: The Blitz, lines 36–39. Present anchor: a station exterior, exact exit and safe standing position unresolved. No underground view promised. ([lauderdalehouse.org.uk](https://www.lauderdalehouse.org.uk/about-us/our-history/blitz))",
+            "leadUrls": [
+              "https://www.lauderdalehouse.org.uk/about-us/our-history/blitz"
+            ]
+          },
+          {
+            "id": "highgate-fresh-factory-v3-c02",
+            "name": "Highpoint — North Hill frontage",
+            "why": "Proposed contrast to picturesque village imagery: explain modern apartment design through an exterior view. The architectural leaflet identifies Lubetkin and Tecton and International Modernism, PDF page 1, Highpoint entry. Proposed standing point is the public pavement, not gardens, driveway or entrance canopy. Visibility and exact position require checking; do not repeat the leaflet’s factory-worker occupancy claim without corroboration. ([haringey.gov.uk](https://www.haringey.gov.uk/sites/haringeygovuk/files/attachment_north_hill_architectural_walk_20_may_2020.pdf))",
+            "leadUrls": [
+              "https://www.haringey.gov.uk/sites/haringeygovuk/files/attachment_north_hill_architectural_walk_20_may_2020.pdf"
+            ]
+          },
+          {
+            "id": "highgate-fresh-factory-v3-c03",
+            "name": "9 North Hill — Walter Segal’s house",
+            "why": "An alternative architectural candidate about restrained design rather than grandeur. The leaflet identifies Segal’s own 1965 house and says it is concealed behind garages, PDF page 1, entry 7. Proposed anchor: whatever is genuinely visible from North Hill pavement. Reject if the view cannot support discovery; do not enter private access or imply this house demonstrates his later self-build system without further evidence. ([haringey.gov.uk](https://www.haringey.gov.uk/sites/haringeygovuk/files/attachment_north_hill_architectural_walk_20_may_2020.pdf))",
+            "leadUrls": [
+              "https://www.haringey.gov.uk/sites/haringeygovuk/files/attachment_north_hill_architectural_walk_20_may_2020.pdf"
+            ]
+          },
+          {
+            "id": "highgate-fresh-factory-v3-c04",
+            "name": "Veranda Cottages — 61–83 North Hill",
+            "why": "A housing-history alternative to famous residents. The leaflet describes charitable flats with individual external entrances, PDF page 1, entry 20. Proposed discovery: how access arrangements reveal separate households. Anchor: frontage seen from public pavement, never residents’ stairs. Its speculative explanation invoking later bye-laws needs resolution; the additional northward distance may exclude this candidate from the hour. ([haringey.gov.uk](https://www.haringey.gov.uk/sites/haringeygovuk/files/attachment_north_hill_architectural_walk_20_may_2020.pdf))",
+            "leadUrls": [
+              "https://www.haringey.gov.uk/sites/haringeygovuk/files/attachment_north_hill_architectural_walk_20_may_2020.pdf"
+            ]
+          },
+          {
+            "id": "highgate-fresh-factory-v3-c05",
+            "name": "The Gatehouse — village junction",
+            "why": "Proposed discovery: the relationship between a village name, land ownership and movement through a toll gateway. Both Jones and Joolz advertise that association; this is a corroboration lead, not established medieval-site evidence. Locators: Jones lines 74–77; Joolz lines 52–53. Anchor: exterior and junction from a safe public pavement position, not a pub interior or carriageway. Distinguish the present building from the earlier gateway. ([london-walking-tours.co.uk](https://www.london-walking-tours.co.uk/free-tours/highgate-village-walk.htm))",
+            "leadUrls": [
+              "https://www.london-walking-tours.co.uk/free-tours/highgate-village-walk.htm",
+              "https://joolzguides.com/videos/highgate-village-cemetery-walk/"
+            ]
+          },
+          {
+            "id": "highgate-fresh-factory-v3-c06",
+            "name": "Pond Square — vanished water and remembered place",
+            "why": "A legible public-space candidate requiring little prior knowledge: investigate why a square retains the name of missing water. Jones states that the water source was filled in in 1864, line 84; that date remains uncorroborated. Anchor: a public standing point within the square, to be specified. Prefer landscape change over repeating the ghost-chicken story as fact. ([london-walking-tours.co.uk](https://www.london-walking-tours.co.uk/free-tours/highgate-village-walk.htm))",
+            "leadUrls": [
+              "https://www.london-walking-tours.co.uk/free-tours/highgate-village-walk.htm"
+            ]
+          },
+          {
+            "id": "highgate-fresh-factory-v3-c07",
+            "name": "The Wrestlers — inn customs from outside",
+            "why": "Proposed discovery: how a drinking ritual bestowed a playful local identity. Joolz advertises swearing on horns at this inn, lines 54–58. Investigate historical documentation and distinguish past practice from present operation; no performance, interior artefact or purchase is promised. Anchor: pub frontage from public pavement, exact stopping space unresolved. ([joolzguides.com](https://joolzguides.com/videos/highgate-village-cemetery-walk/))",
+            "leadUrls": [
+              "https://joolzguides.com/videos/highgate-village-cemetery-walk/"
+            ]
+          },
+          {
+            "id": "highgate-fresh-factory-v3-c08",
+            "name": "Lauderdale House — reuse, fire and community recovery",
+            "why": "A supported alternative to royal gossip: the house’s institutional history describes hospital use, park staff accommodation, the 1963 fire and reopening as an arts centre in 1978. Locator: Our History, lines 115–118. Proposed discovery: how a grand house acquired public uses. Anchor: exterior from a public park path, with a visible architectural detail selected later; no interior admission required. ([lauderdalehouse.org.uk](https://www.lauderdalehouse.org.uk/about-us/our-history))",
+            "leadUrls": [
+              "https://www.lauderdalehouse.org.uk/about-us/our-history"
+            ]
+          },
+          {
+            "id": "highgate-fresh-factory-v3-c09",
+            "name": "Upper Waterlow Park — Joy Hunt’s remembered view",
+            "why": "An unusually specific local account: Lauderdale House’s webpage recounts Joy Hunt looking over burning London with her father during the Blitz, lines 45–49. Proposed discovery connects an ordinary park view with a named resident’s recollection. Present-day viewpoint must be independently selected; the webpage does not locate her exact position or date. Attribute the memory and do not invent sensory detail. May merge with the house stop. ([lauderdalehouse.org.uk](https://www.lauderdalehouse.org.uk/about-us/our-history/blitz))",
+            "leadUrls": [
+              "https://www.lauderdalehouse.org.uk/about-us/our-history/blitz"
+            ]
+          },
+          {
+            "id": "highgate-fresh-factory-v3-c10",
+            "name": "Highgate Cemetery — Swain’s Lane exterior",
+            "why": "A familiar landmark considered as an exterior-only reserve, not a compulsory attraction. Published walks advertise cemetery history and famous burials, but neither graves nor interior monuments should be promised from the street. Proposed discovery would concern the cemetery’s relationship to the hillside and neighbourhood after fresh institutional verification. Anchor: a safe public pavement position outside the gates. The downhill diversion and return climb require measurement before inclusion. ([aladyinlondon.com](https://www.aladyinlondon.com/2022/09/highgate-walk.html))",
+            "leadUrls": [
+              "https://www.aladyinlondon.com/2022/09/highgate-walk.html",
+              "https://www.london-walking-tours.co.uk/free-tours/highgate-village-walk.htm"
+            ]
+          }
+        ],
+        "gaps": [
+          "Status: fresh survey proposal only, request 1/5; no selection, route acceptance, script, publication or physical-readiness approval. No previous project material was available or reused.",
+          "Input identity retained: brief schemaVersion 1; id highgate-fresh-factory-v3; freshContentOnly true. No separate revision identifier was supplied; v3 is retained as part of the exact ID, not interpreted as a verified revision history.",
+          "Audience retained verbatim: reason—Discover worthwhile, less obvious stories and understand the places we encounter; assumedKnowledge—Little neighbourhood knowledge; intendedDiscovery—Determined through fresh area research; warm documentary narration with revealing supported detail; presentAnchor—Actual exterior places and public viewpoints on the selected loop.",
+          "Constraints retained: 3600 seconds including return to Highgate Underground station public exterior and actual measured narration; 45 generation minutes; daytime public exterior stops; ordinary hills and public steps allowed; no paid admission required. Infrastructure identifiers retained without use: mapId hampstead-0abcc26a600e0718; voice local Kokoro George; model gpt-6-astra; effort medium.",
+          "Tool limitation: no read_page tool was exposed. Hosted web search and web.open were used for discovery and page inspection. No exact source passages are returned; passage-level evidence required specifically from read_page remains unresolved. Locators and attributed paraphrases are supplied instead.",
+          "Evidence dates and reuse: pages inspected for this survey on October 7, 2026. Unless stated otherwise, publication and revision dates are unknown. The tour pages are evidence of advertised content, not independent proof of their historical claims. Reuse permission was not established; do not copy narration, photographs, maps or extended text. Institutional history pages provide promising evidence but still need proposition-level retention before scripting.",
+          "Usage: four hosted-web calls containing five search queries and nine page-open requests; one research context. No paid purchases or services invoked; direct paid spending authorized remains USD 0. No audio rendered or played, no map saved, no route geometry generated, and no outdoor visit claimed. Elapsed generation time was not measured.",
+          "Failed or incomplete attempts: the Jacksons Lane history query yielded no usable result in the returned batch; the targeted Historic England Highpoint query did not yield an opened listing. Repeated opens of the Richard Jones page around line 100 did not expose the desired later passage in the displayed excerpt. No candidate relies on an invented missing passage.",
+          "Negative findings: the inspected general village itineraries do not establish a one-hour Highgate-station loop. Go Jauntly exposes only a preview. Cemetery-interior itineraries are unsuitable for the exterior-only brief. Published ghost stories and present-tense inn customs cannot be promoted into verified historical or current claims.",
+          "Selection question: should the shortlist prioritise domestic housing and architecture on North Hill, or community reuse and a named wartime recollection around Waterlow Park? These are alternative emphases, not a proposal to fit all ten candidates into one hour.",
+          "Routing blockers: determine the exact start/finish station exit, public standing points distinct from landmarks, safe crossings, park gate hours on the intended date, path continuity and visibility. Obtain fresh geometry and a timed return leg before accepting any loop; no distance or duration fit is claimed.",
+          "Evidence blockers: verify Pond Square drainage chronology, Gatehouse/toll-site relationship, historic inn ritual, Highpoint development history and Veranda Cottages chronology. Joy Hunt’s account supports attributed recollection, not an exact historic viewpoint. The station shelter proposition needs transport/archive corroboration.",
+          "Recommended next action: choose the route emphasis, then verify a compact shortlist using institutional and archival sources and fresh pedestrian geometry. Drop weakly visible or expensive-in-time candidates before scripting. After route acceptance, restrict further research to named blockers.",
+          "Later delivery remains outstanding: original narration, actual Kokoro duration measurement, AI provenance, saved map, planned directions and manual playback/navigation fallback. docs/ISSUES.md was not available, so compliance with the cited issue contents has not been audited."
+        ]
+      },
+      "completedAt": "2026-10-07T02:23:41.414Z",
+      "operationId": "operation-1"
+    },
+    "sourceCount": 19,
+    "claimCount": 20,
+    "sourceReferences": [
+      {
+        "id": "s01",
+        "title": "Highpoint I — official list entry",
+        "url": "https://historicengland.org.uk/listing/the-list/list-entry/1358885"
+      },
+      {
+        "id": "s02",
+        "title": "Our History",
+        "url": "https://www.lauderdalehouse.org.uk/about-us/our-history"
+      },
+      {
+        "id": "s03",
+        "title": "The Blitz",
+        "url": "https://www.lauderdalehouse.org.uk/about-us/our-history/blitz"
+      },
+      {
+        "id": "s04",
+        "title": "Waterlow Park",
+        "url": "https://www.lauderdalehouse.org.uk/plan-your-visit/waterlow-park"
+      },
+      {
+        "id": "s05",
+        "title": "History — Friends of Waterlow Park",
+        "url": "https://www.waterlowpark.org.uk/the-park/history/"
+      },
+      {
+        "id": "s06",
+        "title": "The Wrestlers — operator statement",
+        "url": "https://thewrestlershighgate.com/"
+      },
+      {
+        "id": "s07",
+        "title": "Pond Square drinking fountain planned",
+        "url": "https://highgatesociety.com/pond-square-drinking-fountain-planned/"
+      },
+      {
+        "id": "s08",
+        "title": "Park opening and closing times",
+        "url": "https://www.camden.gov.uk/park-opening-and-closing-times"
+      },
+      {
+        "id": "s09",
+        "title": "Highpoint I — image discovery page",
+        "url": "https://en.wikipedia.org/wiki/Highpoint_I"
+      },
+      {
+        "id": "m07",
+        "title": "Waterlow public-path connections",
+        "url": "https://overpass-api.de/api/interpreter#query-77dea119eb5e528d0176bca95ad60fd6cf8eec0c0cdcdd88c28b95851205e72d"
+      },
+      {
+        "id": "m08",
+        "title": "Park Walk local approach",
+        "url": "https://overpass-api.de/api/interpreter#query-1188a72b614f0e5cfa74d59f3ed11b207f8344ffc17aa778fe86e0f971f33de5"
+      },
+      {
+        "id": "m09",
+        "title": "Lauderdale House and garden-side public path",
+        "url": "https://overpass-api.de/api/interpreter#query-6e3fbeafea8fedaedcf8413b314aef6fa2a21d48be387f1444c76c12e658744a"
+      },
+      {
+        "id": "m10",
+        "title": "Highpoint and opposite sidewalk",
+        "url": "https://overpass-api.de/api/interpreter#query-b87aaf8ca7ba921dcf61c69e99c28ed485a506dbc6a02526c5f3d794208b1cb4"
+      },
+      {
+        "id": "m11",
+        "title": "Station exterior and Archway Road crossing",
+        "url": "https://overpass-api.de/api/interpreter#query-9928c5c3403fb6e78a3957ec11281caa442e20f35d4cbb226a68d67ab5f51a7b"
+      },
+      {
+        "id": "i01",
+        "title": "Lauderdale House garden-side exterior",
+        "url": "https://www.lauderdalehouse.org.uk/sites/default/files/styles/teaser/public/2018-10/house%20outside%20summer.jpg?h=c705a628&itok=_yp2IRJ4"
+      },
+      {
+        "id": "i04",
+        "title": "Waterlow landscaped path and wall",
+        "url": "https://www.lauderdalehouse.org.uk/sites/default/files/styles/banner_crop/public/2018-09/waterlow%20park%20april%202018.jpg?h=e018db19&itok=IMRnXY2s"
+      },
+      {
+        "id": "i05",
+        "title": "Highpoint I exterior corner",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Highpoint_detail.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled"
+      },
+      {
+        "id": "m12",
+        "title": "Castle Yard repair investigation",
+        "url": "https://overpass-api.de/api/interpreter#query-b9106d242be09496c8ea35ca3c980c58a6bff658f90e423c25a3c38542c89747"
+      },
+      {
+        "id": "m13",
+        "title": "Southern Southwood Lane repair investigation",
+        "url": "https://overpass-api.de/api/interpreter#query-f635e0a06437115b07bbbcd516b47f4d2b8939c2ca850a7e2521b1d6ff6bd1ba"
+      }
+    ],
+    "route": null,
+    "build": null,
+    "durationAcceptance": null,
+    "phaseOutcomes": []
+  },
+  "usage": {
+    "model": "gpt-6-astra",
+    "effort": "medium",
+    "rows": [
+      {
+        "operationId": "operation-1",
+        "taskId": "survey-1",
+        "role": "research",
+        "stage": "factory-survey",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 108.33,
+        "inputTokens": 39392,
+        "outputTokens": 4138,
+        "cachedInputTokens": 4096,
+        "reasoningTokens": 282,
+        "totalTokens": 43530,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.563956,
+          "upper": 0.652196
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-2",
+        "taskId": "research-1",
+        "role": "research",
+        "stage": "factory-research",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 9.808,
+        "inputTokens": 13898,
+        "outputTokens": 170,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 64,
+        "totalTokens": 14068,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.114072,
+          "upper": 0.139537
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-3",
+        "taskId": "research-2",
+        "role": "research",
+        "stage": "factory-research",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 12.585,
+        "inputTokens": 20757,
+        "outputTokens": 263,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 62,
+        "totalTokens": 21020,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.187312,
+          "upper": 0.2299245
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-4",
+        "taskId": "research-3",
+        "role": "research",
+        "stage": "factory-research",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 9.652,
+        "inputTokens": 74976,
+        "outputTokens": 234,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 18,
+        "totalTokens": 75210,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.728052,
+          "upper": 0.906212
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-5",
+        "taskId": "research-4",
+        "role": "research",
+        "stage": "factory-research",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 8.744,
+        "inputTokens": 112865,
+        "outputTokens": 97,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 0,
+        "totalTokens": 112962,
+        "apiEquivalentRangeUsd": {
+          "lower": 1.100092,
+          "upper": 1.3729745
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-6",
+        "taskId": "research-5",
+        "role": "research",
+        "stage": "factory-research",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 8.907,
+        "inputTokens": 122478,
+        "outputTokens": 201,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 63,
+        "totalTokens": 122679,
+        "apiEquivalentRangeUsd": {
+          "lower": 1.201422,
+          "upper": 1.4983369999999998
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-7",
+        "taskId": "research-6",
+        "role": "research",
+        "stage": "factory-research",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 148.338,
+        "inputTokens": 132613,
+        "outputTokens": 6183,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 0,
+        "totalTokens": 138796,
+        "apiEquivalentRangeUsd": {
+          "lower": 1.601872,
+          "upper": 1.9241245
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-8",
+        "taskId": "physical-readiness-1",
+        "role": "research",
+        "stage": "factory-physical-readiness",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 7.566,
+        "inputTokens": 15136,
+        "outputTokens": 166,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 0,
+        "totalTokens": 15302,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.126252,
+          "upper": 0.154812
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-9",
+        "taskId": "physical-readiness-2",
+        "role": "research",
+        "stage": "factory-physical-readiness",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 14.377,
+        "inputTokens": 63400,
+        "outputTokens": 375,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 67,
+        "totalTokens": 63775,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.6193420000000001,
+          "upper": 0.7685620000000001
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-10",
+        "taskId": "physical-readiness-3",
+        "role": "research",
+        "stage": "factory-physical-readiness",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 7.651,
+        "inputTokens": 112304,
+        "outputTokens": 118,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 0,
+        "totalTokens": 112422,
+        "apiEquivalentRangeUsd": {
+          "lower": 1.095532,
+          "upper": 1.3670120000000001
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-11",
+        "taskId": "physical-readiness-4",
+        "role": "research",
+        "stage": "factory-physical-readiness",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 152.289,
+        "inputTokens": 115062,
+        "outputTokens": 6829,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 0,
+        "totalTokens": 121891,
+        "apiEquivalentRangeUsd": {
+          "lower": 1.4586620000000001,
+          "upper": 1.737037
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-12",
+        "taskId": "route-plan-1-1",
+        "role": "route",
+        "stage": "factory-route-plan-1",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 3.875,
+        "inputTokens": 11472,
+        "outputTokens": 34,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 11506,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.11642,
+          "upper": 0.1451
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-13",
+        "taskId": "route-plan-1-2",
+        "role": "route",
+        "stage": "factory-route-plan-1",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 3.973,
+        "inputTokens": 13868,
+        "outputTokens": 33,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 13901,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.14033,
+          "upper": 0.17500000000000002
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-14",
+        "taskId": "route-plan-1-3",
+        "role": "route",
+        "stage": "factory-route-plan-1",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 7.718,
+        "inputTokens": 27526,
+        "outputTokens": 51,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 14,
+        "totalTokens": 27577,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.27781,
+          "upper": 0.346625
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-15",
+        "taskId": "route-plan-1-4",
+        "role": "route",
+        "stage": "factory-route-plan-1",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 86.451,
+        "inputTokens": 36295,
+        "outputTokens": 3819,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 102,
+        "totalTokens": 40114,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.5539000000000001,
+          "upper": 0.6446375
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-16",
+        "taskId": "scout-1-1",
+        "role": "scout",
+        "stage": "factory-scout-1",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 8.559,
+        "inputTokens": 33431,
+        "outputTokens": 227,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 33658,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.34566,
+          "upper": 0.42923750000000005
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-17",
+        "taskId": "scout-1-2",
+        "role": "scout",
+        "stage": "factory-scout-1",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 5.802,
+        "inputTokens": 77572,
+        "outputTokens": 58,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 21,
+        "totalTokens": 77630,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.77862,
+          "upper": 0.97255
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-18",
+        "taskId": "scout-1-3",
+        "role": "scout",
+        "stage": "factory-scout-1",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 76.978,
+        "inputTokens": 77443,
+        "outputTokens": 2575,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 28,
+        "totalTokens": 80018,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.90318,
+          "upper": 1.0967875
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-19",
+        "taskId": "route-research-1-1",
+        "role": "research",
+        "stage": "factory-route-research-1",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 4.036,
+        "inputTokens": 21101,
+        "outputTokens": 33,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 0,
+        "totalTokens": 21134,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.17925200000000002,
+          "upper": 0.22272450000000002
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-20",
+        "taskId": "route-research-1-2",
+        "role": "research",
+        "stage": "factory-route-research-1",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 5.919,
+        "inputTokens": 40678,
+        "outputTokens": 106,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 0,
+        "totalTokens": 40784,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.378672,
+          "upper": 0.47108700000000003
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-21",
+        "taskId": "route-research-1-3",
+        "role": "research",
+        "stage": "factory-route-research-1",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 11.719,
+        "inputTokens": 66889,
+        "outputTokens": 158,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 49,
+        "totalTokens": 67047,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.643382,
+          "upper": 0.8013245
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-22",
+        "taskId": "route-research-1-4",
+        "role": "research",
+        "stage": "factory-route-research-1",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 144.554,
+        "inputTokens": 65420,
+        "outputTokens": 6891,
+        "cachedInputTokens": 3712,
+        "reasoningTokens": 53,
+        "totalTokens": 72311,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.965342,
+          "upper": 1.119612
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-23",
+        "taskId": "route-plan-2-1",
+        "role": "route",
+        "stage": "factory-route-plan-2",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 3.607,
+        "inputTokens": 17696,
+        "outputTokens": 34,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 17730,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.17866,
+          "upper": 0.22290000000000001
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-24",
+        "taskId": "route-plan-2-2",
+        "role": "route",
+        "stage": "factory-route-plan-2",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 4.546,
+        "inputTokens": 20092,
+        "outputTokens": 80,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 20172,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.20492,
+          "upper": 0.25515
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-25",
+        "taskId": "route-plan-2-3",
+        "role": "route",
+        "stage": "factory-route-plan-2",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 99.38,
+        "inputTokens": 48989,
+        "outputTokens": 4482,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 120,
+        "totalTokens": 53471,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.71399,
+          "upper": 0.8364625
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-26",
+        "taskId": "scout-2-1",
+        "role": "scout",
+        "stage": "factory-scout-2",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 4.522,
+        "inputTokens": 36807,
+        "outputTokens": 35,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 36842,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.36982,
+          "upper": 0.46183749999999996
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-27",
+        "taskId": "scout-2-2",
+        "role": "scout",
+        "stage": "factory-scout-2",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 8.316,
+        "inputTokens": 50104,
+        "outputTokens": 96,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 15,
+        "totalTokens": 50200,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.5058400000000001,
+          "upper": 0.6311
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-28",
+        "taskId": "scout-2-3",
+        "role": "scout",
+        "stage": "factory-scout-2",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 72.967,
+        "inputTokens": 52328,
+        "outputTokens": 2524,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 27,
+        "totalTokens": 54852,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.64948,
+          "upper": 0.7803
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-29",
+        "taskId": "route-plan-3-1",
+        "role": "route",
+        "stage": "factory-route-plan-3",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 3.61,
+        "inputTokens": 18231,
+        "outputTokens": 34,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 18265,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.18401,
+          "upper": 0.2295875
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-30",
+        "taskId": "route-plan-3-2",
+        "role": "route",
+        "stage": "factory-route-plan-3",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 5.241,
+        "inputTokens": 20631,
+        "outputTokens": 80,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 20711,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.21031,
+          "upper": 0.2618875
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-31",
+        "taskId": "route-plan-3-3",
+        "role": "route",
+        "stage": "factory-route-plan-3",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 3.988,
+        "inputTokens": 51773,
+        "outputTokens": 49,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 14,
+        "totalTokens": 51822,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.52018,
+          "upper": 0.6496124999999999
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-32",
+        "taskId": "route-plan-3-4",
+        "role": "route",
+        "stage": "factory-route-plan-3",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 100.946,
+        "inputTokens": 51558,
+        "outputTokens": 4483,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 101,
+        "totalTokens": 56041,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.73973,
+          "upper": 0.868625
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-33",
+        "taskId": "scout-3-1",
+        "role": "scout",
+        "stage": "factory-scout-3",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 4.367,
+        "inputTokens": 35774,
+        "outputTokens": 35,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 35809,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.35949,
+          "upper": 0.44892499999999996
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-34",
+        "taskId": "scout-3-2",
+        "role": "scout",
+        "stage": "factory-scout-3",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 5.81,
+        "inputTokens": 50843,
+        "outputTokens": 133,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 26,
+        "totalTokens": 50976,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.5150800000000001,
+          "upper": 0.6421875
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-35",
+        "taskId": "scout-3-3",
+        "role": "scout",
+        "stage": "factory-scout-3",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 84.698,
+        "inputTokens": 52664,
+        "outputTokens": 2949,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 55613,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.67409,
+          "upper": 0.80575
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-36",
+        "taskId": "route-disposition-1",
+        "role": "scout",
+        "stage": "factory-route-disposition",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 4.415,
+        "inputTokens": 34827,
+        "outputTokens": 35,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 34862,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.35002,
+          "upper": 0.43708749999999996
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      },
+      {
+        "operationId": "operation-37",
+        "taskId": "route-disposition-2",
+        "role": "scout",
+        "stage": "factory-route-disposition",
+        "state": "settled",
+        "failure": null,
+        "directChargedUsd": 0,
+        "activeSeconds": 64.88,
+        "inputTokens": 49642,
+        "outputTokens": 2467,
+        "cachedInputTokens": 0,
+        "reasoningTokens": 0,
+        "totalTokens": 52109,
+        "apiEquivalentRangeUsd": {
+          "lower": 0.6197699999999999,
+          "upper": 0.743875
+        },
+        "usageUncertainty": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+      }
+    ],
+    "byRole": [
+      {
+        "role": "research",
+        "operations": 15,
+        "operationsWithUnknownTokens": 0,
+        "observedInputTokens": 1016969,
+        "operationsWithUnknownInput": 0,
+        "observedOutputTokens": 25962,
+        "operationsWithUnknownOutput": 0,
+        "observedCachedInputTokens": 56064,
+        "operationsWithUnknownCache": 0,
+        "observedReasoningTokens": 658,
+        "operationsWithUnknownReasoning": 0,
+        "operationsWithUnknownCharge": 0,
+        "directChargedUsd": 0,
+        "observedApiEquivalentRangeUsd": {
+          "lower": 10.963214,
+          "upper": 13.365476500000002
+        },
+        "operationsWithoutEstimate": 0
+      },
+      {
+        "role": "route",
+        "operations": 11,
+        "operationsWithUnknownTokens": 0,
+        "observedInputTokens": 318131,
+        "operationsWithUnknownInput": 0,
+        "observedOutputTokens": 13179,
+        "operationsWithUnknownOutput": 0,
+        "observedCachedInputTokens": 0,
+        "operationsWithUnknownCache": 0,
+        "observedReasoningTokens": 351,
+        "operationsWithUnknownReasoning": 0,
+        "operationsWithUnknownCharge": 0,
+        "directChargedUsd": 0,
+        "observedApiEquivalentRangeUsd": {
+          "lower": 3.84026,
+          "upper": 4.6355875
+        },
+        "operationsWithoutEstimate": 0
+      },
+      {
+        "role": "scout",
+        "operations": 11,
+        "operationsWithUnknownTokens": 0,
+        "observedInputTokens": 551435,
+        "operationsWithUnknownInput": 0,
+        "observedOutputTokens": 11134,
+        "operationsWithUnknownOutput": 0,
+        "observedCachedInputTokens": 0,
+        "operationsWithUnknownCache": 0,
+        "observedReasoningTokens": 117,
+        "operationsWithUnknownReasoning": 0,
+        "operationsWithUnknownCharge": 0,
+        "directChargedUsd": 0,
+        "observedApiEquivalentRangeUsd": {
+          "lower": 6.07105,
+          "upper": 7.449637500000001
+        },
+        "operationsWithoutEstimate": 0
+      }
+    ],
+    "estimateBasis": {
+      "model": "gpt-6-astra",
+      "date": "2026-10-06",
+      "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "inputPerMillionUsd": 10,
+      "cachedInputPerMillionUsd": 1,
+      "cacheWritePerMillionUsd": 12.5,
+      "outputPerMillionUsd": 50,
+      "longContextThreshold": 272000,
+      "longContextInputMultiplier": 2,
+      "longContextOutputMultiplier": 1.5
+    },
+    "limitations": "Reasoning tokens are included in output, never added again. Standard token-only API-equivalent range; cache writes, tools, taxes and subscription/API parity are uncertain. Unknown requests are excluded from observed subtotals, never treated as free or zero-token."
+  },
+  "limitations": [
+    "Implementation assistant/helper tokens are unavailable and excluded from runtime totals.",
+    "Token-only API-equivalent estimates are not paid subscription charges. Hosted tool fees/parity are not measured.",
+    "No human listening or field visit is inferred from software checks.",
+    "This report excludes credentials, encrypted provider history and complete fetched page text."
+  ]
+}

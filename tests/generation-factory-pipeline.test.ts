@@ -387,11 +387,47 @@ test('stationary-only route keeps real route and stops while declining otherwise
  assert.deepEqual(quiet.chapterIds,[]);assert.deepEqual(quiet.chapterWindows,[]);
 });
 
+test('opt-in coincident zero-length final leg becomes stationary arrival without changing raw geometry or legacy directions',()=>{
+ const f=fixture(),end=f.plan.end;
+ f.research.places.at(-1)!.standing={...end};
+ f.routed.legs.at(-2)!.geometry[1]={...end};
+ f.routed.legs.at(-1)!.geometry=[{...end},{...end}];
+ f.routed.legs.at(-1)!.distanceMetres=0;f.routed.legs.at(-1)!.durationSeconds=0;
+ f.routed.legs.at(-1)!.maneuvers[0].instruction='Walk north on the walkway.';
+ const original=structuredClone(f.routed),legacy=prepareRoute(f.plan,f.research,f.routed);
+ const normalized=prepareRoute(f.plan,f.research,f.routed,{normalizeCoincidentFinalLeg:true});
+ assert.deepEqual(legacy.legs.at(-1)!.directions,['Walk north on the walkway.']);
+ assert.deepEqual(normalized.legs.at(-1)!.directions,['You are already at the tour endpoint. No further walking is needed.']);
+ assert.deepEqual(normalized.geometry,legacy.geometry);assert.deepEqual(normalized.stops,legacy.stops);assert.deepEqual(normalized.chapterWindows,legacy.chapterWindows);
+ assert.equal(normalized.routeMetres,legacy.routeMetres);assert.deepEqual(f.routed,original);
+ assert.match(normalized.legs.at(-1)!.evidence,/zero metres\/seconds/);
+ validateBuilderInput(assemble(f.brief,f.plan,f.research,normalized,f.draft));
+});
+
+test('normalization never suppresses a short nonzero, moving, noncoincident or intermediate leg',()=>{
+ for(const kind of ['distance','duration','geometry','standing','intermediate'] as const){
+  const f=fixture(),end=f.plan.end;
+  f.research.places.at(-1)!.standing={...end};f.routed.legs.at(-2)!.geometry[1]={...end};
+  const final=f.routed.legs.at(-1)!;final.geometry=[{...end},{...end}];final.distanceMetres=0;final.durationSeconds=0;final.maneuvers[0].instruction='Keep real final directions.';
+  if(kind==='distance')final.distanceMetres=0.01;
+  if(kind==='duration')final.durationSeconds=0.01;
+  if(kind==='geometry')final.geometry[1].latitude+=0.00000001;
+  if(kind==='standing')f.research.places.at(-1)!.standing.latitude+=0.00000001;
+  if(kind==='intermediate'){
+   final.distanceMetres=1;
+   const first=f.routed.legs[0];f.research.places[0].standing={...f.plan.start};first.geometry=[{...f.plan.start},{...f.plan.start}];first.distanceMetres=0;first.durationSeconds=0;f.routed.legs[1].geometry[0]={...f.plan.start};
+  }
+  const value=prepareRoute(f.plan,f.research,f.routed,{normalizeCoincidentFinalLeg:true});
+  assert.deepEqual(value.legs.at(-1)!.directions,['Keep real final directions.']);
+  if(kind==='intermediate')assert.deepEqual(value.legs[0].directions,[f.routed.legs[0].maneuvers[0].instruction]);
+ }
+});
+
 test('fresh all-unknown research uses physical readiness once before first route and reaches a checked package',async t=>{
  const r=await replay(t,false,false,false,false,undefined,false,'all');const handoff=await runFactory(r.runtime,r.tools,r.options);
  assert.equal(handoff.status,'awaiting-listening');assert.equal(r.runtime.job.counters.research,1);assert.equal(r.runtime.job.counters.route,1);assert.equal(r.routeCalls(),1);
  assert.ok(r.requests.indexOf('physical_readiness')<r.requests.indexOf('route_plan_1'));assert.ok(!r.requests.includes('route_plan_2'));
- const protocol=JSON.parse(await readFile(join(r.directory,'phase-protocols.json'),'utf8'));assert.equal(protocol['physical-readiness'],2);
+ const protocol=JSON.parse(await readFile(join(r.directory,'phase-protocols.json'),'utf8'));assert.equal(protocol['physical-readiness'],2);assert.equal(protocol['coincident-final-leg'],2);
  const before=r.requests.length;
  // Directly replay retained phases up to the terminal-state guard; the CLI returns
  // an existing completed handoff without entering runFactory a second time.
@@ -420,6 +456,6 @@ test('previously dispatched route jobs freeze the legacy readiness path without 
  const r=await replay(t,false,false,false,false,undefined,false,'all');
  r.runtime.job.tasks.push({taskId:'legacy-route-task',role:'route',scope:'route-plan-1',purpose:'Retained dispatched fixture',inputRefs:[],audienceContext:r.runtime.brief.audience,allowedDecisions:[],toolPermissions:[],limits:{seconds:1},expectedOutput:'Fixture',completionCondition:'Fixture',recipient:'producer',contextId:'legacy',execution:'returned',operationId:'legacy-operation'});
  await assert.rejects(runFactory(r.runtime,r.tools,r.options),/Incomplete phase route-plan-1/);
- assert.equal(JSON.parse(await readFile(join(r.directory,'phase-protocols.json'),'utf8'))['physical-readiness'],1);
+ const protocols=JSON.parse(await readFile(join(r.directory,'phase-protocols.json'),'utf8'));assert.equal(protocols['physical-readiness'],1);assert.equal(protocols['coincident-final-leg'],1);
  assert.ok(!r.requests.includes('physical_readiness'));assert.equal(r.runtime.job.counters.research,0);assert.equal(r.routeCalls(),0);
 });

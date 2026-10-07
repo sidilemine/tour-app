@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-07T02:18:23.113Z",
+  "recordedAt": "2026-10-07T02:48:04.085Z",
   "jobs": [
     {
       "id": "hampstead-fresh-factory",
@@ -890,6 +890,271 @@
         "note": "Recorded input provenance; an empty authored-input list alone does not prove every generated claim is fresh."
       },
       "benchmarkContext": "fresh-run candidate; no recovery/time-amendment events recorded, unrecorded intervention unknown"
+    },
+    {
+      "id": "highgate-fresh-factory-v3",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "status": "blocked",
+      "successStage": "research-validated",
+      "result": "partial",
+      "elapsed": {
+        "createdAt": "2026-10-07T02:21:53.020Z",
+        "firstDispatchAt": "2026-10-07T02:21:53.069Z",
+        "terminalAt": "2026-10-07T02:46:15.017Z",
+        "snapshotUpdatedAt": "2026-10-07T02:46:15.017Z",
+        "createdToTerminalSeconds": 1461.997,
+        "firstDispatchToTerminalSeconds": 1461.948,
+        "createdToSnapshotSeconds": 1461.997,
+        "includesPauses": true,
+        "terminalTimestampKnown": true
+      },
+      "providerActivity": {
+        "observedSummedSeconds": 1317.3199999999997,
+        "requestsWithoutDuration": 0,
+        "completeSummedSeconds": 1317.3199999999997,
+        "note": "Sum of provider-result elapsedMs; overlapping requests count separately. Not elapsed wall time or local-tool time."
+      },
+      "requests": {
+        "count": 37,
+        "archivedProviderResults": 37,
+        "byProviderStatus": {
+          "completed": 37
+        },
+        "pending": 0,
+        "unknownOutcome": 0,
+        "recordedOperationFailures": 0,
+        "blockedTasks": 0
+      },
+      "usage": {
+        "byRole": [
+          {
+            "role": "research",
+            "operations": 15,
+            "operationsWithUnknownTokens": 0,
+            "observedInputTokens": 1016969,
+            "operationsWithUnknownInput": 0,
+            "observedOutputTokens": 25962,
+            "operationsWithUnknownOutput": 0,
+            "observedCachedInputTokens": 56064,
+            "operationsWithUnknownCache": 0,
+            "observedReasoningTokens": 658,
+            "operationsWithUnknownReasoning": 0,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 10.963214,
+              "upper": 13.365476500000002
+            },
+            "operationsWithoutEstimate": 0
+          },
+          {
+            "role": "route",
+            "operations": 11,
+            "operationsWithUnknownTokens": 0,
+            "observedInputTokens": 318131,
+            "operationsWithUnknownInput": 0,
+            "observedOutputTokens": 13179,
+            "operationsWithUnknownOutput": 0,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 0,
+            "observedReasoningTokens": 351,
+            "operationsWithUnknownReasoning": 0,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 3.84026,
+              "upper": 4.6355875
+            },
+            "operationsWithoutEstimate": 0
+          },
+          {
+            "role": "scout",
+            "operations": 11,
+            "operationsWithUnknownTokens": 0,
+            "observedInputTokens": 551435,
+            "operationsWithUnknownInput": 0,
+            "observedOutputTokens": 11134,
+            "operationsWithUnknownOutput": 0,
+            "observedCachedInputTokens": 0,
+            "operationsWithUnknownCache": 0,
+            "observedReasoningTokens": 117,
+            "operationsWithUnknownReasoning": 0,
+            "operationsWithUnknownCharge": 0,
+            "directChargedUsd": 0,
+            "observedApiEquivalentRangeUsd": {
+              "lower": 6.07105,
+              "upper": 7.449637500000001
+            },
+            "operationsWithoutEstimate": 0
+          }
+        ],
+        "estimateBasis": {
+          "model": "gpt-6-astra",
+          "date": "2026-10-06",
+          "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-6-astra",
+          "inputPerMillionUsd": 10,
+          "cachedInputPerMillionUsd": 1,
+          "cacheWritePerMillionUsd": 12.5,
+          "outputPerMillionUsd": 50,
+          "longContextThreshold": 272000,
+          "longContextInputMultiplier": 2,
+          "longContextOutputMultiplier": 1.5
+        },
+        "limitations": "Reasoning tokens are included in output, never added again. Standard token-only API-equivalent range; cache writes, tools, taxes and subscription/API parity are uncertain. Unknown requests are excluded from observed subtotals, never treated as free or zero-token."
+      },
+      "localTools": {
+        "read_page": {
+          "requested": 24,
+          "executedReceipts": 24,
+          "succeeded": 22,
+          "failed": 2,
+          "receiptOutcomeUnknown": 0,
+          "withoutExecutionReceipt": 0
+        },
+        "read_station_map": {
+          "requested": 4,
+          "executedReceipts": 4,
+          "succeeded": 4,
+          "failed": 0,
+          "receiptOutcomeUnknown": 0,
+          "withoutExecutionReceipt": 0
+        },
+        "read_map": {
+          "requested": 20,
+          "executedReceipts": 20,
+          "succeeded": 17,
+          "failed": 3,
+          "receiptOutcomeUnknown": 0,
+          "withoutExecutionReceipt": 0
+        },
+        "read_image": {
+          "requested": 9,
+          "executedReceipts": 9,
+          "succeeded": 9,
+          "failed": 0,
+          "receiptOutcomeUnknown": 0,
+          "withoutExecutionReceipt": 0
+        },
+        "read_crossing_map": {
+          "requested": 10,
+          "executedReceipts": 10,
+          "succeeded": 9,
+          "failed": 1,
+          "receiptOutcomeUnknown": 0,
+          "withoutExecutionReceipt": 0
+        }
+      },
+      "interventions": {
+        "eventCounts": {},
+        "recoveryEventCount": 0,
+        "timeAmendments": 0,
+        "note": "Counts events, not unique human actions; permit/use pairs remain distinct. Unrecorded interventions are unknown."
+      },
+      "automaticAllowances": {
+        "research": 2,
+        "route": 3,
+        "correction": 0,
+        "correctiveRenders": 0
+      },
+      "recordingCounts": {
+        "initial": null,
+        "final": null,
+        "initialEvidenceFile": null,
+        "note": "Initial means the earliest retained successful build receipt; counts recordings in a package, not synthesis calls or cache misses. Missing validation remains unknown."
+      },
+      "phases": {
+        "completed": [
+          {
+            "phase": "survey",
+            "completedAt": "2026-10-07T02:23:41.414Z",
+            "operationId": "operation-1"
+          },
+          {
+            "phase": "research",
+            "completedAt": "2026-10-07T02:27:40.401Z",
+            "operationId": "operation-7"
+          },
+          {
+            "phase": "physical-readiness",
+            "completedAt": "2026-10-07T02:30:56.540Z",
+            "operationId": "operation-11"
+          },
+          {
+            "phase": "route-plan-1",
+            "completedAt": "2026-10-07T02:32:41.700Z",
+            "operationId": "operation-15"
+          },
+          {
+            "phase": "scout-1",
+            "completedAt": "2026-10-07T02:34:58.413Z",
+            "operationId": "operation-18"
+          },
+          {
+            "phase": "route-research-1",
+            "completedAt": "2026-10-07T02:37:48.046Z",
+            "operationId": "operation-22"
+          },
+          {
+            "phase": "route-plan-2",
+            "completedAt": "2026-10-07T02:39:40.538Z",
+            "operationId": "operation-25"
+          },
+          {
+            "phase": "scout-2",
+            "completedAt": "2026-10-07T02:41:10.112Z",
+            "operationId": "operation-28"
+          },
+          {
+            "phase": "route-plan-3",
+            "completedAt": "2026-10-07T02:43:27.233Z",
+            "operationId": "operation-32"
+          },
+          {
+            "phase": "scout-3",
+            "completedAt": "2026-10-07T02:45:04.491Z",
+            "operationId": "operation-35"
+          },
+          {
+            "phase": "route-disposition",
+            "completedAt": "2026-10-07T02:46:15.004Z",
+            "operationId": "operation-37"
+          }
+        ],
+        "count": 11
+      },
+      "package": {
+        "structurallyValid": false,
+        "testerCompleted": false,
+        "timing": null,
+        "durationAcceptance": "unavailable",
+        "shortfallSeconds": null,
+        "withinMaximum": null,
+        "walkingMeasured": false,
+        "listening": "unavailable",
+        "field": "unavailable",
+        "readyForOrdinaryUse": false
+      },
+      "freshness": {
+        "declaredFreshContentOnly": true,
+        "authoredInputsCount": 0,
+        "authoredInputsEmpty": true,
+        "startingEvidenceSha256": "abe55c72cf7e08554fbaea42317470552927dea7a849c724d0573a25c4998e63",
+        "briefSha256": "abe55c72cf7e08554fbaea42317470552927dea7a849c724d0573a25c4998e63",
+        "implementationSha256": {
+          "runtime.ts": "28627cf4279cb745803a9d6d2e9b27556693e34dc666b9be5900cf7aaa03cf4f",
+          "pipeline.ts": "de4d7a55a9cafff3517e0a2cfc057e3ee82180bc4cfe6a1b06fd135b6c652796",
+          "contracts.ts": "ebc84dc6da42299c8bf33ede187929795c53b8009a69253e00eda0fdf3874f23",
+          "public-tools.ts": "5ede0fbaa84b6fe5b8e68253088f26cbe11257724fbdcd4be0a6600f6d89e8c6",
+          "retained-evidence.ts": "68b5ff0a94d58b9124ab08db7fb75431d40423ee4f3b0ba0f8fdb428efd6eb38",
+          "software-evidence.ts": "fbc33019a4ab41df5b44744865cd51441e7c3d7e9b1cd59c032c574b17a9ed29",
+          "package-checks.ts": "3bbf29ec41a88b5d02354b82babdb9a59bc8d2f4767a8803a488185e1fae8470",
+          "..:builder.ts": "2c51fe0e0071ad821e2bfce5a6144cd367c30acef48b9e19abfa8bbdf80ce56f",
+          "..:provider.ts": "1d11797adb8eb40e1699ad8abfae50647ca570d679bdd8f15240cf137c4b0f29"
+        },
+        "note": "Recorded input provenance; an empty authored-input list alone does not prove every generated claim is fresh."
+      },
+      "benchmarkContext": "fresh-run candidate; no recovery/time-amendment events recorded, unrecorded intervention unknown"
     }
   ],
   "comparisons": [
@@ -905,6 +1170,15 @@
     {
       "before": "hampstead-fresh-factory",
       "after": "highgate-fresh-factory-v2",
+      "sameSuccessStage": false,
+      "createdToTerminalSecondsDelta": null,
+      "providerSummedSecondsDelta": null,
+      "requestCountDelta": null,
+      "causalImprovementEstablished": false
+    },
+    {
+      "before": "hampstead-fresh-factory",
+      "after": "highgate-fresh-factory-v3",
       "sameSuccessStage": false,
       "createdToTerminalSecondsDelta": null,
       "providerSummedSecondsDelta": null,

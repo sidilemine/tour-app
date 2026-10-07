@@ -17,7 +17,7 @@ Known total: **2,022,776 tokens**. Three requests have unknown usage (schema rej
 
 Hampstead took **1h46m38.7s** from creation to final handoff, including engineering/recovery and owner pauses. It produced a structurally tested31m28 inspection draft, with listening/field and requested duration acceptance separate.47requests, three provider failures/interrupted outcomes,26 recovery journal events and three time amendments are retained. Journal events are not unique human interventions.
 
-[RUN.json](RUN.json) retains request-level usage and failures; [BENCHMARK.json](BENCHMARK.json) separates wall time, summed provider activity, tool outcomes, interventions and completion stage. The fresh Highgate comparison is pending. The separate [hosted-search calibration](SEARCH-CALIBRATION.json) used13,958 known tokens and an API-equivalent US$0.108924–0.132799; it is excluded from the job totals. Earlier Clerkenwell work is excluded.
+[RUN.json](RUN.json) retains request-level usage and failures; [BENCHMARK.json](BENCHMARK.json) separates wall time, summed provider activity, tool outcomes, interventions and completion stage. The completed Highgate trial comparisons are below. The separate [hosted-search calibration](SEARCH-CALIBRATION.json) used13,958 known tokens and an API-equivalent US$0.108924–0.132799; it is excluded from the job totals. Earlier Clerkenwell work is excluded.
 
 Implementation assistant/helper tokens are unavailable through this ledger and remain **unknown**. Cached input and reasoning are subsets, not added again. The retained6October quote uses US$10 input,US$1 cached input,US$12.50 cache write andUS$50 output per million tokens, with context multipliers recorded in the report. [Official Astra model reference](https://developers.openai.com/api/docs/models/gpt-6-astra). Hosted-tool fees, cache-write details, subscription/API parity, taxes and production throughput are not established.
 
@@ -32,7 +32,7 @@ The incomplete trial took24m57.832s, including the recorded repair pause. It use
 | route | 10 | 1 | 169,139 | 5,288 | 1.9558–2.3786 |
 | scout | 11 | 0 | 530,895 | 12,402 | 5.9291–7.2563 |
 
-All failures remain in[HIGHGATE-RUN.json](HIGHGATE-RUN.json). Engineer-run public routing diagnostics have no runtime model requests; they remain separately documented, not silently included as successful tour generation. Implementation/helper tokens remain unknown. A separate fresh Highgate run after the routing fix is pending.
+All failures remain in[HIGHGATE-RUN.json](HIGHGATE-RUN.json). Engineer-run public routing diagnostics have no runtime model requests; they remain separately documented, not silently included as successful tour generation. Implementation/helper tokens remain unknown. The subsequent fresh trials are recorded below.
 
 
 ## Second Highgate trial — readiness failure retained
@@ -46,3 +46,19 @@ Elapsed8m07.729s;15requests;591,347known tokens plus one interrupted request wit
 | **Known subtotal** | **15** | **1** | **578,190** | **13,157** | **6.2658–7.6630** |
 
 The unchanged job contains no recovery or extension events. Its closed evidence remains in[HIGHGATE-SECOND-RUN.json](HIGHGATE-SECOND-RUN.json); the subsequent coordination repair is implementation work whose helper token counts remain unavailable.
+
+
+## Final fresh Highgate verification
+
+Started02:21:53.020UTC; ended02:46:15.017UTC. Elapsed **24m21.997s**; summed provider activity **21m57.320s**, counted separately from wall time.37requests, all completed; **1,936,810tokens**, no unknown usage. No manual recovery, counter reset or time amendment occurred. Direct paidUS$0. The job stopped at route review; writer, editor, verifier, renderer and package tester were not dispatched.
+
+| Runtime role | Requests | Known input | Known output | Total tokens | Token-only API-equivalentUSD |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| research (survey and targeted rounds) | 15 | 1,016,969 | 25,962 | 1,042,931 | 10.9632–13.3655 |
+| route | 11 | 318,131 | 13,179 | 331,310 | 3.8403–4.6356 |
+| Scout (independent reviews and disposition) | 11 | 551,435 | 11,134 | 562,569 | 6.0711–7.4496 |
+| **Total** | **37** | **1,886,535** | **50,275** | **1,936,810** | **20.8745–25.4507** |
+
+Cached input56,064 and reasoning1,126 are included in those totals. No token fields are missing in this run. [Final per-request record](HIGHGATE-FINAL-RUN.json) and[comparison](BENCHMARK.json) retain outcomes and actual implementation identity. The final run used code at `1b06692`; small timestamp/arrival-text corrections made after its final review are tested separately and never retroactively claimed as live-tested.
+
+Across **Hampstead plus all three Highgate trials**:131requests, **5,811,165known tokens**, five requests with unknown usage, **US$0 direct paid**, and known token-only API-equivalent **US$63.9319–77.6241**. Calibration13,958tokens is separate; earlier Clerkenwell and implementation/helper usage are excluded. The latter is unavailable, not zero. No completed-tour speed or cost improvement is established: the Highgate jobs stopped earlier in the workflow than Hampstead, which itself fell short of the requested duration.

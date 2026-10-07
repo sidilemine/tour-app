@@ -188,6 +188,33 @@ test('public ten-location limit splits bounded tour legs sequentially and preser
  assert.equal((await tools.pedestrianRoute(stops,options)).cacheHit,true);assert.equal(payloads.length,2);
 });
 
+test('composite retrieval time follows the newest constituent, not an older cached final leg',async t=>{
+ const stops=Array.from({length:4},(_,i)=>({latitude:51.55,longitude:-0.17+i*0.001}));
+ const through=Array.from({length:8},(_,i)=>({latitude:51.55,longitude:-0.17+(i+1)*0.0001}));
+ let calls=0;
+ const tools=await setup(t,async(_url,request)=>{
+  calls++;const payload=JSON.parse(String(request?.body));
+  return Response.json(routedGeometry([[payload.locations[0],payload.locations.at(-1)].map(p=>({latitude:p.lat,longitude:p.lon}))]));
+ });
+ // Retain earlier first/last legs, as occurs when only a middle connection changes.
+ const first=await tools.pedestrianRoute(stops.slice(0,2),{throughByLeg:[through]});
+ const last=await tools.pedestrianRoute(stops.slice(2),{throughByLeg:[[]]});
+ for(const part of [first,last]){
+  const saved=JSON.parse(await readFile(part.cachePath,'utf8'));saved.retrievedAt='2026-01-01T00:00:00.000Z';
+  await writeFile(part.cachePath,JSON.stringify(saved));
+ }
+ const options={throughByLeg:[through,[],[]]};
+ const route=await tools.pedestrianRoute(stops,options),segments=route.composition!.segments;
+ assert.equal(calls,3,'Only the missing middle component is dispatched');assert.equal(route.cacheHit,false);
+ assert.equal(route.retrievedAt,segments[1].retrievedAt);assert.ok(Date.parse(route.retrievedAt)>Date.parse(segments[2].retrievedAt));
+ const manifest=await readFile(route.cachePath,'utf8'),modifiedAt=(await stat(route.cachePath)).mtimeMs;
+ const cached=await tools.pedestrianRoute(stops,options);
+ assert.equal(calls,3);assert.equal(cached.cacheHit,true);assert.equal(cached.retrievedAt,route.retrievedAt);
+ assert.equal(cached.hash,route.hash);assert.deepEqual(cached.composition,route.composition);
+ assert.equal(await readFile(route.cachePath,'utf8'),manifest,'Existing manifest remains byte-for-byte unchanged');
+ assert.equal((await stat(route.cachePath)).mtimeMs,modifiedAt,'Cached recomposition does not rewrite the manifest');
+});
+
 test('split routing retains completed component cache after failure and refuses disconnected provider legs',async t=>{
  const stops=[{latitude:51.55,longitude:-0.17},{latitude:51.55,longitude:-0.169},{latitude:51.55,longitude:-0.168}];
  const through=Array.from({length:8},(_,i)=>({latitude:51.55,longitude:-0.17+(i+1)*0.0001}));
