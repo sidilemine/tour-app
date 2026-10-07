@@ -147,6 +147,29 @@ test('beta narration formatting preserves words and evidence while fitting the a
   assert.deepEqual(f.draft,before);assert.deepEqual(formatBetaNarration(formatted),formatted);
 });
 
+test('beta sources accept separate exact excerpts without accepting a fabricated quote or exceeding the source allowance', () => {
+  const f=fixture(),pages=new Map(f.research.sources.map(s=>[s.url,{text:s.passage}]));
+  f.research.sources[0].passage='Source A reports about five makers.\nAn exterior view remains.';
+  pages.set(f.research.sources[0].url,{text:'Source A reports about five makers. Other unrelated sentences intervene. An exterior view remains.'});
+  assert.throws(()=>validateResearch(f.research,f.survey,pages),/not present/,'Historical contiguous rule is retained');
+  assert.doesNotThrow(()=>validateResearch(f.research,f.survey,pages,new Map(),'beta-evidence'));
+  f.research.sources[0].passage+='\nAn invented sentence.';
+  assert.throws(()=>validateResearch(f.research,f.survey,pages,new Map(),'beta-evidence'),/not present/);
+  f.research.sources[0].passage='Source A reports about five makers.\n'.repeat(5).trim();
+  assert.throws(()=>validateResearch(f.research,f.survey,pages,new Map(),'beta-evidence'),/25 quoted words/);
+});
+
+test('beta map observations require a retained map identity and tool payload, while webpage quotes remain checked', () => {
+  const f=fixture(),pages=new Map(f.research.sources.map(s=>[s.url,{text:s.passage}]));
+  const source=f.research.sources[0],oldUrl=source.url;
+  source.url='https://overpass-api.de/api/interpreter#query-'+ 'a'.repeat(64);source.passage='Observation of the named public footway; not a prose quotation.';
+  pages.set(source.url,{text:'OpenStreetMap mapped features only; '+JSON.stringify([{type:'way',id:1,tags:{highway:'footway',access:'yes'}}])});
+  assert.doesNotThrow(()=>validateResearch(f.research,f.survey,pages,new Map(),'beta-evidence'));
+  source.url=oldUrl;assert.throws(()=>validateResearch(f.research,f.survey,pages,new Map(),'beta-evidence'),/not present/);
+  source.url='https://overpass-api.de/api/interpreter#query-'+ 'b'.repeat(64);
+  assert.throws(()=>validateResearch(f.research,f.survey,pages,new Map(),'beta-evidence'),/not present/);
+});
+
 // Entirely synthetic content and coordinates, constructed here rather than read
 // from an authored tour. Bundled map identity is infrastructure, not content.
 function fixture() {

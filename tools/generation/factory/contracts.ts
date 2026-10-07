@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { audienceSchema } from '../records';
+import { isMapEvidenceIdentity } from './local-map';
 
 const text=z.string().min(1), id=z.string().regex(/^[a-z0-9][a-z0-9-]{0,59}$/);
 export const pointSchema=z.object({latitude:z.number().min(-90).max(90),longitude:z.number().min(-180).max(180)}).strict();
@@ -30,7 +31,7 @@ export const reviewSchema=z.object({verdict:z.enum(['accepted','needs-revision',
 export type FactoryReview=z.infer<typeof reviewSchema>;
 
 export const normalise=(s:string)=>s.normalize('NFKC').replace(/\s+/g,' ').trim();
-export function validateResearch(research:Research,survey:z.infer<typeof surveySchema>,pages:Map<string,{text:string}>,observedImages:Map<string,{sha256:string}>=new Map()) {
+export function validateResearch(research:Research,survey:z.infer<typeof surveySchema>,pages:Map<string,{text:string}>,observedImages:Map<string,{sha256:string}>=new Map(),passageMode:'contiguous'|'beta-evidence'='contiguous') {
  const sourceIds=new Set<string>(),claimIds=new Set<string>(),candidateIds=new Set(survey.candidates.map(c=>c.id));
  const quotedWords=new Map<string,number>();
  for(const s of research.sources){
@@ -38,7 +39,11 @@ export function validateResearch(research:Research,survey:z.infer<typeof surveyS
   const page=pages.get(s.url);
   const passage=normalise(s.passage);
   if(s.passage===''&&/^[a-f0-9]{64}$/i.test(observedImages.get(s.url)?.sha256??''))continue;
-  if(!passage||!page||!normalise(page.text).includes(passage))throw Error(`Supporting passage not present in retrieved page: ${s.id}`);
+  // Map observations reference actual structured geometry/tags, not prose quotations.
+  // The identity and retained tool-produced payload are essential; an arbitrary URL is insufficient.
+  if(passageMode==='beta-evidence'&&page?.text.startsWith('OpenStreetMap mapped features only;')&&isMapEvidenceIdentity(new URL(s.url)))continue;
+  const excerpts=passageMode==='beta-evidence'?s.passage.split(/\n+/).map(normalise).filter(Boolean):[passage];
+  if(!passage||!page||!excerpts.every(excerpt=>normalise(page.text).includes(excerpt)))throw Error(`Supporting passage not present in retrieved page: ${s.id}`);
   const words=(quotedWords.get(s.url)??0)+passage.split(' ').length;quotedWords.set(s.url,words);
   if(words>25)throw Error(`Retain at most 25 quoted words per source URL: ${s.id}`);
  }
