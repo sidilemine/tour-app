@@ -90,9 +90,12 @@ export async function produceBetaTour(options: ProductionOptions) {
   assert.equal(packageChecks.inputSha256, build.validation.inputSha256, 'Checked and rendered input must match');
   const packaged = JSON.parse(readFileSync(build.packagePath, 'utf8'));
   const durationAcceptance = betaDurationNote(brief.durationSeconds, build.timing.totalSeconds);
+  // Pre-render duration findings remain in the raw review; final notes use measured audio.
+  const advisoryNotes = (issues: FactoryReview['issues']) => issues
+    .filter(i => !i.required && !('category' in i && i.category === 'duration')).map(i => i.problem);
   const limitations = ['Personal beta: human listening and ordinary walking use are unobserved.', durationAcceptance.note,
-    ...options.routeReview.issues.filter(i => !i.required).map(i => i.problem),
-    ...betaReviewDisposition(review).issues.filter(i => !i.required).map(i => i.problem)];
+    ...advisoryNotes(options.routeReview.issues),
+    ...advisoryNotes(betaReviewDisposition(review).issues)];
   writeJSON(join(runtime.directory, 'build-result.json'), build);
   writeJSON(join(runtime.directory, 'route-final.json'), { plan, prepared, review: betaReviewDisposition(review) });
   writeJSON(join(runtime.directory, 'package-checks.json'), packageChecks);

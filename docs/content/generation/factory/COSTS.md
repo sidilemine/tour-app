@@ -147,3 +147,20 @@ Elapsed17m06.938s;18inferences,1,219,532known tokens, none unknown, US$0direct. 
 | route | 11 | 0 | 466,500 | 6,491 | 472,991 | 0.9979–1.2312 |
 
 This is a shorter failed route-selection run, not evidence of a faster completed tour. Implementation-assistant usage remains unavailable and excluded.
+
+## First personal-beta run — Highgate v8
+
+Created 16:15:23.696 UTC, completed 16:43:31.615 UTC:28m07.919s including the 10m39.796s engineering pause and one checked same-job recovery. Provider-reported activity sums to 953.802s; ledger start/end request durations sum to 955.702s under their different timing boundaries. These clocks are separate from total wall time. All 17 inferences have known usage:575,745input +33,322output =609,067tokens. Direct charge US$0 with the consented grant's overflow off; the recorded token-only API-equivalent range is US$1.4346–1.7093. No editor or model tester request was used.
+
+| Runtime role | Requests | Unknown usage | Known input | Known output | Known total | Token-only API-equivalentUSD |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| research | 10 | 0 | 406,183 | 22,988 | 429,171 | 0.9921–1.1821 |
+| route | 2 | 0 | 29,807 | 1,054 | 30,861 | 0.0702–0.0851 |
+| scout / canonical directions | 2 | 0 | 92,181 | 2,907 | 95,088 | 0.2134–0.2595 |
+| writer | 1 | 0 | 9,652 | 4,145 | 13,797 | 0.0608–0.0656 |
+| verification / combined review | 2 | 0 | 37,922 | 2,228 | 40,150 | 0.0981–0.1171 |
+| **Total** | **17** | **0** | **575,745** | **33,322** | **609,067** | **1.4346–1.7093** |
+
+Research includes the two repair rounds that an overstrict evidence-format validator caused before recovery; their tokens are retained, not discounted as unused work. Subsequent route/writing/review/render completed without a content correction. Local tool receipts show10/11successful page reads,11/11ordinary map queries,1/1station query and5/5crossing queries; no imagery was requested. Five actual local George recordings do not consume model tokens or incur a hosted TTS charge.
+
+V8 used roughly half the tokens of the stricter v7 failed route-selection trial while reaching an offline package. Different fresh research, relaxed acceptance and v8's engineering pause mean this is not a controlled performance improvement. Implementation-assistant/helper usage remains unavailable and excluded. Tool-fee/cache-write/subscription-to-API equivalence is uncertain; API-equivalent figures are estimates, not charges. [Run record](BETA-V8-RUN.json), [full retained-job comparison](BETA-BENCHMARK.json), [actual outcome](RESULTS.md#first-personal-beta-result--fresh-highgate-v8).

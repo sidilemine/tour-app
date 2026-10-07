@@ -54,7 +54,7 @@ async function betaReplay(t: TestContext, scenario: BetaCase = {}) {
     if (name.startsWith('route_directions_')) return providerResult(request, { review: scenario.wrongCrossing ? issue('directions', 'Crossing is on the wrong road arm') : accepted,
       legDirections: f.prepared.legs.map(l => ({ legId: l.id, directions: scenario.directionRepair && l.id==='leg-1'?['Turn left at the synthetic station.']:l.directions })) });
     if (name === 'writing') { const draft=structuredClone(f.draft); if(scenario.factual)draft.stories[0].paragraphs[0].text+=' They secretly built a palace.'; return providerResult(request, draft); }
-    if (name.startsWith('beta_review_')) { const input=JSON.parse(String(request.input[0].content)); return providerResult(request, scenario.directionRepair && input.prepared.legs[0].directions[0].startsWith('Turn left') ? issue('directions','Station left turn conflicts with retained route') : input.draft.stories[0].paragraphs[0].text.includes('secretly built a palace') ? issue('factual', 'Unsupported central historical assertion') : scenario.advisory ? issue('editorial', 'A paragraph could be more elegant') : accepted); }
+    if (name.startsWith('beta_review_')) { const input=JSON.parse(String(request.input[0].content)); return providerResult(request, scenario.directionRepair && input.prepared.legs[0].directions[0].startsWith('Turn left') ? issue('directions','Station left turn conflicts with retained route') : input.draft.stories[0].paragraphs[0].text.includes('secretly built a palace') ? issue('factual', 'Unsupported central historical assertion') : scenario.advisory ? { ...issue('editorial', 'A paragraph could be more elegant'), issues: [...issue('editorial', 'A paragraph could be more elegant').issues, ...issue('duration', 'Actual audio duration remains unknown.').issues] } : accepted); }
     if (name === 'correction_1') { const revised=structuredClone(f.draft);if(scenario.factual==='unresolved')revised.stories[0].paragraphs[0].text+=' They secretly built a palace.';return providerResult(request, { ...revised, legDirections: f.prepared.legs.map(l => ({ legId: l.id, directions: l.directions })) }); }
     throw Error('Unexpected beta phase ' + name);
   } };
@@ -91,6 +91,10 @@ test('personal beta completes short and long tours with three stops and advisory
     assert.equal(r.requests.filter(n => n.startsWith('beta_review_')).length, 1);
     assert.ok(!r.requests.some(n => n.startsWith('scout_') || n.startsWith('editor_') || n.startsWith('verification_') || n === 'tester'));
     assert.ok(handoff.limitations.includes('A paragraph could be more elegant'));
+    assert.ok(!handoff.limitations.includes('Actual audio duration remains unknown.'));
+    assert.ok(handoff.limitations.includes(handoff.durationAcceptance.note));
+    const notes = JSON.parse(await readFile(join(r.directory, 'beta-notes.json'), 'utf8'));
+    assert.ok(notes.review.issues.some((i: { problem: string }) => i.problem === 'Actual audio duration remains unknown.'));
     const actual = parseTourPackage(JSON.parse(await readFile(handoff.packagePath, 'utf8'))); assert.equal(actual.fixture.stops.length, 3);
     const research = JSON.parse(await readFile(join(r.directory, 'research-validated.json'), 'utf8')); assert.equal(research.sources.length, 3);
     assert.ok(longAudio ? handoff.timing.totalSeconds > 3900 : handoff.timing.totalSeconds < 3300);

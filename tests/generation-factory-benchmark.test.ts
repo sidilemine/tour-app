@@ -156,3 +156,22 @@ test('underlength rendered draft remains visible without being promoted to a fin
   assert.equal(report.observed.durationAcceptance,null);assert.doesNotMatch(JSON.stringify([benchmark,report]),/SECRET|packagePath/);
  }finally{f.cleanup();}
 });
+
+test('beta completion uses matching deterministic package receipts without requiring a model tester', () => {
+  const f = fixture(); try {
+    f.job.status = 'awaiting-decision'; f.save();
+    const validation = { inputSha256: 'a'.repeat(64), packageSha256: 'b'.repeat(64) };
+    write(f.directory, 'build-result.json', { structuralValid: true, validation, listening: 'pending', field: 'unverified' });
+    write(f.directory, 'handoff.json', { status: 'beta-draft', durationAcceptance: { status: 'reported-estimate' } });
+    assert.equal(benchmarkJob(f.directory).successStage, 'offline-draft-built');
+    const checks = { ...validation, executedPackageSpecificChecks: [{ id: 'actual-player-parser', status: 'passed' }] };
+    write(f.directory, 'package-checks.json', checks);
+    const report = benchmarkJob(f.directory);
+    assert.equal(report.successStage, 'beta-draft-complete'); assert.match(report.result, /complete beta package/);
+    assert.equal(report.package.testerCompleted, false); assert.equal(report.package.readyForOrdinaryUse, false);
+    write(f.directory, 'package-checks.json', { ...checks, packageSha256: 'c'.repeat(64) });
+    assert.equal(benchmarkJob(f.directory).successStage, 'offline-draft-built');
+    write(f.directory, 'package-checks.json', { ...checks, executedPackageSpecificChecks: [{ status: 'failed' }] });
+    assert.equal(benchmarkJob(f.directory).successStage, 'offline-draft-built');
+  } finally { f.cleanup(); }
+});
