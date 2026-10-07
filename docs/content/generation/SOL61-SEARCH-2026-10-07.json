@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-10-07T10:03:44.791Z",
+  "completedAt": "2026-10-07T10:03:58.149Z",
+  "model": "gpt-6.1-sol",
+  "effort": "medium",
+  "contextId": "factory-hosted-search-calibration-v1",
+  "promptHash": "905d2725f1df76bb42b4111ee0e215992c14db046241227882825fa1902eba0d",
+  "status": "passed",
+  "evidenceKind": "live",
+  "hostedSearchObserved": true,
+  "completedSearchCalls": 1,
+  "observedSources": 15,
+  "diagnosticCode": "completed_hosted_search_observed",
+  "directChargeUsd": 0,
+  "usage": {
+    "inputTokens": 13841,
+    "outputTokens": 192,
+    "totalTokens": 14033,
+    "source": "response.completed",
+    "cachedInputTokens": 4224,
+    "reasoningTokens": 116
+  },
+  "apiEquivalentEstimate": {
+    "lowerUsd": 0.021576400000000003,
+    "upperUsd": 0.026384900000000003,
+    "priceDate": "2026-10-06",
+    "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+    "reason": "Token-only API-equivalent range from observed usage; cache writes unknown. Subscription accounting, image tokenization parity, taxes and tool charges are not production billing evidence."
+  },
+  "operationId": "operation-1",
+  "limits": {
+    "requests": 1,
+    "directPaidCeilingUsd": 0,
+    "requestTimeoutMs": 120000
+  },
+  "limitations": "Separate calibration only. Does not establish T43, source passage entailment, tour quality, physical access, or a completed factory. API-equivalent estimates are token-only and exclude uncertain hosted-tool charges; direct usage stays on the overflow-disabled plan route."
+}

@@ -2,7 +2,7 @@
 
 ## Local factory verification — 7 October 2026
 
-**Latest diagnostic:** Sol6 and Sol6.1 both pass actual inference and all five capability checks using the existing Tour app grant and overflow off. The incorrect local catalog-membership gate is fixed;344tests, typecheck/lint and guide parity pass. [Evidence](docs/content/generation/SOL-ACCESS-2026-10-07.json). Factory work still outstanding: implement underlength repair, apply proportionate crossing review in runtime prompts, then complete a fresh requested-duration generation. The recent duration/scouting documentation changes did not implement those repairs. Historical jobs below remain unchanged.
+**Latest diagnostic:** Sol6 and Sol6.1 both pass actual inference and all five capability checks using the existing Tour app grant and overflow off. The incorrect local catalog-membership gate is fixed;344tests, typecheck/lint and guide parity pass. [Evidence](docs/content/generation/SOL-ACCESS-2026-10-07.json). New factory jobs now enforce a duration range before writing and after audio, and apply proportionate crossing review with canonical directions. These repairs are implemented; a fresh Sol6.1 requested-duration generation is pending. Historical jobs below remain unchanged.
 
 The owner authorized fresh Hampstead and Highgate generation with no reused authored material. The bounded factory is implemented; production readiness is **blocked**, not accepted. Hampstead has an actual independently reviewed offline inspection package with four George recordings (328.1seconds), a1,295.67m route and31m28estimated experience, short of the requested60minutes. Its47requests/1h46m39s include engineering and owner pauses. Listening/field acceptance remains pending.
 

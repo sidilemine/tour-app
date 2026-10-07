@@ -2,7 +2,7 @@
 
 ## Local automated factory — 7 October 2026
 
-Sidi authorized completing/testing the local factory with fresh Hampstead and Highgate tours, without prior authored material. This supersedes the earlier E1 sequencing restriction for this local assignment only. The US$0 direct paid ceiling, consented Astra medium route and offline/privacy boundaries remain. Hampstead produced a tested31m28 inspection draft after intervention; it did not meet the requested60minutes. The final fresh Highgate trial ran without manual recovery but stopped at unresolved pedestrian connections before content production. The bounded software flow is implemented; reliable unattended tour production, requested-duration delivery, listening and physical acceptance remain unproven. [Actual outcomes and next engineering requirement](docs/content/generation/factory/RESULTS.md).
+Sidi authorized completing/testing the local factory with fresh Hampstead and Highgate tours, without prior authored material. This supersedes the earlier E1 sequencing restriction for this local assignment only. The US$0 direct paid ceiling, owner-selected Sol6.1 medium route for new generation (historical jobs retain Astra) and offline/privacy boundaries remain. Hampstead produced a tested31m28 inspection draft after intervention; it did not meet the requested60minutes. The final fresh Highgate trial ran without manual recovery but stopped at unresolved pedestrian connections before content production. The bounded software flow is implemented; reliable unattended tour production, requested-duration delivery, listening and physical acceptance remain unproven. [Actual outcomes and next engineering requirement](docs/content/generation/factory/RESULTS.md).
 
 ## Bounded generation prototype — 6 October 2026
 

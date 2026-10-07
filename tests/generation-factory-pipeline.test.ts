@@ -8,6 +8,7 @@ import { parseTourPackage } from '../src/tours/package';
 import { buildTour, validateBuilderInput, type BuilderAudioTools } from '../tools/generation/builder';
 import { prepareRoute, routingOptionsForPlan, assemble, runFactory, applyRouteDisposition, applyPhysicalCoverage, retainReviewContext, retainPackageReviewInput, type Routed } from '../tools/generation/factory/pipeline';
 import { briefSchema, surveySchema, researchSchema, routePlanSchema, draftSchema, excludeUnusedEmptySources, validateDraft, validateResearch, type Draft, type FactoryReview } from '../tools/generation/factory/contracts';
+import { durationBudget, durationFits, PRACTICAL_ACCESS_POLICY } from '../tools/generation/factory/experience-policy';
 import { FactoryRuntime, digest } from '../tools/generation/factory/runtime';
 import { PublicTools } from '../tools/generation/factory/public-tools';
 import type { ProviderResult, InferenceRequest } from '../tools/generation/provider';
@@ -128,11 +129,11 @@ function encode(points: Coordinate[]) {
   }
   return result;
 }
-function syntheticAudio(slowFirst = false): BuilderAudioTools {
+function syntheticAudio(slowFirst = false, stationaryDuration?:number): BuilderAudioTools {
   const voiceConfig = { provider: 'synthetic-test', voice: 'bm_george', model: 'fixture', revision: 'fixture', dtype: 'fp32', device: 'cpu', speed: 1, kokoroJs: 'fixture', paragraphGapSeconds: 0.25, loudnessLufs: -19, encoding: 'test only', rendererRevision: 2 };
   return { voiceConfig, async render(text, destination) {
     await writeFile(destination, Buffer.concat([Buffer.from('00000018667479704d34412000000000', 'hex'), Buffer.from(text)]));
-    await writeFile(`${destination}.render.json`, JSON.stringify({ voiceConfig, chunks: text.split('\n\n').map(chunk => ({ text: chunk, durationSeconds: slowFirst && text.startsWith('Synthetic account 0 ') ? 800 : 2 })) }));
+    await writeFile(`${destination}.render.json`, JSON.stringify({ voiceConfig, chunks: text.split('\n\n').map(chunk => ({ text: chunk, durationSeconds: stationaryDuration!==undefined&&/^Synthetic (revised )?account [0-3] /.test(text)?(stationaryDuration-0.25)/2:slowFirst && text.startsWith('Synthetic account 0 ') ? 800 : 2 })) }));
   }, async inspect(path) {
     const metadata = JSON.parse(await readFile(`${path}.render.json`, 'utf8'));
     return { durationSeconds: metadata.chunks.reduce((n: number, c: { durationSeconds: number }) => n + c.durationSeconds, 0) + (metadata.chunks.length - 1) * 0.25, channels: 1, sampleRate: 24000 };
@@ -143,9 +144,10 @@ function providerResult(request: InferenceRequest, value: unknown, calls: Provid
     ...(request.webSearch ? { webSearchCalls: [{ id: 'synthetic-search', status: 'completed', action: { type: 'search', queries: ['synthetic fixture'] }, sources: [] }] } : {}),
     usage: { inputTokens: 20, outputTokens: 10, totalTokens: 30, source: 'response.completed' }, elapsedMs: 1, evidenceKind: 'fixture', diagnostic: { code: 'fixture', retryable: false, automaticRetries: 0 }, directChargeUsd: 0, estimatedApiEquivalentUsd: null };
 }
-async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = false, failTester = false, evidenceRepair:'valid'|'invalid'|false=false, stationaryBudget?:number, invalidFirstThrough=false, readiness:'all'|'selected'|'unrepaired'|false=false) {
+async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = false, failTester = false, evidenceRepair:'valid'|'invalid'|false=false, stationaryBudget?:number, invalidFirstThrough=false, readiness:'all'|'selected'|'unrepaired'|false=false,experience:'legacy'|'short'|'fit'|'correct'='legacy') {
   const f = fixture(); if(stationaryBudget!==undefined)f.brief.durationSeconds=f.prepared.walkingSeconds+f.plan.allowanceSeconds+stationaryBudget; await mkdir('local-data', { recursive: true }); const directory = await mkdtemp(resolve('local-data/factory-pipeline-test-'));
   t.after(() => rm(directory, { recursive: true, force: true }));
+  if(experience==='fit'||experience==='correct')f.brief.durationSeconds=f.prepared.walkingSeconds+f.plan.allowanceSeconds+480;
   const requests: string[] = [], testerInputs: unknown[] = []; let buildCalls = 0, routeCalls = 0;
   const evidenceRequests:InferenceRequest[]=[],network={map:0,image:0};
   const imageUrl='https://example.com/retained.png',imageBytes=Buffer.from('89504e470d0a1a0a0000000d49484452000000010000000108060000001f15c489','hex');
@@ -196,18 +198,20 @@ async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = 
       if(failTester&&testerInputs.length===1)return {...providerResult(request,null),status:'failed',diagnostic:{code:'fixture_settled_failure',retryable:false,automaticRetries:0}};
       return providerResult(request,accepted);
     }
+    if(name==='route_directions'){assert.ok(request.instructions.includes(PRACTICAL_ACCESS_POLICY));return providerResult(request,{review:accepted,legDirections:f.prepared.legs.map(l=>({legId:l.id,directions:l.directions}))});}
     if (name.startsWith('scout_')) return providerResult(request, accepted);
     if (name === 'writing' || name.startsWith('correction_')) {
       const context = JSON.parse(String(request.input[0].content)) as { prepared: { chapterIds: string[] } };
       const draft: Draft = structuredClone(f.draft); draft.chapters = context.prepared.chapterIds.map((id, i) => ({ ...draft.chapters[i], id }));
-      if (measuredOverrun && name.startsWith('correction_')) draft.stories[0].paragraphs[0].text = 'Synthetic revised account 0 concerns about five makers.';
+      if ((measuredOverrun||experience==='correct') && name.startsWith('correction_')) draft.stories[0].paragraphs[0].text = 'Synthetic revised account 0 concerns about five makers.';
+      if(experience==='correct'&&name.startsWith('correction_'))draft.stories.forEach((story,i)=>{story.paragraphs[0].text=`Synthetic revised account ${i} concerns about five makers.`;});
       return providerResult(request, draft);
     }
     if (name.startsWith('editor_') || name.startsWith('verification_')) return providerResult(request, rejectReviews ? { ...accepted, verdict: 'needs-revision', issues: [{ id: 'required-fix', scope: 'story', required: true, problem: 'Synthetic unresolved detail', repair: 'Remove unsupported detail', evidence: 'Synthetic missing support' }] } : accepted);
     throw Error(`Unexpected synthetic phase ${name}`);
   } };
   const runtime = new FactoryRuntime(directory, f.brief, async () => provider, () => '2026-10-07T10:00:00.000Z');
-  if(evidenceRepair)await writeFile(join(directory,'phase-protocols.json'),JSON.stringify({'research-repair':1}));
+  await writeFile(join(directory,'phase-protocols.json'),JSON.stringify({'experience-policy':experience==='legacy'?1:2,...(evidenceRepair?{'research-repair':1}:{})}));
   const tools = new PublicTools({ directory: join(directory, 'public-tools'), lookup: async () => [{ address: '93.184.216.34', family: 4 }], fetch: async url => {
     if(String(url).startsWith('https://overpass-api.de/')){network.map++;assert.equal(network.map,1,'Retained map must not be fetched again');return Response.json({elements:[{type:'way',id:123,tags:{highway:'footway',access:'yes'},geometry:[{lat:51.55,lon:-0.17},{lat:51.5501,lon:-0.17}]}]});}
     if(String(url)===imageUrl){network.image++;assert.equal(network.image,1,'Retained pixels must not be fetched again');return new Response(imageBytes,{headers:{'content-type':'image/png'}});}
@@ -215,7 +219,7 @@ async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = 
     const source = f.research.sources.find(s => s.url === String(url)); assert.ok(source);
     return new Response(`<title>${source.title}</title><p>${source.passage}${evidenceRepair&&source===f.research.sources[0]?' Longer retained source context.'.repeat(1500):''}</p>`, { headers: { 'content-type': 'text/html' } });
   } });
-  const options = { build: async (...args: Parameters<typeof buildTour>) => { buildCalls++; return buildTour(args[0], { ...args[1], audioTools: syntheticAudio(measuredOverrun) }); } };
+  const options = { build: async (...args: Parameters<typeof buildTour>) => { buildCalls++; return buildTour(args[0], { ...args[1], audioTools: experience==='legacy'||experience==='short'?syntheticAudio(measuredOverrun):syntheticAudio(false,experience==='correct'&&buildCalls===1?4:120) }); } };
   return { runtime, tools, options, requests, testerInputs, evidenceRequests, network, routeCalls:()=>routeCalls, buildCalls: () => buildCalls, directory };
 }
 
@@ -458,4 +462,32 @@ test('previously dispatched route jobs freeze the legacy readiness path without 
  await assert.rejects(runFactory(r.runtime,r.tools,r.options),/Incomplete phase route-plan-1/);
  const protocols=JSON.parse(await readFile(join(r.directory,'phase-protocols.json'),'utf8'));assert.equal(protocols['physical-readiness'],1);assert.equal(protocols['coincident-final-leg'],1);
  assert.ok(!r.requests.includes('physical_readiness'));assert.equal(r.runtime.job.counters.research,0);assert.equal(r.routeCalls(),0);
+});
+
+
+test('duration policy rejects the actual compact Hampstead estimate and uses a bounded range',()=>{
+ const budget=durationBudget(3600,1079.725,480,4);
+ assert.equal(budget.routeFeasible,false);assert.equal(durationFits(1887.825,budget),false);
+ assert.equal(durationFits(3300,budget),true);assert.equal(durationFits(3900,budget),true);
+ assert.equal(durationFits(3299,budget),false);assert.equal(durationFits(3901,budget),false);
+});
+test('new factory rejects an underfilled route before scouting, writing or rendering within three proposals',async t=>{
+ const r=await replay(t,false,false,false,false,undefined,false,false,'short');
+ await assert.rejects(runFactory(r.runtime,r.tools,r.options),/three proposals/);
+ assert.equal(r.runtime.job.counters.route,3);assert.equal(r.buildCalls(),0);
+ assert.ok(!r.requests.some(n=>n.startsWith('scout_')||n==='writing'));
+});
+test('new factory accepts actual measured duration in range with practical canonical directions',async t=>{
+ const r=await replay(t,false,false,false,false,undefined,false,false,'fit');
+ const handoff=await runFactory(r.runtime,r.tools,r.options);
+ assert.equal(handoff.durationAcceptance.status,'estimate-within-range');
+ assert.equal(r.buildCalls(),1);assert.ok(r.requests.includes('route_directions'));
+});
+test('new factory corrects measured underfill instead of accepting an upper-bound-only pass',async t=>{
+ const r=await replay(t,false,false,false,false,undefined,false,false,'correct');
+ const handoff=await runFactory(r.runtime,r.tools,r.options);
+ assert.equal(handoff.durationAcceptance.status,'estimate-within-range');assert.equal(r.buildCalls(),2);
+ assert.equal(r.runtime.job.counters.correction,1);
+ const feedback=JSON.parse(await readFile(join(r.directory,'render-feedback-0.json'),'utf8'));
+ assert.match(feedback.validationError,/falls outside/);
 });
