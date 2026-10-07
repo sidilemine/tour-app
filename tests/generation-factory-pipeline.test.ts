@@ -144,7 +144,7 @@ function providerResult(request: InferenceRequest, value: unknown, calls: Provid
     ...(request.webSearch ? { webSearchCalls: [{ id: 'synthetic-search', status: 'completed', action: { type: 'search', queries: ['synthetic fixture'] }, sources: [] }] } : {}),
     usage: { inputTokens: 20, outputTokens: 10, totalTokens: 30, source: 'response.completed' }, elapsedMs: 1, evidenceKind: 'fixture', diagnostic: { code: 'fixture', retryable: false, automaticRetries: 0 }, directChargeUsd: 0, estimatedApiEquivalentUsd: null };
 }
-async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = false, failTester = false, evidenceRepair:'valid'|'invalid'|false=false, stationaryBudget?:number, invalidFirstThrough=false, readiness:'all'|'selected'|'unrepaired'|false=false,experience:'legacy'|'short'|'fit'|'correct'='legacy',rejectDirections=false) {
+async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = false, failTester = false, evidenceRepair:'valid'|'invalid'|false=false, stationaryBudget?:number, invalidFirstThrough=false, readiness:'all'|'selected'|'unrepaired'|false=false,experience:'legacy'|'short'|'fit'|'correct'='legacy',rejectDirections:boolean|'ambiguous'=false) {
   const f = fixture(); if(stationaryBudget!==undefined)f.brief.durationSeconds=f.prepared.walkingSeconds+f.plan.allowanceSeconds+stationaryBudget; await mkdir('local-data', { recursive: true }); const directory = await mkdtemp(resolve('local-data/factory-pipeline-test-'));
   t.after(() => rm(directory, { recursive: true, force: true }));
   if(experience==='fit'||experience==='correct')f.brief.durationSeconds=f.prepared.walkingSeconds+f.plan.allowanceSeconds+480;
@@ -198,7 +198,8 @@ async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = 
       if(failTester&&testerInputs.length===1)return {...providerResult(request,null),status:'failed',diagnostic:{code:'fixture_settled_failure',retryable:false,automaticRetries:0}};
       return providerResult(request,accepted);
     }
-    if(name==='route_directions'||name.startsWith('route_directions_')){assert.ok(request.instructions.includes(PRACTICAL_ACCESS_POLICY));return providerResult(request,{review:rejectDirections?{...accepted,verdict:'blocked',issues:[{id:'wrong-crossing',scope:'leg-1',required:true,problem:'Crossing belongs to another road arm',repair:'Resolve the actual crossing identity',evidence:'Synthetic contradictory map evidence'}]}:accepted,legDirections:f.prepared.legs.map(l=>({legId:l.id,directions:l.directions}))});}
+    if(name.endsWith('_closure'))return providerResult(request,accepted);
+    if(name==='route_directions'||name.startsWith('route_directions_')){assert.ok(request.instructions.includes(PRACTICAL_ACCESS_POLICY));return providerResult(request,{review:rejectDirections?{...accepted,verdict:rejectDirections==='ambiguous'?'accepted':'blocked',issues:[{id:'wrong-crossing',scope:'leg-1',required:true,problem:rejectDirections==='ambiguous'?'Returned corrected directions still await compilation':'Crossing belongs to another road arm',repair:rejectDirections==='ambiguous'?'Compile these unchanged proposed directions':'Resolve the actual crossing identity',evidence:rejectDirections==='ambiguous'?'Synthetic returned directions close the original finding':'Synthetic contradictory map evidence'}]}:accepted,legDirections:f.prepared.legs.map(l=>({legId:l.id,directions:l.directions}))});}
     if (name.startsWith('scout_')) return providerResult(request, accepted);
     if (name === 'writing' || name.startsWith('correction_')) {
       const context = JSON.parse(String(request.input[0].content)) as { prepared: { chapterIds: string[] } };
@@ -496,4 +497,14 @@ test('practical crossing policy still blocks a concrete wrong-crossing direction
  const r=await replay(t,false,false,false,false,undefined,false,false,'fit',true);
  await assert.rejects(runFactory(r.runtime,r.tools,r.options),/three proposals/);
  assert.equal(r.buildCalls(),0);assert.ok(!r.requests.includes('writing'));
+});
+
+test('accepted direction review with contradictory required flags uses one frozen clarification, preserving original',async t=>{
+ const r=await replay(t,false,false,false,false,undefined,false,false,'fit','ambiguous');
+ const handoff=await runFactory(r.runtime,r.tools,r.options);
+ assert.equal(handoff.durationAcceptance.status,'estimate-within-range');
+ assert.equal(r.requests.filter(n=>n==='route_directions_1_closure').length,1);
+ const original=JSON.parse(await readFile(join(r.directory,'phases/route-directions-1.json'),'utf8')).result;
+ assert.equal(original.review.issues[0].required,true);assert.equal(original.review.verdict,'accepted');
+ assert.equal(r.runtime.job.counters.route,1);
 });
