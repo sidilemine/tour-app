@@ -51,6 +51,7 @@ export interface WebSearchCall {
 export interface WebSearchEvent { type: string; itemId: string; outputIndex?: number }
 export interface ProviderDiagnostic {
   code: string; httpStatus?: number; retryable: boolean; automaticRetries: 0;
+  failureStage?:'request'|'stream-read'|'stream-parse'; exceptionName?:string; exceptionCode?:string;
   param?: string; requestId?: string; bodyShape?: Record<string, string>; contentType?: string; responseStatus?: string;
 }
 export interface ApiPriceQuote {
@@ -253,6 +254,7 @@ export class SubscriptionProvider implements ReasoningProvider {
     // Send only the configured model; the authenticated Responses endpoint decides
     // access. Never substitute another model or retry a server rejection here.
     const signal = request.signal ? AbortSignal.any([request.signal, AbortSignal.timeout(this.options.timeoutMs ?? 60_000)]) : AbortSignal.timeout(this.options.timeoutMs ?? 60_000);
+    let failureStage:ProviderDiagnostic['failureStage']='request';
     try {
       const response = await this.fetcher(RESPONSES_URL, {
         method: 'POST', headers: { Authorization: `Bearer ${this.options.credentials!.accessToken}`, 'Content-Type': 'application/json', Accept: 'text/event-stream' },
@@ -300,6 +302,7 @@ export class SubscriptionProvider implements ReasoningProvider {
       const consume = (frame: string): ProviderResult | undefined => {
         const data = frame.split('\n').filter(line => line.startsWith('data:')).map(line => line.slice(5).trimStart()).join('\n');
         if (!data || data === '[DONE]') return;
+        failureStage='stream-parse';
         const event = record(JSON.parse(data));
         if (event.type === 'response.output_text.delta' && typeof event.delta === 'string') result.text += event.delta;
         if (['response.web_search_call.in_progress', 'response.web_search_call.searching', 'response.web_search_call.completed'].includes(String(event.type)) && typeof event.item_id === 'string') result.toolEvents!.push({ type: String(event.type), itemId: event.item_id, ...(Number.isInteger(event.output_index) && Number(event.output_index) >= 0 ? { outputIndex: Number(event.output_index) } : {}) });
@@ -324,6 +327,7 @@ export class SubscriptionProvider implements ReasoningProvider {
       };
       try {
         while (true) {
+          failureStage='stream-read';
           const { value, done } = await reader.read();
           if (done) break;
           receivedBytes += value.byteLength;
@@ -344,7 +348,11 @@ export class SubscriptionProvider implements ReasoningProvider {
         await reader.cancel().catch(() => undefined);
         reader.releaseLock();
       }
-    } catch {
+    } catch(error) {
+      const exception=record(error),cause=record(exception.cause);
+      const name=typeof exception.name==='string'&&['Error','TypeError','SyntaxError','AbortError','TimeoutError'].includes(exception.name)?exception.name:'Error';
+      const code=[exception.code,cause.code].find(code=>typeof code==='string'&&['UND_ERR_SOCKET','UND_ERR_BODY_TIMEOUT','UND_ERR_HEADERS_TIMEOUT','ECONNRESET','ECONNREFUSED','ETIMEDOUT','ENOTFOUND','EAI_AGAIN','CERT_HAS_EXPIRED','UNABLE_TO_VERIFY_LEAF_SIGNATURE'].includes(code));
+      result.diagnostic={...result.diagnostic,failureStage,exceptionName:name,...(typeof code==='string'?{exceptionCode:code}:{})};
       return finish('interrupted', signal.aborted ? 'request_aborted_or_timed_out' : 'stream_or_transport_error');
     }
   }

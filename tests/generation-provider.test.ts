@@ -369,3 +369,14 @@ test('invalid search configuration blocks before network',async()=>{
  for(const domains of [[],['https://example.org'],['example.org/path'],['localhost'],Array(101).fill('example.org')])assert.equal((await provider.request({...request,webSearch:{allowedDomains:domains}})).diagnostic.code,'invalid_web_search_options');
  assert.equal((await provider.request({...request,webSearch:{},tools:[{type:'web_search'}]})).diagnostic.code,'duplicate_web_search_tool');assert.equal(calls,0);
 });
+
+
+test('stream diagnostics distinguish malformed events from socket interruption without exposing error text',async()=>{
+ const malformed=await fixture(async()=>new Response('data: private-invalid-json\n\n',{headers:{'content-type':'text/event-stream'}})).request(request);
+ assert.equal(malformed.diagnostic.failureStage,'stream-parse');assert.equal(malformed.diagnostic.exceptionName,'SyntaxError');
+ assert.ok(!JSON.stringify(malformed).includes('private-invalid-json'));
+ const socket=await fixture(async()=>new Response(new ReadableStream({start(controller){controller.error(Object.assign(new TypeError('private-secret-message'),{cause:{code:'UND_ERR_SOCKET',message:'private-host-detail'}}));}}),{headers:{'content-type':'text/event-stream'}})).request(request);
+ assert.equal(socket.diagnostic.failureStage,'stream-read');assert.equal(socket.diagnostic.exceptionName,'TypeError');assert.equal(socket.diagnostic.exceptionCode,'UND_ERR_SOCKET');
+ assert.equal(socket.status,'interrupted');assert.equal(socket.usage.totalTokens,null);assert.equal(socket.diagnostic.automaticRetries,0);
+ assert.ok(!JSON.stringify(socket).includes('private-'));
+});
