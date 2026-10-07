@@ -198,7 +198,7 @@ async function replay(t: TestContext, rejectReviews: boolean, measuredOverrun = 
       if(failTester&&testerInputs.length===1)return {...providerResult(request,null),status:'failed',diagnostic:{code:'fixture_settled_failure',retryable:false,automaticRetries:0}};
       return providerResult(request,accepted);
     }
-    if(name==='route_directions'){assert.ok(request.instructions.includes(PRACTICAL_ACCESS_POLICY));return providerResult(request,{review:rejectDirections?{...accepted,verdict:'blocked',issues:[{id:'wrong-crossing',scope:'leg-1',required:true,problem:'Crossing belongs to another road arm',repair:'Resolve the actual crossing identity',evidence:'Synthetic contradictory map evidence'}]}:accepted,legDirections:f.prepared.legs.map(l=>({legId:l.id,directions:l.directions}))});}
+    if(name==='route_directions'||name.startsWith('route_directions_')){assert.ok(request.instructions.includes(PRACTICAL_ACCESS_POLICY));return providerResult(request,{review:rejectDirections?{...accepted,verdict:'blocked',issues:[{id:'wrong-crossing',scope:'leg-1',required:true,problem:'Crossing belongs to another road arm',repair:'Resolve the actual crossing identity',evidence:'Synthetic contradictory map evidence'}]}:accepted,legDirections:f.prepared.legs.map(l=>({legId:l.id,directions:l.directions}))});}
     if (name.startsWith('scout_')) return providerResult(request, accepted);
     if (name === 'writing' || name.startsWith('correction_')) {
       const context = JSON.parse(String(request.input[0].content)) as { prepared: { chapterIds: string[] } };
@@ -481,7 +481,7 @@ test('new factory accepts actual measured duration in range with practical canon
  const r=await replay(t,false,false,false,false,undefined,false,false,'fit');
  const handoff=await runFactory(r.runtime,r.tools,r.options);
  assert.equal(handoff.durationAcceptance.status,'estimate-within-range');
- assert.equal(r.buildCalls(),1);assert.ok(r.requests.includes('route_directions'));
+ assert.equal(r.buildCalls(),1);assert.ok(r.requests.includes('route_directions_1'));assert.ok(r.requests.indexOf('route_directions_1')<r.requests.indexOf('scout_1'));
 });
 test('new factory corrects measured underfill instead of accepting an upper-bound-only pass',async t=>{
  const r=await replay(t,false,false,false,false,undefined,false,false,'correct');
@@ -494,6 +494,6 @@ test('new factory corrects measured underfill instead of accepting an upper-boun
 
 test('practical crossing policy still blocks a concrete wrong-crossing direction before writing',async t=>{
  const r=await replay(t,false,false,false,false,undefined,false,false,'fit',true);
- await assert.rejects(runFactory(r.runtime,r.tools,r.options),/explicitly accept/);
+ await assert.rejects(runFactory(r.runtime,r.tools,r.options),/three proposals/);
  assert.equal(r.buildCalls(),0);assert.ok(!r.requests.includes('writing'));
 });
