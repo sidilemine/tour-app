@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-08T10:19:44.321139+00:00",
+  "repository": {
+    "default_branch": "codex/local-tour-generation",
+    "full_name": "sidilemine/tour-app",
+    "html_url": "https://github.com/sidilemine/tour-app",
+    "private": true
+  },
+  "release": {
+    "id": 406690950,
+    "tag": "backup-2026-10-08",
+    "url": "https://github.com/sidilemine/tour-app/releases/tag/backup-2026-10-08",
+    "isDraft": false,
+    "publishedAt": "2026-10-08T10:17:46Z",
+    "sourceCommit": "0aeb43a7fc9d5952607233466d99523aab93b46c"
+  },
+  "branchRefsAtPublication": {
+    "refs/heads/codex/local-tour-generation": "0aeb43a7fc9d5952607233466d99523aab93b46c",
+    "refs/heads/codex/m2-offline-map": "c582f0afcb42bc7b9523b24502148a2944d06e17",
+    "refs/heads/main": "207b9578bb7da9fe337eb908dadc5afdb616d17e"
+  },
+  "verification": {
+    "localArchiveCrcReadback": "passed",
+    "remoteByteCounts": "matched",
+    "remoteSha256Digests": "matched",
+    "allBranches": "matched",
+    "backupTag": "matched",
+    "credentials": "excluded; source history and staged additions reviewed"
+  },
+  "assets": [
+    {
+      "name": "backup-manifest.json",
+      "bytes": 2074877,
+      "sha256": "86c8f754e9485fd3c85afa3b4b1e37cdff0c14eb0f4e90faa7ff9c021fd42f32",
+      "state": "uploaded",
+      "url": "https://github.com/sidilemine/tour-app/releases/download/backup-2026-10-08/backup-manifest.json"
+    },
+    {
+      "name": "backup-summary.json",
+      "bytes": 5786,
+      "sha256": "fda1d7c0d76bdf04fc7d91b68ceb3fb7096c7a0cec41a1a7471151d3d74daf82",
+      "state": "uploaded",
+      "url": "https://github.com/sidilemine/tour-app/releases/download/backup-2026-10-08/backup-summary.json"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 275,
+      "sha256": "7005ed3132515e1b341a2405b6dc49662be03cfb7d9845393ab0330f2f4e3d63",
+      "state": "uploaded",
+      "url": "https://github.com/sidilemine/tour-app/releases/download/backup-2026-10-08/SHA256SUMS.txt"
+    },
+    {
+      "name": "tour-build-artifacts.zip",
+      "bytes": 1345013140,
+      "sha256": "928e0df6456c4a2810f8ba253728026a06a3c9167ab577fe4bd8e97a10385a83",
+      "state": "uploaded",
+      "url": "https://github.com/sidilemine/tour-app/releases/download/backup-2026-10-08/tour-build-artifacts.zip"
+    },
+    {
+      "name": "tour-diagnostic-traces.zip",
+      "bytes": 837335464,
+      "sha256": "1bf461330e1efccb316cd840e67a4d8ad266ea9aadeee52f2ed4b7a2de199d41",
+      "state": "uploaded",
+      "url": "https://github.com/sidilemine/tour-app/releases/download/backup-2026-10-08/tour-diagnostic-traces.zip"
+    },
+    {
+      "name": "tour-generation-data.zip",
+      "bytes": 317085159,
+      "sha256": "4bc8b983023491acaf061feca4320c51993b710a87f3f2c83bbcbbecb54f4a2a",
+      "state": "uploaded",
+      "url": "https://github.com/sidilemine/tour-app/releases/download/backup-2026-10-08/tour-generation-data.zip"
+    }
+  ]
+}
