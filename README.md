@@ -1,6 +1,8 @@
 # Walking Tour Lab
 
-**7 October local factory verification:** fresh generation uses owner-selected Sol6.1 medium. Shared coordination, duration, direction and map fixes pass367automated tests. The latest fresh Highgate trial still stopped before content production: its final conservative estimate was66m19, outside the current55–65minute range. A full accepted tour and unattended reliability remain unproven; the owner has been asked to clarify duration-extension preference. US$0direct paid usage; installed phone behaviour is unchanged. [Results](docs/content/generation/factory/RESULTS.md), [per-role accounting](docs/content/generation/factory/COSTS.md), [run/resume](docs/content/generation/factory/README.md).
+**7 October personal-beta factory result:** fresh generation uses owner-selected Sol6.1 medium. Highgate v8 completed an offline beta package with five recordings, a 3.69km route and a 67m22 estimated duration. The run took 28m08 including one checked engineering recovery and used 609,067 runtime tokens, with US$0 direct paid usage. The 376-test suite passed; final focused metadata/report checks, typecheck and lint also passed. Duration differences and ordinary editorial weaknesses are advisory under the owner-selected beta policy. Unattended reliability, listening and walking enjoyment remain unproven; installed phone behaviour is unchanged. [Read the tour and advisories](docs/content/generation/factory/HIGHGATE-BETA-V8-TOUR.txt), [results](docs/content/generation/factory/RESULTS.md), [per-role accounting](docs/content/generation/factory/COSTS.md), [run/resume](docs/content/generation/factory/README.md).
+
+**8 October GitHub backup:** the source and history are hosted in the [private Tour repository](https://github.com/sidilemine/tour-app). The owner requested diagnostic traces alongside generated tours, generation records and build artifacts. See [backup contents and restoration](docs/GITHUB-BACKUP.md); authentication and signing secrets remain local.
 
 **6 October local generation prototype:** [Run/resume](docs/content/generation/README.md), [actual results](docs/content/generation/RESULTS.md) and the [Balanced Farringdon-loop candidate](docs/content/generation/PILOT.md) are now available. The CLI and candidate package are locally checked; live subscription capability checks and independent role reviews now pass execution, while final content/physical acceptance and listening remain unresolved. This has not changed the installed phone build.
 
@@ -49,7 +51,7 @@ For the self-contained build:
 sh tools/android-env.sh adb install -r artifacts/walking-tour-offline.apk
 ```
 
-Open **Walking Tour Lab** from the phone's app list. Check cold launch with Metro stopped and data/Wi-Fi off. Expo's [local compilation guide](https://docs.expo.dev/guides/local-app-development/) documents development and release variants; this project performs no EAS build, remote upload, store signing or publication.
+Open **Walking Tour Lab** from the phone's app list. Check cold launch with Metro stopped and data/Wi-Fi off. Expo's [local compilation guide](https://docs.expo.dev/guides/local-app-development/) documents development and release variants. These builds use local tooling, with no EAS build or app-store publication; the separate private GitHub backup is documented above.
 
 ## Offline test guide on the phone
 
